@@ -1,0 +1,23 @@
+{
+ "id": "esqa-cosmetics",
+ "name": "ESQA Cosmetics",
+ "url": "https://esqacosmetics.com",
+ "candidates": [
+  {
+   "pri": 500,
+   "path": "data/logo-candidates/esqa-cosmetics/x00-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 61.5,
+   "path": "data/logo-candidates/esqa-cosmetics/00-site-link-icon-30x30.png",
+   "tag": "link-icon-30x30"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/esqa-cosmetics/h00-header.png",
+   "tag": "header-100x30"
+  }
+ ],
+ "errors": []
+}

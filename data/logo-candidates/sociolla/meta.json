@@ -1,0 +1,45 @@
+{
+ "id": "sociolla",
+ "name": "Sociolla (Social Bella)",
+ "url": "https://www.sociolla.com",
+ "candidates": [
+  {
+   "pri": 499,
+   "path": "data/logo-candidates/sociolla/x01-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 500,
+   "path": "data/logo-candidates/sociolla/x00-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/sociolla/m01-manual.png",
+   "tag": "manual",
+   "src": "https://www.sociolla.com/assets/img/preload/main-logo.jpg"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/sociolla/s00-appstore.png",
+   "tag": "appstore:SOCO by Sociolla",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/94/67/e7/9467e79c-0821-4f70-4119-0cd184048db9/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/sociolla/00-site-guess-favicon-16x16.png",
+   "tag": "guess-favicon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/sociolla/h00-header.png",
+   "tag": "header-112x33"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/sociolla/h01-header.png",
+   "tag": "header-112x27"
+  }
+ ],
+ "errors": []
+}

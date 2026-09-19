@@ -1,0 +1,36 @@
+{
+ "id": "triv",
+ "name": "Triv",
+ "url": "https://triv.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/triv/s00-appstore.png",
+   "tag": "appstore:Triv: Buy Bitcoin & Crypto",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5b/57/99/5b5799a0-a8ac-d91f-1e6c-b23357e11d24/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/triv/s01-play.png",
+   "tag": "play:id.co.triv",
+   "src": "https://play-lh.googleusercontent.com/sC2l9WPEa1YzkNrmv1_SDRU-hpeodLUOgkTGKkDilFq_Vw9nP0rIGaNcR3qnEz3Ck1xhrugO5zhabU3gkMmz=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/triv/s02-play.png",
+   "tag": "play:ru.trivio.app",
+   "src": "https://play-lh.googleusercontent.com/B9cLEzsa0ECewoZo1JrWIkV6I1r06v34nzsbuydjwdYtQfhrQS5edO_49VJFchdBzIn50v33rIxbsanTSMIWdA=s512"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/triv/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/triv/h00-header.png",
+   "tag": "header-157x51"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,46 @@
+{
+ "id": "mobee",
+ "name": "Mobee",
+ "url": "https://mobee.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/mobee/s00-appstore.png",
+   "tag": "appstore:Mobee: Trade and Buy Crypto",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bb/ac/41/bbac411f-d2ce-0e17-3d6f-0e68cde3bcee/productionAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/mobee/s01-appstore.png",
+   "tag": "appstore:Mobee App",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ac/6d/04/ac6d0440-be12-89e9-b4ae-1d2cb478e603/AppIcon-1x_U007emarketing-0-10-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/mobee/s02-play.png",
+   "tag": "play:com.mobee.io",
+   "src": "https://play-lh.googleusercontent.com/wJ7anmeMR09I1T6REh4NKZgAxgSZRcVtfoihaTSlYSxP6CHXqzLGMtCWZTcttO1c5kDv4vBrbgObh2y37ouqqQ=s512"
+  },
+  {
+   "pri": 102.8,
+   "path": "data/logo-candidates/mobee/00-site-apple-touch-icon-256x256.png",
+   "tag": "apple-touch-icon-256x256"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/mobee/01-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 34.5,
+   "path": "data/logo-candidates/mobee/02-site-guess-favicon-90x89.png",
+   "tag": "guess-favicon-90x89"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/mobee/h00-header.png",
+   "tag": "header-130x24"
+  }
+ ],
+ "errors": []
+}

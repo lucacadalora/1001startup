@@ -1,0 +1,47 @@
+{
+ "id": "spun",
+ "name": "SPUN",
+ "url": "https://spun.global",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/spun/s00-appstore.png",
+   "tag": "appstore:Spun It \u2013 Track & Share Spins",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/2a/db/50/2adb5011-3a23-d48c-44fa-c248cb9cf413/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/spun/s01-appstore.png",
+   "tag": "appstore:Spun",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/07/75/5807758e-ac63-fb3c-9f40-278e028bdb80/AppIcon-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/spun/s02-play.png",
+   "tag": "play:com.jimmylee.spunit",
+   "src": "https://play-lh.googleusercontent.com/lo6pmLoTBJzE9su7Wou05j_dEyLwylKti_YFWzjf4N9LYe7ljFvWEHodyo_d4dyko7_BycBQVgiKpw_FP4tAmQ=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/spun/s03-play.png",
+   "tag": "play:earth.spun.sampling",
+   "src": "https://play-lh.googleusercontent.com/eowbXWlbOpvGikaRao-CwZMCudon1Wza2S-zkzbPVNPW4tKoVDud6rARIJl8EbF5tfPwxt6oiDtVwrpZUNBowJg=s512"
+  },
+  {
+   "pri": 98.39999999999999,
+   "path": "data/logo-candidates/spun/00-site-link-icon-256x256.png",
+   "tag": "link-icon-256x256"
+  },
+  {
+   "pri": 42.8,
+   "path": "data/logo-candidates/spun/01-site-guess-favicon-256x256.png",
+   "tag": "guess-favicon-256x256"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/spun/h00-header.png",
+   "tag": "header-107x32"
+  }
+ ],
+ "errors": []
+}

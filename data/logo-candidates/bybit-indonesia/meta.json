@@ -1,0 +1,22 @@
+{
+ "id": "bybit-indonesia",
+ "name": "Bybit Indonesia (NOBI)",
+ "url": "https://www.bybit.id",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/bybit-indonesia/s01-play.png",
+   "tag": "play:com.bybit.idn",
+   "src": "https://play-lh.googleusercontent.com/DrPJB5kPBpdgbCdvBCL4m9MkFnQuJb_uTIqe89Pgv663ScXQ9-oJnaknJmKndOPNqbQ3PYjfY-3OT4SIt0TL3Q=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/bybit-indonesia/s00-appstore.png",
+   "tag": "appstore:Bybit Indonesia: Buy Bitcoin",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/3e/57/3b/3e573b92-cb2a-3f32-2ca5-85bf5c42ce7b/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+  }
+ ],
+ "errors": [
+  "ERR Error: Page.goto: net::ERR_HTTP2_PROTOCOL_ERROR at https://www.bybit.id/\nCall"
+ ]
+}

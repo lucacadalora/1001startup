@@ -1,0 +1,30 @@
+{
+ "id": "logisly",
+ "name": "Logisly",
+ "url": "https://logisly.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/logisly/s00-play.png",
+   "tag": "play:com.logisly.transporter",
+   "src": "https://play-lh.googleusercontent.com/XuosmKNnSnUOsKR994Y7ma9kimnyiLXupDQXacieM8gakaH-K_pMrkdochOG_jNkLqLpTOs6sAUZwTPsQEtOzo0=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/logisly/s01-play.png",
+   "tag": "play:com.logisly.driver",
+   "src": "https://play-lh.googleusercontent.com/pDxajti-rfh3uMZoJ41Et_zCOYhdYNKuXaChzTaPrDe6G-rh80UJAPhBOmlVGpK3Ei3rBP8FLCgh-v5MitCi2A=s512"
+  },
+  {
+   "pri": 60.8,
+   "path": "data/logo-candidates/logisly/00-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/logisly/h00-header.png",
+   "tag": "header-151x22"
+  }
+ ],
+ "errors": []
+}

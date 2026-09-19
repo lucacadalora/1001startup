@@ -1,0 +1,53 @@
+{
+ "id": "ardhosting",
+ "name": "ArdHosting",
+ "url": "https://www.ardhosting.com",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/ardhosting/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/ardhosting/01-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/ardhosting/02-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/ardhosting/03-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.85,
+   "path": "data/logo-candidates/ardhosting/05-site-link-icon-57x73.png",
+   "tag": "link-icon-57x73"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/ardhosting/04-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/ardhosting/06-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/ardhosting/h00-header.png",
+   "tag": "header-277x119"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/ardhosting/h01-header.png",
+   "tag": "header-47x36"
+  }
+ ],
+ "errors": []
+}

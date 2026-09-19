@@ -1,0 +1,24 @@
+{
+ "id": "fresh-factory",
+ "name": "Fresh Factory",
+ "url": "https://freshfactory.id",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/fresh-factory/s00-play.png",
+   "tag": "play:com.strategies360.freshfactory",
+   "src": "https://play-lh.googleusercontent.com/GN1xdQ9iNL4_ZI6TDIWMc5GH9qX7EdUhVbjhU-No5IV0XD578GxCDS1CAdGelG2P8cU3YcAWElVBQWpEdiMi=s512"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/fresh-factory/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/fresh-factory/h00-header.png",
+   "tag": "header-70x41"
+  }
+ ],
+ "errors": []
+}

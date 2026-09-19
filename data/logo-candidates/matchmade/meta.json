@@ -1,0 +1,18 @@
+{
+ "id": "matchmade",
+ "name": "Matchmade",
+ "url": "https://matchmade.io",
+ "candidates": [
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/matchmade/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/matchmade/h00-header.png",
+   "tag": "header-233x32"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,23 @@
+{
+ "id": "elitery",
+ "name": "Elitery",
+ "url": "https://elitery.com",
+ "candidates": [
+  {
+   "pri": 88.2,
+   "path": "data/logo-candidates/elitery/00-site-link-icon-500x500.png",
+   "tag": "link-icon-500x500"
+  },
+  {
+   "pri": 55.0,
+   "path": "data/logo-candidates/elitery/01-site-guess-favicon-500x500.png",
+   "tag": "guess-favicon-500x500"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/elitery/h00-header.png",
+   "tag": "header-114x42"
+  }
+ ],
+ "errors": []
+}

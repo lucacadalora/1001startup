@@ -1,0 +1,34 @@
+{
+ "id": "revou",
+ "name": "RevoU",
+ "url": "https://www.revou.co",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/revou/s00-play.png",
+   "tag": "play:com.vsrevogroup.revouninstaller",
+   "src": "https://play-lh.googleusercontent.com/azFHAhGQcVetWIu07AV-XVT3UVrl6pqEnrP3irBICSUzMl1I2odbxNTxs_quQs4pjGmQ0L6foaMN75ascyLcHQ=s512"
+  },
+  {
+   "pri": 66.4,
+   "path": "data/logo-candidates/revou/00-site-link-icon-128x128.png",
+   "tag": "link-icon-128x128"
+  },
+  {
+   "pri": 39.6,
+   "path": "data/logo-candidates/revou/02-site-guess-favicon-192x192.png",
+   "tag": "guess-favicon-192x192"
+  },
+  {
+   "pri": 36.4,
+   "path": "data/logo-candidates/revou/01-site-guess-favicon-128x128.png",
+   "tag": "guess-favicon-128x128"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/revou/h00-header.png",
+   "tag": "header-40x40"
+  }
+ ],
+ "errors": []
+}

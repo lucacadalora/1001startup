@@ -1,0 +1,70 @@
+{
+ "id": "anteraja",
+ "name": "Anteraja",
+ "url": "https://anteraja.id",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/anteraja/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 157.6,
+   "path": "data/logo-candidates/anteraja/01-site-manifest-384x384.png",
+   "tag": "manifest-384x384"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/anteraja/s00-appstore.png",
+   "tag": "appstore:Anteraja",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/76/4f/da764f7b-f426-aeac-3b98-8290c08f63f3/AppIcon-0-1x_U007ephone-0-1-0-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/anteraja/s01-play.png",
+   "tag": "play:id.anteraja.aca",
+   "src": "https://play-lh.googleusercontent.com/vMYuGCscJ4Vtvr9IWVclFRJg_XJVY0iN1CVOKaLLKhOSDDuvfhW3qKXgblyixM5WeOXXs2Y-jzJjPZg_DqY0VIE=s512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/anteraja/02-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 122.8,
+   "path": "data/logo-candidates/anteraja/03-site-manifest-152x152.png",
+   "tag": "manifest-152x152"
+  },
+  {
+   "pri": 121.60000000000001,
+   "path": "data/logo-candidates/anteraja/04-site-manifest-144x144.png",
+   "tag": "manifest-144x144"
+  },
+  {
+   "pri": 119.2,
+   "path": "data/logo-candidates/anteraja/05-site-manifest-128x128.png",
+   "tag": "manifest-128x128"
+  },
+  {
+   "pri": 114.39999999999999,
+   "path": "data/logo-candidates/anteraja/06-site-manifest-96x96.png",
+   "tag": "manifest-96x96"
+  },
+  {
+   "pri": 110.8,
+   "path": "data/logo-candidates/anteraja/07-site-manifest-72x72.png",
+   "tag": "manifest-72x72"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/anteraja/08-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/anteraja/h01-header.png",
+   "tag": "header-88x36"
+  }
+ ],
+ "errors": []
+}

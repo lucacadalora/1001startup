@@ -1,0 +1,47 @@
+{
+ "id": "pina",
+ "name": "PINA",
+ "url": "https://pina.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/pina/s00-appstore.png",
+   "tag": "appstore:PINA",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/e2/ef/6b/e2ef6b68-70be-e758-3f32-3686bc53c505/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/pina/s01-appstore.png",
+   "tag": "appstore:PinaLove Filipina Dating",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a2/b3/af/a2b3afac-18b8-c08d-c52f-5e0b15c2b755/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/pina/s02-play.png",
+   "tag": "play:app.pina.id",
+   "src": "https://play-lh.googleusercontent.com/DjcRjESJR959psSJpblLMxU3aBPH6WaXoSYSV6Grt1F8c_9qfciUtRgfhYbblXToZP6SXoViZOBMT2JYhKK7wg=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/pina/s03-play.png",
+   "tag": "play:com.pinatv.streamguide",
+   "src": "https://play-lh.googleusercontent.com/E-J6M5ekqGG76Ur4Hquh05rhNBTDabQGmzJNO8QtrrlzUsLdZ6w2HjOAiSQWh9udZDRcY3LHwYMb0ASu-fJzuA=s512"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/pina/00-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/pina/h00-header.png",
+   "tag": "header-73x20"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/pina/h01-header.png",
+   "tag": "header-88x28"
+  }
+ ],
+ "errors": []
+}

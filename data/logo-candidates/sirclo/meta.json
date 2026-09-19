@@ -1,0 +1,19 @@
+{
+ "id": "sirclo",
+ "name": "Sirclo",
+ "url": "https://www.sirclo.com",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/sirclo/m01-manual.png",
+   "tag": "manual",
+   "src": "https://framerusercontent.com/images/cwTFQTxcorzWpyHnMj4GfJkRR0.png?scale-down-to=512"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/sirclo/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  }
+ ],
+ "errors": []
+}

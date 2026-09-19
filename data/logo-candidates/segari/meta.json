@@ -1,0 +1,31 @@
+{
+ "id": "segari",
+ "name": "Segari",
+ "url": "https://segari.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/segari/s00-appstore.png",
+   "tag": "appstore:Segari - Supermarket At Home",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/0c/3d/db0c3d36-9816-d494-362c-e1876b7fcb95/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/segari/s01-play.png",
+   "tag": "play:id.segari.customer",
+   "src": "https://play-lh.googleusercontent.com/J16ddXwnMRA26PU_HpbBHe92hIQt16mMSolSV5MH7p8IONd22RxOT2pscYrAt7gpZfqTezAAUr6xwB3u1SFeVw=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/segari/s02-play.png",
+   "tag": "play:id.segari.courier",
+   "src": "https://play-lh.googleusercontent.com/G3jU7RCrFayGcmZNLLE1HzRvIbVyhJfGguGUosKCYxEZgK4Lbamx1Dh0edpwxeas8dJfCOh1ww17AGOXEWSb=s512"
+  },
+  {
+   "pri": 62.9,
+   "path": "data/logo-candidates/segari/00-site-link-icon-58x58.png",
+   "tag": "link-icon-58x58"
+  }
+ ],
+ "errors": []
+}

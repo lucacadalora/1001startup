@@ -1,0 +1,14 @@
+{
+ "id": "visinema",
+ "name": "Visinema",
+ "url": "https://visinema.co",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/visinema/m01-manual.png",
+   "tag": "manual",
+   "src": "https://visinema.co/visinema_logo.png"
+  }
+ ],
+ "errors": []
+}

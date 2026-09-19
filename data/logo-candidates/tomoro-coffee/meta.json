@@ -1,0 +1,25 @@
+{
+ "id": "tomoro-coffee",
+ "name": "Tomoro Coffee",
+ "url": "https://www.tomoro-coffee.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/tomoro-coffee/s00-appstore.png",
+   "tag": "appstore:TOMORO COFFEE",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b1/2d/0a/b12d0ab1-523d-e920-1403-210d063fa4e4/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/tomoro-coffee/s01-appstore.png",
+   "tag": "appstore:TOMORO PARTNER",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/25/73/14/25731427-5963-eee0-40ad-f7e268214e33/AppIcon-0-0-1x_U007ephone-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/tomoro-coffee/00-site-link-icon-96x96.png",
+   "tag": "link-icon-96x96"
+  }
+ ],
+ "errors": []
+}

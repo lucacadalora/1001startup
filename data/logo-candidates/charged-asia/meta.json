@@ -1,0 +1,20 @@
+{
+ "id": "charged-asia",
+ "name": "Charged Asia",
+ "url": "https://charged.asia",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/charged-asia/s00-play.png",
+   "tag": "play:com.charged.bike.app",
+   "src": "https://play-lh.googleusercontent.com/oXq2STNpTEy34QLLLBt_4Hq5dV8xGF13OKa8TmiTcUF3PXFv3PUWfR3Rw3GkTnX3DD1azemjDQ8k_1eawJw1XT0=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/charged-asia/s01-play.png",
+   "tag": "play:com.bscotttech.charged",
+   "src": "https://play-lh.googleusercontent.com/tx_PlzVwUwCjrquYCcMUMW04TtGuWScxCYpUAF5S-h4E0OfQ3ilfhvhxXAiu9q3EWLFi1JH0CpZu3q3x6GHVnQ=s512"
+  }
+ ],
+ "errors": []
+}

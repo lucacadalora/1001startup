@@ -1,0 +1,35 @@
+{
+ "id": "nalagenetics",
+ "name": "Nalagenetics",
+ "url": "https://www.nalagenetics.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/nalagenetics/s00-appstore.png",
+   "tag": "appstore:Nala Personal Health Manager",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/b3/79/d7/b379d7e4-4437-5ca6-47da-3f14a497b832/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/nalagenetics/s01-play.png",
+   "tag": "play:com.nalagenetics.nalagenetics",
+   "src": "https://play-lh.googleusercontent.com/nlCBkFnlJ6EKfr9we0ZfIGlcdXSbjmDA5pdGQkUpulREO-2ryZwgziOa4y9GBUhBxEdyQvMy_Vkl8J7JFdfbAA=s512"
+  },
+  {
+   "pri": 79.2,
+   "path": "data/logo-candidates/nalagenetics/00-site-link-icon-128x128.png",
+   "tag": "link-icon-128x128"
+  },
+  {
+   "pri": 66.4,
+   "path": "data/logo-candidates/nalagenetics/01-site-link-icon-128x128.png",
+   "tag": "link-icon-128x128"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/nalagenetics/h00-header.png",
+   "tag": "header-194x38"
+  }
+ ],
+ "errors": []
+}

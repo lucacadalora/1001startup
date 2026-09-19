@@ -1,0 +1,106 @@
+{
+  "ajaib": {
+    "valuation_asof": 2021,
+    "valuation_kind": "private"
+  },
+  "akulaku": {
+    "valuation_asof": 2022,
+    "valuation_kind": "private"
+  },
+  "blibli": {
+    "valuation_asof": 2026,
+    "valuation_kind": "listed"
+  },
+  "bukalapak": {
+    "valuation_asof": 2026,
+    "valuation_kind": "listed"
+  },
+  "cakap": {
+    "valuation_asof": 2023,
+    "valuation_kind": "private"
+  },
+  "cashlez": {
+    "valuation_asof": 2025,
+    "valuation_kind": "listed"
+  },
+  "charged-asia": {
+    "valuation_asof": 2023,
+    "valuation_kind": "private"
+  },
+  "dana": {
+    "valuation_asof": 2022,
+    "valuation_kind": "private"
+  },
+  "dekoruma": {
+    "valuation_asof": 2024,
+    "valuation_kind": "private",
+    "valuation_parent_id": "blibli",
+    "valuation_parent_note": "Blibli bought 99.83% for Rp 1.16T in Jun 2024, so the purchase price sits inside Blibli's market capitalisation, already counted on Blibli's row."
+  },
+  "fore-coffee": {
+    "valuation_asof": 2026,
+    "valuation_kind": "listed"
+  },
+  "gojek": {
+    "valuation_asof": 2026,
+    "valuation_kind": "listed"
+  },
+  "grab-indonesia": {
+    "valuation_asof": 2026,
+    "valuation_kind": "est"
+  },
+  "hypefast": {
+    "valuation_asof": 2021,
+    "valuation_kind": "private"
+  },
+  "kopi-kenangan": {
+    "valuation_asof": 2021,
+    "valuation_kind": "private"
+  },
+  "ovo": {
+    "valuation_asof": 2019,
+    "valuation_kind": "private",
+    "valuation_parent_id": "grab-indonesia",
+    "valuation_parent_note": "Grab owns ~90% of PT Visionet Internasional and consolidates it, so OVO's value sits inside Grab's market capitalisation — and therefore inside the Indonesia-only carve-out counted on the Grab Indonesia row. The US$2.9B here is OVO's own 2019 unicorn mark, from before Grab took control; it is kept on the row as the last standalone price and held out of the sum."
+  },
+  "ranch-market": {
+    "valuation_asof": 2026,
+    "valuation_kind": "listed",
+    "valuation_parent_id": "blibli",
+    "valuation_parent_note": "Blibli (IDX: BELI) has held 51.00% since 30 Sep 2021 and consolidates Supra Boga Lestari as a direct subsidiary (BELI's audited FY2025 statements), so the majority of this Rp 813.5bn live market cap already sits inside Blibli's own — counting both would double-count. The RANC cap is kept on the row and held out of the sum."
+  },
+  "ruangguru": {
+    "valuation_asof": 2019,
+    "valuation_kind": "private"
+  },
+  "sociolla": {
+    "valuation_asof": 2025,
+    "valuation_kind": "private"
+  },
+  "tiket-com": {
+    "valuation_asof": null,
+    "valuation_kind": "est",
+    "valuation_parent_id": "blibli",
+    "valuation_parent_note": "Blibli (IDX: BELI) has owned 100% since 12 Jun 2017. The figure on this row is an estimated carve-out of the same market capitalisation counted on Blibli's row."
+  },
+  "traveloka": {
+    "valuation_asof": null,
+    "valuation_kind": "private"
+  },
+  "triv": {
+    "valuation_asof": 2025,
+    "valuation_kind": "private"
+  },
+  "vidio": {
+    "valuation_asof": 2021,
+    "valuation_kind": "private"
+  },
+  "wahyoo": {
+    "valuation_asof": 2022,
+    "valuation_kind": "private"
+  },
+  "xendit": {
+    "valuation_asof": 2021,
+    "valuation_kind": "private"
+  }
+}

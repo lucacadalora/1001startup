@@ -1,0 +1,38 @@
+{
+ "id": "klinik-pintar",
+ "name": "Klinik Pintar",
+ "url": "https://klinikpintar.id",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/klinik-pintar/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/klinik-pintar/01-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/klinik-pintar/02-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 85.6,
+   "path": "data/logo-candidates/klinik-pintar/04-site-link-icon-512x512.png",
+   "tag": "link-icon-512x512"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/klinik-pintar/03-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/klinik-pintar/h00-header.png",
+   "tag": "header-150x36"
+  }
+ ],
+ "errors": []
+}

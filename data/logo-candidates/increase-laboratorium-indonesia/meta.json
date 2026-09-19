@@ -1,0 +1,73 @@
+{
+ "id": "increase-laboratorium-indonesia",
+ "name": "INCREASE Laboratorium Indonesia",
+ "url": "https://www.increase-id.com",
+ "candidates": [
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 112.8,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/01-site-apple-touch-icon-152x152.png",
+   "tag": "apple-touch-icon-152x152"
+  },
+  {
+   "pri": 111.60000000000001,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/02-site-apple-touch-icon-144x144.png",
+   "tag": "apple-touch-icon-144x144"
+  },
+  {
+   "pri": 108.0,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/03-site-apple-touch-icon-120x120.png",
+   "tag": "apple-touch-icon-120x120"
+  },
+  {
+   "pri": 107.10000000000001,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/04-site-apple-touch-icon-114x114.png",
+   "tag": "apple-touch-icon-114x114"
+  },
+  {
+   "pri": 101.39999999999999,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/05-site-apple-touch-icon-76x76.png",
+   "tag": "apple-touch-icon-76x76"
+  },
+  {
+   "pri": 100.8,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/06-site-apple-touch-icon-72x72.png",
+   "tag": "apple-touch-icon-72x72"
+  },
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/07-site-apple-touch-icon-60x60.png",
+   "tag": "apple-touch-icon-60x60"
+  },
+  {
+   "pri": 98.55,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/08-site-apple-touch-icon-57x57.png",
+   "tag": "apple-touch-icon-57x57"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/09-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 74.39999999999999,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/10-site-link-icon-96x96.png",
+   "tag": "link-icon-96x96"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/11-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/increase-laboratorium-indonesia/h00-header.png",
+   "tag": "header-128x44"
+  }
+ ],
+ "errors": []
+}

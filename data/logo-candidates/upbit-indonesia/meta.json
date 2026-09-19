@@ -1,0 +1,42 @@
+{
+ "id": "upbit-indonesia",
+ "name": "Upbit Indonesia",
+ "url": "https://id.upbit.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/upbit-indonesia/s02-play.png",
+   "tag": "play:com.stockbit.android",
+   "src": "https://play-lh.googleusercontent.com/TnoaayawHnR_JX3Cjy1_NT3JymxZ-StMejuj7cIzJz8wrBEiaC1TjxAhHqdyGC019btTaL9lPplojPd9G24_uxs=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/upbit-indonesia/s03-play.png",
+   "tag": "play:ajaib.co.id",
+   "src": "https://play-lh.googleusercontent.com/-Y5UZWzRIfgGd2UMcus-irKLEumjxK-8mnFToHLctiHxbAp2PXmAGUO4d6VUb5l_DkRXBE4QpJPgEKlyto8s=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/upbit-indonesia/s00-appstore.png",
+   "tag": "appstore:CNN Indonesia - Latest News",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/87/a9/7d87a92b-200d-b5c3-dd65-a1efcb9bc17b/AppIcon-0-0-1x_U007emarketing-0-5-0-0-512MB-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/upbit-indonesia/s01-appstore.png",
+   "tag": "appstore:Vidio: Sports, Movies, Series",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/60/9b/e3/609be3ee-230c-2dd4-76e6-17fb3130eb79/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 72.8,
+   "path": "data/logo-candidates/upbit-indonesia/00-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/upbit-indonesia/h00-header.png",
+   "tag": "header-80x18"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,33 @@
+{
+ "id": "arkopay",
+ "name": "ArkoPay",
+ "url": "https://arkopay.com",
+ "candidates": [
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/arkopay/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/arkopay/01-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/arkopay/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/arkopay/03-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/arkopay/h00-header.png",
+   "tag": "header-162x38"
+  }
+ ],
+ "errors": []
+}

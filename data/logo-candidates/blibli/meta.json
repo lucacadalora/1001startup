@@ -1,0 +1,59 @@
+{
+ "id": "blibli",
+ "name": "Blibli",
+ "url": "https://www.blibli.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/blibli/s00-appstore.png",
+   "tag": "appstore:Blibli Seller Center",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/5a/31/c1/5a31c130-8873-9f4f-99ee-bc7fa5bca0b1/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/blibli/s01-appstore.png",
+   "tag": "appstore:Blibli",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/10/7b/73/107b7349-5659-54d4-d9ca-b6694a6bc36d/AppIcon-0-0-1x_U007epad-0-1-0-sRGB-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/blibli/s02-play.png",
+   "tag": "play:blibli.mobile.commerce",
+   "src": "https://play-lh.googleusercontent.com/8ryYNDEbALIaVbDxPF7S9Ek2tbHYoyYnnZskXfAsKPUN10XYx68nBOPL0gA8pWzzBf8l2rH5eBiTxjukUzaIEw=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/blibli/s03-play.png",
+   "tag": "play:com.gdn.blibli.mta",
+   "src": "https://play-lh.googleusercontent.com/xurDWCQLxOZ4iSfOO0sfH0Vs1dugh_RI8tUbEFtkt83hWQx9_gcdbCNq1seLw1_jBz6E9DWlr-38Ij_hHV_ozBs=s512"
+  },
+  {
+   "pri": 81.60000000000001,
+   "path": "data/logo-candidates/blibli/00-site-link-icon-144x144.png",
+   "tag": "link-icon-144x144"
+  },
+  {
+   "pri": 69.0,
+   "path": "data/logo-candidates/blibli/01-site-link-icon-60x60.png",
+   "tag": "link-icon-60x60"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/blibli/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/blibli/03-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/blibli/04-site-guess-favicon-16x16.png",
+   "tag": "guess-favicon-16x16"
+  }
+ ],
+ "errors": [
+  "ERR Error: Page.evaluate: Execution context was destroyed, most likely because of"
+ ]
+}

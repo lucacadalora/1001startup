@@ -1,0 +1,46 @@
+{
+ "id": "etana-biotechnologies",
+ "name": "Etana Biotechnologies",
+ "url": "https://www.id.etanabiotech.com",
+ "candidates": [
+  {
+   "pri": 500,
+   "path": "data/logo-candidates/etana-biotechnologies/x00-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/etana-biotechnologies/s01-play.png",
+   "tag": "play:com.rsna.androidapp.biotechpet",
+   "src": "https://play-lh.googleusercontent.com/y3u9mDIwoLh5titFMF0UizBLgAAJWWYywPvhwHBumi6JejfdJ62Z-d1qZA1Hmw0d9pP-h3PaSY98sfD-Vc5HxKo=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/etana-biotechnologies/s02-play.png",
+   "tag": "play:com.privygate.privyid",
+   "src": "https://play-lh.googleusercontent.com/16cLnN5ULghEN_tX8omC5Jsn8hfUdSUtUJaDfTf8hDX2Qqz9t4Z51X7KlVxZlZ-eGWOMK16l7QBFGPH_FUlSHQ=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/etana-biotechnologies/s00-appstore.png",
+   "tag": "appstore:bioRSVP",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/99/a6/e7/99a6e743-6e42-2266-9408-a3ca9f8c6023/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 60.8,
+   "path": "data/logo-candidates/etana-biotechnologies/00-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/etana-biotechnologies/01-site-guess-favicon-16x16.png",
+   "tag": "guess-favicon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/etana-biotechnologies/h00-header.png",
+   "tag": "header-125x35"
+  }
+ ],
+ "errors": []
+}

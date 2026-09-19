@@ -1,0 +1,55 @@
+{
+ "id": "asa-ren",
+ "name": "Asa Ren",
+ "url": "https://asaren.ai",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/asa-ren/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/asa-ren/s00-appstore.png",
+   "tag": "appstore:AsaX",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/98/46/e0/9846e05a-89c8-63f4-37c8-c8de17743d4e/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/asa-ren/s01-play.png",
+   "tag": "play:ai.asaren.mobile",
+   "src": "https://play-lh.googleusercontent.com/5kXmxDIspD9VMxklN63j5ienlg966lM0S0zQKR3gDR4eomu1ji21GU5HhKkdbNzXo5ziR4JDZGbXd4GCfuqQ1A=s512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/asa-ren/01-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/asa-ren/02-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 74.39999999999999,
+   "path": "data/logo-candidates/asa-ren/03-site-link-icon-96x96.png",
+   "tag": "link-icon-96x96"
+  },
+  {
+   "pri": 67.2,
+   "path": "data/logo-candidates/asa-ren/04-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/asa-ren/05-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/asa-ren/h00-header.png",
+   "tag": "header-66x38"
+  }
+ ],
+ "errors": []
+}

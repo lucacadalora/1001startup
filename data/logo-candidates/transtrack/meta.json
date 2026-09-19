@@ -1,0 +1,47 @@
+{
+ "id": "transtrack",
+ "name": "TransTRACK",
+ "url": "https://transtrack.co",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/transtrack/s00-appstore.png",
+   "tag": "appstore:TRANSTRACK",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d9/da/38/d9da382c-6729-7340-7478-ab16f8d1949a/AppIcon_CSCECHK-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/transtrack/s01-appstore.png",
+   "tag": "appstore:TranstrackEDMS",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/4d/bc/90/4dbc9074-2ec7-165d-82b8-dc817e5dc124/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/transtrack/s02-play.png",
+   "tag": "play:id.transtrack.web.android",
+   "src": "https://play-lh.googleusercontent.com/T1DNFdbBbJHlbQKQRaVwcPPdImuKr9erCi8nxJUqh7IxrZjh4V_qMVBuxgK3wx__zJnk6uWBpjYOpIAzlng4-Dw=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/transtrack/s03-play.png",
+   "tag": "play:com.zankgrp.transtrack",
+   "src": "https://play-lh.googleusercontent.com/AJhaZefyX3WJBxT1wdqbttO8uZkfLuIlvLsdJjferr_6PPg6mjHP5qFt_9DN9MWl0xJwBXxTbTYOr3YdvQKY=s512"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/transtrack/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/transtrack/01-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/transtrack/h00-header.png",
+   "tag": "header-192x48"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,20 @@
+{
+ "id": "kredivo",
+ "name": "Kredivo",
+ "url": "https://kredivo.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/kredivo/s00-appstore.png",
+   "tag": "appstore:Kredivo - Paylater & Loans",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c2/ee/15/c2ee1537-c8a5-8668-6121-eff11af89b50/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/kredivo/s01-play.png",
+   "tag": "play:id.kredivo.mitra",
+   "src": "https://play-lh.googleusercontent.com/6BxzTnAILIEp_mdVZocssbltBzFBMiEI7txjaiW6Rz4hvJMGf60a65oposhHcoPgWGTYqK8gMzQzVsl--0dO7g=s512"
+  }
+ ],
+ "errors": []
+}

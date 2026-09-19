@@ -1,0 +1,51 @@
+{
+ "id": "lister",
+ "name": "Lister",
+ "url": "https://lister.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/lister/s00-appstore.png",
+   "tag": "appstore:Lister: To Do List & Planner",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/17/53/c9175341-e6c2-625f-dfcb-f518bcc9c956/AppIcon26-0-0-1x_U007epad-0-0-0-1-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/lister/s01-play.png",
+   "tag": "play:com.silverspectresoftware.mrlister",
+   "src": "https://play-lh.googleusercontent.com/LE2UHwP71d8s0sGaynHUwtMmkBw-4XOFAfdJZ53lDfrERpyHF_ySDXMAZhK2oNDxSx85sXF6i3SMIzCLnEI3Vg=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/lister/s02-play.png",
+   "tag": "play:com.justapplications.adlister",
+   "src": "https://play-lh.googleusercontent.com/TPrw9uuzYUuLKMYsZ6egjtdWC7p1bP-_MjwIXNg9HilR5LxbAafJd7QbpqXjlQgdGn11tTHf9z1-X2CTXNZ6=s512"
+  },
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/lister/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/lister/01-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/lister/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/lister/h00-header.png",
+   "tag": "header-189x56"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/lister/h01-header.png",
+   "tag": "header-100x40"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,26 @@
+{
+ "id": "lamudi-indonesia",
+ "name": "Lamudi Indonesia",
+ "url": "https://www.lamudi.co.id",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/lamudi-indonesia/s01-play.png",
+   "tag": "play:com.lamudi.pro",
+   "src": "https://play-lh.googleusercontent.com/FHxd3SfkQLqmRMqqFcR4DVHs8VPOsOdCgJagk7EnUZbaq5IQt1t3A5xBIyKxMTq9S-sLLONNHQLSmQRiXqtv=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/lamudi-indonesia/s02-play.png",
+   "tag": "play:com.lamudi.property",
+   "src": "https://play-lh.googleusercontent.com/BGjQSQ5DvZUea2Nl_Zmli4qKM12DCwcg9jCfjPVI2pYkD56ZCJssixx6abNkyVRjNi-Lwgov7yayrWu3ZJhnqg=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/lamudi-indonesia/s00-appstore.png",
+   "tag": "appstore:Lamudi Pro",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/f1/df/04/f1df04b6-eab5-2ea3-67ab-292579813a67/AppIcon-lamudi-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  }
+ ],
+ "errors": []
+}

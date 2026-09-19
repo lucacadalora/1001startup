@@ -1,0 +1,20 @@
+{
+ "id": "andalin",
+ "name": "Andalin",
+ "url": "https://andalin.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/andalin/s00-play.png",
+   "tag": "play:com.andalinaja",
+   "src": "https://play-lh.googleusercontent.com/Fg1OQKxkNyQW4958RXHkh6r486102cHMrnZPHy8F9OynUFg6pSrFWL3vgHvUfdD7kTbf5SfMW4bE67xj92LVztw=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/andalin/s01-play.png",
+   "tag": "play:com.andalinaja.mitra",
+   "src": "https://play-lh.googleusercontent.com/vHWXhYF3v0iWEvjLgoF2zR3P5evM6Oum7soObnSqYChJRPg4WtlY3ZQWHJO1QKYdireh7G998Q1Kt0_IOSl0vw=s512"
+  }
+ ],
+ "errors": []
+}

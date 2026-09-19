@@ -1,0 +1,29 @@
+{
+ "id": "lalamove-indonesia",
+ "name": "Lalamove Indonesia (Lalatech)",
+ "url": "https://www.lalamove.com/en-id",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/lalamove-indonesia/s00-play.png",
+   "tag": "play:com.lalamove.global.driver.sea",
+   "src": "https://play-lh.googleusercontent.com/Y0a42VEc9FintrEpytcnwzjXXwFF9wiJvppq0h9RzNMDZ9_Lg1jiTPhDbi-wLJWxOMS_tOr1DSo5EKLTj032kOY=s512"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/lalamove-indonesia/00-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/lalamove-indonesia/01-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/lalamove-indonesia/h00-header.png",
+   "tag": "header-200x56"
+  }
+ ],
+ "errors": []
+}

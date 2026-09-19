@@ -1,0 +1,30 @@
+{
+ "id": "easycash",
+ "name": "Easycash",
+ "url": "https://easycash.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/easycash/s00-appstore.png",
+   "tag": "appstore:Easycash - Pinjam uang online",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/23/d1/a5/23d1a58d-f233-b7f6-a933-99fa50a76e98/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/easycash/s01-play.png",
+   "tag": "play:com.fintopia.idnEasycash.google",
+   "src": "https://play-lh.googleusercontent.com/KB4yehZwU4qbsXwS1mZ7r70tERNglqRlzoRx_KBtY-w2iXpVXnVOq1_qli8r7WRhR9yQgctph8U6MDurlQG4BA=s512"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/easycash/00-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/easycash/h00-header.png",
+   "tag": "header-248x30"
+  }
+ ],
+ "errors": []
+}

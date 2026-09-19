@@ -1,0 +1,45 @@
+{
+ "id": "sun-energy",
+ "name": "SUN Energy",
+ "url": "https://sunenergy.id",
+ "candidates": [
+  {
+   "pri": 500,
+   "path": "data/logo-candidates/sun-energy/x00-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/sun-energy/s00-appstore.png",
+   "tag": "appstore:SunEnergyXT",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/58/4b/05/584b059f-e357-440f-cb19-fcddba430ccf/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/sun-energy/s01-appstore.png",
+   "tag": "appstore:Emerald Sun Energy",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/a6/97/81/a69781e5-7b46-ead8-0cda-890c3a47b746/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/sun-energy/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/sun-energy/01-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/sun-energy/h00-header.png",
+   "tag": "header-175x40"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/sun-energy/h01-header.png",
+   "tag": "header-44x44"
+  }
+ ],
+ "errors": []
+}

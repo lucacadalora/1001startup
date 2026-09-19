@@ -1,0 +1,16 @@
+node_modules/
+.env
+.env.*
+*.bak
+*.bak-*
+*.bak.*
+*.dki-backup
+backups/
+data/backups/
+data/links-cache/
+data/leads/
+data/pasar.db
+data/pasar.db-*
+data/census-news-state.json
+ctest.js
+sheet.png

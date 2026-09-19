@@ -1,0 +1,33 @@
+{
+ "id": "sekilo",
+ "name": "Sekilo",
+ "url": "https://sekilo.com",
+ "candidates": [
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/sekilo/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/sekilo/01-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/sekilo/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/sekilo/h00-header.png",
+   "tag": "header-190x53"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/sekilo/h01-header.png",
+   "tag": "header-50x33"
+  }
+ ],
+ "errors": []
+}

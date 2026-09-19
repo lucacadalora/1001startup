@@ -1,0 +1,57 @@
+{
+ "id": "pahamify",
+ "name": "Pahamify",
+ "url": "https://pahamify.com",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/pahamify/m01-manual.png",
+   "tag": "manual",
+   "src": "https://pahamify.com/wp-content/uploads/2020/11/pahamify-white-logo.svg"
+  },
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/pahamify/m01-manual.png",
+   "tag": "manual",
+   "src": "https://pahamify.com/wp-content/uploads/2020/11/pahamify-white-logo.svg"
+  },
+  {
+   "pri": 499,
+   "path": "data/logo-candidates/pahamify/x01-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 500,
+   "path": "data/logo-candidates/pahamify/x00-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/pahamify/s00-appstore.png",
+   "tag": "appstore:Pahamify: Bimbel UTBK SNBT TKA",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ad/85/cd/ad85cd9f-848a-1b8d-461f-b00de1be7b08/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/pahamify/s01-play.png",
+   "tag": "play:com.pahamify.android",
+   "src": "https://play-lh.googleusercontent.com/8kZ_vaKfr2L_8PuLJGpF8owgOarMdpgZeBkSKMwloDvfnLYeVltG4NzQP_1TU-P2dgYQYe4tV0yTpLuCddxt=s512"
+  },
+  {
+   "pri": 64.45,
+   "path": "data/logo-candidates/pahamify/00-site-link-icon-25x25.png",
+   "tag": "link-icon-25x25"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/pahamify/h00-header.png",
+   "tag": "header-108x44"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/pahamify/h01-header.png",
+   "tag": "header-108x44"
+  }
+ ],
+ "errors": []
+}

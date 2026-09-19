@@ -1,0 +1,22 @@
+{
+ "id": "advotics",
+ "name": "Advotics",
+ "url": "https://www.advotics.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/advotics/s00-play.png",
+   "tag": "play:com.advotics.advowork",
+   "src": "https://play-lh.googleusercontent.com/-yVrRw8GK6CAzH-elX4ITmb0Yf1J_xY83bkIgl27fu-HBhUFgIaK1MXon1ST0lxkuXiW2vlFnQgOCprxfv9Wig=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/advotics/s01-play.png",
+   "tag": "play:com.advotics.distri",
+   "src": "https://play-lh.googleusercontent.com/pp170-4B2QdWfUXjS51vnia5xlk_gAf_ZjCK6GMm2hQwoLv2cv8WFZ7AcQ5HluCqy71vjzIn82NxkKqQ91FVtw=s512"
+  }
+ ],
+ "errors": [
+  "ERR TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"http"
+ ]
+}

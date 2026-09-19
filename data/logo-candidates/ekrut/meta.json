@@ -1,0 +1,36 @@
+{
+ "id": "ekrut",
+ "name": "EKRUT",
+ "url": "https://www.ekrut.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/ekrut/s00-appstore.png",
+   "tag": "appstore:Ekrutes for Education",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple126/v4/4f/4e/6e/4f4e6ee6-56a6-6fbd-042d-ed87723a6288/AppIcon-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/ekrut/s01-play.png",
+   "tag": "play:com.csdev.ekrutes",
+   "src": "https://play-lh.googleusercontent.com/w7GT1Tst6_faN36r3HRzC5VU0JlEw7eBLNC8qn6HeQk0_G11nHJjhZ84qVEe9lJTgJKxLERmEYHUe22xMk88iA=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/ekrut/s02-play.png",
+   "tag": "play:com.csdev.ekrutes.siswa",
+   "src": "https://play-lh.googleusercontent.com/D8anLipykgNfAquHV5jYasL5F1ukB8Cp6MrWT1RE_Umxo9Q0HzjvUrn1L0kwUya0uYQZh2LjU1MnUPB4FPofRA=s512"
+  },
+  {
+   "pri": 60.8,
+   "path": "data/logo-candidates/ekrut/00-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/ekrut/h00-header.png",
+   "tag": "header-170x25"
+  }
+ ],
+ "errors": []
+}

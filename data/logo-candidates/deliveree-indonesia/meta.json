@@ -1,0 +1,87 @@
+{
+ "id": "deliveree-indonesia",
+ "name": "Deliveree Indonesia",
+ "url": "https://www.deliveree.com/id",
+ "candidates": [
+  {
+   "pri": 166.79999999999998,
+   "path": "data/logo-candidates/deliveree-indonesia/00-site-apple-touch-icon-512x512.png",
+   "tag": "apple-touch-icon-512x512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/deliveree-indonesia/s02-play.png",
+   "tag": "play:com.deliveree.user",
+   "src": "https://play-lh.googleusercontent.com/_4gM_emp64v7hDKU9L8An4gg4I_4fNKuSgntVM_FOGZlgMrKXL8JsBl6MMtxGn5rw9LKQKsv9JGlUIBhxA7T=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/deliveree-indonesia/s03-play.png",
+   "tag": "play:com.deliveree.driver",
+   "src": "https://play-lh.googleusercontent.com/-nh4M16WoIOWSpX_l3FScSAIMZvhuNChhvPUBVFG_ZYyT8V6iP9ilxyB_2X6tKOJgxvV7JL2NuuDhivf0Xpowg=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/deliveree-indonesia/s00-appstore.png",
+   "tag": "appstore:Delivery, Cargo & Freight",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/38/87/b6/3887b63f-df68-bf8d-a7a1-e072cadb0047/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/deliveree-indonesia/s01-appstore.png",
+   "tag": "appstore:Deliveree Driver",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple128/v4/95/6b/a0/956ba071-b838-7c9d-0e77-105834d88e37/AppIcon-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-1.png/512x512bb.png"
+  },
+  {
+   "pri": 147.6,
+   "path": "data/logo-candidates/deliveree-indonesia/01-site-apple-touch-icon-384x384.png",
+   "tag": "apple-touch-icon-384x384"
+  },
+  {
+   "pri": 118.8,
+   "path": "data/logo-candidates/deliveree-indonesia/02-site-apple-touch-icon-192x192.png",
+   "tag": "apple-touch-icon-192x192"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/deliveree-indonesia/03-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 112.8,
+   "path": "data/logo-candidates/deliveree-indonesia/04-site-apple-touch-icon-152x152.png",
+   "tag": "apple-touch-icon-152x152"
+  },
+  {
+   "pri": 111.60000000000001,
+   "path": "data/logo-candidates/deliveree-indonesia/05-site-apple-touch-icon-144x144.png",
+   "tag": "apple-touch-icon-144x144"
+  },
+  {
+   "pri": 109.2,
+   "path": "data/logo-candidates/deliveree-indonesia/06-site-apple-touch-icon-128x128.png",
+   "tag": "apple-touch-icon-128x128"
+  },
+  {
+   "pri": 108.0,
+   "path": "data/logo-candidates/deliveree-indonesia/07-site-apple-touch-icon-120x120.png",
+   "tag": "apple-touch-icon-120x120"
+  },
+  {
+   "pri": 82.4,
+   "path": "data/logo-candidates/deliveree-indonesia/08-site-link-icon-384x384.png",
+   "tag": "link-icon-384x384"
+  },
+  {
+   "pri": 79.2,
+   "path": "data/logo-candidates/deliveree-indonesia/09-site-link-icon-384x384.png",
+   "tag": "link-icon-384x384"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/deliveree-indonesia/h00-header.png",
+   "tag": "header-194x40"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,9 @@
+{
+ "id": "qlue",
+ "name": "Qlue",
+ "url": "https://qlue.co.id",
+ "candidates": [],
+ "errors": [
+  "ERR TimeoutError: Page.goto: Timeout 45000ms exceeded.\nCall log:\n  - navigating to \"http"
+ ]
+}

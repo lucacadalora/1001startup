@@ -1,0 +1,33 @@
+{
+ "id": "peentar",
+ "name": "Peentar",
+ "url": "https://teknologipeentar.com",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/peentar/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 109.60000000000001,
+   "path": "data/logo-candidates/peentar/01-site-manifest-64x64.png",
+   "tag": "manifest-64x64"
+  },
+  {
+   "pri": 99.6,
+   "path": "data/logo-candidates/peentar/02-site-apple-touch-icon-192x192.png",
+   "tag": "apple-touch-icon-192x192"
+  },
+  {
+   "pri": 65.0,
+   "path": "data/logo-candidates/peentar/03-site-link-icon-100x100.png",
+   "tag": "link-icon-100x100"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/peentar/h00-header.png",
+   "tag": "header-151x36"
+  }
+ ],
+ "errors": []
+}

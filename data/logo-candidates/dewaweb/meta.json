@@ -1,0 +1,13 @@
+{
+ "id": "dewaweb",
+ "name": "Dewaweb",
+ "url": "https://www.dewaweb.com",
+ "candidates": [
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/dewaweb/00-site-guess-favicon-16x16.png",
+   "tag": "guess-favicon-16x16"
+  }
+ ],
+ "errors": []
+}

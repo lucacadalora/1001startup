@@ -1,0 +1,40 @@
+{
+ "id": "assetfindr",
+ "name": "AssetFindr",
+ "url": "https://assetfindr.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/assetfindr/s00-play.png",
+   "tag": "play:com.assetfindr.app.home",
+   "src": "https://play-lh.googleusercontent.com/irqT8NjWrsYhIpodZl7zHHw59UL7ec7jFh_dldw_51Tml1qnavRcyEif3sr-f0khZkbC--5nPZPcjj3IrnCVDu0=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/assetfindr/s01-play.png",
+   "tag": "play:com.assetfindr.app",
+   "src": "https://play-lh.googleusercontent.com/h2Bl9G42i9Y-0-BHdSH-FqmIb1xhb7Zm1RombpseTFzNqzJIYWwitGdE2JTN0i9AbNwIQ8k2mfSb_iWeNvSP=s512"
+  },
+  {
+   "pri": 65.0,
+   "path": "data/logo-candidates/assetfindr/00-site-link-icon-100x100.png",
+   "tag": "link-icon-100x100"
+  },
+  {
+   "pri": 41.4,
+   "path": "data/logo-candidates/assetfindr/01-site-guess-logo512-128x128.png",
+   "tag": "guess-logo512-128x128"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/assetfindr/h00-header.png",
+   "tag": "header-90x40"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/assetfindr/h01-header.png",
+   "tag": "header-79x28"
+  }
+ ],
+ "errors": []
+}

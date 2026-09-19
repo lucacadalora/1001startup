@@ -1,0 +1,22 @@
+{
+ "generated": "2026-08-31T07:57:46+00:00",
+ "source": "Higgsfield recraft_v4_1 matched set + image_background_remover, Aug 31 2026 + gpt_image_2 style-matched addition (stone, Aug 31 2026)",
+ "sprites": {
+  "Coffee & Tea": "/assets/sprites-umkm/coffee-tea.png",
+  "Spices": "/assets/sprites-umkm/spices.png",
+  "Fisheries & Seaweed": "/assets/sprites-umkm/fisheries-seaweed.png",
+  "Coconut & Charcoal": "/assets/sprites-umkm/coconut-charcoal.png",
+  "Furniture": "/assets/sprites-umkm/furniture.png",
+  "Home Decor": "/assets/sprites-umkm/home-decor.png",
+  "Handicraft": "/assets/sprites-umkm/handicraft.png",
+  "Textiles & Fashion": "/assets/sprites-umkm/textiles-fashion.png",
+  "Footwear": "/assets/sprites-umkm/footwear.png",
+  "Leather Goods": "/assets/sprites-umkm/leather-goods.png",
+  "Jewelry": "/assets/sprites-umkm/jewelry.png",
+  "Cosmetics & Essential Oils": "/assets/sprites-umkm/cosmetics-oils.png",
+  "Agriculture": "/assets/sprites-umkm/agriculture.png",
+  "Food & Beverage": "/assets/sprites-umkm/fnb.png",
+  "Automotive & Industrial": "/assets/sprites-umkm/automotive-industrial.png",
+  "Stone & Building Materials": "/assets/sprites-umkm/stone-building.png"
+ }
+}

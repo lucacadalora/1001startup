@@ -1,0 +1,248 @@
+{
+ "init-6": {
+  "name": "Init-6",
+  "type": "Early-stage venture capital",
+  "site": "https://init-6.fund",
+  "hq": "Jakarta",
+  "founded": 2020,
+  "founders": [
+   "Achmad Zaky",
+   "Nugroho Herucahyono (Xinuc)"
+  ],
+  "about": "The fund of Bukalapak's two co-founders, investing pre-seed and seed in Indonesian startups since 2020 — with occasional consumer-brand and overseas bets. Arif Medianto is Managing Partner and Rexi Christopher Venture Partner. Its census portfolio was verified company by company on 30 Aug 2026 from the fund's own portfolio page, its news archive and its LinkedIn.",
+  "sources": [
+   "https://init-6.fund/team",
+   "https://init-6.fund/portfolio",
+   "https://www.dealstreetasia.com/stories/bukalapak-zaky-herucahyono-init-6-186481"
+  ],
+  "outside_asof": "30 Aug 2026",
+  "outside": [
+   {
+    "name": "Schoters",
+    "url": "https://www.schoters.com",
+    "status": "Exited — acquired by Ruangguru, Jul 2022",
+    "why": "Init-6's own portfolio marks it Exited. Schoters still runs its own PT Partner Impian Milenial, but it is a wholly-owned Ruangguru subsidiary and a row would double-count Ruangguru's workforce — the same rule that keeps TikTok Shop Indonesia inside the PT Tokopedia row."
+   },
+   {
+    "name": "Showwcase",
+    "status": "US company",
+    "why": "A United States developer-network startup (Init-6's Jan-2022 announcement says so itself). Not an Indonesian company, whatever its expansion plans were."
+   },
+   {
+    "name": "DIN (Dbank)",
+    "status": "Pakistan operation, site dead",
+    "why": "Din Global Pte Ltd — a Singapore holdco operating in Pakistan (the Dbank digital-bank licence bid, then DCore, then Waseela). US$17.6M seed co-led by Sequoia SEA and Kleiner Perkins. Categorically out of region, and din.global no longer resolves."
+   },
+   {
+    "name": "Aigis",
+    "status": "Defunct / pivoted",
+    "why": "YC W22 corporate-wellness startup (PT Maju Finansial Digital; US$1M from Y Combinator and Init-6, May 2022). By Aug 2026 its site answers HTTP 525, its LinkedIn company page is gone, and trade press reported a pivot — no operating entity to count."
+   },
+   {
+    "name": "One% Nutrition",
+    "url": "https://www.onepercentnutrition.id",
+    "status": "Operating — no traceable legal entity yet",
+    "why": "Protein-water brand, ~9 staff, Jakarta and Bali operations, two pre-seed rounds (Init-6 May 2025; Ondine Capital-led early 2026, six-digit USD, both undisclosed). LinkedIn self-declares HQ Singapore and no SG or ID registration is traceable under the brand — it enters the census when an entity surfaces."
+   },
+   {
+    "name": "Bioma",
+    "status": "Operating status unclear",
+    "why": "Product-as-a-service rentals (PT Bioma Bersama Indonesia; pre-seed co-led East Ventures and Init-6, Oct 2022). By Aug 2026: 7 people on LinkedIn, both domains unreachable, no press since 2022. Queued — one verified operating signal short of a row."
+   }
+  ]
+ },
+ "gdp-venture": {
+  "name": "GDP Venture",
+  "type": "Corporate venture builder (Djarum Group)",
+  "site": "https://gdpventure.com",
+  "hq": "Wisma 77 Tower 2 Lt. 8, Jl. Letjen S. Parman Kav. 77, Slipi, Jakarta Barat",
+  "founded": 2010,
+  "founders": [
+   "Martin Hartono"
+  ],
+  "about": "The Djarum Group’s digital venture builder, founded in 2010 by Martin Hartono; On Lee is CTO, Danny Wirianto CBO, Benny Sudrata CFO, with Antonny Liem and Kusumo Martanto as founding partners. It builds and buys as much as it invests: Blibli, tiket.com, Kaskus and Garasi.id are group builds, Kumparan and IDN arrived as media investments, the Cermati group came in at its 2018 Series B, and a product arm (GDP Labs) incubates SaaS like CATAPA. Its published portfolio — 48 names on the page, read 30 Aug 2026 — also carries a substantial US entertainment book (88rising, Triller, Now United, Aptera) that sits outside an Indonesian census by definition. Kaskus and Prosa.ai carry GDP Venture on their census rows from earlier evidence despite being absent from the current page.",
+  "sources": [
+   "https://gdpventure.com/portfolio",
+   "https://gdpventure.com/about",
+   "https://katadata.co.id/ekonopedia/profil/63621b454e4d0/mengenal-gdp-venture-modal-ventura-grup-djarum-di-balik-blibli",
+   "https://id.wikipedia.org/wiki/Global_Digital_Prima"
+  ],
+  "outside_asof": "30 Aug 2026",
+  "outside": [
+   {
+    "name": "Duniaku",
+    "url": "https://duniaku.idntimes.com",
+    "status": "Unit of IDN",
+    "why": "Gaming-media brand run inside IDN (PT Media Putra Nusantara); the census’s IDN row already counts its people and output — a separate row would double-count."
+   },
+   {
+    "name": "ggwp",
+    "url": "https://ggwp.id",
+    "status": "Unit of IDN",
+    "why": "Esports/gaming community brand inside IDN; contained in the census’s IDN row."
+   },
+   {
+    "name": "IDN Pictures",
+    "url": "https://www.idn.media",
+    "status": "Unit of IDN",
+    "why": "IDN’s film arm; contained in the census’s IDN row."
+   },
+   {
+    "name": "Popbela",
+    "url": "https://www.popbela.com",
+    "status": "Unit of IDN",
+    "why": "Women’s media brand inside IDN; contained in the census’s IDN row."
+   },
+   {
+    "name": "Popmama",
+    "url": "https://www.popmama.com",
+    "status": "Unit of IDN",
+    "why": "Parenting-media brand inside IDN; contained in the census’s IDN row."
+   },
+   {
+    "name": "Yummy",
+    "url": "https://www.yummy.co.id",
+    "status": "Unit of IDN",
+    "why": "Food-media brand inside IDN (not Yummy Corp, the cloud-kitchen company); contained in the census’s IDN row."
+   },
+   {
+    "name": "Indonesia Creators Economy (ICE)",
+    "url": "https://www.ice.id",
+    "status": "Unit of IDN",
+    "why": "IDN’s creator-economy arm; contained in the census’s IDN row."
+   },
+   {
+    "name": "GLAIR",
+    "url": "https://glair.ai",
+    "status": "Operating — GDP Labs AI arm",
+    "why": "No dedicated entity: GDP Labs’ AI research team grown into a brand (KrAsia interview with its founder); its site footer sits at PT Darta Media Indonesia’s registered address and no PT GLAIR exists in the registry. A product line inside another PT does not get a row — the Jenius rule."
+   },
+   {
+    "name": "MXA (MediaXAsia)",
+    "url": "https://www.mxa.id",
+    "status": "Operating — Merah Cipta Media unit",
+    "why": "Ad-buying unit inside PT Merah Cipta Media: its GM sits on MCM’s payroll, its LinkedIn HQ is MCM’s own Wisma 77 floor, no dedicated PT was found, and the fund page’s own link to it now 404s."
+   },
+   {
+    "name": "Bolalob",
+    "url": "https://bolalob.com",
+    "status": "Folded into kumparan (May 2026)",
+    "why": "A sports-media brand, never its own PT — ran inside Kaskus (bolalob.com still serves PT Darta Media Indonesia’s *.kaskus.co.id certificate) and was integrated into the kumparan ecosystem on 29 May 2026; the brand lives on Instagram (~1.2M followers)."
+   },
+   {
+    "name": "Springboard",
+    "url": "https://springboard.id",
+    "status": "Queued — entity unverifiable",
+    "why": "Real and recently active (ran the 2025 Scooter Prix series at Sentul on TVRI, produced 88rising’s Head In The Clouds Jakarta; founder David Wayne Ika) but no PT name is traceable and springboard.id has no DNS today; queued until the entity or the site surfaces."
+   },
+   {
+    "name": "12WIRED",
+    "url": "https://www.12wired.com",
+    "status": "Queued — entity unverifiable",
+    "why": "Operating Jakarta music company (10 people on a live LinkedIn read, 30 Aug 2026; CEO Nadia Yustina, ex-Sony Music) in the Merah Cipta Media stable, addressed in GDP’s own Wisma 77 building — but no PT name is traceable today; queued until the entity surfaces."
+   },
+   {
+    "name": "ProPS",
+    "url": "https://props.id",
+    "status": "Queued — site down today",
+    "why": "PT Promedia Punggawa Satu (reg. 728556, BSD City; 2017 KASKUS strategic investment, press names GDP Venture) — but props.id timed out from two independent networks on 30 Aug 2026 and nothing newer than its 8 May 2026 LinkedIn post is verifiable. Flips to a row when the site or fresher activity returns."
+   },
+   {
+    "name": "TuringSense",
+    "url": "https://www.turingsense.com",
+    "status": "Unclear — likely dormant",
+    "why": "US wearables maker (Campbell, CA) with a former Jakarta R&D arm; site still up but no product or news activity found since ~2021. Foreign HQ and no live Indonesian operation to count."
+   },
+   {
+    "name": "Alto",
+    "url": "https://alto.com",
+    "status": "Operating — US",
+    "why": "US digital pharmacy (San Francisco; acquired by Paulus Holdings 2025, now under Fuze Health) — not an Indonesian company."
+   },
+   {
+    "name": "Yumi",
+    "url": "https://helloyumi.com",
+    "status": "Operating — US",
+    "why": "US organic baby-nutrition brand (Los Angeles) — not an Indonesian company."
+   },
+   {
+    "name": "88rising",
+    "url": "https://88rising.com",
+    "status": "Operating — US",
+    "why": "US music label and media company for Asian and Asian-American artists (Los Angeles) — not an Indonesian company."
+   },
+   {
+    "name": "EST Media (Eastern Standard Times)",
+    "url": "https://www.easternstandardtimes.com",
+    "status": "Operating — US",
+    "why": "Pan-Asian Gen-Z media group (West Hollywood; EST Media Holding Inc.) — not an Indonesian company."
+   },
+   {
+    "name": "NEX",
+    "url": "https://www.nex.inc",
+    "status": "Operating — US",
+    "why": "Nex Team Inc. (San Jose), maker of HomeCourt and the Nex Playground motion-gaming console — not an Indonesian company."
+   },
+   {
+    "name": "Now United",
+    "url": "https://www.nowunited.com",
+    "status": "Operating — global (XIX Entertainment)",
+    "why": "Simon Fuller’s global rotating-member pop group (Los Angeles; roster includes an Indonesian member) — an entertainment IP, not an Indonesian company."
+   },
+   {
+    "name": "Stampede Ventures",
+    "url": "https://stampedeventures.com",
+    "status": "Operating — US",
+    "why": "Hollywood film/TV production company founded by ex-Warner Bros. president Greg Silverman — not an Indonesian company."
+   },
+   {
+    "name": "Triller",
+    "url": "https://triller.co",
+    "status": "Operating — US (NASDAQ: ILLR)",
+    "why": "US short-video/creator platform, now Triller Group Inc. — not an Indonesian company."
+   },
+   {
+    "name": "Aptera",
+    "url": "https://www.aptera.us",
+    "status": "Operating — US",
+    "why": "US solar electric-vehicle maker (Carlsbad, CA; targeting Q4 2026 production) — not an Indonesian company."
+   },
+   {
+    "name": "Motosurf",
+    "url": "https://motosurf.com",
+    "status": "Operating — US",
+    "why": "US electric-jetboard maker (Dallas, TX) — not an Indonesian company."
+   },
+   {
+    "name": "Vintage Electric",
+    "url": "https://www.vintageelectricbikes.com",
+    "status": "Operating — US",
+    "why": "US hand-built e-bike maker (Santa Clara, CA) — not an Indonesian company."
+   },
+   {
+    "name": "6Estates",
+    "url": "https://www.6estates.com",
+    "status": "Operating — Singapore",
+    "why": "NUS-spinoff document-AI vendor for banks and finance — Singapore company."
+   },
+   {
+    "name": "Gushcloud",
+    "url": "https://www.gushcloud.com",
+    "status": "Operating — Singapore",
+    "why": "Gushcloud International — global influencer marketing and creator/talent company — Singapore company."
+   },
+   {
+    "name": "Involve Asia",
+    "url": "https://involve.asia",
+    "status": "Operating — Malaysia",
+    "why": "Affiliate/performance-marketing platform (Involve Asia Technologies Sdn Bhd, Kuala Lumpur) — Malaysian company."
+   },
+   {
+    "name": "Datasaur.ai",
+    "url": "https://datasaur.ai",
+    "status": "Operating — US",
+    "why": "YC W20 data-labeling/private-AI company, HQ in the SF Bay Area. Much of its engineering sits in Indonesia (its VP Engineering and principal engineers are in Jakarta/Yogyakarta), but the company itself is US — no Indonesian entity to count."
+   }
+  ]
+ }
+}

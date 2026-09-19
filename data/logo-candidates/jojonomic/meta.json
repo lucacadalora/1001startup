@@ -1,0 +1,20 @@
+{
+ "id": "jojonomic",
+ "name": "Jojonomic",
+ "url": "https://www.jojonomic.com",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/jojonomic/m02-manual.png",
+   "tag": "manual",
+   "src": "https://corp.jojonomic.id/assets/img/favicon-96x96.png"
+  },
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/jojonomic/m01-manual.png",
+   "tag": "manual",
+   "src": "https://corp.jojonomic.id/assets/img/logo_jojonomicpro.png"
+  }
+ ],
+ "errors": []
+}

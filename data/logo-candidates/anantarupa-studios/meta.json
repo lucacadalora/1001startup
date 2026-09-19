@@ -1,0 +1,13 @@
+{
+ "id": "anantarupa-studios",
+ "name": "Anantarupa Studios",
+ "url": "https://anantarupa.com",
+ "candidates": [
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/anantarupa-studios/00-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,32 @@
+{
+ "id": "shipper",
+ "name": "Shipper",
+ "url": "https://shipper.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/shipper/s00-appstore.png",
+   "tag": "appstore:Shipper",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/46/b2/f946b28e-bec7-cc16-5132-823238591e82/AppIcon-1x_U007emarketing-0-6-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/shipper/s01-appstore.png",
+   "tag": "appstore:Mologiz Shipper",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/28/66/56/28665678-a403-270c-bc44-2b7e946a705e/AppIcon-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/shipper/s02-play.png",
+   "tag": "play:com.smartkargo.indigoshipperapp",
+   "src": "https://play-lh.googleusercontent.com/-hs85mqnnHPbS3Klrvym12RALtlq6Hvhn5rfDm8FcaIXNuHfv4VLMx2_Fv1KrF3F8fqTlFNo4VbuUd2ciBwgtw=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/shipper/s03-play.png",
+   "tag": "play:thiqatech.dalilee.shipper_app",
+   "src": "https://play-lh.googleusercontent.com/M93Xq3jpdnd8nS3LYHUN5fJRDz7wNWVXrycfDi_tIhFXTZ9aRDNUlBDjG3aTG2JYz8oOP41wMtV1pVgdQEO08A=s512"
+  }
+ ],
+ "errors": []
+}

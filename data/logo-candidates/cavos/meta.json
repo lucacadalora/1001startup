@@ -1,0 +1,52 @@
+{
+ "id": "cavos",
+ "name": "Cavos",
+ "url": "https://cavos.io",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/cavos/m01-manual.png",
+   "tag": "manual",
+   "src": "https://github.com/cavos-io.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/cavos/s00-appstore.png",
+   "tag": "appstore:Cavos",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f9/05/f2/f905f283-967e-3d5c-be5f-addde9895939/ic_cavos_sfa-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/cavos/s01-appstore.png",
+   "tag": "appstore:CAVOS",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c3/ba/40/c3ba40dd-4831-ad37-ac7b-9aa2f99bcc63/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/cavos/s02-play.png",
+   "tag": "play:sigzen.sfa.cavos",
+   "src": "https://play-lh.googleusercontent.com/Cxef4aGu799f6KRTY0yc57X4DRsXRssmV0nctOCJdHWl7BSw3_EckkTO6kFq8_bVht45yfb2mrtiG8craB0VyA=s512"
+  },
+  {
+   "pri": 61.0,
+   "path": "data/logo-candidates/cavos/00-site-link-icon-20x20.png",
+   "tag": "link-icon-20x20"
+  },
+  {
+   "pri": 61.0,
+   "path": "data/logo-candidates/cavos/01-site-link-icon-20x20.png",
+   "tag": "link-icon-20x20"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/cavos/02-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/cavos/h00-header.png",
+   "tag": "header-98x24"
+  }
+ ],
+ "errors": []
+}

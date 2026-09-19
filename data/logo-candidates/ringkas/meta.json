@@ -1,0 +1,40 @@
+{
+ "id": "ringkas",
+ "name": "Ringkas",
+ "url": "https://ringkas.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/ringkas/s00-appstore.png",
+   "tag": "appstore:Ringkas App",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/29/d0/b9/29d0b93b-5de5-2522-80d9-0fb5f119cd82/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/ringkas/s01-play.png",
+   "tag": "play:com.ringkas.id",
+   "src": "https://play-lh.googleusercontent.com/ZaETsablZcGqwMOwIUsY9Ot-er2zVX8nXjY8l_c1HqkzJEWd23E1Y9VBEauRC0ikJrtcxPErf-cTrmek26JZIqI=s512"
+  },
+  {
+   "pri": 94.2,
+   "path": "data/logo-candidates/ringkas/00-site-link-icon-300x300.png",
+   "tag": "link-icon-300x300"
+  },
+  {
+   "pri": 70.7,
+   "path": "data/logo-candidates/ringkas/01-site-link-icon-150x150.png",
+   "tag": "link-icon-150x150"
+  },
+  {
+   "pri": 37.5,
+   "path": "data/logo-candidates/ringkas/02-site-guess-favicon-150x150.png",
+   "tag": "guess-favicon-150x150"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/ringkas/h00-header.png",
+   "tag": "header-113x32"
+  }
+ ],
+ "errors": []
+}

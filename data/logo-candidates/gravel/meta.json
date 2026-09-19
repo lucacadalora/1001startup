@@ -1,0 +1,34 @@
+{
+ "id": "gravel",
+ "name": "Gravel",
+ "url": "https://gravel.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/gravel/s00-appstore.png",
+   "tag": "appstore:Gravel Calculator Plus",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b3/31/58/b33158c7-d5d6-8fa3-8c50-02700d28243f/AppIcon-0-0-1x_U007emarketing-0-7-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/gravel/s01-appstore.png",
+   "tag": "appstore:Lets Gravel",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/96/a6/c8/96a6c854-e4e3-9bcc-dbba-dbc0268c44c3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/gravel/s02-play.png",
+   "tag": "play:com.letsgravel.gravel",
+   "src": "https://play-lh.googleusercontent.com/PgGfCFdNVQAD_XjoKOh5gVJkU7qgRdMI6Y1w_m6UVBTOX2r6ryhCAuNmWRTmyX-x0khzXEWHqlSokw3x52-brQ=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/gravel/s03-play.png",
+   "tag": "play:com.appexsoul.gravelhostapp",
+   "src": "https://play-lh.googleusercontent.com/0kvIb01Tif1E5CqFJCbNrULvmnE_ngYV_k_MI7yvKWk70XZqfJpOOIx4QKgRzAgBVE0-HM3bTIsGZlGojVbpNOM=s512"
+  }
+ ],
+ "errors": [
+  "ERR Error: Page.goto: net::ERR_NAME_NOT_RESOLVED at https://gravel.co.id/\nCall lo"
+ ]
+}

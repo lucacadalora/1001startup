@@ -1,0 +1,18 @@
+{
+ "id": "kopi-tuku",
+ "name": "Toko Kopi Tuku (MAKA)",
+ "url": "https://maka.co.id",
+ "candidates": [
+  {
+   "pri": 66.0,
+   "path": "data/logo-candidates/kopi-tuku/00-site-link-icon-120x120.png",
+   "tag": "link-icon-120x120"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/kopi-tuku/h00-header.png",
+   "tag": "header-150x100"
+  }
+ ],
+ "errors": []
+}

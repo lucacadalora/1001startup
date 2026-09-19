@@ -1,0 +1,41 @@
+{
+ "id": "electrum",
+ "name": "Electrum",
+ "url": "https://electrum.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/electrum/s00-appstore.png",
+   "tag": "appstore:Electrum",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/23/82/b6/2382b66c-9222-fec5-2f38-d2894e6f5d76/productionAppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/electrum/s01-play.png",
+   "tag": "play:id.electrum.elma",
+   "src": "https://play-lh.googleusercontent.com/zJ6yXKchZwexsXwHwwQiykbgLhFzVit2hqLFMfuEvk-2tzdd1detOv735RRS2nBOODseTUIURAT1Dvg0aJWFdLw=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/electrum/s02-play.png",
+   "tag": "play:org.electrum.electrum",
+   "src": "https://play-lh.googleusercontent.com/l6H_Lz7rHP8jcHOS2NnJ4EVwi7zw3h35hbr0TPVM2GTs3JJXqcOkNxR719zCILl_guxqm-jX4poFikMlJW68lVA=s512"
+  },
+  {
+   "pri": 63.2,
+   "path": "data/logo-candidates/electrum/00-site-link-icon-64x64.png",
+   "tag": "link-icon-64x64"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/electrum/h00-header.png",
+   "tag": "header-140x38"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/electrum/h01-header.png",
+   "tag": "header-160x112"
+  }
+ ],
+ "errors": []
+}

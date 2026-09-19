@@ -1,0 +1,30 @@
+{
+ "id": "tanamera-coffee",
+ "name": "Tanamera Coffee",
+ "url": "https://www.tanameracoffee.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/tanamera-coffee/s00-appstore.png",
+   "tag": "appstore:MyTanamera : Taste The Origins",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8a/26/8d/8a268d95-921f-5f7c-2565-119d0ae89bdd/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/tanamera-coffee/s01-appstore.png",
+   "tag": "appstore:Tanamera Coffee Surabaya",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/51/81/5b/51815b71-1b99-68e9-8caf-dd78a3208d3f/AppIcon-1x_U007emarketing-0-10-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/tanamera-coffee/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/tanamera-coffee/h00-header.png",
+   "tag": "header-159x75"
+  }
+ ],
+ "errors": []
+}

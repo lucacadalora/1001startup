@@ -1,0 +1,24 @@
+{
+ "id": "zi-care",
+ "name": "Zi.Care",
+ "url": "https://zicare.id",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/zi-care/s00-play.png",
+   "tag": "play:id.or.alzi.care.twa",
+   "src": "https://play-lh.googleusercontent.com/ML3u3ivQvrC-UnuhyYynybA8qqi635X71M8rTsJveXl-SFAFQ5wnLPdhtrEXCF_PyfnD8lMgAvDupmfUzI2kNw=s512"
+  },
+  {
+   "pri": 68.2,
+   "path": "data/logo-candidates/zi-care/00-site-link-icon-164x150.png",
+   "tag": "link-icon-164x150"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/zi-care/h00-header.png",
+   "tag": "header-101x32"
+  }
+ ],
+ "errors": []
+}

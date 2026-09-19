@@ -1,0 +1,23 @@
+{
+ "id": "maka-motors",
+ "name": "MAKA Motors",
+ "url": "https://maka-motors.com",
+ "candidates": [
+  {
+   "pri": 65.0,
+   "path": "data/logo-candidates/maka-motors/00-site-link-icon-100x100.png",
+   "tag": "link-icon-100x100"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/maka-motors/01-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/maka-motors/h00-header.png",
+   "tag": "header-208x23"
+  }
+ ],
+ "errors": []
+}

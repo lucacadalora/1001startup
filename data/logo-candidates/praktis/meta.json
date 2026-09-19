@@ -1,0 +1,52 @@
+{
+ "id": "praktis",
+ "name": "Praktis",
+ "url": "https://praktis.co",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/praktis/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/praktis/s00-appstore.png",
+   "tag": "appstore:TTS Praktis",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/22/59/fe22591a-8c71-1985-d10f-12cabab534ed/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/praktis/s01-appstore.png",
+   "tag": "appstore:Cari Kata Praktis",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/77/f5/04/77f50432-9d7f-5935-b2c6-f9e9f787d0a4/AppIcon-0-1x_U007emarketing-0-85-220-0-7.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/praktis/s02-play.png",
+   "tag": "play:com.praktisapp",
+   "src": "https://play-lh.googleusercontent.com/T7NeS0noBy2AsEQ6WYcnaWuXk-oQRrauVQh6Q5r6sLnh8wGIINKaad4t9O8u2HdEpiuT1iT5vpbUxTM9neVFvQ=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/praktis/s03-play.png",
+   "tag": "play:com.translantic.ttspraktis",
+   "src": "https://play-lh.googleusercontent.com/EWNthRIAlPtXoIE8uI83enlOtwWSOTEkkHFu69PFlB_3tKZtKX46KaOokqyL7oKkhsVunDmo_WP1jseKH7kB=s512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/praktis/01-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 85.6,
+   "path": "data/logo-candidates/praktis/02-site-link-icon-1217x1218.png",
+   "tag": "link-icon-1217x1218"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/praktis/h00-header.png",
+   "tag": "header-142x24"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,305 @@
+/* 1001startup.id — the company profile, and the drawer it lives in.
+   Every rule is prefixed .cp so the card renders identically whether it is
+   injected into the landing page (which carries its own inline shell styles)
+   or served on its own at /company/<id>. Same system as the rest of the site:
+   white, hairline #E7E7E7, square, Overused Grotesk + IBM Plex Mono, and the
+   four-stop gradient used only as an accent. */
+
+/* ── the drawer ──────────────────────────────────────────────────────── */
+.cpwrap{position:fixed;inset:0;z-index:80}
+.cpwrap[hidden]{display:none}
+.cpbd{position:absolute;inset:0;background:rgba(12,12,14,.32);opacity:0;transition:opacity .18s ease}
+.cpwrap.on .cpbd{opacity:1}
+.cpdr{position:absolute;top:0;right:0;height:100%;width:min(560px,100%);background:#fff;
+  border-left:1px solid #E7E7E7;box-shadow:-18px 0 48px rgba(0,0,0,.10);
+  display:flex;flex-direction:column;transform:translateX(100%);transition:transform .22s cubic-bezier(.22,.61,.36,1)}
+.cpwrap.on .cpdr{transform:none}
+.cpbar{display:flex;align-items:center;gap:8px;padding:10px 12px 10px 16px;border-bottom:1px solid #E7E7E7;background:#FAFAFA;flex:0 0 auto}
+.cpbar .cpstep{padding:6px 9px;border:1px solid #E7E7E7;background:#fff;color:#000;cursor:pointer;
+  font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.04em}
+.cpbar .cpstep:hover:not(:disabled){border-color:#000}
+.cpbar .cpstep:disabled{color:#74747D;cursor:default}
+.cpbar .cppos{font:400 10.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
+.cpbar .cpx{margin-left:auto;padding:6px 10px;border:1px solid #000;background:#fff;color:#000;cursor:pointer;
+  font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.04em}
+.cpbar .cpx:hover{background:#000;color:#fff}
+.cpscroll{overflow-y:auto;overscroll-behavior:contain;-webkit-overflow-scrolling:touch;flex:1 1 auto;padding:0 20px 40px}
+@media(max-width:640px){
+  .cpdr{width:100%;top:auto;bottom:0;height:92%;border-left:0;border-top:1px solid #E7E7E7;
+    transform:translateY(100%);box-shadow:0 -18px 48px rgba(0,0,0,.14)}
+  .cpwrap.on .cpdr{transform:none}
+  .cpscroll{padding:0 16px 36px}
+}
+@media(prefers-reduced-motion:reduce){.cpbd,.cpdr{transition:none}}
+body.cplock{overflow:hidden}
+
+/* ── the card ────────────────────────────────────────────────────────── */
+.cp{font:500 16px/1.5 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.01em;color:#000}
+.cp-top{padding:22px 0 20px;border-bottom:1px solid #E7E7E7}
+.cp-ident{display:flex;gap:13px;align-items:flex-start}
+.cp-logo{width:46px;height:46px;flex:0 0 auto;border:1px solid #E7E7E7;object-fit:contain;background:#fff}
+.cp-blank{width:46px;height:46px;flex:0 0 auto;border:1px solid #E7E7E7;background:#FAFAFA;display:inline-block}
+.cp-blank.sm{width:20px;height:20px}
+.cp-name{font-size:26px;line-height:1.12;letter-spacing:-0.025em;font-weight:600}
+.cp-legal{font:400 11px/1.45 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.04em;color:#6B6B73;margin-top:5px}
+.cp-tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:14px}
+.cp-tag{padding:4px 8px;border:1px solid #E7E7E7;font:400 10px/1.3 'IBM Plex Mono',monospace;
+  text-transform:uppercase;letter-spacing:.05em;color:#52525B;white-space:nowrap}
+.cp-tag.cp-sector{border-color:#000;color:#000}
+.cp-tag.cp-yc{border-color:#E8734B;color:#E8734B}
+.cp-tag.cp-rank{color:#6B6B73}
+.cp-what{color:#52525B;font-size:14.5px;line-height:1.55;margin-top:13px;max-width:60ch}
+.cp-act{display:flex;gap:8px;flex-wrap:wrap;margin-top:16px}
+.cp-btn{display:inline-block;padding:11px 15px;border:1px solid #000;background:#fff;color:#000;text-decoration:none;cursor:pointer;
+  font:400 11.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em}
+.cp-btn:hover{background:#F4F4F5}
+.cp-btn.cp-primary{background:#000;color:#fff}
+.cp-btn.cp-primary:hover{background:#1C1C1F}
+
+.cp-art{margin-top:18px;border:1px solid #E7E7E7;background:#FAFAFA;display:grid;place-items:center;padding:10px}
+.cp-art img{width:100%;max-width:260px;height:auto;display:block}
+
+/* facts: a two-column ledger, mono values, hairline between rows */
+.cp-facts{margin-top:20px;border-top:1px solid #E7E7E7}
+.cp-fact{display:grid;grid-template-columns:132px 1fr;gap:14px;padding:11px 0;border-bottom:1px solid #F1F1F1;align-items:baseline}
+.cp-k{font:400 10.5px/1.5 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
+.cp-v{font-size:15px;line-height:1.45;font-weight:600}
+.cp-v .cp-u{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73;font-weight:400;margin:0 2px}
+.cp-none{font-weight:400;color:#6B6B73;font-size:13.5px}
+.cp-note{display:block;font-weight:400;color:#6B6B73;font-size:12.5px;margin-top:3px}
+.cp-est{margin-left:5px;font:400 9px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;
+  color:#6B6B73;border:1px solid #E7E7E7;padding:2px 4px;vertical-align:1px}
+@media(max-width:420px){.cp-fact{grid-template-columns:1fr;gap:3px}}
+
+.cp-sec{margin-top:26px}
+.cp-h3{font:400 10.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#000;
+  padding-bottom:9px;border-bottom:1px solid #000;margin-bottom:13px;display:flex;align-items:center;gap:7px}
+.cp-h3::before{content:'';width:5px;height:5px;background:#000;display:inline-block}
+.cp-p{color:#52525B;font-size:14px;line-height:1.62;max-width:66ch}
+.cp-p+.cp-p{margin-top:9px}
+.cp-lbl{display:block;font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73;margin-bottom:4px}
+.cp-addr{color:#000;font-size:14.5px}
+.cp-fine{color:#6B6B73;font-size:12px;line-height:1.6;margin-top:7px;max-width:66ch}
+
+.cp-inv{display:flex;flex-wrap:wrap;gap:5px}
+.cp-chip{padding:5px 9px;border:1px solid #E7E7E7;font-size:12.5px;color:#000;background:#fff}
+a.cp-chip{text-decoration:none}
+a.cp-chip:hover{border-color:#000}
+
+.cp-conf{display:flex;align-items:center;gap:12px}
+.cp-bar{flex:1 1 auto;height:6px;background:#F1F1F1;overflow:hidden}
+.cp-bar span{display:block;height:100%;background:linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)}
+.cp-confv{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#000;white-space:nowrap}
+.cp-prov{list-style:none;margin-top:12px;display:grid;gap:8px}
+.cp-prov li{position:relative;padding-left:16px;color:#52525B;font-size:13px;line-height:1.55}
+.cp-dot{position:absolute;left:0;top:7px;width:7px;height:7px;background:#8E8E93}
+.cp-dot.cp-live{background:#3E8E62}
+.cp-dot.cp-blocked{background:#C79A2E}
+.cp-dot.cp-thin{background:#C79A2E}
+.cp-dot.cp-unreachable{background:#C9532E}
+
+.cp-src{list-style:none;counter-reset:s;display:grid;gap:0;border-top:1px solid #F1F1F1}
+.cp-src li{counter-increment:s;border-bottom:1px solid #F1F1F1}
+.cp-src a{display:grid;grid-template-columns:auto minmax(0,1fr);gap:10px;align-items:baseline;padding:9px 0;text-decoration:none}
+.cp-src a:hover .cp-srch{border-bottom-color:#000}
+.cp-srch{font-size:13.5px;color:#000;border-bottom:1px solid #D9D9D9;justify-self:start}
+.cp-srcu{font:400 10px/1.4 'IBM Plex Mono',monospace;color:#74747D;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;min-width:0;text-align:right}
+@media(max-width:640px){.cp-srcu{display:none}}
+
+.cp-sibs{display:grid;gap:0;border-top:1px solid #F1F1F1}
+.cp-sib{display:flex;align-items:center;gap:9px;padding:9px 2px;border-bottom:1px solid #F1F1F1;text-decoration:none;color:#000}
+.cp-sib:hover{background:#FAFAFA}
+.cp-sib img{width:20px;height:20px;object-fit:contain;flex:0 0 auto}
+.cp-sibn{font-size:14px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.cp-sibr{margin-left:auto;font:400 11px/1 'IBM Plex Mono',monospace;color:#6B6B73}
+
+.cp-foot{margin-top:26px;padding-top:14px;border-top:1px solid #E7E7E7;color:#6B6B73;font-size:11.5px;line-height:1.7}
+.cp-foot a{color:#52525B}
+
+/* skeleton shown for the instant between click and the fetch landing */
+.cp-load{padding:22px 0}
+.cp-load .cp-name{color:#000}
+.cp-load .cp-ln{height:11px;background:#F1F1F1;margin-top:12px}
+.cp-load .cp-ln:nth-child(3){width:70%}
+.cp-load .cp-ln:nth-child(4){width:45%}
+.cp-err{padding:26px 0;color:#52525B;font-size:14px;line-height:1.6}
+
+/* ── the row that opens it ───────────────────────────────────────────── */
+#tbl tbody tr{cursor:pointer}
+#tbl tbody tr:hover{background:#FAFAFA}
+#tbl tbody tr.cp-open{background:#F4F4F5;box-shadow:inset 3px 0 0 #000}
+
+/* provenance inline on a money line: the link that carries the figure */
+.cp-srcl{margin-left:7px;font:400 10px/1 'IBM Plex Mono',monospace;text-transform:lowercase;letter-spacing:.02em;
+  color:#6B6B73;text-decoration:none;border-bottom:1px solid #E7E7E7;font-weight:400;white-space:nowrap}
+.cp-srcl:hover{color:#000;border-bottom-color:#000}
+.cp-trk{border:1px solid #E7E7E7;padding:1px 3px;text-transform:uppercase;letter-spacing:.05em}
+.cp-tag.cp-ed{border-color:#2A6E9F;color:#2A6E9F}
+.cp-tag.cp-an{border-color:#4E7A58;color:#4E7A58}
+
+/* ── supply chain: the relationship panel, the ladder, the evidence ─────
+   Lives here rather than in its own file because the company card is rendered
+   in two places (the landing drawer and /company/<id>) and both load this
+   sheet; a second file would have to be linked from both shells. */
+.ch-lead{font-size:12.5px;line-height:1.6;color:#52525B;margin:-2px 0 12px;max-width:72ch}
+/* Column count follows the CONTAINER, not the viewport: this block renders in
+   the 560px drawer, the 820px standalone card and the 1180px chain page, and a
+   viewport query cannot tell them apart (two 247px columns inside the drawer on
+   a ~750px window once crushed every name to one character per line). */
+.ch-cols{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));gap:26px}
+@media(max-width:720px){.ch-cols{grid-template-columns:1fr;gap:20px}}
+.ch-hd{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#000;
+  display:flex;align-items:center;gap:8px;padding-bottom:7px;border-bottom:1px solid #000}
+.ch-hd span{margin-left:auto;color:#6B6B73}
+.ch-sub{font-size:11.5px;color:#6B6B73;margin:6px 0 2px}
+.ch-g{margin-top:10px}
+.ch-gh{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73;
+  display:flex;gap:6px;padding:6px 0;border-bottom:1px solid #F1F1F1}
+.ch-gh span{color:#74747D}
+/* A wrapping flex row, not a grid: the evidence chip is ~240px of nowrap mono,
+   and in a narrow column it must drop to its own line rather than squeeze the
+   name (the name link guarantees itself ~170px before that happens). */
+.ch-r{display:flex;flex-wrap:wrap;gap:4px 10px;align-items:center;border-bottom:1px solid #F1F1F1;padding:7px 0}
+.ch-r:hover{background:#FAFAFA}
+.ch-l{flex:999 1 0;min-width:min(170px,100%);display:grid;grid-template-columns:22px minmax(0,1fr);grid-template-rows:auto auto;gap:1px 9px;
+  text-decoration:none;color:#000}
+.ch-lg{grid-row:1/3;width:22px;height:22px;object-fit:contain;align-self:center}
+.ch-bl{background:#F4F4F5}
+.ch-nm{font-size:13.5px;overflow-wrap:anywhere}
+a.ch-l:hover .ch-nm{border-bottom:1px solid #000}
+.ch-nm em{font-style:normal;white-space:nowrap;font:400 9.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#74747D}
+.ch-w{font-size:11.5px;line-height:1.45;color:#6B6B73}
+.ch-ev{display:flex;align-items:center;gap:6px;text-decoration:none;flex:0 0 auto;align-self:start;padding-top:2px;margin-left:auto}
+.ch-t{font:400 9.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;
+  border:1px solid #E7E7E7;padding:2px 4px;color:#6B6B73}
+.ch-t-filing{border-color:#000;color:#000}
+.ch-t-reported{border-color:#C79A2E;color:#C79A2E}
+.ch-h{font:400 10px/1 'IBM Plex Mono',monospace;color:#6B6B73;border-bottom:1px solid #E7E7E7}
+.ch-ev:hover .ch-h{color:#000;border-bottom-color:#000}
+.ch-d{font:400 10px/1 'IBM Plex Mono',monospace;color:#74747D}
+@media(max-width:520px){.ch-d{display:none}}
+.ch-none{font-size:12.5px;color:#6B6B73;padding:10px 0;border-bottom:1px solid #F1F1F1}
+.ch-corp{margin-bottom:14px}
+.ch-rc{gap:6px 9px}
+.ch-cv{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73}
+.ch-st{font:400 11px/1 'IBM Plex Mono',monospace;color:#000}
+.ch-c{display:inline-flex;align-items:center;gap:6px;border:1px solid #E7E7E7;padding:4px 8px;font-size:12.5px;
+  text-decoration:none;color:#000;background:#fff}
+a.ch-c:hover{border-color:#000}
+.ch-c img{width:16px;height:16px;object-fit:contain}
+.ch-off{color:#6B6B73;border-style:dashed}
+.ch-foot{margin-top:14px;display:flex;gap:12px;flex-wrap:wrap;align-items:baseline;font-size:11.5px;color:#6B6B73}
+.ch-foot a{color:#000}
+
+/* ── the standalone chain page ─────────────────────────────────────────── */
+.ch-h1{font-size:34px;letter-spacing:-0.025em;font-weight:500;line-height:1.1;margin-bottom:10px}
+.ch-sum{font-size:14.5px;line-height:1.6;color:#52525B;max-width:78ch;margin-bottom:26px}
+.ch-sum a{color:#000}
+.ch-sec{margin-top:38px}
+.ch-h2{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;color:#000;
+  padding-bottom:8px;border-bottom:1px solid #000;margin-bottom:14px}
+.ch-p{font-size:14px;line-height:1.65;color:#52525B;max-width:78ch;margin-bottom:10px}
+.ch-p b{font-weight:600;color:#000}
+.ch-p code{font:400 12.5px/1 'IBM Plex Mono',monospace;background:#F4F4F5;padding:2px 4px}
+/* ch- prefix is load-bearing: this sheet ships on every 1001 page, and a bare
+   .lg collides with the landing table's img.lg logo (margin-bottom shoved every
+   logo out of its text line once already) */
+.ch-lgrp{margin-bottom:12px}
+.ch-lgh{font:400 9.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#74747D;margin-bottom:6px}
+.ch-lgc{display:flex;flex-wrap:wrap;gap:6px}
+.hop{display:grid;grid-template-columns:minmax(140px,auto) minmax(0,1fr);gap:12px;align-items:start;
+  padding:11px 0;border-bottom:1px solid #F1F1F1}
+@media(max-width:640px){.hop{grid-template-columns:1fr}}
+.hoph{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+.hoph span{font:400 9.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#74747D}
+.hopc{display:flex;flex-wrap:wrap;gap:6px}
+.ev{list-style:none;counter-reset:e}
+.ev li{padding:14px 0;border-bottom:1px solid #F1F1F1}
+.evh{display:flex;align-items:center;gap:9px;flex-wrap:wrap;margin-bottom:4px}
+.evh b{font-size:13.5px;font-weight:600}
+.evd{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
+.evt{font-size:13.5px;color:#52525B;margin-bottom:8px}
+.evq{border-left:2px solid #E7E7E7;padding:2px 0 2px 12px;font-size:13px;line-height:1.6;color:#000;margin-bottom:8px}
+.evn{font-size:11.5px;line-height:1.6;color:#6B6B73;margin-bottom:4px}
+.evu{font:400 10px/1.5 'IBM Plex Mono',monospace;color:#74747D;text-decoration:none;word-break:break-all}
+.evu:hover{color:#000}
+.chtbl{width:100%;border-collapse:collapse;font-size:14px}
+.chtbl th{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73;
+  text-align:left;padding:0 10px 8px 0;border-bottom:1px solid #000}
+.chtbl th.n,.chtbl td.n{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12.5px}
+.chtbl td{padding:9px 10px 9px 0;border-bottom:1px solid #F1F1F1}
+.chtbl tbody tr{cursor:pointer}
+.chtbl tbody tr:hover{background:#FAFAFA}
+.chtbl td.nm{display:flex;align-items:center;gap:9px}
+.chtbl td.nm img{width:20px;height:20px;object-fit:contain}
+.chtbl td.nm a{text-decoration:none}
+.chtbl tbody tr:hover td.nm a{border-bottom:1px solid #000}
+.chtbl td.sc{font-size:12.5px;color:#6B6B73}
+.exl{list-style:none;display:grid;gap:0}
+.exl li{padding:12px 0;border-bottom:1px solid #F1F1F1}
+.exl b{display:block;font-size:14px;font-weight:600;margin-bottom:4px}
+.exl span{font-size:12.5px;line-height:1.6;color:#6B6B73}
+
+.ch-xm{font-style:normal;font:400 9.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#74747D;margin-left:6px;white-space:nowrap}
+
+/* ── the ladder, terminal-shaped (Luca: "be like the bloomberg terminal") ──
+   Suppliers left, customers right, the company held in the middle lane.
+   Tiles pack into a dense auto-fill grid instead of one chip per line, the
+   centre card is sticky so it rides alongside a tall supplier wall, and the
+   connector lines + arrowheads draw only toward a side that has content. */
+.lad{display:grid;grid-template-columns:minmax(0,1fr) clamp(230px,24%,290px) minmax(0,1fr);gap:0;align-items:stretch;border:1px solid #E7E7E7;margin-bottom:8px;background:#FCFCFC}
+.lad-s{padding:16px 18px;min-width:0}
+.lad-s.up{border-right:1px solid #E7E7E7}
+.lad-s.dn{border-left:1px solid #E7E7E7}
+.lad-t{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#000;
+  display:flex;gap:8px;margin-bottom:12px;padding-bottom:8px;border-bottom:1px solid #E7E7E7}
+.lad-t span{color:#6B6B73;margin-left:auto}
+.lad-m{padding:16px 14px;position:relative}
+.lad-mstick{position:sticky;top:74px}
+.lad-co{display:grid;justify-items:center;gap:5px;text-align:center;border:1px solid #000;padding:20px 16px 16px;background:#fff;position:relative;box-shadow:4px 4px 0 #F1F1F1}
+.lad-co img{width:38px;height:38px;object-fit:contain}
+.lad-co b{font-size:16px;font-weight:600;max-width:230px}
+.lad-co i{font-style:normal;font:400 10px/1.3 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
+.lad-deg{font:400 10px/1 'IBM Plex Mono',monospace;letter-spacing:.04em;color:#74747D;margin-top:4px}
+.lad-deg span{color:#000}
+/* connectors: a rule from each populated side into the card, flow left-to-right */
+.lad-co::before,.lad-co::after{display:none;content:'';position:absolute;top:50%;height:1px;background:#000}
+.lad-m.has-up .lad-co::before{display:block;left:-15px;width:14px}
+.lad-m.has-dn .lad-co::after{display:block;right:-15px;width:13px}
+.lad-co .lad-arr-in,.lad-co .lad-arr-out{display:none;position:absolute;top:50%;margin-top:-4px;width:0;height:0;
+  border-top:4px solid transparent;border-bottom:4px solid transparent;border-left:6px solid #000}
+.lad-m.has-up .lad-arr-in{display:block;left:-2px}
+.lad-m.has-dn .lad-arr-out{display:block;right:-16px}
+/* tiles: pack the wall into columns, every tile full-width in its cell */
+.lad-s .ch-lgc{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:6px}
+.lad-s .ch-c{width:100%;justify-content:flex-start;padding:6px 9px;background:#fff}
+.lad-corp{display:grid;gap:6px;margin-top:12px}
+.lad-cr{display:flex;align-items:center;gap:8px}
+.lad-cr .ch-c{flex:1;justify-content:flex-start;background:#fff;min-width:0}
+.lad-cv{font:400 9.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73;flex:0 0 auto}
+.lad-st{font:400 10px/1 'IBM Plex Mono',monospace;color:#000;flex:0 0 auto}
+@media(max-width:820px){
+  .lad{grid-template-columns:1fr}
+  .lad-s.up,.lad-s.dn{border:0;border-bottom:1px solid #E7E7E7}
+  .lad-s.dn{border-bottom:0}
+  .lad-m{order:-1;border-bottom:1px solid #E7E7E7}
+  .lad-mstick{position:static}
+  .lad-co::before,.lad-co::after,.lad-co .lad-arr-in,.lad-co .lad-arr-out{display:none!important}
+}
+
+/* shared rails: same rows, quieter frame — plumbing, not suppliers */
+.ch-rails{margin-top:14px;border-top:1px dashed #D9D9D9;padding-top:8px}
+.ch-rh{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73;display:flex;gap:6px;padding:2px 0 4px}
+.ch-rh span{color:#74747D}
+.ch-rn{font-size:11px;line-height:1.55;color:#6B6B73;max-width:60ch;margin:0 0 2px}
+.ch-rails .ch-gh{color:#74747D}
+.lad-rails{margin-top:12px;border-top:1px dashed #E7E7E7;padding-top:10px}
+.lad-rails .ch-lgh:first-child{color:#6B6B73}
+.lad-rails .ch-c{color:#52525B}
+/* the one-sentence fact summary under the header — the quotable unit */
+.cp-sum{color:#3F3F46;font-size:14.5px;line-height:1.55;margin:2px 0 4px;max-width:70ch}
+a.cp-tag{text-decoration:none}
+a.cp-tag.cp-sector:hover{background:#000;color:#fff}
+/* fixed art box: the sprite loads into reserved space (was CLS 0.131) */
+.cp-art{height:244px}
+.cp-art img{max-height:220px;object-fit:contain}

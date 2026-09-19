@@ -1,0 +1,31 @@
+{
+ "id": "tiket-com",
+ "name": "tiket.com",
+ "url": "https://www.tiket.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/tiket-com/s00-appstore.png",
+   "tag": "appstore:tiket.com Flight & Hotel Deals",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/0e/24/33/0e243395-b716-6a96-d5a8-14fcffa16f5b/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/tiket-com/s01-play.png",
+   "tag": "play:com.tiket.gits",
+   "src": "https://play-lh.googleusercontent.com/7OIXcHw5gJOoTsWUvLj1b8baHUlsSyTTtpSae3Brrxkr0yOFDksUrOuSHhZE9FqblyW_EEoLneqvrc4bSGm0Wd8=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/tiket-com/s02-play.png",
+   "tag": "play:com.tiket.hotel.tix",
+   "src": "https://play-lh.googleusercontent.com/apdnIY-N2Vvl_NKBnS7SJ2B-ZJ7V_hxHz_5VJ1TTBqY3j4UixlygzJdaodjYM5HVPYPWLvAWnvg17BNIU_ay=s512"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/tiket-com/00-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  }
+ ],
+ "errors": []
+}

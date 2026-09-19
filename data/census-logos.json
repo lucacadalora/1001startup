@@ -1,0 +1,514 @@
+{
+ "advotics": {
+  "logo": "/assets/logo-c-advotics.a159b9ef.png",
+  "logo_src": "picked:play"
+ },
+ "anantarupa-studios": {
+  "logo": "/assets/logo-c-anantarupa-studios.df814833.png",
+  "logo_src": "picked:site"
+ },
+ "andalin": {
+  "logo": "/assets/logo-c-andalin.18785d65.png",
+  "logo_src": "picked:play"
+ },
+ "anteraja": {
+  "logo": "/assets/logo-c-anteraja.86fcbced.png",
+  "logo_src": "picked:appstore"
+ },
+ "ardhosting": {
+  "logo": "/assets/logo-c-ardhosting.716976f7.png",
+  "logo_src": "picked:site"
+ },
+ "arkopay": {
+  "logo": "/assets/logo-c-arkopay.e3cae3a2.png",
+  "logo_src": "picked:site"
+ },
+ "asa-ren": {
+  "logo": "/assets/logo-c-asa-ren.349a6e69.png",
+  "logo_src": "picked:site"
+ },
+ "assetfindr": {
+  "logo": "/assets/logo-c-assetfindr.6ec3e418.png",
+  "logo_src": "picked:site"
+ },
+ "astro": {
+  "logo": "/assets/logo-c-astro.5cd132a1.png",
+  "logo_src": "picked:appstore"
+ },
+ "awanio": {
+  "logo": "/assets/logo-c-awanio.0dadcab6.png",
+  "logo_src": "picked:manual"
+ },
+ "badr-interactive": {
+  "logo": "/assets/logo-c-badr-interactive.13f5e539.png",
+  "logo_src": "picked:site"
+ },
+ "base": {
+  "logo": "/assets/logo-c-base.988bcfd4.png",
+  "logo_src": "picked:site"
+ },
+ "baskit": {
+  "logo": "/assets/logo-c-baskit.2d8ae172.png",
+  "logo_src": "picked:site"
+ },
+ "beautyhaul": {
+  "logo": "/assets/logo-c-beautyhaul.6e7cc0b1.png",
+  "logo_src": "picked:manual"
+ },
+ "beleaf-farms": {
+  "logo": "/assets/logo-c-beleaf-farms.640b02bb.png",
+  "logo_src": "picked:play"
+ },
+ "bhinneka": {
+  "logo": "/assets/logo-c-bhinneka.64120a65.png",
+  "logo_src": "picked:header"
+ },
+ "biotis-pharmaceuticals-indonesia": {
+  "logo": "/assets/logo-c-biotis-pharmaceuticals-indonesia.8b0074cb.png",
+  "logo_src": "picked:site"
+ },
+ "bittime": {
+  "logo": "/assets/logo-c-bittime.f111347d.png",
+  "logo_src": "picked:site"
+ },
+ "blibli": {
+  "logo": "/assets/logo-c-blibli.e40c35e5.png",
+  "logo_src": "picked:site"
+ },
+ "borzo-indonesia": {
+  "logo": "/assets/logo-c-borzo-indonesia.7e82c01f.png",
+  "logo_src": "picked:site"
+ },
+ "bybit-indonesia": {
+  "logo": "/assets/logo-c-bybit-indonesia.cc8c834b.png",
+  "logo_src": "picked:appstore"
+ },
+ "carenow": {
+  "logo": "/assets/logo-c-carenow.e7742195.png",
+  "logo_src": "picked:site"
+ },
+ "cashlez": {
+  "logo": "/assets/logo-c-cashlez.1f061b98.png",
+  "logo_src": "picked:appstore"
+ },
+ "cavos": {
+  "logo": "/assets/logo-c-cavos.6622da6b.png",
+  "logo_src": "picked:manual"
+ },
+ "charged-asia": {
+  "logo": "/assets/logo-c-charged-asia.a1febf83.png",
+  "logo_src": "picked:play"
+ },
+ "cloudkilat": {
+  "logo": "/assets/logo-c-cloudkilat.e23bda5b.png",
+  "logo_src": "picked:site"
+ },
+ "coldspace": {
+  "logo": "/assets/logo-c-coldspace.bc323de9.png",
+  "logo_src": "picked:site"
+ },
+ "common-grounds": {
+  "logo": "/assets/logo-c-common-grounds.1f1a54b0.png",
+  "logo_src": "picked:site"
+ },
+ "dash-electric": {
+  "logo": "/assets/logo-c-dash-electric.3b5f68db.png",
+  "logo_src": "picked:site"
+ },
+ "dattabot": {
+  "logo": "/assets/logo-c-dattabot.45313d76.png",
+  "logo_src": "picked:header"
+ },
+ "deliveree-indonesia": {
+  "logo": "/assets/logo-c-deliveree-indonesia.fa6e4bda.png",
+  "logo_src": "picked:site"
+ },
+ "doku": {
+  "logo": "/assets/logo-c-doku.ffc40da0.png",
+  "logo_src": "picked:site"
+ },
+ "doogether": {
+  "logo": "/assets/logo-c-doogether.6a825531.png",
+  "logo_src": "picked:appstore"
+ },
+ "easycash": {
+  "logo": "/assets/logo-c-easycash.4f2faefd.png",
+  "logo_src": "picked:site"
+ },
+ "ekrut": {
+  "logo": "/assets/logo-c-ekrut.d05cad4c.png",
+  "logo_src": "picked:appstore"
+ },
+ "electrum": {
+  "logo": "/assets/logo-c-electrum.b30b1d0b.png",
+  "logo_src": "picked:appstore"
+ },
+ "elitery": {
+  "logo": "/assets/logo-c-elitery.4fb5bbdd.png",
+  "logo_src": "picked:site"
+ },
+ "eranyacloud": {
+  "logo": "/assets/logo-c-eranyacloud.3a69be34.png",
+  "logo_src": "picked:site"
+ },
+ "eratani": {
+  "logo": "/assets/logo-c-eratani.e023233b.png",
+  "logo_src": "picked:manual"
+ },
+ "esqa-cosmetics": {
+  "logo": "/assets/logo-c-esqa-cosmetics.13f7f06e.png",
+  "logo_src": "picked:header"
+ },
+ "etana-biotechnologies": {
+  "logo": "/assets/logo-c-etana-biotechnologies.a57b5850.png",
+  "logo_src": "picked:header"
+ },
+ "finfra": {
+  "logo": "/assets/logo-c-finfra.c89eb4f8.png",
+  "logo_src": "picked:site"
+ },
+ "finnix": {
+  "logo": "/assets/logo-c-finnix.79d77551.png",
+  "logo_src": "picked:appstore"
+ },
+ "fithub": {
+  "logo": "/assets/logo-c-fithub.2253858b.png",
+  "logo_src": "picked:appstore"
+ },
+ "flash-coffee": {
+  "logo": "/assets/logo-c-flash-coffee.09a3585e.png",
+  "logo_src": "picked:site"
+ },
+ "fore-coffee": {
+  "logo": "/assets/logo-c-fore-coffee.0c47938f.png",
+  "logo_src": "picked:appstore"
+ },
+ "fresh-factory": {
+  "logo": "/assets/logo-c-fresh-factory.58dcbcd6.png",
+  "logo_src": "picked:play"
+ },
+ "ftl-gym": {
+  "logo": "/assets/logo-c-ftl-gym.9cabc6c2.png",
+  "logo_src": "picked:site"
+ },
+ "fundtastic": {
+  "logo": "/assets/logo-c-fundtastic.54093a9e.png",
+  "logo_src": "picked:appstore"
+ },
+ "gapai": {
+  "logo": "/assets/logo-c-gapai.77bd3089.png",
+  "logo_src": "picked:site"
+ },
+ "gokampus": {
+  "logo": "/assets/logo-c-gokampus.41abea48.png",
+  "logo_src": "monogram:forced"
+ },
+ "gravel": {
+  "logo": "/assets/logo-c-gravel.b21c6142.png",
+  "logo_src": "picked:appstore"
+ },
+ "gudangada": {
+  "logo": "/assets/logo-c-gudangada.04e7ae43.png",
+  "logo_src": "picked:site"
+ },
+ "halodoc": {
+  "logo": "/assets/logo-c-halodoc.f449fcd2.png",
+  "logo_src": "picked:appstore"
+ },
+ "healthpro": {
+  "logo": "/assets/logo-c-healthpro.85e0dd6d.png",
+  "logo_src": "picked:site"
+ },
+ "herza-cloud": {
+  "logo": "/assets/logo-c-herza-cloud.536e646c.png",
+  "logo_src": "picked:site"
+ },
+ "hostnic": {
+  "logo": "/assets/logo-c-hostnic.6ec6963d.png",
+  "logo_src": "picked:site"
+ },
+ "idcloudhost": {
+  "logo": "/assets/logo-c-idcloudhost.69b28ee8.png",
+  "logo_src": "picked:manual"
+ },
+ "idexpress": {
+  "logo": "/assets/logo-c-idexpress.e7a5fdd7.png",
+  "logo_src": "picked:play"
+ },
+ "idrx": {
+  "logo": "/assets/logo-c-idrx.4f3f6b43.png",
+  "logo_src": "picked:site"
+ },
+ "increase-laboratorium-indonesia": {
+  "logo": "/assets/logo-c-increase-laboratorium-indonesia.261144ff.png",
+  "logo_src": "picked:header"
+ },
+ "intura": {
+  "logo": "/assets/logo-c-intura.680fd1a6.png",
+  "logo_src": "picked:site"
+ },
+ "iseller": {
+  "logo": "/assets/logo-c-iseller.a3ff06e6.png",
+  "logo_src": "picked:appstore"
+ },
+ "julo": {
+  "logo": "/assets/logo-c-julo.aac17b7c.png",
+  "logo_src": "picked:header"
+ },
+ "karyakarsa": {
+  "logo": "/assets/logo-c-karyakarsa.817d124f.png",
+  "logo_src": "picked:play"
+ },
+ "kaskus": {
+  "logo": "/assets/logo-c-kaskus.c46ba5d5.png",
+  "logo_src": "picked:appstore"
+ },
+ "kecilin": {
+  "logo": "/assets/logo-c-kecilin.0963a2e5.png",
+  "logo_src": "picked:site"
+ },
+ "kitabisa": {
+  "logo": "/assets/logo-c-kitabisa.c6ca9b9d.png",
+  "logo_src": "picked:appstore"
+ },
+ "kitalulus": {
+  "logo": "/assets/logo-c-kitalulus.50b8f55c.png",
+  "logo_src": "picked:appstore"
+ },
+ "klikserver": {
+  "logo": "/assets/logo-c-klikserver.20efe46c.png",
+  "logo_src": "picked:site"
+ },
+ "klinik-pintar": {
+  "logo": "/assets/logo-c-klinik-pintar.5920af73.png",
+  "logo_src": "picked:site"
+ },
+ "kopi-tuku": {
+  "logo": "/assets/logo-c-kopi-tuku.33861746.png",
+  "logo_src": "picked:site"
+ },
+ "kredivo": {
+  "logo": "/assets/logo-c-kredivo.9838c2e0.png",
+  "logo_src": "picked:appstore"
+ },
+ "lalamove-indonesia": {
+  "logo": "/assets/logo-c-lalamove-indonesia.b70662c2.png",
+  "logo_src": "picked:site"
+ },
+ "lamudi-indonesia": {
+  "logo": "/assets/logo-c-lamudi-indonesia.f89bb57f.png",
+  "logo_src": "picked:play"
+ },
+ "linkaja": {
+  "logo": "/assets/logo-c-linkaja.df429aea.png",
+  "logo_src": "picked:appstore"
+ },
+ "lister": {
+  "logo": "/assets/logo-c-lister.90edd60c.png",
+  "logo_src": "picked:site"
+ },
+ "logisly": {
+  "logo": "/assets/logo-c-logisly.3f56df82.png",
+  "logo_src": "picked:play"
+ },
+ "maka-motors": {
+  "logo": "/assets/logo-c-maka-motors.5817da12.png",
+  "logo_src": "picked:site"
+ },
+ "matchmade": {
+  "logo": "/assets/logo-c-matchmade.b3fb9668.png",
+  "logo_src": "picked:site"
+ },
+ "materee": {
+  "logo": "/assets/logo-c-materee.7f6b4a3f.png",
+  "logo_src": "picked:site"
+ },
+ "mobee": {
+  "logo": "/assets/logo-c-mobee.70e15165.png",
+  "logo_src": "picked:site"
+ },
+ "mtarget": {
+  "logo": "/assets/logo-c-mtarget.f6ccedf7.png",
+  "logo_src": "picked:site"
+ },
+ "nalagenetics": {
+  "logo": "/assets/logo-c-nalagenetics.d3152a1e.png",
+  "logo_src": "picked:appstore"
+ },
+ "narasi": {
+  "logo": "/assets/logo-c-narasi.88078b50.png",
+  "logo_src": "picked:header"
+ },
+ "nusantics": {
+  "logo": "/assets/logo-c-nusantics.d280493a.png",
+  "logo_src": "picked:manual"
+ },
+ "nusatrip": {
+  "logo": "/assets/logo-c-nusatrip.2210f465.png",
+  "logo_src": "picked:appstore"
+ },
+ "ovo": {
+  "logo": "/assets/logo-c-ovo.51aac3b3.png",
+  "logo_src": "picked:play"
+ },
+ "pahamify": {
+  "logo": "/assets/logo-c-pahamify.e6fa0e2d.png",
+  "logo_src": "picked:manual"
+ },
+ "paper-id": {
+  "logo": "/assets/logo-c-paper-id.da12581e.png",
+  "logo_src": "picked:appstore"
+ },
+ "pasarpolis": {
+  "logo": "/assets/logo-c-pasarpolis.2802ad22.png",
+  "logo_src": "picked:header"
+ },
+ "paxel": {
+  "logo": "/assets/logo-c-paxel.a1281549.png",
+  "logo_src": "picked:appstore"
+ },
+ "peentar": {
+  "logo": "/assets/logo-c-peentar.47c0799b.png",
+  "logo_src": "picked:header"
+ },
+ "pina": {
+  "logo": "/assets/logo-c-pina.2ae31b68.png",
+  "logo_src": "picked:play"
+ },
+ "pintar": {
+  "logo": "/assets/logo-c-pintar.76fe0afa.png",
+  "logo_src": "picked:play"
+ },
+ "populix": {
+  "logo": "/assets/logo-c-populix.f989c63f.png",
+  "logo_src": "picked:site"
+ },
+ "praktis": {
+  "logo": "/assets/logo-c-praktis.e398990c.png",
+  "logo_src": "picked:site"
+ },
+ "qalboo": {
+  "logo": "/assets/logo-c-qalboo.568c7c24.png",
+  "logo_src": "picked:site"
+ },
+ "qwords": {
+  "logo": "/assets/logo-c-qwords.9650551b.png",
+  "logo_src": "picked:site"
+ },
+ "ranch-market": {
+  "logo": "/assets/logo-c-ranch-market.0f8a9fce.png",
+  "logo_src": "picked:site"
+ },
+ "revou": {
+  "logo": "/assets/logo-c-revou.52149570.png",
+  "logo_src": "picked:site"
+ },
+ "rey": {
+  "logo": "/assets/logo-c-rey.97e9f16b.png",
+  "logo_src": "picked:play"
+ },
+ "ringkas": {
+  "logo": "/assets/logo-c-ringkas.2c070128.png",
+  "logo_src": "picked:appstore"
+ },
+ "segari": {
+  "logo": "/assets/logo-c-segari.527e7a82.png",
+  "logo_src": "picked:play"
+ },
+ "sekilo": {
+  "logo": "/assets/logo-c-sekilo.c2f3744b.png",
+  "logo_src": "picked:site"
+ },
+ "shipper": {
+  "logo": "/assets/logo-c-shipper.b2148f2b.png",
+  "logo_src": "picked:appstore"
+ },
+ "shopee-indonesia": {
+  "logo": "/assets/logo-c-shopee-indonesia.0a73da5f.png",
+  "logo_src": "picked:play"
+ },
+ "sirclo": {
+  "logo": "/assets/logo-c-sirclo.164728a8.png",
+  "logo_src": "picked:manual"
+ },
+ "snapcart": {
+  "logo": "/assets/logo-c-snapcart.d8047f01.png",
+  "logo_src": "picked:header"
+ },
+ "social-bread": {
+  "logo": "/assets/logo-c-social-bread.aadfb61f.png",
+  "logo_src": "picked:play"
+ },
+ "sociolla": {
+  "logo": "/assets/logo-c-sociolla.3460fee3.png",
+  "logo_src": "picked:manual"
+ },
+ "spun": {
+  "logo": "/assets/logo-c-spun.e2716018.png",
+  "logo_src": "picked:site"
+ },
+ "stickearn": {
+  "logo": "/assets/logo-c-stickearn.a7fab1d1.png",
+  "logo_src": "picked:play"
+ },
+ "stockbit": {
+  "logo": "/assets/logo-c-stockbit.24325eb8.png",
+  "logo_src": "picked:play"
+ },
+ "strongbee": {
+  "logo": "/assets/logo-c-strongbee.79b55e9a.png",
+  "logo_src": "picked:appstore"
+ },
+ "sun-energy": {
+  "logo": "/assets/logo-c-sun-energy.75cfde23.png",
+  "logo_src": "picked:header"
+ },
+ "tanamera-coffee": {
+  "logo": "/assets/logo-c-tanamera-coffee.eec30017.png",
+  "logo_src": "picked:appstore"
+ },
+ "tiket-com": {
+  "logo": "/assets/logo-c-tiket-com.52fc17f6.png",
+  "logo_src": "picked:site"
+ },
+ "tomoro-coffee": {
+  "logo": "/assets/logo-c-tomoro-coffee.30c3e98f.png",
+  "logo_src": "picked:appstore"
+ },
+ "transtrack": {
+  "logo": "/assets/logo-c-transtrack.aca7c13a.png",
+  "logo_src": "picked:appstore"
+ },
+ "triv": {
+  "logo": "/assets/logo-c-triv.2740d6f2.png",
+  "logo_src": "picked:site"
+ },
+ "trucarbon": {
+  "logo": "/assets/logo-c-trucarbon.388fe2e6.png",
+  "logo_src": "picked:site"
+ },
+ "upbit-indonesia": {
+  "logo": "/assets/logo-c-upbit-indonesia.96187f2d.png",
+  "logo_src": "picked:site"
+ },
+ "visinema": {
+  "logo": "/assets/logo-c-visinema.db0bfcfc.png",
+  "logo_src": "picked:manual"
+ },
+ "wagely": {
+  "logo": "/assets/logo-c-wagely.356cde32.png",
+  "logo_src": "picked:appstore"
+ },
+ "waresix": {
+  "logo": "/assets/logo-c-waresix.42b82d22.png",
+  "logo_src": "picked:play"
+ },
+ "xurya": {
+  "logo": "/assets/logo-c-xurya.8d9fb557.png",
+  "logo_src": "picked:site"
+ },
+ "zi-care": {
+  "logo": "/assets/logo-c-zi-care.979e9333.png",
+  "logo_src": "picked:site"
+ }
+}

@@ -1,0 +1,20 @@
+{
+ "id": "edenfarm",
+ "name": "EdenFarm",
+ "url": "https://eden.farm",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/edenfarm/s00-play.png",
+   "tag": "play:com.edenfarm.app",
+   "src": "https://play-lh.googleusercontent.com/vRjmA1zAkSqznZT966zuIPlPNigpIQpS2lClbyU-L_ramR6yw8XivyHuDGKBrggPxatem78t4F3U-PMxOhGPQg=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/edenfarm/s01-play.png",
+   "tag": "play:com.edenfarmdelivery.deliveryapp",
+   "src": "https://play-lh.googleusercontent.com/eNtRPq6RxDHqkuF0sfaO3RqspH4DnLNflv522Qyui1bMj_Drj1dQsM95ukXTXg3m-41et74g6GXXq61UuUeA0g=s512"
+  }
+ ],
+ "errors": []
+}

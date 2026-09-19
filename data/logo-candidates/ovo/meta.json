@@ -1,0 +1,36 @@
+{
+ "id": "ovo",
+ "name": "OVO",
+ "url": "https://www.ovo.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/ovo/s00-appstore.png",
+   "tag": "appstore:OVO",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/33/69/6d/33696d42-71b6-c808-0e10-daaed99417a6/AppIcon-0-0-1x_U007emarketing-0-8-0-sRGB-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/ovo/s01-play.png",
+   "tag": "play:ovo.id",
+   "src": "https://play-lh.googleusercontent.com/EtY-I_WCQBd7BcXRDdjGCD2yukXAuZWI_kKavYXmWP-nNr0xUcZZXgzgcG6wnNfkUjvoSlARRbBKnYwz23BH=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/ovo/s02-play.png",
+   "tag": "play:ro.nativesoft.ovobounce",
+   "src": "https://play-lh.googleusercontent.com/hy44w9Cm1hY00QMo6joPiHX6AswqRk4eC6JYY7089umKTiBOjjfIBM6NCe7-XWU15jGGxRdUqx5My0D7Bux1Ow=s512"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/ovo/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/ovo/h00-header.png",
+   "tag": "header-74x24"
+  }
+ ],
+ "errors": []
+}

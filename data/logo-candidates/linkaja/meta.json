@@ -1,0 +1,14 @@
+{
+ "id": "linkaja",
+ "name": "LinkAja",
+ "url": "https://www.linkaja.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/linkaja/s00-appstore.png",
+   "tag": "appstore:LinkAja / LinkAja Syariah",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/17/02/54/17025479-db8a-d0c8-b038-72b4906a8583/AppIconRamadhan-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.png"
+  }
+ ],
+ "errors": []
+}

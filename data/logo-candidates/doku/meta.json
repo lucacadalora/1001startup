@@ -1,0 +1,57 @@
+{
+ "id": "doku",
+ "name": "DOKU",
+ "url": "https://www.doku.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/doku/s00-appstore.png",
+   "tag": "appstore:DOKU e-Wallet",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/cb/3d/dd/cb3ddd61-2398-05d4-d755-f705c4521999/AppIcon-0-0-1x_U007emarketing-0-11-0-sRGB-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/doku/s01-appstore.png",
+   "tag": "appstore:Juragan DOKU",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7a/99/6c/7a996c1b-3176-8f42-67af-a33f4aab2bbc/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/doku/s02-play.png",
+   "tag": "play:com.dokuwallet.android",
+   "src": "https://play-lh.googleusercontent.com/PJZ4EFS1j-bGUFb_p_AIwERzpPU0NFxlrgdavOlxv6PoR1tM3x27kdhLh458AxIlcnUOOrRcCi8SkG20UrR9=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/doku/s03-play.png",
+   "tag": "play:com.doku.juragan",
+   "src": "https://play-lh.googleusercontent.com/fFW02_APvT9K32aY95snXnPWQVCCLq8CCGL-AHiveq1JFelnC8roeWOIsG9v3Q0AnWc7R3GSsHGpSDT1nf7j=s512"
+  },
+  {
+   "pri": 102.8,
+   "path": "data/logo-candidates/doku/00-site-apple-touch-icon-256x256.png",
+   "tag": "apple-touch-icon-256x256"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/doku/01-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/doku/02-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/doku/03-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/doku/h00-header.png",
+   "tag": "header-64x64"
+  }
+ ],
+ "errors": []
+}

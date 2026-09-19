@@ -1,0 +1,42 @@
+{
+ "id": "badr-interactive",
+ "name": "Badr Interactive",
+ "url": "https://badr.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/badr-interactive/s00-appstore.png",
+   "tag": "appstore:Dua in Quran: Dua for Your Daily Zikr",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple49/v4/08/a6/61/08a66173-0cda-1ce2-12cb-62f11d874165/mzl.xcrsnplx.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/badr-interactive/s01-appstore.png",
+   "tag": "appstore:Inspire: Quotes Generator",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple18/v4/b2/b6/2d/b2b62d88-d8f4-580a-44ea-a13d139f9a25/mzl.cdmsheat.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/badr-interactive/s02-play.png",
+   "tag": "play:com.masaarbadr.app",
+   "src": "https://play-lh.googleusercontent.com/khJNxjYba5ZDtfMqPlDCffC4vNMZ_YR47dDedKGUskEvYFOxxD0AHfAoEO7wMpY404ZBVJAQjrPYaEQ-ePSv=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/badr-interactive/s03-play.png",
+   "tag": "play:com.badr.english2021",
+   "src": "https://play-lh.googleusercontent.com/_tlfZnOhdQsLgEOn9LzbRuua8oc8sNNMamme2VpizJ6Q5Kxoly6PxxggvOxIufhC4rxlz_ErwxNJ4Ede-w3h=s512"
+  },
+  {
+   "pri": 68.2,
+   "path": "data/logo-candidates/badr-interactive/00-site-link-icon-100x100.png",
+   "tag": "link-icon-100x100"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/badr-interactive/h00-header.png",
+   "tag": "header-67x32"
+  }
+ ],
+ "errors": []
+}

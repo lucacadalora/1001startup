@@ -1,0 +1,41 @@
+{
+ "id": "awanio",
+ "name": "Awanio (awan.io)",
+ "url": "https://awan.io",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/awanio/m01-manual.png",
+   "tag": "manual",
+   "src": "https://github.com/awanio.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/awanio/s00-play.png",
+   "tag": "play:be.mde.awans",
+   "src": "https://play-lh.googleusercontent.com/aHV6z_ii4Ib3QwNs-ajHgd8L958g_QljbzXcatT-QS0mzU6B_ZyAs097O4oQGGg61ZZhP6nc0LI0uNrZi844kiM=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/awanio/s01-play.png",
+   "tag": "play:leafyfied.studios.awan",
+   "src": "https://play-lh.googleusercontent.com/ycDdoUYQ4QVIoqONFItu-sHzOWVy5HYFycxZsq_Dgh3j_bnrTFPH49H8KDsBsQcWzM-LLIBgL4rpxvoCBaVYtQ=s512"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/awanio/00-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/awanio/h00-header.png",
+   "tag": "header-42x44"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/awanio/h01-header.png",
+   "tag": "header-107x44"
+  }
+ ],
+ "errors": []
+}

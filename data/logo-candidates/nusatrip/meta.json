@@ -1,0 +1,30 @@
+{
+ "id": "nusatrip",
+ "name": "NusaTrip",
+ "url": "https://www.nusatrip.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/nusatrip/s00-appstore.png",
+   "tag": "appstore:NusaTrip - Flight & Hotels",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple113/v4/61/0e/4f/610e4f22-9ee9-25f0-b277-04ed20d3e0e0/AppIcon-0-1x_U007emarketing-0-0-85-220-0-5.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/nusatrip/s01-play.png",
+   "tag": "play:com.nusatrip.android",
+   "src": "https://play-lh.googleusercontent.com/nHYeGBB9Ow0ZKFh4T3jDPCRWdVRF9EtzB4-GbXVGyR3Jj7KjvMRoP0_2GVDWDMEWSs9JIXhVeFwSXagE27Ha5FY=s512"
+  },
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/nusatrip/00-site-guess-favicon-16x16.png",
+   "tag": "guess-favicon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/nusatrip/h00-header.png",
+   "tag": "header-153x32"
+  }
+ ],
+ "errors": []
+}

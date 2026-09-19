@@ -1,0 +1,30 @@
+{
+ "id": "paxel",
+ "name": "Paxel",
+ "url": "https://paxel.co",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/paxel/s00-appstore.png",
+   "tag": "appstore:Paxel - Easy to Send Package",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/69/1e/83/691e83e5-a64e-ad0c-cd17-4ec0df7cf946/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/paxel/s01-play.png",
+   "tag": "play:com.paxel",
+   "src": "https://play-lh.googleusercontent.com/8k87OoTdSylsIS2Hyn2ofe_RG51z6C8V4mdExu-oAREHV5Kenzf42v8cSFm3jp1UhKscSHmX-2EAI2kONJdzbw=s512"
+  },
+  {
+   "pri": 61.55,
+   "path": "data/logo-candidates/paxel/00-site-link-icon-31x30.png",
+   "tag": "link-icon-31x30"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/paxel/h00-header.png",
+   "tag": "header-105x33"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,18 @@
+{
+ "id": "dash-electric",
+ "name": "Dash Electric",
+ "url": "https://www.dashelectric.co",
+ "candidates": [
+  {
+   "pri": 118.35000000000001,
+   "path": "data/logo-candidates/dash-electric/00-site-link-icon-389x389.png",
+   "tag": "link-icon-389x389"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/dash-electric/h00-header.png",
+   "tag": "header-80x18"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,57 @@
+{
+ "id": "paper-id",
+ "name": "Paper.id",
+ "url": "https://www.paper.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/paper-id/s00-appstore.png",
+   "tag": "appstore:Paper - Invoice & Payments",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d5/ed/26/d5ed26c5-ed38-54da-a1ac-991e9fcea2c0/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/paper-id/s02-play.png",
+   "tag": "play:id.paper.invoicer",
+   "src": "https://play-lh.googleusercontent.com/R12pOfYcj6tMqIwVdK2oQwzHy5j-xfx6EHSGnbr4nq-Uaf19_qKTcYefnnnKwRM2oneGhL3f3jJFMCkgG5fHr4g=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/paper-id/s03-play.png",
+   "tag": "play:io.voodoo.paper2",
+   "src": "https://play-lh.googleusercontent.com/VLNMnYux_aq-VLdWuwXGSGqxBlVZUh0LQvUZrc58tDLvuK08CITp9WzT8638iACsYGgTS9BSe-XMZA5_fufZ=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/paper-id/s01-appstore.png",
+   "tag": "appstore:Paper: Sketch, Draw & Create",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/a2/e5/94/a2e5943e-fb47-cc60-7f51-d333e528405e/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 61.55,
+   "path": "data/logo-candidates/paper-id/00-site-link-icon-31x40.png",
+   "tag": "link-icon-31x40"
+  },
+  {
+   "pri": 61.55,
+   "path": "data/logo-candidates/paper-id/01-site-link-icon-31x40.png",
+   "tag": "link-icon-31x40"
+  },
+  {
+   "pri": 49.0,
+   "path": "data/logo-candidates/paper-id/02-site-guess-apple-180x180.png",
+   "tag": "guess-apple-180x180"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/paper-id/03-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/paper-id/h00-header.png",
+   "tag": "header-118x40"
+  }
+ ],
+ "errors": []
+}

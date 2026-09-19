@@ -1,0 +1,25 @@
+{
+ "id": "rey",
+ "name": "Rey (Rey Assurance)",
+ "url": "https://rey.id",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/rey/s00-play.png",
+   "tag": "play:id.rey",
+   "src": "https://play-lh.googleusercontent.com/lxq_eryfjY9Ca1qa1zZssJB9diasS-NMqlanFG8uwTyctvJJMQm7gW9-vWPGhY5uW_Qd77KD5Hm1IzSL5YRg=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/rey/s01-play.png",
+   "tag": "play:com.wrey.player",
+   "src": "https://play-lh.googleusercontent.com/Ps5GHxpY_7krwHigcVjaxCKCvbVgNAqr149deml7baYG3D3y3tkrwLt4RmN05SAZ1npVtXYLMF6vraOSPulnpOo=s512"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/rey/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,20 @@
+{
+ "id": "cashlez",
+ "name": "Cashlez",
+ "url": "https://www.cashlez.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/cashlez/s00-appstore.png",
+   "tag": "appstore:Cashlez",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple116/v4/3f/d0/42/3fd04200-d981-29b5-8714-26ea04e31625/AppIcon-0-0-1x_U007emarketing-0-0-0-7-0-0-sRGB-0-0-0-GLES2_U002c0-512MB-85-220-0-0.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/cashlez/s01-play.png",
+   "tag": "play:co.id.kreditekfa.mob_cashlez",
+   "src": "https://play-lh.googleusercontent.com/otThk0DoN7jVJvkBCbGt7xQ0-8uAULuaco0LSQdgT_4Vsw_hT_m61aiDQ-LxPxaJ8JfZBy1tIdDVCA-CdHEhjxM=s512"
+  }
+ ],
+ "errors": []
+}

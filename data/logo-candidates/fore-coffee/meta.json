@@ -1,0 +1,40 @@
+{
+ "id": "fore-coffee",
+ "name": "Fore Coffee",
+ "url": "https://fore.coffee",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/fore-coffee/s00-appstore.png",
+   "tag": "appstore:Fore Coffee",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/38/f5/ff/38f5ffdd-1f08-6d34-ba98-854c358b90de/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/fore-coffee/s01-play.png",
+   "tag": "play:coffee.fore2.fore",
+   "src": "https://play-lh.googleusercontent.com/gY08RXNKHsE6wb_FInBxfEOK4cCP23wOIOg8CfM-G9Hg2PkbN2PNAhHw3qXWQi3uO71Rq2qIWcq7n7-yd_pF-w=s512"
+  },
+  {
+   "pri": 94.2,
+   "path": "data/logo-candidates/fore-coffee/00-site-link-icon-300x300.png",
+   "tag": "link-icon-300x300"
+  },
+  {
+   "pri": 68.2,
+   "path": "data/logo-candidates/fore-coffee/01-site-link-icon-100x100.png",
+   "tag": "link-icon-100x100"
+  },
+  {
+   "pri": 61.65,
+   "path": "data/logo-candidates/fore-coffee/02-site-link-icon-33x32.png",
+   "tag": "link-icon-33x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/fore-coffee/h00-header.png",
+   "tag": "header-100x50"
+  }
+ ],
+ "errors": []
+}

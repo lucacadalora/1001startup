@@ -1,0 +1,30 @@
+{
+ "id": "social-bread",
+ "name": "Social Bread",
+ "url": "https://socialbread.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/social-bread/s00-appstore.png",
+   "tag": "appstore:SocialBread App",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/38/93/48/389348c4-7cbb-b73e-1698-af571635def3/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/social-bread/s01-play.png",
+   "tag": "play:id.socialbread.client",
+   "src": "https://play-lh.googleusercontent.com/6zd0Xm4qr8IMw-pk7danE2AL6xZ3a0BXgiyhm6ve3ovovKzrKII9gfBE7d3s7sw6En84TIFYeVlcUU7yGPsbEg=s512"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/social-bread/00-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/social-bread/h00-header.png",
+   "tag": "header-102x32"
+  }
+ ],
+ "errors": []
+}

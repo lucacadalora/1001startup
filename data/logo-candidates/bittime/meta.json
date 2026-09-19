@@ -1,0 +1,51 @@
+{
+ "id": "bittime",
+ "name": "Bittime",
+ "url": "https://www.bittime.com",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/bittime/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/bittime/s00-appstore.png",
+   "tag": "appstore:BitTime - Binary Clock",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6f/be/cd/6fbecd17-802c-db7f-8c57-6c6c7ef28b82/BitTime-0-0-1x_U007epad-0-1-P3-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/bittime/s01-appstore.png",
+   "tag": "appstore:Bittime",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/cc/21/f5/cc21f59c-e199-7f63-9b39-b74f5cc02d5e/AppIcon-0-0-1x_U007emarketing-0-8-0-P3-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/bittime/s02-play.png",
+   "tag": "play:com.bittime.currency.exchange",
+   "src": "https://play-lh.googleusercontent.com/gGtfLzd-fVXuPb-ZPM4OpxKWCZTuDNmWfegJPSD3WtZZu5yt751cOWQAuAWdsSZTHFkBJfIw_P9mlUPV9Nzo0w=s512"
+  },
+  {
+   "pri": 151.20000000000002,
+   "path": "data/logo-candidates/bittime/01-site-manifest-256x256.png",
+   "tag": "manifest-256x256"
+  },
+  {
+   "pri": 118.8,
+   "path": "data/logo-candidates/bittime/02-site-apple-touch-icon-192x192.png",
+   "tag": "apple-touch-icon-192x192"
+  },
+  {
+   "pri": 66.4,
+   "path": "data/logo-candidates/bittime/03-site-link-icon-128x128.png",
+   "tag": "link-icon-128x128"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/bittime/h00-header.png",
+   "tag": "header-71x34"
+  }
+ ],
+ "errors": []
+}

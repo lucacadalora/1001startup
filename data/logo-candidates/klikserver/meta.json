@@ -1,0 +1,23 @@
+{
+ "id": "klikserver",
+ "name": "Klikserver",
+ "url": "https://www.klikserver.com",
+ "candidates": [
+  {
+   "pri": 66.65,
+   "path": "data/logo-candidates/klikserver/00-site-link-icon-133x133.png",
+   "tag": "link-icon-133x133"
+  },
+  {
+   "pri": 33.3,
+   "path": "data/logo-candidates/klikserver/01-site-guess-favicon-66x66.png",
+   "tag": "guess-favicon-66x66"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/klikserver/h00-header.png",
+   "tag": "header-215x50"
+  }
+ ],
+ "errors": []
+}

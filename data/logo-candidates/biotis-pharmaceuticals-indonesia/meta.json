@@ -1,0 +1,28 @@
+{
+ "id": "biotis-pharmaceuticals-indonesia",
+ "name": "Biotis Pharmaceuticals Indonesia",
+ "url": "https://biotis.co.id",
+ "candidates": [
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/biotis-pharmaceuticals-indonesia/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/biotis-pharmaceuticals-indonesia/01-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/biotis-pharmaceuticals-indonesia/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/biotis-pharmaceuticals-indonesia/h00-header.png",
+   "tag": "header-126x90"
+  }
+ ],
+ "errors": []
+}

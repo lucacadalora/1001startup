@@ -1,0 +1,35 @@
+{
+ "id": "idexpress",
+ "name": "iDexpress (ID Express)",
+ "url": "https://idexpress.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/idexpress/s00-play.png",
+   "tag": "play:com.idexpress.customerapp",
+   "src": "https://play-lh.googleusercontent.com/XOUJcTqiMerxkuMaexUFkcdKfNsFCk_G1pWQUH3fRkgJoyNILg07BzuyPA1nnt1Yv3VYL-u2YcuLKvKNI-0o=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/idexpress/s01-play.png",
+   "tag": "play:com.idexpress.courierapp",
+   "src": "https://play-lh.googleusercontent.com/2Kug319HsiLk8b7iY66YRKyioioqD0rojJNcb6L69VITbq25DMfXvI1AfRMdqkKudprD9PyF07vu0K6KMNJo=s512"
+  },
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/idexpress/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/idexpress/01-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/idexpress/h00-header.png",
+   "tag": "header-50x41"
+  }
+ ],
+ "errors": []
+}

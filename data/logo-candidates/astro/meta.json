@@ -1,0 +1,32 @@
+{
+ "id": "astro",
+ "name": "Astro",
+ "url": "https://www.astronauts.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/astro/s00-appstore.png",
+   "tag": "appstore:Astro - Groceries in Minutes",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/21/cf/01/21cf01a0-0bc5-3b20-2627-36328bbe0b15/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/astro/s02-play.png",
+   "tag": "play:com.astro.shop",
+   "src": "https://play-lh.googleusercontent.com/bKG6X3NW-_kXEXxgzeLUFP2D5QyegHaa3otglOh3pF8wChbmXTBkQvUXBUwKvr-sjqCAFfaQdHId3PG7AxUb=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/astro/s03-play.png",
+   "tag": "play:com.astro.astroview",
+   "src": "https://play-lh.googleusercontent.com/eUYdQ8H28JeiM7gofeUJYkeSJb_y6xaHFxqt8MYjGNzradJ-zzNEA3LUL4a2MndazuD375Go-PNt_kAyhtMTVeA=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/astro/s01-appstore.png",
+   "tag": "appstore:My Astro",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/b5/c8/9d/b5c89db1-0943-50fa-601a-f992ffeb7972/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,30 @@
+{
+ "id": "narasi",
+ "name": "Narasi",
+ "url": "https://narasi.tv",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/narasi/s00-appstore.png",
+   "tag": "appstore:Sri Lakshmi Narasimha Swamy",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/37/7a/dd/377add70-b8f8-2aff-1ca5-bfda4eec083d/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/narasi/s01-appstore.png",
+   "tag": "appstore:Carnatic Thaalam Robot",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple118/v4/b5/bd/51/b5bd51b4-4537-68c2-294a-7bfde53e8eea/AppIcon-0-1x_U007emarketing-0-0-GLES2_U002c0-512MB-sRGB-0-0-0-85-220-0-0-0-7.png/512x512bb.png"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/narasi/00-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/narasi/h00-header.png",
+   "tag": "header-112x33"
+  }
+ ],
+ "errors": []
+}

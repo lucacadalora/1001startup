@@ -1,0 +1,30 @@
+{
+ "id": "fundtastic",
+ "name": "FUNDtastic",
+ "url": "https://fundtastic.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/fundtastic/s00-appstore.png",
+   "tag": "appstore:FUNDtastic",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ab/b2/30/abb230f8-1f1d-4886-5375-40742b434a04/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/fundtastic/s01-play.png",
+   "tag": "play:id.co.fundtastic.client",
+   "src": "https://play-lh.googleusercontent.com/eC5dQlFeQ1g1ioNnwX2lPQ-FoXi8xzu6Jlg82gu-69xBD2wDrB-6Hhtu5SEmaBMjjjuNrDpbmUvoMcSu4Kz8=s512"
+  },
+  {
+   "pri": 60.8,
+   "path": "data/logo-candidates/fundtastic/00-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/fundtastic/01-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  }
+ ],
+ "errors": []
+}

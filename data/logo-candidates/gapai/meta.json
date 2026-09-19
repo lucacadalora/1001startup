@@ -1,0 +1,18 @@
+{
+ "id": "gapai",
+ "name": "Gapai",
+ "url": "https://gapai.id",
+ "candidates": [
+  {
+   "pri": 64.0,
+   "path": "data/logo-candidates/gapai/00-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/gapai/h00-header.png",
+   "tag": "header-100x40"
+  }
+ ],
+ "errors": []
+}

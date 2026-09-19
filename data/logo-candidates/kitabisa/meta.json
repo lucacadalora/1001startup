@@ -1,0 +1,56 @@
+{
+ "id": "kitabisa",
+ "name": "Kitabisa",
+ "url": "https://kitabisa.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/kitabisa/s00-appstore.png",
+   "tag": "appstore:SalingJaga: Asuransi Jiwa",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d7/4d/3a/d74d3a8f-075c-0819-9ba7-251f99821501/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/kitabisa/s01-appstore.png",
+   "tag": "appstore:Kitabisa: Donasi, Zakat, Wakaf",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/69/57/de/6957de63-9663-24d4-ca13-8a9e157c9f79/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/kitabisa/s02-play.png",
+   "tag": "play:com.kitabisa.android",
+   "src": "https://play-lh.googleusercontent.com/huVknERGJoaj7FlrytWdRVKljeuB0YPm_AFu5Y1GJYQ2EWrspA_vlxcnKiS_vEF_xL7r2k1ERAUCm5yVUsZXBBA=s512"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/kitabisa/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/kitabisa/01-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/kitabisa/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/kitabisa/03-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/kitabisa/04-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 45.6,
+   "path": "data/logo-candidates/kitabisa/05-site-mask-icon-2048x2048.png",
+   "tag": "mask-icon-2048x2048"
+  }
+ ],
+ "errors": []
+}

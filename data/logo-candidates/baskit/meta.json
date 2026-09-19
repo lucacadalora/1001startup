@@ -1,0 +1,42 @@
+{
+ "id": "baskit",
+ "name": "Baskit",
+ "url": "https://baskit.app",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/baskit/s00-appstore.png",
+   "tag": "appstore:Baskit Partner",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f2/51/a2/f251a23f-3299-f4b2-74f4-30623194bc83/prodAppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/baskit/s01-appstore.png",
+   "tag": "appstore:Baskit: Grocery App",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/77/2f/7e/772f7ebb-7015-1955-3e95-b27df694ad41/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/baskit/s02-play.png",
+   "tag": "play:id.baskit.mobile.baskitshop",
+   "src": "https://play-lh.googleusercontent.com/zkIbB2BCwigwBOUeZofOoDvLJTYBLDpn40W4vYdaXdEivhu31iSndfWEyPwClS8dCjnxhxIzoojUH5YONUEbsSU=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/baskit/s03-play.png",
+   "tag": "play:com.baskitapp",
+   "src": "https://play-lh.googleusercontent.com/C_SILhSA7_0tGGZurPIg4h-5urbXwYirizsqiPO3ZZoOZZQS_-90JPvWyA-hdk9wN4UZTLC63D1bMJMTYuVXiA=s512"
+  },
+  {
+   "pri": 63.2,
+   "path": "data/logo-candidates/baskit/00-site-link-icon-64x64.png",
+   "tag": "link-icon-64x64"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/baskit/h00-header.png",
+   "tag": "header-71x24"
+  }
+ ],
+ "errors": []
+}

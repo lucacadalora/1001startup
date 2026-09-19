@@ -1,0 +1,20 @@
+{
+ "id": "kaskus",
+ "name": "KASKUS",
+ "url": "https://www.kaskus.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/kaskus/s00-appstore.png",
+   "tag": "appstore:KASKUS Forum: Hobi & Komunitas",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/77/34/4f/77344f5f-b36f-9d7f-6b5e-c8a7780643d3/AppIcon-0-0-1x_U007emarketing-0-8-0-0-GLES2_U002c0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/kaskus/s01-play.png",
+   "tag": "play:com.kaskus.android",
+   "src": "https://play-lh.googleusercontent.com/YuE0IcAy6Tt70Dw2Niu3whcl2-5SVhjwoqOqQZwW5qohZRxqCefFa8rj1hiiUG2hgai-mz6fAs_vfEgRLoI7Nw=s512"
+  }
+ ],
+ "errors": []
+}

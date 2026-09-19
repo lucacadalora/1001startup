@@ -1,0 +1,40 @@
+{
+ "id": "stickearn",
+ "name": "StickEarn",
+ "url": "https://stickearn.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/stickearn/s00-play.png",
+   "tag": "play:com.stickearn",
+   "src": "https://play-lh.googleusercontent.com/0me3BPPJ0mCyO6JzHvdTmrzeNlyimTCi5Gwqu_hQuja9RzLxjAkYY4FPixkoEVw3z2Wf467vEjMisLxC1n3Gog=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/stickearn/s01-play.png",
+   "tag": "play:com.stickearn.bob",
+   "src": "https://play-lh.googleusercontent.com/_HBPSdZCbjlWCTnc-_SbtoAZbVFDgLHbvybzoiDDutDI0nzZKnt0bsP0rd6wR4yGTxhk6AlaFEQ8cfiuo8DCzg=s512"
+  },
+  {
+   "pri": 68.4,
+   "path": "data/logo-candidates/stickearn/00-site-link-icon-104x104.png",
+   "tag": "link-icon-104x104"
+  },
+  {
+   "pri": 66.4,
+   "path": "data/logo-candidates/stickearn/01-site-link-icon-96x96.png",
+   "tag": "link-icon-96x96"
+  },
+  {
+   "pri": 34.0,
+   "path": "data/logo-candidates/stickearn/02-site-guess-favicon-80x80.png",
+   "tag": "guess-favicon-80x80"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/stickearn/h00-header.png",
+   "tag": "header-178x40"
+  }
+ ],
+ "errors": []
+}

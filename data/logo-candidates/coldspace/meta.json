@@ -1,0 +1,41 @@
+{
+ "id": "coldspace",
+ "name": "Coldspace",
+ "url": "https://coldspace.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/coldspace/s00-appstore.png",
+   "tag": "appstore:Cold Space",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple123/v4/e0/7d/e7/e07de768-725e-ec18-4a76-b2c715a60e0e/AppIcon-0-1x_U007emarketing-0-85-220-0-7.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/coldspace/s01-play.png",
+   "tag": "play:com.evilgrog.coldspace",
+   "src": "https://play-lh.googleusercontent.com/OsyNc6SxlLCfJDyl48xAQJrFJQasENl70apWYJq2xEJEbJDmF-CyojU1OAFX5Hfe84A5eI0p3zWujjbqOnS9Cg=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/coldspace/s02-play.png",
+   "tag": "play:com.cargoshare.drivercoldspaces",
+   "src": "https://play-lh.googleusercontent.com/-H2KELYy2heXHzKZ-9Asjiie_8DjVlJoVLOYLZHxWpSQmIRN8hj6H3CUn85zgRjiX_jIcgpeosDI7onYIowa-w=s512"
+  },
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/coldspace/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 72.8,
+   "path": "data/logo-candidates/coldspace/01-site-link-icon-256x256.png",
+   "tag": "link-icon-256x256"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/coldspace/h00-header.png",
+   "tag": "header-114x32"
+  }
+ ],
+ "errors": []
+}

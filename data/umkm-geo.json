@@ -1,0 +1,1836 @@
+{
+"places": {
+"Jakarta|DKI Jakarta": {
+"lat": -6.1754,
+"lon": 106.82717,
+"kind": "city",
+"matched": "Jakarta"
+},
+"Singaraja (Buleleng)|Bali": {
+"lat": -8.12564,
+"lon": 115.10131,
+"kind": "city",
+"matched": "Buleleng"
+},
+"Bantul|DI Yogyakarta": {
+"lat": -7.88537,
+"lon": 110.3518,
+"kind": "city",
+"matched": "PT.Pertani Persero cabang D.I Yogyakarta"
+},
+"Kab. Bogor (Gunung Putri)|West Java": {
+"lat": -6.59636,
+"lon": 106.79732,
+"kind": "city",
+"matched": "Bogor"
+},
+"Karanganyar|Central Java": {
+"lat": -7.6197,
+"lon": 111.0698,
+"kind": "city",
+"matched": "Karanganyar"
+},
+"Mojokerto (Sooko)|": {
+"lat": -7.54134,
+"lon": 112.5095,
+"kind": "city",
+"matched": "Mojokerto"
+},
+"Sleman|DI Yogyakarta": {
+"lat": -7.76562,
+"lon": 110.43078,
+"kind": "city",
+"matched": "SMKN 1 Depok DI Yogyakarta"
+},
+"Cirebon|West Java": {
+"lat": -6.7137,
+"lon": 108.56085,
+"kind": "city",
+"matched": "Cirebon"
+},
+"Surabaya|East Java": {
+"lat": -7.24628,
+"lon": 112.73777,
+"kind": "city",
+"matched": "Surabaya"
+},
+"Makassar|South Sulawesi": {
+"lat": -5.1343,
+"lon": 119.41243,
+"kind": "city",
+"matched": "Makassar"
+},
+"Jakarta Pusat|DKI Jakarta": {
+"lat": -6.1817,
+"lon": 106.82072,
+"kind": "city",
+"matched": "Bank Indonesia"
+},
+"Jepara|Central Java": {
+"lat": -6.5995,
+"lon": 110.78322,
+"kind": "city",
+"matched": "Jepara"
+},
+"Medan|North Sumatra": {
+"lat": 3.58946,
+"lon": 98.67416,
+"kind": "city",
+"matched": "Medan"
+},
+"Sragen|Central Java": {
+"lat": -7.39246,
+"lon": 110.95302,
+"kind": "city",
+"matched": "Sragen"
+},
+"Balikpapan|East Kalimantan": {
+"lat": -1.23987,
+"lon": 116.85934,
+"kind": "city",
+"matched": "Balikpapan"
+},
+"Sukoharjo|Central Java": {
+"lat": -7.6815,
+"lon": 110.87003,
+"kind": "city",
+"matched": "Sukoharjo"
+},
+"Banyuwangi|East Java": {
+"lat": -8.33257,
+"lon": 114.14158,
+"kind": "city",
+"matched": "Banyuwangi"
+},
+"Semarang|Central Java": {
+"lat": -6.9904,
+"lon": 110.42291,
+"kind": "city",
+"matched": "Semarang"
+},
+"Bogor|West Java": {
+"lat": -6.59636,
+"lon": 106.79732,
+"kind": "city",
+"matched": "Bogor"
+},
+"Solo (Surakarta)|Central Java": {
+"lat": -7.56925,
+"lon": 110.82845,
+"kind": "city",
+"matched": "Surakarta"
+},
+"Bandung|West Java": {
+"lat": -6.92185,
+"lon": 107.60708,
+"kind": "city",
+"matched": "Bandung"
+},
+"Pasuruan|East Java": {
+"lat": -7.75081,
+"lon": 112.81848,
+"kind": "city",
+"matched": "Pasuruan"
+},
+"Bogor Regency|West Java": {
+"lat": -6.56437,
+"lon": 106.73993,
+"kind": "city",
+"matched": "Pakuan Regency"
+},
+"|East Java": {
+"lat": -6.26289,
+"lon": 106.88223,
+"kind": "province",
+"matched": "East Jakarta"
+},
+"Kabupaten Bandung Barat|West Java": {
+"lat": -6.92185,
+"lon": 107.60708,
+"kind": "city",
+"matched": "Bandung"
+},
+"Yogyakarta|DI Yogyakarta": {
+"lat": -7.79535,
+"lon": 110.36728,
+"kind": "city",
+"matched": "Special Region of Yogyakarta"
+},
+"|West Sumatra": {
+"lat": 0.89649,
+"lon": 97.34333,
+"kind": "province",
+"matched": "West Nias"
+},
+"Padang|West Sumatra": {
+"lat": -0.92476,
+"lon": 100.36326,
+"kind": "city",
+"matched": "Padang"
+},
+"Denpasar|Bali": {
+"lat": -8.66533,
+"lon": 115.21762,
+"kind": "city",
+"matched": "Denpasar"
+},
+"Batu|East Java": {
+"lat": -7.87117,
+"lon": 112.52695,
+"kind": "city",
+"matched": "Batu"
+},
+"Kulon Progo|DI Yogyakarta": {
+"lat": -7.85529,
+"lon": 110.16549,
+"kind": "city",
+"matched": "Dinas Perpustakaan dan Kearsipan Kabupaten Kulon Progo"
+},
+"Surakarta|Central Java": {
+"lat": -7.56925,
+"lon": 110.82845,
+"kind": "city",
+"matched": "Surakarta"
+},
+"Banyumas (Desa Langgongsari, Cilongok)|Central Java": {
+"lat": -7.45507,
+"lon": 109.11675,
+"kind": "city",
+"matched": "Banyumas"
+},
+"Bandung (Kab.)|West Java": {
+"lat": -6.92185,
+"lon": 107.60708,
+"kind": "city",
+"matched": "Bandung"
+},
+"Magelang|Central Java": {
+"lat": -7.51361,
+"lon": 110.21451,
+"kind": "city",
+"matched": "Magelang"
+},
+"Polewali Mandar (Campalagian)|West Sulawesi": {
+"lat": -3.30319,
+"lon": 119.14505,
+"kind": "city",
+"matched": "Polewali Mandar"
+},
+"Sukabumi|West Java": {
+"lat": -7.07645,
+"lon": 106.73466,
+"kind": "city",
+"matched": "Sukabumi"
+},
+"Tual|Maluku": {
+"lat": -5.54114,
+"lon": 132.71878,
+"kind": "city",
+"matched": "Tual"
+},
+"Sidoarjo (Krian)|East Java": {
+"lat": -7.45398,
+"lon": 112.65939,
+"kind": "city",
+"matched": "Sidoarjo"
+},
+"Garut (Karangpawitan)|West Java": {
+"lat": -7.21628,
+"lon": 107.90149,
+"kind": "city",
+"matched": "Garut"
+},
+"Jombang (Gudo)|East Java": {
+"lat": -7.56146,
+"lon": 112.2413,
+"kind": "city",
+"matched": "Jombang"
+},
+"Bantul (Manding)|DI Yogyakarta": {
+"lat": -7.88537,
+"lon": 110.3518,
+"kind": "city",
+"matched": "PT.Pertani Persero cabang D.I Yogyakarta"
+},
+"Pinrang|South Sulawesi": {
+"lat": -3.79326,
+"lon": 119.65287,
+"kind": "city",
+"matched": "Pinrang"
+},
+"Bandung (Cibaduyut)|West Java": {
+"lat": -6.92185,
+"lon": 107.60708,
+"kind": "city",
+"matched": "Bandung"
+},
+"Situbondo|East Java": {
+"lat": -7.79861,
+"lon": 114.26474,
+"kind": "city",
+"matched": "Situbondo"
+},
+"|Lampung": {
+"lat": -5.44607,
+"lon": 105.26437,
+"kind": "province",
+"matched": "Bandar Lampung"
+},
+"Banda Aceh|Aceh": {
+"lat": 5.55285,
+"lon": 95.31929,
+"kind": "city",
+"matched": "Banda Aceh"
+},
+"|Bali": {
+"lat": -8.22713,
+"lon": 115.19192,
+"kind": "province",
+"matched": "Bali"
+},
+"Tangerang|Banten": {
+"lat": -6.17619,
+"lon": 106.63822,
+"kind": "city",
+"matched": "Tangerang"
+},
+"Nias Selatan|North Sumatra": {
+"lat": 0.06806,
+"lon": 98.26224,
+"kind": "city",
+"matched": "South Nias"
+},
+"Payakumbuh|West Sumatra": {
+"lat": -0.22427,
+"lon": 100.63194,
+"kind": "city",
+"matched": "Payakumbuh"
+},
+"|Central Java": {
+"lat": -6.18234,
+"lon": 106.84287,
+"kind": "province",
+"matched": "Central Jakarta"
+},
+"Serang|Banten": {
+"lat": -6.11697,
+"lon": 106.15181,
+"kind": "city",
+"matched": "Serang"
+},
+"Timika (Mimika)|Papua Tengah": {
+"lat": -4.54811,
+"lon": 136.88988,
+"kind": "city",
+"matched": "Timika"
+},
+"Tangerang; Cirebon; Yogyakarta|Banten": {
+"lat": -6.21298,
+"lon": 106.69783,
+"kind": "city",
+"matched": "Jalan Yogyakarta"
+},
+"Sidoarjo|East Java": {
+"lat": -7.45398,
+"lon": 112.65939,
+"kind": "city",
+"matched": "Sidoarjo"
+},
+"Banyumas|Central Java": {
+"lat": -7.45507,
+"lon": 109.11675,
+"kind": "city",
+"matched": "Banyumas"
+},
+"Lombok|West Nusa Tenggara": {
+"lat": -8.63309,
+"lon": 116.55877,
+"kind": "city",
+"matched": "Lombok Timur"
+},
+"Malang|East Java": {
+"lat": -7.97713,
+"lon": 112.63403,
+"kind": "city",
+"matched": "Malang"
+},
+"Bojonegoro|East Java": {
+"lat": -7.22787,
+"lon": 111.81462,
+"kind": "city",
+"matched": "Bojonegoro"
+},
+"Ambon|Maluku": {
+"lat": -3.69594,
+"lon": 128.17879,
+"kind": "city",
+"matched": "Ambon"
+},
+"Kab. Semarang (Bergas)|Central Java": {
+"lat": -6.9904,
+"lon": 110.42291,
+"kind": "city",
+"matched": "Semarang"
+},
+"Batam|Kepulauan Riau": {
+"lat": 1.10308,
+"lon": 104.03837,
+"kind": "city",
+"matched": "Batam"
+},
+"Pacitan|East Java": {
+"lat": -8.10172,
+"lon": 111.14467,
+"kind": "city",
+"matched": "Pacitan"
+},
+"Lombok Barat|West Nusa Tenggara": {
+"lat": -8.67189,
+"lon": 116.12205,
+"kind": "city",
+"matched": "Lombok Barat"
+},
+"Kediri|East Java": {
+"lat": -7.81111,
+"lon": 112.00461,
+"kind": "city",
+"matched": "Kediri"
+},
+"Sukawati Gianyar|Bali": {
+"lat": -8.58361,
+"lon": 115.26958,
+"kind": "city",
+"matched": "Sukawati"
+},
+"Badung|Bali": {
+"lat": -8.64487,
+"lon": 115.1359,
+"kind": "city",
+"matched": "Badung"
+},
+"Jakarta Selatan|DKI Jakarta": {
+"lat": -6.18154,
+"lon": 106.82694,
+"kind": "city",
+"matched": "National Library of the Republic of Indonesia"
+},
+"Karawang|West Java": {
+"lat": -6.26491,
+"lon": 107.42942,
+"kind": "city",
+"matched": "Karawang"
+},
+"|West Java": {
+"lat": -6.88919,
+"lon": 107.64047,
+"kind": "province",
+"matched": "West Java"
+},
+"East Jakarta|DKI Jakarta": {
+"lat": -6.1726,
+"lon": 106.87857,
+"kind": "city",
+"matched": "PT Siemens Indonesia"
+},
+"Palembang|South Sumatra": {
+"lat": -2.98882,
+"lon": 104.75685,
+"kind": "city",
+"matched": "Palembang"
+},
+"Denpasar (Sanur)|Bali": {
+"lat": -8.66533,
+"lon": 115.21762,
+"kind": "city",
+"matched": "Denpasar"
+},
+"Ubud, Gianyar|Bali": {
+"lat": -8.51702,
+"lon": 115.25505,
+"kind": "city",
+"matched": "Ubud District"
+},
+"Pekalongan|Central Java": {
+"lat": -6.89051,
+"lon": 109.67615,
+"kind": "city",
+"matched": "Pekalongan"
+},
+"Deli Serdang|North Sumatra": {
+"lat": 3.47445,
+"lon": 98.7159,
+"kind": "city",
+"matched": "Kabupaten Deli Serdang"
+},
+"Jombang|East Java": {
+"lat": -7.56146,
+"lon": 112.2413,
+"kind": "city",
+"matched": "Jombang"
+},
+"Lumajang|East Java": {
+"lat": -8.12378,
+"lon": 113.14367,
+"kind": "city",
+"matched": "Lumajang"
+},
+"Majalengka|West Java": {
+"lat": -6.80736,
+"lon": 108.27879,
+"kind": "city",
+"matched": "Majalengka"
+},
+"Tuban|East Java": {
+"lat": -6.95964,
+"lon": 111.89323,
+"kind": "city",
+"matched": "Tuban"
+},
+"Mojokerto|East Java": {
+"lat": -7.54134,
+"lon": 112.5095,
+"kind": "city",
+"matched": "Mojokerto"
+},
+"Banjarmasin|South Kalimantan": {
+"lat": -3.31875,
+"lon": 114.59258,
+"kind": "city",
+"matched": "Banjarmasin"
+},
+"Tegal|Central Java": {
+"lat": -6.86745,
+"lon": 109.13783,
+"kind": "city",
+"matched": "Tegal"
+},
+"Suli (Maluku Tengah)|Maluku": {
+"lat": -3.62057,
+"lon": 128.303,
+"kind": "city",
+"matched": "Suli"
+},
+"Mataram|West Nusa Tenggara": {
+"lat": -8.58377,
+"lon": 116.10685,
+"kind": "city",
+"matched": "Mataram"
+},
+"Bekasi|West Java": {
+"lat": -6.23499,
+"lon": 106.99454,
+"kind": "city",
+"matched": "Bekasi"
+},
+"|Aceh": {
+"lat": 5.55285,
+"lon": 95.31929,
+"kind": "province",
+"matched": "Banda Aceh"
+},
+"Cilacap|Central Java": {
+"lat": -7.46167,
+"lon": 108.80461,
+"kind": "city",
+"matched": "Cilacap"
+},
+"Gianyar (Celuk, Sukawati)|Bali": {
+"lat": -8.54824,
+"lon": 115.32605,
+"kind": "city",
+"matched": "Gianyar"
+},
+"Garut|West Java": {
+"lat": -7.21628,
+"lon": 107.90149,
+"kind": "city",
+"matched": "Garut"
+},
+"Gresik|East Java": {
+"lat": -5.79335,
+"lon": 112.65982,
+"kind": "city",
+"matched": "Gresik"
+},
+"|South Sulawesi": {
+"lat": -3.64467,
+"lon": 119.94719,
+"kind": "province",
+"matched": "South Sulawesi"
+},
+"|South Kalimantan": {
+"lat": -1.92288,
+"lon": 114.78889,
+"kind": "province",
+"matched": "South Barito"
+},
+"Tenggarong|East Kalimantan": {
+"lat": -0.43349,
+"lon": 116.9785,
+"kind": "city",
+"matched": "Tenggarong"
+},
+"Tangerang Selatan|Banten": {
+"lat": -6.3227,
+"lon": 106.70857,
+"kind": "city",
+"matched": "South Tangerang"
+},
+"Sapan (North Toraja)|South Sulawesi": {
+"lat": -2.81292,
+"lon": 119.8574,
+"kind": "city",
+"matched": "Sapan"
+},
+"Boyolali|Central Java": {
+"lat": -7.38721,
+"lon": 110.70387,
+"kind": "city",
+"matched": "Boyolali"
+},
+"Buleleng|Bali": {
+"lat": -7.84283,
+"lon": 115.19703,
+"kind": "city",
+"matched": "Buleleng"
+},
+"|West Nusa Tenggara": {
+"lat": -8.78929,
+"lon": 117.14617,
+"kind": "province",
+"matched": "West Nusa Tenggara"
+},
+"Klaten|Central Java": {
+"lat": -7.67324,
+"lon": 110.62848,
+"kind": "city",
+"matched": "Klaten"
+},
+"Gianyar|Bali": {
+"lat": -8.54824,
+"lon": 115.32605,
+"kind": "city",
+"matched": "Gianyar"
+},
+"Bangkalan|East Java": {
+"lat": -7.04636,
+"lon": 112.89618,
+"kind": "city",
+"matched": "Bangkalan"
+},
+"|Banten": {
+"lat": -6.04083,
+"lon": 106.15996,
+"kind": "province",
+"matched": "Banten"
+},
+"Central Bangka|Bangka Belitung Islands": {
+"lat": -1.64169,
+"lon": 105.77272,
+"kind": "city",
+"matched": "Bank Central Asia"
+},
+"Semarang Regency (Ungaran Timur)|Central Java": {
+"lat": -7.03493,
+"lon": 110.39176,
+"kind": "city",
+"matched": "Sekaran Kencana Regency"
+},
+"Celuk, Gianyar|Bali": {
+"lat": -8.59912,
+"lon": 115.26965,
+"kind": "city",
+"matched": "Celuk"
+},
+"Aceh Tamiang|Aceh": {
+"lat": 4.21226,
+"lon": 97.91468,
+"kind": "city",
+"matched": "Aceh Tamiang"
+},
+"Jakarta Barat|DKI Jakarta": {
+"lat": -6.17623,
+"lon": 106.82165,
+"kind": "city",
+"matched": "National Museum of Indonesia"
+},
+"Lamongan|East Java": {
+"lat": -7.12293,
+"lon": 112.32819,
+"kind": "city",
+"matched": "Lamongan"
+},
+"Jakarta (Kemayoran)|DKI Jakarta": {
+"lat": -6.1754,
+"lon": 106.82717,
+"kind": "city",
+"matched": "Jakarta"
+},
+"Tulungagung|East Java": {
+"lat": -8.0729,
+"lon": 111.89964,
+"kind": "city",
+"matched": "Tulungagung"
+},
+"Salatiga|Central Java": {
+"lat": -7.33026,
+"lon": 110.49954,
+"kind": "city",
+"matched": "Salatiga"
+},
+"Cikarang|West Java": {
+"lat": -6.25871,
+"lon": 107.14574,
+"kind": "city",
+"matched": "Cikarang"
+},
+"Probolinggo|East Java": {
+"lat": -7.74415,
+"lon": 113.21584,
+"kind": "city",
+"matched": "Probolinggo"
+},
+"Tasikmalaya|West Java": {
+"lat": -7.32625,
+"lon": 108.22012,
+"kind": "city",
+"matched": "Tasikmalaya"
+},
+"Gianyar (Batubulan)|Bali": {
+"lat": -8.54824,
+"lon": 115.32605,
+"kind": "city",
+"matched": "Gianyar"
+},
+"Kebumen|Central Java": {
+"lat": -7.64397,
+"lon": 109.60779,
+"kind": "city",
+"matched": "Kebumen"
+},
+"Purwakarta|West Java": {
+"lat": -6.59137,
+"lon": 107.40198,
+"kind": "city",
+"matched": "Purwakarta"
+},
+"Jakarta Utara|DKI Jakarta": {
+"lat": -6.1692,
+"lon": 106.83324,
+"kind": "city",
+"matched": "Jakarta Cathedral"
+},
+"Pasaman Barat|West Sumatra": {
+"lat": 0.18754,
+"lon": 99.69352,
+"kind": "city",
+"matched": "West Pasaman"
+},
+"Takengon, Aceh Tengah|Aceh": {
+"lat": 4.61903,
+"lon": 96.84412,
+"kind": "city",
+"matched": "Takengon Barat"
+},
+"Sumedang|West Java": {
+"lat": -6.85972,
+"lon": 107.92071,
+"kind": "city",
+"matched": "Sumedang"
+},
+"Kupang|East Nusa Tenggara": {
+"lat": -10.16322,
+"lon": 123.60178,
+"kind": "city",
+"matched": "Kupang"
+},
+"Subang|West Java": {
+"lat": -6.49839,
+"lon": 107.73463,
+"kind": "city",
+"matched": "Subang"
+},
+"Jakarta Timur|DKI Jakarta": {
+"lat": -6.1726,
+"lon": 106.87857,
+"kind": "city",
+"matched": "PT Siemens Indonesia"
+},
+"Kerinci|Jambi": {
+"lat": -2.06334,
+"lon": 101.60011,
+"kind": "city",
+"matched": "Kerinci"
+},
+"Kuta (Kerobokan)|Bali": {
+"lat": -8.72643,
+"lon": 115.17781,
+"kind": "city",
+"matched": "Kuta"
+},
+"Kerobokan Badung|Bali": {
+"lat": -8.65265,
+"lon": 115.16257,
+"kind": "city",
+"matched": "Kerobokan"
+},
+"Jonggol|West Java": {
+"lat": -6.50311,
+"lon": 107.04519,
+"kind": "city",
+"matched": "Jonggol"
+},
+"Kerobokan, Badung|Bali": {
+"lat": -8.65265,
+"lon": 115.16257,
+"kind": "city",
+"matched": "Kerobokan"
+},
+"Tebing Tinggi|North Sumatra": {
+"lat": 3.32737,
+"lon": 99.1623,
+"kind": "city",
+"matched": "Tebing Tinggi"
+},
+"Kuta (Badung)|Bali": {
+"lat": -8.72643,
+"lon": 115.17781,
+"kind": "city",
+"matched": "Kuta"
+},
+"|North Sumatra": {
+"lat": 1.6291,
+"lon": 99.69264,
+"kind": "province",
+"matched": "Northern Padang Lawas"
+},
+"Aceh Tengah|Aceh": {
+"lat": 4.56427,
+"lon": 96.96189,
+"kind": "city",
+"matched": "Aceh Tengah"
+},
+"Karanganyar (Tawangmangu)|Central Java": {
+"lat": -7.6197,
+"lon": 111.0698,
+"kind": "city",
+"matched": "Karanganyar"
+},
+"Temanggung|Central Java": {
+"lat": -7.23976,
+"lon": 110.12166,
+"kind": "city",
+"matched": "Temanggung"
+},
+"Solo|Central Java": {
+"lat": -7.56925,
+"lon": 110.82845,
+"kind": "city",
+"matched": "Surakarta"
+},
+"Gianyar (Celuk)|Bali": {
+"lat": -8.54824,
+"lon": 115.32605,
+"kind": "city",
+"matched": "Gianyar"
+},
+"Tabanan|Bali": {
+"lat": -8.44026,
+"lon": 115.07157,
+"kind": "city",
+"matched": "Tabanan"
+},
+"Bali|Bali": {
+"lat": -8.22713,
+"lon": 115.19192,
+"kind": "city",
+"matched": "Bali"
+},
+"Semarang (Klepu, Pringapus)|Central Java": {
+"lat": -6.9904,
+"lon": 110.42291,
+"kind": "city",
+"matched": "Semarang"
+},
+"Tarutung|North Sumatra": {
+"lat": 2.02625,
+"lon": 98.96272,
+"kind": "city",
+"matched": "Tarutung"
+},
+"Bener Meriah|Aceh": {
+"lat": 4.77388,
+"lon": 96.978,
+"kind": "city",
+"matched": "Bener Meriah"
+},
+"Lhoong (Aceh Besar)|Aceh": {
+"lat": 5.26359,
+"lon": 95.30618,
+"kind": "city",
+"matched": "Lhoong"
+},
+"Sikka|East Nusa Tenggara": {
+"lat": -8.59468,
+"lon": 122.09264,
+"kind": "city",
+"matched": "Sikka"
+},
+"Bitung|North Sulawesi": {
+"lat": 1.44344,
+"lon": 125.19408,
+"kind": "city",
+"matched": "Bitung"
+},
+"Binjai|North Sumatra": {
+"lat": 3.6064,
+"lon": 98.48999,
+"kind": "city",
+"matched": "Binjai"
+},
+"Bangli|Bali": {
+"lat": -8.33362,
+"lon": 115.36805,
+"kind": "city",
+"matched": "Bangli"
+},
+"Jakarta (HQ)|DKI Jakarta": {
+"lat": -6.1754,
+"lon": 106.82717,
+"kind": "city",
+"matched": "Jakarta"
+},
+"Sarolangun|Jambi": {
+"lat": -2.33125,
+"lon": 102.62481,
+"kind": "city",
+"matched": "Sarolangun"
+},
+"Blitar|East Java": {
+"lat": -8.09824,
+"lon": 112.16508,
+"kind": "city",
+"matched": "Blitar"
+},
+"Medan (Tanjung Morawa)|North Sumatra": {
+"lat": 3.58946,
+"lon": 98.67416,
+"kind": "city",
+"matched": "Medan"
+},
+"Jember|East Java": {
+"lat": -8.26332,
+"lon": 113.62785,
+"kind": "city",
+"matched": "Jember"
+},
+"Bandar Lampung|Lampung": {
+"lat": -5.44607,
+"lon": 105.26437,
+"kind": "city",
+"matched": "Bandar Lampung"
+},
+"South Jakarta|DKI Jakarta": {
+"lat": -6.22369,
+"lon": 106.80861,
+"kind": "city",
+"matched": "Bursa Efek Jakarta"
+},
+"Bombana|Southeast Sulawesi": {
+"lat": -4.63926,
+"lon": 121.75721,
+"kind": "city",
+"matched": "Bombana"
+},
+"Banjarnegara|Central Java": {
+"lat": -7.35587,
+"lon": 109.66007,
+"kind": "city",
+"matched": "Banjarnegara"
+},
+"Karangasem (Jasri)|Bali": {
+"lat": -8.33556,
+"lon": 115.61707,
+"kind": "city",
+"matched": "Karangasem"
+},
+"Minahasa|North Sulawesi": {
+"lat": 1.21517,
+"lon": 124.79789,
+"kind": "city",
+"matched": "Minahasa"
+},
+"Ubud (Gianyar)|Bali": {
+"lat": -8.51702,
+"lon": 115.25505,
+"kind": "city",
+"matched": "Ubud District"
+},
+"Petang (Badung)|Bali": {
+"lat": -8.35513,
+"lon": 115.21834,
+"kind": "city",
+"matched": "Petang"
+},
+"Ubud|Bali": {
+"lat": -8.51702,
+"lon": 115.25505,
+"kind": "city",
+"matched": "Ubud District"
+},
+"Tangerang (Kab.)|Banten": {
+"lat": -6.17619,
+"lon": 106.63822,
+"kind": "city",
+"matched": "Tangerang"
+},
+"Jembrana|Bali": {
+"lat": -8.39558,
+"lon": 114.70546,
+"kind": "city",
+"matched": "Jembrana"
+},
+"Bekasi (Cikarang, Jababeka I)|West Java": {
+"lat": -6.23499,
+"lon": 106.99454,
+"kind": "city",
+"matched": "Bekasi"
+},
+"Pupuan (Tabanan)|Bali": {
+"lat": -8.36913,
+"lon": 115.00191,
+"kind": "city",
+"matched": "Pupuan"
+},
+"Depok|West Java": {
+"lat": -6.40719,
+"lon": 106.81584,
+"kind": "city",
+"matched": "Depok"
+},
+"Kotagede, Yogyakarta|DI Yogyakarta": {
+"lat": -7.82183,
+"lon": 110.40098,
+"kind": "city",
+"matched": "Bank BPD DIY cabang pembantu Kotagede"
+},
+"Rembang|Central Java": {
+"lat": -6.76986,
+"lon": 111.45567,
+"kind": "city",
+"matched": "Rembang"
+},
+"Surakarta (Solo)|Central Java": {
+"lat": -7.56925,
+"lon": 110.82845,
+"kind": "city",
+"matched": "Surakarta"
+},
+"|Bangka Belitung Islands": {
+"lat": -2.88428,
+"lon": 107.66316,
+"kind": "province",
+"matched": "Belitung"
+},
+"Kalianda|Lampung": {
+"lat": -5.67653,
+"lon": 105.58751,
+"kind": "city",
+"matched": "Kalianda"
+},
+"Merauke|South Papua": {
+"lat": -7.79252,
+"lon": 140.01833,
+"kind": "city",
+"matched": "Merauke"
+},
+"Pangandaran|West Java": {
+"lat": -7.6408,
+"lon": 108.55673,
+"kind": "city",
+"matched": "Pangandaran"
+},
+"Polewali Mandar|West Sulawesi": {
+"lat": -3.30319,
+"lon": 119.14505,
+"kind": "city",
+"matched": "Polewali Mandar"
+},
+"Karimun|Kepulauan Riau": {
+"lat": 0.76539,
+"lon": 103.42874,
+"kind": "city",
+"matched": "Karimun"
+},
+"Mojokerto (Kab.)|East Java": {
+"lat": -7.54134,
+"lon": 112.5095,
+"kind": "city",
+"matched": "Mojokerto"
+},
+"Pesawaran|Lampung": {
+"lat": -5.45596,
+"lon": 105.08469,
+"kind": "city",
+"matched": "Pesawaran"
+},
+"Pandeglang|Banten": {
+"lat": -6.54738,
+"lon": 105.79949,
+"kind": "city",
+"matched": "Pandeglang"
+},
+"Ubud Gianyar|Bali": {
+"lat": -8.51702,
+"lon": 115.25505,
+"kind": "city",
+"matched": "Ubud District"
+},
+"Bogor (Ciapus)|West Java": {
+"lat": -6.59636,
+"lon": 106.79732,
+"kind": "city",
+"matched": "Bogor"
+},
+"Bengkulu|Bengkulu": {
+"lat": -3.79229,
+"lon": 102.26238,
+"kind": "city",
+"matched": "Bengkulu"
+},
+"Yogyakarta (Kotagede)|DI Yogyakarta": {
+"lat": -7.79535,
+"lon": 110.36728,
+"kind": "city",
+"matched": "Special Region of Yogyakarta"
+},
+"Senggigi, Lombok|West Nusa Tenggara": {
+"lat": -8.49517,
+"lon": 116.04475,
+"kind": "city",
+"matched": "Senggigi"
+},
+"Sidoarjo (Tanggulangin)|East Java": {
+"lat": -7.45398,
+"lon": 112.65939,
+"kind": "city",
+"matched": "Sidoarjo"
+},
+"Kayu Aro (Kerinci)|Jambi": {
+"lat": -1.77633,
+"lon": 101.30334,
+"kind": "city",
+"matched": "Kayu Aro"
+},
+"Takengon (Aceh Tengah)|Aceh": {
+"lat": 4.62303,
+"lon": 96.84886,
+"kind": "city",
+"matched": "Takengon"
+},
+"Ternate|North Maluku": {
+"lat": 0.7852,
+"lon": 127.38323,
+"kind": "city",
+"matched": "Ternate"
+},
+"Banyumas (Desa Semedo, Pekuncen)|Central Java": {
+"lat": -7.45507,
+"lon": 109.11675,
+"kind": "city",
+"matched": "Banyumas"
+},
+"Ponorogo|East Java": {
+"lat": -7.97123,
+"lon": 111.49889,
+"kind": "city",
+"matched": "Ponorogo"
+},
+"Larantuka|East Nusa Tenggara": {
+"lat": -8.3467,
+"lon": 122.97719,
+"kind": "city",
+"matched": "Larantuka"
+},
+"Gunungkidul|DI Yogyakarta": {
+"lat": -7.91218,
+"lon": 110.557,
+"kind": "city",
+"matched": "Badan Riset dan Inovasi Nasional (BRIN) Kawasan Gunungkidul"
+},
+"Bogor (Ciomas)|West Java": {
+"lat": -6.59636,
+"lon": 106.79732,
+"kind": "city",
+"matched": "Bogor"
+},
+"Pandaan|East Java": {
+"lat": -7.65323,
+"lon": 112.68729,
+"kind": "city",
+"matched": "Pandaan"
+},
+"|Central Sulawesi": {
+"lat": -1.69378,
+"lon": 120.80886,
+"kind": "province",
+"matched": "Central Sulawesi"
+},
+"Pati|Central Java": {
+"lat": -6.75341,
+"lon": 111.04,
+"kind": "city",
+"matched": "Pati"
+},
+"Deliserdang|North Sumatra": {
+"lat": 3.5543,
+"lon": 98.87948,
+"kind": "city",
+"matched": "Satuan Lalulintas Polres Deliserdang"
+},
+"Purbalingga|Central Java": {
+"lat": -7.32733,
+"lon": 109.3999,
+"kind": "city",
+"matched": "Purbalingga"
+},
+"|Kepulauan Riau": {
+"lat": 1.0613,
+"lon": 102.70188,
+"kind": "province",
+"matched": "Kepulauan Meranti"
+},
+"|Central Kalimantan": {
+"lat": -3.3184,
+"lon": 114.58891,
+"kind": "province",
+"matched": "Central Banjarmasin"
+},
+"Berau|East Kalimantan": {
+"lat": 1.77675,
+"lon": 117.26918,
+"kind": "city",
+"matched": "Berau"
+},
+"Cikarang (Kab. Bekasi)|West Java": {
+"lat": -6.25871,
+"lon": 107.14574,
+"kind": "city",
+"matched": "Cikarang"
+},
+"Mamuju Tengah|West Sulawesi": {
+"lat": -2.02144,
+"lon": 119.54054,
+"kind": "city",
+"matched": "Mamuju Tengah"
+},
+"Kintamani (Bangli)|Bali": {
+"lat": -8.24952,
+"lon": 115.34822,
+"kind": "city",
+"matched": "Kintamani"
+},
+"Pekanbaru|Riau": {
+"lat": 0.52625,
+"lon": 101.45157,
+"kind": "city",
+"matched": "Pekanbaru"
+},
+"Kendal|Central Java": {
+"lat": -7.0191,
+"lon": 110.13748,
+"kind": "city",
+"matched": "Kendal"
+},
+"Pringsewu|Lampung": {
+"lat": -5.36669,
+"lon": 104.97221,
+"kind": "city",
+"matched": "Pringsewu"
+},
+"Kudus|Central Java": {
+"lat": -6.79785,
+"lon": 110.86791,
+"kind": "city",
+"matched": "Kudus"
+},
+"|West Kalimantan": {
+"lat": -2.32606,
+"lon": 110.98899,
+"kind": "province",
+"matched": "Kalimantan"
+},
+"Cikeas (Kab. Bogor)|West Java": {
+"lat": -6.59256,
+"lon": 106.85038,
+"kind": "city",
+"matched": "Cikeas"
+},
+"Sumenep (Batang-batang)|East Java": {
+"lat": -6.99918,
+"lon": 113.83767,
+"kind": "city",
+"matched": "Sumenep"
+},
+"Kendari|Southeast Sulawesi": {
+"lat": -3.99181,
+"lon": 122.51801,
+"kind": "city",
+"matched": "Kendari"
+},
+"Takengon|Aceh": {
+"lat": 4.62303,
+"lon": 96.84886,
+"kind": "city",
+"matched": "Takengon"
+},
+"Malang (Kab.)|East Java": {
+"lat": -7.97713,
+"lon": 112.63403,
+"kind": "city",
+"matched": "Malang"
+},
+"Pelalawan|Riau": {
+"lat": 0.2384,
+"lon": 102.26192,
+"kind": "city",
+"matched": "Pelalawan"
+},
+"Sumba Timur|East Nusa Tenggara": {
+"lat": -9.83426,
+"lon": 120.20942,
+"kind": "city",
+"matched": "Kabupaten Sumba Timur"
+},
+"Tana Toraja|South Sulawesi": {
+"lat": -3.11694,
+"lon": 119.69376,
+"kind": "city",
+"matched": "Tana Toraja Regency"
+},
+"Batang|Central Java": {
+"lat": -7.03235,
+"lon": 109.86795,
+"kind": "city",
+"matched": "Batang"
+},
+"Tanah Datar|West Sumatra": {
+"lat": -0.469,
+"lon": 100.63616,
+"kind": "city",
+"matched": "Tanah Datar"
+},
+"|DI Yogyakarta": {
+"lat": -7.79535,
+"lon": 110.36728,
+"kind": "province",
+"matched": "Special Region of Yogyakarta"
+},
+"Magetan|East Java": {
+"lat": -7.65425,
+"lon": 111.33606,
+"kind": "city",
+"matched": "Magetan"
+},
+"Bantul (Kasongan)|DI Yogyakarta": {
+"lat": -7.88537,
+"lon": 110.3518,
+"kind": "city",
+"matched": "PT.Pertani Persero cabang D.I Yogyakarta"
+},
+"Janapria|West Nusa Tenggara": {
+"lat": -8.69603,
+"lon": 116.40315,
+"kind": "city",
+"matched": "Janapria"
+},
+"Tanjung Jabung Barat|Jambi": {
+"lat": -1.04907,
+"lon": 103.10971,
+"kind": "city",
+"matched": "Tanjung Jabung Barat"
+},
+"Kutai Timur|East Kalimantan": {
+"lat": 0.94536,
+"lon": 117.01109,
+"kind": "city",
+"matched": "Kutai Timur"
+},
+"Sumenep|East Java": {
+"lat": -6.99918,
+"lon": 113.83767,
+"kind": "city",
+"matched": "Sumenep"
+},
+"Kabupaten Bekasi (Tambun)|West Java": {
+"lat": -6.23499,
+"lon": 106.99454,
+"kind": "city",
+"matched": "Bekasi"
+},
+"Klungkung|Bali": {
+"lat": -8.7446,
+"lon": 115.55754,
+"kind": "city",
+"matched": "Klungkung Regency"
+},
+"Pangkalpinang|Bangka Belitung Islands": {
+"lat": -2.12067,
+"lon": 106.11346,
+"kind": "city",
+"matched": "Pangkalpinang"
+},
+"Munjul, Pandeglang|Banten": {
+"lat": -6.6047,
+"lon": 105.90447,
+"kind": "city",
+"matched": "Munjul"
+},
+"Maros|South Sulawesi": {
+"lat": -4.9655,
+"lon": 119.69284,
+"kind": "city",
+"matched": "Maros"
+},
+"Tangerang Selatan (Pamulang)|Banten": {
+"lat": -6.3227,
+"lon": 106.70857,
+"kind": "city",
+"matched": "South Tangerang"
+},
+"Kabupaten Madiun|East Java": {
+"lat": -7.62908,
+"lon": 111.51688,
+"kind": "city",
+"matched": "Madiun"
+},
+"Sungai Penuh|Jambi": {
+"lat": -2.07068,
+"lon": 101.39611,
+"kind": "city",
+"matched": "Sungai Penuh"
+},
+"Kabupaten Banyuasin|South Sumatra": {
+"lat": -2.39389,
+"lon": 104.7548,
+"kind": "city",
+"matched": "Banyuasin"
+},
+"Timika (Mimika)|Central Papua": {
+"lat": -4.54811,
+"lon": 136.88988,
+"kind": "city",
+"matched": "Timika"
+},
+"Wonosobo|Central Java": {
+"lat": -7.3998,
+"lon": 109.92096,
+"kind": "city",
+"matched": "Wonosobo"
+},
+"Tualang, Kabupaten Siak|Riau": {
+"lat": 0.81664,
+"lon": 102.01971,
+"kind": "city",
+"matched": "Jalan Tualang"
+},
+"Selat Panjang, Kepulauan Meranti|Riau": {
+"lat": 0.84735,
+"lon": 102.40661,
+"kind": "city",
+"matched": "Selat Panjang"
+},
+"Jayapura|Papua": {
+"lat": -2.53875,
+"lon": 140.70374,
+"kind": "city",
+"matched": "Jayapura"
+},
+"Lombok Timur|West Nusa Tenggara": {
+"lat": -8.63309,
+"lon": 116.55877,
+"kind": "city",
+"matched": "Lombok Timur"
+},
+"Wonosobo (Kalikajar)|Central Java": {
+"lat": -7.3998,
+"lon": 109.92096,
+"kind": "city",
+"matched": "Wonosobo"
+},
+"Majene|West Sulawesi": {
+"lat": -3.243,
+"lon": 118.87334,
+"kind": "city",
+"matched": "Majene"
+},
+"Gunung Kidul|DI Yogyakarta": {
+"lat": -7.99304,
+"lon": 110.55793,
+"kind": "city",
+"matched": "Gunungkidul Regency"
+},
+"Cilongok, Banyumas|Central Java": {
+"lat": -7.40539,
+"lon": 109.14118,
+"kind": "city",
+"matched": "Cilongok"
+},
+"Bandung Regency|West Java": {
+"lat": -6.94087,
+"lon": 107.68155,
+"kind": "city",
+"matched": "Jalan Riung Bandung Regency"
+},
+"|Jambi": {
+"lat": -1.62969,
+"lon": 103.60778,
+"kind": "province",
+"matched": "Jambi"
+},
+"Brebes|Central Java": {
+"lat": -7.05207,
+"lon": 108.88814,
+"kind": "city",
+"matched": "Brebes"
+},
+"Canggu|Bali": {
+"lat": -8.6399,
+"lon": 115.1436,
+"kind": "city",
+"matched": "Canggu"
+},
+"Mengwi (Badung)|Bali": {
+"lat": -8.54881,
+"lon": 115.18539,
+"kind": "city",
+"matched": "Mengwi"
+},
+"Mengwi|Bali": {
+"lat": -8.54881,
+"lon": 115.18539,
+"kind": "city",
+"matched": "Mengwi"
+},
+"Palu|Central Sulawesi": {
+"lat": -0.89578,
+"lon": 119.868,
+"kind": "city",
+"matched": "Palu"
+},
+"Jimbaran|Bali": {
+"lat": -8.78968,
+"lon": 115.1625,
+"kind": "city",
+"matched": "Jimbaran"
+},
+"Toraja Utara|South Sulawesi": {
+"lat": -2.86124,
+"lon": 119.84201,
+"kind": "city",
+"matched": "Toraja Utara"
+},
+"Lebak|Banten": {
+"lat": -6.64325,
+"lon": 106.18688,
+"kind": "city",
+"matched": "Lebak"
+},
+"West Jakarta|DKI Jakarta": {
+"lat": -6.13758,
+"lon": 106.81462,
+"kind": "city",
+"matched": "Jakarta Kota"
+},
+"Gianyar (Ubud)|Bali": {
+"lat": -8.54824,
+"lon": 115.32605,
+"kind": "city",
+"matched": "Gianyar"
+},
+"North Jakarta|DKI Jakarta": {
+"lat": -6.22369,
+"lon": 106.80861,
+"kind": "city",
+"matched": "Bursa Efek Jakarta"
+},
+"Seminyak|Bali": {
+"lat": -8.68986,
+"lon": 115.16678,
+"kind": "city",
+"matched": "Seminyak"
+},
+"Karangasem|Bali": {
+"lat": -8.33556,
+"lon": 115.61707,
+"kind": "city",
+"matched": "Karangasem"
+},
+"Ijen Plateau (Bondowoso)|East Java": {
+"lat": -8.05793,
+"lon": 114.2431,
+"kind": "city",
+"matched": "Ijen"
+},
+"Cipayung, Jakarta Timur|DKI Jakarta": {
+"lat": -6.35261,
+"lon": 106.90918,
+"kind": "city",
+"matched": "Suku Dinas Pendidikan Kota Administrasi Jakarta Timur Seksi Dikmen Kecamatan Cipayung"
+},
+"Benoa|Bali": {
+"lat": -8.80333,
+"lon": 115.20969,
+"kind": "city",
+"matched": "Benoa"
+},
+"Sukawati, Gianyar|Bali": {
+"lat": -8.58361,
+"lon": 115.26958,
+"kind": "city",
+"matched": "Sukawati"
+},
+"Solok|West Sumatra": {
+"lat": -0.93103,
+"lon": 100.80433,
+"kind": "city",
+"matched": "Solok"
+},
+"Bantul (Sewon)|DI Yogyakarta": {
+"lat": -7.88537,
+"lon": 110.3518,
+"kind": "city",
+"matched": "PT.Pertani Persero cabang D.I Yogyakarta"
+},
+"Padalarang (Bandung Barat)|West Java": {
+"lat": -6.84176,
+"lon": 107.47286,
+"kind": "city",
+"matched": "Padalarang"
+},
+"Bangka|Bangka Belitung Islands": {
+"lat": -1.92509,
+"lon": 105.93652,
+"kind": "city",
+"matched": "Bangka"
+},
+"Kabupaten Bandung|West Java": {
+"lat": -6.92185,
+"lon": 107.60708,
+"kind": "city",
+"matched": "Bandung"
+},
+"Bontang|East Kalimantan": {
+"lat": 0.12365,
+"lon": 117.47171,
+"kind": "city",
+"matched": "Bontang"
+},
+"Samarinda|East Kalimantan": {
+"lat": -0.50178,
+"lon": 117.13931,
+"kind": "city",
+"matched": "Samarinda"
+},
+"Kabupaten Semarang|Central Java": {
+"lat": -6.9904,
+"lon": 110.42291,
+"kind": "city",
+"matched": "Semarang"
+},
+"Enrekang|South Sulawesi": {
+"lat": -3.56572,
+"lon": 119.77241,
+"kind": "city",
+"matched": "Enrekang"
+},
+"Kabupaten Minahasa Utara|North Sulawesi": {
+"lat": 1.5333,
+"lon": 124.99994,
+"kind": "city",
+"matched": "Minahasa Utara"
+},
+"Tanjungpinang|Kepulauan Riau": {
+"lat": 0.92369,
+"lon": 104.44609,
+"kind": "city",
+"matched": "Tanjung Pinang"
+},
+"Madiun|East Java": {
+"lat": -7.62908,
+"lon": 111.51688,
+"kind": "city",
+"matched": "Madiun"
+},
+"Sooko, Mojokerto|East Java": {
+"lat": -7.48946,
+"lon": 112.42519,
+"kind": "city",
+"matched": "Sooko"
+},
+"Pontianak|West Kalimantan": {
+"lat": -0.02269,
+"lon": 109.34475,
+"kind": "city",
+"matched": "Pontianak"
+},
+"Praya (Lombok Tengah)|West Nusa Tenggara": {
+"lat": -8.70643,
+"lon": 116.26942,
+"kind": "city",
+"matched": "Praya"
+},
+"Central Jakarta|DKI Jakarta": {
+"lat": -6.1817,
+"lon": 106.82072,
+"kind": "city",
+"matched": "Bank Indonesia"
+},
+"Kabupaten Tangerang (Cisauk)|Banten": {
+"lat": -6.17619,
+"lon": 106.63822,
+"kind": "city",
+"matched": "Tangerang"
+},
+"Pangalengan, Bandung|West Java": {
+"lat": -7.17673,
+"lon": 107.57534,
+"kind": "city",
+"matched": "Pangalengan"
+},
+"Sanur|Bali": {
+"lat": -8.69465,
+"lon": 115.26058,
+"kind": "city",
+"matched": "Sanur"
+},
+"Manggarai Barat|East Nusa Tenggara": {
+"lat": -8.57413,
+"lon": 120.06113,
+"kind": "city",
+"matched": "Manggarai Barat"
+},
+"Kabupaten Tangerang|Banten": {
+"lat": -6.17619,
+"lon": 106.63822,
+"kind": "city",
+"matched": "Tangerang"
+},
+"Padang Pariaman|West Sumatra": {
+"lat": -0.56909,
+"lon": 100.27703,
+"kind": "city",
+"matched": "Padang Pariaman"
+},
+"Kusamba, Klungkung|Bali": {
+"lat": -8.56361,
+"lon": 115.44477,
+"kind": "city",
+"matched": "Kusamba"
+},
+"Bojongpicung, Cianjur|West Java": {
+"lat": -6.85088,
+"lon": 107.26988,
+"kind": "city",
+"matched": "Bojongpicung"
+},
+"Bajawa|East Nusa Tenggara": {
+"lat": -8.7851,
+"lon": 120.97521,
+"kind": "city",
+"matched": "Bajawa"
+},
+"Bintan|Kepulauan Riau": {
+"lat": 1.01966,
+"lon": 104.56982,
+"kind": "city",
+"matched": "Bintan"
+},
+"Serdang Bedagai|North Sumatra": {
+"lat": 3.34855,
+"lon": 99.00008,
+"kind": "city",
+"matched": "Kabupaten Serdang Bedagai"
+},
+"Kota Yogyakarta|DI Yogyakarta": {
+"lat": -7.79535,
+"lon": 110.36728,
+"kind": "city",
+"matched": "Special Region of Yogyakarta"
+},
+"Kota Batu|East Java": {
+"lat": -7.87117,
+"lon": 112.52695,
+"kind": "city",
+"matched": "Batu"
+},
+"Banjarbaru|South Kalimantan": {
+"lat": -3.44305,
+"lon": 114.83085,
+"kind": "city",
+"matched": "Banjarbaru"
+},
+"Medan (Belawan)|North Sumatra": {
+"lat": 3.58946,
+"lon": 98.67416,
+"kind": "city",
+"matched": "Medan"
+},
+"Maumere, Kabupaten Sikka|East Nusa Tenggara": {
+"lat": -8.62444,
+"lon": 122.21121,
+"kind": "city",
+"matched": "BPBD Kabupaten Sikka"
+},
+"Kabupaten Luwu|South Sulawesi": {
+"lat": -3.34795,
+"lon": 120.22145,
+"kind": "city",
+"matched": "Luwu"
+},
+"Lombok Utara|West Nusa Tenggara": {
+"lat": -8.35724,
+"lon": 116.16092,
+"kind": "city",
+"matched": "Lombok Utara"
+},
+"Jambi|Jambi": {
+"lat": -1.62969,
+"lon": 103.60778,
+"kind": "city",
+"matched": "Jambi"
+},
+"Palangkaraya|Central Kalimantan": {
+"lat": -2.20729,
+"lon": 113.91644,
+"kind": "city",
+"matched": "Palangka Raya"
+},
+"Bantaeng|South Sulawesi": {
+"lat": -5.47094,
+"lon": 119.98717,
+"kind": "city",
+"matched": "Bantaeng"
+},
+"Sawahlunto|West Sumatra": {
+"lat": -0.68181,
+"lon": 100.77855,
+"kind": "city",
+"matched": "Sawahlunto"
+},
+"Padang Panjang|West Sumatra": {
+"lat": -0.46546,
+"lon": 100.39324,
+"kind": "city",
+"matched": "Padang Panjang"
+},
+"Lampung Selatan|Lampung": {
+"lat": -5.54149,
+"lon": 105.511,
+"kind": "city",
+"matched": "Lampung Selatan"
+}
+},
+"unmatched": [],
+"generated": "2026-08-31T13:43:27+00:00"
+}

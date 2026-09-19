@@ -1,0 +1,48 @@
+{
+ "id": "cloudkilat",
+ "name": "CloudKilat (Infinys)",
+ "url": "https://www.cloudkilat.com",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/cloudkilat/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/cloudkilat/01-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/cloudkilat/02-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 85.6,
+   "path": "data/logo-candidates/cloudkilat/05-site-link-icon-696x747.png",
+   "tag": "link-icon-696x747"
+  },
+  {
+   "pri": 74.39999999999999,
+   "path": "data/logo-candidates/cloudkilat/03-site-link-icon-96x96.png",
+   "tag": "link-icon-96x96"
+  },
+  {
+   "pri": 67.2,
+   "path": "data/logo-candidates/cloudkilat/04-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/cloudkilat/06-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/cloudkilat/h00-header.png",
+   "tag": "header-144x36"
+  }
+ ],
+ "errors": []
+}

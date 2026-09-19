@@ -1,0 +1,35 @@
+{
+ "id": "nusantics",
+ "name": "Nusantics",
+ "url": "https://nusantics.com",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/nusantics/m02-manual.png",
+   "tag": "manual",
+   "src": "https://nusantics.com/_next/static/media/logo-nusantics-dark.acdedd11.svg"
+  },
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/nusantics/m01-manual.png",
+   "tag": "manual",
+   "src": "https://nusantics.com/_next/static/media/logo-nusantics-light.655ff89a.png"
+  },
+  {
+   "pri": 40.8,
+   "path": "data/logo-candidates/nusantics/00-site-guess-apple-16x18.png",
+   "tag": "guess-apple-16x18"
+  },
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/nusantics/01-site-guess-favicon-16x18.png",
+   "tag": "guess-favicon-16x18"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/nusantics/h00-header.png",
+   "tag": "header-165x20"
+  }
+ ],
+ "errors": []
+}

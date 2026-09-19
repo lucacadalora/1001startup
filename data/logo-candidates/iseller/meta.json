@@ -1,0 +1,26 @@
+{
+ "id": "iseller",
+ "name": "iSeller",
+ "url": "https://www.iseller.io",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/iseller/s00-appstore.png",
+   "tag": "appstore:iSeller Admin",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/86/70/b7/8670b77e-696c-5e19-3e61-b04351e51b89/AppIcons-1x_U007emarketing-0-6-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/iseller/s01-play.png",
+   "tag": "play:iSellerRetail.Android.v2",
+   "src": "https://play-lh.googleusercontent.com/32Prh-wsVrtA3z-hXWat-QN2x-b71xebtmpQOMSmr42Y-VyVrmOkKRMw-MomdKZUlKE6kvlbfNvh3ISt_9S_OQ=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/iseller/s02-play.png",
+   "tag": "play:iSellerRestaurant.Android",
+   "src": "https://play-lh.googleusercontent.com/uPNc7yHwt0M8Yb4S-NofgUA2d5rhTbFLNAtIeKHPAAZHeMg8qbdAg6tGKu_B3lco4ciB8UjyfJIl0JSGOru1wA=s512"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,55 @@
+{
+ "id": "karyakarsa",
+ "name": "KaryaKarsa",
+ "url": "https://karyakarsa.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/karyakarsa/s00-appstore.png",
+   "tag": "appstore:KaryaKarsa",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/eb/c9/5d/ebc95d7c-c473-bf99-5700-7e01ac33c18b/AppIcon-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/karyakarsa/s01-play.png",
+   "tag": "play:com.karyakarsa",
+   "src": "https://play-lh.googleusercontent.com/e1pd7ObgDTu7VvhqFZvf1gDPSwyQT-M2HB0QRT6Iii9tL5LXbioptrKsUz_1JMGV_RzD1cVTi7HMtv0FyZFHtw=s512"
+  },
+  {
+   "pri": 79.2,
+   "path": "data/logo-candidates/karyakarsa/00-site-link-icon-128x128.png",
+   "tag": "link-icon-128x128"
+  },
+  {
+   "pri": 74.39999999999999,
+   "path": "data/logo-candidates/karyakarsa/01-site-link-icon-96x96.png",
+   "tag": "link-icon-96x96"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/karyakarsa/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/karyakarsa/03-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/karyakarsa/04-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/karyakarsa/05-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/karyakarsa/h00-header.png",
+   "tag": "header-120x18"
+  }
+ ],
+ "errors": []
+}

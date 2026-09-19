@@ -1,0 +1,28 @@
+{
+ "id": "idrx",
+ "name": "IDRX",
+ "url": "https://idrx.co",
+ "candidates": [
+  {
+   "pri": 85.6,
+   "path": "data/logo-candidates/idrx/00-site-link-icon-568x600.png",
+   "tag": "link-icon-568x600"
+  },
+  {
+   "pri": 49.0,
+   "path": "data/logo-candidates/idrx/01-site-guess-apple-180x180.png",
+   "tag": "guess-apple-180x180"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/idrx/02-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/idrx/h00-header.png",
+   "tag": "header-79x30"
+  }
+ ],
+ "errors": []
+}

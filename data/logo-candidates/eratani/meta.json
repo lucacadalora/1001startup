@@ -1,0 +1,34 @@
+{
+ "id": "eratani",
+ "name": "Eratani",
+ "url": "https://eratani.co.id",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/eratani/m01-manual.png",
+   "tag": "manual",
+   "src": "https://eratani.co.id/favicon/favicon-32x32.png"
+  },
+  {
+   "pri": 500,
+   "path": "data/logo-candidates/eratani/x00-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 60.8,
+   "path": "data/logo-candidates/eratani/00-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 42.8,
+   "path": "data/logo-candidates/eratani/01-site-guess-favicon-256x256.png",
+   "tag": "guess-favicon-256x256"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/eratani/h00-header.png",
+   "tag": "header-110x35"
+  }
+ ],
+ "errors": []
+}

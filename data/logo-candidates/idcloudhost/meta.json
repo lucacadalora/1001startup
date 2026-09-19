@@ -1,0 +1,20 @@
+{
+ "id": "idcloudhost",
+ "name": "IDCloudHost",
+ "url": "https://idcloudhost.com",
+ "candidates": [
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/idcloudhost/m02-manual.png",
+   "tag": "manual",
+   "src": "https://www.google.com/s2/favicons?domain=idcloudhost.com&sz=256"
+  },
+  {
+   "pri": 999,
+   "path": "data/logo-candidates/idcloudhost/m01-manual.png",
+   "tag": "manual",
+   "src": "https://github.com/idcloudhost.png"
+  }
+ ],
+ "errors": []
+}

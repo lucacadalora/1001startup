@@ -1,0 +1,127 @@
+/* px — live badge + public traffic page.
+   Self-contained on purpose: PASAR loads site.css and 1001startup carries its
+   own inline shell, so this file assumes neither and looks identical on both.
+   House system: white page, black ink, square corners, 1px hairlines, one
+   four-stop gradient, Overused Grotesk + IBM Plex Mono. */
+
+.px{--px-ink:#000;--px-gray:#52525B;--px-mute:#6B6B73;--px-line:#E7E7E7;
+  --px-panel:#FAFAFA;--px-live:#12703B;
+  --px-grad:linear-gradient(90deg,#E8734B 0%,#F3C64B 34%,#7AB88A 68%,#4E7A96 100%);
+  --px-sans:'Overused Grotesk',system-ui,-apple-system,sans-serif;
+  --px-mono:'IBM Plex Mono',ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* ── the badge ─────────────────────────────────────────────────────────── */
+.px-badge{display:inline-flex;align-items:center;gap:9px;padding:6px 11px;
+  border:1px solid var(--px-line);background:#fff;text-decoration:none;
+  font-family:var(--px-mono);font-size:11px;letter-spacing:.04em;color:var(--px-gray);
+  white-space:nowrap;line-height:1;transition:border-color .15s,color .15s}
+.px-badge:hover{border-color:var(--px-ink);color:var(--px-ink)}
+.px-badge b{font-weight:500;color:var(--px-ink)}
+.px-badge .px-sep{width:1px;height:11px;background:var(--px-line);display:inline-block}
+.px-badge .px-go{color:var(--px-mute)}
+.px-badge[hidden]{display:none}
+.px-dot{width:7px;height:7px;background:var(--px-live);display:inline-block;flex:none;
+  animation:px-pulse 2.4s ease-in-out infinite}
+@keyframes px-pulse{0%,100%{opacity:1}50%{opacity:.25}}
+@media (prefers-reduced-motion:reduce){.px-dot{animation:none}}
+.px-dot.px-idle{background:var(--px-mute);animation:none}
+
+/* map overlay variant — /jakarta puts it top-right, clear of every control */
+.px-badge.px-map{position:absolute;top:16px;right:16px;z-index:10;
+  background:rgba(255,255,255,.94);backdrop-filter:blur(2px)}
+@media (max-width:720px){.px-badge.px-map{top:auto;bottom:56px;right:16px}}
+
+/* ── the page ──────────────────────────────────────────────────────────── */
+.px-wrap{max-width:1180px;margin:0 auto;padding:44px 20px 0;font-family:var(--px-sans);
+  color:var(--px-ink);font-weight:500}
+.px-eyebrow{font-family:var(--px-mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;
+  display:flex;align-items:center;gap:8px;margin-bottom:16px;color:var(--px-ink)}
+.px-eyebrow .sq{width:6px;height:6px;background:var(--px-ink);display:inline-block}
+.px-h1{font-size:clamp(32px,4.4vw,54px);line-height:1.04;letter-spacing:-.03em;font-weight:500;
+  max-width:20ch}
+.px-lede{color:var(--px-gray);font-size:15.5px;line-height:1.6;max-width:70ch;margin-top:14px}
+
+/* live block */
+.px-live-row{display:grid;grid-template-columns:minmax(220px,.9fr) 2fr;gap:1px;background:var(--px-line);
+  border:1px solid var(--px-line);margin-top:32px}
+@media (max-width:800px){.px-live-row{grid-template-columns:1fr}}
+.px-live-now{background:#fff;padding:24px 20px}
+.px-live-n{font-size:clamp(46px,7vw,78px);line-height:1;letter-spacing:-.03em;font-weight:600;
+  color:var(--px-ink);font-variant-numeric:tabular-nums}
+.px-live-k{font-family:var(--px-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--px-mute);margin-top:8px;display:flex;align-items:center;gap:7px}
+.px-live-pages{background:#fff;padding:24px 20px;display:flex;flex-direction:column}
+.px-live-pages h3{font-family:var(--px-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--px-mute);font-weight:400;margin-bottom:12px}
+.px-live-list{display:flex;flex-direction:column;gap:7px;font-size:13.5px}
+.px-live-list .r{display:flex;align-items:baseline;gap:10px}
+.px-live-list .r code{font-family:var(--px-mono);font-size:12.5px;color:var(--px-ink);
+  overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.px-live-list .r b{margin-left:auto;font-family:var(--px-mono);font-size:11.5px;font-weight:500;
+  color:var(--px-gray)}
+.px-empty{color:var(--px-mute);font-size:13px}
+
+/* numbers */
+.px-cells{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:1px;
+  background:var(--px-line);border:1px solid var(--px-line);border-top:0}
+.px-cells .c{background:#fff;padding:20px 18px}
+.px-cells .v{font-size:clamp(24px,3vw,36px);letter-spacing:-.02em;font-weight:600}
+.px-cells .k{font-family:var(--px-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--px-mute);margin-top:6px}
+
+/* range switch */
+.px-ranges{display:flex;gap:6px;flex-wrap:wrap;margin:30px 0 14px}
+.px-ranges a{padding:7px 12px;border:1px solid var(--px-line);background:#fff;text-decoration:none;
+  font-family:var(--px-mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;color:var(--px-ink)}
+.px-ranges a.on{background:var(--px-ink);color:#fff;border-color:var(--px-ink)}
+
+/* chart */
+.px-chart{border:1px solid var(--px-line);padding:18px 18px 12px;background:#fff}
+.px-chart svg{display:block;width:100%;height:auto;overflow:visible}
+.px-chart .gl{stroke:var(--px-line);stroke-width:1}
+.px-chart .ln{fill:none;stroke:#4E7A96;stroke-width:1.6;stroke-linejoin:round;stroke-linecap:round}
+.px-chart .ln2{fill:none;stroke:#E8734B;stroke-width:1.4;stroke-dasharray:3 3}
+.px-chart .ax{font-family:var(--px-mono);font-size:9.5px;fill:var(--px-mute);letter-spacing:.03em}
+.px-chart .pk{fill:#4E7A96}
+.px-legend{display:flex;gap:18px;margin-top:10px;font-family:var(--px-mono);font-size:10px;
+  letter-spacing:.05em;text-transform:uppercase;color:var(--px-mute)}
+.px-legend i{width:14px;height:2px;display:inline-block;vertical-align:3px;margin-right:6px}
+.px-legend .a i{background:#4E7A96}
+.px-legend .b i{background:repeating-linear-gradient(90deg,#E8734B 0 3px,transparent 3px 6px)}
+
+/* breakdown tables */
+.px-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1px;
+  background:var(--px-line);border:1px solid var(--px-line);margin-top:26px}
+.px-card{background:#fff;padding:18px}
+.px-card h3{font-family:var(--px-mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--px-mute);font-weight:400;margin-bottom:14px}
+.px-bars{display:flex;flex-direction:column;gap:1px}
+.px-bar{position:relative;display:flex;align-items:center;gap:10px;padding:7px 9px;font-size:13.5px;
+  overflow:hidden}
+.px-bar .fill{position:absolute;inset:0 auto 0 0;background:#F1F4F6;z-index:0}
+.px-bar .lb,.px-bar .nm{position:relative;z-index:1}
+.px-bar .lb{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.px-bar .lb code{font-family:var(--px-mono);font-size:12.5px}
+.px-bar .nm{margin-left:auto;font-family:var(--px-mono);font-size:11.5px;color:var(--px-gray);flex:none}
+
+/* method */
+.px-note{border:1px solid var(--px-line);padding:20px;margin-top:26px}
+.px-note p{color:var(--px-gray);font-size:14px;line-height:1.65;max-width:88ch}
+.px-note p + p{margin-top:10px}
+.px-note b{color:var(--px-ink);font-weight:600}
+.px-note .px-defs{margin:12px 0 0 18px;font-size:13px;line-height:1.75;color:var(--px-gray)}
+.px-foot{font-family:var(--px-mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--px-mute);margin:18px 0 60px}
+
+/* the header instance yields first when space runs out */
+.head-cta .px-badge{margin-right:4px}
+@media (max-width:1040px){.head-cta .px-badge{display:none}}
+.foot-row .px-badge{margin-left:0}
+@media (max-width:720px){.foot-row .px-badge{width:100%;justify-content:center}}
+
+/* Full-bleed canvas pages carry the map overlay badge; showing the header one
+   as well puts two identical pills in the same top-right corner. */
+body.wide .head-cta .px-badge{display:none}
+
+/* the live dot stops claiming to be live once the feed goes quiet */
+.px-dot.px-stale{background:var(--px-mute);animation:none;opacity:.5}

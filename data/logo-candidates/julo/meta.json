@@ -1,0 +1,30 @@
+{
+ "id": "julo",
+ "name": "JULO",
+ "url": "https://www.julo.co.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/julo/s00-appstore.png",
+   "tag": "appstore:JULO: Kredit Online & Pinjaman",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/fe/65/bc/fe65bcc2-53b6-812d-412e-32a18f9984fe/AppIcon-0-0-1x_U007ephone-0-1-85-220.jpeg/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/julo/s01-play.png",
+   "tag": "play:com.julofinance.juloapp",
+   "src": "https://play-lh.googleusercontent.com/UlYHfQhAWTxvS3mtDYnyntzaqv8pUWoX2o-ZooRQiDrGSC0CfuU3nSi9BUDnbYCbuJU2Bpnj0_rbIN0LD-Q-qg=s512"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/julo/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/julo/h00-header.png",
+   "tag": "header-96x34"
+  }
+ ],
+ "errors": []
+}

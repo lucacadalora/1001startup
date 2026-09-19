@@ -1,0 +1,33 @@
+{
+ "id": "xurya",
+ "name": "Xurya",
+ "url": "https://xurya.com",
+ "candidates": [
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/xurya/00-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 49.0,
+   "path": "data/logo-candidates/xurya/01-site-guess-apple-180x180.png",
+   "tag": "guess-apple-180x180"
+  },
+  {
+   "pri": 35.05,
+   "path": "data/logo-candidates/xurya/02-site-guess-logo512-1x1.png",
+   "tag": "guess-logo512-1x1"
+  },
+  {
+   "pri": 30.05,
+   "path": "data/logo-candidates/xurya/03-site-guess-favicon-1x1.png",
+   "tag": "guess-favicon-1x1"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/xurya/h00-header.png",
+   "tag": "header-130x53"
+  }
+ ],
+ "errors": []
+}

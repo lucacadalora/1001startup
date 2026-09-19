@@ -1,0 +1,19 @@
+{
+ "id": "beleaf-farms",
+ "name": "Beleaf Farms",
+ "url": "https://beleaf.co.id",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/beleaf-farms/s00-play.png",
+   "tag": "play:branded.md280abbdc5244d049d7b6c654903c84f.beleaftodaycoxana",
+   "src": "https://play-lh.googleusercontent.com/u37Y8rs-uEP75JD2039NfjcqrQtPEjTCNjO07XA3NxXJcc7tahIs3JIOjmeZxWkCWSUoRItEVaYTt72-SiKodQ=s512"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/beleaf-farms/h00-header.png",
+   "tag": "header-128x52"
+  }
+ ],
+ "errors": []
+}

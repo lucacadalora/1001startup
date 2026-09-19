@@ -1,0 +1,36 @@
+{
+ "id": "bhinneka",
+ "name": "Bhinneka",
+ "url": "https://www.bhinneka.com",
+ "candidates": [
+  {
+   "pri": 500,
+   "path": "data/logo-candidates/bhinneka/x00-hdr3x.png",
+   "tag": "hdr3x"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/bhinneka/s00-appstore.png",
+   "tag": "appstore:BFlash Bhinneka Life",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a5/79/25/a57925f2-2b2c-c5e2-b2d9-f859d7aad498/AppIcon-1x_U007emarketing-0-8-0-85-220-0.jpeg/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/bhinneka/s01-play.png",
+   "tag": "play:com.otoreport.appbhinnekapulsa",
+   "src": "https://play-lh.googleusercontent.com/qtca9bU97OTc7Jwq1ZKTbpW621QrkB7iAiD81uA9VstM2tQ5wD7T4GwqpJXawahJOLsaVPFCVzw2CpdIihnM_ls=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/bhinneka/s02-play.png",
+   "tag": "play:id.co.insura.bhinneka",
+   "src": "https://play-lh.googleusercontent.com/BtljgeTBGBqacYuQUBowNYrvitt06Nkg_k2lVUhRCx-nCApF8LmavwsX8cAtGK5ZdYrtTRQ1OMioqnZK1Q81=s512"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/bhinneka/h00-header.png",
+   "tag": "header-176x32"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,23 @@
+{
+ "id": "herza-cloud",
+ "name": "Herza Cloud",
+ "url": "https://herza.cloud",
+ "candidates": [
+  {
+   "pri": 94.2,
+   "path": "data/logo-candidates/herza-cloud/00-site-link-icon-300x300.png",
+   "tag": "link-icon-300x300"
+  },
+  {
+   "pri": 68.2,
+   "path": "data/logo-candidates/herza-cloud/01-site-link-icon-100x100.png",
+   "tag": "link-icon-100x100"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/herza-cloud/h00-header.png",
+   "tag": "header-182x42"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,33 @@
+{
+ "id": "kecilin",
+ "name": "Kecilin (AssistX Enterprise)",
+ "url": "https://assistxenterprise.ai/",
+ "candidates": [
+  {
+   "pri": 117.6,
+   "path": "data/logo-candidates/kecilin/00-site-apple-touch-icon-192x192.png",
+   "tag": "apple-touch-icon-192x192"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/kecilin/01-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/kecilin/02-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/kecilin/03-site-guess-favicon-16x16.png",
+   "tag": "guess-favicon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/kecilin/h00-header.png",
+   "tag": "header-94x34"
+  }
+ ],
+ "errors": []
+}

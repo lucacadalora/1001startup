@@ -1,0 +1,20 @@
+{
+ "id": "wagely",
+ "name": "wagely",
+ "url": "https://www.wagely.asia",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/wagely/s00-appstore.png",
+   "tag": "appstore:wagely",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/d2/58/1a/d2581ad5-ba65-449f-aa24-cfe2e1426958/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/wagely/s01-play.png",
+   "tag": "play:com.wagely.android",
+   "src": "https://play-lh.googleusercontent.com/nwyCF1iUY2V0jje0k65SMNQk-rt1i5vBk5ex8nGfcRqi1OyNd8omsOh9l0nidz9W14nFprEfkr7-P7lBC3aZ_hY=s512"
+  }
+ ],
+ "errors": []
+}

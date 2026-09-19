@@ -1,0 +1,28 @@
+{
+ "id": "materee",
+ "name": "Materee",
+ "url": "https://materee.id",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/materee/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/materee/01-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 109.60000000000001,
+   "path": "data/logo-candidates/materee/02-site-manifest-64x64.png",
+   "tag": "manifest-64x64"
+  },
+  {
+   "pri": 62.5,
+   "path": "data/logo-candidates/materee/03-site-link-icon-50x30.png",
+   "tag": "link-icon-50x30"
+  }
+ ],
+ "errors": []
+}

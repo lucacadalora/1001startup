@@ -1,0 +1,32 @@
+{
+ "id": "halodoc",
+ "name": "Halodoc",
+ "url": "https://www.halodoc.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/halodoc/s00-appstore.png",
+   "tag": "appstore:Halodoc for Doctors",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c3/61/38/c36138ad-d73b-d0c4-fbe2-1d197954a754/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/halodoc/s01-appstore.png",
+   "tag": "appstore:Halodoc: Doctor & Medicine",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/7a/52/a9/7a52a90a-ea0a-f179-258e-32f0dcbb4fe9/AppIcon-Pink-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/halodoc/s02-play.png",
+   "tag": "play:com.linkdokter.halodoc.android",
+   "src": "https://play-lh.googleusercontent.com/CwZOW-DU7BuqVKmlJ27i2jrPqwhWqv4L4nasiTy6IsjWZ9dhKjotnbxK-cxBOCOimBwODul687cu-MZM5cFKDA=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/halodoc/s03-play.png",
+   "tag": "play:com.halodoc.doctor",
+   "src": "https://play-lh.googleusercontent.com/-OD2u2v4K0SJoNnIvDHAuw4kkdhOBM9vsEInIDRanvxtM_yntQUtwxo8pe0BEnVnPKqhT59ZqlEEKgMy_q7qQg=s512"
+  }
+ ],
+ "errors": []
+}

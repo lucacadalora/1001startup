@@ -1,0 +1,42 @@
+{
+ "id": "populix",
+ "name": "Populix",
+ "url": "https://info.populix.co",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/populix/s00-appstore.png",
+   "tag": "appstore:Populix | Survei Online",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/d3/de/94/d3de94e9-68a1-9ab0-ccde-629da283329b/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/populix/s01-appstore.png",
+   "tag": "appstore:Populix Digital Diary",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/6e/61/37/6e613750-ab2f-fc5c-44f9-0543c9cb9e69/AppIcon-0-0-1x_U007emarketing-0-7-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/populix/s02-play.png",
+   "tag": "play:co.populix",
+   "src": "https://play-lh.googleusercontent.com/A2E00SYLxokTNxKAUXMg97Fl1qfPGDDcg2Wz1Tyn_L5ldDKkXkStLV_qCrLUiV7AhhNbrHcuwb16KKcrAVrANg=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/populix/s03-play.png",
+   "tag": "play:com.populix.panel",
+   "src": "https://play-lh.googleusercontent.com/FkxqEW4mUTXN4Os7Mig0bcC7WFHhhjHc4mBECeAMbcChbTlRABw6taR5MdjsuTxlPt7ZkXXjJWR-qZrq-Eaz=s512"
+  },
+  {
+   "pri": 55.6,
+   "path": "data/logo-candidates/populix/00-site-guess-favicon-512x512.png",
+   "tag": "guess-favicon-512x512"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/populix/h00-header.png",
+   "tag": "header-172x46"
+  }
+ ],
+ "errors": []
+}

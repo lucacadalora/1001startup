@@ -1,0 +1,41 @@
+{
+ "id": "kelas-pintar",
+ "name": "Kelas Pintar",
+ "url": "https://www.kelaspintar.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/kelas-pintar/s00-appstore.png",
+   "tag": "appstore:Kelas Pintar - Guru",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c1/54/6e/c1546e17-e787-9b38-1e71-33e675c6f012/AppIconKP-0-0-1x_U007epad-0-11-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/kelas-pintar/s01-appstore.png",
+   "tag": "appstore:Kelas Pintar - Murid",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/af/ae/a8/afaea812-b370-3d3e-3a05-206bd41d8c17/AppIconKP-1x_U007emarketing-0-11-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/kelas-pintar/s02-play.png",
+   "tag": "play:id.extramarks.kelaspintarguru",
+   "src": "https://play-lh.googleusercontent.com/YGq1nC5IXkQWb-hK38plOIeqFg1eqc0Yl4Z74KG5t2vA4-HsuU_fzCy1QptsNF4ZCkBh-gPiZaSYr6bmcSfivA=s512"
+  },
+  {
+   "pri": 69.0,
+   "path": "data/logo-candidates/kelas-pintar/01-site-link-icon-180x180.png",
+   "tag": "link-icon-180x180"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/kelas-pintar/00-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/kelas-pintar/h00-header.png",
+   "tag": "header-100x45"
+  }
+ ],
+ "errors": []
+}

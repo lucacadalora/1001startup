@@ -1,0 +1,24 @@
+{
+ "id": "intura",
+ "name": "Intura",
+ "url": "https://intura.co",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/intura/s00-appstore.png",
+   "tag": "appstore:Intura - Journal & AI Coach",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/db/51/3f/db513f44-a059-2617-6892-9c572b29f55a/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 85.6,
+   "path": "data/logo-candidates/intura/00-site-link-icon-801x801.png",
+   "tag": "link-icon-801x801"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/intura/h00-header.png",
+   "tag": "header-102x32"
+  }
+ ],
+ "errors": []
+}

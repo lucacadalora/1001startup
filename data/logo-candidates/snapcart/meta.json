@@ -1,0 +1,51 @@
+{
+ "id": "snapcart",
+ "name": "Snapcart",
+ "url": "https://snapcart.global",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/snapcart/s00-appstore.png",
+   "tag": "appstore:SnapCart Delivery",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/8f/62/27/8f6227d5-61f6-94ea-8a4d-cb9b92919d48/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/snapcart/s01-appstore.png",
+   "tag": "appstore:SnapCart Grocery Calculator",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/7d/af/89/7daf8920-02c1-b5dd-16b2-217b0f3a3400/AppIcon-0-0-1x_U007epad-0-1-85-220.jpeg/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/snapcart/s02-play.png",
+   "tag": "play:com.snapcart.android",
+   "src": "https://play-lh.googleusercontent.com/b8OD5UtTIC8zFn6MNXJE3NVWi5JAgtBfa9jljC7iTtYeGH0iDSHZmqBhHIK0X-QmEBf38n1Tmr1FsdacfpTAHQ=s512"
+  },
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/snapcart/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/snapcart/01-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/snapcart/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/snapcart/h00-header.png",
+   "tag": "header-128x78"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/snapcart/h01-header.png",
+   "tag": "header-128x78"
+  }
+ ],
+ "errors": []
+}

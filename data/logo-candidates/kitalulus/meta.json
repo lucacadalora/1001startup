@@ -1,0 +1,30 @@
+{
+ "id": "kitalulus",
+ "name": "KitaLulus",
+ "url": "https://www.kitalulus.com",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/kitalulus/s00-appstore.png",
+   "tag": "appstore:KitaLulus: Loker Pejuang Kerja",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/57/3e/4c/573e4ce3-2257-b101-fa4d-93ce86831051/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/kitalulus/s01-play.png",
+   "tag": "play:com.kitalulus",
+   "src": "https://play-lh.googleusercontent.com/klsARtJz08AEJfG5F_OrDcTBeNaJllzlJCoo2_9dS7lpPKf_JTQeNM9xOu3scqn36oJlC0wsNam35v0q6ZDQdg=s512"
+  },
+  {
+   "pri": 62.3,
+   "path": "data/logo-candidates/kitalulus/00-site-link-icon-46x46.png",
+   "tag": "link-icon-46x46"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/kitalulus/h00-header.png",
+   "tag": "header-100x40"
+  }
+ ],
+ "errors": []
+}

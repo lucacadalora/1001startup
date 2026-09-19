@@ -1,0 +1,67 @@
+{
+ "id": "base",
+ "name": "BASE",
+ "url": "https://base.co.id",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/base/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/base/01-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/base/s00-appstore.png",
+   "tag": "appstore:Base-Qu\u1ea3n tr\u1ecb v\u00e0 \u0111i\u1ec1u h\u00e0nh DN",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f3/6d/05/f36d05f7-2943-a9fb-e328-86816b486594/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/base/s01-appstore.png",
+   "tag": "appstore:My BASE",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/a9/4c/87/a94c8776-a31f-d566-cfbd-ba5481f7ae90/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/base/s02-play.png",
+   "tag": "play:com.coinbase.android",
+   "src": "https://play-lh.googleusercontent.com/0xUsZcZsSX0zdi0DeHI7kLrzG8SP_fG7OV68IKZlIgnw4DVfMBJHNccxxY6AxL2PiOXpmpQVowswjfefHS8_sg=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/base/s03-play.png",
+   "tag": "play:com.cocbasedrop",
+   "src": "https://play-lh.googleusercontent.com/jqnay9J_qtgbK1YNvPKYMFsP1PWJp2GBOX_-YKjnn1_b6l9CBSZPN_YVNoaGDOSnKA8sHmkBOcgo6Ms1wgSFFA=s512"
+  },
+  {
+   "pri": 136.8,
+   "path": "data/logo-candidates/base/03-site-link-icon-512x512.png",
+   "tag": "link-icon-512x512"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/base/02-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/base/04-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 32.4,
+   "path": "data/logo-candidates/base/05-site-guess-favicon-48x48.png",
+   "tag": "guess-favicon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/base/h00-header.png",
+   "tag": "header-53x28"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,36 @@
+{
+ "id": "pasarpolis",
+ "name": "PasarPolis",
+ "url": "https://pasarpolis.io",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/pasarpolis/s00-appstore.png",
+   "tag": "appstore:PasarPolis Mitra",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/ee/55/1c/ee551c2b-1744-b5db-ffe5-9ab9fda766af/AppIcon-0-0-1x_U007emarketing-0-11-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/pasarpolis/s01-appstore.png",
+   "tag": "appstore:Tap Partners",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c9/75/d3/c975d3a0-20e4-5eee-ed62-b2605b62853e/AppIcon-Production-0-0-1x_U007emarketing-0-10-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/pasarpolis/s02-play.png",
+   "tag": "play:com.pasarpolis.mitra",
+   "src": "https://play-lh.googleusercontent.com/-g_oaZpf0hCyO8Yp0SlNwPhj98nt3V8nOMNWhRxYex7fYPWTh8Cucvpz3RjwCQ69yWmk1YnTHE6Wv1HtX26OSQ=s512"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/pasarpolis/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/pasarpolis/h00-header.png",
+   "tag": "header-131x25"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,62 @@
+{
+ "id": "healthpro",
+ "name": "HealthPro",
+ "url": "https://www.healthpro.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/healthpro/s00-appstore.png",
+   "tag": "appstore:HealthPro: Blood Sugar",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/01/d0/94/01d0946a-51fe-8411-70f9-2f0466b88655/AppIcon-0-0-1x_U007ephone-0-1-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/healthpro/s01-appstore.png",
+   "tag": "appstore:HealthPro Agendamentos",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/da/fb/ea/dafbea9a-7815-0b64-5590-aad53a47432b/AppIcon-0-0-1x_U007emarketing-0-11-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/healthpro/s02-play.png",
+   "tag": "play:com.healthproqatar.app",
+   "src": "https://play-lh.googleusercontent.com/up4e98v-mvncAori8uWkdiLUbPOkmW_xs6dC0yMC812Ex364qgSbIwQNBKZ9JC0Ms0MFMSF0BMxVem5V91_RKA=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/healthpro/s03-play.png",
+   "tag": "play:com.HealthproCareCard.app",
+   "src": "https://play-lh.googleusercontent.com/PACsGoYRbIVfsIoV55fof-Tio0aI2uT59m1w7j-GCE-jUeEyVWIRRommsYOLLv_Qh3JYOigTfnU8K7jOsyVw=s512"
+  },
+  {
+   "pri": 99.0,
+   "path": "data/logo-candidates/healthpro/00-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 88.8,
+   "path": "data/logo-candidates/healthpro/01-site-link-icon-192x192.png",
+   "tag": "link-icon-192x192"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/healthpro/02-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 39.6,
+   "path": "data/logo-candidates/healthpro/03-site-guess-favicon-192x192.png",
+   "tag": "guess-favicon-192x192"
+  },
+  {
+   "pri": 39.6,
+   "path": "data/logo-candidates/healthpro/04-site-guess-favicon-192x192.png",
+   "tag": "guess-favicon-192x192"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/healthpro/h00-header.png",
+   "tag": "header-40x40"
+  }
+ ],
+ "errors": []
+}

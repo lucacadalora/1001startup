@@ -1,0 +1,22 @@
+{
+ "id": "finnix",
+ "name": "Finnix",
+ "url": "https://www.finnix.id",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/finnix/s00-appstore.png",
+   "tag": "appstore:FINNIX DVR",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/bc/60/0b/bc600b40-b643-34ab-15aa-608792ac46ac/AppIcon-0-0-1x_U007ephone-0-1-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/finnix/s01-play.png",
+   "tag": "play:com.zx.finnixdvr",
+   "src": "https://play-lh.googleusercontent.com/vw2ip0SeSfasRbx1AU2ZF5vrozKD_vC6UQMDfMVvwCOWzIsRDPM1ul1rVfsBPmBOP_-8daZIY1ZyMimNQpXH3w=s512"
+  }
+ ],
+ "errors": [
+  "ERR Error: Page.goto: net::ERR_SSL_VERSION_OR_CIPHER_MISMATCH at https://www.finn"
+ ]
+}

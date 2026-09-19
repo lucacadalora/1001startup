@@ -1,0 +1,14 @@
+{
+ "id": "pintar",
+ "name": "Pintar (formerly HarukaEdu)",
+ "url": "https://pintar.co",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/pintar/s00-play.png",
+   "tag": "play:com.pintaredu.lms",
+   "src": "https://play-lh.googleusercontent.com/n_UTyVfvaq5LNeZGsJ8Au_o-wioz2U9pZpTg3xUU66MIo7IlKBJT30t3aZB-vIQWnL4tAPqvYhgjNGSSpJgl=s512"
+  }
+ ],
+ "errors": []
+}

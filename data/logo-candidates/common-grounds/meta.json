@@ -1,0 +1,72 @@
+{
+ "id": "common-grounds",
+ "name": "Common Grounds Coffee",
+ "url": "https://www.commongrounds.co.id",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/common-grounds/00-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/common-grounds/s02-play.png",
+   "tag": "play:ca.craver.commongrounds",
+   "src": "https://play-lh.googleusercontent.com/LMOKHwUefs5oUy9ezwca_Tc5_8ZWWPpFn1yRzvPAbjZ5iiSa3zInOvZsT4mwHHw9dRLbvo6Tu3ziR_DL90lLnA=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/common-grounds/s03-play.png",
+   "tag": "play:com.tryperdiem.wh.commongrounds",
+   "src": "https://play-lh.googleusercontent.com/eBTdJuiSEI94O6q1k08zkikHyVp0c2gwn0_1jwUXbiW1XZpfWPpJwJOBZ5TU9mr84WLNO63xtzq1dx1PsAVjKQ=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/common-grounds/s00-appstore.png",
+   "tag": "appstore:Common Grounds App",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f1/d0/09/f1d009e6-71f9-df85-7908-77e35f829b1b/AppIcon-0-0-1x_U007emarketing-0-6-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/common-grounds/s01-appstore.png",
+   "tag": "appstore:Common Grounds Oaklyn",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/4f/a1/ac/4fa1ac3e-e96e-a7fa-ae9f-be621b5330ae/AppIcon-0-0-1x_U007emarketing-0-6-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 128.8,
+   "path": "data/logo-candidates/common-grounds/01-site-manifest-192x192.png",
+   "tag": "manifest-192x192"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/common-grounds/02-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 72.8,
+   "path": "data/logo-candidates/common-grounds/05-site-link-icon-256x256.png",
+   "tag": "link-icon-256x256"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/common-grounds/03-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/common-grounds/04-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/common-grounds/h00-header.png",
+   "tag": "header-150x44"
+  },
+  {
+   "pri": 24.8,
+   "path": "data/logo-candidates/common-grounds/06-site-mask-icon-96x96.png",
+   "tag": "mask-icon-96x96"
+  }
+ ],
+ "errors": []
+}

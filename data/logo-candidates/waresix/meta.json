@@ -1,0 +1,35 @@
+{
+ "id": "waresix",
+ "name": "Waresix",
+ "url": "https://waresix.com",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/waresix/s00-play.png",
+   "tag": "play:com.waresix.wos.odoo",
+   "src": "https://play-lh.googleusercontent.com/PXNpcqN687VHDRPgAZZHix9oZtOm5dLn_HrNygNkM-3FidlflUfH6CMcC1G4cT9zYooSCHzRRMsMVwQ5ATm5BQ=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/waresix/s01-play.png",
+   "tag": "play:com.waresix.wos.fe",
+   "src": "https://play-lh.googleusercontent.com/YrfTbhL_lAP99C8N-0juZTgNJBDw3s1iTVhpmgyOUeZUQyGIBMDEs2Q-BFFkh3YJPhJNJFTb51hMD0TtQ3-flX0=s512"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/waresix/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/waresix/h00-header.png",
+   "tag": "header-169x38"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/waresix/h01-header.png",
+   "tag": "header-169x38"
+  }
+ ],
+ "errors": []
+}
