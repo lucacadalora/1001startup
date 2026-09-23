@@ -3,7 +3,7 @@ const { esc } = require('../lib/util');
 
 // Bump on every deploy that changes css/js: Cloudflare edge-caches these
 // paths ~4h and the purge token is DNS-only.
-const V = 'p142';
+const V = 'p143';
 
 const NAV = [
   { href: '/world', label: 'World' },

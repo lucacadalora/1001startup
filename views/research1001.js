@@ -7,6 +7,7 @@ const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
 const IMPORT_NOTE = require('./import-note1001');
 const IMPORT_HS = require('./import-hs1001');
+const IMPORT_CHART = require('./import-chart1001');
 
 const SLUG = 'indonesia-computer-import-growth';
 const ARTICLE_PATH = '/research/' + SLUG;
@@ -56,6 +57,7 @@ a{color:inherit;text-underline-offset:4px}a:hover{color:oklch(42% .06 240)}
 a:focus-visible,summary:focus-visible{outline:2px solid oklch(45% .09 240);outline-offset:5px}
 ${NAV.css}
 ${IMPORT_NOTE.css}
+${article ? IMPORT_CHART.css : ''}
 .research-wrap{max-width:1180px;margin:auto;padding:0 20px}
 .research-head{padding:clamp(38px,7vw,84px) 0 36px;border-bottom:1px solid oklch(89% .006 240)}
 h1{max-width:23ch;font-size:clamp(36px,5.5vw,64px);line-height:1.05;font-weight:550;letter-spacing:-.035em;margin:14px 0 22px}
@@ -85,7 +87,7 @@ footer{border-top:1px solid oklch(89% .006 240);padding:24px 20px;font-size:14px
 ${NAV.header('research', { lang, path, translated: true })}
 <main class="research-wrap">${body}</main>
 <footer><div><a href="${PF}/">1001startup.id</a><span>${L('Figures with sources. Assumptions made visible.', 'Angka bersumber. Asumsi dijelaskan.')} · <a href="${PF}/research">${L('Research', 'Riset')}</a></span></div></footer>
-<script src="/js/nav1001.js?v=${V}" defer></script></body></html>`;
+<script src="/js/nav1001.js?v=${V}" defer></script>${article ? `<script src="/js/import-chart1001.js?v=${V}" defer></script>` : ''}</body></html>`;
 }
 
 function index({ lang = 'en' } = {}) {
@@ -114,7 +116,7 @@ function article({ lang = 'en' } = {}) {
 <p>${L('AI workloads also predate this import surge: <a href="https://www.lintasarta.net/en/news/lintasarta-introduced-ai-merdeka-to-empowering-indonesias-ai-sovereignty/">Lintasarta reported in July 2025</a> that Sahabat-AI ran on GPU Merdeka. Our thesis therefore concerns expansion of an existing AI-compute market, with room for H200, B300 and other accelerators.', 'Beban kerja AI juga sudah ada sebelum lonjakan impor ini: <a href="https://www.lintasarta.net/en/news/lintasarta-introduced-ai-merdeka-to-empowering-indonesias-ai-sovereignty/">Lintasarta melaporkan pada Juli 2025</a> bahwa Sahabat-AI berjalan di GPU Merdeka. Karena itu, tesis kami membahas ekspansi pasar komputasi AI yang sudah ada, dengan ruang untuk H200, B300, dan akselerator lain.')}</p>
 <h2>${L('The signal: US$3.94 billion in two categories', 'Sinyal: US$3,94 miliar dalam dua kategori')}</h2>
 <p>${L('During January–July 2026, HS 847150 and 847149 together reached <strong>US$3.94 billion</strong>, versus US$1.61 billion in the same months of 2025: an increase of <strong>US$2.33 billion, or about 145%</strong>. They account for approximately <strong>94% of the increase</strong> in the broader HS 8471 category. That concentration motivates our AI-compute hypothesis; it does not measure the AI share.', 'Pada Januari–Juli 2026, gabungan HS 847150 dan 847149 mencapai <strong>US$3,94 miliar</strong>, dibandingkan US$1,61 miliar pada bulan yang sama tahun 2025: naik <strong>US$2,33 miliar, atau sekitar 145%</strong>. Keduanya menyumbang sekitar <strong>94% dari kenaikan</strong> kategori HS 8471 secara keseluruhan. Konsentrasi ini menjadi dasar hipotesis komputasi AI kami; angka tersebut tidak mengukur pangsa AI.')}</p>
-${comparison(lang)}
+${IMPORT_CHART.render(lang)}
 ${IMPORT_HS.render(lang)}
 <h2>${L('Two import windows to investigate', 'Dua periode impor yang perlu ditelusuri')}</h2>
 <ul>
