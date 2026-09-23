@@ -1,0 +1,4 @@
+scenario,assumed_AI_share_847150,assumed_AI_share_847149,allocated_847150_USDm,allocated_847149_USDm,total_AI_equipment_USDm,share_of_two_codes_percent
+low,0.25,0.15,712.71800,163.57485,876.29285,22.23320
+central,0.5,0.35,1425.43600,381.67465,1807.11065,45.84980
+high,0.75,0.6,2138.15400,654.29940,2792.45340,70.84980
