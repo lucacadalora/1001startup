@@ -1,4 +1,4 @@
-Indonesia computer imports: an illustrative AI factory scenario
+Searching for H200 and B300 AI clusters in Indonesia imports
 Research note dated 23 September 2026
 
 SOURCE AND SCOPE
@@ -58,11 +58,81 @@ networking or construction.
 LIMITS OF THE INFERENCE
 These aggregate workbooks contain no importer names, counterparties,
 product models, part numbers or installation status. They cannot establish
-that any specific Indonesian company imported NVIDIA B300 systems, or that
+that any specific Indonesian company imported NVIDIA H200 or B300 systems, or that
 the equipment is installed or operational. No HS code here is exclusive to
-B300. Zero B300 imports remains compatible with this evidence alone.
+H200 or B300. Zero imports of either model remains compatible with this
+evidence alone.
 Company/model attribution requires shipment-level documents specifying
 importer, date, model or part number, quantity and declared value.
 
 The earlier social-media chart of Taiwan chip exports is a different series
 with an unverified HS filter; it is not used in these calculations.
+
+HS BREAKDOWN AND CLUSTER RESEARCH FRAME
+The study asks whether part of the import growth represents H200- or
+B300-based GPU clusters for AI token factories (inference infrastructure)
+or AI data centers. It identifies categories and periods to investigate;
+it has not identified a verified GPU model, cluster, operator or site.
+
+HS 8471 is the parent category, not an additional line to add to its children.
+The table in the article is rendered from categories.csv. Descriptions are
+simplified from the WCO HS 2022 nomenclature at the six-digit level:
+- 847150: processing units outside 847141/847149; may incorporate storage/I/O.
+- 847149: computers presented as systems.
+- 847130: portable computers up to 10 kg, with processor, keyboard and display.
+- 847141: computers with processing and input/output in the same housing.
+- 847160: input/output peripherals.
+- 847170: data-storage units.
+- 847180: other computer units.
+- 847190: remaining goods within the heading.
+The article prioritizes 847150 and 847149 as candidate search pools for
+GPU-server shipments. This is our research interpretation, not an official
+AI-specific classification. Processing units are not synonymous with GPU
+chips; a system declaration does not prove an entire cluster was imported.
+Actual classifications depend on the goods as presented and the relevant
+customs declaration, including Indonesia's more detailed tariff lines.
+
+Additional codes to investigate, with NO values in the supplied dataset:
+854231 (processor/controller integrated circuits), 847330 (computer parts
+and accessories), and 851762 (data communication, including switching and
+routing equipment). These are not assigned H200/B300 classifications.
+Bare chips, populated boards, servers and systems are different forms.
+These additional categories are not included in the scenario calculation.
+
+TIMING CALCULATIONS (US$ MILLIONS)
+February 2026 systems: 683.418 / 1,090.499 = 62.6702% of Jan-Jul systems.
+May-Jul 2026 processing units: 654.453 + 852.058 + 661.632 = 2,168.143.
+2,168.143 / 2,850.872 = 76.0519% of Jan-Jul processing units.
+Processing-unit growth: 2,850.872 - 1,072.631 = 1,778.241.
+1,778.241 / (5,255.474 - 2,773.194) = 71.6374% of HS 8471 growth.
+Combined growth: (3,941.371 / 1,610.584 - 1) x 100 = 144.717% (about 145%).
+These are concentrations in time, not proof that deliveries belong to the
+same project. Import values can change with prices and equipment mix.
+
+GPU CLUSTERS AND LIMITS
+NVIDIA's reference architecture describes an HGX H200 configuration with
+32 eight-GPU servers (256 GPUs). Its DGX B300 guide describes an eight-B300
+system with CPUs, memory, storage and network interfaces. These examples
+explain why assembled systems matter; they are not Indonesian shipment
+records. The US$1,807.11065m allocation is for potential AI computing
+equipment, not only GPU chips. It cannot yield a model split, GPU/cluster
+count, tokens per second, utilization, revenue or operating capacity.
+
+Connecting the signal to a cluster requires model/part-number evidence,
+shipment quantities and values, importer/consignee and destination matching,
+and separate installation/commissioning and workload evidence. Distributor
+imports do not identify the eventual operator. Avoid counting components
+inside a complete system again as separate equipment.
+
+REFERENCE SOURCES (consulted 23 September 2026)
+Trade figures: supplied workbooks and derived CSVs described above.
+The following sources support classifications and architecture only; they
+do not authenticate the trade figures or document imports into Indonesia.
+WCO HS 8471: https://www.wcotradetools.org/en/harmonized-system/2022/en/168471
+WCO HS 847330: https://www.wcotradetools.org/en/harmonized-system/2022/en/16847330
+WCO HS 8542: https://www.wcotradetools.org/en/harmonized-system/2022/en/168542
+WCO HS 851762: https://www.wcotradetools.org/en/harmonized-system/2022/en/16851762
+NVIDIA HGX cluster architecture:
+https://docs.nvidia.com/enterprise-reference-architectures/hgx-ai-factory-h100-h200-b200/latest/network-logical-architecture.html
+NVIDIA DGX B300 hardware:
+https://docs.nvidia.com/dgx/dgxb300-user-guide/introduction-to-dgxb300.html
