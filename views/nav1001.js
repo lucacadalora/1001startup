@@ -31,6 +31,7 @@ const I18N = require('./i18n1001');
 const NAV = [
   { key: 'companies', label: 'Companies', id: 'Perusahaan', href: '/#companies' },
   { key: 'news', label: 'News', id: 'Berita', href: '/news' },
+  { key: 'research', label: 'Research', id: 'Riset', href: '/research' },
   { key: 'map', label: 'Map', id: 'Peta', href: '/map' },
   { key: 'chain', label: 'Supply chain', id: 'Rantai pasok', href: '/chain' },
   { key: 'investors', label: 'Investors', id: 'Investor', href: '/investors' },
@@ -62,7 +63,7 @@ const NAV = [
   },
 ];
 
-/** active: 'companies' | 'news' | 'map' | 'chain' | 'census' | 'method' | 'agents' | ''
+/** active: 'companies' | 'news' | 'research' | 'map' | 'chain' | 'census' | 'method' | 'agents' | ''
  *  opts:   { lang: 'en'|'id', path: bare path+query of this page for the
  *            language switch, translated: false when no /id version exists } */
 function header(active, opts) {
@@ -134,7 +135,7 @@ a.di:hover{background:#F6F6F6}
 .lsw a:hover{color:#000}
 .lsw a.on{color:#000;box-shadow:inset 0 -2px #000}
 .lsw .ls{color:#D9D9DE}
-@media(max-width:1120px){.hd1001 .hrow{flex-wrap:wrap;gap:12px}.hnav{margin-left:0;flex-wrap:wrap}}
+@media(max-width:1280px){.hd1001 .hrow{flex-wrap:wrap;gap:12px}.hnav{margin-left:0;flex-wrap:wrap}}
 @media(max-width:700px){.hd1001 .hrow{flex-wrap:wrap;gap:10px}.hnav{gap:2px;font-size:13px;flex-wrap:wrap}
 .hnav>a,.dd-b{padding:6px 8px}
 .dd{position:static}

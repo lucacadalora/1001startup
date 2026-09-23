@@ -17,6 +17,8 @@ const { V } = require('./html');
 const NAV = require('./nav1001');
 const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
+const IMPORT_NOTE = require('./import-note1001');
+const RESEARCH = require('./research1001');
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
 
@@ -254,6 +256,7 @@ a{color:inherit}
 .mono{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em}
 .banner{background:${GRAD};color:#000;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:center;padding:8px 12px}
 ${NAV.css}
+${IMPORT_NOTE.css}
 .wrap{max-width:1180px;margin:0 auto;padding:0 20px}
 .phead{max-width:1180px;margin:0 auto;padding:44px 20px 24px;display:flex;align-items:flex-end;justify-content:space-between;gap:20px;flex-wrap:wrap}
 .phead h1{font-size:clamp(34px,4.6vw,56px);line-height:1.02;letter-spacing:-0.03em;font-weight:500}
@@ -395,6 +398,7 @@ ${railCards ? `<section class="railwrap" aria-label="${L('Top of the wire', 'Sor
   <div class="railin"><div class="rail" id="rail">${railCards}</div></div>
 </section>` : ''}
 ${leadIt ? lead(leadIt, lang, PF) : ''}
+${RESEARCH.teaser(lang)}
 <div class="feedwrap">
   <div class="toolbar">
     <input id="q" type="search" placeholder="${L('Search the wire — company, investor, keyword', 'Cari berita — perusahaan, investor, kata kunci')}" aria-label="${L('Search news', 'Cari berita')}">

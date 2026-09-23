@@ -1,0 +1,68 @@
+Indonesia computer imports: an illustrative AI factory scenario
+Research note dated 23 September 2026
+
+SOURCE AND SCOPE
+Two supplied spreadsheet exports, each with one Data worksheet:
+- indonesias-imports-from-world-by-product_8471 (3).xlsx: monthly,
+  January 2025 through July 2026.
+- indonesias-imports-from-world-by-product_8471 (2).xlsx: quarterly,
+  Q1 2025 through Q2 2026. Its 202501-202504 and 202601-202602 headers
+  represent quarters in this export, as confirmed by monthly reconciliation.
+
+Reporter: 360, Indonesia. Partner: 000, World. Original values: US$ thousands.
+These supplied files have not been independently authenticated against the
+original issuing data provider. Internal reconciliation checks consistency;
+it does not establish the accuracy or provenance of the underlying records.
+The downloads here are derived data, not authenticated customs declarations.
+
+monthly.csv retains the monthly HS 8471 total and the selected HS6 categories
+847150, 847149 and 847180. categories.csv compares all eight HS6 categories
+and the parent 8471 total. Columns marked USDm are US$ millions.
+The monthly reconciliation column is in US$ thousands and compares the sum
+of all eight source subcategories with the parent total, not only the three
+selected subcategories included in monthly.csv.
+
+Do not add the parent HS 8471 row to its component categories. Do not combine
+the quarterly and monthly exports as if they were separate imports.
+All 54 category-quarter comparisons agree within US$1,000; monthly sums of
+the eight subcategories agree with the parent within US$2,000, consistent
+with rounding. Comparisons below use January-July in both years.
+
+OBSERVED VALUES IN THE SUPPLIED FILES (US$ MILLIONS)
+                                  Jan-Jul 2025    Jan-Jul 2026
+HS 8471: all computer equipment        2,773.194       5,255.474
+HS 847150: processing units            1,072.631       2,850.872
+HS 847149: computer systems              537.953       1,090.499
+Processing units + systems            1,610.584       3,941.371
+
+Contribution to the HS 8471 increase:
+(3,941.371 - 1,610.584) / (5,255.474 - 2,773.194) = 93.897%, rounded to 94%.
+This is the share of the increase, not an estimate of the AI share.
+
+Processing-unit imports in May, June and July 2026 were respectively
+US$654.453 million, US$852.058 million and US$661.632 million.
+
+ILLUSTRATIVE ALLOCATION
+Assume 50% of HS 847150 and 35% of HS 847149 are AI computing equipment:
+2,850.872 x 0.50 + 1,090.499 x 0.35 = US$1,807.11065 million,
+rounded to US$1.8 billion in the note.
+
+The 50% and 35% shares are analyst-selected assumptions. They are not
+estimated from shipment descriptions, fitted probabilities, or verified
+allocations. These broad categories also cover conventional servers,
+workstations and industrial computers. The resulting estimate concerns
+equipment value, not GPU-chip value or the total cost of an AI factory.
+It does not include a separately estimated amount for power, cooling,
+networking or construction.
+
+LIMITS OF THE INFERENCE
+These aggregate workbooks contain no importer names, counterparties,
+product models, part numbers or installation status. They cannot establish
+that any specific Indonesian company imported NVIDIA B300 systems, or that
+the equipment is installed or operational. No HS code here is exclusive to
+B300. Zero B300 imports remains compatible with this evidence alone.
+Company/model attribution requires shipment-level documents specifying
+importer, date, model or part number, quantity and declared value.
+
+The earlier social-media chart of Taiwan chip exports is a different series
+with an unverified HS filter; it is not used in these calculations.
