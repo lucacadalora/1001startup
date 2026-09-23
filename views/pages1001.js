@@ -409,6 +409,9 @@ function landing({ data, lang = 'en' }) {
         'Seluruh sensus tersedia dalam dua bahasa — halaman ini dalam bahasa Indonesia, dan versi Inggrisnya selalu satu klik lewat tombol EN di menu atas.') },
   ];
   const ECO = [
+    { href: PF + '/research', rt: '/research', t: L('Research', 'Riset'),
+      d: L('Analysis of Indonesia’s startup economy, with downloadable data and explicit assumptions.',
+        'Analisis ekonomi startup Indonesia, dengan data yang dapat diunduh dan asumsi yang dijelaskan.') },
     { href: PF + '/news', rt: '/news', t: L('News', 'Berita'),
       d: L('The wire over the census — dated briefs on funding, headcount moves and closures, each with its sources.',
         'Kabar terbaru dari ekosistem — ringkasan bertanggal soal pendanaan, pergerakan pekerja, dan penutupan, lengkap dengan sumbernya.') },

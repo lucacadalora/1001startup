@@ -176,7 +176,7 @@ fastify.addHook('onRequest', async (req, reply) => {
    ("this page has no Indonesian version yet"). Add a route's pattern here the
    day its view learns lang. */
 const ID_READY = new Set(['/', '/closed', '/map', '/company/:id', '/jakarta',
-  '/news', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
+  '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
   '/investors', '/investor/:slug', '/stats', '/sector/:key', '/city/:slug', '/unicorn',
   '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask']);
 fastify.addHook('preHandler', (req, reply, done) => {
@@ -281,6 +281,7 @@ const districtName = (key) => (layout.DISTRICTS.find((d) => d.key === key) || {}
 
 const pages1001 = require('./views/pages1001');
 const news1001 = require('./views/news1001');
+const research1001 = require('./views/research1001');
 const closed1001 = require('./views/closed1001');
 const company1001 = require('./views/company1001');
 const model1001 = require('./views/model1001');
@@ -473,6 +474,21 @@ function linksData() {
   }
   return linksCache.data;
 }
+fastify.get('/research', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  reply.type('text/html').send(research1001.index({ lang: langOf(req) }));
+});
+fastify.get('/research/', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const query = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
+  return reply.code(301).header('location', langPfx(req) + '/research' + query).send();
+});
+fastify.get('/research/:slug', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  if (req.params.slug !== research1001.SLUG) return reply.code(404).type('text/html').send(research1001.notFound({ lang: langOf(req) }));
+  reply.type('text/html').send(research1001.article({ lang: langOf(req) }));
+});
+
 fastify.get('/news', async (req, reply) => {
   if (!is1001(req)) return reply.redirect('/');
   reply.type('text/html').send(news1001.news({ data: censusData(), news: newsData(), lang: langOf(req) }));
@@ -601,7 +617,7 @@ function sitemap1001() {
   const nw = newsData() || {};
   const key = [data.generated || '', nw.generated || '', Object.keys(links.byCompany || {}).length].join('|');
   if (smCache.key === key) return smCache.xml;
-  const paths = ['/', '/news', '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn'];
+  const paths = ['/', '/news', '/research', research1001.ARTICLE_PATH, '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn'];
   for (const c of data.companies || []) paths.push('/company/' + c.id);
   const invSeen = new Set();
   for (const c of data.companies || []) {
@@ -617,7 +633,7 @@ function sitemap1001() {
   for (const id of Object.keys(links.byCompany || {})) paths.push('/chain/' + id);
   for (const s of Object.keys(links.byExternal || {})) paths.push('/chain/x/' + s);
   const mod = String(data.generated || '').slice(0, 10);
-  const url = (loc, pair) => `<url><loc>${loc}</loc>${mod ? `<lastmod>${mod}</lastmod>` : ''}
+  const url = (loc, pair, modified = mod) => `<url><loc>${loc}</loc>${modified ? `<lastmod>${modified}</lastmod>` : ''}
 <xhtml:link rel="alternate" hreflang="en" href="${pair.en}"/>
 <xhtml:link rel="alternate" hreflang="id" href="${pair.id}"/>
 <xhtml:link rel="alternate" hreflang="x-default" href="${pair.en}"/></url>`;
@@ -626,7 +642,8 @@ function sitemap1001() {
   for (const p of paths) {
     const en = I18N1001.ORIGIN + p;
     const id = I18N1001.ORIGIN + '/id' + (p === '/' ? '/' : p);
-    out.push(url(en, { en, id }), url(id, { en, id }));
+    const modified = p === '/research' || p === research1001.ARTICLE_PATH ? research1001.DATE : mod;
+    out.push(url(en, { en, id }, modified), url(id, { en, id }, modified));
   }
   out.push('</urlset>');
   smCache = { key, xml: out.join('\n') };

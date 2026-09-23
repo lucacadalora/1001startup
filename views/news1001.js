@@ -18,6 +18,7 @@ const NAV = require('./nav1001');
 const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
 const IMPORT_NOTE = require('./import-note1001');
+const RESEARCH = require('./research1001');
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
 
@@ -397,7 +398,7 @@ ${railCards ? `<section class="railwrap" aria-label="${L('Top of the wire', 'Sor
   <div class="railin"><div class="rail" id="rail">${railCards}</div></div>
 </section>` : ''}
 ${leadIt ? lead(leadIt, lang, PF) : ''}
-${IMPORT_NOTE.render(lang)}
+${RESEARCH.teaser(lang)}
 <div class="feedwrap">
   <div class="toolbar">
     <input id="q" type="search" placeholder="${L('Search the wire — company, investor, keyword', 'Cari berita — perusahaan, investor, kata kunci')}" aria-label="${L('Search news', 'Cari berita')}">
