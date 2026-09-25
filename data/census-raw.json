@@ -6811,14 +6811,16 @@
    "employees_asof": "2026-08-29",
    "employees_src": "https://linkedin.com/company/toge-productions",
    "employees_kind": "linkedin",
-   "funding_note": "Toge Productions took its first outside money in February 2017, a strategic investment from Discovery Nusantara Capital, the venture arm of China's Zhexin IT, after seven bootstrapped years; Hybrid.co.id and DealStreetAsia both reported it and neither party gave a figure. Founder Kris Antoni Hadiputra has said the studio started in 2009 on about US$2,000 and two computers. Trackers disagree with each other and with the announcement — Tracxn's own page says \"an undisclosed amount\" while its summary fields have carried both a US$1M and a US$1.44M figure — so the census records no number. Toge's later cash moves ran outward: the Toge Game Fund Initiative from June 2021 offering up to US$100,000 per indie developer, and the full acquisition of Mojiken Studio on 22 November 2023, price undisclosed.",
+   "funding_note": "Toge Productions took its first outside money in February 2017, a strategic investment from Discovery Nusantara Capital, the venture arm of China's Zhexin IT, after seven bootstrapped years; Hybrid.co.id and DealStreetAsia both reported it and neither party gave a figure. Founder Kris Antoni Hadiputra has said the studio started in 2009 on about US$2,000 and two computers. Trackers disagree with each other and with the announcement — Tracxn's own page says \"an undisclosed amount\" while its summary fields have carried both a US$1M and a US$1.44M figure — so the census records no number. Toge's later cash moves ran outward: the Toge Game Fund Initiative from June 2021 offering up to US$10,000 per project, and the full acquisition of Mojiken Studio on 22 November 2023, price undisclosed.",
    "funding_status": "undisclosed",
    "funding_asof": "2026-08-30",
    "funding_src_all": [
     "https://hybrid.co.id/post/toge-productions-discovery-nusantara-capital/",
     "https://id.wikipedia.org/wiki/Toge_Productions",
     "https://tracxn.com/d/companies/togeproductions/__jM3kV0qq1auu96BfIatMaLGuh7srInvmRStnawIkGh4",
-    "https://www.dealstreetasia.com/stories/indonesia-game-developer-toga-productions-receives-funding-from-zhexins-dnc-63975"
+    "https://www.dealstreetasia.com/stories/indonesia-game-developer-toga-productions-receives-funding-from-zhexins-dnc-63975",
+    "https://www.gamedeveloper.com/business/-i-coffee-talk-i-creator-toge-productions-is-offering-funding-to-devs-in-southeast-asia",
+    "https://www.togeproductions.com/tgfi/"
    ]
   },
   {
