@@ -88,7 +88,8 @@ def main():
             nfail += 1
             why = errs.get(e['src'], 'probe string no longer on the page')
             e['check_note'] = why
-            print(f'  ! {e.get("from") or e.get("from_name")} -> {e["to"]} [{e["src"]}]: {why}')
+            end = lambda k: e.get(k) or e.get(k + '_ext') or e.get(k + '_name')
+            print(f'  ! {end("from")} -> {end("to")} [{e["src"]}]: {why}')
         if ok:
             e.pop('check_note', None)
     d['verified'] = TODAY

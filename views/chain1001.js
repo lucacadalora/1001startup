@@ -98,7 +98,8 @@ function row(e, lang = 'en') {
     <span class="ch-nm">${esc(o.name)}${o.id ? '' : o.ext
     ? ` <em>${L('outside the census', 'di luar sensus')}</em>`
     : ` <em>${L('not in the census', 'tidak ada di sensus')}</em>`}</span>
-    <span class="ch-w">${esc(e.what)}${e.stake ? ` · ${esc(e.stake)}` : ''}</span>`;
+    <span class="ch-w">${esc(e.what)}${e.stake ? ` · ${esc(e.stake)}` : ''}${
+  e.share ? ` · <b class="ch-sh">${esc(lang === 'id' ? e.share.id : e.share.en)}</b>` : ''}</span>`;
   return `<div class="ch-r">
     ${o.id ? `<a class="ch-l" href="${PF}/company/${esc(o.id)}" data-cp="${esc(o.id)}">${inner}</a>`
     : o.ext ? `<a class="ch-l" href="${PF}/chain/x/${esc(o.ext)}">${inner}</a>`
@@ -111,29 +112,51 @@ function row(e, lang = 'en') {
   </div>`;
 }
 
-/* Rails vs operations (Luca, Aug 30: "if blibli using 1 payment gateway, it
-   always linked to many platform, as well as for the logistic aggregator").
-   A payment gateway, a checkout lender or an aggregator listing is SHARED
-   infrastructure — one rail, many platforms — so those links are grouped apart
-   and worded as plumbing, not as an exclusive supplier. The flag travels on
-   each edge from scripts/build-links.js. */
-const splitRails = (list) => ({
-  ops: list.filter((e) => !e.shared),
-  rails: list.filter((e) => e.shared),
+/* Chain vs services (Luca, 29 Sep: "the inspiration is like the bloomberg
+   terminal supplychain … for the logistics things, it won't fit" and "more
+   technology and manufacturing chain, not just services"). The chain is who
+   makes, supplies, powers and hosts whom, and it leads. Delivery, payments,
+   checkout lending and sales channels are kept, with the same evidence, but
+   grouped apart, quieter, and folded away wherever the chain itself has
+   something to show. The layer travels on each edge from scripts/build-links.js
+   (as does `shared`, which now only governs traversal). */
+const splitLayers = (list) => ({
+  chain: list.filter((e) => e.layer === 'chain'),
+  services: list.filter((e) => e.layer !== 'chain'),
 });
-const RAILS_NOTE = (lang) => (lang === 'id'
-  ? 'Satu rel, banyak platform — gateway pembayaran, penyedia paylater, atau agregator memasok sebagian besar pasar sekaligus, jadi relasi di sini menggambarkan infrastruktur bersama, bukan pemasok eksklusif.'
-  : 'One rail, many platforms — a gateway, checkout lender or aggregator serves much of the market at once, so these links describe shared infrastructure, not an exclusive supplier.');
+const SERVICES_NOTE = (lang) => (lang === 'id'
+  ? 'Layanan — pengiriman, pembayaran, paylater, kanal penjualan — dicatat dengan bukti yang sama, tetapi bukan rantai pasok: satu kurir atau gateway melayani hampir semua perusahaan. Rantai tidak pernah ditelusuri melewatinya.'
+  : 'Services — delivery, payments, checkout lending, sales channels — carry the same evidence, but they are not the supply chain: one courier or gateway serves almost every company. The chain is never followed through them.');
+/* The counts every surface leads with: the chain first, services after. */
+const tally = (B) => {
+  const up = B.up.filter((e) => e.layer === 'chain').length;
+  const dn = B.down.filter((e) => e.layer === 'chain').length;
+  return { up, dn, chain: up + dn, svc: B.up.length + B.down.length - up - dn, corp: B.corp.length };
+};
+const plural = (n, one, many) => `${n} ${n === 1 ? one : many}`;
+function summaryLine(K, lang) {
+  const id = lang === 'id';
+  return [K.chain
+    ? (id ? `${K.chain} relasi teknologi & manufaktur (${K.up} pemasok, ${K.dn} pelanggan)`
+      : `${plural(K.chain, 'technology & manufacturing link', 'technology & manufacturing links')} (${plural(K.up, 'supplier', 'suppliers')}, ${plural(K.dn, 'customer', 'customers')})`)
+    : (id ? 'Belum ada relasi teknologi atau manufaktur yang terbukti' : 'No technology or manufacturing link evidenced yet'),
+  K.svc ? (id ? `${K.svc} relasi layanan` : plural(K.svc, 'service link', 'service links')) : '',
+  K.corp ? (id ? `${K.corp} relasi korporat` : `${K.corp} corporate`) : '',
+  ].filter(Boolean).join(' · ') + '.';
+}
+const NO_CHAIN = (lang) => (lang === 'id'
+  ? 'Belum ada relasi teknologi atau manufaktur yang terbukti secara publik.'
+  : 'No technology or manufacturing link is publicly evidenced yet.');
 
-/* Grouped by relationship kind, because "eleven couriers and seven wallets" is
-   the shape of the answer — an undifferentiated list of eighteen is not. */
+/* Grouped by relationship kind, because "four ingredient makers and two
+   hardware vendors" is the shape of the answer — a flat list of six is not. */
 function sideBlock(list, empty, lang = 'en') {
   const L = I18N.mkL(lang);
-  const { ops, rails } = splitRails(list);
-  if (!ops.length && !rails.length) return `<p class="ch-none">${esc(empty)}</p>`;
-  return `${ops.length ? stack(ops, empty, lang) : ''}
-  ${rails.length ? `<div class="ch-rails"><div class="ch-rh">${L('Shared rails', 'Infrastruktur bersama')}<span>${rails.length}</span></div>
-    <p class="ch-rn">${esc(RAILS_NOTE(lang))}</p>${stack(rails, empty, lang)}</div>` : ''}`;
+  const { chain, services } = splitLayers(list);
+  if (!chain.length && !services.length) return `<p class="ch-none">${esc(empty)}</p>`;
+  return `${chain.length ? stack(chain, empty, lang) : `<p class="ch-none">${esc(NO_CHAIN(lang))}</p>`}
+  ${services.length ? `<details class="ch-rails ch-svc"${chain.length ? '' : ' open'}><summary class="ch-rh">${L('Services', 'Layanan')}<span>${services.length}</span></summary>
+    <p class="ch-rn">${esc(SERVICES_NOTE(lang))}</p>${stack(services, empty, lang)}</details>` : ''}`;
 }
 
 function stack(list, empty, lang = 'en') {
@@ -170,23 +193,22 @@ function panel(c, links, lang, lvl = 3) {
   if (!B || (!B.up.length && !B.down.length && !B.corp.length)) return '';
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
-  const n = B.up.length + B.down.length + B.corp.length;
+  const K = tally(B);
   return `<section class="cp-sec ch">
     <h${lvl} class="cp-h3">${L('Supply chain', 'Rantai pasok')}</h${lvl}>
-    <p class="ch-lead">${L(
-    `${n} relationship${n === 1 ? '' : 's'} that a named document still carries.
-      Every one links to the page or filing it came from; each was re-checked on ${esc(DATE(links.verified, lang))}.`,
-    `${n} relasi yang masih dimuat dokumen bernama. Masing-masing tertaut ke halaman atau dokumen asalnya; semuanya dicek ulang pada ${esc(DATE(links.verified, lang))}.`)}</p>
+    <p class="ch-lead">${esc(summaryLine(K, lang))} ${L(
+    `Every one links to the page or filing it came from; each was re-checked on ${esc(DATE(links.verified, lang))}.`,
+    `Masing-masing tertaut ke halaman atau dokumen asalnya; semuanya dicek ulang pada ${esc(DATE(links.verified, lang))}.`)}</p>
     ${corporate(B.corp, lang)}
     <div class="ch-cols">
       <div class="ch-col">
-        <div class="ch-hd">${L('Upstream', 'Hulu')}<span>${B.up.length}</span></div>
-        <p class="ch-sub">${L(`Who serves ${esc(c.name)}`, `Siapa melayani ${esc(c.name)}`)}</p>
+        <div class="ch-hd">${L('Suppliers', 'Pemasok')}<span>${K.up}</span></div>
+        <p class="ch-sub">${L(`Who supplies ${esc(c.name)}`, `Siapa memasok ${esc(c.name)}`)}</p>
         ${sideBlock(B.up, L('No supplier relationship is publicly evidenced yet.', 'Belum ada relasi pemasok yang terbukti secara publik.'), lang)}
       </div>
       <div class="ch-col">
-        <div class="ch-hd">${L('Downstream', 'Hilir')}<span>${B.down.length}</span></div>
-        <p class="ch-sub">${L(`Who ${esc(c.name)} serves`, `Siapa dilayani ${esc(c.name)}`)}</p>
+        <div class="ch-hd">${L('Customers', 'Pelanggan')}<span>${K.dn}</span></div>
+        <p class="ch-sub">${L(`Who ${esc(c.name)} supplies`, `Siapa dipasok ${esc(c.name)}`)}</p>
         ${sideBlock(B.down, L('No customer relationship is publicly evidenced yet.', 'Belum ada relasi pelanggan yang terbukti secara publik.'), lang)}
       </div>
     </div>
@@ -210,32 +232,39 @@ function ladder(c, B, lang = 'en') {
         <div class="ch-lgh">${esc(k)}</div>
         <div class="ch-lgc">${arr.map((e) => chip(e.other, lang)).join('')}</div></div>`).join('');
     };
-    const { ops, rails } = splitRails(list);
-    if (!ops.length && !rails.length) {
+    const { chain, services } = splitLayers(list);
+    if (!chain.length && !services.length) {
       return `<p class="ch-none">${cls === 'up'
-        ? L('Nothing publicly evidenced upstream yet.', 'Belum ada bukti publik di hulu.')
-        : L('Nothing publicly evidenced downstream yet.', 'Belum ada bukti publik di hilir.')}</p>`;
+        ? L('No supplier publicly evidenced yet.', 'Belum ada pemasok yang terbukti secara publik.')
+        : L('No customer publicly evidenced yet.', 'Belum ada pelanggan yang terbukti secara publik.')}</p>`;
     }
-    return `${grouped(ops)}${rails.length ? `<div class="lad-rails" title="${esc(RAILS_NOTE(lang))}">
-      <div class="ch-lgh">${L('Shared rails', 'Infrastruktur bersama')}</div>${grouped(rails)}</div>` : ''}`;
+    /* folded unless the side has no chain at all: a wall of thirty couriers and
+       wallets under nine suppliers is exactly the picture this page must not paint */
+    const kinds = [...new Set(services.map((e) => e.kindLabel))].join(' · ');
+    return `${chain.length ? grouped(chain) : `<p class="ch-none">${esc(NO_CHAIN(lang))}</p>`}${
+      services.length ? `<details class="lad-rails ch-svc"${chain.length ? '' : ' open'} title="${esc(SERVICES_NOTE(lang))}">
+      <summary class="ch-lgh">${L('Services', 'Layanan')} · ${services.length}<span class="lad-sk">${esc(kinds)}</span></summary>${grouped(services)}</details>` : ''}`;
   };
+  const K = tally(B);
   /* SPLC-shaped: suppliers left, customers right, the company pinned in the
      middle. The centre card is sticky so it stays alongside a long supplier
      wall instead of floating in dead space, and the connector arrows only draw
-     toward a side that actually has relationships. */
+     toward a side that actually has relationships. The counts are the chain's;
+     services are counted in their own block. */
   return `<div class="lad">
-    <div class="lad-s up"><div class="lad-t">${L('Upstream', 'Hulu')}<span>${B.up.length}</span></div>${side(B.up, 'up')}</div>
+    <div class="lad-s up"><div class="lad-t">${L('Suppliers', 'Pemasok')}<span>${K.up}</span></div>${side(B.up, 'up')}</div>
     <div class="lad-m${B.up.length ? ' has-up' : ''}${B.down.length ? ' has-dn' : ''}"><div class="lad-mstick">
       <div class="lad-co">
         ${c.logo ? `<img src="${esc(c.logo)}" alt="" width="38" height="38">` : ''}
         <b>${esc(c.name)}</b><i>${esc(c.sector_label || '')}</i>
-        <span class="lad-deg"><span>${B.up.length}</span> ${L('in', 'masuk')} · <span>${B.down.length}</span> ${L('out', 'keluar')}</span>
+        <span class="lad-deg"><span>${K.up}</span> ${L('in', 'masuk')} · <span>${K.dn}</span> ${L('out', 'keluar')}${
+  K.svc ? ` · ${K.svc} ${L('services', 'layanan')}` : ''}</span>
         <span class="lad-arr-in" aria-hidden="true"></span><span class="lad-arr-out" aria-hidden="true"></span>
       </div>
       ${B.corp.length ? `<div class="lad-corp">${B.corp.map((e) => `<div class="lad-cr"><span class="lad-cv">${
     e.dir === 'owns' ? L('owns', 'memiliki') : L('owned by', 'dimiliki')}</span>${chip(e.other, lang)}${e.stake ? `<span class="lad-st">${esc(e.stake)}</span>` : ''}</div>`).join('')}</div>` : ''}
     </div></div>
-    <div class="lad-s dn"><div class="lad-t">${L('Downstream', 'Hilir')}<span>${B.down.length}</span></div>${side(B.down, 'dn')}</div>
+    <div class="lad-s dn"><div class="lad-t">${L('Customers', 'Pelanggan')}<span>${K.dn}</span></div>${side(B.down, 'dn')}</div>
   </div>`;
 }
 
@@ -248,10 +277,12 @@ function secondHop(c, links, lang = 'en') {
   const seen = new Set([c.id || 'x:' + c.ext]);
   const out = [];
   for (const e of [...B.up, ...B.down, ...B.corp]) {
-    /* never hop through a shared rail: one wallet or aggregator would join
-       everything to everything, which says something about the rail, not the
-       chain — so a rail counterparty is shown in its column but not expanded */
-    if (e.shared) continue;
+    /* only the chain is walked. A service (a courier, a gateway) or a shared
+       rail (a hyperscaler, a wallet) would join everything to everything, which
+       says something about the service, not the chain — so such a counterparty
+       is shown in its column but not expanded */
+    const walk = (x) => x.layer === 'chain' && !x.shared;
+    if (!walk(e)) continue;
     const o = e.other;
     const key = o.id || (o.ext && 'x:' + o.ext);
     if (!key || seen.has(key)) continue;
@@ -262,7 +293,7 @@ function secondHop(c, links, lang = 'en') {
        its wallet, and listing it twice reads as two different Gojeks. */
     const once = new Map();
     for (const x of [...N.up, ...N.down, ...N.corp]) {
-      if (x.shared) continue;   // same rule one hop out
+      if (!walk(x)) continue;   // same rule one hop out
       const k = x.other.id || (x.other.ext && 'x:' + x.other.ext);
       if (k && x.other.id !== c.id && k !== 'x:' + (c.ext || '') && !once.has(k)) once.set(k, x.other);
     }
@@ -272,13 +303,13 @@ function secondHop(c, links, lang = 'en') {
       <div class="hopc">${others.map((x) => chip(x.other, lang)).join('')}</div></div>`);
   }
   return out.length ? `<section class="ch-sec"><h2 class="ch-h2">${L('One hop further', 'Satu langkah lebih jauh')}</h2>
-    <p class="ch-p">${L(`Each operating counterparty above, and who else it works with — the same question asked
-    again, one company along. Chains are never followed through shared rails: a gateway or an aggregator
-    links to nearly everything, which is a fact about the rail, not about the chain.`,
-    `Setiap mitra operasional di atas, dan dengan siapa lagi ia bekerja — pertanyaan yang sama diajukan
-    sekali lagi, satu perusahaan lebih jauh. Rantai tidak pernah ditelusuri lewat infrastruktur bersama:
-    gateway atau agregator terhubung ke hampir semuanya, dan itu bercerita tentang infrastrukturnya,
-    bukan tentang rantainya.`)}</p>${out.join('')}</section>` : '';
+    <p class="ch-p">${L(`Each supplier and customer above, and who else it supplies or buys from — the same question
+    asked again, one company along. Only technology and manufacturing links are followed: a courier, a payment
+    gateway or a hyperscaler links to nearly everything, which is a fact about the service, not about the chain.`,
+    `Setiap pemasok dan pelanggan di atas, dan siapa lagi yang dipasok atau memasoknya — pertanyaan yang sama
+    diajukan sekali lagi, satu perusahaan lebih jauh. Hanya relasi teknologi dan manufaktur yang ditelusuri:
+    kurir, gateway pembayaran, atau penyedia cloud raksasa terhubung ke hampir semuanya, dan itu bercerita
+    tentang layanannya, bukan tentang rantainya.`)}</p>${out.join('')}</section>` : '';
 }
 
 const SHELL = (inner, { title, desc, active, lang = 'en', path = '/chain', noindex = false }) => {
@@ -336,6 +367,20 @@ ${inner}
 </html>`;
 };
 
+/* the full two-column list under the ladder, shared by census and external pages */
+function allRelationships(name, B, lang = 'en') {
+  const L = I18N.mkL(lang);
+  const K = tally(B);
+  return `<section class="ch-sec"><h2 class="ch-h2">${L('Every relationship', 'Semua relasi')}</h2>
+    ${corporate(B.corp, lang)}
+    <div class="ch-cols">
+      <div class="ch-col"><div class="ch-hd">${L('Suppliers', 'Pemasok')}<span>${K.up}</span></div>
+        <p class="ch-sub">${L(`Who supplies ${esc(name)}`, `Siapa memasok ${esc(name)}`)}</p>${sideBlock(B.up, L('Nothing publicly evidenced yet.', 'Belum ada yang terbukti secara publik.'), lang)}</div>
+      <div class="ch-col"><div class="ch-hd">${L('Customers', 'Pelanggan')}<span>${K.dn}</span></div>
+        <p class="ch-sub">${L(`Who ${esc(name)} supplies`, `Siapa dipasok ${esc(name)}`)}</p>${sideBlock(B.down, L('Nothing publicly evidenced yet.', 'Belum ada yang terbukti secara publik.'), lang)}</div>
+    </div></section>`;
+}
+
 /* every source behind this company's edges, quoted in full — the part a reader
    has to be able to check without leaving the page */
 function evidence(B, links, lang = 'en') {
@@ -366,25 +411,12 @@ function page({ c, data, links, lang = 'en' }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
   const B = (links.byCompany && links.byCompany[c.id]) || { up: [], down: [], corp: [] };
-  const n = B.up.length + B.down.length + B.corp.length;
   return SHELL(`<nav class="crumb"><a href="${PF}/">1001startup.id</a> / <a href="${PF}/chain">${L('Supply chain', 'Rantai pasok')}</a> / ${esc(c.name)}</nav>
   <h1 class="ch-h1">${esc(c.name)}</h1>
-  <p class="ch-sum">${L(
-    `${n} publicly evidenced relationship${n === 1 ? '' : 's'} — ${B.up.length} upstream,
-    ${B.down.length} downstream${B.corp.length ? `, ${B.corp.length} corporate` : ''}.
-    Re-checked ${esc(DATE(links.verified, lang))}.`,
-    `${n} relasi yang terbukti secara publik — ${B.up.length} di hulu,
-    ${B.down.length} di hilir${B.corp.length ? `, ${B.corp.length} korporat` : ''}.
-    Dicek ulang ${esc(DATE(links.verified, lang))}.`)} <a href="${PF}/company/${esc(c.id)}">${L('The company profile →', 'Profil perusahaannya →')}</a></p>
+  <p class="ch-sum">${esc(summaryLine(tally(B), lang))} ${L(`Re-checked ${esc(DATE(links.verified, lang))}.`,
+    `Dicek ulang ${esc(DATE(links.verified, lang))}.`)} <a href="${PF}/company/${esc(c.id)}">${L('The company profile →', 'Profil perusahaannya →')}</a></p>
   ${ladder(c, B, lang)}
-  <section class="ch-sec"><h2 class="ch-h2">${L('Every relationship', 'Semua relasi')}</h2>
-    ${corporate(B.corp, lang)}
-    <div class="ch-cols">
-      <div class="ch-col"><div class="ch-hd">${L('Upstream', 'Hulu')}<span>${B.up.length}</span></div>
-        <p class="ch-sub">${L(`Who serves ${esc(c.name)}`, `Siapa melayani ${esc(c.name)}`)}</p>${sideBlock(B.up, L('Nothing publicly evidenced yet.', 'Belum ada yang terbukti secara publik.'), lang)}</div>
-      <div class="ch-col"><div class="ch-hd">${L('Downstream', 'Hilir')}<span>${B.down.length}</span></div>
-        <p class="ch-sub">${L(`Who ${esc(c.name)} serves`, `Siapa dilayani ${esc(c.name)}`)}</p>${sideBlock(B.down, L('Nothing publicly evidenced yet.', 'Belum ada yang terbukti secara publik.'), lang)}</div>
-    </div></section>
+  ${allRelationships(c.name, B, lang)}
   ${secondHop(c, links, lang)}
   ${evidence(B, links, lang)}
   <p class="crumb" style="margin:22px 0 0"><a href="${PF}/chain">&larr; ${L('All mapped companies', 'Semua perusahaan yang terpetakan')}</a></p>`,
@@ -403,27 +435,18 @@ function extPage({ slug, links, lang = 'en' }) {
   const PF = I18N.pfx(lang);
   const X = links.byExternal[slug];
   const B = { up: X.up || [], down: X.down || [], corp: X.corp || [] };
-  const n = B.up.length + B.down.length + B.corp.length;
   const c = { id: null, ext: slug, name: X.name, sector_label: L('Outside the census', 'Di luar sensus'), logo: null };
   return SHELL(`<nav class="crumb"><a href="${PF}/">1001startup.id</a> / <a href="${PF}/chain">${L('Supply chain', 'Rantai pasok')}</a> / ${esc(X.name)}</nav>
   <h1 class="ch-h1">${esc(X.name)}</h1>
   <p class="ch-sum">${esc(X.legal ? X.legal + '. ' : '')}${L(
     `Not a census company — this page exists because census
-    companies' chains run through it. ${n} publicly evidenced relationship${n === 1 ? '' : 's'}.
-    Re-checked ${esc(DATE(links.verified, lang))}.`,
+    companies' chains run through it.`,
     `Bukan perusahaan sensus — halaman ini ada karena rantai
-    perusahaan sensus melewatinya. ${n} relasi yang terbukti secara publik.
-    Dicek ulang ${esc(DATE(links.verified, lang))}.`)}${X.url ? ` <a href="${esc(X.url)}" target="_blank" rel="noopener nofollow">${L('Its website ↗', 'Situs resminya ↗')}</a>` : ''}</p>
+    perusahaan sensus melewatinya.`)} ${esc(summaryLine(tally(B), lang))} ${L(`Re-checked ${esc(DATE(links.verified, lang))}.`,
+    `Dicek ulang ${esc(DATE(links.verified, lang))}.`)}${X.url ? ` <a href="${esc(X.url)}" target="_blank" rel="noopener nofollow">${L('Its website ↗', 'Situs resminya ↗')}</a>` : ''}</p>
   ${X.note ? `<p class="ch-p" style="margin-bottom:22px">${esc(X.note)}</p>` : ''}
   ${ladder(c, B, lang)}
-  <section class="ch-sec"><h2 class="ch-h2">${L('Every relationship', 'Semua relasi')}</h2>
-    ${corporate(B.corp, lang)}
-    <div class="ch-cols">
-      <div class="ch-col"><div class="ch-hd">${L('Upstream', 'Hulu')}<span>${B.up.length}</span></div>
-        <p class="ch-sub">${L(`Who serves ${esc(X.name)}`, `Siapa melayani ${esc(X.name)}`)}</p>${sideBlock(B.up, L('Nothing publicly evidenced yet.', 'Belum ada yang terbukti secara publik.'), lang)}</div>
-      <div class="ch-col"><div class="ch-hd">${L('Downstream', 'Hilir')}<span>${B.down.length}</span></div>
-        <p class="ch-sub">${L(`Who ${esc(X.name)} serves`, `Siapa dilayani ${esc(X.name)}`)}</p>${sideBlock(B.down, L('Nothing publicly evidenced yet.', 'Belum ada yang terbukti secara publik.'), lang)}</div>
-    </div></section>
+  ${allRelationships(X.name, B, lang)}
   ${(X.identity || []).length ? `<section class="ch-sec"><h2 class="ch-h2">${L('Who this legally is', 'Identitas hukumnya')}</h2>
     ${X.identity.map((e) => `<blockquote class="evq">${esc(e.quote)}</blockquote>
       <p class="evn">${esc(e.note || '')} <a class="evu" href="${esc(e.src.url)}" target="_blank" rel="noopener nofollow">${esc(e.src.url)}</a></p>`).join('')}
@@ -441,54 +464,69 @@ function index({ data, links, lang = 'en' }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
   const co = new Map((data.companies || []).map((x) => [x.id, x]));
-  const rows = Object.entries(links.byCompany || {})
-    .map(([id, B]) => ({ id, c: co.get(id), up: B.up.length, down: B.down.length, corp: B.corp.length }))
-    .filter((r) => r.c)
-    .sort((a, b) => (b.up + b.down + b.corp) - (a.up + a.down + a.corp) || a.c.name.localeCompare(b.c.name));
+  /* census rows and externals in ONE ranking, by how much chain each carries —
+     the node a chain runs through most is the one a reader wants first, census
+     or not; ownership only breaks ties */
+  const rows = [
+    ...Object.entries(links.byExternal || {}).map(([slug, X]) => ({
+      slug, X, name: X.name, t: tally({ up: X.up || [], down: X.down || [], corp: X.corp || [] }) })),
+    ...Object.entries(links.byCompany || {}).filter(([id]) => co.has(id))
+      .map(([id, B]) => ({ id, c: co.get(id), name: co.get(id).name, t: tally(B) })),
+  ].sort((a, b) => b.t.chain - a.t.chain || b.t.corp - a.t.corp || a.name.localeCompare(b.name));
   const K = links.counts || {};
+  const KD = links.kinds || {};
   const tier = Object.entries(K.by_tier || {}).map(([k, v]) => `${v} ${k}`).join(' · ');
+  const nChain = K.chain != null ? K.chain : K.edges;
+  const nSvc = K.services || 0;
+  const cell = (n) => n || '—';
   return SHELL(`<nav class="crumb"><a href="${PF}/">1001startup.id</a> / ${L('Supply chain', 'Rantai pasok')}</nav>
-  <h1 class="ch-h1">${L('Who works with whom', 'Siapa bekerja dengan siapa')}</h1>
+  <h1 class="ch-h1">${L('Who supplies whom', 'Siapa memasok siapa')}</h1>
   <p class="ch-sum">${L(
-    `Companies serving each other: who ships for whom, whose warehouse sits behind whose
-    storefront, who runs whose checkout, who owns whom. The census is where the map starts, not where it
+    `The technology and manufacturing chain around Indonesian startups: who makes their products and parts,
+    who supplies their materials and goods, whose hardware, software, energy and cloud they run on — and who buys
+    from them. Suppliers on the left, customers on the right. The census is where the map starts, not where it
     ends — any company these chains run through can hold a page, in the census or outside it.
-    ${K.edges} relationships (${esc(tier)}), every one a claim some named document still makes today:
-    an audited filing that names the counterparty, or a page published by one side of the relationship.
+    ${nChain} supply-chain links and ${K.corporate || 0} ownership links (${esc(tier)}), every one a claim some named
+    document still makes today: an audited filing that names the counterparty, or a page published by one side of the
+    relationship.
     Re-checked ${esc(DATE(links.verified, lang))}.`,
-    `Perusahaan yang saling memasok: siapa mengirim untuk siapa, gudang siapa berdiri di belakang
-    etalase siapa, siapa menjalankan checkout siapa, siapa memiliki siapa. Sensus adalah titik berangkat
-    peta ini, bukan batasnya — perusahaan mana pun yang dilalui rantai ini bisa punya halaman, di dalam
-    sensus maupun di luarnya. ${K.edges} relasi pasok (${esc(tier)}) — masing-masing adalah klaim yang
+    `Rantai teknologi dan manufaktur di sekitar startup Indonesia: siapa membuat produk dan komponennya,
+    siapa memasok bahan dan barangnya, perangkat keras, perangkat lunak, energi, dan cloud siapa yang mereka pakai —
+    dan siapa yang membeli dari mereka. Pemasok di kiri, pelanggan di kanan. Sensus adalah titik berangkat peta ini,
+    bukan batasnya — perusahaan mana pun yang dilalui rantai ini bisa punya halaman, di dalam sensus maupun di
+    luarnya. ${nChain} relasi rantai pasok dan ${K.corporate || 0} relasi kepemilikan (${esc(tier)}) — masing-masing adalah klaim yang
     sampai hari ini masih dimuat sebuah dokumen bernama: laporan keuangan teraudit yang menyebut mitranya, atau
     halaman yang diterbitkan salah satu pihak dalam relasi itu. Dicek ulang ${esc(DATE(links.verified, lang))}.`)}</p>
-  <table class="chtbl">
-    <thead><tr><th>${L('Company', 'Perusahaan')}</th><th>${L('Sector', 'Sektor')}</th><th class="n">${L('Upstream', 'Hulu')}</th><th class="n">${L('Downstream', 'Hilir')}</th><th class="n">${L('Corporate', 'Korporat')}</th></tr></thead>
-    <tbody>${Object.entries(links.byExternal || {}).map(([slug, X]) => `<tr onclick="location.href='${PF}/chain/x/${esc(slug)}'">
-      <td class="nm"><a href="${PF}/chain/x/${esc(slug)}">${esc(X.name)}</a> <em class="ch-xm">${L('outside the census', 'di luar sensus')}</em></td>
-      <td class="sc">${esc(X.legal || '')}</td>
-      <td class="n">${(X.up || []).length || '—'}</td><td class="n">${(X.down || []).length || '—'}</td>
-      <td class="n">${(X.corp || []).length || '—'}</td></tr>`).join('')}${rows.map((r) => `<tr onclick="location.href='${PF}/chain/${esc(r.id)}'">
+  <div class="ch-kinds">${Object.entries(K.by_kind || {}).filter(([k]) => (KD[k] || {}).layer === 'chain')
+    .map(([k, n]) => `<span class="ch-kn">${esc(KD[k].label)} <b>${n}</b></span>`).join('')}${
+  nSvc ? `<span class="ch-kn ch-kn-s">${L('Services', 'Layanan')} <b>${nSvc}</b></span>` : ''}</div>
+  <div class="chtbl-w"><table class="chtbl">
+    <thead><tr><th>${L('Company', 'Perusahaan')}</th><th class="sc">${L('Sector', 'Sektor')}</th><th class="n">${L('Suppliers', 'Pemasok')}</th><th class="n">${L('Customers', 'Pelanggan')}</th><th class="n ch-ns">${L('Corporate', 'Korporat')}</th></tr></thead>
+    <tbody>${rows.map((r) => (r.X ? `<tr onclick="location.href='${PF}/chain/x/${esc(r.slug)}'">
+      <td class="nm"><a href="${PF}/chain/x/${esc(r.slug)}">${esc(r.X.name)}</a> <em class="ch-xm">${L('outside the census', 'di luar sensus')}</em></td>
+      <td class="sc">${esc(r.X.legal || '')}</td>`
+    : `<tr onclick="location.href='${PF}/chain/${esc(r.id)}'">
       <td class="nm">${r.c.logo ? `<img src="${esc(r.c.logo)}" alt="" width="20" height="20" loading="lazy">` : ''}
         <a href="${PF}/chain/${esc(r.id)}">${esc(r.c.name)}</a></td>
-      <td class="sc">${esc(r.c.sector_label || '')}</td>
-      <td class="n">${r.up || '—'}</td><td class="n">${r.down || '—'}</td><td class="n">${r.corp || '—'}</td></tr>`).join('')}</tbody>
-  </table>
+      <td class="sc">${esc(r.c.sector_label || '')}</td>`)
+    + `<td class="n">${cell(r.t.up)}</td><td class="n">${cell(r.t.dn)}</td><td class="n ch-ns">${cell(r.t.corp)}</td></tr>`).join('')}</tbody>
+  </table></div>
   <section class="ch-sec"><h2 class="ch-h2">${L('How a relationship gets in', 'Bagaimana sebuah relasi masuk')}</h2>
     <p class="ch-p">${L(
     `Two ways, and no third. A <b>filing</b>: a listed company's own financial statements name the
-      counterparty — Blibli's interim accounts list its couriers, its two payment gateways and its paylater
-      partners by legal entity. A <b>first-party page</b>: a help centre, an API reference or a rate table
-      published by one side — Tokopedia's courier contacts, Shipper's 3PL list, Biteship's courier codes. When the
-      evidence is a picture rather than text — FAS's integration diagram names its aggregator partners only inside
-      an image — the image itself is pinned by content hash, and the claim is withheld the moment the file changes.`,
+      counterparty — Blibli's interim accounts name the phone makers that appointed it as an authorised reseller,
+      and Fore Coffee's accounts name its coffee, creamer and packaging suppliers with the amounts involved. A
+      <b>first-party page</b>: a customer story, a product page or a help-centre article published by one side of
+      the relationship. When the evidence is a picture rather than text — FAS's integration diagram names its
+      partners only inside an image — the image itself is pinned by content hash, and the claim is withheld the
+      moment the file changes.`,
     `Hanya ada dua jalan masuk, tanpa jalan ketiga. Lewat <b>dokumen regulator</b>: laporan keuangan
-      perusahaan terbuka menyebut sendiri mitranya — laporan interim Blibli mencantumkan kurirnya, dua gateway
-      pembayarannya, dan mitra paylater-nya sampai ke nama badan hukum. Atau lewat <b>dokumen pihak pertama</b>:
-      pusat bantuan, referensi API, atau tabel tarif yang diterbitkan salah satu pihak — kontak kurir Tokopedia,
-      daftar 3PL Shipper, kode kurir Biteship. Bila buktinya berupa gambar, bukan teks — diagram integrasi FAS
-      hanya menyebut mitra agregatornya di dalam sebuah gambar — gambar itu dikunci dengan hash kontennya, dan
-      klaimnya ditahan begitu berkasnya berubah.`)}</p>
+      perusahaan terbuka menyebut sendiri mitranya — laporan interim Blibli menyebut produsen ponsel yang
+      menunjuknya sebagai penjual resmi, dan laporan keuangan Fore Coffee menyebut pemasok kopi, krimer, dan
+      kemasannya beserta nilainya. Atau lewat <b>dokumen pihak pertama</b>: kisah pelanggan, halaman produk, atau
+      artikel pusat bantuan yang diterbitkan salah satu pihak dalam relasi itu. Bila buktinya berupa gambar, bukan
+      teks — diagram integrasi FAS hanya menyebut mitranya di dalam sebuah gambar — gambar itu dikunci dengan hash
+      kontennya, dan klaimnya ditahan begitu berkasnya berubah.`)}</p>
     <p class="ch-p">${L(
     `A company outside the census can still be a node here (marked <em class="ch-xm"
       style="margin:0">outside the census</em>) when census companies' chains run through it, provided a document
@@ -511,21 +549,21 @@ function index({ data, links, lang = 'en' }) {
       tanggal lama. Aturannya sama dengan yang sensus terapkan pada angka pendanaan — di sini berlaku untuk klaim
       yang menyangkut dua perusahaan sekaligus.`)}</p>
     <p class="ch-p">${L(
-    `Shared rails are kept apart. A payment gateway, a checkout lender or an aggregator
-      listing is infrastructure that serves much of the market at once — so those links sit under their own
-      “Shared rails” heading, and chains are never traversed through them. That one rule is what keeps a wallet
-      from appearing to connect every company to every other.`,
-    `Infrastruktur bersama dipisahkan. Gateway pembayaran, penyedia paylater, atau daftar
-      agregator adalah infrastruktur yang memasok sebagian besar pasar sekaligus — karena itu relasi semacam ini
-      berada di bawah judul “Infrastruktur bersama” tersendiri, dan rantai tidak pernah ditelusuri melewatinya. Satu
-      aturan itulah yang mencegah sebuah dompet digital tampak menghubungkan semua perusahaan dengan semua
-      perusahaan lain.`)}</p>
+    `Services are left out. Delivery, payments, checkout lending, sales channels and marketplace
+      integrations serve almost every company at once, which says something about the service, not about who
+      supplies whom — so they are not drawn here. For the same reason a chain is never followed through a hyperscaler:
+      one cloud hosting many of these companies does not make them each other's suppliers.`,
+    `Layanan tidak dicantumkan. Pengiriman, pembayaran, paylater, kanal penjualan, dan integrasi
+      marketplace melayani hampir semua perusahaan sekaligus — itu bercerita tentang layanannya, bukan tentang siapa
+      memasok siapa, jadi tidak digambar di sini. Dengan alasan yang sama, rantai tidak pernah ditelusuri melewati
+      penyedia cloud raksasa: satu cloud yang menampung banyak perusahaan di sini tidak menjadikan mereka saling
+      memasok.`)}</p>
     <p class="ch-p">${L(
     `What this is not: a procurement database. It shows relationships that were disclosed, not
-      everything that exists, and it carries no contract values — none are public. A company with no rows here is a
-      company nobody has published a relationship for, which is most of them.`,
+      everything that exists, and it carries an amount only where a filing states one. A company with no rows here is
+      a company nobody has published a relationship for, which is most of them.`,
     `Yang jelas bukan: basis data pengadaan. Halaman ini menampilkan relasi yang diungkap ke
-      publik, bukan semua yang ada, dan tidak memuat nilai kontrak — tidak ada satu pun yang publik. Perusahaan
+      publik, bukan semua yang ada, dan hanya memuat nilai transaksi bila laporan keuangan menyebutkannya. Perusahaan
       tanpa baris di sini berarti belum ada siapa pun yang menerbitkan relasinya — dan itu berlaku untuk
       kebanyakan perusahaan.`)}</p>
   </section>
@@ -548,8 +586,8 @@ function index({ data, links, lang = 'en' }) {
   }).join('')}</ol></section>`,
   { title: L('Supply chain — 1001startup.id', 'Rantai pasok — 1001startup.id'),
     active: 'chain', lang, path: '/chain',
-    desc: L(`${K.edges} evidenced supplier and customer relationships between Indonesian startups, each linked to the filing or first-party page that carries it.`,
-      `Peta rantai pasok startup Indonesia: ${K.edges} relasi pemasok dan pelanggan, masing-masing dibuktikan dokumen regulator atau pihak pertama.`) });
+    desc: L(`${nChain} evidenced technology and manufacturing links around Indonesian startups — who makes, supplies, powers and hosts whom — each linked to the filing or first-party page that carries it.`,
+      `Peta rantai pasok teknologi dan manufaktur startup Indonesia: ${nChain} relasi pemasok dan pelanggan, masing-masing dibuktikan dokumen regulator atau pihak pertama.`) });
 }
 
 function notFound({ links, lang = 'en' }) {

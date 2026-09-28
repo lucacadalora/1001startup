@@ -303,3 +303,21 @@ a.cp-tag.cp-sector:hover{background:#000;color:#fff}
 /* fixed art box: the sprite loads into reserved space (was CLS 0.131) */
 .cp-art{height:244px}
 .cp-art img{max-height:220px;object-fit:contain}
+/* /chain, 29 Sep 2026: the chain leads, services fold away below it.
+   Container-keyed like the rest of this sheet (drawer / card / chain page). */
+.ch-svc>summary{cursor:pointer;list-style:none;user-select:none}
+.ch-svc>summary::-webkit-details-marker{display:none}
+.ch-svc>summary::after{content:'+';margin-left:auto;color:#74747D}
+.ch-svc[open]>summary::after{content:'\2212'}
+.ch-sh{font-weight:600;color:#000}
+.ch-kinds{display:flex;flex-wrap:wrap;gap:6px;margin:-8px 0 22px}
+.ch-kn{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#52525B;border:1px solid #E7E7E7;border-radius:999px;padding:6px 10px}
+.ch-kn b{font-weight:400;color:#000;margin-left:4px}
+.ch-kn-s{border-style:dashed;color:#74747D}
+.chtbl td.ch-ns{color:#74747D}
+.lad-rails.ch-svc>summary{display:flex;gap:6px;align-items:baseline;margin-bottom:8px}
+.lad-sk{color:#9A9AA2;text-transform:none;letter-spacing:0;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;min-width:0}
+.chtbl-w{overflow-x:auto}
+/* the hub table lives only on /chain (one container), so the viewport can
+   decide here: on a phone the chain columns stay, the secondary ones go */
+@media (max-width:640px){.chtbl .sc,.chtbl .ch-ns{display:none}.chtbl th.n{font-size:10px;letter-spacing:.02em}.chtbl td,.chtbl th{padding-right:6px}}
