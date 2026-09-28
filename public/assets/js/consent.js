@@ -403,7 +403,7 @@
   /* Keys the page code itself writes for the "Preferences" category. If that
    * category is refused we have to actually stop the write, not just promise
    * to — otherwise the toggle is decoration and the policy is a lie.        */
-  var PREF_KEYS = ['vantis-announce'];
+  var PREF_KEYS = ['vantis-announce', 'b1001.intro'];   // b1001.intro: 1001startup.id builder card, "intro seen" 24h stamp
   var prefGuardOn = false;
 
   function enforcePreferences(allowed) {

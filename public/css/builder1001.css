@@ -1,0 +1,91 @@
+/* "Who is building this" card + edge tab (views/builder1001.js renders it,
+ * public/js/builder1001.js drives it). All classes are b1-prefixed: this file
+ * ships on every 1001 page, so a bare class here would be a global.
+ *
+ * Stacking: z 70 sits over page content but under the company drawer (.cpwrap
+ * z 80), the nav dropdowns (90), the census chat (2147483000) and the consent
+ * banner, so anything the reader opened on purpose covers it.
+ * Geometry: the chat launcher is 56px at right/bottom 20px (16px under 480px);
+ * the card and the tab sit just above it and share its right edge. */
+@font-face{font-family:'Overused Grotesk';font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/overused-grotesk-vf.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/plex-mono-400.woff2) format('woff2')}
+
+.b1{--b1-ok:1;--b1-ease:cubic-bezier(.32,.72,0,1);--b1-grad:linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96);--b1-bottom:92px;--b1-right:20px}
+.b1[hidden]{display:none}
+
+/* ── the card ─────────────────────────────────────────────────────────── */
+.b1-card{position:fixed;right:var(--b1-right);bottom:var(--b1-bottom);z-index:70;width:320px;max-width:calc(100vw - 2 * var(--b1-right));
+  max-height:calc(100vh - var(--b1-bottom) - 16px);max-height:calc(100dvh - var(--b1-bottom) - 16px);overflow-y:auto;overscroll-behavior:contain;
+  background:#fff;color:#000;border:1px solid #000;box-shadow:0 2px 6px rgba(0,0,0,.06),0 22px 56px rgba(0,0,0,.20);
+  font:500 15px/1.45 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.01em;text-align:left;
+  touch-action:pan-y;-webkit-tap-highlight-color:transparent;
+  /* docked: parked off the right edge */
+  transform:translate3d(calc(100% + var(--b1-right) + 24px),0,0);visibility:hidden;
+  transition:transform .46s var(--b1-ease),visibility 0s linear .46s}
+.b1-card::before{content:"";display:block;height:3px;background:var(--b1-grad)}
+.b1.is-open .b1-card{transform:none;visibility:visible;transition:transform .5s var(--b1-ease),visibility 0s}
+/* first appearance of the day rises from below instead of sliding in from the side */
+.b1.is-rise .b1-card{transform:translate3d(0,calc(100% + var(--b1-bottom) + 24px),0);visibility:visible;transition:none}
+.b1.is-open.is-intro .b1-card{transition:transform .64s var(--b1-ease),visibility 0s}
+.b1.is-drag .b1-card{transition:none}
+
+.b1-ph{position:relative;border-bottom:1px solid #000;background:#111}
+.b1-ph img{display:block;width:100%;height:auto;aspect-ratio:16/10;object-fit:cover;object-position:50% 45%}
+.b1-min{position:absolute;top:13px;right:10px;z-index:1;width:34px;height:34px;display:grid;place-items:center;padding:0;margin:0;
+  background:#fff;color:#000;border:1px solid #000;border-radius:0;cursor:pointer}
+.b1-min:hover{background:#000;color:#fff}
+.b1-min:focus-visible,.b1-tab:focus-visible,.b1-card a:focus-visible{outline:2px solid #4E7A96;outline-offset:2px}
+
+.b1-bd{padding:14px 18px 16px}
+.b1-k{margin:0 0 4px;font:400 10.5px/1.3 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#555}
+.b1-n{margin:0 0 6px;font-size:23px;line-height:1.15;font-weight:600;letter-spacing:-0.02em}
+.b1-r{list-style:none;margin:0 0 10px;padding:0;font-size:14.5px;line-height:1.45;color:#222}
+.b1-r a{color:#000;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:2px}
+.b1-r a:hover{text-decoration-thickness:2px}
+.b1-d{margin:0 0 12px;font-size:14px;line-height:1.5;color:#333}
+
+.b1-row{display:grid;grid-template-columns:70px 1fr 14px;align-items:baseline;gap:8px;padding:10px 0;border-top:1px solid #000;color:#000;text-decoration:none}
+.b1-row:last-child{padding-bottom:2px}
+.b1-l{font:400 10.5px/1.3 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#555}
+.b1-v{font-size:14.5px;line-height:1.35}
+.b1-a{font-size:13px;color:#555;transition:transform .2s var(--b1-ease)}
+.b1-row:hover .b1-v{text-decoration:underline;text-underline-offset:2px}
+.b1-row:hover .b1-a{transform:translate(2px,-2px);color:#000}
+
+/* ── the edge tab (card minimised) ────────────────────────────────────── */
+.b1-tab{position:fixed;right:0;bottom:var(--b1-bottom);z-index:70;height:52px;display:flex;align-items:center;gap:4px;padding:0 8px 0 6px;margin:0;
+  background:#fff;color:#000;border:1px solid #000;border-right:0;border-radius:26px 0 0 26px;cursor:pointer;
+  box-shadow:0 2px 6px rgba(0,0,0,.06),0 10px 26px rgba(0,0,0,.16);font:400 10.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;
+  touch-action:none;-webkit-tap-highlight-color:transparent;
+  transform:translate3d(110%,0,0);visibility:hidden;transition:transform .42s var(--b1-ease),visibility 0s linear .42s}
+.b1.is-docked .b1-tab{transform:none;visibility:visible;transition:transform .5s var(--b1-ease) .12s,visibility 0s}
+.b1.is-drag-tab .b1-tab{transition:none}
+.b1-cv{display:grid;place-items:center;width:14px;color:#555}
+.b1-av{display:block;width:40px;height:40px;padding:2px;border-radius:50%;background:var(--b1-grad);flex:none}
+.b1-av img{display:block;width:100%;height:100%;border-radius:50%;border:2px solid #fff;object-fit:cover;box-sizing:border-box}
+/* the label only opens on a real hover — a phone never gets a wide tab */
+.b1-tl{display:block;max-width:0;overflow:hidden;white-space:nowrap;opacity:0;transition:max-width .32s var(--b1-ease),opacity .2s,margin .32s var(--b1-ease)}
+@media (hover:hover) and (pointer:fine){
+  .b1-tab:hover .b1-tl,.b1-tab:focus-visible .b1-tl{max-width:190px;opacity:1;margin:0 6px 0 4px}
+  .b1-tab:hover .b1-cv{color:#000}
+}
+
+@media (max-width:480px){
+  .b1{--b1-bottom:84px;--b1-right:16px}
+  .b1-card{width:auto;left:var(--b1-right)}
+  .b1-ph img{aspect-ratio:2/1;object-position:50% 42%}
+  .b1-tab{height:48px;padding:0 6px 0 5px;border-radius:24px 0 0 24px}
+  .b1-av{width:36px;height:36px}
+}
+/* short windows (landscape phones, small laptops): a shorter photo keeps the
+   contact rows on screen without scrolling the card */
+@media (max-height:700px){ .b1-ph img{aspect-ratio:2/1;object-position:50% 50%} }
+@media (max-height:520px){ .b1-ph{display:none} .b1-bd{padding-top:12px} }
+
+@media (prefers-reduced-motion:reduce){
+  .b1-card,.b1.is-open .b1-card,.b1.is-open.is-intro .b1-card,.b1-tab,.b1.is-docked .b1-tab{transition:opacity .18s linear,visibility 0s}
+  .b1-card{opacity:0}.b1.is-open .b1-card{opacity:1}
+  .b1-tab{opacity:0}.b1.is-docked .b1-tab{opacity:1}
+  .b1.is-rise .b1-card{transform:none;opacity:0}
+}
+@media print{ .b1{display:none!important} }

@@ -23,6 +23,7 @@ const layout = require('./lib/layout');
 const px = require('./lib/px');
 const pages = require('./views/pages');
 const pagesStats = require('./views/pages-stats');
+const builder1001 = require('./views/builder1001');
 
 /* 1001startup.id speaks two languages. English is the default at the bare
    paths; Bahasa Indonesia is the same server-rendered page under /id/<path>
@@ -259,6 +260,16 @@ fastify.addHook('onSend', async (req, reply, payload) => {
         payload = payload.replace('</body>',
           '<style>.vs-cc{z-index:2147483200}</style>'
           + '<script src="https://support.vantis.sh/widget.js" data-agent-key="vs_pk_1001startup_e904015da4897b8e" data-accent="#E8734B" defer></script></body>');
+      } catch { /* leave the page as it was */ }
+    }
+    /* "Who is building this": the builder card + edge tab on every full 1001
+       page (views/builder1001.js). Same guards as the widget; the id check
+       keeps a page that renders it itself from getting two. */
+    if (req.method === 'GET' && reply.statusCode === 200 && !emb && is1001(req)
+      && typeof payload === 'string' && payload.includes('</body>') && !payload.includes('id="b1"')) {
+      try {
+        const lang = (req.raw && req.raw.lang1001 === 'id') ? 'id' : 'en';
+        payload = payload.replace('</body>', () => builder1001.panel(lang) + '</body>');
       } catch { /* leave the page as it was */ }
     }
   }
