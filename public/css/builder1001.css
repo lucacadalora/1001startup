@@ -73,13 +73,13 @@
 @media (max-width:480px){
   .b1{--b1-bottom:84px;--b1-right:16px}
   .b1-card{width:auto;left:var(--b1-right)}
-  .b1-ph img{aspect-ratio:2/1;object-position:50% 42%}
+  .b1-ph img{aspect-ratio:2/1;object-position:50% 64%}
   .b1-tab{height:48px;padding:0 6px 0 5px;border-radius:24px 0 0 24px}
   .b1-av{width:36px;height:36px}
 }
 /* short windows (landscape phones, small laptops): a shorter photo keeps the
    contact rows on screen without scrolling the card */
-@media (max-height:700px){ .b1-ph img{aspect-ratio:2/1;object-position:50% 50%} }
+@media (max-height:700px){ .b1-ph img{aspect-ratio:2/1;object-position:50% 64%} }
 @media (max-height:520px){ .b1-ph{display:none} .b1-bd{padding-top:12px} }
 
 @media (prefers-reduced-motion:reduce){
