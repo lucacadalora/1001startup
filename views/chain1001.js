@@ -268,48 +268,78 @@ function ladder(c, B, lang = 'en') {
   </div>`;
 }
 
-/* Second hop — the click-through a terminal gives you, pre-computed: where each
-   counterparty ALSO turns up. This is what makes the graph a chain rather than
-   a list, so it is on the page rather than one click away. */
+/* The supply-chain map, two tiers deep, the way SPLC draws it: whose suppliers
+   supply this company's suppliers, whose customers buy from its customers, and
+   who buys from the same suppliers (SPLC's peers). Direction matters — the old
+   "one hop further" mixed both ways and read as a list of acquaintances. Only
+   chain links are walked, and never through a shared rail: one hyperscaler
+   hosting forty companies does not make them each other's peers. */
 function secondHop(c, links, lang = 'en') {
   const L = I18N.mkL(lang);
   const B = c.id ? links.byCompany[c.id] : links.byExternal[c.ext];
-  const seen = new Set([c.id || 'x:' + c.ext]);
-  const out = [];
-  for (const e of [...B.up, ...B.down, ...B.corp]) {
-    /* only the chain is walked. A service (a courier, a gateway) or a shared
-       rail (a hyperscaler, a wallet) would join everything to everything, which
-       says something about the service, not the chain — so such a counterparty
-       is shown in its column but not expanded */
-    const walk = (x) => x.layer === 'chain' && !x.shared;
-    if (!walk(e)) continue;
-    const o = e.other;
-    const key = o.id || (o.ext && 'x:' + o.ext);
-    if (!key || seen.has(key)) continue;
-    seen.add(key);
-    const N = (o.id ? links.byCompany[o.id] : links.byExternal && links.byExternal[o.ext])
-      || { up: [], down: [], corp: [] };
-    /* one chip per company, not one per edge: Gojek carries Blibli's parcels AND
-       its wallet, and listing it twice reads as two different Gojeks. */
-    const once = new Map();
-    for (const x of [...N.up, ...N.down, ...N.corp]) {
-      if (!walk(x)) continue;   // same rule one hop out
-      const k = x.other.id || (x.other.ext && 'x:' + x.other.ext);
-      if (k && x.other.id !== c.id && k !== 'x:' + (c.ext || '') && !once.has(k)) once.set(k, x.other);
+  if (!B) return '';
+  const self = c.id || 'x:' + c.ext;
+  const walk = (x) => x.layer === 'chain' && !x.shared;
+  const nodeKey = (o) => o.id || (o.ext && 'x:' + o.ext) || null;
+  const listOf = (o) => (o.id ? links.byCompany[o.id] : links.byExternal && links.byExternal[o.ext])
+    || { up: [], down: [], corp: [] };
+  const tier = (side) => {
+    const out = [];
+    const seen = new Set([self]);
+    for (const e of B[side]) {
+      if (!walk(e)) continue;
+      const k = nodeKey(e.other);
+      if (!k || seen.has(k)) continue;
+      seen.add(k);
+      const once = new Map();
+      for (const x of listOf(e.other)[side]) {
+        if (!walk(x)) continue;
+        const kk = nodeKey(x.other) || 'n:' + x.other.name;
+        if (kk !== self && !once.has(kk)) once.set(kk, x.other);
+      }
+      if (once.size) out.push({ o: e.other, next: [...once.values()] });
     }
-    const others = [...once.values()].map((o) => ({ other: o }));
-    if (!others.length) continue;
-    out.push(`<div class="hop"><div class="hoph">${chip(o, lang)}<span>${L('also', 'juga')}</span></div>
-      <div class="hopc">${others.map((x) => chip(x.other, lang)).join('')}</div></div>`);
-  }
-  return out.length ? `<section class="ch-sec"><h2 class="ch-h2">${L('One hop further', 'Satu langkah lebih jauh')}</h2>
-    <p class="ch-p">${L(`Each supplier and customer above, and who else it supplies or buys from — the same question
-    asked again, one company along. Only technology and manufacturing links are followed: a courier, a payment
-    gateway or a hyperscaler links to nearly everything, which is a fact about the service, not about the chain.`,
-    `Setiap pemasok dan pelanggan di atas, dan siapa lagi yang dipasok atau memasoknya — pertanyaan yang sama
-    diajukan sekali lagi, satu perusahaan lebih jauh. Hanya relasi teknologi dan manufaktur yang ditelusuri:
-    kurir, gateway pembayaran, atau penyedia cloud raksasa terhubung ke hampir semuanya, dan itu bercerita
-    tentang layanannya, bukan tentang rantainya.`)}</p>${out.join('')}</section>` : '';
+    return out.sort((a, b) => b.next.length - a.next.length);
+  };
+  const peers = () => {
+    const m = new Map();
+    for (const e of B.up) {
+      if (!walk(e) || !nodeKey(e.other)) continue;
+      for (const x of listOf(e.other).down) {
+        if (!walk(x)) continue;
+        const k = nodeKey(x.other);
+        if (!k || k === self) continue;
+        if (!m.has(k)) m.set(k, { o: x.other, via: new Map() });
+        m.get(k).via.set(nodeKey(e.other), e.other);
+      }
+    }
+    return [...m.values()].sort((a, b) => b.via.size - a.via.size || a.o.name.localeCompare(b.o.name));
+  };
+  const up = tier('up');
+  const dn = tier('down');
+  const pr = peers();
+  if (!up.length && !dn.length && !pr.length) return '';
+  const rows = (list, verb) => list.map((t) => `<div class="hop"><div class="hoph">${chip(t.o, lang)}<span>${verb}</span></div>
+      <div class="hopc">${t.next.map((o) => chip(o, lang)).join('')}</div></div>`).join('');
+  const count = (list) => list.reduce((n, t) => n + t.next.length, 0);
+  return `<section class="ch-sec"><h2 class="ch-h2">${L('Supply chain map', 'Peta rantai pasok')}</h2>
+    <p class="ch-p">${L(`Two tiers deep: who supplies this company's suppliers, who buys from its customers, and which
+    companies buy from the same suppliers. Only technology and manufacturing links are followed, and never through a
+    shared rail such as a hyperscaler, which links to nearly everything.`,
+    `Dua tingkat ke dalam: siapa memasok pemasok perusahaan ini, siapa membeli dari pelanggannya, dan perusahaan
+    mana yang membeli dari pemasok yang sama. Hanya relasi teknologi dan manufaktur yang ditelusuri, dan tidak pernah
+    lewat infrastruktur bersama seperti penyedia cloud raksasa yang terhubung ke hampir semuanya.`)}</p>
+    <div class="ch-cols ch-map">
+      <div class="ch-col"><div class="ch-hd">${L("Suppliers' suppliers", 'Pemasok para pemasok')}<span>${count(up)}</span></div>
+        ${up.length ? rows(up, L('buys from', 'membeli dari')) : `<p class="ch-none">${L('None evidenced yet.', 'Belum ada yang terbukti.')}</p>`}</div>
+      <div class="ch-col"><div class="ch-hd">${L("Customers' customers", 'Pelanggan para pelanggan')}<span>${count(dn)}</span></div>
+        ${dn.length ? rows(dn, L('sells to', 'menjual ke')) : `<p class="ch-none">${L('None evidenced yet.', 'Belum ada yang terbukti.')}</p>`}</div>
+    </div>
+    ${pr.length ? `<div class="ch-hd ch-peers-h">${L('Buys from the same suppliers', 'Membeli dari pemasok yang sama')}<span>${pr.length}</span></div>
+      ${pr.slice(0, 40).map((p) => `<div class="hop"><div class="hoph">${chip(p.o, lang)}<span>${L('via', 'lewat')}</span></div>
+        <div class="hopc">${[...p.via.values()].map((o) => chip(o, lang)).join('')}</div></div>`).join('')}
+      ${pr.length > 40 ? `<p class="ch-none">${L(`and ${pr.length - 40} more`, `dan ${pr.length - 40} lainnya`)}</p>` : ''}` : ''}
+  </section>`;
 }
 
 const SHELL = (inner, { title, desc, active, lang = 'en', path = '/chain', noindex = false }) => {
@@ -361,6 +391,7 @@ ${inner}
   <span><a href="/stats">${L('Live traffic', 'Statistik pengunjung')}</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>${L('Cookies', 'Cookie')}</a> · ${L('Anchors: BPS', 'Anchor: BPS')}</span>
 </footer>
 <script src="/js/nav1001.js?v=${V}" defer></script>
+<script src="/js/chain1001.js?v=${V}" defer></script>
 <script src="/js/px.js?v=${V}" defer></script>
 <script src="/assets/js/consent.js?v=${V}" defer></script>
 </body>
@@ -460,6 +491,9 @@ function extPage({ slug, links, lang = 'en' }) {
       `${X.name}: siapa yang dilayaninya dan siapa yang memasoknya — setiap relasi tertaut ke dokumen yang memuatnya.`) });
 }
 
+/* the chain kinds a node carries, for the hub's filter buttons */
+const kindsOf = (list) => [...new Set(list.filter((e) => e.layer === 'chain').map((e) => e.kind))].join(' ');
+
 function index({ data, links, lang = 'en' }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
@@ -469,9 +503,10 @@ function index({ data, links, lang = 'en' }) {
      or not; ownership only breaks ties */
   const rows = [
     ...Object.entries(links.byExternal || {}).map(([slug, X]) => ({
-      slug, X, name: X.name, t: tally({ up: X.up || [], down: X.down || [], corp: X.corp || [] }) })),
+      slug, X, name: X.name, t: tally({ up: X.up || [], down: X.down || [], corp: X.corp || [] }),
+      kinds: kindsOf([...(X.up || []), ...(X.down || [])]) })),
     ...Object.entries(links.byCompany || {}).filter(([id]) => co.has(id))
-      .map(([id, B]) => ({ id, c: co.get(id), name: co.get(id).name, t: tally(B) })),
+      .map(([id, B]) => ({ id, c: co.get(id), name: co.get(id).name, t: tally(B), kinds: kindsOf([...B.up, ...B.down]) })),
   ].sort((a, b) => b.t.chain - a.t.chain || b.t.corp - a.t.corp || a.name.localeCompare(b.name));
   const K = links.counts || {};
   const KD = links.kinds || {};
@@ -497,15 +532,18 @@ function index({ data, links, lang = 'en' }) {
     luarnya. ${nChain} relasi rantai pasok dan ${K.corporate || 0} relasi kepemilikan (${esc(tier)}) — masing-masing adalah klaim yang
     sampai hari ini masih dimuat sebuah dokumen bernama: laporan keuangan teraudit yang menyebut mitranya, atau
     halaman yang diterbitkan salah satu pihak dalam relasi itu. Dicek ulang ${esc(DATE(links.verified, lang))}.`)}</p>
-  <div class="ch-kinds">${Object.entries(K.by_kind || {}).filter(([k]) => (KD[k] || {}).layer === 'chain')
-    .map(([k, n]) => `<span class="ch-kn">${esc(KD[k].label)} <b>${n}</b></span>`).join('')}${
+  <div class="ch-tools"><input class="ch-q" type="search" placeholder="${L('Search a company or sector', 'Cari perusahaan atau sektor')}"
+    aria-label="${L('Search the companies on the chain', 'Cari perusahaan di rantai')}" autocomplete="off">
+    <span class="ch-cnt" data-of="${L('of', 'dari')}">${rows.length} ${L('companies', 'perusahaan')}</span></div>
+  <div class="ch-kinds" role="group" aria-label="${L('Filter by relationship', 'Saring menurut jenis relasi')}">${Object.entries(K.by_kind || {}).filter(([k]) => (KD[k] || {}).layer === 'chain')
+    .map(([k, n]) => `<button type="button" class="ch-kn" data-k="${esc(k)}" aria-pressed="false">${esc(KD[k].label)} <b>${n}</b></button>`).join('')}${
   nSvc ? `<span class="ch-kn ch-kn-s">${L('Services', 'Layanan')} <b>${nSvc}</b></span>` : ''}</div>
   <div class="chtbl-w"><table class="chtbl">
-    <thead><tr><th>${L('Company', 'Perusahaan')}</th><th class="sc">${L('Sector', 'Sektor')}</th><th class="n">${L('Suppliers', 'Pemasok')}</th><th class="n">${L('Customers', 'Pelanggan')}</th><th class="n ch-ns">${L('Corporate', 'Korporat')}</th></tr></thead>
-    <tbody>${rows.map((r) => (r.X ? `<tr onclick="location.href='${PF}/chain/x/${esc(r.slug)}'">
+    <thead><tr><th>${L('Company', 'Perusahaan')}</th><th class="sc">${L('Sector', 'Sektor')}</th><th class="n" data-s="2" aria-sort="none">${L('Suppliers', 'Pemasok')}</th><th class="n" data-s="3" aria-sort="none">${L('Customers', 'Pelanggan')}</th><th class="n ch-ns" data-s="4" aria-sort="none">${L('Corporate', 'Korporat')}</th></tr></thead>
+    <tbody>${rows.map((r) => (r.X ? `<tr data-k="${esc(r.kinds)}" data-q="${esc((r.X.name + ' ' + (r.X.legal || '')).toLowerCase())}">
       <td class="nm"><a href="${PF}/chain/x/${esc(r.slug)}">${esc(r.X.name)}</a> <em class="ch-xm">${L('outside the census', 'di luar sensus')}</em></td>
       <td class="sc">${esc(r.X.legal || '')}</td>`
-    : `<tr onclick="location.href='${PF}/chain/${esc(r.id)}'">
+    : `<tr data-k="${esc(r.kinds)}" data-q="${esc((r.c.name + ' ' + (r.c.sector_label || '') + ' ' + (r.c.legal_name || '')).toLowerCase())}">
       <td class="nm">${r.c.logo ? `<img src="${esc(r.c.logo)}" alt="" width="20" height="20" loading="lazy">` : ''}
         <a href="${PF}/chain/${esc(r.id)}">${esc(r.c.name)}</a></td>
       <td class="sc">${esc(r.c.sector_label || '')}</td>`)
