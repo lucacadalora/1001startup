@@ -438,7 +438,7 @@ function extPage({ slug, links, lang = 'en' }) {
   const c = { id: null, ext: slug, name: X.name, sector_label: L('Outside the census', 'Di luar sensus'), logo: null };
   return SHELL(`<nav class="crumb"><a href="${PF}/">1001startup.id</a> / <a href="${PF}/chain">${L('Supply chain', 'Rantai pasok')}</a> / ${esc(X.name)}</nav>
   <h1 class="ch-h1">${esc(X.name)}</h1>
-  <p class="ch-sum">${esc(X.legal ? X.legal + '. ' : '')}${L(
+  <p class="ch-sum">${esc(X.legal ? X.legal.replace(/\.$/, '') + '. ' : '')}${L(
     `Not a census company — this page exists because census
     companies' chains run through it.`,
     `Bukan perusahaan sensus — halaman ini ada karena rantai
