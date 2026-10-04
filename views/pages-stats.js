@@ -44,7 +44,8 @@ const devEn = (k) => k.charAt(0).toUpperCase() + k.slice(1);
  * Server-rendered with the real numbers so it never flashes a placeholder,
  * then kept live by /js/px.js. Both figures are exact: "online" is distinct
  * visitors seen in the last five minutes, "views" is every page served.     */
-function badge({ online = 0, views = 0 } = {}, { map = false, pfx = '' } = {}) {
+function badge({ online = 0, views = 0, all } = {}, { map = false, pfx = '' } = {}) {
+  if (all != null) views = all;   // split host: people + AI, the total
   const idle = online < 1;
   return `<a class="px px-badge${map ? ' px-map' : ''}" href="${pfx}/stats" data-px-badge title="Live traffic on this site">
   <span class="px-dot${idle ? ' px-idle' : ''}"></span><span><b data-px-online>${fmt(online)}</b> online</span>
@@ -273,6 +274,33 @@ function agentsCard(title, rows, lang) {
 </div>`;
 }
 
+/* The total, then what it is made of. Luca, 4 Oct 2026: "we need to separated
+ * them and make it seen as total". People + every page read by an AI or a
+ * search engine under its own name; scrapers and impostors are not in it. */
+function totalBlock(d, aw, at, word, since, allTime, L) {
+  const parts = (w, a) => [
+    ['people', L('People', 'Manusia'), w],
+    ['answer', L('AI answers', 'Jawaban AI'), a.answer || 0],
+    ['crawl', L('AI search and training', 'Pencarian dan pelatihan AI'), (a.index || 0) + (a.train || 0)],
+    ['search', L('Search engines', 'Mesin pencari'), a.search || 0],
+  ];
+  const row = (label, ps, id) => {
+    const sum = ps.reduce((n, p) => n + p[2], 0);
+    return `<div class="px-total">
+    <div class="px-total-n"><b${id ? ` id="${id}"` : ''}>${fmt(sum)}</b><span>${esc(label)}</span></div>
+    <div class="px-stack" role="img" aria-label="${esc(ps.map((p) => `${p[1]} ${fmt(p[2])}`).join(', '))}">${ps.map((p) => p[2] > 0
+      ? `<i class="${p[0]}" style="width:${((p[2] / Math.max(1, sum)) * 100).toFixed(2)}%"></i>` : '').join('')}</div>
+    <div class="px-stack-k">${ps.map((p) => `<span class="${p[0]}"><i></i>${esc(p[1])} <b>${fmt(p[2])}</b>${sum
+      ? ` <em>${Math.round((p[2] / sum) * 100)}%</em>` : ''}</span>`).join('')}</div>
+  </div>`;
+  };
+  return `<section class="px-totals">
+  <h2 class="px-split-h"><span class="sq tot"></span>${L('Total', 'Total')}</h2>
+  ${row(`${L('page reads', 'halaman dibaca')} · ${word}`, parts(d.window.views, aw))}
+  ${allTime ? '' : row(`${L('page reads', 'halaman dibaca')} · ${L('since', 'sejak')} ${since}`, parts(d.total.views, at), 'px-total-all')}
+</section>`;
+}
+
 function body1001(d, { lang = 'en' }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
@@ -315,6 +343,8 @@ function body1001(d, { lang = 'en' }) {
         : `<div class="px-empty">${L('Nobody on the site in the last five minutes.', 'Tidak ada seorang pun di situs dalam lima menit terakhir.')}</div>`}</div>
     </div>
   </div>
+
+  ${totalBlock(d, aw, at, word, since, allTime, L)}
 
   <div class="px-split-two">
     <section class="px-split-col">

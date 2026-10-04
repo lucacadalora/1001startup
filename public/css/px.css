@@ -160,3 +160,22 @@ body.wide .head-cta .px-badge{display:none}
 .px-chart-one.ai .ar{fill:rgba(46,139,87,.12)}
 .px-chart-one.ai .pk{fill:#2E8B57}
 @media (max-width:560px){.px-split-col .px-cells.n3 .c:nth-child(3){grid-column:1/-1}}
+
+/* ── 1001: the total above the split ─────────────────────────────────── */
+.px-totals{margin-top:26px}
+.px-split-h .sq.tot{background:#000}
+.px-total{border:1px solid var(--px-line);background:#fff;padding:18px;margin-top:10px}
+.px-total-n{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap}
+.px-total-n b{font-size:clamp(30px,4.4vw,48px);letter-spacing:-.025em;font-weight:600;line-height:1}
+.px-total-n span{font-family:var(--px-mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;color:var(--px-mute)}
+.px-stack{display:flex;height:10px;margin-top:14px;background:var(--px-line);gap:2px}
+.px-stack i{display:block;height:100%;min-width:2px}
+.px-stack-k{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:10px;font-size:13px;color:var(--px-gray)}
+.px-stack-k span{display:inline-flex;align-items:center;gap:6px}
+.px-stack-k span>i{width:9px;height:9px;display:inline-block}
+.px-stack-k b{color:var(--px-ink);font-weight:600}
+.px-stack-k em{font-style:normal;font-family:var(--px-mono);font-size:11px;color:var(--px-mute)}
+.px-stack .people,.px-stack-k .people>i{background:#4E7A96}
+.px-stack .answer,.px-stack-k .answer>i{background:#2E8B57}
+.px-stack .crawl,.px-stack-k .crawl>i{background:#8CC7A3}
+.px-stack .search,.px-stack-k .search>i{background:#B8B8B8}

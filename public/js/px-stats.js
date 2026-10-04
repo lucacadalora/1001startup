@@ -18,6 +18,7 @@
   var dot = document.getElementById('px-live-dot');
   var list = document.getElementById('px-live-list');
   var total = document.getElementById('px-total-views');
+  var grand = document.getElementById('px-total-all');
 
   function esc(s) {
     return String(s).replace(/[&<>"]/g, function (c) {
@@ -29,6 +30,7 @@
     n.textContent = nf.format(d.online || 0);
     if (dot) dot.classList.toggle('px-idle', !(d.online > 0));
     if (total) total.textContent = nf.format(d.views || 0);
+    if (grand && d.all != null) grand.textContent = nf.format(d.all);
     if (!list) return;
     var pages = d.livePages || [];
     list.innerHTML = pages.length

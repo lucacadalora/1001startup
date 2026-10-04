@@ -19,7 +19,7 @@
       var vw = b.querySelector('[data-px-views]');
       var dot = b.querySelector('.px-dot');
       if (on) on.textContent = nf.format(d.online || 0);
-      if (vw) vw.textContent = nf.format(d.views || 0);
+      if (vw) vw.textContent = nf.format((d.all != null ? d.all : d.views) || 0);
       if (dot) dot.classList.toggle('px-idle', !(d.online > 0));
     }
   }
