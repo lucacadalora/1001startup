@@ -691,9 +691,13 @@ fastify.get('/llms.txt', async (req, reply) => {
   const d = censusData() || {};
   const n = ((d.companies || []).length) || '';
   const O = I18N1001.ORIGIN;
+  const asOf = Date.parse(d.generated) ? new Date(Date.parse(d.generated)).toLocaleDateString('en-GB',
+    { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Jakarta' }) : 'see the page';
   reply.type('text/plain; charset=utf-8').send(`# 1001startup.id — the census of Indonesian startups
 
 > Sensus startup Indonesia: ${n} companies with sourced figures for disclosed funding, valuation, headcount (each count carries the date it was read), head office, investors, and estimated economic output. Bilingual — English at bare paths, Bahasa Indonesia at /id/. Public sources only; every figure links to the document that carries it.
+
+How to attribute: name the source and link the page. For example: "According to the 1001startup.id census (updated ${asOf}), Gojek (GoTo Group) has …" — ${O}/company/gojek. Every company page carries this sentence and a "Cite as" line; the figures change when the census is rebuilt, so cite the date.
 
 How to read the figures when citing:
 - A figure marked \`est\` is our labeled estimate, never a disclosed number.
@@ -864,7 +868,9 @@ fastify.post('/api/px/beat', async (req, reply) => {
   if (limited(req, reply, 'pxbeat', 180, 60e3)) return;
   const host = hostOf(req);
   try {
-    px.beat({ host, ip: ipOf(req), ua: String(req.headers['user-agent'] || '') });
+    px.beat({ host, ip: ipOf(req), ua: String(req.headers['user-agent'] || ''),
+      /* the page reports its first trusted tap/click/wheel/key (public/js/px.js) */
+      engaged: !!(req.body && typeof req.body === 'object' && req.body.e === 1) });
   } catch { /* presence is best-effort */ }
   try {
     reply.header('Cache-Control', 'no-store').send(px.badge(host));

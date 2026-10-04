@@ -298,6 +298,9 @@ a.ch-c:hover{border-color:#000}
 .lad-rails .ch-c{color:#52525B}
 /* the one-sentence fact summary under the header — the quotable unit */
 .cp-sum{color:#3F3F46;font-size:14.5px;line-height:1.55;margin:2px 0 4px;max-width:70ch}
+.cp-cite{color:#52525B;font-size:12.5px;line-height:1.5;margin:2px 0 6px;max-width:80ch}
+.cp-cite-k{font:400 10.5px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73;margin-right:6px}
+.cp-cite a{color:#000;text-decoration:underline;text-decoration-color:#C9C9CF;text-underline-offset:2px;overflow-wrap:anywhere}
 a.cp-tag{text-decoration:none}
 a.cp-tag.cp-sector:hover{background:#000;color:#fff}
 /* fixed art box: the sprite loads into reserved space (was CLS 0.131) */

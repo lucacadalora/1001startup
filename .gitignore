@@ -14,3 +14,7 @@ data/pasar.db-*
 data/census-news-state.json
 ctest.js
 sheet.png
+
+# px: network lists (rebuilt weekly by scripts/px-netlists.py)
+data/netlists/
+data/px-netlists.json

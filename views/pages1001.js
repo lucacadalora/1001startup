@@ -28,6 +28,13 @@ function landing({ data, lang = 'en' }) {
   /* US$ billions always carry one decimal: 14.0 must not print as "14" */
   const usdB = (m) => 'US$' + ((m || 0) / 1000).toFixed(1) + 'B';
   const T = (data && data.totals) || {};
+  /* The answer sentence for the census as a whole: names its source and date,
+     so an assistant quoting it says "according to 1001startup.id" (Luca, 4 Oct). */
+  const asOf = data && Date.parse(data.generated) ? new Date(Date.parse(data.generated)).toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB',
+    { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Jakarta' }) : '';
+  const heroFact = T.companies ? `<p class="fact">${L(
+    `According to 1001startup.id${asOf ? ` (updated ${asOf})` : ''}, ${fmt(T.companies)} Indonesian startups are on record, with US$${(T.funding_usd_b || 0).toFixed(1)} billion in disclosed funding and an estimated ${fmt(T.jobs)} jobs.`,
+    `Menurut 1001startup.id${asOf ? ` (diperbarui ${asOf})` : ''}, sensus ini mencatat ${fmt(T.companies)} startup Indonesia, dengan pendanaan yang diumumkan US$${(T.funding_usd_b || 0).toFixed(1)} miliar dan sekitar ${fmt(T.jobs)} lapangan kerja (estimasi).`)}</p>` : '';
   const companies = (data && data.companies) || [];
   const m = (data && data.method) || {};
   const bySector = (data && data.by_sector) || [];
@@ -621,6 +628,7 @@ ${NAV.css}
 .hero h1{font-size:clamp(40px,5.6vw,72px);line-height:1.02;letter-spacing:-0.03em;font-weight:500}
 .hero .sub{color:#52525B;font-size:16.5px;line-height:1.55;max-width:52ch}
 .hero .cta{display:flex;gap:10px;margin-top:22px;flex-wrap:wrap}
+.hero .fact{color:#3F3F46;font-size:13.5px;line-height:1.55;max-width:60ch;margin-top:14px;padding-left:11px;border-left:2px solid #E7E7E7}
 .btn{display:inline-block;padding:12px 18px;font:400 12px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:1px solid #000;cursor:pointer;background:#fff;color:#000}
 .btn.primary{background:#000;color:#fff}
 .eyebrow{font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-bottom:16px}
@@ -842,6 +850,7 @@ ${NAV.header('', { lang, path: '/' })}
     `${fmt(T.companies)} perusahaan rintisan dan terus bertambah — siapa saja mereka, di mana kantornya, berapa dana
     yang dihimpun, berapa orang yang dipekerjakan, dan apa sumbangannya bagi perekonomian. Disusun dari pemberitaan
     publik dan statistik nasional${METRO_LINE}. Telusuri seperti buku telepon, baca seperti sensus.`)}</p>
+    ${heroFact}
     <div class="cta">
       <a class="btn primary" href="#companies">${L('Browse the companies', 'Lihat daftar perusahaan')}</a>
       <a class="btn" href="${PF}/map">${L('See them on the map', 'Lihat petanya')}</a>

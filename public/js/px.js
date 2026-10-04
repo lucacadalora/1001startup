@@ -24,12 +24,35 @@
     }
   }
 
+  /* A person shows up as a person: the first trusted tap, click, wheel turn or
+   * key press (or a real mouse movement) is reported once, with a beat sent
+   * straight away. Until then the server counts the visit as an unconfirmed page
+   * load, which keeps scrapers that run this page's JavaScript out of the
+   * public numbers. Nothing about the event itself is sent: only that it happened. */
+  var engaged = false, moved = 0;
+  var EVENTS = ['pointerdown', 'keydown', 'touchstart', 'wheel'];
+  function engage(e) {
+    if (engaged || (e && e.isTrusted === false)) return;
+    engaged = true;
+    for (var i = 0; i < EVENTS.length; i++) removeEventListener(EVENTS[i], engage, true);
+    removeEventListener('mousemove', onMove, true);
+    lastBeat = Date.now();
+    beat();
+  }
+  function onMove(e) {
+    if (!e.isTrusted) return;
+    moved += Math.abs(e.movementX || 0) + Math.abs(e.movementY || 0);
+    if (moved > 40) engage(e);
+  }
+  for (var j = 0; j < EVENTS.length; j++) addEventListener(EVENTS[j], engage, { capture: true, passive: true });
+  addEventListener('mousemove', onMove, { capture: true, passive: true });
+
   function beat() {
     if (document.hidden) return;                 // a background tab is not a reader
     fetch('/api/px/beat', {
       method: 'POST',
       headers: { 'content-type': 'application/json' },
-      body: JSON.stringify({ p: location.pathname }),
+      body: JSON.stringify(engaged ? { p: location.pathname, e: 1 } : { p: location.pathname }),
       credentials: 'same-origin',
       keepalive: true,
     }).then(function (r) { return r.ok ? r.json() : null; })
