@@ -56,7 +56,6 @@ const NAV = [
   },
   {
     key: 'agents', label: 'Agents', id: 'Agen', align: 'r', items: [
-      { label: 'Ask the census', id: 'Tanya sensus', desc: 'A cited chat over the whole census — figures fetched live', id_desc: 'Tanya-jawab bersumber atas seluruh sensus — angka diambil langsung', href: '/ask' },
       { label: 'The dataset', id: 'Dataset', tag: 'private', id_tag: 'privat', desc: 'Held back — every figure is on its company page with the sources behind it', id_desc: 'Ditahan — setiap angka ada di halaman perusahaannya beserta sumbernya', href: null },
       { label: 'Lead search', id: 'Cari kontak', desc: 'The right person at each census company, found by research agents', id_desc: 'Orang yang tepat di tiap perusahaan sensus, ditemukan agen riset', href: '/leads' },
     ],

@@ -205,13 +205,11 @@ fastify.addHook('onSend', async (req, reply, payload) => {
        unframeable, exactly as before. */
     const emb = req.method === 'GET' && req.query && req.query.embed
       && String(req.url || '').split('?')[0].endsWith('/map');
-    /* 1001 pages load the census chat widget from support.vantis.sh (script +
-       fetch/SSE). Only the 1001 hosts get the wider policy — pasar and umkm
-       keep the strict one. */
-    const w = is1001(req) ? ' https://support.vantis.sh' : '';
+    /* The census chat (support.vantis.sh) was removed on 4 Oct 2026, and with it
+       the wider policy the 1001 hosts had for it: every host is strict again. */
     reply.header('Content-Security-Policy',
-      `default-src 'self'; script-src 'self'${w}; style-src 'self' 'unsafe-inline'; img-src 'self' data:; ` +
-      `font-src 'self'; connect-src 'self'${w}; frame-ancestors ${emb ? "'self'" : "'none'"}; base-uri 'self'; form-action 'self'`);
+      `default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; ` +
+      `font-src 'self'; connect-src 'self'; frame-ancestors ${emb ? "'self'" : "'none'"}; base-uri 'self'; form-action 'self'`);
     reply.header('X-Frame-Options', emb ? 'SAMEORIGIN' : 'DENY');
     /* Count here, not in onRequest: this is the one point where we know the
      * response really is a page and really is a 200 — static assets, redirects
@@ -247,23 +245,8 @@ fastify.addHook('onSend', async (req, reply, payload) => {
           .replaceAll('<!--PX-BADGE-->', pagesStats.badge(b, { pfx }));
       } catch { payload = payload.replace(/<!--PX-BADGE(-MAP)?-->/g, ''); }
     }
-    /* The census agent: every 1001 page gets the floating chat launcher.
-       Skipped for the embedded map iframe and for any page that already
-       loads the widget itself (/ask runs it inline). Injection must never
-       break a render — same discipline as the badge. */
-    if (req.method === 'GET' && reply.statusCode === 200 && !emb && is1001(req)
-      && typeof payload === 'string' && !payload.includes('support.vantis.sh/widget.js')) {
-      try {
-        /* The style keeps the consent banner ABOVE the launcher (the widget
-           pins z-index 2147483000): on a first mobile visit the launcher was
-           covering the banner's buttons. The banner is a gate — it wins. */
-        payload = payload.replace('</body>',
-          '<style>.vs-cc{z-index:2147483200}</style>'
-          + '<script src="https://support.vantis.sh/widget.js" data-agent-key="vs_pk_1001startup_e904015da4897b8e" data-accent="#E8734B" defer></script></body>');
-      } catch { /* leave the page as it was */ }
-    }
     /* "Who is building this": the builder card + edge tab on every full 1001
-       page (views/builder1001.js). Same guards as the widget; the id check
+       page (views/builder1001.js). GET 200, not the map embed; the id check
        keeps a page that renders it itself from getting two. */
     if (req.method === 'GET' && reply.statusCode === 200 && !emb && is1001(req)
       && typeof payload === 'string' && payload.includes('</body>') && !payload.includes('id="b1"')) {
@@ -1155,9 +1138,9 @@ fastify.delete('/api/admin/merchants/:id', async (req, reply) => {
    point. Routes inside are all is1001-gated. */
 const leads = require('./lib/leads-routes')(fastify, { db, is1001, PROD, ipOf, langOf });
 
-/* ── 1001startup.id: the census agent's read API + /ask ────────────── */
-/* Same one-line pattern. Read-only over the public layer; consumed by the
-   support.vantis.sh census agent's actions and the /ask page. */
+/* ── 1001startup.id: the census read API (/api/census/*) ─────────────── */
+/* Same one-line pattern. Read-only over the public layer. Built for the census
+   chat, which was removed on 4 Oct 2026; /ask now 301s to the home page. */
 require('./lib/census-api-routes')(fastify, { is1001, ipOf, censusData, langOf });
 
 /* ── the census file is not a public download ──────────────────────── */
