@@ -50,7 +50,9 @@ def fetch(url):
     try:
         r = subprocess.run(["curl", "-sL", "-m", "22", "--http1.1", "-A", UA, "-w",
                             "\n%{http_code}|%{size_download}|%{url_effective}", url],
-                           capture_output=True, text=True, timeout=40)
+                           # errors='replace': one non-UTF-8 byte (waste4change.com serves a cp1252
+                           # curly quote) used to raise here and read as "unreachable"
+                           capture_output=True, text=True, errors='replace', timeout=40)
         body = r.stdout or ""
         code, size, final = (body.rsplit("\n", 1)[-1].split("|") + ["", "", ""])[:3]
         return code, int(size or 0), final, body[:4000]

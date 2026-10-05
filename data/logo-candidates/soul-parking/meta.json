@@ -1,0 +1,35 @@
+{
+ "id": "soul-parking",
+ "name": "Soul Parking",
+ "url": "https://soulparking.co.id/",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/soul-parking/s00-appstore.png",
+   "tag": "appstore:Soul Parking",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/c8/aa/67/c8aa677a-0719-f59d-54d5-c6d49bd64547/AppIcon-0-0-1x_U007emarketing-0-8-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/soul-parking/s01-play.png",
+   "tag": "play:id.spn.soulparkingfinder",
+   "src": "https://play-lh.googleusercontent.com/rDrncfJ7HqXSt609fOrU7WPqOnMu3ACmtXiFtbxKRgDYqy2sJdGi7GJYYbi4_CCmd1Uo8LZaN8i9G_ObuL-4MA=s512"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/soul-parking/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/soul-parking/h00-header.png",
+   "tag": "header-166x49"
+  },
+  {
+   "pri": 24,
+   "path": "data/logo-candidates/soul-parking/h01-header.png",
+   "tag": "header-166x49"
+  }
+ ],
+ "errors": []
+}

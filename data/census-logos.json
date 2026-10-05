@@ -443,6 +443,10 @@
   "logo": "/assets/logo-c-sociolla.3460fee3.png",
   "logo_src": "picked:manual"
  },
+ "soul-parking": {
+  "logo": "/assets/logo-c-soul-parking.189b46e9.png",
+  "logo_src": "picked:appstore"
+ },
  "spun": {
   "logo": "/assets/logo-c-spun.e2716018.png",
   "logo_src": "picked:site"
