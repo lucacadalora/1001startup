@@ -681,12 +681,15 @@ def main():
     scope = raw.setdefault('scope', {}).setdefault('outside', [])
     mine = {e['name'] for e in SCOPE_OUT}
     raw['scope']['outside'] = [e for e in scope if e.get('name') not in mine] + SCOPE_OUT
-    raw['scope']['rule'] = (
-        "A company is counted when it was built or bought by tech or venture money rather than run "
-        "as an incumbent's product line, when it is its own legal entity, and when a headcount can "
-        "be sourced. All three have to hold. Geography: Greater Jakarta and, since 30 Aug 2026, "
-        "the Bandung basin — Kota Bandung, Kota Cimahi, Kabupaten Bandung and Kabupaten Bandung "
-        "Barat. Everywhere else in Indonesia is still outside.")
+    # Nationwide since 28 Sep 2026 (scripts/census-national.py owns the rule): a
+    # repair re-run must not put the Jakarta+Bandung text back.
+    if not raw['scope'].get('nationwide_added'):
+        raw['scope']['rule'] = (
+            "A company is counted when it was built or bought by tech or venture money rather than run "
+            "as an incumbent's product line, when it is its own legal entity, and when a headcount can "
+            "be sourced. All three have to hold. Geography: Greater Jakarta and, since 30 Aug 2026, "
+            "the Bandung basin — Kota Bandung, Kota Cimahi, Kabupaten Bandung and Kabupaten Bandung "
+            "Barat. Everywhere else in Indonesia is still outside.")
     raw['scope']['bandung_added'] = TODAY
 
     yc = raw.get('yc_outside') or []

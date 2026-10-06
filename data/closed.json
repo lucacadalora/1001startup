@@ -1,25 +1,25 @@
 {
- "generated": "2026-08-30",
+ "generated": "2026-09-28",
  "note": "Indonesian startups that stopped operating. Compiled and source-checked; nothing is listed without a date and at least one link. Empty is the correct state until entries pass verification.",
  "entries": [
   {
-   "name": "eFishery",
-   "legal_name": "PT Multidaya Teknologi Nusantara",
+   "name": "CROWDE",
+   "legal_name": "PT Crowde Membangun Bangsa",
    "fate": "closed",
-   "confidence": "reported",
-   "sector": "Agritech — aquaculture feeders, feed distribution and farmer financing",
-   "city": "Bandung",
-   "founded": "2013",
-   "ended": "2025-02",
-   "funding_usd_m": 415,
-   "why": "Indonesia's first aquaculture unicorn, valued at US$1.4bn on a US$200M Series D in July 2023 and reported to have raised about US$415M in all. A forensic audit opened in December 2024 found the accounts had been inflated — FTI Consulting's reading put the overstatement near US$600M — and the board suspended co-founder and CEO Gibran Huzaifah. New management cut roughly 90% of some 1,500 staff in February 2025, operations stopped, and a sale of the technology portfolio has since stalled. Huzaifah was sentenced to nine years in April 2026 for embezzlement and money laundering. Marked REPORTED, not confirmed: the company has published no shutdown notice and no completed liquidation is on record — the entity was expected to be wound up by the end of 2025 with its books closing around April 2026.",
+   "confidence": "confirmed",
+   "sector": "Agritech — P2P lending and input financing for smallholder farmers",
+   "city": "Jakarta Selatan",
+   "founded": "2016",
+   "ended": "2025-11",
+   "funding_usd_m": 1,
+   "why": "CROWDE, set up in 2016 by Yohanes Sugihtononugroho and Muhamad Risyad Ganis, financed farmers' working capital through an OJK-licensed lending platform. OJK revoked its licence by KEP-68/D.06/2025 on 6 November 2025 for breaching the minimum-equity rule and deteriorating performance after earlier sanctions up to a business freeze, and failed its president director in a fit-and-proper reassessment. The funding figure is the US$1M pre-Series A led by Mandiri Capital Indonesia (Sep 2019); the 2018 GREE Ventures seed was undisclosed, and a 2021 round led by Monk's Hill that DealStreetAsia reported at US$7M was never announced with an amount, so it is not summed. The agri-nationwide group also lists this closure (founded 2015 there; Forbes says 2016).",
    "sources": [
-    "https://www.dealstreetasia.com/stories/efishery-co-founders-suspended-by-board-423514",
-    "https://katadata.co.id/digital/startup/67ad8375557c8/manajemen-baru-efishery-phk-90-dari-1500-pekerja-imbas-dugaan-fraud",
-    "https://wartaekonomi.co.id/read558223/efishery-berhenti-beroperasi-ribuan-petani-terancam-gagal-panen",
-    "https://technode.global/2026/04/29/indonesias-efishery-founder-gets-nine-year-jail-term-in-300m-case-report/",
-    "https://www.dealstreetasia.com/stories/efishery-stalled-asset-sale-460520",
-    "https://thediplomat.com/2025/02/the-financial-scandal-at-indonesian-tech-unicorn-efishery-explained/"
+    "https://ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Documents/Pages/CIU-PT-Crowde-Membangun-Bangsa/SP%20191%20OJK%20Cabut%20Izin%20Usaha%20PT%20Crowde%20Membangun%20Bangsa.pdf",
+    "https://ojk.go.id/id/berita-dan-kegiatan/pengumuman/Pages/Pencabutan-Izin-Usaha-Penyelenggara-LPBBTI-PT-Crowde-Membangun-Bangsa.aspx",
+    "https://www.cnbcindonesia.com/market/20251109235233-17-683635/dana-syariah-crowde-disanksi-ojk-ada-yang-izin-usahanya-dicabut",
+    "https://asiatechdaily.com/crowde-indonesia/",
+    "https://www.dealstreetasia.com/stories/crowde-7-million-monks-hill-259449",
+    "https://www.forbes.com/profile/crowde/"
    ]
   },
   {
@@ -41,6 +41,238 @@
    ]
   },
   {
+   "name": "eFishery",
+   "legal_name": "PT Multidaya Teknologi Nusantara",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Agritech — aquaculture feeders, feed distribution and farmer financing",
+   "city": "Bandung",
+   "founded": "2013",
+   "ended": "2025-02",
+   "funding_usd_m": 415,
+   "why": "Indonesia's first aquaculture unicorn, valued at US$1.4bn on a US$200M Series D in July 2023 and reported to have raised about US$415M in all. A forensic audit opened in December 2024 found the accounts had been inflated — FTI Consulting's reading put the overstatement near US$600M — and the board suspended co-founder and CEO Gibran Huzaifah. New management cut roughly 90% of some 1,500 staff in February 2025, operations stopped, and a sale of the technology portfolio has since stalled. Huzaifah was sentenced to nine years in April 2026 for embezzlement and money laundering. Marked REPORTED, not confirmed: the company has published no shutdown notice and no completed liquidation is on record — the entity was expected to be wound up by the end of 2025 with its books closing around April 2026.",
+   "sources": [
+    "https://www.dealstreetasia.com/stories/efishery-co-founders-suspended-by-board-423514",
+    "https://katadata.co.id/digital/startup/67ad8375557c8/manajemen-baru-efishery-phk-90-dari-1500-pekerja-imbas-dugaan-fraud",
+    "https://wartaekonomi.co.id/read558223/efishery-berhenti-beroperasi-ribuan-petani-terancam-gagal-panen",
+    "https://technode.global/2026/04/29/indonesias-efishery-founder-gets-nine-year-jail-term-in-300m-case-report/",
+    "https://www.dealstreetasia.com/stories/efishery-stalled-asset-sale-460520",
+    "https://thediplomat.com/2025/02/the-financial-scandal-at-indonesian-tech-unicorn-efishery-explained/"
+   ]
+  },
+  {
+   "name": "Ula",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — B2B wholesale marketplace and working capital for warung retailers",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2025-02",
+   "funding_usd_m": 117.5,
+   "why": "Ula, launched in January 2020 by Nipun Mehra and co-founders, supplied stock and credit to more than 100,000 warungs in Java. It left FMCG distribution in October 2023 and had largely paused operations by late 2023; in February 2025 it announced a wind-down, with Mehra saying in a statement that investors could redeem at about 30% of capital raised or roll into his next venture, and by July 2025 only the founders and a new entity remained on the cap table. The funding figure sums the US$10.5M seed (Jun 2020), US$20M Series A (Jan 2021) and US$87M Series B (Oct 2021); reports put the total above US$140M, and the rest is not summed. ula.app now describes the business in the past tense; no PT name was found.",
+   "sources": [
+    "https://fintechnews.sg/107515/indonesia/indonesia-ula-shutdown-investor-payout/",
+    "https://www.dealstreetasia.com/stories/ula-liquidation-428923",
+    "https://www.dealstreetasia.com/stories/ula-shareholders-exit-450639",
+    "https://katadata.co.id/digital/startup/65797be6547a0/daftar-14-startup-tutup-selama-2023-ada-punya-goto",
+    "https://techcrunch.com/2020/06/10/5-months-old-indonesian-startup-ula-raises-10-5-million-for-its-wholesale-e-commerce-marketplace/",
+    "https://techcrunch.com/2021/01/28/ula-raises-20-million-to-expand-its-e-commerce-marketplace-in-indonesia/",
+    "https://www.businesstimes.com.sg/startups-tech/startups/indonesian-b2b-e-commerce-startup-ula-raises-us87m-in-round-co-led-by-tencent",
+    "https://ula.app/"
+   ]
+  },
+  {
+   "name": "Gravel",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Proptech — on-demand marketplace for construction workers and building projects",
+   "city": "Jakarta",
+   "founded": "2019",
+   "ended": "2024-12",
+   "funding_usd_m": 14,
+   "why": "Gravel, founded in Jakarta in 2019 by Georgi Ferdwindra Putra, Fredy Yanto and Nicholas Sutardja, matched contractors and property owners with vetted construction workers and claimed 25,000 workers across 18 provinces by 2022. A year after raising US$14M led by New Enterprise Associates with SMDV and East Ventures (Dec 2023), it collapsed: youngster.id and The Runway (Oct 2025) put the end in December 2024, with the website offline and workers unpaid, and blame a split between the two co-CEOs. The company made no announcement, so this is marked reported; the funding figure is the US$14M round only, and gravel.co.id no longer resolves.",
+   "sources": [
+    "https://youngster.id/headline/bukan-pasar-tapi-ego-pribadi-para-founder-penyebab-runtuhnya-startup-gravel/",
+    "https://www.therunway.ventures/p/gravel",
+    "https://techcrunch.com/2023/12/03/gravel/",
+    "https://www.businesstimes.com.sg/startups-tech/startups/construction-platform-gravel-raises-us14-million-funding-round",
+    "https://youngster.id/headline/startup-entrepreneurship-headline/startup-gravel-hadirkan-layanan-konstruksi-digital-dan-25-ribu-lapangan-pekerjaan/"
+   ]
+  },
+  {
+   "name": "GetPlus",
+   "legal_name": "PT Global Poin Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Marketing tech — multi-brand coalition loyalty and rewards programme",
+   "city": "Jakarta",
+   "founded": "2018",
+   "ended": "2024-12",
+   "why": "GetPlus was a coalition loyalty programme run by PT Global Poin Indonesia, with 500+ partner merchants and over a million members, relaunched on Antavo's platform in January 2023. It announced on its official Instagram on 14 October 2024 that point redemption would end on 20 October and that the service would stop operating on 6 December 2024, without giving a reason. It was backed by GDP Venture but no round amounts were announced, so no funding figure is recorded; getplus.id no longer resolves.",
+   "sources": [
+    "https://katadata.co.id/digital/startup/670dfe96440ac/startup-tutup-bertambah-di-indonesia-getplus-setop-operasi-desember",
+    "https://www.dealstreetasia.com/stories/getplus-to-shut-down-415848",
+    "https://uzone.id/daftar-startup-indonesia-yang-tutup-sepanjang-2024",
+    "https://thewisemarketer.com/indonesian-loyalty-program-getplus-is-relaunched-using-antavo-technology/",
+    "https://linkedin.com/company/globalpoinindonesia"
+   ]
+  },
+  {
+   "name": "Investree",
+   "legal_name": "PT Investree Radhika Jaya",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Fintech — P2P lending for SMEs (invoice and working-capital financing)",
+   "city": "Jakarta Selatan",
+   "founded": "2015",
+   "ended": "2024-10",
+   "funding_usd_m": 254.5,
+   "why": "Investree was one of Indonesia's largest SME lenders. OJK revoked its licence by KEP-53/D.06/2024 on 21 October 2024 for breaching the minimum-equity rule and other provisions amid worsening performance; the company, now in liquidation, publishes dissolution and claims notices on investree.id, and former CEO Adrian Gunadi was arrested in September 2025 (CNBC). The funding figure sums the US$23.5M first tranche of its Series C (Apr 2020, MUIP and BRI Ventures) and the US$231M Series D announced in October 2023 through its Singapore parent with Qatar's JTA; the 2018 Series B amount was not found and earlier rounds are not summed.",
+   "sources": [
+    "https://ojk.go.id/id/berita-dan-kegiatan/pengumuman/Pages/OJK-Cabut-Izin-Usaha-Penyelenggara-LPBBTI-PT-Investree-Radhika-Jaya.aspx",
+    "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/OJK-Cabut-Izin-Usaha-PT-Investree-Radhika-Jaya.aspx",
+    "https://www.investree.id/pengumuman-pembubaran",
+    "https://www.liputan6.com/bisnis/read/5754930/ojk-cabut-izin-usaha-investree-radika-jaya",
+    "https://kr-asia.com/indonesias-investree-bags-usd-23-5-million-from-muip-and-bri-ventures",
+    "https://finansial.bisnis.com/read/20231005/563/1701284/investree-kantongi-pendanaan-seri-d-rp36-triliun-bentuk-jv-di-doha",
+    "https://www.cnbcindonesia.com/tech/20250926125545-37-670463/eks-bos-investree-ditangkap-cek-6-startup-tutup-dan-bermasalah-di-ri",
+    "https://linkedin.com/company/investree"
+   ]
+  },
+  {
+   "name": "Zipmex Indonesia",
+   "legal_name": "PT Zipmex Exchange Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Crypto — crypto-asset exchange (Indonesian arm of the Zipmex group)",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2024-06",
+   "why": "Zipmex Indonesia was the local exchange of the Singapore- and Thailand-based Zipmex group; it was registered with Bappebti as a prospective crypto trader in February 2020 and launched publicly in June 2021. After the group froze withdrawals in July 2022, Bappebti said in June 2024 that PT Zipmex Exchange Indonesia had applied two to three months earlier to close and was returning customer assets, and in September 2024 that it expected the closure to be completed that year. The last trading day was not published, so 2024-06 is the month the regulator confirmed the shutdown. Funding was raised at group level, so no Indonesian figure is recorded.",
+   "sources": [
+    "https://id.beincrypto.com/zipmex-indonesia-tutup-operasi-bappepti/",
+    "https://id.beincrypto.com/bappebti-pastikan-zipmex-indonesia-tutup-operasi-tahun-ini/",
+    "https://investortrust.id/market/31352/zipmex-indonesia-mau-tutup-aspakrindo-industri-kripto-baik-baik-saja",
+    "https://www.jpnn.com/news/zipmex-kantongi-izin-bappebti-sebagai-calon-pedagang-fisik-aset-kripto",
+    "https://www.antaranews.com/berita/2204794/potensi-kripto-besar-bursa-aset-digital-zipmex-masuk-indonesia"
+   ]
+  },
+  {
+   "name": "Octopus",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Climate — recycling and reverse-logistics app connecting households, waste collectors and FMCG brands",
+   "city": "Kota Makassar (founding base; later ran a Jakarta Pusat office)",
+   "founded": "2020",
+   "ended": "2024-06",
+   "funding_usd_m": 5.0,
+   "why": "Octopus was a post-consumer waste collection startup that began in Makassar (a 2020 HighPitch winner there) and raised US$5 million in July 2022 from Openspace, SOSV and others. From December 2023 it failed to pay staff and waste-collector partners. DealStreetAsia reported the unpaid salaries and governance allegations in January 2024, and a co-founder left in February 2024. A June 2024 report was headlined 'Octopus sinks amid unpaid staff wages, stalled acquisition talks' (paywalled; the headline is indexed on parsers.vc), and Uzone reported in July 2024 that wages were still unpaid and co-founders unreachable. No formal bankruptcy or company statement was found, and its domain octopus.co.id no longer resolves (DNS lame delegation, checked 2026-09-28). The Indonesian legal entity was not verified; LinkedIn shows a Singapore holdco, Octopus Waste Management Pte Ltd.",
+   "sources": [
+    "https://techcrunch.com/2022/07/06/octopus-keeps-stuff-out-of-indonesias-crowded-landfills/",
+    "https://www.businesstimes.com.sg/startups-tech/startups/circular-economy-tech-startup-octopus-raises-us5m-oversubscribed-funding",
+    "https://www.dealstreetasia.com/stories/octopus-indonesia-379211",
+    "https://www.dealstreetasia.com/stories/octopus-cmo-departure-383165",
+    "https://uzone.id/gonjang-ganjing-startup-octopus-nunggak-gaji-dan-ghosting-karyawan",
+    "https://www.therunway.ventures/p/octopus",
+    "https://www.compasslist.com/insights/highpitch-2020-waste-management-play-octopus-digital-concierge-service-izy-win-makassar-battle",
+    "https://c.parsers.vc/startup/octopus.co.id/",
+    "https://www.fortuneidn.com/business/viral-di-medsos-ceo-octopus-buka-suara-soal-dugaan-tak-bayar-gaji-00-4vfn9-0bk98l",
+    "https://dns.google/resolve?name=octopus.co.id&type=A"
+   ]
+  },
+  {
+   "name": "TaniFund",
+   "legal_name": "PT Tani Fund Madani Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Fintech — P2P lending for farmers (TaniHub Group)",
+   "city": "Jakarta Selatan",
+   "founded": "2017",
+   "ended": "2024-05",
+   "why": "TaniFund was the P2P lending arm of TaniHub Group, financing farmers' working capital from 2017. After lender losses (its 90-day repayment rate stood near 36% in December 2022), OJK revoked its licence by KEP-19/D.06/2024 on 3 May 2024 for failing the minimum-equity rule and not carrying out supervisory recommendations; shareholders then voted to dissolve it and a liquidation team was formed (OJK, October 2024). Rounds were raised at TaniHub Group level, so no TaniFund figure is recorded. The parent TaniHub collapsed too but has no dated shutdown (see rejected).",
+   "sources": [
+    "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Documents/Pages/OJK-Cabut-Izin-Usaha-PT-Tani-Fund-Madani-Indonesia/SP%20OJK%20Cabut%20Izin%20Usaha%20PT%20Tani%20Fund%20Madani%20Indonesia.pdf",
+    "https://www.tempo.co/ekonomi/ojk-cabut-izin-usaha-fintech-tanifund-begini-kronologi-lengkapnya-60672",
+    "https://www.cnnindonesia.com/ekonomi/20241003101902-78-1151064/ojk-tanifund-sudah-gelar-rups-putuskan-pembubaran-platform",
+    "https://katadata.co.id/digital/fintech/65279ae9c86c8/ojk-bongkar-nasib-pinjol-igrow-dan-tanifund-yang-gagal-bayar-lender",
+    "https://linkedin.com/company/tanifund"
+   ]
+  },
+  {
+   "name": "Pitik",
+   "legal_name": "PT Pitik Digital Indonesia",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Agritech — broiler-farm management, inputs and offtake for smallholder poultry farmers",
+   "city": "Kabupaten Tangerang",
+   "founded": "2021",
+   "ended": "2024-04",
+   "funding_usd_m": 14.0,
+   "why": "Pitik ran a full-stack broiler-chicken platform (IoT farm management, chick and feed supply, offtake) for smallholder farmers in Java, launched in mid-2021 by Arief Witjaksono and Rymax Joehana from an office on Jl. BSD Raya Utama. It raised an undisclosed seed round co-led by Arise and Wavemaker Partners (Dec 2021) and a US$14M Series A led by Alpha JWC Ventures (May 2022); only the Series A amount is counted. DealStreetAsia reported in April 2024 that it had laid off more than half its staff and on 13 July 2024 that it had ceased operations; youngster.id's December 2025 account says operations shut completely in April 2024. The company never announced the closure itself; pitik.id now shows a 'Domain Expired' page (checked 2026-09-28), and its LinkedIn page still lists 97 people from profiles that were not updated.",
+   "sources": [
+    "https://www.dealstreetasia.com/stories/pitik-ceases-operations-403415",
+    "https://www.dealstreetasia.com/stories/pitik-layoffs-392603",
+    "https://youngster.id/headline/pitik-dan-ilusi-revolusi-agritech-yang-terlalu-cepat-terbang/",
+    "https://katadata.co.id/digital/startup/66265379e99d4/startup-peternakan-pitik-dikabarkan-phk-50-karyawan",
+    "https://www.alphajwc.com/en/indonesias-largest-poultry-tech-startup-pitik-raises-usd-14-million-in-series-a/",
+    "https://www.linkedin.com/company/pitik-digital-indonesia",
+    "http://pitik.id/"
+   ]
+  },
+  {
+   "name": "EdenFarm",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Agritech — B2B fresh-produce supply from farmers to restaurants and caterers",
+   "city": "Jakarta",
+   "founded": "2017",
+   "ended": "2024-02",
+   "funding_usd_m": 32.5,
+   "why": "EdenFarm (Y Combinator S19), founded in 2017, bought produce from farmers and supplied restaurants and caterers. After mass layoffs in 2023 and further cuts reported by DailySocial in February 2024, DealStreetAsia reported on 29 February 2024 that it had paused operations while in talks to be acquired, and in April 2024 that GLife Technologies was in talks for a distress sale; no completed deal or restart has been reported and edenfarm.id no longer resolves. The funding figure sums the US$19M Series A (Nov 2021, AppWorks and AC Ventures) and the US$13.5M pre-Series B bridge (Jan 2023, led by Telkomsel Mitra Inovasi); the 2019 seed is not counted. Marked reported: the company announced no shutdown.",
+   "sources": [
+    "https://www.dealstreetasia.com/stories/edenfarm-acquisition-talks-385363",
+    "https://www.dealstreetasia.com/stories/glife-technologies-edenfarm-393870",
+    "https://news.dailysocial.id/post/edenfarm-dilaporkan-kembali-phk-karyawan/",
+    "https://acv.vc/insights/acv-portfolio-news/eden-farm-closes-us19-million-series-a-financing-from-appworks-and-ac-ventures-to-scale-up-indonesias-food-ecosystem/",
+    "https://acv.vc/insights/acv-portfolio-news/edenfarm-pre-series-b-funding/",
+    "https://www.ycombinator.com/companies/eden-farm"
+   ]
+  },
+  {
+   "name": "Pegipegi",
+   "legal_name": "PT Go Online Destinations",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Travel — online travel agent for hotels, flights, trains and buses",
+   "city": "Jakarta Barat",
+   "founded": "2012",
+   "ended": "2023-12",
+   "why": "Pegipegi, run by PT Go Online Destinations and backed at launch by Japan's Recruit Holdings with PT Alternative Media (AMG) and Altavindo, was one of Indonesia's larger online travel agents. It took its last orders at 23:59 on 10 December 2023 and announced on pegipegi.com that it was closing from 11 December 2023; bookings already made stayed valid. No funding amounts were ever announced, so none is recorded, and pegipegi.com no longer resolves. Its corporate backing makes it a borderline case for the census's venture test.",
+   "sources": [
+    "https://teknologi.bisnis.com/read/20231212/266/1723060/pegipegi-pamit-usai-11-tahun-beroperasi-sayonara-tiket-murah",
+    "https://lifestyle.bisnis.com/read/20231212/361/1723074/pegipegi-tutup-ini-nasib-tiket-yang-sudah-dipesan",
+    "https://katadata.co.id/digital/startup/65797be6547a0/daftar-14-startup-tutup-selama-2023-ada-punya-goto",
+    "https://www.bloombergtechnoz.com/detail-news/23524/siapa-di-balik-pegipegi-platform-pesan-tiket-online-yang-tutup",
+    "https://id.wikipedia.org/wiki/Pegipegi"
+   ]
+  },
+  {
+   "name": "Rumah.com",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Proptech — property listings portal (PropertyGuru Group's Indonesian marketplace)",
+   "city": "Jakarta",
+   "ended": "2023-11",
+   "why": "Rumah.com was PropertyGuru Group's Indonesian property-listings marketplace for more than a decade. Group CEO Hari V. Krishnan told staff in August 2023 that the Indonesian marketplace business would stop operating on 30 November 2023, with 61 staff laid off (Katadata), and rumah.com still serves the company's farewell notice saying it stopped operating from 1 December 2023 (checked 2026-09-28). It was funded by the Singapore-based, then NYSE-listed parent, so no Indonesian figure is recorded; the Indonesian PT name and launch year were not confirmed.",
+   "sources": [
+    "https://www.rumah.com/",
+    "https://www.propertygurugroup.com/wp-content/uploads/2023/08/Pesan-dari-Group-CEO-dan-Managing-Director-Hari-V.-Krishnan.pdf",
+    "https://katadata.co.id/digital/startup/64e3446d0a214/rumahcom-tutup-30-november-phk-61-karyawan",
+    "https://www.businesstimes.com.sg/companies-markets/propertyguru-exit-indonesian-market-and-cease-fastkey-service",
+    "https://marketech-apac.com/propertygurus-rumah-com-to-shut-down-on-november-30/"
+   ]
+  },
+  {
    "name": "Ritase",
    "fate": "acquired-then-closed",
    "confidence": "reported",
@@ -55,6 +287,360 @@
     "https://www.techinasia.com/indonesia-trucking-startup-ritase-talks-potential-buyer-mass-layoff",
     "https://kr-asia.com/indonesian-logistic-platform-ritase-snags-usd-8-5-million-series-a-funding",
     "https://hybrid.co.id/post/ritase-announces-series-a-funding-worth-of-120-billion-rupiah/"
+   ]
+  },
+  {
+   "name": "Prixa",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Healthtech — AI symptom checker and telemedicine for employers and insurers",
+   "city": "Jakarta",
+   "founded": "2019",
+   "ended": "2023-10",
+   "why": "Prixa launched in 2019 with an AI-based symptom checker and later sold telemedicine and managed health benefits to companies, signing with AdMedika in 2023. In December 2023 doctor Evan Sebastian wrote in an open letter on LinkedIn that the company had been closed and not continued as of October 2023 and that doctors' fees were still unpaid; MedX, citing DailySocial, reported the service had stopped and its site was down. The company made no announcement, so this is marked reported. No funding amounts were announced and the PT name was not confirmed; prixa.ai serves a blank page.",
+   "sources": [
+    "https://www.linkedin.com/posts/sebastianevan_surat-terbuka-untuk-prixaai-james-roring-activity-7143423180118908928-EgD5",
+    "https://medx.co.id/startup-healthtech-berbasis-ai-prixa-dikabarkan-tutup-layanan/",
+    "https://hybrid.co.id/post/prixa-hadirkan-platform-pengelolaan-kesehatan-terpadu-berbasis-artificial-intelligence/",
+    "https://heaptalk.com/industry/prixa-teams-up-with-admedika-raising-digital-transformation/"
+   ]
+  },
+  {
+   "name": "KitaBeli",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Commerce — group-buying social commerce for household essentials in smaller cities",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2023-09",
+   "funding_usd_m": 30,
+   "why": "KitaBeli, launched in Jakarta in March 2020 by Prateek Chaturvedi and Ivana Tjandra, sold everyday goods through neighbourhood group-buying and expanded to Solo and Malang. DealStreetAsia reported on 6 September 2023 that it had terminated operations; PitchBook lists its latest deal as a liquidation, and kitabeli.id no longer resolves (checked 2026-09-28). The funding figure sums the US$10M Series A led by Go-Ventures (Mar 2021) and the US$20M Series B led by Glade Brook (Jul 2022); the 2020 seed and a Sep 2021 Series A extension were undisclosed. Marked reported: no company statement was found, and the PT name is unknown.",
+   "sources": [
+    "https://www.dealstreetasia.com/stories/kitabeli-terminates-operations-360801",
+    "https://pitchbook.com/profiles/company/438544-09",
+    "https://techcrunch.com/2021/03/24/indonesian-social-commerce-app-kitabeli-gets-10m-led-by-go-ventures/",
+    "https://technode.global/2022/07/18/indonesian-social-commerce-platform-kitabeli-raises-20m-funding-led-by-glade-brook/",
+    "https://incubees.com/kitabeli-bags-us10m-in-series-a-funding/"
+   ]
+  },
+  {
+   "name": "Jembatan Emas",
+   "legal_name": "PT Akur Dana Abadi",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Fintech — P2P lending for consumers and small businesses",
+   "city": "Jakarta Selatan",
+   "founded": "2018",
+   "ended": "2023-09",
+   "why": "Jembatan Emas was an OJK-licensed P2P lender run by PT Akur Dana Abadi (founded 14 August 2018 per its AFPI profile), which signed an MSME lending tie-up with Bank BJB in 2022. Its website announced that it stopped registering users and disbursing loans on 30 September 2023 as it handed back its licence, and OJK said it could not meet the minimum-equity and board requirements. OJK revoked the licence at the company's request by KEP-33/D.06/2024 on 3 July 2024 and ordered it to dissolve and form a liquidation team. No funding round was announced.",
+   "sources": [
+    "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/Pengembalian-Izin-Dua-Penyelenggara-Layanan-Pendanaan-Bersama-Berbasis-Teknologi-Informasi-LPBBTI.aspx",
+    "https://finansial.bisnis.com/read/20231218/563/1724774/daftar-pinjol-legal-yang-tutup-gara-gara-kurang-modal-pada-2023",
+    "https://katadata.co.id/digital/startup/65797be6547a0/daftar-14-startup-tutup-selama-2023-ada-punya-goto",
+    "https://afpi.or.id/profilemember/Jembatan-Emas",
+    "https://keuangan.kontan.co.id/news/salurkan-kredit-ke-umkm-fintech-jembatan-emas-gandeng-bank-bjb"
+   ]
+  },
+  {
+   "name": "Tumbasin",
+   "legal_name": "PT Tumbas Sinergi Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — app for ordering from traditional-market traders (e-grocery)",
+   "city": "Kota Semarang",
+   "founded": "2017",
+   "ended": "2023-05",
+   "why": "Tumbasin, a Semarang startup founded in 2017 by Bayu Mahendra Saubig, Muhammad Fu'ad Hasbi and Tri Asworo Mituhu, let customers order from traditional-market traders and came through MDI Ventures' Indigo incubator. Its LinkedIn page announced on 3 May 2023 that the website and app stopped operating that day, and the CEO wrote that the company was bankrupt and would file for pailit (CNBC, Bisnis); no court ruling was found, so the fate is recorded as closed. Its 2020 angel round was undisclosed, so no funding figure is recorded. The legal name is the one its LinkedIn page gives ('Tumbas Sinergi Indonesia'), which still marks the company 'Temporarily Closed'.",
+   "sources": [
+    "https://www.linkedin.com/posts/tumbasin_halo-semua-pelanggan-setia-tumbasin-terima-activity-7059336370690936832-l9ZR",
+    "https://www.cnbcindonesia.com/tech/20230505163656-37-434853/startup-sayur-dan-buah-ri-bangkrut-lagi",
+    "https://teknologi.bisnis.com/read/20230505/266/1653120/startup-e-grocery-tumbang-lagi-kini-giliran-tumbasin",
+    "https://1000startupdigital.id/tumbasin-belanja-di-pasar-dalam-satu-aplikasi/",
+    "https://linkedin.com/company/tumbasin"
+   ]
+  },
+  {
+   "name": "Lummo (BukuKas)",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "SaaS — digital bookkeeping and online-store tools for small merchants",
+   "city": "Jakarta",
+   "founded": "2019",
+   "ended": "2023-05",
+   "funding_usd_m": 99,
+   "why": "BukuKas, founded in December 2019 by Krishnan Menon and Lorenzo Peracchione and renamed Lummo in January 2022, gave small merchants a digital ledger and online-shop tools. In May 2023 the BukuKas app told users it was shutting down and was pulled from Google Play (Katadata dates the end to 26 May), after DealStreetAsia reported in April that the company was weighing a shutdown and returning over US$70M to investors; in September 2023 DealStreetAsia reported it had entered voluntary liquidation with Kroll as liquidator. The funding figure sums the US$9M pre-Series A (Aug 2020), US$10M led by Sequoia India (Jan 2021) and the US$80M Series C led by Tiger Global and Sequoia India (Jan 2022); any other rounds are not summed. No Indonesian PT name was found.",
+   "sources": [
+    "https://www.cnbcindonesia.com/tech/20230515080100-37-437245/bukukas-tutup-walau-dulu-punya-rp-114-triliun-nasib-lummo",
+    "https://katadata.co.id/digital/startup/6461bf505f278/startup-didukung-jeff-bezos-lummo-disebut-tutup-bisnis-dan-kaji-merger",
+    "https://www.dealstreetasia.com/stories/lummo-may-close-operations-340722",
+    "https://www.dealstreetasia.com/stories/indonesia-lummo-liquidation-360554",
+    "https://www.businesstimes.com.sg/startups-tech/startups/digital-ledger-app-bukukas-raises-us9m-pre-series-round",
+    "https://techcrunch.com/2021/01/11/bukukas-raises-10-million-led-by-sequoia-capital-india-to-build-a-end-to-end-software-stack-for-indonesian-smes/",
+    "https://www.businesstimes.com.sg/startups-tech/startups/sequoia-co-leads-us80m-funding-in-indonesias-bukukas"
+   ]
+  },
+  {
+   "name": "DishServe",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "F&B — cloud-kitchen network producing delivery meals through partner kitchens",
+   "city": "Jakarta",
+   "ended": "2023-05",
+   "why": "DishServe, started by former RedDoorz COO Rishabh Singhi, produced delivery meals through a network of more than 200 partner kitchens and its own production facility. Singhi announced on LinkedIn on 1 May 2023 that 'we have shut down DishServe', and told Bisnis the causes were insufficient funding and a business model that did not work. Its 2021 seed (Insignia Ventures) and pre-Series A (Nov 2021; Genting Group, Insignia and others) were undisclosed, so no funding figure is recorded; the founding year and PT name were not found.",
+   "sources": [
+    "https://www.linkedin.com/posts/rishabhsinghi_startups-career-activity-7058681252895199233-HIqP",
+    "https://teknologi.bisnis.com/read/20230502/266/1652036/bangkrut-startup-cloud-kitchen-indonesia-dishserve-tutup",
+    "https://katadata.co.id/digital/startup/6450d372618f1/startup-pesaing-gojek-dan-grab-dishserve-gulung-tikar",
+    "https://hybrid.co.id/post/dishserve-bags-pre-series-a-funding-ready-to-expand-partnership/",
+    "https://www.dealstreetasia.com/stories/dishserve-funding-insignia-242473"
+   ]
+  },
+  {
+   "name": "Fave Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — merchant deals, vouchers and cashback app (Indonesian arm of Malaysia's Fave)",
+   "city": "Jakarta",
+   "ended": "2023-04",
+   "why": "Fave, the Malaysian deals-and-payments platform, ran a consumer voucher and cashback business in Indonesia. The company confirmed to Marketing-Interactive that it ceased business in Indonesia effective 1 April 2023 to focus on other markets, and Katadata reported users being told to withdraw their balances. Funding was raised by the Malaysian group, so no Indonesian figure is recorded; the Indonesian entity name and launch year were not found.",
+   "sources": [
+    "https://www.marketing-interactive.com/fave-abruptly-exits-indonesian-market-as-it-looks-to-focus-on-other-regions",
+    "https://katadata.co.id/digital/teknologi/643cc42f8fbd0/daftar-startup-tutup-di-ri-bertambah-fave-dan-danafix-setop-layanan",
+    "https://katadata.co.id/digital/startup/65797be6547a0/daftar-14-startup-tutup-selama-2023-ada-punya-goto"
+   ]
+  },
+  {
+   "name": "JD.ID",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — general online retailer (JD.com's Indonesian venture with Provident Capital)",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2023-03",
+   "why": "JD.ID, JD.com's Indonesian e-commerce venture with Provident Capital, started operating in October 2015. It took its last orders on 15 February 2023 and shut completely on 31 March 2023; its spokesperson Setya Yudha Indraswara said the decision was directed by the parent JD.com. It was funded by its parents, so no funding figure is recorded. The legal entity is given as PT Jingdong Indonesia Pertama on Wikipedia and PT Ritel Bersama Nasional in a university report; neither was confirmed from a primary source, so it is left empty.",
+   "sources": [
+    "https://www.cnnindonesia.com/ekonomi/20230131070229-92-906840/jdid-umumkan-bakal-tutup-permanen-pesanan-terakhir-15-februari",
+    "https://www.cnbcindonesia.com/tech/20230130135620-37-409329/bye-jdid-tutup-total-31-maret-2023-nasib-karyawan-gimana",
+    "https://finance.detik.com/berita-ekonomi-bisnis/d-6649828/bye-bye-jd-id-resmi-tutup",
+    "https://teknologi.bisnis.com/read/20240104/266/1729406/gegara-tech-winter-ini-daftar-startup-yang-gulung-tikar-hingga-januari-2024",
+    "https://hybrid.co.id/post/jd-id-indonesia/"
+   ]
+  },
+  {
+   "name": "Danafix",
+   "legal_name": "PT Danafix Online Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Fintech — consumer P2P lending",
+   "city": "Jakarta Selatan",
+   "ended": "2023-03",
+   "why": "Danafix was an OJK-licensed consumer lending platform with its head office at Menara Dea, Mega Kuningan, South Jakarta. It announced on its website that it had stopped its lending business (Katadata dates the stop to 31 March 2023) and then handed its licence back; OJK revoked it by KEP-6/D.06/2023 on 29 August 2023, stating that the company had returned the licence (announcement PENG-19/PL.02/2023). No funding round was ever announced and its founding year was not found; danafix.id no longer resolves.",
+   "sources": [
+    "https://www.ojk.go.id/en/berita-dan-kegiatan/pengumuman/Documents/PENG%20-%20FINANCIAL%20TECHNOLOGY%20LENDING%20COMPANY%20PT%20DANAFIX%20ONLINE%20INDONESIA%20BUSINESS%20LICENSE%20REVOCATION.pdf",
+    "https://ojk.go.id/id/berita-dan-kegiatan/pengumuman/Pages/OJK-Cabut-Izin-Usaha-Perusahaan-Penyelenggara-Layanan-Pendanaan-Bersama-Berbasis-Teknologi-Informasi-PT-Danafix-Online-Indo.aspx",
+    "https://finansial.bisnis.com/read/20230410/563/1645339/satu-fintech-p2p-lending-gugur-ini-kata-ojk",
+    "https://katadata.co.id/digital/teknologi/643cc42f8fbd0/daftar-startup-tutup-di-ri-bertambah-fave-dan-danafix-setop-layanan",
+    "https://finansial.bisnis.com/read/20231218/563/1724774/daftar-pinjol-legal-yang-tutup-gara-gara-kurang-modal-pada-2023"
+   ]
+  },
+  {
+   "name": "RateS",
+   "fate": "closed",
+   "confidence": "reported",
+   "sector": "Commerce — membership-based social commerce for home resellers",
+   "city": "Jakarta",
+   "founded": "2016",
+   "ended": "2023-02",
+   "why": "RateS let students, homemakers and small sellers resell goods through social channels without holding stock; its LinkedIn names the holding company Rate Pte. Ltd. It announced on Instagram that all its warehouses would stop on 28 February 2023 (DailySocial reported it as a temporary closure) and no restart was reported. DealStreetAsia reported in September 2023 that SIRCLO had bought the company, with no terms and no sign the service resumed; rates.id no longer resolves. Marked reported because the company never announced a permanent shutdown; round amounts were never announced (CB Insights' US$7.5M total is a tracker figure and is not used).",
+   "sources": [
+    "https://katadata.co.id/digital/startup/640190585dc2a/startup-social-commerce-rates-tutup-semua-gudang-di-indonesia",
+    "https://news.dailysocial.id/post/rates-segera-tutup-sementara-semua-akses-pergudangan/",
+    "https://www.dealstreetasia.com/stories/rates-sirclo-361927",
+    "https://www.cbinsights.com/company/rates",
+    "https://linkedin.com/company/ratesg"
+   ]
+  },
+  {
+   "name": "CoHive",
+   "legal_name": "PT Evi Asia Tenggara",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Proptech — coworking and co-living space operator",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2023-01",
+   "funding_usd_m": 33.5,
+   "why": "CoHive (EV Hive until 2019) was started in 2015 by East Ventures and grew into Indonesia's largest coworking operator. The Commercial Court at the Central Jakarta District Court declared its operator, PT Evi Asia Tenggara, bankrupt on 18 January 2023 (No. 231/Pdt.Sus-PKPU/2022/PN.Jkt.Pst), and management confirmed the closure to Bisnis in February 2023. The funding figure sums the US$20M Series A (Jun 2018, SoftBank Ventures Korea, H&CK Partners, Tigris) and the US$13.5M first close of its Series B (Jun 2019). cohive.space no longer resolves.",
+   "sources": [
+    "https://finance.detik.com/berita-ekonomi-bisnis/d-6545610/startup-co-working-space-cohive-diputus-pailit",
+    "https://www.cnbcindonesia.com/tech/20230131083714-37-409568/badai-startup-makin-kencang-cohive-diputus-pailit",
+    "https://ekonomi.bisnis.com/read/20230207/47/1625706/cohive-pailit-dan-resmi-tutup-ini-penjelasan-manajemen",
+    "https://www.prnewswire.com/news-releases/co-working-operator-ev-hive-raises-us20-million-series-a-investment-led-by-softbank-ventures-korea-hck-partners-and-tigris-investment-aims-regional-expansion-to-100-locations-300658876.html",
+    "https://techcrunch.com/2019/06/19/ev-hive-raises-13-5m-and-is-now-cohive/",
+    "https://east.vc/id/berita/press-release/cohive-funding-20-million-co-working"
+   ]
+  },
+  {
+   "name": "Fabelio",
+   "legal_name": "PT Kayu Raya Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — online furniture and interior-design retailer",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2022-10",
+   "funding_usd_m": 15.5,
+   "why": "Fabelio sold its own furniture designs online and through showrooms from 2015. The Commercial Court at the Central Jakarta District Court declared its operator, PT Kayu Raya Indonesia, bankrupt on 5 October 2022 (No. 47/Pdt.Sus-PKPU/2022/PN.Niaga.Jkt.Pst) after a debt-restructuring case, and staff were reported unpaid since late 2021 (Katadata). The funding figure sums the US$6.5M round led by Aavishkaar Frontier Fund (May 2018) and the US$9M Series C1 led by AppWorks, Endeavor Catalyst and MDI Ventures (Jun 2020); the company put its total above US$20M in June 2020, but earlier amounts were not announced. fabelio.com now redirects to an unrelated site.",
+   "sources": [
+    "https://www.cnbcindonesia.com/tech/20221006135438-37-377718/resmi-startup-furniture-fabelio-dinyatakan-pailit",
+    "https://teknologi.bisnis.com/read/20221010/266/1586117/startup-fabelio-resmi-diputus-pailit",
+    "https://katadata.co.id/digital/startup/63464266aa533/daftar-startup-bangkrut-tutup-layanan-dan-phk-di-ri-selain-fabelio",
+    "https://pasardana.id/news/2018/6/6/fabeliocom-dapat-suntikan-dana-segar-senilai-us-6-5-juta/",
+    "https://kr-asia.com/indonesian-furniture-retail-startup-fabelio-raises-usd-9-million-in-series-c-round",
+    "https://www.smehorizon.com/taking-on-giants-insights-from-fabelio/"
+   ]
+  },
+  {
+   "name": "Bananas",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — quick-commerce grocery delivery",
+   "city": "Jakarta",
+   "founded": "2022",
+   "ended": "2022-10",
+   "funding_usd_m": 1.5,
+   "why": "Bananas ran an app-based quick-commerce grocery service launched in January 2022 by ex-Lazada executive Mario Gaw (CEO) and Kristian Sinaulan (CTO); 2022 is its launch year. In mid-October 2022 it announced on Instagram that it was closing the service after ten months because the e-grocery business was not viable, sold off its stock and said the team would move to a new business; no successor product has been identified. The funding figure is its US$1.5M seed (Feb 2022): US$1M led by East Ventures with SMDV, ARISE, MDI Ventures and angels, plus US$500K from Y Combinator. No PT name was found.",
+   "sources": [
+    "https://teknologi.bisnis.com/read/20221015/266/1587767/startup-bananas-baru-10-bulan-sudah-tutup-layanan-ini-penyebabnya",
+    "https://wartaekonomi.co.id/read452357/gulung-tikar-startup-e-grocery-bananas-akan-beralih-ke-bisnis-baru",
+    "https://kumparan.com/kumparanbisnis/startup-sayur-and-buah-bananas-yang-gulung-tikar-baru-beroperasi-10-bulan-1z4FuU0CNau",
+    "https://east.vc/news/press-release/bananas-seed-funding-led-by-east-ventures",
+    "https://mdi.vc/news/ex-lazada-exec-s-quick-commerce-startup-bananas-snags-us-1-5-m-in-seed-financing"
+   ]
+  },
+  {
+   "name": "Mobile Premier League (MPL) Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Gaming — mobile esports and skill-gaming app (Indonesian arm of India's MPL)",
+   "city": "Jakarta",
+   "ended": "2022-06",
+   "why": "MPL Indonesia was the local operation of India's Mobile Premier League esports and skill-gaming app. In early June 2022 its official Instagram said 'MPL Indonesia telah tidak beroperasi dan menerima pengguna baru saat ini' and told players to withdraw winnings in the app, and about 100 staff were laid off (CNBC, detik). Funding was raised by the Indian parent, so no Indonesian figure is recorded; the Indonesian entity name and launch year were not found. mpl.id now redirects to the global MPL site.",
+   "sources": [
+    "https://www.cnbcindonesia.com/tech/20220602115116-37-343711/status-unicorn-startup-ini-phk-100-karyawan-tutup-di-ri",
+    "https://finance.detik.com/berita-ekonomi-bisnis/d-6104937/jeger-mobile-premier-league-pamit-dari-indonesia-phk-100-karyawan",
+    "https://computory.com/mobile-premier-league-indonesia-resmi-tutup-100-karyawan-terkena-phk/",
+    "https://www.inews.id/finance/bisnis/setelah-phk-100-karyawan-mobile-premier-league-resmi-tinggalkan-indonesia"
+   ]
+  },
+  {
+   "name": "Beres.id",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Home services — marketplace for cleaning, repair and moving services (Kaodim group's Indonesian arm)",
+   "city": "Kota Depok",
+   "founded": "2016",
+   "ended": "2022-06",
+   "why": "Beres.id was the Indonesian home-services marketplace of Malaysia's Kaodim group, which opened its Indonesian office in February 2016. Co-founder and CEO Choong Fui Yu announced on the site that it would stop operating from 1 July 2022 (last day of service 30 June), citing pandemic disruption, labour shortages and high operating costs. Funding was raised at Kaodim group level, so no Indonesian figure is recorded. The city is the one its LinkedIn page gives; no PT name was found, and beres.id no longer resolves.",
+   "sources": [
+    "https://money.kompas.com/read/2022/06/08/114313326/startup-tumbang-lagi-kali-ini-giliran-beresid-pamit-mulai-30-juni",
+    "https://www.cnnindonesia.com/ekonomi/20220630145117-92-815591/beresid-resmi-pamit-berhenti-operasi-mulai-hari-ini",
+    "https://www.cnnindonesia.com/ekonomi/20220610080753-92-807184/beresid-tutup-startup-tumbang-tambah-panjang",
+    "https://www.kompas.tv/bisnis/297259/startup-beres-id-tutup-tidak-kuat-terdampak-pandemi-2-tahun",
+    "https://hybrid.co.id/post/beres-direct/",
+    "https://linkedin.com/company/beres.id"
+   ]
+  },
+  {
+   "name": "UangTeman",
+   "legal_name": "PT Digital Alpha Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Fintech — short-term online consumer lending",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2022-03",
+   "why": "UangTeman, launched in April 2015 by Aidil Zulkifli, was one of Indonesia's first online consumer lenders (operating company PT Digital Alpha Indonesia; parent Digital Alpha Group Pte Ltd, Singapore). OJK revoked its licence and listed it as the one revocation in its register of licensed lenders dated 2 March 2022 (published 16 March); former staff said salaries and income tax had gone unpaid since late 2020, and FTI Consulting had been hired to restructure. Its August 2017 Series A of up to US$12M (K2 Venture Capital, Enspire, Alpha JWC, Draper Associates) mixed debt and equity without a published split, so no equity figure is recorded. uangteman.com now redirects to an unrelated gambling site.",
+   "sources": [
+    "https://www.cnnindonesia.com/ekonomi/20220317144150-78-772621/ojk-cabut-izin-uangteman-pinjol-legal-tinggal-102-per-2-maret",
+    "https://keuangan.kontan.co.id/news/ojk-cabut-izin-uangteman-jumlah-pinjol-berizin-menjadi-102",
+    "https://katadata.co.id/digital/fintech/6232d9da29f84/ojk-cabut-izin-fintech-uangteman-akibat-tak-bayar-gaji-hingga-pajak",
+    "https://www.finsmes.com/2017/08/uangteman-raises-up-to-us12m-in-series-a-funding.html",
+    "https://swa.co.id/read/157605/uangteman-tancap-gas-di-2017"
+   ]
+  },
+  {
+   "name": "Sorabel (Sale Stock)",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — women's fashion e-commerce (formerly Sale Stock)",
+   "city": "Jakarta",
+   "founded": "2014",
+   "ended": "2020-07",
+   "funding_usd_m": 27,
+   "why": "Sale Stock, founded in 2014 and renamed Sorabel in 2019, was one of Indonesia's largest fashion e-commerce sites. Management told staff in a letter that employment would end on 30 July 2020 and that the company would file for liquidation after the pandemic cut sales and left it without a cash buffer; co-founder Jeffrey Yuwono confirmed the closure. The funding figure is the US$27M Series B+ announced in Aug 2017 (Gobi Partners and Golden Equator Capital); the 2019 pre-Series C (Kejora-Intervest, Shift) was undisclosed and earlier rounds are not summed. The legal entity was not confirmed from a primary source, and sorabel.com now redirects to an unrelated site.",
+   "sources": [
+    "https://kr-asia.com/indonesian-fashion-e-commerce-site-sorabel-files-for-liquidation",
+    "https://hybrid.co.id/post/sorabel-tutup-operasional-akhir-juli-2020/",
+    "https://www.ekrut.com/media/sorabel-resmi-tutup-akhir-juli-karena-covid-19",
+    "https://www.digitalnewsasia.com/startups/sale-stock-raises-us27mil-funding",
+    "https://katadata.co.id/digital/teknologi/5e9a5191ec2b7/sorabel-dapat-pendanaan-pra-seri-c-dari-modal-ventura-asal-korea",
+    "https://industri.kontan.co.id/news/sale-stock-luncurkan-layanan-baru-untuk-dorong-bisnisnya"
+   ]
+  },
+  {
+   "name": "Airy",
+   "legal_name": "PT Airy Nest Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Travel — budget-hotel network and online booking (virtual hotel operator)",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2020-05",
+   "why": "Airy (Airy Rooms) partnered with budget hotels across Indonesia and sold rooms and flights through its own app; it was set up in 2015 by former Traveloka staff. The operator, PT Airy Nest Indonesia, stopped all operations including its property partnerships on 31 May 2020 because of the pandemic, and CEO Louis Alfonso Kodoatie confirmed that hundreds of staff were let go. airyrooms.com still shows only a farewell page ('Terima kasih Indonesia, Airy mohon pamit!', checked 2026-09-28). It never announced a priced funding round, so no figure is recorded.",
+   "sources": [
+    "https://www.antaranews.com/berita/1493896/airy-rooms-berhenti-beroperasi-akhir-bulan-ini",
+    "https://www.idntimes.com/business/economy/airy-rooms-tutup-seluruh-operasional-akhir-bulan-ini-00-jbjwl-j1hhm7",
+    "https://www.cnbcindonesia.com/tech/20200515102431-37-158717/airy-rooms-setop-beroperasi-ratusan-karyawan-jadi-korban-phk",
+    "https://www.kompas.com/tren/read/2020/05/08/134404765/kiprah-airy-rooms-dirintis-2015-tutup-permanen-31-mei-2020-akibat-pandemi",
+    "https://airyrooms.com/"
+   ]
+  },
+  {
+   "name": "Stoqo",
+   "legal_name": "PT Stoqo Teknologi Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — B2B marketplace supplying rice, oil, flour and fresh ingredients to small restaurants",
+   "city": "Jakarta",
+   "founded": "2017",
+   "ended": "2020-04",
+   "why": "Stoqo sold staple and fresh ingredients to small food businesses and employed about 250 people (Bloomberg). In late April 2020 it posted a notice on stoqo.com that it was stopping operations after COVID-19 restrictions cut restaurant demand; the notice called the stop temporary, its last day of operation was 22 April 2020 (CNBC) and it never reopened. Its Series A (Dec 2018, Monk's Hill Ventures and Accel) was undisclosed, so no funding figure is recorded. Founding year is 2017 per the company's job-board profile; PitchBook gives 2016.",
+   "sources": [
+    "https://peluangusaha.kontan.co.id/news/efek-psbb-penjual-bahan-pokok-online-stoqo-tutup-operasi-sementara",
+    "https://www.bloomberg.com/news/articles/2020-04-29/indonesian-startup-stoqo-becomes-latest-casualty-of-the-virus",
+    "https://www.compasslist.com/insights/fb-supplier-stoqo-collapses-a-casualty-of-covid-19-restaurant-closures-in-indonesia",
+    "https://www.cnbcindonesia.com/tech/20220923131507-37-374463/incaran-konglomerat-5-startup-sayur-buah-kini-tutup-layanan",
+    "https://www.dealstreetasia.com/stories/stoqo-monks-hill-accel-114393",
+    "https://triloker.com/en/company/detail/25102"
+   ]
+  },
+  {
+   "name": "Qlapa",
+   "legal_name": "PT Qlapa Kreasi Bangsa",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — online marketplace for Indonesian handmade crafts",
+   "city": "Jakarta Barat",
+   "founded": "2015",
+   "ended": "2019-03",
+   "why": "Qlapa was a marketplace for locally made handicrafts, founded in 2015 by Benny Fajarai and Fransiskus Xaverius and run by PT Qlapa Kreasi Bangsa. Management announced on its site and social accounts that the service closed on Saturday 2 March 2019 because it could not become a profitable, sustainable business. Its seed round (Global Founders Capital, Ideosource, Jan 2016) and Series A led by Aavishkaar Frontier Funds (Mar 2017) were both undisclosed, so no funding figure is recorded. qlapa.com no longer resolves (checked 2026-09-28).",
+   "sources": [
+    "https://www.cnbcindonesia.com/tech/20190304095607-37-58660/duh-startup-marketplace-kerajinan-tangan-ri-ini-harus-tutup",
+    "https://hybrid.co.id/post/qlapa-resmi-tutup/",
+    "https://youngster.id/news/qlapa-marketplace-produk-kerajinan-tutup/",
+    "https://www.digitalnewsasia.com/startups/qlapa-aims-triple-skus-crafters-after-closing-series-funding",
+    "https://sg.news.yahoo.com/qlapa-raises-seed-funding-gfc-ideosource-budi-setiadharma-040927680.html"
    ]
   }
  ]

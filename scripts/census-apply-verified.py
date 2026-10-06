@@ -10,8 +10,9 @@ checked one by one. This script does the boring, dangerous part carefully:
   - dedupes on a normalised name AND on the legal entity, so "Sinbad" does not
     land twice as "Sinbad (Horizon Group)", and skips anything already in the
     `removed` register,
-  - refuses records that are not accept=true, have no kota, or claim a kota
-    outside Greater Jakarta,
+  - refuses records that are not accept=true or have no kota (any Indonesian
+    kota since the census went nationwide on 28 Sep 2026; it used to be
+    Greater Jakarta only),
   - assigns a stable slug id and stamps provenance (`added`, `source_batch`).
 
     python3 scripts/census-apply-verified.py <verified.json> [--dry-run]
@@ -22,9 +23,6 @@ from datetime import date
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 RAW = os.path.join(ROOT, 'data', 'census-raw.json')
-
-GREATER_JAKARTA = re.compile(
-    r'jakarta (pusat|selatan|barat|timur|utara)|^jakarta$|bogor|depok|tangerang|bekasi', re.I)
 
 FIELDS = ['name', 'legal_name', 'sector', 'in_dki', 'hq_address', 'kecamatan', 'kota', 'url',
           'funding_total_usd_m', 'last_round', 'last_round_year', 'valuation_usd_m',
@@ -68,8 +66,10 @@ def main():
         if norm(nm) in known or norm(r.get('legal_name')) in known:
             skipped.append((nm, 'already in the census (or already removed)')); continue
         kota = r.get('kota') or ''
-        if not GREATER_JAKARTA.search(kota):
-            skipped.append((nm, f'kota outside Greater Jakarta: {kota}')); continue
+        # Nationwide since 28 Sep 2026: any Indonesian kota is in scope. The kota is
+        # still required — lib/metros1001.js files a row with none under Jakarta.
+        if not kota.strip():
+            skipped.append((nm, 'no kota recorded')); continue
         rec = {k: r.get(k) for k in FIELDS if k in r}
         rec['name'] = nm
         rec['id'] = slug(nm)

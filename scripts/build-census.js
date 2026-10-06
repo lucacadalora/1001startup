@@ -8,8 +8,11 @@
 const fs = require('fs');
 const path = require('path');
 
-const RAW = path.join(__dirname, '..', 'data', 'census-raw.json');
-const OUT = path.join(__dirname, '..', 'public', 'data', 'census.json');
+const RAW = process.env.CENSUS_RAW || path.join(__dirname, '..', 'data', 'census-raw.json');
+/* The server serves public/data/census.json by mtime, so a normal build IS a
+   publish. CENSUS_OUT=/tmp/x.json builds somewhere else for a dry run, and also
+   skips the /model equation rebuild below (it would bake the test totals in). */
+const OUT = process.env.CENSUS_OUT || path.join(__dirname, '..', 'public', 'data', 'census.json');
 
 /* ORDERED: first regex that matches wins, so a sector string's wording decides
    its bucket — 'e-commerce courier' lands in Commerce, not Logistics, and
@@ -94,22 +97,32 @@ const perWorker = (key) => (m.gva_per_worker_idr_m_by_sector && m.gva_per_worker
 
 /* Greater Jakarta is first-class (Luca, Aug 29): Bodetabek companies rank
    alongside DKI ones — in_dki stays on each record for map/rollup use.
-   BANDUNG (Luca, Aug 30): the census now covers a second metro, so every row
-   also carries `metro`. It is DERIVED from kota rather than stored on 300+
-   rows: the map loads one city's boundaries at a time and needs to know which
-   companies belong to the city on screen, and a rollup needs to be able to say
-   "Greater Jakarta 304, Bandung 16" without re-deriving the rule in three
-   places. BALI (Luca, Aug 31): a third metro — Sarbagita kota strings map to
-   'bali'. Anything in neither set is Greater Jakarta, still the census's
-   default ground. */
-const BANDUNG_KOTA = new Set(['Bandung', 'Cimahi', 'Kabupaten Bandung', 'Kabupaten Bandung Barat']);
-const BALI_KOTA = new Set(['Denpasar', 'Kabupaten Badung', 'Kabupaten Gianyar', 'Kabupaten Tabanan']);
+   BANDUNG (Luca, Aug 30) and BALI (Aug 31) made `metro` a per-row field, DERIVED
+   from kota rather than stored. NATIONWIDE (Luca, 28 Sep 2026): the census covers
+   all of Indonesia, and the kota -> metro rule now lives in ONE table,
+   lib/metros1001.js, which every view reads too. The old rule sent any kota
+   outside the Bandung and Bali sets to 'jakarta', so a Surabaya row would have
+   been counted as Greater Jakarta without an error. */
+const METRO = require('../lib/metros1001');
 const all = [];
 const nearby = [];
 for (const c of raw.companies) {
   const [key, label] = sectorKey(c.sector);
   c.sector_key = key;
   c.sector_label = label;
+  if (c.kota) {
+    c.kota = c.kota.replace(/^kota\s+(administrasi\s+)?/i, '')
+      .replace(/^south jakarta$/i, 'Jakarta Selatan').replace(/^central jakarta$/i, 'Jakarta Pusat')
+      .replace(/^west jakarta$/i, 'Jakarta Barat').replace(/^east jakarta$/i, 'Jakarta Timur')
+      .replace(/^north jakarta$/i, 'Jakarta Utara')
+      /* a province suffix, "(Banten)" or "(Jawa Timur)": the kota is the join key
+         with the map's boundary names, so it must be the bare name */
+      .replace(/\s*\([^()]*\)$/, '')
+      .replace(/^south tangerang$/i, 'Tangerang Selatan');
+  }
+  c.metro = METRO.of(c.kota);
+  const prov = c.province || METRO.province(c.kota, c.metro);
+  if (prov) c.province = prov;
   /* frontline pricing (Luca, Aug 31: full payrolls back "with caveat/split"):
      a payroll marked frontline — couriers, store crews, field officers — is
      priced at the BPS national average (method.frontline_gva_per_worker_idr_m),
@@ -118,21 +131,17 @@ for (const c of raw.companies) {
      honest: FORE's output stays under its own audited revenue. */
   const fa = m.frontline_gva_per_worker_idr_m;
   const ws = c.workforce_split;
-  c.est_gva_idr_bn = !c.employees_est ? null
+  /* Outside the anchored metros the anchors are someone else's productivity: a
+     Yogyakarta payroll priced at DKI Jakarta's sector average would overstate it
+     several-fold. The cell says "not estimated yet" (views/gva.js) until regional
+     anchors exist; the headcount itself is untouched and still counts as jobs. */
+  c.output_withheld = (c.employees_est && !METRO.anchored(c.metro)) ? 'regional_anchor' : undefined;
+  c.est_gva_idr_bn = (!c.employees_est || c.output_withheld) ? null
     : (fa && ws && ws.office != null && ws.frontline != null)
       ? Math.round((ws.office * perWorker(key) + ws.frontline * fa) / 100) / 10
       : (fa && c.workforce_kind === 'frontline')
         ? Math.round((c.employees_est * fa) / 100) / 10
         : Math.round((c.employees_est * perWorker(key)) / 100) / 10;
-  if (c.kota) {
-    c.kota = c.kota.replace(/^kota\s+(administrasi\s+)?/i, '')
-      .replace(/^south jakarta$/i, 'Jakarta Selatan').replace(/^central jakarta$/i, 'Jakarta Pusat')
-      .replace(/^west jakarta$/i, 'Jakarta Barat').replace(/^east jakarta$/i, 'Jakarta Timur')
-      .replace(/^north jakarta$/i, 'Jakarta Utara')
-      .replace(/\s*\((banten|jawa barat|west java)\)$/i, '')
-      .replace(/^south tangerang$/i, 'Tangerang Selatan');
-  }
-  c.metro = BANDUNG_KOTA.has(c.kota) ? 'bandung' : BALI_KOTA.has(c.kota) ? 'bali' : 'jakarta';
   all.push(c);
 }
 const val = (x) => (x === null || x === undefined ? -1 : x);
@@ -294,23 +303,29 @@ const out = {
       .sort((a, b) => (a.year || 9999) - (b.year || 9999) || a.name.localeCompare(b.name)),
   },
   by_kota: group(all, (c) => (c.kota || 'unknown').toLowerCase(), (c) => c.kota || 'Unlocated'),
-  /* one row per metro the census covers — what the map's city switch and the
-     landing's scope line both read, so neither re-implements the kota rule. */
-  by_metro: [
-    { id: 'jakarta', name: 'Greater Jakarta' },
-    { id: 'bandung', name: 'Bandung' },
-    { id: 'bali', name: 'Bali' },
-  ].map((M) => {
-    const rows = all.filter((c) => c.metro === M.id);
+  /* one row per metro the census covers — what the map's city switch, the city
+     pages and the landing's scope line all read, so none re-implements the kota
+     rule. Derived from the rows (nationwide since 28 Sep 2026), largest first;
+     `mapped` / `anchored` say whether the map draws it and whether its output is
+     estimated (lib/metros1001.js). */
+  by_metro: [...new Set(all.map((c) => c.metro))].map((id) => {
+    const rows = all.filter((c) => c.metro === id);
+    const I = METRO.info(id, (rows.find((c) => c.kota) || {}).kota);
     return {
-      ...M,
+      id,
+      name: I.en,
+      name_id: I.idn,
+      mapped: I.mapped,
+      anchored: I.anchored,
+      /* Greater Jakarta spans DKI Jakarta, Banten and Jawa Barat: no one province */
+      province: id === 'jakarta' ? null : ((rows.find((c) => c.province) || {}).province || null),
       count: rows.length,
       jobs: sum(rows, 'employees_est'),
       funding_usd_m: Math.round(sum(rows, 'funding_total_usd_m') * 10) / 10,
       gva_idr_bn: Math.round(sum(rows, 'est_gva_idr_bn')),
       located: rows.filter((c) => c.lat && c.lon).length,
     };
-  }),
+  }).sort((a, b) => b.count - a.count || a.name.localeCompare(b.name)),
   /* scope: where the line is drawn and who falls outside it. Published for the
      same reason as yc_outside and the removals — a boundary that only exists in
      a script docstring reads to a visitor as a gap, which is exactly how the
@@ -333,8 +348,10 @@ const unclassified = counted.filter((c) => !c.valuation_kind);
 if (unclassified.length) console.warn(`  ! ${unclassified.length} valuation row(s) unclassified — run scripts/census-valuation.py: ${unclassified.map((c) => c.id).join(', ')}`);
 
 /* keep /model's baked equation SVGs quoting the same totals as the fresh census */
-try {
-  require('child_process').execSync(`node ${JSON.stringify(path.join(__dirname, 'build-model-tex.js'))}`, { stdio: 'inherit' });
-} catch (e) {
-  console.warn('build-model-tex.js failed — /model equations may quote stale totals:', e.message);
+if (!process.env.CENSUS_OUT) {
+  try {
+    require('child_process').execSync(`node ${JSON.stringify(path.join(__dirname, 'build-model-tex.js'))}`, { stdio: 'inherit' });
+  } catch (e) {
+    console.warn('build-model-tex.js failed — /model equations may quote stale totals:', e.message);
+  }
 }

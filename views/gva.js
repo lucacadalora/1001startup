@@ -36,6 +36,8 @@ function anchorOf(c, m) {
    frontline separately; the line shows whichever arithmetic the build used. */
 function working(c, m, lang) {
   if (c.employees_est === null || c.employees_est === undefined) return null;
+  /* outside the anchored metros there is no arithmetic to show: see withheld() */
+  if (c.output_withheld) return null;
   const { rate, own } = anchorOf(c, m);
   const label = c.sector_label || (lang === 'id' ? 'default' : 'the default');
   const fa = m && m.frontline_gva_per_worker_idr_m;
@@ -110,6 +112,9 @@ function how(m, lang) {
       + ((m && m.frontline_gva_per_worker_idr_m)
         ? ` Daftar gaji yang ditandai frontline — kurir, kru gerai, petugas lapangan — dihargai pada anchor frontline nasional Rp ${fmt(m.frontline_gva_per_worker_idr_m)} juta (rata-rata seluruh ekonomi BPS), dan baris dengan rincian resmi menghargai bagian kantor dan garda depannya secara terpisah.`
         : '')
+      + ' Sensus mencakup seluruh Indonesia sejak 28 Sep 2026, tetapi output baru diestimasi untuk Jakarta Raya, '
+      + 'Bandung, dan Bali: menghargai daftar gaji di provinsi lain dengan anchor Jakarta akan membuatnya terlalu '
+      + 'tinggi, jadi baris-baris itu belum diberi angka sampai anchor regional dari PDRB provinsi BPS tersedia.'
     : 'No Indonesian startup publishes its value added, so the census estimates it: headcount × a '
       + 'gross-value-added-per-worker anchor for the company’s sector, derived from BPS DKI Jakarta’s '
       + 'PDRB and Sakernas tables and then capped and discounted so startups are not priced at '
@@ -120,7 +125,10 @@ function how(m, lang) {
       + 'no output at all rather than an imputed one.'
       + ((m && m.frontline_gva_per_worker_idr_m)
         ? ` A payroll marked frontline — couriers, store crews, field officers — prices at the national frontline anchor of Rp ${fmt(m.frontline_gva_per_worker_idr_m)} million (the BPS economy-wide average), and a row with a company-published split prices its office and frontline shares separately.`
-        : '');
+        : '')
+      + ' The census covers all of Indonesia since 28 Sep 2026, but output is estimated only for Greater '
+      + 'Jakarta, Bandung and Bali: pricing a payroll in another province at Jakarta’s anchors would '
+      + 'overstate it, so those rows carry no figure until regional anchors from BPS provincial accounts exist.';
   return { lo, hi, def, mult: (m && m.indirect_multiplier) || null, sectors: Object.keys(by).length, line };
 }
 
@@ -193,13 +201,38 @@ function noteFrag(lang) {
   };
 }
 
+/* Why a row with a headcount has no output figure (nationwide scope, 28 Sep
+   2026). The anchors are BPS DKI Jakarta sector averages; pricing a payroll in
+   another province at them would overstate it, so the cell stays empty and says
+   so rather than printing a Jakarta-priced number. `city` is the metro's name. */
+function withheld(c, lang, city) {
+  if (!c.output_withheld) return null;
+  const where = city || c.kota || (lang === 'id' ? 'kota ini' : 'this city');
+  return lang === 'id'
+    ? {
+      t: 'Belum diestimasi untuk kota ini',
+      b: `Anchor output sensus adalah angka nilai tambah per pekerja dari BPS DKI Jakarta, per sektor. `
+        + `Memakainya untuk perusahaan di ${where} akan membuat angkanya terlalu tinggi, jadi sel ini sengaja `
+        + `dibiarkan kosong. Anchor regional dari PDRB provinsi BPS adalah langkah berikutnya. Jumlah pekerjanya `
+        + `tetap dihitung.`,
+    }
+    : {
+      t: 'Not estimated for this city yet',
+      b: `The census's output anchors are BPS DKI Jakarta value-added-per-worker figures, by sector. `
+        + `Using them for a company in ${where} would overstate it, so this cell is left empty on purpose. `
+        + `Regional anchors from BPS provincial accounts come next. The headcount still counts as jobs.`,
+    };
+}
+
 /* Payload for the shared note panel on the table (public/js/1001.js). Plain
    text: the panel sets textContent, never innerHTML. The caveat's `why` is
    census data and stays as written.
    `~key` means "look this up in the page's fragment dictionary"; `sf` is a
    fragment appended to the body, `lf` a standing link set. The row-specific
    arithmetic now leads and the general definition follows it. */
-function markNote(c, m, lang) {
+function markNote(c, m, lang, city) {
+  const wh = withheld(c, lang, city);
+  if (wh) return { k: 'gvana', t: wh.t, b: wh.b, m: lang === 'id' ? 'Belum ada anchor regional' : 'No regional anchor yet', lf: 'gl' };
   const w = working(c, m, lang);
   if (!w) return null;
   const cav = c.output_caveat;
@@ -215,4 +248,4 @@ function markNote(c, m, lang) {
   };
 }
 
-module.exports = { anchorOf, working, how, markNote, noteFrag, t, WHAT, SHORT, LIMITS, fmt };
+module.exports = { anchorOf, working, withheld, how, markNote, noteFrag, t, WHAT, SHORT, LIMITS, fmt };

@@ -257,12 +257,12 @@ function coverage({ data, lang = 'en' }) {
     </div>
     ${(ED.pending || []).length ? `
     <div class="eyebrow sub"><span class="sq"></span>${L('ON THE ROSTER, NOT YET IN THE CENSUS', 'DI ROSTER, BELUM MASUK SENSUS')} · ${(ED.pending || []).length}</div>
-    <p class="lede sm">${L(`Each still needs the same check every counted row gets — is it headquartered in Greater Jakarta,
-    the Bandung basin or south Bali (Sarbagita), and is it operating today. Some plainly sit elsewhere (Singapore, Surabaya); others look like
-    genuine gaps in this census. Listed here so the shortfall is visible rather than quietly missing.`,
+    <p class="lede sm">${L(`Each still needs the same check every counted row gets — is it headquartered in Indonesia
+    (the census has covered the whole country since 28 Sep 2026), and is it operating today. Some plainly sit abroad
+    (Singapore); others look like genuine gaps in this census. Listed here so the shortfall is visible rather than quietly missing.`,
     `Masing-masing masih harus melewati pemeriksaan yang sama dengan setiap baris terhitung — apakah berkantor pusat
-    di Jabodetabek, cekungan Bandung, atau Bali bagian selatan (Sarbagita), dan apakah masih beroperasi hari ini.
-    Sebagian jelas berada di tempat lain (Singapura, Surabaya); sebagian lagi tampak seperti celah nyata sensus ini.
+    di Indonesia (sensus mencakup seluruh negeri sejak 28 Sep 2026), dan apakah masih beroperasi hari ini.
+    Sebagian jelas berada di luar negeri (Singapura); sebagian lagi tampak seperti celah nyata sensus ini.
     Dicantumkan di sini agar kekurangannya terlihat, bukan hilang diam-diam.`)}</p>
     <div class="tablewrap out"><table>
       <thead><tr><th>${L(`On Endeavor's roster`, 'Di roster Endeavor')}</th><th>${L('What Endeavor says it does', 'Bisnisnya menurut Endeavor')}</th></tr></thead>
@@ -325,7 +325,7 @@ function coverage({ data, lang = 'en' }) {
   const scopeSection = (SC.outside || []).length ? `
   <section class="wrap" id="scope">
     <div class="eyebrow"><span class="sq"></span>${L('WHERE THE LINE IS', 'BATAS CAKUPAN')}</div>
-    <p class="lede">${SC.rule ? esc(SC.rule) : L('A company is counted when it was built or bought by tech or venture money rather than run as an incumbent’s product line, when it is its own legal entity, and when a headcount can be sourced.',
+    <p class="lede">${lang === 'id' && SC.rule_id ? esc(SC.rule_id) : SC.rule ? esc(SC.rule) : L('A company is counted when it was built or bought by tech or venture money rather than run as an incumbent’s product line, when it is its own legal entity, and when a headcount can be sourced.',
     'Sebuah perusahaan dihitung ketika ia dibangun atau dibeli oleh uang teknologi atau modal ventura — bukan dijalankan sebagai lini produk pemain lama — ketika ia entitas hukumnya sendiri, dan ketika jumlah pekerjanya bisa ditelusuri sumbernya.')}
     ${L(`The ${SC.outside.length} names below were considered against that rule and are not counted — the decision is published
     here so a deliberate exclusion cannot be mistaken for a gap.`,

@@ -37,7 +37,8 @@ const NAV = [
   { key: 'investors', label: 'Investors', id: 'Investor', href: '/investors' },
   {
     key: 'census', label: 'Census', id: 'Sensus', items: [
-      { label: 'Sectors', id: 'Sektor', desc: 'The census grouped by what companies build', id_desc: 'Sensus dikelompokkan menurut apa yang dibangun tiap perusahaan', href: '/coverage#sectors' },
+      { label: 'Sectors', id: 'Sektor', desc: 'The census grouped by what companies build', id_desc: 'Sensus dikelompokkan menurut apa yang dibangun tiap perusahaan', href: '/sector' },
+      { label: 'Billion-dollar startups', id: 'Startup unicorn', desc: 'Every census company valued at US$1B or more', id_desc: 'Perusahaan sensus bervaluasi US$1 miliar ke atas', href: '/unicorn' },
       { label: 'Valuation', id: 'Valuasi', desc: 'What the combined figure contains', id_desc: 'Isi angka valuasi gabungan', href: '/coverage#valuation' },
       { label: 'Y Combinator', id: 'Y Combinator', desc: 'The Indonesian cohort, batch by batch', id_desc: 'Kohor Indonesia, batch demi batch', href: '/coverage#yc' },
       { label: 'Endeavor', id: 'Endeavor', desc: 'The Endeavor Entrepreneur companies', id_desc: 'Perusahaan para Endeavor Entrepreneur', href: '/coverage#endeavor' },

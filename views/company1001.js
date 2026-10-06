@@ -29,6 +29,7 @@ const CHAIN = require('./chain1001'); // the supply-chain block, same renderer a
 const { slugInv, parseInv } = require('./investors1001'); // chips link to /investor/<slug>
 const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
+const METRO = require('../lib/metros1001'); // kota -> metro, nationwide (28 Sep 2026)
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
 /* No ?city= on this link: the map is one map of Indonesia now, so a pin is a
@@ -117,7 +118,19 @@ function peers(c, companies) {
    an answer engine (and a skimming reader) actually quotes. Assembled ONLY
    from fields the row carries; a row with no figures gets no sentence. The
    ledger below stays the sourced detail; this is its readable mirror. */
-function sumLine(c, lang) {
+/* The census build date, as a reader would write it: "1 Oct 2026". */
+function asOfDate(data, lang) {
+  const t = data && Date.parse(data.generated);
+  if (!t) return '';
+  return new Date(t).toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB',
+    { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Jakarta' });
+}
+
+/* The answer sentence. Answer engines lift a sentence like this whole, so it
+   names its source and date itself: an assistant quoting it says "according to
+   1001startup.id" without having to be told (Luca, 4 Oct: answers should say
+   "according to 1001startup.id" and link it). */
+function sumLine(c, lang, asOf) {
   const id = lang === 'id';
   const parts = [];
   if (c.employees_est !== null && c.employees_est !== undefined) {
@@ -139,7 +152,20 @@ function sumLine(c, lang) {
   }
   if (!parts.length) return '';
   const tail = c.kota ? (id ? `; kantor pusatnya di ${esc(c.kota)}` : `; its head office is in ${esc(c.kota)}`) : '';
-  return `<p class="cp-sum">${esc(c.name)} ${parts.join(id ? '; ' : '; ')}${tail}.</p>`;
+  const lead = id
+    ? `Menurut sensus 1001startup.id${asOf ? ` (diperbarui ${esc(asOf)})` : ''}, `
+    : `According to the 1001startup.id census${asOf ? ` (updated ${esc(asOf)})` : ''}, `;
+  return `<p class="cp-sum">${lead}${esc(c.name)} ${parts.join(id ? '; ' : '; ')}${tail}.</p>`;
+}
+
+/* How to cite this page, ready to copy: the name, the census, the date, the link. */
+function citeLine(c, lang, asOf) {
+  const id = lang === 'id';
+  const url = `${I18N.ORIGIN}${id ? '/id' : ''}/company/${encodeURIComponent(c.id)}`;
+  const shown = url.replace(/^https?:\/\//, '');
+  return `<p class="cp-cite"><span class="cp-cite-k">${id ? 'Kutip sebagai' : 'Cite as'}</span> ${esc(c.name)}, ${id
+    ? 'sensus startup Indonesia 1001startup.id' : '1001startup.id, the census of Indonesian startups'}${asOf
+    ? `, ${id ? 'diperbarui' : 'updated'} ${esc(asOf)}` : ''}. <a href="${esc(url)}">${esc(shown)}</a></p>`;
 }
 
 function card({ c, data, standalone, links, lang = 'en' }) {
@@ -193,14 +219,21 @@ function card({ c, data, standalone, links, lang = 'en' }) {
       ${c.endeavor ? `<span class="cp-tag cp-ed" title="${esc(c.endeavor_note || (c.endeavor_entrepreneurs || []).join(', '))}">Endeavor</span>` : ''}
       ${c.antler ? `<span class="cp-tag cp-an" title="${esc(c.antler_note || L('Antler-funded', 'Didanai Antler'))}">Antler</span>` : ''}
       ${c.bootstrapped ? '<span class="cp-tag">Bootstrapped</span>' : ''}
-      ${c.in_dki === false ? `<span class="cp-tag">${/bandung|cimahi/i.test(c.kota || '') ? 'Bandung' : /denpasar|badung|gianyar|tabanan/i.test(c.kota || '') ? 'Bali' : 'Bodetabek'}</span>` : ''}
+      ${/* the city, linked to its /city page. Greater Jakarta keeps its old reading:
+           no tag inside DKI, "Bodetabek" in the ring around it. */
+        c.metro && c.metro !== 'jakarta'
+          ? `<a class="cp-tag" href="${PF}/city/${esc(c.metro)}" title="${L('All companies in this city', 'Semua perusahaan di kota ini')}">${esc(METRO.name(c.metro, lang, c.kota))}</a>`
+          : c.in_dki === false ? `<a class="cp-tag" href="${PF}/city/jakarta" title="${L('All companies in Greater Jakarta', 'Semua perusahaan di Jakarta Raya')}">Bodetabek</a>` : ''}
       <span class="cp-tag cp-rank">${L('Census', 'Sensus')} #${esc(c.rank)}${total ? ` ${L('of', 'dari')} ${total}` : ''}</span>
     </div>
     ${c.sector ? `<p class="cp-what">${esc(c.sector)}</p>` : ''}
-    ${sumLine(c, lang)}
+    ${sumLine(c, lang, asOfDate(data, lang))}
+    ${standalone ? citeLine(c, lang, asOfDate(data, lang)) : ''}
     <div class="cp-act">
       ${c.url ? `<a class="cp-btn cp-primary" href="${esc(c.url)}" target="_blank" rel="noopener">${L('Visit website', 'Kunjungi situs')} <span aria-hidden="true">↗</span></a>` : ''}
-      ${(c.lat && c.lon) ? `<a class="cp-btn" href="${PF}${MAP}?company=${encodeURIComponent(c.id)}" target="_blank" rel="noopener">${L('See on the map', 'Lihat di peta')} <span aria-hidden="true">↗</span></a>` : ''}
+      ${/* only where the map draws the company: outside the mapped metros a pin
+           would stand on blank paper, so the map leaves those rows out for now */
+        (c.lat && c.lon && METRO.mapped(c.metro)) ? `<a class="cp-btn" href="${PF}${MAP}?company=${encodeURIComponent(c.id)}" target="_blank" rel="noopener">${L('See on the map', 'Lihat di peta')} <span aria-hidden="true">↗</span></a>` : ''}
     </div>
   </header>
 
@@ -226,6 +259,8 @@ function card({ c, data, standalone, links, lang = 'en' }) {
         ? ` — ${fmt(c.workforce_split.office)} <span class="cp-u">${L('office', 'kantor')}</span> · ${fmt(c.workforce_split.frontline)} <span class="cp-u">${L('frontline', 'garda depan')}</span>`
         : (c.workforce_kind === 'frontline' ? ' <span class="cp-est">frontline</span>' : '')}${srcLink(c.employees_src)}`,
       c.employees_asof ? `${L('Read', 'Dibaca')} ${esc(c.employees_asof)}` : L('Date of this figure not recorded', 'Tanggal angka ini tidak tercatat'))}
+    ${c.output_withheld ? factRow('Output', `<span class="cp-none">${esc(GVA.withheld(c, lang, METRO.name(c.metro, lang, c.kota)).t)}</span>`,
+      esc(GVA.withheld(c, lang, METRO.name(c.metro, lang, c.kota)).b)) : ''}
     ${factRow('Output', est, ow
       ? (lang === 'id'
         ? `${fmt(ow.people)} pekerja × Rp ${fmt(ow.rate)} juta nilai tambah per pekerja — ${
@@ -369,13 +404,26 @@ function page({ c, data, links, lang = 'en', og }) {
     ld.address = { '@type': 'PostalAddress', addressCountry: 'ID' };
     if (c.hq_address) ld.address.streetAddress = c.hq_address;
     if (c.kota) ld.address.addressLocality = c.kota;
+    if (c.province) ld.address.addressRegion = c.province;
   }
-  const SEC = require('./browse1001').SECTORS[c.sector_key] || null;
-  const secName = SEC ? (lang === 'id' ? SEC.id : SEC.en) : (c.sector_label || L('Companies', 'Perusahaan'));
+  /* the structured trail uses the same words as the visible one below —
+     Google wants BreadcrumbList to match what the page shows */
+  const secName = c.sector_label || L('Companies', 'Perusahaan');
   const crumb = [{ name: '1001startup.id', path: '/' },
     { name: secName, path: '/sector/' + (c.sector_key || 'misc') },
     { name: c.name, path: '/company/' + c.id }];
+  /* The page itself: part of the census dataset, published and credited by
+     1001startup.id, dated by the census build. */
+  const pageUrl = `${I18N.ORIGIN}${PF}/company/${encodeURIComponent(c.id)}`;
+  const web = { '@context': 'https://schema.org', '@type': 'WebPage', url: pageUrl, name: c.name,
+    inLanguage: lang === 'id' ? 'id-ID' : 'en',
+    about: { '@type': 'Organization', name: c.name },
+    isPartOf: { '@type': 'Dataset', name: lang === 'id' ? 'Sensus Startup Indonesia' : 'The Indonesian Startup Census', url: I18N.ORIGIN + PF + '/' },
+    publisher: { '@type': 'Organization', name: '1001startup.id', url: I18N.ORIGIN + '/' },
+    creditText: '1001startup.id' };
+  if (data && Date.parse(data.generated)) web.dateModified = new Date(Date.parse(data.generated)).toISOString().slice(0, 10);
   const extraHead = `\n<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`
+    + `\n<script type="application/ld+json">${JSON.stringify(web).replace(/</g, '\\u003c')}</script>`
     + SCHEMA.breadcrumbLd(lang, crumb);
   return SHELL(
     `<nav class="crumb"><a href="${PF}/">1001startup.id</a> / <a href="${PF}/sector/${esc(c.sector_key || 'misc')}">${esc(c.sector_label || L('Companies', 'Perusahaan'))}</a> / ${esc(c.name)}</nav>

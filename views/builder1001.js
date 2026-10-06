@@ -44,7 +44,10 @@ const CHEV_L = '<svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="tru
 
 function panel(lang) {
   const L = I18N.mkL(lang);
-  const ext = 'target="_blank" rel="noopener"';
+  /* nofollow: this card sits on every page, and Google's link-spam policy
+     names sitewide template links between related sites (RankMySEO report,
+     5 Oct 2026). The links stay for readers; they just do not vote. */
+  const ext = 'target="_blank" rel="noopener nofollow"';
   return `<link rel="stylesheet" href="/css/builder1001.css?v=${CSS_V}">
 <div class="b1" id="b1" hidden>
   <aside class="b1-card" id="b1-card" aria-label="${esc(L('Who is building 1001startup.id', 'Siapa yang membangun 1001startup.id'))}" inert>

@@ -1,0 +1,1942 @@
+RankMySEO                                                      SEO REPORT AND STRATEGY
+
+
+
+
+  CLIENT REPORT
+
+
+
+
+SEO report and strategy:
+1001startup.id
+Keywords, on-page fixes, a topical map, pillar pages, a safe link plan
+and a 30/60/90-day plan.
+
+
+
+
+P R E PA R E D F O R                       P R E PA R E D BY
+
+Luca Cada Lora, 1001startup.id             RankMySEO
+
+DAT E                                      DATA DAT E
+
+5 October 2026                             5 Oct 2026 (WIB, UTC+7)
+1001startup.id · SEO report and strategy
+
+
+
+
+Contents
+
+1. Summary ...................................................................................................................................... 4
+     1.1 Main answer and first 3 actions ........................................................................................................................... 4
+     1.2 Where the site is today ..................................................................................................................................... 4
+     1.3 The main gap ....................................................................................................................................................5
+     1.4 What I recommend ...........................................................................................................................................5
+     1.5 Top 10 keywords to start with .............................................................................................................................5
+
+
+2. Keyword research ......................................................................................................................... 6
+     2.1 Sources and method......................................................................................................................................... 6
+     2.2 Seed list .......................................................................................................................................................... 6
+     2.3 Priority list (44 keywords) .................................................................................................................................. 6
+     2.4 Notes on demand ............................................................................................................................................ 7
+     2.5 Where the site shows up today .......................................................................................................................... 7
+     2.6 SERP checks (who ranks) .................................................................................................................................. 7
+     2.7 AI answer engines (GEO and AEO) ................................................................................................................... 10
+
+
+3. On-page fixes ............................................................................................................................. 12
+     3.1 What I checked ............................................................................................................................................... 12
+     3.2 Site-wide fixes ............................................................................................................................................... 12
+     3.3 Fixes per template ......................................................................................................................................... 13
+     3.4 Thin pages and quality gates ........................................................................................................................... 13
+
+
+4. Topical map ................................................................................................................................. 15
+
+
+5. Pillar content plan ........................................................................................................................ 18
+     P1. Sensus startup Indonesia (/id/) ........................................................................................................................ 18
+     P2. Venture capital Indonesia (/id/investors) .......................................................................................................... 18
+     P3. Startup unicorn Indonesia (/id/unicorn)............................................................................................................ 18
+     P4. Pendanaan startup Indonesia (new: /id/research/pendanaan-startup-indonesia) .............................................. 19
+     P5. Startup Indonesia yang bangkrut dan tutup (/id/closed) ................................................................................... 19
+     P6 (optional). Peta startup Indonesia (/id/map and city pages) ............................................................................... 19
+
+
+6. Safe link plan .............................................................................................................................. 20
+     6.1 Why not a classic PBN or a mass AI blog ........................................................................................................... 20
+     6.2 Start point (5 Oct 2026) ................................................................................................................................. 20
+     6.3 Links from your companies to the census (contextual, editorial) ......................................................................... 21
+     6.4 Sitewide template links on 1001startup.id ........................................................................................................ 22
+     6.5 When to use sponsored, nofollow or ugc ......................................................................................................... 23
+     6.6 Digital PR with census data ............................................................................................................................. 23
+     6.7 Keep the census topic clean ........................................................................................................................... 24
+
+
+7. 30/60/90-day action plan ........................................................................................................... 25
+
+
+
+
+Prepared by RankMySEO                                                                                                                                                  2 / 36
+1001startup.id · SEO report and strategy
+
+
+
+
+Next steps ....................................................................................................................................... 27
+     RankMySEO setup............................................................................................................................................... 27
+     How to give Search Console and Analytics access ................................................................................................. 27
+     Questions for you ................................................................................................................................................ 27
+     Decisions I will confirm before I start ..................................................................................................................... 28
+     Data gaps ........................................................................................................................................................... 28
+
+
+Appendix ........................................................................................................................................ 29
+     Appendix A. Priority keyword list (44 keywords) ..................................................................................................... 29
+     Appendix B. Fixes per template ............................................................................................................................ 31
+
+
+Sources .......................................................................................................................................... 35
+
+
+
+       READ ME          How to read this report
+        • All data is from 5 Oct 2026 (WIB) unless a line gives a different date.
+        • Keyword data comes from RankMySEO first. RankMySEO is my own SEO tool. Each number shows
+          its source and pull date.
+        • A number from a second tool has the label "third-party keyword tool".
+        • "KD" is RankMySEO difficulty. "SD" is third-party keyword tool difficulty. Both use a scale of 0 to
+          100.
+        • The label "estimate" marks a projection.
+        • The label [DATA FROM LUCA] marks data that I need from you.
+        • "ID" marks a SERP check from an Indonesian location. "non-ID" marks a SERP check from outside
+          Indonesia.
+        • References such as [E7] point to the Sources list at the end of this report.
+
+
+
+
+Prepared by RankMySEO                                                                                                                                                3 / 36
+1001startup.id · SEO report and strategy                                                                   1. Summary
+
+
+
+
+1. Summary
+
+1.1 Main answer and first 3 actions
+This report gives you my SEO strategy for 1001startup.id. It covers keywords, on-page fixes, a topical map,
+pillar pages, a safe link plan and a 30/60/90-day plan.
+
+The main answer: AI engines already read your site, but Google sends few clicks and the site has 0 backlinks
+(RankMySEO, 5 Oct 2026) [E2]. Start with the 3 actions below. Then add quality gates to the thin pages
+(section 3.4). Then build editorial links and digital PR from the census data. Do not use a classic PBN.
+
+Do these 3 actions first (from the days 1 to 30 rows of the plan in section 7):
+
+ 1. Give Search Console access for 1001startup.id (steps in Next steps).
+ 2. Change titles, H1s and intros on /id/ URLs. Start with home, /id/unicorn and /id/closed.
+ 3. Make /tentang. Then set rel "nofollow" on the template links to jatevo.ai and vantis.sh.
+
+
+1.2 Where the site is today
+  • 1001startup.id is a bilingual census. English pages use bare paths. Bahasa Indonesia pages use /id/ .
+  • The sitemap has 2,510 URLs, with 1,255 per language [E20].
+  • The census shows 387 companies and US$18.3 billion disclosed funding (208 of 387 rows) (https://
+    1001startup.id/id/, 5 Oct 2026, 11:13 WIB) [E13].
+  • It also shows US$20.6 billion combined valuation, from the 20 of 387 rows that have a recorded valuation
+    [E13].
+  • It also shows 154,980 jobs (estimate) and IDR 84.7 T output per year (estimate) [E13].
+  • RankMySEO, project "1001 startup Luca" (Indonesia, language id), gives these values (RankMySEO, 5 Oct
+    2026) [E2]:
+
+ Metric                                                 Value
+
+ Organic traffic                                        40
+
+ Organic keywords                                       63
+
+ Backlinks                                              0
+
+ Domain authority                                       1
+
+ On-page score                                          94.2
+
+
+
+  • 1001startup.id is outside the top 20 for "startup indonesia" and "perusahaan startup indonesia"
+    (RankMySEO, rank check 5 Oct 2026, 10:52 WIB) [E3] [E4].
+  • Your AI-traffic screenshot shows 47,242 page reads since 29 Aug 2026 [E19]. The split is in the table below.
+
+ Reader type                                                    Page reads                     Share
+
+ People                                                         11,517                         24%
+
+ AI answers                                                     1,103                          2%
+
+
+
+
+Prepared by RankMySEO                                                                                           4 / 36
+1001startup.id · SEO report and strategy                                                                  1. Summary
+
+
+
+
+ Reader type                                               Page reads                        Share
+
+ AI search and training                                    21,916                            46%
+
+ Search engines                                            12,706                            27%
+
+
+
+  • The same screenshot shows "ChatGPT answers someone (verified) 1,084" and "Claude 99" [E19].
+  • Pages that AI assistants opened most include, for example, / (618), /company/astro (18),
+      /company/traveloka (14), /company/nanovest (12), /company/ruangguru (11) and
+      /investor/gdp-venture (11) [E19].
+
+
+1.3 The main gap
+AI engines already read the site. Google search sends few clicks. The site has 0 backlinks in RankMySEO [E2].
+
+
+1.4 What I recommend
+ 1. Move Indonesian keyword targets to the /id/ tree.
+ 2. Add data-led pillar pages that use the census data first.
+ 3. Add quality gates on thin programmatic pages.
+ 4. Build links from your own companies (vantis.sh, jatevo.ai, oyenza.com) with editorial, in-body links.
+ 5. Build links with digital PR from the census data.
+ 6. Do not use a classic PBN. Section 6.1 gives the reasons, with Google sources.
+
+
+1.5 Top 10 keywords to start with
+I selected these keywords from volume, difficulty and data fit. This is my judgment.
+
+ #        Keyword                                                            Volume             KD / SD
+
+ 1        venture capital indonesia                                          4,400              KD 32
+
+ 2        startup indonesia                                                  590                KD 38
+
+ 3        unicorn indonesia                                                  320                KD 33
+
+ 4        perusahaan startup indonesia                                       140                KD 13
+
+ 5        startup unicorn indonesia                                          140                KD 19
+
+ 6        modal ventura                                                      1,600              SD 15
+
+ 7        pendiri gojek (needs a founder field)                              3,600              SD 25
+
+ 8        gdp venture                                                        880                SD 40
+
+ 9        startup di indonesia                                               210                SD 23
+
+ 10       pendanaan startup                                                  70                 KD 19
+
+
+
+KD values come from the RankMySEO keyword planner [E5]. SD values come from the third-party keyword
+tool [E7]. Volume is monthly searches in Indonesia, pulled on 5 Oct 2026.
+
+
+
+
+Prepared by RankMySEO                                                                                          5 / 36
+1001startup.id · SEO report and strategy                                                             2. Keyword research
+
+
+
+
+2. Keyword research
+
+2.1 Sources and method
+I used these sources, all in read-only mode:
+
+ 1. RankMySEO (https://rankmyseo.com). Country id, language id. Reports: project overview, tracked
+    keywords, competitors and keyword planner (5 seeds). Also rank comparison, Search Console and
+    Analytics data, and site audit [E1] to [E6].
+ 2. A third-party keyword tool. Location Indonesia (location ID 2360), language id. I used it only where
+    RankMySEO had no row [E7] [E8] [E9].
+ 3. Google autocomplete, hl=id, gl=id [E10].
+ 4. Google Trends, geo ID, last 12 months [E11].
+ 5. SERP checks (section 2.6).
+
+I did not run some RankMySEO reports:
+
+  • Site research: this report can start Auto-add, and Auto-add changes the project. I did not run it.
+  • Keyword gap and competitor traffic: the project has 0 saved competitors, so these reports have no input. I
+    did not add competitors, because that is a project change.
+  • Search Console and Analytics data: the project has no connected property yet. These reports returned no
+    data. See Next steps.
+
+Intent labels: "(tool)" is the intent from the tool. "( judged)" is my reading of the SERP and autocomplete.
+
+
+2.2 Seed list
+startup indonesia; daftar startup indonesia; perusahaan startup indonesia; unicorn indonesia; decacorn
+indonesia; venture capital indonesia; modal ventura; investor startup indonesia; pendanaan startup; valuasi
+[company]; pendiri [company]; startup [sector] indonesia; startup [kota]; startup bangkrut; jumlah startup di
+indonesia; data startup indonesia; berita startup indonesia; [investor] portofolio.
+
+
+2.3 Priority list (44 keywords)
+Rule: Indonesian keywords target the /id/ URL. The English URL stays as the hreflang alternate.
+
+The full list of 44 keywords, in 5 groups, is in Appendix A. Section 1.5 gives the top 10 to start with.
+
+
+      N OT E      City note
+       • "startup yogyakarta" (140, SD 21), "startup surabaya" (40) and "startup malang" (40) have demand
+         [E7].
+       • The census covers only Greater Jakarta (364), Bandung (17) and Bali (6) (https://1001startup.id/id/)
+         [E13].
+       • Do not make city pages for cities with no census rows. Add them when the census has rows there
+         [DATA FROM LUCA].
+
+
+
+
+Prepared by RankMySEO                                                                                             6 / 36
+1001startup.id · SEO report and strategy                                                            2. Keyword research
+
+
+
+
+2.4 Notes on demand
+  • A volume of 0 or 10 is a tool floor. It does not prove zero demand.
+  • Autocomplete shows demand for "investor startup indonesia". It is the first suggestion for "investor
+    startup" [E10].
+  • Autocomplete also shows "daftar startup indonesia" as the first suggestion for "daftar startup" [E10].
+  • News changes some volumes. Example: "pendiri gojek" shows 9,900 in 2025-09 and 14,800 in 2026-05,
+    then 3,600 in 2026-08 (third-party keyword tool, monthly series) [E21].
+
+Google autocomplete (hl=id, gl=id) adds year and status variants [E10]:
+
+startup indonesia 2026; startup indonesia yang bangkrut; startup indonesia yang sudah ipo; daftar startup
+unicorn indonesia; daftar startup di jogja; jumlah startup di indonesia 2026; data jumlah startup di indonesia;
+pendanaan startup 2026; valuasi gojek 2026; berapa valuasi traveloka; list venture capital indonesia;
+portofolio east ventures; startup tutup di indonesia.
+
+Google Trends (geo ID, 12 months, pulled 5 Oct 2026) gives relative values only, not volumes. Its top related
+query for "startup indonesia" is "perusahaan startup indonesia" [E11].
+
+
+2.5 Where the site shows up today
+  • The third-party keyword tool shows 63 keywords for 1001startup.id in Indonesia (domain overview, 5 Oct
+    2026) [E9].
+  • The sample rows that the tool returned are all on company, investor or chain pages. The examples below
+    come from that sample.
+
+ Keyword                         Position       URL
+
+ bababos                         13             /id/company/bababos
+
+ botani seed                     15             /company/botani-seed-indonesia
+
+ gdp venture                     20             /investor/gdp-venture (English URL)
+
+ 500 global                      28             /id/investor/500-global
+
+ alpha jwc                       52             /id/investor/alpha-jwc-ventures
+
+
+
+  • The same tool shows organic search traffic at 0 for each month from 2025-10 to 2026-08, and 40 in
+    2026-09 [E9].
+  • The programmatic pages are the entry point today. Protect them with the quality gates in section 3.4.
+
+
+2.6 SERP checks (who ranks)
+
+                                            Source and
+ Check                  Location            date             Finding
+
+ RankMySEO rank         ID                  RankMySEO,       1001startup.id is outside the top 20 for "startup
+ check                                      rank check 5     indonesia" and "perusahaan startup indonesia". The
+                                            Oct 2026,        project has no competitor rows, so the check gives no
+                                            10:52 WIB [E3]   SERP list.
+                                            [E4]
+
+
+
+
+Prepared by RankMySEO                                                                                            7 / 36
+1001startup.id · SEO report and strategy                                                                   2. Keyword research
+
+
+
+
+                                               Source and
+ Check                  Location               date              Finding
+
+ SERP check             ID (location 2360)     third-party       AI Overview at position 1. startupindonesia.co (2),
+ "startup                                      keyword tool,     Instagram startupindonesia_co (4), glints.com (5),
+ indonesia"                                    SERP date 8       1000startupdigital.id (6), startupindonesia.id (7),
+                                               Sep 2026 [E8]     LinkedIn (8).
+
+ SERP check             ID (location 2360)     third-party       AI Overview. xendit.co list "15 Venture Capital Paling Aktif
+ "venture capital                              keyword tool,     di Indonesia" (2), east.vc (3), Instagram amvesindo.id (4),
+ indonesia"                                    SERP date 5       angoventures.id (6), bayarind.id list (7), mandiri-
+                                               Oct 2026 [E8]     capital.co.id (8).
+
+ SERP check             ID (location 2360)     third-party       AI Overview. "100 Perusahaan Startup Terbaik ·
+ "perusahaan                                   keyword tool,     September 2026" (2, domain hidden behind a Google
+ startup                                       SERP date 4       redirect), ids.ac.id (5), mediaindonesia.com (6),
+ indonesia"                                    Oct 2026 [E8]     jakartainvest.com (11).
+
+ SERP check             ID (location 2360)     third-party       AI Overview and image pack. List articles,
+ "unicorn                                      keyword tool,     databoks.katadata.co.id (9), tekno.kompas.com (10),
+ indonesia"                                    SERP date 5       komdigi.go.id (11).
+                                               Oct 2026 [E8]
+
+ Google capture         non-ID (capture from   Site research     AI Overview cites startupindonesia.id ("startup
+ "startup               outside Indonesia;     dossier, 5 Oct    indonesia") and SmartLegal.id ("daftar startup
+ indonesia" and         Google footer          2026, about       indonesia"). id.techinasia.com is #1 for "daftar startup
+ "daftar startup        "Indonesia · Tidak     11:12 WIB [E20]   indonesia". 1001startup.id is absent from both.
+ indonesia"             diketahui")
+
+ Web search, 3          non-ID                 Web search, 5     Results show directories and list sites, for example
+ queries                                       Oct 2026,         startup.id, startupblink.com and startupindonesia.id
+                                               about 11:17 WIB   ("daftar startup indonesia 2026"), and founderplus.id
+                                               [E12]             and openvc.app ("investor startup indonesia daftar
+                                                                 venture capital"). "1001startup.id": 1001startup.id (1),
+                                                                 1000startupdigital.id (2).
+
+
+
+
+Prepared by RankMySEO                                                                                                       8 / 36
+1001startup.id · SEO report and strategy                                                                2. Keyword research
+
+
+
+
+      SERP check (non-ID): startup indonesia, 5 Oct 2026        SERP check (non-ID): daftar startup indonesia, 5 Oct 2026
+
+
+What the SERPs show:
+
+  • AI Overviews appear on all four ID SERPs. Citable, answer-first blocks are important (section 2.7).
+  • Page 1 holds list articles and two "Startup Indonesia" data platforms.
+  • No page 1 result in the SERPs that I checked shows a sourced figure per company. The census does. This is
+    the content advantage of 1001startup.id.
+
+
+      WATC H      Brand risk: 1000 Startup Digital
+       • "1000 Startup Digital" (1000startupdigital.id) is a government program.
+       • It ranks for "startup indonesia" (ID, third-party keyword tool) [E8].
+       • It is #2 for the brand query "1001startup.id", after 1001startup.id (1) (web search, non-ID, 5 Oct
+         2026) [E12].
+       • Use the full brand "1001startup.id" plus "sensus startup Indonesia" in titles and PR.
+
+
+
+
+Prepared by RankMySEO                                                                                                  9 / 36
+1001startup.id · SEO report and strategy                                                          2. Keyword research
+
+
+
+
+2.7 AI answer engines (GEO and AEO)
+Facts:
+
+  • ChatGPT used the pages to answer 1,084 times, and Claude 99 times (your screenshot) [E19].
+  • The site already has strong GEO parts. Each company page has an answer sentence, a "Kutip sebagai" line,
+    dateModified in schema, and /llms.txt is live [E13].
+  • Example answer sentence: "Menurut sensus 1001startup.id (diperbarui 1 Okt 2026), Astro tercatat 994
+    pekerja (dibaca 2026-08-29); pendanaan yang diumumkan US$142 juta; kantor pusatnya di Jakarta
+    Barat." (https://1001startup.id/id/company/astro) [E13].
+  • Google says that its AI features need no new machine-readable files, AI text files or markup [E17].
+  • Source: https://developers.google.com/search/docs/appearance/ai-features, last updated
+    2025-12-10 UTC.
+  • Google also says there is "no special schema.org structured data that you need to add" (same page) [E17].
+  • So llms.txt is optional. Keep it, because it states the citation rules. Do not expect Google rankings from it.
+
+How the pages earn citations:
+
+ 1. Put an answer-first block at the top of each hub (home, /investors, /unicorn, /closed, sector, city,
+    research).
+ 2. In that block, use one sentence with the number, the date and the source. Copy the pattern from the
+    company template.
+ 3. Keep the Dataset schema on home.
+ 4. Add license, temporalCoverage, variableMeasured, distribution and dateModified to the Dataset schema.
+ 5. Show clear entity facts, one fact per line: legal name, sector, head office, founded year, founders, last
+    round and investors.
+ 6. Make the schema match the visible text.
+ 7. Show "diperbarui [date]" on each hub, and use the same date in schema dateModified.
+ 8. Keep the census count in llms.txt current.
+
+Note on step 4: Google lists the first four of these properties as Dataset recommended properties (https://
+developers.google.com/search/docs/appearance/structured-data/dataset, last updated 2026-09-08
+UTC) [E17]. The company template already has an answer sentence.
+
+Prompts to track (proposed only; I did not create them). I built them from the autocomplete and People also
+ask data:
+
+ 1. "Berapa jumlah startup di Indonesia tahun 2026?"
+ 2. "Apa saja startup unicorn di Indonesia?"
+ 3. "Daftar venture capital paling aktif di Indonesia"
+ 4. "Berapa valuasi Gojek sekarang?"
+ 5. "Siapa pendiri Traveloka?"
+ 6. "Startup Indonesia apa saja yang bangkrut atau tutup?"
+ 7. "Berapa total pendanaan startup Indonesia?"
+ 8. "Startup fintech terbesar di Indonesia"
+ 9. "Startup apa saja yang didanai East Ventures?"
+10. "Which Indonesian startups raised the most funding?"
+
+
+
+Prepared by RankMySEO                                                                                           10 / 36
+1001startup.id · SEO report and strategy                                                  2. Keyword research
+
+
+
+
+Tracking:
+
+  • Use RankMySEO AI-answer tracking (https://rankmyseo.com). The account plan includes it, with 10
+    prompts per site [E1].
+  • It checks ChatGPT and Gemini mentions, rank, rivals and cited pages.
+  • I did not add prompts yet. I will confirm the 10 prompts before I add them.
+  • Keep your own AI-traffic counter (/stats) as the second signal.
+
+
+
+
+Prepared by RankMySEO                                                                                  11 / 36
+1001startup.id · SEO report and strategy                                                                      3. On-page fixes
+
+
+
+
+3. On-page fixes
+
+3.1 What I checked
+  • I fetched the main page types with curl and a desktop Chrome user agent on 5 Oct 2026, 11:13 to 11:25 WIB
+     [E13].
+  • All sampled pages returned HTTP 200, except /about. /about returns 404 with robots "noindex, nofollow"
+     [E13].
+  • robots.txt allows all crawlers and has a sitemap line [E13].
+  • The sitemap has 2,510 URLs, hreflang en/id/x-default, and lastmod 2026-09-30 [E13].
+
+Good things to keep (seen on 5 Oct 2026):
+
+  • Self canonicals, reciprocal hreflang (en, id, x-default = English), html lang en/id, robots "index, follow" and
+     server-rendered HTML [E13].
+  • http to https and www to apex both return 301 [E13] [E20].
+  • Company pages have an answer sentence, a "Kutip sebagai" line, a confidence score and a source link on
+     each figure [E13].
+  • Example confidence score: "Seberapa baik kami mengetahuinya: 0.85 · tinggi" on /id/company/astro
+     [E13].
+  • RankMySEO site audit: score 94.2, with one issue (short title, 2 pages) [E6].
+  • That audit crawled 4 pages only. Run a full RankMySEO site audit after the fixes below.
+
+Priority values in the tables below and in Appendix B are my judgment. High means "do first". Medium means
+"do after the High items". Low means "do after the Medium items".
+
+
+3.2 Site-wide fixes
+
+ #        Page        Issue                              Fix                                                      Priority
+
+ 1         /id/       Indonesian keywords do not         Write titles, H1s and intros on /id/ URLs in the words    High
+          tree        target the /id/ URLs.              people search (Appendix A). Keep x-default on English.
+
+ 2        /about      /about returns 404. There is no    Make /tentang (and /about). Show who builds the           High
+                      about page.                        census (Luca Cada Lora), the "a product by" line, the
+                                                         method and the contact. The brand line is Jatevo Labs
+                                                         or Vantis. You choose [DATA FROM LUCA]. This page is
+                                                         the brand tie for the link plan (section 6).
+
+ 3        Main        The nav "Sectors" link goes to /   Add a /id/sector hub page. Link the sector, city,         High
+          nav         coverage#sectors. The home         investor and unicorn hubs from home and nav.
+          and         page has 0 links to /sector/
+          home        and /investor/ pages. /unicorn
+                      is not in the nav [E20]. /id/
+                      sector returned 302 on 5 Oct
+                      2026.
+
+ 4        Home        388 of 389 images have empty       Add alt text to logos. Use "Logo [company]".              Medium
+                      alt [E20].
+
+
+
+
+Prepared by RankMySEO                                                                                                     12 / 36
+1001startup.id · SEO report and strategy                                                                           3. On-page fixes
+
+
+
+
+ #        Page        Issue                            Fix                                                             Priority
+
+ 5        All         Trailing-slash URLs, for         Use one trailing-slash rule: 301 the slash URL to the no-        Medium
+          URLs        example /company/gojek/          slash URL. My two checks gave different results (404
+                      [E13] [E20].                     and 301), so please confirm the current behaviour.
+
+ 6        sitema      One flat sitemap for all page    Split it into a sitemap index with one child sitemap per         Medium
+          p.xml       types.                           page type (company, investor, sector and city,
+                                                       research, chain). Then the Search Console Page
+                                                       Indexing report shows each type apart. This helps the
+                                                       quality gates in section 3.4.
+
+ 7        Search      The RankMySEO project has no     Give the RankMySEO project access to the                         High
+          Consol      connected Search Console         1001startup.id property, so that RankMySEO can show
+          e           property [E6].                   Search Console data. Next steps gives the steps
+                                                       [DATA FROM LUCA].
+
+
+
+3.3 Fixes per template
+The fix tables for the company, investor, sector and city, research, home and other pages are in Appendix B.
+Each row gives the item, the issue, the fix and the priority.
+
+
+3.4 Thin pages and quality gates
+Why: the September 2026 spam update was rolling out on 5 Oct 2026 [E20]. Google says: "Scaled content
+abuse is when many pages are generated for the primary purpose of manipulating search rankings and not
+helping users." (https://developers.google.com/search/docs/essentials/spam-policies, fetched 5 Oct
+2026) [E17]. The census is real, sourced data. But empty templates still look like scaled pages. Put a gate on
+them.
+
+Company pages (recommendation):
+
+ 1. Index a company page only if 4 of these 7 fields have a source:
+      • disclosed funding
+      • last round
+      • valuation
+      • headcount with read date
+      • head office address
+      • investors (1 or more)
+      • founder or founding year
+
+ 2. Below 4 fields, set "noindex, follow". Remove the URL from the sitemap.
+ 3. Count how many of the 387 rows fail the gate [DATA FROM LUCA].
+
+Example: /company/qalboo has no funding or headcount in its meta description (fetched 5 Oct 2026) [E13].
+The home page says 208 of 387 rows have disclosed funding [E13].
+
+Investor pages (recommendation):
+
+ 1. Index the page if the investor backs 2 or more census companies (148 of 507 pages) [E14].
+ 2. Also index the page if it has its own fund data.
+
+
+
+
+Prepared by RankMySEO                                                                                                          13 / 36
+1001startup.id · SEO report and strategy                                                                3. On-page fixes
+
+
+
+
+ 3. Set "noindex, follow" on 1-company investors with no fund data (up to 359 pages per language). Keep
+    these pages for users and internal links.
+ 4. Set "noindex" on placeholder entities, such as "undisclosed angel investor".
+
+Other gates:
+
+ Page type                                            Gate
+
+ Chain pages for companies outside the census         Index only with 2 or more sourced relations.
+ ( /chain/x/<slug> , 172 per language)
+
+ City pages                                           Create only with 10 or more census companies.
+
+ Sector pages                                         Create only with 5 or more census companies. "bank" has 8 and
+                                                      "agri" has 10 [E15].
+
+ All gated pages                                      Remove them from the sitemap.
+
+
+
+  • The noindex here is a quality decision. Google's crawl guide says not to use noindex to save crawl budget
+    [E20].
+  • After each census rebuild, check the gates with a RankMySEO site audit and the Search Console Page
+    Indexing report.
+
+
+      MYTH CHECK         Myth check: does nofollow on outbound links save crawl budget? [E20]
+       • In the X thread, I asked about this old tip myself: "Cuma ini mitos lama sih, belum pernah research
+         lagi" [E19]. The check below gives the answer for your site.
+
+     Verdict: myth for 1001startup.id.
+       • Google counts crawl budget per hostname: "Google's crawling infrastructure defines a site as a
+         unique hostname" (https://developers.google.com/crawling/docs/crawl-budget, last updated
+         2026-07-22 UTC, fetched 2026-10-05). A crawl of an external news URL uses that host's budget,
+         not the census budget.
+       • The guide is for sites with "1 million+ unique pages", or "10,000+ unique pages" with daily changes.
+         1001startup.id has 2,510 URLs.
+       • nofollow, sponsored and ugc are hints. nofollow became a crawl hint on 1 Mar 2020 (Google Search
+         Central Blog, "Evolving nofollow", 10 Sep 2019).
+       • For URLs on your own site, Google says to use robots.txt disallow, not nofollow (https://
+         developers.google.com/search/docs/crawling-indexing/qualify-outbound-links).
+       • Action: keep nofollow or sponsored on paid or non-editorial outbound links, for link-policy reasons
+         only. The /news page has 555 external links [E20]. Leave editorial source links followed.
+
+
+
+
+Prepared by RankMySEO                                                                                            14 / 36
+1001startup.id · SEO report and strategy                                                                          4. Topical map
+
+
+
+
+4. Topical map
+
+Rules:
+
+  • Use one main keyword per URL.
+  • Indonesian keywords target /id/ .
+  • Status values: "exists" (live on 5 Oct 2026), "fix" (live, needs the changes in section 3), "new" (to build).
+
+ Pillar           URL                       Main keyword              Secondary keywords                            Status
+
+ P1 Sensus        /id/                      startup indonesia         perusahaan startup indonesia, startup di       fix
+                                                                      indonesia, daftar startup indonesia,
+                                                                      startup terbesar di indonesia
+
+ P1 Sensus        /id/research/jumlah-      jumlah startup di         data jumlah startup di indonesia, jumlah       new
+                  startup-indonesia         indonesia                 startup di indonesia 2026
+
+ P1 Sensus        /id/coverage              data startup indonesia    metodologi sensus startup                      fix
+
+
+ P1 Sensus        /id/sector (hub)          startup per sektor        sektor startup indonesia                       new
+
+
+ P1 Sensus        /id/sector/[16 sectors]   startup [sector]          daftar startup [sector]                        fix
+                                            indonesia
+
+ P1 Sensus        /id/company/[slug]        [company] valuasi         [company] pendanaan, pendiri                   fix
+                                                                      [company]
+
+ P2 Venture       /id/investors             venture capital           investor startup indonesia, perusahaan         fix
+ capital                                    indonesia                 modal ventura di indonesia, list venture
+                                                                      capital indonesia
+
+ P2 Venture       /id/investor/[slug]       [investor] portofolio     [investor] startup                             fix
+ capital          (gated)
+
+ P2 Venture       /id/research/modal-       modal ventura             cara kerja modal ventura                       new
+ capital          ventura-indonesia
+
+ P3 Unicorn       /id/unicorn               unicorn indonesia         startup unicorn indonesia, decacorn            fix
+                                                                      indonesia, daftar startup unicorn
+                                                                      indonesia
+
+ P3 Unicorn       /id/research/unicorn-     unicorn adalah            perusahaan unicorn indonesia yang              new
+                  adalah                                              bergerak di bidang transportasi online
+                                                                      adalah
+
+ P3 Unicorn       /id/research/             decacorn adalah           decacorn indonesia (links to /id/unicorn)      new
+                  decacorn-adalah
+
+ P4               /id/research/             pendanaan startup         pendanaan startup 2025, pendanaan              new
+ Pendanaan        pendanaan-startup-                                  startup 2026, pendanaan startup di
+                  indonesia                                           indonesia
+
+ P4               /id/research/tahapan-     mekanisme                 tahapan pendanaan startup, sumber              new
+ Pendanaan        pendanaan-startup         pendanaan startup         pendanaan startup
+                                            melalui venture capital
+
+ P4               /id/research/startup-     startup indonesia yang    IPO startup Indonesia                          new
+ Pendanaan        indonesia-ipo             sudah ipo
+
+
+
+
+Prepared by RankMySEO                                                                                                      15 / 36
+1001startup.id · SEO report and strategy                                                                                                4. Topical map
+
+
+
+
+ Pillar              URL                                Main keyword                    Secondary keywords                                Status
+
+ P5 Tutup            /id/closed                         startup indonesia yang          startup bangkrut, unicorn indonesia                fix
+                                                        bangkrut                        bangkrut, startup tutup di indonesia
+
+ P6 Peta             /id/map and /id/city/              startup jakarta                 startup bandung, startup bali (Bali as a           fix
+                     [jakarta, bandung, bali]                                           section on /id/map, no indexed city
+                                                                                        page until 10+ rows)
+
+ News                /id/news                           berita startup                  (none)                                             exists
+                                                        indonesia
+
+
+
+
+    Topical map: pillar pages and their cluster pages
+
+          P1   Sensus                                      P2   Venture capital                         P3   Unicorn
+
+      /id/     fix                                        /id/investors        fix                     /id/unicorn    fix
+      Main keyword: startup indonesia                     Main keyword: venture capital                Main keyword: unicorn indonesia
+                                                          indonesia
+           /id/research/jumlah-startup-                                                                   /id/research/unicorn-adalah
+           indonesia new                                    /id/investor/[slug] (gated)   fix               new
+
+           /id/coverage    fix                              /id/research/modal-ventura-                   /id/research/decacorn-adalah
+                                                            indonesia new                                   new
+           /id/sector (hub)   new
+
+           /id/sector/[16 sectors]     fix
+
+           /id/company/[slug]    fix
+
+
+
+
+          P4   Pendanaan                                   P5   Tutup                                   P6   Peta
+
+      /id/research/pendanaan-startup-                     /id/closed     fix                           /id/map and /id/city/[jakarta,
+      indonesia new                                       Main keyword: startup indonesia              bandung, bali] fix
+      Main keyword: pendanaan startup                     yang bangkrut                                Main keyword: startup jakarta
+
+           /id/research/tahapan-pendanaan-                  No cluster pages in the map                   No cluster pages in the map
+           startup new
+           /id/research/startup-indonesia-
+           ipo new
+
+
+
+    Hub outside the pillars: /id/news (berita startup indonesia) exists
+
+          exists live on 5 Oct 2026          fix live, needs changes     new to build
+
+    Figure 1. The topical map in the table above, as pillar-to-cluster boxes. Indonesian keywords target /id/ .
+
+
+
+
+Rules against cannibalization:
+
+  • "startup indonesia" and "perusahaan startup indonesia" go to one URL (/id/). This is my judgment from the
+    Trends data: Trends lists "perusahaan startup indonesia" as the top related query of "startup indonesia"
+    [E11].
+  • "unicorn indonesia" (list) goes to /id/unicorn. "unicorn adalah" (definition) goes to a research page. The
+    definition page links to the list with the anchor "daftar startup unicorn Indonesia".
+  • "venture capital indonesia" (list) goes to /id/investors. "modal ventura" (explainer) goes to a research page.
+
+
+
+
+Prepared by RankMySEO                                                                                                                            16 / 36
+1001startup.id · SEO report and strategy                                                         4. Topical map
+
+
+
+
+  • English pages keep their English keywords. hreflang connects the pairs. Do not write a second Indonesian
+    page on the same topic.
+
+
+
+
+Prepared by RankMySEO                                                                                   17 / 36
+1001startup.id · SEO report and strategy                                                         5. Pillar content plan
+
+
+
+
+5. Pillar content plan
+
+Each pillar uses census data first. Each figure shows its source and date, as the company pages do now. The
+H2 and H3 lines below are proposed headings in Bahasa Indonesia.
+
+
+P1. Sensus startup Indonesia (/id/)
+Main keyword: startup indonesia (590, KD 38, RankMySEO, 5 Oct 2026) [E5].
+
+  • H2: Berapa jumlah startup di Indonesia menurut sensus ini? (387 companies, 1 Okt 2026)
+  • H2: Daftar perusahaan startup Indonesia (filter table: sector, city, funding)
+      • H3: Startup terbesar menurut pendanaan
+      • H3: Startup terbesar menurut jumlah pekerja
+
+  • H2: Startup Indonesia per sektor (16 sectors with counts, link each)
+  • H2: Startup Indonesia per kota (Jakarta Raya 364, Bandung 17, Bali 6)
+  • H2: Total pendanaan dan valuasi (US$18.3 miliar disclosed on 208 of 387 rows; US$20.6 miliar combined
+    valuation from 20 of 387 rows with a recorded valuation) [E13]
+  • H2: Cara kami menghitung (link to /id/coverage and /tentang)
+
+
+P2. Venture capital Indonesia (/id/investors)
+Main keyword: venture capital indonesia (4,400, KD 32, RankMySEO, 5 Oct 2026) [E5].
+
+  • H2: Berapa banyak investor yang mendanai startup Indonesia? (507 funds, firms and angels on 308 of 387
+    companies) [E14]
+  • H2: Venture capital paling aktif di Indonesia (East Ventures 49, GDP Venture 25, Init-6 24; source https://
+    1001startup.id/investors, 5 Oct 2026) [E14]
+  • H2: Investor menurut sektor
+      • H3: Investor fintech
+      • H3: Investor AI dan cloud
+
+  • H2: Investor asing dan lokal [DATA FROM LUCA: investor country field]
+  • H2: Apa itu modal ventura? (short block, link to the explainer)
+
+
+P3. Startup unicorn Indonesia (/id/unicorn)
+Main keyword: unicorn indonesia (320, KD 33, RankMySEO, 5 Oct 2026) [E5].
+
+  • H2: Ada berapa startup unicorn di Indonesia? (10 companies valued at US$1 billion or more in the census)
+    [E13]
+      • Caveat to keep in the answer: only 24 of 387 census rows carry a sourced valuation. The page says "ini
+        bukan daftar lengkap unicorn Indonesia" (https://1001startup.id/id/unicorn, 5 Oct 2026) [E13].
+
+  • H2: Daftar unicorn dan decacorn Indonesia (table: name, valuation, basis, date)
+      • H3: Valuasi dari putaran pendanaan (7)
+      • H3: Kapitalisasi pasar (2)
+      • H3: Estimasi (1)
+
+
+
+Prepared by RankMySEO                                                                                          18 / 36
+1001startup.id · SEO report and strategy                                                           5. Pillar content plan
+
+
+
+
+  • H2: Unicorn yang sudah IPO (link to the IPO research page)
+  • H2: Unicorn adalah ... (2 sentences, link to /id/research/unicorn-adalah)
+
+
+P4. Pendanaan startup Indonesia (new: /id/research/pendanaan-startup-
+indonesia)
+Main keyword: pendanaan startup (70, KD 19, RankMySEO, 5 Oct 2026) [E5]. Secondary keyword: mekanisme
+pendanaan startup melalui venture capital (110, KD 6, RankMySEO, 5 Oct 2026) [E5].
+
+  • H2: Total pendanaan startup Indonesia (US$18.3 miliar disclosed on 208 of 387 rows) [E13]
+  • H2: Pendanaan per tahun [DATA FROM LUCA: funding by year]
+  • H2: Pendanaan per sektor [DATA FROM LUCA: funding by sector]
+  • H2: Pendanaan per tahap (seed, Series A, B, C+) [DATA FROM LUCA: round field]
+  • H2: Siapa yang paling banyak mendanai? (link to P2)
+  • H2: Download data (only if you offer a CSV [DATA FROM LUCA])
+
+
+P5. Startup Indonesia yang bangkrut dan tutup (/id/closed)
+Main keyword: startup indonesia yang bangkrut (20, SD 5, third-party keyword tool, 5 Oct 2026) [E7].
+
+  • H2: Berapa startup Indonesia yang tutup? (3 companies, US$428 juta raised, 2023 to 2025) [E13]
+  • H2: Daftar startup yang tutup (name, sector, funding, year, source)
+  • H2: Data yang dihapus dari sensus (4 rows, with the reason)
+  • H2: Pola: sektor dan tahap pendanaan
+
+
+      WATC H      Open item: eFishery
+       • "efishery" has 9,900 searches per month (third-party keyword tool, 5 Oct 2026) [E7].
+       • eFishery appears on /closed. /company/efishery returned 404 on 5 Oct 2026 [E13].
+       • Option 1: give closed companies a profile page with the status "tutup".
+       • Option 2: add an anchor on /id/closed (#efishery) with a full entry.
+       • You decide [DATA FROM LUCA].
+
+
+
+P6 (optional). Peta startup Indonesia (/id/map and city pages)
+Main keyword: startup jakarta (50, SD 20, third-party keyword tool, 5 Oct 2026) [E7].
+
+  • H2: Di mana kantor startup Indonesia? (Jakarta Raya 364 of 387) [E13]
+  • H2: Startup Jakarta per wilayah (Jakarta Barat, Selatan, Pusat ...) [DATA FROM LUCA: district counts]
+  • H2: Startup Bandung dan Bali (target keyword: startup bali, 30, SD 20, third-party keyword tool [E7])
+  • Set /id/city/bali to noindex until it has 10 or more census companies. It has 6 [E13]. /id/city/bandung (17)
+    and /id/city/jakarta (364) stay indexed.
+  • Add a text list of cities with counts, so that search engines can read the map.
+
+
+
+
+Prepared by RankMySEO                                                                                             19 / 36
+1001startup.id · SEO report and strategy                                                               6. Safe link plan
+
+
+
+
+6. Safe link plan
+
+6.1 Why not a classic PBN or a mass AI blog
+Google's spam policies do not use the words "PBN" or "private blog network" [E20]. But they cover the PBN
+methods.
+
+
+      POLICY      Why not a classic PBN or a mass AI blog
+       • Google: "Link spam is the practice of creating links to or from a site primarily for the purpose of
+         manipulating search rankings." (spam policies, https://developers.google.com/search/docs/
+         essentials/spam-policies, last updated 2026-08-28 UTC) [E17].
+       • Google lists "Buying or selling links for ranking purposes" as link spam (same page).
+       • Google: "Expired domain abuse is where an expired domain name is purchased and repurposed
+         primarily to manipulate search rankings by hosting content that provides little to no value to users."
+         (same page).
+       • Google: "Scaled content abuse is when many pages are generated for the primary purpose of
+         manipulating search rankings and not helping users." (same page).
+       • Google lists "Creating multiple sites with the intent of hiding the scaled nature of the content" as
+         scaled content abuse (same page).
+       • Google also lists "Using generative AI tools or other similar tools to generate many pages without
+         adding value for users" (same page).
+       • So, many AI posts in one day can be scaled content abuse. The definition names the purpose of the
+         pages, not a page type. News pages and research pages are not outside it.
+       • Google's spam-updates guide says: "In the case of a link spam update (an update that specifically
+         deals with link spam), making changes might not generate an improvement. ... Any potential ranking
+         benefits generated by those links cannot be regained." (https://developers.google.com/search/
+         docs/appearance/spam-updates, last updated 2025-12-10 UTC) [E20].
+
+     My plan uses real related sites with clear brand ties and editorial links. It uses nofollow or sponsored
+     where links are not editorial. It adds digital PR from the census data.
+
+
+
+6.2 Start point (5 Oct 2026)
+  • RankMySEO shows 0 backlinks and domain authority 1 (RankMySEO, 5 Oct 2026) [E2].
+  • On the pages checked (the homepages of vantis.sh, jatevo.ai and oyenza.com, plus vantis.sh/team), no
+    owned site links to 1001startup.id. A full crawl of the owned sites was not done [E20].
+  • Each page of 1001startup.id has a "Who is building this" block (https://1001startup.id/id/, 5 Oct 2026)
+    [E13].
+  • This block has followed links to jatevo.ai and vantis.sh, with rel "noopener" only [E13].
+  • The anchors are "Sovereign AI with jatevo.ai" and "AI software factory with vantis.sh" [E13].
+  • The cookie link goes to vantis.sh/cookies [E13].
+  • With 2,510 URLs, this block is a sitewide template link.
+  • In the X thread, I wrote: "Jatevo kasih link ke 1001" [E19].
+
+
+
+
+Prepared by RankMySEO                                                                                           20 / 36
+1001startup.id · SEO report and strategy                                                                    6. Safe link plan
+
+
+
+
+My post with this advice in the X thread also has an old tip about nofollow on news links [E19]. Section 3.4
+checks that tip. It does not save crawl budget on your site.
+
+
+6.3 Links from your companies to the census (contextual, editorial)
+Google's link spam list includes "Excessive link exchanges" and "partner pages exclusively for the sake of
+cross-linking". It also includes "Widely distributed links in the footers or templates of various sites" (https://
+developers.google.com/search/docs/essentials/spam-policies, last updated 2026-08-28 UTC) [E17].
+
+So:
+
+ 1. Put links in the body of relevant pages.
+ 2. Show a clear brand tie on each page.
+ 3. Do not add a footer link in either direction.
+
+ From                                                                                         Visible brand tie
+ (owned                                                                                       (proposed text on the
+ site)          Page to use or create             Link to               Anchor (example)      page)
+
+ vantis.sh      Team or founder bio of Luca       https://              "sensus startup       "Luca Cada Lora also
+                                                  1001startup.id/id/    Indonesia             builds 1001startup.id,
+                                                                        1001startup.id"       the sensus startup
+                                                                                              Indonesia."
+
+ vantis.sh      Blog post or case study on the    https://              "how the census is    "Vantis built the data
+                census agent. robots.txt names    1001startup.id/       built"                pipeline for
+                "VantisSupportBot" as "the        coverage                                    1001startup.id."
+                census agent's own indexer"
+                [E20].
+
+ jatevo.ai      About or founder page             https://              "1001startup.id"      "Luca Cada Lora, the
+                                                  1001startup.id/                             founder of Jatevo, also
+                                                                                              builds 1001startup.id."
+
+ jatevo.ai      Page or post on AI and cloud      https://              "startup AI dan       "Data from
+                companies in Indonesia            1001startup.id/id/    cloud di Indonesia"   1001startup.id, a census
+                                                  sector/ai-cloud (33                         by the founder of
+                                                  companies)                                  Jatevo."
+
+ oyenza.c       Blog post on fintech or QRIS in   https://              "64 startup fintech   "Oyenza and
+ om             Indonesia (the blog has 8 posts   1001startup.id/id/    di Indonesia          1001startup.id have the
+                [E20])                            sector/fintech (64    (sensus               same founder, Luca
+                                                  companies)            1001startup.id)"      Cada Lora."
+
+ oyenza.c       "Dibuat oleh" or about line, if   /tentang              brand name            The "Dibuat oleh" line
+ om             you want one                                                                  itself. Set rel "nofollow"
+                                                                                              (see the rule table in
+                                                                                              section 6.5).
+
+
+
+
+Prepared by RankMySEO                                                                                                  21 / 36
+1001startup.id · SEO report and strategy                                                                                       6. Safe link plan
+
+
+
+
+    Owned-network link flow: your companies link to 1001startup.id
+
+
+
+
+          vantis.sh
+                                                                                                         1001startup.id
+
+            Team or founder bio of Luca
+                                                                                                                  /id/
+            Blog post or case study on the census agent
+
+                                                                                                               /coverage
+
+          jatevo.ai
+                                                                                                                      /
+            About or founder page
+
+            Page or post on AI and cloud companies                                                       /id/sector/ai-cloud
+
+
+                                                                                                          /id/sector/fintech
+          oyenza.com
+
+            Blog post on fintech or QRIS                                                                        /tentang
+
+            “Dibuat oleh” or about line                                   rel "nofollow"
+
+
+
+
+          Other direction: the “Who is building this” template links from 1001startup.id to jatevo.ai and vantis.sh
+          get rel "nofollow". One followed “built by” link stays on /tentang. No footer link in either direction.
+
+
+
+               editorial, in-body link with a visible brand tie            rel "nofollow" (brand mention)
+
+    Figure 2. The links in the table above. Start with 4 to 6 links in total. Use branded or descriptive anchors.
+
+
+
+
+Volume and anchors:
+
+  • Start with 4 to 6 links in total. This number is my judgment, not a Google rule.
+  • Use branded or descriptive anchors.
+  • Do not repeat an exact-match anchor such as "startup indonesia" on many pages.
+
+
+6.4 Sitewide template links on 1001startup.id
+ 1. Set rel "nofollow" on the jatevo.ai and vantis.sh links in the "Who is building this" block on all 2,510 URLs.
+ 2. Option: remove the block from the template. Keep it only on /tentang.
+ 3. Keep one followed "built by" link on /tentang, for example "Dibuat oleh Vantis" or "A Jatevo Labs product".
+    This is the one exception in the rule table in section 6.5. You choose the brand [DATA FROM LUCA].
+ 4. Do not add a reverse sitewide footer link on vantis.sh, jatevo.ai or oyenza.com.
+
+
+
+
+Prepared by RankMySEO                                                                                                                   22 / 36
+1001startup.id · SEO report and strategy                                                                          6. Safe link plan
+
+
+
+
+6.5 When to use sponsored, nofollow or ugc
+Google says: "Mark links that are advertisements or paid placements (commonly called paid links) with the
+sponsored value." (https://developers.google.com/search/docs/crawling-indexing/qualify-outbound-
+links, last updated 2025-12-10 UTC) [E17] [E20].
+
+ Link type                                                rel value
+
+ Paid listings, partner deals, affiliate links            "sponsored"
+
+ Links in user content (comments, user-submitted          "ugc"
+ startup data)
+
+ Template links on 1001startup.id to your own             "nofollow"
+ companies ("Who is building this" block)
+
+ One "built by" link on /tentang to the brand you         none (followed). This is the one exception. /tentang is the about
+ choose                                                   page that shows who builds the census. It is one editorial link on
+                                                          one page, not a template link.
+
+ "Dibuat oleh" brand line on oyenza.com that links to /   "nofollow", because it is a brand mention, not a vote
+ tentang
+
+ Source links in company profiles and /news briefs        none (leave them followed, because they are editorial citations)
+
+
+
+The Myth check box in section 3.4 shows that nofollow does not save crawl budget on this site.
+
+
+6.6 Digital PR with census data
+Story ideas. Each idea uses census data on the site on 5 Oct 2026:
+
+ 1. "364 of 387 census startups have their head office in Greater Jakarta" (https://1001startup.id/id/) [E13]. The
+    census has rows only for Greater Jakarta, Bandung and Bali. State this limit in the pitch. Do not present the
+    364 as a national finding.
+ 2. "East Ventures backs 49 census companies, and 359 of 507 investors back only one": the investor
+    concentration story (https://1001startup.id/investors) [E14].
+ 3. "10 census startups are valued at US$1 billion or more, and only 7 of the values come from private rounds"
+    (https://1001startup.id/id/unicorn) [E13]. State the caveat from the page in the pitch. Only 24 of 387
+    census rows carry a sourced valuation, and the page says "ini bukan daftar lengkap unicorn Indonesia"
+    [E13].
+ 4. "3 closed startups raised US$428 million" (https://1001startup.id/id/closed) [E13].
+
+Tactics:
+
+ 1. Give each chart an embed code. Include a visible credit line and a link to the source page, such as
+    "Sumber: sensus 1001startup.id".
+ 2. Use only a branded, visible credit link in the embed code. Do not use keyword anchors.
+ 3. Publish a quarterly report, "Laporan Sensus Startup Indonesia Q4 2026", at a fixed URL.
+ 4. Send the report to the outlets below. Pitch only with your approval.
+ 5. Target a data citation on databoks.katadata.co.id. It ranks #9 for "unicorn indonesia" (ID, third-party
+    keyword tool, 5 Oct 2026) [E8].
+
+
+
+
+Prepared by RankMySEO                                                                                                      23 / 36
+1001startup.id · SEO report and strategy                                                            6. Safe link plan
+
+
+
+
+Google's link spam list includes "Keyword-rich, hidden, or low-quality links embedded in widgets that are
+distributed across various sites" (https://developers.google.com/search/docs/essentials/spam-policies,
+last updated 2026-08-28 UTC, fetched 5 Oct 2026) [E17]. Tactic 2 follows this rule.
+
+Outlets to start with (homepage HTTP 200 on 5 Oct 2026) [E18]: dailysocial.id, id.techinasia.com,
+katadata.co.id, databoks.katadata.co.id, dealstreetasia.com and e27.co.
+
+  • I did not verify journalist names [DATA FROM LUCA: PR contacts].
+
+
+6.7 Keep the census topic clean
+  • Use /research only for census research: startups, funding, investors, sectors and closures.
+  • Do not publish Oyenza or other product promotion on 1001startup.id.
+  • Google says: "The site reputation policy applies where third-party content is published on a host site
+    mainly because of that host's already-established ranking signals" (https://developers.google.com/
+    search/docs/essentials/spam-policies, fetched 5 Oct 2026) [E17] [E20].
+  • Your X post says that you use the research blog mainly to push your new product site [E19].
+  • The domain in that post does not resolve (NXDOMAIN, 5 Oct 2026) [E16]. It is oyenza.com.
+
+
+
+
+Prepared by RankMySEO                                                                                        24 / 36
+1001startup.id · SEO report and strategy                                                                     7. 30/60/90-day action plan
+
+
+
+
+7. 30/60/90-day action plan
+
+The source strategy gives priorities and an order of work. It gives no dates. The split into 30, 60 and 90 days
+below is my proposal. Day 1 starts when you approve the plan.
+
+
+
+    30/60/90-day plan at a glance
+
+
+      Days 1 to 30                                 Days 31 to 60                               Days 61 to 90
+        • Search Console access; connect             • Sitemap index, one child sitemap         • Research pages: jumlah startup,
+          Analytics to RankMySEO                       per page type                              startup IPO
+        • Titles, H1s and intros on /id/ URLs        • Company template upgrade                 • Closed-company entries (for
+          (home, /id/unicorn, /id/closed                                                          example eFishery)
+                                                     • Investor, sector and city template
+          first)
+                                                       upgrade                                  • Embeddable charts; “Laporan
+        • Make /tentang (and /about) with                                                         Sensus Startup Indonesia Q4
+                                                     • Restructure /id/, /id/unicorn and /
+          the brand line                                                                          2026”
+                                                       id/closed
+        • /id/sector hub; hub links from                                                        • Pitch the report to the outlets
+                                                     • Research pages for P2 and P3
+          home and nav
+                                                                                                • Full RankMySEO site audit; Page
+                                                     • Research pages for P4
+        • rel "nofollow" on template links to                                                     Indexing check
+          jatevo.ai and vantis.sh                    • 4 to 6 contextual links from
+                                                                                                • Review ranks and AI-answer
+                                                       vantis.sh, jatevo.ai and
+        • Quality gates; /id/city/bali to                                                         tracking
+                                                       oyenza.com
+          noindex
+                                                     • Dataset schema properties on
+        • Trailing-slash rule; logo alt text
+                                                       home
+
+
+
+    Figure 3. Short labels for the actions in the table below. The table gives the full actions and what each one depends on.
+
+
+
+
+ Phase                  Action                                                                  Depends on
+
+ Days 1 to 30           Give Search Console access and connect Analytics to the                 [DATA FROM LUCA]
+                        RankMySEO project.
+
+ Days 1 to 30           Change titles, H1s and intros on /id/ URLs to the priority              None
+                        keywords. Start with home, /id/unicorn and /id/closed.
+
+ Days 1 to 30           Make /tentang (and /about) with the brand line.                         Brand choice [DATA FROM LUCA]
+
+ Days 1 to 30           Add the /id/sector hub. Link the sector, city, investor and             None
+                        unicorn hubs from home and nav.
+
+ Days 1 to 30           Set rel "nofollow" on the template links to jatevo.ai and               /tentang live
+                        vantis.sh. Keep one followed "built by" link on /tentang.
+
+ Days 1 to 30           Apply the quality gates: noindex and sitemap removal for                Gate count [DATA FROM LUCA]
+                        pages below the gate. Set /id/city/bali to noindex (6 census
+                        companies, below the 10 gate).
+
+ Days 1 to 30           Fix the trailing-slash rule and add logo alt text.                      None
+
+ Days 31 to 60          Split the sitemap into a sitemap index with one child sitemap           None
+                        per page type.
+
+ Days 31 to 60          Upgrade the company template: "Pendiri" row, schema fields,             Founder data [DATA FROM LUCA]
+                        city and research links.
+
+
+
+
+Prepared by RankMySEO                                                                                                               25 / 36
+1001startup.id · SEO report and strategy                                                             7. 30/60/90-day action plan
+
+
+
+
+ Phase                Action                                                             Depends on
+
+ Days 31 to 60        Upgrade the investor, sector and city templates: answer block,     None
+                      H2s, schema.
+
+ Days 31 to 60        Restructure /id/, /id/unicorn and /id/closed with the P1, P3 and   None
+                      P5 H2 outlines in section 5.
+
+ Days 31 to 60        Publish the new research pages for P2 and P3: modal ventura,       None
+                      unicorn adalah and decacorn adalah.
+
+ Days 31 to 60        Publish the new research pages for P4: pendanaan startup and       Funding data [DATA FROM LUCA]
+                      tahapan pendanaan startup.
+
+ Days 31 to 60        Add the 4 to 6 contextual links from vantis.sh, jatevo.ai and      /tentang live
+                      oyenza.com.
+
+ Days 31 to 60        Add the Dataset schema properties on home.                         CSV decision [DATA FROM LUCA]
+
+ Days 61 to 90        Publish "jumlah startup di indonesia" and "startup indonesia       None
+                      yang sudah ipo" research pages.
+
+ Days 61 to 90        Decide and build the closed-company entries (for example           [DATA FROM LUCA]
+                      eFishery).
+
+ Days 61 to 90        Make embeddable charts. Publish "Laporan Sensus Startup            None
+                      Indonesia Q4 2026".
+
+ Days 61 to 90        Pitch the report to the outlets.                                   Your approval, PR contacts
+                                                                                         [DATA FROM LUCA]
+
+ Days 61 to 90        Run a full RankMySEO site audit. Check the gates in the Search     Search Console connected
+                      Console Page Indexing report.
+
+ Days 61 to 90        Review ranks and AI-answer tracking in RankMySEO.                  My confirmation of the tracked
+                                                                                         keywords and the 10 AI prompts
+
+
+
+
+Prepared by RankMySEO                                                                                                     26 / 36
+1001startup.id · SEO report and strategy                                                                 Next steps
+
+
+
+
+Next steps
+
+RankMySEO setup
+I recommend RankMySEO (https://rankmyseo.com) as the SEO tool for 1001startup.id. The reasons:
+
+  • The project "1001 startup Luca" exists, with country Indonesia and language Indonesian [E2].
+  • It gave the Indonesian volumes and difficulty for the main keywords in this report [E5].
+  • It tracks ranks in Indonesia and runs site audits [E3] [E4] [E6].
+  • The plan includes AI-answer tracking for ChatGPT and Gemini, with 10 prompts per site [E1]. This fits a site
+    where AI engines are the main readers (section 2.7).
+
+Setup steps to do after approval. None of these steps is done yet.
+
+ 1. Give Search Console access (steps below) and connect Analytics to the project [DATA FROM LUCA].
+ 2. Add the priority keywords from Appendix A to rank tracking.
+ 3. Add 4 competitors: startupindonesia.id, startupindonesia.co, id.techinasia.com and seedtable.com
+    [E20].
+ 4. Run the keyword gap and competitor traffic reports after step 3.
+ 5. Add the 10 AI prompts from section 2.7.
+ 6. Run a full site audit after the template fixes in section 3.
+
+
+How to give Search Console and Analytics access
+You must be an owner of the 1001startup.id property to add a user [E22].
+
+ 1. Add the Google Account email I send you as a Restricted user in Search Console (Settings > Users and
+    permissions).
+ 2. Add the same email with the Viewer role in Google Analytics (Admin > Property access management).
+
+Restricted gives read-only access to Search Console data. Viewer gives read-only access in Analytics.
+
+
+Questions for you
+ 1. Which brand line do you want on /tentang: Jatevo Labs, Vantis, or both?
+ 2. Can you give founder data with sources for the "Pendiri" field?
+ 3. How many of the 387 company rows fail the 4-of-7 field gate (section 3.4)?
+ 4. Can you give funding by sector, by year and by round for P4?
+ 5. Will the census offer a CSV or API download (Dataset distribution)?
+ 6. Can you give Search Console access (steps above) and connect Analytics to the RankMySEO project?
+ 7. Do you have PR contacts at the outlets in section 6.6?
+ 8. Do you plan to add rows for Yogyakarta, Surabaya or Malang?
+ 9. Do you want profile pages for closed companies such as eFishery (P5)?
+10. What does /company/gojek/ return now? My two checks gave different results (404 and 301). Please
+    confirm the current behaviour.
+11. Does the census have an investor country field? P2 needs it for the H2 "Investor asing dan lokal".
+12. Can you give startup counts per Jakarta district? P6 needs them for the H2 "Startup Jakarta per wilayah".
+
+
+Prepared by RankMySEO                                                                                       27 / 36
+1001startup.id · SEO report and strategy                                                              Next steps
+
+
+
+
+Decisions I will confirm before I start
+  • I will confirm the 10 AI prompts in section 2.7 before I add them to RankMySEO.
+  • I will confirm the list of priority keywords for rank tracking before I start.
+  • I will confirm the 4 competitors before I add them to the project.
+
+
+Data gaps
+ 1. RankMySEO returned no volume for "daftar startup indonesia". The 20 searches come from the third-party
+    keyword tool.
+ 2. RankMySEO gave no Indonesian SERP list, because the project has 0 competitors. The ID SERP lists come
+    from the third-party keyword tool.
+ 3. Google Trends values are relative (0 to 100). They are not search volumes.
+ 4. I did not run the RankMySEO site research, keyword gap or competitor traffic reports. Section 2.1 gives the
+    reasons.
+
+
+
+
+Prepared by RankMySEO                                                                                    28 / 36
+1001startup.id · SEO report and strategy                                                                      Appendix
+
+
+
+
+Appendix
+
+This appendix holds the detail tables. The main sections point to them.
+
+
+Appendix A. Priority keyword list (44 keywords)
+Rule: Indonesian keywords target the /id/ URL. The English URL stays as the hreflang alternate.
+
+KD values come from the RankMySEO keyword planner [E5]. SD values come from the third-party keyword
+tool [E7]. Volume is monthly searches in Indonesia, pulled on 5 Oct 2026.
+
+A. Head and category (8)
+
+ #        Keyword                                     Volume       KD / SD          Target URL
+
+ 1        startup indonesia                           590          KD 38            /id/
+
+ 2        perusahaan startup indonesia                140          KD 13            /id/ (secondary)
+
+ 3        startup di indonesia                        210          SD 23            /id/ (secondary)
+
+ 4        daftar startup indonesia                    20           SD 13            /id/ (secondary)
+
+ 5        unicorn indonesia                           320          KD 33            /id/unicorn
+
+ 6        startup unicorn indonesia                   140          KD 19            /id/unicorn (secondary)
+
+ 7        decacorn indonesia                          50           SD 18            /id/unicorn (secondary)
+
+ 8        startup terbesar di indonesia               30           SD 5             /id/ (secondary)
+
+
+
+For "daftar startup indonesia", RankMySEO returned no volume. The value 20 comes from the third-party
+keyword tool [E7].
+
+B. Programmatic company patterns (12)
+
+                                                      KD /
+ #        Pattern or example               Volume     SD       Target URL
+
+ 9        [company] valuasi: valuasi       50         SD 18    /id/company/gojek
+          gojek
+
+ 10       valuasi traveloka                20         SD 18    /id/company/traveloka
+
+ 11       valuasi ruangguru                10         SD 18    /id/company/ruangguru
+
+ 12       [company] pendanaan              no row     n/a      /id/company/[slug]
+          (pattern)                        returned
+
+ 13       [company] founder: pendiri       3,600      SD 25    /id/company/gojek (needs founder field)
+          gojek
+
+ 14       pendiri traveloka                260        SD 34    /id/company/traveloka (needs founder field)
+
+ 15       startup [sector] indonesia:      30         SD 14    /id/sector/fintech
+          startup fintech indonesia
+
+
+
+
+Prepared by RankMySEO                                                                                           29 / 36
+1001startup.id · SEO report and strategy                                                                                Appendix
+
+
+
+
+                                                         KD /
+ #        Pattern or example                  Volume     SD         Target URL
+
+ 16       startup edtech indonesia            10         SD 13      /id/sector/edtech
+
+ 17       startup agritech indonesia          10         SD 13      /id/sector/agri
+
+ 18       startup [kota]: startup             140        SD 20      /id/city/bandung
+          bandung
+
+ 19       startup jakarta                     50         SD 20      /id/city/jakarta
+
+ 20       startup bali                        30         SD 20      /id/map, H2 "Startup Bandung dan Bali" (set /id/city/
+                                                                    bali to noindex: 6 census companies, below the 10 gate)
+
+
+
+C. Investor patterns (8)
+
+                                                                                      KD /
+ #        Keyword                                           Volume                    SD          Target URL
+
+ 21       venture capital indonesia                         4,400                     KD 32       /id/investors
+
+ 22       investor startup indonesia                        0 (autocomplete           KD 12       /id/investors (secondary)
+                                                            #1)
+
+ 23       perusahaan modal ventura di indonesia             50                        SD 6        /id/investors (secondary)
+
+ 24       list venture capital indonesia                    10                        SD 5        /id/investors (secondary)
+
+ 25       [investor] portfolio: gdp venture                 880                       SD 40       /id/investor/gdp-venture
+
+ 26       east ventures (autocomplete "portofolio east      1,900                     SD 47       /id/investor/east-ventures
+          ventures")
+
+ 27       alpha jwc ventures                                880                       SD 32       /id/investor/alpha-jwc-
+                                                                                                  ventures
+
+ 28       softbank vision fund                              70                        SD 14       /id/investor/softbank-vision-
+                                                                                                  fund
+
+
+
+D. Research and data (9)
+
+                                                                                 KD /
+ #        Keyword                                                   Volume       SD           Target URL
+
+ 29       pendanaan startup                                         70           KD 19        /id/research/pendanaan-startup-
+                                                                                              indonesia (new)
+
+ 30       pendanaan startup 2025 (the 2026 variant comes from       20           KD 14        same URL (secondary)
+          autocomplete only [E10])
+
+ 31       jumlah startup di indonesia                               20           SD 5         /id/research/jumlah-startup-
+                                                                                              indonesia (new)
+
+ 32       data startup indonesia                                    10           SD 13        /id/coverage
+
+ 33       startup indonesia yang bangkrut                           20           SD 5         /id/closed
+
+ 34       startup bangkrut                                          20           SD 18        /id/closed (secondary)
+
+
+
+Prepared by RankMySEO                                                                                                        30 / 36
+1001startup.id · SEO report and strategy                                                                                     Appendix
+
+
+
+
+                                                                                     KD /
+ #           Keyword                                                     Volume      SD          Target URL
+
+ 35          unicorn indonesia bangkrut                                  10          SD 13       /id/closed (secondary)
+
+ 36          startup indonesia yang sudah ipo                            10          SD 5        /id/research/startup-indonesia-
+                                                                                                 ipo (new)
+
+ 37          berita startup indonesia                                    20          KD 13       /id/news
+
+
+
+E. Informational (7)
+
+                                                                              KD /
+ #           Keyword                                               Volume     SD            Target URL
+
+ 38          modal ventura                                         1,600      SD 15         /id/research/modal-ventura-indonesia
+                                                                                            (new)
+
+ 39          mekanisme pendanaan startup melalui venture           110        KD 6          /id/research/tahapan-pendanaan-
+             capital                                                                        startup (new)
+
+ 40          tahapan pendanaan startup                             10         KD 13         same URL (secondary)
+
+ 41          unicorn adalah                                        880        SD 34         /id/research/unicorn-adalah (new)
+
+ 42          decacorn adalah                                       140        SD 17         /id/research/decacorn-adalah (new)
+
+ 43          perusahaan unicorn indonesia yang bergerak di         140        KD 16         /id/research/unicorn-adalah
+             bidang transportasi online adalah                                              (secondary)
+
+ 44          startup adalah                                        8,100      SD 18         Low priority. Make this page only if you
+                                                                                            want top-of-funnel traffic.
+
+
+
+Appendix B. Fixes per template
+Note: many current titles use a dash between the page name and the brand. I describe these titles in words in
+the tables below.
+
+Company template (seen on /id/company/astro, /company/traveloka, /company/ruangguru and /company/
+qalboo, 5 Oct 2026) [E13]
+
+ Item           Issue                                        Fix                                                           Priority
+
+ Title tag      The pattern is the company name,             ID pattern: "[Company]: valuasi, pendanaan, pendiri |          High
+                "pendanaan, valuasi, jumlah karyawan"        1001startup.id". Drop the suffix only above 60
+                and the brand suffix. Some titles drop       characters.
+                the brand suffix (for example /id/
+                company/traveloka).
+
+ Meta           Good pattern: "Astro: Commerce ·             Keep. Add the last round and the update date:                  Medium
+ descript       Jakarta Barat · menghimpun dana              "[Company] ([sector], [city]): pendanaan US$[x],
+ ion            US$142 juta · 994 pekerja. Sumber            putaran terakhir [round] ([year]), [n] pekerja. Data per
+                publik, estimasi diberi label." Empty        [date]."
+                profiles (for example Qalboo) get only
+                the sector and the city.
+
+ H1             "Astro"                                      On /id/: "[Company]: profil, pendanaan dan valuasi".           Medium
+                                                             Keep the name first.
+
+
+
+Prepared by RankMySEO                                                                                                              31 / 36
+1001startup.id · SEO report and strategy                                                                               Appendix
+
+
+
+
+ Item         Issue                                        Fix                                                       Priority
+
+ Schema       Organization, WebPage (dateModified          Add to Organization: "@id" (page URL + "#org"),            Medium
+              2026-09-30, isPartOf Dataset) and            foundingDate, founder (Person), funder (investors),
+              BreadcrumbList. The BreadcrumbList           sameAs (company site, LinkedIn) and description.
+              says "e-commerce & commerce". The            Make BreadcrumbList names match the visible trail.
+              visible trail says "Commerce".
+
+ Content      No founder field on the company pages        Add a "Pendiri" row with a source                          High
+              checked. "Pendiri" is not on /id/            [DATA FROM LUCA]. This field serves "pendiri gojek"
+              company/traveloka.                           (3,600) and "pendiri traveloka" (260) [E7].
+
+ Internal     Breadcrumb, a "Sebanding di                  Add a city link (/id/city/[city]) and a link to the        Medium
+ links        Commerce" sibling block and investor         matching research pillar. Keep 5 to 8 sibling links.
+              links.
+
+ Canonic      Self canonical, "index, follow", in          Keep. Apply the quality gate in section 3.4.               High
+ al,          sitemap.
+ index,
+ sitemap
+
+
+
+Investor template (seen on /investor/gdp-venture, /id/investor/gdp-venture, /investor/east-ventures and /
+investor/undisclosed-angel-investor, 5 Oct 2026) [E13]
+
+ Item         Issue                                          Fix                                                     Priority
+
+ Title tag    The ID title "Portofolio GDP Venture" plus     Pattern: "Portofolio [Investor]: [n] startup di          Medium
+              the brand is good. The EN title is the         Indonesia | 1001startup.id".
+              investor name, "Investors" and the brand.
+
+ Meta         "Portofolio GDP Venture di sensus startup      Keep. Add top sectors and the update date.               Low
+ descrip      Indonesia: 25 perusahaan didanai, lengkap
+ tion         dengan pendanaan, lapangan kerja, dan
+              sumbernya."
+
+ H1           "GDP Venture"                                  "Portofolio [Investor] di Indonesia".                    Medium
+
+
+ Schem        BreadcrumbList only.                           Add Organization for the investor (name, url,            Medium
+ a                                                           sameAs). Add an ItemList of portfolio companies
+                                                             with links to /id/company/[slug].
+
+ Conten       No H2. /investor/east-ventures has 722         Add an answer sentence: "Menurut sensus                  Medium
+ t            words.                                         1001startup.id (diperbarui [date]), [Investor]
+                                                             mendanai [n] startup ...". Then add H2s: portfolio by
+                                                             sector, rounds and co-investors.
+
+ Internal     Links to portfolio companies only.             Add links to /id/investors, to 3 co-investor pages       Medium
+ links                                                       and to sector hubs.
+
+ Thin risk    359 of 507 investor pages show 1 census        Apply the quality gate in section 3.4.                   High
+              company [E14]. "undisclosed angel
+              investor" is an indexable page ("index,
+              follow").
+
+
+
+
+Prepared by RankMySEO                                                                                                       32 / 36
+1001startup.id · SEO report and strategy                                                                                Appendix
+
+
+
+
+Sector and city template (seen on /id/sector/fintech, /sector/fintech and /id/city/jakarta, 5 Oct 2026) [E13]
+
+ Item         Issue                              Fix                                                                  Priority
+
+ Title        "Startup fintech di Indonesia"     Add the count and the year: "Startup fintech di Indonesia: daftar     Medium
+ tag          plus the brand. No count and       64 perusahaan (2026)".
+              no year.
+
+ Schem        ItemList (numberOfItems 64)        Keep. Add CollectionPage with dateModified.                           Medium
+ a            and BreadcrumbList.
+
+ Conten       No H2. /id/sector/fintech has      Add an answer block (count, total funding, top 3 by funding,          Medium
+ t            901 words.                         date). Add H2s: biggest by funding, investors in this sector,
+                                                 closed companies in this sector.
+
+ Internal     Sector pages link to each          Link them from home and nav (section 3.2, item 3). Link to the        High
+ links        other [E20].                       city pages.
+
+
+
+Research post template (seen on /research/indonesia-computer-import-growth and its /id/ copy, 5 Oct
+2026) [E13]
+
+ Item         Issue                               Fix                                                                 Priority
+
+ Title tag    "Searching for H200 and B300        Keep it under 60 characters. Put the keyword first.                  Medium
+              AI clusters in Indonesia’s
+              imports · 1001startup.id" has 79
+              characters.
+
+ Meta         179 characters.                     Cut it to about 155 characters.                                      Low
+ descrip
+ tion
+
+ Schem        BlogPosting (datePublished          Use Article or BlogPosting with author Person (Luca Cada Lora,       Medium
+ a            2026-09-23, author                  url to /tentang). Add dateModified, image, and "about" that
+              Organization).                      points to the Dataset.
+
+ Conten       2,808 words. No visible byline.     Add a byline and an update date. Keep research on the census         Medium
+ t            The topic is AI hardware            topics in section 4. This post is outside the census topics, so I
+              imports.                            do not use it in the link plan or PR. Do not use /research to
+                                                  promote other products (section 6.7).
+
+ Internal     Breadcrumb and the "Who is          Link to 3 or more census pages (companies, sectors) that the         Medium
+ links        building this" block only.          post names.
+
+
+
+Home template (seen on / and /id/, 5 Oct 2026) [E13]
+
+ Item        Issue                               Fix                                                                  Priority
+
+ Title       ID title is "Sensus Startup         "Startup Indonesia: daftar 387 perusahaan | Sensus                    High
+ tag         Indonesia" plus the brand.          1001startup.id". Update the number at each rebuild.
+
+ Meta        "Sensus startup Indonesia:          Keep.                                                                 Low
+ descri      daftar 387 perusahaan dengan
+ ption       data pendanaan, valuasi, jumlah
+             pekerja, dan peta kantornya.
+             Sumber publik saja, estimasi
+             diberi label."
+
+
+
+
+Prepared by RankMySEO                                                                                                      33 / 36
+1001startup.id · SEO report and strategy                                                                                   Appendix
+
+
+
+
+ Item       Issue                                   Fix                                                                  Priority
+
+ H1         ID "Sensus startup Indonesia.";         ID: "Sensus startup Indonesia: daftar perusahaan startup 2026".       High
+            EN "Indonesia's startup graph."
+
+ Sche       Organization, WebSite and               Dataset: add license, dateModified, temporalCoverage and              Medium
+ ma         Dataset. The Dataset has no             variableMeasured (funding, valuation, headcount, output). Add
+            license and no dateModified.            distribution if you offer a download [DATA FROM LUCA]. Add
+                                                    creator with Person. Organization: add founder (Person), the
+                                                    brand tie to Jatevo Labs or Vantis [DATA FROM LUCA] and
+                                                    sameAs.
+
+ Conte      The answer sentence is present:         Keep the answer sentence. Load the full table in pages or by          Medium
+ nt         "Menurut 1001startup.id                 sector to cut page weight.
+            (diperbarui 1 Okt 2026), sensus
+            ini mencatat 387 startup
+            Indonesia ...". The page is about
+            1.0 MB, with 523 internal and 213
+            external links.
+
+
+
+Other pages [E13]
+
+ Page        Issue                                         Fix                                                           Priority
+
+ /id/        The title and H1 do not contain               New title: "Startup unicorn Indonesia: daftar 10               High
+ unicor      "unicorn". The body uses it 5 times.          perusahaan bernilai US$1 miliar+ (2026)". Keep the
+ n                                                         private, market cap and estimate split.
+
+ /id/        The H1 "Yang berhenti." has no keyword.       New H1: "Startup Indonesia yang bangkrut dan tutup".           Medium
+ closed      The page shows 3 closed companies             Add ItemList schema. List the 4 removed rows with
+             and 4 removed rows.                           reasons, or explain why they are not listed.
+
+ /map        No JSON-LD and 277 words.                     Add BreadcrumbList. Add a text list of cities with counts      Low
+                                                           and links.
+
+ /news       462 briefs on one URL. No brief has its       Keep it as one hub. Give a brief its own URL only if it has    Low
+             own URL [E20].                                original data and 150+ words. Other new URLs are thin.
+
+
+
+
+Prepared by RankMySEO                                                                                                         34 / 36
+1001startup.id · SEO report and strategy                                                                                 Sources
+
+
+
+
+Sources
+
+All times are WIB (UTC+7), 5 Oct 2026.
+
+ ID        Source                            Query or URL                                                         Time (WIB)
+
+ E1        RankMySEO account status and      Account, project "1001 startup Luca"                                 about 10:50
+           project list
+
+ E2        RankMySEO project overview        Project "1001 startup Luca"                                          about 10:52
+
+ E3        RankMySEO tracked keywords        Tracked keywords                                                     about 10:52
+
+ E4        RankMySEO competitors and         Project competitors and ranks                                        about 10:55
+           rank comparison
+
+ E5        RankMySEO keyword planner         5 seeds: startup indonesia, venture capital indonesia, unicorn       about 11:00
+                                             indonesia, pendanaan startup, daftar startup indonesia               to 11:21
+
+ E6        RankMySEO Search Console          Project                                                              about 11:00
+           data, Analytics data and site
+           audit
+
+ E7        Third-party keyword tool,         About 50 keywords, Indonesia, id                                     about 11:00
+           keyword overview and                                                                                   to 11:20
+           suggestions
+
+ E8        Third-party keyword tool, SERP    4 keywords, location 2360 (Indonesia)                                about 11:10
+           analysis
+
+ E9        Third-party keyword tool,         1001startup.id                                                       about 11:05
+           domain overview
+
+ E10       Google autocomplete (hl=id,       Seed list in section 2.2                                             about 11:10
+           gl=id)
+
+ E11       Google Trends (geo ID, 12         5 head terms, 5 city terms                                           about 11:12
+           months)
+
+ E12       Web search (non-ID)               Search queries in section 2.6                                        about 11:17
+
+ E13       curl                              1001startup.id pages in section 3                                    11:13 to 11:25
+
+ E14       curl and parse                    https://1001startup.id/investors (portfolio counts)                  about 11:20
+
+ E15       curl                              /id/sector/* meta descriptions (16 sectors)                          about 11:20
+
+ E16       curl and dig                      vantis.sh, jatevo.ai, oyenza.com and the domain in your X post       about 11:22
+
+ E17       curl                              Google Search Central: spam policies, qualify outbound links, AI     about 11:23
+                                             features, Dataset, crawl budget
+
+ E18       curl                              Media outlet homepages                                               about 11:24
+
+ E19       Screenshots of the X thread       Posts on X in the thread https://x.com/lucaxyzz/status/              accessed 5
+                                             2106820322322530654: your AI-traffic post, your research blog        Oct 2026
+                                             post and my advice post
+
+ E20       Site and owner research dossier   Site structure, technical checks, owned sites, competitors, Google   5 Oct 2026
+                                             policy text, crawl budget
+
+
+
+
+Prepared by RankMySEO                                                                                                      35 / 36
+1001startup.id · SEO report and strategy                                                                    Sources
+
+
+
+
+ ID          Source                            Query or URL                                           Time (WIB)
+
+ E21         Third-party keyword tool,         pendiri gojek                                          about 11:05
+             keyword overview, monthly
+             series
+
+ E22         Search Console Help, "Managing    https://support.google.com/webmasters/answer/7687615   fetched 5
+             owners, users, and permissions"                                                          Oct 2026
+
+
+
+Google pages quoted in this report:
+
+  • Spam policies (link spam, widget links, expired domain abuse, scaled content abuse, site reputation):
+      https://developers.google.com/search/docs/essentials/spam-policies (last updated 2026-08-28 UTC,
+      widget rule checked on the live page on 5 Oct 2026)
+  • Qualify outbound links: https://developers.google.com/search/docs/crawling-indexing/qualify-
+      outbound-links (last updated 2025-12-10 UTC)
+  • Spam updates: https://developers.google.com/search/docs/appearance/spam-updates (last updated
+      2025-12-10 UTC)
+  • Crawl budget: https://developers.google.com/crawling/docs/crawl-budget (last updated 2026-07-22
+      UTC)
+  • AI features: https://developers.google.com/search/docs/appearance/ai-features (last updated
+      2025-12-10 UTC)
+  • Dataset structured data: https://developers.google.com/search/docs/appearance/structured-data/
+      dataset (last updated 2026-09-08 UTC)
+  • "Evolving nofollow", Google Search Central Blog, 10 Sep 2019: https://developers.google.com/search/
+      blog/2019/09/evolving-nofollow-new-ways-to-identify
+  • Google Search Status Dashboard, September 2026 spam update: https://status.search.google.com/
+      incidents/XhUDXP7A67iHCD2kmbVu
+  • Search Console Help, managing owners, users, and permissions: https://support.google.com/
+      webmasters/answer/7687615 [E22]
+
+Keyword data: RankMySEO (https://rankmyseo.com), project "1001 startup Luca", read-only, 5 Oct 2026.
+
+
+
+
+Prepared by RankMySEO                                                                                        36 / 36
+

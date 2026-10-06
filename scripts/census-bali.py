@@ -470,7 +470,10 @@ def main():
     # scope: this script is the ONE deliberate owner of the rule edit (see
     # docstring); entries merge by name and REPLACED drops the Timedoor line.
     scope = raw.setdefault("scope", {})
-    scope["rule"] = RULE
+    # Since 28 Sep 2026 the census is nationwide and scripts/census-national.py
+    # owns the rule; a repair re-run here must not put the three-metro text back.
+    if not scope.get("nationwide_added"):
+        scope["rule"] = RULE
     scope["bali_added"] = TODAY
     scope["outside"] = [e for e in scope.get("outside", []) if e.get("name") not in REPLACED]
 

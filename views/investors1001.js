@@ -89,6 +89,23 @@ function graph(data) {
   return { list, by };
 }
 
+/* Quality gate (RankMySEO report, 5 Oct 2026; Google's September 2026 spam
+   update was rolling out). ~370 of ~520 investor pages list ONE census
+   company — a near-copy of that company's own page. Those, and generic
+   placeholders ("angel investors", "undisclosed angel investor"), stay up
+   for readers and internal links but are "noindex, follow" and left out of
+   the sitemap. A page is indexed when the investor backs 2+ census
+   companies, or has its own fund record in data/investors.json. */
+const GENERIC_INV = /^((\w+ )?angel investors?|undisclosed.*|private individual.*)$/i;
+function indexable(e, det = details()) {
+  if (!e || GENERIC_INV.test(e.name || '')) return false;
+  return e.cos.length >= 2 || !!det[e.slug];
+}
+function indexableSlugs(data) {
+  const det = details();
+  return graph(data).list.filter((e) => indexable(e, det)).map((e) => e.slug);
+}
+
 /* ------------------------------------------------------------------ bits */
 
 const fmt = (x, d = 0) => (x === null || x === undefined) ? '—'
@@ -98,7 +115,8 @@ const moneyM = (m) => !m ? '—'
   : 'US$' + (m >= 10 ? fmt(m, Number.isInteger(m) ? 0 : 1) : m >= 1 ? fmt(m, 1) : fmt(m, 2)) + 'M';
 
 /* bare: unprefixed path for hreflang/canonical — null on pages (404) that
-   should declare no alternate. noindex: only the 404 keeps it. */
+   should declare no alternate. noindex: the 404 ('noindex') and gated
+   portfolio pages ('noindex, follow' — see indexable()). */
 function shell({ title, desc, banner, active, path: pagePath, body, lang = 'en', bare = null, noindex = false }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
@@ -107,7 +125,7 @@ function shell({ title, desc, banner, active, path: pagePath, body, lang = 'en',
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="${noindex ? 'noindex' : 'index, follow'}">
+<meta name="robots" content="${noindex ? (noindex === true ? 'noindex' : noindex) : 'index, follow'}">
 <title>${esc(title)}</title>
 <meta property="og:title" content="${esc(title)}">
 <meta name="description" content="${esc(desc)}">
@@ -380,6 +398,7 @@ function investor({ data, slug, lang = 'en' }) {
     banner: L(`${esc(e.name.toUpperCase())} · ${e.cos.length} CENSUS COMPAN${e.cos.length === 1 ? 'Y' : 'IES'} · EVERY CLAIM SOURCED`,
       `${esc(e.name.toUpperCase())} · ${e.cos.length} PERUSAHAAN SENSUS · SETIAP KLAIM ADA SUMBERNYA`),
     active: 'investors', path: `/investor/${e.slug}`, body, lang, bare: `/investor/${e.slug}`,
+    noindex: indexable(e, det ? { [e.slug]: det } : {}) ? false : 'noindex, follow',
   });
 }
 
@@ -407,4 +426,4 @@ function notFound({ data, lang = 'en' }) {
   });
 }
 
-module.exports = { index, investor, notFound, slugInv, parseInv };
+module.exports = { index, investor, notFound, slugInv, parseInv, indexableSlugs };

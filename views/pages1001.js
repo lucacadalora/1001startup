@@ -49,16 +49,23 @@ function landing({ data, lang = 'en' }) {
      after Bandung was merged, which is the kind of line that quietly goes
      stale every time the scope moves. */
   const METROS = (data && data.by_metro || []).filter((x) => x.count);
-  const MNAME = { 'Greater Jakarta': 'Jakarta Raya' };
-  /* three metros now: comma-join with a final 'and', so the line reads
-     "A (n), B (n) and C (n)" instead of stacked 'and's */
+  /* comma-join with a final 'and', so the line reads "A (n), B (n) and C (n)"
+     instead of stacked 'and's. Nationwide (28 Sep 2026) the list can run to
+     dozens of cities, so past four it names the three largest and counts the
+     rest — every city still has its own /city page, linked from its companies. */
   /* each metro name links to its /city page — the hero is the site's
      strongest page, so this is the crawl path that ranks the city landings */
-  const METRO_NAMES = METROS.map((x) => `<a href="${PF}/city/${esc(x.id)}">${lang === 'id' ? (MNAME[x.name] || x.name) : x.name}</a> (${fmt(x.count)})`);
-  const METRO_LIST = METRO_NAMES.length > 1
-    ? METRO_NAMES.slice(0, -1).join(', ') + L(' and ', ' dan ') + METRO_NAMES[METRO_NAMES.length - 1]
-    : METRO_NAMES.join('');
-  const METRO_LINE = METROS.length ? L(', ', ' — mencakup ') + METRO_LIST : '';
+  /* name_id arrives with the 28 Sep 2026 build; before that, "Greater Jakarta"
+     is the only name that differs in Indonesian */
+  const METRO_NAMES = METROS.map((x) => `<a href="${PF}/city/${esc(x.id)}">${esc(lang === 'id' ? (x.name_id || (x.name === 'Greater Jakarta' ? 'Jakarta Raya' : x.name)) : x.name)}</a> (${fmt(x.count)})`);
+  const METRO_LIST = METRO_NAMES.length > 4
+    ? METRO_NAMES.slice(0, 3).join(', ') + L(` and ${METRO_NAMES.length - 3} more`, ` dan ${METRO_NAMES.length - 3} kota lainnya`)
+    : METRO_NAMES.length > 1
+      ? METRO_NAMES.slice(0, -1).join(', ') + L(' and ', ' dan ') + METRO_NAMES[METRO_NAMES.length - 1]
+      : METRO_NAMES.join('');
+  const METRO_LINE = !METROS.length ? ''
+    : METROS.length > 4 ? L(`, across ${METROS.length} cities: `, ` — mencakup ${METROS.length} kota: `) + METRO_LIST
+      : L(', ', ' — mencakup ') + METRO_LIST;
   const hasFunding = (c) => c.funding_total_usd_m !== null && c.funding_total_usd_m !== undefined && c.funding_total_usd_m > 0;
   const fundedCount = companies.filter(hasFunding).length;
   /* Luca, Aug 29: "we need to put a link of the funding information, so it not
@@ -155,9 +162,8 @@ function landing({ data, lang = 'en' }) {
           + (g.indonesia_basis
               ? 'Angka pada baris ini dipotong dari basis yang diumumkan \u2014 ' + g.indonesia_basis + '.'
               : 'Grup ini tidak mengumumkan basis Indonesia untuk memotong angka, jadi sel nilainya tanda pisah.')
-          + ' Pekerja adalah orang dalam daftar gaji yang bekerja di metro sensus: mitra pengemudi, kurir, '
-          + 'merchant, dan penjual tidak pernah dihitung, dan gaji jaringan nasional di luar metro '
-          + 'dibatasi cakupannya atau diberi tanda pisah.'
+          + ' Pekerja adalah daftar gaji di Indonesia: mitra pengemudi, kurir, merchant, dan penjual '
+          + 'tidak pernah dihitung, dan daftar gaji yang sebagian besar garda depan diberi tanda.'
         : (g.group ? g.group + (g.listing ? ' (' + g.listing + ')' : '') + ' is the parent'
               + (gv ? ', worth ' + gv : '') + '. ' : '')
           + 'A group market capitalisation, and capital a foreign parent raised for a whole region, are not '
@@ -165,9 +171,8 @@ function landing({ data, lang = 'en' }) {
           + (g.indonesia_basis
               ? 'The figure on this row is carved from a disclosed basis \u2014 ' + g.indonesia_basis + '.'
               : 'This group discloses no Indonesian basis to carve a figure from, so the value cells are dashes.')
-          + ' Jobs are people on the payroll working in the census metros: driver-, courier-, merchant- and '
-          + 'seller-partners are never counted, and a nationwide network’s payroll outside the metros is '
-          + 'scoped out or dashed.',
+          + ' Jobs are the Indonesian payroll: driver-, courier-, merchant- and seller-partners are never '
+          + 'counted, and a mostly-frontline payroll is marked.',
       m: g.domicile || '',
       lc: 1,
       l: [{ h: PF + '/coverage#method', t: L('How the numbers are made \u2192', 'Cara angka-angka ini dibuat \u2192') }],
@@ -368,10 +373,14 @@ function landing({ data, lang = 'en' }) {
      the two obvious readings — revenue, or the wage bill — were both wrong. Now
      the number is the affordance: it opens the row's own arithmetic, the
      definition, and on the rows where the anchor is known to run high, that. */
+  const metroName = (id) => { const x = (data && data.by_metro || []).find((y) => y.id === id); return x ? (lang === 'id' ? x.name_id || x.name : x.name) : ''; };
   const outCell = (c) => {
     const n = fmt(c.est_gva_idr_bn);
-    const d = GVA.markNote(c, m, lang);
+    const d = GVA.markNote(c, m, lang, metroName(c.metro));
     if (!d) return n;
+    /* nationwide rows outside the anchored metros: a dash that says why */
+    if (c.output_withheld) return mark('nofig', '—',
+      L('output not estimated for this city yet, show why', 'output belum diestimasi untuk kota ini, lihat alasannya'), d);
     return mark('gv' + (c.output_caveat ? ' hi' : ''), n,
       L('output, show the working', 'output, lihat perhitungannya'), d);
   };
@@ -599,7 +608,7 @@ function landing({ data, lang = 'en' }) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>${L("Indonesia's Startup Census — 1001startup.id", 'Sensus Startup Indonesia — 1001startup.id')}</title>
+<title>${L("Indonesia's Startup Census — 1001startup.id", T.companies ? `Sensus Startup Indonesia: ${fmt(T.companies)} Perusahaan — 1001startup.id` : 'Sensus Startup Indonesia — 1001startup.id')}</title>
 <meta name="description" content="${L('The census of Indonesian startups: who they are, where they sit, what they raised, whom they employ, and what they add to the economy.', `Sensus startup Indonesia: daftar ${fmt(T.companies)} perusahaan dengan data pendanaan, valuasi, jumlah pekerja, dan peta kantornya. Sumber publik saja, estimasi diberi label.`)}">
 <meta name="robots" content="index, follow">
 ${I18N.headTags(lang, '/')}
@@ -755,6 +764,8 @@ button.estt:focus-visible,button.nofig:focus-visible,button.hc:focus-visible{out
 .note[data-k="hc"] .nk{color:#52525B}
 .note[data-k="gva"]{border-color:#6B6B73}
 .note[data-k="gva"] .nk{color:#52525B}
+.note[data-k="gvana"]{border-color:#6B6B73}
+.note[data-k="gvana"] .nk{color:#52525B}
 .note[data-k="gvahi"]{border-color:#B8441F}
 .note[data-k="gvahi"] .nk{color:#B8441F}
 .note[data-k="hcco"]{border-color:#2F7A5C}

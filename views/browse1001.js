@@ -64,11 +64,30 @@ const SECTORS = {
   misc: { en: 'other tech & insurtech', id: 'teknologi lainnya & insurtech' },
 };
 
-const CITIES = {
-  jakarta: { en: 'Greater Jakarta', id: 'Jakarta Raya' },
-  bandung: { en: 'Bandung', id: 'Bandung' },
-  bali: { en: 'Bali', id: 'Bali' },
+/* Cities are read off the census itself (by_metro, built from lib/metros1001.js).
+   The census went nationwide on 28 Sep 2026, so the list can no longer be typed
+   out here: a city exists once a company in it does. */
+/* A census.json built before 28 Sep 2026 has no mapped/anchored/name_id on its
+   by_metro rows; the city table fills them in, so a restart ahead of a rebuild
+   cannot strip the map button or the output line from Jakarta, Bandung or Bali. */
+const METRO = require('../lib/metros1001');
+const cityOf = (data, slug) => {
+  const x = ((data && data.by_metro) || []).find((y) => y.id === slug && y.count);
+  if (!x) return null;
+  return Object.assign({}, x, {
+    mapped: x.mapped !== undefined ? x.mapped : METRO.mapped(x.id),
+    anchored: x.anchored !== undefined ? x.anchored : METRO.anchored(x.id),
+    name_id: x.name_id || METRO.name(x.id, 'id', x.name),
+  });
 };
+const cityIds = (data) => ((data && data.by_metro) || []).filter((x) => x.count).map((x) => x.id);
+/* City quality gate (same reasoning as the investor gate, RankMySEO report
+   5 Oct 2026): once the census went nationwide, many cities hold one to four
+   companies, and a page listing one company is a near-copy of its profile.
+   Below CITY_MIN the page stays up for readers and links but is
+   "noindex, follow" and left out of the sitemap. */
+const CITY_MIN = 5;
+const indexableCityIds = (data) => ((data && data.by_metro) || []).filter((x) => x.count >= CITY_MIN).map((x) => x.id);
 
 const sectorKeys = (data) => {
   const seen = new Set();
@@ -137,7 +156,7 @@ function itemListLd(rows, lang) {
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`;
 }
 
-function shell({ title, desc, path, lang, body, ld }) {
+function shell({ title, desc, path, lang, body, ld, robots = 'index, follow' }) {
   const L = I18N.mkL(lang);
   return `<!doctype html>
 <html lang="${lang}">
@@ -146,7 +165,7 @@ function shell({ title, desc, path, lang, body, ld }) {
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
-<meta name="robots" content="index, follow">
+<meta name="robots" content="${robots}">
 ${I18N.headTags(lang, path)}
 ${I18N.ogImage()}
 <meta property="og:title" content="${esc(title)}">
@@ -255,7 +274,7 @@ function sector({ data, key, lang = 'en' }) {
   <div class="cta">
     <a class="btn primary" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
     <a class="btn" href="${PF}/map">${L('See the map', 'Lihat petanya')}</a>
-    <a class="btn" href="${PF}/coverage#sectors">${L('All sectors', 'Semua sektor')}</a>
+    <a class="btn" href="${PF}/sector">${L('All sectors', 'Semua sektor')}</a>
   </div>
 </section>
 <section class="stats">
@@ -290,49 +309,137 @@ ${inv.length ? `<section class="wrap">
       : `${fmt(A.n)} ${S.en} startups in Indonesia — funding, headcount and investors, from the 1001startup.id census.`;
   }
   return shell({
-    title: SCHEMA.fitTitle([`${h1} — 1001startup.id`, h1]),
+    title: SCHEMA.fitTitle([`${h1}: ${fmt(A.n)} ${L(A.n === 1 ? 'company' : 'companies', 'perusahaan')} — 1001startup.id`, `${h1} — 1001startup.id`, h1]),
     desc,
     path, lang, body, ld: itemListLd(rows, lang) + SCHEMA.breadcrumbLd(lang, crumb),
   });
 }
 
+/* /sector — the hub every sector page hangs off (RankMySEO report, 5 Oct
+   2026: the nav's "Sectors" pointed into /coverage and no page linked all
+   sector pages together). One answer sentence with the census date, then a
+   table of every sector with its live totals, then the cities. */
+function sectorHub({ data, lang = 'en' }) {
+  const keys = sectorKeys(data || {});
+  if (!keys.length) return null;
+  const L = I18N.mkL(lang);
+  const PF = I18N.pfx(lang);
+  const all = data.companies || [];
+  const secs = keys.map((k) => {
+    const rows = all.filter((c) => c.sector_key === k);
+    return Object.assign({ key: k, name: lang === 'id' ? SECTORS[k].id : SECTORS[k].en }, aggregates(rows));
+  }).sort((a, b) => b.n - a.n || b.funding - a.funding);
+  const asOf = Date.parse(data.generated) ? new Date(Date.parse(data.generated)).toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB',
+    { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Jakarta' }) : '';
+  const top = secs.slice(0, 3);
+  const cap = (x) => x.charAt(0).toUpperCase() + x.slice(1);
+  const path = '/sector';
+  const h1 = L('Indonesian startups by sector', 'Startup Indonesia per sektor');
+  const crumb = [{ name: '1001startup.id', path: '/' }, { name: h1, path }];
+  const fact = lang === 'id'
+    ? `Menurut sensus 1001startup.id${asOf ? ` (diperbarui ${asOf})` : ''}, ${fmt(all.length)} startup Indonesia terbagi ke dalam ${secs.length} sektor. Yang terbesar: ${top.map((x) => `${x.name} (${fmt(x.n)})`).join(', ')}.`
+    : `According to the 1001startup.id census${asOf ? ` (updated ${asOf})` : ''}, ${fmt(all.length)} Indonesian startups fall into ${secs.length} sectors. The largest: ${top.map((x) => `${x.name} (${fmt(x.n)})`).join(', ')}.`;
+  const tr = secs.map((x) => `
+    <tr>
+      <td style="white-space:nowrap"><a href="${PF}/sector/${esc(x.key)}">${esc(cap(x.name))}</a></td>
+      <td class="n">${fmt(x.n)}</td>
+      <td class="n">${fmt(x.fundedN)}</td>
+      <td class="n">${x.funding > 0 ? money(x.funding) : '—'}</td>
+      <td class="n">${fmt(x.jobs)}</td>
+    </tr>`).join('');
+  const cities = ((data.by_metro) || []).filter((x) => x.count)
+    .sort((a, b) => b.count - a.count)
+    .map((x) => `<a class="chip" href="${PF}/city/${esc(x.id)}">${esc(lang === 'id' ? (x.name_id || METRO.name(x.id, 'id', x.name)) : x.name)}<b>${fmt(x.count)}</b></a>`).join('');
+  const body = `
+<section class="hero">
+  <div class="eyebrow"><span class="sq"></span>${L('SECTORS', 'SEKTOR')} · ${secs.length}</div>
+  <h1>${esc(h1)}.</h1>
+  <p class="sub">${esc(fact)}</p>
+  <div class="cta">
+    <a class="btn primary" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
+    <a class="btn" href="${PF}/unicorn">${L('Billion-dollar startups', 'Startup unicorn')}</a>
+    <a class="btn" href="${PF}/investors">${L('Investors', 'Investor')}</a>
+  </div>
+</section>
+<section class="wrap">
+  <div class="eyebrow"><span class="sq"></span>${L('EVERY SECTOR', 'SEMUA SEKTOR')}</div>
+  <div class="tablewrap"><table>
+    <thead><tr><th>${L('Sector', 'Sektor')}</th><th class="n">${L('Companies', 'Perusahaan')}</th><th class="n">${L('With disclosed funding', 'Dengan pendanaan diumumkan')}</th><th class="n">${L('Funding US$M', 'Pendanaan (US$ juta)')}</th><th class="n">${L('Jobs est', 'Pekerja (est.)')}</th></tr></thead>
+    <tbody>${tr}</tbody>
+  </table></div>
+  <p class="foot-note">${L('Funding is the sum of what each company disclosed raising; a dash means none disclosed. Jobs are estimates. Each sector page lists its companies, with the source behind every figure on the company profile — see ',
+    'Pendanaan adalah jumlah dana yang diumumkan tiap perusahaan; tanda strip berarti tidak ada yang diumumkan. Angka pekerja adalah estimasi. Setiap halaman sektor memuat daftar perusahaannya, dan sumber tiap angka ada di profil perusahaan — lihat ')}<a href="${PF}/coverage#method">${L('how the numbers are made', 'cara kami menghitung')}</a>.</p>
+</section>
+${cities ? `<section class="wrap">
+  <div class="eyebrow"><span class="sq"></span>${L('BY CITY', 'PER KOTA')}</div>
+  <div class="chips">${cities}</div>
+</section>` : ''}`;
+  const ld = {
+    '@context': 'https://schema.org', '@type': 'ItemList', numberOfItems: secs.length,
+    itemListElement: secs.map((x, i) => ({ '@type': 'ListItem', position: i + 1,
+      name: lang === 'id' ? 'Startup ' + x.name : cap(x.name), url: I18N.ORIGIN + PF + '/sector/' + x.key })),
+  };
+  return shell({
+    title: SCHEMA.fitTitle(lang === 'id'
+      ? [`Startup Indonesia per Sektor: ${secs.length} Sektor — 1001startup.id`, `Startup Indonesia per Sektor — 1001startup.id`, h1]
+      : [`Indonesian Startups by Sector — 1001startup.id`, h1]),
+    desc: lang === 'id'
+      ? `${fmt(all.length)} startup Indonesia dalam ${secs.length} sektor — jumlah perusahaan, pendanaan diumumkan, dan perkiraan lapangan kerja per sektor, dari sensus 1001startup.id.`
+      : `${fmt(all.length)} Indonesian startups across ${secs.length} sectors — companies, disclosed funding and estimated jobs per sector, from the 1001startup.id census.`,
+    path, lang, body,
+    ld: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` + SCHEMA.breadcrumbLd(lang, crumb),
+  });
+}
+
 function city({ data, slug, lang = 'en' }) {
-  const C = CITIES[slug];
+  const C = cityOf(data, slug);
   if (!C) return null;
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
   const rows = (data.companies || []).filter((c) => c.metro === slug).sort((a, b) => a.rank - b.rank);
   if (!rows.length) return null;
   const A = aggregates(rows);
-  const name = lang === 'id' ? C.id : C.en;
+  const nameEn = C.name;
+  const nameId = C.name_id || C.name;
+  const name = lang === 'id' ? nameId : nameEn;
   const inv = topInvestors(rows);
   const path = '/city/' + slug;
   const crumb = [{ name: '1001startup.id', path: '/' },
-    { name: (lang === 'id' ? 'Startup di ' + C.id : 'Startups in ' + C.en), path }];
+    { name: (lang === 'id' ? 'Startup di ' + nameId : 'Startups in ' + nameEn), path }];
   /* sector mix inside the metro, linking each slice to its sector page */
   const secCount = {};
   for (const c of rows) secCount[c.sector_key] = (secCount[c.sector_key] || 0) + 1;
   const mix = Object.entries(secCount).filter(([k]) => SECTORS[k]).sort((a, b) => b[1] - a[1])
     .map(([k, n]) => `<a class="chip" href="${PF}/sector/${esc(k)}">${esc(lang === 'id' ? SECTORS[k].id : SECTORS[k].en)}<b>${n}</b></a>`).join('');
-  const h1 = L(`Startups in ${C.en}`, `Startup di ${C.id}`);
-  const mapHref = slug === 'jakarta' ? `${PF}/map` : `${PF}/map?city=${slug}`;
+  const h1 = L(`Startups in ${nameEn}`, `Startup di ${nameId}`);
+  /* The map draws Greater Jakarta, Bandung and Bali; a city outside them gets no
+     map button rather than a map of blank paper. Output is estimated only where
+     the anchors fit (lib/metros1001.js) — elsewhere the line says so. */
+  const mapHref = !C.mapped ? '' : slug === 'jakarta' ? `${PF}/map` : `${PF}/map?city=${slug}`;
   const body = `
 <section class="hero">
   <div class="eyebrow"><span class="sq"></span>${L('CITY', 'KOTA')} · ${esc(name.toUpperCase())}</div>
   <h1>${esc(h1)}.</h1>
   <p class="sub">${lang === 'id'
-    ? `Sensus mencatat ${fmt(A.n)} startup yang berkantor pusat di ${esc(name)}. Total pendanaan yang diumumkan mencapai ${usdProse(A.funding, 'id')}, dengan perkiraan ${fmt(A.jobs)} lapangan kerja dan output sekitar ${gvaProse(A.gva, 'id')} per tahun (estimasi). Setiap perusahaan berdiri di alamat aslinya di peta.`
-    : `The census tracks ${fmt(A.n)} startups headquartered in ${esc(name)} — ${usdProse(A.funding, 'en')} of disclosed funding, roughly ${fmt(A.jobs)} jobs (estimated), and ${gvaProse(A.gva, 'en')} a year of output (estimated). Every company stands at its real address on the map.`}</p>
+    ? `Sensus mencatat ${fmt(A.n)} startup yang berkantor pusat di ${esc(name)}. Total pendanaan yang diumumkan mencapai ${usdProse(A.funding, 'id')}, dengan perkiraan ${fmt(A.jobs)} lapangan kerja${C.anchored
+      ? ` dan output sekitar ${gvaProse(A.gva, 'id')} per tahun (estimasi). Setiap perusahaan berdiri di alamat aslinya di peta.`
+      : `. Output-nya belum diestimasi: anchor sensus adalah angka Jakarta dan akan membuatnya terlalu tinggi. ${esc(name)} juga belum ada di peta.`}`
+    : `The census tracks ${fmt(A.n)} ${A.n === 1 ? 'startup' : 'startups'} headquartered in ${esc(name)} — ${usdProse(A.funding, 'en')} of disclosed funding and roughly ${fmt(A.jobs)} jobs (estimated)${C.anchored
+      ? `, and ${gvaProse(A.gva, 'en')} a year of output (estimated). Every company stands at its real address on the map.`
+      : `. Their output is not estimated yet: the census's anchors are Jakarta's and would overstate it. ${esc(name)} is not on the map yet either.`}`}</p>
   <div class="cta">
-    <a class="btn primary" href="${mapHref}">${L('Open the map', 'Buka petanya')}</a>
-    <a class="btn" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
+    ${mapHref ? `<a class="btn primary" href="${mapHref}">${L('Open the map', 'Buka petanya')}</a>
+    <a class="btn" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>`
+      : `<a class="btn primary" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
+    <a class="btn" href="${PF}/coverage#scope">${L('Where the line is', 'Batas cakupan')}</a>`}
   </div>
 </section>
 <section class="stats">
   ${[[fmt(A.n), L('companies tracked', 'perusahaan terdata')],
     [usdTile(A.funding, lang), L('disclosed funding', 'pendanaan diumumkan')],
     [fmt(A.jobs), L('jobs — estimate', 'lapangan kerja — estimasi')],
-    [gvaTile(A.gva, lang), L('output / yr — estimate', 'output / thn — estimasi')]]
+    C.anchored ? [gvaTile(A.gva, lang), L('output / yr — estimate', 'output / thn — estimasi')]
+      : ['—', L('output — not estimated here yet', 'output — belum diestimasi di sini')]]
     .map(([v, k]) => `<div class="cell"><div class="v">${v}</div><div class="k">${k}</div></div>`).join('')}
 </section>
 <section class="wrap">
@@ -352,9 +459,10 @@ ${inv.length ? `<section class="wrap">
   return shell({
     title: SCHEMA.fitTitle([`${h1} — 1001startup.id`, h1]),
     desc: lang === 'id'
-      ? `Daftar ${fmt(A.n)} startup di ${C.id} dengan data pendanaan, jumlah pekerja, sebaran sektor, dan peta kantornya — dari sensus 1001startup.id.`
-      : `${fmt(A.n)} startups in ${C.en} with funding, headcount, sector mix and a real-address map — from the 1001startup.id census.`,
+      ? `Daftar ${fmt(A.n)} startup di ${nameId} dengan data pendanaan, jumlah pekerja${C.mapped ? ', sebaran sektor, dan peta kantornya' : ', dan sebaran sektor'} — dari sensus 1001startup.id.`
+      : `${fmt(A.n)} startups in ${nameEn} with funding, headcount${C.mapped ? ', sector mix and a real-address map' : ' and sector mix'} — from the 1001startup.id census.`,
     path, lang, body, ld: itemListLd(rows, lang) + SCHEMA.breadcrumbLd(lang, crumb),
+    robots: rows.length >= CITY_MIN ? 'index, follow' : 'noindex, follow',
   });
 }
 
@@ -452,7 +560,11 @@ ${est.length ? `<section class="wrap">
 </section>`;
 
   return shell({
-    title: L("Indonesia's billion-dollar startups — 1001startup.id", 'Startup Indonesia bernilai US$1 miliar ke atas — 1001startup.id'),
+    /* /id leads with the words people search ("startup unicorn indonesia",
+       RankMySEO report 5 Oct 2026); the h1 keeps the precise wording */
+    title: lang === 'id'
+      ? 'Daftar Startup Unicorn Indonesia — 1001startup.id'
+      : "Indonesia's billion-dollar startups — 1001startup.id",
     desc: lang === 'id'
       ? `Daftar ${fmt(big.length)} startup Indonesia dengan valuasi US$1 miliar ke atas yang tercatat sumbernya — dipisah antara valuasi privat, kapitalisasi pasar, dan estimasi.`
       : `The ${fmt(big.length)} Indonesian startups with a sourced valuation of US$1B or more — private marks, market capitalisations and estimates kept apart.`,
@@ -460,4 +572,4 @@ ${est.length ? `<section class="wrap">
   });
 }
 
-module.exports = { sector, city, unicorn, SECTORS, CITIES, sectorKeys };
+module.exports = { sector, sectorHub, city, unicorn, SECTORS, cityIds, indexableCityIds, sectorKeys };

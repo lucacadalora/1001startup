@@ -178,7 +178,7 @@ fastify.addHook('onRequest', async (req, reply) => {
    day its view learns lang. */
 const ID_READY = new Set(['/', '/closed', '/map', '/company/:id', '/jakarta',
   '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
-  '/investors', '/investor/:slug', '/stats', '/sector/:key', '/city/:slug', '/unicorn',
+  '/investors', '/investor/:slug', '/stats', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
   '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask']);
 fastify.addHook('preHandler', (req, reply, done) => {
   if (req.raw && req.raw.lang1001 === 'id') {
@@ -282,6 +282,7 @@ const model1001 = require('./views/model1001');
 const coverage1001 = require('./views/coverage1001');
 const investors1001 = require('./views/investors1001');
 const map1001 = require('./views/map1001');
+const METRO1001 = require('./lib/metros1001'); // kota -> metro; which metros the map draws
 const chain1001 = require('./views/chain1001');
 /* 1001umkm.id — the export supplier census, sibling product of 1001startup.id
    (Luca, Aug 31 2026). Same host-branch mechanism, own views + data file. */
@@ -399,7 +400,10 @@ function censusMap() {
     const pick = (o) => { const r = {}; for (const k of MAP_FIELDS) if (o[k] !== undefined && o[k] !== null) r[k] = o[k]; r.pin_kind = pinKind(o); return r; };
     c.map = JSON.stringify({
       totals: c.data.totals || {},
-      companies: (c.data.companies || []).filter((x) => x.lat && x.lon).map(pick),
+      /* only the metros the map has boundaries for (lib/metros1001.js MAPPED):
+         a nationwide row elsewhere would be drawn on blank paper, counted under
+         the Jakarta legend, and would pull the opening view off-centre */
+      companies: (c.data.companies || []).filter((x) => x.lat && x.lon && METRO1001.mapped(x.metro || 'jakarta')).map(pick),
     });
   }
   return c.map;
@@ -586,6 +590,15 @@ const I18N1001 = require('./views/i18n1001');
    metro ("startup fintech Indonesia", "startup di Bandung" now have a page a
    crawler can land on instead of a client-side filter state). */
 const browse1001 = require('./views/browse1001');
+/* the sector hub — the nav's "Sectors" link and every sector page's "All
+   sectors" button land here (was /coverage#sectors, and /id/sector 302'd to
+   an English 404). */
+fastify.get('/sector', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const html = browse1001.sectorHub({ data: censusData(), lang: langOf(req) });
+  if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  reply.type('text/html').send(html);
+});
 fastify.get('/sector/:key', async (req, reply) => {
   if (!is1001(req)) return reply.redirect('/');
   const html = browse1001.sector({ data: censusData(), key: String((req.params && req.params.key) || ''), lang: langOf(req) });
@@ -613,17 +626,14 @@ function sitemap1001() {
   if (smCache.key === key) return smCache.xml;
   const paths = ['/', '/news', '/research', research1001.ARTICLE_PATH, '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn'];
   for (const c of data.companies || []) paths.push('/company/' + c.id);
-  const invSeen = new Set();
-  for (const c of data.companies || []) {
-    for (const inv of c.investors || []) {
-      const s = investors1001.slugInv(investors1001.parseInv(inv).name);
-      if (s && !invSeen.has(s)) { invSeen.add(s); paths.push('/investor/' + s); }
-    }
-  }
+  /* only investor pages that pass the quality gate (2+ census companies or a
+     fund record); the rest are noindex and stay out of the sitemap */
+  for (const s of investors1001.indexableSlugs(data)) paths.push('/investor/' + s);
+  paths.push('/sector');
   for (const k of browse1001.sectorKeys(data)) paths.push('/sector/' + k);
-  for (const s of Object.keys(browse1001.CITIES)) {
-    if ((data.companies || []).some((c) => c.metro === s)) paths.push('/city/' + s);
-  }
+  /* every city with 5+ companies (nationwide since 28 Sep 2026; smaller
+     cities are noindex — see browse1001 CITY_MIN) */
+  for (const s of browse1001.indexableCityIds(data)) paths.push('/city/' + s);
   for (const id of Object.keys(links.byCompany || {})) paths.push('/chain/' + id);
   for (const s of Object.keys(links.byExternal || {})) paths.push('/chain/x/' + s);
   const mod = String(data.generated || '').slice(0, 10);

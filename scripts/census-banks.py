@@ -316,7 +316,9 @@ def main():
     # own scope lines, and a wholesale assignment here would wipe them on a
     # repair re-run. Upsert by name; rule/decided converge on the shared text.
     sc = raw.setdefault('scope', {})
-    sc['rule'] = SCOPE['rule']
+    # nationwide since 28 Sep 2026: census-national.py owns the rule text
+    if not sc.get('nationwide_added'):
+        sc['rule'] = SCOPE['rule']
     sc.setdefault('decided', SCOPE['decided'])
     have = {e.get('name'): e for e in sc.setdefault('outside', [])}
     for e in SCOPE['outside']:
