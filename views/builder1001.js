@@ -76,4 +76,4 @@ function panel(lang) {
 <script src="/js/builder1001.js?v=${JS_V}" defer></script>`;
 }
 
-module.exports = { panel };
+module.exports = { panel, PHOTO, PHONE, WA, OFFICE_MAP };

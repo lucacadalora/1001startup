@@ -178,7 +178,7 @@ fastify.addHook('onRequest', async (req, reply) => {
    day its view learns lang. */
 const ID_READY = new Set(['/', '/closed', '/map', '/company/:id', '/jakarta',
   '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
-  '/investors', '/investor/:slug', '/stats', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
+  '/investors', '/investor/:slug', '/stats', '/about', '/report', '/report/:edition', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
   '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask']);
 fastify.addHook('preHandler', (req, reply, done) => {
   if (req.raw && req.raw.lang1001 === 'id') {
@@ -492,11 +492,13 @@ fastify.get('/news', async (req, reply) => {
   reply.type('text/html').send(news1001.news({ data: censusData(), news: newsData(), lang: langOf(req) }));
 });
 /* 1001startup.id only: the shutdown register — the other half of the ledger */
+function closedRegister() {
+  try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'closed.json'), 'utf8')); } catch { return { entries: [] }; }
+}
+const liveIds = (data) => new Set(((data && data.companies) || []).map((c) => c.id));
 fastify.get('/closed', async (req, reply) => {
   if (!is1001(req)) return reply.redirect('/');
-  let register = { entries: [] };
-  try { register = JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'closed.json'), 'utf8')); } catch { /* not compiled yet */ }
-  reply.type('text/html').send(closed1001.closed({ data: censusData(), register, lang: langOf(req) }));
+  reply.type('text/html').send(closed1001.closed({ data: censusData(), register: closedRegister(), lang: langOf(req) }));
 });
 /* 1001startup.id only: one company in full — the same server-rendered card is
    both this page and the body of the landing page's drawer (?panel=1), so the
@@ -515,7 +517,15 @@ fastify.get('/company/:id', async (req, reply) => {
   const data = censusData();
   const id = String((req.params && req.params.id) || '');
   const c = ((data && data.companies) || []).find((x) => x.id === id);
-  if (!c) return reply.code(404).type('text/html').send(company1001.notFound({ data, lang: langOf(req) }));
+  if (!c) {
+    /* a company that stopped gets its own page instead of a 404 (closed register) */
+    const reg = closedRegister();
+    const e = closed1001.findClosed(reg, id, liveIds(data));
+    if (e && !(req.query && req.query.panel)) {
+      return reply.type('text/html').send(closed1001.profile({ entry: e, register: reg, lang: langOf(req) }));
+    }
+    return reply.code(404).type('text/html').send(company1001.notFound({ data, lang: langOf(req) }));
+  }
   if (req.query && req.query.panel) {
     return reply.type('text/html').send(company1001.card({ c, data, links: linksData(), lang: langOf(req) }));
   }
@@ -590,6 +600,33 @@ const I18N1001 = require('./views/i18n1001');
    metro ("startup fintech Indonesia", "startup di Bandung" now have a page a
    crawler can land on instead of a client-side filter state). */
 const browse1001 = require('./views/browse1001');
+/* /report/<YYYY-MM> — one frozen edition of the census report
+   (views/report1001.js, figures from data/report-<edition>.json). /report
+   always points at the newest edition. */
+const report1001 = require('./views/report1001');
+fastify.get('/report', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const eds = report1001.editions();
+  if (!eds.length) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  return reply.code(302).header('location', langPfx(req) + '/report/' + eds[eds.length - 1]).send();
+});
+fastify.get('/report/:edition', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const html = report1001.report({ edition: String((req.params && req.params.edition) || ''), lang: langOf(req) });
+  if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  reply.type('text/html').send(html);
+});
+/* /about — who builds the census (views/about1001.js). /tentang is the
+   Indonesian word people type; it 301s to the /id page of the same route. */
+const about1001 = require('./views/about1001');
+fastify.get('/about', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  reply.type('text/html').send(about1001.about({ data: censusData(), lang: langOf(req) }));
+});
+fastify.get('/tentang', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  return reply.code(301).header('location', '/id/about').send();
+});
 /* the sector hub — the nav's "Sectors" link and every sector page's "All
    sectors" button land here (was /coverage#sectors, and /id/sector 302'd to
    an English 404). */
@@ -622,13 +659,16 @@ function sitemap1001() {
   const data = censusData() || {};
   const links = linksData() || {};
   const nw = newsData() || {};
-  const key = [data.generated || '', nw.generated || '', Object.keys(links.byCompany || {}).length].join('|');
+  const key = [data.generated || '', nw.generated || '', Object.keys(links.byCompany || {}).length, closedRegister().generated || ''].join('|');
   if (smCache.key === key) return smCache.xml;
-  const paths = ['/', '/news', '/research', research1001.ARTICLE_PATH, '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn'];
+  const paths = ['/', '/news', '/research', research1001.ARTICLE_PATH, '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn', '/about'];
   for (const c of data.companies || []) paths.push('/company/' + c.id);
+  /* closed companies have their own pages too */
+  for (const s of closed1001.closedSlugs(closedRegister(), liveIds(data))) paths.push('/company/' + s);
   /* only investor pages that pass the quality gate (2+ census companies or a
      fund record); the rest are noindex and stay out of the sitemap */
   for (const s of investors1001.indexableSlugs(data)) paths.push('/investor/' + s);
+  for (const ed of report1001.editions()) paths.push('/report/' + ed);
   paths.push('/sector');
   for (const k of browse1001.sectorKeys(data)) paths.push('/sector/' + k);
   /* every city with 5+ companies (nationwide since 28 Sep 2026; smaller

@@ -572,4 +572,4 @@ ${est.length ? `<section class="wrap">
   });
 }
 
-module.exports = { sector, sectorHub, city, unicorn, SECTORS, cityIds, indexableCityIds, sectorKeys };
+module.exports = { sector, sectorHub, city, unicorn, SECTORS, cityIds, indexableCityIds, sectorKeys, shell };

@@ -38,6 +38,7 @@ const NAV = [
   {
     key: 'census', label: 'Census', id: 'Sensus', items: [
       { label: 'Sectors', id: 'Sektor', desc: 'The census grouped by what companies build', id_desc: 'Sensus dikelompokkan menurut apa yang dibangun tiap perusahaan', href: '/sector' },
+      { label: 'The monthly report', id: 'Laporan bulanan', desc: 'Four findings from the census, figures frozen', id_desc: 'Empat temuan dari sensus, angkanya dibekukan', href: '/report' },
       { label: 'Billion-dollar startups', id: 'Startup unicorn', desc: 'Every census company valued at US$1B or more', id_desc: 'Perusahaan sensus bervaluasi US$1 miliar ke atas', href: '/unicorn' },
       { label: 'Valuation', id: 'Valuasi', desc: 'What the combined figure contains', id_desc: 'Isi angka valuasi gabungan', href: '/coverage#valuation' },
       { label: 'Y Combinator', id: 'Y Combinator', desc: 'The Indonesian cohort, batch by batch', id_desc: 'Kohor Indonesia, batch demi batch', href: '/coverage#yc' },
@@ -53,6 +54,7 @@ const NAV = [
       { label: 'What the output figure is', id: 'Arti angka output', desc: 'Value added — not revenue, not salary', id_desc: 'Nilai tambah — bukan pendapatan, bukan gaji', href: '/coverage#output' },
       { label: 'Where the line is', id: 'Batas cakupan', desc: 'What is deliberately not counted, and why', id_desc: 'Yang sengaja tidak dihitung, dan alasannya', href: '/coverage#scope' },
       { label: 'Taken out', id: 'Dikeluarkan', desc: 'Rows removed after a liveness check', id_desc: 'Baris yang dihapus setelah terbukti tak lagi beroperasi', href: '/closed#removed' },
+      { label: 'About', id: 'Tentang', desc: 'Who builds the census, and how to cite it', id_desc: 'Siapa yang membangun sensus ini, dan cara mengutipnya', href: '/about' },
     ],
   },
   {

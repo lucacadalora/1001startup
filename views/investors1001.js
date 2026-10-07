@@ -69,6 +69,15 @@ function graph(data) {
       let e = by.get(slug);
       if (!e) { e = { slug, names: new Map(), cos: [] }; by.set(slug, e); }
       e.names.set(name, (e.names.get(name) || 0) + 1);
+      /* one company counts once per investor: a row can name the same fund
+         twice ("GDP Venture (Djarum Group)" and "GDP Venture" on Blibli), and
+         counting both inflated portfolios and could lift a one-company
+         investor over the indexing gate. The roles are kept, joined. */
+      const had = e.cos.find((x) => x.c === c);
+      if (had) {
+        if (role && !(had.role || '').includes(role)) had.role = had.role ? had.role + ' · ' + role : role;
+        continue;
+      }
       e.cos.push({ c, role });
     }
   }

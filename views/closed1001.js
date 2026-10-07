@@ -47,10 +47,30 @@ const CONF = {
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return 'source'; } };
 const year = (d) => String(d || '').slice(0, 4);
 
-function row(c, L) {
+/* One page per closed company at /company/<slug> (RankMySEO report, 5 Oct
+   2026: "efishery" alone is ~9,900 searches a month and /company/efishery was a
+   404). The slug drops a parenthetical ("Lummo (BukuKas)" -> lummo); a live
+   census id always wins over a closed slug, so nothing live is shadowed. */
+function slugClosed(name) {
+  return String(name || '').replace(/\([^)]*\)/g, ' ').toLowerCase().normalize('NFKD')
+    .replace(/[\u0300-\u036f]/g, '')
+    .replace(/&/g, ' and ')
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-+|-+$/g, '');
+}
+function findClosed(register, slug, liveIds) {
+  if (!slug || (liveIds && liveIds.has(slug))) return null;
+  return ((register && register.entries) || []).find((e) => slugClosed(e.name) === slug) || null;
+}
+function closedSlugs(register, liveIds) {
+  return ((register && register.entries) || []).map((e) => slugClosed(e.name))
+    .filter((s) => s && !(liveIds && liveIds.has(s)));
+}
+
+function row(c, L, PF = '') {
   const f = FATE[c.fate] || FATE.closed;
   return `<tr data-fate="${esc(c.fate || '')}" data-f="${esc([c.name, c.sector, c.city, f.label].filter(Boolean).join(' ').toLowerCase())}">
-    <td><b>${esc(c.name)}</b>${c.confidence && c.confidence !== 'confirmed'
+    <td><a class="nm" href="${PF}/company/${esc(slugClosed(c.name))}"><b>${esc(c.name)}</b></a>${c.confidence && c.confidence !== 'confirmed'
       ? `<span class="cf ${esc(c.confidence)}" title="${esc(L((CONF[c.confidence] || ['', ''])[0], (CONF[c.confidence] || ['', ''])[1]))}">${esc(L(c.confidence, { reported: 'dilaporkan', uncertain: 'belum pasti' }[c.confidence]))}</span>` : ''}</td>
     <td class="mu">${esc(c.sector || '—')}</td>
     <td class="mu">${esc(c.city || '—')}</td>
@@ -103,7 +123,7 @@ function closed({ data, register, lang = 'en' }) {
     <div class="tablewrap"><table id="ctbl">
       <thead><tr><th>${L('Company', 'Perusahaan')}</th><th>${L('Sector', 'Sektor')}</th><th>${L('City', 'Kota')}</th><th class="n">${L('Founded', 'Berdiri')}</th><th class="n">${L('Ended', 'Berakhir')}</th>
         <th>${L('What happened', 'Apa yang terjadi')}</th><th class="n">${L('Raised US$M', 'Dana dihimpun (US$ juta)')}</th><th>${L('Why, and where it is written down', 'Alasan, dan di mana tertulis')}</th></tr></thead>
-      <tbody>${list.map((c) => row(c, L)).join('')}</tbody>
+      <tbody>${list.map((c) => row(c, L, PF)).join('')}</tbody>
     </table></div>
     <div class="foot-note mono">${L('Sorted as compiled. "—" means no credible public figure — we do not invent one. A row marked <b>reported</b> or <b>uncertain</b> has not been confirmed by the company itself.',
       'Diurutkan sebagaimana disusun. "—" berarti tidak ada angka publik yang kredibel — kami tidak mengarangnya. Baris bertanda <b>dilaporkan</b> atau <b>belum pasti</b> belum dikonfirmasi oleh perusahaannya sendiri.')}</div>
@@ -179,6 +199,8 @@ td{padding:10px 12px;border-bottom:1px solid #F1F1F1;vertical-align:top}
 td.n,th.n{text-align:right;font-family:'IBM Plex Mono',monospace;font-size:12.5px;white-space:nowrap}
 td.mu{color:#52525B;font-size:12.5px}
 td.wh{color:#52525B;font-size:13px;line-height:1.5;min-width:320px}
+a.nm{text-decoration:none;border-bottom:1px solid #D9D9D9}
+a.nm:hover{border-bottom-color:#000}
 .srcs{margin-top:6px;display:flex;gap:8px;flex-wrap:wrap}
 .srcs a{font:400 10px/1.4 'IBM Plex Mono',monospace;text-transform:lowercase;letter-spacing:.02em;color:#4E7A96;text-decoration:none;border-bottom:1px solid #D9E2E8}
 .srcs a:hover{color:#000;border-color:#000}
@@ -235,4 +257,156 @@ ${removedSection}
 </html>`;
 }
 
-module.exports = { closed };
+/* "2025-11" -> "Nov 2025"; "2024" -> "2024"; "2023-12-14" -> "14 Dec 2023" */
+function when(d, lang) {
+  const m = String(d || '').match(/^(\d{4})(?:-(\d{2}))?(?:-(\d{2}))?/);
+  if (!m) return '';
+  if (!m[2]) return m[1];
+  const dt = new Date(Date.UTC(+m[1], +m[2] - 1, +(m[3] || 1)));
+  return dt.toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB',
+    Object.assign({ month: 'short', year: 'numeric', timeZone: 'UTC' }, m[3] ? { day: 'numeric' } : {}));
+}
+
+function profile({ entry: e, register, lang = 'en' }) {
+  const L = I18N.mkL(lang);
+  const PF = I18N.pfx(lang);
+  const f = FATE[e.fate] || FATE.closed;
+  const slug = slugClosed(e.name);
+  const path = '/company/' + slug;
+  const ended = when(e.ended, lang);
+  const yr = year(e.ended);
+  const money = typeof e.funding_usd_m === 'number'
+    ? (lang === 'id' ? `US$${fmt(e.funding_usd_m)} juta` : `US$${fmt(e.funding_usd_m)} million`) : '';
+  const who = e.legal_name ? `${e.name} (${e.legal_name})` : e.name;
+  /* the citable sentence: source, status, date — the same idiom as the live
+     company pages, so an answer engine quoting it says where it came from */
+  const fact = lang === 'id'
+    ? `Menurut sensus 1001startup.id, ${who} ${f.id_blurb}${ended ? ` pada ${ended}` : ''}.`
+      + `${e.founded ? ` Perusahaan ini berdiri pada ${year(e.founded)}` : ''}${e.founded && money ? ` dan mengumumkan pendanaan ${money}.` : e.founded ? '.' : money ? ` Pendanaan yang diumumkan: ${money}.` : ''}`
+    : `According to the 1001startup.id census, ${who} ${f.blurb}${ended ? ` in ${ended}` : ''}.`
+      + `${e.founded ? ` It was founded in ${year(e.founded)}` : ''}${e.founded && money ? ` and had disclosed ${money} in funding.` : e.founded ? '.' : money ? ` Disclosed funding: ${money}.` : ''}`;
+  const conf = CONF[e.confidence] || CONF.confirmed;
+  /* the quotable sentence carries the doubt too, not just the fact table */
+  const qual = e.confidence === 'reported'
+    ? L(' This is reported by credible press; the company has not confirmed it.', ' Ini dilaporkan pers kredibel; perusahaannya belum mengonfirmasi.')
+    : e.confidence === 'uncertain'
+      ? L(' The evidence is thin; the doubt is set out below.', ' Buktinya tipis; keraguannya dijelaskan di bawah.') : '';
+  const facts = [
+    [L('Status', 'Status'), `<span class="fate f-${esc(e.fate || 'closed')}">${esc(L(f.label, f.id))}</span> <span class="dim">${esc(L(f.blurb, f.id_blurb))}</span>`],
+    [L('Ended', 'Berakhir'), esc(ended || '—')],
+    [L('Founded', 'Berdiri'), esc(year(e.founded) || '—')],
+    [L('Disclosed funding', 'Pendanaan diumumkan'), money ? esc(money) : '—'],
+    [L('Sector', 'Sektor'), esc(e.sector || '—')],
+    [L('City', 'Kota'), esc(e.city || '—')],
+    [L('How sure we are', 'Seberapa pasti'), esc(L(conf[0], conf[1]))],
+  ];
+  const srcs = (e.sources || []).map((u) => `<li><a href="${esc(u)}" target="_blank" rel="noopener nofollow">${esc(host(u))}</a> <span class="dim">${esc(u.length > 90 ? u.slice(0, 90) + '…' : u)}</span></li>`).join('');
+  const n = ((register && register.entries) || []).length;
+  const title = SCHEMA.fitTitle(lang === 'id'
+    ? [`${e.name}: ${f.id.toLowerCase()}${yr ? ` (${yr})` : ''} — apa yang terjadi — 1001startup.id`, `${e.name}: ${f.id.toLowerCase()}${yr ? ` (${yr})` : ''} — 1001startup.id`, `${e.name} — 1001startup.id`]
+    : [`${e.name}: ${f.label.toLowerCase()}${yr ? ` in ${yr}` : ''} — what happened — 1001startup.id`, `${e.name}: ${f.label.toLowerCase()}${yr ? ` in ${yr}` : ''} — 1001startup.id`, `${e.name} — 1001startup.id`]);
+  const desc = SCHEMA.fitDesc(lang === 'id'
+    ? [`${e.name} ${f.id_blurb}${ended ? ` pada ${ended}` : ''}. Sektor, kota, pendanaan, apa yang terjadi, dan sumbernya — dari daftar startup Indonesia yang tutup di 1001startup.id.`,
+      `${e.name} ${f.id_blurb}${ended ? ` pada ${ended}` : ''} — apa yang terjadi dan sumbernya, dari 1001startup.id.`]
+    : [`${e.name} ${f.blurb}${ended ? ` in ${ended}` : ''}. Sector, city, funding, what happened and the sources — from the 1001startup.id register of Indonesian startups that closed.`,
+      `${e.name} ${f.blurb}${ended ? ` in ${ended}` : ''} — what happened and the sources, from 1001startup.id.`]);
+  const crumb = [{ name: '1001startup.id', path: '/' }, { name: L('No longer operating', 'Startup Indonesia yang tutup'), path: '/closed' }, { name: e.name, path }];
+  const org = { '@context': 'https://schema.org', '@type': 'Organization', name: e.name };
+  if (e.legal_name) org.legalName = e.legal_name;
+  if (e.founded) org.foundingDate = String(e.founded);
+  if (e.ended) org.dissolutionDate = String(e.ended);
+  if (e.city) org.location = { '@type': 'Place', name: e.city + ', Indonesia' };
+  if ((e.sources || []).length) org.subjectOf = (e.sources || []).slice(0, 6);
+  const ld = `<script type="application/ld+json">${JSON.stringify(org).replace(/</g, '\\u003c')}</script>`;
+
+  return `<!doctype html>
+<html lang="${lang}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>${esc(title)}</title>
+<meta name="description" content="${esc(desc)}">
+<meta name="robots" content="index, follow">
+${I18N.headTags(lang, path)}
+${SCHEMA.breadcrumbLd(lang, crumb)}
+${ld}
+<meta property="og:title" content="${esc(title)}">
+<meta property="og:description" content="${esc(desc)}">
+${I18N.ogImage()}
+<meta name="theme-color" content="#ffffff">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicon-1001-192.png" sizes="192x192">
+<link rel="preload" href="/assets/fonts/overused-grotesk-vf.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="/assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="/css/px.css?v=${V}">
+<style>
+@font-face{font-family:'Overused Grotesk';font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/overused-grotesk-vf.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/plex-mono-400.woff2) format('woff2')}
+*{box-sizing:border-box;margin:0;padding:0}
+body{background:#fff;color:#000;font:500 16px/1.5 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.01em}
+a{color:inherit}
+.banner{background:${GRAD};color:#000;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:center;padding:8px 12px}
+${NAV.css}
+.wrap{max-width:880px;margin:0 auto;padding:40px 20px 0}
+.crumb{font:400 11px/1.4 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73;margin-bottom:22px}
+.crumb a{text-decoration:none;border-bottom:1px solid #D9D9D9;color:#52525B}
+.eyebrow{font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;display:flex;align-items:center;gap:8px;margin-bottom:14px}
+.eyebrow .sq{width:6px;height:6px;background:#000;display:inline-block}
+h1{font-size:clamp(36px,5vw,58px);line-height:1.04;letter-spacing:-0.03em;font-weight:500}
+.legal{font:400 12px/1.4 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#6B6B73;margin-top:8px}
+.fact{font-size:17px;line-height:1.55;margin-top:20px;max-width:64ch}
+dl{display:grid;grid-template-columns:200px 1fr;border:1px solid #E7E7E7;margin-top:28px}
+dt,dd{padding:11px 14px;border-bottom:1px solid #F1F1F1;font-size:14px}
+dt{font:400 10.5px/1.6 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73;background:#FAFAFA}
+@media(max-width:560px){dl{grid-template-columns:1fr}dt{border-bottom:0;padding-bottom:2px}dd{padding-top:2px}}
+h2{font:400 12px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;margin:36px 0 12px;display:flex;align-items:center;gap:8px}
+h2:before{content:'';width:6px;height:6px;background:#000;display:inline-block}
+.why{color:#27272A;font-size:15.5px;line-height:1.65;max-width:70ch}
+.srcl{list-style:none;display:flex;flex-direction:column;gap:7px}
+.srcl a{font:400 12px/1.4 'IBM Plex Mono',monospace;color:#4E7A96;text-decoration:none;border-bottom:1px solid #D9E2E8}
+.srcl .dim{font-size:12px;word-break:break-all}
+.dim{color:#6B6B73}
+.fate{display:inline-block;padding:2px 7px;border:1px solid #D9D9D9;font:400 10px/1.5 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.04em;white-space:nowrap}
+.f-closed{border-color:#C4320A;color:#C4320A}
+.f-bankrupt{border-color:#8A2B2B;color:#8A2B2B;background:#FBF3F3}
+.f-liquidated{border-color:#8A5A83;color:#8A5A83}
+.f-acquired-then-closed{border-color:#4E7A96;color:#4E7A96}
+.f-dormant{border-color:#6B6B73;color:#6B6B73}
+.cta{display:flex;gap:10px;margin-top:30px;flex-wrap:wrap}
+.btn{display:inline-block;padding:12px 18px;font:400 12px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;text-decoration:none;border:1px solid #000;background:#fff;color:#000}
+.btn.primary{background:#000;color:#fff}
+.note{font-size:12px;color:#6B6B73;margin-top:10px;max-width:70ch}
+footer{max-width:880px;margin:60px auto 0;padding:22px 20px 40px;border-top:1px solid #E7E7E7;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;font:400 11px/1.6 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
+</style>
+</head>
+<body>
+<div class="banner">${L('THE OTHER HALF OF THE LEDGER · EVERY ROW CARRIES A DATE AND A SOURCE', 'SISI LAIN DARI BUKU BESAR · SETIAP BARIS PUNYA TANGGAL DAN SUMBER')}</div>
+${NAV.header('census', { lang, path })}
+<main class="wrap">
+  <nav class="crumb"><a href="${PF}/">1001startup.id</a> / <a href="${PF}/closed">${L('No longer operating', 'Sudah tutup')}</a> / ${esc(e.name)}</nav>
+  <div class="eyebrow"><span class="sq"></span>${L('NO LONGER OPERATING', 'TIDAK LAGI BEROPERASI')} · ${esc(L(f.label, f.id).toUpperCase())}</div>
+  <h1>${esc(e.name)}</h1>
+  ${e.legal_name ? `<div class="legal">${esc(e.legal_name)}</div>` : ''}
+  <p class="fact">${esc(fact + qual)}</p>
+  <dl>${facts.map(([k, v]) => `<dt>${k}</dt><dd>${v}</dd>`).join('')}</dl>
+  <h2>${L('What happened', 'Apa yang terjadi')}</h2>
+  <p class="why">${esc(e.why || '')}</p>
+  ${lang === 'id' ? `<p class="note">Ringkasan ini ditulis dalam bahasa Inggris, sebagaimana tercatat di daftar.</p>` : ''}
+  ${srcs ? `<h2>${L('Where it is written down', 'Di mana tertulis')}</h2><ul class="srcl">${srcs}</ul>` : ''}
+  <div class="cta">
+    <a class="btn primary" href="${PF}/closed#register">${L(`All ${n} companies that stopped`, `Semua ${n} perusahaan yang berhenti`)}</a>
+    <a class="btn" href="${PF}/">${L('The living census', 'Sensus yang masih hidup')}</a>
+  </div>
+</main>
+<footer>
+  <span>${L('1001startup.id — the census of Indonesian startups', '1001startup.id — sensus startup Indonesia')}</span>
+  <span><a href="${PF}/stats">${L('Live traffic', 'Statistik pengunjung')}</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>${L('Cookies', 'Cookie')}</a></span>
+</footer>
+<script src="/js/nav1001.js?v=${V}" defer></script>
+<script src="/js/px.js?v=${V}" defer></script>
+<script src="/assets/js/consent.js?v=${V}" defer></script>
+</body>
+</html>`;
+}
+
+module.exports = { closed, profile, findClosed, closedSlugs, slugClosed };
