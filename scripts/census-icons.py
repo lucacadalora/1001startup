@@ -142,5 +142,10 @@ for c in raw['companies']:
     tile.save(tile_path, optimize=True)
     c['logo'] = f"/assets/logo-c-{c['id']}.png"
     c['logo_src'] = src
-json.dump(raw, open(RAW, 'w'), ensure_ascii=False)
+# indent=1 like every other census-raw writer (census-national.py etc.): a
+# compact dump turns the next commit into a whole-file rewrite. Atomic, too.
+_tmp = RAW + '.tmp'
+with open(_tmp, 'w', encoding='utf-8') as _fh:
+    json.dump(raw, _fh, ensure_ascii=False, indent=1)
+os.replace(_tmp, RAW)
 print(f"icons: processed {done} (site {ok_site}, s2 {ok_s2}, monogram {mono}); total with logo now {sum(1 for c in raw['companies'] if c.get('logo'))}/{len(raw['companies'])}")

@@ -1,0 +1,3359 @@
+{
+ "generated": "2026-10-07T03:56:12Z",
+ "rule": "Founder names publish only with the company's own page, or two independent reputable sources, or Endeavor plus one more; aggregators never count.",
+ "companies": {
+  "broom": {
+   "founders": [
+    "Pandu Adi Laras",
+    "Andreas Sutanto"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://broom.id/en/tentang-broom/",
+    "https://techcrunch.com/2023/03/13/indonesian-used-auto-finance-platform-broom-raises-10m-to-build-out-automated-asset-backed-lending/",
+    "https://www.dealstreetasia.com/stories/indonesia-broom-seriesa-333026",
+    "https://youngster.id/headline/startup-fintech-broom-raih-us3-juta-dalam-putaran-pre-seed-funding-dipimpin-ac-ventures/"
+   ],
+   "note": "Founded in 2021 by Pandu Adi Laras and Andreas Sutanto, per Broom and TechCrunch. A 2022 youngster.id report also listed Pungky Wibawa as a co-founder, but Broom's own team page and later coverage name only the two."
+  },
+  "swap-energi": {
+   "founders": [
+    "Irwan Tjahaja"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://indonesiabusinesspost.com/1892/business-and-investment/chinese-investor-leads-us-22-million-funding-for-swap-energi",
+    "https://events.dealstreetasia.com/speaker/irwan-tjahaja/",
+    "https://teknologi.bisnis.com/read/20220324/266/1514446/tren-motor-listrik-swap-energi-and-smoot-motor-ambil-peluang"
+   ],
+   "note": "Founded in 2019 by Irwan Tjahaja, per Indonesia Business Post and DealStreetAsia. Bisnis.com also describes Kevin Phang as a co-founder."
+  },
+  "idn": {
+   "founders": [
+    "Winston Utomo",
+    "William Utomo"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://www.idn.media/news/389/winston-utomo-dan-william-utomo-raih-penghargaan-ey-entrepreneur-of-the-year-2024",
+    "https://www.idn.media/news/5/co-founder-idn-media-winston-and-william-utomo-featured-in-forbes-30-under-30-asia-2017-1",
+    "https://katadata.co.id/digital/startup/629d7163f31f1/mayapada-group-suntik-idn-media"
+   ],
+   "note": "Founded in 2014 by brothers Winston Utomo and William Utomo, per IDN and Katadata."
+  },
+  "iseller": {
+   "founders": [
+    "Jimmy Petrus"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://www.isellercommerce.com/about",
+    "https://appworks.tw/iseller-pre-b-round/",
+    "https://e27.co/iseller-the-shopify-of-indonesia-nets-us8m-to-become-a-super-app-for-merchants-20211014/",
+    "https://www.linkedin.com/in/jimmyps"
+   ],
+   "note": "Founded in 2017 by Jimmy Petrus, per e27 and investor AppWorks. iSeller's own site says it was founded and built by Intersoft Solutions, a company Jimmy Petrus also founded."
+  },
+  "evos-esports": {
+   "founders": [
+    "Ivan Yeo"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.forbes.com/profile/ivan-yeo/",
+    "https://www.ggwp.id/esports/others/ivan-yeo-ceo-evos-esports-00-bg40h-cblz9c"
+   ],
+   "note": "Ivan Yeo is named as EVOS Esports' co-founder by Forbes and GGWP.id; GGWP.id dates the team to 1 September 2016."
+  },
+  "eratani": {
+   "founders": [
+    "Andrew Soeherman",
+    "Angles Gani"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://eratani.co.id/about",
+    "https://techcrunch.com/2022/12/13/eratani/",
+    "https://linkedin.com/in/anglesgani",
+    "https://www.sbivencapital.com.sg/news/notice-regarding-additional-investment-in-eratani-an-end-to-end-platform-for-smallholder-farmers-in-indonesia/"
+   ],
+   "note": "Founded in 2021, per Eratani and TechCrunch. Andrew Soeherman is co-founder and CEO; Angles Gani is named as a co-founder by TechCrunch and on his own profile. TechCrunch also names Kevin Laksono as a co-founder."
+  },
+  "rekosistem": {
+   "founders": [
+    "Ernest Christian Layman",
+    "Joshua Valentino"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.forbes.com/profile/rekosistem/",
+    "https://entrepreneur.bisnis.com/read/20250910/265/1909754/mengenal-pendiri-rekosistem-masuk-dalam-forbes-asia-100-to-watch-2025",
+    "https://east.vc/news/from-portfolios/lessons-from-rekosistem-on-circular-economy",
+    "https://katadata.co.id/digital/startup/6391fdd39eef2/cerita-bos-rekosistem-membangun-startup-yang-untung-dari-kelola-sampah"
+   ],
+   "note": "Founded by Ernest Christian Layman and Joshua Valentino, per Forbes, Bisnis and investor East Ventures; Katadata says the founders started the venture in 2018."
+  },
+  "beautyhaul": {
+   "founders": [
+    "Irene Ursula",
+    "Benny Yahya"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://careers.beautyhaul.com/about-us",
+    "https://ranking.fortuneidn.com/40-under-40/business/awardee/irene-ursula",
+    "https://linkedin.com/in/benny-yahya-53a058201"
+   ],
+   "note": "Founded by Irene Ursula and Benny Yahya, per BeautyHaul's careers site, which says BeautyHaul began as a beauty e-commerce site in 2014; Somethinc, its skincare brand, launched in 2019."
+  },
+  "brick": {
+   "founders": [
+    "Gavin Tan",
+    "Deepak Malhotra"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.onebrick.io/about",
+    "https://katadata.co.id/digital/startup/6209c32c28986/startup-keuangan-brick-raih-pendanaan-rp-122-m-dari-flourish-ventures",
+    "https://hybrid.co.id/post/brick-umumkan-pendanaan-awal-hadirkan-layanan-api-fintech-untuk-identifikasi-kesehatan-finansial/",
+    "https://news.dailysocial.id/post/gavin-tan-ketitik-podcast/"
+   ],
+   "note": "Founded in early 2020 by Gavin Tan and Deepak Malhotra, per Hybrid and Katadata. Brick's Indonesian payment services now run through PT Eastern Transglobal Remittance, a licensed company established in 2011 that Brick acquired in 2023."
+  },
+  "sweetescape": {
+   "founders": [
+    "David Soong",
+    "Emile Etienne"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://www.sweetescape.com/en/blog/news-updates/sweetescape-celebrates-its-first-year-in-the-philippines",
+    "https://techcrunch.com/2019/07/02/sweet-escape-6m/",
+    "https://www.burdaprincipalinvestments.com/investments/sweet-escapes/",
+    "https://kr-asia.com/indonesias-photography-platform-sweet-escape-bags-usd-6-million-series-a-funding"
+   ],
+   "note": "Founded in 2017 by David Soong and Emile Etienne, per TechCrunch, KrASIA and investor Burda Principal Investments."
+  },
+  "soul-parking": {
+   "founders": [
+    "Ilham Akbar",
+    "Andru Surya Wijaya Jo",
+    "Riza Aulya",
+    "Unggul Depirianto",
+    "Kenneth Darmansjah"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://soulparking.co.id/id/soul-parking-secures-seed-funding-developing-smart-parking-infrastructure/",
+    "https://soulparking.co.id/id/soul-parkings-journey-to-success/",
+    "https://soulparking.co.id/asia-star-focus%ef%bc%9asoul-parking-builds-smart-elevated-parking-systems-for-motorcycles-in-indonesia/",
+    "https://appworks.tw/why-we-invested-kenneth-darmansjah-co-founder-ceo-of-soul-parking/"
+   ],
+   "note": "Soul Parking's seed-funding announcement names five co-founders, and investor AppWorks confirms Kenneth Darmansjah and Unggul Depirianto. An article republished on the company's site dates the founding to 2019 and also names Bahagia Waluyo, who is not among the five co-founders the company lists."
+  },
+  "fishlog": {
+   "founders": [
+    "Bayu Anggara",
+    "Reza Fahlepi",
+    "Abdul Halim"
+   ],
+   "founded": null,
+   "sources": [
+    "https://atoms.accel.com/news/meet-fishlog-revolutionizing-indonesias-fisheries-supply-chain",
+    "https://www.antaranews.com/berita/3230049/fishlog-perkuat-rantai-pasokan-global-gerakkan-perikanan-indonesia",
+    "https://entrepreneur.bisnis.com/read/20221104/265/1594993/kenalan-dengan-fishlog-startup-perikanan-besutan-3-co-founder-muda"
+   ],
+   "note": "Founded by Bayu Anggara, Reza Fahlepi and Abdul Halim, per Antara, Bisnis and investor Accel."
+  },
+  "jendela360": {
+   "founders": [
+    "Kiki Guzali"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://kr-asia.com/indonesian-proptech-jendela360-bags-usd-1-million-funding-from-beenext-others",
+    "https://linkedin.com/in/kikiguzali"
+   ],
+   "note": "KrASIA reports that Jendela360 was founded in 2017 by Kiki Guzali, Daniel Rannu and Ade Indra; Kiki Guzali's co-founder role is also stated on his own profile."
+  },
+  "anantarupa-studios": {
+   "founders": [
+    "Ivan Chen"
+   ],
+   "founded": 2011,
+   "sources": [
+    "https://anantarupa.com/",
+    "https://hypeabis.id/read/26263/eksklusif-profil-ivan-chen-asa-gim-bertema-nusantara-merajai-pasar-asia-tenggara",
+    "https://linkedin.com/in/dianapaskarina"
+   ],
+   "note": "Ivan Chen founded Anantarupa Studios in 2011, per Hypeabis and the studio's milestones; COO Diana Paskarina's profile also names him as her co-founder."
+  },
+  "sirka": {
+   "founders": [
+    "Rifanditto Adhikara",
+    "Dito Krista"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://www.liputan6.com/tekno/read/4880342/startup-sirka-raih-pendanaan-awal-rp-37-miliar-ada-dari-maudy-ayunda",
+    "https://e27.co/sirka-raises-us2-6m-seed-funding-ac-ventures-wavemaker-20220207/",
+    "https://www.ycombinator.com/companies/sirka"
+   ],
+   "note": "Founded in 2021 by Rifanditto Adhikara and Dito Krista, per Liputan6 and e27."
+  },
+  "dayatani": {
+   "founders": [
+    "Ankit Gupta",
+    "Deryl Lu"
+   ],
+   "founded": 2023,
+   "sources": [
+    "https://www.linkedin.com/posts/dayatanidigitalindonesia_dayatani-aifarming-brics2026-activity-7473221562855211009-9sMI",
+    "https://www.agnavigator.com/Article/2025/08/27/dayatani-grows-its-seed-business-to-fund-agtech-innovation/",
+    "https://linkedin.com/in/deryl-lu-3786b5119"
+   ],
+   "note": "Founded in 2023 by Ankit Gupta and Deryl Lu, per DayaTani's official LinkedIn page and AgNavigator."
+  },
+  "magalarva": {
+   "founders": [
+    "Rendria Labde",
+    "Arunee Sarasetsiri"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://magalarva.com/about-us",
+    "https://www.forbes.com/profile/rendria-labde/"
+   ],
+   "note": "Founded in 2017 by Rendria Labde with co-founder Arunee Sarasetsiri, per Magalarva's About page."
+  },
+  "stafbook": {
+   "founders": [
+    "Ghuniyu Fattah Rozaq"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://www.ycombinator.com/companies/stafbook",
+    "https://linkedin.com/in/ghuniyu"
+   ],
+   "note": "Y Combinator lists Fransiskus Raymond and Ghuniyu Fattah Rozaq as StafBook's founders and gives 2021 as its founding year; Ghuniyu Fattah Rozaq's co-founder role is also stated on his own profile."
+  },
+  "amtiss": {
+   "founders": [
+    "Ivan F. Gautama"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://hybrid.co.id/post/amtiss-fokus-memberikan-solusi-asset-management-bagi-korporasi/",
+    "https://sg.news.yahoo.com/inspectors-indonesian-startup-tools-asset-management-more-efficient-062814286.html",
+    "https://www.liputan6.com/regional/read/4597226/permudah-analitik-data-startup-amtiss-hadirkan-program-akselerator-wingarc"
+   ],
+   "note": "Ivan F. Gautama is named as Amtiss's founder by Hybrid and e27; Liputan6 dates the company to 2015."
+  },
+  "bank-jago": {
+   "founders": [
+    "Jerry Ng"
+   ],
+   "founded": null,
+   "sources": [
+    "https://money.kompas.com/read/2021/03/23/174726426/sebut-alasan-bentuk-bank-digital-founder-bank-jago-sekarang-kita-bersaing-di",
+    "https://live.worldbank.org/en/experts/j/jerry-ng",
+    "https://www.cnbcindonesia.com/market/20230525233404-17-440727/rups-bank-jago-angkat-arief-harris-jadi-dirut"
+   ],
+   "note": "Jerry Ng is named as Bank Jago's founder by Kompas and the World Bank. CNBC Indonesia also counts Arief Harris Tandjung among its founders."
+  },
+  "hukumonline": {
+   "founders": [
+    "Ahmad Fikri Assegaf",
+    "Arief T. Surowidjojo",
+    "Ibrahim Sjarief Assegaf"
+   ],
+   "founded": 2000,
+   "sources": [
+    "https://www.hukumonline.com/berita/foto/f/keseruan-hukumonline-run-2023-saat-perayaan-ulang-tahun-hukumonline-lt64d24572912db/",
+    "https://www.hukumonline.com/berita/a/co-founder-hukumonline--ibrahim-sjarief-assegaf-tutup-usia-lt682c613663f33/",
+    "https://www.hukumonline.com/berita/a/perjalanan-hukumonline-sebagai-penggerak-transformasi-digital-bidang-hukum-lt62cff85c88303/",
+    "https://www.hukumonline.com/tentangkami/"
+   ],
+   "note": "Founded in 2000 by legal practitioners including Ahmad Fikri Assegaf, Arief T. Surowidjojo and Ibrahim Sjarief Assegaf, per Hukumonline; youngster.id also credits the Indonesian Center for Law and Policy Studies (PSHK) as a founding party."
+  },
+  "myskill": {
+   "founders": [
+    "Angga Fauzan",
+    "Erahmat"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://east.vc/id/berita/press-release/myskill-secured-seed-funding-from-east-ventures",
+    "https://www.antaranews.com/berita/2888853/startup-edtech-myskill-raih-pendanaan-tahap-awal",
+    "https://teknologi.bisnis.com/read/20220518/266/1534524/east-ventures-suntik-pendanaan-ke-startup-myskill"
+   ],
+   "note": "Founded in mid-2021 by Angga Fauzan and Erahmat, per investor East Ventures, Antara and Bisnis."
+  },
+  "koltiva": {
+   "founders": [
+    "Manfred Borer",
+    "Ainu Rofiq",
+    "Furqonuddin Ramdhani"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://www.koltiva.com/teams",
+    "https://www.koltiva.com/post/insights-from-ainu-rofiq-our-co-founder-and-board-memberwith-supply-chain-traceability",
+    "https://ch.linkedin.com/company/pt-koltiva",
+    "https://linkedin.com/in/furqonramdhani"
+   ],
+   "note": "Koltiva lists Manfred Borer, Ainu Rofiq and Furqonuddin Ramdhani as co-founders and says it was founded in Indonesia in 2013. A 2018 company presentation says Manfred Borer founded Koltiva AG in Switzerland and joined PT Koltiva in 2017."
+  },
+  "tirto-id": {
+   "founders": [
+    "Atmaji Sapto Anggoro"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://faktualnews.co/regional/pendiri-dan-ceo-tirto-id-kunjungi-kantor-redaksi-faktualnews-co/",
+    "https://hybrid.co.id/post/facebook-tirto-third-party-fact-checker/"
+   ],
+   "note": "Founded in 2016 by Atmaji Sapto Anggoro, per FaktualNews; Hybrid also names him as Tirto.id's founder."
+  },
+  "lister": {
+   "founders": [
+    "Sigit Arifianto"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://lister.co.id/blog/webinar-nasional-lister-x-unib-internet-digital-economy-impact/",
+    "https://lister.co.id/about/",
+    "https://www.acceleratingasia.com/latest-news/aa-lister"
+   ],
+   "note": "Founded by Sigit Arifianto, per Lister; it began in 2019 as Listerclub, a non-profit offering free IELTS classes."
+  },
+  "belajarlagi": {
+   "founders": [
+    "Faiz Ghifari"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.antaranews.com/berita/4970113/belajarlagi-perkuat-talenta-digital-lewat-pelatihan-bersertifikat",
+    "https://www.sbm.itb.ac.id/2022/04/04/unlocking-the-secrets-of-growth-hacking-with-founder-of-belajarlagi-id/"
+   ],
+   "note": "Faiz Ghifari is named as Belajarlagi's founder by Antara and ITB's School of Business and Management."
+  },
+  "catapa": {
+   "founders": [
+    "Stefanie Suanita"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://catapa.com/blog/genai-tech-day-recap-revolutionizing-hr-generative-ai-in-payrol",
+    "https://help.catapa.com/articles/01-tentang-catapa-e3238cd4-d491-4dba-8360-c278fb235573",
+    "https://www.linkedin.com/posts/catapapayroll_catapa-wenetwork-reimagininghr-activity-6813434032039305216-F3l8"
+   ],
+   "note": "Founded on 21 April 2017 by Stefanie Suanita, per CATAPA."
+  },
+  "qwords": {
+   "founders": [
+    "Rendy Maulana Akbar"
+   ],
+   "founded": 2005,
+   "sources": [
+    "https://www.qwords.com/about-qwordscom/history/",
+    "https://www.qwords.com/blog/author/rendy/",
+    "https://linkedin.com/in/rendy"
+   ],
+   "note": "Founded in July 2005 by Rendy Maulana Akbar while he was a student at ITB, per Qwords."
+  },
+  "avani-eco": {
+   "founders": [
+    "Kevin Kumala"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://avanieco.com/jokowi-found-avanis-concept-interesting/",
+    "https://www.nbcnews.com/news/asian-america/plant-makes-boba-startup-wants-use-it-clean-plastic-n805766",
+    "https://www.digination.id/read/011829/mikir-dong-startup-jangan-cuma-cari-profit"
+   ],
+   "note": "Kevin Kumala is named as Avani Eco's co-founder by the company and as its founder by NBC News; Digination dates the founding to 2014."
+  },
+  "prosa-ai": {
+   "founders": [
+    "Ayu Purwarianti",
+    "Dessi Puji Lestari",
+    "Teguh Eko Budiarto"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://hybrid.co.id/post/prosa-ai-receives-series-a-funding-from-gdp-venture/",
+    "https://teknologi.bisnis.com/read/20190620/266/935955/gdp-ventures-kucurkan-investasi-seri-a-ke-prosa.ai"
+   ],
+   "note": "Founded in 2018 out of research by Ayu Purwarianti and Dessi Puji Lestari together with Teguh Eko Budiarto, per Hybrid and Bisnis."
+  },
+  "kontrak-hukum": {
+   "founders": [
+    "Rieke Caroline"
+   ],
+   "founded": null,
+   "sources": [
+    "https://kontrakhukum.com/article/kontrak-hukum-memenangkan-innovation-awards-2021/",
+    "https://wartaekonomi.co.id/read213524/kontrak-hukum-tawarkan-bantuan-hukum-khusus-startup-dan-ukm-lewat-platform-digital"
+   ],
+   "note": "Rieke Caroline is named as founder and CEO by Kontrak Hukum and Warta Ekonomi."
+  },
+  "awanio": {
+   "founders": [
+    "Iskandar Soesman"
+   ],
+   "founded": null,
+   "sources": [
+    "https://youngster.id/headline/awanio-startup-penyedia-platform-komputasi-awan/",
+    "https://linkedin.com/in/ikandars",
+    "https://init-6.fund/news/12",
+    "https://www.cnbcindonesia.com/tech/20241110135720-37-587047/teknologi-komputasi-awan-bukan-cuma-milik-asing-mau-bukti"
+   ],
+   "note": "Iskandar Soesman is named as Awanio's founder by youngster.id and on his own profile. Sources differ on the start date: CNBC Indonesia says Awanio has operated since 2016, while Tech in Asia, republished by investor Init-6, says the project began in 2018."
+  },
+  "gokampus": {
+   "founders": [
+    "Nathanael Santoso"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.antaranews.com/berita/2189618/gokampus-umumkan-pendanaan-pra-seri-a",
+    "https://www.liputan6.com/tekno/read/4581799/aplikasi-gokampus-permudah-pelajar-daftar-kuliah",
+    "https://hrlab.id/speaker/nathanael-santoso/"
+   ],
+   "note": "Nathanael Santoso is named as goKampus's founder and CEO by Antara and Liputan6; Liputan6 says the platform first launched in 2018."
+  },
+  "jangjo": {
+   "founders": [
+    "Eki Setijadi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.liputan6.com/tekno/read/5601584/keren-startup-ini-bikin-mesin-pengelolaan-sampah-pintar-yang-bisa-diakses-publik",
+    "https://linkedin.com/in/eki-setijadi",
+    "https://voi.id/ekonomi/135766/ciptakan-ekosistem-pengelolaan-sampah-startup-waste-management-ini-berhasil-memperoleh-pendanaan",
+    "https://katadata.co.id/ekonomi-hijau/ekonomi-sirkular/669a1e4fd2c84/startup-jangjo-targetkan-kelola-100-ton-sampah-jakarta-per-hari"
+   ],
+   "note": "Eki Setijadi is named as a co-founder by Liputan6 and on his own profile. VOI (2022) and Katadata (2024) have also described Nyoman Kwanhok and Joe Hansen, respectively, as co-founder and CEO."
+  },
+  "own-games": {
+   "founders": [
+    "Eldwin Viriya"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://www.idntimes.com/tech/games/eldwin-viriya-ceo-own-games-berbagi-kisah-di-balik-game-tahu-bulat-00-gbp1s-8rkcsz",
+    "https://linkedin.com/in/eldwin-viriya-937b5453",
+    "https://keker.fajar.co.id/2026/03/18/own-games-developer-lokal-yang-sukses-bikin-game-viral-di-indonesia/"
+   ],
+   "note": "Eldwin Viriya is named as co-founder and CEO by IDN Times and on his own profile; IDN Times says the Bandung studio was founded in 2013."
+  },
+  "hangry": {
+   "founders": [
+    "Abraham Viktor",
+    "Robin Tan",
+    "Andreas Resha"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://career.ishangry.com/",
+    "https://swa.co.id/read/307630/kantongi-pendanaan-seri-a-rp188-miliar-hangry-siap-ekspansi-nasional",
+    "https://kr-asia.com/hangry-wants-you-to-have-a-virtual-restaurant-experience-startup-stories"
+   ],
+   "note": "Founded in 2019 by Abraham Viktor, Robin Tan and Andreas Resha, per SWA and KrASIA."
+  },
+  "maka-motors": {
+   "founders": [
+    "Raditya Wibowo",
+    "Arief Fadillah"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://maka-motors.com/article/keunggulan-MAKA-Cavalry",
+    "https://east.vc/id/berita/press-release/startup-motor-listrik-maka-motors-raih-pendanaan-awal-setengah-triliun",
+    "https://insight.kontan.co.id/news/startup-lokal-maka-motors-siap-meracik-motor-listrik-buatan-dalam-negeri"
+   ],
+   "note": "Founded in 2021 by former Gojek executives Raditya Wibowo and Arief Fadillah, per investor East Ventures and Kontan."
+  },
+  "colearn": {
+   "founders": [
+    "Abhay Saboo",
+    "Marc Irawan"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://kr-asia.com/colearn-is-changing-the-pace-of-education-in-indonesia-startup-stories",
+    "https://katadata.co.id/digital/startup/626bc24851290/startup-colearn-tawarkan-kelas-online-matematika-yang-menyenangkan",
+    "https://linkedin.com/in/abhay-saboo",
+    "https://id.linkedin.com/in/marcirawan"
+   ],
+   "note": "Abhay Saboo and Marc Irawan are named as CoLearn's founders by KrASIA and on their own profiles; Katadata says Marc Irawan and other founders started CoLearn in 2018."
+  },
+  "pintarnya": {
+   "founders": [
+    "Nelly Nurmalasari",
+    "Ghirish Pokardas",
+    "Henry Hendrawan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://pintarnya.com/about-us/",
+    "https://blog.pintarnya.com/tentang-hrd/pasang-loker-gratis-bandung-surabaya/"
+   ],
+   "note": "Founded by Nelly Nurmalasari, Ghirish Pokardas and Henry Hendrawan, per the company's website. The platform launched in May 2022; no source gives a separate founding year."
+  },
+  "staffinc": {
+   "founders": [
+    "Wisnu Nugrahadi",
+    "Dimas Pramudya Putra",
+    "Margana Mohamad"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.antaranews.com/berita/4355887/staffinc-resmi-bergabung-dengan-jaringan-endeavor-indonesia",
+    "https://www.goldengate.vc/portfolio/staffinc",
+    "https://swa.co.id/read/370132/staffinc-kembangkan-bisnis-lebih-dari-penyedia-tenaga-kerja"
+   ],
+   "note": "Founded in 2018 as Sampingan by Wisnu Nugrahadi, Dimas Pramudya Putra and Margana Mohamad, per Antara, SWA and investor Golden Gate Ventures; the company later renamed itself Staffinc."
+  },
+  "delos": {
+   "founders": [
+    "Guntur Mallarangeng",
+    "Aris Noerhadi",
+    "Alexander Farthing",
+    "Bobby Indra Gunawan Wibisono"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://www.delosaqua.com/new-page",
+    "https://katadata.co.id/digital/startup/64fea366d9550/investor-singapura-suntik-startup-perikanan-delos",
+    "https://m.jpnn.com/news/sejumlah-investor-menyuntikkan-dana-tambahan-untuk-delos",
+    "https://www.liputan6.com/tekno/read/4716825/delos-ajak-petani-tambak-udang-tingkatkan-profitabilitas-dengan-aquahero"
+   ],
+   "note": "Founded in 2021 by Guntur Mallarangeng, Aris Noerhadi, Alexander Farthing and Bobby Indra Gunawan Wibisono, per Katadata and JPNN; the company's site names Aris Noerhadi and Alexander Farthing as co-founders. An earlier Liputan6 report lists only Guntur Mallarangeng, Bobby Indra Gunawan and Alexander Farthing."
+  },
+  "lifepal": {
+   "founders": [
+    "Giacomo Ficari",
+    "Nicolo Robba",
+    "Benny Fajarai",
+    "Reza Muhammad"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://techcrunch.com/2021/08/19/indonesian-d2c-insurance-marketplace-lifepal-raises-9m-series-a/",
+    "https://www.alinea.id/bisnis/lifepalcoid-raih-pendanaan-rp130-miliar-b2c7V95Sp",
+    "https://review.insignia.vc/2021/01/14/becoming-indonesias-leading-insurance-marketplace-on-call-with-lifepal-ceo-and-co-founder-giacomo-ficari/"
+   ],
+   "note": "Founded in 2019 by Giacomo Ficari, Nicolo Robba, Benny Fajarai and Reza Muhammad, per TechCrunch and Alinea."
+  },
+  "kitalulus": {
+   "founders": [
+    "Stevien Jimmy"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://www.liputan6.com/bisnis/read/4895787/startup-kitalulus-raih-pendanaan-awal-dari-go-ventures",
+    "https://www.liputan6.com/bisnis/read/4895787/startup-kitalulus-raih-pendanaan-awal-dari-go-ventures",
+    "https://investor.id/it-and-telecommunication/249570/aplikasi-kitalulus-bantu-masyarakat-cari-pekerjaan",
+    "https://investor.id/it-and-telecommunication/249570/aplikasi-kitalulus-bantu-masyarakat-cari-pekerjaan"
+   ],
+   "note": "Stevien Jimmy is named as co-founder by Liputan6 and Investor Daily. Liputan6 also names Wei-Chuan Chew as a founder, which no second independent source confirms. Investor Daily dates the founding to October 2021; Stevien Jimmy's own profile says 2020."
+  },
+  "pintek": {
+   "founders": [
+    "Tommy Yuwono"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://pintek.id/perusahaan",
+    "https://www.linkedin.com/company/pintekid/",
+    "https://katadata.co.id/digital/startup/619c65144d6dd/induk-fintech-pendidikan-pintek-raih-pendanaan-rp-100-miliar",
+    "https://linkedin.com/in/tommy-yuwono-962bab4b"
+   ],
+   "note": "Tommy Yuwono is named as co-founder on the company's website and by Katadata; the company's LinkedIn page gives 2018 as the founding year. Katadata also names Ioann Fainsilber as a co-founder, which no second independent source confirms."
+  },
+  "advotics": {
+   "founders": [
+    "Boris Sanjaya",
+    "Hendi Chandi",
+    "Jeffry William Tani"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://techcrunch.com/2021/03/02/indonesian-supply-chain-startup-advotics-raises-2-75m-led-by-east-ventures/",
+    "https://east.vc/news/press-release/advotics-seed-funding-2-7-million",
+    "https://east.vc/news/press-release/advotics-seed-funding-2-7-million",
+    "https://linkedin.com/in/boris-sanjaya-63250ab"
+   ],
+   "note": "Founded in 2016 by Boris Sanjaya, Hendi Chandi and Jeffry William Tani, per TechCrunch; lead investor East Ventures also names Hendi Chandi and Jeffry Tani as co-founders."
+  },
+  "crewdible": {
+   "founders": [
+    "Dhana Galindra"
+   ],
+   "founded": 2017,
+   "sources": [
+    "http://karir.crewdible.com/pdf/Intro-Crewdible-Seller.pdf",
+    "https://jatim.antaranews.com/berita/681114/saatnya-umkm-lokal-semakin-vokal",
+    "https://www.trenasia.id/fintech/kisah-sukses-start-up-misi-bantu-umkm-jadi-jalan-sukses-crewdible"
+   ],
+   "note": "Dhana Galindra is named as founder and CEO by Antara and TrenAsia; the company says it was founded in 2017."
+  },
+  "bababos": {
+   "founders": [
+    "Fajar Adiwidodo",
+    "Sigit Aryo Tejo",
+    "Hendrik Panca"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.bababos.com/about/",
+    "https://swa.co.id/read/435494/kiat-fajar-adiwidodo-jadikan-bababos-platform-terpercaya",
+    "https://katadata.co.id/digital/startup/6410200d24d42/east-ventures-suntik-startup-pengadaan-bahan-baku-manufaktur-bababos"
+   ],
+   "note": "Founded in the third quarter of 2022 by Fajar Adiwidodo, Sigit Aryo Tejo and Hendrik Panca, per SWA and Katadata."
+  },
+  "jejakin": {
+   "founders": [
+    "Arfan Arlanda",
+    "Sudono Salim",
+    "Andreas Djingga",
+    "Haris Iskandar"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.jejakin.com/en/blog/jejakin-secured-new-funding-of-us-2-7-million",
+    "https://www.jejakin.com/en/about"
+   ],
+   "note": "Founded in 2018 by Arfan Arlanda, Sudono Salim, Andreas Djingga and Haris Iskandar, per the company's funding announcement."
+  },
+  "haus": {
+   "founders": [
+    "Gufron Syarif"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.kompas.com/food/read/2021/04/16/190900075/perjalanan-haus-bisnis-minuman-kekinian-bangun120-kedai-selama-3-tahun",
+    "https://katadata.co.id/digital/startup/620dd6a1322f7/strategi-startup-kuliner-haus-bidik-potensi-pasar-rp-719-miliar",
+    "https://kumparan.com/kumparanbisnis/bos-haus-ungkap-trik-jadi-brand-minuman-kekinian-yang-dilirik-investor-1wnMpJh4lsc"
+   ],
+   "note": "Gufron Syarif is named as co-founder and CEO by Kompas, Katadata and Kumparan. Kompas reports that Haus! was founded in June 2018 by four people, but gives the other three by first name only, so they are not listed."
+  },
+  "flik": {
+   "founders": [
+    "Ahmad Gadi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://east.vc/news/press-release/flik-secured-us-1-1-million-pre-seed-funding-led-by-east-ventures",
+    "https://www.marketing-interactive.com/flik-gets-fund-from-east-ventures",
+    "https://linkedin.com/in/ahmadgadi"
+   ],
+   "note": "Ahmad Gadi is named as co-founder and CEO by lead investor East Ventures and by Marketing-Interactive."
+  },
+  "mamikos": {
+   "founders": [
+    "Maria Regina Anggit Tut Pinilih"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://mamikos.com/tentang-kami",
+    "https://teknologi.bisnis.com/read/20210924/266/1446362/mengenal-startup-mamikos-didirikan-oleh-maria-regina-anggit-tut-pinilih",
+    "https://wartaekonomi.co.id/read366662/jadi-pionir-pencarian-indekos-digital-ini-siasat-mamikos-hadapi-pandemi"
+   ],
+   "note": "Maria Regina Anggit Tut Pinilih is named as founder by Bisnis.com and as co-founder and CEO by Warta Ekonomi; the company says it was founded on 11 November 2015."
+  },
+  "jutsoo": {
+   "founders": [
+    "Mario Gaw",
+    "Kristian Frits Harris Sinaulan"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://www.ycombinator.com/companies/jutsoo",
+    "https://www.ycombinator.com/companies/jutsoo",
+    "https://www.ycombinator.com/companies/jutsoo",
+    "https://linkedin.com/in/mariogaw"
+   ],
+   "note": "Mario Gaw and Kristian Frits Harris Sinaulan are listed as founders on Y Combinator's company page and on their own profiles. Jutsoo grew out of Bananas, a Y Combinator Winter 2022 startup; YC gives 2021 as the founding year, while one co-founder's profile dates Bananas to 2022."
+  },
+  "pahamify": {
+   "founders": [
+    "Syarif Rousyan Fikri",
+    "Mohammad Ikhsan",
+    "Edria Albert"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://pahamify.com/about-us/",
+    "https://pahamify.com/about-us/",
+    "https://pahamify.com/about-us/",
+    "https://www.ycombinator.com/companies/pahamify"
+   ],
+   "note": "Founded in January 2018 by Syarif Rousyan Fikri, Mohammad Ikhsan and Edria Albert, per the company's About page."
+  },
+  "revou": {
+   "founders": [
+    "Matteo Sutto"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.revou.co/lifet-at-revou/origin-scaling-revou",
+    "https://hybrid.co.id/post/startup-edutech-revou/",
+    "https://linkedin.com/in/matteosutto"
+   ],
+   "note": "Founded in 2019 by Matteo Sutto, per the company's website and Hybrid."
+  },
+  "indodax": {
+   "founders": [
+    "Oscar Darmawan",
+    "William Sutanto"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://blog.indodax.com/newsroom-about-us/",
+    "https://blog.indodax.com/newsroom-about-us/",
+    "https://www.fortuneidn.com/business/indodax-sumbu-awal-kripto-02-sk72n-22ltmv",
+    "https://linkedin.com/in/williamsutanto"
+   ],
+   "note": "Founded by Oscar Darmawan and William Sutanto as Bitcoin Indonesia, later renamed Indodax, per the company's newsroom and Fortune Indonesia. The company gives 2014 as its founding year; William Sutanto's own profile dates the original Bitcoin.co.id to 2013."
+  },
+  "tanamera-coffee": {
+   "founders": [
+    "Dini Aryani Criddle"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://www.tanameracoffee.co.id/news/NSW-00002",
+    "https://www.tanameracoffee.co.id/news/NSW-00005"
+   ],
+   "note": "Founded in 2013 by Dini Aryani Criddle, per the company's website."
+  },
+  "komerce": {
+   "founders": [
+    "Nofi Bayu Darmawan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://backscoop.com/ice-breakers/ice-breakers-with-nofi-bayu-darmawan-founder-and-ceo-komerce",
+    "https://ramadan.uzone.id/kenalan-dengan-komerce-startup-yang-siap-upgrade-bisnis-online-umkm-lokal"
+   ],
+   "note": "Nofi Bayu Darmawan is named as founder and CEO by BackScoop and Uzone; Uzone reports that Komerce grew out of the Kampung Marketer social movement in Purbalingga."
+  },
+  "boleh-dicoba": {
+   "founders": [
+    "M. Rizki Fahrurrozi"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://bolehdicoba.com/about-us/",
+    "https://www.topbusiness.id/68837/lakukan-rebranding-bdd-siap-bawa-umkm-masuki-pasar-asia-tenggara.html",
+    "https://heaptalk.com/news/bdd-agency-performs-business-rebranding-to-penetrate-the-southeast-asia-market/",
+    "https://linkedin.com/in/m-rizki-fahrurrozi-oni-942791182"
+   ],
+   "note": "Rizki Fahrurrozi is named as founder and CEO by TopBusiness and Heaptalk; the company says it was founded in 2017."
+  },
+  "kredit-pintar": {
+   "founders": [
+    "Wisely Reinharda Wijaya"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://www.kreditpintar.com/education/kredit-pintar-tunjuk-president-direktur",
+    "https://entrepreneur.bisnis.com/read/20240716/265/1782666/5-sosok-founder-di-balik-pinjol-legal-punya-aset-dan-limit-besar",
+    "https://www.idntimes.com/business/finance/siapa-pemilik-kredit-pintar-c1c2-01-tg1j7-1qbpcv",
+    "https://www.digitalnewsasia.com/startups/kredit-pintar-uses-ai-speed-loan-processing"
+   ],
+   "note": "Wisely Reinharda Wijaya is named as a founder by Bisnis.com, IDN Times and Digital News Asia; the company says it was founded in 2017. Kredit Pintar is now part of Atome Financial, owned by Singapore's Advance Intelligence Group."
+  },
+  "purwadhika-digital-technology-school": {
+   "founders": [
+    "Purwa Hartono"
+   ],
+   "founded": 1987,
+   "sources": [
+    "https://purwadhika.com/blog/keseruan-acara-welcoming-student-batch-pertama-purwadhika-cabang-surabaya",
+    "https://www.purwadhika.com/about-us",
+    "https://swa.co.id/read/163137/ambisi-mandy-menggairahkan-sekolah-startup"
+   ],
+   "note": "Founded in 1987 by Purwa Hartono, per the company's website and SWA."
+  },
+  "dash-electric": {
+   "founders": [
+    "Aditya Brahmana",
+    "Robert Mulianto"
+   ],
+   "founded": 2023,
+   "sources": [
+    "https://www.dashelectric.co/newsroom/news/dash-electric-a-driver-as-a-service-startup-founded-by-goto-and-dhl-alumni-raises-seed-funding",
+    "https://www.dashelectric.co/newsroom/information",
+    "https://news.dailysocial.id/post/dash-electric-raih-pendanaan-awal-dari-the-radical-fund-kevin-aluwi-dan-sejumlah-investor/"
+   ],
+   "note": "Founded in November 2023 by Aditya Brahmana and Robert Mulianto, per the company's newsroom."
+  },
+  "trustmedis": {
+   "founders": [
+    "Achmad Zulkarnain"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://trustmedis.com/tentang-trustmedis/",
+    "https://trustmedis.com/tentang-trustmedis/",
+    "https://trustmedis.com/tentang-trustmedis/",
+    "https://linkedin.com/in/achmad-z-aljufri"
+   ],
+   "note": "Achmad Zulkarnain is presented as CEO and founder on the company's About page and on his own profile. The company says it was established in 2016, building on a healthcare IT business it began in 2011."
+  },
+  "dewaweb": {
+   "founders": [
+    "Edy Budiman"
+   ],
+   "founded": null,
+   "sources": [
+    "https://marketing.co.id/dewaweb-cloud-hosting-murah-nan-berkualitas/",
+    "https://binus.ac.id/alumni/news/4424/alumni-profile-edy-budiman-chief-executive-officer-ceo-dewaweb",
+    "https://linkedin.com/in/dewaweb"
+   ],
+   "note": "Edy Budiman is named as founder and CEO by Marketing.co.id and by BINUS University's alumni profile."
+  },
+  "qasir": {
+   "founders": [
+    "Rachmat Anggara"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://www.qasir.id/tentang-kami",
+    "https://katadata.co.id/digital/startup/5e9a4c542ab66/qasir-platform-pos-untuk-usaha-kecil-catatkan-transaksi-rp-1-triliun",
+    "https://linkedin.com/in/rachmat-anggara-qasir",
+    "https://linkedin.com/in/novanadrian"
+   ],
+   "note": "Rachmat Anggara is named as co-founder by Katadata and on his own profile; the company says it was founded in 2015. Novan Adrian describes himself as a co-founder on his own profile, which no second independent source confirms."
+  },
+  "grivy": {
+   "founders": [
+    "Jan B. Oudeman"
+   ],
+   "founded": null,
+   "sources": [
+    "https://business.grivy.com/team-member/jan-b-oudeman",
+    "https://www.linkedin.com/posts/grivy_grivy-joined-the-very-first-google-ai-accelerator-activity-7486312062382391296-SOmM"
+   ],
+   "note": "Jan B. Oudeman is named as Founder & CEO on the company's website and official LinkedIn page."
+  },
+  "mtarget": {
+   "founders": [
+    "Yopie Suryadi",
+    "Masas Dani"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://mailtarget.co/blog/pivot-versi-yopie-suryadi-dongkrak-pendapatan-mtarget/",
+    "https://mailtarget.co/blog/mtarget-hadiri-acara-apjii/",
+    "https://youngster.id/headline/masas-dani-ingin-memperlengkapi-dan-mendigitalkan-ukm-indonesia/",
+    "https://duniafintech.com/mailtarget-punya-solusi-bagi-ukm-untuk-kembangkan-usahanya/"
+   ],
+   "note": "Yopie Suryadi is named as founder and CEO on the company's blog, which says he founded MTARGET with a friend in 2016; youngster.id and Dunia Fintech name Masas Dani as a co-founder. Dunia Fintech also names Johan Tahardi, which no second qualifying source confirms."
+  },
+  "orderonline": {
+   "founders": [
+    "Rovan Alfarry",
+    "Fazlur Rahman"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://orderonline.id/blog/2022/10/03/mudahkan-pengiriman-barang-orderonline-luncurkan-fitur-logistik-bagi-pengguna/",
+    "https://cms.dailysocial.id/post/startup-saas-orderonline-permudah-penjual-social-commerce-kelola-bisnis/",
+    "https://wartaekonomi.co.id/read539770/peringati-hut-ke-6-orderonline-lakukan-perayaan-unik-bisalebih-dekat"
+   ],
+   "note": "Founded in July 2018 by Rovan Alfarry and Fazlur Rahman, per DailySocial and Warta Ekonomi."
+  },
+  "surplus-indonesia": {
+   "founders": [
+    "Muhammad Agung Saputra"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.forbes.com/profile/muhammad-agung-saputra/",
+    "https://youngster.id/headline/startup-surplus-indonesia-buka-pendanaan-pra-seri-a/"
+   ],
+   "note": "Muhammad Agung Saputra is named as founder by Forbes and as co-founder and CEO by youngster.id. Forbes dates the app's launch to 2021; no source gives a separate founding year."
+  },
+  "minapoli": {
+   "founders": [
+    "Rully Setya Purnama"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://www.minapoli.com/tentang-kami",
+    "https://www.minapoli.com/tentang-kami",
+    "https://fikkia.unair.ac.id/en/a-look-at-the-Indonesian-global-fisheries-start-up-Minapoli/"
+   ],
+   "note": "Founded on 21 November 2017 by Rully Setya Purnama, per the company's About page."
+  },
+  "dibimbing-id": {
+   "founders": [
+    "Zaky Muhammad Syah",
+    "Alim Anggono",
+    "Wildan Fahmi Gunawan"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.forbes.com/profile/dibimbing/",
+    "https://mediaindonesia.com/teknologi/626307/zaky-muhammad-syah-sosok-di-balik-kesuksesan-platform-dibimbingid",
+    "https://life.indozone.id/trendz/436044542/3-gen-z-sukses-salurkan-ribuan-orang-ke-pekerjaan-impian-lewat-startup-pendidikan-masuk-forbes-30-under-30"
+   ],
+   "note": "Founded in 2020 by Zaky Muhammad Syah, Alim Anggono and Wildan Fahmi Gunawan, per Forbes."
+  },
+  "trucarbon": {
+   "founders": [
+    "Debby Reynata"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://linkedin.com/company/trucarbon",
+    "https://www.antaranews.com/berita/3709173/truclimate-beri-solusi-pengurangan-emisi-dengan-dukungan-antler",
+    "https://www.antaranews.com/berita/3709173/truclimate-beri-solusi-pengurangan-emisi-dengan-dukungan-antler",
+    "https://inet.detik.com/business/d-6916597/startup-ini-hadirkan-solusi-bagi-pelaku-bisnis-turut-atasi-perubahan-iklim"
+   ],
+   "note": "Founded in December 2022 as TruClimate and renamed TruCarbon in 2024; Debby Reynata is named as co-founder and CEO by ANTARA and detikInet. ANTARA also names Jeffrey Dharmawan as a co-founder, which no second independent source confirms."
+  },
+  "intura": {
+   "founders": [
+    "Najwa Assilmi",
+    "Muhammad Ramadiansyah"
+   ],
+   "founded": 2025,
+   "sources": [
+    "https://intura.co/en/about",
+    "https://intura.co/en/about",
+    "https://intura.co/en/about"
+   ],
+   "note": "Founded in 2025 by Najwa Assilmi and Muhammad Ramadiansyah, per the company's About page."
+  },
+  "julo": {
+   "founders": [
+    "Adrianus Hitijahubessy",
+    "Hans Sebastian",
+    "Victor Darmadi"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.julo.co.id/blog/JULO-OJK-Licensed",
+    "https://www.julo.co.id/about",
+    "https://www.digitalnewsasia.com/startups/julo-raises-seed-funding-led-skystar",
+    "https://hybrid.co.id/post/layanan-kta-online-julo-peroleh-pendanaan-awal/"
+   ],
+   "note": "Founded in late 2016 by Adrianus Hitijahubessy, Hans Sebastian and Victor Darmadi."
+  },
+  "alami-sharia": {
+   "founders": [
+    "Dima Djani",
+    "Harza Sandityo",
+    "Bembi Juniar"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://alamisharia.co.id/en/press/alami-raises-growth-investment-and-strengthens-its-senior-management-team/",
+    "https://infokomputer.grid.id/read/121920685/startup-alami-sharia-raih-komitmen-pendanaan-awal-dari-empat-investor?page=all",
+    "https://youngster.id/headline/alami-fintech-agregator-syariah/"
+   ],
+   "note": "Founded by Dima Djani, Harza Sandityo and Bembi Juniar; the company launched in 2018, per its own press release."
+  },
+  "bhinneka": {
+   "founders": [
+    "Hendrik Tio"
+   ],
+   "founded": 1993,
+   "sources": [
+    "https://www.bhinneka.com/blog/bhinneka-mendapatkan-penghargaan-pembayar-pajak-terbesar-2019-dari-dirjen-pajak-di-penghujung-tahun-ini/",
+    "https://www.bhinneka.com/tentang-kami",
+    "https://www.idxchannel.com/inspirator/cerita-inspiratif-kisah-sukses-hendrik-tio-pendiri-e-commerce-bhinneka",
+    "https://inc42.com/buzz/indonesia-ipo-bhinneka/"
+   ],
+   "note": "Founded by Hendrik Tio. The company says it has operated since 1993; Inc42 gives 1995 as the founding year."
+  },
+  "jala": {
+   "founders": [
+    "Aryo Wiryawan",
+    "Liris Maduningtyas",
+    "Raynalfie Budhy R",
+    "Syauqy Nurul Aziz",
+    "Hanry Ario Prestantio",
+    "Andi Nusa Patria",
+    "Farid Inawan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://jala.tech/about",
+    "https://jala.tech/about",
+    "https://jala.tech/about",
+    "https://www.seafoodsource.com/news/premium/supply-trade/jala-ceo-liris-maduningtyas-sees-unlimited-potential-in-indonesia-s-shrimp-industry"
+   ],
+   "note": "The company's About page lists seven co-founders, including chairman Aryo Wiryawan and CEO Liris Maduningtyas."
+  },
+  "komunal": {
+   "founders": [
+    "Hendry Lieviant",
+    "Kendrick Winoto",
+    "Rico Tedyono"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://katadata.co.id/digital/fintech/61498cd9b48e0/east-ventures-suntik-startup-fintech-komunal-rp-30-miliar",
+    "https://skystar.vc/id/kiat-menghadapi-tuntutan-regulasi-fintech-di-indonesia-ala-komunal/",
+    "https://hybrid.co.id/post/pendanaan-awal-komunal/"
+   ],
+   "note": "Founded in Surabaya in 2018 by Hendry Lieviant, Kendrick Winoto and Rico Tedyono."
+  },
+  "gowork": {
+   "founders": [
+    "Richard Lim",
+    "Donny Tandianus",
+    "Vanessa Hendriadi Li"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://go-work.com/news/indonesian-coworking-spaces-rework-gowork-announce-merger",
+    "https://go-work.com/id/berita/vanessa-hendriadi-li-ceo-038-co-founder-of-go-rework-coworking-space",
+    "https://www.genesisventures.co/portfolio/gowork/",
+    "https://katadata.co.id/digital/startup/62a86dd3e2b49/jatuh-bangun-vanessa-dalam-membesarkan-startup-gowork"
+   ],
+   "note": "GoWork merged with the coworking operator Rework in 2018. Richard Lim and Donny Tandianus co-founded GoWork; Vanessa Hendriadi Li founded Rework and is a co-founder of the merged company."
+  },
+  "mangkokku": {
+   "founders": [
+    "Arnold Poernomo",
+    "Randy Julius Kartadinata",
+    "Gibran Rakabuming",
+    "Kaesang Pangarep"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.mangkokku.com/our-story",
+    "https://www.antaranews.com/berita/2922329/startup-kuliner-mangkokku-raih-pendanaan-seri-a-rp101-miliar"
+   ],
+   "note": "Founded in 2019 by chef Arnold Poernomo with Randy Julius Kartadinata, Gibran Rakabuming and Kaesang Pangarep, per the company's About page."
+  },
+  "esqa-cosmetics": {
+   "founders": [
+    "Cindy Angelina",
+    "Kezia Trihatmanto"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.cantika.com/read/1788884/sahabatan-dari-kecil-begini-cara-cindy-angelina-dan-kezia-trihatmanto-bangun-bisnis-bareng",
+    "https://east.vc/news/from-portfolios/indonesian-beauty-firm-turns-40k-investment-into-profitable-business-in-two-years",
+    "https://ranking.fortuneidn.com/40-under-40/business/awardee/cindy-angelina-dan-kezia-toemion"
+   ],
+   "note": "Founded in 2016 by Cindy Angelina and Kezia Trihatmanto. Fortune Indonesia lists the second co-founder as Kezia Toemion."
+  },
+  "asa-ren": {
+   "founders": [
+    "Aloysius Liang"
+   ],
+   "founded": null,
+   "sources": [
+    "https://asaren.ai/about/",
+    "https://linkedin.com/in/aloysiusliang"
+   ],
+   "note": "The company names Aloysius Liang as its founder and CEO."
+  },
+  "fairatmos": {
+   "founders": [
+    "Natalia Rialucky Marsudi"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.fairatmos.com/blog/a-groundbreaking-partnership-fairatmos-and-yinson-unite-for-a-net-zero-asean/",
+    "https://www.vertexventures.sg/projects/fairatmos/",
+    "https://www.peakxv.com/spark-cohort-02/natalia-rialucky-marsudi/",
+    "https://www.linkedin.com/posts/fairatmos_fairatmos-restorenaturetogether-bluecarbon-activity-7416780289206640641-mblF"
+   ],
+   "note": "Founded in 2022 by Natalia Rialucky Marsudi. The company's LinkedIn page also calls its chief commercial and operating officer, Aruna P., a co-founder, while investor Vertex Ventures lists Natalia Rialucky Marsudi as the sole founder."
+  },
+  "zi-care": {
+   "founders": [
+    "Jessy Abdurrahman",
+    "Permata Islam"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.crusade-partners.com/copy-of-porfolio-myrobin",
+    "https://hybrid.co.id/post/zi-care-fokus-kembangkan-solusi-digitalisasi-rumah-sakit/",
+    "https://linkedin.com/in/permata-islam-artha-9a645256"
+   ],
+   "note": "Jessy Abdurrahman is the founder and CEO. Investor Crusade Partners also lists Sanjaya I. Mayluddin and Jodi Pujiyono Susanto as co-founders."
+  },
+  "tanamduit": {
+   "founders": [
+    "Indra Suryawan",
+    "Rini Hapsari S",
+    "Ferry Aprilianto"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.tanamduit.com/tentang-kami"
+   ],
+   "note": "The company lists Indra Suryawan, Rini Hapsari S and Ferry Aprilianto as its founders."
+  },
+  "blitz-electric-mobility": {
+   "founders": [
+    "Saivya Chauhan",
+    "William So"
+   ],
+   "founded": null,
+   "sources": [
+    "https://en.prnasia.com/releases/apac/blitz-electric-mobility-indonesia-s-leading-ev-logistic-enabler-secures-pre-series-a-investment-led-by-vynn-capital-500705.shtml",
+    "https://en.prnasia.com/releases/apac/blitz-electric-mobility-indonesia-s-leading-ev-logistic-enabler-secures-pre-series-a-investment-led-by-vynn-capital-500705.shtml",
+    "https://www.techverse.asia/startup/10608/27082025/blitz-electric-mobility-mendapat-pendanaan-pra-seri-a-akselerasi-ekspansi",
+    "https://linkedin.com/in/saivyachauhan"
+   ],
+   "note": "The company's 2025 funding announcement names Saivya Chauhan as founder and CEO and William So as co-founder and CFO."
+  },
+  "carbonethics": {
+   "founders": [
+    "Agung Bimo Listyanu",
+    "Jessica Novia",
+    "Innandya Kusumawardhani"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.carbonethics.co/post/celebrating-4-year-of-carbonethics-impactful-journey-to-thrive4nature",
+    "https://www.carbonethics.co/post/carbonethics-second-anniversary-and-one-year-accomplishments",
+    "https://www.carbonethics.co/post/carbonethics-secures-us-2-1-million-to-accelerate-the-development-of-high-quality-blue-carbon-projec",
+    "https://intudovc.com/portfolio/carbonethics/"
+   ],
+   "note": "Founded in May 2019 by Agung Bimo Listyanu, Jessica Novia and Innandya Kusumawardhani, who met at the One Young World summit. Company and investor materials also list them as Bimo Soewadji and as Innandya Irawan or Innandya van der Kolk."
+  },
+  "whiz": {
+   "founders": [
+    "Dominic Sumarli"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.ycombinator.com/companies/whiz",
+    "https://www.linkedin.com/posts/dominicsumarli_happy-friday-im-the-co-founder-of-whiz-activity-6976382300062199809-NpcN"
+   ],
+   "note": "Dominic Sumarli is named as a founder by Y Combinator and in his own posts. Y Combinator also lists Frederick Widjaja as a founder."
+  },
+  "titipku": {
+   "founders": [
+    "Henri Suhardja",
+    "Ong Tek Tjan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.ycombinator.com/companies/titipku",
+    "https://e27.co/helping-traditional-sellers-go-digital-is-not-new-but-titipku-takes-it-a-notch-by-introducing-sharing-economy-for-all-parties-involved-20200812/",
+    "https://temanstartup.com/digitazing-traditional-markets-with-titipku/"
+   ],
+   "note": "Co-founded by Henri Suhardja and Ong Tek Tjan."
+  },
+  "idexpress": {
+   "founders": [
+    "Francis Anugrah"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.jpnn.com/news/tambah-cakupan-pelayanan-idexpress-ingin-bantu-kembangkan-umkm",
+    "https://wartaekonomi.co.id/read469902/startup-konstruksi-brik-akan-selesaikan-putaran-pendanaan-pra-seri-a-senilai-us12-juta",
+    "https://linkedin.com/in/charles-lim-236a1b1ba"
+   ],
+   "note": "Francis Anugrah (also spelled Anugerah) is named as a co-founder by JPNN and Warta Ekonomi. Deputy CEO Charles Lim also describes himself as a co-founder."
+  },
+  "kasir-pintar": {
+   "founders": [
+    "Didit Sepiyanto",
+    "Burhanudin Rasyid",
+    "Sitti Raisya Fitri E",
+    "Nuning Septiana"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://kasirpintar.co.id/about_us",
+    "https://kasirpintar.co.id/about_us",
+    "https://mediaindonesia.com/teknologi/469410/cerita-4-sahabat-besarkan-aplikasi-kasir-pintar"
+   ],
+   "note": "The company lists Didit Sepiyanto, Burhanudin Rasyid, Sitti Raisya Fitri E. and Nuning Septiana as its founders. The app was first published in April 2016."
+  },
+  "bumame": {
+   "founders": [
+    "James Wihardja"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://500.co/content/bumame-raises-pre-series-a-to-bring-personalized-healthcare-early-detection-and-faster-diagnostics-to-everyone-in-indonesia-markup-1169",
+    "https://linkedin.com/in/james-wihardja-58995378"
+   ],
+   "note": "Founded in 2020; investor 500 Global names James Wihardja as co-founder and CEO."
+  },
+  "kaskus": {
+   "founders": [
+    "Andrew Darwis"
+   ],
+   "founded": 1999,
+   "sources": [
+    "https://www.bbc.com/indonesia/berita_indonesia/2011/06/110628_tokohandrewdarwis",
+    "https://www.tempo.co/ekonomi/profil-andrew-darwis-pendiri-kaskus-yang-kembali-viral-di-media-sosial-13179",
+    "https://www.thejakartapost.com/news/2009/11/16/kaskus-delves-serious-business.html",
+    "https://www.suara.com/lifestyle/2024/08/30/210452/siapa-pemilik-kaskus-didirikan-3-anak-bangsa-pakai-modal-rp50-ribu-kini-trending-gegara-gibran"
+   ],
+   "note": "Kaskus was started in 1999 by Andrew Darwis and two fellow students in Seattle; Suara names them as Budi Dharmawan and Ronald Stephanus, which a second source has not confirmed."
+  },
+  "kelas-pintar": {
+   "founders": [
+    "Fernando Uffie"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.viva.co.id/digital/startup/1569054-startup-ini-jadi-penunjuk-arah-siswa-agar-tak-salah-jurusan",
+    "https://nextren.grid.id/read/012054979/bantu-siswa-hadapi-ujian-startup-aplikasi-kelas-pintar-luncurkan-fitur-soal-yang-berisi-soal-soal-latihan",
+    "https://jatengpos.co.id/ekonomi/2026/03/03/kelas-pintar-integrasikan-ai-permudah-kbm-hingga-asesmen-digital/"
+   ],
+   "note": "Kelas Pintar was developed by PT Extramarks Education Indonesia; the press names Fernando Uffie as its founder and CEO."
+  },
+  "cekat-ai": {
+   "founders": [
+    "Matthew Sebastian",
+    "Nicholas Alden Liem"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.insignia.vc/portfolio/cekat-ai",
+    "https://linkedin.com/in/matthew-sebastian",
+    "https://linkedin.com/in/nicholas-liem-382780200"
+   ],
+   "note": "Co-founded by Matthew Sebastian and Nicholas Alden Liem, per investor Insignia Ventures and the founders' own profiles."
+  },
+  "tokocrypto": {
+   "founders": [
+    "Pang Xue Kai"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://support.tokocrypto.com/hc/en-us/articles/360043004592-First-Regulated-Cryptocurrency-Exchange-in-Indonesia-Tokocrypto-Secures-Investment-from-Binance",
+    "https://support.tokocrypto.com/hc/en-us/articles/360004305832-About-Tokocrypto",
+    "https://kumparan.com/profil-orang-sukses/pang-xue-kai-insinyur-asal-singapura-yang-kembangkan-industri-kripto-di-ri-1z5tOqvOqnd"
+   ],
+   "note": "Founded in June 2018; the company names Pang Xue Kai as its co-founder and CEO."
+  },
+  "rimba-makmur-utama": {
+   "founders": [
+    "Rezal Kusumaatmadja",
+    "Dharsono Hartono"
+   ],
+   "founded": 2007,
+   "sources": [
+    "https://katinganmentaya.com/pages/en/about",
+    "https://katinganmentaya.com/pages/en/our-people",
+    "https://www.forestdigest.com/detail/871/mencegah-kebakaran-di-lahan-gambut"
+   ],
+   "note": "PT Rimba Makmur Utama, which runs the Katingan Mentaya Project, was founded in 2007 by Rezal Kusumaatmadja and Dharsono Hartono, per the project's own site."
+  },
+  "imajin": {
+   "founders": [
+    "Chendy Jaya",
+    "Stefanus Hodir",
+    "Joseline Olivia"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://www.blog.imajin.id/post/imajin-is-one-of-the-selected-startups-at-hub-id-summit-2023",
+    "https://www.blog.imajin.id/en/post/imajin-wins-the-2025-industrial-technology-pioneer-award-rintek",
+    "https://www.blog.imajin.id/post/imajin-among-top-11-finalists-in-she-loves-tech-global-competition",
+    "https://east.vc/news/press-release/manufacturing-startup-imajin-received-seed-funding-led-by-east-ventures"
+   ],
+   "note": "Founded by Chendy Jaya, Stefanus Hodir and Joseline Olivia, per the company and investor East Ventures. SWA dates the start, as a 3D marketplace and community, to 2014."
+  },
+  "sonar-platform": {
+   "founders": [
+    "Amien Krisna",
+    "M. Ridwan Agustiawan"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://sonarplatform.com/about-us/",
+    "https://sonarplatform.com/id/about-us/"
+   ],
+   "note": "Founded in 2015 by Amien Krisna and M. Ridwan Agustiawan, per the company's About page."
+  },
+  "mileapp": {
+   "founders": [
+    "Dika Maheswara"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://mile.app/en/about",
+    "https://www.okeline.com/berita-9121-mileapp-hadirkan-terobosan-untuk-dukung-percepatan-pertumbuhan-ecommerce",
+    "https://lifestyleguide.com/press/mileapp-made-a-big-move-to-speed-up-the-e-commerce-growth"
+   ],
+   "note": "MileApp, later separated from Paket.id, says it was founded in 2015; its 2020 press release names Dika Maheswara as CEO and founder."
+  },
+  "nodeflux": {
+   "founders": [
+    "Meidy Fitranto",
+    "Faris Rahman"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.antaranews.com/berita/1592926/kisah-di-balik-otak-nodeflux-startup-ai-anak-bangsa-yang-mendunia",
+    "https://www.tempo.co/ekonomi/chief-executive-officer-co-founder-nodeflux-teknologi-indonesia-meidy-fitranto-peluang-industri-kecerdasan-buatan-terbuka-lebar-869565",
+    "https://linkedin.com/in/faris-rahman-2442b427"
+   ],
+   "note": "Founded in January 2016 by Meidy Fitranto and Faris Rahman."
+  },
+  "dattabot": {
+   "founders": [
+    "Regi Wahyu",
+    "Imron Zuhri"
+   ],
+   "founded": 2003,
+   "sources": [
+    "https://dojo.dattabot.io/experts",
+    "https://dojo.dattabot.io/experts",
+    "https://linkedin.com/company/mediatrac-fractal-collective-intelligence"
+   ],
+   "note": "Dattabot, previously known as Mediatrac, names Regi Wahyu as founder and CEO and Imron Zuhri as co-founder and CTO. Its LinkedIn page gives 2003 as the founding year."
+  },
+  "healthpro": {
+   "founders": [
+    "Rendy Alfuadi",
+    "Vika Rachma Sari"
+   ],
+   "founded": null,
+   "sources": [
+    "https://hasan.vc/how-healthpro-id-is-redefining-on-demand-healthcare-staffing-in-indonesia/",
+    "https://swa.co.id/read/432815/healthpro-hubungkan-pasien-dengan-tenaga-medis-on-demand"
+   ],
+   "note": "Co-founded by Rendy Alfuadi and Vika Rachma Sari during the COVID-19 pandemic."
+  },
+  "otospector": {
+   "founders": [
+    "Jeffrey Andika"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://otospector.co.id/tentang-kami",
+    "https://youngster.id/headline/startup-talk-pelaku-startup-harus-ikuti-perkembangan-jangan-menyerah/",
+    "https://linkedin.com/in/jandika"
+   ],
+   "note": "Founded in 2016, per the company; Jeffrey Andika is named as its founder and CEO."
+  },
+  "carbonx": {
+   "founders": [
+    "Pandu Sjahrir"
+   ],
+   "founded": null,
+   "sources": [
+    "https://carbonxco.com/news/CarbonX-and-Indonesia-Indah-Foundation-Join-Forces-to-Accelerate-Environmental-Sustainability-Education-for-School-Children/d9eddb1e-cdf0-4220-a4dc-a915a867815d",
+    "https://www.antaranews.com/berita/2900989/carbonx-dan-iif-kolaborasi-dukung-pencapaian-target-nol-emisi-karbon"
+   ],
+   "note": "Pandu Sjahrir is named as co-founder and president commissioner by the company and Antara; other co-founders have not been confirmed."
+  },
+  "dycode": {
+   "founders": [
+    "Andri Yadi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://hybrid.co.id/post/menilik-inovasi-lewat-peluang-iot-dan-arduino-di-echelon-indonesia-2016/",
+    "https://www.myedisi.com/chip/1680/3236/andri-yadi-sosok-di-balik-eksistensi-dycode"
+   ],
+   "note": "Andri Yadi is named as DyCode's founder and CEO; CHIP notes that other early founders later left the company."
+  },
+  "jt-auto": {
+   "founders": [
+    "Titos Jatiarso"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://linkedin.com/company/javatech-automation",
+    "https://eng.ui.ac.id/en/bringing-the-co-founder-of-javatech-automation-ftui-hosts-technopreneur-spark-again/",
+    "https://linkedin.com/in/titos-jatiarso-15b08b119"
+   ],
+   "note": "Titos Jatiarso is named as a co-founder of Javatech Automation (JT Auto); other co-founders are not named. Its LinkedIn page gives 2013 as the founding year."
+  },
+  "rans-entertainment": {
+   "founders": [
+    "Raffi Ahmad"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://gorontalo.antaranews.com/berita/413207/rans-entertainment-resmi-ipo-di-pasar-modal-himpun-dana-rp4293-miliar",
+    "https://stockwatch.id/visi-besar-raffi-ahmad-pasca-ipo-jadikan-rans-legacy-setara-walt-disney/",
+    "https://stockwatch.id/visi-besar-raffi-ahmad-pasca-ipo-jadikan-rans-legacy-setara-walt-disney/"
+   ],
+   "note": "Raffi Ahmad is named as the founder and dates RANS to 2016. Antara describes the company as owned by Raffi Ahmad and Nagita Slavina, who serves as President Director."
+  },
+  "wagely": {
+   "founders": [
+    "Tobias Fischer",
+    "Sasanadi Ruka"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.prnewswire.com/in/news-releases/wagely-raises-us-5-6-million-to-bring-financial-wellness-to-millions-of-lower-and-middle-income-workers-in-indonesia-838077786.html"
+   ],
+   "note": "Founded in 2020 by Tobias Fischer and Sasanadi Ruka, per the company's press release."
+  },
+  "gokomodo": {
+   "founders": [
+    "Samuel Tirtasaputra",
+    "William Pramana"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://gokomodo.com/blog/east-ventures-pimpin-pendanaan-series-a-rp-387-miliar-ke-gokomodo"
+   ],
+   "note": "Founded in 2019 by Samuel Tirtasaputra and William Pramana, per the company."
+  },
+  "green-rebel-foods": {
+   "founders": [
+    "Helga Angelina Tjahjadi",
+    "Max Mandias"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://greenrebelfoods.com/blogs/news-blog/sample-blog-5",
+    "https://greenrebelfoods.com/pages/our-story",
+    "https://bworldonline.com/sparkup/2023/10/02/548774/plant-based-food-startup-green-rebel-to-enter-philippine-market/"
+   ],
+   "note": "Founded in 2020 by Helga Angelina Tjahjadi and Max Mandias, who also own the Burgreens restaurant chain."
+  },
+  "rukita": {
+   "founders": [
+    "Sabrina Soewatdy",
+    "Sarah Soewatdy"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.rukita.co/stories/perempuan-pemimpin-startup-indonesia",
+    "https://www.mpower-partners.com/news/mpower-investment-rukita",
+    "https://surge.peakxv.com/companies/rukita-5c0be",
+    "https://www.goldengate.vc/portfolio/rukita"
+   ],
+   "note": "Rukita and investor MPower Partners credit sisters Sabrina and Sarah Soewatdy as the co-founders. Golden Gate Ventures also lists Xu-Zonne Ho, and Peak XV lists Xu-Zonne Ho, Wei-Chuan Chew and YC Ng, as co-founders."
+  },
+  "nalagenetics": {
+   "founders": [
+    "Levana Sani",
+    "Astrid Irwanto",
+    "Alexander Lezhava",
+    "Jianjun Liu"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.nalagenetics.com/about-us",
+    "https://digest.nalagenetics.com/nalagenetics-won-in-g20-innovation-league-2021",
+    "https://www.a-star.edu.sg/gis/press-releases/press-releases-2025/astar-spin-off-nalagenetics-implements-nationwide-drug-reaction-screening-for-leprosy-patients-in-indonesia"
+   ],
+   "note": "Nalagenetics, a spin-off of A*STAR's Genome Institute of Singapore, lists Levana Sani, Astrid Irwanto, Alexander Lezhava and Jianjun Liu as its founders."
+  },
+  "reku": {
+   "founders": [
+    "Sumardi Fung",
+    "Robby"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://reku.id/information/berawal-dari-mining-crypto-perjalanan-reku-hingga-menjadi-platform-investasi-crypto-terpercaya",
+    "https://reku.id/about",
+    "https://linkedin.com/in/funggriffin",
+    "https://linkedin.com/in/robby-1310b2163"
+   ],
+   "note": "Reku, established in 2018, names Sumardi Fung and Robby as founders. It also names a third founder, Johny, without giving his surname."
+  },
+  "beleaf-farms": {
+   "founders": [
+    "Amrit Lakhiani"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.alphajwc.com/en/indonesian-farming-as-a-service-startup-beleaf-raises-usd-2-mn-in-seed-funding-led-by-alpha-jwc-ventures/",
+    "https://linkedin.com/in/amritlakhiani"
+   ],
+   "note": "Founded in 2019 by Amrit Lakhiani, per lead investor Alpha JWC Ventures."
+  },
+  "durianpay": {
+   "founders": [
+    "Antara Sara Mathai",
+    "Kumar Puspesh",
+    "Natasha Ardiani"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.durianpay.id/company",
+    "https://banten.antaranews.com/berita/180486/durianpay-mendapat-pendanaan-2-juta-dolar-as",
+    "https://hybrid.co.id/post/durianpay-revolusi-kemudahan-proses-checkout-untuk-bisnis-online/"
+   ],
+   "note": "Founded in Jakarta in September 2020 by Antara Sara Mathai, Kumar Puspesh and Natasha Ardiani, per Antara and Hybrid."
+  },
+  "kitabisa": {
+   "founders": [
+    "Alfatih Timur",
+    "Vikra Ijas"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://blog.kitabisa.com/2021/08/06/profil-founder-kitabisa/",
+    "https://blog.kitabisa.com/2019/03/25/kumpul-orang-baik-ketiga-pelajaran-dari-si-kecil-muhammad/",
+    "https://entrepreneur.bisnis.com/read/20220529/265/1537855/profil-alfatih-timur-co-founder-kitabisacom-lulusan-universitas-dalam-negeri",
+    "https://entrepreneur.bisnis.com/read/20220529/265/1537855/profil-alfatih-timur-co-founder-kitabisacom-lulusan-universitas-dalam-negeri"
+   ],
+   "note": "Founded in 2013 by Alfatih Timur and Vikra Ijas (spelled Vikra Ijaz on Kitabisa's blog). Bisnis also describes Rhenald Kasali, Alfatih Timur's mentor, as a co-founder."
+  },
+  "diri-care": {
+   "founders": [
+    "Deviana Himawan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://diricare.com/doctors",
+    "https://diricare.com/doctors",
+    "https://linkedin.com/in/deviana-himawan-0620b9215"
+   ],
+   "note": "Diri Care's site names Deviana Himawan, its Chief Clinical Officer, as a co-founder; the rest of the founding team is not confirmed."
+  },
+  "sekilo": {
+   "founders": [
+    "Chandni Chainani",
+    "Nitish Chellaram"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.ycombinator.com/companies/sekilo",
+    "https://www.ycombinator.com/companies/sekilo",
+    "https://www.ycombinator.com/companies/sekilo",
+    "https://technode.global/2023/12/27/indonesian-quick-commerce-startup-dropezy-expands-into-poultry-downstream-industry/"
+   ],
+   "note": "Sekilo, formerly the quick-commerce startup Dropezy, pivoted to poultry supply in January 2023. Y Combinator lists Chandni Chainani and Nitish Chellaram as co-founders and 2019 as the founding year."
+  },
+  "dataon": {
+   "founders": [
+    "Gordon Enns"
+   ],
+   "founded": null,
+   "sources": [
+    "https://dataon.com/en-id/blog/dataon-ceo-gordon-enns-successful-people-indonesia/",
+    "https://indonews.id/artikel/17894/Tingkatkan-Kualitas-GreatDay-HR-Gantikan-Aplikasi-SunFish-Go/"
+   ],
+   "note": "Founded by Gordon Enns, per the company."
+  },
+  "qiscus": {
+   "founders": [
+    "Delta Purna Widyangga",
+    "Muhammad Md Rahim",
+    "Evan Purnama"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://www.qiscus.com/en/about-us",
+    "https://www.qiscus.com/en/about-us",
+    "https://www.qiscus.com/en/about-us",
+    "https://youngster.id/headline/startup-qiscus-peroleh-pendanaan-sebesar-us2-juta-dari-init6/"
+   ],
+   "note": "Qiscus, established in 2013, lists Delta Purna Widyangga, Muhammad Md Rahim and Evan Purnama as its founders; a 2015 Liputan6 report on the founding team also includes Amin Nordin."
+  },
+  "female-daily-network": {
+   "founders": [
+    "Hanifa Ambadar",
+    "Affi Assegaf"
+   ],
+   "founded": null,
+   "sources": [
+    "https://editorial.femaledaily.com/blog/2012/10/18/clozette-daily-the-press-conference",
+    "https://editorial.femaledaily.com/blog/2021/04/28/it-starts-with-you-jurnal-kolaborasi-dengan-girls-beyond-dan-ceo-female-daily-hanifa-ambadar",
+    "https://www.thejakartapost.com/life/2016/04/01/women-in-tech-female-daily-network-founders-share-their-success-story",
+    "https://www.thejakartapost.com/life/2016/04/01/women-in-tech-female-daily-network-founders-share-their-success-story"
+   ],
+   "note": "Female Daily described Hanifa Ambadar (Hanzky) and Affi Assegaf as its two founders in 2012. The Jakarta Post also counts Novita Imelda, who joined in 2011 as an investor and operating director, among the founders."
+  },
+  "dealls": {
+   "founders": [
+    "Andhika Sudarman"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.ycombinator.com/companies/dealls-jobs-and-mentoring/jobs",
+    "https://id.linkedin.com/in/andhikasudarman",
+    "https://www.kilat.com/nasional/84416800218/profil-andhika-sudarman-lulusan-harvard-yang-jadi-founder-dealls"
+   ],
+   "note": "Founded in 2020 by Andhika Sudarman, per Y Combinator."
+  },
+  "cermati": {
+   "founders": [
+    "Andhy Koesnandar",
+    "Oby Sumampouw",
+    "Carlo Gandasubrata"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://www.cermati.com/tentang-cermati",
+    "https://tirto.id/grup-djarum-suntik-dana-ke-cermati-apa-untungnya-cXBN",
+    "https://tirto.id/grup-djarum-suntik-dana-ke-cermati-apa-untungnya-cXBN",
+    "https://east.vc/news/press-release/cermati-series-b"
+   ],
+   "note": "Founded by Andhy Koesnandar, Oby Sumampouw and Carlo Gandasubrata. Cermati launched in April 2015; Oby Sumampouw dates the founding of the group to December 2014."
+  },
+  "erigo": {
+   "founders": [
+    "Muhammad Sadad"
+   ],
+   "founded": 2011,
+   "sources": [
+    "https://erigostore.co.id/pages/about",
+    "https://entrepreneur.bisnis.com/read/20231104/265/1711036/perjalanan-muhammad-sadad-bangun-erigo-berawal-dari-bisnis-batik"
+   ],
+   "note": "Founded in 2011 by Muhammad Sadad, originally under the name Selected & Co., per the company."
+  },
+  "katadata": {
+   "founders": [
+    "Metta Dharmasaputra",
+    "Ade Wahyudi"
+   ],
+   "founded": 2012,
+   "sources": [
+    "https://katadata.co.id/mettadharmasaputra",
+    "https://katadata.co.id/adewahyudi",
+    "https://katadata.co.id/tentang-katadata"
+   ],
+   "note": "Katadata, founded on 1 April 2012, names Metta Dharmasaputra and Ade Wahyudi as co-founders."
+  },
+  "nuanu": {
+   "founders": [
+    "Sergey Solonin"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://eddesignconf.com/magazine/interviews/nuanu-creative-city",
+    "https://fokusbali.com/nuanu-kota-kreatif-seluas-44-hektar-hadir-di-pantai-nyanyi-tabanan/",
+    "https://aplussingapore.com/article/nuanu-creative-city-bali-sergey-solonin"
+   ],
+   "note": "Founded in 2020 by Sergey Solonin; construction of the Bali site began in October 2020."
+  },
+  "otten-coffee": {
+   "founders": [
+    "Robin Boe",
+    "Jhoni Kusno"
+   ],
+   "founded": 2012,
+   "sources": [
+    "https://hybrid.co.id/post/otten-coffee-raih-pendanaan-seri-a-dari-east-ventures/",
+    "https://hybrid.co.id/post/otten-coffee-raih-pendanaan-seri-a-dari-east-ventures/",
+    "https://www.tatlerasia.com/power-purpose/business/kisah-sukses-founder-otten-coffee-sepotong-kisah-dari-secangkir-kopi"
+   ],
+   "note": "Founded by Robin Boe and Jhoni Kusno. Otten Coffee started as an offline business in Medan in 2012 and moved into e-commerce in 2014."
+  },
+  "global-urban-esensial": {
+   "founders": [
+    "Tiffany Robyn Soetikno"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.genpi.co/gaya-hidup/52048/vioni-wita-programmer-muda-indonesia-siap-go-international",
+    "https://hybrid.co.id/post/goapotik-obat-obatan-on-demand/",
+    "https://linkedin.com/in/t-robyn-soetikno-75562548"
+   ],
+   "note": "Founded by Tiffany Robyn Soetikno, who co-founded GoApotik, the company's first service; any other co-founders are not named."
+  },
+  "infia": {
+   "founders": [
+    "Aji Pratomo",
+    "Andrey Noelfry Tarigan",
+    "Muhammad Noviar Rahman"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://infiacorp.com/about",
+    "https://infiacorp.com/about",
+    "https://infiacorp.com/about",
+    "https://infiacorp.com/about"
+   ],
+   "note": "INFIA was founded in 2014; the company names Aji Pratomo as founder and Andrey Noelfry Tarigan and Muhammad Noviar Rahman as co-founders."
+  },
+  "mobee": {
+   "founders": [
+    "Andrew Tjahyadikarta",
+    "Jeff Pradana"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://mobee.com/en/news/mobee-mendapatkan-lisensi-pfak",
+    "https://mobee.com/en/news/mobee-mendapatkan-lisensi-pfak",
+    "https://mobee.com/en/company",
+    "https://www.blockhead.co/2023/04/03/mobee-launches-indonesia-crypto-exchange-secures-license-and-funding/"
+   ],
+   "note": "Founded by Andrew Tjahyadikarta and Jeff Pradana, per the company, which gives October 2021 as its founding date; Blockhead dates the start to 2022."
+  },
+  "toge-productions": {
+   "founders": [
+    "Kris Antoni Hadiputra"
+   ],
+   "founded": 2009,
+   "sources": [
+    "https://www.togeproductions.com/announcing-toge-game-fund-initiative-projects/",
+    "https://www.togeproductions.com/about/",
+    "https://www.togeproductions.com/toge-productions-indie-publishing/",
+    "https://linkedin.com/in/kris-antoni-hadiputra-a675b819"
+   ],
+   "note": "Founded in 2009 by Kris Antoni (Kris Antoni Hadiputra), who started making games with a friend, per the company."
+  },
+  "bukit-vista": {
+   "founders": [
+    "Jing Cho Yang",
+    "Wayana Yang"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.bukitvista.com/partner-community-event/dcseminar-ugm-uc-berkeley",
+    "https://www.bukitvista.com/our-team",
+    "https://www.bukitvista.com/vistan/jing",
+    "https://www.bukitvista.com/about-our-founder"
+   ],
+   "note": "Co-founded by Jing Cho Yang and Wayana Yang, per the company; Jing's profile also credits early team member Bayu. The company traces Bukit Vista to a 2009 side project and dates its formal founding to 2013-2014."
+  },
+  "codemi": {
+   "founders": [
+    "Zaki Falimbany"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://swa.co.id/read/229492/jurus-zaki-falimbany-kibarkan-software-codemi",
+    "https://swa.co.id/read/229492/jurus-zaki-falimbany-kibarkan-software-codemi",
+    "https://init-6.fund/news/17",
+    "https://hybrid.co.id/post/startup-edutech-b2b-codemi-terima-pendanaan-tahap-awal-dari-init-6/"
+   ],
+   "note": "Founded by Zaki Falimbany, who started building Codemi in 2014."
+  },
+  "plasticpay": {
+   "founders": [
+    "Suhendra Setiadi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://linkedin.com/in/suhendra-setiadi-473814193",
+    "https://beritakota.id/seasoldier-plasticpay-komitmen-melakukan-pembuatan-produkramah-lingkungan/"
+   ],
+   "note": "Founded by Suhendra Setiadi, who is also its CEO."
+  },
+  "duitin": {
+   "founders": [
+    "Astriani Liewaputra",
+    "Agdya Savanto",
+    "Adijoyo Prakoso",
+    "Rangga Dwiyandra"
+   ],
+   "founded": null,
+   "sources": [
+    "https://duitin.id/about-us",
+    "https://duitin.id/about-us",
+    "https://duitin.id/about-us",
+    "https://duitin.id/about-us"
+   ],
+   "note": "Duitin's site lists Astriani Liewaputra, Agdya Savanto, Adijoyo Prakoso and Rangga Dwiyandra as its founders."
+  },
+  "voltron": {
+   "founders": [
+    "Abdul Rahman Elly"
+   ],
+   "founded": null,
+   "sources": [
+    "https://dapurpacu.id/2023/05/18/evcuzz-charging-network-resmi-ganti-nama-jadi-voltron/",
+    "https://dialeksis.com/ekonomi/berkembangnya-kendaraan-listik-di-indonesia-voltron-berencana-bangun-1000-spklu-tahun-depan/",
+    "https://linkedin.com/in/abdul-rahman-elly-57632644"
+   ],
+   "note": "Founded by Abdul Rahman Elly; the charging network was called EVCuzz until it was renamed Voltron in May 2023."
+  },
+  "kepul": {
+   "founders": [
+    "Abdul Latif Wahid Nasution"
+   ],
+   "founded": null,
+   "sources": [
+    "https://kepul.id/team/",
+    "https://linkedin.com/in/abdul-latif-wahid-nasution-089978140",
+    "https://jurnalkotatoday.com/abdul-latif-wahid-ceo-kepul-motivasi-anak-muda-peduli-sampah-dan-berkarya/"
+   ],
+   "note": "Founded by Abdul Latif Wahid Nasution (listed by the company as Abdul Latif), who is also its CEO."
+  },
+  "nightspade": {
+   "founders": [
+    "Garibaldy Wibowo Mukti",
+    "Teddy Pandu"
+   ],
+   "founded": 2010,
+   "sources": [
+    "https://www.nightspade.com/crew",
+    "https://www.nightspade.com/crew",
+    "https://games.uzone.id/jatuh-bangun-nightspade-dari-developer-produk-menjadi-spesialis-outsourcing",
+    "https://yourstory.com/2013/08/in-a-deep-dive-conversation-with-garibaldy-w-mukti-co-founder-nightspade-about-the-mobile-gaming-industry-in-indonesia"
+   ],
+   "note": "Nightspade, founded in 2010, lists CEO Gerry (Garibaldy Wibowo Mukti) and CFO Teddy (Teddy Pandu) as co-founders. A Teknojurnal profile names Inas Luthfi and Dody Dharma as the other two of four original founders."
+  },
+  "ayoconnect": {
+   "founders": [
+    "Jakob Rost",
+    "Chiragh Kirpalani",
+    "Adi Vora"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.ayoconnect.com/blog/ayoconnects-open-finance-solutions-foster-an-ecosystem-in-the-financial-industry",
+    "https://www.ayoconnect.com/en/about-us",
+    "https://kr-asia.com/indonesian-b2b-fintech-developer-ayoconnect-raises-usd-10-million-to-advance-open-finance",
+    "https://katadata.co.id/digital/fintech/64cca0577bba4/startup-open-finance-ayoconnect-phk-10-karyawan"
+   ],
+   "note": "Founded in 2016 by Jakob Rost, Chiragh Kirpalani and Adi Vora, per KrASIA; the company names Jakob Rost as founder and CEO."
+  },
+  "lemonilo": {
+   "founders": [
+    "Shinta Nurfauzia",
+    "Ronald Wijaya",
+    "Johannes Ardiant"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://lemonilo.com/",
+    "https://www.theramenrater.com/2018/08/06/interview-lemonilo/",
+    "https://linkedin.com/in/shintanurfauzia",
+    "https://linkedin.com/in/shintanurfauzia"
+   ],
+   "note": "In a 2018 interview the company said Shinta Nurfauzia, Ronald Wijaya and Johannes Ardiant founded Lemonilo in 2016; the three are presented as its leadership on the company's website."
+  },
+  "bobobox": {
+   "founders": [
+    "Indra Gunawan",
+    "Antonius Bong"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://bobobox.com/blog/id/apa-itu-bobobox/",
+    "https://www.genesisventures.co/portfolio/bobobox/",
+    "https://indonesia.endeavor.org/profiles/antonius-bong/",
+    "https://entrepreneur.bisnis.com/read/20260922/52/2006101/dari-hotel-kapsul-hingga-kabin-glamping-ini-perjalanan-bisnis-bobobox"
+   ],
+   "note": "Founded in Bandung by Indra Gunawan and Antonius Bong. The company and investor Genesis Ventures give 2018 as the founding year; one Bisnis report says 2017."
+  },
+  "majoo": {
+   "founders": [
+    "Adi Wahyu Rahadi",
+    "Audia Rizal Harahap",
+    "Bayu Indriarko"
+   ],
+   "founded": null,
+   "sources": [
+    "https://majoo.id/news/read/company-profile",
+    "https://majoo.id/news/read/majoo-transformasi-umkm-dengan-saas-inovatif-dan-solusi-terpadu-yang-terjangkau",
+    "https://majoo.id/news/read/company-profile"
+   ],
+   "note": "Founded by Adi Wahyu Rahadi, Audia Rizal Harahap and Bayu Indriarko, per the company. The company says majoo was initiated in 2018 and began commercial service in July 2019."
+  },
+  "chickin": {
+   "founders": [
+    "Tubagus Syailendra Wangsadisastra",
+    "Ashab Alkahfi",
+    "Ahmad Syaifullah"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://chickin.id/blog/founder-chickin-indonesia-raih-endeavor-outliers-2026/",
+    "https://east.vc/id/berita/press-release/chickin-raised-seed-funding-led-by-east-ventures",
+    "https://katadata.co.id/digital/startup/62d0e63f8072f/startup-budidaya-unggas-chickin-raih-pendanaan-dari-east-ventures"
+   ],
+   "note": "Founded in 2020 by Ashab Alkahfi, Tubagus Syailendra Wangsadisastra and Ahmad Syaifullah, per investor East Ventures and Katadata."
+  },
+  "skorlife": {
+   "founders": [
+    "Ongki Kurniawan",
+    "Karan Khetan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://skorlife.com/siapa-kami/",
+    "https://skorlife.com/siapa-kami/",
+    "https://techcrunch.com/2023/05/23/skorlife-seed/"
+   ],
+   "note": "Ongki Kurniawan and Karan Khetan are named as co-founders on the company's About page and by TechCrunch."
+  },
+  "ringkas": {
+   "founders": [
+    "Ilya Kravtsov",
+    "Leroy Pinto",
+    "Yoko Simon"
+   ],
+   "founded": null,
+   "sources": [
+    "https://ringkas.co.id/en/about-us/",
+    "https://ringkas.co.id/en/about-us/",
+    "https://ringkas.co.id/en/about-us/",
+    "https://hypeabis.id/read/52299/perjalanan-startup-ringkas-sampai-masuk-daftar-forbes-asia-100-to-watch-2025"
+   ],
+   "note": "Ilya Kravtsov, Leroy Pinto and Yoko Simon are named as co-founders on the company's About page. A 2025 press report also lists Puguh Widyoko as a co-founder; he is not named on the company's About page."
+  },
+  "baskit": {
+   "founders": [
+    "Yann Schuermans",
+    "Yoonjung Yi",
+    "Abhishek Pansari"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://baskit.app/blogs/baskit-raises-us-4.4-million-series-a",
+    "https://cento.vc/portfolio/baskit/",
+    "https://techcrunch.com/2023/06/26/baskit/",
+    "https://cento.vc/portfolio/baskit/"
+   ],
+   "note": "Yann Schuermans, Yoonjung Yi and Abhishek Pansari are named as co-founders by the company and investor Cento Ventures. TechCrunch reported in June 2023 that Baskit was founded the previous year; Cento Ventures gives 2023."
+  },
+  "saturdays": {
+   "founders": [
+    "Rama Suparta",
+    "Andrew Kandolha"
+   ],
+   "founded": null,
+   "sources": [
+    "https://infobrand.id/kepiawaian-saturdays-mengusung-bisnis-kacamata-berkonsep-b2c.phtml",
+    "https://www.dsgcp.com/insights/the-saturdays-story-a-visionary-journey-in-eyewear-retail",
+    "https://youngster.id/headline/rama-suparta-tinggalkan-posisi-mapan-sebagai-profesional-pilih-jadi-pebisnis/",
+    "https://linkedin.com/in/andrew-k-4431116"
+   ],
+   "note": "Founded by Rama Suparta and Andrew Kandolha, who met in 2015, per InfoBrand; investor DSG Consumer Partners also names Andrew Kandolha as co-founder."
+  },
+  "waste4change": {
+   "founders": [
+    "Mohamad Bijaksana Junerosano"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://waste4change.com/blog/waste4change-4th-anniversary-celebration-zero-waste-themed-potluck-dinner/",
+    "https://waste4change.com/blog/waste4change-4th-anniversary-celebration-zero-waste-themed-potluck-dinner/",
+    "https://www.newshubasia.com/business-finance/waste4change-grabs-us5m-series-a-co-led-by-ac-ventures-to-shrink-indonesias-landfills/",
+    "https://smebusinessreview.com/profiles/profile/our-goal-is-not-just-to-manage-waste-but-to-prevent-it-from-becoming-a-problem-mohamad-bijaksana-junerosano-founder-&-ceo-waste4change"
+   ],
+   "note": "Mohamad Bijaksana Junerosano is named founder by the company; other co-founders are not named. Waste4Change marked its fourth anniversary in December 2018, consistent with a 2014 start."
+  },
+  "elevarm": {
+   "founders": [
+    "Bayu Syerli",
+    "Febi Agil Ifdillah",
+    "Lintang Kusuma Pratiwi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://elevarm.com/blog/berita/elevarm-bukukan-pendanaan-pra-seri-a-rp70-miliar-dari-intudo-insignia-dan-500-global",
+    "https://www.forbes.com/profile/elevarm/",
+    "https://febiagil.me/",
+    "https://linkedin.com/in/lintang-kusuma-pratiwi"
+   ],
+   "note": "Bayu Syerli is named co-founder and CEO by the company; Forbes lists Febi Agil Ifdillah and Lintang Kusuma Pratiwi as co-founders. Forbes reported in 2023 that Elevarm launched the previous year."
+  },
+  "materee": {
+   "founders": [
+    "Hansel Hansel",
+    "Steven Walentino"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.ycombinator.com/companies/materee",
+    "https://www.ycombinator.com/companies/materee",
+    "https://www.wayfinder.com/company/materee",
+    "https://www.wayfinder.com/company/materee"
+   ],
+   "note": "Hansel Hansel and Steven Walentino are named as co-founders by investors Y Combinator and Wayfinder Ventures; founded in 2022."
+  },
+  "semaai": {
+   "founders": [
+    "Muhammad Yoga Anindito",
+    "Gaurav Batra",
+    "Abhishek Gupta"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://e27.co/semaai-nets-us4-7m-to-exapand-its-agritech-fintech-solutions-to-central-java-20240108/",
+    "https://teknologi.bisnis.com/read/20220215/266/1500735/startup-agritech-semaai-raih-pendanaan-us125-juta-surge-dan-ceo-ula-terlibat",
+    "https://investor.id/business/350556/semaai-agritech-indonesia-raih-pendanaan-praseri-a-senilai-us-47-juta",
+    "https://unreasonablegroup.com/ventures/semaai"
+   ],
+   "note": "Founded in 2021 by Muhammad Yoga Anindito, Gaurav Batra and Abhishek Gupta (also spelled Abishek in some reports)."
+  },
+  "gently": {
+   "founders": [
+    "Nyoman Anjani",
+    "Ramadhan Satrio Nugroho"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://www.gently.co.id/pages/tentang-kami",
+    "https://www.forbes.com/profile/ramadhan-satrio-nugroho/",
+    "https://www.accel.com/companies/gently",
+    "https://init-6.fund/news/22"
+   ],
+   "note": "Founded by Nyoman Anjani and Ramadhan Satrio Nugroho. Investor Init-6 gives 2021 as the founding year; an ITB faculty article says 2022."
+  },
+  "proglix": {
+   "founders": [
+    "Wynn Wijaya",
+    "Wendy Wijaya",
+    "Prawira Indrawan"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.ycombinator.com/companies/proglix",
+    "https://www.ycombinator.com/companies/proglix",
+    "https://e27.co/proglix-secures-us1-35m-to-make-raw-material-procurement-easy-for-indonesian-smes-20230224/"
+   ],
+   "note": "Founded in 2022 by Wynn Wijaya, Wendy Wijaya and Prawira Indrawan, per investor Y Combinator; e27 gives the CEO's and CTO's names as Wynn Nathaniel and Prawira Indra."
+  },
+  "runchise": {
+   "founders": [
+    "Daniel Witono",
+    "Ivana Widjaja"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.runchise.com/en/about-us",
+    "https://www.runchise.com/en/about-us",
+    "https://east.vc/news/press-release/runchise-raised-seed-funding-led-by-east-ventures",
+    "https://www.theiconomics.com/market-expansion/east-ventures-dan-genesia-ventures-kembali-beri-pendanaan-ke-startup-manajemen-restoran-runchise/"
+   ],
+   "note": "Daniel Witono and Ivana Widjaja are named as co-founders on the company's About page; founded in 2022."
+  },
+  "karyakarsa": {
+   "founders": [
+    "Ario Tamat",
+    "Aria Rajasa",
+    "Pribadi Prananta"
+   ],
+   "founded": null,
+   "sources": [
+    "https://help.karyakarsa.com/karyakarsa-usage-guide",
+    "https://help.karyakarsa.com/karyakarsa-usage-guide",
+    "https://www.acceleratingasia.com/latest-news/meet-our-portfolio-karyakarsa",
+    "https://hybrid.co.id/post/karyakarsa-seed-funding-accelerating-asia-sketchnote-partners/"
+   ],
+   "note": "Founded by Ario Tamat, the late Aria Rajasa and Pribadi Prananta, per the company's help centre."
+  },
+  "arkopay": {
+   "founders": [
+    "Laura Lukito"
+   ],
+   "founded": null,
+   "sources": [
+    "https://arkopay.com/2070-2/",
+    "https://linkedin.com/in/laura-lukito"
+   ],
+   "note": "Laura Lukito is named as a co-founder on the company's website; other co-founders could not be confirmed."
+  },
+  "j-t-express": {
+   "founders": [
+    "Jet Jie Li"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://ir.jtexpress.com/en/investor-relations/corporate-governance/",
+    "https://ir.jtexpress.com/en/investor-relations/corporate-governance/",
+    "https://www.forbes.com/sites/ywang/2023/06/20/chinese-logistics-entrepreneur-becomes-a-billionaire-as-his-jt-express-gears-up-for-hong-kong-ipo/",
+    "https://market.bisnis.com/read/20230217/192/1629309/kisah-sukses-jet-lee-dan-tony-chen-pendiri-jt-express-yang-mau-ipo"
+   ],
+   "note": "J&T Global Express names Jet Jie Li (also known as Jet Lee) as its founder; he set up the J&T brand in Indonesia in June 2015. Some Indonesian press reports also name Tony Chen as a co-founder, which the company's own profile does not."
+  },
+  "botika": {
+   "founders": [
+    "Ditto Anindita",
+    "Galuh Koco Sadewo"
+   ],
+   "founded": null,
+   "sources": [
+    "https://blog.botika.online/asisten-virtual-ai-pada-stasiun-kereta-di-indonesia/",
+    "https://blog.botika.online/botika-mampu-gantikan-peran-customer-service-bisnis-online/",
+    "https://linkedin.com/in/ditto-anindita-5b85bb106"
+   ],
+   "note": "Ditto Anindita and Galuh Koco Sadewo are named as founders on the company's blog; other co-founders could not be confirmed."
+  },
+  "lamudi-indonesia": {
+   "founders": [
+    "Antonius Salis"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.lamudi.co.id/journal/aplikasi-lamudi-kini-tersedia-untuk-perangkat-berbasis-ios/",
+    "https://www.lamudi.co.id/journal/lamudi-merayakan-ulang-tahun-pertama/"
+   ],
+   "note": "Lamudi Indonesia's own site names Antonius Salis as co-founder and managing director. Kian Moini and Paul Philipp Hermann co-founded the international Lamudi group and are not counted as founders of the Indonesian company."
+  },
+  "ekrut": {
+   "founders": [
+    "Steven Suliawan",
+    "Ardo Gozal"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.ekrut.com/media/steven-suliawan-ardo-gozal-berjalan-bersama-mendirikan-ekrut",
+    "https://www.ekrut.com/media/steven-suliawan-ardo-gozal-berjalan-bersama-mendirikan-ekrut",
+    "https://www.venturra.com/company/ekrut/",
+    "https://nextunicorn.ventures/indonesian-hr-tech-startup-ekrut-raises-seed-funding-from-east-ventures-to-shorten-headhunting-process/"
+   ],
+   "note": "The company names Steven Suliawan and Ardo Gozal as its founders and dates its start to September 2016. Investor Venturra and an early funding report also list Anthony Kusuma as a co-founder; the company's own account does not."
+  },
+  "riliv": {
+   "founders": [
+    "Audrey Maximillian Herli",
+    "Audy Christopher Herli"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://www.forbes.com/profile/riliv/",
+    "https://seedinclusivity.com/ventures/riliv/",
+    "https://indigo.id/portofolios/riliv-1670825869",
+    "https://indigo.id/portofolios/riliv-1670825869"
+   ],
+   "note": "Founded by brothers Audrey Maximillian Herli and Audy Christopher Herli; the app launched on 6 August 2015."
+  },
+  "ledgerowl": {
+   "founders": [
+    "Rey Kamal",
+    "Adrian Yasin"
+   ],
+   "founded": null,
+   "sources": [
+    "https://skystar.vc/ledgerowl-strategic-funding/",
+    "https://incubatefund.in/portfolio/ledgerowl/",
+    "https://teknologi.bisnis.com/read/20230228/266/1632387/startup-fintech-ledgerowl-raih-pendanaan-dari-init6-dan-investible",
+    "https://www.linkedin.com/posts/ledgerowl_activity-7426509905752186880-SB1n"
+   ],
+   "note": "Investors Skystar Capital and Incubate Fund name Rey Kamal and Adrian Yasin as founders. An Incubate Fund announcement also counts Oscar Syarif among the founders, which its portfolio page does not."
+  },
+  "educa-studio": {
+   "founders": [
+    "Andi Taru Nugroho Nur Wismoyo",
+    "Idawati"
+   ],
+   "founded": 2011,
+   "sources": [
+    "https://www.educastudio.com/news/liputan-educa-studio-di-lensa-indonesia-rtv",
+    "https://www.educastudio.com/news/hut-ke-12-educa-g12owth",
+    "https://peluangusaha.kontan.co.id/news/kisah-andi-taru-mengembangkan-educa-studio",
+    "https://nextren.grid.id/read/011723/mengintip-dapur-studio-game-di-salatiga"
+   ],
+   "note": "Founded by husband and wife Andi Taru Nugroho Nur Wismoyo and Idawati; the company marked its 12th anniversary in April 2023."
+  },
+  "muatmuat": {
+   "founders": [
+    "Daniel Setiawan"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://linkedin.com/company/muatmuat-indonesia",
+    "https://surabaya.inews.id/read/411229/aplikasi-muatmuat-resmi-diluncurkan-solusi-lengkap-untuk-logistik-yang-efisien",
+    "https://www.jatimmedia.com/muatmuat-resmi-hadir-sebagai-platform-ekosistem-logistik-digital-yang-solutif/"
+   ],
+   "note": "Daniel Setiawan is named founder and CEO in coverage of the app's official launch in Surabaya in February 2024; the company's LinkedIn page gives 2020 as the founding year."
+  },
+  "habibi-garden": {
+   "founders": [
+    "Dian Prayogi Susanto"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.idxchannel.com/technology/startup-habibi-garden-terapkan-teknologi-digital-untuk-aplikasi-pertanian",
+    "https://economy.okezone.com/amp/2022/12/09/455/2723584/keren-pemuda-ini-buat-aplikasi-yang-bantu-petani-dengan-teknologi",
+    "https://edunews.id/edunews/inovasi/alumni-itb-bikin-sensor-waterproof-untuk-petani/"
+   ],
+   "note": "Dian Prayogi Susanto is named as Habibi Garden's founder in several news reports; other co-founders could not be confirmed."
+  },
+  "xeratic": {
+   "founders": [
+    "Feris Thia"
+   ],
+   "founded": null,
+   "sources": [
+    "https://xeratic.com/about",
+    "https://east.vc/portfolio/phi-integration"
+   ],
+   "note": "Feris Thia is named founder, CEO and CTO on the company's About page; the company was previously known as PHI Integration. Other co-founders could not be confirmed."
+  },
+  "algobash": {
+   "founders": [
+    "Elfino Sitompul",
+    "Melinda Wardiman"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://init-6.fund/news/18",
+    "https://youngster.id/headline/startup-entrepreneurship-headline/startup-algobash-hadirkan-solusi-untuk-hindarkan-perusahaan-dari-risiko-bad-hiring/",
+    "https://linkedin.com/in/melinda-wardiman"
+   ],
+   "note": "Founded in 2021 by Elfino Sitompul and Melinda Wardiman, per investor Init-6."
+  },
+  "nusaqu": {
+   "founders": [
+    "Nanang Sugiarto"
+   ],
+   "founded": null,
+   "sources": [
+    "http://nusaqu.id/post/launching-gathering-mitra-dan-reseller-pt-nusa-sentosa-indonesia",
+    "https://key.nusaqu.id/post/kolaborasi-nusaqu-dan-posdigi-perluas-akses-tabungan-qurban-di-pulau-jawa",
+    "https://rri.co.id/denpasar/ekonomi/bisnis/1941831/mantan-ojol-sukses-jual-ribuan-ekor-sapi"
+   ],
+   "note": "Nanang Sugiarto is named founder and CEO by the company and by RRI."
+  },
+  "qalboo": {
+   "founders": [
+    "Windy Dhaliana"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.antaranews.com/berita/3456504/qalboo-hadirkan-layanan-kesehatan-mental-berbasis-islami",
+    "https://www.antaranews.com/berita/3456504/qalboo-hadirkan-layanan-kesehatan-mental-berbasis-islami",
+    "https://linkedin.com/in/windydhaliana"
+   ],
+   "note": "Windy Dhaliana is named CEO and co-founder by Antara and on her own profile; founded in 2022. Other co-founders could not be confirmed."
+  },
+  "esb": {
+   "founders": [
+    "Gunawan Woen",
+    "Setiadi Prawiryo Moeljadi"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.esb.id/en/inspirasi/esb-forbes-asia-100-to-watch-2025",
+    "https://www.indotelko.com/read/1634095382/alpha-jwcventures",
+    "https://linkedin.com/in/setiadiprawiryo"
+   ],
+   "note": "ESB says it was founded in 2018 by Gunawan Woen and his co-founders. IndoTelko lists Gunawan Woen, Eka Prasetya, Setiadi Prawiryo Moeljadi and Dwi Prawira as founders and dates the company to 2014; Eka Prasetya and Dwi Prawira are not yet confirmed by a second source."
+  },
+  "ralali": {
+   "founders": [
+    "Joseph Aditya",
+    "Irwan Suryady"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://news.ralali.com/hadapi-tantangan-ekonomi-global-ralali-com-adakan-town-hall-3-last-man-standing/",
+    "https://swa.co.id/read/226356/marketplace-b2b-ini-fokus-mendukung-umkm",
+    "https://linkedin.com/in/josephaditya"
+   ],
+   "note": "Founded by Joseph Aditya with co-founder and CTO Irwan Suryady, per Ralali's own news site. Joseph Aditya says he started Ralali.com as a website in August 2013 and incorporated it in July 2014."
+  },
+  "travelio": {
+   "founders": [
+    "Hendry Rusli",
+    "Christina Suriadjaja",
+    "Christie Tjong"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://www.travelio.com/blog/siaran-pers/travelio-exclusive-launch/",
+    "https://investor.id/finance/199320/travelio-raih-pendanaan-us18m-dari-pavilion-capital-dan-gobi-partners",
+    "https://teknologi.id/business/cerita-pendiri-travelio-menghadirkan-inovasi-di-tengah-kesibukan-keluarga",
+    "https://teknologi.id/business/cerita-pendiri-travelio-menghadirkan-inovasi-di-tengah-kesibukan-keluarga"
+   ],
+   "note": "Founded in 2015 by Hendry Rusli, Christina Suriadjaja and Christie Tjong, per Travelio's own press release, Investor Daily and Teknologi.id."
+  },
+  "jago-coffee": {
+   "founders": [
+    "Yoshua Tanu",
+    "Christopher Oentojo",
+    "Daniel Sidik"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.jagocoffee.com/about-us",
+    "https://www.jagocoffee.com/story/berkenalan-dengan-daniel-sidik-co-founder-terbaru-jago-coffee",
+    "https://www.antaranews.com/berita/5764784/tiga-pendiri-jago-coffee-terpilih-menjadi-endeavor-entrepreneur"
+   ],
+   "note": "Co-founded by Yoshua Tanu and Christopher Oentojo; the company names Daniel Sidik as a co-founder who joined in 2022. All three are Endeavor Entrepreneurs. Antara reports Jago began operating in 2020 after a 2019 prototype."
+  },
+  "paper-id": {
+   "founders": [
+    "Yosia Sugialam",
+    "Jeremy Limman"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.paper.id/tentang-kami"
+   ],
+   "note": "Co-founded by Yosia Sugialam (CEO) and Jeremy Limman (CPO), per Paper.id's About page."
+  },
+  "pintar": {
+   "founders": [
+    "Novistiar Rustandi"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://peluangusaha.kontan.co.id/news/membidik-pekerja-yang-ingin-jadi-sarjana",
+    "https://peluangusaha.kontan.co.id/news/membidik-pekerja-yang-ingin-jadi-sarjana",
+    "https://youngster.id/headline/pintaria-dukung-transformasi-pendidikan-digital-di-indonesia/"
+   ],
+   "note": "Novistiar Rustandi co-founded HarukaEdu (now Pintar) in February 2013 with three friends, per Kontan; the other co-founders are not confirmed by two independent sources."
+  },
+  "rey": {
+   "founders": [
+    "Evan Tanotogono",
+    "Bobby Siagian"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://rey.id/blog/kabar/keeponfighting/",
+    "https://techcrunch.com/2021/09/12/indonesia-based-rey-assurance-launches-its-holistic-approach-to-health-insurance-with-1m-in-funding/",
+    "https://tekno.republika.co.id/berita/qzeas4456/pendiri-ingin-rey-dikenal-dekat-dengan-anggota"
+   ],
+   "note": "Founded in 2021 by Evan Tanotogono and Bobby Siagian, per TechCrunch and Republika."
+  },
+  "idcloudhost": {
+   "founders": [
+    "Muhammad Mufid Luthfi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://idcloudhost.com/blog/dokumentasi-pelatihan-pemanfaatan-mesin-pencari-idch-basecamp/"
+   ],
+   "note": "IDCloudHost's blog names Muhammad Mufid Luthfi as a co-founder; other co-founders are not confirmed by two independent sources."
+  },
+  "juragan-material": {
+   "founders": [
+    "Tito Putra",
+    "Graceila Putri",
+    "Ricky Fernando",
+    "Meichael Surja"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://juraganmaterial.id/blog/berita-juragan/graceila-putri-co-founder-juragan-material-terpilih-sebagai-future-gen-leader-indonesia-oleh-asean-japan-future-gen-leaders-community",
+    "https://www.businesstimes.com.sg/startups-tech/startups/indonesian-construction-tech-platform-raises-us4m-seed-funding-led-go",
+    "https://techcrunch.com/2022/07/03/juragan-material-is-simplifying-indonesias-complicated-construction-supply-chain/",
+    "https://techcrunch.com/2022/07/03/juragan-material-is-simplifying-indonesias-complicated-construction-supply-chain/"
+   ],
+   "note": "Co-founded in 2021 by Tito Putra (CEO), Graceila Putri, Ricky Fernando and Meichael Surja, per The Business Times and TechCrunch."
+  },
+  "kata-ai": {
+   "founders": [
+    "Irzan Raditya"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://500.co/content/daily-markup-750-kata-ai-boss-on-subverting-expectations-as-an-indonesian-startup-and-how-automation-is-not-artificial-intelligence",
+    "https://500.co/content/daily-markup-750-kata-ai-boss-on-subverting-expectations-as-an-indonesian-startup-and-how-automation-is-not-artificial-intelligence",
+    "https://linkedin.com/in/irzanraditya"
+   ],
+   "note": "Investor 500 Global names Irzan Raditya as founder and says the company was founded in 2015 as YesBoss. Other co-founders are not confirmed by two independent sources."
+  },
+  "finku": {
+   "founders": [
+    "Shyam Kalairajah",
+    "Reinaldo Tendean",
+    "Shylla Estee Pramadhani"
+   ],
+   "founded": null,
+   "sources": [
+    "https://hybrid.co.id/post/finku-personal-finance-app-pre-seed-global-founders-capital-500-startups/",
+    "https://www.linkedin.com/posts/reinaldo-tendean_finku-secures-28m-seed-funding-led-by-b-activity-6932256469329272832-XTg_",
+    "https://www.ycombinator.com/companies/finku"
+   ],
+   "note": "Co-founded by Shyam Kalairajah, Reinaldo Tendean and Shylla Estee Pramadhani, per Hybrid.co.id and Reinaldo Tendean's own post."
+  },
+  "monit": {
+   "founders": [
+    "Rizki Aditya"
+   ],
+   "founded": null,
+   "sources": [
+    "https://news.dailysocial.id/post/monit-id-hadirkan-layanan-kartu-kredit-virtual-untuk-bisnis/",
+    "https://id.linkedin.com/in/rizkiaditya"
+   ],
+   "note": "Rizki Aditya is named co-founder by DailySocial and founder and CEO on his own profile."
+  },
+  "spun": {
+   "founders": [
+    "Christa Sabathaly",
+    "Dilla Anindita"
+   ],
+   "founded": 2024,
+   "sources": [
+    "https://blog.spun.global/the-spun-stack/hello-world",
+    "https://blog.spun.global/blog/hello-world",
+    "https://www.antaranews.com/berita/4464581/geosquare-spun-ciptakan-startup-geospasial-perjalanan-antarnegara",
+    "https://linkedin.com/in/christasabathaly"
+   ],
+   "note": "Founded in 2024 by Christa Sabathaly (CEO) and Dilla Anindita (CPO), per SPUN's blog and Antara."
+  },
+  "grouu": {
+   "founders": [
+    "Jessica Marthin",
+    "Natalia Imelda"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.campaignindonesia.id/article/pandangan-cmo-natalia-imelda-grouu/1914630",
+    "https://linkedin.com/in/jessica-marthin-57735b71",
+    "https://linkedin.com/in/nataliaimelda"
+   ],
+   "note": "Founded in 2020 by Natalia Imelda, Jessica Marthin and Ratna Pratama, per Campaign Indonesia; Ratna Pratama is not yet confirmed by a second independent source."
+  },
+  "jack": {
+   "founders": [
+    "Edo Windratno"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://news.dailysocial.id/post/jack-resmikan-kehadiran-usung-kemudahan-manajemen-keuangan-perusahaan/",
+    "https://www.ycombinator.com/companies/transfez",
+    "https://www.ycombinator.com/companies/transfez"
+   ],
+   "note": "DailySocial names Edo Windratno co-founder and CEO of Jack and Transfez, and investor Y Combinator lists him as a founder. Y Combinator also lists CTO Bondan Herumurti as a founder and gives 2020 as the founding year."
+  },
+  "arkademi": {
+   "founders": [
+    "Hilman Fajrian"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.compasslist.com/insights/arkademi-wants-people-to-finish-the-course-pass-the-test-and-get-the-certificate-they-need",
+    "https://linkedin.com/in/hilmanfajrian"
+   ],
+   "note": "Hilman Fajrian is named co-founder by CompassList and founder on his own profile. CompassList also names Resi Dwi Erveny as a co-founder, not yet confirmed by a second independent source."
+  },
+  "jiwa-group": {
+   "founders": [
+    "Billy Kurniawan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://jiwagroup.com/en/whaton/detail/73/JiwaGroupsFifthAnniversaryIntroducesanExcitingNewConcept",
+    "https://www.tempo.co/ekonomi/cerita-kopi-janji-jiwa-punya-700-outlet-dalam-1-5-tahun-671460",
+    "https://www.tempo.co/ekonomi/cerita-kopi-janji-jiwa-punya-700-outlet-dalam-1-5-tahun-671460"
+   ],
+   "note": "Founded by Billy Kurniawan, per Jiwa Group and Tempo. Tempo reports Kopi Janji Jiwa first launched in mid-2018."
+  },
+  "bimasakti": {
+   "founders": [
+    "Ibnu Sunanto"
+   ],
+   "founded": 2004,
+   "sources": [
+    "https://www.bm.co.id/tentang/",
+    "https://swa.co.id/read/277045/bimasakti-multi-sinergi-perusahaan-fintech-superior-di-kawasan-timur"
+   ],
+   "note": "Founded by Ibnu Sunanto. The company dates itself to 2004, when it started as PT Bimasakti Multiwealth; SWA gives 2009 for the current PT Bimasakti Multi Sinergi."
+  },
+  "harisenin-com": {
+   "founders": [
+    "Mirza Saputra",
+    "Kezia Manege",
+    "Muhammad Irfan"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://teknologi.id/startup/harisenin-com-ajak-generasi-muda-terhindar-dari-jurang-kesenjangan-skill",
+    "https://teknologi.id/startup/harisenin-com-ajak-generasi-muda-terhindar-dari-jurang-kesenjangan-skill",
+    "https://marketing.co.id/tingkatkan-skill-profesional-di-harisenin-com-bisa-lebih-hemat/",
+    "https://linkedin.com/in/mirza-saputra-harisenincom"
+   ],
+   "note": "Founded in late 2020 by Mirza Saputra, Kezia Manege and Muhammad Irfan, per Teknologi.id and Marketing.co.id. Marketing.co.id also counts CMO Dyo Fathu Rahman among four people who started it; other coverage names three founders."
+  },
+  "narasi": {
+   "founders": [
+    "Najwa Shihab"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://hybrid.co.id/post/gdp-venture-go-ventures-investasi-narasi-tv/",
+    "https://kumparan.com/kumparantech/najwa-narasi-tv-jalin-kerja-sama-strategis-dengan-gdp-dan-go-jek-1542115582600639877"
+   ],
+   "note": "Founded by Najwa Shihab around February 2018, per Kumparan and Hybrid.co.id; some profiles date the company to 2017. Other co-founders are not confirmed by two independent sources."
+  },
+  "timedoor": {
+   "founders": [
+    "Yutaka Tokunaga"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://timedoor.net/about/",
+    "https://timedoor.net/about/"
+   ],
+   "note": "Founded in 2014 in Bali by Yutaka Tokunaga, per the company's About page, where his CEO message describes starting the business."
+  },
+  "torch": {
+   "founders": [
+    "Ben Wirawan",
+    "Hanafi Salman"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://epaper.bisnis.com/articles/read/20250927/458/1915149/ben-wirawan-hanafi-salman-co-founder-torch-dari-bandung-menuju-lantai-bursa",
+    "https://infoopportunity.infobrand.id/torch-brand-lokal-asal-bandung-yang-tumbuh-100-kali-lipat-dan-bersiap-menuju-ipo.phtml",
+    "https://bandung.kompas.com/read/2026/02/18/223843278/dari-ruko-kecil-ke-forbes-asia-kisah-ben-wirawan-bangun-brand-lokal-go"
+   ],
+   "note": "Founded in 2015 by Ben Wirawan and Hanafi Salman, per Bisnis Indonesia and Info Brand."
+  },
+  "hijup": {
+   "founders": [
+    "Diajeng Lestari"
+   ],
+   "founded": 2011,
+   "sources": [
+    "https://www.cnbcindonesia.com/entrepreneur/20180212135433-25-4123/kisah-sukses-pendiri-hijup-diajeng-lestari",
+    "https://www.cnnindonesia.com/teknologi/20210401163014-190-625016/pendiri-hijup-bagikan-trik-sukses-berbisnis"
+   ],
+   "note": "Founded in 2011 by Diajeng Lestari, per CNBC Indonesia and CNN Indonesia."
+  },
+  "duitku": {
+   "founders": [
+    "Rheza Gunawan Budiono"
+   ],
+   "founded": null,
+   "sources": [
+    "https://hybrid.co.id/post/startup-payment-gateway-duitku-masih-jadikan-ukm-sebagai-pelanggan-utama/",
+    "https://linkedin.com/in/rhezagunawan"
+   ],
+   "note": "Rheza Gunawan Budiono is named co-founder and CEO by Hybrid.co.id and on his own profile; other co-founders are not confirmed by two independent sources."
+  },
+  "loluna": {
+   "founders": [
+    "Bianca Belnadia",
+    "Faldo Arsanda",
+    "Gary Nelson"
+   ],
+   "founded": null,
+   "sources": [
+    "https://inet.detik.com/business/d-7910245/kisah-sukses-3-founder-bikin-startup-baby-skincare-yang-jarang-dilirik",
+    "https://inet.detik.com/business/d-7910245/kisah-sukses-3-founder-bikin-startup-baby-skincare-yang-jarang-dilirik",
+    "https://www.forbes.com/profile/faldo-arsanda/",
+    "https://linkedin.com/in/biancabelnadialie"
+   ],
+   "note": "Founded by Bianca Belnadia, Faldo Arsanda and Gary Nelson, per detikInet and their own profiles (and Forbes for Arsanda). The brand launched in September 2023."
+  },
+  "biteship": {
+   "founders": [
+    "Mirsa Sadikin",
+    "Afra Sausan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://biteship.com/en/about-us",
+    "https://east.vc/news/press-release/biteship-indonesia-based-e-commerce-logistic-solutions-startup-secured-seed-funding-co-led-by-east-ventures-and-beenext"
+   ],
+   "note": "Co-founded by Mirsa Sadikin (CEO) and Afra Sausan, per Biteship and investor East Ventures."
+  },
+  "lahan-sikam": {
+   "founders": [
+    "Firmansyah"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://lahansikam.co.id/sejarah",
+    "https://lahansikam.co.id/sejarah"
+   ],
+   "note": "Lahan Sikam's website names Firmansyah as its founder; the company was established on 17 February 2018."
+  },
+  "doogether": {
+   "founders": [
+    "Fauzan Gani",
+    "Helmy Rianda"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.linkedin.com/feed/update/urn:li:activity:6967389332030578689",
+    "https://news.dailysocial.id/post/pendanaan-pra-seri-a-doogether/",
+    "https://linkedin.com/in/helmy-rianda-913059a0"
+   ],
+   "note": "Co-founded in 2016 by Fauzan Gani and Helmy Rianda, per investor Asiantrust Capital; DailySocial also names Gani as co-founder."
+  },
+  "alner": {
+   "founders": [
+    "Bintang Ekananda"
+   ],
+   "founded": null,
+   "sources": [
+    "https://cdn.alner.id/customer/public/files/impact_report.pdf",
+    "https://cdn.alner.id/customer/public/files/impact_report.pdf"
+   ],
+   "note": "Alner's impact report names Bintang Ekananda as co-founder and CEO. The business began in 2020 under the Koinpack brand name before rebranding as Alner."
+  },
+  "segari": {
+   "founders": [
+    "Yosua Setiawan",
+    "Farandy Ramadhana"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://blog.segari.id/segari-yoursupermarketathome/",
+    "https://hybrid.co.id/post/celebrating-first-anniversary-segari-announces-series-a-funding-worth-of-227-6-billion-rupiah-led-by-go-ventures/",
+    "https://entrepreneur.bisnis.com/read/20220325/265/1515082/ini-profil-farandy-ramadhana-co-founder-segari-yang-masuk-forbes-indonesia-30-under-30",
+    "https://linkedin.com/in/yosua-hans-setiawan"
+   ],
+   "note": "Yosua Setiawan and Farandy Ramadhana are named co-founders by DailySocial's Hybrid.co.id and their own profiles; Bisnis also names Ramadhana. The company says it was founded in 2020. A third co-founder named by DailySocial is not yet confirmed elsewhere."
+  },
+  "doku": {
+   "founders": [
+    "Himelda Renuat",
+    "Nabilah Alsagoff"
+   ],
+   "founded": 2007,
+   "sources": [
+    "https://www.doku.com/blog/doku-names-himelda-renuat-ceo-as-ant-internationals-antom-deepens-strategic-investment-in-indonesias-payments-leader",
+    "https://www.linkedin.com/in/himelda-renuat-98a994142",
+    "https://www.idntimes.com/life/women/nabilah-alsagoff-00-jv5d3-bm4156",
+    "https://linkedin.com/in/nabilah-alsagoff-25b331132"
+   ],
+   "note": "DOKU's own announcement names Himelda Renuat as a co-founder; IDN Times and her own profile name Nabilah Alsagoff as a founder. Renuat's profile says she founded DOKU with two others in 2007."
+  },
+  "dailyco": {
+   "founders": [
+    "Kelvin Subowo"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.daily.co.id/about-us/",
+    "https://www.daily.co.id/about-us/",
+    "https://www.vertexventures.sg/news/we-don-t-build-restaurants-we-buy-them-dailyco-s-100-k-meals-a-day-playbook/",
+    "https://swa.co.id/read/327668/dailybox-kantongi-pendanaan-seri-a-siap-ekspansi-ke-seluruh-indonesia"
+   ],
+   "note": "Founded by Kelvin Subowo, per the company's About page and investor Vertex Ventures; the company dates its start to 2018."
+  },
+  "transtrack": {
+   "founders": [
+    "Anggia Meisesari",
+    "Aris Pujud Kurniawan"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.transtrack.co/id/profil-transtrack/anggia-meisesari",
+    "https://appworks.tw/why-we-invested-anggia-meisesari-founder-ceo-of-transtrack-aw28/",
+    "https://linkedin.com/in/aris-pujud-kurniawan-281044103",
+    "https://en.gizmologi.id/News/startup/Transtrack-secures-Rp186-billion-investment/"
+   ],
+   "note": "Founded in 2019 by Anggia Meisesari, per the company's own site; investor AppWorks and his own profile name Aris Pujud Kurniawan as co-founder."
+  },
+  "populix": {
+   "founders": [
+    "Timothy Astandu",
+    "Eileen Kamtawijoyo"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://info.populix.co/articles/en/populix-raised-usd-4-3-million-in-funding/",
+    "https://kr-asia.com/febe-ventures-announces-usd-25-million-early-stage-fund-for-vietnamese-tech-startups",
+    "https://linkedin.com/in/eileenkamtawijoyo",
+    "https://linkedin.com/in/jonathanbenhi"
+   ],
+   "note": "Founded in January 2018 by Timothy Astandu and Eileen Kamtawijoyo, per KrASIA. Jonathan Benhi, who joined as CTO in 2019, is also described as a co-founder in later coverage and on his own profile."
+  },
+  "touchten-games": {
+   "founders": [
+    "Anton Soeharyo"
+   ],
+   "founded": 2009,
+   "sources": [
+    "https://beta.cnnindonesia.com/teknologi/20150919163117-185-79750/ceo-touchten-sukses-bikin-game-dari-angpau-sang-ayah",
+    "https://thebridge.jp/en/2015/07/touchten-games-fundriases-from-gree-500-startups",
+    "https://thebridge.jp/en/2015/07/touchten-games-fundriases-from-gree-500-startups",
+    "https://duniaku.idntimes.com/game/mobile/wawancara-dengan-anton-soeharyo-ceo-dari-touchten-games-00-hjc4x-l2qf25"
+   ],
+   "note": "Anton Soeharyo is named founder by CNN Indonesia and The Bridge, which dates Touchten to 2009. In a Duniaku interview he described Touchten as having three founders, all relatives; the other two are not yet confirmed by a second source."
+  },
+  "fresh-factory": {
+   "founders": [
+    "Larry Ridwan",
+    "Widijastoro Nugroho",
+    "Andre Septiano"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://freshfactory.id/berita/aprindo-bersama-fresh-factory",
+    "https://www.fortuneidn.com/business/fresh-factory-raih-pendanaan-tahap-awal-rp66-m-dipimpin-east-ventures-00-4vfn9-tr31zj",
+    "https://www.dealstreetasia.com/stories/indonesian-cold-chain-startup-fresh-factory-raises-4-15m-funding-337206",
+    "https://www.ycombinator.com/companies/fresh-factory"
+   ],
+   "note": "Co-founded by Larry Ridwan, Widijastoro Nugroho and Andre Septiano, per Fortune Indonesia and DealStreetAsia; Y Combinator lists the founding year as 2020."
+  },
+  "fundtastic": {
+   "founders": [
+    "Harry Hartono",
+    "Franky Chandra",
+    "Medwin Susilo"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://techcrunch.com/2021/02/22/indonesian-investment-platform-fundtastic-lands-7-7-million-series-a/",
+    "https://hybrid.co.id/post/fundtastic-aims-for-millennials-through-wealth-platform-branding/",
+    "https://hybrid.co.id/post/fundtastic-aims-for-millennials-through-wealth-platform-branding/",
+    "https://ekonomi.republika.co.id/berita/srkuhr456/fundtastic-dorong-ekosistem-keuangan-yang-lebih-inklusif"
+   ],
+   "note": "Harry Hartono, Franky Chandra and Medwin Susilo are named founders by TechCrunch and DailySocial; DailySocial also lists Eri Primaria among four founders. DailySocial says the company was founded in 2016 and launched its platform in 2019; TechCrunch gives 2019."
+  },
+  "upbanx": {
+   "founders": [
+    "Wafa Taftazani",
+    "Alif Jafar Fatkhurrohman",
+    "Hendri Wijaya"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://www.forbes.com/profile/upbanx/",
+    "https://hybrid.co.id/post/upbanx-fintech-kreator-pendanaan-valuasi-centaur/",
+    "https://www.ycombinator.com/companies/upbanx"
+   ],
+   "note": "Co-founded by Wafa Taftazani, Alif Jafar Fatkhurrohman and Hendri Wijaya, per Forbes and DailySocial; Y Combinator lists the founding year as 2021."
+  },
+  "danacita": {
+   "founders": [
+    "Ketty Lie"
+   ],
+   "founded": null,
+   "sources": [
+    "https://danacita.co.id/blog/danacita-dan-itn-malang-pembiayaan-pendidikan-terjangkau/",
+    "https://danacita.co.id/blog/google-memilih-co-founder-danacita-untuk-startups-women-founders-academy/",
+    "https://danacita.co.id/blog/riche-lim-co-founder-dan-chief-product-officer-terpilih-untuk-bergabung-dalam-fall-21-transcend-fellowship/",
+    "https://katadata.co.id/digital/fintech/6037568459265/fintech-pendidikan-danacita-raih-rp-70-miliar-dari-investor-singapura"
+   ],
+   "note": "Danacita's own blog names Ketty Lie as its co-founder. Danacita belongs to ErudiFi, whose co-founders also include Riche Lim."
+  },
+  "pina": {
+   "founders": [
+    "Daniel van Leeuwen",
+    "Fajar Kuntoro",
+    "Christian Hermawan",
+    "Hendry Chou"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://techcrunch.com/2022/07/03/pina-offers-wealth-management-for-indonesias-growing-middle-to-upper-class/",
+    "https://techcrunch.com/2022/07/03/pina-offers-wealth-management-for-indonesias-growing-middle-to-upper-class/",
+    "https://www.1982.vc/post/1982-ventures-backs-indonesian-personal-finance-app-pina",
+    "https://www.ycombinator.com/companies/pina"
+   ],
+   "note": "Founded in 2021 by Daniel van Leeuwen with co-founders Fajar Kuntoro, Christian Hermawan and Hendry Chou, per TechCrunch and investors Y Combinator and 1982 Ventures."
+  },
+  "verihubs": {
+   "founders": [
+    "Rick Firnando",
+    "Williem"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.insignia.vc/portfolio/verihubs",
+    "https://hybrid.co.id/post/verihubs-secures-39-9-billion-rupiah-seed-funding-to-release-credit-scoring-service/",
+    "https://uzone.id/profil-verihubs-startup-ai-indonesia-yang-siap-go-global-"
+   ],
+   "note": "Founded in 2019 by Rick Firnando and Williem (listed by investor Insignia Ventures as Williem Williem), per Insignia Ventures and DailySocial."
+  },
+  "matchmade": {
+   "founders": [
+    "Tedo Esmu Ziraga",
+    "Gilang Gibranthama"
+   ],
+   "founded": 2023,
+   "sources": [
+    "https://news.dailysocial.id/post/pendanaan-pra-awal-matchmade/",
+    "https://e27.co/same-failure-better-clothes-matchmade-io-on-selling-indonesian-finance-tech-in-singapore-20260925/",
+    "https://linkedin.com/in/tedoziraga",
+    "https://linkedin.com/in/gibranthama"
+   ],
+   "note": "Tedo Esmu Ziraga and Gilang Gibranthama are named co-founders by DailySocial, which said in October 2023 that MatchMade was founded that year; e27 and their own profiles agree. A third co-founder named by DailySocial is not yet confirmed elsewhere."
+  },
+  "pawoon": {
+   "founders": [
+    "Ahmad Gadi"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://www.pawoon.com/perjalanan-pawoon-dalam-mendukung-jutaan-ukm-di-indonesia/",
+    "https://www.pawoon.com/about-us/",
+    "https://inc42.com/buzz/pawoon-startup-smes-indonesia/"
+   ],
+   "note": "Founded in 2014 by Ahmad Gadi, per the company's own site and Inc42."
+  },
+  "greenhope": {
+   "founders": [
+    "Tommy Tjiptadjaja"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://swa.co.id/read/465272/tommy-tjiptadjaja-menggenjot-kolaborasi-ekonomi-sirkular",
+    "https://swa.co.id/read/465272/tommy-tjiptadjaja-menggenjot-kolaborasi-ekonomi-sirkular",
+    "https://www.bcg.com/alumni/carbon-offsetting-cassava-based-biodegradable-bioplastic-in-solving-plastic-waste-pollution",
+    "https://linkedin.com/in/tommy-tjiptadjaja-567a1b1"
+   ],
+   "note": "Tommy Tjiptadjaja is named co-founder by SWA, BCG and his own profile; SWA says the company was founded in 2016. A second co-founder named by SWA is not yet confirmed elsewhere."
+  },
+  "social-bread": {
+   "founders": [
+    "Edho Zell",
+    "Tirza Lydia",
+    "Ester Jeanette"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://socialbread.id/our-team",
+    "https://socialbread.id/our-team",
+    "https://socialbread.id/our-team",
+    "https://www.socialbread.id/about-us"
+   ],
+   "note": "Founded in 2020; the company's team page lists Edho Zell, Tirza Lydia and Ester Jeanette as co-founders. Investor East Ventures and press coverage name the COO as Lydia Susanti."
+  },
+  "kumparan": {
+   "founders": [
+    "Hugo Diba",
+    "Ine Yordenaya",
+    "Arifin Asydhad"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://kumparan.com/kumparannews/perjalanan-kumparan-memecah-kebekuan-inovasi-industri-media-1x6kUCw3Fxv",
+    "https://kumparan.com/kumparannews/perjalanan-kumparan-memecah-kebekuan-inovasi-industri-media-1x6kUCw3Fxv",
+    "https://kumparan.com/kumparannews/perjalanan-kumparan-memecah-kebekuan-inovasi-industri-media-1x6kUCw3Fxv",
+    "https://www.digitalnewsasia.com/startups/senior-journalists-launch-kumparan-indonesia%E2%80%99s-first-hybrid-online-media"
+   ],
+   "note": "kumparan names Hugo Diba, Ine Yordenaya and Arifin Asydhad as its founders and dates its launch to 17 January 2017. Early coverage in Digital News Asia also credited Detik.com founders Budiono Darsono, Abdul Rahman and Calvin Lukmantara with setting it up."
+  },
+  "kopi-tuku": {
+   "founders": [
+    "Andanu Prasetyo"
+   ],
+   "founded": null,
+   "sources": [
+    "https://finance.detik.com/berita-ekonomi-bisnis/d-7408538/pemilik-kopi-tuku-toko-kopi-kekinian-yang-pernah-disambangi-jokowi",
+    "https://entrepreneur.bisnis.com/read/20230615/88/1665711/strategi-bisnis-toko-kopi-tuku-sukses-tanpa-kemitraan",
+    "https://www.fortuneidn.com/business/profil-pemilik-kopi-tuku-merintis-usaha-dari-tugas-kuliah-00-mv2nm-pcs4wf"
+   ],
+   "note": "Andanu Prasetyo founded Toko Kopi Tuku and its parent PT Makna Angan Karya Andanu (MAKA), per Detik, Bisnis and Fortune Indonesia."
+  },
+  "binar": {
+   "founders": [
+    "Alamanda Shantika",
+    "Dita Aisyah",
+    "Seto Lareno"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://www.forbes.com/profile/dita-aisyah/",
+    "https://hybrid.co.id/post/binar-academy-dan-misinya-tingkatkan-kemampuan-talenta-digital-indonesia/",
+    "https://entrepreneur.bisnis.com/read/20220322/265/1513471/profil-dita-aisyah-co-founder-binar-academy-yang-masuk-forbes-indonesia-30-under-30",
+    "https://linkedin.com/in/gibranthama"
+   ],
+   "note": "Founded in 2017 by Alamanda Shantika, Dita Aisyah and Seto Lareno, per Forbes and DailySocial. Gilang Gibranthama's own profile also says he co-founded Binar Academy; other sources name only the three."
+  },
+  "uss-networks": {
+   "founders": [
+    "Sayed Muhammad",
+    "Jeffry Jouw"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://live.ussfeed.com/localpride-lebih-dari-sekadar-tagar/sneakers/",
+    "https://ussfeed.com/founder-of-urban-sneaker-society-jejouw-bergabung-di-ideafest-2019/pop-culture/",
+    "https://live.ussfeed.com/localpride-lebih-dari-sekadar-tagar/sneakers/",
+    "https://www.idntimes.com/life/inspiration/ims-2020-fakta-fakta-founder-amp-ceo-dari-uss-networks-sayed-muhammad-00-kfwgq-ncklmc"
+   ],
+   "note": "Founded in 2019 by Sayed Muhammad and Jeffry Jouw, per DealStreetAsia partner content and Jouw's own profile; the company's own site and IDN Times name Sayed Muhammad as founder. One USS Feed article also labels Anton Wirjono as founder and CEO of USS Networks, which no other source supports."
+  },
+  "brodo": {
+   "founders": [
+    "Muhammad Yukka Harlanda"
+   ],
+   "founded": null,
+   "sources": [
+    "https://katadata.co.id/berita/nasional/62bb9ab8b1661/kisah-sukses-brodo-berawal-dari-penderitaan-yukka-harlanda",
+    "https://kumparan.com/kumparanbisnis/sepatu-brodo-lahir-dari-modal-nekat-dua-lulusan-teknik-sipil-itb-27431110790546207"
+   ],
+   "note": "Muhammad Yukka Harlanda is named founder by Katadata and kumparan. kumparan also credits a second co-founder, not yet confirmed by another source."
+  },
+  "vokraf": {
+   "founders": [
+    "Fina Silmi Febriyani"
+   ],
+   "founded": null,
+   "sources": [
+    "https://linkedin.com/in/finasilmifebriyani",
+    "https://petisi.co/vokraf-berikan-ratusan-voucher-konsultasi-psikologi-gratis/"
+   ],
+   "note": "Fina Silmi Febriyani is named co-founder by her own profile and PETISI.CO. Two other executives describe themselves as co-founders on their own profiles; this is not yet confirmed by a second source."
+  },
+  "nusantics": {
+   "founders": [
+    "Sharlini Eriza Putri",
+    "Vincent Kurniawan",
+    "Revata Utama"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://nusantics.com/",
+    "https://nusantics.com/en/about-us",
+    "https://east.vc/news/press-release/nusantics-raised-seed-funding-from-east-ventures",
+    "https://katadata.co.id/digital/startup/5e9a421339333/east-ventures-investasi-di-startup-riset-mikrobioma-nusantics"
+   ],
+   "note": "Founded in 2019 by Sharlini Eriza Putri, Vincent Kurniawan and Revata Utama, per investor East Ventures, Katadata and Fortune Indonesia. The company's About page gives 2020, and its site now describes Revata Utama as the sole remaining co-founder."
+  },
+  "lenna-ai": {
+   "founders": [
+    "Alen Boby"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://lenna.ai/mcash-dan-sicepat-berinvestasi-ke-lenna-ai/",
+    "https://lenna.ai/lenna-ai-ajak-industri-bisnis-bangkit-di-tengah-pandemi/",
+    "https://www.linkedin.com/posts/lenna_virtualassistant-chatbot-artificialintelligence-activity-6582498444596862976-XrMy",
+    "https://linkedin.com/in/alen-boby-81605333"
+   ],
+   "note": "Founded in 2017 by Alen Boby (also written Alen Bobby Hartanto), per the company's own site and LinkedIn page."
+  },
+  "ravelware-technology": {
+   "founders": [
+    "Randy Budi Wicaksono"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://itb.ac.id/berita/ravelware-technology-tampilkan-inovasi-graphene-ramah-lingkungan-di-ksti-2025/62716",
+    "https://ipol.id/2024/12/startup-deep-tech-indonesia-ini-kembangkan-kustomisasi-industrial-berbasis-iot/",
+    "https://upnext.world/turning-plastic-waste-into-the-building-blocks-of-the-future/"
+   ],
+   "note": "Founded in 2016 by Randy Budi Wicaksono, per Institut Teknologi Bandung's news site and Ipol.id. Other executives describe themselves as co-founders on their own profiles; this is not yet confirmed by a second source."
+  },
+  "digital-happiness": {
+   "founders": [
+    "Rachmad Imron"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://id.linkedin.com/company/dh-games",
+    "https://katadata.co.id/yuliawati/indepth/5e9a519353d43/lewat-gim-perkenalkan-identitas-lokal-ke-tingkat-global",
+    "https://linkedin.com/in/rachmad-imron-a7ab2a35",
+    "https://hybrid.co.id/post/profil-digital-happiness-kreator-dari-franchise-dreadout/"
+   ],
+   "note": "Rachmad Imron is named founder by Katadata and his own profile. DailySocial and the studio's LinkedIn page date Digital Happiness to 2013; his profile dates his founder role to 2011."
+  },
+  "gamechanger-studio": {
+   "founders": [
+    "Riris Marpaung",
+    "Dodick Sudirman"
+   ],
+   "founded": 2013,
+   "sources": [
+    "https://gamechangerstudio.net/news/read/gamechanger-studio-berbagi-kejutan-di-ulang-tahun-ke-12/67",
+    "https://gamechangerstudio.net/about-us/team/dodick-sudirman/6",
+    "https://swa.co.id/read/402670/pindah-profesi-riris-marpaung-bikin-gim-tentang-kehidupan-nyata"
+   ],
+   "note": "Founded in 2013 by Riris Marpaung and Dodick Sudirman, per the studio's own site. SWA describes Riris Marpaung building the studio in BSD City in 2018."
+  },
+  "rebricks": {
+   "founders": [
+    "Ovy Sabrina",
+    "Novita Tan"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://rebricks.id/what-we-do/when-ovy-met-novita-two-women-remaking-the-construction-industry-with-recycled-plastic",
+    "https://rebricks.id/what-we-do/youth-movement-for-g20-energy-transitions-bali-2022",
+    "https://www.rebricks.id/about",
+    "https://www.dw.com/id/pengusaha-muda-ubah-sampah-plastik-jadi-paving-block/a-57785847"
+   ],
+   "note": "Co-founded by Ovy Sabrina and Novita Tan, per the company's own site, which dates the start to June 2017; DW also names Novita Tan as a founder."
+  },
+  "kargo-technologies": {
+   "founders": [
+    "Tiger Fang",
+    "Yodi Aditya"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.kargo.tech/tentang-kargo",
+    "https://www.kargo.tech/tentang-kargo",
+    "https://www.kargo.tech/tentang-kargo"
+   ],
+   "note": "Founded in November 2018 by Tiger Fang and Yodi Aditya, per the company's About page."
+  },
+  "oy-indonesia": {
+   "founders": [
+    "Jesayas Ferdinandus",
+    "Jan Kristanto"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://www.oyindonesia.com/en/blog/former-go-food-vp-ambitions-to-connect-consumers-and-business-people-via-the-oy-chat-app",
+    "https://www.oyindonesia.com/id/blog/money-moving-company-oy-indonesia"
+   ],
+   "note": "OY!'s own blog lists Jesayas Ferdinandus and Jan Kristanto as its founders; the company says it has operated since 2017."
+  },
+  "praktis": {
+   "founders": [
+    "Adrian Gilrandy"
+   ],
+   "founded": null,
+   "sources": [
+    "https://east.vc/news/press-release/praktis-raises-pre-series-a",
+    "https://east.vc/news/press-release/praktis-raises-pre-series-a",
+    "https://linkedin.com/in/adrian-gilrandy-54838732"
+   ],
+   "note": "Co-founded by Adrian Gilrandy, per East Ventures and his own profile. East Ventures' announcement also names Dipta Imanto and Mohamad Fahrul as co-founders."
+  },
+  "legit-group": {
+   "founders": [
+    "Sumarno Ngadiman",
+    "Monica Evanti Andriani",
+    "Asrul Abraham Hendrata"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://hybrid.co.id/post/east-ventures-pimpin-pendanaan-tahap-awal-perusahaan-fb-legit-group/",
+    "https://www.digitalnewsasia.com/startups/legit-group-raises-us3-million-seed-funding-led-east-ventures",
+    "https://www.antaranews.com/berita/3482889/legit-group-raih-pendanaan-seri-a",
+    "https://techcrunch.com/2023/04/10/legit-group/"
+   ],
+   "note": "Co-founded in February 2021 by Sumarno Ngadiman, Monica Evanti Andriani and chairman Asrul Abraham Hendrata, per Hybrid.co.id and Digital News Asia; Antara also names Monica Evanti Andriani as a co-founder."
+  },
+  "snapcart": {
+   "founders": [
+    "Reynazran Royono"
+   ],
+   "founded": null,
+   "sources": [
+    "https://snapcart.global/our-team/",
+    "https://snapcart.global/sempat-digantikan-posisinya-reynazran-royono-kembali-menjabat-ceo-snapcart/",
+    "https://e27.co/newly-launched-indonesian-app-snapcart-wants-you-to-shop-and-get-cashback-20150902/"
+   ],
+   "note": "Snapcart's own site names Reynazran Royono as founder and CEO and refers to three founders. In 2015 e27 also identified Laith Abu Rakty as CTO and co-founder."
+  },
+  "otoklix": {
+   "founders": [
+    "Martin Reyhan Suryohusodo",
+    "Joseph Alexander Ananto",
+    "Benny Sutedjo"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://otoklix.com/about",
+    "https://www.peakxv.com/companies/otoklix"
+   ],
+   "note": "Founded in 2019 in Jakarta by Martin Reyhan Suryohusodo, Joseph Alexander Ananto and Benny Sutedjo, per the company's About page."
+  },
+  "credibook": {
+   "founders": [
+    "Gabriel Frans",
+    "Dekha Anggareska",
+    "Christian Lie"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.ycombinator.com/companies/credibook",
+    "https://www.ycombinator.com/companies/credibook",
+    "https://www.ycombinator.com/companies/credibook",
+    "https://www.ycombinator.com/companies/credibook"
+   ],
+   "note": "Co-founded in 2020 by Gabriel Frans, Dekha Anggareska and Christian Lie, per Y Combinator and Insignia Ventures."
+  },
+  "akseleran": {
+   "founders": [
+    "Mikhail Tambunan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://techsauce.co/tech-and-biz/indonesias-key-to-accessible-funding-crowdfunding-platform-akseleran",
+    "https://linkedin.com/in/mikhail-tambunan-a93b11140"
+   ],
+   "note": "Mikhail Tambunan co-founded Akseleran, per Techsauce and his own profile. Techsauce reports three founders: Ivan Tambunan, Mikail (Mikhail) Tambunan and Christopher Gultom."
+  },
+  "logisly": {
+   "founders": [
+    "Roolin Njotosetiadi",
+    "Robbi Baskoro"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://kr-asia.com/with-relentless-focus-on-digitization-logisly-aims-for-largest-trucking-network-in-indonesia",
+    "https://kr-asia.com/with-relentless-focus-on-digitization-logisly-aims-for-largest-trucking-network-in-indonesia",
+    "https://hybrid.co.id/post/startup-logistik-logisly/",
+    "https://id.linkedin.com/in/robbi-baskoro"
+   ],
+   "note": "Founded in 2019 by Roolin Njotosetiadi and Robbi Baskoro, per KrASIA."
+  },
+  "stickearn": {
+   "founders": [
+    "Archie Carlson",
+    "Garry Limanata",
+    "Hartanto Alim",
+    "Sugito Alim"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://stickearn.com/insights/category/news/rayakan-pencapaian-stickearn-apresiasi-stickpeople/",
+    "https://www.stickearn.com/about",
+    "https://www.forbes.com/profile/stickearn/"
+   ],
+   "note": "Founded in 2017 by Archie Carlson, Garry Limanata, Hartanto Alim and Sugito Alim, per the company. Some coverage spells Garry Limanata as Garry Limananta."
+  },
+  "kecilin": {
+   "founders": [
+    "Christopher Farrel Millenio Kusumo"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://tekno.republika.co.id/berita/qd6py8368/kecilin-aplikasi-pengompres-data-buatan-anak-muda-indonesia",
+    "https://katadata.co.id/digital/startup/6450cde8242a4/anak-usaha-bank-mandiri-dan-bni-suntik-startup-kecilin-rp-60-miliar"
+   ],
+   "note": "Founded by Christopher Farrel Millenio Kusumo, who has developed Kecilin since 2018, per Republika and Katadata."
+  },
+  "hacktiv8": {
+   "founders": [
+    "Ronald Ishak",
+    "Riza Fahmi"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://www.hacktiv8.com/impact",
+    "https://www.kode.id/pages/tentang-kami",
+    "https://www.kode.id/pages/tentang-kami",
+    "https://swa.co.id/read/181427/penerobos-bisnis-pelatihan-programmer"
+   ],
+   "note": "Founded in 2016 by Ronald Ishak and Riza Fahmi, per Hacktiv8's own sites."
+  },
+  "broilerx": {
+   "founders": [
+    "Prastyo Ruandhito"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.broilerx.com/",
+    "https://www.insignia.vc/portfolio/broilerx",
+    "https://linkedin.com/in/prastyo-ruandhito-548b9372",
+    "https://www.insignia.vc/portfolio/broilerx"
+   ],
+   "note": "Prastyo Ruandhito is named as a co-founder by Insignia Ventures and on his own profile; Insignia also lists Jati Pikukuh and Pramudya Rizki Ruandhito. BroilerX dates its establishment to November 2020, while Insignia gives 2022."
+  },
+  "finfra": {
+   "founders": [
+    "Markus Prommik",
+    "Reinis Simanovskis"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://finfra.io/about-us",
+    "https://finfra.io/about-us",
+    "https://en.ain.ua/2023/08/22/startup-of-the-day-finfra/"
+   ],
+   "note": "Co-founded by Markus Prommik and Reinis Simanovskis, per the company's About page; founded in 2022, per AIN."
+  },
+  "delman": {
+   "founders": [
+    "Surya Halim",
+    "Raymond Christopher",
+    "Theo Budiyanto"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://delman.io/about-us",
+    "https://delman.io/about-us",
+    "https://techcrunch.com/2020/05/26/indonesian-startup-delman-raises-1-6-million-to-help-companies-clean-up-data/"
+   ],
+   "note": "Founded in 2018 by Surya Halim, Raymond Christopher and Theo Budiyanto, per the company's About page and TechCrunch."
+  },
+  "gapai": {
+   "founders": [
+    "Radityo Susilo",
+    "Adji Pramono",
+    "Faizal Ramanda",
+    "Arsyanda Marsa",
+    "Rizky Primanda"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.gapai.id/employer/about-us",
+    "https://www.gapai.id/employer/about-us",
+    "https://www.gapai.id/tentang-gapai",
+    "https://swa.co.id/read/447152/diguyur-dana-us1-juta-begini-rencana-bisnis-gapai"
+   ],
+   "note": "Gapai's site presents a founding team of five co-founders: Radityo Susilo, Adji Pramono, Faizal Ramanda, Arsyanda Marsa and Rizky Primanda. The company was established on 25 May 2022 as PT Akademi Indonesia Cerdas under the Academix brand."
+  },
+  "latent-space": {
+   "founders": [
+    "Faza Fahleraz",
+    "Gery Nugraha"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.ycombinator.com/companies/latent-space",
+    "https://www.ycombinator.com/companies/latent-space",
+    "https://www.ycombinator.com/companies/latent-space",
+    "https://www.ycombinator.com/companies/latent-space"
+   ],
+   "note": "Y Combinator lists Faza Fahleraz, Gery Nugraha and Albert Sahala as founders; Faza Fahleraz and Gery Nugraha also say so on their own profiles. Founded in 2022, per Y Combinator. Halo AI is one of Latent Space's products."
+  },
+  "idrx": {
+   "founders": [
+    "Nathanael Christian"
+   ],
+   "founded": null,
+   "sources": [
+    "https://investor.id/market/410627/idrx-kantongi-pendanaan-tahap-awal-rp-49-miliar",
+    "https://beritamoneter.com/startup-kripto-idrx-raih-pendanaan-awal-rp48-miliar/",
+    "https://linkedin.com/in/nathanael-christian-54b18699"
+   ],
+   "note": "Nathanael Christian is IDRX's co-founder and CEO, per Investor Daily (investor.id), coverage quoting Antara, and his own profile."
+  },
+  "stockbit": {
+   "founders": [
+    "Wellson Lo",
+    "Johny Susanto"
+   ],
+   "founded": null,
+   "sources": [
+    "https://lite.idxchannel.com/inspirator/3-sosok-di-balik-stockbit-bikin-platform-investasi-untuk-kikis-kesenjangan-literasi-keuangan",
+    "https://lite.idxchannel.com/inspirator/3-sosok-di-balik-stockbit-bikin-platform-investasi-untuk-kikis-kesenjangan-literasi-keuangan/2",
+    "https://lite.idxchannel.com/inspirator/3-sosok-di-balik-stockbit-bikin-platform-investasi-untuk-kikis-kesenjangan-literasi-keuangan/3",
+    "https://linkedin.com/in/wellsonlo"
+   ],
+   "note": "IDX Channel names Wellson Lo, Sigit Kouwagam and Johny Susanto as the three founders behind Stockbit; Wellson Lo and Johny Susanto also describe themselves as co-founders on their own profiles."
+  },
+  "sevima": {
+   "founders": [
+    "Sugianto Halim"
+   ],
+   "founded": 2003,
+   "sources": [
+    "https://sevima.com/pendiri-sevima-bagikan-tiga-tips-memulai-usaha-di-era-digital/",
+    "https://sevima.com/apa-itu-sevima-profil-dan-sejarah-edtech-yang-sudah-2-dekade-merevolusi-pendidikan-tinggi-indonesia/",
+    "https://linkedin.com/company/sevima"
+   ],
+   "note": "Founded in 2003 by Sugianto Halim with fellow ITS alumni. The company says seven ITS alumni founded it; only Sugianto Halim is named."
+  },
+  "bareksa": {
+   "founders": [
+    "Karaniya Dharmasaputra"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.bareksa.com/berita/reksa-dana/2015-01-15/live-now-marketplace-reksa-dana-online-terintegrasi-pertama-di-indonesia",
+    "https://www.bareksa.com/berita/pasar-modal/2021-01-15/presdir-ovo-dan-pendiri-bareksa-raih-penghargaan-tokoh-penggerak-fintech-dari-ojk",
+    "https://news.dailysocial.id/post/mantan-petinggi-grup-viva-hadirkan-portal-investasi-bareksa/"
+   ],
+   "note": "Bareksa's own news pages name Karaniya Dharmasaputra as founder and CEO; other co-founders are not named in qualifying sources."
+  },
+  "kreasipangan": {
+   "founders": [
+    "Adrian Hernanto",
+    "Ahmad Supriyadi",
+    "Rizki Novian"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://kreasipangan.com/about-us/",
+    "https://tabloidsinartani.com/detail/indeks/agri-sarana/12294-Kedai-Sayur-Bantu-Tukang-Sayur-Dapatkan-Harga-dan-Produk-Terbaik",
+    "https://youngster.id/headline/kedai-sayur-raih-pendanaan-tahap-awal-rp187-miliar/",
+    "https://hybrid.co.id/post/startup-agritech-kedai-sayur/"
+   ],
+   "note": "Founded in 2018 as Kedai Sayur by Adrian Hernanto, Ahmad Supriyadi and Rizki Novian, per Tabloid Sinar Tani and youngster.id. It became Kedai Pangan Sejahtera in 2022 and Kreasi Pangan Samadhi in July 2025."
+  },
+  "greenly": {
+   "founders": [
+    "Edrick Joe Soetanto",
+    "Liana Gonta Widjaja"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://east.vc/news/press-release/greenly-secured-seed-funding-led-by-east-ventures",
+    "https://east.vc/news/press-release/greenly-secured-seed-funding-led-by-east-ventures",
+    "https://hybrid.co.id/post/greenly-new-retail-makanan-sehat/"
+   ],
+   "note": "Founded by Edrick Joe Soetanto and Liana Gonta Widjaja, per East Ventures and Hybrid.co.id; Greenly opened its first outlet in Surabaya in 2019."
+  },
+  "feedloop-ai": {
+   "founders": [
+    "Ahmad Rizqi Meydiarso",
+    "Ronaldi Kurniawan Saphala",
+    "Muhammad Ajie Santika"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://www.feedloop.ai/about",
+    "https://east.vc/news/press-release/feedloop-seed-funding",
+    "https://east.vc/news/press-release/feedloop-seed-funding",
+    "https://east.vc/news/press-release/feedloop-seed-funding"
+   ],
+   "note": "Co-founded by Ahmad Rizqi Meydiarso, Ronaldi Kurniawan Saphala and Muhammad Ajie Santika, per East Ventures, Hybrid.co.id and Muhammad Ajie Santika's own profile. Feedloop's site gives 2019 as its founding year; East Ventures and Hybrid.co.id say 2018."
+  },
+  "mayar": {
+   "founders": [
+    "Frianto Moerdowo"
+   ],
+   "founded": null,
+   "sources": [
+    "https://katadata.co.id/digital/startup/63c5275a45b5f/startup-mayar-buat-chatgpt-bantu-umkm-hemat-jutaan-rupiah",
+    "https://linkedin.com/in/moerdowo"
+   ],
+   "note": "Frianto Moerdowo is Mayar's co-founder and CEO, per Katadata and his own profile."
+  },
+  "lokatani": {
+   "founders": [
+    "Abdul Choliq"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.lokatani.id/about-us",
+    "https://www.techverse.asia/startup/8200/30082024/jakarta-venture-dan-asiapay-capital-beri-suntikan-modal-pre-seed-ke-lokatani",
+    "https://linkedin.com/in/abdul-choliq"
+   ],
+   "note": "Abdul Choliq is Lokatani's co-founder and CEO, per Techverse.asia and his own profile; the company traces its start to a home hydroponic garden he began."
+  },
+  "crustea": {
+   "founders": [
+    "Roikhanatun Nafi'ah"
+   ],
+   "founded": null,
+   "sources": [
+    "https://megapolitan.antaranews.com/berita/340330/bermula-suka-seafood-bermuara-ketahanan-pangan",
+    "https://www.linkedin.com/posts/rnafiah_hi-im-nafi-ceo-founder-of-crustea-indonesia-activity-7106890495854878720-q9cY"
+   ],
+   "note": "Roikhanatun Nafi'ah is Crustea's founder and CEO, per Antara and her own profile. Other co-founders are not named in qualifying sources."
+  },
+  "bahasa-ai": {
+   "founders": [
+    "Hokiman Kurniawan"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://east.vc/news/from-portfolios/battle-of-the-ai-transcribers-meeting-ai-takes-on-otter-ai",
+    "https://linkedin.com/in/hokiman-kurniawan"
+   ],
+   "note": "Hokiman Kurniawan co-founded Bahasa.ai in 2016, per East Ventures, and later launched Meeting.ai. Other co-founders are not named in qualifying sources."
+  },
+  "bumiterra": {
+   "founders": [
+    "Tara Susanto",
+    "James Joseph"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://bumi-terra.com/about-us",
+    "https://bumi-terra.com/about-us",
+    "https://bumi-terra.com/about-us",
+    "https://linkedin.com/in/james-joseph-449556a3"
+   ],
+   "note": "Founded in 2022 by Tara Susanto and James Joseph, who sign the founders' letter on the company's About page."
+  },
+  "bantubumi": {
+   "founders": [
+    "Endra Marsudi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.kompas.id/artikel/green-start-up-yang-ambil-peran-mengubah-perilaku-persampahan-di-generasimuda",
+    "https://linkedin.com/in/endramarsudi"
+   ],
+   "note": "Endra Marsudi is Bantubumi's founder and CEO, per Kompas and his own profile."
+  },
+  "dicoding": {
+   "founders": [
+    "Narenda Wicaksono",
+    "Ash-Shidiqqul Akbar Hidayat",
+    "Kevin Kurniawan"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://www.dicoding.com/blog/ultimate-benefits-berkarir-di-dicoding-dari-rumah-sampai-keliling-indonesia/",
+    "https://ekbis.sindonews.com/berita/1436784/34/ceo-founder-dicoding-narenda-wicaksono-mencetak-talenta-unggul-it-indonesia"
+   ],
+   "note": "Founded on 5 January 2015 by Narenda Wicaksono with co-founders Ash-Shidiqqul Akbar Hidayat and Kevin Kurniawan, per Dicoding's own blog."
+  }
+ }
+}

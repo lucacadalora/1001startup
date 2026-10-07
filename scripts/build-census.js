@@ -91,6 +91,20 @@ for (const c of raw.companies) if (c.id && vmarks[c.id]) Object.assign(c, vmarks
 let oflags = {};
 try { oflags = JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'census-output-flags.json'), 'utf8')); } catch {}
 for (const c of raw.companies) if (c.id && oflags[c.id]) Object.assign(c, oflags[c.id]);
+/* founders — scripts/census-founders-merge.py writes data/census-founders.json
+   from the reviewed founder evidence (company's own page, Endeavor + one more,
+   or two reputable outlets; aggregators never count). Same single-writer
+   reason as the side files above. */
+let founders = {};
+try { founders = (JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'census-founders.json'), 'utf8')).companies) || {}; } catch {}
+for (const c of raw.companies) {
+  const f = c.id && founders[c.id];
+  if (!f) continue;
+  c.founders = f.founders;
+  c.founders_src = f.sources;
+  if (f.note) c.founders_note = f.note;
+  if (f.founded) c.founded_year = f.founded;
+}
 for (const c of raw.companies) { c.sprite = webp(c.sprite); c.logo = webp(c.logo); }
 const m = raw.method;
 const perWorker = (key) => (m.gva_per_worker_idr_m_by_sector && m.gva_per_worker_idr_m_by_sector[key]) || m.default_gva_per_worker_idr_m;

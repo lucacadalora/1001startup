@@ -66,6 +66,14 @@ const BAND = (v) => v >= 0.8 ? ['high', 'High — primary sources or filings', '
   v >= 0.6 ? ['medium', 'Medium — credible reporting, not company-confirmed', 'sedang', 'Sedang — pemberitaan kredibel, belum dikonfirmasi perusahaan'] :
     ['low', 'Low — thin public record; the doubt is stated, not hidden', 'rendah', 'Rendah — jejak publik tipis; keraguannya dinyatakan, bukan disembunyikan'];
 
+/* "A, B and C" / "A, B, dan C" */
+function joinNames(names, lang) {
+  const n = (names || []).filter(Boolean);
+  if (n.length < 2) return n.join('');
+  const and = lang === 'id' ? 'dan' : 'and';
+  return n.length === 2 ? `${n[0]} ${and} ${n[1]}` : `${n.slice(0, -1).join(', ')}${lang === 'id' ? ',' : ''} ${and} ${n[n.length - 1]}`;
+}
+
 function factRow(k, v, noteHtml) {
   if (v === null || v === undefined || v === '' || v === '—') return '';
   return `<div class="cp-fact"><dt class="cp-k">${esc(k)}</dt><dd class="cp-v">${v}${
@@ -133,6 +141,11 @@ function asOfDate(data, lang) {
 function sumLine(c, lang, asOf) {
   const id = lang === 'id';
   const parts = [];
+  /* founders lead: "pendiri <company>" is how people search (data/census-founders.json) */
+  if ((c.founders || []).length) {
+    parts.push(id ? `didirikan oleh ${esc(joinNames(c.founders, 'id'))}${c.founded_year ? ` pada ${c.founded_year}` : ''}`
+      : `was founded by ${esc(joinNames(c.founders, 'en'))}${c.founded_year ? ` in ${c.founded_year}` : ''}`);
+  }
   if (c.employees_est !== null && c.employees_est !== undefined) {
     parts.push(id
       ? `tercatat ${fmt(c.employees_est)} pekerja${c.employees_asof ? ` (dibaca ${esc(c.employees_asof)})` : ''}`
@@ -240,6 +253,10 @@ function card({ c, data, standalone, links, lang = 'en' }) {
   ${c.sprite ? `<div class="cp-art"><img src="${esc(c.sprite)}" alt="" loading="lazy"></div>` : ''}
 
   <dl class="cp-facts">
+    ${factRow(L('Founders', 'Pendiri'), (c.founders || []).length
+      ? esc(joinNames(c.founders, lang)) + (c.founded_year ? ` <span class="cp-u">${L('founded', 'berdiri')} ${c.founded_year}</span>` : '')
+        + (c.founders_src || []).filter((u, i, a) => a.findIndex((v) => host(v) === host(u)) === i).slice(0, 2).map((u) => srcLink(u)).join('')
+      : '', c.founders_note ? esc(c.founders_note) : '')}
     ${factRow(L('Disclosed funding', 'Pendanaan diumumkan'), c.funding_total_usd_m === null || c.funding_total_usd_m === undefined
       ? `<span class="cp-none">${FNONE[c.funding_status] ? L(...FNONE[c.funding_status]) : L('No figure we could source', 'Tidak ada angka yang bisa kami rujuk')}</span>`
       : `<span class="cp-u">US$</span> ${money(c.funding_total_usd_m)} <span class="cp-u">${L('M', 'juta')}</span>${FKIND[c.funding_status] ? ` <span class="cp-est">${FKIND[c.funding_status]}</span>` : ''}${srcLink(c.funding_src, c.funding_src_tier)}`,
@@ -400,6 +417,8 @@ function page({ c, data, links, lang = 'en', og }) {
   if (c.url) ld.url = c.url;
   if (c.logo) ld.logo = I18N.ORIGIN + c.logo;
   if (c.employees_est) ld.numberOfEmployees = { '@type': 'QuantitativeValue', value: c.employees_est };
+  if ((c.founders || []).length) ld.founder = c.founders.map((n) => ({ '@type': 'Person', name: n }));
+  if (c.founded_year) ld.foundingDate = String(c.founded_year);
   if (c.hq_address || c.kota) {
     ld.address = { '@type': 'PostalAddress', addressCountry: 'ID' };
     if (c.hq_address) ld.address.streetAddress = c.hq_address;
@@ -430,12 +449,14 @@ function page({ c, data, links, lang = 'en', og }) {
 ${card({ c, data, standalone: true, links, lang })}
 <p class="crumb" style="margin:22px 0 0"><a href="${PF}/#companies">&larr; ${L('Back to the census', 'Kembali ke sensus')}</a></p>`,
     { title: SCHEMA.fitTitle(lang === 'id'
-      ? [`${c.name} — pendanaan, valuasi, jumlah karyawan — 1001startup.id`,
+      ? [...((c.founders || []).length ? [`${c.name} — pendiri, pendanaan, valuasi — 1001startup.id`, `${c.name} — pendiri, pendanaan, valuasi`] : []),
+        `${c.name} — pendanaan, valuasi, jumlah karyawan — 1001startup.id`,
         `${c.name} — pendanaan, valuasi, jumlah karyawan`,
         `${c.name} — pendanaan & jumlah karyawan`,
         `${c.name} — data pendanaan`,
         c.name]
-      : [`${c.name} — funding, valuation, employees — 1001startup.id`,
+      : [...((c.founders || []).length ? [`${c.name} — founders, funding, valuation — 1001startup.id`, `${c.name} — founders, funding, valuation`] : []),
+        `${c.name} — funding, valuation, employees — 1001startup.id`,
         `${c.name} — funding, valuation, employees`,
         `${c.name} — funding & employees`,
         c.name]),
