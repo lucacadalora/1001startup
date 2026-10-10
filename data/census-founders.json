@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-07T04:05:59Z",
+ "generated": "2026-10-10T07:21:08Z",
  "rule": "Founder names publish only with the company's own page, or two independent reputable sources, or Endeavor plus one more; aggregators never count.",
  "companies": {
   "gojek": {
@@ -4293,6 +4293,115 @@
     "https://ekbis.sindonews.com/berita/1436784/34/ceo-founder-dicoding-narenda-wicaksono-mencetak-talenta-unggul-it-indonesia"
    ],
    "note": "Founded on 5 January 2015 by Narenda Wicaksono with co-founders Ash-Shidiqqul Akbar Hidayat and Kevin Kurniawan, per Dicoding's own blog."
+  },
+  "sokratech": {
+   "founders": [
+    "Brian Lee"
+   ],
+   "founded": 2024,
+   "sources": [
+    "https://www.techinasia.com/this-system-is-tackling-indonesias-422m-payment-fraud",
+    "https://www.linkedin.com/posts/sokratechio_fraudprevention-banking-ai-activity-7495731668897476608-55Gq"
+   ],
+   "note": "Founded by Brian Lee, a former data scientist at Shopee, OVO and GoCardless, per Tech in Asia (9 Mar 2026), which names him CEO and founder; Sokratech's official LinkedIn page calls him \"our Founder\" (19 Aug 2026). His own LinkedIn profile lists him as co-founder and CEO since April 2024. No source names any other founder."
+  },
+  "momofin": {
+   "founders": [
+    "Gregorius Yoga Pratama"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://momofin.com/blog/momofin-perkenalkan-dewan-penasihat-baruuntuk-dorong-inovasi-dan-pertumbuhan/",
+    "https://momofin.com/blog/momofin-luncurkan-platform-manajemen-dokumen-dan-kontrak-debut-dengan-pendanaan-angel-round/",
+    "https://www.tenity.com/redefining-digital-trust-tenity-invests-in-momofins-vision-for-document-integrity/",
+    "https://www.techinasia.com/startup-adapts-ai-fraud-detection-asean-market"
+   ],
+   "note": "Gregorius Yoga Pratama (Yoga Pratama), co-founder and CFO, is the one founder named in every account. Coverage of its 2022 launch (DailySocial, reposted on Momofin's own blog, and FinTech Global) says Momofin was founded in early 2022 by Pranowo Putro, Saga Iqranegara and Yoga Pratama, while investor Tenity (Jul 2025) and Tech in Asia (Jan 2026) name Rorian Pratyaksa, Darell Hoei and Gregorius Yoga Pratama as the co-founders; Rorian Pratyaksa was reported in 2022 as an angel investor in Momofin's first round. Because the accounts disagree, only the name they share is recorded."
+  },
+  "peris-ai": {
+   "founders": [
+    "David Samuel",
+    "Deden Gobel"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.linkedin.com/company/perisai-cybersecurity",
+    "https://east.vc/news/press-release/peris-ai-secured-funding-led-by-east-ventures",
+    "https://fintech.global/2023/02/02/cybersecurity-startup-peris-ai-backed-by-east-ventures/",
+    "https://www.liputan6.com/tekno/read/8293728/keamanan-siber-berbasis-ai-bawa-perisai-raih-in-apps-digital-award-2026"
+   ],
+   "note": "Co-founded by David Samuel (CEO) and Deden Gobel (CTO), per East Ventures' February 2023 funding announcement and its portfolio page, and fintech.global (2 Feb 2023); Liputan6 (17 Sep 2026) also calls David Samuel co-founder and CEO. LinkedIn gives 2022 as the founding year."
+  },
+  "prospero-solutions": {
+   "founders": [
+    "Bobby Yulandika Putra",
+    "Paul-Adrian Mandravel"
+   ],
+   "founded": null,
+   "sources": [
+    "https://uiii.ac.id/uiii-doctoral-candidate-tops-six-continental-champions-to-claim-worlds-top-startup-founder-award/",
+    "https://uiii.ac.id/uiii-doctoral-candidate-tops-six-continental-champions-to-claim-worlds-top-startup-founder-award/",
+    "https://apacentrepreneur.asia/bobby-yulandika-putra/",
+    "https://foundersmagazine.org/democratizing-risk-management-how-prospero-is-transforming-financial-institutions-in-emerging-markets/"
+   ],
+   "note": "Founded by Bobby Yulandika Putra, founder and CEO, per UIII (18 May 2026) and APAC Entrepreneur (22 May 2025); Paul-Adrian Mandravel joined in 2025 as co-founder and CTO, per the company's LinkedIn page and UIII, and Founders Magazine (Sep 2025) calls Prospero founded by Bobby and Paul. The company's LinkedIn page gives 2016 as the founding year and its PT was incorporated in Nov 2016, while UIII says Bobby started Prospero as a solo venture in 2022."
+  },
+  "restock-id": {
+   "founders": [
+    "Muhammad Farid Andika",
+    "Rega Sardjono"
+   ],
+   "founded": 2019,
+   "sources": [
+    "https://hybrid.co.id/post/restockid-target-penyaluran-pinjaman-rp600miliar-penggalangan-dana-2021/",
+    "https://www.cnbcindonesia.com/news/20210403145218-4-235021/ini-profil-restock-perusahaan-milik-koboi-fortuner-nyasar",
+    "https://hybrid.co.id/post/restockid-target-penyaluran-pinjaman-rp600miliar-penggalangan-dana-2021/",
+    "https://keuangan.kontan.co.id/news/fintech-restockid-gandeng-boleh-dicoba-digital-perkuat-pembiayaan"
+   ],
+   "note": "Co-founded in 2019 by Muhammad Farid Andika, co-founder and CEO until April 2021, per Hybrid/DailySocial (3 Feb 2021) and CNBC Indonesia (3 Apr 2021), and Rega Sardjono, co-founder and now a director, per Hybrid/DailySocial (3 Feb 2021) and Kontan (1 Dec 2025); his own LinkedIn profile lists him as co-founder of RestockID since 2019."
+  },
+  "assemblr": {
+   "founders": [
+    "Hasbi Asyadiq",
+    "Anita Yustisia",
+    "Risnandar"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://assemblrworld.com/blog/assemblr-3rd-anniversary/",
+    "https://assemblrworld.com/blog/assemblr-3rd-anniversary/",
+    "https://katadata.co.id/digital/startup/6392eba4c1765/investor-malaysia-suntik-startup-metaverse-bandung-rp-6-2-miliar",
+    "https://www.insignia.vc/portfolio/assemblr"
+   ],
+   "note": "Founded in 2018 by Hasbi Asyadiq (founder and CEO) with co-founders Anita Yustisia (CCO) and Risnandar (CTO), per the company's blog (Feb 2021) and Katadata (Dec 2022); the company says it became a separate entity in July 2018 after starting as a 2017 prototype. Gaby Wantah, now COO, has been described as a co-founder since 2025 (a Women's Tabloid interview, Oct 2025, which the company's LinkedIn page reposted, and her own LinkedIn profile), but the company's own pages and the press about its founding do not name her, so she is not recorded here."
+  },
+  "lentera-app": {
+   "founders": [
+    "Annastasia Puspaningtyas"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.lentera.app/blog/articles-1/lentera-merilis-aplikasinya-dengan-mengadakan-diskusi-literasi-3",
+    "https://hypeabis.id/read/52926/lentera-app-dorong-penulis-indonesia-kuasai-hak-cipta-dan-tembus-pasar-global",
+    "https://kepobuku.com/terdampar-bersama-anna-puspaningtyas/",
+    "https://www.linkedin.com/in/annastasia-puspaningtyas-06544926"
+   ],
+   "note": "Founded by Annastasia Puspaningtyas, founder and CEO, per the company's own launch article (Sept 2023); Hypeabis (Oct 2025) and a KepoBuku podcast (Sept 2025) also call her the founder. Her LinkedIn profile dates her founder role at PT Lentera Metamesta Nusantara to October 2021; the company itself gives no founding year. She also goes by Anna Puspaningtyas."
+  },
+  "doctortool": {
+   "founders": [
+    "Rainaldo",
+    "Septu Jamasoka",
+    "Elisa Yoshigoe Wijaya"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://doctortool.id/tentang-kami/",
+    "https://doctortool.id/doctortool-startup-healthtech-indonesia/",
+    "https://doctortool.id/wp-content/uploads/2025/05/DoctorTool-Company-Profile.pdf",
+    "https://www.fortuneidn.com/tech/doctortool-hadirkan-sistem-pemberian-resep-obat-berbasis-genai-00-xkln4-wkz2xc"
+   ],
+   "note": "Founded in 2015 by Rainaldo (CEO), Septu Jamasoka (CTO) and Elisa Yoshigoe Wijaya (CCO), who are named as co-founders on the company's About page, in its company profile and in its March 2024 press release; Fortune Indonesia gives the 2015 founding year. Rainaldo uses a single name. The chairman and chief medical officer, dr. Gatot Soetono, is not described as a founder."
   }
  }
 }

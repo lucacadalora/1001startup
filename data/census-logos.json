@@ -299,6 +299,10 @@
   "logo": "/assets/logo-c-lamudi-indonesia.f89bb57f.png",
   "logo_src": "picked:play"
  },
+ "lentera-app": {
+  "logo": "/assets/logo-c-lentera-app.929a8210.png",
+  "logo_src": "picked:appstore"
+ },
  "linkaja": {
   "logo": "/assets/logo-c-linkaja.df429aea.png",
   "logo_src": "picked:appstore"
@@ -315,6 +319,10 @@
   "logo": "/assets/logo-c-maka-motors.5817da12.png",
   "logo_src": "picked:site"
  },
+ "mari-isi-ulang": {
+  "logo": "/assets/logo-c-mari-isi-ulang.be1b5093.png",
+  "logo_src": "picked:site"
+ },
  "matchmade": {
   "logo": "/assets/logo-c-matchmade.b3fb9668.png",
   "logo_src": "picked:site"
@@ -325,6 +333,10 @@
  },
  "mobee": {
   "logo": "/assets/logo-c-mobee.70e15165.png",
+  "logo_src": "picked:site"
+ },
+ "momofin": {
+  "logo": "/assets/logo-c-momofin.12745bca.png",
   "logo_src": "picked:site"
  },
  "mtarget": {
@@ -397,6 +409,10 @@
  },
  "ranch-market": {
   "logo": "/assets/logo-c-ranch-market.0f8a9fce.png",
+  "logo_src": "picked:site"
+ },
+ "restock-id": {
+  "logo": "/assets/logo-c-restock-id.5bf946cb.png",
   "logo_src": "picked:site"
  },
  "revou": {

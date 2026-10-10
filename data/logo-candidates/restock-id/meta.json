@@ -1,0 +1,47 @@
+{
+ "id": "restock-id",
+ "name": "Restock.id",
+ "url": "https://restock.id/",
+ "candidates": [
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/restock-id/s02-play.png",
+   "tag": "play:com.rantgames.restock",
+   "src": "https://play-lh.googleusercontent.com/_4L1Vwb4ekA1KAN9BIRx8XLZ3l9FuQxGrN5kzuRoEkdgOPJzOTGFBNj_rdiex4FeE6VHCld3r_AP2nqgqIa7nw=s512"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/restock-id/s03-play.png",
+   "tag": "play:tn.restock",
+   "src": "https://play-lh.googleusercontent.com/g5IcN8bCn9qTr8vjWWlHfVgtRh2wh3gDKpEZBcCZzw9RXlygEgMGY7kzJs_58N2Vh2MusW-Ws4lwp-O4J5SNiXQ=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/restock-id/s00-appstore.png",
+   "tag": "appstore:OrangeBell \u2013 Restock Alerts",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/ff/b8/31/ffb8313a-c323-d5bb-e7a4-fdb8820acac6/AppIcon-0-0-1x_U007ephone-0-1-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/restock-id/s01-appstore.png",
+   "tag": "appstore:Restocky: Restock Alerts",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple211/v4/db/5d/8b/db5d8b06-bdc2-8808-09a5-e5a3fef531f2/AppIcon-0-0-1x_U007epad-0-1-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 61.6,
+   "path": "data/logo-candidates/restock-id/00-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 31.6,
+   "path": "data/logo-candidates/restock-id/01-site-guess-favicon-32x32.png",
+   "tag": "guess-favicon-32x32"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/restock-id/h00-header.png",
+   "tag": "header-144x48"
+  }
+ ],
+ "errors": []
+}

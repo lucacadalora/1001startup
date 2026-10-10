@@ -1,0 +1,41 @@
+{
+ "id": "lentera-app",
+ "name": "Lentera App",
+ "url": "https://www.lentera.app/",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/lentera-app/s00-appstore.png",
+   "tag": "appstore:Lentera App",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/22/f1/4e/22f14e58-d51a-97ed-aef6-e8a3a8793815/AppIcon-0-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 153,
+   "path": "data/logo-candidates/lentera-app/s02-play.png",
+   "tag": "play:com.id.lentera",
+   "src": "https://play-lh.googleusercontent.com/ZqbLEXZ-mQHCXcaCh5ha_ailIZSKfUYq7yjKyB-UBLz_d7LsOu1j_fPXLZ06FC7b0Gy3b_-FkfGZjt4_WV0OGw=s512"
+  },
+  {
+   "pri": 152,
+   "path": "data/logo-candidates/lentera-app/s01-appstore.png",
+   "tag": "appstore:INACASH",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/c6/fd/e4/c6fde4e6-5cf6-a882-88fd-efae17b21889/AppIcon-0-0-1x_U007emarketing-0-8-0-0-85-220.png/512x512bb.png"
+  },
+  {
+   "pri": 60.8,
+   "path": "data/logo-candidates/lentera-app/00-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 30.8,
+   "path": "data/logo-candidates/lentera-app/01-site-guess-favicon-16x16.png",
+   "tag": "guess-favicon-16x16"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/lentera-app/h00-header.png",
+   "tag": "header-40x40"
+  }
+ ],
+ "errors": []
+}

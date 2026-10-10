@@ -1,0 +1,24 @@
+{
+ "id": "momofin",
+ "name": "Momofin",
+ "url": "https://momofin.com/",
+ "candidates": [
+  {
+   "pri": 154,
+   "path": "data/logo-candidates/momofin/s00-appstore.png",
+   "tag": "appstore:eMET - Meterai & Tanda Tangan",
+   "src": "https://is1-ssl.mzstatic.com/image/thumb/Purple221/v4/f4/f4/a1/f4f4a1f0-b412-6bd4-7e34-0b5beb7658ba/AppIcon-1x_U007emarketing-0-8-0-85-220-0.png/512x512bb.png"
+  },
+  {
+   "pri": 85.6,
+   "path": "data/logo-candidates/momofin/00-site-link-icon-1000x1000.png",
+   "tag": "link-icon-1000x1000"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/momofin/h00-header.png",
+   "tag": "header-160x27"
+  }
+ ],
+ "errors": []
+}

@@ -1,0 +1,23 @@
+{
+ "id": "mari-isi-ulang",
+ "name": "Mari Isi Ulang",
+ "url": "https://www.mariisiulang.id/",
+ "candidates": [
+  {
+   "pri": 95.0,
+   "path": "data/logo-candidates/mari-isi-ulang/00-site-apple-touch-icon-100x100.png",
+   "tag": "apple-touch-icon-100x100"
+  },
+  {
+   "pri": 35.0,
+   "path": "data/logo-candidates/mari-isi-ulang/01-site-guess-favicon-100x100.png",
+   "tag": "guess-favicon-100x100"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/mari-isi-ulang/h00-header.png",
+   "tag": "header-109x48"
+  }
+ ],
+ "errors": []
+}
