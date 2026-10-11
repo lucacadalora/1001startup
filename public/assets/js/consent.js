@@ -13,6 +13,10 @@
  * The tracker is self-hosted Umami, proxied first-party under /_v/ by nginx.
  * No third-party request leaves the visitor's browser, which is what lets the
  * cookie policy say "first-party only" truthfully.
+ *
+ * 1001startup.id reports to a second tracker as well: its own self-hosted
+ * Databuddy (dashboard at data.1001startup.id), reached first-party under
+ * /_d/ the same way, and only after the same consent.
  * ==========================================================================*/
 (function () {
   'use strict';
@@ -41,6 +45,12 @@
     'www.1001umkm.id': ID_UMKM,
   };
   var HOSTNAME = location.hostname;
+  /* Databuddy website id, per host. Hosts not listed here load Umami only. */
+  var DB_SITES = {
+    '1001startup.id': '1905f714-3080-452a-abe2-df7315e013db',
+    'www.1001startup.id': '1905f714-3080-452a-abe2-df7315e013db',
+  };
+  var DB_ID = DB_SITES[HOSTNAME];
   var WEBSITE_ID = SITES[HOSTNAME] || SITES['pasar.vantis.sh'];
   var SITE_NAME = WEBSITE_ID === ID_1001 ? '1001startup.id'
     : WEBSITE_ID === ID_UMKM ? '1001umkm.id' : 'PASAR';
@@ -88,6 +98,11 @@
   function track(name, data) {
     if (!loaded || !window.umami) return;
     try { window.umami.track(name, data || {}); } catch (e) {}
+    // Databuddy measures time on page and scroll depth itself, on its own
+    // page-exit event, so 'engagement' would only repeat it there.
+    if (DB_ID && window.databuddy && name !== 'engagement') {
+      try { window.databuddy.track(name, data || {}); } catch (e) {}
+    }
   }
   window.vsTrack = track;   // usable from page code; a no-op without consent
 
@@ -101,6 +116,36 @@
     s.setAttribute('data-domains', HOSTNAME);
     s.onload = instrument;
     document.head.appendChild(s);
+    if (DB_ID) loadDatabuddy();
+  }
+
+  /* The page's CSP allows no inline script and no other origin, so the
+   * tracker reads its settings from this object instead of data- attributes
+   * and talks to /_d/ on this host (nginx -> the collector on this server).
+   * Visitor ids stay stable across days: this only ever runs after a yes to
+   * analytics, and without it a returning reader would count as new daily. */
+  function loadDatabuddy() {
+    window.databuddyConfig = {
+      clientId: DB_ID,
+      apiUrl: location.origin + '/_d',
+      anonymizeVisitorIds: false,
+      trackWebVitals: true,
+      trackErrors: true,
+      trackOutgoingLinks: true
+    };
+    var d = document.createElement('script');
+    d.defer = true;
+    d.src = '/_d/s.js';                       // nginx -> pinned copy of databuddy.js
+    document.head.appendChild(d);
+  }
+
+  /* Withdrawing consent removes the ids Databuddy keeps in this browser. */
+  function forgetDatabuddy() {
+    try {
+      ['did', 'did_profile', 'did_params'].forEach(function (k) { localStorage.removeItem(k); });
+      ['did_session', 'did_session_timestamp', 'did_session_start', 'did_profile_sent']
+        .forEach(function (k) { sessionStorage.removeItem(k); });
+    } catch (e) {}
   }
 
   /* ── instrumentation ─────────────────────────────────────────────────────
@@ -333,7 +378,10 @@
           '<button class="vs-cc-sw" role="switch" aria-checked="true" aria-label="Essential cookies" disabled></button>' +
         '</div>' +
         '<div class="vs-cc-opt">' +
-          '<div><h4>Analytics</h4><p>Self-hosted on our own server. Pages read, links clicked, how far you scroll.</p></div>' +
+          '<div><h4>Analytics</h4><p>Self-hosted on our own server. Pages read, links clicked, how far you scroll.' +
+            // Databuddy keeps its visitor id in localStorage; say so where the choice is made.
+            (DB_ID ? ' Keeps a random visitor ID in this browser, so a return visit is not counted as new.' : '') +
+            '</p></div>' +
           '<button class="vs-cc-sw" role="switch" aria-checked="false" aria-label="Analytics cookies" data-k="analytics"></button>' +
         '</div>' +
         '<div class="vs-cc-opt">' +
@@ -427,6 +475,8 @@
       // analytics. Counting the refusals would be exactly the thing they
       // refused.
       if (fresh) setTimeout(function () { track('consent', { choice: rec.how }); }, 600);
+    } else if (DB_ID) {
+      forgetDatabuddy();
     }
     document.documentElement.setAttribute('data-vs-consent', rec.analytics ? 'analytics' : 'essential');
   }
