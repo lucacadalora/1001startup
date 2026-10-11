@@ -176,7 +176,7 @@ fastify.addHook('onRequest', async (req, reply) => {
    duplicate-content URL is ever minted, and the redirect is the honest state
    ("this page has no Indonesian version yet"). Add a route's pattern here the
    day its view learns lang. */
-const ID_READY = new Set(['/', '/closed', '/map', '/map/3d', '/company/:id', '/jakarta',
+const ID_READY = new Set(['/', '/closed', '/map', '/company/:id', '/jakarta',
   '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
   '/investors', '/investor/:slug', '/stats', '/about', '/report', '/report/:edition', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
   '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask']);
@@ -760,10 +760,11 @@ fastify.get('/blocks', async (req, reply) => {
 /* The census map is 1001startup.id's page (Luca, Aug 30: the census layer
    belongs inside 1001, not PASAR). Since Oct 2026 /map on the 1001 host is the
    LOGO MAP (views/map1001.js map(), public/js/logomap1001.js): a pale basemap
-   of the whole country with every located company as a round logo badge. The
-   isometric map it replaced is still there at /map/3d. PASAR's /jakarta stays
-   the tenant city; a census-flavored visit to it (?census=1 from old links, or
-   a ?company= census deep link) is sent across to 1001 rather than served here. */
+   of the whole country with every located company as a round logo badge. It
+   replaced the isometric map, which 1001 no longer serves (Luca, 12 Oct:
+   "instead using 3d, better just logo like that"). PASAR's /jakarta stays the
+   tenant city; a census-flavored visit to it (?census=1 from old links, or a
+   ?company= census deep link) is sent across to 1001 rather than served here. */
 fastify.get('/map', async (req, reply) => {
   /* umkm host: its own instrument — the whole country, commodity sprites,
      city-level pins (views/mapumkm.js + public/js/umkmmap.js). */
@@ -772,11 +773,10 @@ fastify.get('/map', async (req, reply) => {
   }
   const qs = String(req.raw.url).split('?')[1];
   if (!is1001(req)) return reply.redirect('/jakarta' + (qs ? '?' + qs : ''));
-  /* ?area= names one of the hand-built 3D districts: that is the other view */
-  if (req.query && req.query.area) return reply.redirect(langPfx(req) + '/map/3d' + (qs ? '?' + qs : ''));
   /* ?city= is a camera preset (any city with a company on the map, or
      'indonesia'); ?company= opens on that company with its card. Unknown
-     values fall back to the opening view rather than erroring. */
+     values, and the old map's ?area= district links, fall back to the opening
+     view rather than erroring. */
   const data = censusData();
   const raw = String((req.query && req.query.city) || '').toLowerCase();
   const city = raw === 'indonesia' || ((data && data.by_metro) || []).some((m) => m.id === raw && m.located > 0) ? raw : '';
@@ -786,14 +786,6 @@ fastify.get('/map', async (req, reply) => {
   reply.type('text/html').send(map1001.map({
     data, city, company, lang: langOf(req), embed: !!(req.query && req.query.embed), tiles: map1001routes.tileInfo(),
   }));
-});
-/* The isometric map (the hand-built districts, the toy towers, the Whoosh
-   line): /map from Aug to Oct 2026, kept as a second view of the same census. */
-fastify.get('/map/3d', async (req, reply) => {
-  if (!is1001(req)) { reply.callNotFound(); return reply; }
-  const raw = String((req.query && req.query.city) || '').toLowerCase();
-  const city = raw === 'bandung' || raw === 'jakarta' || raw === 'bali' ? raw : '';
-  reply.type('text/html').send(map1001.iso({ data: censusData(), city, lang: langOf(req) }));
 });
 fastify.get('/jakarta', async (req, reply) => {
   const q = new URLSearchParams(req.query || {});
