@@ -571,12 +571,12 @@ function landing({ data, lang = 'en' }) {
   <section class="wrap" id="map">
     <div class="eyebrow"><span class="sq"></span>${L('THE MAP', 'PETA')}</div>
     <h2 class="h2">${L('Every company, at its real address.', 'Setiap perusahaan, di alamat aslinya.')}</h2>
-    <p class="lede">${L(`The whole census geocoded onto one isometric map of Indonesia — Greater Jakarta, Bandung and Bali
-    in one view, office districts that build into real 3D city blocks, and a card for every company where it
+    <p class="lede">${L(`The whole census on one map of Indonesia: every company as its logo at its own address, from
+    Medan to Bali. Zoom into a district to see who shares a tower, and open any company's card where it
     actually sits.`,
-    `Seluruh sensus digeokode ke satu peta isometrik Indonesia — Jakarta Raya, Bandung, dan Bali dalam satu tampilan,
-    distrik perkantoran yang tumbuh menjadi blok kota 3D sungguhan, dan kartu untuk setiap perusahaan tepat di
-    tempatnya.`)}</p>
+    `Seluruh sensus di satu peta Indonesia: setiap perusahaan tampil sebagai logo di alamatnya sendiri, dari Medan
+    sampai Bali. Perbesar sebuah kawasan untuk melihat siapa saja yang berkantor di gedung yang sama, lalu buka
+    kartu perusahaan mana pun tepat di tempatnya.`)}</p>
     <div class="cta">
       <a class="btn primary" href="${PF}/map">${L('Open the full map', 'Buka peta lengkap')}</a>
       <a class="btn" href="${PF}/map?city=jakarta">Jakarta</a>

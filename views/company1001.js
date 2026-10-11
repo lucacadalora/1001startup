@@ -244,9 +244,9 @@ function card({ c, data, standalone, links, lang = 'en' }) {
     ${standalone ? citeLine(c, lang, asOfDate(data, lang)) : ''}
     <div class="cp-act">
       ${c.url ? `<a class="cp-btn cp-primary" href="${esc(c.url)}" target="_blank" rel="noopener">${L('Visit website', 'Kunjungi situs')} <span aria-hidden="true">↗</span></a>` : ''}
-      ${/* only where the map draws the company: outside the mapped metros a pin
-           would stand on blank paper, so the map leaves those rows out for now */
-        (c.lat && c.lon && METRO.mapped(c.metro)) ? `<a class="cp-btn" href="${PF}${MAP}?company=${encodeURIComponent(c.id)}" target="_blank" rel="noopener">${L('See on the map', 'Lihat di peta')} <span aria-hidden="true">↗</span></a>` : ''}
+      ${/* every located company: the logo map (Oct 2026) covers the whole
+           country, not only the metros the old map had boundaries for */
+        (c.lat && c.lon) ? `<a class="cp-btn" href="${PF}${MAP}?company=${encodeURIComponent(c.id)}" target="_blank" rel="noopener">${L('See on the map', 'Lihat di peta')} <span aria-hidden="true">↗</span></a>` : ''}
     </div>
   </header>
 

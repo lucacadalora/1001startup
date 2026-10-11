@@ -21,3 +21,6 @@ data/px-netlists.json
 
 # founder review working files (evidence cache + reviewer output; the merged result is data/census-founders.json)
 data/founders-work/*.json
+
+# /map basemap: the Protomaps Indonesia extract (~450 MB), fetched by scripts/fetch-basemap.sh
+data/basemap/
