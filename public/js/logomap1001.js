@@ -9,10 +9,14 @@
  * How the badges behave:
  *   - Each company is a round badge (its logo, a white ring, a soft shadow)
  *     with its name next to it, on whichever side has room.
- *   - Two badges never overlap. Where they would, the higher-ranked company
- *     keeps its badge and the other shows as a small dot until you zoom in.
- *   - Companies that share one address (a tower, or a district-level pin) fan
- *     out around it as you zoom, so every one of them can be reached.
+ *   - On the opening, city-wide view two badges never overlap: the
+ *     higher-ranked company keeps its badge and name, the other shows as a
+ *     small dot.
+ *   - Zoom in and the crowd broadens: badges step aside from one another (a
+ *     few dozen metres, more in the densest blocks) so more and more of them
+ *     fit, until every company in the census is a logo on screen. Luca, 12
+ *     Oct 2026: "when it zoomed it getting broaden right so we can see all
+ *     startups". Names are drawn wherever there is room left for them.
  *
  * A module, loaded from a file: the site's CSP is script-src 'self', and
  * MapLibre 6 ships as ES modules with a module worker next to it.
@@ -155,8 +159,6 @@ function drawBadge(logo, letter) {
 }
 
 /* ── where each badge stands ───────────────────────────────────────── */
-const M_PER_DEG = 111320;
-const mPerPx = (z, lat) => 78271.517 * Math.cos(lat * Math.PI / 180) / 2 ** z;
 const lerp = (stops, z) => {
   if (z <= stops[0][0]) return stops[0][1];
   for (let i = 1; i < stops.length; i++) {
@@ -167,41 +169,98 @@ const lerp = (stops, z) => {
   }
   return stops[stops.length - 1][1];
 };
+/* Web Mercator as a fraction of the world; times 512 * 2^zoom it is pixels */
+const mercX = (lon) => (lon + 180) / 360;
+const mercY = (lat) => { const t = Math.sin(lat * Math.PI / 180); return 0.5 - Math.log((1 + t) / (1 - t)) / (4 * Math.PI); };
+const lonOf = (x) => x * 360 - 180;
+const latOf = (y) => Math.atan(Math.sinh(Math.PI * (1 - 2 * y))) * 180 / Math.PI;
 
-/* companies within ~45 m of each other share a pin: one tower, or one
-   district centroid the geocoder fell back to */
-function groupShared(list) {
-  const parent = list.map((_, i) => i);
-  const find = (i) => { while (parent[i] !== i) { parent[i] = parent[parent[i]]; i = parent[i]; } return i; };
-  for (let i = 0; i < list.length; i++) {
-    for (let j = i + 1; j < list.length; j++) {
-      const a = list[i], b = list[j];
-      const dy = (a.lat - b.lat) * M_PER_DEG;
-      if (dy > 45 || dy < -45) continue;
-      const dx = (a.lon - b.lon) * M_PER_DEG * Math.cos(a.lat * Math.PI / 180);
-      if (dx * dx + dy * dy < 45 * 45) parent[find(i)] = find(j);
+/* THE BROADENING. Most of the census sits in a few square kilometres of
+   Jakarta, and many companies share one pin (a tower, or the district centroid
+   the geocoder fell back to). Left at their exact spots, most badges would
+   stay hidden under a better-known neighbour however far you zoomed.
+
+   So from SPREAD_FROM down to street level the badges are laid out here, not
+   by the map's own collision test: every badge that overlaps another is nudged
+   away from it, the better-ranked one moving least, and nobody further from
+   their real address than REACH pixels. Each zoom level doubles the room, so
+   the nudges shrink as you go in. On today's data every company is on screen
+   from zoom 14.25; before that, whoever still cannot fit waits as a dot.
+
+   Zoom is handled in half steps. A step is laid out at its tightest scale, so
+   what does not overlap there cannot overlap anywhere inside the step. */
+const SPREAD_FROM = 12;
+const REACH = [[12, 26], [13, 46], [14, 72], [15, 112], [16, 170]];   // px off the real address, at most
+const AIR = [[15, 0], [16, 10], [17, 24]];   // extra px between badges once there is room, so names fit
+const GAP = 2;
+const stepOf = (zoom) => Math.round(zoom * 2) / 2;
+
+/* list is in rank order. Returns, per company, where to draw it and whether
+   its badge is drawn at this step. Before SPREAD_FROM nobody is placed here
+   (the map's own collision test decides, on the real addresses), and `show`
+   is false for all: should the close-up layers ever be handed that data for a
+   moment during a fast zoom, they draw nothing rather than everything. */
+function arrange(list, step) {
+  const n = list.length;
+  const at = list.map((c) => [c.lon, c.lat]);
+  const show = new Array(n).fill(false);
+  if (step < SPREAD_FROM) return { at, show };
+
+  const scale = 512 * 2 ** (step - 0.25);
+  const reach = lerp(REACH, step), air = lerp(AIR, step);
+  const X0 = new Float64Array(n), Y0 = new Float64Array(n), X = new Float64Array(n), Y = new Float64Array(n);
+  /* companies on the very same point need a direction to part in: each takes
+     a seat on a tiny sunflower spiral, the best-ranked in the middle */
+  const stacked = new Map();
+  list.forEach((c, i) => {
+    X0[i] = mercX(c.lon) * scale; Y0[i] = mercY(c.lat) * scale;
+    const key = Math.round(X0[i] * 4) + ':' + Math.round(Y0[i] * 4);
+    const k = stacked.get(key) || 0;
+    stacked.set(key, k + 1);
+    X[i] = X0[i] + 0.7 * Math.sqrt(k) * Math.cos(k * 2.39996);
+    Y[i] = Y0[i] + 0.7 * Math.sqrt(k) * Math.sin(k * 2.39996);
+  });
+  const far = 2 * list[0].rad + GAP + air;    // nothing wider apart than this can touch
+  const order = list.map((_, i) => i);
+  for (let pass = 0; pass < 80; pass++) {
+    order.sort((a, b) => X[a] - X[b]);
+    let moved = false;
+    for (let a = 0; a < n; a++) {
+      const i = order[a];
+      for (let b = a + 1; b < n; b++) {
+        const j = order[b];
+        const dx = X[j] - X[i];
+        if (dx >= far) break;
+        const need = list[i].rad + list[j].rad + GAP + air;
+        const dy = Y[j] - Y[i];
+        if (dx >= need || dy >= need || dy <= -need) continue;
+        const dd = dx * dx + dy * dy;
+        if (dd >= need * need) continue;
+        const d = Math.sqrt(dd) || 0.01, push = (need - d) / 2, ux = dx / d, uy = dy / d;
+        const wi = i < j ? 0.5 : 1.5, wj = 2 - wi;   // the better-ranked gives way less
+        X[i] -= ux * push * wi; Y[i] -= uy * push * wi;
+        X[j] += ux * push * wj; Y[j] += uy * push * wj;
+        moved = true;
+      }
     }
+    for (let i = 0; i < n; i++) {
+      const ox = X[i] - X0[i], oy = Y[i] - Y0[i], off = Math.hypot(ox, oy);
+      if (off > reach) { X[i] = X0[i] + ox * reach / off; Y[i] = Y0[i] + oy * reach / off; }
+    }
+    if (!moved) break;
   }
-  const groups = new Map();
-  list.forEach((c, i) => { const g = find(i); if (!groups.has(g)) groups.set(g, []); groups.get(g).push(c); });
-  for (const g of groups.values()) {
-    g.sort((a, b) => a.rank - b.rank);
-    g.forEach((c, k) => { c.slot = k; c.anchor = g[0]; });
+  /* in rank order, a badge is drawn unless it would cover one already drawn */
+  const drawn = [];
+  for (let i = 0; i < n; i++) {
+    at[i] = [lonOf(X[i] / scale), latOf(Y[i] / scale)];
+    show[i] = true;
+    for (const k of drawn) {
+      const need = list[i].rad + list[k].rad - 3, dx = X[i] - X[k], dy = Y[i] - Y[k];
+      if (dx * dx + dy * dy < need * need) { show[i] = false; break; }
+    }
+    if (show[i]) drawn.push(i);
   }
-}
-
-/* The best-ranked company keeps the pin; the others take the next seats of a
-   sunflower spiral around it. Seat spacing follows the zoom (wide enough for
-   whole badges from street level) but is capped on the ground, so from far
-   out nobody is drawn kilometres from their address. */
-const SEAT_PX = [[11, 5], [13, 11], [14, 24], [15, 36], [16, 50]];
-const SEAT_MAX_M = 120;
-function seat(c, z) {
-  if (!c.slot) return [c.lon, c.lat];
-  const o = c.anchor;
-  const m = Math.min(lerp(SEAT_PX, z) * mPerPx(z, o.lat), SEAT_MAX_M);
-  const r = m * Math.sqrt(c.slot), a = c.slot * 2.39996;
-  return [o.lon + r * Math.cos(a) / (M_PER_DEG * Math.cos(o.lat * Math.PI / 180)), o.lat + r * Math.sin(a) / M_PER_DEG];
+  return { at, show };
 }
 
 /* ── boot ──────────────────────────────────────────────────────────── */
@@ -217,12 +276,19 @@ function start(gl, list) {
   /* rank inside the company's own city: the first few in Medan keep a badge
      on the national view even though a hundred Jakarta companies outrank them */
   const perMetro = new Map();
-  [...list].sort((a, b) => a.rank - b.rank).forEach((c) => {
+  list.sort((a, b) => a.rank - b.rank);
+  list.forEach((c, i) => {
+    c.i = i;
     c.mr = (perMetro.get(c.metro) || 0) + 1; perMetro.set(c.metro, c.mr);
     const t = TIERS.find((x) => c.rank <= x.upTo);
-    c.size = t.dia / DISC; c.text = t.text; c.gap = (t.dia / 2 + 5) / t.text;
+    c.rad = t.dia / 2; c.size = t.dia / DISC; c.text = t.text;
+    /* the name starts just clear of the badge image (its shadow included), in ems */
+    c.gap = (IMG / 4 * c.size + 2) / t.text;
   });
-  groupShared(list);
+  /* one layout per half step of zoom, worked out the first time it is needed */
+  const layouts = new Map();
+  const layout = (step) => { if (!layouts.has(step)) layouts.set(step, arrange(list, step)); return layouts.get(step); };
+  const spot = (c, zoom) => layout(stepOf(zoom)).at[c.i];
 
   /* camera presets: a city frames the bulk of its pins, not its farthest one */
   const box = (rows, trim) => {
@@ -254,7 +320,7 @@ function start(gl, list) {
       dragRotate: false, pitchWithRotate: false, touchPitch: false, renderWorldCopies: false,
       ...(first
         ? { bounds: first.bounds, fitBoundsOptions: { padding: first.pad, maxZoom: first.maxZoom } }
-        : { center: seat(byId.get(cfg.company), 15), zoom: 15 }),
+        : { center: spot(byId.get(cfg.company), 15), zoom: 15 }),
     });
   } catch (e) {
     console.error(e);
@@ -310,27 +376,34 @@ function start(gl, list) {
 
   /* ── the company layers ─────────────────────────────────────────── */
   let seatZoom = -1, selected = '';
-  const features = (z) => ({
-    type: 'FeatureCollection',
-    features: list.map((c) => ({
-      type: 'Feature', geometry: { type: 'Point', coordinates: seat(c, z) },
-      properties: { id: c.id, name: c.name, rank: c.rank, mr: c.mr, img: 'b-' + c.id, size: c.size, text: c.text, gap: c.gap },
-    })),
-  });
+  const features = (step) => {
+    const { at, show } = layout(step);
+    return {
+      type: 'FeatureCollection',
+      features: list.map((c, i) => ({
+        type: 'Feature', geometry: { type: 'Point', coordinates: at[i] },
+        properties: { id: c.id, name: c.name, rank: c.rank, mr: c.mr, show: show[i] ? 1 : 0, img: 'b-' + c.id, size: c.size, text: c.text, gap: c.gap },
+      })),
+    };
+  };
   const reseat = () => {
-    const z = Math.round(map.getZoom() * 2) / 2;
-    if (z === seatZoom || !map.getSource('co')) return;
-    seatZoom = z;
-    map.getSource('co').setData(features(z));
+    const step = stepOf(map.getZoom());
+    if (step === seatZoom || !map.getSource('co')) return;
+    seatZoom = step;
+    map.getSource('co').setData(features(step));
   };
   /* far out, only the companies that could win a place are laid out at all */
   const SHOWN = ['any', ['<=', ['get', 'mr'], 2],
     ['<=', ['get', 'rank'], ['step', ['zoom'], 60, 6.5, 140, 8.5, 100000]]];
+  const FITS = ['==', ['get', 'show'], 1];
   const zoomed = (far, near) => ['interpolate', ['linear'], ['zoom'], 5, far, 11, near];
-  const badgeLayout = {
+  const logo = {
     'icon-image': ['get', 'img'],
     'icon-size': zoomed(['*', 0.74, ['get', 'size']], ['get', 'size']),
     'icon-padding': 0,
+    'symbol-sort-key': ['get', 'rank'],
+  };
+  const name = {
     'text-field': ['get', 'name'], 'text-font': SEMI,
     'text-size': zoomed(['*', 0.88, ['get', 'text']], ['get', 'text']),
     'text-max-width': 6.5, 'text-line-height': 1.05, 'text-letter-spacing': -0.01,
@@ -340,25 +413,33 @@ function start(gl, list) {
     'text-justify': 'auto', 'text-padding': 1,
     'symbol-sort-key': ['get', 'rank'],
   };
-  const badgePaint = { 'text-color': P.ink, 'text-halo-color': 'rgba(255,255,251,.94)', 'text-halo-width': 1.6, 'text-halo-blur': 0.5 };
+  const ink = { 'text-color': P.ink, 'text-halo-color': 'rgba(255,255,251,.94)', 'text-halo-width': 1.6, 'text-halo-blur': 0.5 };
 
   map.on('load', () => {
     if (!cfg.tiles) outline(map);
-    map.addSource('co', { type: 'geojson', data: features(seatZoom = Math.round(map.getZoom() * 2) / 2) });
+    map.addSource('co', { type: 'geojson', data: features(seatZoom = stepOf(map.getZoom())) });
     /* every company is at least a dot, so a crowded district reads as crowded */
     map.addLayer({ id: 'co-dots', type: 'circle', source: 'co', paint: {
       'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2, 10, 2.6, 15, 4],
       'circle-color': '#6F7573', 'circle-opacity': 0.8,
       'circle-stroke-color': '#fff', 'circle-stroke-width': ['interpolate', ['linear'], ['zoom'], 4, 0.8, 12, 1.3] } });
-    map.addLayer({ id: 'co-badges', type: 'symbol', source: 'co', filter: SHOWN,
-      /* in a street-level crowd a logo may stand without its name */
-      layout: Object.assign({ 'text-optional': ['step', ['zoom'], false, 14.5, true] }, badgeLayout), paint: badgePaint });
+    /* The city-wide view and wider: a badge is drawn only together with its
+       name, and the map's own collision test keeps them all apart. */
+    map.addLayer({ id: 'co-badges', type: 'symbol', source: 'co', maxzoom: SPREAD_FROM, filter: SHOWN,
+      layout: Object.assign({}, logo, name), paint: ink });
+    /* Closer in, arrange() has already decided who is drawn, so every logo it
+       passed is drawn as given. Names are a layer of their own UNDER the
+       logos: the map places upper layers first, so all the logos claim their
+       ground before any name is fitted, and no logo lands on a name. */
+    map.addLayer({ id: 'co-names', type: 'symbol', source: 'co', minzoom: SPREAD_FROM, filter: FITS, layout: name, paint: ink });
+    map.addLayer({ id: 'co-logos', type: 'symbol', source: 'co', minzoom: SPREAD_FROM, filter: FITS,
+      layout: Object.assign({ 'icon-allow-overlap': true }, logo) });
     /* the open company: always drawn, ringed, above the rest */
     map.addLayer({ id: 'co-sel-ring', type: 'circle', source: 'co', filter: ['==', ['get', 'id'], ''], paint: {
       'circle-radius': zoomed(['+', 3, ['*', 0.74 * DISC / 2, ['get', 'size']]], ['+', 4, ['*', DISC / 2, ['get', 'size']]]),
       'circle-color': 'rgba(0,0,0,0)', 'circle-stroke-color': P.ink, 'circle-stroke-width': 2, 'circle-translate': [0, -1] } });
     map.addLayer({ id: 'co-sel', type: 'symbol', source: 'co', filter: ['==', ['get', 'id'], ''],
-      layout: Object.assign({ 'icon-allow-overlap': true, 'text-allow-overlap': true }, badgeLayout), paint: badgePaint });
+      layout: Object.assign({ 'icon-allow-overlap': true, 'text-allow-overlap': true }, logo, name), paint: ink });
     if (byId.has(cfg.company)) select(cfg.company, { fly: false });
   });
   map.on('zoom', reseat);
@@ -366,7 +447,7 @@ function start(gl, list) {
   const fetchDrawn = () => {
     if (!map.getLayer('co-badges')) return;
     lastFetch = Date.now();
-    for (const f of map.queryRenderedFeatures({ layers: ['co-badges', 'co-sel'] })) {
+    for (const f of map.queryRenderedFeatures({ layers: ['co-badges', 'co-logos', 'co-sel'] })) {
       const c = byId.get(f.properties.id);
       if (c && c.logo && !queued.has(c.id)) { queued.add(c.id); pending.push(c); }
     }
@@ -379,7 +460,7 @@ function start(gl, list) {
   /* ── hover, click, pick ─────────────────────────────────────────── */
   const tip = document.getElementById('lm-tip');
   const pick = document.getElementById('lm-pick');
-  const LAYERS = ['co-sel', 'co-badges', 'co-dots'];
+  const LAYERS = ['co-sel', 'co-logos', 'co-names', 'co-badges', 'co-dots'];
   const under = (pt, pad) => {
     if (!map.getLayer('co-dots')) return [];
     const seen = new Set();
@@ -389,8 +470,11 @@ function start(gl, list) {
   map.on('mousemove', (e) => {
     const hit = under(e.point, 3);
     map.getCanvas().style.cursor = hit.length ? 'pointer' : '';
-    /* a badge already carries its name, except in a street-level crowd */
-    const named = hit.length && hit[0].layer.id !== 'co-dots' && map.getZoom() < 14.5;
+    /* say the name only where the map does not: a dot, or a logo whose name
+       found no room */
+    const top = hit.length && hit[0].layer.id;
+    const named = top && top !== 'co-dots' && (top !== 'co-logos'
+      || map.queryRenderedFeatures({ layers: ['co-names'], filter: ['==', ['get', 'id'], hit[0].properties.id] }).length > 0);
     if (!hit.length || named || !pick.hidden) { tip.hidden = true; return; }
     /* count what a click here would offer (it reaches a little wider) */
     const stack = hit[0].layer.id === 'co-dots' ? under(e.point, 7) : hit;
@@ -438,7 +522,10 @@ function start(gl, list) {
     selected = id;
     map.setFilter('co-sel', ['==', ['get', 'id'], id]);
     map.setFilter('co-sel-ring', ['==', ['get', 'id'], id]);
-    map.setFilter('co-badges', id ? ['all', SHOWN, ['!=', ['get', 'id'], id]] : SHOWN);
+    const rest = (base) => (id ? ['all', base, ['!=', ['get', 'id'], id]] : base);
+    map.setFilter('co-badges', rest(SHOWN));
+    map.setFilter('co-logos', rest(FITS));
+    map.setFilter('co-names', rest(FITS));
   }
   function select(id, opts) {
     const c = byId.get(id);
@@ -449,9 +536,9 @@ function start(gl, list) {
     const w = drawerWidth();
     if (opts.fly === false) {
       /* arrived by link: the map opened on it; make room for the drawer */
-      if (w) map.easeTo({ center: seat(c, 15), zoom: 15, offset: [-w / 2, 0], duration: 0 });
+      if (w) map.easeTo({ center: spot(c, 15), zoom: 15, offset: [-w / 2, 0], duration: 0 });
     } else if (w && opts.at && opts.at.x > wrap.clientWidth - w - 60) {
-      map.easeTo({ center: seat(c, seatZoom), offset: [-w / 2, 0], duration: 500 });
+      map.easeTo({ center: spot(c, map.getZoom()), offset: [-w / 2, 0], duration: 500 });
     }
     const u = new URL(location.href);
     u.searchParams.delete('city'); u.searchParams.set('company', id);
@@ -490,7 +577,8 @@ function start(gl, list) {
         e.preventDefault();
         const c = byId.get(sib.dataset.cp);
         mark(c.id);
-        map.easeTo({ center: seat(c, Math.max(seatZoom, 14)), zoom: Math.max(map.getZoom(), 14), offset: [-drawerWidth() / 2, 0], duration: 700 });
+        const zoom = Math.max(map.getZoom(), 14.5);
+        map.easeTo({ center: spot(c, zoom), zoom, offset: [-drawerWidth() / 2, 0], duration: 700 });
         const u = new URL(location.href); u.searchParams.set('company', c.id); history.replaceState(null, '', u);
         openDrawer(c.id);
       }
