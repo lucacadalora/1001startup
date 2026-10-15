@@ -240,7 +240,7 @@
   var COLS = [{ k: 'name', label: 'Company' }, { k: 'sector', label: 'Danantara sector' }]
     .concat(ORDER.map(function (k) { return { k: k, label: DIMS[k].label, num: true }; }))
     .concat([{ k: 'total_assets', label: 'Assets', fin: true }, { k: 'revenue', label: 'Revenue', fin: true }, { k: 'net_profit', label: 'Net profit', fin: true }]);
-  var sortK = ORDER.indexOf('finance') >= 0 && E.filter(function (e) { return e.scores.finance != null; }).length > N / 2 ? 'finance' : 'priority', sortDir = -1;
+  var sortK = ORDER.indexOf('priority') >= 0 ? 'priority' : ORDER[0], sortDir = -1;   /* opens on national priority */
   var thead = $('#bm-tbl thead'), tbody = $('#bm-tbl tbody');
   function val(e, k) {
     if (k === 'name') return e.short.toLowerCase();
