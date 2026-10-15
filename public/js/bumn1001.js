@@ -223,6 +223,7 @@
     card.append(el('div', { class: 'figs' }, fig('Assets', f.total_assets, mw), fig('Revenue', f.revenue, mw), fig('Net profit', f.net_profit, mw)));
     var why = el('div', { class: 'why' });
     if (e.scores.finance == null && mw) why.append(el('p', null, el('b', { text: 'Finance' }), mw + '.'));
+    if (e.finNote) why.append(el('p', null, el('b', { text: 'Finance' }), e.finNote));
     ORDER.forEach(function (k) {
       if (k === 'finance' || !e.why || !e.why[k]) return;
       var pp = el('p', null, el('b', { text: DIMS[k].label }), e.why[k] + ' ');
@@ -274,7 +275,9 @@
       });
       ['total_assets', 'revenue', 'net_profit'].forEach(function (k) {
         var f = (e.fin || {})[k];
-        if (f && f.v != null) tr.append(el('td', { class: 'n', title: f.period || '' }, f.url ? el('a', { href: f.url, target: '_blank', rel: 'noopener', title: (f.period || '') + ' · ' + host(f.url), text: fmt(f.v, Math.abs(f.v) >= 100 ? 0 : 1) }) : fmt(f.v)));
+        var yr = f && f.period && !/202[4-9]/.test(f.period) ? (f.period.match(/20\d\d/) || [''])[0] : '';
+        if (f && f.v != null) tr.append(el('td', { class: 'n', title: f.period || '' }, f.url ? el('a', { href: f.url, target: '_blank', rel: 'noopener', title: (f.period || '') + ' · ' + host(f.url), text: fmt(f.v, Math.abs(f.v) >= 100 ? 0 : 1) }) : fmt(f.v),
+          yr ? el('span', { class: 'r', text: yr }) : null));
         else tr.append(el('td', { class: 'dash', title: 'No public figure found', text: '—' }));
       });
       tbody.append(tr);

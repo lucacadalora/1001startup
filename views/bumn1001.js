@@ -138,7 +138,7 @@ function page({ lang = 'en' }) {
 <div class="stats">${stats}</div>
 <section class="bm" style="padding-top:40px">
   <div class="eyebrow"><span class="sq"></span>THE QUADRANT</div>
-  <p class="lede">Each logo is one state company, on the same 0–5 scale both ways. The lines cross at the median, so half the companies sit on each side of each line. A company with no published figures for an axis waits in the dashed lane at the edge. Tap a logo for its scores, figures and sources.</p>
+  <p class="lede">Each logo is one state company, on the same 0–5 scale both ways. The lines cross at the median, so half the companies sit on each side of each line. Tap a logo for its scores, figures and sources.</p>
   <div class="bm-ctl" id="bm-presets" role="group" aria-label="Axis pairs"></div>
   <div class="bm-ctl">
     <div class="bm-ax"><label for="bm-x">X</label><select id="bm-x"></select><label for="bm-y">Y</label><select id="bm-y"></select></div>
