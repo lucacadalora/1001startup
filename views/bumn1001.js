@@ -28,7 +28,9 @@ function load() {
   return cache.data;
 }
 
-const V = String(Math.floor(Date.now() / 1000));
+/* cache-buster from the script's own mtime, so editing public/js/bumn1001.js needs no restart */
+const JS = path.join(__dirname, '..', 'public', 'js', 'bumn1001.js');
+const ver = () => { try { return String(Math.floor(fs.statSync(JS).mtimeMs / 1000)); } catch (e) { return '0'; } };
 
 function page({ lang = 'en' }) {
   const D = load();
@@ -49,7 +51,18 @@ function page({ lang = 'en' }) {
 .bm-ctl .chip[aria-pressed="true"] b{color:#C9C9CF}
 .bm-ax{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
 .bm-ax select{font:400 12px/1 'IBM Plex Mono',monospace;border:1px solid #E7E7E7;background:#fff;color:#000;padding:7px 8px;border-radius:0}
-.bm-field{position:relative;background:#F7F8F4;border:1px solid #E7E7E7;height:clamp(480px,62vw,700px);overflow:hidden;touch-action:manipulation;margin-top:6px}
+.bm-stage{display:grid;grid-template-columns:minmax(0,1fr) 300px;gap:16px;align-items:start;margin-top:6px}
+@media(max-width:999px){.bm-stage{grid-template-columns:minmax(0,1fr)}}
+.bm-field{position:relative;background:#F7F8F4;border:1px solid #E7E7E7;height:640px;overflow:hidden;touch-action:manipulation}
+.bm-side{position:sticky;top:12px;border:1px solid #E7E7E7;background:#fff;padding:14px;font:500 13.5px/1.45 'Overused Grotesk',system-ui,sans-serif;letter-spacing:0}
+@media(max-width:999px){.bm-side{position:static}}
+.bm-side .k{font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#6B6B73}
+.bm-side .qd{display:grid;grid-template-columns:1fr auto;gap:2px 10px;padding:9px 0;border-bottom:1px solid #F1F1F1}
+.bm-side .qd:last-child{border-bottom:0}
+.bm-side .qd b{font:400 11px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase}
+.bm-side .qd span{font:400 12px/1.3 'IBM Plex Mono',monospace;color:#6B6B73;text-align:right}
+.bm-side .qd p{grid-column:1/-1;color:#52525B;font-size:13px;line-height:1.45}
+.bm-b.nd::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1.5px dashed #9A9AA0;pointer-events:none}
 .bm-field svg{position:absolute;inset:0;width:100%;height:100%;display:block}
 .bm-b{position:absolute;width:var(--d);height:var(--d);margin:calc(var(--d) / -2) 0 0 calc(var(--d) / -2);border-radius:50%;border:0;padding:0;background:#fff;box-shadow:0 3px 9px rgba(24,32,36,.22),0 0 0 1.5px rgba(0,0,0,.08);cursor:pointer;transition:opacity .2s,transform .15s}
 .bm-b img{width:100%;height:100%;border-radius:50%;display:block;border:3px solid #fff}
@@ -62,7 +75,8 @@ function page({ lang = 'en' }) {
 .bm-q.tl{top:10px}.bm-q.tr{right:12px;top:10px;text-align:right}.bm-q.br{right:12px;text-align:right}
 .bm-foot{display:flex;flex-wrap:wrap;gap:4px 10px;font:400 10.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:#6B6B73;padding:8px 12px;border:1px solid #E7E7E7;border-top:0;background:#fff}
 .bm-foot b{color:#000;font-weight:400}
-.bm-card{position:absolute;z-index:20;width:320px;max-width:calc(100vw - 32px);background:#fff;border:1px solid #E7E7E7;box-shadow:0 10px 30px rgba(20,24,22,.16);padding:14px 14px 12px;font:500 13.5px/1.45 'Overused Grotesk',system-ui,sans-serif;letter-spacing:0}
+.bm-card{background:#fff;font:500 13.5px/1.45 'Overused Grotesk',system-ui,sans-serif;letter-spacing:0}
+.bm-card.sheet{position:fixed;z-index:30;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));max-height:72vh;overflow:auto;border:1px solid #E7E7E7;box-shadow:0 10px 30px rgba(20,24,22,.18);padding:14px 14px 12px}
 .bm-card .hd{display:flex;gap:10px;align-items:center;margin-bottom:10px}
 .bm-card .hd img{width:40px;height:40px;border-radius:50%;box-shadow:0 0 0 1.5px rgba(0,0,0,.08)}
 .bm-card .nm{font-weight:650;font-size:16px;line-height:1.15}
@@ -109,9 +123,7 @@ function page({ lang = 'en' }) {
 .bm-m ul{padding-left:18px;margin:6px 0 16px}
 .bm-f{font:400 13px/1.6 'IBM Plex Mono',monospace;background:#F7F8F4;border:1px solid #F1F1F1;padding:10px 12px;margin:8px 0;overflow-x:auto;white-space:pre}
 @media(max-width:760px){
-  .bm-field{height:clamp(460px,128vw,620px)}
   .bm-q{font-size:9.5px;max-width:40%}
-  .bm-card.sheet{position:fixed;left:12px;right:12px;bottom:calc(12px + env(safe-area-inset-bottom,0px));top:auto;width:auto;max-width:none;max-height:72vh;overflow:auto}
   #bm-presets,#bm-clusters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-20px;padding-inline:20px}
   #bm-presets::-webkit-scrollbar,#bm-clusters::-webkit-scrollbar{display:none}
   #bm-presets .chip,#bm-clusters .chip{flex:0 0 auto}
@@ -126,21 +138,28 @@ function page({ lang = 'en' }) {
 <div class="stats">${stats}</div>
 <section class="bm" style="padding-top:40px">
   <div class="eyebrow"><span class="sq"></span>THE QUADRANT</div>
-  <p class="lede">Each logo is one state company. The lines cross at the median, so half the companies sit on each side of each line. Tap a logo for its scores, figures and sources.</p>
+  <p class="lede">Each logo is one state company, on the same 0–5 scale both ways. The lines cross at the median, so half the companies sit on each side of each line. A company with no published figures for an axis waits in the dashed lane at the edge. Tap a logo for its scores, figures and sources.</p>
   <div class="bm-ctl" id="bm-presets" role="group" aria-label="Axis pairs"></div>
   <div class="bm-ctl">
     <div class="bm-ax"><label for="bm-x">X</label><select id="bm-x"></select><label for="bm-y">Y</label><select id="bm-y"></select></div>
   </div>
   <div class="bm-ctl" id="bm-clusters" role="group" aria-label="Filter by Danantara sector"></div>
-  <div class="bm-field" id="bm-field">
-    <svg id="bm-grid" aria-hidden="true"></svg>
-    <div class="bm-q tl" id="bm-q-tl"></div><div class="bm-q tr" id="bm-q-tr"></div>
-    <div class="bm-q bl" id="bm-q-bl"></div><div class="bm-q br" id="bm-q-br"></div>
-    <div id="bm-labs"></div>
-    <div id="bm-badges"></div>
-    <div class="bm-card" id="bm-card" hidden role="dialog" aria-live="polite"></div>
+  <div class="bm-stage" id="bm-stage">
+    <div>
+      <div class="bm-field" id="bm-field">
+        <svg id="bm-grid" aria-hidden="true"></svg>
+        <div class="bm-q tl" id="bm-q-tl"></div><div class="bm-q tr" id="bm-q-tr"></div>
+        <div class="bm-q bl" id="bm-q-bl"></div><div class="bm-q br" id="bm-q-br"></div>
+        <div id="bm-labs"></div>
+        <div id="bm-badges"></div>
+      </div>
+      <div class="bm-foot" id="bm-foot"></div>
+    </div>
+    <aside class="bm-side" id="bm-side" aria-live="polite">
+      <div id="bm-idle"></div>
+      <div class="bm-card" id="bm-card" hidden role="dialog"></div>
+    </aside>
   </div>
-  <div class="bm-foot" id="bm-foot"></div>
 </section>
 <section class="wrap">
   <div class="eyebrow"><span class="sq"></span>ALL SCORES AND RANKS</div>
@@ -158,7 +177,7 @@ function page({ lang = 'en' }) {
   <details class="bm-m"><summary>Method, data dates and limits</summary>${method}</details>
 </section>
 <script type="application/json" id="bm-data">${JSON.stringify(D).replace(/</g, '\\u003c')}</script>
-<script src="/js/bumn1001.js?v=${V}" defer></script>`;
+<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
   const crumb = [{ name: '1001startup.id', path: '/' }, { name: 'BUMN', path: p }];
   const ld = {
     '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on six yardsticks',
