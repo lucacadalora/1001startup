@@ -35,6 +35,7 @@ const NAV = [
   { key: 'map', label: 'Map', id: 'Peta', href: '/map' },
   { key: 'chain', label: 'Supply chain', id: 'Rantai pasok', href: '/chain' },
   { key: 'investors', label: 'Investors', id: 'Investor', href: '/investors' },
+  { key: 'bumn', label: 'BUMN', id: 'BUMN', href: '/bumn' },
   {
     key: 'census', label: 'Census', id: 'Sensus', items: [
       { label: 'Sectors', id: 'Sektor', desc: 'The census grouped by what companies build', id_desc: 'Sensus dikelompokkan menurut apa yang dibangun tiap perusahaan', href: '/sector' },

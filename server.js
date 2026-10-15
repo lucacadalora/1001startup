@@ -616,6 +616,16 @@ fastify.get('/report/:edition', async (req, reply) => {
   if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
   reply.type('text/html').send(html);
 });
+/* /bumn — Indonesia's state companies on six yardsticks, as a logo quadrant
+   (views/bumn1001.js, data/bumn.json). English only for now: /id/bumn is not in
+   ID_READY, so it 302s here. */
+const bumn1001 = require('./views/bumn1001');
+fastify.get('/bumn', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const html = bumn1001.page({ lang: 'en' });
+  if (!html) return reply.code(503).type('text/plain').send('The BUMN data is being rebuilt. Try again in a minute.');
+  reply.type('text/html').send(html);
+});
 /* /about — who builds the census (views/about1001.js). /tentang is the
    Indonesian word people type; it 301s to the /id page of the same route. */
 const about1001 = require('./views/about1001');

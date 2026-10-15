@@ -156,7 +156,7 @@ function itemListLd(rows, lang) {
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`;
 }
 
-function shell({ title, desc, path, lang, body, ld, robots = 'index, follow' }) {
+function shell({ title, desc, path, lang, body, ld, robots = 'index, follow', active = 'census' }) {
   const L = I18N.mkL(lang);
   return `<!doctype html>
 <html lang="${lang}">
@@ -229,7 +229,7 @@ footer a{color:#52525B}
 </head>
 <body>
 <div class="banner">${L('WORKING DRAFT · PUBLIC SOURCES ONLY · EVERY DERIVED FIGURE IS A LABELED ESTIMATE', 'DOKUMEN KERJA · SUMBER PUBLIK SAJA · ANGKA TURUNAN SELALU BERLABEL ESTIMASI')}</div>
-${NAV.header('census', { lang, path, translated: true })}
+${NAV.header(active, { lang, path, translated: true })}
 ${body}
 <footer>
   <span>${L('1001startup.id — the census of Indonesian startups', '1001startup.id — sensus startup Indonesia')}</span>
