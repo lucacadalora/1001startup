@@ -133,7 +133,7 @@ function page({ lang = 'en' }) {
 <section class="hero">
   <div class="eyebrow"><span class="sq"></span>STATE COMPANIES · BUMN · ${esc(asof.toUpperCase())}</div>
   <h1>${esc(h1)}</h1>
-  <p class="sub">${n} BUMN placed on six yardsticks: finance, national priority, strategic weight, responsibility, prestige and risk. Pick two to see who sits where. Every score carries its reason and its source.</p>
+  <p class="sub">${n} BUMN on ten yardsticks: where their money comes from and how much they handle, then national priority, strategic weight, duty, reach, prestige and risk. Pick two to see who sits where. Every score carries its reason and its source.</p>
 </section>
 <div class="stats">${stats}</div>
 <section class="bm" style="padding-top:40px">
@@ -180,13 +180,13 @@ function page({ lang = 'en' }) {
 <script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
   const crumb = [{ name: '1001startup.id', path: '/' }, { name: 'BUMN', path: p }];
   const ld = {
-    '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on six yardsticks',
-    description: `${n} Indonesian state-owned enterprises (BUMN) scored 0–5 on finance, national priority, strategic weight, responsibility, prestige and risk, from public sources.`,
+    '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on ten yardsticks',
+    description: `${n} Indonesian state-owned enterprises (BUMN) scored 0–5 on balance sheet, money earned, state money, money handled, national priority, strategic weight, responsibility, people served, prestige and risk, from public sources.`,
     url: I18N.ORIGIN + p, dateModified: D.asof, creator: { '@type': 'Organization', name: '1001startup.id', url: I18N.ORIGIN + '/' },
   };
   return shell({
     title: 'Indonesia’s state companies (BUMN), mapped — 1001startup.id',
-    desc: `${n} BUMN on a logo quadrant: finance, national priority, strategic weight, responsibility, prestige and risk, each score sourced. Danantara era, ${asof}.`,
+    desc: `${n} BUMN on a logo quadrant: where their money comes from, how much they handle, national priority, strategic weight, duty, reach, prestige and risk, each score sourced. Danantara era, ${asof}.`,
     path: p, lang, body,
     ld: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` + SCHEMA.breadcrumbLd(lang, crumb),
   });
