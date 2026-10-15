@@ -35,10 +35,10 @@ const NAV = [
   { key: 'map', label: 'Map', id: 'Peta', href: '/map' },
   { key: 'chain', label: 'Supply chain', id: 'Rantai pasok', href: '/chain' },
   { key: 'investors', label: 'Investors', id: 'Investor', href: '/investors' },
-  { key: 'bumn', label: 'BUMN', id: 'BUMN', href: '/bumn' },
   {
     key: 'census', label: 'Census', id: 'Sensus', items: [
       { label: 'Sectors', id: 'Sektor', desc: 'The census grouped by what companies build', id_desc: 'Sensus dikelompokkan menurut apa yang dibangun tiap perusahaan', href: '/sector' },
+      { label: 'State companies (BUMN)', id: 'BUMN', desc: '42 BUMN on six yardsticks, as a logo quadrant', id_desc: '42 BUMN pada enam tolok ukur, dalam kuadran logo', href: '/bumn' },
       { label: 'The monthly report', id: 'Laporan bulanan', desc: 'Four findings from the census, figures frozen', id_desc: 'Empat temuan dari sensus, angkanya dibekukan', href: '/report' },
       { label: 'Billion-dollar startups', id: 'Startup unicorn', desc: 'Every census company valued at US$1B or more', id_desc: 'Perusahaan sensus bervaluasi US$1 miliar ke atas', href: '/unicorn' },
       { label: 'Valuation', id: 'Valuasi', desc: 'What the combined figure contains', id_desc: 'Isi angka valuasi gabungan', href: '/coverage#valuation' },

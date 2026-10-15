@@ -70,65 +70,75 @@
 
   function draw() {
     var W = field.clientWidth, narrow = W < 640;
-    var d = narrow ? 28 : (W < 760 ? 36 : 44);
+    var d = narrow ? 26 : (W < 760 ? 34 : 40);
     var kx = state.x, ky = state.y;
     var both = E.filter(function (e) { return e.scores[kx] != null && e.scores[ky] != null; });
     var noX = E.filter(function (e) { return e.scores[kx] == null && e.scores[ky] != null; });
     var noY = E.filter(function (e) { return e.scores[ky] == null && e.scores[kx] != null; });
-    var lane = noX.length ? d + (narrow ? 10 : 22) : 0, laneB = noY.length ? d + (narrow ? 10 : 22) : 0;
-    var axL = narrow ? 30 : 44, padR = d / 2 + 10, padT = d / 2 + 34, axB = d / 2 + (narrow ? 50 : 62);
-    var x0 = axL + lane + (lane ? 8 : 0);
-    var S = Math.max(160, Math.min(W - x0 - padR, 860));
-    var H = Math.round(padT + S + axB + laneB + (laneB ? 8 : 0));
+    /* the square runs from -0.5 to 5.5 on both axes, so the 0 and 5 rows have room on every side */
+    var LO = -0.5, HI = 5.5, SPAN = HI - LO;
+    var lane = noX.length ? d + (narrow ? 10 : 20) : 0;
+    var axL = narrow ? 28 : 40, gap = lane ? 8 : 0, padR = 10, padT = 30;
+    var x0 = axL + lane + gap;
+    var S = Math.max(180, Math.min(W - x0 - padR, 880));
+    var laneB = noY.length ? d + 16 : 0;
+    var H = Math.round(padT + S + (narrow ? 58 : 66) + laneB);
     field.style.height = H + 'px';
-    var X = function (v) { return x0 + (v / 5) * S; };
-    var Y = function (v) { return padT + S - (v / 5) * S; };
+    var unit = S / SPAN;
+    var X = function (v) { return x0 + ((v - LO) / SPAN) * S; };
+    var Y = function (v) { return padT + S - ((v - LO) / SPAN) * S; };
+    var top = Y(HI), bot = Y(LO), left = X(LO), right = X(HI);
     var mx = median(both.map(function (e) { return e.scores[kx]; })), my = median(both.map(function (e) { return e.scores[ky]; }));
     grid.replaceChildren(); grid.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
+    var mono = 'IBM Plex Mono, monospace';
     if (lane) {
-      grid.append(sv('rect', { x: axL - 2, y: padT - d / 2 - 6, width: lane, height: S + d + 12, fill: '#FFFFFF', stroke: '#C9CBC4', 'stroke-dasharray': '3 3' }));
-      var lt = sv('text', { x: axL - 2 + lane / 2, y: padT + S + d / 2 + 22, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': narrow ? 8.5 : 9.5, 'letter-spacing': '0.6' });
+      grid.append(sv('rect', { x: axL, y: top, width: lane, height: S, fill: 'none', stroke: '#C9CBC4', 'stroke-dasharray': '3 3' }));
+      var lt = sv('text', { x: axL + lane / 2, y: bot + 16, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': mono, 'font-size': narrow ? 8 : 9, 'letter-spacing': '0.5' });
       lt.textContent = narrow ? 'NO DATA' : 'NO FIGURES'; grid.append(lt);
     }
-    if (laneB) grid.append(sv('rect', { x: x0 - d / 2 - 6, y: padT + S + axB, width: S + d + 12, height: laneB, fill: '#FFFFFF', stroke: '#C9CBC4', 'stroke-dasharray': '3 3' }));
+    if (laneB) grid.append(sv('rect', { x: left, y: bot + 40, width: S, height: laneB, fill: 'none', stroke: '#C9CBC4', 'stroke-dasharray': '3 3' }));
+    grid.append(sv('rect', { x: left, y: top, width: S, height: S, fill: 'none', stroke: '#DADBD5', 'stroke-width': 1 }));
     for (var i = 0; i <= 5; i++) {
-      grid.append(sv('line', { x1: X(i), x2: X(i), y1: Y(0), y2: Y(5), stroke: '#EAEBE6', 'stroke-width': 1 }));
-      grid.append(sv('line', { x1: X(0), x2: X(5), y1: Y(i), y2: Y(i), stroke: '#EAEBE6', 'stroke-width': 1 }));
-      var tx = sv('text', { x: X(i), y: Y(0) + d / 2 + 22, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 10.5 }); tx.textContent = i; grid.append(tx);
-      var ty = sv('text', { x: X(0) - (lane ? lane + 14 : 8), y: Y(i) + 3.5, 'text-anchor': 'end', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 10.5 }); ty.textContent = i; grid.append(ty);
+      grid.append(sv('line', { x1: X(i), x2: X(i), y1: top, y2: bot, stroke: '#ECEDE8', 'stroke-width': 1 }));
+      grid.append(sv('line', { x1: left, x2: right, y1: Y(i), y2: Y(i), stroke: '#ECEDE8', 'stroke-width': 1 }));
+      var tx = sv('text', { x: X(i), y: bot + 16, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': mono, 'font-size': 10.5 }); tx.textContent = i; grid.append(tx);
+      var ty = sv('text', { x: axL - 8, y: Y(i) + 3.5, 'text-anchor': 'end', fill: '#6B6B73', 'font-family': mono, 'font-size': 10.5 }); ty.textContent = i; grid.append(ty);
     }
-    grid.append(sv('rect', { x: X(0), y: Y(5), width: S, height: S, fill: 'none', stroke: '#DADBD5', 'stroke-width': 1 }));
-    grid.append(sv('line', { x1: X(mx), x2: X(mx), y1: Y(0), y2: Y(5), stroke: '#B9BBB4', 'stroke-width': 1.5 }));
-    grid.append(sv('line', { x1: X(0), x2: X(5), y1: Y(my), y2: Y(my), stroke: '#B9BBB4', 'stroke-width': 1.5 }));
-    var xt = sv('text', { x: X(0) + S / 2, y: Y(0) + d / 2 + (narrow ? 44 : 54), 'text-anchor': 'middle', fill: '#3F3F46', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 11, 'letter-spacing': '1' });
+    grid.append(sv('line', { x1: X(mx), x2: X(mx), y1: top, y2: bot, stroke: '#B9BBB4', 'stroke-width': 1.5 }));
+    grid.append(sv('line', { x1: left, x2: right, y1: Y(my), y2: Y(my), stroke: '#B9BBB4', 'stroke-width': 1.5 }));
+    var xt = sv('text', { x: left + S / 2, y: bot + (narrow ? 50 : 56), 'text-anchor': 'middle', fill: '#3F3F46', 'font-family': mono, 'font-size': 11, 'letter-spacing': '1' });
     xt.textContent = (DIMS[kx].label + ' →').toUpperCase(); grid.append(xt);
-    var yt = sv('text', { x: 0, y: 0, 'text-anchor': 'end', fill: '#3F3F46', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 11, 'letter-spacing': '1', transform: 'translate(' + (narrow ? 10 : 13) + ',' + Y(5) + ') rotate(-90)' });
+    var yt = sv('text', { x: 0, y: 0, 'text-anchor': 'end', fill: '#3F3F46', 'font-family': mono, 'font-size': 11, 'letter-spacing': '1', transform: 'translate(' + (narrow ? 10 : 12) + ',' + top + ') rotate(-90)' });
     yt.textContent = (DIMS[ky].label + ' →').toUpperCase(); grid.append(yt);
     var p = state.preset >= 0 ? PRESETS[state.preset] : null;
     var lx = DIMS[kx].label.toLowerCase(), ly = DIMS[ky].label.toLowerCase();
     var qn = p && p.quads ? p.quads : { tl: 'High ' + ly + ', low ' + lx, tr: 'High on both', bl: 'Low on both', br: 'High ' + lx + ', low ' + ly };
     ['tl', 'tr', 'bl', 'br'].forEach(function (k) { $('#bm-q-' + k).textContent = qn[k]; });
     var q = function (k) { return $('#bm-q-' + k).style; };
-    q('tl').left = X(0) + 'px'; q('tl').top = (Y(5) - d / 2 - 22) + 'px'; q('tl').right = '';
-    q('tr').right = (W - X(5)) + 'px'; q('tr').top = (Y(5) - d / 2 - 22) + 'px';
-    q('bl').left = X(0) + 'px'; q('bl').top = (Y(0) + d / 2 + 30) + 'px'; q('bl').bottom = '';
-    q('br').right = (W - X(5)) + 'px'; q('br').top = (Y(0) + d / 2 + 30) + 'px'; q('br').bottom = '';
+    q('tl').left = left + 'px'; q('tl').top = (top - 20) + 'px'; q('tl').right = ''; q('tl').bottom = '';
+    q('tr').right = (W - right) + 'px'; q('tr').top = (top - 20) + 'px'; q('tr').bottom = '';
+    q('bl').left = left + 'px'; q('bl').top = (bot + 26) + 'px'; q('bl').bottom = '';
+    q('br').right = (W - right) + 'px'; q('br').top = (bot + 26) + 'px'; q('br').bottom = '';
 
-    /* exact spot first; overlapping badges step apart and keep a hairline to it */
-    var nodes = both.map(function (e) { var ax = X(e.scores[kx]), ay = Y(e.scores[ky]); return { e: e, ax: ax, ay: ay, x: ax, y: ay }; })
-      .concat(noX.map(function (e) { var ax = axL - 2 + lane / 2, ay = Y(e.scores[ky]); return { e: e, ax: ax, ay: ay, x: ax, y: ay, nd: 'x' }; }))
-      .concat(noY.map(function (e) { var ax = X(e.scores[kx]), ay = padT + S + axB + laneB / 2; return { e: e, ax: ax, ay: ay, x: ax, y: ay, nd: 'y' }; }));
+    /* exact spot first. Companies on the same score stack up to about two deep around their row
+       (a beeswarm), held close to their true x; a moved logo keeps a hairline to its exact dot. */
+    var band = 0.42 * unit;
+    var nodes = both.map(function (e, i) { var ax = X(e.scores[kx]), ay = Y(e.scores[ky]); return { e: e, ax: ax, ay: ay, x: ax, y: ay + ((i % 3) - 1) * 0.15 * band }; })
+      .concat(noX.map(function (e, i) { var ax = axL + lane / 2, ay = Y(e.scores[ky]); return { e: e, ax: ax, ay: ay, x: ax, y: ay + ((i % 2) ? 1 : -1) * 0.1 * band, nd: 'x' }; }))
+      .concat(noY.map(function (e) { var ax = X(e.scores[kx]), ay = bot + 40 + laneB / 2; return { e: e, ax: ax, ay: ay, x: ax, y: ay, nd: 'y' }; }));
     var r = d / 2 + 2;
-    for (var it = 0; it < 240; it++) {
+    for (var it = 0; it < 320; it++) {
       for (var a = 0; a < nodes.length; a++) for (var b2 = a + 1; b2 < nodes.length; b2++) {
         var A = nodes[a], B = nodes[b2], dx = B.x - A.x, dy = B.y - A.y, dist = Math.hypot(dx, dy);
         if (dist < 2 * r) { if (dist < 0.01) { dx = (b2 % 2 ? 1 : -1) * 0.5; dy = 0.5; dist = 0.7; }
           var push = (2 * r - dist) / 2, ux = dx / dist, uy = dy / dist; A.x -= ux * push; A.y -= uy * push; B.x += ux * push; B.y += uy * push; }
       }
       nodes.forEach(function (n) {
-        n.x += (n.ax - n.x) * 0.06; n.y += (n.ay - n.y) * 0.06;
+        n.x += (n.ax - n.x) * 0.07; n.y += (n.ay - n.y) * 0.012;
         if (n.nd === 'x') n.x = n.ax; else if (n.nd === 'y') n.y = n.ay;
-        n.x = Math.max(d / 2 + 2, Math.min(W - d / 2 - 2, n.x)); n.y = Math.max(d / 2 + 2, Math.min(H - d / 2 - 2, n.y));
+        if (n.nd !== 'y') n.y = Math.max(n.ay - band, Math.min(n.ay + band, n.y));
+        if (!n.nd) n.x = Math.max(left + d / 2 + 2, Math.min(right - d / 2 - 2, n.x));
+        n.y = Math.max(d / 2 + 2, Math.min(H - d / 2 - 2, n.y));
       });
     }
     nodes.forEach(function (n) {
@@ -138,12 +148,11 @@
     });
     Object.keys(badges).forEach(function (s) { badges[s].hidden = true; badges[s].classList.remove('nd'); });
     nodes.forEach(function (n) { var bb = badges[n.e.slug]; bb.hidden = false; bb.classList.toggle('nd', !!n.nd); bb.style.setProperty('--d', d + 'px'); bb.style.left = n.x + 'px'; bb.style.top = n.y + 'px'; });
-    /* names where they cover nothing, the heaviest companies first; lane names go on the open side */
+    /* names where they cover nothing (no logo, no axis number, no corner name), the heaviest companies first */
     ll.replaceChildren();
     var boxes = nodes.map(function (n) { return { x1: n.x - d / 2, y1: n.y - d / 2, x2: n.x + d / 2, y2: n.y + d / 2 }; });
-    /* keep names off the axis numbers and the lane tag */
-    for (var ti = 0; ti <= 5; ti++) boxes.push({ x1: X(ti) - 9, y1: Y(0) + d / 2 + 9, x2: X(ti) + 9, y2: Y(0) + d / 2 + 26 });
-    if (lane) boxes.push({ x1: axL - 2, y1: Y(0) + d / 2 + 9, x2: axL - 2 + lane, y2: Y(0) + d / 2 + 26 });
+    for (var ti = 0; ti <= 5; ti++) boxes.push({ x1: X(ti) - 9, y1: bot + 4, x2: X(ti) + 9, y2: bot + 22 });
+    if (lane) boxes.push({ x1: axL, y1: bot + 4, x2: axL + lane, y2: bot + 22 });
     var hit = function (qq) { return boxes.some(function (b) { return qq.x1 < b.x2 && qq.x2 > b.x1 && qq.y1 < b.y2 && qq.y2 > b.y1; }); };
     var meas = el('span', { class: 'bm-l', style: 'visibility:hidden' }); ll.append(meas);
     nodes.slice().sort(function (a, b) { return (b.nd ? 1 : 0) - (a.nd ? 1 : 0) || b.e.weight - a.e.weight; }).forEach(function (n) {
@@ -151,7 +160,7 @@
       var tries = [[n.x + d / 2 + 5, n.y - h / 2], [n.x - d / 2 - 5 - w, n.y - h / 2], [n.x - w / 2, n.y + d / 2 + 3], [n.x - w / 2, n.y - d / 2 - 3 - h]];
       for (var t = 0; t < tries.length; t++) {
         var qq = { x1: tries[t][0] - 1, y1: tries[t][1] - 1, x2: tries[t][0] + w + 1, y2: tries[t][1] + h + 1 };
-        if (qq.x1 < 2 || qq.x2 > W - 2 || qq.y1 < 2 || qq.y2 > H - 2 || hit(qq)) continue;
+        if (qq.x1 < 2 || qq.x2 > W - 2 || qq.y1 < top - 2 || qq.y2 > bot + 2 || hit(qq)) continue;
         ll.append(el('span', { class: 'bm-l', text: n.e.short, 'data-slug': n.e.slug, style: 'left:' + tries[t][0] + 'px;top:' + tries[t][1] + 'px' }));
         boxes.push(qq); break;
       }
@@ -162,7 +171,6 @@
       el('span', null, el('b', { text: String(both.length) }), ' of ' + N + ' placed by score'));
     if (noX.length || noY.length) foot.append(el('span', { text: '/' }), el('span', null, el('b', { text: String(noX.length + noY.length) }), ' in the dashed lane: no published figures'));
     foot.append(el('span', { text: '/' }), el('span', { text: 'Equal 0–5 scales; lines at the median' }));
-    /* the side panel at rest: who sits in which corner */
     var cnt = { tl: [], tr: [], bl: [], br: [] };
     both.forEach(function (e) { var hx = e.scores[kx] >= mx, hy = e.scores[ky] >= my; cnt[(hy ? 't' : 'b') + (hx ? 'r' : 'l')].push(e); });
     last.quads = { qn: qn, cnt: cnt, nd: noX.concat(noY), kx: kx, ky: ky };

@@ -187,7 +187,7 @@ function page({ lang = 'en' }) {
   return shell({
     title: 'Indonesia’s state companies (BUMN), mapped — 1001startup.id',
     desc: `${n} BUMN on a logo quadrant: finance, national priority, strategic weight, responsibility, prestige and risk, each score sourced. Danantara era, ${asof}.`,
-    path: p, lang, body, active: 'bumn',
+    path: p, lang, body,
     ld: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` + SCHEMA.breadcrumbLd(lang, crumb),
   });
 }
