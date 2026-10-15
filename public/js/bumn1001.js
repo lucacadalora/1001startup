@@ -76,7 +76,7 @@
     var noX = E.filter(function (e) { return e.scores[kx] == null && e.scores[ky] != null; });
     var noY = E.filter(function (e) { return e.scores[ky] == null && e.scores[kx] != null; });
     var lane = noX.length ? d + (narrow ? 10 : 22) : 0, laneB = noY.length ? d + (narrow ? 10 : 22) : 0;
-    var axL = narrow ? 30 : 44, padR = d / 2 + 10, padT = d / 2 + 34, axB = narrow ? 40 : 50;
+    var axL = narrow ? 30 : 44, padR = d / 2 + 10, padT = d / 2 + 34, axB = d / 2 + (narrow ? 50 : 62);
     var x0 = axL + lane + (lane ? 8 : 0);
     var S = Math.max(160, Math.min(W - x0 - padR, 860));
     var H = Math.round(padT + S + axB + laneB + (laneB ? 8 : 0));
@@ -87,20 +87,20 @@
     grid.replaceChildren(); grid.setAttribute('viewBox', '0 0 ' + W + ' ' + H);
     if (lane) {
       grid.append(sv('rect', { x: axL - 2, y: padT - d / 2 - 6, width: lane, height: S + d + 12, fill: '#FFFFFF', stroke: '#C9CBC4', 'stroke-dasharray': '3 3' }));
-      var lt = sv('text', { x: axL - 2 + lane / 2, y: padT - d / 2 - 12, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': narrow ? 8.5 : 9.5, 'letter-spacing': '0.6' });
+      var lt = sv('text', { x: axL - 2 + lane / 2, y: padT + S + d / 2 + 22, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': narrow ? 8.5 : 9.5, 'letter-spacing': '0.6' });
       lt.textContent = narrow ? 'NO DATA' : 'NO FIGURES'; grid.append(lt);
     }
     if (laneB) grid.append(sv('rect', { x: x0 - d / 2 - 6, y: padT + S + axB, width: S + d + 12, height: laneB, fill: '#FFFFFF', stroke: '#C9CBC4', 'stroke-dasharray': '3 3' }));
     for (var i = 0; i <= 5; i++) {
       grid.append(sv('line', { x1: X(i), x2: X(i), y1: Y(0), y2: Y(5), stroke: '#EAEBE6', 'stroke-width': 1 }));
       grid.append(sv('line', { x1: X(0), x2: X(5), y1: Y(i), y2: Y(i), stroke: '#EAEBE6', 'stroke-width': 1 }));
-      var tx = sv('text', { x: X(i), y: Y(0) + 16, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 10.5 }); tx.textContent = i; grid.append(tx);
+      var tx = sv('text', { x: X(i), y: Y(0) + d / 2 + 22, 'text-anchor': 'middle', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 10.5 }); tx.textContent = i; grid.append(tx);
       var ty = sv('text', { x: X(0) - (lane ? lane + 14 : 8), y: Y(i) + 3.5, 'text-anchor': 'end', fill: '#6B6B73', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 10.5 }); ty.textContent = i; grid.append(ty);
     }
     grid.append(sv('rect', { x: X(0), y: Y(5), width: S, height: S, fill: 'none', stroke: '#DADBD5', 'stroke-width': 1 }));
     grid.append(sv('line', { x1: X(mx), x2: X(mx), y1: Y(0), y2: Y(5), stroke: '#B9BBB4', 'stroke-width': 1.5 }));
     grid.append(sv('line', { x1: X(0), x2: X(5), y1: Y(my), y2: Y(my), stroke: '#B9BBB4', 'stroke-width': 1.5 }));
-    var xt = sv('text', { x: X(5), y: Y(0) + 34, 'text-anchor': 'end', fill: '#3F3F46', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 11, 'letter-spacing': '1' });
+    var xt = sv('text', { x: X(0) + S / 2, y: Y(0) + d / 2 + (narrow ? 44 : 54), 'text-anchor': 'middle', fill: '#3F3F46', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 11, 'letter-spacing': '1' });
     xt.textContent = (DIMS[kx].label + ' →').toUpperCase(); grid.append(xt);
     var yt = sv('text', { x: 0, y: 0, 'text-anchor': 'end', fill: '#3F3F46', 'font-family': 'IBM Plex Mono, monospace', 'font-size': 11, 'letter-spacing': '1', transform: 'translate(' + (narrow ? 10 : 13) + ',' + Y(5) + ') rotate(-90)' });
     yt.textContent = (DIMS[ky].label + ' →').toUpperCase(); grid.append(yt);
@@ -111,8 +111,8 @@
     var q = function (k) { return $('#bm-q-' + k).style; };
     q('tl').left = X(0) + 'px'; q('tl').top = (Y(5) - d / 2 - 22) + 'px'; q('tl').right = '';
     q('tr').right = (W - X(5)) + 'px'; q('tr').top = (Y(5) - d / 2 - 22) + 'px';
-    q('bl').left = (X(0) + 8) + 'px'; q('bl').bottom = (H - Y(0) + 6) + 'px';
-    q('br').right = (W - X(5) + 8) + 'px'; q('br').bottom = (H - Y(0) + 6) + 'px';
+    q('bl').left = X(0) + 'px'; q('bl').top = (Y(0) + d / 2 + 30) + 'px'; q('bl').bottom = '';
+    q('br').right = (W - X(5)) + 'px'; q('br').top = (Y(0) + d / 2 + 30) + 'px'; q('br').bottom = '';
 
     /* exact spot first; overlapping badges step apart and keep a hairline to it */
     var nodes = both.map(function (e) { var ax = X(e.scores[kx]), ay = Y(e.scores[ky]); return { e: e, ax: ax, ay: ay, x: ax, y: ay }; })
@@ -141,6 +141,9 @@
     /* names where they cover nothing, the heaviest companies first; lane names go on the open side */
     ll.replaceChildren();
     var boxes = nodes.map(function (n) { return { x1: n.x - d / 2, y1: n.y - d / 2, x2: n.x + d / 2, y2: n.y + d / 2 }; });
+    /* keep names off the axis numbers and the lane tag */
+    for (var ti = 0; ti <= 5; ti++) boxes.push({ x1: X(ti) - 9, y1: Y(0) + d / 2 + 9, x2: X(ti) + 9, y2: Y(0) + d / 2 + 26 });
+    if (lane) boxes.push({ x1: axL - 2, y1: Y(0) + d / 2 + 9, x2: axL - 2 + lane, y2: Y(0) + d / 2 + 26 });
     var hit = function (qq) { return boxes.some(function (b) { return qq.x1 < b.x2 && qq.x2 > b.x1 && qq.y1 < b.y2 && qq.y2 > b.y1; }); };
     var meas = el('span', { class: 'bm-l', style: 'visibility:hidden' }); ll.append(meas);
     nodes.slice().sort(function (a, b) { return (b.nd ? 1 : 0) - (a.nd ? 1 : 0) || b.e.weight - a.e.weight; }).forEach(function (n) {
