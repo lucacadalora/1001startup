@@ -1,0 +1,357 @@
+[
+ {
+  "name": "PT Risa Implantama",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Timur",
+  "city": "Surabaya",
+  "capabilities": [
+   "CNC milling",
+   "CNC turning",
+   "wire EDM",
+   "multi-axis machining of Ti-6Al-4V implants"
+  ],
+  "serves": [
+   "orthopaedic surgeons",
+   "hospitals nationwide"
+  ],
+  "makes": "OSFIX orthopaedic implants: locking plates, cortical and compression screws, trauma systems; bone plates TKDN 30-40%",
+  "size_note": "Established 1993 (company site); headcount not stated",
+  "certs": [
+   "ISO 13485:2016",
+   "ISO 9001:2015",
+   "CPAKB",
+   "ISO 45001:2018",
+   "TKDN certificates (bone plates 30-40%)"
+  ],
+  "website": "https://www.risaimplantama.com/",
+  "source_url": "https://www.risaimplantama.com/",
+  "source_type": "company_site",
+  "evidence": "Site lists CNC milling, wire EDM and CNC lathes, 'multi-axis precision machining for Ti-6Al-4V implants', ISO 13485:2016; established 1993.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Marthys Orthopaedic Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Timur",
+  "city": "Kabupaten Pasuruan (Prigen)",
+  "capabilities": [
+   "titanium and stainless implant machining",
+   "spinal pedicle screws and rods",
+   "cranio-maxillofacial plates",
+   "orthopaedic instrument sets"
+  ],
+  "serves": [
+   "hospitals",
+   "orthopaedic surgeons"
+  ],
+  "makes": "50 TKDN-certified products: titanium locking plates, bone screws, pedicle screws, spinal fixation, bipolar hip prosthesis, CMF plates, instruments",
+  "size_note": "Dec 2022: one Japanese machine (Rp3.6bn) limited it to a ~15% share target; CEO said more machines could take it above 50% (Warta Ekonomi, 2022, older than 2023)",
+  "certs": [
+   "TKDN certificates 42.07-98.29%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=EpRVwBhWrwzj56TcMU0J5niac5kjkfZwlo9O1H2ih5M,",
+  "source_type": "government",
+  "evidence": "TKDN registry: 50 products in Prigen, Pasuruan; e.g. titanium mini locking plate 90.89%, bone screw 93.71%, polyaxial pedicle screw 56.29%.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Eka Ormed Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Timur",
+  "city": "Kabupaten Sidoarjo (Gedangan)",
+  "capabilities": [
+   "SS 316L bone plates and screws",
+   "intramedullary nails",
+   "external fixators in aluminium 7075",
+   "hemi-hip and shoulder prostheses"
+  ],
+  "serves": [
+   "hospitals"
+  ],
+  "makes": "ORMED / Ortho 1st trauma implants: bone screws (TKDN 64-75%), fragment plates (55-80%), Kuntscher nails (60%), ex-fix (46-52%), hemi-hip prostheses (43-47%)",
+  "size_note": "At least 20 certified products across two certificates; headcount not stated",
+  "certs": [
+   "TKDN certificates 16-80%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=PugHsrVIhIl383YRgR_ihPdd-W2lma4vB8NUAYWGB5s,&id_siinas=PugHsrVIhIl383YRgR_ihPdd-W2lma4vB8NUAYWGB5s,",
+  "source_type": "government",
+  "evidence": "TKDN registry: ORMED bone screws 1.5-6.5 mm, small fragment plate 80.17%, Kuntscher nails 60.40%; address Gedangan, Sidoarjo.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Indonesia Teknologi Rotnhkard (spelling as in TKDN registry)",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Tengah",
+  "city": "Kota Semarang (Genuk)",
+  "capabilities": [
+   "bone plates",
+   "bone screws"
+  ],
+  "serves": [
+   "hospitals"
+  ],
+  "makes": "168 bone-plate items (TKDN 38%) and 30 bone-screw items (TKDN 40%)",
+  "size_note": "Headcount not stated",
+  "certs": [
+   "TKDN certificates 38-40%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=WuFYALGmI5RWBjUApdt036QPMqAUG2B1200D4jrQE3U,&id_siinas=WuFYALGmI5RWBjUApdt036QPMqAUG2B1200D4jrQE3U,",
+  "source_type": "government",
+  "evidence": "TKDN registry: 168 bone-plate items at 38% and 30 bone-screw items at 40%; address Genuk, Kota Semarang.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT ATMI Solo",
+  "kind": "machinery_maker",
+  "province": "Jawa Tengah",
+  "city": "Kota Surakarta",
+  "capabilities": [
+   "CNC lathe building",
+   "medical equipment assembly",
+   "sheet-metal workshop furniture"
+  ],
+  "serves": [
+   "hospitals",
+   "dental clinics",
+   "SMK and polytechnic workshops"
+  ],
+  "makes": "Leanturn LT 300-100 CNC lathe (TKDN 45.66%); KIRANA DENTECH dental chairs (42.6-44.1%); operating tables, lamps, pumps (30-41%)",
+  "size_note": "30 TKDN-certified products; headcount not stated",
+  "certs": [
+   "TKDN certificates 30.3-56.8%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=TD0-6DjhrrPpmPfx_gGPuJ5XKuofdJu6NARuTr6XKik,",
+  "source_type": "government",
+  "evidence": "TKDN registry lists CNC Machine LEANTURN LT 300-100 at 45.66% and three KIRANA DENTECH dental chairs at 42.63-44.08%.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Bentara Tabang Nusantara",
+  "kind": "machinery_maker",
+  "province": "Jawa Barat",
+  "city": "Kabupaten Bandung (Katapang)",
+  "capabilities": [
+   "multirotor UAV",
+   "quad-plane VTOL UAV",
+   "tilt-rotor VTOL UAV"
+  ],
+  "serves": [
+   "government and survey users (buyers not stated)"
+  ],
+  "makes": "Drones LIOS (TKDN 56.17%), Omnibe (56.79%), Raybe (50.53%)",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificates 50.53-56.79%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=o3dwi9iGbTFwS_hJLuQG_MsxFVfo4r_zfbEABtAtiTY,",
+  "source_type": "government",
+  "evidence": "TKDN registry: three drones, LIOS 3 kg payload multirotor, Omnibe quad-plane VTOL up to 150 min, Raybe tilt-rotor; Katapang, Bandung Regency.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Bandung Mekatronika Teknologi",
+  "kind": "machinery_maker",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung (Gedebage)",
+  "capabilities": [
+   "heavy-lift agricultural multirotor drones"
+  ],
+  "serves": [
+   "agriculture and plantations (inferred from 50-100 L payload)"
+  ],
+  "makes": "Mechatron hexacopter (100 kg/100 L, TKDN 46.12%) and quadcopter (50 kg/50 L, 47.92%)",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificates 46.12-47.92%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=7oQek6yUY-mAI_uoURSp9DsHHGmTMFYzTTgowOLHrpQ,",
+  "source_type": "government",
+  "evidence": "TKDN registry: Mechatron hexacopter, 100 kg / 100 litre capacity, 46.12%; quadcopter 50 kg, 47.92%; Gedebage, Kota Bandung.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Aerotek Global Inovasi",
+  "kind": "machinery_maker",
+  "province": "DI Yogyakarta",
+  "city": "Kota Yogyakarta",
+  "capabilities": [
+   "fixed-wing VTOL UAV with surveillance software"
+  ],
+  "serves": [
+   "surveillance users (buyers not stated)"
+  ],
+  "makes": "BVD-V25 fixed-wing VTOL drone, 1 kg payload, 90 km range (TKDN 41.19%)",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificate 41.19%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=IVrnXpBAYKEOP8ZfGBiUy4Lnt88TbiCcVpTMGwPOyj0,",
+  "source_type": "government",
+  "evidence": "TKDN registry: fixed-wing VTOL drone BVD-V25, 1 kg payload, 90 km range, web surveillance app, 41.19%; Wirobrajan, Yogyakarta.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Dgnet Indonesia",
+  "kind": "machinery_maker",
+  "province": "Banten",
+  "city": "Kabupaten Tangerang (Tigaraksa)",
+  "capabilities": [
+   "six-rotor agricultural spray drones"
+  ],
+  "serves": [
+   "agriculture and plantations"
+  ],
+  "makes": "DGSpray 16 L and 20 L sprayer drones (TKDN 44.53-44.83%)",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificates 44.53-44.83%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=dE_cl58GsST19qTdFWygxDpLtUy2q_UOOyB5OqGraI0,",
+  "source_type": "government",
+  "evidence": "TKDN registry: farm and plantation sprayer drones, 6 propellers, 16 L and 20 L tanks, 44.53-44.83%; Tigaraksa industrial estate, Tangerang.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Ener Sky Innovation",
+  "kind": "machinery_maker",
+  "province": "Banten",
+  "city": "Kabupaten Serang (Cikande)",
+  "capabilities": [
+   "agricultural spray drones"
+  ],
+  "serves": [
+   "agriculture"
+  ],
+  "makes": "Enersky agricultural drones Ener 16 P and Ener 20 P (TKDN 33.98-35.28%; one entry shows an invalid 999.99%)",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificates 33.98-35.28%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ibxpsaMWUChHjsnAKAE11mxyQIV2z2iVgz-Yo1oH0IU,",
+  "source_type": "government",
+  "evidence": "TKDN registry: Drone Pertanian Ener 20 P 33.98% and Ener 16 P 35.28%; one Ener 16 P entry shows 999.99% (data error).",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Corin Mulia Gemilang",
+  "kind": "machinery_maker",
+  "province": "Jawa Timur",
+  "city": "Kabupaten Sidoarjo (Balongbendo)",
+  "capabilities": [
+   "agricultural drones under the MAXXI brand"
+  ],
+  "serves": [
+   "agriculture"
+  ],
+  "makes": "MAXXI Antasena 21 L sprayer drone (TKDN 31.38%) and MAXXI-branded XAG P60 (25.68%)",
+  "size_note": "Low TKDN and an XAG model name suggest local assembly of a Chinese design (inference); headcount not stated",
+  "certs": [
+   "TKDN certificates 25.68-31.38%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=bUh4iLgyYxrxoj4ZJMN-d90QlZ2Hkd9vaH9v3InNBlI,",
+  "source_type": "government",
+  "evidence": "TKDN registry: PUTA type XAG P60 brand MAXXI 25.68%; Antasena drone sprayer 21 L 31.38%; Balongbendo, Sidoarjo.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Alpha Karya Mechatronics",
+  "kind": "3d_printer_maker",
+  "province": "Banten",
+  "city": "Kota Tangerang Selatan (Setu, BSD Taman Tekno)",
+  "capabilities": [
+   "3D printer building (FDM, type AM-22)",
+   "3-axis CNC router building (AM-1212)"
+  ],
+  "serves": [
+   "buyers via TKDN-preferred procurement (customers not stated)"
+  ],
+  "makes": "Printer 3D AM-22 (TKDN 27.03%) and CNC milling/router AM-1212 for acrylic, ACP and wood (26.01%)",
+  "size_note": "One of three TKDN-certified 3D printers nationally (the others: Metafuse, Bandung; Acta Techno Inava, Sleman, per sibling notes); headcount not stated",
+  "certs": [
+   "TKDN certificates 26.01-27.03%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zXV8M70fzNbgYsIXihDSIXRszHX4bduAwqshsNMjTo8,",
+  "source_type": "government",
+  "evidence": "TKDN registry: Printer 3D type AM-22 at 27.03% and CNC milling AM-1212 Router 3 Axis at 26.01%; Taman Tekno BSD, Setu.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Iter Aero Industri",
+  "kind": "machinery_maker",
+  "province": "Jawa Barat",
+  "city": "Kabupaten Bandung (Katapang)",
+  "capabilities": [
+   "agricultural multirotor spraying and spreading drones"
+  ],
+  "serves": [
+   "agriculture and plantations"
+  ],
+  "makes": "Agricultural sprayer drone (TKDN 56.45%)",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificate 56.45%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ZbzCHrmki4Xkl7N3dEmnMtLemiYemGRoskJ5aAoO8Kk,",
+  "source_type": "government",
+  "evidence": "TKDN registry: Pesawat Tanpa Awak Sprayer for farms and plantations, 56.45%; address Cilampeni, Katapang, Bandung Regency.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Udara Maya Solusindo",
+  "kind": "machinery_maker",
+  "province": "Banten",
+  "city": "Kabupaten Serang (Cikande)",
+  "capabilities": [
+   "fixed-wing VTOL UAS",
+   "radio base-station units",
+   "body-worn cameras"
+  ],
+  "serves": [
+   "surveillance and security users (buyers not stated)"
+  ],
+  "makes": "Aruna Unmanned Aerial System, fixed-wing VTOL (TKDN 40.30%); base-station remote unit 30.20%; body-worn camera 26.25%",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificates 26.25-40.30%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Nfpm__VL5e_r9VL4N9gHfpHj95WkIAkmi5Ccm4p8knQ,",
+  "source_type": "government",
+  "evidence": "TKDN registry: Aruna Unmanned Aerial System fixed-wing VTOL 40.30%; Modern Cikande industrial estate, Serang Regency.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Laksita Karya Dirga",
+  "kind": "machinery_maker",
+  "province": "DI Yogyakarta",
+  "city": "Kabupaten Bantul (Palbapang)",
+  "capabilities": [
+   "VTOL surveillance UAV"
+  ],
+  "serves": [
+   "surveillance users (buyers not stated)"
+  ],
+  "makes": "UAV PALAPA S-1 VTOL surveillance drone (TKDN 19.79%)",
+  "size_note": "UAV maker; 'machinery_maker' is the nearest kind value; headcount not stated",
+  "certs": [
+   "TKDN certificate 19.79%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=44PKVJi2T8i66azxR9_SHSwlP54X29T7nxEQ0CWUhqg,",
+  "source_type": "government",
+  "evidence": "TKDN registry: Drone (VTOL Surveillance Drone) UAV PALAPA S-1, 19.79%; address Palbapang, Bantul, DI Yogyakarta.",
+  "source_year": 2026
+ }
+]

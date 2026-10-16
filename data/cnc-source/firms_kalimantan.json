@@ -1,0 +1,306 @@
+[
+  {
+    "name": "PT Komatsu Remanufacturing Asia (KRA)",
+    "kind": "machinery_maker",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "component rebuild"
+    ],
+    "serves": [
+      "coal mining",
+      "heavy equipment (Komatsu fleets)"
+    ],
+    "makes": "Remanufactures and assembles heavy-equipment engines, transmissions, torque converters, power modules and final drives",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.disnakerja.com/lowongan-kerja-pt-komatsu-remanufacturing-asia/",
+    "source_type": "directory",
+    "evidence": "Job listing: joint venture of United Tractors and Komatsu Indonesia, located in Balikpapan since 1996, remanufacturing engines, transmissions and final drives.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Trakindo Utama - Component Rebuild Centre Balikpapan",
+    "kind": "machinery_maker",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "component rebuild"
+    ],
+    "serves": [
+      "coal mining",
+      "oil and gas",
+      "heavy equipment (Caterpillar fleets)"
+    ],
+    "makes": "Rebuild of Caterpillar machine components (disassembly, inspection, assembly and testing)",
+    "size_note": null,
+    "certs": [],
+    "website": "https://trakindo.co.id",
+    "source_url": "https://careers.trakindo.co.id/job/CRC-Balikpapan-Component-Rebuild-Mechanic/1365382066/",
+    "source_type": "company_site",
+    "evidence": "Trakindo careers posting 'CRC Balikpapan Component Rebuild Mechanic' dated 5 Aug 2026; Trakindo says it runs 4 Component Rebuild Centres nationally.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Liebherr Indonesia Perkasa - Balikpapan remanufacturing centre",
+    "kind": "machinery_maker",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "component rebuild"
+    ],
+    "serves": [
+      "coal mining"
+    ],
+    "makes": "Remanufactures Liebherr mining-machine engines, gearboxes and hydraulic cylinders",
+    "size_note": "3,800 m2 building incl. 2,650 m2 workshop (opened Feb 2025)",
+    "certs": [],
+    "website": "https://www.liebherr.com",
+    "source_url": "https://www.liebherr.com/en-es/mining-equipment/news/groundbreaking-magazine/growing-and-expanding-with-liebherr-indonesia-7549277",
+    "source_type": "company_site",
+    "evidence": "Liebherr says its Balikpapan remanufacturing centre, inaugurated February 2025, rebuilds engines, gearboxes and hydraulic cylinders; one of 12 such centres worldwide.",
+    "source_year": 2025
+  },
+  {
+    "name": "Sulzer Balikpapan Service Center",
+    "kind": "cnc_job_shop",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "machining (machine shop)",
+      "dynamic balancing",
+      "component rebuild"
+    ],
+    "serves": [
+      "oil and gas",
+      "mining",
+      "power generation",
+      "petrochemical"
+    ],
+    "makes": "Repair and overhaul of pumps, motors, generators, small steam turbines and centrifugal compressors; machine shop and rewinding",
+    "size_note": "Cranage up to 10 t; dynamic balancing up to 5 t",
+    "certs": [],
+    "website": "https://www.sulzer.com",
+    "source_url": "https://www.sulzer.com/en/shared/services/balikpapan-service-center",
+    "source_type": "company_site",
+    "evidence": "Sulzer page: equipped machine shop, LV-MV-HV rewinding, balancing to 5 tonnes, onshore/offshore pump and turbine repair; CNC not mentioned; page undated.",
+    "source_year": null
+  },
+  {
+    "name": "PT Duma Nusatama",
+    "kind": "cnc_job_shop",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "CNC turning",
+      "milling",
+      "horizontal boring",
+      "honing",
+      "grinding",
+      "hard chrome plating",
+      "thermal spray",
+      "hardfacing",
+      "component rebuild"
+    ],
+    "serves": [
+      "oil and gas",
+      "mining",
+      "marine",
+      "general industry"
+    ],
+    "makes": "Re-chroming, thermal spray and hardfacing repair of hydraulic components, shafts, plungers, screws, sleeves and impellers",
+    "size_note": null,
+    "certs": [
+      "ISO 9001:2008",
+      "SKT Migas",
+      "SKT Pertambangan"
+    ],
+    "website": "https://www.dumachrome.com",
+    "source_url": "https://www.dumachrome.com/workshop-facilities/",
+    "source_type": "company_site",
+    "evidence": "Company site lists Balikpapan workshop (Jl. Mulawarman Km 19) with CNC vertical lathe, horizontal boring, honing, chroming tanks and arc spray.",
+    "source_year": null
+  },
+  {
+    "name": "PT Mulia Jaya Mandiri",
+    "kind": "precision_parts_supplier",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "machining of wellhead and downhole parts (inferred from certified products)"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Wellhead and X-mas tree components (AISI 4130), liner hangers, crossovers (AISI 4140), flow couplings, casing/tubing accessories, gate and choke valves",
+    "size_note": null,
+    "certs": [
+      "TKDN 55.73% (wellhead/X-mas tree component)",
+      "TKDN 52.18% (crossover)",
+      "TKDN 46.81% (liner hanger)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=mulia+jaya+mandiri",
+    "source_type": "government",
+    "evidence": "Kemenperin TKDN database: Balikpapan Utara address; certificates for wellhead/X-mas tree components, liner hanger, crossovers and flow couplings, 26.5-55.7% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sagatrade Murni",
+    "kind": "precision_parts_supplier",
+    "province": "Kalimantan Timur",
+    "city": "Kota Samarinda",
+    "capabilities": [
+      "machining of downhole completion tools (inferred from certified products)"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Cementing equipment (API 10D), liner hangers and adapters, tieback packers, bridge plugs, sliding sleeves, on-off tools, flow couplings",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 67.47% (cementing equipment)",
+      "TKDN 40.68-46.17% (completion tools)"
+    ],
+    "website": "https://www.sagatrade.co.id",
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=sagatrade+murni",
+    "source_type": "government",
+    "evidence": "Kemenperin TKDN database: Samarinda (Logpond Selili) address; certificates for cementing equipment to API 10D and completion tools, 40.7-67.5% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Besmindo Borneo Semesta",
+    "kind": "precision_parts_supplier",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "heat treatment"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "OCTG tubing 2-7/8 to 3-1/2 inch: L80 heat-treated and J55",
+    "size_note": null,
+    "certs": [
+      "TKDN 54.71% (L80 heat-treated tubing)",
+      "TKDN 55.32% (J55 tubing)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=besmindo+borneo",
+    "source_type": "government",
+    "evidence": "Kemenperin TKDN database: Jl. Mulawarman 49, Manggar, Balikpapan; certificates for L80 heat-treated and J55 oil-well tubing, about 55% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Grace Technic",
+    "kind": "precision_parts_supplier",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "machining of wellhead parts (inferred from certified product)"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Tubing pack-off assemblies, 2-7/8 to 4-1/2 inch",
+    "size_note": null,
+    "certs": [
+      "TKDN 25.00% (tubing pack-off)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=grace+technic",
+    "source_type": "government",
+    "evidence": "Kemenperin TKDN database: Jl. Mulawarman, Manggar, Balikpapan Timur; certificate for tubing pack-off 2-7/8 to 4-1/2 inch at 25% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bhumi Phala Perkasa",
+    "kind": "machinery_maker",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "component rebuild",
+      "fabrication"
+    ],
+    "serves": [
+      "oil and gas",
+      "mining"
+    ],
+    "makes": "API centrifugal (between-bearing, overhung, vertical), reciprocating and fire-pump packages; workshop repair of mechanical equipment",
+    "size_note": "51-200 employees (directory, snippet)",
+    "certs": [
+      "TKDN 26.38-29.96% (pump packages)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=bhumi+phala",
+    "source_type": "government",
+    "evidence": "Kemenperin TKDN database: Batakan-Manggar, Balikpapan; five pump-package certificates (BB, OH, VS, reciprocating, fire pump) at 26-30% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Gazali Bawavi",
+    "kind": "cnc_job_shop",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "machining",
+      "steel fabrication"
+    ],
+    "serves": [
+      "oil and gas",
+      "mining"
+    ],
+    "makes": "Customised oil and gas tools; machine shop and steel fabrication",
+    "size_note": "About 200 employees (directory, snippet)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.rigzone.com/directory/company/25482/PT-Gazali-Bawavi/",
+    "source_type": "directory",
+    "evidence": "Snippet of Rigzone directory: Manggar, Balikpapan firm for customised oil and gas tools, mining and machining; machine shop and steel fabrication. Page returned 403.",
+    "source_year": null
+  },
+  {
+    "name": "OMS Oilfield Services (Balikpapan)",
+    "kind": "cnc_job_shop",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "precision machining",
+      "welding",
+      "component rebuild"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Oilfield equipment repair and remanufacturing, welding and precision machining",
+    "size_note": "51-100 employees (directory, snippet)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://id.jobstreet.com/id/companies/oms-oilfield-services-168554169296284",
+    "source_type": "directory",
+    "evidence": "Snippet of JobStreet company profile: oilfield services firm at Jl. Mulawarman 115, Balikpapan offering repair, remanufacturing, welding and precision machining.",
+    "source_year": null
+  },
+  {
+    "name": "PT Indotruck Utama - Component Rebuild Centre Balikpapan (Volvo)",
+    "kind": "machinery_maker",
+    "province": "Kalimantan Timur",
+    "city": "Kota Balikpapan",
+    "capabilities": [
+      "component rebuild"
+    ],
+    "serves": [
+      "mining",
+      "heavy equipment (Volvo fleets)"
+    ],
+    "makes": "Component rebuild centre with a 1,500 HP engine test bench (reported under construction)",
+    "size_note": null,
+    "certs": [],
+    "website": "https://indotruck-utama.co.id",
+    "source_url": "https://indotruck-utama.co.id/technical-parts-support",
+    "source_type": "company_site",
+    "evidence": "Snippet of dealer page: 'Balikpapan CRC on progress construction' with 1500 HP engine test bench; page date unclear; fetch returned 403.",
+    "source_year": null
+  }
+]

@@ -1,0 +1,331 @@
+[
+  {
+    "province": "Jawa Tengah",
+    "area": "Klaten–Solo Raya",
+    "level": "cluster",
+    "focus": {
+      "product": "Finish-machined iron castings for water and fire networks: valves, hydrant pillars and bodies, flanged pipe fittings and pump housings (Ceper foundry cluster)",
+      "hs": [
+        "848180",
+        "848190",
+        "730711",
+        "730719",
+        "841391"
+      ],
+      "why": "Kemenperin calls Ceper one of Indonesia's largest foundry centres (260 firms, 3,500 workers in 2016; Koperasi Batur Jaya had 168 members and >4,000 workers in 2019). On 16 Oct 2026, 27 firms in Kecamatan Ceper held TKDN certificates, among them gate valves and hydrant pillars (PT Baja Kurnia), flanges and dismantling joints ND50-1200 (PT Atmaja Jaya), pipe fittings (PT Aneka Adhilogam Karya), pump castings (CV Samudera Steel) and 130-200 mm crank arms and bearing housings (CV Aneka Metal Industri). Klaten's 2021-2041 industry plan names iron and steel foundry in Ceper and Jatinom as a leading industry. In 2025 Indonesia imported US$945M of valves (848180, 54% from China) and US$300M of pump parts (841391), while already exporting more cast pipe fittings (730719, US$34.3M) than it imported (US$5.7M). CNC turning and boring turns rough castings into higher-value finished parts; 3D-printed sand-mould patterns would ease the cluster's pattern-maker shortage.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Rail and engine wear parts: railway brake blocks and brake parts, cylinder sleeves and liners",
+        "hs": [
+          "860729",
+          "860721",
+          "840999"
+        ],
+        "why": "Koperasi Batur Jaya supplied metallic brake blocks to PT KAI for 27 years (to 2019) and shipped 200 cylinder sleeves to a TMMIN supplier in Jan 2019. Railway-parts imports (8607) rose to US$182.4M in 2025 from US$70.7M in 2023; railway air-brake parts (860721) alone rose to US$20.3M from US$6.5M in 2024.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Maintenance spare parts for sugar and textile mills: shafts, bearing housings, gears and rollers",
+        "hs": [
+          "843890",
+          "844839",
+          "844849",
+          "848310"
+        ],
+        "why": "PT SGN plans to restart the dormant PG Tasikmadu (Karanganyar) in 2027 with modernised technology. Textiles are a leading industry in the Surakarta, Sukoharjo and Klaten plans. Ceper firms already hold TKDN certificates for large crank arms and bearing housings, and PT ATMI Solo makes precision parts. In 2025 Indonesia imported US$45.8M of food and sugar machinery parts (843890) and US$43M of spinning and weaving machine parts (844839, 844849).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Toyota Motor Manufacturing Indonesia (cylinder sleeves via a TMMIN supplier, 2019)",
+      "PT Kereta Api Indonesia (Persero) (brake blocks)",
+      "PT Sinergi Gula Nusantara (PG Tasikmadu restart planned 2027)",
+      "SMKs and polytechnics buying CNC lathes (PT ATMI Solo Leanturn)"
+    ],
+    "local_inputs": [
+      "sugarcane (Klaten, Karanganyar, Sragen)",
+      "dairy milk (Boyolali)",
+      "tobacco (Klaten)",
+      "woven cotton textiles (lurik, Klaten; mills in Sukoharjo and Surakarta)"
+    ],
+    "clusters": [
+      "Sentra pengecoran logam Ceper (Batur, Tegalrejo, Klepu, Ngawonggo, Bakalan, Kurung, Jeblogan), Kabupaten Klaten",
+      "Ceper industrial-use zone, 342.3 ha of Klaten's 1,151.1 ha (2019)",
+      "Komplek Pengembangan Industri Kecil, Jl. Raya Kartasura km 8, Pabelan, Sukoharjo",
+      "Jaten and Kebakkramat industrial corridor, Karanganyar",
+      "Kawasan Industri ASMINDO Wonosari, Kalijambe, Sragen",
+      "Solo Technopark, Kota Surakarta"
+    ],
+    "official_designation": "KIID Klaten: textile products with focus on lurik weaving (Permenperin 154/M-IND/PER/12/2012); KIID Boyolali: dairy processing (Permenperin 153/M-IND/PER/12/2012). RPIK Klaten 2021-2041 (Perda 3/2021) lists basic metal (iron and steel foundry in Ceper and Jatinom) and non-machinery metal goods among leading industries. RPIP Jawa Tengah 2017-2037 (Perda 10/2017) maps basic-metal processing to Klaten and automotive components to Klaten, Sukoharjo and Karanganyar. Surakarta (Perda 6/2024), Sukoharjo (Perda 7/2024), Sragen (Perda 4/2020) and Wonogiri (Perda 5/2022) plans do not name machinery; Sukoharjo names metal goods. No KIID found for Surakarta, Sukoharjo, Karanganyar, Sragen or Wonogiri.",
+    "umk_2026": "Rp2,335,126 (Wonogiri) to Rp2,592,154 (Karanganyar); Klaten Rp2,538,691; Surakarta Rp2,570,000; Sukoharjo Rp2,500,000; Boyolali Rp2,537,949; Sragen Rp2,337,700 (Kepgub Jateng 100.3.3.1/505, Dec 2025)",
+    "skills": "Politeknik ATMI Surakarta (since 1968) with PT ATMI Solo production units; Politeknik Manufaktur Ceper (D3 foundry technology, D4 manufacturing design with CAD/CAM) and SMK Batur Jaya inside the Ceper cluster; SMK Warga Surakarta builds 3- and 5-axis CNCs (2021); Solo Technopark; Sukoharjo has 1 BLK and 41 LPK (2022); Sragen has 55 SMKs (2018).",
+    "confidence": "high",
+    "sources": [
+      "https://www.industry.co.id/read/95189/luar-biasa-kemenperin-sukses-rangkul-ikm-logam-pasok-komponen-industri-otomotif",
+      "https://www.industry.co.id/read/47090/ikm-logam-klaten-jateng-upaya-terus-hasilkan-produk-kompetitif",
+      "https://ekonomi.bisnis.com/read/20160811/257/574365/bumn-agar-tetap-serap-blok-rem-dari-ikm-di-klaten",
+      "https://mojok.co/terminal/geliat-sentra-industri-pengecoran-logam-di-ceper-klaten/",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=manhole",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Atmaja+Jaya",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Baja+Kurnia",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Aneka+Metal+Industri",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1390",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1391",
+      "https://peraturan.bpk.go.id/Details/187149/perda-kab-klaten-no-3-tahun-2021",
+      "https://peraturan.bpk.go.id/Details/300981/perda-kota-surakarta-no-6-tahun-2024",
+      "https://peraturan.bpk.go.id/Details/314403/perda-kab-sukoharjo-no-7-tahun-2024",
+      "https://peraturan.bpk.go.id/Details/75109/perda-prov-jawa-tengah-no-10-tahun-2017",
+      "https://www.idxchannel.com/playlists/kebut-swasembada-gula-ptpn-bakal-aktifkan-lagi-pabrik-pabrik-berstatus-dorman",
+      "https://www.atmi.co.id/",
+      "https://atmi.ac.id/news/pengiriman-perdanamesin-cnc-leanturn/",
+      "https://polmanceper.ac.id/",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M&cmdCode=8481",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M&cmdCode=841391",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M&cmdCode=8607",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=870892,732510,730711,730719,848180,711311,940290,870110,843351,843352,860729,860721,843890,844839,844849,841370",
+      "https://www.detik.com/jateng/bisnis/d-8275954/daftar-lengkap-umk-2026-se-jateng-semarang-tertinggi-banjarnegara-terendah"
+    ]
+  },
+  {
+    "province": "Jawa Tengah",
+    "area": "Salatiga–Magelang",
+    "level": "cluster",
+    "focus": {
+      "product": "CNC-machined aluminium motorcycle parts and accessories (billet aftermarket parts)",
+      "hs": [
+        "871410"
+      ],
+      "why": "DTECH in Salatiga builds its own SUPERMILL CNC mills (TKDN 40.91% in 2021), had about 450 staff in Apr 2024 and trains D4 students with Akademi Inovasi Indonesia. It is linked to the ARM CNC aluminium motorcycle-parts brand (shown on DTECH's site; detikJateng in Apr 2024 called it a spare-parts company DTECH invested in), which Koran Jakarta (Nov 2025) reports sells in Thailand, the Philippines and Malaysia. Indonesia already exports US$1,169M of motorcycle parts (871410, 2025). Salatiga's 2026 UMK of Rp2.70M is under half of Bekasi's, which favours labour-heavy CNC finishing.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Brass gas valves and fittings (LPG cylinder valves)",
+        "hs": [
+          "848180"
+        ],
+        "why": "PT Karilla Berkat Abadi in Kota Magelang holds TKDN certificates of 85-90% for LPG cylinder valves, a high-volume turned-and-assembled part.",
+        "fit": "cnc"
+      },
+      {
+        "product": "CNC-carved and sawn building and ornamental stone (Muntilan)",
+        "hs": [
+          "680299",
+          "6802"
+        ],
+        "why": "Muntilan and Mungkid have 518 stone craftsmen (Undip, Jun 2024); Indonesia exported US$51.9M of worked stone (6802) in 2025, US$16.6M of it 680299. Kab. Magelang's 2023-2043 plan lists non-metal mineral products as a leading industry.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Industri Kereta Api (INKA) (train seats from DTECH)",
+      "PT Mekar Armada Jaya (New Armada) bus-body plant, Mertoyudan",
+      "SMKs and polytechnics buying training CNCs (DTECH SUPERMILL)"
+    ],
+    "local_inputs": [
+      "coffee (Temanggung)",
+      "tobacco (Temanggung)",
+      "carving stone (Muntilan)",
+      "dairy milk (Salatiga)"
+    ],
+    "clusters": [
+      "DTECH workshops in Salatiga and Semarang Regency (1 ha and 3 ha)",
+      "Muntilan stone-craft villages: Tamanagung, Sedayu, Keji (Muntilan) and Pabelan (Mungkid)",
+      "Mertoyudan, Kab. Magelang (bus-body plant)",
+      "Kota Salatiga industrial land, 239.72 ha (RPIK 2020)"
+    ],
+    "official_designation": "KIID Temanggung: coffee-based industry (Permenperin 150/M-IND/PER/12/2012); KIID Wonosobo: coconut processing into coconut milk (Permenperin 136/M-IND/PER/12/2011, as written). RPIK Kota Salatiga 2020-2040 (Perda 9/2020): food, beverages, textiles, electronics, furniture, software; RPIK Kab. Magelang 2023-2043 (Perda 4/2023): food, wood and bamboo, non-metal minerals, textiles, furniture; RPIK Temanggung 2021-2041 (Perda 2/2021) adds tobacco processing. RPIP Jawa Tengah maps karoseri (bus bodies) to Kab. Magelang. No KIID found for Salatiga or Magelang.",
+    "umk_2026": "Rp2,397,000 (Temanggung) to Rp2,698,273 (Kota Salatiga); Kab. Magelang Rp2,607,790; Kota Magelang Rp2,429,285; Wonosobo Rp2,455,038 (Kepgub Jateng 100.3.3.1/505, Dec 2025)",
+    "skills": "Akademi Inovasi Indonesia (DTECH partner; D4 manufacturing engineering technology with full scholarship); SMKN 1 Magelang machining teaching factory; Kota Magelang 20 SMKs and 1 BLK (2018); Kota Salatiga 12 SMKs (2019); Temanggung 23 SMKs and 1 BLK (2019).",
+    "confidence": "medium",
+    "sources": [
+      "https://www.dtech-engineering.com/",
+      "https://www.detik.com/jateng/bisnis/d-7283139/dtech-engineering-mendunia-arfian-fuadi-kini-besut-akademi-inovasi-gratis",
+      "https://koran-jakarta.com/2025-11-07/gibran-ramaikan-live-tiktok-bareng-pekerja-pabrik-di-salatiga",
+      "https://www.medcom.id/pendidikan/riset-penelitian/GNGA7Wdk-mesin-cnc-asal-salatiga-mampu-memenuhi-40-komponen-dalam-negeri",
+      "https://inovasi.ac.id/",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Karilla+Berkat+Abadi",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Mekar+Armada+Jaya",
+      "https://ejournal2.undip.ac.id/index.php/jpps/article/view/23340",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1506",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1175",
+      "https://peraturan.bpk.go.id/Details/148099/perda-kota-salatiga-no-9-tahun-2020",
+      "https://peraturan.bpk.go.id/Details/260494/perda-kab-magelang-no-4-tahun-2023",
+      "https://peraturan.bpk.go.id/Details/189868/perda-kota-magelang-no-8-tahun-2019",
+      "https://peraturan.bpk.go.id/Details/195142/perda-kab-temanggung-no-2-tahun-2021",
+      "https://peraturan.bpk.go.id/Details/75109/perda-prov-jawa-tengah-no-10-tahun-2017",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=X&cmdCode=871410",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=X&cmdCode=6802",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=870892,732510,730711,730719,848180,711311,940290,870110,843351,843352,860729,860721,843890,844839,844849,841370",
+      "https://www.detik.com/jateng/bisnis/d-8275954/daftar-lengkap-umk-2026-se-jateng-semarang-tertinggi-banjarnegara-terendah"
+    ]
+  },
+  {
+    "province": "Jawa Tengah",
+    "area": "Banyumas Raya",
+    "level": "cluster",
+    "focus": {
+      "product": "Motorcycle exhaust systems (knalpot) and exhaust components: bent tubes, flanges, end caps, heat shields",
+      "hs": [
+        "871410",
+        "870892"
+      ],
+      "why": "Purbalingga's industry plan for 2025-2045 (Perda 3/2025) names 'knalpot and automotive components' a leading regional industry and plans SNI standards, a knalpot centre and link-and-match with vehicle brand holders. The cluster had 700-1,000 craftsmen and about 250 association members (2019) and a Kemenperin-built knalpot centre at the UPTD Pengembangan Industri Logam. Production was still mostly manual in 2019, so CNC tube bending, laser-cut flanges and CNC-machined end caps and press dies are the upgrade path. Indonesia imported US$60.9M of vehicle silencers and exhaust pipes (870892) in 2025, mostly from Japan and India, and exported US$17.9M, mostly to Thailand, Viet Nam and Malaysia.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Maintenance spare parts for the Cilacap refinery, cement and power plants: pump, valve and transmission parts",
+        "hs": [
+          "841391",
+          "848190",
+          "8483",
+          "847490"
+        ],
+        "why": "Kilang Pertamina RU IV Cilacap (348 MBSD per Central Java's 2017 industry plan) applies TKDN in every procurement (KPI, Sep 2025); Cilacap also hosts an integrated Solusi Bangun Indonesia cement plant and PLTU Cilacap. Politeknik Negeri Cilacap's D3 Teknik Mesin graduates work at both RU IV and Solusi Bangun Indonesia.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Farm machinery: power threshers, rice threshers and irrigation pumps",
+        "hs": [
+          "843352",
+          "843390",
+          "841370"
+        ],
+        "why": "Banyumas makers hold TKDN certificates for threshers and pumps: PT Tanikaya Multi Sarana (18 thresher certificates), CV Inafa Teknik, CV Doobu Sukses Bersama, PT Astana Wira Karya. Banyumas's 2018-2038 plan lists machinery and metal goods among leading industries; harvesting and threshing machinery imports (8433) reached US$187.5M in 2025, 77% from China.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Kilang Pertamina Internasional RU IV Cilacap",
+      "PT Solusi Bangun Indonesia Tbk (integrated Cilacap cement plant; 83.52% owned by SIG)",
+      "PLTU Cilacap",
+      "Kementerian Pertanian (alsintan procurement requiring TKDN)"
+    ],
+    "local_inputs": [
+      "coconut sugar (Purbalingga)",
+      "coconut coir (Cilacap)",
+      "broom grass (glagah), sorghum and palm-leaf ribs (Purbalingga)"
+    ],
+    "clusters": [
+      "Sentra knalpot Purbalingga (Purbalingga Lor, Pesayangan, Kembaran Kulon; UPTD Pengembangan Industri Logam)",
+      "Perumda Kawasan Industri Cilacap (Perda Cilacap 3/2019)",
+      "Purbalingga industrial-use zone, 875 ha (RPIK 2025)",
+      "Sokaraja farm-machinery makers, Banyumas",
+      "Sentra rambut dan bulu mata palsu, Purbalingga"
+    ],
+    "official_designation": "RPIK Purbalingga 2025-2045 (Perda 3/2025): leading industries are coconut sugar, knalpot and automotive components, and broom crafts. KIID Cilacap: rubberised coconut coir (Permenperin 126/M-IND/PER/12/2011). RPIK Banyumas 2018-2038 (Perda 13/2018) includes metal goods and machinery. RPIP Jawa Tengah 2017-2037 maps automotive components to Purbalingga and shipbuilding to Cilacap. Banjarnegara's RPIK 2024-2044 (Perda 7/2024) names no metal industry. No KIID found for Purbalingga, Banyumas, Banjarnegara or Kebumen.",
+    "umk_2026": "Rp2,327,813 (Banjarnegara, lowest in Central Java) to Rp2,773,184 (Cilacap); Purbalingga Rp2,474,722; Banyumas Rp2,474,599; Kebumen Rp2,400,000 (Kepgub Jateng 100.3.3.1/505, Dec 2025)",
+    "skills": "Politeknik Negeri Cilacap (D3 Teknik Mesin, Jurusan Rekayasa Mesin dan Industri Pertanian); Purbalingga's BLK trains automotive and motorcycle, welding and AC (RPIK 2025); Banyumas had 1 BLK, 9 public and 71 private SMKs and 40 LPK (2016 data in RPIK 2018).",
+    "confidence": "medium",
+    "sources": [
+      "https://peraturan.bpk.go.id/Details/341076/perda-kab-purbalingga-no-3-tahun-2025",
+      "https://finance.detik.com/solusiukm/d-4640139/lika-liku-knalpot-purbalingga-yang-bersaing-dengan-produk-dunia",
+      "http://ukmindonesia.id/baca-deskripsi-posts/potensi-umkm-purbalingga-menembus-pasar-ekspor-dari-knalpot-sampai-rambut-dan-bulu-mata-palsu",
+      "https://data.purbalinggakab.go.id/tl/dataset/jumlah-industri-besar-logam-knalpot-di-kabupaten-purbalingga-tahun-2018-2024",
+      "https://peraturan.bpk.go.id/Details/230859/perda-kab-banyumas-no-13-tahun-2018",
+      "https://peraturan.bpk.go.id/Details/171424/perda-kab-cilacap-no-3-tahun-2019",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1165",
+      "https://investortrust.id/business/77706/hadirkan-efek-berganda-untuk-ekonomi-kilang-pertamina-terapkan-tkdn-dan-gandeng-vendor-lokal",
+      "https://esdm.go.id/en/media-center/news-archives/cilacap-blue-sky-refinery-officially-launched",
+      "https://pnc.ac.id/",
+      "https://solusibangunindonesia.com/profil-perusahaan/",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tanikaya+Multi+Sarana",
+      "https://peraturan.bpk.go.id/Details/75109/perda-prov-jawa-tengah-no-10-tahun-2017",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=X&cmdCode=871410",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M&cmdCode=8433",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=870892,732510,730711,730719,848180,711311,940290,870110,843351,843352,860729,860721,843890,844839,844849,841370",
+      "https://www.detik.com/jateng/bisnis/d-8275954/daftar-lengkap-umk-2026-se-jateng-semarang-tertinggi-banjarnegara-terendah"
+    ]
+  },
+  {
+    "province": "DI Yogyakarta",
+    "area": "DI Yogyakarta",
+    "level": "province",
+    "focus": {
+      "product": "Agricultural machinery and its machined and cast parts: two-wheel tractors, threshers, combine harvesters",
+      "hs": [
+        "870110",
+        "843351",
+        "843352",
+        "843290",
+        "843390"
+      ],
+      "why": "Quick (CV Karya Hidup Sentosa) builds two-wheel tractors at 40-83% TKDN in Kulon Progo, had more than 100 CNC machines and about 3,000 staff in 2017, exported its QH-11 harvester to Senegal (2022) and runs a foundry that works with Kubota Indonesia. Arqom (Sleman), Rumah Mesin (Bantul), Bangga Karya (Kota Yogyakarta) and Tunas Karya (Sleman) also hold farm-machine TKDN certificates; YPTI in Kalasan builds CNC machining centres (46.34% TKDN); the city's public UPT rents a VMC at Rp150,000/h and a CNC lathe at Rp80,000/h, and Sleman's 2025-2045 plan names machinery n.e.c. a leading industry. Two-wheel tractor imports are tiny (870110, US$0.65M in 2025), but combine harvester imports rose 71% to US$109.2M (843351, 86% from China), so combine and thresher parts are the import-substitution target.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "CAD and 3D-printed wax or resin patterns for silver jewellery (Kotagede)",
+        "hs": [
+          "711311"
+        ],
+        "why": "DIY's 2019-2039 industry plan lists precious-metal jewellery (Kota Yogyakarta, Bantul, Gunungkidul) as a leading industry; Kota Yogyakarta's 2023-2043 plan aims to strengthen the silver centre 'through technology' in 2028-2032, and DIY's plan lists regeneration of silver craftsmen. Indonesia exported US$192.1M of silver jewellery (711311) in 2025, up 38%, 47% of it to Japan. Kemenperin's BBKB in Kota Yogyakarta already offers 3D-printed resin masters, rubber moulds, wax trees and silver casting (May 2026); a local firm (CV Acta Techno Inava) makes a TKDN-certified 3D printer, and the UPT sells solid modelling at Rp35,000/h to IKM.",
+        "fit": "3d"
+      },
+      {
+        "product": "Hospital beds and medical furniture",
+        "hs": [
+          "940290"
+        ],
+        "why": "PT Mega Andalan Kalasan in Sleman reports 700+ employees, 150K bed-equivalents a year and exports to 51 countries; Indonesia exported US$22.8M of medical furniture (940290) in 2025, led by Australia and Japan. DIY's industry plan lists pharmaceuticals, cosmetics and medical devices as leading industries.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "Kementerian Pertanian (alsintan procurement requiring TKDN)",
+      "PT Kubota Indonesia (castings from Quick's foundry)",
+      "PT Mitsuboshi Belting Indonesia (castings from Quick's foundry)",
+      "PT Dirgantara Indonesia (framework agreement with YPTI to supply and revitalise production machinery, Mar 2025)",
+      "Kotagede silver workshops (sentra perak Purbayan)"
+    ],
+    "local_inputs": [
+      "silver (Kotagede craft)",
+      "aluminium ingot and scrap (Sorosutan and Nitikan IKM)",
+      "leather (Bantul)",
+      "stone (Gunungkidul)",
+      "coconut sugar (Kulon Progo)"
+    ],
+    "clusters": [
+      "Sentra perak Kotagede and Purbayan, Kota Yogyakarta",
+      "Aluminium IKM of Sorosutan, Umbulharjo, Kota Yogyakarta",
+      "Pusat Desain Industri Nasional (PDIN), Kota Yogyakarta",
+      "BBKB, Kemenperin's craft and batik centre (jewellery 3D printing and casting services), Kota Yogyakarta",
+      "Kawasan Industri Piyungan, Bantul",
+      "Kawasan Industri Sedayu and Pajangan, Bantul",
+      "Kawasan Industri Sentolo, Kulon Progo (Quick's Tuksono tractor plant)",
+      "Kalasan, Sleman (YPTI, MAK, Sinar Mulia Teknalum)"
+    ],
+    "official_designation": "RPIP DIY 2019-2039 (Perda DIY 7/2019) leading industries include precious-metal jewellery, metal kitchen and tableware, metalworking machinery (Bantul, Gunungkidul, Sleman) and repair of fabricated metal products. KIID Bantul: leather crafts (Permenperin 125/M-IND/PER/12/2011); KIID Gunungkidul: stone-based products (Permenperin 129/M-IND/PER/12/2011). RPIK Kota Yogyakarta 2023-2043 (Perda 1/2023) has a precious-metal jewellery programme; RPIK Sleman 2025-2045 (Perda 16/2025) names machinery and equipment n.e.c.; RPIK Kulon Progo 2022-2042 (Perda 7/2022) names metal and metal goods; RPIK Gunungkidul 2023-2043 (Perda 8/2023) names non-machinery metal goods. No provincial KIID or industri-unggulan Permenperin for DIY was found in Kemenperin's JDIH.",
+    "umk_2026": "Rp2,468,378 (Gunungkidul) to Rp2,827,593 (Kota Yogyakarta); Sleman Rp2,624,387; Bantul Rp2,509,001; Kulon Progo Rp2,504,520; UMP DIY Rp2,417,495 (announced 24 Dec 2025)",
+    "skills": "UPT Desain dan Industri (formerly UPT Logam) rents CNC time and offers design; SMK N 2 Depok (Sleman) had 128 machining students; SMK Muhammadiyah Prambanan runs a machining teaching factory; UGM's Departemen Teknik Mesin dan Industri; Gunungkidul has 47 SMKs (2021) and 1 BLK.",
+    "confidence": "high",
+    "sources": [
+      "https://www.quick.co.id/",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Karya+Hidup+Sentosa",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Yogya+Presisi+Tehnikatama",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Arqom+Technology",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Acta+Techno+Inava",
+      "https://indotech-group.co.id/mesin-cnc-buatan-indonesia-joglo-vf-500i/",
+      "https://www.industry.co.id/read/154322/strategi-menperin-agus-pacu-ikm-logam-masuk-rantai-pasok-industri-besar",
+      "https://www.industry.co.id/read/140610/kemenperin-dukung-sinergi-ptdi-dan-ypti-kuatkan-rantai-pasok-industri-dirgantara",
+      "https://www.industry.co.id/read/19655/kemenperin-terus-pacu-daya-saing-industri-sektor-pertanian",
+      "https://www.industry.co.id/read/108222/kementan-komitmen-realisasikan-100-persen-pengadaan-alsintan-bersertifikat-tkdn",
+      "https://uptlogam.jogjakota.go.id/page/index/daftar-layanan",
+      "https://uptlogam.jogjakota.go.id/detail/index/47209/upt-desain-dan-industri-resmi-dibentuk-perkuat-layanan-pengembangan-industri-kreatif-dan-inovasi-di-kota-yogyakarta-2026-03-12",
+      "https://domestic.mak-techno.com/id",
+      "https://bbkb.kemenperin.go.id/post/read/layanan_optimalisasi_teknologi_industri_0",
+      "https://peraturan.bpk.go.id/Details/121544/perda-no-7-tahun-2019",
+      "https://peraturan.bpk.go.id/Details/248075/perda-kota-yogyakarta-no-1-tahun-2023",
+      "https://peraturan.bpk.go.id/Details/353839/perda-kab-sleman-no-16-tahun-2025",
+      "https://peraturan.bpk.go.id/Details/242922/perda-kab-kulon-progo-no-7-tahun-2022",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1164",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1168",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M&cmdCode=8433",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=870892,732510,730711,730719,848180,711311,940290,870110,843351,843352,860729,860721,843890,844839,844849,841370",
+      "https://www.detik.com/jogja/bisnis/d-8275395/daftar-umk-se-diy-2026"
+    ]
+  }
+]

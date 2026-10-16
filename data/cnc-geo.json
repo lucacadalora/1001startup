@@ -1,0 +1,551 @@
+{
+ "places": {
+  "Cikarang|Jawa Barat": {
+   "lat": -6.25871,
+   "lon": 107.14574,
+   "matched": "Cikarang"
+  },
+  "Karawang|Jawa Barat": {
+   "lat": -6.26491,
+   "lon": 107.42942,
+   "matched": "Karawang"
+  },
+  "Bekasi|Jawa Barat": {
+   "lat": -6.23499,
+   "lon": 106.99454,
+   "matched": "Bekasi"
+  },
+  "Gresik|Jawa Timur": {
+   "lat": -5.79335,
+   "lon": 112.65982,
+   "matched": "Gresik"
+  },
+  "Surabaya|Jawa Timur": {
+   "lat": -7.24628,
+   "lon": 112.73777,
+   "matched": "Surabaya"
+  },
+  "Bandung|Jawa Barat": {
+   "lat": -6.92185,
+   "lon": 107.60708,
+   "matched": "Bandung"
+  },
+  "Yogyakarta|DI Yogyakarta": {
+   "lat": -7.79535,
+   "lon": 110.36728,
+   "matched": "Special Region of Yogyakarta"
+  },
+  "Surakarta|Jawa Tengah": {
+   "lat": -7.56925,
+   "lon": 110.82845,
+   "matched": "Surakarta"
+  },
+  "Sidoarjo|Jawa Timur": {
+   "lat": -7.45398,
+   "lon": 112.65939,
+   "matched": "Sidoarjo"
+  },
+  "Tangerang|Banten": {
+   "lat": -6.17619,
+   "lon": 106.63822,
+   "matched": "Tangerang"
+  },
+  "Depok|Jawa Barat": {
+   "lat": -6.40719,
+   "lon": 106.81584,
+   "matched": "Depok"
+  },
+  "Serang|Banten": {
+   "lat": -6.11697,
+   "lon": 106.15181,
+   "matched": "Serang"
+  },
+  "Semarang|Jawa Tengah": {
+   "lat": -6.9904,
+   "lon": 110.42291,
+   "matched": "Semarang"
+  },
+  "Pasuruan|Jawa Timur": {
+   "lat": -7.75081,
+   "lon": 112.81848,
+   "matched": "Pasuruan"
+  },
+  "Jakarta|DKI Jakarta": {
+   "lat": -6.1754,
+   "lon": 106.82717,
+   "matched": "Jakarta"
+  },
+  "Klaten|Jawa Tengah": {
+   "lat": -7.67324,
+   "lon": 110.62848,
+   "matched": "Klaten"
+  },
+  "Jawa Barat|Jawa Barat": {
+   "lat": -6.89775,
+   "lon": 107.41243,
+   "matched": "West Bandung"
+  },
+  "Subang|Jawa Barat": {
+   "lat": -6.49839,
+   "lon": 107.73463,
+   "matched": "Subang"
+  },
+  "Ambon|Maluku": {
+   "lat": -3.69594,
+   "lon": 128.17879,
+   "matched": "Ambon"
+  },
+  "Jayapura|Papua": {
+   "lat": -2.53875,
+   "lon": 140.70374,
+   "matched": "Jayapura"
+  },
+  "Manokwari|Papua Barat": {
+   "lat": -0.97768,
+   "lon": 133.7538,
+   "matched": "Manokwari"
+  },
+  "Sorong|Papua Barat Daya": {
+   "lat": -0.86341,
+   "lon": 131.25448,
+   "matched": "Sorong"
+  },
+  "Timika|Papua Tengah": {
+   "lat": -4.54811,
+   "lon": 136.88988,
+   "matched": "Timika"
+  },
+  "Wamena|Papua Pegunungan": {
+   "lat": -4.09437,
+   "lon": 138.94666,
+   "matched": "Wamena"
+  },
+  "Merauke|Papua Selatan": {
+   "lat": -7.79252,
+   "lon": 140.01833,
+   "matched": "Merauke"
+  },
+  "Mimika|Papua Tengah": {
+   "lat": -4.58753,
+   "lon": 136.9478,
+   "matched": "Mimika"
+  },
+  "Mojokerto|Jawa Timur": {
+   "lat": -7.54134,
+   "lon": 112.5095,
+   "matched": "Mojokerto"
+  },
+  "Makassar|Sulawesi Selatan": {
+   "lat": -5.1343,
+   "lon": 119.41243,
+   "matched": "Makassar"
+  },
+  "Morowali|Sulawesi Tengah": {
+   "lat": -2.71515,
+   "lon": 121.88241,
+   "matched": "Morowali"
+  },
+  "Kendari|Sulawesi Tenggara": {
+   "lat": -3.99181,
+   "lon": 122.51801,
+   "matched": "Kendari"
+  },
+  "Bitung|Sulawesi Utara": {
+   "lat": 1.44344,
+   "lon": 125.19408,
+   "matched": "Bitung"
+  },
+  "Gorontalo|Gorontalo": {
+   "lat": 0.53844,
+   "lon": 123.0595,
+   "matched": "Gorontalo"
+  },
+  "Mamuju|Sulawesi Barat": {
+   "lat": -2.53942,
+   "lon": 119.38895,
+   "matched": "Mamuju"
+  },
+  "Ternate|Maluku Utara": {
+   "lat": 0.7852,
+   "lon": 127.38323,
+   "matched": "Ternate"
+  },
+  "Batam|Kepulauan Riau": {
+   "lat": 1.10308,
+   "lon": 104.03837,
+   "matched": "Batam"
+  },
+  "Balikpapan|Kalimantan Timur": {
+   "lat": -1.23987,
+   "lon": 116.85934,
+   "matched": "Balikpapan"
+  },
+  "Samarinda|Kalimantan Timur": {
+   "lat": -0.50178,
+   "lon": 117.13931,
+   "matched": "Samarinda"
+  },
+  "Asahan|Sumatera Utara": {
+   "lat": 2.8518,
+   "lon": 99.6233,
+   "matched": "Asahan"
+  },
+  "Bogor|Jawa Barat": {
+   "lat": -6.59636,
+   "lon": 106.79732,
+   "matched": "Bogor"
+  },
+  "Jakarta Utara|DKI Jakarta": {
+   "lat": -6.1692,
+   "lon": 106.83324,
+   "matched": "Jakarta Cathedral"
+  },
+  "Cilegon|Banten": {
+   "lat": -6.01739,
+   "lon": 106.05377,
+   "matched": "Cilegon"
+  },
+  "Tangerang Selatan|Banten": {
+   "lat": -6.3227,
+   "lon": 106.70857,
+   "matched": "South Tangerang"
+  },
+  "Jakarta Timur|DKI Jakarta": {
+   "lat": -6.1726,
+   "lon": 106.87857,
+   "matched": "PT Siemens Indonesia"
+  },
+  "Demak|Jawa Tengah": {
+   "lat": -6.9231,
+   "lon": 110.62767,
+   "matched": "Demak"
+  },
+  "Indramayu|Jawa Barat": {
+   "lat": -6.44182,
+   "lon": 108.17647,
+   "matched": "Indramayu"
+  },
+  "Tegal|Jawa Tengah": {
+   "lat": -6.86745,
+   "lon": 109.13783,
+   "matched": "Tegal"
+  },
+  "Bengkalis|Riau": {
+   "lat": 1.76972,
+   "lon": 101.91244,
+   "matched": "Bengkalis"
+  },
+  "Jakarta Selatan|DKI Jakarta": {
+   "lat": -6.18154,
+   "lon": 106.82694,
+   "matched": "National Library of the Republic of Indonesia"
+  },
+  "Buton Tengah|Sulawesi Tenggara": {
+   "lat": -5.29181,
+   "lon": 122.38828,
+   "matched": "Buton Tengah"
+  },
+  "Malang|Jawa Timur": {
+   "lat": -7.97713,
+   "lon": 112.63403,
+   "matched": "Malang"
+  },
+  "Madiun|Jawa Timur": {
+   "lat": -7.62908,
+   "lon": 111.51688,
+   "matched": "Madiun"
+  },
+  "Barru|Sulawesi Selatan": {
+   "lat": -4.43373,
+   "lon": 119.67783,
+   "matched": "Barru"
+  },
+  "Banjarmasin|Kalimantan Selatan": {
+   "lat": -3.31875,
+   "lon": 114.59258,
+   "matched": "Banjarmasin"
+  },
+  "Palangka Raya|Kalimantan Tengah": {
+   "lat": -2.20729,
+   "lon": 113.91644,
+   "matched": "Palangka Raya"
+  },
+  "Pontianak|Kalimantan Barat": {
+   "lat": -0.02269,
+   "lon": 109.34475,
+   "matched": "Pontianak"
+  },
+  "Tanjung Selor|Kalimantan Utara": {
+   "lat": 2.84305,
+   "lon": 117.36132,
+   "matched": "Tanjung Selor"
+  },
+  "Jakarta Barat|DKI Jakarta": {
+   "lat": -6.17623,
+   "lon": 106.82165,
+   "matched": "National Museum of Indonesia"
+  },
+  "Manado|Sulawesi Utara": {
+   "lat": 1.49004,
+   "lon": 124.84077,
+   "matched": "Manado"
+  },
+  "Palu|Sulawesi Tengah": {
+   "lat": -0.89578,
+   "lon": 119.868,
+   "matched": "Palu"
+  },
+  "Padang|Sumatera Barat": {
+   "lat": -0.92476,
+   "lon": 100.36326,
+   "matched": "Padang"
+  },
+  "Serdang Bedagai|Sumatera Utara": {
+   "lat": 3.34855,
+   "lon": 99.00008,
+   "matched": "Kabupaten Serdang Bedagai"
+  },
+  "Padang Pariaman|Sumatera Barat": {
+   "lat": -0.56909,
+   "lon": 100.27703,
+   "matched": "Padang Pariaman"
+  },
+  "Deli Serdang|Sumatera Utara": {
+   "lat": 3.47445,
+   "lon": 98.7159,
+   "matched": "Kabupaten Deli Serdang"
+  },
+  "Medan|Sumatera Utara": {
+   "lat": 3.58946,
+   "lon": 98.67416,
+   "matched": "Medan"
+  },
+  "Aceh Besar|Aceh": {
+   "lat": 5.35425,
+   "lon": 95.49615,
+   "matched": "Aceh Besar"
+  },
+  "Aceh Utara|Aceh": {
+   "lat": 4.99119,
+   "lon": 97.15874,
+   "matched": "Aceh Utara"
+  },
+  "Pekanbaru|Riau": {
+   "lat": 0.52625,
+   "lon": 101.45157,
+   "matched": "Pekanbaru"
+  },
+  "Cirebon|Jawa Barat": {
+   "lat": -6.7137,
+   "lon": 108.56085,
+   "matched": "Cirebon"
+  },
+  "Tasikmalaya|Jawa Barat": {
+   "lat": -7.32625,
+   "lon": 108.22012,
+   "matched": "Tasikmalaya"
+  },
+  "Sleman|DI Yogyakarta": {
+   "lat": -7.76562,
+   "lon": 110.43078,
+   "matched": "SMKN 1 Depok DI Yogyakarta"
+  },
+  "Kediri|Jawa Timur": {
+   "lat": -7.81111,
+   "lon": 112.00461,
+   "matched": "Kediri"
+  },
+  "Jember|Jawa Timur": {
+   "lat": -8.26332,
+   "lon": 113.62785,
+   "matched": "Jember"
+  },
+  "Bantul|DI Yogyakarta": {
+   "lat": -7.88537,
+   "lon": 110.3518,
+   "matched": "PT.Pertani Persero cabang D.I Yogyakarta"
+  },
+  "Bandung Barat|Jawa Barat": {
+   "lat": -6.89775,
+   "lon": 107.41243,
+   "matched": "West Bandung"
+  },
+  "Banyuwangi|Jawa Timur": {
+   "lat": -8.33257,
+   "lon": 114.14158,
+   "matched": "Banyuwangi"
+  },
+  "Tabanan|Bali": {
+   "lat": -8.44026,
+   "lon": 115.07157,
+   "matched": "Tabanan"
+  },
+  "Denpasar|Bali": {
+   "lat": -8.66533,
+   "lon": 115.21762,
+   "matched": "Denpasar"
+  },
+  "Mataram|Nusa Tenggara Barat": {
+   "lat": -8.58377,
+   "lon": 116.10685,
+   "matched": "Mataram"
+  },
+  "Jombang|Jawa Timur": {
+   "lat": -7.56146,
+   "lon": 112.2413,
+   "matched": "Jombang"
+  },
+  "Gianyar|Bali": {
+   "lat": -8.54824,
+   "lon": 115.32605,
+   "matched": "Gianyar"
+  },
+  "Kupang|Nusa Tenggara Timur": {
+   "lat": -10.16322,
+   "lon": 123.60178,
+   "matched": "Kupang"
+  },
+  "Salatiga|Jawa Tengah": {
+   "lat": -7.33026,
+   "lon": 110.49954,
+   "matched": "Salatiga"
+  },
+  "Purbalingga|Jawa Tengah": {
+   "lat": -7.32733,
+   "lon": 109.3999,
+   "matched": "Purbalingga"
+  },
+  "Kulon Progo|DI Yogyakarta": {
+   "lat": -7.85529,
+   "lon": 110.16549,
+   "matched": "Dinas Perpustakaan dan Kearsipan Kabupaten Kulon Progo"
+  },
+  "Demak ; head office Kab. Kudus|Jawa Tengah": {
+   "lat": -6.80378,
+   "lon": 110.88283,
+   "matched": "Maxim Indonesia Office - Kudus"
+  },
+  "Karanganyar|Jawa Tengah": {
+   "lat": -7.6197,
+   "lon": 111.0698,
+   "matched": "Karanganyar"
+  },
+  "Banyumas|Jawa Tengah": {
+   "lat": -7.45507,
+   "lon": 109.11675,
+   "matched": "Banyumas"
+  },
+  "Sukoharjo|Jawa Tengah": {
+   "lat": -7.6815,
+   "lon": 110.87003,
+   "matched": "Sukoharjo"
+  },
+  "Wonogiri|Jawa Tengah": {
+   "lat": -7.96205,
+   "lon": 110.95757,
+   "matched": "Wonogiri"
+  },
+  "Pati|Jawa Tengah": {
+   "lat": -6.75341,
+   "lon": 111.04,
+   "matched": "Pati"
+  },
+  "Sukabumi|Jawa Barat": {
+   "lat": -7.07645,
+   "lon": 106.73466,
+   "matched": "Sukabumi"
+  },
+  "Magelang|Jawa Tengah": {
+   "lat": -7.51361,
+   "lon": 110.21451,
+   "matched": "Magelang"
+  },
+  "Jakarta Utara ; also Kab. Karawang|DKI Jakarta": {
+   "lat": -5.74325,
+   "lon": 106.61411,
+   "matched": "Sudin Ketahanan Pangan Kelautan dan Pertania Kab Kepulauan Seribu"
+  },
+  "Kudus|Jawa Tengah": {
+   "lat": -6.79785,
+   "lon": 110.86791,
+   "matched": "Kudus"
+  },
+  "Tangerang ; branch in Kab. Banyumas|Banten": {
+   "lat": -6.1644,
+   "lon": 106.46793,
+   "matched": "Tangerang Regency"
+  },
+  "Karawang ; also Kota Jakarta Timur|Jawa Barat": {
+   "lat": -6.35389,
+   "lon": 107.32815,
+   "matched": "Karawang Timur"
+  },
+  "Batang|Jawa Tengah": {
+   "lat": -7.03235,
+   "lon": 109.86795,
+   "matched": "Batang"
+  },
+  "Palembang|Sumatera Selatan": {
+   "lat": -2.98882,
+   "lon": 104.75685,
+   "matched": "Palembang"
+  },
+  "Jambi|Jambi": {
+   "lat": -1.62969,
+   "lon": 103.60778,
+   "matched": "Jambi"
+  },
+  "Bandar Lampung|Lampung": {
+   "lat": -5.42218,
+   "lon": 105.26017,
+   "matched": "Bandar Lampung"
+  },
+  "Cianjur|Jawa Barat": {
+   "lat": -7.05399,
+   "lon": 107.06924,
+   "matched": "Cianjur"
+  },
+  "Bengkulu|Bengkulu": {
+   "lat": -3.79229,
+   "lon": 102.26238,
+   "matched": "Bengkulu"
+  },
+  "Pangkalpinang|Kepulauan Bangka Belitung": {
+   "lat": -2.11868,
+   "lon": 106.11382,
+   "matched": "Dinas Kearsipan dan Perpustakaan Provinsi Kepulauan Bangka Belitung"
+  },
+  "Bintan|Kepulauan Riau": {
+   "lat": 1.01966,
+   "lon": 104.56982,
+   "matched": "Bintan"
+  },
+  "Batam ; branch Lobam|Kepulauan Riau": {
+   "lat": 1.02743,
+   "lon": 103.9432,
+   "matched": "PT Dinamika Logam Mulia"
+  },
+  "Banyuasin|Sumatera Selatan": {
+   "lat": -2.39389,
+   "lon": 104.7548,
+   "matched": "Banyuasin"
+  },
+  "Pamekasan|Jawa Timur": {
+   "lat": -7.07081,
+   "lon": 113.50039,
+   "matched": "Pamekasan"
+  },
+  "Banda Aceh|Aceh": {
+   "lat": 5.55285,
+   "lon": 95.31929,
+   "matched": "Banda Aceh"
+  },
+  "Ponorogo|Jawa Timur": {
+   "lat": -7.97123,
+   "lon": 111.49889,
+   "matched": "Ponorogo"
+  }
+ },
+ "unmatched": [],
+ "generated": "2026-10-16T12:14:18+00:00"
+}

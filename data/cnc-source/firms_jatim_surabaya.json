@@ -1,0 +1,622 @@
+[
+  {
+    "name": "PT Barindo Anggun Industri",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "water utilities"
+    ],
+    "makes": "Brass and cast-iron water meters, brass meter couplings, check valves and plug cocks",
+    "size_note": null,
+    "certs": [
+      "TKDN 45.8-94.9%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Barindo%20Anggun",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya) lists brass water meters up to 94.9% local content, plus brass couplings, check valves and plug cocks at 76-78%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Rollindo Pratama",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "bulk material handling"
+    ],
+    "makes": "Conveyor pulleys (215-1,100 mm, lagged and unlagged), steel and HDPE/HMWPE carry and return rollers, conveyor frames",
+    "size_note": null,
+    "certs": [
+      "TKDN 38-40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Rollindo%20Pratama",
+    "source_type": "government",
+    "evidence": "TKDN database lists Surabaya maker of steel conveyor pulleys, carry and return rollers and conveyor frames at 38-40% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Kurnia Laju Abadi",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "construction"
+    ],
+    "makes": "Vibration rollers (1.2-1.7 t), rebar benders and rebar cutters",
+    "size_note": null,
+    "certs": [
+      "TKDN 26.1-44.2%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Kurnia%20Laju%20Abadi",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya) lists 1.2-1.7 t vibration rollers, bar benders and bar cutters at 26-44% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Adi Setia Utama Jaya",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Power threshers, rice-milling units, rice transplanters, crawler rotavators, corn shellers, organic-fertiliser crushers (Gunung Biru brand)",
+    "size_note": null,
+    "certs": [
+      "TKDN 28.2-41.7%",
+      "BMP 12%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Adi%20Setia%20Utama%20Jaya",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya) lists threshers, rice-milling units, a transplanter, crawler rotavator and corn shellers at 28-42% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Sumber Tiga Jaya",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "water pumping (irrigation and drainage)"
+    ],
+    "makes": "Vertical mixed/axial turbine pumps up to 1,120 kW, axial-flow pumps, submersible pumps, pump control panels",
+    "size_note": null,
+    "certs": [
+      "TKDN 34-40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sumber%20Tiga%20Jaya",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya) lists vertical turbine pumps up to 80 m3/s and 1,120 kW, plus axial and submersible pumps, at 38-40%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Cahaya Agro Teknik",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "food processing",
+      "agriculture"
+    ],
+    "makes": "Small food and agro machines: pellet mills, tobacco cutters, meatball formers, coffee pulpers, chocolate ball mills, coconut-milk presses",
+    "size_note": null,
+    "certs": [
+      "TKDN 36-40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Cahaya%20Agro%20Teknik",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya, Tambaksari) lists pellet mill, tobacco cutter, ball mill, coconut press and other food machines at 36-40%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT RTT Power Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "agro-processing (porang)",
+      "packaging"
+    ],
+    "makes": "Porang flour milling line (126 kW), slicers, complete packaging machine sets",
+    "size_note": null,
+    "certs": [
+      "TKDN 34-40.4%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=RTT%20Power",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya) lists a 126 kW porang flour mill, slicer and complete packaging machine sets at 34-40% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Perwiramulti Jaya Kencana",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [
+      "laser cutting",
+      "hot-dip galvanizing (finish)"
+    ],
+    "serves": [
+      "street lighting and public works"
+    ],
+    "makes": "Laser-cut ornamental lamp boxes and lamp poles (BATARA POLE brand)",
+    "size_note": null,
+    "certs": [
+      "TKDN 44.86% (lamp box)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Perwiramulti",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya) lists ornamental lamp boxes 0.3-6 m with laser cutting and hot-dip galvanised finish at 44.86% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "LCS Metal Cutting (Laser Cutting Surabaya)",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [
+      "laser cutting",
+      "custom design"
+    ],
+    "serves": [
+      "building interiors and facades",
+      "manufacturing"
+    ],
+    "makes": "Laser-cut mild-steel and stainless-steel plate parts; stocks plate material",
+    "size_note": null,
+    "certs": [],
+    "website": "https://lasercuttingsurabaya.com",
+    "source_url": "https://lasercuttingsurabaya.com/",
+    "source_type": "company_site",
+    "evidence": "Site (copyright 2026) offers laser cutting of iron and stainless plate from a Surabaya office, with a custom design team and stocked plate.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Anugerah Tehnik",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [
+      "turning (lathe)",
+      "thread cutting",
+      "custom gears and sprockets"
+    ],
+    "serves": [
+      "factories",
+      "shipping",
+      "heavy equipment"
+    ],
+    "makes": "Turned and threaded spare parts, hydraulic cylinders, large bolts, custom gears and sprockets; repair work",
+    "size_note": "Self-reported 500+ projects and 150+ industrial clients since 2017",
+    "certs": [],
+    "website": "https://bengkelbubutsurabaya.com",
+    "source_url": "https://bengkelbubutsurabaya.com/",
+    "source_type": "company_site",
+    "evidence": "Surabaya lathe shop since 2017 making and repairing spare parts for factory machines, ships and heavy equipment; CNC not stated; portfolio looks templated.",
+    "source_year": 2026
+  },
+  {
+    "name": "Jasa CNC (jasa-cnc.com)",
+    "kind": "cnc_router_wood",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [
+      "CNC router",
+      "laser cutting"
+    ],
+    "serves": [
+      "signage",
+      "interior fit-out"
+    ],
+    "makes": "2D/3D CNC-router cutting of ACP, PVC, MDF and HMR boards; fiber-laser metal cutting page (2-3 kW)",
+    "size_note": null,
+    "certs": [],
+    "website": "https://jasa-cnc.com",
+    "source_url": "https://jasa-cnc.com/kontak-kami/",
+    "source_type": "company_site",
+    "evidence": "Site describes a CNC router service in Surabaya for PVC, ACP, MDF and HMR; a separate page offers 2-3 kW fiber-laser metal cutting.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Jaya Metal Surabaya",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kota Surabaya",
+    "capabilities": [],
+    "serves": [
+      "construction (light-steel roofing)"
+    ],
+    "makes": "Self-drilling screws and light-steel roofing screws, 2.9-6.3 mm",
+    "size_note": null,
+    "certs": [
+      "TKDN 58.5-59.0%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Jaya%20Metal%20Surabaya",
+    "source_type": "government",
+    "evidence": "TKDN database (Surabaya) lists self-drilling and light-steel roofing screws 2.9-6.3 mm at about 58.5-59% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Eka Ormed Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [],
+    "serves": [
+      "hospitals (orthopaedics)"
+    ],
+    "makes": "Bone plates and screws, Kuntscher and interlocking nails, hemi-hip, elbow and radial-head prostheses, external fixators, orthopaedic instruments",
+    "size_note": null,
+    "certs": [
+      "TKDN 16-80%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Eka%20Ormed",
+    "source_type": "government",
+    "evidence": "TKDN database lists Sidoarjo implant maker: bone plates, screws, nails, hemi-hip and elbow systems, ex-fix sets, at 16-80% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Logamindo Sari Mulia",
+    "kind": "foundry_machining",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [
+      "casting (iron and steel, 1-2,200 kg)"
+    ],
+    "serves": [
+      "shipbuilding"
+    ],
+    "makes": "Ship mooring and deck castings: capstans, gypsy wheels, closed chocks, roller fairleads; general iron and steel castings",
+    "size_note": null,
+    "certs": [
+      "TKDN 46.9-49.9%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Logamindo%20Sari%20Mulia",
+    "source_type": "government",
+    "evidence": "TKDN database (Sidoarjo) lists iron and steel castings 1-2,200 kg plus capstans, gypsy wheels, closed chocks and roller fairleads at 46.9-49.9%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Albe Putri Jaya",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [],
+    "serves": [
+      "irrigation and water resources"
+    ],
+    "makes": "Sluice gates (0.2-5 m) with manual or motorised spindle and gear hoists",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Albe%20Putri%20Jaya",
+    "source_type": "government",
+    "evidence": "TKDN database (Sidoarjo, Jabon) lists six sluice-gate types with gear or motor-gearbox hoists, each at 40% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Tenery Manufacture International",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [],
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Four-wheel tractors (T-500, about 50 hp) and crawler tractor (R-110, 105 hp)",
+    "size_note": null,
+    "certs": [
+      "TKDN 33.8-35.5%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=traktor",
+    "source_type": "government",
+    "evidence": "TKDN database (Sidoarjo) lists T-500 Banteng and Macan four-wheel tractors and an R-110 Badak crawler tractor at 33.8-35.5%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Insera Sena (Polygon Bikes)",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [
+      "frame building",
+      "final assembly"
+    ],
+    "serves": [
+      "bicycle retail (domestic and export)"
+    ],
+    "makes": "Bicycles and e-bikes (Polygon brand)",
+    "size_note": "Installed capacity 1.2M bicycles/yr, about 700k output, 70% exported (2022, snippet)",
+    "certs": [],
+    "website": "https://www.polygonbikes.com",
+    "source_url": "https://www.polygonbikes.com/about-us/",
+    "source_type": "company_site",
+    "evidence": "About page: founded 1989, based in Sidoarjo, owns manufacturing from frame building to final assembly, more than five million bicycles produced.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Elang Jagad",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [],
+    "serves": [
+      "household appliances",
+      "automotive (Astra Honda Motor supply chain)"
+    ],
+    "makes": "Gas-stove burners, household utensils and vehicle components (Ngingas metal village)",
+    "size_note": "About 30 employees (2017)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/4964/sentra-ikm-logam-ngingas-dorong-kemajuan-industri-dalam-negeri",
+    "source_type": "news",
+    "evidence": "Feb 2017: Ngingas firm making stove burners and vehicle parts; with three other IKM shipped 80,000 components to an AHM tier-one supplier.",
+    "source_year": 2017
+  },
+  {
+    "name": "Metal Manufakturing Indonesia",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [
+      "CNC milling",
+      "metal stamping"
+    ],
+    "serves": [
+      "automotive",
+      "electronics",
+      "heavy equipment",
+      "general manufacturing"
+    ],
+    "makes": "CNC-milled metal and plastic parts and prototypes; stamping and metal packaging per site menu",
+    "size_note": null,
+    "certs": [],
+    "website": "https://metal-manufakturing.com",
+    "source_url": "https://metal-manufakturing.com/2024/12/16/harga-jasa-cnc-milling-solusi-akurat-dan-terjangkau-untuk-proyek-anda/",
+    "source_type": "company_site",
+    "evidence": "Dec 2024 page offers CNC milling from Waru, Sidoarjo; text is partly templated, so treat as low confidence.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Bakti Bumi Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [],
+    "serves": [
+      "waste management"
+    ],
+    "makes": "Waste-processing crusher, 2,500 kg/h",
+    "size_note": null,
+    "certs": [
+      "TKDN 34.73%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=crusher",
+    "source_type": "government",
+    "evidence": "TKDN database (Sidoarjo) lists a 2,500 kg/h waste-processing crusher machine at 34.73% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Gayo Papan Lestari",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Sidoarjo",
+    "capabilities": [],
+    "serves": [
+      "waste management"
+    ],
+    "makes": "Waste shredders (fixed knife, flywheel) and waste-sorting machines (GAPARI brand)",
+    "size_note": null,
+    "certs": [
+      "TKDN 35.0-38.3%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pencacah",
+    "source_type": "government",
+    "evidence": "TKDN database (Sidoarjo) lists GAPARI waste shredder at 34.96% and waste-sorting machine at 38.26% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Barata Indonesia (Persero)",
+    "kind": "foundry_machining",
+    "province": "Jawa Timur",
+    "city": "Kab. Gresik",
+    "capabilities": [
+      "casting",
+      "machining",
+      "plate work"
+    ],
+    "serves": [
+      "rail",
+      "sugar mills",
+      "cement",
+      "shipbuilding",
+      "oil and gas",
+      "water resources"
+    ],
+    "makes": "Rail bogie castings, couplers and axle boxes; sugar-mill rolls; mill liners; shaft brackets and rudder horns; hollow-cone valves",
+    "size_note": "Foundry capacity up to 15,000 t/yr (Oct 2025)",
+    "certs": [
+      "TKDN 100% (castings)",
+      "AAR (since 2011)",
+      "RINA, Lloyd's Register, BKI (casting facilities)"
+    ],
+    "website": "https://www.barata.id",
+    "source_url": "https://www.barata.id/en/pt-barata-indonesia-persero-and-iperindo-collaboration-in-maritime-and-national-manufacturing-sector/",
+    "source_type": "company_site",
+    "evidence": "Oct 2025 release: Gresik foundry up to 15,000 t/yr; IPERINDO MoU to replace imported shaft brackets and rudder horns; castings certified RINA, LR, BKI.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Indoprima Gemilang",
+    "kind": "foundry_machining",
+    "province": "Jawa Timur",
+    "city": "Kab. Gresik",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "pumps",
+      "automotive",
+      "rail"
+    ],
+    "makes": "FC250 cast-iron bearing housings for end-suction pumps; group also makes brake linings and ferro and steel castings",
+    "size_note": null,
+    "certs": [
+      "TKDN 81.7-84.2%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Indoprima%20Gemilang",
+    "source_type": "government",
+    "evidence": "TKDN database lists a Gresik registration with four FC250 cast bearing housings (EN25 to EN45A) at 81.7-84.2% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Indospring Tbk",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Gresik",
+    "capabilities": [
+      "hot and cold spring forming"
+    ],
+    "serves": [
+      "automotive OEM",
+      "automotive aftermarket"
+    ],
+    "makes": "Leaf springs, coil springs, engine valve springs and stabilizer bars",
+    "size_note": "Three plants in Gresik; customers include 16 OEM brands in 19 countries",
+    "certs": [],
+    "website": "https://indospring.co.id",
+    "source_url": "https://indospring.co.id/contact-us",
+    "source_type": "company_site",
+    "evidence": "Company site lists Plant 1 and Plants 2-3 in Gresik; springs made by hot and cold processes for 16 OEM brands in 19 countries.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Tri Ratna Diesel Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Gresik",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "irrigation"
+    ],
+    "makes": "Self-priming irrigation pumps (CROWN, AMERTA, NIAGARA), rice-milling units, rubber-roll huskers, cultivators, organic-fertiliser machines",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.7-49.5%",
+      "BMP 11.25%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tri%20Ratna%20Diesel",
+    "source_type": "government",
+    "evidence": "TKDN database (Gresik) lists irrigation pumps, cultivators, rice-milling units and fertiliser machines at roughly 41-49% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Setia Kawan",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Mojokerto",
+    "capabilities": [],
+    "serves": [
+      "waste management"
+    ],
+    "makes": "Waste-sorting machines (1-2 t/h) with flywheels, gearbox and sieve; hydraulic presses",
+    "size_note": null,
+    "certs": [
+      "TKDN 43.75%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Setia%20Kawan",
+    "source_type": "government",
+    "evidence": "TKDN database (Kota Mojokerto) lists 1-2 t/h waste-sorting machines with gearbox and sieve, and a hydraulic press, at 43.75%.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Palupi Agri Berdikari",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Mojokerto",
+    "capabilities": [],
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Four-wheel tractors 45-105 hp with disc ploughs; 100 hp crawler tractor",
+    "size_note": null,
+    "certs": [
+      "TKDN 33.8-39.1%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=traktor",
+    "source_type": "government",
+    "evidence": "TKDN database (Kab. Mojokerto) lists 45-105 hp four-wheel tractors with disc ploughs and a 100 hp crawler tractor at 34-39%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Marthys Orthopaedic Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Pasuruan",
+    "capabilities": [],
+    "serves": [
+      "hospitals (orthopaedics, spine, maxillofacial)"
+    ],
+    "makes": "Titanium and 316L bone plates and screws, interlocking nails, pedicle-screw spinal systems, bipolar hip prostheses, orthopaedic instruments",
+    "size_note": "About 140 TKDN product lines (database count, 16 Oct 2026); one Japanese machine and 664 device types (Dec 2022)",
+    "certs": [
+      "TKDN 35.6-98.3%",
+      "BMP 7.65%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Marthys",
+    "source_type": "government",
+    "evidence": "TKDN database (Kab. Pasuruan) returns about 140 product lines: titanium plates, spinal screws, nails, bipolar hips, instruments, at 35.6-98.3%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Boma Bisma Indra (Persero)",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Pasuruan",
+    "capabilities": [],
+    "serves": [
+      "oil and gas",
+      "process plants"
+    ],
+    "makes": "Shell-and-tube heat exchangers, air coolers, pressure vessels and columns, air and gas compressor packages, generator packages",
+    "size_note": null,
+    "certs": [
+      "TKDN 13.5-56.0%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Boma%20Bisma",
+    "source_type": "government",
+    "evidence": "TKDN database (registered in Kota Pasuruan) lists heat exchangers, pressure vessels up to 6.2 m OD and compressor packages at 13.5-56%.",
+    "source_year": 2026
+  }
+]

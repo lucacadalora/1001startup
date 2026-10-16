@@ -1,0 +1,516 @@
+[
+  {
+    "province": "Sulawesi Selatan",
+    "area": "Sulawesi Selatan",
+    "level": "province",
+    "focus": {
+      "product": "Power-transmission and mill spares: gears, sprockets, shafts, couplings and pulleys for cement, sugar, flour/feed mills, smelters and ships",
+      "hs": [
+        "848310",
+        "848340",
+        "848350",
+        "848390"
+      ],
+      "why": "Makassar holds the region's only formal machining base (SIINas, Oct 2026: 8 KBLI 25920 metal-working entries incl. 3 firms, 2 ship-repair firms, 1 non-ferrous foundry, a TKDN hoist-crane maker) and the densest mill buyers: Semen Tonasa, Semen Bosowa Maros, Makassar Tene, Sinergi Gula Nusantara, Eastern Pearl and Bungasari flour, five feed mills, Bantaeng nickel smelters. Indonesia imported US$842.9M of HS 8483 in 2025 (Japan 29%, China 28%). PNUP runs D4/S2 manufacturing programmes.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Ship propulsion and repair parts (propellers, tail shafts, rudder stocks)",
+        "hs": [
+          "848710",
+          "848310"
+        ],
+        "why": "LPN Shipyard (Barru) overhauls shafts, propellers and rudders; IKI has its Makassar yard; SIINas lists 3 incorporated ship/boat builders and 2 ship-repair firms; propeller imports US$27.7M in 2025.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Small food, feed and agro-processing machines",
+        "hs": [
+          "843880",
+          "843610"
+        ],
+        "why": "CV Haqi Jaya holds TKDN for six food/feed machines; the Massepe (Sidrap) smithing cluster has 74 smiths and 288 workers (journal snippet, year unclear); five feed mills buy locally.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Semen Tonasa",
+      "PT Semen Bosowa Maros",
+      "PT Vale Indonesia Tbk (Sorowako)",
+      "PT Huadi Nickel-Alloy Indonesia",
+      "PT Makassar Tene",
+      "PT Sinergi Gula Nusantara",
+      "PT Eastern Pearl Flour Mills",
+      "PT Bungasari Flour Mills Indonesia",
+      "PT Mars Symbioscience Indonesia",
+      "PT Japfa Comfeed Indonesia Tbk",
+      "PT Charoen Pokphand Indonesia",
+      "PT Industri Kapal Indonesia (Persero)"
+    ],
+    "local_inputs": [
+      "nickel ore and matte (Luwu Timur)",
+      "steel billets and bars (PT Sermani Steel, PT Artha Baja Prima, PT Pabrik Baja Barawaja)",
+      "limestone and clay (cement)",
+      "sugarcane",
+      "cocoa",
+      "rice and maize",
+      "fish, shrimp and seaweed"
+    ],
+    "clusters": [
+      "Kawasan Industri Makassar (KIMA), 340 ha",
+      "Bantaeng nickel smelters",
+      "Massepe blacksmith cluster, Sidenreng Rappang",
+      "LPN Shipyard, Barru"
+    ],
+    "official_designation": null,
+    "umk_2026": "UMP 2026 Rp3,921,088 (+7.2% on 2025's Rp3,657,527); city UMK (Makassar) not verified",
+    "skills": "Politeknik Negeri Ujung Pandang (D3 Teknik Mesin, D3 Perawatan Alat Berat, S1 Terapan Teknik Manufaktur and Mekatronika, S2 Terapan Rekayasa Teknologi Manufaktur); Politeknik ATI Makassar (Kemenperin: Teknik Manufaktur Industri Agro, Otomasi Sistem Permesinan); SMTI Makassar; Balai Diklat Industri Makassar; Akademi Komunitas Industri Manufaktur Bantaeng; BBSPJI Hasil Perkebunan, Mineral Logam dan Maritim (testing), Makassar",
+    "confidence": "medium",
+    "sources": [
+      "https://www.kemenperin.go.id/direktori-perusahaan",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Jaya%20Karya%20Makassar",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Haqi%20Jaya",
+      "https://www.ptlpn.com/layanan/",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8483&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848710&flowCode=M",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8276963/cek-ini-daftar-ump-2026-di-36-provinsi",
+      "https://mesin.poliupg.ac.id/",
+      "https://atim.ac.id",
+      "https://www.kemenperin.go.id/daftar_alamat",
+      "https://web.ptkimamakassar.co.id/tentang-kami/company-profile",
+      "https://ojs.unm.ac.id/JES/article/view/20047"
+    ]
+  },
+  {
+    "province": "Sulawesi Tengah",
+    "area": "Sulawesi Tengah",
+    "level": "province",
+    "focus": {
+      "product": "Smelter and steel-mill wear and spare parts: RKEF kiln and furnace parts, rolling-mill rolls and parts, crusher wear parts, rebuilt or cast-and-machined near Morowali",
+      "hs": [
+        "841790",
+        "851490",
+        "845530",
+        "845590",
+        "847490"
+      ],
+      "why": "IMIP runs 54 NPI furnace lines, 15.6 Mt/yr stainless and 7 Mt/yr carbon-steel capacity and 4,810 MW of coal power; SIINas lists 32 non-ferrous smelting firms in the province. 2025 imports of these parts were 70-80% Chinese (furnace parts US$83.8M, electric-furnace parts US$90.0M, rolls US$32.9M, rolling-mill parts US$43.8M). Local capacity is near zero (1 machining firm registered) and local procurement is food, sand and gravel, so start with rebuilds and reverse-engineered parts beside PILM.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Conveyor idlers, pulleys and drive parts for smelters and ore handling",
+        "hs": [
+          "843139",
+          "848350",
+          "848390"
+        ],
+        "why": "Same buyers; HS 843139 imports US$211.6M in 2025 (China 61%); simple turned and welded parts suit a new shop.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Stainless cutlery and kitchen/food-service ware from local stainless coil",
+        "hs": [
+          "821591",
+          "821599",
+          "732393"
+        ],
+        "why": "IMIP ran metal-craft training in 2024 aiming at home-made spoons and forks; Wamenperin said Morowali got DAK funds for a metal Sentra IKM (Aug 2025).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Indonesia Tsingshan Stainless Steel",
+      "PT Indonesia Guang Ching Nickel and Stainless Steel Industry",
+      "PT Indonesia Ruipu Nickel and Chrome Alloy",
+      "PT Sulawesi Mining Investment",
+      "PT Dexin Steel Indonesia",
+      "PT Tsingshan Steel Indonesia",
+      "PT Huayue Nickel Cobalt",
+      "PT QMB New Energy Materials",
+      "PT Hengjaya Nickel Industry",
+      "PT Ranger Nickel Industry",
+      "PT Gunbuster Nickel Industry",
+      "PT Panca Amara Utama"
+    ],
+    "local_inputs": [
+      "nickel ore",
+      "nickel pig iron",
+      "stainless slab, HRC and CRC (IMIP)",
+      "carbon steel (IMIP)",
+      "coke",
+      "ferrochrome",
+      "cocoa",
+      "coconut",
+      "palm sugar",
+      "fish and seaweed"
+    ],
+    "clusters": [
+      "Indonesia Morowali Industrial Park (IMIP), Bahodopi, Morowali (54 listed tenants)",
+      "KEK Palu, Tawaeli (1,500 ha)",
+      "GNI smelter, Morowali Utara"
+    ],
+    "official_designation": "RPIP Sulawesi Tengah 2018-2038 (Perda 6/2018; Pergub 8/2020); KEK Palu (PP 31/2014; nickel, cocoa and seaweed processing); 2025 IKM sentra programme on fish, coconut and palm sugar",
+    "umk_2026": "UMP 2026 Rp3,179,565 (+9.1% on 2025's Rp2,914,583); Morowali UMK not verified",
+    "skills": "Politeknik Industri Logam Morowali (Kemenperin, Labota, Bahodopi: Teknik Perawatan Mesin, Teknik Listrik Instalasi, Teknik Kimia Mineral; IMIP pays a scholarship to all PILM students)",
+    "confidence": "medium",
+    "sources": [
+      "https://imip.co.id/tenant/",
+      "https://imip.co.id/klaster-industri-stainless-steel/",
+      "https://imip.co.id/klaster-industri-carbon-steel/",
+      "https://imip.co.id/infrastruktur-pendukung-power-plant/",
+      "https://imip.co.id/wp-content/uploads/2025/08/OK-SIARAN-PERS-Wamenperin-Ajak-IMIP-Dukung-Pengembangan-Sentra-IKM.pdf",
+      "https://imip.co.id/beasiswa-hilirisasi-imip/",
+      "https://www.kemenperin.go.id/direktori-perusahaan",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841790&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=851490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=845530&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=845590&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843139&flowCode=M",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8276963/cek-ini-daftar-ump-2026-di-36-provinsi",
+      "https://pilm.ac.id",
+      "https://www.disperindag.sultengprov.go.id/images/laporan/69e8733b92ca0.pdf",
+      "https://id.wikipedia.org/wiki/Kawasan_Ekonomi_Khusus_Palu"
+    ]
+  },
+  {
+    "province": "Sulawesi Tenggara",
+    "area": "Sulawesi Tenggara",
+    "level": "province",
+    "focus": {
+      "product": "Conveyor and ore-handling parts: idlers, rollers, pulleys, shafts and screen/chute wear parts for nickel mines, jetties and smelters",
+      "hs": [
+        "843139",
+        "848350",
+        "848390",
+        "847490"
+      ],
+      "why": "SIINas lists 11 non-ferrous smelting firms incl. VDNI, OSS and Pomalaa New Energy Materials; ore moves by conveyor, jetty and barge. HS 843139 imports were US$211.6M in 2025 (China 61%). The local base is thin: 2 household metal-working shops, 1 non-ferrous foundry, 3 ship-repair and 3 shipbuilding firms.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "RKEF furnace and kiln consumable parts (shared with Sulawesi Tengah)",
+        "hs": [
+          "841790",
+          "851490"
+        ],
+        "why": "VDNI/OSS run RKEF lines; furnace and electric-furnace parts imports were 74% and 78% Chinese in 2025.",
+        "fit": "both"
+      },
+      {
+        "product": "Tug, barge and boat repair parts (propellers, shafts)",
+        "hs": [
+          "848710",
+          "848310"
+        ],
+        "why": "Registered ship repairers (Arsa Mega Pratama, Dokmor Optima Kajayan, Chemset Sukses Mandiri Buteng) and Delta Samudra Shipyard serve ore barges and ferries.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Virtue Dragon Nickel Industry",
+      "PT Obsidian Stainless Steel",
+      "PT Pomalaa New Energy Materials",
+      "PT Bintang Smelter Indonesia",
+      "PT Macika Mineral Industri",
+      "PT Stargate Mineral Asia",
+      "PT Nikel Prima Gemilang"
+    ],
+    "local_inputs": [
+      "nickel ore",
+      "nickel pig iron and ferronickel",
+      "Buton asphalt",
+      "cocoa",
+      "coconut",
+      "fish"
+    ],
+    "clusters": [
+      "VDNI/OSS smelter complex, Morosi, Konawe",
+      "Pomalaa nickel processing, Kolaka"
+    ],
+    "official_designation": null,
+    "umk_2026": "UMP 2026 Rp3,306,496 (+7.6% on 2025's Rp3,073,551); Konawe/Kendari UMK not verified",
+    "skills": "Politeknik Tridaya Virtu Morosi (smelter-linked; placed graduates at smelters in Konawe and Morowali Utara, 2023 report, snippet); PNUP PSDKU campus in Kolaka (energy conversion)",
+    "confidence": "low",
+    "sources": [
+      "https://www.kemenperin.go.id/direktori-perusahaan",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843139&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841790&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=851490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848710&flowCode=M",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8276963/cek-ini-daftar-ump-2026-di-36-provinsi",
+      "https://mesin.poliupg.ac.id/",
+      "https://finance.detik.com/energi/d-6540877/industri-smelter-serap-sdm-lokal-lewat-cara-ini"
+    ]
+  },
+  {
+    "province": "Sulawesi Utara",
+    "area": "Sulawesi Utara",
+    "level": "province",
+    "focus": {
+      "product": "Coconut-processing machines and expeller spares (coir decorticators, cocopeat presses, copra and oil-expeller worms and shafts)",
+      "hs": [
+        "847920",
+        "847990",
+        "843880"
+      ],
+      "why": "KEK Bitung (PP 32/2014, 534 ha) targets fish, coconut and pharma processing; SIINas lists coconut processors Cargill Indonesia, Multi Nabati Sulawesi, Agro Makmur Raya and Mapalus Makawanua Charcoal. CV Victorina already holds TKDN for coir decorticators (600 kg/h), cocopeat presses and corn shellers. Formal machining is thin (3 household shops).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Fishing-vessel propulsion and deck parts (propellers, shafts)",
+        "hs": [
+          "848710",
+          "848310"
+        ],
+        "why": "CV Noah Karya Mandiri builds 15 m pajeko purse-seiners (TKDN); IKI runs a 4.1 ha Bitung yard (snippet); Bitung fleet feeds the canneries.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Fish-canning and processing line spares",
+        "hs": [
+          "843890",
+          "842290"
+        ],
+        "why": "Five canneries are registered: Deho Canning, Sinar Pure Foods International, Samudra Mandiri Sentosa, Delta Pasific Indotuna, Carvinna Trijaya Makmur; 3D-printed guides and change parts suit short runs.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Deho Canning Company",
+      "PT Sinar Pure Foods International",
+      "PT Samudra Mandiri Sentosa",
+      "PT Delta Pasific Indotuna",
+      "PT Cargill Indonesia",
+      "PT Multi Nabati Sulawesi",
+      "PT Salim Ivomas Pratama",
+      "PT Conch North Sulawesi Cement",
+      "PT Industri Kapal Indonesia (Persero) Bitung yard"
+    ],
+    "local_inputs": [
+      "coconut (copra, coconut oil, coir, shell charcoal)",
+      "tuna and other fish",
+      "limestone (cement)",
+      "palm oil (refining)"
+    ],
+    "clusters": [
+      "KEK Bitung, Matuari (534 ha)",
+      "Bitung fishing port and cannery cluster"
+    ],
+    "official_designation": "KEK Bitung (PP 32/2014; fishery, coconut and pharmaceutical processing); KEK Likupang (tourism) not verified",
+    "umk_2026": "UMP 2026 Rp4,002,630 (+6.0% on 2025's Rp3,775,425), highest of the seven; Bitung/Manado UMK not verified",
+    "skills": "BSPJI Manado (Kemenperin standards and testing unit); Politeknik Negeri Manado exists but its machining programmes were not verified",
+    "confidence": "low",
+    "sources": [
+      "https://id.wikipedia.org/wiki/Kawasan_Ekonomi_Khusus_Bitung",
+      "https://en.wikipedia.org/wiki/Bitung",
+      "https://www.kemenperin.go.id/direktori-perusahaan",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Victorina",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Noah%20Karya",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sulawesi",
+      "https://industri.kontan.co.id/news/iki-shipyard-raih-kontrak-perbaikan-kapal-tunda-pelindo-marines",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848710&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843890&flowCode=M",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8276963/cek-ini-daftar-ump-2026-di-36-provinsi",
+      "https://www.kemenperin.go.id/daftar_alamat"
+    ]
+  },
+  {
+    "province": "Gorontalo",
+    "area": "Gorontalo",
+    "level": "province",
+    "focus": {
+      "product": "Corn post-harvest machines and spares (shellers, dryers, hammer mills)",
+      "hs": [
+        "843352",
+        "841931",
+        "843780",
+        "843390",
+        "843790"
+      ],
+      "why": "Corn is Gorontalo's signature crop (1.5 Mt in 2017-18, about 30% of national corn exports, per the governor; snippet, pre-2023). Charoen Pokphand runs a feed mill (SIINas). CV Victorina in North Sulawesi shows a local maker can certify TKDN corn shellers (1-2 t/h). Formal machining base: 3 household shops, no firm.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Sugar-mill spares (mill rollers, shafts, gears)",
+        "hs": [
+          "843890",
+          "848340"
+        ],
+        "why": "PT Pabrik Gula Gorontalo is registered (SIINas); mill maintenance buys turned and geared parts.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Coconut-processing machines",
+        "hs": [
+          "847920",
+          "843880"
+        ],
+        "why": "PT Multi Nabati Sulawesi is registered as a coconut-oil processor in Gorontalo (SIINas).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Pabrik Gula Gorontalo",
+      "PT Charoen Pokphand Indonesia",
+      "PT Multi Nabati Sulawesi"
+    ],
+    "local_inputs": [
+      "maize",
+      "sugarcane",
+      "coconut",
+      "fish"
+    ],
+    "clusters": [],
+    "official_designation": null,
+    "umk_2026": "UMP 2026 Rp3,405,144 (+5.7% on 2025's Rp3,221,731)",
+    "skills": null,
+    "confidence": "low",
+    "sources": [
+      "https://www.kemenperin.go.id/direktori-perusahaan",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Victorina",
+      "https://www.industry.co.id/read/57207/gunernur-gorontalo-minta-menperin-agus-gumiwang-dorong-industri-hasil-pertanian",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8276963/cek-ini-daftar-ump-2026-di-36-provinsi"
+    ]
+  },
+  {
+    "province": "Sulawesi Barat",
+    "area": "Sulawesi Barat",
+    "level": "province",
+    "focus": {
+      "product": "Palm-oil-mill wear parts (screw-press worms and cages, digester and conveyor parts, sprockets)",
+      "hs": [
+        "847920",
+        "847990",
+        "848390"
+      ],
+      "why": "Sulbar's registered large processors are palm-oil mills (9 PT firms under KBLI 10431, e.g. Unggul Widya Teknologi Lestari, Mitra Andalan Sawit, Trinity Palmas Plantation). Press worms wear fast and copy quality hinges on material and hardening (earlier national research). There is no incorporated machining firm; 36 household tool smiths are registered (KBLI 2593).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Cocoa and coffee post-harvest and processing machines",
+        "hs": [
+          "843820",
+          "841931"
+        ],
+        "why": "RPIP 2020-2040 (Perda 3/2021) names cocoa first among six priority industries and plans machine provision for processors.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Farm hand tools (machetes, hoes) from the household smithing base",
+        "hs": [
+          "8201"
+        ],
+        "why": "SIINas lists 36 household entries under KBLI 2593 (cutlery and hand tools), the largest such count of the seven provinces.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Unggul Widya Teknologi Lestari",
+      "PT Mitra Andalan Sawit",
+      "PT Manakarra Unggul Lestari",
+      "PT Toscano Indah Pratama",
+      "PT Trinity Palmas Plantation",
+      "PT Wahana Karya Sejahtera Mandiri",
+      "PT Awana Sawit Lestari",
+      "PT Duta Karya Aren"
+    ],
+    "local_inputs": [
+      "palm oil (CPO)",
+      "cocoa",
+      "coconut",
+      "coffee",
+      "palm sugar",
+      "fish"
+    ],
+    "clusters": [],
+    "official_designation": "RPIP Sulawesi Barat 2020-2040 (Perda 3/2021): priority industries cocoa, coconut, coffee, textiles/weaving, palm sugar and fish; KID roadmap Permenperin 134/2010 (cocoa, coconut, coffee, palm sugar, textiles, fish)",
+    "umk_2026": "UMP 2026 Rp3,315,935 (+6.8% on 2025's Rp3,104,430)",
+    "skills": null,
+    "confidence": "low",
+    "sources": [
+      "https://peraturan.bpk.go.id/Download/244891/PERDA%20NOMOR%203%20TAHUN%202021.pdf",
+      "https://www.kemenperin.go.id/direktori-perusahaan",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8276963/cek-ini-daftar-ump-2026-di-36-provinsi"
+    ]
+  },
+  {
+    "province": "Maluku Utara",
+    "area": "Maluku Utara",
+    "level": "province",
+    "focus": {
+      "product": "Near-site maintenance spares for smelters and ports: shafts, bushings, couplings, sprockets and conveyor rollers made in Weda or Obi",
+      "hs": [
+        "848310",
+        "848390",
+        "843139"
+      ],
+      "why": "SIINas lists 35 non-ferrous smelting firms (IWIP tenants such as Angel Nickel, Huafei Nickel Cobalt, Yashi; Harita's Halmahera Jaya Feronikel, Halmahera Persada Lygend, Karunia Permai Sentosa, Obi Nickel Cobalt). Harita is lifting FeNi capacity to 305,000 t/yr by end-2026 (snippet). No machining firm is registered; IWIP's Sept 2026 business matching with 160 UMKM (snippet) is the entry route.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "HPAL and RKEF slurry-pump and valve wear parts, cast elsewhere and finished locally",
+        "hs": [
+          "841391",
+          "848190"
+        ],
+        "why": "HPAL plants at Obi (Halmahera Persada Lygend, Obi Nickel Cobalt) and IWIP (Huafei); pump parts imports US$300M in 2025 (China 40%, earlier research).",
+        "fit": "both"
+      },
+      {
+        "product": "Tug, barge and boat propulsion repair",
+        "hs": [
+          "848710",
+          "848310"
+        ],
+        "why": "Island logistics depend on barges and boats; no ship-repair firm is registered in SIINas.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Indonesia Weda Bay Industrial Park (IWIP)",
+      "PT Angel Nickel Industry",
+      "PT Huafei Nickel Cobalt",
+      "PT Yashi Indonesia Investment",
+      "PT Halmahera Jaya Feronikel",
+      "PT Halmahera Persada Lygend",
+      "PT Karunia Permai Sentosa",
+      "PT Obi Nickel Cobalt",
+      "PT Megah Surya Pertiwi",
+      "PT Natural Indococonut Organik"
+    ],
+    "local_inputs": [
+      "nickel ore",
+      "nickel pig iron and ferronickel",
+      "MHP (HPAL)",
+      "coconut and copra",
+      "nutmeg and cloves",
+      "fish",
+      "timber"
+    ],
+    "clusters": [
+      "Indonesia Weda Bay Industrial Park (IWIP), Lelilef, Weda, Halmahera Tengah",
+      "Harita Nickel complex, Obi island, Halmahera Selatan"
+    ],
+    "official_designation": null,
+    "umk_2026": "UMP 2026 Rp3,552,840 (+4.25%; detik, Dealls) but Rp3,510,240 (+3%) in Bisnis and DDTC: unresolved",
+    "skills": null,
+    "confidence": "low",
+    "sources": [
+      "https://www.kemenperin.go.id/direktori-perusahaan",
+      "https://iwip.co.id/en/about-iwip",
+      "https://industri.kontan.co.id/news/bkpm-dan-iwip-dorong-kemitraan-inklusif-perkuat-umkm-maluku-utara",
+      "https://market.bisnis.com/read/20260701/192/1984517/harita-nickel-nckl-kebut-tiga-proyek-strategis-di-pulau-obi",
+      "https://nickelindustries.com/carbon/assets/0007ea/000006/2025-Sustainability-Report.pdf",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843139&flowCode=M",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8276963/cek-ini-daftar-ump-2026-di-36-provinsi",
+      "https://ekonomi.bisnis.com/read/20260101/12/1940945/daftar-lengkap-ump-2026-di-seluruh-indonesia-berlaku-hari-ini"
+    ]
+  }
+]

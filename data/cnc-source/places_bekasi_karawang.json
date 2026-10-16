@@ -1,0 +1,188 @@
+[
+  {
+    "province": "Jawa Barat",
+    "area": "Bekasi",
+    "level": "cluster",
+    "focus": {
+      "product": "Plastic-injection moulds and press (stamping) dies, incl. die components, for car, motorcycle and electronics parts",
+      "hs": [
+        "848071",
+        "820730"
+      ],
+      "why": "Densest named mould/die base found: Meiwa Mold, Yamaha Motor Mold, Umeda, Rhythm (MM2100), MS Mold (GIIC), Wing (EJIP), Banshu (Jababeka), next to their buyers (about 21 plastics-related and 10 stamping/press tenants on MM2100's list; Suzuki, MMKI, Hyundai, Wuling, AHM, Epson). Indonesia imported US$214.0M of 848071 injection moulds (68% from China) and US$195.5M of all HS 8207 interchangeable tools in 2025 (820730 press tools not split out). Moulds and dies are CNC milling, EDM and grinding work.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Jigs, checking fixtures and gauges for tier-1 assembly and machining lines",
+        "hs": [
+          "846620",
+          "903180"
+        ],
+        "why": "Banshu (Jababeka), Mekamix (Tarumajaya) and Mytek (Delta Silicon, snippet) already sell jigs and checking fixtures. Low-volume, high-mix fixtures suit CNC plus 3D-printed plastic nests and gauges. HS codes are approximate; fixtures have no single code and import values were not retrieved.",
+        "fit": "both"
+      },
+      {
+        "product": "Machined wear and spare parts for process plants and pumps (bushings, sprockets, crusher and kiln parts)",
+        "hs": [
+          "848390",
+          "847490",
+          "841391"
+        ],
+        "why": "Kab./Kota Bekasi IKM already hold TKDN certificates for these: Kito Multi (sprockets, crusher, kiln parts, 41-48%), Epsindo (bushings, 73.75%), Fusoh (mining bushings), Lerindro (pump throat bushings). 2025 imports: 841391 pump parts US$300.0M, 847490 crusher parts US$288.1M, 848390 US$118.7M.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "Astra Honda Motor (MM2100 assembly; also GIIC)",
+      "Suzuki Indomobil Motor (GIIC)",
+      "Mitsubishi Motors Krama Yudha Indonesia (GIIC)",
+      "Hyundai Motor Manufacturing Indonesia (GIIC)",
+      "SGMW Motor Indonesia / Wuling (GIIC)",
+      "Denso Indonesia and Denso Manufacturing Indonesia (MM2100)",
+      "Astemo Indonesia Automotive System (MM2100) and Hitachi Astemo Bekasi Brake Systems (GIIC)",
+      "Kayaba Indonesia (MM2100)",
+      "Indonesia Epson Industry (EJIP)",
+      "Haier Electrical Appliances Indonesia (EJIP)"
+    ],
+    "local_inputs": [
+      "Slit and sheared cold-rolled steel from estate steel service centres (United Steel Center Indonesia, JFE Shoji Steel Indonesia in MM2100; Metal One Steel Service Indonesia in GIIC)",
+      "Steel tube and wire (Indonesia Steel Tube Works, Iron Wire Works Indonesia in GIIC)",
+      "Plastic compounds and colourants (Indonesia Polymer Compound, S-IK Indonesia in EJIP; Riken Indonesia, Nippisun Indonesia in MM2100)",
+      "Aluminium processing (Nippon Carbide Industries Indonesia, Yan-Jin Indonesia in EJIP)",
+      "Castings and forgings (Progress Diecast, Yanmar casting in EJIP; Fukuyama Giken, Sankei Gohsyu in MM2100; Baoforging in KITIC)"
+    ],
+    "clusters": [
+      "MM2100 Industrial Town, Cikarang Barat (2,400 ha, 400+ tenants, 97% occupied, auto 36%)",
+      "EJIP, Cikarang Selatan (about 320 ha, 97 tenants, 100% occupied)",
+      "GIIC in Kota Deltamas, Cikarang Pusat (about 2,200 ha, 181 tenants incl. 89 Japanese, auto/moto 39%)",
+      "Kota Jababeka, Cikarang (5,600 ha township, about 60% developed)",
+      "Lippo Cikarang / Delta Silicon industrial park",
+      "BIIE, Cikarang Timur",
+      "KITIC (Kawasan Industri Terpadu Indonesia China), Serang Baru"
+    ],
+    "official_designation": null,
+    "umk_2026": "Kab. Bekasi Rp5,938,885; Kota Bekasi Rp5,999,443 (detik text and MetroTV) or Rp5,992,931 (detik table) - sources conflict. Set by West Java Kepgub 561.7/Kep.862-Kesra/2025, 24 Dec 2025.",
+    "skills": "Politeknik Astra (ASTRAtech), Delta Silicon II, Cikarang Selatan: D3/D4 incl. Teknik Produksi dan Proses Manufaktur, Mesin Otomotif, Mekatronika; builds the Innostra CNC/3D trainer. BBPVP Bekasi (one of 6 national BBPVP; CNC course not confirmed). Jababeka JClass with 8 Kab. Bekasi SMKs (Sep 2026; soft, digital and entrepreneur skills, not machining). SMK Ananda Mitra Industri and ITSB in Kota Deltamas. 'Politeknik Jababeka' not verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://www.jetro.go.jp/world/asia/idn/sez.html",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-1.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-2.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_02-1.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_02-2.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_04-1.pdf",
+      "https://mm2100.co.id/tenant/",
+      "https://www.jababeka.com/",
+      "https://deltamas.id/",
+      "https://banshuplastic.com/about/about-banshu-plastic-indonesia",
+      "https://www.mekamix.co.id/jasa-milling-cnc-di-bekasi/",
+      "https://presisiwidya.co.id/jasa-cnc-milling-cutting-lathe-pt-presisi-widya/",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=spare%20part",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=bushing",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848071&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8207&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=841391&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=847490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848390&flowCode=M",
+      "https://www.polytechnic.astra.ac.id/",
+      "https://www.polytechnic.astra.ac.id/en/berhasil-tingkatkan-tkdn-mesin-cnc-innostra-diapresiasi-presiden-ri-joko-widodo-di-lpdp-festival-2023/",
+      "https://bbpvpbekasi.kemnaker.go.id/profile/profile_singkat",
+      "https://bcasekuritas.co.id/latest-news/news/jababeka-dan-8-smk-di-kabupaten-bekasi-perkuat-kesiapan-kerja-lulusan",
+      "https://www.detik.com/jabar/bisnis/d-8276785/daftar-lengkap-besaran-ump-umk-jabar-2026",
+      "https://www.metrotvnews.com/read/kELCn0P8-ini-daftar-umk-jawa-barat-2026-bandung-naik-jadi-rp473-juta",
+      "https://www.industry.co.id/read/154322/strategi-menperin-agus-pacu-ikm-logam-masuk-rantai-pasok-industri-besar"
+    ]
+  },
+  {
+    "province": "Jawa Barat",
+    "area": "Karawang–Purwakarta",
+    "level": "cluster",
+    "focus": {
+      "product": "Machined cast and forged powertrain parts (engine, transmission and motorcycle drivetrain components) as tier-2/3 and spare-part work for the Karawang powertrain plants",
+      "hs": [
+        "840991",
+        "840999",
+        "870840",
+        "871410"
+      ],
+      "why": "The belt holds the powertrain end of the chain: Toyota, Yamaha, Isuzu, Aisin Takaoka (KIIC); Daihatsu Drivetrain (DDMI), Art Piston, NT Piston Ring, Musashi, JTEKT (Suryacipta); Honda Precision Parts, AHM, Koyama Casting and a molten-aluminium supplier (Indotaisei). KIIC is 59% automotive/motor; 71 of Suryacipta's 175 tenants are automotive and parts. Machining castings and forgings is CNC turning and milling work. 2025 import values for these codes were not retrieved.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Die-casting dies, foundry patterns and core boxes for local aluminium and iron foundries",
+        "hs": [
+          "848041",
+          "848049",
+          "848030"
+        ],
+        "why": "Captive buyers sit in the belt (Koyama Casting, Dongil Casting, Aisin Takaoka, Molten Aluminum Producer Indonesia) and die makers already operate (Fuji Technica in KIIC, Toyo Dies in Suryacipta). 2025 imports: 848041 US$9.5M, 848049 US$14.4M, 848030 US$10.8M. Dies need CNC and EDM; patterns and sand cores suit 3D printing, but no local AM bureau was found.",
+        "fit": "both"
+      },
+      {
+        "product": "Assembly jigs, fixtures and gauges for EV, battery and electric-motorcycle lines",
+        "hs": [
+          "846620",
+          "903180"
+        ],
+        "why": "HLI Green Power battery-cell plant in Karawang (opened Jul 2024, 10 to 20 GWh) plus BYD and VinFast in neighbouring Subang, which must move from 40% to 60% TKDN by Jan 2027. Suryacipta lists EV and e-motorcycle newcomers (Yadea, TVS, Huayu, Zhongke). Fixtures are low-volume and high-mix, which suits 3D printing plus CNC.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "Toyota (KIIC)",
+      "Astra Daihatsu Motor (Suryacipta)",
+      "Daihatsu Drivetrain Manufacturing Indonesia (Suryacipta)",
+      "Isuzu Astra Motor Indonesia (Suryacipta)",
+      "Yamaha Motor (KIIC)",
+      "Astra Honda Motor (Indotaisei)",
+      "Honda Precision Parts Manufacturing (Indotaisei)",
+      "JTEKT Indonesia (Suryacipta)",
+      "TVS Motor Company Indonesia (Suryacipta)",
+      "Yadea Teknologi Indonesia (Suryacipta)",
+      "HLI Green Power battery-cell plant (Karawang)",
+      "Sharp (KIIC)"
+    ],
+    "local_inputs": [
+      "Molten aluminium (Molten Aluminum Producer Indonesia, Indotaisei)",
+      "Steel products (Super Steel Karawang, Chu Kong Steel, Chunpao Steel Indonesia, Asahi Seiren Indonesia, Sugiura Indonesia: Suryacipta 'Steel & Metal' tenants)",
+      "Steel pipe (Indonesia Nippon Steel Pipe, Indotaisei)",
+      "Iron and aluminium castings (Koyama Casting Indonesia, Dongil Casting, Aisin Takaoka)",
+      "Polyester/PET materials (Indorama Ventures Sustainable Solutions Indonesia, Suryacipta)",
+      "Ceramic glaze (China Glaze Indonesia, Suryacipta)"
+    ],
+    "clusters": [
+      "KIIC - Karawang International Industrial City (about 1,500 ha; about 170-180 tenants, 70-75% Japanese; about 60,000 workers)",
+      "Suryacipta City of Industry, Ciampel (1,400 ha; 175 tenants; 95% occupied; with Subang Smartpolitan 4,100 ha)",
+      "Bukit Indah Industrial Park / Indotaisei, Kalihurip, Cikampek (700 ha, 390 ha developed, 32 tenants, about 58% occupied)",
+      "Kota Bukit Indah (Purwakarta side)",
+      "Kawasan Samudra Buana Texindo, Jatiluhur, Purwakarta"
+    ],
+    "official_designation": null,
+    "umk_2026": "Kab. Karawang Rp5,886,852; Kab. Purwakarta Rp5,052,856 (West Java Kepgub 561.7/Kep.862-Kesra/2025, 24 Dec 2025). Karawang was Rp5,176,179 in 2023 and Rp5,257,834 in 2024 per KIIC brochure.",
+    "skills": "Politeknik Enjinering Indorama (PEI), Purwakarta, est. 18 Jul 2013: D3/D4 Teknologi Rekayasa Manufaktur-Mesin, Mekatronika, Listrik; over 70% practical; BNSP certification before graduation. KIIC runs technical training for tenant staff with Hiroshima University and ITB. No SMK machining, BLK or company-academy data verified for Karawang or Purwakarta.",
+    "confidence": "low",
+    "sources": [
+      "https://www.jetro.go.jp/world/asia/idn/sez.html",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_03-1.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_03-3.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-1.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_10-1.pdf",
+      "https://news.lifenesia.com/wp-content/uploads/2024/03/%E3%82%A4%E3%83%B3%E3%83%89%E5%A4%A7%E6%88%90%E5%B7%A5%E6%A5%AD%E5%9B%A3%E5%9C%B0%E3%80%80%E5%85%A5%E5%B1%85%E4%BC%81%E6%A5%AD%E4%B8%80%E8%A6%A7%E6%94%B9%E5%AE%9A.pdf",
+      "https://kiic.co.id/tenant-company/",
+      "https://suryacipta.com/",
+      "https://www.kotabukitindah.com/home",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=stamping",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848041&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848049&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848030&flowCode=M",
+      "https://investortrust.id/business/64634/hyundai-lg-consortium-expands-indonesia-battery-cell-plant-to-20-gwh",
+      "https://industri.kontan.co.id/news/pabrik-byd-subang-resmi-beroperasi-pemerintah-dorong-tkdn-kendaraan-listrik",
+      "https://pei.ac.id/",
+      "https://www.detik.com/jabar/bisnis/d-8276785/daftar-lengkap-besaran-ump-umk-jabar-2026",
+      "https://www.industry.co.id/read/154322/strategi-menperin-agus-pacu-ikm-logam-masuk-rantai-pasok-industri-besar"
+    ]
+  }
+]

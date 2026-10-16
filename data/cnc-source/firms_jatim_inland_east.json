@@ -1,0 +1,996 @@
+[
+  {
+    "name": "Pioneer CNC Indonesia",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "laser cutting",
+      "engraving",
+      "CNC machine building"
+    ],
+    "serves": [
+      "metal fabrication",
+      "SMEs",
+      "training"
+    ],
+    "makes": "Builds CNC machines; fibre-laser cutting of iron, stainless and aluminium sheet; engraving; CNC operator training",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.malangterkini.id/2026/06/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Terbaru-2026-Hasil-Presisi-Dan-Berkualitas.html",
+    "source_type": "news",
+    "evidence": "Local listing (16 Jun 2026) places it in Pakis: builds CNC machines, fibre-laser cuts steel, stainless and aluminium, engraving, operator training.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Maharani Ion Produsindo",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "laser cutting"
+    ],
+    "serves": [
+      "advertising and signage",
+      "construction",
+      "interiors"
+    ],
+    "makes": "Laser-cut steel, galvanised, ACP, MDF and acrylic sheet; signage, decorative panels and facades",
+    "size_note": null,
+    "certs": [],
+    "website": "https://www.lettermalang.com",
+    "source_url": "https://www.lettermalang.com/2022/11/jasa-cutting-laser-malang.html",
+    "source_type": "company_site",
+    "evidence": "Own site (Nov 2022): advertising, construction and laser-cutting firm in Pakisaji; cuts steel, galvanised plate, ACP, MDF, acrylic. Listed again Jun 2026.",
+    "source_year": 2022
+  },
+  {
+    "name": "Prima Sakti Asia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "metal stamping",
+      "machining"
+    ],
+    "serves": [
+      "industrial machinery"
+    ],
+    "makes": "Metal and precision components for small-to-large industrial machines",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.malangterkini.id/2026/06/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Terbaru-2026-Hasil-Presisi-Dan-Berkualitas.html",
+    "source_type": "news",
+    "evidence": "Listed (Jun 2026) as a Singosari maker of metal and precision machine components; customer reviews mention stamping and machining.",
+    "source_year": 2026
+  },
+  {
+    "name": "Utama Molding",
+    "kind": "mould_die_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Malang",
+    "capabilities": [
+      "mould making"
+    ],
+    "serves": [
+      "manufacturing"
+    ],
+    "makes": "Precision moulds and custom metal components",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.malangterkini.id/2026/06/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Terbaru-2026-Hasil-Presisi-Dan-Berkualitas.html",
+    "source_type": "news",
+    "evidence": "Listed (Jun 2026) in Sukun as a maker of precision moulds and custom metal parts; CNC use not stated.",
+    "source_year": 2026
+  },
+  {
+    "name": "Hokky CNC",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "CNC machining (type not stated)"
+    ],
+    "serves": [],
+    "makes": "Metal CNC job work",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.malangterkini.id/2025/02/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Info-Terbaru.html",
+    "source_type": "news",
+    "evidence": "Listed (Feb 2025) among metal CNC service providers in Malang, located in Sumberpucung; no machine details given.",
+    "source_year": 2025
+  },
+  {
+    "name": "Preisindo",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "CNC machining (type not stated)"
+    ],
+    "serves": [],
+    "makes": "Metal CNC job work",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.malangterkini.id/2025/02/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Info-Terbaru.html",
+    "source_type": "news",
+    "evidence": "Listed (Feb 2025) among metal CNC service providers in Malang, located in Tajinan; no machine details given.",
+    "source_year": 2025
+  },
+  {
+    "name": "Polaris Malang Laser Cutting & CNC",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kota Malang",
+    "capabilities": [
+      "laser cutting",
+      "CNC (type not stated)"
+    ],
+    "serves": [],
+    "makes": "Laser cutting and CNC job work",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.malangterkini.id/2025/02/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Info-Terbaru.html",
+    "source_type": "news",
+    "evidence": "Listed (Feb 2025) among metal CNC service providers in Malang, in Lowokwaru; services inferred from its name; no machine details.",
+    "source_year": 2025
+  },
+  {
+    "name": "SR Tech Engineering",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Timur",
+    "city": "Kota Malang",
+    "capabilities": [
+      "CNC machining (type not stated)"
+    ],
+    "serves": [],
+    "makes": "Metal CNC job work",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.malangterkini.id/2025/02/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Info-Terbaru.html",
+    "source_type": "news",
+    "evidence": "Listed (Feb 2025) among metal CNC service providers in Malang, located in Blimbing; no machine details given.",
+    "source_year": 2025
+  },
+  {
+    "name": "Naratech Indonesia",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "CNC milling machine building (claimed)"
+    ],
+    "serves": [
+      "parking and access control",
+      "transport and ports",
+      "hospitals",
+      "universities"
+    ],
+    "makes": "Barrier gates, turnstiles and parking systems; advertises a locally built CNC milling machine",
+    "size_note": null,
+    "certs": [
+      "ISO 9001 (claimed on site)",
+      "TKDN (claimed; no % given; not found in TKDN database 16 Oct 2026)"
+    ],
+    "website": "https://www.naratech.co.id",
+    "source_url": "https://www.naratech.co.id/product/mesin-cnc-milling-terbaik-produksi-anak-bangsa-ber-tkdn/",
+    "source_type": "company_site",
+    "evidence": "Singosari firm mainly selling parking and access gear; product page advertises a 'ber-TKDN' CNC milling machine without specifications.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Idukasih Robotika",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Timur",
+    "city": "Malang",
+    "capabilities": [
+      "CNC laser-diode machine assembly"
+    ],
+    "serves": [],
+    "makes": "Drones, robots, CNC machines (laser-diode CNC) and renewable power systems",
+    "size_note": "operating since 2017",
+    "certs": [],
+    "website": null,
+    "source_url": "https://sipora.polije.ac.id/48664/",
+    "source_type": "government",
+    "evidence": "Polije internship report (Aug-Dec 2025): robotics firm on UMM's vocational campus since 2017, assembling laser-diode CNC machines.",
+    "source_year": 2025
+  },
+  {
+    "name": "Agen Gambar",
+    "kind": "3d_print_service",
+    "province": "Jawa Timur",
+    "city": "Kota Malang",
+    "capabilities": [
+      "3D printing (technology not stated)",
+      "CAD/3D design"
+    ],
+    "serves": [
+      "engineering",
+      "architecture"
+    ],
+    "makes": "3D printing priced per gram, plus 2D/3D CAD drawing and design",
+    "size_note": null,
+    "certs": [],
+    "website": "https://agengambar.com",
+    "source_url": "https://agengambar.com/hubungi-kami/",
+    "source_type": "company_site",
+    "evidence": "Own site (undated, read Oct 2026): Klojen office offers 3D printing charged per gram and CAD design for engineering and architecture.",
+    "source_year": null
+  },
+  {
+    "name": "Print3DMalang (Tokopedia shop)",
+    "kind": "3d_print_service",
+    "province": "Jawa Timur",
+    "city": "Malang",
+    "capabilities": [
+      "SLA/DLP resin",
+      "FDM"
+    ],
+    "serves": [
+      "hobby",
+      "prototyping",
+      "small-batch production"
+    ],
+    "makes": "Resin printing of miniatures, figures and custom parts; PETG and TPU prints",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.tokopedia.com/hshop-138",
+    "source_type": "marketplace",
+    "evidence": "(snippet) Tokopedia shop: resin 3D printing of miniatures, figures, custom parts; PETG/TPU; rated 5.0 from 95 reviews. Page fetch timed out.",
+    "source_year": 2026
+  },
+  {
+    "name": "N.A 3D Print",
+    "kind": "3d_print_service",
+    "province": "Jawa Timur",
+    "city": "Malang",
+    "capabilities": [
+      "FDM",
+      "SLA/DLP resin"
+    ],
+    "serves": [],
+    "makes": "FDM and SLA 3D printing service",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.instagram.com/na3dprint/",
+    "source_type": "directory",
+    "evidence": "(snippet) Instagram account markets FDM and SLA 3D printing in Malang and also sells via Tokopedia; not fetched.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pindad (Persero) Divisi Munisi, Turen",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "ammunition manufacturing",
+      "ballistic testing"
+    ],
+    "serves": [
+      "defence",
+      "police"
+    ],
+    "makes": "Certified 5.56, 7.62, 9 and 12.7 mm and large-calibre ammunition; product range also lists rockets, detonators and pyrotechnics",
+    "size_note": "munitions site of 166 ha in Turen (Wikipedia)",
+    "certs": [
+      "TKDN 30.48-46.75% (munitions, certificates valid to 2028)"
+    ],
+    "website": "https://pindad.com/ammunition",
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+    "source_type": "government",
+    "evidence": "TKDN list (issued 2025): PT PINDAD, Turen, Kab. Malang, certified 5.56, 7.62, 9, 12.7 mm and large-calibre munitions at 30-47% TKDN.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Sapta Inti Perkasa",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Malang",
+    "capabilities": [
+      "small-arms ammunition production"
+    ],
+    "serves": [
+      "defence"
+    ],
+    "makes": "Ammunition from a private plant",
+    "size_note": "target of 'hundreds of millions' of rounds a year",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/t9f7o7416/penguatan-industri-pertahanan-percepat-kemandirian-alutsista",
+    "source_type": "news",
+    "evidence": "Republika (25 Jan 2026): has run a private ammunition plant in Malang since 2024, targeting hundreds of millions of rounds a year.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sari Bahari",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "metal fabrication of bomb casings"
+    ],
+    "serves": [
+      "defence"
+    ],
+    "makes": "Practice and live bomb casings",
+    "size_note": null,
+    "certs": [
+      "TKDN 76.09-87.21%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024-25): Pakis, Kab. Malang maker of practice and live bomb casings (KBLI 25200), TKDN 76-87%, valid to 2028.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Pabrik Mesin Guntur",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Malang",
+    "capabilities": [
+      "pump manufacturing",
+      "rice-polisher manufacturing"
+    ],
+    "serves": [
+      "farm irrigation",
+      "rice milling"
+    ],
+    "makes": "Horizontal centrifugal irrigation pumps (GUNTUR and KAPUAS brands) and rice polishers",
+    "size_note": null,
+    "certs": [
+      "TKDN 42.56-58.84%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024, 2026): Sukun, Kota Malang maker of centrifugal irrigation pumps and rice polishers, TKDN 42.6-58.8%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Inovasi Anak Negeri",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "food-machine fabrication"
+    ],
+    "serves": [
+      "food processing",
+      "coffee",
+      "small food businesses"
+    ],
+    "makes": "Choppers, multipurpose mills and shredders, mini vertical retort, oven dryer, ribbon mixer, 1-5 kg/batch coffee roaster",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.38-48.41%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024): Pakis, Kab. Malang maker of choppers, mills, mini retort, oven dryer, ribbon mixer and a coffee roaster, TKDN 40-48%.",
+    "source_year": 2024
+  },
+  {
+    "name": "CV Tirta Armagitha Jatim",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Malang",
+    "capabilities": [
+      "dryer fabrication"
+    ],
+    "serves": [
+      "coffee",
+      "cocoa"
+    ],
+    "makes": "Solar-powered coffee and cocoa dryer (40 kg)",
+    "size_note": null,
+    "certs": [
+      "TKDN 22.97%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+    "source_type": "government",
+    "evidence": "TKDN list (2025): Klojen, Kota Malang maker of a 40-kg solar coffee and cocoa dryer, TKDN 22.97%.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Piala Mas Industri",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "bus-body fabrication",
+      "welding and sheet metal"
+    ],
+    "serves": [
+      "bus operators",
+      "health services"
+    ],
+    "makes": "Big, medium and micro bus bodies; ambulance and mobile-clinic bodies",
+    "size_note": null,
+    "certs": [
+      "TKDN 31.69-55.15%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024-25): Singosari, Kab. Malang coachbuilder certified for big, medium and micro bus and ambulance bodies, TKDN 32-55%.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Wintrone Orionis Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "electric-bus assembly"
+    ],
+    "serves": [
+      "public transport"
+    ],
+    "makes": "Electric buses",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.76%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024): Singosari, Kab. Malang maker of a certified electric bus, TKDN 40.76%.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Balistha Gapala Nandya",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "lift and escalator manufacture"
+    ],
+    "serves": [
+      "buildings"
+    ],
+    "makes": "Escalators and passenger lifts",
+    "size_note": null,
+    "certs": [
+      "TKDN 27.52-27.89%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2026): Pakis, Kab. Malang maker of certified escalators and passenger lifts, TKDN 27.5-27.9%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sumbersari Indah Dewata",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Malang",
+    "capabilities": [
+      "water-meter manufacture"
+    ],
+    "serves": [
+      "water utilities"
+    ],
+    "makes": "Drinking-water meters",
+    "size_note": null,
+    "certs": [
+      "TKDN 34.71%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024): Dau, Kab. Malang maker of drinking-water meters (HS 9028), TKDN 34.71%.",
+    "source_year": 2024
+  },
+  {
+    "name": "CV Inseco CNC Indonesia",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Timur",
+    "city": "Kab. Kediri",
+    "capabilities": [
+      "CNC router",
+      "laser cutting",
+      "plasma cutting",
+      "fiber laser marking",
+      "styrofoam cutting"
+    ],
+    "serves": [
+      "signage and advertising",
+      "woodworking and crafts",
+      "metal fabrication"
+    ],
+    "makes": "CNC routers (1300x2500 mm, Mach3), fibre-laser cutters (Raytools head), plasma and plasma+router machines, laser markers",
+    "size_note": "claims 'hundreds' of machines delivered nationwide; founded 2019",
+    "certs": [
+      "no TKDN found (16 Oct 2026)"
+    ],
+    "website": "https://insecocnc.com",
+    "source_url": "https://insecocnc.com/",
+    "source_type": "company_site",
+    "evidence": "Own site: Ngadiluwih, Kediri 'produsen dalam negeri' of CNC routers, fibre-laser, plasma and marking machines since 2019; 'ratusan' machines sold.",
+    "source_year": 2026
+  },
+  {
+    "name": "Genesis Kediri",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kota Kediri",
+    "capabilities": [
+      "laser cutting",
+      "CNC router"
+    ],
+    "serves": [
+      "advertising",
+      "interiors",
+      "sticker applicators"
+    ],
+    "makes": "Cut-to-order acrylic, EVA, PVC board, ACP, MDF and stainless/iron/galvanised plate; acrylic and sticker supply",
+    "size_note": "founded 2018; cutting area 1300-2500 mm",
+    "certs": [],
+    "website": "https://genesiskediri.com",
+    "source_url": "https://genesiskediri.com/",
+    "source_type": "company_site",
+    "evidence": "Own site: Kota Kediri cutting service since 2018; laser for acrylic and stainless/iron/galvanised plate, CNC router for PVC, ACP, MDF.",
+    "source_year": 2026
+  },
+  {
+    "name": "Master Tukang",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kab. Kediri",
+    "capabilities": [
+      "laser cutting"
+    ],
+    "serves": [
+      "construction",
+      "interior and exterior decor",
+      "events"
+    ],
+    "makes": "Laser-cut decorative metal plates and ornaments as part of contracting work",
+    "size_note": null,
+    "certs": [],
+    "website": "https://mastertukang.co.id",
+    "source_url": "https://mastertukang.co.id/kontraktor-laser-cutting-plat-ornamen-kediri/",
+    "source_type": "company_site",
+    "evidence": "Own page (Feb 2024): registered construction firm in Ngadiluwih, Kediri offering laser-cut decorative metal plates; machines not named.",
+    "source_year": 2024
+  },
+  {
+    "name": "CV Langgeng Jaya Karoseri",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Jombang",
+    "capabilities": [
+      "welding and sheet-metal fabrication",
+      "ABS vacuum forming (in-house built machine)"
+    ],
+    "serves": [
+      "bus and truck bodies"
+    ],
+    "makes": "Medium bus bodies on Isuzu NQR 81 and Canter FE 84G chassis; ABS formed parts; a 500-kg mini crane design",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://sipora.polije.ac.id/53203/",
+    "source_type": "government",
+    "evidence": "Polije reports (2024-25): Jombang coachbuilder making medium bus bodies; built its own ABS vacuum-forming machine; designed a 500-kg mini crane.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Bintang Kadiri",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Kediri",
+    "capabilities": [
+      "compression connectors and cable lugs (aluminium, copper, bimetal)",
+      "ground rods"
+    ],
+    "serves": [
+      "power distribution"
+    ],
+    "makes": "Compression connectors, cable lugs, tension and non-tension joints, ground rods",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 85% (range 2.03-85%)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024-26): Ngasem, Kab. Kediri maker of aluminium, copper and bimetal compression connectors, cable lugs and ground rods.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Multiparts Rakindo",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Jombang",
+    "capabilities": [
+      "three-wheel motorcycle assembly"
+    ],
+    "serves": [
+      "transport"
+    ],
+    "makes": "Three-wheel motorcycles",
+    "size_note": null,
+    "certs": [
+      "TKDN 46.27-48.03%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2026): Jombang maker of certified three-wheel motorcycles, TKDN 46-48%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Epower Motor Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Jombang",
+    "capabilities": [
+      "electric motorcycle assembly"
+    ],
+    "serves": [
+      "transport"
+    ],
+    "makes": "Two-wheel electric motorcycles",
+    "size_note": null,
+    "certs": [
+      "TKDN 57.74%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024): Mojoagung, Kab. Jombang maker of a certified two-wheel electric motorcycle, TKDN 57.74%.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Bio Teknologi Surabaya",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Jombang",
+    "capabilities": [
+      "wastewater-plant fabrication"
+    ],
+    "serves": [
+      "water treatment"
+    ],
+    "makes": "Packaged wastewater treatment plants (IPAL)",
+    "size_note": null,
+    "certs": [
+      "TKDN 42.28-42.35%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2026): despite its name, located in Kesamben, Kab. Jombang; certified packaged wastewater treatment plants, TKDN 42%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Industri Kereta Api (Persero) - INKA, Madiun plant",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kota Madiun",
+    "capabilities": [
+      "carbody and underframe fabrication",
+      "welding",
+      "final assembly"
+    ],
+    "serves": [
+      "rail (KAI, KAI Commuter)",
+      "export rolling stock (Australia, Bangladesh, Philippines, New Zealand)"
+    ],
+    "makes": "Passenger coaches, KRL EMUs, freight wagons and locomotive platforms (underframes)",
+    "size_note": "Madiun site ~20 ha, ~1.5 cars/day (2019); 3,024 employees (2021)",
+    "certs": [
+      "TKDN 43.76% (flat wagon PPCW)",
+      "TKDN 46.12% (open wagon KKBW)"
+    ],
+    "website": "https://www.inka.co.id",
+    "source_url": "https://www.inka.co.id/artikel/lanjutkan-ekspor-inka-kirim-locomotive-platform-ke-australia",
+    "source_type": "company_site",
+    "evidence": "INKA press release (14 Feb 2025): Madiun ships first 2 of 50 locomotive platforms for UGL Rail, Australia, deliveries through 2028.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT INKA Multi Solusi (IMS)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kab. Madiun",
+    "capabilities": [
+      "fabrication",
+      "fibreglass moulding",
+      "component manufacture"
+    ],
+    "serves": [
+      "rail (INKA)",
+      "land transport"
+    ],
+    "makes": "Rail components, interior panels and fibreglass parts for INKA; wagon-component trading, maintenance and fabrication services",
+    "size_note": "11-ha factory at Desa Bagi, Kab. Madiun (2018)",
+    "certs": [],
+    "website": "https://www.inka.co.id/anak-perusahaan",
+    "source_url": "https://www.inka.co.id/artikel/buka-pabrik-baru-ims-siap-go-global",
+    "source_type": "company_site",
+    "evidence": "INKA (Feb 2018): 99.86%-INKA-owned IMS opened an 11-ha factory in Desa Bagi supplying components, interior panels and fibreglass.",
+    "source_year": 2018
+  },
+  {
+    "name": "Ayyasy Laser & CNC Cutting",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kota Madiun",
+    "capabilities": [
+      "laser cutting",
+      "CNC router"
+    ],
+    "serves": [],
+    "makes": "Custom laser cutting and CNC cutting of metal and non-metal sheet",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.instagram.com/ayyasylaser/",
+    "source_type": "directory",
+    "evidence": "(snippet) Instagram, Facebook and Yellow Pages entries place this custom laser-cutting and CNC shop in Kota Madiun; not fetched.",
+    "source_year": null
+  },
+  {
+    "name": "PT Mitra Maharta",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Ponorogo",
+    "capabilities": [
+      "rice-mill and grain-dryer fabrication"
+    ],
+    "serves": [
+      "rice milling"
+    ],
+    "makes": "Rice-milling-unit chassis, CCD colour-sorter frames, vertical dryer storage, elevators, intakes and dust collectors",
+    "size_note": null,
+    "certs": [
+      "TKDN 10.77-16.98%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+    "source_type": "government",
+    "evidence": "TKDN list (2025): Jenangan, Kab. Ponorogo maker of rice-mill chassis, colour-sorter frames and 10-30 t vertical-dryer parts.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Refindo Intiselaras Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Timur",
+    "city": "Kota Madiun",
+    "capabilities": [
+      "rock-bolt manufacture"
+    ],
+    "serves": [
+      "mining"
+    ],
+    "makes": "Split-set friction rock bolts",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.86-53.0%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024-25): Kartoharjo, Kota Madiun maker of split-set steel rock bolts for mining, TKDN 39-53%.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Gunung Mas Bersinar",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Madiun",
+    "capabilities": [
+      "bus-body fabrication"
+    ],
+    "serves": [
+      "bus operators"
+    ],
+    "makes": "Big, medium and micro bus bodies",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.80-42.36%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+    "source_type": "government",
+    "evidence": "TKDN list (2025): Jiwan, Kab. Madiun coachbuilder certified for big, medium and micro bus bodies, TKDN 41-42%.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Manufacture Dynamic Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Jember",
+    "capabilities": [
+      "laser cutting",
+      "turning (lathe)",
+      "sheet-metal bending",
+      "welding"
+    ],
+    "serves": [
+      "coffee",
+      "cocoa",
+      "agro-processing"
+    ],
+    "makes": "Coffee pulpers, electric coffee roasters (250 g/batch), cocoa and other appropriate-technology machines",
+    "size_note": "one Senfeng SF3015G fibre laser (8 mm mild steel, 4 mm stainless), 2024",
+    "certs": [],
+    "website": null,
+    "source_url": "https://sipora.polije.ac.id/38649/",
+    "source_type": "government",
+    "evidence": "Polije internship reports (2024-25): Jember maker of coffee pulpers, roasters, cocoa machines; runs Senfeng fibre laser, lathe and bending machine.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Intidaya Dinamika Sejati (Workshop Jember)",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Timur",
+    "city": "Kab. Jember",
+    "capabilities": [
+      "machining",
+      "cylinder liner boring",
+      "welding and fabrication",
+      "motor rewinding"
+    ],
+    "serves": [
+      "industrial repair",
+      "engines",
+      "pumps and blowers"
+    ],
+    "makes": "Industrial repair and overhaul (pumps, blowers, motors up to 200 kW), engine reconditioning and machining jobs",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://sipora.polije.ac.id/48346/",
+    "source_type": "government",
+    "evidence": "Polije reports (2023-25): Jember workshop with a machining production-planning division, fabrication area, liner boring and motor rewinding.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Riset Perkebunan Nusantara - ICCRI (Puslitkoka) machine line",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Jember",
+    "capabilities": [
+      "coffee and cocoa machine design",
+      "machine fabrication"
+    ],
+    "serves": [
+      "coffee",
+      "cocoa"
+    ],
+    "makes": "LASINKO coffee pulper (200-300 kg), huller (100 kg), 3-kg roaster and 15-kg grinder; ICCRI TECH machine line",
+    "size_note": null,
+    "certs": [
+      "TKDN 43.18% (pulper SILCO-300)",
+      "TKDN 36.07% (huller ULCO-100)",
+      "TKDN 52.78% (roaster ROSCO-3000D)",
+      "TKDN 40.34% (grinder HAMCO-15)"
+    ],
+    "website": "https://iccri.co.id",
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=riset%20perkebunan",
+    "source_type": "government",
+    "evidence": "TKDN database (16 Oct 2026) certifies RPN's LASINKO pulper, huller, roaster, grinder; ICCRI Jember sells its own roasters, pulpers, hullers.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Industri Kereta Api (Persero) - INKA, Banyuwangi plant",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Banyuwangi",
+    "capabilities": [
+      "carbody fabrication",
+      "welding",
+      "robotic automation (being installed)"
+    ],
+    "serves": [
+      "rail (KAI Commuter)",
+      "freight wagons"
+    ],
+    "makes": "Freight wagons; KRL EMU production line being installed (2024)",
+    "size_note": "limited operation since 2023; staff mainly local SMK graduates",
+    "certs": [],
+    "website": "https://www.inka.co.id",
+    "source_url": "https://www.inka.co.id/artikel/pabrik-inka-banyuwangi-siap-beroperasi-secara-penuh",
+    "source_type": "company_site",
+    "evidence": "INKA (6 Sep 2024): Kalipuro plant ran limited operations since 2023, built freight wagons, adding KRL lines and robots; trains staff via BLK.",
+    "source_year": 2024
+  },
+  {
+    "name": "Jember Laser Cutting (CNC Laser Cutting Fiber Marking Router Jember)",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kab. Jember",
+    "capabilities": [
+      "laser cutting",
+      "fiber laser marking",
+      "CNC router"
+    ],
+    "serves": [],
+    "makes": "CO2 laser cutting of acrylic, wood and thin metal; fibre marking; CNC router",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.instagram.com/jemberlasercutting/",
+    "source_type": "directory",
+    "evidence": "(snippet) Instagram account: CO2 laser cutting and fibre marking for acrylic, iron, stainless, wood; located in Ambulu, Jember; not fetched.",
+    "source_year": null
+  },
+  {
+    "name": "Adika Baja",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kab. Jember",
+    "capabilities": [
+      "plasma cutting",
+      "CNC router",
+      "welding"
+    ],
+    "serves": [],
+    "makes": "Welding shop with CNC plasma cutting and CNC router",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.facebook.com/p/Cnc-plasma-jember-100065688661011/",
+    "source_type": "directory",
+    "evidence": "(snippet) Facebook page 'Cnc plasma jember': welding shop ADIKA BAJA in Jember offers CNC plasma cutting and CNC router; not fetched.",
+    "source_year": null
+  },
+  {
+    "name": "CNC Plasma Cutting Plat Besi Banyuwangi",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Timur",
+    "city": "Kab. Banyuwangi",
+    "capabilities": [
+      "plasma cutting",
+      "fiber laser cutting"
+    ],
+    "serves": [],
+    "makes": "CNC plasma and fibre-laser cutting of steel plate",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.facebook.com/cncplasmacuttingbanyuwangi/",
+    "source_type": "directory",
+    "evidence": "(snippet) Facebook page of a Banyuwangi shop offering CNC plasma and fibre-laser cutting of steel plate; not fetched.",
+    "source_year": null
+  },
+  {
+    "name": "PT Blambangan Bahari Shipyard",
+    "kind": "machinery_maker",
+    "province": "Jawa Timur",
+    "city": "Kab. Banyuwangi",
+    "capabilities": [
+      "boat-hull building"
+    ],
+    "serves": [
+      "fisheries",
+      "marine tourism"
+    ],
+    "makes": "Fishing-boat hulls, speedboat hulls and canopied jukung",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.07-40.37%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+    "source_type": "government",
+    "evidence": "TKDN list (2024): Srono, Kab. Banyuwangi shipyard certified for fishing-boat and speedboat hulls and jukung, TKDN about 40%.",
+    "source_year": 2024
+  }
+]

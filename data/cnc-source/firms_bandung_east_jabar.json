@@ -1,0 +1,512 @@
+[
+ {
+  "name": "PT Dirgantara Indonesia (Persero)",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "machining",
+   "NC programming",
+   "sheet metal",
+   "surface treatment",
+   "composite bonding",
+   "tooling design and manufacture",
+   "aerostructure assembly"
+  ],
+  "serves": [
+   "aerospace",
+   "defence"
+  ],
+  "makes": "CN235, N219 and NC212i aircraft; aerostructure packages (CN295 tail planes and rear fuselage, Super Puma tail booms, Bell 412 tail booms and doors)",
+  "size_note": "3,689 employees (2021, pre-2023 figure; Wikipedia infobox)",
+  "certs": null,
+  "website": "https://www.indonesian-aerospace.com",
+  "source_url": "https://www.indonesian-aerospace.com/en/portfolio/aerostructure",
+  "source_type": "company_site",
+  "evidence": "Aerostructure page: global supply chain for Airbus, Boeing and Bell; detail parts, component manufacturing and assembly; CN295 tail planes, Bell 412 tail booms.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Pindad (Persero)",
+  "kind": "machinery_maker",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "CNC turning",
+   "Swiss-type CNC turning",
+   "CNC milling (VMC)",
+   "laser marking"
+  ],
+  "serves": [
+   "defence",
+   "mining",
+   "rail",
+   "construction",
+   "agriculture"
+  ],
+  "makes": "Small arms, ammunition, armoured vehicles, Maung vehicles, excavators, PTM45 tractor, generators, rail brake valves",
+  "size_note": null,
+  "certs": null,
+  "website": "https://pindad.com",
+  "source_url": "https://pindad.com/procurement-info",
+  "source_type": "company_site",
+  "evidence": "Procurement page: May-Jul 2026 awards for Swiss-type CNC lathe, double-pallet VMC 800, single-turret lathes and laser marker under 2026 Weapons Division investment programme.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Pudak Scientific",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "CNC machining",
+   "precision measurement",
+   "mould making"
+  ],
+  "serves": [
+   "aerospace",
+   "education and laboratory equipment"
+  ],
+  "makes": "Precision aircraft detail parts (Tier-2 to Collins and Meggitt per press snippet); science teaching kits and lab glassware",
+  "size_note": "6,000 m2 factory in Gedebage industrial area (opened 1991)",
+  "certs": [
+   "AS9100 Rev D (press snippet)"
+  ],
+  "website": "https://pudak-scientific.com",
+  "source_url": "https://pudak-scientific.com/en/partner.php",
+  "source_type": "company_site",
+  "evidence": "Site: precision part machining for aeronautical industry, tolerances to 5 microns, AMS-grade stainless; press snippet: AS9100 Rev D, about 500 aircraft part types.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Taka Precision Manufacturing Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "turbomachinery parts manufacturing",
+   "gearbox repair and manufacture",
+   "fabrication"
+  ],
+  "serves": [
+   "turbomachinery operators",
+   "industrial plants"
+  ],
+  "makes": "Turbo-machine and industrial spare parts, gearbox components, fabrications",
+  "size_note": null,
+  "certs": [
+   "ISO 9001:2008 (as stated in a 2024 job post; superseded edition)"
+  ],
+  "website": "http://www.taka.co.id",
+  "source_url": "https://www.disnakerja.com/pt-taka-precision-manufacturing-indonesia/",
+  "source_type": "directory",
+  "evidence": "Job-portal profile updated Dec 2024: Bandung maker of turbo-machine and industrial spare parts, gearbox repair and manufacture, ISO 9001:2008 quality system.",
+  "source_year": 2024
+ },
+ {
+  "name": "PT Taka Turbomachinery Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "repair and reconditioning",
+   "reverse engineering",
+   "field service"
+  ],
+  "serves": [
+   "operators of gas and steam turbines, pumps and compressors"
+  ],
+  "makes": "Service, repair and parts for gas/steam turbines, centrifugal pumps and compressors",
+  "size_note": null,
+  "certs": null,
+  "website": "http://www.taka.co.id",
+  "source_url": "https://karir.itb.ac.id/company/146974",
+  "source_type": "directory",
+  "evidence": "ITB career profile of Bandung TAKA group: TAKA Turbo (est. 1999) services rotating equipment and turbomachinery parts; snippet gives Jl. Soekarno-Hatta 797 address.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Polman Didaktik Indonesia",
+  "kind": "cnc_machine_builder",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "CNC milling machine building",
+   "machine assembly"
+  ],
+  "serves": [
+   "vocational schools and polytechnics",
+   "small industry"
+  ],
+  "makes": "KHD40 3-axis CNC milling machine (travel 380/270/370 mm, BT30, 6,000 rpm, 12-tool magazine)",
+  "size_note": null,
+  "certs": [
+   "TKDN 42.08%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ZIzQCZ73B0_F4_egUjyAOYLku-zeV3JEe3MNN0ZjY9M,",
+  "source_type": "government",
+  "evidence": "TKDN certificate: KHD40 CNC milling machine, 42.08% local content; company address Jl. PSM 31, Kebon Jayanti, Kiaracondong, Kota Bandung.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Perorangan Riset Maju Bersama",
+  "kind": "cnc_machine_builder",
+  "province": "Jawa Barat",
+  "city": "Kab. Bandung Barat",
+  "capabilities": [
+   "CNC machine building (3-axis)"
+  ],
+  "serves": null,
+  "makes": "3-axis CNC machine with 750 x 480 x 350 mm working area",
+  "size_note": null,
+  "certs": [
+   "TKDN 38%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=6tLSanDtTAhhjQC32YzZ4sYKS2CDI5l7t6LaOXrs8eQ,&id_siinas=6tLSanDtTAhhjQC32YzZ4sYKS2CDI5l7t6LaOXrs8eQ,",
+  "source_type": "government",
+  "evidence": "TKDN certificate: 'CNC 3 Axis', machining area 750 x 480 x 350 mm, 38% local content; address Jl. Gumil Raya 7, Sariwangi, Parongpong.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Metafuse Rekacipta Indonesia",
+  "kind": "3d_printer_maker",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "FDM",
+   "pellet extrusion (recycled plastic, XS-D upgrade)"
+  ],
+  "serves": null,
+  "makes": "Subsolid XS industrial FDM 3D printer, 400 x 400 x 300 mm build, 600 mm/s",
+  "size_note": null,
+  "certs": [
+   "TKDN 40%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=Ue76PG97xk7N53-sWB4ilUjPMrXXMX9WmmYovKP3u3A,&id_siinas=Ue76PG97xk7N53-sWB4ilUjPMrXXMX9WmmYovKP3u3A,",
+  "source_type": "government",
+  "evidence": "TKDN certificate: Subsolid XS 3D printer, 40% local content, upgradable to recycle plastic pellets; address Batu Mulia Permai, Pasirluyu, Regol, Kota Bandung.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Kawani Tekno Nusantara",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "job-order manufacturing",
+   "fabrication"
+  ],
+  "serves": [
+   "cement",
+   "automotive (Astra supplier programme)"
+  ],
+  "makes": "Import-substitute cement-plant spares: filling-spout impeller shaft, wedge cooler, roller pan conveyor (for Semen Indonesia)",
+  "size_note": null,
+  "certs": [
+   "ISO (standard not stated)"
+  ],
+  "website": null,
+  "source_url": "https://investortrust.id/esg/108898/46-tahun-jadi-pendamping-yayasan-astraydba-bantu-2030-umkm-di-21-daerah-masuk-rantai-pasok-industri",
+  "source_type": "news",
+  "evidence": "YDBA-mentored Bandung job-order manufacturer, ISO-certified, UMKM Mandiri 2024; Republika (May 2024) lists three Semen Indonesia spare parts it made.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Nanggala Kencana Rekatama Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "precision spare parts (processes not stated)"
+  ],
+  "serves": [
+   "defence"
+  ],
+  "makes": "Weapon components, ammunition and precision spare parts under a Kemhan licence",
+  "size_note": null,
+  "certs": [
+   "Kemhan production licence (per snippet)"
+  ],
+  "website": null,
+  "source_url": "https://ekonomi.republika.co.id/berita/t9f7o7416/penguatan-industri-pertahanan-percepat-kemandirian-alutsista",
+  "source_type": "news",
+  "evidence": "(snippet) Republika, Jan 2026: holds a Kemhan licence to make weapon components, ammunition and precision spare parts in Bandung.",
+  "source_year": 2026
+ },
+ {
+  "name": "Art Metal Laserindo",
+  "kind": "laser_plasma_fabricator",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "laser cutting",
+   "plasma cutting"
+  ],
+  "serves": null,
+  "makes": "Metal and stainless sheet cutting service, from Rp475,000 per m2 at 1 mm (cutting only)",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/hardev/jasa-laser-cutting-plasma-cutting-metal-stainless-bandung",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Hardev Market listing sells Bandung laser/plasma metal cutting by Art Metal Laserindo, operating since 2010; from Rp475,000/m2 at 1 mm.",
+  "source_year": null
+ },
+ {
+  "name": "BSM Laser Cutting",
+  "kind": "laser_plasma_fabricator",
+  "province": "Jawa Barat",
+  "city": "Kab. Bandung",
+  "capabilities": [
+   "laser cutting",
+   "laser engraving"
+  ],
+  "serves": null,
+  "makes": "Laser cutting and engraving of acrylic from CorelDRAW, DXF or PDF files",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/bsmlaser/jasa-laser-cutting-dan-grafir-akrilik-acrylic-3mm",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Tokopedia listing: laser cutting and engraving of 3 mm acrylic; workshop in Cileunyi, Kab. Bandung; accepts CorelDRAW, DXF, PDF.",
+  "source_year": null
+ },
+ {
+  "name": "Acrylicraft",
+  "kind": "laser_plasma_fabricator",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "laser cutting",
+   "laser engraving",
+   "3D printing (process not stated)"
+  ],
+  "serves": null,
+  "makes": "Laser cutting and engraving service plus a 3D-printing service",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/acrylicraft/jasa-laser-cutting-dan-engraving-bandung",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Same Tokopedia shop lists 'jasa laser cutting dan engraving bandung' and 'jasa 3d printing bandung'.",
+  "source_year": null
+ },
+ {
+  "name": "Acplagi",
+  "kind": "laser_plasma_fabricator",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "laser cutting"
+  ],
+  "serves": null,
+  "makes": "Acrylic laser cutting priced per cm of cut (e.g. 10 mm acrylic Rp210/cm)",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/acpbandung/laser-cutting-akrilik-bandung",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Tokopedia listing 'laser cutting akrilik bandung', shop located in Kota Bandung; 10 mm acrylic cut at Rp210 per cm.",
+  "source_year": null
+ },
+ {
+  "name": "Raftech Bandung",
+  "kind": "laser_plasma_fabricator",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "laser cutting"
+  ],
+  "serves": null,
+  "makes": "Free-form acrylic laser cutting, minimum order Rp30,000",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/raftech/jasa-custom-potong-akrilik-laser-cut-non-kotak-bentuk-bebas-cutting",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Tokopedia shop 'raftechbandung' offers custom free-form acrylic laser cutting with Rp30,000 minimum order.",
+  "source_year": null
+ },
+ {
+  "name": "Growina Acrylic",
+  "kind": "laser_plasma_fabricator",
+  "province": "Jawa Barat",
+  "city": "Kab. Bandung",
+  "capabilities": [
+   "laser cutting"
+  ],
+  "serves": null,
+  "makes": "Acrylic laser cutting, 5 mm sheet at Rp1,850 per 10 cm2 including material",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/macreasindo/jasa-cutting-laser-akrilik-tebal-5mm-rp-1850-per-10cm2",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Tokopedia listing from Kab. Bandung: 5 mm acrylic laser cutting at Rp1,850 per 10 cm2, material included.",
+  "source_year": null
+ },
+ {
+  "name": "Summit-Shop",
+  "kind": "cnc_router_wood",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "CNC router",
+   "CO2 laser cutting"
+  ],
+  "serves": null,
+  "makes": "Wood CNC routing and CO2 laser cutting; acrylic billed Rp3,000-6,000 per machine-minute",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/summit-/jasa-cnc-router-kayu-bandung",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Listing 'jasa CNC router kayu Bandung': CO2 laser and CNC for many materials; listing about 969 days old (roughly early 2024, estimate).",
+  "source_year": 2024
+ },
+ {
+  "name": "Golden Staff Printing",
+  "kind": "3d_print_service",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "FDM"
+  ],
+  "serves": null,
+  "makes": "PLA/PLA+ prints priced Rp390-1,500 per gram by layer height; minimum 5 pieces; free design consultation",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/goldenstaff/jasa-3d-printing-bandung-termurah",
+  "source_type": "marketplace",
+  "evidence": "(snippet) 'Jasa 3D printing Bandung' listing: PLA/PLA+ sliced in Cura, Rp390/g at 0.30 mm to Rp1,500/g at 0.10 mm layers.",
+  "source_year": null
+ },
+ {
+  "name": "3D Invention",
+  "kind": "3d_print_service",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "FDM"
+  ],
+  "serves": null,
+  "makes": "PLA prints at 0.2 or 0.28 mm layers priced by sliced weight; STL files",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/3dinvention/jasa-print-3d-cetak-3-dimensi-3d-printing-bandung-0-2-mm-pla",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Tokopedia listings '3D Printing Bandung' at 0.2 mm and 0.28 mm PLA; price follows sliced weight; colour choice and support removal.",
+  "source_year": null
+ },
+ {
+  "name": "WENN 33",
+  "kind": "3d_print_service",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "FDM",
+   "3D modelling"
+  ],
+  "serves": null,
+  "makes": "PLA prints and 3D models drawn from dimensioned sketches; 2-7 day pre-order",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/wenn33/jasa-3d-printing-murah-berkualitas-bandung-bisa-edit-3d",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Listing 'jasa 3d printing murah berkualitas bandung': PLA printing, design/edit of 3D models from complete hand sketches, 2-7 day pre-order.",
+  "source_year": null
+ },
+ {
+  "name": "WICTMGS",
+  "kind": "3d_print_service",
+  "province": "Jawa Barat",
+  "city": "Bandung (Kota or Kab. not stated)",
+  "capabilities": [
+   "3D printing (process not stated)"
+  ],
+  "serves": [
+   "product prototyping"
+  ],
+  "makes": "Custom prints for prototypes, design models and production parts; minimum order 1",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/wictmgs/jasa-custom-3d-print-bandung-wictmgs",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Listing 'Jasa Custom 3D Print Bandung': prototypes, design models and part production, minimum order one piece.",
+  "source_year": null
+ },
+ {
+  "name": "3D extrude id",
+  "kind": "3d_print_service",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "3D printing (process not stated)"
+  ],
+  "serves": null,
+  "makes": "3D-printing products and services sold on Tokopedia",
+  "size_note": "603 reviews, rating 4.8 (marketplace snippet)",
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.tokopedia.com/3dextrudeid",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Tokopedia shop located in Kota Bandung, rating 4.8 from 603 reviews; returned among Bandung 3D-print providers.",
+  "source_year": null
+ },
+ {
+  "name": "PT Tek Lab Indonesia (TekLab) - Bambu Lab hub Bandung",
+  "kind": "3d_print_service",
+  "province": "Jawa Barat",
+  "city": "Kota Bandung",
+  "capabilities": [
+   "FDM (Bambu Lab A1 mini, A1 combo, P1S)",
+   "3D-printing workshops"
+  ],
+  "serves": [
+   "consumers and hobbyists",
+   "schools (planned SMK curriculum)"
+  ],
+  "makes": "Sales, try-out printing and regular design/usage workshops at the first Bambu Lab offline hub in West Java",
+  "size_note": null,
+  "certs": null,
+  "website": null,
+  "source_url": "https://www.detik.com/jabar/wisata/d-8629770/warga-bandung-kini-bisa-bikin-mainan-sendiri-pakai-alat-ini",
+  "source_type": "news",
+  "evidence": "detikJabar, 23 Aug 2026: official Bambu Lab distributor opened West Java's first offline hub at Urban Republic, Jl. Ir. H. Djuanda; workshops; SMK curriculum planned.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Teknik Jaya Component",
+  "kind": "cnc_job_shop",
+  "province": "Jawa Barat",
+  "city": "Kab. Subang",
+  "capabilities": [
+   "CNC turning",
+   "CNC milling",
+   "radial boring",
+   "macro programming"
+  ],
+  "serves": [
+   "automotive",
+   "heavy equipment",
+   "plastic injection moulding",
+   "packaging",
+   "electrical and automation"
+  ],
+  "makes": "Injection-mould parts, heavy-equipment bearing housings, engine mounts, brackets, jigs and fixtures, parts from drawings",
+  "size_note": "About 13 CNC turning and milling machines",
+  "certs": null,
+  "website": "https://teknikjaya.co.id",
+  "source_url": "https://teknikjaya.co.id/harga-jasa-cnc/",
+  "source_type": "company_site",
+  "evidence": "Founded 1994 on Pantura, Sukamandi Jaya, Ciasem; about 13 CNC lathes/mills; mould parts, jigs, engine mounts for Bandung, Jakarta, Karawang clients.",
+  "source_year": 2026
+ }
+]

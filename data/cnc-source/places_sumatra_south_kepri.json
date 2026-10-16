@@ -1,0 +1,471 @@
+[
+ {
+  "province": "Kepulauan Riau",
+  "area": "Kepulauan Riau",
+  "level": "province",
+  "focus": {
+   "product": "OCTG premium-connection threading and tubular accessories (finish-threaded casing/tubing, couplings, pup joints, cross-overs)",
+   "hs": [
+    "730429",
+    "730792"
+   ],
+   "why": "Batam already holds a one-product cluster: Kabil hosts Citra Tubindo, Telaga Mas Mulia (36,000 t/yr), Servotech and APPIPA, and SIINas lists Rainbow Tubulars, Hydril (Tenaris), Hunting, Precision Pipe and NOV's H-Tech in Kepri. They hold API 5CT, JFE licences and TKDN up to 59%. TKDN rules steer upstream buyers to local threaders. Indonesia imported US$169.9M of casing/tubing (730429) in 2025 (Comtrade), down from US$347.9M in 2023; exports were US$126.7M in 2025.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Precision jigs, fixtures and injection-mould tooling for Batam's electronics, medical-device and EMS plants",
+    "hs": [
+     "848071",
+     "846620"
+    ],
+    "why": "84 electronics/electrical and 50 plastics firms are registered in Kepri; Precindo (65 staff, jigs and fixtures), Duta Dimensi, A & One (5-axis) and Sys-Mac already serve them. National mould imports were US$214.0M in 2025 (848071). Fixtures suit 3D printing; Polibatam already runs 3D printers.",
+    "fit": "both"
+   },
+   {
+    "product": "Ship propulsion and deck-machinery parts (propellers, shafts, couplings) for Batam and Karimun yards",
+    "hs": [
+     "848710",
+     "848310"
+    ],
+    "why": "Kepri's official 2010 designation is ships and ship parts (KBLI 30113); 55 shipbuilders and 23 ship repairers are registered; Batam's UMSK covers shipyards. Ship propeller imports: US$27.7M (2025).",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Saipem Indonesia",
+   "PT SMOE Indonesia",
+   "PT Vetco Gray Indonesia (Baker Hughes)",
+   "PT H-Tech Oilfield Equipment (NOV)",
+   "PT Caterpillar Indonesia Batam",
+   "PT Austin Engineering Indonesia",
+   "PT Sat Nusapersada Tbk",
+   "PT Flextronics Technology Indonesia",
+   "PT PCI Elektronik Internasional",
+   "PT Infineon Technologies Batam",
+   "PT Panasonic Industrial Devices Batam",
+   "PT Schneider Electric Manufacturing Batam",
+   "PT Yokogawa Manufacturing Batam",
+   "PT Shimano Batam",
+   "PT ASL Shipyard Indonesia",
+   "PT Graha Trisaka Industri",
+   "PT Batam Aero Teknik (KEK Batam Aero Technic MRO)"
+  ],
+  "local_inputs": [
+   "seamless green and mother pipe (PT Precision Pipe Indonesia)",
+   "alumina (PT Bintan Alumina Indonesia, KEK Galang Batang)",
+   "fish and marine products"
+  ],
+  "clusters": [
+   "Kabil Integrated Industrial Estate and Taiwan Industrial Park (Kabil, OCTG and oilfield)",
+   "Batamindo Industrial Park (Muka Kuning, 360 ha, since 1990)",
+   "Bintang Industrial Park I and II (Batu Ampar, Tanjung Uncang)",
+   "Latrade Industrial Park (Tanjung Uncang)",
+   "Kara Industrial Park and Tunas Bizpark (Batam Centre)",
+   "Bintan Industrial Estate (Lobam)",
+   "KEK Batam Aero Technic",
+   "KEK Nongsa",
+   "KEK Galang Batang"
+  ],
+  "official_designation": "Permenperin 132/M-IND/PER/12/2010 (13 Dec 2010): Kepri industri unggulan = people's ships and ship repair (KBLI 30111 ships and boats; 30113 ship equipment and parts) and marine-product processing; shipyard target 150,000 to 400,000 DWT by 2025. KEKs: Batam Aero Technic (PP 67/2021, MRO, 30 ha), Nongsa (PP 68/2021, digital, 166.45 ha), Galang Batang (PP 42/2017, bauxite, 2,333.6 ha). Batam is a free trade zone (duty and VAT exemption for exporters, per Batamindo). No provincial RPIP Perda found.",
+  "umk_2026": "UMP Kepri 2026 Rp3,879,520 (+7.06%). UMK 2026: Kota Batam Rp5,357,982 (+7.38%; Kepgub Kepri 1332/2025, 23 Dec 2025); Batam UMSK for shipyards and offshore Rp5,374,672; Bintan Rp4,583,221; Anambas Rp4,279,851; Karimun Rp4,248,268; Tanjungpinang Rp3,879,520 (Dealls, Jul-Aug 2026).",
+  "skills": "Politeknik Negeri Batam, Teknik Mesin: D3 Teknik Mesin, D3 Aircraft Maintenance, D4 Ship Construction Engineering, D4 Welding and Fabrication, D4 Metallurgy, engineer profession programme; demonstrates PET-bottle-to-filament 3D printing (Oct 2026). No SMK machining or BLK data retrieved.",
+  "confidence": "high",
+  "sources": [
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Citra+Tubindo",
+   "https://www.telaga-mm.com/",
+   "https://www.servotech.co.id/",
+   "https://www.rainbowtubulars.com/",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Precision+Pipe+Indonesia",
+   "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+   "https://www.dutadimensi.co.id/facility",
+   "https://www.precindoabadi.com/",
+   "https://www.a-oneprecision.com/",
+   "https://jdih.kemenperin.go.id/dokumen/view?id=1180",
+   "https://jdih.kemenperin.go.id/common/dokumen/2010pmperin132.pdf",
+   "https://kek.go.id/investment/distribution/kek-batam-aero-technic",
+   "https://kek.go.id/investment/distribution/kek-nongsa",
+   "https://kek.go.id/investment/distribution/kek-galang-batang",
+   "https://batamindoindustrial.com/batam-en/",
+   "https://batamindoindustrial.com/batamindo/",
+   "https://dealls.com/pengembangan-karir/umk-batam",
+   "https://dealls.com/pengembangan-karir/ump-2026",
+   "https://www.polibatam.ac.id/jurusan/teknik-mesin/",
+   "https://www.polibatam.ac.id/siswa-siswi-sd-kartini-batam-kunjungi-polibatam-belajar-pengelolaan-sampah-organik-di-tpst-hingga-sulap-sampah-botol-plastik-jadi-karya-3d-printing/",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=730429&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848710&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848071&flowCode=M"
+  ]
+ },
+ {
+  "province": "Sumatera Selatan",
+  "area": "Sumatera Selatan",
+  "level": "province",
+  "focus": {
+   "product": "Hydraulic cylinders and heavy-equipment wear components for coal mining and plantations (cylinder rebuild and manufacture, track adjusters, recoil springs, bucket repair)",
+   "hs": [
+    "841221",
+    "843149",
+    "843141"
+   ],
+   "why": "Sumatra's coal belt and plantation fleets need constant cylinder and undercarriage work; the one verified Palembang-area shop (PT Global Teknik Industri, Banyuasin) already rebuilds and makes cylinders, and Polsri trains D3 heavy-equipment maintenance. Indonesia imported US$796.3M of 843149 parts in 2025 and US$51.7M of buckets (843141).",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Pump, valve and rotating-equipment spares for process plants (Pusri, Pertamina Plaju, OKI and TEL pulp mills, Semen Baturaja)",
+    "hs": [
+     "841391",
+     "848190",
+     "8483"
+    ],
+    "why": "Pusri still runs 1970s-era Pusri III and IV (570,000 t/yr urea each) beside Pusri IB and IIB; KPI Plaju is being linked to coal-to-DME logistics (Jan 2026). National imports: pump parts US$300.0M, valve parts US$185.7M (2025).",
+    "fit": "cnc"
+   },
+   {
+    "product": "Palm-oil and crumb-rubber mill wear parts (65 palm-oil and 22 rubber-processing firms in SIINas)",
+    "hs": [
+     "847990",
+     "847790"
+    ],
+    "why": "Largest palm-oil mill count of the six provinces in SIINas; crumb-rubber makers (Kirana Musi Persada, Hok Tong) need hammer-mill and creper parts. 847990 imports US$258.8M (2025).",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Pupuk Sriwidjaja Palembang (Pusri)",
+   "PT Kilang Pertamina Internasional RU III Plaju",
+   "PT Bukit Asam Tbk (named in the brief; no source fetched here)",
+   "PT OKI Pulp & Paper Mills",
+   "PT Tanjungenim Lestari Pulp and Paper",
+   "PT Semen Baturaja (Persero) Tbk",
+   "PT Lematang Coal Lestari",
+   "PT Hindoli",
+   "PT Perusahaan Perkebunan London Sumatra Indonesia",
+   "PT Sinergi Gula Nusantara",
+   "PT Perkebunan Nusantara VII",
+   "PT Kirana Musi Persada",
+   "PT Hok Tong"
+  ],
+  "local_inputs": [
+   "coal",
+   "natural gas (urea feedstock)",
+   "crude oil",
+   "palm fresh fruit bunches and CPO",
+   "natural rubber",
+   "pulpwood",
+   "limestone"
+  ],
+  "clusters": [
+   "Palembang-Banyuasin workshop belt (Jl. Tanjung Api-Api, Talang Kelapa)",
+   "Pusri complex (Palembang)",
+   "Plaju-Sungai Gerong refinery (RU III)"
+  ],
+  "official_designation": "No Kemenperin KIID/roadmap regulation for Sumsel in JDIH Kemenperin and no RPIP Perda found in JDIH BPK (only RPJMD 2019-2023 and RPJPD 2025-2045). KEK Tanjung Api-Api has no page on kek.go.id (checked 16 Oct 2026); status unconfirmed.",
+  "umk_2026": "UMP Sumsel 2026 Rp3,942,963 (+6.51%; Dealls, 12 Aug 2026). UMK Palembang 2026 not retrieved (2024: Rp3,677,591 via Dealls).",
+  "skills": "Politeknik Negeri Sriwijaya (Polsri), Teknik Mesin: D3 Teknik Mesin, D3 Pemeliharaan Alat Berat (heavy-equipment maintenance), D4 Teknik Mesin Produksi dan Perawatan, D4 PSDKU Siak. No SMK or BLK machining data retrieved.",
+  "confidence": "medium",
+  "sources": [
+   "https://www.gti-chrome.com/",
+   "https://mesin.polsri.ac.id/",
+   "https://www.pusri.co.id/id/about/profile",
+   "https://kpi.pertamina.com/",
+   "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=LT6Nl1-93HfnTOoo8L8ysPSKCRwmEnlqszx6HfH2tdk%2C",
+   "https://peraturan.bpk.go.id/Details/313978/perda-prov-sumatera-selatan-no-7-tahun-2024",
+   "https://kek.go.id/investment/distribution/kek-tanjung-api-api",
+   "https://dealls.com/pengembangan-karir/ump-2026",
+   "https://dealls.com/pengembangan-karir/umk-palembang",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843149&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843141&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848190&flowCode=M"
+  ]
+ },
+ {
+  "province": "Jambi",
+  "area": "Jambi",
+  "level": "province",
+  "focus": {
+   "product": "Palm-oil mill wear parts (screw-press worms and cages, digester and thresher parts) with hardfacing and heat treatment",
+   "hs": [
+    "847990"
+   ],
+   "why": "40 palm-oil mills (KBLI 1043x) are registered in Jambi, and the 2020-2040 RPIP makes oleofood and oleochemicals core upstream-agro industries. No local machining shop is registered, so mills buy outside the province. 847990 imports were US$258.8M in 2025. Screw-press quality depends on material and hardness (Riau study).",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Crumb-rubber processing machinery parts (hammer mills, creper and shredder parts)",
+    "hs": [
+     "847790"
+    ],
+    "why": "Jambi's RPIP lists crumb rubber and remilling in eight regencies; registered crumb-rubber firms include Djambi Waras, Remco Rubber Indonesia, Star Rubber and Hok Tong.",
+    "fit": "cnc"
+   },
+   {
+    "product": "Automotive components and small agro machines (RPIP 'komponen otomotif' zone; local chopper maker)",
+    "hs": [
+     "870899",
+     "8436"
+    ],
+    "why": "The RPIP designates automotive components for Kota Jambi, Bungo, Muaro Jambi and Sarolangun; CV Hartake Sukses Mandiri already has a TKDN-certified 500-700 kg/h chopper.",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Lontar Papyrus Pulp & Paper Industry",
+   "PT Perkebunan Nusantara VI",
+   "PT Inti Indosawit Subur",
+   "PT Djambi Waras",
+   "PT Remco Rubber Indonesia",
+   "PT Star Rubber",
+   "PT Hok Tong"
+  ],
+  "local_inputs": [
+   "palm oil",
+   "natural rubber",
+   "coconut (Tanjung Jabung)",
+   "coffee (Kerinci, Merangin)",
+   "fish and shrimp (Tanjung Jabung)",
+   "pulpwood"
+  ],
+  "clusters": [
+   "Automotive-components zone in RPIP: Kota Jambi, Bungo, Muaro Jambi, Sarolangun",
+   "Palm and rubber belt: Batang Hari, Muaro Jambi, Tebo, Bungo, Merangin, Sarolangun"
+  ],
+  "official_designation": "Perda Prov. Jambi 2/2021, RPIP 2020-2040: industri unggulan = food (fish, coffee, coconut, palm cooking oil), pharma and cosmetics, textiles, transport equipment (automotive components), capital goods and components (retreaded tyres), upstream agro (oleofood, oleochemicals, crumb rubber, remilling), basic chemicals from oil, gas and coal. No Kemenperin KIID found.",
+  "umk_2026": "UMP Jambi 2026 Rp3,471,497 (+7.33%). UMK 2026: Kota Jambi Rp3,868,963; Muaro Jambi Rp3,651,917; Tanjung Jabung Barat Rp3,551,430; Sarolangun Rp3,533,562; Tanjung Jabung Timur Rp3,486,521 (Dealls, 12 Jan 2026).",
+  "skills": "Politeknik Jambi: D3 Teknik Mesin, D3 Teknik Elektronika, D3 Teknik Listrik. No SMK or BLK machining data retrieved.",
+  "confidence": "medium",
+  "sources": [
+   "https://peraturan.bpk.go.id/Details/168805/perda-prov-jambi-no-2-tahun-2021",
+   "https://peraturan.bpk.go.id/Download/161872/PERDANO2TAHUN2021.pdf",
+   "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=sY3Wej_tKISCKJBFQVPbgxGBtclmA1CBsP2XzHLIQnE%2C",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Hartake",
+   "https://politeknikjambi.ac.id/",
+   "https://dealls.com/pengembangan-karir/ump-jambi",
+   "https://dealls.com/pengembangan-karir/ump-2026",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847990&flowCode=M",
+   "https://ejurnal.umri.ac.id/index.php/JST/article/view/350"
+  ]
+ },
+ {
+  "province": "Bengkulu",
+  "area": "Bengkulu",
+  "level": "province",
+  "focus": {
+   "product": "Coffee-processing machines and wear parts (pulpers, hullers, roasters, sorters, grinder burrs) for robusta processors",
+   "hs": [
+    "843880",
+    "843890"
+   ],
+   "why": "Coffee is Bengkulu's largest registered processing group (43 of 331 SIINas firms). The RPIP ranks coffee first in Rejang Lebong, Lebong and Kepahiang, and notes Rejang Lebong set coffee and aren as small-industry leaders. The nearest TKDN-certified coffee-machine maker is in Lampung, and Bengkulu has one registered machining firm. Small batches suit CNC parts plus 3D-printed prototypes.",
+   "fit": "both"
+  },
+  "also": [
+   {
+    "product": "Palm-oil mill wear parts and sterilizer/boiler repair (23 registered mills)",
+    "hs": [
+     "847990"
+    ],
+    "why": "23 palm-oil firms (KBLI 1043x) are registered, including Agricinal, Bengkulu Sawit Lestari and Sandabi Indah Lestari; Mukomuko has the province's highest UMK (Rp3,217,086).",
+    "fit": "cnc"
+   },
+   {
+    "product": "Small-ship repair parts (RPIP 'industri perkapalan')",
+    "hs": [
+     "848710",
+     "848310"
+    ],
+    "why": "Bengkulu's RPIP lists shipbuilding (kapal laut) under transport equipment; one ship-repair firm (PT Bengkulu Samudera Tehnik) is registered.",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Agricinal",
+   "PT Bengkulu Sawit Lestari",
+   "PT Sandabi Indah Lestari",
+   "PT Perkebunan Nusantara VII (Bengkulu rubber units)",
+   "PT Batanghari Bengkulu Pratama",
+   "PT Padek Kopi Sejahtera"
+  ],
+  "local_inputs": [
+   "robusta coffee",
+   "palm oil",
+   "natural rubber",
+   "fish"
+  ],
+  "clusters": [
+   "Rejang Lebong, Lebong and Kepahiang coffee belt (RPIP Table 2.22)",
+   "Mukomuko and Bengkulu Utara palm-oil belt"
+  ],
+  "official_designation": "Perda Prov. Bengkulu 9/2019, RPIP 2019-2039: seven industri unggulan mirroring national priorities (food; pharma; textiles and furniture; transport equipment = shipbuilding; components = carton and plastic packaging; upstream agro = palm oleochemicals, feed, wood; basic metals and non-metal minerals). No Kemenperin KIID found.",
+  "umk_2026": "UMP Bengkulu 2026 Rp2,827,250 (+5.89%; SK Gubernur K.646.DKK TRANS 2025). UMK 2026: Mukomuko Rp3,217,086; Kota Bengkulu Rp3,089,219; Bengkulu Tengah Rp2,945,142 (Dealls, 12 Jan 2026).",
+  "skills": "RPIP Table 4.5 lists engineering faculties at Universitas Bengkulu, Universitas Muhammadiyah Bengkulu, UNIHAZ and Universitas Dehasen, plus community academies in Mukomuko and Rejang Lebong; it calls for stronger SMK workshops. No polytechnic, BLK or SMK machining data retrieved.",
+  "confidence": "low",
+  "sources": [
+   "https://peraturan.bpk.go.id/Details/131944/perda-prov-bengkulu-no-9-tahun-2019",
+   "https://peraturan.bpk.go.id/Download/122739/Perda%20Provinsi%202019-9.pdf",
+   "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=7PXdLsCfLTabVYR-HdFCQ1lgobeRW7wKz4lderTiLAA%2C",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Serumpun+Jaya+Teknik",
+   "https://dealls.com/pengembangan-karir/ump-bengkulu",
+   "https://dealls.com/pengembangan-karir/ump-2026"
+  ]
+ },
+ {
+  "province": "Lampung",
+  "area": "Lampung",
+  "level": "province",
+  "focus": {
+   "product": "Sugarcane and cassava field implements and their wear parts (disc ploughs, harrows, rippers, ridgers, cassava planters and harvesters, cane side-tippers)",
+   "hs": [
+    "843210",
+    "843229",
+    "843239",
+    "843353",
+    "843290"
+   ],
+   "why": "Lampung hosts large private sugar estates (Gunung Madu 18,000 TCD in 2019; Gula Putih Mataram, Indolampung Perkasa, Sweet Indolampung; Pemukasakti Manisindah) and 22 registered tapioca firms. Two local makers already hold TKDN for these implements (PT Lambang Jaya, PT Bhumi Jaya Agro Mandiri). Soil-tillage machinery imports rose to US$62.2M in 2025, 70% from China.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Sugar- and tapioca-mill spare parts (mill rolls, shafts, rasper and extractor parts)",
+    "hs": [
+     "843890"
+    ],
+    "why": "Sugar mills (GMP, Gula Putih Mataram, Indolampung Perkasa, Sweet Indolampung, PSMI, SGN) and tapioca mills (Umas Jaya Agrotama and 13 others) are captive repeat buyers; 843890 imports were US$45.8M in 2025.",
+    "fit": "cnc"
+   },
+   {
+    "product": "Coffee and cocoa processing machines (pulpers, roasters, sorters)",
+    "hs": [
+     "843880"
+    ],
+    "why": "Registered coffee processors include Torabika Eka Semesta, Indokom Citra Persada and Ulubelu Cofco Abadi; CV Serumpun Jaya Teknik already holds TKDN for pulpers, roasters and sorters.",
+    "fit": "both"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Gunung Madu Plantations",
+   "PT Gula Putih Mataram",
+   "PT Indolampung Perkasa",
+   "PT Sweet Indolampung",
+   "PT Pemukasakti Manisindah",
+   "PT Sinergi Gula Nusantara",
+   "PT Umas Jaya Agrotama",
+   "PT Great Giant Pineapple",
+   "PT Torabika Eka Semesta",
+   "PT Indokom Citra Persada",
+   "PT Tunas Baru Lampung",
+   "PT Semen Baturaja (Persero) Tbk"
+  ],
+  "local_inputs": [
+   "sugarcane",
+   "cassava",
+   "robusta coffee",
+   "pineapple",
+   "palm oil",
+   "natural rubber"
+  ],
+  "clusters": [
+   "Lampung Tengah agro-processing belt (RPIK 2024-2044)",
+   "Bandar Lampung (RPIK 2020-2040; machinery and equipment as a supporting industry)"
+  ],
+  "official_designation": "No provincial RPIP Perda or Kemenperin KIID found. Kab. Lampung Tengah RPIK 2024-2044 (Perda 3/2024): industri unggulan = agriculture-based processing. Kota Bandar Lampung RPIK 2020-2040 (Perda 4/2020): unggulan = food and beverages, 'aneka'; supporting = machinery and equipment, transport equipment, rubber and plastics, chemicals, paper.",
+  "umk_2026": "UMP Lampung 2026 Rp3,047,734 (+5.35%). UMK 2026: Bandar Lampung Rp3,491,889; Mesuji Rp3,227,333; Lampung Selatan Rp3,219,609; Way Kanan Rp3,215,764; Metro Rp3,050,498; other regencies incl. Lampung Tengah and Tulang Bawang = UMP. Palm-oil sectoral UMSP Rp3,108,689 (Dealls, 15 Jan 2026).",
+  "skills": "Politeknik Negeri Lampung (Polinela): 8 departments and 43 programmes, teaching factory on campus; mechanical or farm-machinery programmes not confirmed. No ITERA, SMK or BLK data retrieved.",
+  "confidence": "medium",
+  "sources": [
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Lambang+Jaya",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Bhumi+Jaya+Agro",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Serumpun+Jaya+Teknik",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Lampung+Andalas",
+   "https://www.gunungmadu.co.id/sejarah-gmp/",
+   "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=EtDhV24I_AgUTjwdPnaAJCuEdnS41hZIYUPlkeLCd04%2C",
+   "https://peraturan.bpk.go.id/Details/309993/perda-kab-lampung-tengah-no-3-tahun-2024",
+   "https://peraturan.bpk.go.id/Details/317519/perda-kota-bandar-lampung-no-4-tahun-2020",
+   "https://dealls.com/pengembangan-karir/ump-lampung",
+   "https://dealls.com/pengembangan-karir/ump-2026",
+   "https://polinela.ac.id/jurusan/",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8432&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843890&flowCode=M"
+  ]
+ },
+ {
+  "province": "Kepulauan Bangka Belitung",
+  "area": "Kepulauan Bangka Belitung",
+  "level": "province",
+  "focus": {
+   "product": "Tin-dredge and gravel-pump wear parts (cutter heads, bucket pins and bushes, ladder parts, pump impellers and casings)",
+   "hs": [
+    "843149",
+    "843141",
+    "841391"
+   ],
+   "why": "PT Timah runs bucket dredges (KK) and cutter-suction dredges (KIP); in 2025 it overhauled main engines on 3 KK and 12 KIP. Only 20% of its Rp1.63 trillion of 2025 contracts went to local suppliers (Babel, Riau, Kepri). Its subsidiary PT DAK builds and repairs suction dredgers. Polman Babel supplies manufacturing technicians.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Pepper (lada) processing machines: soaking, decorticating, drying and grading",
+    "hs": [
+     "843880"
+    ],
+    "why": "Pepper processing is one of four industri unggulan in Babel's RPIP 2019-2039.",
+    "fit": "both"
+   },
+   {
+    "product": "Tin-smelter and refinery equipment parts (casting moulds, ladles, furnace parts)",
+    "hs": [
+     "845490",
+     "841790"
+    ],
+    "why": "22 tin smelters (KBLI 24202) are registered in Babel; tin processing and downstreaming are named in the 2010 roadmap and the 2019 RPIP.",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Timah Tbk",
+   "PT Dok dan Perkapalan Air Kantung",
+   "PT Refined Bangka Tin",
+   "PT Stanindo Inti Perkasa",
+   "PT Prima Timah Utama",
+   "PT Bukit Timah",
+   "PT Timah Nusantara"
+  ],
+  "local_inputs": [
+   "tin ore (cassiterite)",
+   "white pepper",
+   "palm oil",
+   "cassava",
+   "fish"
+  ],
+  "clusters": [
+   "Selindung industrial area, Pangkalpinang (PT DAK yard)",
+   "Air Kantung industrial area, Sungailiat (Polman Babel)",
+   "Muntok (PT Timah's significant operating site)",
+   "KEK Tanjung Kelayang (Belitung, tourism)"
+  ],
+  "official_designation": "Permenperin 133/M-IND/PER/12/2010: Babel industri unggulan = fish processing and tin-based processing (tin ingot KBLI 24202; 'kantong timah' KBLI 25999). Permenperin 143/M-IND/PER/12/2010: Kota Pangkalpinang core industry = marine fish processing. Perda Prov. Babel 14/2019, RPIP 2019-2039: fisheries, pepper, palm oil, tin and associated minerals (downstreaming). KEK Tanjung Kelayang (PP 6/2016, tourism, 324.4 ha).",
+  "umk_2026": "UMP Babel 2026 Rp4,035,000 (+4.08%; Kepgub 100.3.3.1/654/DISNAKER/2025). 2025 UMKs in all regencies equalled the UMP (Rp3,876,000); 2026 UMKs not retrieved (Dealls, 8 Jan and 12 Aug 2026).",
+  "skills": "Politeknik Manufaktur Negeri Bangka Belitung (Kawasan Industri Air Kantung, Sungailiat): D4 Teknik Mesin dan Manufaktur, D4 Teknologi Rekayasa Perancangan Manufaktur, D3 Teknik Perawatan dan Perbaikan Mesin, D3 Teknik Perancangan Mekanik. No SMK or BLK machining data retrieved.",
+  "confidence": "medium",
+  "sources": [
+   "https://timah.com/userfiles/post/26050469F8318B6EFFA.pdf",
+   "https://timah.com/blog/report/sustainability-report.html",
+   "https://ptdak.co.id/",
+   "https://www.polman-babel.ac.id/",
+   "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=qPoGfR2CPXOIzHC-qtcv3dZPViN_U5d_HfvBDijVZDU%2C",
+   "https://jdih.kemenperin.go.id/dokumen/view?id=1182",
+   "https://jdih.kemenperin.go.id/common/dokumen/2010pmperin133.pdf",
+   "https://jdih.kemenperin.go.id/dokumen/view?id=1192",
+   "https://peraturan.bpk.go.id/Details/156378/perda-prov-bangka-belitung-no-14-tahun-2019",
+   "https://kek.go.id/investment/distribution/kek-tanjung-kelayang",
+   "https://dealls.com/pengembangan-karir/ump-bangka-belitung",
+   "https://dealls.com/pengembangan-karir/ump-2026",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843149&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843141&flowCode=M"
+  ]
+ }
+]

@@ -1,0 +1,1013 @@
+[
+  {
+    "name": "PT Komatsu Indonesia",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [
+      "casting",
+      "heat treatment",
+      "fabrication",
+      "3D scanning (inspection)"
+    ],
+    "serves": [
+      "mining",
+      "construction",
+      "forestry",
+      "agriculture"
+    ],
+    "makes": "Hydraulic excavators and heavy-equipment parts; foundry casts bulldozer, dump-truck frame, excavator boom/arm and undercarriage parts",
+    "size_note": "1500+ members (site); foundry up to 2,000 t/month; site area 200,000+ m2",
+    "certs": [
+      "TKDN 34.21-39.66% (hydraulic excavator)"
+    ],
+    "website": "https://www.komi.co.id",
+    "source_url": "https://www.komi.co.id/foundry",
+    "source_type": "company_site",
+    "evidence": "Foundry started 1991, up to 2,000 t/month, casts bulldozer, dump-truck and excavator parts; HQ/factory on Jl. Raya Cakung Cilincing.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Garuda Otomasi Indonesia",
+    "kind": "cnc_machine_builder",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [
+      "CNC lathe building",
+      "4-axis CNC milling machine building"
+    ],
+    "serves": [],
+    "makes": "GOI-TECH 300 slant-bed CNC lathe; GOI-TECH VMC-4230 4-axis CNC milling machine (BT-30)",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.00% (CNC lathe)",
+      "TKDN 40.00% (4-axis CNC milling)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=cnc",
+    "source_type": "government",
+    "evidence": "TKDN register lists its Goi-tech 300 CNC lathe and VMC-4230 4-axis milling machine at 40% local content; Sunter Agung address.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Astra Otoparts Tbk",
+    "kind": "cnc_machine_builder",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [
+      "CNC milling machine building",
+      "special-purpose machinery",
+      "automation lines"
+    ],
+    "serves": [
+      "automotive"
+    ],
+    "makes": "CNC milling machine (X/Y/Z 700/400/500 mm) certified at its Pegangsaan Dua address; its Winteq division builds automation lines in Karawang (press reports, Sep 2026)",
+    "size_note": "Astra Otoparts manufacturing sector 30,171 employees (group-wide, site)",
+    "certs": [
+      "TKDN 47.72% (CNC milling machine)"
+    ],
+    "website": "https://www.astra-otoparts.com",
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=cnc",
+    "source_type": "government",
+    "evidence": "TKDN lists a CNC milling machine, 700/400/500 mm travel, at 47.72% local content under Astra Otoparts, Pegangsaan Dua address.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Maju Adil Sejahtera",
+    "kind": "cnc_machine_builder",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [
+      "CNC woodworking machine building"
+    ],
+    "serves": [
+      "furniture",
+      "woodworking"
+    ],
+    "makes": "CNC tenoner, CNC oscillating-knife cutter, straight-line rip saw, semi-automatic bandsaw",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.00% (CNC tenon)",
+      "TKDN 38.00% (CNC oscillating knife machine)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=cnc",
+    "source_type": "government",
+    "evidence": "TKDN lists CNC tenon (40%) and CNC oscillating-knife machine (38%) at Elang Laut industrial warehousing, Kamal Muara.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Waja Kamajaya Sentosa",
+    "kind": "mould_die_maker",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [
+      "press dies",
+      "jigs and fixtures",
+      "stamping",
+      "machining"
+    ],
+    "serves": [
+      "automotive",
+      "motorcycle"
+    ],
+    "makes": "Tools, dies, jigs, fixtures, stamping parts, machining parts and fabricated components (brand Wakasa)",
+    "size_note": null,
+    "certs": [
+      "ISO/TS 16949:2003"
+    ],
+    "website": "http://www.wajakamajayasentosa.id",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM directory: tools, dies, jigs, fixtures, stamping and machining parts; customers include Aisin, Astra Daihatsu, Astra Honda, Exedy.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Asano Gear Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [],
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Differential carrier assemblies and differential cases (4-wheel)",
+    "size_note": "Installed capacity 600,000 units/yr (GIAMM)",
+    "certs": [
+      "ISO/TS 16949:2005"
+    ],
+    "website": "http://www.asanogear.co.id",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: differential carrier assy and cases, 600,000 units/yr; main customer Astra Daihatsu Motor; foreign-owned, founded 2008.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Morita Tjokro Gearindo",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [],
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Gears and mechanical parts",
+    "size_note": null,
+    "certs": [
+      "ISO 9001:2000"
+    ],
+    "website": null,
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM directory: gears and mechanical parts maker in Pulogadung industrial estate, founded 1988, domestic investment.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Inti Ganda Perdana",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [],
+    "serves": [
+      "automotive",
+      "trucks"
+    ],
+    "makes": "Rear axles and propeller shafts",
+    "size_note": "Installed capacity 687,600 units (GIAMM)",
+    "certs": [],
+    "website": "http://www.igpgroup.astra.co.id",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: rear axles and propeller shafts, 687,600 units; customers Astra Daihatsu, Toyota (TMMIN), Hino, Krama Yudha Tiga Berlian, Suzuki.",
+    "source_year": 2023
+  },
+  {
+    "name": "PT Astra Otoparts Tbk Divisi Nusametal",
+    "kind": "foundry_machining",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [
+      "aluminium die casting"
+    ],
+    "serves": [
+      "motorcycle",
+      "automotive",
+      "industrial tools"
+    ],
+    "makes": "Aluminium components for engines and frames, and industrial tools",
+    "size_note": null,
+    "certs": [],
+    "website": "https://www.astra-otoparts.com",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: aluminium die-cast engine and frame components; main customer Astra Honda Motor; Pegangsaan Dua Km 2.2.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Edico Utama",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [],
+    "serves": [
+      "automotive",
+      "motorcycle"
+    ],
+    "makes": "Engine pistons (TEIKIN brand)",
+    "size_note": "Installed capacity 2,400,000 sets (GIAMM)",
+    "certs": [
+      "ISO/TS 16949:2009"
+    ],
+    "website": "http://www.teikin.com",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM directory: engine pistons, brand TEIKIN, 2.4 million sets capacity, Jl. Pulogadung No. 7 industrial estate.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Garuda Metalindo",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [],
+    "serves": [
+      "automotive",
+      "motorcycle"
+    ],
+    "makes": "Bolts and nuts (automotive fasteners)",
+    "size_note": null,
+    "certs": [
+      "ISO/TS 16949:2009",
+      "ISO 14001:2004",
+      "OHSAS 18001:2007"
+    ],
+    "website": "http://www.garudametalindo.com",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM directory: bolts and nuts maker at Kapuk Kamal, Penjaringan; buys wire rod from Mega Pratama Ferindo (Jatake).",
+    "source_year": 2026
+  },
+  {
+    "name": "PT SKF Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [],
+    "serves": [
+      "motorcycle"
+    ],
+    "makes": "Deep-groove ball bearings",
+    "size_note": "Installed capacity 40,000,000 pcs (GIAMM)",
+    "certs": [
+      "ISO/TS 16949"
+    ],
+    "website": "https://www.skf.com",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: deep-groove ball bearings, 40 million pcs, Pulogadung industrial estate; customers Honda, Suzuki, Yamaha, Kawasaki, Vespa.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Akebono Brake Astra Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [],
+    "serves": [
+      "automotive",
+      "motorcycle"
+    ],
+    "makes": "Disc and drum brakes, motorcycle brake calipers, master cylinders, brake pads",
+    "size_note": "Installed capacity 5,774,841 units (GIAMM)",
+    "certs": [
+      "ISO/TS 16949"
+    ],
+    "website": "https://www.akebono-astra.co.id",
+    "source_url": "https://www.akebono-astra.co.id/",
+    "source_type": "company_site",
+    "evidence": "Site lists disc/drum brakes, motorcycle calipers, master cylinders at Jl. Pegangsaan Dua 55; GIAMM gives 5.77 million units capacity.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Gemala Kempa Daya",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara",
+    "capabilities": [
+      "stamping (press parts)"
+    ],
+    "serves": [
+      "trucks",
+      "automotive"
+    ],
+    "makes": "Truck frame chassis, sub-assemblies and press parts",
+    "size_note": "Installed capacity 133,000 units (GIAMM)",
+    "certs": [
+      "ISO/TS 16949 (SGS)"
+    ],
+    "website": "http://www.igpgroup.astra.co.id",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: frame chassis, sub-assy and press parts, 133,000 units; customers Krama Yudha Tiga Berlian, Hino, Astra Multi Truck, Akebono.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Niterra Mobility Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [
+      "forging (spark-plug metal shells)"
+    ],
+    "serves": [
+      "motorcycle",
+      "automotive"
+    ],
+    "makes": "Spark plugs and forged spark-plug metal shells (NGK)",
+    "size_note": "Installed capacity 36,000,000 pcs/yr (GIAMM)",
+    "certs": [
+      "ISO 9001:2008",
+      "ISO 14001:2004",
+      "ISO/TS 16949:2009",
+      "ISO 45001:2018"
+    ],
+    "website": "http://www.ngkbusi.com",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: spark plugs and metal-shell forging, 36 million pcs/yr, Ciracas; customers Astra Honda, Yamaha, Suzuki, Daihatsu, TVS.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Rachmat Perdana Adhimetal",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [],
+    "serves": [
+      "motorcycle",
+      "automotive",
+      "medical"
+    ],
+    "makes": "Automotive and medical-equipment metal parts",
+    "size_note": null,
+    "certs": [
+      "ISO 9001:2008"
+    ],
+    "website": "http://www.rachmatperdana.co.id",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: automotive and medical parts maker inside PIK Penggilingan small-industry estate, Cakung; customers Astra Honda Motor, Showa.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Inti Polymetal",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [
+      "deep drawing"
+    ],
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Deep-draw parts, fuel tanks, oil pans and sub-assemblies",
+    "size_note": null,
+    "certs": [
+      "ISO 9000"
+    ],
+    "website": null,
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM directory: deep-draw parts, fuel tanks, oil pans and sub-assemblies, Jl. Raya Pulogadung No. 39 industrial estate.",
+    "source_year": 2023
+  },
+  {
+    "name": "PT Mitsubishi Krama Yudha Motor & Mfg",
+    "kind": "precision_parts_supplier",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [],
+    "serves": [
+      "automotive",
+      "trucks"
+    ],
+    "makes": "Automotive body parts and engine and transmission components",
+    "size_note": "120,000 units/yr (GIAMM)",
+    "certs": [],
+    "website": "http://www.ptmkm.co.id",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: body parts, engine and transmission components, 120,000 units/yr, Rawa Terate, Cakung; customer Krama Yudha Tiga Berlian Motor.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bumi Cahaya Unggul",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur",
+    "capabilities": [],
+    "serves": [],
+    "makes": "Horizontal and vertical centrifugal pumps",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.11% (horizontal centrifugal pump)",
+      "TKDN 40.15% (vertical centrifugal pump)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pompa+sentrifugal",
+    "source_type": "government",
+    "evidence": "TKDN register: horizontal (41.11%) and vertical (40.15%) centrifugal pumps, Rawa Terate, Cakung address.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT FOMU Karya Bersama (FOMU 3D Print)",
+    "kind": "3d_print_service",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Barat",
+    "capabilities": [
+      "3D printing (technologies not stated)",
+      "reverse engineering"
+    ],
+    "serves": [
+      "architecture",
+      "automotive",
+      "energy",
+      "consumer goods",
+      "government"
+    ],
+    "makes": "Prototypes, architectural models, spare parts, custom figures, reverse engineering and small-batch production",
+    "size_note": "70+ industrial machines (site)",
+    "certs": [],
+    "website": "https://fomu.co.id",
+    "source_url": "https://fomu.co.id/",
+    "source_type": "company_site",
+    "evidence": "Workshop at Daan Mogot II, Duri Kepa; 70+ industrial machines; since 2015; clients shown include Astra, Pertamina, PUPR, AECOM.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Alpha Karya Mechatronics",
+    "kind": "cnc_machine_builder",
+    "province": "Banten",
+    "city": "Kota Tangerang Selatan",
+    "capabilities": [
+      "CNC milling machine building",
+      "3D printer building"
+    ],
+    "serves": [],
+    "makes": "CNC milling machines and 3D printers (also certified as a 3D-printer maker)",
+    "size_note": null,
+    "certs": [
+      "TKDN 26.01% (CNC milling machine)",
+      "TKDN 27.03% (3D printer)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=printer+3d",
+    "source_type": "government",
+    "evidence": "TKDN register lists its CNC milling machine (26.01%) and 3D printer (27.03%); address Taman Tekno BSD, Setu.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yoska Prima Inti",
+    "kind": "mould_die_maker",
+    "province": "Banten",
+    "city": "Kota Tangerang",
+    "capabilities": [
+      "dies",
+      "checking fixtures",
+      "jigs"
+    ],
+    "serves": [
+      "automotive",
+      "trucks"
+    ],
+    "makes": "Automotive components, dies, checking fixtures and jigs",
+    "size_note": "Installed capacity 42,000,000 units/yr (components, GIAMM)",
+    "certs": [
+      "ISO 9001:2015"
+    ],
+    "website": null,
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: automotive components, dies, checking fixtures and jigs in Gajah Tunggal complex, Jatiuwung; customers Astra Daihatsu, Toyota, Hino.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sinar Alum Sarana (Sinalum)",
+    "kind": "foundry_machining",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [
+      "aluminium die casting",
+      "zinc die casting",
+      "machining"
+    ],
+    "serves": [
+      "motorcycle",
+      "automotive",
+      "consumer goods"
+    ],
+    "makes": "Aluminium and zinc die-cast parts: cylinder/engine parts, hub wheels, casings, covers",
+    "size_note": "Tangerang plant 21,000 m2 land; Karawang plant 24,000 m2; 1,200 t/yr (GIAMM)",
+    "certs": [
+      "ISO 9001",
+      "ISO 14001"
+    ],
+    "website": "https://www.sinalum.com",
+    "source_url": "https://www.sinalum.com/",
+    "source_type": "company_site",
+    "evidence": "Site: aluminium and zinc die casting with machining facility since 1990; customers AHM, Kawasaki, Exedy, Hitachi Astemo; GIAMM lists Curug address.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Koza Presisi Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kota Tangerang",
+    "capabilities": [],
+    "serves": [
+      "motorcycle",
+      "automotive"
+    ],
+    "makes": "Engine parts and frame parts",
+    "size_note": "1,500 t/yr (GIAMM)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: engine and frame parts, 1,500 tonnes/yr, Jl. Gatot Subroto Km 6.2; customer Sinar Alumsarana; founded 2019.",
+    "source_year": 2023
+  },
+  {
+    "name": "PT Dharma Polimetal",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [
+      "motorcycle",
+      "automotive"
+    ],
+    "makes": "Motorcycle and automotive components",
+    "size_note": "1,500,000 pcs/yr (GIAMM)",
+    "certs": [
+      "ISO/TS 16949:2008",
+      "ISO 14001"
+    ],
+    "website": "http://www.dharmap.com",
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM: motorcycle and car components, 1.5 million pcs/yr, Balaraja; customers Astra Honda, Astra Daihatsu, Akebono, Kayaba.",
+    "source_year": 2023
+  },
+  {
+    "name": "PT Systema Precision",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [
+      "motorcycle"
+    ],
+    "makes": "Pivots",
+    "size_note": null,
+    "certs": [
+      "ISO 9001:2008"
+    ],
+    "website": null,
+    "source_url": "https://giamm.org/main/member",
+    "source_type": "association",
+    "evidence": "GIAMM directory: pivot parts maker at Jl. Industri Raya III, Bunder (Jatake estate); main customer Dharma Polimetal.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Indoseiki Metalutama",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [
+      "hot forging",
+      "warm forging",
+      "cold forming",
+      "thread rolling",
+      "nut tapping",
+      "CNC turning"
+    ],
+    "serves": [
+      "automotive",
+      "motorcycle",
+      "trucks"
+    ],
+    "makes": "Engine stud bolts, special nuts, wheel bolts, high-tension bolts, suspension and steering fasteners",
+    "size_note": null,
+    "certs": [
+      "IATF 16949 (since 2021)"
+    ],
+    "website": "https://www.indoseiki.com",
+    "source_url": "https://www.indoseiki.com/",
+    "source_type": "company_site",
+    "evidence": "Site: Jatake plant with hot/warm forging, cold forming, thread rolling and CNC lathes; IATF 16949 since 2021; founded 1989.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Molden Patra Sejahtera",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Oilfield accessories: casing/tubing accessories (AISI 4340), choke bodies and beans, sucker-rod couplings, pup joints, brass break-off plugs",
+    "size_note": null,
+    "certs": [
+      "TKDN 17.00-87.08% (oilfield accessories, 15+ certificates)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=mold",
+    "source_type": "government",
+    "evidence": "TKDN lists choke bodies, sucker-rod couplings, crossover couplings, pup joints and AISI 4340 accessories; Millennium Industrial Estate, Panongan.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Central Presisi Metal",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "OCTG casing (7 to 20 in), tubing and pup joints",
+    "size_note": null,
+    "certs": [
+      "TKDN 21.60-55.91% (casing, tubing, pup joints)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=presisi",
+    "source_type": "government",
+    "evidence": "TKDN register lists casing, ERW casing, tubing and pup joints for oil and gas; Jl. Raya Mauk Km 10, Sepatan.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Suprabakti Mandiri",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [
+      "rubber moulding"
+    ],
+    "serves": [
+      "mining",
+      "bulk handling"
+    ],
+    "makes": "Conveyor idler frames (carry, impact, return, training) and rubber moulded parts",
+    "size_note": null,
+    "certs": [
+      "TKDN 42.31-65.79% (conveyor idler frames)",
+      "TKDN 57.64% (rubber molding)",
+      "BMP 15%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=idler",
+    "source_type": "government",
+    "evidence": "TKDN: carry, impact, return and training idler frames (42-66%) and rubber molding (57.64%); Pasar Kemis Km 3.5.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Kaiquan Pump Indonesia Manufacturing",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [],
+    "makes": "Vertical centrifugal pumps",
+    "size_note": null,
+    "certs": [
+      "TKDN 43.44% (vertical centrifugal pump)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pompa+sentrifugal",
+    "source_type": "government",
+    "evidence": "TKDN register: vertical centrifugal pumps at 43.44% local content, Sentra Bitung warehousing, Curug.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Arflu Se",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [
+      "oil and gas",
+      "industrial"
+    ],
+    "makes": "Forged ball valves (1/2 to 2 in, Class 150-1500) and other valves",
+    "size_note": null,
+    "certs": [
+      "TKDN 27.93-60.24% (valves)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=katup",
+    "source_type": "government",
+    "evidence": "TKDN register: forged manual ball valves and other valves, 27.93-60.24% local content; Cileles, Tigaraksa.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Borneo Mandiri Investment",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kota Tangerang",
+    "capabilities": [],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Flanges; ball, butterfly and actuated valves",
+    "size_note": null,
+    "certs": [
+      "TKDN 25.10-50.96% (flanges)",
+      "TKDN 18.79-51.76% (valves)",
+      "BMP 6.75%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=flange",
+    "source_type": "government",
+    "evidence": "TKDN register: flanges (25-51%), ball and butterfly valves (18-52%) listed under oil and gas equipment; Cipondoh address.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Cahaya Bukit Perunggu",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [],
+    "makes": "Bushings and bolts (ISO 898)",
+    "size_note": null,
+    "certs": [
+      "TKDN 59.02% (bushing)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=bushing",
+    "source_type": "government",
+    "evidence": "TKDN register: bushings at 59.02% local content plus ISO 898 bolts; Belimbing, Kosambi address.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Stainless Steel Primavalve Majubersama",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [],
+    "makes": "Secondary grinder crusher",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.75% (secondary grinder crusher)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=crusher",
+    "source_type": "government",
+    "evidence": "TKDN register: secondary grinder crusher at 41.75% local content; Jl. Mitra Mas, Talagasari, Cikupa.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Prakarsalanggeng Majubersama",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Shell-and-tube heat exchangers",
+    "size_note": null,
+    "certs": [
+      "TKDN 42.44% (shell-and-tube heat exchanger)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=heat+exchanger",
+    "source_type": "government",
+    "evidence": "TKDN register: shell-and-tube heat exchangers at 42.44% local content; Kawasan Baja Mas, Balaraja.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Takino",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Tangerang",
+    "capabilities": [],
+    "serves": [
+      "bulk handling"
+    ],
+    "makes": "Roller conveyors and conveyor frames",
+    "size_note": null,
+    "certs": [
+      "TKDN 46.57% (roller conveyor)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=roller",
+    "source_type": "government",
+    "evidence": "TKDN register: roller conveyor at 46.57% local content; Jl. Millenium 22, Kadu Agung, Tigaraksa.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pasakti Multidaya Nusantara",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kota Tangerang Selatan",
+    "capabilities": [],
+    "serves": [
+      "food processing",
+      "agriculture",
+      "education"
+    ],
+    "makes": "Hammer mills, seaweed slicers, hydraulic presses and training rigs",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.00% (hammer mill, seaweed slicer, hydraulic press)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=hammer+mill",
+    "source_type": "government",
+    "evidence": "TKDN register: hammer mill, seaweed slicer and hydraulic ball press, each 40%; Taman Tekno BSD sector XI, Setu.",
+    "source_year": 2026
+  },
+  {
+    "name": "Tepat Laser",
+    "kind": "laser_plasma_fabricator",
+    "province": "Banten",
+    "city": "Kota Tangerang Selatan",
+    "capabilities": [
+      "laser cutting",
+      "fiber laser 1500 W",
+      "CO2 laser",
+      "CNC router",
+      "galvo engraving"
+    ],
+    "serves": [
+      "architecture",
+      "interior design",
+      "signage",
+      "light manufacturing",
+      "furniture"
+    ],
+    "makes": "Laser-cut sheet metal (0.5-10 mm) and acrylic/MDF/ACP parts, CNC-routed panels, engraving",
+    "size_note": "Fiber laser 1,500 W; work area 122 x 244 cm",
+    "certs": [],
+    "website": "https://tepatlaser.com",
+    "source_url": "https://tepatlaser.com/",
+    "source_type": "company_site",
+    "evidence": "Site: 1,500 W fiber laser, CO2 laser and CNC router, 122x244 cm bed, workshop on Jl. Bintaro-BSD, Parigi.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Prima Kreasi Panel",
+    "kind": "cnc_router_wood",
+    "province": "Banten",
+    "city": "Kota Tangerang",
+    "capabilities": [
+      "CNC router"
+    ],
+    "serves": [
+      "interiors",
+      "furniture"
+    ],
+    "makes": "CNC-cut ceiling and backdrop panels; stacking and banquet chairs",
+    "size_note": null,
+    "certs": [
+      "TKDN 36.00% (CNC backdrop panel)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=cnc",
+    "source_type": "government",
+    "evidence": "TKDN register: CNC-cut ceiling/backdrop panels (36%) and chairs; Jl. Iskandar Muda, Kedaung Baru, Neglasari.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yasunaga Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Serang",
+    "capabilities": [
+      "machining"
+    ],
+    "serves": [
+      "automotive",
+      "motorcycle"
+    ],
+    "makes": "Machined connecting rods (machining assemblies for motor vehicles)",
+    "size_note": null,
+    "certs": [
+      "TKDN 53.68% (machined connecting rod)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=machining",
+    "source_type": "government",
+    "evidence": "TKDN register: machining assy for motor vehicles, connecting rods, 53.68%; Modern Cikande estate, Kibin; also on estate tenant list.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Asa Bintang Pratama",
+    "kind": "precision_parts_supplier",
+    "province": "Banten",
+    "city": "Kabupaten Serang",
+    "capabilities": [],
+    "serves": [
+      "LPG distribution"
+    ],
+    "makes": "LPG cylinder valves (steel and standard LPG cylinders)",
+    "size_note": null,
+    "certs": [
+      "TKDN 92.20-97.86% (LPG cylinder valves)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=katup",
+    "source_type": "government",
+    "evidence": "TKDN register: LPG cylinder valves at 92.20-97.86% local content; Jl. Modern Industri I No. 8, Modern Cikande.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Daekyung Indah Heavy Industry",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kota Cilegon",
+    "capabilities": [],
+    "serves": [
+      "oil and gas",
+      "petrochemicals"
+    ],
+    "makes": "Shell-and-tube heat exchangers, air coolers and pressure vessels",
+    "size_note": null,
+    "certs": [
+      "TKDN 21.78% (heat exchanger/air cooler)",
+      "TKDN 24.62-40.24% (pressure vessel)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pressure+vessel",
+    "source_type": "government",
+    "evidence": "TKDN register: shell-and-tube heat exchangers, air coolers and pressure vessels; Stage I, Krakatau Industrial Estate Cilegon.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Tuban Steel Work",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Serang",
+    "capabilities": [],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Air-cooler and shell-and-tube heat exchangers",
+    "size_note": null,
+    "certs": [
+      "TKDN 33.46-38.82% (air-cooler heat exchanger)",
+      "TKDN 35.15% (shell-and-tube)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=heat+exchanger",
+    "source_type": "government",
+    "evidence": "TKDN register: air-cooler and shell-and-tube heat exchangers (33-39%); Kawasan Budi Texindo, Jawilan.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Timas Suplindo",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Serang",
+    "capabilities": [],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Pig launchers and receivers, heat exchangers",
+    "size_note": null,
+    "certs": [
+      "TKDN 17.58% (heat exchanger)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=heat+exchanger",
+    "source_type": "government",
+    "evidence": "TKDN register: pig launcher/receiver and heat exchanger (17.58%); Jl. Raya Serang Km 72, Kibin.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Deka Primanata",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kabupaten Serang",
+    "capabilities": [],
+    "serves": [
+      "bulk handling"
+    ],
+    "makes": "Belt conveyors (650-1,200 mm belt width)",
+    "size_note": null,
+    "certs": [
+      "TKDN 49.07% (belt conveyor)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=produk&what=belt+conveyor",
+    "source_type": "government",
+    "evidence": "TKDN register: belt conveyors, 650-1,200 mm width, at 49.07% local content; Kramatwatu, Kabupaten Serang.",
+    "source_year": 2026
+  }
+]

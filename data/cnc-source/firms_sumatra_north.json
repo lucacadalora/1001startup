@@ -1,0 +1,799 @@
+[
+ {
+  "name": "PT Asia Raya Foundry",
+  "kind": "foundry_machining",
+  "province": "Sumatera Utara",
+  "city": "Kabupaten Deli Serdang (Tanjung Morawa)",
+  "capabilities": [
+   "casting",
+   "steel casting (SC37, SC450, SC480 grades)",
+   "alloy-steel worm screws"
+  ],
+  "serves": [
+   "aluminium smelting (anode yoke and bottom stripper castings; buyer inferred: Inalum)",
+   "palm-oil mills (press worm screws)"
+  ],
+  "makes": "Anode yoke castings (4-stub), bottom strippers, pig iron castings and alloy-steel press worm screws (ARF W15)",
+  "size_note": null,
+  "certs": [
+   "TKDN 90.05% anode yoke casting",
+   "TKDN 94.22% bottom stripper",
+   "TKDN 93.47% pig iron casting",
+   "TKDN 88.16% worm screw"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Asia+Raya+Foundry",
+  "source_type": "government",
+  "evidence": "TKDN registry: anode yoke casting 90.05%, bottom stripper 94.22%, pig iron casting 93.47%, alloy worm screw 88.16%; Tanjung Morawa address.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Growth Asia",
+  "kind": "foundry_machining",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan (Kawasan Industri Medan, Medan Deli)",
+  "capabilities": [
+   "casting",
+   "high-chrome iron",
+   "chrome-moly steel",
+   "manganese steel",
+   "rubber and composite liners"
+  ],
+  "serves": [
+   "mining and mineral processing (grinding mills, crushers)",
+   "cement grinding (inferred)"
+  ],
+  "makes": "Mill liners in chrome-moly steel, high-chrome iron, full and composite rubber; manganese-steel crusher liners",
+  "size_note": null,
+  "certs": [
+   "TKDN 26.51-44.07% (5 liner products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=GROWTH+ASIA",
+  "source_type": "government",
+  "evidence": "TKDN registry: Cr-Mo mill liners 37.03%, high-chrome liners 32.95%, manganese crusher liner 44.07%, rubber liners 26.51-40.56%; KIM Medan address.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Victorindo Kencana Teknik",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan (Kawasan Industri Medan III, Medan Labuhan)",
+  "capabilities": [
+   "machine fabrication and assembly",
+   "hydraulic double-worm screw presses",
+   "nut-cracking ripple mills"
+  ],
+  "serves": [
+   "palm-oil mills"
+  ],
+  "makes": "Ripple mills VG-6T and VG-8T (6-8 t/h) and horizontal double-worm screw presses VG P15/P20 (15-23 t/h) for palm-oil mills",
+  "size_note": null,
+  "certs": [
+   "TKDN 66.00% ripple mill 6 t/h",
+   "TKDN 57.05% ripple mill 8 t/h",
+   "TKDN 64.83% press 15-17 t/h",
+   "TKDN 58.87% press 20-23 t/h"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Victorindo+Kencana+Teknik",
+  "source_type": "government",
+  "evidence": "TKDN registry: palm ripple mills 6 t/h (66.00%) and 8 t/h (57.05%); hydraulic double-worm presses 15-23 t/h (58.87-64.83%); KIM III address.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Victorindo Pratama Mandiri",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan (Kawasan Industri Medan III, Medan Labuhan)",
+  "capabilities": [
+   "centrifugal pump manufacture (bare shaft)"
+  ],
+  "serves": [
+   "agriculture and irrigation",
+   "industrial water"
+  ],
+  "makes": "Aquaflow end-suction centrifugal pumps with semi-open or open impellers, sold without drivers",
+  "size_note": null,
+  "certs": [
+   "TKDN 72.24% and 79.83% (two pump series)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Victorindo+Pratama+Mandiri",
+  "source_type": "government",
+  "evidence": "TKDN registry: Aquaflow end-suction centrifugal pumps 72.24% and 79.83%; KIM III Medan address; SIINas lists KBLI 28220.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Astajaya Nirwighnata",
+  "kind": "precision_parts_supplier",
+  "province": "Sumatera Utara",
+  "city": "Kabupaten Deli Serdang (Percut Sei Tuan)",
+  "capabilities": [
+   "machined oilfield downhole components",
+   "threaded connections 3/4 in to 20 in (product sizes)"
+  ],
+  "serves": [
+   "oil and gas production (ESP and sucker-rod artificial lift, well completion)"
+  ],
+  "makes": "ESP tubing bleeder and check valves, break-off plugs, cable feed-through tubing hangers, packers, sucker-rod couplings, rod guides, bull plugs, elbow sleeves",
+  "size_note": null,
+  "certs": [
+   "TKDN 49.15-88.32% (20 oil and gas products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Astajaya+Nirwighnata",
+  "source_type": "government",
+  "evidence": "TKDN registry lists 20 oil-gas items: break-off plug 88.32%, tubing check valve 68.29%, sucker-rod couplings 56.58-59.36%; Percut Sei Tuan address.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Putra Karya Logam Sukses",
+  "kind": "foundry_machining",
+  "province": "Sumatera Utara",
+  "city": "Kabupaten Asahan (Simpang Empat)",
+  "capabilities": [
+   "brass casting (boat propellers)"
+  ],
+  "serves": [
+   "fishing and coastal boats"
+  ],
+  "makes": "4-blade brass boat propellers, 44x40x4 to 72x59x4 inch, brand Dua Ikan Tongkol",
+  "size_note": null,
+  "certs": [
+   "TKDN 72.74% propeller range",
+   "TKDN 83.41% 66x48x4 propeller"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Putra+Karya+Logam+Sukses",
+  "source_type": "government",
+  "evidence": "TKDN registry: brass 4-blade boat propellers 44x40x4 to 72x59x4 inch at 72.74%; 66x48x4 model 83.41%; Simpang Empat, Asahan address.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Alki Dua Saudara",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": "Kabupaten Serdang Bedagai (Perbaungan)",
+  "capabilities": [
+   "agricultural machine fabrication"
+  ],
+  "serves": [
+   "livestock feed and farming"
+  ],
+  "makes": "Chopper N27 for king grass and corn stover (2,300 kg/h) and hammermills",
+  "size_note": null,
+  "certs": [
+   "TKDN 38.00% (2 products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Alki+Dua+Saudara",
+  "source_type": "government",
+  "evidence": "TKDN registry: Chopper N27 king-grass and corn-stover chopper (2,300 kg/h) and hammermill, both 38.00%; Perbaungan address; SIINas KBLI 28210.",
+  "source_year": 2026
+ },
+ {
+  "name": "KO Produsen Melati Jaya Steel",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": "Kabupaten Serdang Bedagai (Perbaungan)",
+  "capabilities": [
+   "blade making for palm-harvesting tools"
+  ],
+  "serves": [
+   "oil-palm plantations (harvesting)"
+  ],
+  "makes": "Egrek palm-harvesting sickle blades, 4-5 mm thick, 50-55 cm long, brand MJS",
+  "size_note": null,
+  "certs": [
+   "TKDN 43.75%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Melati+Jaya+Steel",
+  "source_type": "government",
+  "evidence": "TKDN registry: producer cooperative's egrek blade (4-5 mm, 50-55 cm) at 43.75%; certificate address Melati II, Perbaungan, Serdang Bedagai.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Persada Dinamika Jaya",
+  "kind": "precision_parts_supplier",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan",
+  "capabilities": [
+   "palm-oil mill equipment supply and service",
+   "boiler and generator service"
+  ],
+  "serves": [
+   "palm-oil mills",
+   "edible-oil refineries",
+   "oleochemicals",
+   "biodiesel",
+   "oil and gas"
+  ],
+  "makes": "Supplies screw presses, pumps, gearboxes, electric motors and chains; boiler and generator service; mill construction work",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://en.indotrading.com/persadadinamikajaya",
+  "source_type": "directory",
+  "evidence": "(snippet) Indotrading profile: Medan office plus Jl. Orde Baru workshop; supplies screw presses, pumps, gearboxes; SIINas also lists it (KBLI 28111).",
+  "source_year": null
+ },
+ {
+  "name": "PT Jayatech Palmindo",
+  "kind": "precision_parts_supplier",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan (KIM; listings give two different estate addresses)",
+  "capabilities": [
+   "palm-oil mill machinery and spare-part supply",
+   "installation"
+  ],
+  "serves": [
+   "palm-oil mills"
+  ],
+  "makes": "Trades mill machinery and spare parts, distributes Wang Yuen screw presses and digesters, sells own JP-brand digesters",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://id.jobplanet.com/companies/99836/info/pt-jayatech-palmindo",
+  "source_type": "directory",
+  "evidence": "(snippet) Jobplanet/Indotrading: Medan trading firm founded 2002 supplying palm-oil mill machinery and spare parts; SIINas lists KBLI 33201 (installation).",
+  "source_year": null
+ },
+ {
+  "name": "PT Ariga Yutama",
+  "kind": "precision_parts_supplier",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan",
+  "capabilities": [
+   "spare-part supply (palm-oil mills, hydraulics, pumps, valves)"
+  ],
+  "serves": [
+   "palm-oil mills"
+  ],
+  "makes": "Sells palm-oil mill spare parts, hydraulic systems, pumps and valves; own manufacturing not confirmed",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://en.indotrading.com/arigayutama/alat-laboratorium/",
+  "source_type": "directory",
+  "evidence": "(snippet) Indotrading profile, Medan address: sells palm-oil mill spare parts, hydraulic systems, pumps and valves; whether it fabricates is unverified.",
+  "source_year": null
+ },
+ {
+  "name": "Kreasi Indo Metal (Kreasi Group)",
+  "kind": "laser_plasma_fabricator",
+  "province": "Sumatera Utara",
+  "city": "Kabupaten Deli Serdang (Percut Sei Tuan) / Medan",
+  "capabilities": [
+   "metal plate cutting service (cutting method not stated)",
+   "decorative fences and partition panels"
+  ],
+  "serves": [
+   "construction and interiors"
+  ],
+  "makes": "Cut-metal decorative fences and partition panels; plate cutting in iron, stainless, brass, aluminium and copper",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://en.indotrading.com/kreasigroup/pagar-dekorasi-p546537.aspx",
+  "source_type": "marketplace",
+  "evidence": "(snippet) Indotrading listing, updated May 2023: Medan unit accepts plate cutting in iron, stainless, brass, aluminium, copper; ships from Percut Sei Tuan.",
+  "source_year": 2023
+ },
+ {
+  "name": "PT Mara Pratama Indonesia",
+  "kind": "laser_plasma_fabricator",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan",
+  "capabilities": [
+   "laser cutting",
+   "bending",
+   "welding"
+  ],
+  "serves": [
+   "structural steel and fabricated parts"
+  ],
+  "makes": "Laser-cut plate of various thicknesses for structural components and parts sent on to bending and welding",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://www.loker.id/pabrik-dan-manufaktur/operator-mesin/operator-laser-cutting-pt-mara-pratama-indonesia-medan.html",
+  "source_type": "directory",
+  "evidence": "(snippet) Loker.id vacancy: laser-cutting operator in Medan cutting plate of various thicknesses for structural parts, bending and welding.",
+  "source_year": null
+ },
+ {
+  "name": "PT Austenite Foundry",
+  "kind": "foundry_machining",
+  "province": "Sumatera Utara",
+  "city": "Kota Medan (Kawasan Industri Medan)",
+  "capabilities": [
+   "casting",
+   "permanent-mould casting",
+   "lost-foam casting"
+  ],
+  "serves": [
+   "agricultural machinery",
+   "heavy equipment"
+  ],
+  "makes": "Steel castings for agricultural-machine and heavy-equipment parts",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://ejournal3.undip.ac.id/index.php/ieoj/article/download/22979/21016",
+  "source_type": "news",
+  "evidence": "(snippet) Undip journal FMEA study: KIM Medan steel foundry using permanent-mould and lost-foam casting; weekly defects 20.83% in Dec 2016. Pre-2023.",
+  "source_year": 2016
+ },
+ {
+  "name": "PT Ateliers Mecaniques D'Indonesie",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "metal tanks and containers (KBLI 25120)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25120 (metal tanks, reservoirs and containers); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Ateliers&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 25120; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Mechmar Jaya Industries",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "metal tanks and containers (KBLI 25120)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25120 (metal tanks, reservoirs and containers); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Mechmar&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 25120; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Prima Sarana Teknik",
+  "kind": "precision_parts_supplier",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "gears, bearings and drive elements (KBLI 28140)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 28140 (bearings, gears and driving elements); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Prima+Sarana+Teknik&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 28140; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Premier Engineering Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "gears, bearings and drive elements (KBLI 28140)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 28140 (bearings, gears and driving elements); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Premier+Engineering&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 28140; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Bhinneka Mekanik Nusantara",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "metal-forming machinery or machine tools (KBLI 2822x)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 28221 (machine-tool group 2822); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Bhinneka+Mekanik&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 28221; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Karunia Multi Jaya Logam",
+  "kind": "foundry_machining",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "non-ferrous casting (KBLI 24320)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 24320 (casting of non-ferrous metals); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Karunia+Multi+Jaya+Logam&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 24320; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Gentanusa Gemilang",
+  "kind": "cnc_job_shop",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "machining or metal-treatment services (KBLI 25920; CNC not confirmed)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25920 (machining, treatment and coating of metals); services not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Gentanusa&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 25920; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Sarana Panen Perkasa",
+  "kind": "machinery_maker",
+  "province": "Sumatera Utara",
+  "city": null,
+  "capabilities": [
+   "agricultural hand tools (KBLI 25931)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25931 (cutting tools and hand tools for agriculture); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Sarana+Panen+Perkasa&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Utara under KBLI 25931; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Oms Oilfield Services",
+  "kind": "precision_parts_supplier",
+  "province": "Riau",
+  "city": "Kabupaten Bengkalis (Bathin Solapan, Duri-Dumai road)",
+  "capabilities": [
+   "API and premium threaded connections",
+   "heat treatment (couplings)",
+   "wellhead and Christmas-tree component manufacture"
+  ],
+  "serves": [
+   "upstream oil and gas (drilling, completion, production)"
+  ],
+  "makes": "Casing and tubing head spools, flange adapters, tees and crosses, gate and choke valves, couplings, crossovers, conductor pin-and-box connectors, packers, drill pipe",
+  "size_note": null,
+  "certs": [
+   "TKDN 19.38-50.38% (19 oil and gas products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Oms+Oilfield+Services",
+  "source_type": "government",
+  "evidence": "TKDN registry: 19 oil-gas items incl. wellhead/Xmas-tree parts 25-37% and heat-treated couplings 43.53-50.38%; Duri-Dumai road, Bathin Solapan address.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Kwartindo Utama Teknik",
+  "kind": "precision_parts_supplier",
+  "province": "Riau",
+  "city": "Kabupaten Bengkalis (Bathin Solapan)",
+  "capabilities": [
+   "pipeline repair sleeve and clamp fabrication"
+  ],
+  "serves": [
+   "oil and gas pipelines"
+  ],
+  "makes": "Pipeline repair sleeves 4-42 inch (ASTM A36, A516 Gr 70), carbon and stainless emergency pipe clamps, galvanised fencing",
+  "size_note": null,
+  "certs": [
+   "TKDN 25.00-67.98% (5 products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Kwartindo+Utama+Teknik",
+  "source_type": "government",
+  "evidence": "TKDN registry: pipeline sleeves 4-42 inch 58.07-67.98%, pipe clamps 25.00-27.99%; Bathin Solapan, Bengkalis address; SIINas KBLI 25920.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Putra Metalindo Engineering",
+  "kind": "cnc_job_shop",
+  "province": "Riau",
+  "city": null,
+  "capabilities": [
+   "machining or metal-treatment services (KBLI 25920; CNC not confirmed)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25920 (machining, treatment and coating of metals); services not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Putra+Metalindo&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Riau under KBLI 25920; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Sinar Terang Engineering",
+  "kind": "cnc_job_shop",
+  "province": "Riau",
+  "city": null,
+  "capabilities": [
+   "machining or metal-treatment services (KBLI 25920; CNC not confirmed)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25920 (machining, treatment and coating of metals); services not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Sinar+Terang+Engineering&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Riau under KBLI 25920; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV J & V Perkasa Teknindo",
+  "kind": "cnc_job_shop",
+  "province": "Riau",
+  "city": null,
+  "capabilities": [
+   "machining or metal-treatment services (KBLI 25920; CNC not confirmed)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25920 (machining, treatment and coating of metals); services not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Perkasa+Teknindo&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Riau under KBLI 25920; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Kurnia Embun Jaya",
+  "kind": "cnc_job_shop",
+  "province": "Riau",
+  "city": null,
+  "capabilities": [
+   "machining or metal-treatment services (KBLI 25920; CNC not confirmed)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25920 (machining, treatment and coating of metals); services not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Kurnia+Embun+Jaya&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Riau under KBLI 25920; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Dharma Bakti Teknik",
+  "kind": "cnc_job_shop",
+  "province": "Riau",
+  "city": null,
+  "capabilities": [
+   "machining or metal-treatment services (KBLI 25920; CNC not confirmed)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25920 (machining, treatment and coating of metals); services not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Dharma+Bakti+Teknik&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Riau under KBLI 25920; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Baja Kampar Sarana Industri",
+  "kind": "foundry_machining",
+  "province": "Riau",
+  "city": null,
+  "capabilities": [
+   "iron and steel casting (KBLI 24310)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 24310 (casting of iron and steel); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Baja+Kampar&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Riau under KBLI 24310; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Riau Baja Indo",
+  "kind": "foundry_machining",
+  "province": "Riau",
+  "city": null,
+  "capabilities": [
+   "iron and steel casting (KBLI 24310)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 24310 (casting of iron and steel); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Riau+Baja+Indo&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Riau under KBLI 24310; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Semen Padang",
+  "kind": "machinery_maker",
+  "province": "Sumatera Barat",
+  "city": "Kota Padang (Indarung, Lubuk Kilangan)",
+  "capabilities": [
+   "heavy plate fabrication (rotary-kiln shell sections)"
+  ],
+  "serves": [
+   "cement production (own plants; SIG group)"
+  ],
+  "makes": "Rotary-kiln shell sections in carbon-steel boiler plate; main business is cement",
+  "size_note": "Cement capacity 8.9 Mt/yr from five Padang plants and one Dumai plant (end-2020, Wikipedia)",
+  "certs": [
+   "TKDN 25.15% kiln shell (imported plate)",
+   "TKDN 61.80% kiln shell (local plate)"
+  ],
+  "website": "http://www.semenpadang.co.id",
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Semen+Padang",
+  "source_type": "government",
+  "evidence": "TKDN registry: kiln shell, boiler-plate carbon steel, 25.15% with imported plate and 61.80% with local plate; Indarung, Padang address.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Citra Dragon Teknik",
+  "kind": "machinery_maker",
+  "province": "Sumatera Barat",
+  "city": "Kabupaten Padang Pariaman (VII Koto Sungai Sarik)",
+  "capabilities": [
+   "agricultural machine fabrication"
+  ],
+  "serves": [
+   "rice and maize farming",
+   "organic fertiliser"
+  ],
+  "makes": "Corn shellers, mud-field hand tillers (Hydotiller), compost shredders and power threshers",
+  "size_note": null,
+  "certs": [
+   "TKDN 40.00% (6 products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Citra+Dragon+Teknik",
+  "source_type": "government",
+  "evidence": "TKDN registry: corn sheller, Hydotiller mud-field tiller, compost machine and power thresher, each 40.00%; Sungai Sarik, Padang Pariaman address.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Novalindo",
+  "kind": "machinery_maker",
+  "province": "Sumatera Barat",
+  "city": "Kota Padang (Nanggalo)",
+  "capabilities": [
+   "laboratory and water-treatment equipment assembly"
+  ],
+  "serves": [
+   "laboratories and schools",
+   "water treatment"
+  ],
+  "makes": "RO distilled-water machines (1,000 L/day), lab chillers, ambient-air impingers and venturi meters",
+  "size_note": null,
+  "certs": [
+   "TKDN 38.00% (5 products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Novalindo",
+  "source_type": "government",
+  "evidence": "TKDN registry: aquadest machine 1,000 L/day, chiller, impinger air sampler and venturi meter, each 38.00%; Kurao Pagang, Nanggalo, Padang address.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Sawitech",
+  "kind": "machinery_maker",
+  "province": "Sumatera Barat",
+  "city": null,
+  "capabilities": [
+   "metal tanks and containers (KBLI 25120)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25120 (metal tanks, reservoirs and containers); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Sawitech&kbli=&prov=dH1L8Mh_lQt9ynweGqgAQt06SfXnOsW51ueJX7uv5Kg,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Barat under KBLI 25120; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Karya Empat Pilar",
+  "kind": "cnc_job_shop",
+  "province": "Sumatera Barat",
+  "city": null,
+  "capabilities": [
+   "machining or metal-treatment services (KBLI 25920; CNC not confirmed)"
+  ],
+  "serves": null,
+  "makes": "Registered under KBLI 25920 (machining, treatment and coating of metals); services not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Karya+Empat+Pilar&kbli=&prov=dH1L8Mh_lQt9ynweGqgAQt06SfXnOsW51ueJX7uv5Kg,",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas industrial directory (data 16 Oct 2026) lists the firm in Sumatera Barat under KBLI 25920; no other detail found.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Sang General Industri",
+  "kind": "machinery_maker",
+  "province": "Aceh",
+  "city": "Kabupaten Aceh Besar (Krueng Barona Jaya)",
+  "capabilities": [
+   "agro-processing machine fabrication",
+   "stainless-steel distillation vessels"
+  ],
+  "serves": [
+   "essential-oil distilling",
+   "cocoa processing",
+   "rice and farming",
+   "organic fertiliser",
+   "plastic recycling"
+  ],
+  "makes": "Essential-oil distillers MSV-50/MSV-200 (SS304), cocoa roasters, presses and sorters, power threshers, hand tractors, choppers, compost and plastic shredders",
+  "size_note": null,
+  "certs": [
+   "TKDN 34.00-40.00% (about 20 products)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sang+General+Industri",
+  "source_type": "government",
+  "evidence": "TKDN registry lists about 20 SGI machines at 34-40%: SS304 essential-oil distillers, cocoa machines, power thresher; Krueng Barona Jaya, Aceh Besar address.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Wira Cipta Perkasa",
+  "kind": "machinery_maker",
+  "province": "Aceh",
+  "city": "Kabupaten Aceh Utara (Matangkuli)",
+  "capabilities": [
+   "gas compressor packaging"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "Reciprocating gas compressor packages (suction 0-450 psi)",
+  "size_note": null,
+  "certs": [
+   "TKDN 13.52%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Wira+Cipta+Perkasa",
+  "source_type": "government",
+  "evidence": "TKDN registry: reciprocating gas compressor package at 13.52%; address on the ExxonMobil pipeline road, Matangkuli, Aceh Utara; SIINas KBLI 28130.",
+  "source_year": 2026
+ }
+]

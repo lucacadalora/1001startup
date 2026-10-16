@@ -1,0 +1,260 @@
+[
+  {
+    "province": "Jawa Timur",
+    "area": "Surabaya–Sidoarjo",
+    "level": "cluster",
+    "focus": {
+      "product": "Ship deck machinery and machined marine components: capstans, gypsy wheels, fairleads and chocks, shafting and stern-gear parts, propellers, ship valves",
+      "hs": [
+        "842531",
+        "842539",
+        "848710",
+        "848310",
+        "848180",
+        "732599"
+      ],
+      "why": "PT PAL and the Tanjung Perak yards are the anchor; ship local content was only 35% in 2023. East Java made shipbuilding a leading industry in 2011, targeting IKM ship-component suppliers. Logamindo (Sidoarjo) already holds TKDN for capstans and fairleads. Propeller imports rose from US$16.6M to US$27.7M (2023-25), and no TKDN-certified ship-propeller maker was found.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Orthopaedic implants and instruments (Sidoarjo node of the Pasuruan-led implant corridor)",
+        "hs": [
+          "902110",
+          "902131",
+          "901890"
+        ],
+        "why": "Eka Ormed (Sidoarjo) holds TKDN certificates for plates, screws, nails, hemi-hip and ex-fix sets. ITS and RSUD Dr Soetomo run hip-implant R&D with 3D-printed prototypes. Imports of 902110 rose 39% in 2023-25.",
+        "fit": "both"
+      },
+      {
+        "product": "Bicycle and e-bike frames, forks and CNC-machined parts",
+        "hs": [
+          "871491",
+          "871499",
+          "871493"
+        ],
+        "why": "Polygon (Sidoarjo) builds frames in-house and exports most of its output. Gears, chains and derailleurs were still imported (2022). Indonesia imported US$74.6M of frames and forks in 2025 and exported US$3.7M.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT PAL Indonesia (Persero)",
+      "PT Dok dan Perkapalan Surabaya",
+      "PT Dumas Tanjung Perak Shipyards",
+      "PT Ben Santosa",
+      "PT Insera Sena (Polygon)",
+      "RSUD Dr. Soetomo",
+      "SIER estate tenants (about 350 firms, Apr 2026)",
+      "Astra Honda Motor tier-1 suppliers (via Ngingas IKM)"
+    ],
+    "local_inputs": [
+      "Iron and steel castings of 1-2,200 kg (PT Logamindo Sari Mulia, Sidoarjo)",
+      "Forged and pressed metal parts from the Ngingas metal village (Waru)",
+      "Brass water-meter and valve bodies (PT Barindo Anggun Industri, Surabaya)"
+    ],
+    "clusters": [
+      "Ngingas metal village, Waru (Sidoarjo): about 300 units (2017), 320 entrepreneurs and 3,000+ workers (thesis)",
+      "SIER Rungkut (Surabaya) and SIER Berbek (Sidoarjo): about 332 ha, 100% occupied (Apr 2026)",
+      "Tanjung Perak shipyard and ship-repair cluster (PT PAL, PT DPS, PT Dumas, PT Ben Santosa)"
+    ],
+    "official_designation": "Shipbuilding, including ship equipment and parts, is an East Java leading industry under Permenperin 140/M-IND/PER/12/2011. It targets IKM ship-component suppliers and partnerships between the Sidoarjo, Mojokerto and Pasuruan metal centres and 40 shipyards. No KIID regulation was found for Kota Surabaya or Kab. Sidoarjo (JDIH title search, 16 Oct 2026).",
+    "umk_2026": "Kota Surabaya Rp5,288,796; Kab. Sidoarjo Rp5,191,541 (Kepgub Jatim 100.3.3.1/937/013/2025, in force 1 Jan 2026)",
+    "skills": "ITS (Faculty of Marine Technology; its Mechatronics Technology Centre built a portable CNC in 2016; 3D-printing lab in Product Design); PPNS (D3/D4 marine machinery, ship design, welding, piping, design & manufacturing; 2,356 new students Aug 2026); PENS (mechatronics, manufacturing design); SMK YPM 8 Sidoarjo built CNC trainers (snippet). BLK machining seats not verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1178",
+      "https://www.metrotvnews.com/read/NrWC8XWl-khofifah-tetapkan-umk-kabupaten-kota-se-jatim-ini-daftar-nominalnya",
+      "https://www.suarasurabaya.net/?p=685190",
+      "https://www.its.ac.id/news/its-gandeng-pt-pal-indonesia-perkuat-maritim-nasional/",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Logamindo%20Sari%20Mulia",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=propeller",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Eka%20Ormed",
+      "https://www.its.ac.id/news/wp-json/wp/v2/posts/71071",
+      "https://www.polygonbikes.com/about-us/",
+      "https://www.industry.co.id/read/4964/sentra-ikm-logam-ngingas-dorong-kemajuan-industri-dalam-negeri",
+      "https://repository.upnjatim.ac.id/31280/2/BAB%201.pdf",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/02_05-1.pdf",
+      "https://ppns.ac.id/",
+      "https://www.pens.ac.id/",
+      "https://www.its.ac.id/news/wp-json/wp/v2/posts/23256",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848710&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902110&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=871491&flowCode=M"
+    ]
+  },
+  {
+    "province": "Jawa Timur",
+    "area": "Gresik–Lamongan–Tuban",
+    "level": "cluster",
+    "focus": {
+      "product": "Cast-and-machined wear and spare parts for cement mills, crushers, conveyors, fertiliser plants and the copper smelters: mill liners, grinding media, conveyor pulleys and rollers, bearing housings, gears",
+      "hs": [
+        "847490",
+        "732591",
+        "848390",
+        "848330"
+      ],
+      "why": "Captive buyers sit here: SIG's 15 Mtpa Tuban plant, the Freeport Manyar and PT Smelting copper smelters, and Petrokimia Gresik. SIG's local spare-part spend reached Rp652bn in 2023. Barata already casts mill liners at 100% TKDN, and Indoprima casts bearing housings at 82-84%. Imports of 847490 were US$288M in 2025, 49% from China.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Hull and outfitting castings and machined parts for Gresik and Lamongan yards: shaft brackets, rudder horns, stern-tube parts",
+        "hs": [
+          "732599",
+          "848710",
+          "848310"
+        ],
+        "why": "The Barata-IPERINDO MoU (2025) targets imported shaft brackets and rudder horns. Dok Pantai Lamongan builds tankers and LPG carriers at Paciran, and the 2011 provincial roadmap planned a shipbuilding KEK in Lamongan.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Pump and valve spare parts for process plants and irrigation: impellers, casings, valve bodies and trim",
+        "hs": [
+          "841391",
+          "848190"
+        ],
+        "why": "Tri Ratna Diesel (Gresik) already makes TKDN-certified irrigation pumps, and Indoprima casts pump bearing housings. Indonesia imported US$300M of pump parts and US$185.7M of valve parts in 2025.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Semen Indonesia (Persero) Tbk / PT Semen Gresik (Tuban and Gresik plants)",
+      "PT Freeport Indonesia (Manyar smelter, JIIPE)",
+      "PT Smelting (Gresik)",
+      "PT Petrokimia Gresik",
+      "PT Indo Copper Refining (JIIPE)",
+      "PT Hailiang Nova Material Indonesia (JIIPE)",
+      "PT Dok Pantai Lamongan",
+      "Lamongan Shorebase (PT Eastern Logistics) tenants"
+    ],
+    "local_inputs": [
+      "Copper concentrate smelting to cathode (Freeport Manyar smelter and PT Smelting, Gresik)",
+      "Cement and limestone (SIG Tuban, 15 Mtpa)",
+      "Special steel bars incl. SUP9 spring steel (PT Jatim Taman Steel Manufacturing, Gresik)",
+      "Steel wire, rebar and cylpebs grinding media (PT Inti Surya Sentosa, Gresik)",
+      "Sulphuric and phosphoric acid, ammonia (Petrokimia Gresik)"
+    ],
+    "clusters": [
+      "KEK Gresik / JIIPE, Manyar (3,000 ha; 23 tenants, Apr 2026)",
+      "Kawasan Industri Gresik (KIG) and Kawasan Industri Tuban (KIT, being built)",
+      "i-Sentra Industrial Park, Paciran, Lamongan (opened 2025; 500 ha phase 1)",
+      "Lamongan Shorebase, Paciran (offshore oil and gas supply base)",
+      "Paciran-Brondong wooden fishing-boat yards (Lamongan)"
+    ],
+    "official_designation": "KEK Gresik (JIIPE) under PP 71/2021 (28 Jun 2021), an industry / technology and manufacturing SEZ. Permenperin 140/M-IND/PER/12/2011 also targeted a shipbuilding KEK in Lamongan; no such KEK was found. No KIID regulation was found for Gresik, Lamongan, Tuban or Bojonegoro (JDIH title search, 16 Oct 2026).",
+    "umk_2026": "Kab. Gresik Rp5,195,401; Kab. Tuban Rp3,229,092; Kab. Lamongan Rp3,196,328; Kab. Bojonegoro Rp2,685,983 (Kepgub Jatim 100.3.3.1/937/013/2025)",
+    "skills": "Relies on ITS, PPNS and PENS in Surabaya. No local polytechnic, SMK machining programme or BLK CNC course was verified for Gresik, Lamongan, Tuban or Bojonegoro. ITS students visited Lamongan Shorebase (Oct 2025).",
+    "confidence": "medium",
+    "sources": [
+      "https://finance.detik.com/industri/d-7321752/sederet-ukm-ini-berhasil-tembus-pasok-suku-cadang-pabrik-semen",
+      "https://www.suara.com/bisnis/2023/08/29/074526/semester-1-2023-ralisasi-belanja-suku-cadang-dalam-negeri-sig-tembus-rp397-miliar",
+      "https://industri.kontan.co.id/news/tingkatkan-porsi-tkdn-sig-gunakan-suku-cadang-umkm-substitusi-produk-impor",
+      "https://en.wikipedia.org/wiki/Semen_Indonesia",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/02_07-1.pdf",
+      "https://www.jiipe.com/",
+      "https://investortrust.id/business/106327/investasi-tembus-rp113-4-triliun-pemerintah-siapkan-perluasan-kek-gresik-jiipe",
+      "https://www.barata.id/en/pt-barata-indonesia-persero-and-iperindo-collaboration-in-maritime-and-national-manufacturing-sector/",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Barata",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Indoprima%20Gemilang",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Inti%20Surya%20Sentosa",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pegas",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tri%20Ratna%20Diesel",
+      "https://www.disnakerja.com/pt-dok-pantai-lamongan/",
+      "https://www.lamonganshorebase.com/",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/02_08-1.pdf",
+      "https://www.kig.co.id/EN/home/",
+      "https://mongabay.co.id/2019/11/17/mengintip-aktifitas-pembuatan-kapal-perikanan-di-pantai-utara-lamongan/",
+      "https://en.wikipedia.org/wiki/Petrokimia_Gresik",
+      "https://ekonomi.bisnis.com/read/20231113/98/1713600/pelindo-targetkan-jiipe-jadi-kawasan-industri-terintegrasi-dengan-pelabuhan",
+      "https://www.kitco.com/news/off-the-wire/2026-08-12/freeport-indonesias-unit-smelting-gresik-halts-operations-furnace",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1178",
+      "https://www.metrotvnews.com/read/NrWC8XWl-khofifah-tetapkan-umk-kabupaten-kota-se-jatim-ini-daftar-nominalnya",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848190&flowCode=M"
+    ]
+  },
+  {
+    "province": "Jawa Timur",
+    "area": "Mojokerto–Pasuruan",
+    "level": "cluster",
+    "focus": {
+      "product": "Orthopaedic implants and surgical instruments: bone plates and screws, intramedullary nails, spinal pedicle-screw systems, hip prostheses",
+      "hs": [
+        "902110",
+        "902131",
+        "901890"
+      ],
+      "why": "Marthys (Prigen) holds about 140 TKDN-certified implant lines at 35.6-98.3% local content, but ran one Japanese machine in 2022, a clear CNC capacity gap. Imports of 902110 rose 39% and of 902131 67% in 2023-25. Eka Ormed (Sidoarjo), ITS and RSUD Dr Soetomo complete the corridor. 3D printing fits surgical guides and patient-specific models.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Agro- and food-processing machinery and spares: tractor and implement parts, sugar-mill and process-plant components",
+        "hs": [
+          "843290",
+          "843390",
+          "843890"
+        ],
+        "why": "Palupi Agri Berdikari (Kab. Mojokerto) builds TKDN tractors, and Boma Bisma Indra (Kota Pasuruan) makes heat exchangers and pressure vessels. Kota Pasuruan's 390-IKM metal centre makes diesel and factory parts (2018). PIER and Ngoro host food and tobacco plants, and P3GI, the sugar research centre, is in Pasuruan.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Footwear sole and last moulds",
+        "hs": [
+          "848071",
+          "848079"
+        ],
+        "why": "Footwear is Kota Mojokerto's KIID (2012) and the core-competence direction in Kab. Mojokerto's RPIK (2021). Intidragon Suryatama makes TKDN-certified molded shoes. Indonesia imported US$214M of injection moulds in 2025, 68% from China.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Marthys Orthopaedic Indonesia",
+      "PIER tenants (about 250 firms: automotive, musical instruments, speakers, smelting, agriculture; Apr 2026)",
+      "Ngoro Industrial Park tenants (auto parts, taps, ceramic tiles, musical instruments, tobacco)",
+      "PT Intidragon Suryatama (molded shoes, Kota Mojokerto)",
+      "PG Gempolkrep sugar mill (Mojokerto)",
+      "P3GI sugar research centre (Pasuruan)"
+    ],
+    "local_inputs": [
+      "Secondary lead (PT Indra Eramulti Logam Industri, Kab. Pasuruan)",
+      "Zinc oxide from recycled zinc (PT Citra Cakralogam, Kab. Pasuruan)",
+      "Brass and silver casting (Kab. Mojokerto creative-industry commodity)",
+      "Scrap aluminium cast into fishing-boat propellers (Mayangan, Kota Pasuruan)",
+      "Sugarcane (sugar mills and the P3GI research centre)"
+    ],
+    "clusters": [
+      "PIER, Pasuruan Industrial Estate Rembang (about 650 ha + 230 ha expansion, about 75% occupied, Apr 2026)",
+      "Ngoro Industrial Park (bonded zone, Kab. Mojokerto)",
+      "Kota Pasuruan metal centre: Mayangan and Ngemplakrejo (390 IKM, 2018)",
+      "Mojokerto footwear centres (KIID Kota Mojokerto)"
+    ],
+    "official_designation": "KIID Kota Mojokerto = footwear (Permenperin 156/M-IND/PER/12/2012). Kab. Mojokerto's RPIK 2020-2040 (Perda 2/2021) lists 12 leading industries, including machinery and equipment, capital goods and components, and basic metals. It directs core competence to footwear and names Kab. Mojokerto a WPPI. No KIID regulation was found for Kab. or Kota Pasuruan (JDIH title search, 16 Oct 2026).",
+    "umk_2026": "Kab. Pasuruan Rp5,187,681; Kab. Mojokerto Rp5,176,101; Kota Pasuruan Rp3,555,301; Kota Mojokerto Rp3,208,556 (Kepgub Jatim 100.3.3.1/937/013/2025)",
+    "skills": "No machining polytechnic verified inside the unit; it relies on Surabaya (ITS, PPNS, PENS) and the SMK pipeline (East Java: 14,666 machining SMK graduates in 2019, snippet). BLK CNC capacity not verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Marthys",
+      "https://wartaekonomi.co.id/read465570/pabrik-baru-pt-marthys-orthopedic-indonesia-diharapkan-mampu-tekan-serbuan-produk-impor",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902110&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902131&flowCode=M",
+      "https://www.its.ac.id/news/wp-json/wp/v2/posts/71071",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=traktor",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Boma%20Bisma",
+      "https://www.industry.co.id/read/38484/perkuat-daya-saing-ikm-komponen-otomotif-kemenperin-jalin-kerja-sama-dengan-jica",
+      "https://jurnal.unmer.ac.id/index.php/jpkm/article/download/2589/1578",
+      "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/02_04-1.pdf",
+      "https://peraturan.go.id/files/perda-kabupaten-mojokerto-no-2-tahun-2021.pdf",
+      "https://jdih.kemenperin.go.id/dokumen/view?id=1388",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=mold",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Logam",
+      "https://p3gi.co.id/",
+      "https://industri.kontan.co.id/news/barata-incar-proyek-revitalisasi-pabrik-gula-ptpn-x",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848071&flowCode=M",
+      "https://www.metrotvnews.com/read/NrWC8XWl-khofifah-tetapkan-umk-kabupaten-kota-se-jatim-ini-daftar-nominalnya"
+    ]
+  }
+]

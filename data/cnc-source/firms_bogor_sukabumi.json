@@ -1,0 +1,964 @@
+[
+  {
+    "name": "PT Duraquipt Cemerlang",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kota Depok",
+    "capabilities": [
+      "machining",
+      "pump assembly and testing",
+      "pump and valve repair"
+    ],
+    "serves": [
+      "oil and gas",
+      "fire protection",
+      "process industry"
+    ],
+    "makes": "API 610/ANSI centrifugal, reciprocating and screw pumps; fire-water pump packages; pump parts (casings, impellers, shafts, bowls, bearing housings)",
+    "size_note": null,
+    "certs": [
+      "ISO 9001",
+      "ISO 14001",
+      "ISO 45001",
+      "TKDN up to 99.79% (pump part)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Duraquipt+Cemerlang",
+    "source_type": "government",
+    "evidence": "TKDN, Limo (Depok): pump parts certified at 96.8-99.8% local content (impeller 99.45%, casing 96.83%); API 610 bare pumps 45.6-54.8%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Ebara Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kota Depok",
+    "capabilities": [
+      "pump manufacturing and assembly"
+    ],
+    "serves": [
+      "industry",
+      "irrigation and flood control",
+      "fire protection"
+    ],
+    "makes": "Industrial, irrigation/flood and fire pumps; horizontal centrifugal pumps; open cooling towers",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 70.65% (industrial pump)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Ebara+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN lists 69 Ebara items at Jl. Raya Jakarta-Bogor Km 32, Cimanggis: industrial pumps 25-71%, irrigation/flood pumps 46-65%, fire pumps 59%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Multikarya Asia Pasifik Raya Tbk",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "pump packaging"
+    ],
+    "serves": [
+      "oil and gas",
+      "fire protection"
+    ],
+    "makes": "Reciprocating positive-displacement, horizontal centrifugal and screw pump packages; fire pump packages",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 40.12%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Multikarya+Asia+Pasifik+Raya",
+    "source_type": "government",
+    "evidence": "TKDN, Sukahati (Citeureup): 15 oil-and-gas pump items - reciprocating, centrifugal and screw pump packages, fire pump packages.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Offshorindo",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "fire protection",
+      "industry"
+    ],
+    "makes": "Vertical and horizontal centrifugal pumps; fire hoses",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 51.44%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Offshorindo",
+    "source_type": "government",
+    "evidence": "TKDN, Cikeas Udik (Gunung Putri): vertical and horizontal centrifugal pumps and fire hoses certified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Kala Karu",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kota Depok",
+    "capabilities": null,
+    "serves": [
+      "irrigation"
+    ],
+    "makes": "Irrigation pump packages",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 51.65%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Kala+Karu",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Tole Iskandar, Cilodong (Depok): four irrigation pump package items, up to 51.65% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bukaka Teknik Utama Tbk",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "heavy steel fabrication",
+      "hot-dip galvanizing",
+      "forging (subsidiary Bukaka Forging Industries)"
+    ],
+    "serves": [
+      "power transmission",
+      "airports",
+      "bridges and roads",
+      "oil and gas"
+    ],
+    "makes": "Transmission towers, passenger boarding bridges, steel bridges, oil-and-gas pumps and equipment, road-construction equipment, special-purpose vehicles",
+    "size_note": null,
+    "certs": [
+      "ISO 9001 (from 1995)",
+      "API certificate (1995)"
+    ],
+    "website": "https://www.bukaka.com",
+    "source_url": "https://www.bukaka.com/web/contact.html",
+    "source_type": "company_site",
+    "evidence": "Head office and manufacturing at Bukaka Industrial Estate, Jl. Raya Narogong Km 19.5, Cileungsi; galvanizing 40,000 t/yr; over 6,000 pumps supplied.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT IMECO Inter Sarana",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "gear manufacturing",
+      "machining",
+      "structural fabrication"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Sucker-rod pumping units and parts: high/low-speed gears (400-1,356 mm), pinion shafts, saddle, equalizer and crank-pin bearing assemblies",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 62.36% (pumping-unit structure)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=IMECO+Inter+Sarana",
+    "source_type": "government",
+    "evidence": "TKDN, CCIE Kav. E.146 (Klapanunggal): pumping-unit gears 400-1,356 mm diameter at 48-49% TKDN, pinion shafts, bearing assemblies.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Alfa Valves Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "valve manufacturing",
+      "cast and forged valve bodies"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Ball valves 2-16 in (class 150-600, carbon-steel castings); forged ball and gate valves (1/2-16 in)",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 35.56%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Alfa+Valves+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Mercedes Benz 324, Wanaherang (Gunung Putri): cast carbon-steel ball valves and forged ball/gate valves, 26-36% TKDN.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Valman Industri Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "valve manufacturing"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "API 6A positive and adjustable choke valves (2,000-15,000 psi, PSL 1-3); check and ball valves",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Valman+Industri+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN, Padurenan (Gunung Sindur): API 6A choke valves to 15,000 psi, check and ball valves up to 16 in.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Benvors Sarana Utama",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "wellhead component manufacturing"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Wellhead and X-mas tree assemblies; casing heads, casing spools, tubing spools and tubing-head adapters (2,000-10,000 psi)",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 55%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Benvors+Sarana+Utama",
+    "source_type": "government",
+    "evidence": "TKDN, Bojong Nangka (Gunung Putri): casing head, casing spool, tubing spool and adapter at 55% TKDN; wellhead assemblies 30.5%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Petro Synergy Manufacturing",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "wellhead component manufacturing"
+    ],
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Wellhead and tree assemblies; casing/tubing hangers, flanges, adapters, tees and crosses (2,000-15,000 psi, PSL 1-3G)",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 34.64%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Petro+Synergy+Manufacturing",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Raya Cikuda, Wanaherang (Gunung Putri): 16 wellhead and tree assembly and component items to 15,000 psi.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Daeshin Flange Fitting Industri",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "forging",
+      "machining",
+      "threading"
+    ],
+    "serves": [
+      "oil and gas",
+      "piping"
+    ],
+    "makes": "ASME B16.5 forged flanges up to 36 in; B16.9/B16.11 fittings; nipples; rigid-conduit fittings",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 59.62%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Daeshin+Flange+Fitting",
+    "source_type": "government",
+    "evidence": "TKDN, Gunung Sindur: 48 flange and fitting items, incl. forged ASME B16.5 flanges to 36 in and spectacle blinds at 59%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Technobend Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "induction pipe bending",
+      "weld-overlay cladding",
+      "forging"
+    ],
+    "serves": [
+      "oil and gas pipelines"
+    ],
+    "makes": "API 5L pipe bends 2-52 in (3D-20D radius), 304/316L CRA-clad bends, butt-weld and forged fittings",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 74.62% (pipe bend)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Technobend+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN, Gandoang (Cileungsi): API 5L pipe bends 2-52 in, CRA-clad bends, butt-weld and forged fittings; up to 74.6% TKDN.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT OMS Oilfield Services",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "threading (API and premium connections)",
+      "heat treatment"
+    ],
+    "serves": [
+      "oil and gas drilling"
+    ],
+    "makes": "Conductor pin-and-box connectors, drill pipe, crossovers/blast joints, flow couplings",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 50.38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Oms+Oilfield+Services",
+    "source_type": "government",
+    "evidence": "TKDN, Kembang Kuning (Klapanunggal): couplings and crossovers with API/premium connections and heat treatment; conductor connectors.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pumpa Cakrawala Mulia",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "oil and gas"
+    ],
+    "makes": "Progressive-cavity pump drive heads (to 25 HP) and 15-45 kW variable-speed drives",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 30.55%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Pumpa+Cakrawala+Mulia",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Raya Narogong Km 16, Limusnunggal (Cileungsi): vertical hollow-shaft PCP drive heads and variable-speed drives.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Arezda Purnama Loka",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "machining (ring-joint gaskets)"
+    ],
+    "serves": [
+      "oil and gas",
+      "process plants"
+    ],
+    "makes": "Ring-joint, spiral-wound and double-jacket gaskets; flange insulation kits; finned tubes",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 71.97% (finned tube)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Arezda+Purnama+Loka",
+    "source_type": "government",
+    "evidence": "TKDN, Puspanegara (Citeureup): INGI-brand ring-joint, spiral-wound and double-jacket gaskets, insulation kits and finned tubes.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Maju Teknik Utama Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "LPG valve manufacturing"
+    ],
+    "serves": [
+      "LPG distribution"
+    ],
+    "makes": "LPG cylinder valves for 3, 5.5, 12 and 50 kg cylinders",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 95.55%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Maju+Teknik+Utama+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN, Gandoang (Cileungsi): MTU-brand LPG cylinder valves with NGT threads, certified at 94.3-95.6% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Metalindo Teratai Putra",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "LPG valve manufacturing",
+      "steel cylinder fabrication"
+    ],
+    "serves": [
+      "LPG distribution",
+      "electricity utility"
+    ],
+    "makes": "LPG cylinder valves; 3 and 5.5 kg steel LPG cylinders; single-phase kWh meters",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 98.20%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Metalindo+Teratai+Putra",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Raya Narogong Km 27 (Klapanunggal): LPG cylinder valves at 91.6-98.2% TKDN, steel LPG cylinders and kWh meters.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Tirta Pratama Meterindo",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "water utilities"
+    ],
+    "makes": "Water meters and gate valves",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 84.99% (water meter)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tirta+Pratama+Meterindo",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Raya Narogong Km 15.5, Limusnunggal (Cileungsi): water meters at 85.0% TKDN and gate valves.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Mandiri Hardja Agung",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "pumping and drainage"
+    ],
+    "makes": "Flap valves and pump column pipes",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 41.38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Mandiri+Hardja+Agung",
+    "source_type": "government",
+    "evidence": "TKDN, Pasirangin (Cileungsi): flap valves and pump column pipes (pipa kolom) listed under metal goods.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Elyon Inovasi Perkasa Abadi",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "small turned and pressed parts"
+    ],
+    "serves": [
+      "electrical components"
+    ],
+    "makes": "Terminal bolts (M5), copper inserts, rings, shafts (9.4 x 52.5 mm), terminal blocks, M4 nuts",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 83.54%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Elyon+Inovasi+Perkasa+Abadi",
+    "source_type": "government",
+    "evidence": "TKDN, Kp. Bakom, Limusnunggal (Cileungsi): terminal bolts, copper inserts, rings, shafts and nuts at 15-83.5% TKDN.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Electra Inti Perkasa",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "electrical fittings manufacturing",
+      "panel assembly"
+    ],
+    "serves": [
+      "power distribution"
+    ],
+    "makes": "LV panels and enclosures; power-line fittings (bimetal sleeves, cable lugs, joint sleeves, tension joints, clamps)",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 100% (tension joint)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Electra+Inti+Perkasa",
+    "source_type": "government",
+    "evidence": "TKDN, Tarikolot (Citeureup): 158 items - LV panels, aluminium enclosures, bimetal sleeves, cable lugs, tension joints; some at 100%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Flexco Indonesia Jaya",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "bulk conveying"
+    ],
+    "makes": "Primary and secondary conveyor belt cleaners (450-2,400 mm belts)",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 28.77%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Flexco+Indonesia+Jaya",
+    "source_type": "government",
+    "evidence": "TKDN, Sentul Industrial Estate, Leuwinutug (Citeureup): primary and secondary conveyor belt cleaners for 450-2,400 mm belts.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Gibrig Indonesia Bersih",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "waste management and recycling"
+    ],
+    "makes": "Waste-processing machines: single/double-shaft crushers, screw and belt conveyors, sieves, mixers, hot extruders, balers, magnetic and turbo separators",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Gibrig+Indonesia+Bersih",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Raya Narogong Km 17, Limusnunggal (Cileungsi): 17 waste-processing machines incl. crushers, conveyors, extruder, separators.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Ciptapresisi Sarana Teksindo",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "water and wastewater"
+    ],
+    "makes": "Wastewater equipment: multidisk screw presses, clarifier scrapers, surface aerators, compact bio-tanks, septic sludge receivers",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Ciptapresisi+Sarana+Teksindo",
+    "source_type": "government",
+    "evidence": "TKDN, Sukahati (Cibinong): 23 wastewater items - multidisk screw presses, side and central-drive scrapers, surface aerators.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Hinoka Alsindo Tekni",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "agriculture",
+      "coffee processing",
+      "animal feed"
+    ],
+    "makes": "Coffee pulpers, grinders and roasters; forage choppers; pellet mills; disk mills; corn shellers; threshers; hydraulic presses",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 67.91%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Hinoka+Alsindo+Tekni",
+    "source_type": "government",
+    "evidence": "TKDN, Mekarsari (Cileungsi): 18 farm machines incl. coffee pulpers at 59-67%, choppers, pellet mills, disk mills, corn shellers.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Tacko Mesin Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Two-wheel hand tractors, tractor cultivators, multi-purpose choppers",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tacko+Mesin+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN, Mampir (Cileungsi): two-wheel hand tractor, tractor cultivator and multi-purpose chopper certified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sinar Natural Industri",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Combine harvesters and four-wheel tractors (assembly vs. manufacture not stated)",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 38.18%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sinar+Natural+Industri",
+    "source_type": "government",
+    "evidence": "TKDN, Kawasan Industri Korin, Kembang Kuning (Klapanunggal): combine harvester and four-wheel tractors certified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Kotrack Machinery Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Four-wheel tractors (assembly vs. manufacture not stated)",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 38.21%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Kotrack+Machinery+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN, Pasirangin (Cileungsi): two four-wheel tractor items certified at about 38% local content.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bahagia Jaya Sejahtera",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "agriculture",
+      "food processing"
+    ],
+    "makes": "Beje-brand hand tractors, cultivators, rice transplanters, dryers, slicers, cane presses, water pumps, gensets, stoves",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Bahagia+Jaya+Sejahtera",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Mayjen HE Sukma, Ciawi: 51 Beje-brand farm and food machines - hand tractors, transplanters, dryers, pumps.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Dunia Alat Esemka",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "food processing",
+      "vocational schools"
+    ],
+    "makes": "Food machines (cassava graters and slicers, hammer mills, horizontal mixers, poultry bleeding cones) and automotive/pneumatic training rigs",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Dunia+Alat+Esemka",
+    "source_type": "government",
+    "evidence": "TKDN, Ciangsana (Gunung Putri): cassava grater, hammer mill, horizontal mixer, plus engine, clutch and pneumatic training rigs.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Dwida Jaya Tama",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": null,
+    "serves": [
+      "vocational schools",
+      "kindergartens",
+      "coffee processing"
+    ],
+    "makes": "Vocational training systems (electro-pneumatics, PLC, VSD), coffee pulpers, educational toys and school furniture",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 100% (wooden toys); coffee pulper 66.5%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Dwida+Jaya+Tama",
+    "source_type": "government",
+    "evidence": "TKDN, Padurenan (Gunung Sindur): 151 items - training systems, coffee pulpers at 64.7-66.5%, educational toys and furniture.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Jetspeed Mandiri Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kota Depok",
+    "capabilities": null,
+    "serves": [
+      "commercial laundry"
+    ],
+    "makes": "Industrial laundry machines: washer-extractors, barrier washers, flatwork ironers, dryers",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Jetspeed+Mandiri+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN, Sukatani (Tapos, Depok): washer-extractor, barrier washer, flatwork ironer and laundry dryer certified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Panca Karya Unggul Abadi",
+    "kind": "cnc_router_wood",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "CNC router (HPL panels)"
+    ],
+    "serves": [
+      "schools",
+      "offices"
+    ],
+    "makes": "School and office furniture; HPL wall backdrops incl. 'Backdrop HPL CNC With Mirror'",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 78.34%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Panca+Karya+Unggul+Abadi",
+    "source_type": "government",
+    "evidence": "TKDN, Gandoang (Cileungsi): furniture list includes 'Backdrop HPL CNC With Mirror' and HPL slat backdrops.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sindoro Abadi Makmur",
+    "kind": "cnc_router_wood",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "CNC router (HPL panels)"
+    ],
+    "serves": [
+      "schools",
+      "offices"
+    ],
+    "makes": "School and office furniture; HPL wall backdrops incl. 'Backdrop HPL CNC With Mirror'",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 63.82%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sindoro+Abadi+Makmur",
+    "source_type": "government",
+    "evidence": "TKDN, Mekarsari (Cileungsi): furniture list includes 'Backdrop HPL CNC With Mirror' and HPL slat backdrops.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Vincitore Indo Abadi",
+    "kind": "cnc_router_wood",
+    "province": "Jawa Barat",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "CNC router (HPL panels)"
+    ],
+    "serves": [
+      "schools",
+      "offices"
+    ],
+    "makes": "School and office furniture; HPL wall backdrops incl. 'Backdrop HPL CNC With Mirror'",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 63.77%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Vincitore+Indo+Abadi",
+    "source_type": "government",
+    "evidence": "TKDN, Gandoang (Cileungsi): furniture list includes 'Backdrop HPL CNC With Mirror' and HPL slat backdrops.",
+    "source_year": 2026
+  },
+  {
+    "name": "3D to Real Studio (Jasa Print 3D Depok)",
+    "kind": "3d_print_service",
+    "province": "Jawa Barat",
+    "city": "Kota Depok",
+    "capabilities": [
+      "3D printing (process not stated)"
+    ],
+    "serves": null,
+    "makes": "3D printing service",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://idalamat.com/kategori/73/produk-it",
+    "source_type": "directory",
+    "evidence": "Undated directory listing 'Jasa Print 3D Depok' in Bedahan, Depok; machines, materials and staff not stated.",
+    "source_year": null
+  },
+  {
+    "name": "CV Phonna Raya Machinery",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Sukabumi",
+    "capabilities": null,
+    "serves": [
+      "agriculture",
+      "coffee processing",
+      "food processing",
+      "cocoa processing"
+    ],
+    "makes": "KOHPAD-brand farm and food machines: seed cleaners, coffee pulpers/hullers/grinders, pellet mills, threshers, corn shellers, dryers, slicers, fryers, cocoa-butter press, hand tractors, combine harvesters",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 78.81% (seed cleaner)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Phonna+Raya+Machinery",
+    "source_type": "government",
+    "evidence": "TKDN, Benda (Cicurug): 66 KOHPAD items - seed cleaner 78.8%, coffee pulper 77.3%, pellet mill 73.5%, combine harvester 46.7%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Karya Insan Gemilang Machinary",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Sukabumi",
+    "capabilities": null,
+    "serves": [
+      "cocoa and cashew processing"
+    ],
+    "makes": "Cashew peelers and roasters; chocolate pasting, vibrating and tempering machines; packing machines",
+    "size_note": null,
+    "certs": [
+      "TKDN 38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Karya+Insan+Gemilang+Machinary",
+    "source_type": "government",
+    "evidence": "TKDN, Cisande (Cicantayan): cashew peeler and fryer, chocolate paste, vibrating and tempering machines, packing machine; 38% TKDN.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Azaki Reindo Manufaktur",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Sukabumi",
+    "capabilities": null,
+    "serves": [
+      "tofu and tempe makers",
+      "food service"
+    ],
+    "makes": "Soybean washers, hull-splitting grinders and boilers for tofu/tempe; fermentation racks; stove tables; stainless work tables",
+    "size_note": null,
+    "certs": [
+      "TKDN 38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Azaki+Reindo+Manufaktur",
+    "source_type": "government",
+    "evidence": "TKDN address 'Cibatu LIK 30' (Cisaat): soybean washers and hull-splitting grinders, tempe racks, stove and stainless tables.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Rajawali Pelita Nusantara",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Sukabumi",
+    "capabilities": null,
+    "serves": [
+      "police and armed forces"
+    ],
+    "makes": "Handcuffs (incl. double-lock and leg cuffs), T-batons, duty belts, ceremonial officer swords and scabbards",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Rajawali+Pelita+Nusantara",
+    "source_type": "government",
+    "evidence": "TKDN, Desa Cibatu (Cisaat): handcuffs, T-batons, duty belts and officer swords certified; Cibatu is Sukabumi's metal-craft village.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Dwitama Indo Perkasa",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kota Sukabumi",
+    "capabilities": null,
+    "serves": [
+      "electrical equipment (MCB)"
+    ],
+    "makes": "MCB components: housing covers, terminal frame cages, metal rings, M4/M5 screws, clips, toggles",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 56.84%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Dwitama+Indo+Perkasa",
+    "source_type": "government",
+    "evidence": "TKDN, Gedong Panjang (Citamiang): MCB housing covers, terminal frame cages, metal rings, M4/M5 screws and clips; up to 56.8%.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Saga Multi Industri",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kota Sukabumi",
+    "capabilities": null,
+    "serves": [
+      "electricity meters",
+      "agricultural sprayers"
+    ],
+    "makes": "kWh-meter parts in plastic (covers, bases, terminal blocks, lenses) and steel (base plates, relay covers); hand sprayers",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 67.44%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Saga+Multi+Industri",
+    "source_type": "government",
+    "evidence": "TKDN, Nanggeleng (Citamiang): plastic kWh-meter covers, bases, terminal blocks and lenses; steel relay covers and base plates at 64-67%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sadamaya Graha Teknologi",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Cianjur",
+    "capabilities": null,
+    "serves": [
+      "health care"
+    ],
+    "makes": "Medical devices: digital patient scales, infantometers, stadiometers, manual and powered hospital beds",
+    "size_note": null,
+    "certs": [
+      "TKDN up to 64.07%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sadamaya+Graha+Teknologi",
+    "source_type": "government",
+    "evidence": "TKDN, Jl. Raya Cibeber Km 10, Cilaku (Cianjur): patient scales, infantometer, stadiometer and hospital beds; up to 64.1% TKDN.",
+    "source_year": 2026
+  }
+]

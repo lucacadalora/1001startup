@@ -1,0 +1,627 @@
+[
+  {
+    "product": "Aircraft machined parts, aerostructure details and assembly jigs",
+    "family": "aerospace",
+    "hs": [
+      "880730",
+      "8807",
+      "841191"
+    ],
+    "imports_usd_m": {
+      "2023": 416.7,
+      "2024": 234.4,
+      "2025": 438.3
+    },
+    "exports_usd_m": {
+      "2023": 100.7,
+      "2024": 312.1,
+      "2025": 132.5
+    },
+    "top_origins_2025": [
+      "France 31%",
+      "USA 21%",
+      "Singapore 19%",
+      "Spain 12%",
+      "Malaysia 3%"
+    ],
+    "local_now": "Values are HS 880730 (other aircraft parts). Aircraft-level TKDN (Kemenperin, reported 7 May 2026): N219 44.69%, NC212i 42.15%, CN235 38.74%, C295 20.87%. Local share of machined details: unknown. Machining is about 19-20% of an aircraft's parts (2025, search snippet).",
+    "local_makers": [
+      "PT Dirgantara Indonesia (Bandung)",
+      "PT Yogya Presisi Teknikatama Industri (Yogyakarta)",
+      "PT TEHA (city not given; 2016 N219 jig vendor)",
+      "PT Mulia Bangun Sentosa (city not given; 2016 N219 jig vendor)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: 3- and 5-axis milling of aluminium and titanium details (ribs, brackets, fittings) built to print for PTDI and its ShinMaywa work packages; assembly jigs and drill templates (about 60% of N219 jig work was subcontracted in 2016). 3D: drill and trim templates, check fixtures, polymer cabin and interior non-structural parts, and MRO tooling (inference; no Indonesian source found).",
+    "potential_share": "Judgement: 3-8% of the 880730 import bill within 3-5 years, about US$13-35M a year at the 2025 level (estimate: 438.3 x 0.03 = 13.1; 438.3 x 0.08 = 35.1). Reasoning: only 7 of 12 INACOM members hold AS9100; PTDI plans just 28 aircraft and helicopters in 2026, with N219 output rising from 6 to 12 a year; the ShinMaywa contract and 0% US tariff on Indonesian aircraft parts add export pull; NADCAP special processes and customer approvals take years, so the share stays small. The 0% import duty on 148 aircraft-part tariff lines works against substitution.",
+    "buyers": [
+      "PT Dirgantara Indonesia (Bandung; Kertajati expansion)",
+      "ShinMaywa Industries (Boeing, Airbus and Bombardier aerostructure packages placed with PTDI)",
+      "Airbus (CN235/C295 programme)",
+      "GMF AeroAsia (MRO, Soekarno-Hatta)",
+      "Kemhan / TNI (N219, NC212i, CN235 orders)"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Majalengka, Jawa Barat",
+      "Kota Tangerang, Banten",
+      "Yogyakarta, DI Yogyakarta"
+    ],
+    "certs_needed": [
+      "AS9100D",
+      "NADCAP for heat treatment, NDT and chemical processing (industry norm, not sourced in Indonesia)",
+      "Customer source approval (PTDI, ShinMaywa, Airbus) (industry norm)",
+      "DGCA approvals for MRO parts (industry norm)",
+      "TKDN certificate"
+    ],
+    "jobs_note": "Kertajati (Majalengka): the regent expects about 3,000 workers once PTDI and Kemhan activities move there (Oct 2026, no date or investment given). No count of machining jobs in PTDI's supply chain was found.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8807,880730&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=880730&flowCode=M",
+      "https://bcasekuritas.co.id/en/latest-news/news/kemenperin-dukung-kolaborasi-bappenas-airbus-perkuat-ekosistem-industri-dirgantara",
+      "https://www.industry.co.id/read/140610/kemenperin-dukung-sinergi-ptdi-dan-ypti-kuatkan-rantai-pasok-industri-dirgantara",
+      "https://www.indonesian-aerospace.com/en/media/news/detail/1600/ptdi-and-japans-shinmaywa-sign-contract-for-commercial-aircraft-component-procurement",
+      "https://www.indonesian-aerospace.com/en/media/news/detail/1823/ptdi-targets-production-of-150-n219-aircraft-units-for-remote-regions",
+      "https://www.indonesian-aerospace.com/en/media/news/detail/1827/bijb-kertajati-to-partner-with-ministry-of-defense-and-pt-di-regent-of-majalengka-new-potential-to",
+      "https://ekonomi.bisnis.com/read/20160129/98/514346/pesawat-n219-dijadwalkan-terbang-perdana-juli-ini",
+      "https://investortrust.id/business/59453/ptdi-proyeksikan-produksi-pesawat-143-unit-senilai-us-3-1-miliar",
+      "https://ustr.gov/sites/default/files/files/Press/Releases/2026/02.19.26%20US-IDN%20ART%20Full%20Agreement%20-%20US%20Final%20for%20Website%20sanitized.pdf"
+    ]
+  },
+  {
+    "product": "Ammunition, bomb and fuze metal parts (cases, projectiles, bomb bodies, fuze parts)",
+    "family": "defence",
+    "hs": [
+      "930690",
+      "930630"
+    ],
+    "imports_usd_m": {
+      "2023": 116.1,
+      "2024": 37.3,
+      "2025": 132.7
+    },
+    "exports_usd_m": {
+      "2023": 7.9,
+      "2024": 2.1,
+      "2025": 0.5
+    },
+    "top_origins_2025": [
+      "Korea 33%",
+      "China 16%",
+      "Serbia 13%",
+      "France 10%",
+      "USA 7%"
+    ],
+    "local_now": "Values are HS 930690 + 930630 combined. Product TKDN (Kemenperin registry, accessed 16 Oct 2026): Pindad 7.62x51 mm ammunition 50.61%; Dahana P-250L bomb 84.52%, P-500L bomb 74.20%, electronic detonator 42.74%. Pindad could make 400 million rounds a year in 2020. Sector-level local share: unknown.",
+    "local_makers": [
+      "PT Pindad (Bandung)",
+      "PT Dahana (Subang)",
+      "PT Sapta Inti Perkasa (Malang)",
+      "PT Nanggala Kencana Rekatama Indonesia (Bandung)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC: turning of fuze bodies and adaptors, machining of bomb bodies, tail units and large-calibre projectiles, and tooling for case-drawing and press lines. 3D: prototype fuze housings, training rounds, packaging inserts and gauges (inference). Small-calibre cases are mostly press-drawn, not CNC work.",
+    "potential_share": "Judgement: 5-10% of the combined import bill within 3-5 years, about US$7-13M a year at the 2025 level (estimate: 132.7 x 0.05 = 6.6; 132.7 x 0.10 = 13.3). Reasoning: imports are lumpy and platform-driven; ammunition makers are vertically integrated and licensed, so third-party machinists get tooling, fuze and bomb-hardware work rather than whole rounds; KKIP's 2026 review targets cutting imports of ammunition raw materials, and Law 16/2012 requires at least 35% local content or offset on foreign buys.",
+    "buyers": [
+      "Kemhan / TNI (procurement recommended by KKIP)",
+      "Polri",
+      "PT Pindad",
+      "PT Dahana"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Subang, Jawa Barat",
+      "Malang, Jawa Timur"
+    ],
+    "certs_needed": [
+      "Kemhan licence to produce weapon and ammunition components",
+      "Partner status with a DEFEND ID member (Pindad, Dahana, Len, PTDI, PAL)",
+      "TKDN certificate",
+      "ISO 9001 (industry norm)"
+    ],
+    "jobs_note": "No sourced job figures. Pindad's 2026 bank facility (Rp1.5T, May 2026) is earmarked for vehicles and ammunition.",
+    "sources": [
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/930690",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/930630",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Imports/partner/ALL/product/930690",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Imports/partner/ALL/product/930690",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=V3Uj7Zgo_JKjgsBwGrhZlOh3IYltEOWm-7z_RcU7n_E,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=rFO_wMkF95I0ev6LJk9jvnSpmVXuWh_V0toC5707AQQ,",
+      "https://ekonomi.republika.co.id/berita/t9f7o7416/penguatan-industri-pertahanan-percepat-kemandirian-alutsista",
+      "https://www.kkip.go.id/2026/07/31/timlak-kkip-gelar-monev-2026/",
+      "https://www.janes.com/osint-insights/defence-news/indonesia-outlines-2021-offset-target_14893",
+      "https://www.kemhan.go.id/?p=2074",
+      "https://economy.okezone.com/read/2026/05/30/320/3221625/pindad-dapat-kredit-rp1-5-triliun-siap-produksi-maung-dan-amunisi"
+    ]
+  },
+  {
+    "product": "Armoured-vehicle and small-arms machined components and spares",
+    "family": "defence",
+    "hs": [
+      "871000",
+      "9301",
+      "9305"
+    ],
+    "imports_usd_m": {
+      "2023": 177.7,
+      "2024": 90.2,
+      "2025": 31.7
+    },
+    "exports_usd_m": {
+      "2023": 36.1,
+      "2024": 0.2,
+      "2025": 3.6
+    },
+    "top_origins_2025": [
+      "Germany 17%",
+      "Singapore 5%",
+      "USA 1%",
+      "China 1%",
+      "Partner not reported 76%"
+    ],
+    "local_now": "Values are HS 871000 (tanks, armoured vehicles and parts). Product TKDN (registry, accessed 16 Oct 2026): Pindad Panser 6x6 APC 44.55%, SM3-A1 5.56 mm rifle 67.92%, MV3 (Maung) 4x4 56.16%. Kemhan-linked commentary (Jan 2026): spares for aircraft, ships and tanks are now made by domestic industry and DEFEND ID partner SMEs (no percentage).",
+    "local_makers": [
+      "PT Pindad (Bandung)",
+      "PT Nanggala Kencana Rekatama Indonesia (Bandung)",
+      "PT Republik Defensindo (city not given)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: hull fittings, suspension arms, hubs, turret-ring and weapon-mount parts, receivers, barrel extensions and other small-arms parts, and spares for ageing fleets. 3D: low-volume interior brackets, cable clips and housings, prototypes and obsolete-spare patterns (inference).",
+    "potential_share": "Judgement: private machinists could supply 10-25% of Pindad's bought-in machined and fabricated vehicle and weapon parts within 3-5 years. No rupiah base for Pindad's bought-in parts is published, so this cannot be turned into US$. Reasoning: Pindad was building nearly 4,600 Maung vehicles through 2026 and has new bank funding, while armoured-vehicle imports fell from US$177.7M (2023) to US$31.7M (2025).",
+    "buyers": [
+      "Kemhan / TNI AD (via KKIP)",
+      "Polri",
+      "PT Pindad (prime contractor)"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Subang, Jawa Barat"
+    ],
+    "certs_needed": [
+      "Kemhan defence-industry licence for weapon components",
+      "Pindad vendor registration (eproc.pindad.com)",
+      "TKDN certificate",
+      "ISO 9001 (industry norm)"
+    ],
+    "jobs_note": "No sourced job figures.",
+    "sources": [
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/871000",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Imports/partner/ALL/product/871000",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Imports/partner/ALL/product/871000",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=V3Uj7Zgo_JKjgsBwGrhZlOh3IYltEOWm-7z_RcU7n_E,",
+      "https://ekonomi.republika.co.id/berita/t9f7o7416/penguatan-industri-pertahanan-percepat-kemandirian-alutsista",
+      "https://kabar24.bisnis.com/read/20241029/15/1811652/menteri-bumn-erick-thohir-sebut-pindad-bakal-produksi-4600-maung-hingga-2026",
+      "https://economy.okezone.com/read/2026/05/30/320/3221625/pindad-dapat-kredit-rp1-5-triliun-siap-produksi-maung-dan-amunisi",
+      "https://www.pindad.com/",
+      "https://www.cnbcindonesia.com/research/20260130133929-128-706742/kementerian-pertahanan-dapat-rp187-triliun-berapa-buat-alutsista"
+    ]
+  },
+  {
+    "product": "Rolling-stock bogie, brake, coupler and car-body machined parts",
+    "family": "rail",
+    "hs": [
+      "8607",
+      "860799",
+      "860719",
+      "860721",
+      "860712",
+      "860730"
+    ],
+    "imports_usd_m": {
+      "2023": 70.7,
+      "2024": 94.8,
+      "2025": 182.4
+    },
+    "exports_usd_m": {
+      "2023": 16.1,
+      "2024": 26.7,
+      "2025": 34.5
+    },
+    "top_origins_2025": [
+      "China 45%",
+      "Japan 24%",
+      "USA 14%",
+      "Germany 4%"
+    ],
+    "local_now": "INKA's TKDN rose from 33% to 52% (DPR Komisi XI visit, 22 May 2026). Product certificates (registry, accessed 16 Oct 2026): INKA flat wagon 43.76%, rotary open wagon 46.12%; Pindad KE-GP air brake system 35.01%; Pindad e-clip rail fastening 65.92%. In 2018 brakes, propulsion and electrics were still imported (snippet).",
+    "local_makers": [
+      "PT INKA Multi Solusi (Madiun)",
+      "PT Barata Indonesia (Gresik)",
+      "PT Pindad (Bandung)",
+      "PT Indonesia Magma Chain (Demak)",
+      "Koperasi Batur Jaya (Ceper, Klaten)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC: axle-box housings, bogie brackets and bolsters, brake-rigging parts, coupler and draft-gear parts, door-drive and interior fittings, and machining of castings from Gresik and Ceper. 3D: sand-casting patterns and core boxes for low-volume castings, interior trim and cable-management parts (inference).",
+    "potential_share": "Judgement: 10-20% of the 8607 import bill within 3-5 years, about US$18-36M a year at the 2025 level (estimate: 182.4 x 0.10 = 18.2; 182.4 x 0.20 = 36.5). Reasoning: one dominant buyer (INKA) is under DPR pressure to raise TKDN every year from 52%; Barata already casts bogies, couplers and axle boxes (AAR-certified) and Pindad makes air brakes; the 2025 import jump sits mostly in 'other parts' 860799 (US$91.5M) and brake parts 860721 (US$20.3M), which suit machinists, while wheels and axles 860719 (US$41.3M, USA 54%) need forging and would be TKDN-exempt US goods under the ART.",
+    "buyers": [
+      "PT INKA (Madiun and Banyuwangi)",
+      "PT KAI and KAI Commuter (KCI)",
+      "LRT Jabodebek and MRT operators"
+    ],
+    "best_places": [
+      "Kota Madiun, Jawa Timur",
+      "Kabupaten Banyuwangi, Jawa Timur",
+      "Kabupaten Gresik, Jawa Timur",
+      "Kabupaten Klaten, Jawa Tengah"
+    ],
+    "certs_needed": [
+      "INKA vendor registration (DRI status via eproc.inka.co.id, free)",
+      "TKDN certificate",
+      "ISO/TS 22163 (IRIS) (industry norm)",
+      "EN 15085 railway welding (industry norm)",
+      "AAR for castings (Barata holds it since 2011)"
+    ],
+    "jobs_note": "No sourced job figure for INKA's supply chain. INKA had about 600 vendors in 2019 (snippet, older than 2023). Koperasi Batur Jaya (Ceper) had 168 member firms and more than 4,000 workers in 2019 and supplied KAI brake blocks.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8607&flowCode=M",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/860799",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/860719",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/860721",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/860712",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/860730",
+      "https://emedia.dpr.go.id/news/2026/05/24/komisi-xi-apresiasi-capaian-tkdn-pt-inka-dorong-realisasi-pmn-tepat-sasaran",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=B4cIuqwCpT-db6G2LVagNF3vNwEpcQMN4GsECSvLkhM,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=V3Uj7Zgo_JKjgsBwGrhZlOh3IYltEOWm-7z_RcU7n_E,",
+      "https://www.barata.id/id/",
+      "https://www.inka.co.id/e-procurement",
+      "https://www.inka.co.id/anak-perusahaan",
+      "https://www.industry.co.id/read/44788/inka-targetkan-tkdn-kereta-api-78-persen",
+      "https://finance.detik.com/infrastruktur/d-4691059/luhut-cerita-tolak-keras-kereta-lrt-jabodebek-pakai-produk-impor",
+      "https://www.industry.co.id/read/47090/ikm-logam-klaten-jateng-upaya-terus-hasilkan-produk-kompetitif",
+      "https://industri.kontan.co.id/news/kai-genjot-pengadaan-16-trainset-krl-baru-dari-inka-nilai-kontrak-rp-385-triliun",
+      "https://ustr.gov/sites/default/files/files/Press/Releases/2026/02.19.26%20US-IDN%20ART%20Full%20Agreement%20-%20US%20Final%20for%20Website%20sanitized.pdf"
+    ]
+  },
+  {
+    "product": "Ship propulsion and outfitting parts (propellers, shafting, anchors, bollards, watertight doors and windows)",
+    "family": "shipbuilding",
+    "hs": [
+      "848710",
+      "731600",
+      "848310"
+    ],
+    "imports_usd_m": {
+      "2023": 16.6,
+      "2024": 24.5,
+      "2025": 27.7
+    },
+    "exports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": 1.7
+    },
+    "top_origins_2025": null,
+    "local_now": "Values are HS 848710 (ship propellers and blades). About 70% of shipyard components were imported (JICA newsletter, May 2015, older than 2023). Component TKDN (registry, accessed 16 Oct 2026): propellers 72.47-83.41% (two Asahan CVs), anchors 47.36-68.82%, anchor chain 58.15%, ship windows and watertight doors 38%. Current sector-wide share: unknown.",
+    "local_makers": [
+      "PT Karya Manunggal Manufaktur (Tegal)",
+      "CV Samudera Steel (Ceper, Klaten)",
+      "PT Atmaja Jaya (Ceper, Klaten)",
+      "PT Kemenangan (Cileungsi, Bogor)",
+      "PT Indonesia Magma Chain (Demak)",
+      "CV Putra Karya Logam Sukses (Asahan)",
+      "CV Putra Mandiri (Asahan)",
+      "PT Barata Indonesia (Gresik)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: propeller boring, keyways and blade finishing, propeller shafts, stern-tube and rudder-stock parts, couplings, valve and pump parts for ship systems, and machining of cast deck fittings. 3D: printed propeller and fitting patterns for sand casting, small polymer outfitting parts, and replacement parts for older fleets (inference).",
+    "potential_share": "Judgement: 20-40% of the propeller import bill within 3-5 years, about US$5.5-11M a year (estimate: 27.7 x 0.20 = 5.5; 27.7 x 0.40 = 11.1), plus most cast deck fittings for small and mid-size hulls. Reasoning: Tegal and Asahan firms already make propellers, windows and doors with TKDN certificates; Tegal won BKI class certificates in 2015 at Rp7-20M of prototyping per component; KKIP ran a shipbuilding business-matching round in April 2026; warship and large-merchant propulsion stays imported.",
+    "buyers": [
+      "PT PAL Indonesia (Surabaya)",
+      "Private yards in Batam and Lamongan (no yard data fetched)",
+      "KKP fishing-vessel programme (1,582 vessels to 2028, plan)",
+      "TNI AL (via KKIP)"
+    ],
+    "best_places": [
+      "Kota Surabaya, Jawa Timur",
+      "Kabupaten Tegal, Jawa Tengah",
+      "Kabupaten Klaten, Jawa Tengah",
+      "Kabupaten Lamongan, Jawa Timur",
+      "Kota Batam, Kepulauan Riau"
+    ],
+    "certs_needed": [
+      "BKI component (type) approval or class certificate",
+      "TKDN certificate (BKI is also an accredited TKDN verifier)",
+      "ISO 9001 (industry norm)"
+    ],
+    "jobs_note": "No sourced job figure. PT PAL said 'hundreds of local partners' made components for the LD-603 landing dock (Antara snippet, not fetched).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848710&flowCode=M",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/731600",
+      "https://www.jica.go.jp/project/english/indonesia/012/newsletter/c8h0vm00008bcv16-att/201505_in.pdf",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=baling",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=jangkar",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=wPROXxwEAtprN5OgYVYfShjMYVZ7FvAzLorXEnxENtE,&id_siinas=wPROXxwEAtprN5OgYVYfShjMYVZ7FvAzLorXEnxENtE,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zoF5vkZvPmBeVcQRF59EmqYKP0CwgdI_1ep4ts0AAXk,",
+      "https://www.kkip.go.id/2026/04/14/dorong-kemandirian-industri-pertahanan-kkip-gelar-business-matching-sektor-perkapalan/",
+      "https://jatim.antaranews.com/berita/1078313/pt-pal-berkomitmen-libatkan-mitra-lokal-garap-pesanan-kapal",
+      "https://rmol.id/politik/read/2026/07/29/716440/lanyalla-kunjungi-pt-pal-dorong-skema-4p-wujudkan-tkdn-maritim-nasional",
+      "https://www.seafoodsource.com/news/supply-trade/indonesia-plans-to-build-nearly-1-600-new-fishing-vessels-as-part-of-push-to-increase-national-fishery-output"
+    ]
+  },
+  {
+    "product": "Wellhead, Christmas-tree and API 6A/6D valve bodies, bonnets, stems and trims",
+    "family": "oil and gas",
+    "hs": [
+      "848190",
+      "848180",
+      "843143"
+    ],
+    "imports_usd_m": {
+      "2023": 151.8,
+      "2024": 202.9,
+      "2025": 185.7
+    },
+    "exports_usd_m": {
+      "2023": 26.5,
+      "2024": 25.8,
+      "2025": 24.6
+    },
+    "top_origins_2025": [
+      "China 25%",
+      "Singapore 14%",
+      "USA 11%",
+      "Italy 9%"
+    ],
+    "local_now": "Values are HS 848190 (valve parts). Upstream procurement TKDN: 58% on national strategic projects (target 18%) and 59% on other projects (target 57%) in H1 2025; 59% cumulative for 2020-2025 (Rp388T of Rp725T). ESDM cited a 40% average in Dec 2025 (conflicting). Product TKDN (registry): wellhead and x-mas tree assemblies 13.6-71.5%, forged and cast valves 21-56%.",
+    "local_makers": [
+      "PT Karti Yasa Sarana (Batam)",
+      "PT SPM Surface Products (Batam)",
+      "PT Vetco Gray Indonesia (Batam)",
+      "PT FMC Santana Petroleum Equipment Indonesia (Jakarta Utara)",
+      "PT Andala Valvo Flokontrol (Tangerang)",
+      "PT Borneo Mandiri Investment (Tangerang)",
+      "PT Kokai Indo Abadi (Tangerang)",
+      "PT Teknologi Rekayasa Katup (Cikande, Serang)",
+      "PT Ohtori Indonesia (Cilegon)",
+      "PT Katup Industri Indonesia (Cikarang, Bekasi)",
+      "PT Industrial Investment Jaya Indonesia (Cikarang, Bekasi)",
+      "PT Mulia Jaya Mandiri (Balikpapan)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC: large-bore turning and boring of forged bodies, bonnets, casing heads, spools and hangers; seat, ball and stem machining; flange facing, RTJ grooves and weld-overlay cladding. 3D: patterns for cast valve bodies and printed spares for obsolete valves (inference).",
+    "potential_share": "Judgement: 15-25% of the 848190 valve-parts import bill within 3-5 years, about US$28-46M a year (estimate: 185.7 x 0.15 = 27.9; 185.7 x 0.25 = 46.4). Reasoning: some 30 local wellhead and valve assemblers already hold TKDN certificates, many below 35%, so their bought-in forgings and machined internals are the next step to localise; SKK Migas reports 58-59% TKDN and keeps tenders up to Rp50B for local and provincial SMEs; US-origin goods (USA 11% of valve parts, 27% of drilling-equipment parts 843143) escape TKDN if the ART enters into force.",
+    "buyers": [
+      "KKKS contractors under SKK Migas (Pertamina Hulu Energi and others)",
+      "Pertamina Hulu Energi (TKDN 63.29% to May 2025)",
+      "EPC and drilling contractors"
+    ],
+    "best_places": [
+      "Kota Batam, Kepulauan Riau",
+      "Kota Tangerang, Banten",
+      "Kabupaten Tangerang, Banten",
+      "Kota Cilegon, Banten",
+      "Kabupaten Bekasi, Jawa Barat",
+      "Kabupaten Bogor, Jawa Barat",
+      "Kota Balikpapan, Kalimantan Timur"
+    ],
+    "certs_needed": [
+      "CIVD vendor registration (SKK Migas; free until SPDA)",
+      "TKDN certificate (Surveyor Indonesia, Sucofindo, BKI and others verify)",
+      "API Spec 6A / 6D licence (two local makers cite API 6D product certificates)",
+      "API Q1 (industry norm)",
+      "ISO 9001"
+    ],
+    "jobs_note": "SKK Migas reports 94% local labour and 53% SME involvement in upstream procurement over 2020-2025; tenders up to Rp50B prioritise SMEs in the operating province.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848190&flowCode=M",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/848190",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/843143",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/848180",
+      "https://investortrust.id/business/73562/jauh-di-atas-target-tkdn-hulu-migas-capai-58-untuk-psn",
+      "https://emitennews.com/news/tkdn-industri-hulu-migas-hingga-2025-setara-rp388-triliun",
+      "https://listrikindonesia.com/detail/18610/sudah-sejauh-mana-implementasi-tkdn-di-sektor-hulu-migas",
+      "https://investortrust.id/business/72165/lewati-target-skk-migas-pertamina-hulu-energi-pacu-tkdn-capai-63-29",
+      "https://civd.skkmigas.go.id/",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=wellhead",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=katup",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=AJ7HBQxeBE4l1ZLlrzVbgebzt5Ob3lvrruS7UpWJAJ8,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=p4EJoG8U7IthfFPUvWkZ-iJwrASqRXQtWb6L4-VYxhk,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=kDZn61fOUhb4ZZ5MuE44r0l0nO0TnibfvIfUs8l9QFc,",
+      "https://ustr.gov/sites/default/files/files/Press/Releases/2026/02.19.26%20US-IDN%20ART%20Full%20Agreement%20-%20US%20Final%20for%20Website%20sanitized.pdf"
+    ]
+  },
+  {
+    "product": "Pump casings, impellers, shafts and bearing housings (API 610) and OCTG threaded connections",
+    "family": "oil and gas",
+    "hs": [
+      "841391",
+      "730429"
+    ],
+    "imports_usd_m": {
+      "2023": 289.7,
+      "2024": 296.6,
+      "2025": 300.0
+    },
+    "exports_usd_m": {
+      "2023": 41.7,
+      "2024": 59.8,
+      "2025": 43.1
+    },
+    "top_origins_2025": [
+      "China 40%",
+      "Japan 13%",
+      "USA 11%",
+      "Germany 5%",
+      "India 4%"
+    ],
+    "local_now": "Values are HS 841391 (pump parts, all industries). Product TKDN (registry, accessed 16 Oct 2026): Duraquipt pump parts 70.64-99.79% and API 610 OH2 bare pump 47.19%; OCTG threaded tubing and casing up to 69.46% (Elnusa Fabrikasi Konstruksi) and 58.97% (Citra Tubindo). Sector-level share: unknown.",
+    "local_makers": [
+      "PT Duraquipt Cemerlang (Depok)",
+      "PT Elnusa Fabrikasi Konstruksi (Batam)",
+      "PT Citra Tubindo Tbk (Batam)",
+      "PT CT Advance Technology (Cilegon)",
+      "PT First Filter (Batam)",
+      "PT Appipa Indonesia (Batam)",
+      "PT Geteka Founindo (Jakarta Timur)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC: impeller and casing machining, shafts and sleeves, bearing housings, wear rings; OCTG thread cutting (API and premium connections), couplings, pup joints and cross-overs. 3D: impeller and casing patterns for low-volume castings and reverse-engineered impellers for obsolete pumps (inference).",
+    "potential_share": "Judgement: 10-20% of the 841391 pump-parts import bill within 3-5 years, about US$30-60M a year (estimate: 300.0 x 0.10 = 30.0; 300.0 x 0.20 = 60.0). Reasoning: Duraquipt already shows 96-99% TKDN on cast and machined pump parts and SKK Migas visited it in May 2026 to vet supply to KKKS; pump parts serve oil and gas, power and water, so demand is broad; Chinese and Japanese OEM parts dominate imports.",
+    "buyers": [
+      "KKKS under SKK Migas",
+      "Pertamina",
+      "PLN power plants",
+      "Process and water plants"
+    ],
+    "best_places": [
+      "Kota Depok, Jawa Barat",
+      "Kota Batam, Kepulauan Riau",
+      "Kota Cilegon, Banten"
+    ],
+    "certs_needed": [
+      "API 610 / 674 / 676 design compliance (Duraquipt certifies products to these)",
+      "API 5CT / 5B threading licences for OCTG (industry norm)",
+      "CIVD registration",
+      "TKDN certificate",
+      "ISO 9001"
+    ],
+    "jobs_note": "No sourced job figure.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/841391",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/841391",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=BOfR0n7FatnV1PnzeLf1hgHfrZkdCoK6YrrecBHOLKg,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ioLmhsTl9yVi9Tup0YboZxwsLoF9fw5ji-Z2SzIKKtE,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Mp8Iikj5yG0jzwx1fmZjNoZgY3yWoscUqW6JUARwiYc,",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=casing",
+      "https://industri.kontan.co.id/news/dukung-tkdn-skk-migas-dorong-penggunaan-pompa-industri-lokal-di-sektor-hulu",
+      "https://listrikindonesia.com/detail/14955/pt-duraquipt-cemerlang-solusi-terpercaya-di-bidang-pompa-industri",
+      "https://www.metrotvnews.com/read/kELCxLD6-surveyor-indonesia-dukung-manufaktur-pompa-industri-buatan-lokal"
+    ]
+  },
+  {
+    "product": "Steam, gas and hydro turbine and boiler spare parts (reverse-engineered replacements)",
+    "family": "power",
+    "hs": [
+      "840690",
+      "841199",
+      "840290",
+      "840490",
+      "841090",
+      "8503"
+    ],
+    "imports_usd_m": {
+      "2023": 1161.8,
+      "2024": 772.3,
+      "2025": 496.6
+    },
+    "exports_usd_m": {
+      "2023": 67.3,
+      "2024": 126.8,
+      "2025": 24.3
+    },
+    "top_origins_2025": [
+      "China 25%",
+      "USA 24%",
+      "Japan 21%",
+      "Switzerland 5%",
+      "Italy 4%"
+    ],
+    "local_now": "Values are the sum of HS 840690, 841199, 840290, 840490 and 841090. No sector-level local share was found. PLN's own maintenance units hold 21 TKDN product certificates for parts they make (registry, accessed 16 Oct 2026), e.g. a Francis runner for UPDK Bengkulu (54.62%), a guide vane for PLTA Bakaru (46.55%) and a boiler burner tip (19.58%).",
+    "local_makers": [
+      "PT PLN (Persero) maintenance units (Jakarta HQ; units nationwide)",
+      "PT Indoturbine (Bandung)",
+      "PT Barata Indonesia (Gresik)",
+      "PT Duraquipt Cemerlang (Depok)",
+      "PT Bukaka Teknik Utama (city not given)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: runners, guide vanes, wicket-gate parts, shafts and sleeves, labyrinth seals, valve and pump internals, mill and conveyor parts (rotary feeders, trolley wheels). 3D: scanning and printed patterns for obsolete cast parts, sacrificial patterns for investment casting, and polymer covers and guards (inference).",
+    "potential_share": "Judgement: 10-20% of the 2025 import bill for these five codes within 3-5 years, about US$50-99M a year (estimate: 496.6 x 0.10 = 49.7; 496.6 x 0.20 = 99.3). Reasoning: PLN already certifies in-house reverse-engineered parts, so drawings and acceptance routes exist; boiler-part imports (840290) fell from US$526.7M in 2023 to US$85.4M in 2025 as plant construction slowed, so the lasting pool is replacement parts; gas-turbine hot-section parts (841199, USA 42%) need OEM alloys and coatings and would be TKDN-exempt US goods under the ART.",
+    "buyers": [
+      "PT PLN (Persero)",
+      "PLN Nusantara Power (over 23,000 MW)",
+      "PLN Indonesia Power (23 GW managed)",
+      "PLN Nusantara Power Services (formerly PJB Services, O&M)",
+      "Independent power producers"
+    ],
+    "best_places": [
+      "Kabupaten Gresik, Jawa Timur",
+      "Kota Bandung, Jawa Barat",
+      "Kota Cilegon, Banten",
+      "Kota Depok, Jawa Barat"
+    ],
+    "certs_needed": [
+      "PLN vendor registration (CSMS and e-procurement portals linked from PLN Nusantara Power)",
+      "TKDN certificate",
+      "ISO 9001",
+      "Material test certificates such as EN 10204 3.1 (industry norm)"
+    ],
+    "jobs_note": "No sourced job figure.",
+    "sources": [
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/840690",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/841199",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/840290",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/840490",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/841090",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Imports/partner/ALL/product/840290",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ml8lO6HC_3IeqgXzVTur8PvXEurccddNF-5a_BrSKw8,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=XTvHNchQy9Nt0mP2_crqQAuzbtPhQbTguHG-1vlBRhk,",
+      "https://www.barata.id/id/",
+      "https://www.plnnusantarapower.co.id/",
+      "https://www.plnindonesiapower.co.id/",
+      "https://id.wikipedia.org/wiki/PLN_Nusantara_Power",
+      "https://listrikindonesia.com/detail/16752/menteri-esdm-jangan-ada-impor-di-proyek-jaringan-listrik",
+      "https://ustr.gov/sites/default/files/files/Press/Releases/2026/02.19.26%20US-IDN%20ART%20Full%20Agreement%20-%20US%20Final%20for%20Website%20sanitized.pdf"
+    ]
+  },
+  {
+    "product": "Jigs, fixtures, test nests and precision parts for electronics assembly lines",
+    "family": "electronics manufacturing services",
+    "hs": [
+      "846620",
+      "903190",
+      "847990"
+    ],
+    "imports_usd_m": {
+      "2023": 12.7,
+      "2024": 13.4,
+      "2025": 17.9
+    },
+    "exports_usd_m": {
+      "2023": 2.2,
+      "2024": 1.1,
+      "2025": 1.3
+    },
+    "top_origins_2025": [
+      "China 39%",
+      "Japan 36%",
+      "Korea 9%",
+      "Vietnam 3%",
+      "USA 3%"
+    ],
+    "local_now": "Values are HS 846620 (work holders, a proxy; EMS fixtures are not separately coded). Local share: unknown. Smartphones sold in Indonesia need 35-40% TKDN, which drove assembly plants in Batam, Cikarang and Tangerang (Feb 2026).",
+    "local_makers": [
+      "PT Sat Nusapersada Tbk (Batam)",
+      "PT Team Metal Indonesia (Batam)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: aluminium and steel fixture plates, pallets and carriers, pogo-pin test-fixture frames, SMT stencil frames and conveyor parts. 3D: ESD-safe polymer nests, locating pins and covers, pick-and-place grippers and quick fixture iterations for new models (inference).",
+    "potential_share": "Judgement: 20-40% of imported work holders within 3-5 years, about US$3.6-7.2M a year (estimate: 17.9 x 0.20 = 3.6; 17.9 x 0.40 = 7.2), plus a share of test-fixture parts (903190, US$58.8M in 2025) and machine parts (847990, US$288.7M), both multi-industry. Reasoning: fixtures are made to order with short lead times, which favours shops near the plants; but EMS volumes depend on phone TKDN rules that the ART would lift for US brands.",
+    "buyers": [
+      "EMS and electronics plants in Batam (e.g. PT Sat Nusapersada)",
+      "Assembly plants in Cikarang (Bekasi) and Tangerang (not named in sources)"
+    ],
+    "best_places": [
+      "Kota Batam, Kepulauan Riau",
+      "Kabupaten Bekasi, Jawa Barat",
+      "Kabupaten Tangerang, Banten"
+    ],
+    "certs_needed": [
+      "Customer supplier audit (industry norm)",
+      "ISO 9001 (industry norm)",
+      "ESD control (IEC 61340-5-1) for fixtures (industry norm)"
+    ],
+    "jobs_note": "No sourced job figure.",
+    "sources": [
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/846620",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/903190",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/847990",
+      "https://www.satnusa.com/",
+      "https://ejournal.upbatam.ac.id/index.php/comasiejournal/en/article/view/7713",
+      "https://investortrust.id/business/95063/us-trade-pact-lets-apple-and-google-challenge-chinese-smartphone-grip-in-indonesia",
+      "https://ustr.gov/sites/default/files/files/Press/Releases/2026/02.19.26%20US-IDN%20ART%20Full%20Agreement%20-%20US%20Final%20for%20Website%20sanitized.pdf"
+    ]
+  }
+]

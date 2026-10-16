@@ -1,0 +1,342 @@
+[
+  {
+    "name": "FOMU 3D Print (PT FOMU Karya Bersama)",
+    "kind": "3d_print_service",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Barat",
+    "capabilities": [
+      "3D printing (technologies not stated)",
+      "3D scanning",
+      "reverse engineering"
+    ],
+    "serves": [
+      "architecture",
+      "corporate and promotional",
+      "industry",
+      "government"
+    ],
+    "makes": "3D-printed architectural models, figures, promotional items and spare parts; 3D scanning and reverse engineering; mass production runs",
+    "size_note": "'70+ mesin industri'; 'tim berpengalaman sejak 2015'. Client logos include Astra, Pertamina, Kementerian PUPR, AECOM, Intiland, Unilever. Also listed in a sibling Jakarta-Banten file.",
+    "certs": null,
+    "website": "https://fomu.co.id",
+    "source_url": "https://fomu.co.id/",
+    "source_type": "company_site",
+    "evidence": "PT FOMU Karya Bersama: 3D printing company with '70+ mesin industri', experienced 'sejak 2015'; offers 3D scan and reverse engineering.",
+    "source_year": 2026
+  },
+  {
+    "name": "Flow Jewelry Studio (managed by PT DMD Asia)",
+    "kind": "3d_print_service",
+    "province": "Bali",
+    "city": "Kota Denpasar",
+    "capabilities": [
+      "wax 3D printing",
+      "CAD design",
+      "lost-wax casting"
+    ],
+    "serves": [
+      "jewellery (private label, export)"
+    ],
+    "makes": "Private-label gold and silver jewellery production: CAD, hand wax carving and 3D printing, rubber moulds, wax injection, casting, setting, plating",
+    "size_note": "'Over 50 full time staff'; lists Solidscape (Prodways) as printer partner and SolidWorks/ZBrush for design; serves a 'global clientele'.",
+    "certs": null,
+    "website": "https://www.flowjewelrystudio.com",
+    "source_url": "https://www.flowjewelrystudio.com/",
+    "source_type": "company_site",
+    "evidence": "Model making by 'hand wax carving and 3D printing for jewelry'; Solidscape listed as partner; 'over 50 full time staff'.",
+    "source_year": 2026
+  },
+  {
+    "name": "Sentra IKM Perak Celuk shared facility (Kemenperin and Pemkab Gianyar)",
+    "kind": "3d_print_service",
+    "province": "Bali",
+    "city": "Kabupaten Gianyar",
+    "capabilities": [
+      "3D printing (type not stated)",
+      "CNC milling",
+      "CNC engraving",
+      "laser cutting",
+      "casting"
+    ],
+    "serves": [
+      "silver jewellery IKM"
+    ],
+    "makes": "Shared design and production centre for Celuk silver craft firms: 2D/3D design, 3D printing, CNC, laser, casting, assay",
+    "size_note": "Government-run shared facility, DAK-funded, built 2016/2018, revitalised 2022. Celuk: 152 IKM units, 2,364 workers, 4,515 kg a year, Rp158bn turnover (2025).",
+    "certs": null,
+    "website": null,
+    "source_url": "https://wartaekonomi.co.id/read564599/kembangkan-sentra-ikm-kemenperin-pemda-gianyar-dorong-penguatan-ekosistem-kerajinan-perak?page=all",
+    "source_type": "news",
+    "evidence": "Celuk silver centre has casting, 2D/3D design, CNC engraving and milling, 3D printing, laser cutting and marking machines (23 Apr 2025).",
+    "source_year": 2025
+  },
+  {
+    "name": "3DPrint.id (PT Metafuse Rekacipta Indonesia)",
+    "kind": "3d_printer_maker",
+    "province": "Jawa Barat",
+    "city": "Kota Bandung",
+    "capabilities": [
+      "FDM",
+      "pellet extrusion",
+      "CAD design"
+    ],
+    "serves": [
+      "education",
+      "automotive",
+      "architecture",
+      "drones and survey",
+      "R&D"
+    ],
+    "makes": "Subsolid XS, XS-D and Xe FDM printers designed and built in Indonesia; 3D printing and CAD services",
+    "size_note": "Founded 2015; claims 'thousands of print hours'. Subsolid XS has TKDN 40.00% under PT Metafuse Rekacipta Indonesia (Regol, Bandung). The brand-to-company link is inferred from the shared Subsolid brand and city.",
+    "certs": [
+      "TKDN 40.00% (3D Printer Subsolid XS)"
+    ],
+    "website": "https://3dprint.id",
+    "source_url": "https://3dprint.id/",
+    "source_type": "company_site",
+    "evidence": "'Perusahaan pembuat 3D Printer dan konsultan CAD'; Subsolid printers 'didesain dan dibuat oleh anak bangsa'; clients include ITB and Astra Honda Motor.",
+    "source_year": 2026
+  },
+  {
+    "name": "Haltech (CV Acta Techno Inava)",
+    "kind": "3d_printer_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [
+      "FDM"
+    ],
+    "serves": null,
+    "makes": "Haltech H-01 FDM 3D printer (Cartesian/CoreXY, 18-30 cm build cube)",
+    "size_note": "UGM says its 2016 local printer 'melahirkan mesin HALTech' (24 Jun 2025). The company-UGM link is inferred from the brand name and the Sleman address.",
+    "certs": [
+      "TKDN 33.40% (3D Printer Haltech H-01)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=3Oj04DNpPD89mq5CVuDgYW-qBl0wmP8cRCOuDQrCcK4,",
+    "source_type": "government",
+    "evidence": "TKDN certificate: '3D Printer Haltech H-01', Cartesian/CoreXY, 0.1-0.25 mm accuracy, 18-30 cm build; TKDN 33.40%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Alpha Karya Mechatronics",
+    "kind": "3d_printer_maker",
+    "province": "Banten",
+    "city": "Kota Tangerang Selatan",
+    "capabilities": [
+      "FDM",
+      "CNC routing"
+    ],
+    "serves": null,
+    "makes": "AM-22 3D printer and AM-1212 3-axis CNC router",
+    "size_note": "Address in Taman Tekno BSD City (Setu). No volumes found.",
+    "certs": [
+      "TKDN 27.03% (Printer 3D AM-22)",
+      "TKDN 26.01% (CNC router AM-1212)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zXV8M70fzNbgYsIXihDSIXRszHX4bduAwqshsNMjTo8,",
+    "source_type": "government",
+    "evidence": "TKDN lists 'Printer 3D… AM-22' at 27.03% and 'Mesin Frais (Milling) CNC… AM-1212 Router 3 Axis' at 26.01%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Tridiku Teknokarya Indonesia",
+    "kind": "3d_printer_maker",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "FDM"
+    ],
+    "serves": [
+      "education",
+      "industry training"
+    ],
+    "makes": "Tridiku Argonaut FDM printers (PLA, nylon, PETG, PP); machine rental; additive-manufacturing workshops with ITS",
+    "size_note": "Grew from an ITS materials-engineering student team: 3 machines built by Sep 2022, CPPBT-funded, ILBI ITS incubator. City not stated; ITS is in Surabaya.",
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.its.ac.id/news/sinergi-its-industri-tingkatkan-kualitas-produk-additive-manufacturing-melalui-workshop-3d-printing/",
+    "source_type": "news",
+    "evidence": "ITS 3D-printing workshop (29-30 Oct 2025) involved 'perwakilan dari PT Tridiku Teknokarya Indonesia'.",
+    "source_year": 2025
+  },
+  {
+    "name": "Politeknik Astra (Innostra 3-in-1 machine)",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kabupaten Bekasi (Cikarang)",
+    "capabilities": [
+      "CNC milling",
+      "laser engraving",
+      "FDM"
+    ],
+    "serves": [
+      "education (SMK)"
+    ],
+    "makes": "Innostra 3-in-1 milling, laser-engraving and 3D-printing machine, sold by pre-order",
+    "size_note": "Released 26 Jul 2023 with LPDP RISPRO funding; 3-4 months production time. Taken from the earlier CNC research notes in this project.",
+    "certs": [
+      "43% local content (maker's statement; TKDN certificate not checked)"
+    ],
+    "website": "https://www.polytechnic.astra.ac.id",
+    "source_url": "https://www.polytechnic.astra.ac.id/en/berhasil-tingkatkan-tkdn-mesin-cnc-innostra-diapresiasi-presiden-ri-joko-widodo-di-lpdp-festival-2023/",
+    "source_type": "company_site",
+    "evidence": "Innostra 3-in-1 (milling, laser engraving, 3D printing); 43% local content cut price about 20%; main target SMKs.",
+    "source_year": 2023
+  },
+  {
+    "name": "Raja 3D (PT Kirana Sakti Komputindo)",
+    "kind": "3d_print_service",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Selatan",
+    "capabilities": [
+      "FDM"
+    ],
+    "serves": [
+      "manufacturing",
+      "energy",
+      "government research"
+    ],
+    "makes": "Sells UP, XYZ, Bambu Lab and Snapmaker printers; 3D printing service ('Jasa Print'), training and after-sales",
+    "size_note": "Claims to be 'Penyedia Printer 3D pertama di Indonesia' (unverified claim). Customer logos: Omron, Bayer Indonesia, PGN, LAPAN, Megasari. Print technologies not named; FDM inferred from the brands sold.",
+    "certs": null,
+    "website": "https://printer3d.co.id",
+    "source_url": "https://printer3d.co.id/",
+    "source_type": "company_site",
+    "evidence": "PT Kirana Sakti Komputindo runs 'Raja 3D'; sells UP, XYZ, Bambu Lab, Snapmaker; offers '3D PRINTING SERVICE' and training.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT 3D Zaiku Indonesia",
+    "kind": "3d_print_service",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Barat",
+    "capabilities": [
+      "FDM"
+    ],
+    "serves": [
+      "manufacturing",
+      "makers and SMEs"
+    ],
+    "makes": "Distributor of 3D filament, 3D printers (Creality, Anycubic, Anet, Sovol logos), 3D scanners, laser cutters and CNC routers; AXI's official 3D-printing partner (2023)",
+    "size_note": "Workshop on Jl. Raya Pos Pengumben; online store 3dfilament.co.id. Print-service scope is not detailed on its own site.",
+    "certs": null,
+    "website": "https://www.3dzaiku.com",
+    "source_url": "https://www.3dzaiku.com/",
+    "source_type": "company_site",
+    "evidence": "'Distributor resmi berbagai macam 3D Filament, 3D Printer, Mesin Laser dan CNC Router'; AXI's official partner for 3D printing services (2023).",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Astragraphia Xprins Indonesia (AXI)",
+    "kind": "3d_print_service",
+    "province": "DKI Jakarta",
+    "city": "Jakarta",
+    "capabilities": [
+      "FDM"
+    ],
+    "serves": [
+      "manufacturing",
+      "education (SMK)"
+    ],
+    "makes": "Markets Creality 3D printers; 3D printing services with partner 3D Zaiku; runs '3D Print Fest' training for SMK and vocational students",
+    "size_note": "Astra group (Astragraphia) unit with a dedicated 3D printing business head (2023). City is the Jakarta dateline of its event; head-office address not checked. Website shown is the parent group's.",
+    "certs": null,
+    "website": "https://www.astragraphia.co.id",
+    "source_url": "https://finance.detik.com/foto-bisnis/d-6758572/mengintip-3d-print-fest-karya-anak-bangsa",
+    "source_type": "news",
+    "evidence": "'3D Print Fest… edukasi teknologi 3D printing untuk siswa-siswi kejuruan SMK'; Creality 3D printers 'dipamerkan serta dipasarkan oleh AXI'.",
+    "source_year": 2023
+  },
+  {
+    "name": "Modula3D (PT Modula Tiga Dimensi)",
+    "kind": "3d_print_service",
+    "province": "DKI Jakarta",
+    "city": "Jakarta",
+    "capabilities": [
+      "construction 3D printing (concrete)"
+    ],
+    "serves": [
+      "construction",
+      "property"
+    ],
+    "makes": "COBOD construction printers: sales, rental, after-sales and construction printing services",
+    "size_note": "Joint venture of Bakrie & Brothers and COBOD International, inaugurated Nov 2022. Printed the ~120 m2 Indocement Collaborative Hub with a BOD3 printer (detik, 19 Aug 2025).",
+    "certs": null,
+    "website": "https://modula3d.com",
+    "source_url": "https://modula3d.com/",
+    "source_type": "company_site",
+    "evidence": "Joint venture of Bakrie & Brothers and COBOD International 'inaugurated in November 2022'; offers printer sales, rental, construction service.",
+    "source_year": 2026
+  },
+  {
+    "name": "Autoconz (PT Berdikari Teknologi Indonesia)",
+    "kind": "3d_print_service",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [
+      "construction 3D printing (concrete)",
+      "BIM"
+    ],
+    "serves": [
+      "construction",
+      "public works"
+    ],
+    "makes": "3D construction printing projects, design-and-build, and a TKDN-certified 3DCP mortar",
+    "size_note": "Founded 2019. Website address is Pandowoharjo, Sleman; the TKDN holder PT Berdikari Teknologi Indonesia is at Sewon, Bantul (brand AUTOCONZ). Listed partners include PUPR, PP, LPDP, UGM, ITS and UI.",
+    "certs": [
+      "TKDN 68.29% (Mortar 3D Printing Konstruksi, brand AUTOCONZ)"
+    ],
+    "website": "https://www.autoconz.com",
+    "source_url": "https://www.autoconz.com/",
+    "source_type": "company_site",
+    "evidence": "'Pionir pengembangan teknologi 3D Construction Printing di Indonesia'; projects include 3DCP bench at Banjaratma rest area and giant lettering at UNU Yogyakarta.",
+    "source_year": 2026
+  },
+  {
+    "name": "Teknik Jaya (teknikjaya.co.id)",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Barat",
+    "city": "Kabupaten Subang",
+    "capabilities": [
+      "CNC turning",
+      "CNC milling",
+      "CNC routing",
+      "plasma cutting",
+      "laser cutting",
+      "3D printing (type not stated)"
+    ],
+    "serves": null,
+    "makes": "Job-shop machining and fabrication, quoted per job",
+    "size_note": "About 13 CNC turning and milling machines plus a router, plasma, laser and a 3D printer. Taken from the earlier CNC research notes in this project (page fetched 16 Oct 2026).",
+    "certs": null,
+    "website": "https://teknikjaya.co.id",
+    "source_url": "https://teknikjaya.co.id/harga-jasa-cnc/",
+    "source_type": "company_site",
+    "evidence": "Subang (Ciasem) shop runs about 13 CNC turning and milling machines plus CNC router, plasma, laser and 3D printer.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Softorb Technology Indonesia",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Barat",
+    "capabilities": [
+      "SLA/DLP resin"
+    ],
+    "serves": [
+      "government (e-KTP readers)"
+    ],
+    "makes": "e-KTP card readers ('IDentify') with resin-3D-printed casings",
+    "size_note": "Industrial user: 3D printing makes the end-use casing of a TKDN-certified electronic product. The exact resin process is not stated.",
+    "certs": [
+      "TKDN 33.48% (Alat Pembaca KTP Elektronik)"
+    ],
+    "website": "https://www.softorb.co.id",
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=bNMt9vJ0Hvqams6jdfnFU38nfoo7gCyaLNXBWF7DFaU,",
+    "source_type": "government",
+    "evidence": "TKDN record: e-KTP reader 'Material Casing: Resin 3D Printing; Cortex-A53 Procesor; Optical Sensor', TKDN 33.48%.",
+    "source_year": 2026
+  }
+]

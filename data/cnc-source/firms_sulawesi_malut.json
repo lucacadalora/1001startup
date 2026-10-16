@@ -1,0 +1,649 @@
+[
+  {
+    "name": "PT Layar Perkasa Nusantara (LPN Shipyard)",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Selatan",
+    "city": "Barru",
+    "capabilities": [
+      "ship repair",
+      "shipbuilding",
+      "propeller and shaft repair",
+      "rudder repair",
+      "hot-work replating",
+      "ultrasonic thickness testing",
+      "airbag slipway docking"
+    ],
+    "serves": [
+      "shipping lines",
+      "ferry operator ASDP",
+      "tug and barge operators",
+      "state-owned and government vessels"
+    ],
+    "makes": "Ship repair and new tugboats; dismantles, repairs and rebalances shafts, propellers and rudders",
+    "size_note": "Docks listed up to 150 m x 25 m; yard in Barru operating since 2020, expanded to four docks in 2022",
+    "certs": [],
+    "website": "https://www.ptlpn.com",
+    "source_url": "https://www.ptlpn.com/layanan/",
+    "source_type": "company_site",
+    "evidence": "Company site lists propulsion work (shaft, propeller, rudder) and replating at its Barru yard; also in SIINas under KBLI 33151.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Industri Kapal Indonesia (Persero)",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Selatan",
+    "city": "Makassar",
+    "capabilities": [
+      "ship repair",
+      "docking"
+    ],
+    "serves": [
+      "port and towage operators",
+      "shipping"
+    ],
+    "makes": "State shipyard; docking and repair, incl. tugboats; second yard in Bitung (4.1 ha, snippet)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Industri+Kapal+Indonesia&kbli=&prov=NgxlXm4O9RisBSPbBxFCkU3EICDeSjBUOKkjQSYLo2c%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it under KBLI 33151 (ship repair) in Sulsel; 2023 news reports a Pelindo tug-repair contract (snippet).",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Jaya Karya Makassar",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Selatan",
+    "city": "Makassar",
+    "capabilities": [
+      "hoist crane fabrication",
+      "material-handling equipment"
+    ],
+    "serves": [
+      "construction",
+      "industry"
+    ],
+    "makes": "5-tonne hoist cranes",
+    "size_note": null,
+    "certs": [
+      "TKDN 18.70% (hoist crane 5 t)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Jaya+Karya+Makassar",
+    "source_type": "government",
+    "evidence": "TKDN register: hoist crane, 5 t, TKDN 18.70%; SIINas KBLI 28160 (lifting equipment), Sulsel; city inferred from name.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Haqi Jaya",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "food and feed machine fabrication",
+      "custom steel fencing"
+    ],
+    "serves": [
+      "food SMEs",
+      "livestock feed",
+      "tobacco processing"
+    ],
+    "makes": "Seasoning mixers, feed mixers, tobacco slicers, tuber slicers, meat-floss shredders",
+    "size_note": null,
+    "certs": [
+      "TKDN 38% (six products)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Haqi+Jaya",
+    "source_type": "government",
+    "evidence": "TKDN register lists six machines incl. feed mixer and tuber slicer at 38%; SIINas KBLI 28210 (farm machinery), Sulsel.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Siagang Bersama Machinery",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "boatbuilding"
+    ],
+    "serves": [
+      "fisheries"
+    ],
+    "makes": "Fishing boats under 5 GT",
+    "size_note": null,
+    "certs": [
+      "TKDN 38% (fishing boat <5 GT)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Siagang",
+    "source_type": "government",
+    "evidence": "TKDN register: fishing vessel under 5 GT, 38%; SIINas KBLI 30111 (ship and boat building), Sulsel.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Gerbang Harapan Multiera",
+    "kind": "cnc_job_shop",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "metal-working services (KBLI 25920; machine types not stated)"
+    ],
+    "serves": [],
+    "makes": "Registered for metal-working and treatment job services",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Gerbang+Harapan+Multiera&kbli=&prov=NgxlXm4O9RisBSPbBxFCkU3EICDeSjBUOKkjQSYLo2c%2C",
+    "source_type": "government",
+    "evidence": "Kemenperin SIINas directory lists it in Sulawesi Selatan under KBLI 25920 (special metal-working services); capabilities unverified.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Guna Tehnik",
+    "kind": "cnc_job_shop",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "metal-working services (KBLI 25920; machine types not stated)"
+    ],
+    "serves": [],
+    "makes": "Registered for metal-working and treatment job services",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Guna+Tehnik&kbli=&prov=NgxlXm4O9RisBSPbBxFCkU3EICDeSjBUOKkjQSYLo2c%2C",
+    "source_type": "government",
+    "evidence": "Kemenperin SIINas directory lists it in Sulawesi Selatan under KBLI 25920 (special metal-working services); capabilities unverified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Kallolo Indonesia Sukses",
+    "kind": "cnc_job_shop",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "metal-working services (KBLI 25920; machine types not stated)"
+    ],
+    "serves": [],
+    "makes": "Registered for metal-working and treatment job services",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Kallolo+Indonesia+Sukses&kbli=&prov=NgxlXm4O9RisBSPbBxFCkU3EICDeSjBUOKkjQSYLo2c%2C",
+    "source_type": "government",
+    "evidence": "Kemenperin SIINas directory lists it in Sulawesi Selatan under KBLI 25920 (special metal-working services); capabilities unverified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Trembesi Sukses Cemerlang",
+    "kind": "foundry_machining",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "non-ferrous casting (KBLI 24320)"
+    ],
+    "serves": [],
+    "makes": "Registered as a non-ferrous metal foundry",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Trembesi+Sukses+Cemerlang&kbli=&prov=NgxlXm4O9RisBSPbBxFCkU3EICDeSjBUOKkjQSYLo2c%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Selatan under KBLI 24320 (non-ferrous casting); machining capability not stated.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Anugrah Bintang Mandiri",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "shipping"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Anugrah+Bintang+Mandiri&kbli=&prov=NgxlXm4O9RisBSPbBxFCkU3EICDeSjBUOKkjQSYLo2c%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Selatan under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Imam Asmara Bakti",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Selatan",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "shipping"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Imam+Asmara+Bakti&kbli=&prov=NgxlXm4O9RisBSPbBxFCkU3EICDeSjBUOKkjQSYLo2c%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Selatan under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "K3D Studio",
+    "kind": "3d_print_service",
+    "province": "Sulawesi Selatan",
+    "city": "Makassar",
+    "capabilities": [
+      "3D printing (process not stated)"
+    ],
+    "serves": [],
+    "makes": "3D printing service (Tamalanrea area)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://idalamat.com",
+    "source_type": "directory",
+    "evidence": "(snippet) Directory listing 'Jasa Cetak 3D Printing Makassar' in Tamalanrea; listing page not fetched (site blocks ClaudeBot).",
+    "source_year": 2026
+  },
+  {
+    "name": "3D Printing Makassar",
+    "kind": "3d_print_service",
+    "province": "Sulawesi Selatan",
+    "city": "Makassar",
+    "capabilities": [
+      "3D printing (process not stated)"
+    ],
+    "serves": [],
+    "makes": "3D printing service near Universitas Hasanuddin staff housing",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://idalamat.com",
+    "source_type": "directory",
+    "evidence": "(snippet) Directory listing named '3D Printing Makassar', Perdos Unhas, Tamalanrea; unverified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Mutiara Mitra Nusantara",
+    "kind": "cnc_job_shop",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "metal-working services (KBLI 25920; machine types not stated)"
+    ],
+    "serves": [],
+    "makes": "Registered for metal-working and treatment job services",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Mutiara+Mitra+Nusantara&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "The only incorporated firm SIINas lists in Sulawesi Tengah under KBLI 25920 (metal-working services); capabilities unverified.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Maritim Fiberglass",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Maritim+Fiberglass&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tengah under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Sombori Maritim",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Sombori+Maritim&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tengah under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Marina Indo Tani",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Marina+Indo+Tani&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tengah under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Bahtra Selatan",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Bahtra+Selatan&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tengah under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Asmaul Jaya",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Asmaul+Jaya&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tengah under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Putra Tanona",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Putra+Tanona&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tengah under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Taminar Jaya",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tengah",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Taminar+Jaya&kbli=&prov=75xafGvwr11mzUWpufY1t8OR4CJHbvT1cfvt7N7sO10%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tengah under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Andi Nurhadi Mandiri",
+    "kind": "foundry_machining",
+    "province": "Sulawesi Tenggara",
+    "city": null,
+    "capabilities": [
+      "non-ferrous casting (KBLI 24320)"
+    ],
+    "serves": [],
+    "makes": "Registered as a non-ferrous metal foundry",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Andi+Nurhadi+Mandiri&kbli=&prov=AJ1mml5HqF88qgIV7PYpX4zyWJ7G0jCWodfIKonUyPM%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tenggara under KBLI 24320 (non-ferrous casting); machining capability not stated.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Arsa Mega Pratama",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tenggara",
+    "city": null,
+    "capabilities": [
+      "ship repair (KBLI 33151)",
+      "shipbuilding (KBLI 30111)"
+    ],
+    "serves": [
+      "shipping",
+      "mining logistics"
+    ],
+    "makes": "Registered shipbuilder and ship repairer",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Arsa+Mega+Pratama&kbli=&prov=AJ1mml5HqF88qgIV7PYpX4zyWJ7G0jCWodfIKonUyPM%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tenggara under both KBLI 30111 (shipbuilding) and 33151 (ship repair).",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Dokmor Optima Kajayan",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tenggara",
+    "city": null,
+    "capabilities": [
+      "ship repair (KBLI 33151)"
+    ],
+    "serves": [
+      "shipping"
+    ],
+    "makes": "Registered ship repairer",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Dokmor+Optima+Kajayan&kbli=&prov=AJ1mml5HqF88qgIV7PYpX4zyWJ7G0jCWodfIKonUyPM%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tenggara under KBLI 33151 (repair of ships and floating structures).",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Chemset Sukses Mandiri Buteng",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tenggara",
+    "city": "Buton Tengah",
+    "capabilities": [
+      "ship repair (KBLI 33151)"
+    ],
+    "serves": [
+      "shipping",
+      "fisheries"
+    ],
+    "makes": "Registered ship repairer",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Chemset+Sukses+Mandiri&kbli=&prov=AJ1mml5HqF88qgIV7PYpX4zyWJ7G0jCWodfIKonUyPM%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tenggara under KBLI 33151 (ship repair); regency inferred from 'Buteng' in name.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Delta Samudra Shipyard",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tenggara",
+    "city": null,
+    "capabilities": [
+      "shipbuilding (KBLI 30111)"
+    ],
+    "serves": [
+      "shipping"
+    ],
+    "makes": "Registered shipbuilder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Delta+Samudra+Shipyard&kbli=&prov=AJ1mml5HqF88qgIV7PYpX4zyWJ7G0jCWodfIKonUyPM%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tenggara under KBLI 30111 (ship and boat building).",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Mitra Timor Jaya",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Tenggara",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries",
+      "transport"
+    ],
+    "makes": "Registered ship and boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Mitra+Timor+Jaya&kbli=&prov=AJ1mml5HqF88qgIV7PYpX4zyWJ7G0jCWodfIKonUyPM%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Tenggara under KBLI 30111 (ship and boat building); no machining detail.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Victorina",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Utara",
+    "city": null,
+    "capabilities": [
+      "agro-processing machine fabrication",
+      "stainless-steel fabrication"
+    ],
+    "serves": [
+      "coconut processing",
+      "corn farming",
+      "livestock feed",
+      "fish smoking"
+    ],
+    "makes": "Coir decorticators (600 kg/h), cocopeat presses, corn shellers (1-2 t/h), hammer mills, choppers, pelletizers, bed dryers, fish smokers",
+    "size_note": null,
+    "certs": [
+      "TKDN 36-40% (17 products)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Victorina",
+    "source_type": "government",
+    "evidence": "TKDN register lists 17 machines incl. coconut-coir decorticator and corn sheller at 36-40%; SIINas KBLI 28210, Sulut.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Noah Karya Mandiri",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Utara",
+    "city": null,
+    "capabilities": [
+      "boatbuilding"
+    ],
+    "serves": [
+      "fisheries"
+    ],
+    "makes": "15 m pajeko (purse-seine) boats and 7.3 m pelang boats",
+    "size_note": null,
+    "certs": [
+      "TKDN 34-38% (two boat types)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Noah+Karya",
+    "source_type": "government",
+    "evidence": "TKDN register: KM Pajeko 15 m (38%) and perahu pelang (34%); SIINas KBLI 30111, Sulawesi Utara.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Dok Kelapa Dua Permai",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Utara",
+    "city": null,
+    "capabilities": [
+      "shipbuilding (KBLI 30111)"
+    ],
+    "serves": [
+      "shipping"
+    ],
+    "makes": "Registered shipbuilder (dockyard)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Dok+Kelapa+Dua+Permai&kbli=&prov=wALq168Ez0AZMs5Nc3aoSM5Zr-E0jM0Z_hYKkl-i2Zo%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists it in Sulawesi Utara under KBLI 30111 (ship and boat building); its corporate domain did not resolve.",
+    "source_year": 2026
+  },
+  {
+    "name": "Koperasi Produsen Bahari Totabuan Jaya",
+    "kind": "machinery_maker",
+    "province": "Sulawesi Utara",
+    "city": null,
+    "capabilities": [
+      "boatbuilding (KBLI 30111; materials and machines not stated)"
+    ],
+    "serves": [
+      "fisheries"
+    ],
+    "makes": "Producer cooperative registered as boat builder",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.kemenperin.go.id/direktori-perusahaan?nama=Totabuan+Jaya&kbli=&prov=wALq168Ez0AZMs5Nc3aoSM5Zr-E0jM0Z_hYKkl-i2Zo%2C",
+    "source_type": "government",
+    "evidence": "SIINas lists this cooperative in Sulawesi Utara under KBLI 30111 (ship and boat building).",
+    "source_year": 2026
+  }
+]

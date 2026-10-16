@@ -1,0 +1,375 @@
+[
+  {
+    "cluster": "Wenling pump and motor cluster (China Pump Hometown, 中国水泵之乡)",
+    "country": "China",
+    "region": "Wenling (county-level city), Taizhou, Zhejiang",
+    "product": "Small water pumps and motors; also small air compressors, tools and gauges, footwear",
+    "firms": "More than 2,700 pump-related firms (Wenling Daily, 16 Oct 2025). City-wide, end 2024: 35,000 industrial firms, 1,343 above designated size (via Wikipedia, citing Wenling government, 14 Jan 2025)",
+    "workers": null,
+    "output": "Pump industry scale above CNY 70 billion (700亿元) in 2024 (Wenling Daily, 16 Oct 2025). Estimate: about US$9.7 billion at an assumed CNY 7.2 per US$ (70 / 7.2)",
+    "share": "Over 70% of China's small-pump market and over 20% of the international market (Wenling Daily, 16 Oct 2025; no year given for the shares)",
+    "started": "Early 1980s (the paper says 40+ years of development as of 2025)",
+    "levers": [
+      "Dense private family firms (private firms make 97% of industrial output, via Wikipedia)",
+      "Pump-valve 'industry brain' digital platform (2022): collective procurement and supply-chain finance serving 1,842 firms, 86% of above-scale pump and motor firms",
+      "MIIT-rated public service platform: Wenling Xiandao Motor Technology Research Institute",
+      "Standards information platform with 458 pump and motor standards entries",
+      "National titles: China Pump Hometown, China Small Air Compressor Hometown, China Tool City",
+      "Stock listings of anchor firms (Dayuan Pump 2017, Taifu Pump 2021) and an HKEX-listed tools trading-market company (2020)"
+    ],
+    "lessons": "The clearest 'one county, one machined product' case with fresh primary numbers: thousands of small firms, a dominant domestic share, and a 2020s upgrade layer (shared procurement, supply-chain finance, digital platform) built on a 40-year base. What transfers: shared services across many small shops. Not verified this round: workers, margins, price wars, pollution.",
+    "sources": [
+      "https://paper.wlxww.com/html/2025-10/16/content_3065915.htm",
+      "https://zh.wikipedia.org/wiki/%E6%B8%A9%E5%B2%AD%E5%B8%82"
+    ]
+  },
+  {
+    "cluster": "Yongkang hardware cluster (Hardware Capital, 五金之都)",
+    "country": "China",
+    "region": "Yongkang (county-level city), Jinhua, Zhejiang",
+    "product": "Hardware: power tools, security doors, stainless tableware, scales, vacuum cups, scooters and leisure vehicles",
+    "firms": "About 10,000 hardware firms (2009; via Wikipedia, citing Zhejiang Daily, 27 May 2009)",
+    "workers": "About 300,000 (2009; same source). Estimate: about 30 workers per firm (300,000 / 10,000)",
+    "output": "No hardware-only output found. City GDP CNY 83.55 billion in 2024 (Wikipedia infobox)",
+    "share": "About one-third of China's power tools, 52% of stainless-steel tableware, 45% of daily-use scales (English Wikipedia, uncited, no year)",
+    "started": "Old metal-craft tradition; modern private cluster after the 1978 reforms (no exact year found)",
+    "levers": [
+      "China Science and Technology Hardware City wholesale market (described as China's largest hardware market)",
+      "Annual China Hardware Expo (26-28 Sep; 14 editions by 2009)",
+      "National product titles: China Door Capital (2009), China Leisure Sports Vehicle Capital (2009), China Cup Capital (2011)",
+      "Private firms (over 95% of output)"
+    ],
+    "lessons": "Market-plus-trade-fair model and product hopping (doors since 1997, scooters, cups). Titles came in 2009-2011, long after the cluster was large. Firm and worker counts are 17 years old; the national shares are uncited. Boom-bust episodes (e.g., scooters around 2000) were not verified this round.",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/%E6%B0%B8%E5%BA%B7%E5%B8%82",
+      "https://en.wikipedia.org/wiki/Yongkang,_Zhejiang",
+      "http://zjdaily.zjol.com.cn/html/2009-05/27/content_4852237.htm"
+    ]
+  },
+  {
+    "cluster": "Danyang spectacle-lens cluster",
+    "country": "China",
+    "region": "Danyang (county-level city), Zhenjiang, Jiangsu",
+    "product": "Spectacle lenses and frames (also a drill-bit cluster, no figures found)",
+    "firms": "More than 400 glasses factories around 1987 (36Kr, 5 Aug 2026); no current count found",
+    "workers": null,
+    "output": "6.5 million pairs a year around 1987; glasses market turnover above CNY 1 billion a year in the 1990s; Wanxin Optical alone 100M+ resin lenses and CNY 1.2 billion+ sales a year, undated (36Kr, 5 Aug 2026)",
+    "share": "About 50% of world and 75% of China's spectacle-lens output (36Kr, 5 Aug 2026; no year given for the shares)",
+    "started": "1960s (workshops seeded by educated youth from Suzhou and Shanghai glasses factories)",
+    "levers": [
+      "County government opened two dedicated glasses wholesale markets (Huayang and Yunyang) near the railway station in 1986",
+      "Later: foreign capital and technology, R&D departments, optical industrial parks",
+      "Eyewear Characteristic Town from 2021 (CNY 8.5 billion+ invested)",
+      "E-commerce and live-streaming sales; Mingyue Lenses listed 2021"
+    ],
+    "lessons": "Market first: the 1986 county-built markets pulled scattered shack factories into a cluster. Weak points 60 years on: no strong own brand, mainly mid-to-low end, high-index resin monomer bought from Korea's KOC, 1.74-index technology held by Western makers, and mostly SMEs without a technology leader.",
+    "sources": [
+      "http://eu.36kr.com/en/p/3926094480505224",
+      "https://en.wikipedia.org/wiki/Danyang,_Jiangsu"
+    ]
+  },
+  {
+    "cluster": "Ninghai moulding and stationery cluster",
+    "country": "China",
+    "region": "Ninghai County, Ningbo, Zhejiang",
+    "product": "Plastic moulding base that grew into stationery (binder clips, hole punchers, pencil sharpeners)",
+    "firms": "Anchor firm Deli; no firm count found",
+    "workers": null,
+    "output": "Stationery revenue CNY 8.6 billion in 2012 (via Wikipedia, citing MOFCOM, Sep 2013)",
+    "share": "80% of the world's binder clips; 10% of world hole punchers and pencil sharpeners; about 10% of China's stationery exports (via Wikipedia; years not stated)",
+    "started": "Late 1980s (stationery built on an existing moulding industry)",
+    "levers": [
+      "Existing mould-making capability",
+      "Anchor firm (Deli)",
+      "Export orientation (about 70% of output exported)"
+    ],
+    "lessons": "A process capability (moulding) seeded a product cluster, the closest Chinese precedent to 'capability first, products later'; but the product found the capability, it was not planned. No mould-specific figures found; numbers are 8-14 years old and second-hand.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Ninghai_County",
+      "http://wms.mofcom.gov.cn/article/hyxx/ningbo/201309/20130900302864.shtml",
+      "https://zqb.cyol.com/html/2018-12/06/nw.D110000zgqnb_20181206_1-05.htm"
+    ]
+  },
+  {
+    "cluster": "Huangyan mould and plastics cluster (China Mould Hometown, 中国模具之乡)",
+    "country": "China",
+    "region": "Huangyan District, Taizhou, Zhejiang",
+    "product": "Plastic injection moulds (auto, appliance, medical, TV, e-bike parts) and plastic daily-use products",
+    "firms": null,
+    "workers": null,
+    "output": null,
+    "share": "'70% of plastic molds nationwide' as of 2006 (English Wikipedia, uncited; looks high, treat as unverified); about 50% of TV makers source TV moulds there (same page)",
+    "started": null,
+    "levers": [
+      "National titles: China Mould Hometown, China Plastic Daily-Use Products Capital",
+      "Downstream anchor customers in autos and appliances (FAW, Geely, Dongfeng, Shanghai VW, Haier, Hisense named)"
+    ],
+    "lessons": "Mould capability served many downstream industries at once (TVs, e-bikes, cars, appliances). No verified firm count, output or start date this round; the 70% share is uncited and 20 years old.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Huangyan_District",
+      "https://zh.wikipedia.org/wiki/%E9%BB%84%E5%B2%A9%E5%8C%BA"
+    ]
+  },
+  {
+    "cluster": "Yuhuan auto-parts and valve cluster",
+    "country": "China",
+    "region": "Yuhuan (county-level city), Taizhou, Zhejiang",
+    "product": "Auto parts (largest industry) and water-and-heating valves (second)",
+    "firms": "All industry, end 2017: 12,748 industrial firms, 743 above designated size, 139 above CNY 100 million (via Wikipedia, citing Yuhuan statistical bulletin, 8 Apr 2018)",
+    "workers": null,
+    "output": "All industry 2017: CNY 156.4 billion; above-scale CNY 69.8 billion (same source). No valve-only figure found",
+    "share": null,
+    "started": null,
+    "levers": [
+      "Two named pillar industries (auto parts, valves) in the city's industrial structure"
+    ],
+    "lessons": "Two-product structure (auto parts plus valves) rather than one product. Valve output, share, workers and history were not verified this round; city-wide numbers are 9 years old.",
+    "sources": [
+      "https://zh.wikipedia.org/wiki/%E7%8E%89%E7%8E%AF%E5%B8%82",
+      "http://www.yuhuan.gov.cn/zwgk/tjxx/tjgb/201804/t20180408_607850.html"
+    ]
+  },
+  {
+    "cluster": "Yuyao mould and plastics cluster (China Mould City, China Plastics City)",
+    "country": "China",
+    "region": "Yuyao (county-level city), Ningbo, Zhejiang",
+    "product": "Plastic moulding, electric appliances, machinery (per English Wikipedia, uncited)",
+    "firms": null,
+    "workers": null,
+    "output": null,
+    "share": null,
+    "started": null,
+    "levers": [],
+    "lessons": "No verified figures this round (no search available; Wikipedia pages lack them). The China Mould City and China Plastics City markets were not verified. Needs a Chinese-language search before publishing.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yuyao"
+    ]
+  },
+  {
+    "cluster": "Chang'an mould, hardware and electronics cluster",
+    "country": "China",
+    "region": "Chang'an Town, Dongguan, Guangdong",
+    "product": "Export manufacturing; moulds, hardware and electronics (cluster identity not verified this round)",
+    "firms": null,
+    "workers": null,
+    "output": null,
+    "share": null,
+    "started": null,
+    "levers": [],
+    "lessons": "No verified industry figures. Context only: 594,809 people at the 2000 census (then China's most populous town) and 807,400 permanent residents in 2021 (Wikipedia). The town-profile page on dg.gov.cn failed DNS from this VM.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Chang%27an,_Dongguan"
+    ]
+  },
+  {
+    "cluster": "Tengzhou small and medium machine-tool cluster",
+    "country": "China",
+    "region": "Tengzhou (county-level city), Zaozhuang, Shandong",
+    "product": "Small and medium machine tools (cluster identity from the brief; not verified this round)",
+    "firms": null,
+    "workers": null,
+    "output": null,
+    "share": null,
+    "started": null,
+    "levers": [],
+    "lessons": "No verified machine-tool figures. English Wikipedia lists 254 above-scale industrial firms in 2019 (all industry), does not list machinery among major industries, and says many factories closed in an early-2010s downturn (citing WSJ, 20 Jul 2015, not fetched). Needs Chinese sources before publishing.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tengzhou"
+    ]
+  },
+  {
+    "cluster": "Shenzhen consumer 3D-printer makers",
+    "country": "China",
+    "region": "Shenzhen, Guangdong",
+    "product": "Desktop (consumer) FDM and resin 3D printers",
+    "firms": "Named makers: Creality (founded 2014), Bambu Lab (founded Aug 2020); EqualOcean also names Anycubic, Elegoo and Anker as sector leaders without giving their locations",
+    "workers": null,
+    "output": "Creality shipped 4.4 million printers in 2020-2024 (Wikipedia). Bambu Lab expected to reach about CNY 1.5 billion of revenue in 2023 (EqualOcean, 5 Jan 2024; a forecast, not a reported figure)",
+    "share": null,
+    "started": "2014 (Creality); 2020 (Bambu Lab)",
+    "levers": [
+      "Engineer spin-offs from an anchor firm (Bambu Lab's founders came from DJI's consumer drone unit)",
+      "Crowdfunding and direct-to-consumer exports (Bambu Lab X1 Kickstarter HK$55 million, 2022)",
+      "City-scale electronics supply chain (not quantified in the sources read)"
+    ],
+    "lessons": "Grew from Shenzhen's electronics ecosystem and spin-offs, not from a county one-product designation. IP friction is part of the model: Wikipedia cites reports of GPL complaints against Creality (2018) and an Artec lawsuit over a scanner (titles only, not fetched). Shenzhen's share of world output and metal 3D-printing clusters (Xi'an, Wuhan) were not verified.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Creality",
+      "https://en.wikipedia.org/wiki/Bambu_Lab",
+      "https://equalocean.com/news/2024010520422"
+    ]
+  },
+  {
+    "cluster": "Yiwu small-commodity market (China Commodity City)",
+    "country": "China",
+    "region": "Yiwu (county-level city), Jinhua, Zhejiang",
+    "product": "Small commodities: a wholesale market platform rather than one product",
+    "firms": "75,000+ stores (Wikipedia infobox); 1,000+ vendors selling 3,000+ products by end-1983; booths above 10,000 in 1991",
+    "workers": null,
+    "output": "About US$11 billion of goods sold a year, 2013 (via Wikipedia)",
+    "share": "Called 'the world's largest small commodities market' by the World Bank in 2005 (via Wikipedia)",
+    "started": "1982",
+    "levers": [
+      "County Party secretary legalised a free market in 1982",
+      "County spent CNY 580,000 in 1983 to build a booth market",
+      "Market trading declared the pillar industry in 1984",
+      "Government-owned market buildings (owner: Yiwu Municipal Government)"
+    ],
+    "lessons": "The archetype of the specialised-market lever: local government organised trade first, and most goods were made elsewhere at the start. For CNC and 3D printing, the analogue is an order-matching hub that aggregates buyers for many small shops.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Yiwu_International_Trade_City"
+    ]
+  },
+  {
+    "cluster": "Wenzhou light-industry clusters (Wenzhou model)",
+    "country": "China",
+    "region": "Wenzhou, Zhejiang",
+    "product": "Shoes, lighters, low-voltage electrical goods, other light industry",
+    "firms": null,
+    "workers": null,
+    "output": null,
+    "share": null,
+    "started": "1980s",
+    "levers": [
+      "Private family firms and informal finance",
+      "Local-government clean-ups of counterfeit goods (late 1980s; 1994 'second start-up')"
+    ],
+    "lessons": "Failure case. Counterfeit and substandard goods in the late 1980s forced a nationwide clean-up. From 2010, tighter credit broke firms' cash flows, guarantee companies and mutual-guarantee networks were hit in succession, and local government had to step in (Wikipedia). Cluster finance works in a boom and breaks in a credit squeeze.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Wenzhou",
+      "https://ideas.repec.org/a/eee/jcecon/v32y2004i3p542-563.html"
+    ]
+  },
+  {
+    "cluster": "Taichung precision machinery and machine-tool cluster",
+    "country": "Taiwan",
+    "region": "Taichung City, central Taiwan",
+    "product": "Machine tools, mechanical components, woodworking machinery, bicycles",
+    "firms": null,
+    "workers": null,
+    "output": "Precision machinery called Taiwan's 'third trillion-dollar (NT$) industry' (Chinese Wikipedia, citing a 2009 note; no figure checked)",
+    "share": null,
+    "started": "1960s (Taichung Port, Taichung Industrial Park, an export processing zone and Freeway No. 1 supported small factories)",
+    "levers": [
+      "Public infrastructure in the 1960s (port, industrial park, export processing zone, freeway)",
+      "Taichung Industrial Park (Xitun); city-built Precision Machinery Technology Innovation Park phases 1-2 (Nantun)",
+      "Central Taiwan Science Park from 2002"
+    ],
+    "lessons": "The nearest machine-tool analogue. It survived a late-1980s/1990s hollowing-out, when many makers moved to mainland China and Southeast Asia. Firm counts, workers, output and the 'golden valley' radius were not verified this round.",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Taichung",
+      "https://zh.wikipedia.org/wiki/%E8%87%BA%E4%B8%AD%E5%B8%82"
+    ]
+  },
+  {
+    "cluster": "Oita One Village One Product (OVOP)",
+    "country": "Japan",
+    "region": "Oita Prefecture, Kyushu",
+    "product": "Many local products, one chosen per village or town (farm, food and craft products)",
+    "firms": "OVOP products: 143 in 1980, 336 in 2001 (Haraguchi 2008, UNIDO, p. 9)",
+    "workers": null,
+    "output": "OVOP product sales US$330 million in 1980, US$1,300 million in 2001 (Haraguchi 2008, p. 9). Estimate: 3.9x in 21 years",
+    "share": null,
+    "started": "1979 (Governor Morihiko Hiramatsu; implementation from 1980; modelled on Oyama town's 1961 NPC movement)",
+    "levers": [
+      "Community-led product choice",
+      "Coordinating organisations giving technical and marketing advice, sometimes running jointly owned equipment for capital-intensive processing",
+      "Prefecture gives only supplementary support: extension services, learning activities, product promotion"
+    ],
+    "lessons": "Income per head rose from 1.405 million yen (1980) to 2.798 million yen (2000), then 2.647 million yen (2003), and Oita rose from 3rd to 1st of Kyushu's 7 prefectures; Haraguchi says OVOP 'seems to have contributed' (a judgement, not a causal estimate). Slow and dependent on community leadership, but sustainable with local linkages. Not about machining.",
+    "sources": [
+      "https://downloads.unido.org/ot/48/14/4814612/STATISTICS_WP032008%20The%20One-Village-One-Product%20(OVOP)%20movement.pdf",
+      "https://en.wikipedia.org/wiki/One_Village_One_Product"
+    ]
+  },
+  {
+    "cluster": "Thailand One Tambon One Product (OTOP)",
+    "country": "Thailand",
+    "region": "Nationwide (7,255 tambons)",
+    "product": "One starred product per tambon (food, crafts, textiles, household goods)",
+    "firms": "36,000 OTOP groups of 30-3,000 members each (Wikipedia, uncited); 569 five-star products",
+    "workers": null,
+    "output": "Sales THB 33.3 billion (2003), THB 46.3 billion (2004), THB 38.5 billion (9 months of 2005) (Haraguchi 2008, Table 3); THB 153 billion (2017; Bangkok Post via Wikipedia)",
+    "share": null,
+    "started": "2001",
+    "levers": [
+      "Central-government administration (National OTOP Administrative Committee in the Prime Minister's Office)",
+      "Star ratings and OTOP Product Champion quality grades",
+      "Trade fairs and export promotion",
+      "Budget THB 0.8 billion (2003), 1.5 billion (2004); THB 1.24 billion (FY2018) falling to THB 363 million (FY2020)"
+    ],
+    "lessons": "Faster results than Oita but less sustainable. Market saturation with similar products; officials favoured already-advantaged producers; some products were registered without producers' consent to pad the numbers (Haraguchi 2008, pp. 18-22). Budget cut about 71% between FY2018 and FY2020 (estimate: 1 - 363/1,240).",
+    "sources": [
+      "https://downloads.unido.org/ot/48/14/4814612/STATISTICS_WP032008%20The%20One-Village-One-Product%20(OVOP)%20movement.pdf",
+      "https://en.wikipedia.org/wiki/One_Tambon_One_Product"
+    ]
+  },
+  {
+    "cluster": "Vietnam metal craft villages (Phùng Xá, Đa Hội, Tống Xá, Vân Chàng)",
+    "country": "Vietnam",
+    "region": "Red River Delta (Hà Nội, Bắc Ninh, Ninh Bình)",
+    "product": "Metal goods, iron and steel forging, mechanical casting, scrap recycling",
+    "firms": "Nearly 2,000 craft villages of all kinds nationally (Vietnamese Wikipedia, undated, uncited)",
+    "workers": null,
+    "output": null,
+    "share": null,
+    "started": "Traditional; recognition requires the craft to have existed locally for over 50 years (Circular 116/2006/TT-BNN)",
+    "levers": [
+      "Official recognition of traditional craft villages (Circular 116/2006/TT-BNN criteria)"
+    ],
+    "lessons": "Wikipedia says traditional crafts run 'cầm chừng' (at a low level), with low incomes and a shrinking workforce. Vietnam's supporting-industry policy (Decree 111/2015) and OCOP were not verified this round.",
+    "sources": [
+      "https://vi.wikipedia.org/wiki/L%C3%A0ng_ngh%E1%BB%81"
+    ]
+  },
+  {
+    "cluster": "Tegal metal cluster ('Jepang-nya Indonesia')",
+    "country": "Indonesia",
+    "region": "Kabupaten Tegal (Talang/Adiwerna, LIK Takaru) and Kota Tegal, Central Java",
+    "product": "Tier-2 auto parts, stamping, ship fittings, machine parts, castings",
+    "firms": "2,963 small and 22 medium metal units in Kab. Tegal (2019 seminar paper, snippet); about 70 metal IKM coached by Astra's YDBA, 16 with supply partnerships (Feb 2024)",
+    "workers": "31,258 in small and 668 in medium metal units (2019, snippet). Estimate: about 10.5 workers per small unit (31,258 / 2,963)",
+    "output": "No cluster output found. The UPTD LIK earned Rp550 million of local revenue in 2023 (a fee figure, not output)",
+    "share": null,
+    "started": "Metalworking predates independence; LIK Takaru designated 1982 (snippet)",
+    "levers": [
+      "Kemenperin priority metal centre (list of nine, 2019)",
+      "Tegal Material Center (2020-2023 plan)",
+      "Astra YDBA coaching and OEM matchmaking",
+      "BKI class certificates for ship components with JICA support (2015)",
+      "Kota Tegal SILKOT metal centre and CNC turning training"
+    ],
+    "lessons": "Designation plus coaching produced some OEM links, but most coached firms (about 54 of 70 in 2024) had no supply deal, and an academic source says the IKM machines are not yet CNC-based. Whether Tegal's KIID names metal was not confirmed this round.",
+    "sources": [
+      "https://setda.tegalkab.go.id/2024/02/27/ikm-logam-kabupaten-tegal-pasok-kebutuhan-industri-otomotif-nasional",
+      "https://kemenperin.go.id/artikel/21550/Topang-Sektor-Otomotif,-Material-Center-di-Tegal-Pasok-Kebutuhan-IKM-Logam-",
+      "https://www.industry.co.id/read/49656/ikm-siap-berkontribusi-dalam-rantai-pasok-industri-otomotif-nasional",
+      "https://proceedings.undip.ac.id/index.php/semnasppm2019/article/download/68/93",
+      "https://www.jica.go.jp/project/english/indonesia/012/newsletter/c8h0vm00008bcv16-att/201505_in.pdf",
+      "https://jurnal.untirta.ac.id/index.php/CECD/article/download/24819/pdf_38",
+      "https://id.wikipedia.org/wiki/Kabupaten_Tegal"
+    ]
+  },
+  {
+    "cluster": "Ceper foundry and machining cluster",
+    "country": "Indonesia",
+    "region": "Kecamatan Ceper, Kabupaten Klaten, Central Java",
+    "product": "Castings plus machining: railway brake blocks, cylinder sleeves, pump, ship and factory parts",
+    "firms": "260 firms (2016, Menperin via bisnis.com, snippet); Koperasi Batur Jaya: 168 member foundries (2019)",
+    "workers": "3,500 (2016, snippet); 4,000+ in the cooperative's members (2019)",
+    "output": "Capacity 3,000 tonnes a month (2016, snippet)",
+    "share": null,
+    "started": null,
+    "levers": [
+      "Kemenperin priority metal centre (list of nine, 2019)",
+      "Cooperative selling to captive buyers: PT KAI brake blocks for 27 years by 2019; TMMIN cylinder sleeves from 2019",
+      "Design and pattern-maker (napel) training"
+    ],
+    "lessons": "A long-term captive buyer (PT KAI) kept the cluster going, which matches the Chinese evidence that buyers and markets, not titles, sustain clusters. Skills bottleneck: pattern and mould makers. Whether Klaten's KIID names foundry or metal was not confirmed this round.",
+    "sources": [
+      "https://ekonomi.bisnis.com/read/20160811/257/574365/bumn-agar-tetap-serap-blok-rem-dari-ikm-di-klaten",
+      "https://www.industry.co.id/read/47090/ikm-logam-klaten-jateng-upaya-terus-hasilkan-produk-kompetitif",
+      "https://www.industry.co.id/read/49656/ikm-siap-berkontribusi-dalam-rantai-pasok-industri-otomotif-nasional"
+    ]
+  }
+]

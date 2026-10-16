@@ -1,0 +1,242 @@
+[
+  {
+    "province": "DKI Jakarta",
+    "area": "DKI Jakarta",
+    "level": "province",
+    "focus": {
+      "product": "Production tooling for car and motorcycle lines: press dies, jigs and checking fixtures",
+      "hs": [
+        "8207.30",
+        "8466.20",
+        "9031.80"
+      ],
+      "why": "Jakarta holds the OEMs that buy tooling (Toyota TMMIN Sunter II, Astra Daihatsu, Astra Honda, Honda Prospect, Yamaha and Suzuki in Cakung, Mitsubishi Krama Yudha). Tooling and CNC-machine capacity already exists: Waja Kamajaya Sentosa makes dies, jigs and fixtures, and Garuda Otomasi and Astra Otoparts hold TKDN for CNC machines. Indonesia imported US$68.4M of HS 8207.30 press tools in 2024. Jakarta's UMP of Rp5.73M is the highest minimum wage in Indonesia, so it fits low-volume, engineering-heavy work. The RPIP 2026-2046 targets high-tech industry and industrial services. CNC and EDM do the core work; 3D printing helps on fixture nests and gauges.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Gears, differential cases, axles and propeller shafts",
+        "hs": [
+          "8483.40",
+          "8708.50"
+        ],
+        "why": "Asano Gear (600,000 differential units/yr), Morita Tjokro Gearindo and Inti Ganda Perdana (687,600 axle and shaft units) already work in Pegangsaan Dua and Pulogadung. Indonesia imported US$267.2M of HS 8483.40 gears in 2024.",
+        "fit": "cnc"
+      },
+      {
+        "product": "3D-printed prototypes, architectural and product models, and low-volume spare parts",
+        "hs": [],
+        "why": "FOMU (70+ machines, Duri Kepa) serves architects, Astra, Pertamina and the PUPR ministry. Jakarta's 2018 industry by-law (Perda 4/2018) prioritises creative industry. This is a service, not a traded good.",
+        "fit": "3d"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Toyota Motor Manufacturing Indonesia (Sunter II)",
+      "PT Astra Daihatsu Motor (Sunter II)",
+      "PT Astra Honda Motor (Sunter I)",
+      "PT Honda Prospect Motor (Sunter II)",
+      "PT Yamaha Indonesia Motor Mfg (Cakung)",
+      "PT Suzuki Indomobil Motor (Cakung)",
+      "PT Mitsubishi Krama Yudha Motor & Mfg (Cakung)",
+      "PT Komatsu Indonesia (Cilincing)"
+    ],
+    "local_inputs": [
+      "steel pipe and tube (PT Indonesia Steel Tube Works, Pulogadung, 90,000 t capacity)",
+      "aluminium die castings (Astra Otoparts Nusametal division)",
+      "iron and steel castings (Komatsu Indonesia foundry, up to 2,000 t/month, mostly captive)"
+    ],
+    "clusters": [
+      "Kawasan Industri Pulogadung (JIEP), 433 ha, more than 400 companies",
+      "Kawasan Berikat Nusantara Cakung and Marunda (Marunda 600 ha)",
+      "Sunter-Pegangsaan Dua automotive belt (Jakarta Utara)",
+      "PIK Penggilingan small-industry estate (Cakung)",
+      "Kamal Muara-Kapuk industrial warehousing (Penjaringan)"
+    ],
+    "official_designation": "Perda RPIP DKI Jakarta 2026-2046, passed by the DPRD on 30 Apr 2026, makes Jakarta a 'pusat jasa industri modern dan hub rantai pasok global' and pushes high-tech industry; no sector list was published in the coverage. Perda DKI 4/2018 on industry prioritises creative industry. The KIID regulation and Produk Unggulan text were not retrieved. No KEK was found.",
+    "umk_2026": "UMP DKI Jakarta 2026 Rp5,729,876/month (Kepgub 1142/2025, +6.17%); Jakarta sets one provincial minimum.",
+    "skills": "Politeknik Astra (ex-Polman Astra) Sunter campus, Jl. Gaya Motor Raya 8, offers D3 Teknik Produksi dan Proses Manufaktur, D3 Pembuatan Peralatan dan Perkakas Produksi (tool making) and Mekatronika. Its main campus moved to Delta Silicon II, Cikarang (opened 22 May 2023). Jakarta Creative Hub ran a makerspace with 3D printers and laser cutters (2017; current status unverified). SMK and BLK CNC seat counts were not found.",
+    "confidence": "medium",
+    "sources": [
+      "https://giamm.org/main/member",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=cnc",
+      "https://www.komi.co.id/foundry",
+      "https://fomu.co.id/",
+      "http://www.jawapos.com/jabodetabek/2604300428/resmi-jadi-perda-rpip-2026-2046-dorong-transformasi-industri-jakarta",
+      "https://pasal.id/peraturan/perda/perda-prov-dki-jakarta-4-2018",
+      "https://katadata.co.id/amp/berita/industri/694bb57d97fa5/ump-jakarta-2026-resmi-naik-jadi-rp-5-72-juta/",
+      "https://www.jawapos.com/jabodetabek/2512300138/buruh-demo-minta-ump-naik-pramono-ump-dki-paling-tinggi-se-indonesia",
+      "https://hki-industrialestate.com/hki-member/",
+      "https://wartaekonomi.co.id/read626766/berkapasitas-4000-jemaah-jiep-resmikan-masjid-jayakarta-di-kawasan-industri-pulogadung",
+      "https://www.polytechnic.astra.ac.id/",
+      "https://www.cnnindonesia.com/gaya-hidup/20170322212620-277-202121/mengintip-jakarta-creative-hub",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&flowCode=M&partnerCode=0&cmdCode=820730",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&flowCode=M&partnerCode=0&cmdCode=848340"
+    ]
+  },
+  {
+    "province": "Banten",
+    "area": "Tangerang Raya",
+    "level": "cluster",
+    "focus": {
+      "product": "Moulds for rubber and plastics: tyre, shoe-sole, rubber-part and injection moulds (making and refurbishing)",
+      "hs": [
+        "8480.71",
+        "8480.79"
+      ],
+      "why": "Tangerang hosts many mould users. Gajah Tunggal (tyres), IRC Inoac and Aneka Komkar Utama (8.5 million rubber parts) are in Jatiuwung. Takagi Sari makes injection parts for Astra Daihatsu, Yamaha and Toyota. Stanley makes 4.8 million lamp units, LG has a plant in Legok, and Nike maker Pratama Abadi (2 million pairs/month) is based in Serpong. Indonesia imported US$191.0M (8480.71) plus US$59.0M (8480.79) of such moulds in 2024. Yoska Prima Inti already makes dies, jigs and fixtures. No independent mould shops were verified, so this is a gap to fill. Moulds are cut by CNC and EDM; 3D printing serves sole prototypes and sample moulds.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Precision motorcycle and car parts: forged and threaded fasteners, pivots, die-cast and machined aluminium parts",
+        "hs": [
+          "7318.15",
+          "8714.10",
+          "8708.99"
+        ],
+        "why": "Indoseiki (forging, thread rolling, CNC lathes, IATF 16949), Systema Precision, Dharma Polimetal (1.5 million pcs/yr), Sinar Alum Sarana (die casting plus machining) and Koza Presisi already work here. Buyers include Astra Honda, Yamaha, Astra Daihatsu and Kawasaki.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Pump, valve and oilfield machined parts: impellers, flanges, valve bodies, OCTG accessories",
+        "hs": [
+          "8413.91",
+          "8481.90",
+          "7307.91"
+        ],
+        "why": "Kaiquan Pump (43% TKDN), Arflu Se and Borneo Mandiri (flanges up to 51% TKDN) are here, along with Molden Patra Sejahtera (oilfield accessories up to 87% TKDN) and Central Presisi Metal (OCTG). Indonesia imported US$296.6M of pump parts (8413.91) in 2024.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Gajah Tunggal Tbk (Jatiuwung)",
+      "PT IRC Inoac Indonesia (Gajah Tunggal complex)",
+      "PT LG Electronics Indonesia (Legok)",
+      "PT Mitsuba Indonesia (Jatiuwung)",
+      "PT Indonesia Stanley Electric (Millennium Industrial Estate)",
+      "PT Takagi Sari Multi Utama (Jatake)",
+      "PT Pratama Abadi Industri (Nike footwear, Serpong)",
+      "GMF AeroAsia (Soekarno-Hatta airport, Kota Tangerang)"
+    ],
+    "local_inputs": [
+      "steel wire rod and bar for fasteners (PT Mega Pratama Ferindo, Jatake: 98,000 t coil and 26,000 t bar)",
+      "rubber compounds and rubber products (Gajah Tunggal, IRC Inoac, Bando)",
+      "plastic masterbatch and compounds (PT Intera Lestari Polimer, Balaraja)"
+    ],
+    "clusters": [
+      "Kawasan Industri Jatake (Cikupa and Jatiuwung)",
+      "Kawasan Industri & Pergudangan Cikupamas (300 ha)",
+      "Millennium Industrial Estate (643 ha, Panongan/Tigaraksa)",
+      "Taman Tekno BSD (200 ha, Setu, Tangerang Selatan)",
+      "Gajah Tunggal industrial complex (Jatiuwung)",
+      "Kawasan Industri Manis (Jatiuwung)",
+      "Balaraja (Kawasan Industri Benua Permai Lestari, Kawasan Baja Mas)",
+      "Kawasan Industri Pasar Kemis"
+    ],
+    "official_designation": "Banten RPIP 2020-2040 (Perda Provinsi Banten 5/2020) (snippet); Kota Tangerang Perda 4/2025 cites it (snippet; title not confirmed). The priority-industry lists, KIID and Produk Unggulan Daerah were not retrieved. No KEK was found in the three cities.",
+    "umk_2026": "Kota Tangerang Rp5,399,405.69; Kab. Tangerang Rp5,210,377.00; Kota Tangerang Selatan Rp5,247,870.00 per month (Kepgub Banten 703/2025, 24 Dec 2025).",
+    "skills": "Politeknik Gajah Tunggal (Jatiuwung) offers D3 Teknik Mesin and Teknologi Industri, with about 150 graduates/yr, 3,000+ applicants, and full scholarships tied to a service bond. Nearby BBPVP Serang runs lathe, basic CNC lathe and 3D CAD courses. Balaraja CNC programmer ads offered Rp4.94-5.5M (ads seen Oct 2026, snippet). SMK and BLK CNC counts were not found.",
+    "confidence": "medium",
+    "sources": [
+      "https://giamm.org/main/member",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=printer+3d",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=mold",
+      "https://www.indoseiki.com/",
+      "https://www.sinalum.com/",
+      "https://tepatlaser.com/",
+      "https://dealls.com/loker/footwear-developer-experienced~pt-pratama-abadi-industri",
+      "https://hki-industrialestate.com/hki-member/",
+      "https://ppid.bantenprov.go.id/storage/document/kepgub-banten-upah-minimum-kabupaten-dan-kota-tahun-2026-202512241557.pdf",
+      "https://poltek-gt.ac.id/",
+      "https://bbpvpserang.kemnaker.go.id/",
+      "https://www.gmf-aeroasia.co.id/",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&flowCode=M&partnerCode=0&cmdCode=848071",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&flowCode=M&partnerCode=0&cmdCode=848079",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&flowCode=M&partnerCode=0&cmdCode=841391"
+    ]
+  },
+  {
+    "province": "Banten",
+    "area": "Serang–Cilegon",
+    "level": "cluster",
+    "focus": {
+      "product": "Maintenance spares for steel and petrochemical plants: rolling-mill rolls and roll-shop work, pump impellers and shafts, valve and heat-exchanger parts (reverse-engineered)",
+      "hs": [
+        "8455.30",
+        "8455.90",
+        "8413.91",
+        "8481.90",
+        "8419.90"
+      ],
+      "why": "The Krakatau Steel group and Krakatau Posco make slab, plate, HRC, CRC and pipe here. Chandra Asri (polyethylene), Asahimas (VCM/PVC) and coal power plants form the region's heavy-process base, and all of them consume wear and rotating parts. Indonesia imported US$34.9M of rolls (8455.30) and US$68.4M of rolling-mill parts (8455.90) in 2024, plus US$296.6M of pump parts (8413.91). Fabricators already exist (Daekyung Indah in KIEC, Tuban Steel Work, Timas Suplindo). Politeknik Industri Petrokimia Banten trains machine technicians.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Gas valves and valve parts: LPG cylinder valves and forged or brass valve bodies",
+        "hs": [
+          "8481.80",
+          "8481.90"
+        ],
+        "why": "PT Asa Bintang Pratama (Modern Cikande) holds TKDN of 92.20-97.86% for LPG cylinder valves. This is a fully localised, high-content product line that can be scaled up.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Shoe-sole moulds for the Serang footwear plants",
+        "hs": [
+          "8480.71",
+          "8480.79"
+        ],
+        "why": "Pou Chen Group Indonesia hires a bottom-mould engineer in Serang (2D/3D sole geometry and moulds; the group made 238.3 million pairs last year). Sole moulds are also the core of Tangerang's mould focus.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "Krakatau Steel group (PT Krakatau Baja Industri, PT Krakatau Pipe Industries, PT Krakatau Baja Konstruksi)",
+      "PT Krakatau Posco",
+      "PT Chandra Asri Pacific Tbk (Ciwandan)",
+      "PT Asahimas Chemical (Jl. Raya Anyer Km 122)",
+      "PT Lestari Banten Energi (coal power plant, Salira)",
+      "PT IHI Power Service Indonesia (Puloampel)",
+      "Pou Chen Group Indonesia (footwear, Serang)",
+      "PT Indonesia Nippon Seiki (Modern Cikande)"
+    ],
+    "local_inputs": [
+      "steel slab, plate and hot-rolled coil (Krakatau Posco)",
+      "cold-rolled coil and sheet, HRPO (Krakatau Baja Industri)",
+      "seamless and welded line pipe (Krakatau Pipe Industries)",
+      "polyethylene resin (Chandra Asri Pacific)",
+      "PVC, VCM, EDC and caustic soda (Asahimas Chemical)"
+    ],
+    "clusters": [
+      "Krakatau Industrial Estate Cilegon (KSI 3,100 ha; KSP 1,050 ha)",
+      "ModernCikande Industrial Estate (3,175 ha; 'over 190' or 'about 300' companies)",
+      "Kawasan Industri Terpadu Wilmar (800 ha)",
+      "Kawasan Industri Terpadu MGM Cikande (662 ha)",
+      "Kawasan Budi Texindo (Jawilan)",
+      "Anyer-Ciwandan petrochemical belt (Cilegon)"
+    ],
+    "official_designation": "Banten RPIP 2020-2040 (Perda 5/2020) (snippet); Kab. Serang RPIK 2023-2043 (Perda Kab. Serang 3/2025) (snippet); Kota Serang RPIK draft (DPRD harmonisation draft, not fetched). KIID and Produk Unggulan were not retrieved. No KEK was found.",
+    "umk_2026": "Kota Cilegon Rp5,469,922.59 (highest in Banten); Kab. Serang Rp5,178,521.19; Kota Serang Rp4,665,927.94 per month (Kepgub Banten 703/2025).",
+    "skills": "Politeknik Industri Petrokimia Banten (Kemenperin; Anyar, Kab. Serang) offers D3 Teknologi Mesin Industri Petrokimia with a machine workshop; partners include Chandra Asri, Asahimas and Nippon Shokubai. BBPVP Serang (Kemnaker; Kota Serang) runs lathe, basic CNC lathe, 3D CAD and nine welding programmes, with 165 staff. Power plants hire workshop machinists (Lestari Banten Energi ad, Sep 2025, snippet).",
+    "confidence": "medium",
+    "sources": [
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=krakatau",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=posco",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=heat+exchanger",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=katup",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=machining",
+      "https://www.krakatauposco.co.id/",
+      "https://www.asc.co.id/new-companyprofile/",
+      "https://www.modern-cikande.co.id/industrial-estate-portfolio.html",
+      "https://hki-industrialestate.com/hki-member/",
+      "https://dealls.com/loker/footwear-engineer-bottom-mold~pou-chen-group-indonesia",
+      "https://poltek-petrokimia.ac.id/",
+      "https://bbpvpserang.kemnaker.go.id/",
+      "https://ppid.bantenprov.go.id/storage/document/kepgub-banten-upah-minimum-kabupaten-dan-kota-tahun-2026-202512241557.pdf",
+      "https://www.petromindo.com/job-gallery/25835",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&flowCode=M&partnerCode=0&cmdCode=845530",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&flowCode=M&partnerCode=0&cmdCode=845590"
+    ]
+  }
+]

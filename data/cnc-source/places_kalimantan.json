@@ -1,0 +1,356 @@
+[
+  {
+    "province": "Kalimantan Timur",
+    "area": "Kalimantan Timur",
+    "level": "province",
+    "focus": {
+      "product": "Heavy-equipment component rebuild and remanufactured parts (hydraulic cylinders, final drives and gears, engine parts), with hard-chrome and hardfacing",
+      "hs": [
+        "843149",
+        "841221",
+        "848340",
+        "840999"
+      ],
+      "why": "Balikpapan already hosts the rebuild base: Komatsu/UT's KRA (since 1996), Trakindo's Balikpapan CRC (2026 posting), Liebherr's reman centre (opened Feb 2025) and independent re-chrome/machining shops (Duma Nusatama). PAMA runs mine sites in Paser, Kutai Timur, Kutai Kartanegara, Berau and Kutai Barat. Indonesia imported US$796M of 843149 parts and US$72M of hydraulic cylinders (841221) in 2025. Risk: RKAB coal quotas cut UT's Komatsu big-machine sales from 860 to 436 units (Jan-Aug 2026).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Oil and gas well-completion and wellhead parts (liner hangers, packers, bridge plugs, crossovers, wellhead/X-mas tree components, OCTG tubing finishing)",
+        "hs": [
+          "843143",
+          "848180",
+          "730429"
+        ],
+        "why": "Four Balikpapan/Samarinda firms hold Kemenperin TKDN certificates for these parts at 25-67% local content (Mulia Jaya Mandiri, Sagatrade Murni, Besmindo Borneo Semesta, Grace Technic). Buyers include Pertamina Hulu Mahakam, PHKT and Pertamina Hulu Sanga-Sanga; RDMP Balikpapan was built at 30% TKDN. National imports in 2025: US$243M of 843143 and US$170M of 730429 tubing.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Pump and rotating-equipment repair parts (impellers, shafts, sleeves, seal parts) for the refinery, LNG and Bontang fertiliser/methanol plants",
+        "hs": [
+          "841391",
+          "848390"
+        ],
+        "why": "Sulzer runs a Balikpapan pump/turbine service centre with machine shop; Bhumi Phala Perkasa holds TKDN for API pump packages; buyers are concentrated: RU V (360,000 bpd after RDMP), Pupuk Kaltim (Pabrik-2 ammonia revamp, 2026), Kaltim Methanol, Kaltim Nitrate, Badak LNG.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Kilang Pertamina Internasional RU V Balikpapan (RDMP, 360,000 bpd)",
+      "Pertamina Hulu Mahakam",
+      "Pertamina Hulu Kalimantan Timur",
+      "Pertamina Hulu Sanga-Sanga",
+      "PT Pupuk Kalimantan Timur (Bontang)",
+      "PT Kaltim Methanol Industri (Bontang)",
+      "PT Kaltim Nitrate Indonesia (Bontang)",
+      "PT Badak NGL (Bontang)",
+      "PT Pamapersada Nusantara (sites in Paser, Kutai Timur, Kutai Kartanegara, Berau, Kutai Barat, Balikpapan)",
+      "United Tractors (Komatsu) and Trakindo (Caterpillar) customer fleets",
+      "Liebherr mining fleet (Sangatta mine)",
+      "Otorita IKN construction"
+    ],
+    "local_inputs": [
+      "coal",
+      "crude oil and natural gas",
+      "palm oil (CPO)",
+      "ammonia, urea and methanol (Bontang)",
+      "reinforcing steel bar (PT Besi Kalimantan Abadi, Samarinda)"
+    ],
+    "clusters": [
+      "Jl. Mulawarman workshop corridor, Manggar-Batakan (Balikpapan Timur)",
+      "Kariangau, Balikpapan Barat (Petrosea Support Facilities)",
+      "Kaltim Industrial Estate, Bontang",
+      "KEK Maloy Batuta Trans Kalimantan (Kaliorang, Kutai Timur)",
+      "Buluminung, Penajam Paser Utara"
+    ],
+    "official_designation": "RPIP Kalimantan Timur 2019-2039 (Perda 10/2019; implemented by Pergub 63/2020) - priority-industry list not retrieved. KEK Maloy Batuta Trans Kalimantan (PP 85/2014): 557.34 ha in Kaliorang, Kutai Timur, with industry, logistics and export-processing zones for palm-oil derivatives, minerals, gas and coal. Kemenperin KIID text not retrieved (JDIH robots.txt disallows).",
+    "umk_2026": "UMP 2026 Rp3,762,431 (detikFinance national list, 7 Jan 2026; a 25 Dec 2025 regional list says Rp3,759,313); UMK Samarinda 2026 Rp3,983,881 (+6.97% from Rp3,724,437); Balikpapan and Bontang UMK not retrieved; 2026 sectoral minimums also set for coal, oil and gas and palm oil (amounts not visible).",
+    "skills": "Politeknik Negeri Balikpapan: Jurusan Teknik Mesin with D3 Alat Berat and D4 Teknologi Rekayasa Manufaktur; industry partners shown include Pertamina, United Tractors and LiuGong. Institut Teknologi Kalimantan (Balikpapan) ran 3D-printing/rapid-prototyping training for SMKN 5 and SMKN 2 Balikpapan (2020). Politeknik Negeri Samarinda not verified (site blocked).",
+    "confidence": "medium",
+    "sources": [
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://www.detik.com/kalimantan/bisnis/d-8277103/daftar-ump-2026-di-kalimantan-kaltara-tertinggi",
+      "https://www.detik.com/kalimantan/bisnis/d-8272851/umk-samarinda-2026-disepakati-naik-6-97-persen-jadi-rp-3-98-juta",
+      "https://wageindicator.org/work/minimum-wage/countries/indonesia/40466-east-kalimantan/",
+      "https://www.disnakerja.com/lowongan-kerja-pt-komatsu-remanufacturing-asia/",
+      "https://careers.trakindo.co.id/job/CRC-Balikpapan-Component-Rebuild-Mechanic/1365382066/",
+      "https://trakindo.co.id/service-support",
+      "https://www.liebherr.com/en-es/mining-equipment/news/groundbreaking-magazine/growing-and-expanding-with-liebherr-indonesia-7549277",
+      "https://www.dumachrome.com/workshop-facilities/",
+      "https://www.sulzer.com/en/shared/services/balikpapan-service-center",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=mulia+jaya+mandiri",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=sagatrade+murni",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=besmindo+borneo",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=grace+technic",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=bhumi+phala",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=pupuk+kalimantan+timur",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=kaltim+methanol",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=kaltim+nitrate",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=besi+kalimantan+abadi",
+      "https://www.pamapersada.com/en/about-us",
+      "https://finance.detik.com/bursa-dan-valas/d-8675303/produksi-batu-bara-penjualan-alat-berat-untr-turun-terkendala-rkab",
+      "https://finance.detik.com/energi/d-8303822/di-hadapan-prabowo-bos-pertamina-beberkan-kekuatan-kilang-terbesar-ri",
+      "https://finance.detik.com/energi/d-8305067/rdmp-balikpapan-diklaim-serap-24-ribu-tenaga-kerja",
+      "https://finance.detik.com/industri/d-8634487/uji-168-jam-revamping-ammonia-pabrik-2-pupuk-kaltim-siap-beroperasi",
+      "https://trakindo.co.id/trakindo-creates-reciprocating-caterpillar-engine-workshop",
+      "https://www.detik.com/tag/badak-lng",
+      "https://peraturan.bpk.go.id/Details/188163/pergub-prov-kalimantan-timur-no-63-tahun-2020",
+      "https://peraturan.bpk.go.id/Details/5529/pp-no-85-tahun-2014",
+      "https://poltekba.ac.id/",
+      "https://mesin.poltekba.ac.id/",
+      "https://mme.itk.ac.id/penelitian/hasil_pengabdian-en/detail/pelatihan-pembuatan-purnarupa-menggunakan-teknologi-rapid-prototyping-untuk-meningkatkan-kualitas-sumber-daya-manusia-di-smkn-5-balikpapan",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=843149",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=843143",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M&cmdCode=843141,843139,820140,820190,841221,841290,8485,848590,730429,820719,732591,848710"
+    ]
+  },
+  {
+    "province": "Kalimantan Selatan",
+    "area": "Kalimantan Selatan",
+    "level": "province",
+    "focus": {
+      "product": "Mining and cement wear parts with hardfacing (bucket teeth and adapters, pins and bushings, liners, conveyor idler and pulley parts)",
+      "hs": [
+        "843149",
+        "843141",
+        "843139"
+      ],
+      "why": "Demand is large and close: BUMA's Adaro Tutupan contract (Tabalong) moves about 50.5 Mbcm of overburden and 9.3 Mt of coal a year to 2030; PAMA runs sites in Banjarbaru and Tanah Bumbu; Conch South Kalimantan Cement operates in Tabalong. RPIP Kalsel names 'Industri Logam' and mining-product processing as provincial priorities. Indonesia imported US$52M of buckets (843141) and US$212M of conveyor/handling parts (843139) in 2025. No local CNC wear-part maker was verified, so this is a capacity gap to fill.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Plantation and farm hand tools (dodos palm-harvesting chisels, parang, sabit) and forged blades",
+        "hs": [
+          "820190",
+          "820140"
+        ],
+        "why": "Hulu Sungai Selatan's RPIK 2019-2039 makes metal goods an 'industri unggulan', listing dodos, parang and sabit, smithing (pandai besi) and machining/turning services. Palm estates across Kalimantan are the buyers; CNC or laser blanking and controlled heat treatment would upgrade a forge-based trade. Imports of 820140/820190 are negligible (US$0.2M or less a year), so this means winning domestic demand, not replacing imports.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Cast-and-machined boat propellers and small farm-machinery parts (rice threshers, pumps)",
+        "hs": [
+          "848710",
+          "843390"
+        ],
+        "why": "The same HSS plan lists propeller casting, alsintan engineering (rice threshers, pumps) and machining services; a Tabalong sole proprietor holds a TKDN certificate (38%) for a petrol rice thresher. National propeller imports were US$27.7M in 2025.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Adaro Indonesia (Tutupan mine, Tabalong)",
+      "PT Bukit Makmur Mandiri Utama (BUMA), Adaro contract Apr 2026-Dec 2030",
+      "PT Pamapersada Nusantara (sites coded BBSO, Banjarbaru, and ARIA, Tanah Bumbu)",
+      "PT Conch South Kalimantan Cement (Haruai, Tabalong)",
+      "PT Darma Henwa (mining contractor; training partner of Poliban, 2026)"
+    ],
+    "local_inputs": [
+      "coal",
+      "rubber",
+      "palm oil",
+      "forest products",
+      "fish",
+      "livestock",
+      "light steel sections (PT Bintang Borneo Metalindo, Kab. Banjar; PT Kapuas Tata Steel, Banjarbaru)",
+      "cement (Tabalong)"
+    ],
+    "clusters": [
+      "Hulu Sungai Selatan metal-goods and smithing industry (sentra location not named in the RPIK)",
+      "Banjarbaru-Gambut light-steel and building-materials makers (Jl. A. Yani / Jurusan Pelaihari)"
+    ],
+    "official_designation": "RPIP Kalimantan Selatan 2018-2038 (Perda 19/2018), Pasal 7: industri unggulan = hulu agro, pengolahan karet, industri logam, pengolahan hasil tambang, hasil hutan, perikanan dan kelautan, ternak. RPIK Hulu Sungai Selatan 2019-2039 (Perda 10/2019) adds 'Industri Pengolahan Berbahan Logam' as a district priority, with targets of a metal-goods sentra by 2025-29, a cluster by 2030-34, and supplying Kalimantan-wide demand by 2035-39. Kemenperin KIID text not retrieved.",
+    "umk_2026": "UMP 2026 Rp3,725,000 (announced 24 Dec 2025, up about Rp228,000); Banjarmasin and Tabalong UMK not retrieved; 2026 sectoral minimums exist for mining, plantations, CPO industry and coal mining (Kotabaru), amounts not visible.",
+    "skills": "Politeknik Negeri Banjarmasin, Jurusan Teknik Mesin: D3 Teknik Mesin, D3 Teknik Alat Berat, D2 predictive maintenance of heavy equipment, D4 automotive (1,817 new students in 2026/27, all programmes). Politeknik Negeri Tanah Laut: D4 Teknologi Rekayasa Pemeliharaan Alat Berat.",
+    "confidence": "medium",
+    "sources": [
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://www.detik.com/kalimantan/bisnis/d-8276540/gubernur-kalsel-resmi-umumkan-ump-2026-naik-rp-228-ribu",
+      "https://wageindicator.org/work/minimum-wage/countries/indonesia/40435-south-kalimantan/",
+      "https://finance.detik.com/energi/d-8368404/buma-perpanjang-kontrak-dengan-adaro-garap-44-juta-ton-batu-bara",
+      "https://www.pamapersada.com/en/about-us",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=conch+south+kalimantan",
+      "https://peraturan.bpk.go.id/Details/126913/perda-prov-kalimantan-selatan-no-19-tahun-201",
+      "https://peraturan.bpk.go.id/Details/196728/perda-kab-hulu-sungai-selatan-no-10-tahun-201",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=perontok",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=bintang+borneo",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=kapuas+tata+steel",
+      "https://poliban.ac.id/",
+      "https://politala.ac.id/",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=843149",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848710",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M&cmdCode=843141,843139,820140,820190,841221,841290,8485,848590,730429,820719,732591,848710"
+    ]
+  },
+  {
+    "province": "Kalimantan Tengah",
+    "area": "Kalimantan Tengah",
+    "level": "province",
+    "focus": {
+      "product": "Palm-oil mill spare parts (screw-press worms and cages, digester arms, sprockets, conveyor flights), machined and hard-faced",
+      "hs": [
+        "847990",
+        "848390"
+      ],
+      "why": "Weakly evidenced: 2026 wage decrees set separate minimums for palm plantations in several Kalteng regencies, and a CPO port operates at Kumai (Kotawaringin Barat), which points to a large mill base; no local machine shop was verified. Earlier research found material and heat-treatment quality is the entry barrier for press worms. Indonesia imported US$258.8M of 847990 parts in 2025.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Mining wear parts and component rebuild for the Barito coal belt",
+        "hs": [
+          "843149"
+        ],
+        "why": "PAMA runs sites coded SMMS and TOPB in Barito Utara; United Tractors said dry weather in Central Kalimantan and RKAB quotas cut its 2026 coal output.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Pamapersada Nusantara (sites coded SMMS and TOPB, Barito Utara)",
+      "United Tractors coal operations in Central Kalimantan",
+      "Palm-oil mills (names not verified)"
+    ],
+    "local_inputs": [
+      "palm oil (CPO; port at Kumai, Kotawaringin Barat)",
+      "coal",
+      "quartz sand and bauxite (projects announced, Nov 2025)"
+    ],
+    "clusters": [
+      "Kumai CPO port area, Kotawaringin Barat"
+    ],
+    "official_designation": null,
+    "umk_2026": "UMP 2026 Rp3,686,138 (+6.12%); UMSP 2026 palm plantations Rp3,692,907 and mining Rp3,714,130; regency sector minimums also set in Kotawaringin Timur, Kotawaringin Barat, Barito Utara and Kapuas (amounts not visible).",
+    "skills": null,
+    "confidence": "low",
+    "sources": [
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://www.detik.com/kalimantan/bisnis/d-8275355/ump-dan-umsp-2026-kalteng-naik-pekerja-sawit-bakal-makin-sejahtera",
+      "https://wageindicator.org/work/minimum-wage/countries/indonesia/40450-central-kalimantan/",
+      "https://www.pamapersada.com/en/about-us",
+      "https://finance.detik.com/bursa-dan-valas/d-8675303/produksi-batu-bara-penjualan-alat-berat-untr-turun-terkendala-rkab",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=borneo+intech",
+      "https://www.detik.com/kalimantan/bisnis/d-8235283/bahlil-janji-bangun-proyek-pasir-kuarsa-dan-alumina-rp-618-t-di-kalteng",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=847990"
+    ]
+  },
+  {
+    "province": "Kalimantan Barat",
+    "area": "Kalimantan Barat",
+    "level": "province",
+    "focus": {
+      "product": "Alumina-refinery and smelter maintenance parts (slurry-pump wet-end parts, valve trims, wear liners, shafts and couplings)",
+      "hs": [
+        "841391",
+        "848190",
+        "847490"
+      ],
+      "why": "Mempawah is becoming a single large buyer: the SGAR refinery (about 1 Mt alumina a year from about 3.3 Mt bauxite) started in Sep 2024, and MIND ID began a Rp104.55T complex there in Feb 2026 (600,000 t/yr aluminium smelter plus a refinery phase the article calls 'SGAR Fase I', 1 Mt/yr; how this relates to the 2024 plant is unclear). ICA operates at Tayan. RPIP Kalbar makes bauxite processing a provincial priority (KI Ketapang). Kalbar has the lowest UMP in Kalimantan. No local supplier verified yet.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Palm-oil mill and crumb-rubber factory spare parts",
+        "hs": [
+          "847990",
+          "847790"
+        ],
+        "why": "RPIP Kalbar lists palm (KI Tayan) and rubber (KI Mandor) among its seven priority industries; 2026 sectoral minimums exist for palm plantations and the CPO industry in Ketapang, Bengkayang and Landak.",
+        "fit": "cnc"
+      },
+      {
+        "product": "CNC-routed wood components and furniture parts (laminate, finger-joint, moulding)",
+        "hs": [
+          "4409",
+          "4418",
+          "940360"
+        ],
+        "why": "RPIP Kalbar's wood-industry plan names wood-based components (wood working, laminate, finger joint), wood moulding and furniture for 2017-2037.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Borneo Alumina Indonesia (BAI), operator of the SGAR Mempawah (subsidiary of INALUM and ANTAM)",
+      "MIND ID integrated aluminium smelter project, Mempawah (600,000 t/yr)",
+      "PT Indonesia Chemical Alumina (Tayan)",
+      "Palm-oil mills and crumb-rubber factories (named in RPIP by industry, not by firm)"
+    ],
+    "local_inputs": [
+      "bauxite",
+      "alumina",
+      "palm oil",
+      "rubber",
+      "coconut",
+      "fish and seafood",
+      "wood",
+      "cassava and food crops"
+    ],
+    "clusters": [
+      "Mempawah alumina-aluminium complex",
+      "KI Ketapang (bauxite)",
+      "KI Tayan (palm oil)",
+      "KI Mandor (rubber)",
+      "KI Semparuk (coconut)"
+    ],
+    "official_designation": "RPIP Kalimantan Barat 2017-2037 (Perda 1/2017): seven industri unggulan = pengolahan karet, sawit, kelapa, bauksit, hasil laut dan perikanan, kayu, tanaman pangan; priority industrial estates KI Mandor (rubber), KI Tayan (palm), KI Semparuk (coconut), KI Ketapang (bauxite). Kemenperin KIID text not retrieved.",
+    "umk_2026": "UMP 2026 Rp3,054,552 (lowest of the five provinces); UMK Pontianak 2026 Rp3,205,220 (up Rp180,400 from Rp3,024,820).",
+    "skills": "Politeknik Negeri Pontianak (Jurusan Teknik Mesin); Politeknik Negeri Ketapang (Jurusan Teknik Mesin; Jurusan Teknik Sipil dan Pertambangan); provincial Unit Latihan Kerja Industri (named in Pergub Kalbar 5/2015).",
+    "confidence": "medium",
+    "sources": [
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://www.detik.com/kalimantan/bisnis/d-8275780/umk-pontianak-2026-naik-rp-180-ribu-dari-2025",
+      "https://wageindicator.org/work/minimum-wage/countries/indonesia/40419-west-kalimantan/",
+      "https://finance.detik.com/energi/d-7555273/resmikan-smelter-bauksit-rp-16-t-di-mempawah-jokowi-jejak-industrialisasi-ri",
+      "https://finance.detik.com/energi/d-8344597/smelter-rp-104-triliun-di-mempawah-mulai-dibangun",
+      "https://www.inalum.id/id/read/inalum-perkuat-penanganan-karhutla-di-mempawah-kalimantan-barat-60-relawan-grup-mind-id-diterjunkan-ke-sekitar-wilayah-operasional-bai",
+      "https://peraturan.bpk.go.id/Details/48634/perda-prov-kalimantan-barat-no-1-tahun-2017",
+      "https://peraturan.bpk.go.id/Download/50561/Perda%20Nomor%201%20Tahun%202017-LAMPIRAN.pdf",
+      "https://peraturan.bpk.go.id/Details/305046/pergub-prov-kalimantan-barat-no-5-tahun-2015",
+      "https://polnep.ac.id/",
+      "https://politap.ac.id/",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=841391",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848190",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=847490"
+    ]
+  },
+  {
+    "province": "Kalimantan Utara",
+    "area": "Kalimantan Utara",
+    "level": "province",
+    "focus": {
+      "product": "Maintenance spares for KIPI process plants and the Tarakan/Bunyu oil fields (pump and valve parts, shafts, couplings)",
+      "hs": [
+        "841391",
+        "848190",
+        "848390"
+      ],
+      "why": "Prospective only: KIPI at Mangkupadi covers about 15,000 ha with plans for about 30,000 ha, and Chinese investors were reported for petrochemicals and EV batteries (2023); Pertamina EP runs the Tarakan and Bunyu fields. No machining capacity was verified and Kaltara has the highest UMP in Kalimantan, so supply would start from Balikpapan.",
+      "fit": "cnc"
+    },
+    "also": [],
+    "anchor_buyers": [
+      "PT Kalimantan Industrial Park Indonesia (KIPI developer, Mangkupadi, Bulungan)",
+      "Pertamina EP Tarakan",
+      "Pertamina EP Bunyu"
+    ],
+    "local_inputs": [
+      "crude oil and gas (Tarakan, Bunyu)",
+      "coal",
+      "palm oil"
+    ],
+    "clusters": [
+      "Kalimantan Industrial Park Indonesia (Kawasan Industri Hijau), Tanah Kuning-Mangkupadi, Bulungan"
+    ],
+    "official_designation": "Kawasan Industri Hijau Kalimantan Utara (KIPI), described by the Investment Minister in Jul 2023; provincial RPIP and KIID not found.",
+    "umk_2026": "UMP 2026 Rp3,775,243 per the 7 Jan 2026 national list (Rp3,770,000 in a 25 Dec 2025 regional list); highest of the five provinces; 2026 sectoral minimums for oil and gas, coal and palm plantations (amounts not visible).",
+    "skills": null,
+    "confidence": "low",
+    "sources": [
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://www.detik.com/kalimantan/bisnis/d-8277103/daftar-ump-2026-di-kalimantan-kaltara-tertinggi",
+      "https://wageindicator.org/work/minimum-wage/countries/indonesia/40478-north-kalimantan/",
+      "https://finance.detik.com/foto-bisnis/d-6942962/melihat-proyek-pembangunan-kalimantan-industrial-park-indonesia",
+      "https://finance.detik.com/industri/d-6847262/4-perusahaan-raksasa-china-bakal-bangun-pabrik-di-kawasan-industri-kaltara",
+      "https://trakindo.co.id/trakindo-creates-reciprocating-caterpillar-engine-workshop"
+    ]
+  }
+]

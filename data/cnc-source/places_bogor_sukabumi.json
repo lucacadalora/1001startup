@@ -1,0 +1,183 @@
+[
+  {
+    "province": "Jawa Barat",
+    "area": "Bogor–Depok",
+    "level": "cluster",
+    "focus": {
+      "product": "Pump, valve and wellhead parts (impellers, casings, shafts, bearing housings, valve bodies and trims, wellhead spools, forged flanges) for oil and gas, water and fire protection",
+      "hs": [
+        "841391",
+        "848190"
+      ],
+      "why": "22 TKDN-certified pump, valve, wellhead, flange, fitting and meter makers sit in Cimanggis/Limo (Depok) and Citeureup-Gunung Putri-Cileungsi-Klapanunggal-Gunung Sindur, plus Bukaka; Duraquipt already certifies pump parts at 96.8-99.8% local content; SKK Migas is pushing local pumps (2026); Indonesia imported US$300.0M of pump parts (40% from China) and US$185.7M of valve parts in 2025; the province's own spatial plan lists machinery and fabricated metal for WP Bodebekpunjur.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Cement-plant wear and spare parts (crusher hammers and liners, mill and kiln parts, gears, conveyor parts) for Indocement Citeureup and SBI Narogong",
+        "hs": [
+          "847490",
+          "848340"
+        ],
+        "why": "Two large cement plants are in the unit (TKDN addresses); SBI's website carries SIG (Semen Indonesia Group) branding, and SIG's SME spare-parts programme already replaced 10 imported part types; Indonesia imported US$288.1M of 847490 parts in 2025, 49% from China.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Medical-device and pharma-production parts: device components, orthoses, prostheses and dental models (3D-printed) and tablet-press tooling and change parts (CNC)",
+        "hs": [
+          "9021",
+          "9018",
+          "820730"
+        ],
+        "why": "Depok's draft industry plan names medical, dental, orthopaedic and prosthetic devices (KBLI 32502) a leading product; Kab. Bogor's plan prioritises pharma and medical devices; TKDN shows 10+ device makers and 7+ pharma plants here; 9021 imports were US$71.9M in 2025.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Indocement Tunggal Prakarsa Tbk (Citeureup cement complex)",
+      "PT Solusi Bangun Indonesia Tbk (Narogong plant, Klapanunggal; SIG-branded)",
+      "Oil and gas contractors buying through SKK Migas (via Duraquipt, Valman, Benvors, Petro Synergy, OMS)",
+      "PT Bukaka Teknik Utama Tbk (Cileungsi)",
+      "PT Ebara Indonesia (Cimanggis, Depok)",
+      "PT Duraquipt Cemerlang (Limo, Depok)",
+      "PT Kaisar Motorindo Industri (three-wheelers, Citeureup)",
+      "PT Darya-Varia Laboratoria Tbk (Citeureup and Gunung Putri plants)",
+      "PT Eisai Indonesia (Citeureup)",
+      "PT Sarihusada Generasi Mahardhika (Citeureup)",
+      "PT Cisarua Mountain Dairy (Sentul)",
+      "PT Kalmed Manufaktur Indonesia (Klapanunggal)",
+      "PT Graha Teknomedika (Sawangan, Depok)",
+      "Kalbe/Forsta CT-scanner plant (Gunung Sindur)"
+    ],
+    "local_inputs": [
+      "limestone and clay for cement (Indocement quarry, Citeureup; SBI Narogong)",
+      "coffee and oil palm (Kab. Bogor plantation commodities)",
+      "fruit: avocado, starfruit, durian, guava, salak",
+      "beef cattle and layer eggs",
+      "tea (Gunung Mas and Cianten tea estates, Kab. Bogor)"
+    ],
+    "clusters": [
+      "Kawasan Industri Sentul / Sentul Industrial Estate (120 ha; Citeureup and Babakan Madang)",
+      "Cibinong Center Industrial Estate, CCIE (102 ha; Klapanunggal and Citeureup)",
+      "Jl. Raya Narogong corridor (Cileungsi-Klapanunggal), incl. Bukaka Industrial Estate and Kawasan Industri Korin",
+      "Kawasan Industri Menara Permai (Cileungsi)",
+      "Kawasan Industri Kembang Kuning (Klapanunggal)",
+      "Gunung Putri (Wanaherang, Cicadas, Bojong Nangka) industrial agglomeration",
+      "Pergudangan Sigma Kartika and Padurenan area (Gunung Sindur)",
+      "Kota Depok industrial allocation, 341 ha (Cimanggis, Tapos, Limo, Cilodong, Sawangan, Bojongsari, Sukmajaya)",
+      "Tenjo Industrial Park (Kab. Bogor)"
+    ],
+    "official_designation": "No KIID text retrieved. Kab. Bogor RPIK final report (Disperdagin 2022): food; pharma, cosmetics and medical devices; textiles, leather and footwear; transport equipment. Kota Depok draft RPIK 2026-2046: food, beverages, garments, other manufacturing incl. KBLI 32502 medical/dental/orthopaedic/prosthetic devices, chemicals, traditional medicine. RTRW Jabar 2022-2042: WP Bodebekpunjur subsectors include fabricated metal products and machinery. Kab. Bogor is a WPPI in RIPIN 2015-2035.",
+    "umk_2026": "Kab. Bogor Rp5,161,769; Kota Bogor Rp5,437,203; Kota Depok Rp5,522,662 per month (Kepgub Jabar 561.7/Kep.862-Kesra/2025, from 1 Jan 2026)",
+    "skills": "Depok: Universitas Indonesia (Mechanical and Metallurgical Engineering), Politeknik Negeri Jakarta (Jurusan Teknik Mesin buildings and workshop mapped on its Depok campus; website returned 403), Universitas Gunadarma (Teknik Mesin up to S2; campus of the programme not checked). Kab. Bogor: BRIN Cibinong offers paid CNC services; Universitas Pertahanan I-DEL engineering lab (Sentul). West Java SMK unemployment 10.64% (May 2026). SMK machining and BLK seats not verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Duraquipt+Cemerlang",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pompa",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=semen",
+      "https://www.bukaka.com/web/contact.html",
+      "https://finance.detik.com/energi/d-7674325/bumn-jasa-survei-genjot-tkdn-di-industri-migas-begini-caranya",
+      "https://industri.kontan.co.id/news/dukung-tkdn-skk-migas-dorong-penggunaan-pompa-industri-lokal-di-sektor-hulu",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848190&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9021&flowCode=M",
+      "https://binajurnal.bogorkab.go.id/index.php/bina/article/download/43/24",
+      "https://jdih.depok.go.id/Portal/downloadPeraturan/1821/20260622111510_NA_Raperda_Rencana_Pembangunan_Industri_Kota.pdf",
+      "https://www.detik.com/jabar/bisnis/d-8276785/daftar-lengkap-besaran-ump-umk-jabar-2026",
+      "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+      "https://farmalkes.kemkes.go.id/en/?p=183606",
+      "https://www.solusibangunindonesia.com/",
+      "https://www.openstreetmap.org/way/663488143",
+      "https://www.openstreetmap.org/way/166670004",
+      "https://www.openstreetmap.org/way/1456028355"
+    ]
+  },
+  {
+    "province": "Jawa Barat",
+    "area": "Sukabumi–Cianjur",
+    "level": "cluster",
+    "focus": {
+      "product": "Agro-food processing machines and their machined wear parts (rollers, shafts, cutters, screens, gears) for tea, coffee, cocoa/cashew, soy/tofu, rice and feed",
+      "hs": [
+        "843890",
+        "843390",
+        "843790",
+        "843699"
+      ],
+      "why": "Kemenperin counted 209 metal IKM in Kab. Sukabumi (2020), including farm machinery and appropriate-technology tools; TKDN shows Phonna Raya (66 KOHPAD machines, up to 78.8% local content), Karya Insan Gemilang (cocoa/cashew) and Azaki (tofu, LIK Cibatu); the units grow tea, coffee, rice and milk; these parts are imported mostly from China (843390: 88%).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Forged blades, agricultural hand tools and police/ceremonial hardware from the Cibatu (Cisaat) smithing centre, upgraded with laser blanking, CNC grinding and CNC-made forging dies",
+        "hs": [
+          "820140",
+          "820130",
+          "821192",
+          "9307"
+        ],
+        "why": "Cibatu is a long-standing metal-craft village with a small-industry estate (LIK); TKDN certifies Cibatu/Kebonpedes golok, knives, officer swords and handcuffs; Kemenperin counted forging/blacksmith IKM making farm and household tools (2020).",
+        "fit": "cnc"
+      },
+      {
+        "product": "Spare and wear parts for cement, geothermal and coal-power plants (Semen Jawa, Salak geothermal, PLTU Palabuhanratu)",
+        "hs": [
+          "847490",
+          "848340",
+          "841391"
+        ],
+        "why": "Named plants with recurring maintenance demand sit in the unit; 847490 imports were US$288.1M in 2025, 49% from China; no local machine shop serving them was verified, so this is a buyer-led opportunity.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Semen Jawa (cement plant, Sirnaresmi, Gunungguruh)",
+      "PT Yakult Indonesia Persada (Kawasan Industri Indolakto, Cicurug)",
+      "Star Energy Geothermal Salak (Gunung Salak; mapped inside Kab. Sukabumi)",
+      "PLTU Palabuhan Ratu (Indonesia Power)",
+      "PT Mersifarma Tirmaku Mercusana (pharma, Cikembar)",
+      "PTP Nusantara VIII Kebun Agrabinta (rubber estate, Cianjur)"
+    ],
+    "local_inputs": [
+      "tea (Cianjur smallholder tea 4,736 ha and 5,293 t in 2023; a tea factory mapped in Kab. Sukabumi)",
+      "paddy (Cianjur lowland rice 390,138 t in 2023)",
+      "coffee (Cianjur 1,412 t in 2023)",
+      "fresh milk (Cianjur about 47.27 million litres in 2023)",
+      "limestone for cement (Semen Jawa, Gunungguruh)",
+      "geothermal steam (Gunung Salak)",
+      "rubber (PTPN VIII Agrabinta, Cianjur)"
+    ],
+    "clusters": [
+      "Sentra IKM Logam Kabupaten Sukabumi (Perbup 26/2021), incl. LIK Cibatu, Kec. Cisaat",
+      "Kawasan Industri Indolakto (Pasawahan, Cicurug)",
+      "Cicurug industrial area (bottled-water and food plants)",
+      "Kota Sukabumi, Citamiang (electrical-component makers)"
+    ],
+    "official_designation": "Kemenperin named Sukabumi among nine priority metal centres (2019). Perbup Sukabumi 26/2021 (23 Mar 2021) set up a Sentra IKM Logam institution at regency and kecamatan level and plans a technical service unit (UPT). RTRW Jabar 2022-2042 has a 'WP Sukabumi dan sekitarnya' (its subsector list not retrieved); part of Cianjur falls in WP Bodebekpunjur. No KIID, Produk Unggulan Daerah or RPIK text retrieved for these regencies.",
+    "umk_2026": "Kab. Sukabumi Rp3,831,926 (Hukumonline citing Kepgub 561.7/Kep/862-Kesra/2025; detik lists the regent's recommendation Rp3,893,201); Kota Sukabumi Rp3,192,807; Kab. Cianjur Rp3,316,191 (detik: Rp3,338,359 recommendation)",
+    "skills": "Politeknik Sukabumi (Polikami): D3 Teknik Mesin with CAD/CAM, CNC, metrology and workshop labs. Universitas Nusa Putra (Sukabumi): Mechanical Engineering. Universitas Suryakancana (Cianjur): no mechanical programme seen. SMK machining and BLK seats not verified.",
+    "confidence": "low",
+    "sources": [
+      "https://www.industry.co.id/read/64085/penjualan-hingga-produksi-anjlok-sejumlah-ikm-hanya-bisa-pasrah",
+      "https://peraturan.bpk.go.id/Download/162051/PERBUP%20NO%2026%20THN%202021%20KELEMBAGAAN%20SENTRA%20INDUSTRI%20KECIL%20DAN%20MENENGAH%20LOGAM.pdf",
+      "https://www.industry.co.id/read/49656/ikm-siap-berkontribusi-dalam-rantai-pasok-industri-otomotif-nasional",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Phonna+Raya+Machinery",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=golok",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=semen",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=susu",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843390&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843890&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=M",
+      "https://id.wikipedia.org/wiki/Kabupaten_Cianjur",
+      "https://www.hukumonline.com/berita/a/ump-dan-umk-jabar-2026-lt695805af72d43",
+      "https://www.detik.com/jabar/bisnis/d-8274283/daftar-rekomendasi-umk-2026-di-jabar-kota-bekasi-tertinggi",
+      "https://polteksmi.ac.id/",
+      "https://nusaputra.ac.id/",
+      "https://www.openstreetmap.org/way/166624588",
+      "https://www.openstreetmap.org/way/560638469",
+      "https://ejournal.upi.edu/index.php/sosietas/article/download/1514/1040",
+      "https://id.wikipedia.org/wiki/Cicurug,_Sukabumi"
+    ]
+  }
+]

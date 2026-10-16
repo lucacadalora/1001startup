@@ -1,0 +1,1147 @@
+[
+ {
+  "product": "Medical, surgical, dental and veterinary instruments (HS 9018)",
+  "family": "health",
+  "hs": [
+   "9018"
+  ],
+  "imports_usd_m": {
+   "2023": 758.8,
+   "2024": 729.5,
+   "2025": 738.7
+  },
+  "exports_usd_m": {
+   "2023": 225.7,
+   "2024": 238.1,
+   "2025": 249.2
+  },
+  "top_origins_2025": [
+   "China 27%",
+   "USA 15%",
+   "Germany 11%",
+   "Japan 6%",
+   "Rep. of Korea 5%"
+  ],
+  "local_now": "No HS-9018-specific share. Kemenkes: domestic devices were 48% of device use in 2024 vs 12% in 2019 (Farmalkes, 4 Jul 2025); about 20% of ~56,000 registered devices are made locally (Bisnis, Jun 2025, snippet); 812 domestic device producers (Apr 2025). Locally certified surgical instrument sets score low TKDN (Karya Medis FIMED/HAGEN sets 24-27%, i.e. mostly imported instruments), while Marthys's CNC-made orthopaedic instrument sets score 80-86%.",
+  "local_makers": [
+   "PT Karya Medis Nusantara (Kota Tangerang)",
+   "PT ATMI Solo (Kota Surakarta)",
+   "PT Jayamas Medica Industri Tbk / OneMed (Krian, Sidoarjo)",
+   "PT Marthys Orthopaedic Indonesia (Prigen, Pasuruan) - orthopaedic instrument sets",
+   "PT Jenco Mulia Teknologi (Kota Depok) - surgical instrument sets 16-40%",
+   "PT Moftech Medical System (Jatinom, Klaten) - stainless surgical, dental and midwifery instrument sets 34-40%",
+   "PT Esa Behrindo Atmi Jaya (city not checked) - instrument set 40%",
+   "PT Asvia Laguna Medis (city not checked)"
+  ],
+  "fit": "both",
+  "cnc_3d_role": "CNC: reusable stainless and titanium hand instruments (forceps, retractors, bone and orthopaedic instruments, dental hand instruments) by 5-axis milling, sliding-head turning and wire EDM, then grinding and passivation; instrument trays. 3D: patient-specific surgical guides and anatomical models printed in resin or nylon, plus jigs and prototypes. Most 9018 value (electromedical equipment, syringes, needles, catheters) is not CNC work.",
+  "potential_share": "Judgement, 3-5 years: local makers could supply about 5-10% of HS 9018 import value, US$36.9-73.9M (= 5-10% x US$738.7M), mostly reusable instrument sets and dental hand instruments sold through the TKDN-weighted e-catalogue. Reasoning: domestic devices already reached 48% of use in 2024, but local instrument sets are still largely imported (24-27% TKDN), so CNC instrument making is the open gap; Marthys shows CNC instrument sets can reach 80-86% TKDN. Limits: electromedical and disposable items dominate 9018 value and are not CNC work; the US deal (signed Feb 2026, not in force) would exempt US-origin devices (15% of 2025 imports) from TKDN preference.",
+  "buyers": [
+   "Kemenkes and public hospitals via the sectoral e-catalogue (TKDN counted; imports were frozen in 2022)",
+   "Regional (RSUD) and private hospitals paid through BPJS/JKN (payment rules not sourced)",
+   "Export: Singapore 24%, USA 23%, Malaysia 11% of 2025 HS 9018 exports (Comtrade, via earlier notes)"
+  ],
+  "best_places": [
+   "Kabupaten Sidoarjo, Jawa Timur",
+   "Kota Surabaya, Jawa Timur",
+   "Kota Tangerang, Banten",
+   "Kota Surakarta, Jawa Tengah"
+  ],
+  "certs_needed": [
+   "Kemenkes marketing authorisation (izin edar, AKD)",
+   "CPAKB (device good manufacturing practice)",
+   "ISO 13485",
+   "TKDN certificate for e-catalogue sales",
+   "Instrument-grade stainless steel per ISO 7153-1 (industry norm, not sourced here)"
+  ],
+  "jobs_note": "Adds skilled jobs: CNC machinists, grinders and polishers, cleaning and passivation, QA and regulatory staff. Instrument finishing stays labour-intensive even with CNC. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9018&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9018&flowCode=X",
+   "https://farmalkes.kemkes.go.id/?p=183595",
+   "https://ekonomi.bisnis.com/read/20250619/257/1886436/80-alat-kesehatan-indonesia-produk-impor",
+   "https://farmalkes.kemkes.go.id/2024/06/kemenkes-lakukan-peningkatan-adopsi-teknologi-baru-dan-kapasitas-produksi-alkes-lokal-guna-mengurangi-dominasi-produk-impor/",
+   "https://farmalkes.kemkes.go.id/en/?p=16515",
+   "https://www.kemkes.go.id/id/transformasi-berhasil-turunkan-transaksi-alat-kesehatan-impor",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=FqizvoARLR74dTuzsJkb1gkFqsTZmu4hjUnL003skBk,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=TD0-6DjhrrPpmPfx_gGPuJ5XKuofdJu6NARuTr6XKik,",
+   "https://www.onemed.co.id/",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=EpRVwBhWrwzj56TcMU0J5niac5kjkfZwlo9O1H2ih5M,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=dental",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=DRLv9Vqmc0z2Dk20GKfSAdidSFyCkHda9wjFb5peK-E,&id_siinas=DRLv9Vqmc0z2Dk20GKfSAdidSFyCkHda9wjFb5peK-E,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=forceps",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Moftech+Medical"
+  ]
+ },
+ {
+  "product": "Orthopaedic and fracture devices and artificial joints (HS 902110, 902131)",
+  "family": "health",
+  "hs": [
+   "902110",
+   "902131"
+  ],
+  "imports_usd_m": {
+   "2023": 34.6,
+   "2024": 39.2,
+   "2025": 50.9
+  },
+  "exports_usd_m": {
+   "2023": 0.1,
+   "2024": 0.4,
+   "2025": 0.4
+  },
+  "top_origins_2025": [
+   "China 35%",
+   "USA 25%",
+   "Rep. of Korea 12%",
+   "Germany 7%",
+   "Switzerland 5%"
+  ],
+  "local_now": "No measured market share. Marthys (Dec 2022, older than 2023) targeted ~15% share with one machine and said more machines could take it above 50%. As of Oct 2026 four makers hold TKDN certificates covering plates, screws, nails, spinal systems, external fixators and hemi-hip prostheses. Marthys alone lists about 140 product lines at 35.6-98.3% (sibling notes' registry count).",
+  "local_makers": [
+   "PT Marthys Orthopaedic Indonesia (Prigen, Pasuruan)",
+   "PT Risa Implantama (Surabaya)",
+   "PT Eka Ormed Indonesia (Gedangan, Sidoarjo)",
+   "PT Indonesia Teknologi Rotnhkard (Genuk, Semarang)"
+  ],
+  "fit": "both",
+  "cnc_3d_role": "CNC is the core process: sliding-head (Swiss-type) lathes for cortical, locking, cannulated and pedicle screws; 5-axis milling for locking and CMF plates; wire EDM. Risa lists CNC milling, CNC lathes, wire EDM and multi-axis machining of Ti-6Al-4V. 3D: metal powder-bed printing for patient-specific or porous implants (no local maker found) and resin or nylon printing of anatomical models and cutting guides for surgical planning.",
+  "potential_share": "Judgement, 3-5 years: 30-50% of trauma devices (902110), US$10.2-17.0M (= 30-50% x US$34.0M) of 2025 import value displaced, and 5-15% of artificial joints (902131), US$0.8-2.5M (= 5-15% x US$16.9M). Reasoning: four TKDN-certified makers already cover the full trauma range (plates, screws, nails, ex-fix) at 38-98% TKDN, and the e-catalogue favours them; combined imports grew from US$34.6M (2023) to US$50.9M (2025), so demand is rising. Joints are harder: only hemi-hip/bipolar prostheses are certified locally, and surgeons prefer established brands. Limits: titanium bar is imported (Marthys, 2022); the US deal would exempt US-origin implants (25% of 2025 imports) from TKDN preference if ratified.",
+  "buyers": [
+   "Public hospitals via the Kemenkes sectoral e-catalogue (TKDN counted; imported listings can be frozen)",
+   "Hospitals doing JKN-funded trauma and spine surgery (payment rules not sourced)",
+   "Orthopaedic surgeons nationwide (Risa's stated customers)"
+  ],
+  "best_places": [
+   "Kabupaten Pasuruan, Jawa Timur",
+   "Kabupaten Sidoarjo, Jawa Timur",
+   "Kota Surabaya, Jawa Timur",
+   "Kota Semarang, Jawa Tengah"
+  ],
+  "certs_needed": [
+   "ISO 13485",
+   "CPAKB",
+   "Kemenkes marketing authorisation (izin edar, AKD)",
+   "TKDN certificate",
+   "Implant-grade material certificates, e.g. ASTM F136 Ti-6Al-4V ELI and ASTM F138 316LVM (industry norm, not sourced here)",
+   "ISO 10993 biocompatibility (industry norm, not sourced here)"
+  ],
+  "jobs_note": "Adds high-skill jobs: CNC programmers and operators, metrology, cleaning and passivation, sterile packing, regulatory staff. Marthys tied market share to machine count (one machine, ~15% target, Dec 2022), so jobs scale with machines added. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902110,902121,902129,902131",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902110&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902131&flowCode=M",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=EpRVwBhWrwzj56TcMU0J5niac5kjkfZwlo9O1H2ih5M,",
+   "https://wartaekonomi.co.id/read465570/pabrik-baru-pt-marthys-orthopedic-indonesia-diharapkan-mampu-tekan-serbuan-produk-impor",
+   "https://www.risaimplantama.com/",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=bone+plate",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=PugHsrVIhIl383YRgR_ihPdd-W2lma4vB8NUAYWGB5s,&id_siinas=PugHsrVIhIl383YRgR_ihPdd-W2lma4vB8NUAYWGB5s,",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=eka+ormed",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=WuFYALGmI5RWBjUApdt036QPMqAUG2B1200D4jrQE3U,&id_siinas=WuFYALGmI5RWBjUApdt036QPMqAUG2B1200D4jrQE3U,",
+   "https://farmalkes.kemkes.go.id/en/?p=183606",
+   "https://bernama.com/en/news.php?id=2525712",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Marthys",
+   "https://www.its.ac.id/news/wp-json/wp/v2/posts/71071"
+  ]
+ },
+ {
+  "product": "Other prostheses and orthoses (HS 902139, other artificial body parts; orthopaedic braces fall partly in 902110)",
+  "family": "health",
+  "hs": [
+   "902139"
+  ],
+  "imports_usd_m": {
+   "2023": 0.1,
+   "2024": 0.7,
+   "2025": 1.8
+  },
+  "exports_usd_m": {
+   "2023": 3.7,
+   "2024": 10.8,
+   "2025": 11.0
+  },
+  "top_origins_2025": [
+   "Costa Rica 27%",
+   "USA 24%",
+   "Singapore 13%",
+   "Germany 11%",
+   "India 7%"
+  ],
+  "local_now": "Trade data barely captures this line (2025 imports small), because limb prostheses and orthoses are mostly fitted by local workshops as a service. TKDN-certified makers found: CV Isipa (Kota Jambi) for prosthetic legs (36%) and hands (38%); PT Pratama Sentra Rehabilitasi (Tangerang Selatan) for spinal orthoses and collars (40%); and OneMed for a truncal orthosis and cervical collar (45.05%). Searches for 'prostesis' found nothing. Indonesia also exported US$10-11M a year under 902139 in 2024-2025; the products and the exporter were not identified. The 2025 exports went to USA 39%, Singapore 20%, Germany 20%, Belgium 11%; the exporter was not identified.",
+  "local_makers": [
+   "CV Isipa (Kota Jambi) - prosthetic legs and hands",
+   "PT Pratama Sentra Rehabilitasi (Kota Tangerang Selatan) - lumbar corsets, TLSO, neck collars",
+   "PT Jayamas Medica Industri Tbk / OneMed (Krian, Sidoarjo) - truncal orthosis and cervical collar",
+   "PT Ibrahim Rehabilitasi Servis (Tuban) - prosthetic hands 38%"
+  ],
+  "fit": "3d",
+  "cnc_3d_role": "3D: scan-to-print prosthetic sockets, orthotic insoles, ankle-foot orthoses, scoliosis braces and cranial helmets; patient-specific cranial plates in PEEK or titanium (hospital-led). CNC: knee and ankle joints, pylons and adapters in aluminium or titanium; CNC carving of foam positive moulds.",
+  "potential_share": "Judgement, 3-5 years: 3D-printed sockets, insoles and orthoses could reach 20-40% of new fittings in hospital orthotic-prosthetic units, but the value cannot be sized, because fittings are a service not seen in trade data (2025 imports were only US$1.8M). Reasoning: printing needs only a scanner, CAD and a printer per clinic, and the trade-visible import base is tiny, so this is a service-and-jobs opportunity rather than import substitution. No source gives the number of fittings per year.",
+  "buyers": [
+   "Hospital orthotic-prosthetic units and workshops (not sourced)",
+   "BPJS/JKN prosthesis benefit (not sourced)",
+   "Social and disability programmes (not sourced)"
+  ],
+  "best_places": [
+   "Kota Tangerang Selatan, Banten",
+   "Kabupaten Sidoarjo, Jawa Timur",
+   "Kota Surakarta, Jawa Tengah",
+   "DKI Jakarta"
+  ],
+  "certs_needed": [
+   "Kemenkes marketing authorisation (izin edar, AKD) for prosthetic components",
+   "CPAKB",
+   "ISO 13485",
+   "ISO 10328 structural testing of lower-limb prostheses (industry norm, not sourced here)"
+  ],
+  "jobs_note": "Adds jobs: orthotist-prosthetist technicians, 3D scanning and CAD staff, print-finishing technicians. Printing shortens fitting time, but each fitting still needs a clinician. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902139,902140,902190,902300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=X&cmdCode=902139,8806",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902139&flowCode=M",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=fbAtLrM5jqYOsmfOiuw_bWPjZHCBaKv1HGb91-AYqEg,&id_siinas=fbAtLrM5jqYOsmfOiuw_bWPjZHCBaKv1HGb91-AYqEg,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=prostesis",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=S7ZTQdBGeQw8A7GEVKFrLXUyRc69JNJveuiLmUwrQy0,&id_siinas=S7ZTQdBGeQw8A7GEVKFrLXUyRc69JNJveuiLmUwrQy0,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=orthosis",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=3J-wi2TF0EBaxo2QPscuLaVhUulGGTn6t0o_ED0aUoI,&id_siinas=3J-wi2TF0EBaxo2QPscuLaVhUulGGTn6t0o_ED0aUoI,"
+  ]
+ },
+ {
+  "product": "Hearing aids (HS 902140)",
+  "family": "health",
+  "hs": [
+   "902140"
+  ],
+  "imports_usd_m": {
+   "2023": 2.7,
+   "2024": 3.0,
+   "2025": 2.8
+  },
+  "exports_usd_m": {
+   "2023": 0.2,
+   "2024": 0.1,
+   "2025": 0.0
+  },
+  "top_origins_2025": [
+   "Denmark 57%",
+   "Singapore 18%",
+   "Malaysia 9%",
+   "Mexico 6%",
+   "China 5%"
+  ],
+  "local_now": "About 0%: Kemenperin's TKDN registry has no certified hearing aid (searches 'alat bantu dengar' and 'hearing aid', 16 Oct 2026). 2025 imports were about 20,566 units at roughly US$138 each CIF (estimate: Comtrade quantity field read as units; 2.83M / 20,566).",
+  "local_makers": [],
+  "fit": "3d",
+  "cnc_3d_role": "3D: custom in-the-ear shells and earmolds printed in biocompatible resin from ear scans (the standard global method; no Indonesian lab was found). Electronics (sound processor, receiver, battery) stay imported. CNC role is minor (moulds for behind-the-ear housings).",
+  "potential_share": "Judgement, 3-5 years: 5-15% of units (about 1,000-3,100 of ~20,600 units a year, estimate) could be locally finished, with custom shells or earmolds printed in Indonesian clinics; the local value share would be lower because the electronics stay imported. Reasoning: at ~US$2.8M of imports a year the market is too small for a factory, but a shell and earmold print service needs little capital. No local maker exists today.",
+  "buyers": [
+   "Audiology clinics and hearing-aid retailers (not sourced)",
+   "Hospital ENT departments",
+   "BPJS/JKN hearing-aid benefit (not sourced)"
+  ],
+  "best_places": [
+   "DKI Jakarta",
+   "Kota Bandung, Jawa Barat",
+   "Kota Surabaya, Jawa Timur"
+  ],
+  "certs_needed": [
+   "Kemenkes marketing authorisation (izin edar, AKD)",
+   "CPAKB",
+   "ISO 13485",
+   "IEC 60118 hearing-aid performance (industry norm, not sourced here)"
+  ],
+  "jobs_note": "Small: shell-printing and fitting jobs inside clinics. No factory-scale jobs at ~20,000 units a year.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902139,902140,902190,902300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902140&flowCode=M",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=alat+bantu+dengar",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=hearing+aid"
+  ]
+ },
+ {
+  "product": "Dental devices and lab work: artificial teeth and dental fittings (HS 902121, 902129), plus clear aligners and crowns (not separately visible in trade data)",
+  "family": "health",
+  "hs": [
+   "902121",
+   "902129"
+  ],
+  "imports_usd_m": {
+   "2023": 0.6,
+   "2024": 1.6,
+   "2025": 1.5
+  },
+  "exports_usd_m": {
+   "2023": 0.6,
+   "2024": 0.3,
+   "2025": 0.1
+  },
+  "top_origins_2025": [
+   "Rep. of Korea 62%",
+   "USA 23%",
+   "Spain 6%",
+   "India 4%",
+   "China 1%"
+  ],
+  "local_now": "No share figure. The trade-visible base is tiny (dental fittings; 902129 is mostly dental implants from Korea). No TKDN-certified dental implant, denture or aligner exists (registry, Oct 2026). Locally certified: dental chairs and units (Andini Sarana 44-50%, ATMI Solo 43-44%, Karya Medis 40-41%) and hand instruments (OneMed 54.2%). Clear aligners: Rata (Jakarta) claims 70,000+ patients and 100+ clinics in 50+ cities, but does not say where aligners are made. Crowns and dentures come from dental labs; no data was found.",
+  "local_makers": [
+   "Rata (Kebayoran Baru, Jakarta Selatan) - clear aligners",
+   "PT Andini Sarana (Jakarta Timur) - dental units",
+   "PT ATMI Solo (Kota Surakarta) - dental chairs",
+   "PT Karya Medis Nusantara (Kota Tangerang) - dental units",
+   "PT Jayamas Medica Industri Tbk / OneMed (Krian, Sidoarjo) - dental hand instruments",
+   "UGM engineering and dentistry faculties (Sleman) - dental phantoms and dental 3D printing (R&D)"
+  ],
+  "fit": "both",
+  "cnc_3d_role": "Both. CNC: 5-axis dental mills cut zirconia, PMMA and titanium crowns, bridges and implant abutments (CAD/CAM); sliding-head lathes machine titanium implant fixtures. 3D: resin printers make aligner models (each aligner is thermoformed over a printed model), surgical guides, dentures and temporary crowns. Dental instruments (HS 901849) are counted in the 9018 line.",
+  "potential_share": "Judgement, 3-5 years, by segment: (a) clear aligners: 50-80% of Indonesian cases could be produced in-country (printed models plus thermoforming), because providers like Rata already run local clinics and scans; (b) crowns: CAD/CAM milling and printing could reach 30-50% of crowns made by Indonesian labs (current share unknown); (c) dental implants (902129, 2025 imports US$1.4M, Korea-led): from 0% to 5-10% only if a local maker registers an implant. The import base is too small to matter; the opportunity is lab services and jobs, not import substitution.",
+  "buyers": [
+   "Private dental clinics and chains (e.g. Rata's 100+ clinics and partners)",
+   "Patients paying out of pocket (Rata aligners from Rp5.9 million vs Rp20 million for braces)",
+   "Hospital dental units; public purchases of chairs and instruments via the e-catalogue"
+  ],
+  "best_places": [
+   "Kota Jakarta Selatan, DKI Jakarta",
+   "Kota Tangerang, Banten",
+   "Kota Surakarta, Jawa Tengah",
+   "Kabupaten Sidoarjo, Jawa Timur"
+  ],
+  "certs_needed": [
+   "Kemenkes marketing authorisation (izin edar, AKD)",
+   "CPAKB",
+   "ISO 13485",
+   "ISO 6872 dental ceramics and ISO 22674 dental alloys (industry norm, not sourced here)",
+   "Dental-lab and practitioner licensing (not sourced)"
+  ],
+  "jobs_note": "Adds jobs: CAD designers, dental technicians, mill and printer operators. Aligner and crown work is local by nature because it is patient-specific. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902110,902121,902129,902131",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=902129&flowCode=M",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=dental",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=0xmF2x2wRGiYzJvwPrhR31KeBiF_xwoXgaLLkIc5vnE,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=TD0-6DjhrrPpmPfx_gGPuJ5XKuofdJu6NARuTr6XKik,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=FqizvoARLR74dTuzsJkb1gkFqsTZmu4hjUnL003skBk,",
+   "https://www.onemed.co.id/",
+   "https://rata.id/",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=implan+gigi",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=gigi+tiruan",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=aligner",
+   "https://ugm.ac.id/id/berita/herianto-dikukuhkan-jadi-guru-besar-ugm-bidang-sistem-manufaktur-aditif/"
+  ]
+ },
+ {
+  "product": "Precious-metal jewellery (HS 7113), made with 3D-printed wax or resin patterns",
+  "family": "craft",
+  "hs": [
+   "7113"
+  ],
+  "imports_usd_m": {
+   "2023": 39.7,
+   "2024": 45.7,
+   "2025": 54.4
+  },
+  "exports_usd_m": {
+   "2023": 5528.9,
+   "2024": 5294.2,
+   "2025": 7839.8
+  },
+  "top_origins_2025": [
+   "Italy 30%",
+   "Thailand 18%",
+   "USA 13%",
+   "Switzerland 10%",
+   "France 9%"
+  ],
+  "local_now": "Domestic supply dominates: 2025 imports were US$54.4M against exports of US$7,839.8M, so imports equal 0.7% of exports; no measured domestic market share. Exports rose 42% from 2023 to 2025 (gold-type 711319 US$7,647.4M; silver 711311 US$192.1M, up from US$104.6M). The 2025 export unit value of 711319 was about US$93,249 per kg (estimate: US$7,647.4M / 82,010 kg reported), consistent with high-carat gold pieces. Gold-type exports (711319) went to Switzerland 51%, Singapore 15%, United Arab Emirates 13%, China, Hong Kong SAR 8%; silver (711311) to Japan 47%, Thailand 22%, USA 15%, Germany 4% (2025).",
+  "local_makers": [
+   "Sentra IKM Kerajinan Perak Celuk (Celuk, Gianyar) - Kemenperin/Pemkab centre with CNC engraving and milling, 3D printing and laser machines; 152 IKM units, 2,364 workers",
+   "Flow Jewelry Studio / PT DMD Asia (Denpasar) - CAD and 3D-printed wax, lost-wax casting, private label",
+   "SUNSRI House of Jewelry (Celuk, Gianyar) - 3D design and printing, lost-wax casting",
+   "BBKB Yogyakarta, Kemenperin (Kota Yogyakarta) - public 3D-printed resin masters and silver casting service",
+   "Kotagede silversmith workshops (Kota Yogyakarta)",
+   "PT Untung Bersama Sejahtera / UBS (city not stated on its site)"
+  ],
+  "fit": "3d",
+  "cnc_3d_role": "3D: CAD-designed pieces printed as castable resin or wax patterns, then lost-wax cast. This cuts model-making time and allows short runs, personalisation and fast design cycles (UBS releases new designs every two weeks). CNC: diamond-cut faceting, engraving, ring and bangle turning; laser welding and marking. Machine-made chain and high-carat commodity pieces, likely much of the export value, use chain machines and casting rather than 3D (inference).",
+  "potential_share": "Judgement, 3-5 years: the import share is already tiny, so the target is process share. About 25-50% of design-led cast pieces from Java and Bali workshops could move to CAD plus 3D-printed resin or wax patterns. Replacing 5-15% of branded 711319 imports (US$39.4M, mostly Italy, USA, Switzerland, France) would add only US$2.0-5.9M (= 5-15% x US$39.4M). Reasoning: castable-resin printing needs little capital and fits fast design cycles (UBS launches designs every two weeks). Public capacity already exists: Celuk's Kemenperin/Gianyar centre has CNC, 3D-printing and laser machines (2025), and BBKB Yogyakarta prints resin masters and casts silver as a service (2026). Kotagede needs ways to attract young artisans. High-carat commodity and machine-chain exports, likely most of the US$7.6bn, gain less from 3D. The export mix (half to Switzerland, a refining and trading hub, plus Singapore, the UAE and Hong Kong) suggests much of the gold value is high-carat, commodity-like jewellery (inference).",
+  "buyers": [
+   "Export destinations 2025 (Comtrade): Switzerland 50%, Singapore 14%, United Arab Emirates 13%, China, Hong Kong SAR 8%, Jordan 5%",
+   "Domestic gold-jewellery retail and e-commerce (UBS sells via its own site, Tokopedia and Shopee)",
+   "Tourist and gallery retail in Kotagede (Yogyakarta) and Celuk (Bali)"
+  ],
+  "best_places": [
+   "Kota Yogyakarta (Kotagede), DI Yogyakarta",
+   "Kabupaten Gianyar (Celuk), Bali",
+   "Kota Surabaya, Jawa Timur",
+   "DKI Jakarta"
+  ],
+  "certs_needed": [
+   "Gold fineness and assay marking for buyers (no Indonesian SNI checked)",
+   "Responsible-gold due diligence such as OECD guidance or RJC certification (industry norm, not sourced here)",
+   "Destination hallmarking rules (industry norm)"
+  ],
+  "jobs_note": "Adds design jobs (CAD jewellery designers, printer operators) and keeps casting and finishing jobs; it may replace some hand wax carving. Kotagede struggles to attract young artisans (snippet), so CAD and 3D may make the trade more attractive. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=711311,711319,711790,848030",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=X&cmdCode=711311,711319,711790,711719",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=7113&flowCode=X",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=711319&flowCode=X",
+   "https://wartaekonomi.co.id/read564599/kembangkan-sentra-ikm-kemenperin-pemda-gianyar-dorong-penguatan-ekosistem-kerajinan-perak?page=all",
+   "https://www.flowjewelrystudio.com/",
+   "https://sunsrijewelry.com/?p=51077",
+   "https://bbkb.kemenperin.go.id/post/read/layanan_optimalisasi_teknologi_industri_0",
+   "https://peraturan.bpk.go.id/Details/121544/perda-no-7-tahun-2019",
+   "https://peraturan.bpk.go.id/Details/248075/perda-kota-yogyakarta-no-1-tahun-2023",
+   "https://peraturan.bpk.go.id/Details/344560/perda-prov-bali-no-3-tahun-2025",
+   "https://www.ubslifestyle.com/profile/",
+   "https://en.wikipedia.org/wiki/Kotagede",
+   "https://ojs.isbi.ac.id/index.php/prosidingpasca/article/view/1358/904",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=perhiasan"
+  ]
+ },
+ {
+  "product": "Imitation jewellery (HS 7117)",
+  "family": "craft",
+  "hs": [
+   "7117"
+  ],
+  "imports_usd_m": {
+   "2023": 22.0,
+   "2024": 26.7,
+   "2025": 30.4
+  },
+  "exports_usd_m": {
+   "2023": 21.6,
+   "2024": 20.1,
+   "2025": 17.1
+  },
+  "top_origins_2025": [
+   "China 79%",
+   "China, Hong Kong SAR 3%",
+   "Italy 3%",
+   "Singapore 3%",
+   "Rep. of Korea 2%"
+  ],
+  "local_now": "Unknown. 2025 imports of US$30.4M exceed exports of US$17.1M, and imports grew 38% from 2023; 'other' imitation jewellery (711790) comes 81% from China. No maker is named (TKDN registry hits are sole proprietors).",
+  "local_makers": [],
+  "fit": "both",
+  "cnc_3d_role": "3D-printed masters for brass, zamak or pewter casting; fibre-laser cutting and CNC engraving of stainless and brass sheet pieces; small-batch fashion lines and personalised pieces.",
+  "potential_share": "Judgement, 3-5 years: 15-30% of imports, US$4.6-9.1M (= 15-30% x US$30.4M), could be replaced by locally designed cast or laser-cut fashion jewellery. Reasoning: low entry barriers (desktop resin printers, small fibre lasers) and local fashion and souvenir demand. Limit: Chinese price competition on basic pieces.",
+  "buyers": [
+   "Export destinations 2025 (Comtrade): Philippines 20%, France 12%, USA 9%, Spain 8%, Singapore 7%",
+   "Domestic fashion and souvenir retail and e-commerce (not sourced)"
+  ],
+  "best_places": [
+   "Kabupaten Gianyar, Bali",
+   "Kota Yogyakarta, DI Yogyakarta",
+   "Kota Bandung, Jawa Barat"
+  ],
+  "certs_needed": [
+   "EU REACH limits on nickel, lead and cadmium (industry norm, not sourced here)",
+   "US CPSIA for children's jewellery (industry norm, not sourced here)"
+  ],
+  "jobs_note": "Adds design and finishing jobs; laser cutting replaces some hand sawing and filing. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=711311,711319,711790,848030",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=711719,711320",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=X&cmdCode=711311,711319,711790,711719",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=7117&flowCode=M",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=perhiasan"
+  ]
+ },
+ {
+  "product": "Furniture (HS 9403), CNC-routed",
+  "family": "craft",
+  "hs": [
+   "9403"
+  ],
+  "imports_usd_m": {
+   "2023": 384.2,
+   "2024": 475.9,
+   "2025": 532.4
+  },
+  "exports_usd_m": {
+   "2023": 1160.1,
+   "2024": 1160.5,
+   "2025": 1119.8
+  },
+  "top_origins_2025": [
+   "China 92%",
+   "Malaysia 2%",
+   "Italy 1%",
+   "Viet Nam 1%",
+   "USA 1%"
+  ],
+  "local_now": "Net exporter: 2025 exports US$1,119.8M against imports of US$532.4M. Imports rose 39% from 2023 (US$384.2M), led by 'other metal furniture' (940320, US$145.3M to US$277.2M); wooden-furniture imports stayed small. Exports slipped from US$1,160.1M (2023). No measured domestic market share. Import origins 2025: China 92%, Malaysia 2%, Italy 1%, Viet Nam 1%.",
+  "local_makers": [
+   "Jepara carving and furniture firms (Jepara): 387 large and 3,438 small/medium carving businesses (2020)",
+   "CV Solobeat Internasional (Depok, Sleman) - school and office furniture with TKDN",
+   "PT ATMI Solo (Kota Surakarta) - metal workshop furniture with TKDN",
+   "Kab. Cirebon rattan and wood furniture firms (Cirebon): 1,520 rattan and 1,441 wood-furniture firms, 65,696 rattan workers (2023)",
+   "PT Woodpark Mebel Perkasa (KEK Industropolis Batang) - Rp225 bn plant due Apr 2027; clients B&B Italia, Arhaus, RH",
+   "PT Panca Karya Unggul Abadi and two related firms (Cileungsi, Bogor) - TKDN items for CNC-cut HPL backdrops"
+  ],
+  "fit": "cnc",
+  "cnc_3d_role": "CNC routers and nesting lines cut MDF and plywood panels for flat-pack, office, school and hotel furniture; 5-axis routers shape chair parts and carved panels; CNC tenoners and boring lines do joinery. Mostly labour-saving per unit: in one Jepara trial a 5 m carved wall took 3 months by hand and 8-9 days by CNC (2020 snippet).",
+  "potential_share": "Judgement, 3-5 years: 15-30% of furniture imports, US$79.9-159.7M (= 15-30% x US$532.4M), could be replaced by local CNC panel and metal-furniture makers. Reasoning: the import surge is mostly metal furniture, which is laser-, tube- and press-brake work that Java metal shops can do; government and school furniture is bought by TKDN (e.g. Solobeat 43-64%). On exports, CNC mainly defends share: exports were flat to down 2023-2025, the US (57% of 2025 exports) has charged 19% on Indonesian goods since the July 2025 framework, furniture is not on the 0% list of the Feb 2026 deal, and IEU-CEPA is not yet in force.",
+  "buyers": [
+   "Export markets 2025: USA 57%, Japan 9%, Netherlands 4%, Belgium 3% (Comtrade, via earlier notes)",
+   "Government, school and office buyers via the e-catalogue (TKDN)",
+   "Hotel, office and residential fit-out contractors (import substitution; not sourced)"
+  ],
+  "best_places": [
+   "Kabupaten Jepara, Jawa Tengah",
+   "Kabupaten Cirebon, Jawa Barat",
+   "Kabupaten Batang, Jawa Tengah",
+   "Kabupaten Sleman, DI Yogyakarta",
+   "Kabupaten Bogor (Cileungsi), Jawa Barat"
+  ],
+  "certs_needed": [
+   "SVLK timber-legality (V-Legal) documents for exports",
+   "EU deforestation regulation (EUDR) due diligence for the EU",
+   "TKDN certificate for government purchases",
+   "Buyer product-safety and finish standards (not sourced)"
+  ],
+  "jobs_note": "Labour-saving per unit. Only 8 of 390 medium Jepara firms used CNC in 2020, and a 2026 industry speaker expected the machine share to rise from ~50% toward ~80% (snippets). Carvers are ageing and few young people train, so CNC partly fills a labour gap. Jobs are kept only if volume grows, e.g. through import substitution or the EU deal.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=9403,4418,4420",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9403&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9403&flowCode=X",
+   "https://jatengprov.go.id/?p=110285",
+   "https://www.kompas.id/baca/english/2020/01/08/conserving-heritage-of-creativity-in-carving-land",
+   "https://jogja.viva.co.id/warta/10884-tukang-mebel-makin-sulit-dicari-jepara-mulai-moving-to-cnc-technology",
+   "https://www.industry.co.id/read/140097/gelar-rakernas-himki-bidik-target-eskpor-capai-usd-6-miliar-di-2030",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=tarMu00S9034HwF3MKbEQedx4wqR3lFlyZvUjZixEYA,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=TD0-6DjhrrPpmPfx_gGPuJ5XKuofdJu6NARuTr6XKik,",
+   "https://peraturan.bpk.go.id/Download/415167/Perda%20Cirebon%20Nomor%201%20Tahun%202026.pdf",
+   "https://www.metrotvnews.com/read/N4EC4z70-kek-industropolis-batang-kedatangan-investasi-rp456-miliar-di-awal-kuartal-iv",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=CNC",
+   "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/indonesia_en",
+   "https://indonesiabusinesspost.com/6128/markets-and-finance/indonesia-and-u-s-sign-reciprocal-tariff-deal-set-19-base-tariff-with-broad-zero-duty-exemptions"
+  ]
+ },
+ {
+  "product": "Wood carvings, ornaments and builders' joinery (HS 4420, 4418), CNC-routed",
+  "family": "craft",
+  "hs": [
+   "4420",
+   "4418"
+  ],
+  "imports_usd_m": {
+   "2023": 11.3,
+   "2024": 12.2,
+   "2025": 15.2
+  },
+  "exports_usd_m": {
+   "2023": 534.0,
+   "2024": 567.6,
+   "2025": 603.8
+  },
+  "top_origins_2025": [
+   "China 70%",
+   "Thailand 6%",
+   "Canada 5%",
+   "Malaysia 4%",
+   "Indonesia 4%"
+  ],
+  "local_now": "Net exporter: 2025 exports US$603.8M (4418 joinery US$545.8M, 4420 carvings US$58.0M) against imports of US$15.2M. Joinery exports grew 16% from 2023. CNC use was low in Jepara in 2020 (8 of 390 medium furniture firms, snippet).",
+  "local_makers": [
+   "Jepara carving firms (Jepara): carving is ~34.5% of regency GDP (2020)",
+   "CNC router job shops in Jepara advertising 2D/3D carving (named in earlier notes)"
+  ],
+  "fit": "cnc",
+  "cnc_3d_role": "CNC routers rough out carvings, reliefs and calligraphy panels, with hand finishing keeping the craft premium; CNC moulders and tenoners make doors, windows, mouldings and flooring (4418) to export tolerances.",
+  "potential_share": "Judgement, 3-5 years: import substitution is negligible (imports US$15.2M). The realistic gain is process share: CNC roughing and CNC joinery could cover 30-60% of carving and joinery output, in line with a 2026 Jepara industry view that the machine share could rise from ~50% to ~80% (snippet). Export growth of 4418 (US$471.1M to US$545.8M, 2023-2025) shows demand for precise, standardised joinery that CNC supports.",
+  "buyers": [
+   "Export destinations 2025 (Comtrade): USA 29%, United Kingdom 15%, Japan 13%, Netherlands 10%, Australia 7%",
+   "4420 export destinations 2025: USA 24%, Germany 14%, France 8%, Netherlands 7% (Comtrade, via earlier notes)",
+   "Domestic housing and hotel projects (not sourced)"
+  ],
+  "best_places": [
+   "Kabupaten Jepara, Jawa Tengah",
+   "Kabupaten Gianyar, Bali"
+  ],
+  "certs_needed": [
+   "SVLK timber-legality documents",
+   "EUDR due diligence for the EU",
+   "EU construction-product rules (e.g. EN 14351 for windows and doors; industry norm, not sourced here)"
+  ],
+  "jobs_note": "Labour-saving per piece. In Jepara, CNC has filled a carver shortage rather than causing layoffs (earlier notes); hybrid CNC roughing plus hand finishing keeps carver jobs in the finishing step.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=9403,4418,4420",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=X&cmdCode=4418",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=4418&flowCode=X",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=4420&flowCode=X",
+   "https://jatengprov.go.id/?p=110285",
+   "https://www.kompas.id/baca/english/2020/01/08/conserving-heritage-of-creativity-in-carving-land",
+   "https://jogja.viva.co.id/warta/10884-tukang-mebel-makin-sulit-dicari-jepara-mulai-moving-to-cnc-technology",
+   "https://policy.trade.ec.europa.eu/eu-trade-relationships-country-and-region/countries-and-regions/indonesia_en"
+  ]
+ },
+ {
+  "product": "Guitars and other string and electric instruments (HS 9202, 9207)",
+  "family": "craft",
+  "hs": [
+   "9202",
+   "9207"
+  ],
+  "imports_usd_m": {
+   "2023": 20.0,
+   "2024": 19.0,
+   "2025": 14.6
+  },
+  "exports_usd_m": {
+   "2023": 427.4,
+   "2024": 439.2,
+   "2025": 454.9
+  },
+  "top_origins_2025": [
+   "China 60%",
+   "Malaysia 11%",
+   "Indonesia 8%",
+   "USA 7%",
+   "Japan 4%"
+  ],
+  "local_now": "Export platform: 2025 exports US$454.9M (9202 US$70.7M, 9207 US$384.1M, which includes electric keyboards) against imports of US$14.6M. Cort/Cor-Tek, Samick, Yamaha and Ibanez-brand guitars are made in Indonesia. Instrument parts imports (9209) were US$127.4M, a sign that hardware and electronics are imported. No measured domestic share. In US import data for 2025, Indonesia supplied 30% of electric guitars and similar (920790; first place), 15% of acoustic string instruments (920290) and 27% of electric keyboards (920710).",
+  "local_makers": [
+   "Cor-Tek / Cort (Indonesian plant; city not sourced)",
+   "P.T. Samick (Cileungsi, Kabupaten Bogor)",
+   "Ibanez 'Indonesian premium factory' (operator and city not named)",
+   "Yamaha (Pacifica Standard Plus made in Indonesia; plant not named)",
+   "CV Solobeat Internasional (Depok, Sleman)"
+  ],
+  "fit": "cnc",
+  "cnc_3d_role": "CNC routers cut bodies, necks, fretboards, fret slots and pickup cavities (standard in volume guitar plants; not documented for these plants here); 3D printing for prototypes, jigs, nuts and small parts. Finishing (sanding, lacquer, setup) stays manual.",
+  "potential_share": "Judgement, 3-5 years: the domestic market is small next to exports, so local share there is already high. The CNC opportunity is (a) more OEM volume, since PRS SE moved to Cor-Tek's Indonesian and Chinese plants in 2019 and Ibanez's Q series is Indonesia-only, and (b) replacing 10-20% of instrument-parts imports (9209, US$127.4M), US$12.7-25.5M (= 10-20% x US$127.4M), with locally machined or cast hardware (bridges, saddles, knobs, nuts). The parts split inside 9209 was not checked. Indonesia's existing US share (30% of 920790 imports, 15% of 920290) shows the OEM base is already competitive; growth depends on brand owners shifting more volume from China and Mexico (inference).",
+  "buyers": [
+   "Export destinations 2025 (Comtrade): USA 31%, Germany 10%, Japan 9%, Netherlands 8%, China 7%",
+   "OEM brand owners: PRS (SE line), Ibanez, Squier/Fender, Yamaha (Wikipedia pages)",
+   "Domestic music retail (small; imports US$14.6M in 2025)",
+   "US imports 2025 of 920290/920710/920790 by origin: China 32%, Indonesia 26%, Mexico 15%, Malaysia 8%, Japan 4%, Rep. of Korea 3%"
+  ],
+  "best_places": [
+   "Kabupaten Bogor (Cileungsi), Jawa Barat",
+   "Kabupaten Sleman, DI Yogyakarta"
+  ],
+  "certs_needed": [
+   "CITES permits for listed tonewoods such as some rosewoods (industry norm, not sourced here)",
+   "US Lacey Act plant-product declaration (industry norm, not sourced here)",
+   "SVLK for wood exports"
+  ],
+  "jobs_note": "CNC is already standard in large plants, so new jobs come from volume (OEM orders), finishing and QC rather than from more machines. Cort says it makes more than one million guitars a year across its factories (undated). No Indonesian headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M,X&cmdCode=9202,9207",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9202&flowCode=X",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9207&flowCode=X",
+   "https://www.cortguitars.com/about",
+   "https://en.wikipedia.org/wiki/Cort_Guitars",
+   "https://en.wikipedia.org/wiki/PRS_Guitars",
+   "https://en.wikipedia.org/wiki/Ibanez",
+   "https://en.wikipedia.org/wiki/Samick",
+   "https://en.wikipedia.org/wiki/Yamaha_Pacifica",
+   "https://en.wikipedia.org/wiki/Squier",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=tarMu00S9034HwF3MKbEQedx4wqR3lFlyZvUjZixEYA,",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=842&period=2025&flowCode=M&cmdCode=920290,920710,920790"
+  ]
+ },
+ {
+  "product": "Illuminated signs and name-plates (HS 940561, 940569) and base-metal sign-plates and letters (HS 8310); laser and CNC cut",
+  "family": "craft",
+  "hs": [
+   "940561",
+   "940569",
+   "8310"
+  ],
+  "imports_usd_m": {
+   "2023": 15.8,
+   "2024": 21.1,
+   "2025": 20.8
+  },
+  "exports_usd_m": {
+   "2023": 1.8,
+   "2024": 2.3,
+   "2025": 1.2
+  },
+  "top_origins_2025": [
+   "China 84%",
+   "Viet Nam 2%",
+   "USA 2%",
+   "Germany 2%",
+   "Singapore 2%"
+  ],
+  "local_now": "Unknown. Domestic sign-making is a service done by many small workshops; most TKDN registry hits for 'neon box' and 'huruf timbul' are sole proprietors. Municipal street-name signs are made by Ceper (Klaten) foundry firms with TKDN of 46-49%. No market-size figure was found.",
+  "local_makers": [
+   "CV Dwi Logam Jaya (Ceper, Klaten) - street-name signs 45.96%",
+   "CV Bonjor Jaya Utama (Ceper, Klaten) - street-name signs 48.50%",
+   "Tepat Laser (Tangerang Selatan) - laser cutting service",
+   "Tri Tunggal Metal (Jepara) - laser and plasma job shop",
+   "Teknik Jaya (Subang) - CNC, router, plasma, laser and 3D printing job shop",
+   "Cahaya Abadi Laser (Denpasar) - fibre laser panels, railings, canopies",
+   "PT Maharani Ion Produsindo (Pakisaji, Malang) - laser-cut sheet and acrylic, facades, signage"
+  ],
+  "fit": "cnc",
+  "cnc_3d_role": "Fibre lasers cut stainless and aluminium letters and panels; CNC routers cut acrylic, ACP and PVC; laser engraving for plates; 3D-printed letters and housings for small signs.",
+  "potential_share": "Judgement, 3-5 years: 20-40% of the small sign imports, US$4.2-8.3M (= 20-40% x US$20.8M), could be replaced. The real CNC and laser market is domestic sign-making as a service, which trade data does not show. Street-name signs for local governments are already made by Ceper foundry firms with TKDN of 46-49%.",
+  "buyers": [
+   "Retail chains, banks, property developers and government offices (not sourced)",
+   "Domestic project and fit-out contractors (not sourced)"
+  ],
+  "best_places": [
+   "Kabupaten Klaten (Ceper), Jawa Tengah",
+   "Kota Tangerang Selatan, Banten",
+   "Kota Surabaya, Jawa Timur"
+  ],
+  "certs_needed": [
+   "SNI/electrical safety for illuminated signs (not checked)",
+   "Local advertising and building permits for installations (not sourced)"
+  ],
+  "jobs_note": "Neutral to positive: lasers and routers replace hand cutting, but design, installation and wiring stay manual and grow with demand. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=940561,940569,7308,7326",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8310&flowCode=M",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=THMs-6mZ4I7zhuze0ulc9mj9UAdavfFxSLSAGpmsBW0,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Qt-cs1SFS_KF5e--KRg_wYIRZNEwyScPXnWU1pqSrDY,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=papan+nama",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=neon+box",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=huruf+timbul",
+   "https://teknikjaya.co.id/harga-jasa-cnc/",
+   "https://lasercutbali.com/",
+   "https://www.malangterkini.id/2026/06/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Terbaru-2026-Hasil-Presisi-Dan-Berkualitas.html"
+  ]
+ },
+ {
+  "product": "Structural and architectural metalwork (HS 7308) and other iron and steel articles (HS 7326); laser and CNC cut",
+  "family": "craft",
+  "hs": [
+   "7308",
+   "7326"
+  ],
+  "imports_usd_m": {
+   "2023": 987.9,
+   "2024": 1092.2,
+   "2025": 1330.6
+  },
+  "exports_usd_m": {
+   "2023": 355.7,
+   "2024": 1594.4,
+   "2025": 631.3
+  },
+  "top_origins_2025": [
+   "China 71%",
+   "Singapore 5%",
+   "Malaysia 3%",
+   "Indonesia 3%",
+   "Rep. of Korea 3%"
+  ],
+  "local_now": "Unknown. These codes mix bridges, towers, door frames, facade panels and many other steel articles, so the laser-cut architectural share is not visible in trade data.",
+  "local_makers": [
+   "CV Dwi Logam Jaya (Ceper, Klaten) - bollards, lamp posts, tree grilles, manhole covers, park benches (TKDN 40-56%)",
+   "CV Bonjor Jaya Utama (Ceper, Klaten) - bollards, lamp posts, sluice gates, park benches (38-62%)",
+   "Tri Tunggal Metal (Jepara) - laser and plasma job shop",
+   "Teknik Jaya (Subang) - CNC, plasma and laser job shop"
+  ],
+  "fit": "cnc",
+  "cnc_3d_role": "Fibre-laser and plasma cutting of facade screens, perforated panels, railings, gates and brackets; CNC press brakes for folding; CNC drilling of structural members. For cast street furniture (Ceper), CNC-routed or 3D-printed casting patterns can replace hand-made patterns, which Ceper lacks skilled makers for (earlier notes).",
+  "potential_share": "Judgement, 3-5 years: 2-5% of combined 7308+7326 imports, US$26.6-66.5M (= 2-5% x US$1330.6M), is a plausible laser- or CNC-cut, TKDN-preferred slice (facade screens, railings, brackets, cast street furniture). The architectural share inside these broad codes is unknown, and exports are lumpy (7308 exports spiked to US$1.35bn in 2024), so treat this as a rough order of magnitude.",
+  "buyers": [
+   "Building contractors and property developers (not sourced)",
+   "Government buildings and infrastructure projects under TKDN preference (general P3DN rules)"
+  ],
+  "best_places": [
+   "Kabupaten Klaten (Ceper), Jawa Tengah",
+   "Kabupaten Bekasi, Jawa Barat",
+   "Kota Surabaya, Jawa Timur"
+  ],
+  "certs_needed": [
+   "SNI for structural steel products where mandatory (not checked)",
+   "Welder and fabricator qualifications for structures (industry norm, not sourced here)",
+   "TKDN for public projects"
+  ],
+  "jobs_note": "Laser cutting replaces manual marking and cutting but adds fabrication and installation jobs when volume grows. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=940561,940569,7308,7326",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=7308&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=7326&flowCode=M",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=THMs-6mZ4I7zhuze0ulc9mj9UAdavfFxSLSAGpmsBW0,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Qt-cs1SFS_KF5e--KRg_wYIRZNEwyScPXnWU1pqSrDY,",
+   "https://teknikjaya.co.id/harga-jasa-cnc/",
+   "https://jurnal.isi-ska.ac.id/index.php/abdiseni/article/view/1869"
+  ]
+ },
+ {
+  "product": "Drones / unmanned aircraft (HS 8806)",
+  "family": "consumer",
+  "hs": [
+   "8806"
+  ],
+  "imports_usd_m": {
+   "2023": 29.9,
+   "2024": 48.6,
+   "2025": 96.6
+  },
+  "exports_usd_m": {
+   "2023": 2.9,
+   "2024": 7.8,
+   "2025": 11.6
+  },
+  "top_origins_2025": [
+   "China 58%",
+   "Türkiye 25%",
+   "Singapore 10%",
+   "Cyprus 5%",
+   "China, Hong Kong SAR 1%"
+  ],
+  "local_now": "No measured share. TKDN-certified local drones exist at 20-57% local content: agricultural sprayers and survey or surveillance VTOLs from at least nine firms in Kota and Kabupaten Bandung, Yogyakarta and Bantul, Tangerang, Serang and Sidoarjo (the 19.8% one is an outlier). Six of 12 Turkish Anka MALE drones (ordered Feb 2023, US$300M) are to be assembled by Indonesian Aerospace (PTDI). PTDI's own Elang Hitam MALE drone is still in development. 2025 drone exports (US$11.6M) went to Poland 82%, China, Hong Kong SAR 14%, China 1%, Saudi Arabia 1%; the exporter was not identified.",
+  "local_makers": [
+   "PT Bentara Tabang Nusantara (Katapang, Kabupaten Bandung)",
+   "PT Bandung Mekatronika Teknologi (Gedebage, Kota Bandung)",
+   "PT Aerotek Global Inovasi (Kota Yogyakarta)",
+   "PT Dgnet Indonesia (Tigaraksa, Kabupaten Tangerang)",
+   "PT Ener Sky Innovation (Cikande, Kabupaten Serang)",
+   "PT Corin Mulia Gemilang (Balongbendo, Sidoarjo)",
+   "PT Iter Aero Industri (Katapang, Kabupaten Bandung)",
+   "PT Udara Maya Solusindo (Cikande, Kabupaten Serang)",
+   "PT Laksita Karya Dirga (Bantul)",
+   "PT Idukasih Robotika (Kab. Malang) - drones, robots, CNC machines",
+   "PT Dirgantara Indonesia / Indonesian Aerospace (Bandung)"
+  ],
+  "fit": "both",
+  "cnc_3d_role": "CNC: routing of carbon-fibre plates for arms and frames, aluminium motor mounts, gimbal brackets, landing gear, and machined moulds for composite airframes. 3D: printed fairings, canopies, payload housings, jigs and fast prototypes. Flight controllers, motors and batteries are mostly imported (inferred from 25-57% TKDN).",
+  "potential_share": "Judgement, 3-5 years: local assembly and parts could capture 15-30% of drone import value, US$14.5-29.0M (= 15-30% x US$96.6M). Reasoning: imports tripled from US$29.9M (2023) to US$96.6M (2025). At least nine firms already hold TKDN certificates for drones (20-57%), plus one for a UAV positioning unit. Six of 12 Anka MALE drones are to be assembled by PTDI (Türkiye was 25% of 2025 imports). Agricultural sprayers can win TKDN-weighted public purchases against Chinese imports (58%). Limit: flight controllers, motors and batteries stay imported.",
+  "buyers": [
+   "Ministry of Agriculture and farmer groups for spray drones (inferred from certified products)",
+   "Indonesian armed forces: 12 Anka MALE UAVs (6 Air Force, 3 Army, 3 Navy)",
+   "Plantations, survey and mapping firms (not sourced)",
+   "Export destinations 2025 (Comtrade): Poland 82%, China, Hong Kong SAR 14%, China 1%, Saudi Arabia 1%, United Arab Emirates 1%"
+  ],
+  "best_places": [
+   "Kota Bandung, Jawa Barat",
+   "Kabupaten Bandung, Jawa Barat",
+   "Kabupaten Majalengka (Kertajati), Jawa Barat",
+   "Kota Yogyakarta, DI Yogyakarta",
+   "Kabupaten Tangerang, Banten"
+  ],
+  "certs_needed": [
+   "Kemenhub/DGCA drone registration and operating rules (not sourced here)",
+   "Radio-equipment certification for control links (not sourced here)",
+   "TKDN certificate for government purchases",
+   "Defence-industry approvals for military UAVs (not sourced here)"
+  ],
+  "jobs_note": "Adds jobs in assembly, composite layup, CNC and electronics integration, plus pilots and service crews for spray work. Mostly small firms. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848041,848071,848079,8806",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=X&cmdCode=902139,8806",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8806&flowCode=M",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=o3dwi9iGbTFwS_hJLuQG_MsxFVfo4r_zfbEABtAtiTY,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=7oQek6yUY-mAI_uoURSp9DsHHGmTMFYzTTgowOLHrpQ,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=IVrnXpBAYKEOP8ZfGBiUy4Lnt88TbiCcVpTMGwPOyj0,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=dE_cl58GsST19qTdFWygxDpLtUy2q_UOOyB5OqGraI0,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ibxpsaMWUChHjsnAKAE11mxyQIV2z2iVgz-Yo1oH0IU,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=bUh4iLgyYxrxoj4ZJMN-d90QlZ2Hkd9vaH9v3InNBlI,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ZbzCHrmki4Xkl7N3dEmnMtLemiYemGRoskJ5aAoO8Kk,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Nfpm__VL5e_r9VL4N9gHfpHj95WkIAkmi5Ccm4p8knQ,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=44PKVJi2T8i66azxR9_SHSwlP54X29T7nxEQ0CWUhqg,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=drone",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=vtol",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pesawat+udara+nir+awak",
+   "https://en.wikipedia.org/wiki/Indonesian_Aerospace",
+   "https://en.wikipedia.org/wiki/TAI_Anka",
+   "https://sipora.polije.ac.id/48664/"
+  ]
+ },
+ {
+  "product": "Parts of aircraft, helicopters and drones (HS 8807; mostly manned-aircraft parts)",
+  "family": "consumer",
+  "hs": [
+   "8807"
+  ],
+  "imports_usd_m": {
+   "2023": 468.2,
+   "2024": 294.0,
+   "2025": 493.1
+  },
+  "exports_usd_m": {
+   "2023": 106.0,
+   "2024": 321.1,
+   "2025": 139.3
+  },
+  "top_origins_2025": [
+   "France 31%",
+   "USA 21%",
+   "Singapore 19%",
+   "Spain 12%",
+   "Malaysia 3%"
+  ],
+  "local_now": "Unknown. HS 8807 does not separate drone parts; 880730 (other aircraft parts) is about 89% of 2025 imports. Origins are aerospace hubs (France, USA, Singapore, Spain).",
+  "local_makers": [
+   "PT Dirgantara Indonesia / Indonesian Aerospace (Bandung; moving main manufacturing to Kertajati, Majalengka from Aug 2026)"
+  ],
+  "fit": "cnc",
+  "cnc_3d_role": "5-axis machining of aluminium and titanium brackets, ribs and fittings; for drones, CNC-cut carbon and aluminium frames and 3D-printed non-structural parts.",
+  "potential_share": "Judgement: not sizeable for drones from trade data. For manned-aircraft parts, see the aerospace notes in the earlier research (AS9100 and NADCAP barriers). For drone parts, local CNC and 3D shops could supply most airframe and bracket parts to the local drone makers listed under HS 8806 within 3-5 years, but that base is small.",
+  "buyers": [
+   "PTDI (Bandung, moving to Kertajati)",
+   "Airlines and MRO shops (not sourced)",
+   "US buyers of aircraft parts at 0% tariff under the US deal (signed, not in force)"
+  ],
+  "best_places": [
+   "Kota Bandung, Jawa Barat",
+   "Kabupaten Majalengka (Kertajati), Jawa Barat"
+  ],
+  "certs_needed": [
+   "AS9100",
+   "NADCAP for special processes",
+   "DGCA approvals for aircraft parts (not sourced here)"
+  ],
+  "jobs_note": "High-skill, low-volume machining jobs. See the aerospace part of the earlier notes.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=880730,900311,391690",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8807&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=880730&flowCode=M",
+   "https://en.wikipedia.org/wiki/Indonesian_Aerospace",
+   "https://indonesiabusinesspost.com/6128/markets-and-finance/indonesia-and-u-s-sign-reciprocal-tariff-deal-set-19-base-tariff-with-broad-zero-duty-exemptions"
+  ]
+ },
+ {
+  "product": "Toys, models, puzzles and STEM education kits (HS 9503)",
+  "family": "consumer",
+  "hs": [
+   "9503"
+  ],
+  "imports_usd_m": {
+   "2023": 193.6,
+   "2024": 243.4,
+   "2025": 343.5
+  },
+  "exports_usd_m": {
+   "2023": 508.5,
+   "2024": 605.6,
+   "2025": 650.9
+  },
+  "top_origins_2025": [
+   "China 89%",
+   "Viet Nam 3%",
+   "Malaysia 2%",
+   "Thailand 2%",
+   "Japan 1%"
+  ],
+  "local_now": "Net exporter: 2025 exports US$650.9M against imports of US$343.5M, led by Mattel's Cikarang plants (Hot Wheels 5-packs, Barbie). Imports grew 77% from 2023 (US$193.6M). Local educational-toy makers hold high TKDN (Agdia Toys 71-97%, Littlemonq 46-76%). No measured domestic share. Import origins 2025: China 89%, Viet Nam 3%, Malaysia 2%, Thailand 2%.",
+  "local_makers": [
+   "Mattel Indonesia (Jababeka, Cikarang, Kabupaten Bekasi) - Hot Wheels 5-packs and Barbie",
+   "CV AGDIA TOYS (Trucuk, Klaten)",
+   "BUL Littlemonq Kreasi Nusantara (Kota Bandar Lampung)",
+   "CV Alkautsar Aflah Mandiri (Legok, Kabupaten Tangerang) - coding kit",
+   "CV Sirnabaya Mandirancan / PT Mitra Abadi Barokah / PT Permata Selaras Edutama - KIT IPA science kits (cities not checked)",
+   "PT Surya Sarana Dinamika - SCARA and 4-axis robot teaching labs (city not checked)",
+   "PT Tera Data Indonusa Tbk - 4-axis robot teaching lab (city not checked)",
+   "PT Dwida Jaya Tama (Gunung Sindur, Bogor) - training systems, educational toys, furniture"
+  ],
+  "fit": "both",
+  "cnc_3d_role": "CNC-machined injection moulds for plastic toys (a large-scale demand at Mattel's Cikarang plants); CNC routers and lasers for wooden educational toys and puzzles; 3D printing for toy prototypes and short-run STEM-kit parts (robot chassis, gears, enclosures).",
+  "potential_share": "Judgement, 3-5 years: 10-20% of toy imports, US$34.4-68.7M (= 10-20% x US$343.5M), could be replaced by local wooden and educational toys, STEM kits and locally moulded plastic toys. School purchases of educational toys (APE) and science kits (KIT IPA) are TKDN-weighted. The bigger CNC prize is injection-mould making for the Cikarang export plants, but no source shows where Mattel sources its moulds.",
+  "buyers": [
+   "Export destinations 2025 (Comtrade): USA 51%, United Kingdom 7%, China 4%, Australia 3%, Czechia 3%",
+   "Mattel (export plants in Cikarang)",
+   "PAUD and primary schools via the e-catalogue (APE, KIT IPA)",
+   "Domestic toy retail and e-commerce (not sourced)"
+  ],
+  "best_places": [
+   "Kabupaten Bekasi (Cikarang), Jawa Barat",
+   "Kabupaten Klaten, Jawa Tengah",
+   "Kabupaten Tangerang, Banten"
+  ],
+  "certs_needed": [
+   "Indonesian mandatory toy SNI (not re-sourced here)",
+   "EN 71 and ASTM F963 for export markets (industry norm, not sourced here)",
+   "TKDN certificate for school purchases"
+  ],
+  "jobs_note": "Mixed. Mould-making adds skilled CNC and EDM jobs; wooden and educational toys stay labour-intensive even with CNC or laser cutting; 3D printing is mainly for prototyping. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M,X&cmdCode=950300,950629",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8485,848510,848520,848530,848580,848590,9021,902110,902121,902129,902131,902139,902140,902190,902300,7113,711311,711319,711320,711711,711719,711790,848030,848041,848049,848071,848079,8806,8807,880730,900311,900319,391690,950300",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9503&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=9503&flowCode=X",
+   "https://en.wikipedia.org/wiki/Mattel",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=efGvpva6viJWp4Y-bmpFO672T-UJJXY-t3mk_CZvT7o,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=lyWFRaQbckx84u3d-GduZUXuRUowgXTIdYKb8yODtCs,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=zgt7sZT13jrL7jCsm5rSQjn3qJ0BKAUX07G96zOciiM,&id_siinas=zgt7sZT13jrL7jCsm5rSQjn3qJ0BKAUX07G96zOciiM,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=kit+ipa",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=mainan",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=robot",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=alat+peraga",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=traktor"
+  ]
+ },
+ {
+  "product": "Surfboards and other water-sport equipment (HS 950629)",
+  "family": "consumer",
+  "hs": [
+   "950629"
+  ],
+  "imports_usd_m": {
+   "2023": 7.4,
+   "2024": 7.5,
+   "2025": 27.4
+  },
+  "exports_usd_m": {
+   "2023": 5.5,
+   "2024": 5.7,
+   "2025": 7.5
+  },
+  "top_origins_2025": [
+   "Singapore 43%",
+   "Germany 34%",
+   "China 16%",
+   "Australia 2%",
+   "Taiwan (Other Asia nes) 1%"
+  ],
+  "local_now": "Unknown share. Rip Curl has a Bali factory and is described as Indonesia's largest surfboard manufacturer (Ultimate Bali, Mar 2024); KAYU Surfboards makes hollow balsa boards in Badung. Neither source mentions CNC. The TKDN registry has no 'selancar' product. 2025 exports went to USA 37%, Australia 28%, Japan 12%, France 6%; imports came from Singapore 43%, Germany 34%, China 16%, Australia 2%.",
+  "local_makers": [
+   "Rip Curl surfboard factory (Bali; city not stated)",
+   "KAYU Surfboards (Tibubeneng, Kuta Utara, Badung)"
+  ],
+  "fit": "both",
+  "cnc_3d_role": "CNC shaping machines cut foam blanks to a digital file before hand finishing and glassing; CNC-machined moulds for epoxy and soft boards; 3D-printed fins, fin boxes and prototypes.",
+  "potential_share": "Judgement, 3-5 years: uncertain. Imports jumped from US$7.5M (2024) to US$27.4M (2025), and what drove the jump (surfboards, paddle boards, e-foils) was not checked. If it is boards, local CNC-shaped boards could replace 10-30%, US$2.7-8.2M (= 10-30% x US$27.4M). A Bali factory exists (Rip Curl), but local CNC use is unconfirmed, so this is low confidence.",
+  "buyers": [
+   "Export destinations 2025 (Comtrade): USA 37%, Australia 28%, Japan 12%, France 6%, China, Hong Kong SAR 2%",
+   "Surf tourism, schools and rental shops (not sourced)"
+  ],
+  "best_places": [
+   "Kabupaten Badung, Bali"
+  ],
+  "certs_needed": [
+   "None mandatory found; buyer standards for export (not sourced)"
+  ],
+  "jobs_note": "CNC shaping replaces hand rough-shaping but glassing, sanding and finishing remain manual, so jobs follow volume. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M,X&cmdCode=950300,950629",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=950629&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=950629&flowCode=X",
+   "https://www.ultimatebali.com/inspiration/where-to-score-a-sweet-surfboard-in-bali/",
+   "https://www.kayusurfboards.com/",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=selancar"
+  ]
+ },
+ {
+  "product": "Small household appliances and their housings (HS 8516 electro-thermic, 8509 food processors and mixers, 841451 fans); consumer-electronics enclosures are not separately visible",
+  "family": "consumer",
+  "hs": [
+   "8516",
+   "8509",
+   "841451"
+  ],
+  "imports_usd_m": {
+   "2023": 541.2,
+   "2024": 588.5,
+   "2025": 643.7
+  },
+  "exports_usd_m": {
+   "2023": 425.7,
+   "2024": 586.9,
+   "2025": 771.6
+  },
+  "top_origins_2025": [
+   "China 82%",
+   "Viet Nam 6%",
+   "China, Hong Kong SAR 3%",
+   "Malaysia 2%",
+   "Italy 1%"
+  ],
+  "local_now": "Two-way trade: 2025 imports US$643.7M against exports of US$771.6M. Exports rose 81% from 2023 (US$425.7M), led by coffee and tea makers (851671, US$315.7M), irons (851640, US$119.0M) and food processors (850940, US$105.5M, up from US$4.7M). The exporting plants were not identified and may be outside Java. Domestic brands certify TKDN of only 17-40% (Maspion, Star Cosmos, Miyako maker Kencana Gemilang, and SCNP's Turbo and Philips blenders). Import origins 2025: China 82%, Viet Nam 6%, China, Hong Kong SAR 3%, Malaysia 2%. Export destinations: 8516 USA 52%, Netherlands 6%, France 6%, Hungary 5%; 8509 USA 87%, Canada 3%, Hungary 2%, Mexico 1%.",
+  "local_makers": [
+   "PT Maspion (Buduran, Sidoarjo)",
+   "PT Star Cosmos (Cipondoh, Kota Tangerang)",
+   "PT Kencana Gemilang / Miyako (Cikupa, Kabupaten Tangerang)",
+   "PT Selaras Citra Nusantara Perkasa Tbk (Cileungsi, Kabupaten Bogor) - Turbo and Philips-brand blenders",
+   "PT Tripacific Electrindo / SEKAI (city not checked)",
+   "PT Winn Appliance / Winnlux (city not checked)",
+   "Miyako and Aucma (tenant logos at KEK Kendal, Kab. Kendal)"
+  ],
+  "fit": "both",
+  "cnc_3d_role": "CNC: machining of the injection moulds and dies that make housings, jars and blades (the main CNC demand); CNC-turned shafts and couplings. 3D: housing prototypes, fit checks and short-run parts. Enclosures themselves are injection-moulded, not machined.",
+  "potential_share": "Judgement, 3-5 years: 10-20% of small-appliance imports, US$64.4-128.7M (= 10-20% x US$643.7M), could be replaced by more local content (housings, jars, blades, brackets). The main CNC lever is making the injection moulds for these housings locally: mould imports 848071 were US$214M in 2025, 68% from China (other-agent and earlier Comtrade pulls). Parts imports of 8516 and 8509 rose from US$140M to US$258M (2023-2025), a sign of growing local assembly that local parts makers could serve.",
+  "buyers": [
+   "Export destinations 2025 (Comtrade): USA 61%, Netherlands 4%, France 4%, Hungary 4%, United Kingdom 3%",
+   "Domestic retail and e-commerce",
+   "Government buyers of fans and appliances via the e-catalogue (TKDN)"
+  ],
+  "best_places": [
+   "Kabupaten Sidoarjo, Jawa Timur",
+   "Kabupaten Tangerang, Banten",
+   "Kabupaten Bogor (Cileungsi), Jawa Barat",
+   "Kabupaten Kendal, Jawa Tengah"
+  ],
+  "certs_needed": [
+   "Mandatory SNI for household electrical appliances (not re-sourced here)",
+   "TKDN certificate for government purchases",
+   "IEC 60335 safety for exports (industry norm, not sourced here)"
+  ],
+  "jobs_note": "CNC demand sits in mould shops (skilled jobs); assembly stays labour-intensive. Appliance TKDN of 17-40% points to imported motors and heating elements. No headcount was sourced.",
+  "sources": [
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M,X&cmdCode=8516,8509",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=9018,901890,901839,901849,901841,7117,9403,940310,940320,940330,940340,940350,940360,940370,940382,940383,940391,940399,4420,442011,442019,442090,4418,441810,441820,441873,441875,441879,441899,9202,920210,920290,9207,920710,920790,9209,920992,920994,9201,7308,730890,7326,732690,8310,9405,940561,940569,940599,9506,950629,8516,851631,851640,851650,851660,851671,851679,851690,8509,850940,850980,850990,841451",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8516&flowCode=X",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8509&flowCode=X",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848041,848071,848079,8806",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=4qeKf8zkLGrGhr6170Dyc_bMIYz871E8HJh4lnl0664,&id_siinas=F3D7dFvJIOt5NcWPFOpm6iHTcb0MON7o1vmEeVBmXRE,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=6QanNyHR9eg_GiUTPUjDuDdXuXNH1WuTXPLnDcqMrgU,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=oNKRlmJBQZJzWaGgZ7IARib8lGZ6uchNbwxAM1nfG58,",
+   "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=QOmxBo04NgN-IQiEpT0L_q_GxKJULjyOG1e1_21v_C0,",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=rice+cooker",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=blender",
+   "https://www.kendalindustrialpark.co.id/"
+  ]
+ }
+]

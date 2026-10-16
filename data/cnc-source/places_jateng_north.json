@@ -1,0 +1,339 @@
+[
+  {
+    "province": "Jawa Tengah",
+    "area": "Tegal–Brebes–Pemalang",
+    "level": "cluster",
+    "focus": {
+      "product": "Machined and pressed motorcycle and car components (tier-2 parts for Astra-group OEMs)",
+      "hs": [
+        "871410",
+        "870899"
+      ],
+      "why": "Kab. Tegal's 2022–2042 industry plan names motorcycle components, metal goods, machinery and casting as priority industries in Talang/Adiwerna. About 70 YDBA-coached metal SMEs, 16 already supplying AHM, TAM, ADM and Suzuki at tier 2 (Feb 2024). Named suppliers: FNF Metalindo (70–80 items), Bimuda (70 items), Dharmapoli. Indonesia imported US$635m of motorcycle parts in 2025, 57% from China.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Ship fittings built to BKI class: windows, watertight doors, gate valves, fire-hose couplings and nozzles",
+        "hs": [
+          "730830",
+          "848180",
+          "842420"
+        ],
+        "why": "Tegal SMEs won Indonesia's first SME BKI class certificates (ship windows, doors, fire-hose connections and nozzles) in March 2015, when about 70% of shipyard components were imported. PT Karya Manunggal Manufaktur holds TKDN certificates for ship windows and watertight doors. The regency plan lists ship components as a priority industry. In 2025 Indonesia imported US$35.4m of steel doors and windows (730830) and US$944.8m of other valves (848180). HS codes are my mapping.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Power-distribution line hardware for the PLN network (cross arms, transformer brackets, clamps, fuse-holder sets)",
+        "hs": [
+          "730890",
+          "732690",
+          "853510"
+        ],
+        "why": "Three Tegal firms hold TKDN certificates for network hardware: Logam Jaya Sejahtera (18 products, 40–100%), Benko Metalindo Prima (FCO fuse holder, 94.72%) and Berkah Aneka Logam (brackets, 38–40%). This is a captive state-utility market that rewards local content. In 2025 imports were US$219.1m for other iron/steel articles (732690) and US$4.4m for HV fuses (853510). Sheet CNC (cutting, punching, bending) fits; HS codes are my mapping.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Astra Honda Motor",
+      "PT Toyota Astra Motor",
+      "PT Astra Daihatsu Motor",
+      "PT Suzuki Indomobil Motor",
+      "PT Semen Indonesia (SIG) plants, via its SME spare-parts programme",
+      "PLN distribution network (products listed against SPLN specifications)",
+      "PT Sinergi Gula Nusantara: PG Pangka, reactivation planned for 2028",
+      "Indonesian shipyards buying BKI-class components"
+    ],
+    "local_inputs": [
+      "sugarcane (Brebes, Kab. Tegal, Pemalang)",
+      "fish (Kab./Kota Tegal, Brebes)",
+      "salt (Brebes)",
+      "tobacco (Brebes, Kab. Tegal)",
+      "tea (Kab. Tegal)",
+      "essential oils (Pemalang)"
+    ],
+    "clusters": [
+      "LIK Takaru (Dampyak, Kramat; 9.06 ha)",
+      "PIK Kebasen (Talang; 5.09 ha)",
+      "Adiwerna–Talang–Dukuhturi metal sentra (22 metal/machinery/electronics sentra in Kab. Tegal, 2021)",
+      "KPI Pantura (Kramat–Suradadi–Warureja; 1,164.9 ha)",
+      "KPI Margasari (377.47 ha)",
+      "Tegal Material Center (Kemenperin; Koperasi Tegal Manufaktur Indonesia)",
+      "SILKOT metal centre, Kota Tegal"
+    ],
+    "official_designation": "Kab. Tegal Perda 9/2022 (RPIK 2022–2042) Art. 7 names these priority industries (Industri Unggulan Daerah): metal goods, machinery n.e.c., other transport (ship components; motorcycle components), basic metals/casting and electrical equipment. Central Java Perda 10/2017 (RPIP 2017–2037) assigns metal processing to Kab. and Kota Tegal and the ship industry to Kab. Tegal (Bergasmalang region). Kemenperin lists Tegal as a metal centre. No Permenperin KIID decree for Kab. Tegal was found.",
+    "umk_2026": "Brebes Rp2,400,350; Pemalang Rp2,433,254; Kab. Tegal Rp2,484,162; Kota Tegal Rp2,526,510 per month (Kepgub Jateng 100.3.3.1/505, Dec 2025)",
+    "skills": "Kab. Tegal (Dalam Angka 2022, in RPIK): 2 polytechnics, 1 academy, 4 sekolah tinggi, 7 public and 57 private SMKs, 1 BLK, 57 LPK. Politeknik Harapan Bersama's campus now belongs to Universitas Harkat Negeri. Universitas Pancasakti and Disnakerin ran CNC-turning training at SILKOT (snippet).",
+    "confidence": "high",
+    "sources": [
+      "https://peraturan.bpk.go.id/Download/305617/2022pd3328009.pdf",
+      "https://peraturan.bpk.go.id/Download/65630/perda_10_th_2017.pdf",
+      "https://setda.tegalkab.go.id/2024/02/27/ikm-logam-kabupaten-tegal-pasok-kebutuhan-industri-otomotif-nasional",
+      "https://www.jawapos.com/bisnis/01321948/200-umkm-naik-kelas-jadi-usaha-skala-besar",
+      "https://finance.detik.com/industri/d-7321752/sederet-ukm-ini-berhasil-tembus-pasok-suku-cadang-pabrik-semen",
+      "https://www.jica.go.jp/project/english/indonesia/012/newsletter/c8h0vm00008bcv16-att/201505_in.pdf",
+      "https://www.jica.go.jp/project/english/indonesia/012/materials/c8h0vm00008bcuro-att/brochure_in.pdf",
+      "https://kemenperin.go.id/artikel/21550/Topang-Sektor-Otomotif,-Material-Center-di-Tegal-Pasok-Kebutuhan-IKM-Logam-",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=oXpVu-g8v0xb8XBeDAmAseiLXgwPRZIylN9fTZgsruQ,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=wPROXxwEAtprN5OgYVYfShjMYVZ7FvAzLorXEnxENtE,&id_siinas=wPROXxwEAtprN5OgYVYfShjMYVZ7FvAzLorXEnxENtE,",
+      "https://ekonomi.republika.co.id/berita/srwnk5415/sejumlah-pabrik-gula-dorman-akan-diaktifkan-lagi",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=871410&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=730830&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=732690&flowCode=M",
+      "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-machine-shops-in-central-java",
+      "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-foundries-in-central-java",
+      "https://harkatnegeri.ac.id/",
+      "https://www.detik.com/jateng/bisnis/d-8275954/daftar-lengkap-umk-2026-se-jateng-semarang-tertinggi-banjarnegara-terendah"
+    ]
+  },
+  {
+    "province": "Jawa Tengah",
+    "area": "Pekalongan–Batang–Kendal",
+    "level": "cluster",
+    "focus": {
+      "product": "Moulds for rubber and plastics (tyre, shoe-sole and injection moulds), plus jigs and maintenance spares for KEK Kendal and KEK Batang tenants",
+      "hs": [
+        "848071",
+        "848079"
+      ],
+      "why": "Both SEZs host mould-using plants. Kendal: ZC Rubber and Matahari Tire, appliance makers, Polygroup. Batang: Yih Quan Footwear, Wavin pipes, Unipack (snippet). The local machining base is thin (36 machine shops in Pekalongan, 8 in Batang, none listed in Kendal; directory, Apr 2026). Indonesia imported US$214m of injection/compression moulds (848071) in 2025, 68% from China. 3D printing serves prototypes and patterns.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "CNC-routed furniture parts and panels for SEZ furniture plants",
+        "hs": [
+          "940391",
+          "940360"
+        ],
+        "why": "PT Woodpark Mebel Perkasa is building a Rp225bn plant in KEK Batang (operating April 2027) for B&B Italia, Arhaus and Restoration Hardware. Kemenperin's Politeknik Industri Furnitur sits inside the Kendal estate (Rp125bn, 2019). Batang's RPIK lists furniture as a priority industry.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Fishing-vessel propellers, shafts and deck fittings",
+        "hs": [
+          "848710",
+          "848310"
+        ],
+        "why": "The provincial plan assigns the ship industry to Kab. Pekalongan and Batang, and Batang's plan lists shipyards as a potential. A Batang wooden-boat builder (CV Anugrah Jaya Bahari) holds a TKDN certificate. Indonesia imported US$27.7m of propellers in 2025. Low-confidence pick: no fleet or shipyard counts were found.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "ZC Rubber (KEK Kendal; tyres)",
+      "PT Matahari Tire Indonesia (KEK Kendal; tyres)",
+      "PT Polygroup Manufaktur Indonesia (KEK Kendal)",
+      "PT Beurer Indonesia Technology (KEK Kendal; medical devices)",
+      "PT Hiron Indonesia Industry (KEK Kendal)",
+      "PT LBM Energi Baru Indonesia (KEK Kendal; battery materials)",
+      "PT Indonesia BTR New Energy Material (KEK Kendal)",
+      "Sunra (KEK Kendal; two-wheelers)",
+      "Trina Solar (KEK Kendal)",
+      "Miyako (KEK Kendal; appliances)",
+      "Aucma (KEK Kendal; appliances)",
+      "PT KCC Glass Indonesia (KEK Batang; snippet)",
+      "PT Wavin Manufacturing Indonesia (KEK Batang; pipes; snippet)",
+      "PT Unipack Plasindo (KEK Batang; plastic packaging; snippet)",
+      "PT Yih Quan Footwear (KEK Batang; snippet)",
+      "PT Ace Medical Products (KEK Batang; snippet)",
+      "PT Woodpark Mebel Perkasa (KEK Batang; furniture, from 2027)",
+      "PT WKI (KEK Batang; import-substitution manufacturing, from 2027)"
+    ],
+    "local_inputs": [
+      "fish (Kendal, Batang, Kab./Kota Pekalongan)",
+      "batik and textiles (Kab. Pekalongan, Kendal)",
+      "wood (Batang)",
+      "tobacco (Batang, Kendal, Kota Pekalongan)",
+      "essential oils (Batang)",
+      "honey and tea (Batang)",
+      "sugarcane (Kendal)"
+    ],
+    "clusters": [
+      "KEK Kendal / Kawasan Industri Kendal (2,200 ha; Jababeka and Sembcorp)",
+      "KEK Industropolis Batang (KITB; 4,300 ha)",
+      "Sentra Kuripan Lor, Kota Pekalongan (automotive workshops and metal)",
+      "Sentra Landungsari, Kota Pekalongan (canting and batik)"
+    ],
+    "official_designation": "KEK Industropolis Batang (PP 12/2025, Mar 2025; snippet) and KEK Kendal. Batang Perda 3/2021 (RPIK 2021–2041) priority industries include motor vehicles/trailers, other transport, furniture, leather/footwear and textiles. Kota Pekalongan Perda 1/2020 (RPIK 2020–2040) lists food, textiles, apparel, chemicals and wood/bamboo, with no metal. Central Java RPIP (Petanglong): ship industry in Kab. Pekalongan and Batang, karoseri in Batang, automotive components and electronics in Kendal.",
+    "umk_2026": "Kab. Pekalongan Rp2,633,700; Kota Pekalongan Rp2,700,926; Batang Rp2,708,520; Kendal Rp2,992,994 per month (Kepgub Jateng 100.3.3.1/505, Dec 2025)",
+    "skills": "Politeknik Industri Furnitur (Kemenperin) inside Kawasan Industri Kendal (Rp125bn, opened Feb 2019). KEK Batang runs job fairs (Tenant Festa #2, Aug 2026: 12 active tenants, 1,000+ positions) and a PRIMA training programme (snippet).",
+    "confidence": "low",
+    "sources": [
+      "https://www.kendalindustrialpark.co.id/",
+      "https://www.metrotvnews.com/read/N4EC4z70-kek-industropolis-batang-kedatangan-investasi-rp456-miliar-di-awal-kuartal-iv",
+      "https://www.idxchannel.com/economics/butuh-1000-tenaga-kerja-lebih-untuk-12-tenant-begini-strategi-kek-industripolis-batang",
+      "https://industri.kontan.co.id/news/kek-industropolis-batang-dorong-sdm-lokal-siap-masuk-industri-global",
+      "https://industri.kontan.co.id/news/jababeka-dan-singapura-perluas-kek-kendal-investasi-tembus-rp-189-triliun",
+      "https://peraturan.go.id/files/perda-kabupaten-batang-no-3+-tahun-2021.pdf",
+      "https://jdih.pekalongankota.go.id/storage/doc/produk/19LD%20Perda%20Nomor%201%20Th%202020%20RPIK.pdf",
+      "https://peraturan.bpk.go.id/Download/65630/perda_10_th_2017.pdf",
+      "https://www.industry.co.id/read/48862/ciptakan-sdm-kompeten-kemenperin-bangun-dua-politeknik-di-jateng",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848071&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848710&flowCode=M",
+      "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-machine-shops-in-central-java",
+      "https://www.detik.com/jateng/bisnis/d-8275954/daftar-lengkap-umk-2026-se-jateng-semarang-tertinggi-banjarnegara-terendah"
+    ]
+  },
+  {
+    "province": "Jawa Tengah",
+    "area": "Semarang–Demak",
+    "level": "cluster",
+    "focus": {
+      "product": "Food-service and food-processing equipment and parts (stoves, ovens, dish dryers, food machines)",
+      "hs": [
+        "841981",
+        "843890",
+        "732111"
+      ],
+      "why": "Bugangan metal centre: 56 SMEs making food-processing machines and household equipment (2018). TKDN-certified Semarang makers of gas stoves (Niko Elektronik, Cipta Gagah Perkasa), ovens (Hadeka) and dish dryers (Soraya Bumi Kita). Semarang has the region's densest base: 127 machine shops and 33 laser-cutting services (directory, Apr 2026). Indonesia imported US$316.8m of 8438 machinery and US$69.1m of 841981 in 2025. Gas stoves (732111) are already a net export (US$66.5m exported against US$2.1m imported).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Diesel-engine and tractor components for Kubota Indonesia's Semarang plant",
+        "hs": [
+          "840999",
+          "843290"
+        ],
+        "why": "Kubota builds horizontal diesel engines and 4-wheel tractors at BSB, with TKDN certificates at 25–72%. Raising local content needs local machined castings, shafts and gears (inference). PT Aegis Jaya Metalindo (castings, TKDN 100%) is in nearby KIW. Indonesia imported US$342m of diesel-engine parts (840999) in 2025.",
+        "fit": "cnc"
+      },
+      {
+        "product": "3D-printing and prototyping services (product prototypes, jigs, patterns)",
+        "hs": [],
+        "why": "Semarang has 21 of the 178 3D-printing services listed in Central Java (directory, Apr 2026) and Polines' CNC and EDM labs. It is the region's design and university hub. Not a traded product.",
+        "fit": "3d"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Kubota Indonesia (BSB)",
+      "PT Hartono Istana Teknologi (Polytron), Sayung, Demak (freezers)",
+      "PT Triangle Motorindo (BSB)",
+      "PT Excosindo Citra Persada (KIW)",
+      "Food-service buyers such as free-meal (MBG) kitchens (national demand; not Semarang-specific)"
+    ],
+    "local_inputs": [
+      "fish (Kota Semarang, Demak)",
+      "salt (Demak)",
+      "milk (Kab. Semarang)",
+      "meat processing (Kota and Kab. Semarang)",
+      "wood (Demak)",
+      "tobacco (Demak, Kota and Kab. Semarang)",
+      "cassava flour (Kota Semarang)"
+    ],
+    "clusters": [
+      "Kawasan Industri Wijayakusuma (KIW), Tugu",
+      "Bukit Semarang Baru (BSB) Industrial Park, Mijen",
+      "Kawasan Industri Candi, Ngaliyan",
+      "Kawasan Industri Terboyo, Genuk",
+      "Kawasan Industri Kecil (LIK) Banjardowo, Genuk",
+      "Sentra logam Bugangan",
+      "Sayung (Demak) industrial corridor",
+      "Karangawen (Demak)"
+    ],
+    "official_designation": "Central Java Perda 10/2017 (RPIP 2017–2037), Kedungsapur region. Kota Semarang is assigned electronics, karoseri, automotive components, ships, furniture, medical devices and cosmetics. Demak is assigned karoseri, ships, wood processing, salt and fish. Kota Semarang has about 1,600 SMEs in 24 sentra (Aug 2026). No Semarang or Demak RPIK was read.",
+    "umk_2026": "Kab. Semarang Rp2,940,088; Demak Rp3,122,805; Kota Semarang Rp3,701,709 per month, the highest in Central Java (Kepgub Jateng 100.3.3.1/505, Dec 2025)",
+    "skills": "Politeknik Negeri Semarang (Polines), Jurusan Teknik Mesin: D3 Teknik Mesin, D4 Teknik Mesin Produksi dan Perawatan, with CNC and EDM labs.",
+    "confidence": "medium",
+    "sources": [
+      "https://www.industry.co.id/read/30414/kemenperin-bangkitkan-kembali-kejayaan-sentra-ikm-logam-bugangan",
+      "https://rri.co.id/semarang/asta-cita/2626838/perkuat-daya-saing-ikm-dinas-perindustrian-gelar-temu-bisnis",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zpP98ip3zm0v1bsSWQsnnXDwlcisHZPIpOf1WpaGsyI,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=IzmSaC0kxMVBP4oSThwf6F7QAExiB502HlOSscy6wqE,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Jg980F9dsACTKYamueUa6pCYt0DCaHUHNzyeABJxRfc,",
+      "https://peraturan.bpk.go.id/Download/65630/perda_10_th_2017.pdf",
+      "https://id.wikipedia.org/wiki/Politeknik_Negeri_Semarang",
+      "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-machine-shops-in-central-java",
+      "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-laser-cutting-services-in-central-java",
+      "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-3d-printing-services-in-central-java",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8438&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=841981&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=840999&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=732111&flowCode=X",
+      "https://www.detik.com/jateng/bisnis/d-8275954/daftar-lengkap-umk-2026-se-jateng-semarang-tertinggi-banjarnegara-terendah"
+    ]
+  },
+  {
+    "province": "Jawa Tengah",
+    "area": "Kudus–Jepara–Pati–Rembang",
+    "level": "cluster",
+    "focus": {
+      "product": "CNC-routed furniture components and carved panels for Jepara's furniture exporters",
+      "hs": [
+        "940360",
+        "940391",
+        "442090"
+      ],
+      "why": "Jepara has 387 large exporting carving firms and 3,438 small carving units; carving is about 34.5% of regional GDP (2020 data). In Aug 2026 the Jepara wood-craftsmen association said labour is scarce and the work split is about 50:50 labour to machine, heading for 80% machine. Indonesia exported US$696m of wooden furniture (940360), US$58m of 4420 wood articles and US$34.8m of wooden furniture parts (940391) in 2025.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Small agricultural machinery (threshers, corn shellers, dryers, rice-milling units) and their machined parts",
+        "hs": [
+          "843352",
+          "843780",
+          "841934"
+        ],
+        "why": "Five Kudus/Pati makers hold TKDN certificates, mostly at 40–58%: Pura Barutama, Mandiri Garlica Pratama, Athoose Jaya Agritech, Sarana Agro Tekindo and Javatech Agro Persada. Indonesia imported US$187.5m of harvesting/threshing machinery (8433) in 2025, 77% from China. It also imported US$10.3m of other threshers (843352) and US$9.5m of agricultural dryers (841934). HS codes are my mapping.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Juwana brass hardware and fittings (door handles, lamp parts, stove, pump and compressor parts): 3D-printed casting patterns plus CNC finishing",
+        "hs": [
+          "830241",
+          "741980",
+          "830629"
+        ],
+        "why": "Juwana has a brass cluster dating to Daendels' era (238 units, 68 registered SMEs, 2009 data). It sand-casts scrap brass with manual lathes, and products are exported (2018 study). Sampurna Brass is among its larger firms. In 2025 Indonesia imported US$63.8m of base-metal building fittings (830241; exports US$15.5m) and US$28.3m of other copper articles (741980). Data are old; HS codes are my mapping.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "Jepara furniture and carving exporters (387 large firms, 2020)",
+      "PT Semen Gresik, Rembang plant (SIG spare-parts localisation)",
+      "Government buyers of farm machinery (TKDN-based procurement)",
+      "PT Pura Barutama (Kudus)",
+      "PT Hartono Istana Teknologi (Polytron), Kudus",
+      "Juwana fishing-boat yards and PT Jelajah Samudera Internasional (Jepara, fibreglass boats)"
+    ],
+    "local_inputs": [
+      "wood (Jepara, Pati)",
+      "cassava (Pati, Kudus)",
+      "sugarcane (Kudus, Pati)",
+      "salt (Pati, Rembang, Jepara)",
+      "fish (Pati, Rembang)",
+      "tobacco (Kudus, Pati, Jepara, Rembang)",
+      "scrap brass (Juwana; sourced from across Java and beyond)"
+    ],
+    "clusters": [
+      "Jepara carving and furniture cluster",
+      "Juwana brass cluster (Growong Lor/Kidul; UPT Kuningan Juwana)",
+      "Juwana fishing-boat yards (Bendar, Bumirejo, Kedungpancing)",
+      "Kudus–Pati farm-machinery makers (Jati, Jekulo, Bae, Gembong)"
+    ],
+    "official_designation": "Central Java Perda 10/2017 (RPIP 2017–2037), Wanarakuti (Juwana, Jepara, Kudus, Pati) and Banglor (Rembang, Blora) regions. Metal processing, automotive components and karoseri are assigned to Kab. Pati. Electronics go to Kudus, and furniture/wood to Jepara and Pati. Rembang gets the ship industry and upstream petrochemicals; Pati, Rembang and Jepara get salt. No regency RPIK was read.",
+    "umk_2026": "Rembang Rp2,386,305; Pati Rp2,485,000; Jepara Rp2,756,501; Kudus Rp2,818,585 per month (Kepgub Jateng 100.3.3.1/505, Dec 2025)",
+    "skills": "Universitas Muria Kudus has CNC-router work (Teknik Elektro thesis) and UNISNU Jepara has CNC carving research (snippet). The Jepara wood-craftsmen association (APKJ) is promoting machine adoption. No polytechnic or BLK machining data found.",
+    "confidence": "medium",
+    "sources": [
+      "https://jatengprov.go.id/?p=110285",
+      "https://jogja.viva.co.id/warta/10884-tukang-mebel-makin-sulit-dicari-jepara-mulai-moving-to-cnc-technology",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=VfSmVEQrXq47JMvk4-ZzC58o0AnqJ4mIOhCZQ1ypyk4,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=GBp6N_yWTFfQNt2bI8Z9BtVViMWMPeUKThzVGnhCpuc,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=FusEnDvZaM69ZrFjtoMvNkDXbxUB83PawUmORxWuffM,",
+      "https://ejournal.jatengprov.go.id/index.php/jurnaljateng/article/download/270/205",
+      "https://journal.untar.ac.id/index.php/jmishumsen/article/view/2062/1191",
+      "https://finance.detik.com/industri/d-7321752/sederet-ukm-ini-berhasil-tembus-pasok-suku-cadang-pabrik-semen",
+      "https://peraturan.bpk.go.id/Download/65630/perda_10_th_2017.pdf",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=940360&flowCode=X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=4420&flowCode=X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8433&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843352&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=830241&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=940391&flowCode=X",
+      "https://eprints.umk.ac.id/10773/2/Bab%20I.pdf",
+      "https://www.detik.com/jateng/bisnis/d-8275954/daftar-lengkap-umk-2026-se-jateng-semarang-tertinggi-banjarnegara-terendah"
+    ]
+  }
+]

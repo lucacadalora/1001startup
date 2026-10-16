@@ -1,0 +1,646 @@
+[
+  {
+    "product": "Car parts (HS 8708), especially machined parts: brakes, gearboxes, axles, wheels, suspension, steering",
+    "family": "vehicles",
+    "hs": [
+      "8708",
+      "870830",
+      "870840",
+      "870850",
+      "870870",
+      "870880",
+      "870894",
+      "870899"
+    ],
+    "imports_usd_m": {
+      "2023": 3661.0,
+      "2024": 3171.6,
+      "2025": 3132.2
+    },
+    "exports_usd_m": {
+      "2023": 2038.0,
+      "2024": 2117.6,
+      "2025": 2133.3
+    },
+    "top_origins_2025": [
+      "Japan 38%",
+      "Thailand 21%",
+      "China 20%",
+      "India 6%"
+    ],
+    "local_now": "GIAMM (31 Jul 2025): the local supply chain supplies about 55% of a car's value (Thailand about 78%), from about 1,550 suppliers plus 950 SMEs. No separate local share exists for machined parts. Certified electric cars sit at 40-46.5% TKDN (6 firms, Kemenperin TKDN database, 16 Oct 2026). 2025 imports (3,132.2) exceeded exports (2,133.3) (Comtrade, US$M).",
+    "local_makers": [
+      "Astra Otoparts group: Akebono Brake Astra Indonesia, Kayaba Indonesia, Inti Ganda Perdana, Federal Izumi Manufacturing, Federal Nittan Industries, Aisin Indonesia, Astra Komponen Indonesia (plant cities not verified)",
+      "PT Dharma Polimetal Tbk (Cikarang Selatan, Kab. Bekasi)",
+      "PT Indoprima Gemilang (Kota Surabaya)",
+      "Koperasi Batur Jaya foundries (Ceper, Kab. Klaten)",
+      "Tegal metal small firms coached by YDBA (Kab. Tegal)",
+      "PT Arkha Industries Indonesia, tier-1 to Astra Komponen Indonesia (city not verified; snippet)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC turning and milling of brake discs, drums and calipers, hubs and knuckles, axle shafts, suspension and steering parts, gears and shafts, plus brackets for EV battery and motor mounting. The work is volume tier-2/3 machining under IATF 16949. 3D printing is a support role: jigs, welding fixtures, checking gauges and prototype brackets for the EV models that must reach 60% TKDN in 2027.",
+    "potential_share": "Judgement, 3-5 years: Indonesian-made share of machined car parts could rise about 5-10 percentage points from GIAMM's ~55% overall local content. That would replace 5-10% of 2025 HS 8708 imports, about US$157-313M (estimate: 0.05 x 3,132.2 and 0.10 x 3,132.2). The most machining-heavy codes (brakes 870830, axles 870850, wheels 870870, suspension 870880, steering 870894) imported US$1,173M in 2025. Gearboxes (870840) stay captive imports of Japanese and Thai groups. Reasoning: the 2027 EV step to 60% TKDN (all certified EV cars are at 40-46.5%), the 1:1 CBU-offset deadline at end-2027 and the car market recovery (+21% Jan-Sep 2026) pull work onshore. Against that, Japanese/Thai captive supply chains, IATF and PPAP approval lead times (often 12-24 months, industry norm, not sourced) and the scale cost gap with China and Thailand hold it back. Much of the gain will go to foreign tier-1s opening in West Java, with Indonesian CNC shops as tier-2/3.",
+    "buyers": [
+      "Toyota TMMIN, Daihatsu ADM, Honda HPM, Isuzu IAMI (Kab. Karawang)",
+      "Hyundai HMMI, Mitsubishi MMKI, Wuling SGMW, Suzuki SIM (Cikarang, Kab. Bekasi)",
+      "BYD and VinFast (Kab. Subang)",
+      "Geely, Xpeng (Era Industri Otomotif), Aletra, National Assemblers (Kab. Purwakarta)",
+      "Chery (Kab. Bogor)",
+      "Tier-1s such as the Astra Otoparts group, reached via Astra's YDBA supplier programme",
+      "Replacement-parts aftermarket"
+    ],
+    "best_places": [
+      "Kab. Bekasi, West Java",
+      "Kab. Karawang, West Java",
+      "Kab. Purwakarta, West Java",
+      "Kab. Subang, West Java",
+      "Kab. Tegal, Central Java"
+    ],
+    "certs_needed": [
+      "IATF 16949",
+      "ISO 9001",
+      "OEM part approval (PPAP/APQP)",
+      "TKDN certificate (counts toward the carmaker's 60% EV target from 2027)",
+      "SNI where a mandatory standard covers the part (not verified per part)"
+    ],
+    "jobs_note": "Astra Otoparts' manufacturing arm employs 30,171 (2026). Kemenperin counted 500 auto-component small firms with up to 25,000 workers (2020, pre-2023). BYD Subang reports more than 5,000 jobs (Sep 2026) and VinFast expects 5,000-15,000 at full capacity. GIAMM members cut 3-23% of staff from mid-2025 during the car slump (snippet). No jobs-per-output figure was found.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8708&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8708&flowCode=M",
+      "https://www.gaikindo.or.id/wp-content/uploads/2025/07/04.-GIAMM_GIIAS-31-JUL-2025-3.pdf",
+      "https://www.astra-otoparts.com/",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=motor+listrik",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=kampas+rem",
+      "https://en.wikipedia.org/wiki/Automotive_industry_in_Indonesia",
+      "https://industri.kontan.co.id/news/penjualan-mobil-januari-september-2026-tembus-679020-unit-naik-21",
+      "https://peraturan.bpk.go.id/Details/273447/perpres-no-79-tahun-2023",
+      "https://investortrust.id/esg/108898/46-tahun-jadi-pendamping-yayasan-astraydba-bantu-2030-umkm-di-21-daerah-masuk-rantai-pasok-industri"
+    ]
+  },
+  {
+    "product": "Motorcycle parts and accessories (HS 871410) and the CNC billet aftermarket",
+    "family": "vehicles",
+    "hs": [
+      "871410"
+    ],
+    "imports_usd_m": {
+      "2023": 560.0,
+      "2024": 582.6,
+      "2025": 635.2
+    },
+    "exports_usd_m": {
+      "2023": 971.2,
+      "2024": 956.0,
+      "2025": 1169.3
+    },
+    "top_origins_2025": [
+      "China 57%",
+      "Thailand 19%",
+      "Japan 10%",
+      "India 6%"
+    ],
+    "local_now": "Indonesia is a net exporter of HS 871410: in 2025 it exported US$1,169.3M against US$635.2M of imports (Comtrade). Petrol motorcycles carry 45.2-51.1% TKDN (Astra Honda Motor) and 47.1-58.7% (Yamaha) (TKDN database, 16 Oct 2026). TKDN counts imported raw material as foreign. The share of the billet aftermarket is unknown.",
+    "local_makers": [
+      "PT Astra Honda Motor (Kota Jakarta Utara; Cikampek, Kab. Karawang)",
+      "PT Yamaha Indonesia Motor Manufacturing (KIIC, Kab. Karawang; Kota Jakarta Timur)",
+      "PT Kawasaki Motor Indonesia (MM2100, Kab. Bekasi)",
+      "PT Dharma Polimetal Tbk (Kab. Bekasi)",
+      "PT Triangle Motorindo/Viar (Kota Semarang)",
+      "Tegal metal small firms, tier-2 to AHM (Kab. Tegal)",
+      "PT Diametral Involute (Jakarta; snippet)",
+      "Kawahara Racing (city not verified)",
+      "VND Racing (city not verified)",
+      "BRT/PT Bintang Niaga Jaya (city not verified)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC is the core: billet aluminium (6061/7075) aftermarket parts such as triple clamps, rearsets, brake and clutch levers, swingarm spools, engine covers, CNC rims, plus OEM tier-2 turned and milled parts (hubs, axles, gears, brackets). 3D printing helps design and fit-check custom accessories before cutting billet, makes small-batch plastic covers, and prints fixtures that hold parts during multi-axis machining.",
+    "potential_share": "Judgement, 3-5 years: replace 10-20% of the China-origin share of HS 871410 imports, about US$36-72M (estimate: China 57% x US$635.2M = US$359M; x 0.10 and x 0.20). Aftermarket exports could also grow; that is not sized. Reasoning: a large domestic base (6.41M new motorcycles in 2025 per AISI) and an existing export surplus. CNC billet parts sell at about 2x cast prices (Kawahara, snippet), so labour-intensive CNC finishing pays. Against that: Chinese cast/forged parts are cheap, there is no TKDN rule for petrol motorcycles, and OEM parts are captive to the Japanese groups' tier-1s.",
+    "buyers": [
+      "Astra Honda Motor",
+      "Yamaha Indonesia Motor Manufacturing",
+      "Kawasaki Motor Indonesia",
+      "TVS Motor Company Indonesia",
+      "Triangle Motorindo/Viar",
+      "Domestic aftermarket and racing (6.41M new motorcycles sold in 2025)",
+      "Export buyers (2025 destinations of HS 871410: Philippines, Malaysia, Brazil, Netherlands, Colombia)"
+    ],
+    "best_places": [
+      "Kab. Karawang, West Java",
+      "Kab. Bekasi, West Java",
+      "Kota Jakarta Utara, DKI Jakarta",
+      "Kab. Tegal, Central Java",
+      "Kab. Klaten, Central Java"
+    ],
+    "certs_needed": [
+      "IATF 16949 / ISO 9001 for OEM supply",
+      "OEM part approval",
+      "TKDN certificate when supplying e-motorcycle makers",
+      "No specific mandatory standard verified for billet accessories"
+    ],
+    "jobs_note": "AHM had about 22,400 employees for 5.3M units/yr of capacity in 2015 (pre-2023), about 4.2 per 1,000 units/yr (arithmetic). Tegal's metal small firms employed 31,926 (2019, pre-2023). YDBA-coached small suppliers employ 12,394 (2026). No headcount was found for the billet brands.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=871410&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=871410&flowCode=M",
+      "https://www.aisi.or.id/statistic/",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=sepeda",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=swing+arm",
+      "https://en.wikipedia.org/wiki/Astra_Honda_Motor",
+      "https://otomotifnet.gridoto.com/read/234014127/pantesan-aksesori-cnc-motor-harganya-selangit-rahasia-dapur-terbongkar",
+      "https://setda.tegalkab.go.id/2024/02/27/ikm-logam-kabupaten-tegal-pasok-kebutuhan-industri-otomotif-nasional"
+    ]
+  },
+  {
+    "product": "Engine parts (HS 8409): pistons, heads, blocks, liners, valves, con-rods and other parts of petrol and diesel engines",
+    "family": "vehicles",
+    "hs": [
+      "8409",
+      "840991",
+      "840999"
+    ],
+    "imports_usd_m": {
+      "2023": 759.0,
+      "2024": 755.7,
+      "2025": 757.0
+    },
+    "exports_usd_m": {
+      "2023": 469.2,
+      "2024": 450.4,
+      "2025": 474.4
+    },
+    "top_origins_2025": [
+      "Japan 29%",
+      "China 21%",
+      "Thailand 12%",
+      "Korea 6%"
+    ],
+    "local_now": "Unknown as a sourced share. In 2025 exports were US$474.4M, 63% of imports of US$757.0M (Comtrade). GIAMM counts about 500 tier-2/3 engine-part suppliers (2025). One TKDN-certified diesel-engine maker was found: PT Surya Indah Dieselindo Perkasa, 44.5-47.8% (2026).",
+    "local_makers": [
+      "PT Federal Izumi Manufacturing and PT Federal Nittan Industries (Astra Otoparts affiliates; cities not verified)",
+      "PT Kubota Indonesia (Kota Semarang)",
+      "CV Karya Hidup Sentosa/Quick (Kab. Kulon Progo)",
+      "PT Surya Indah Dieselindo Perkasa (Kota Jakarta Barat)",
+      "Koperasi Batur Jaya foundries (Ceper, Kab. Klaten)",
+      "PT Yanmar Diesel Indonesia (Pandaan, Kab. Pasuruan)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "Casting plus CNC finishing of cylinder liners and sleeves, pistons, valve guides, flywheels, gears, cam and crank parts; boring and honing; remanufacturing of diesel parts. 3D printing is limited to sand-casting patterns and cores for low-volume replacement castings, and to fixtures.",
+    "potential_share": "Judgement, 3-5 years: replace 5-10% of 2025 HS 8409 imports, about US$38-76M (estimate: 0.05 and 0.10 x US$757.0M). Most gains would come in diesel parts (840999: US$342.2M) for trucks, gensets and farm engines, made by foundry-plus-CNC suppliers to Kubota, Quick and Yanmar. Car engine parts are captive to Japanese groups. Reasoning: large existing two-way trade and an existing foundry base (Ceper sleeves for TMMIN since 2019) work for it. Metallurgy and heat-treatment quality, IATF approval and Chinese aftermarket prices work against it.",
+    "buyers": [
+      "Car and motorcycle engine plants (Toyota, Honda, Yamaha, Suzuki groups)",
+      "Small-engine makers: Kubota Indonesia, Quick, Yanmar Diesel Indonesia",
+      "Truck, genset and heavy-equipment aftermarket",
+      "Export markets (2025: Thailand, Japan, India, USA per earlier notes)"
+    ],
+    "best_places": [
+      "Kab. Karawang, West Java",
+      "Kab. Bekasi, West Java",
+      "Kota Semarang, Central Java",
+      "Kab. Kulon Progo, DI Yogyakarta",
+      "Kab. Klaten, Central Java"
+    ],
+    "certs_needed": [
+      "IATF 16949",
+      "ISO 9001",
+      "Material and heat-treatment certificates (e.g., EN 10204 3.1)",
+      "OEM approval"
+    ],
+    "jobs_note": "Quick's plant runs 198 CNC machines, 78 conventional machines and 33 gear machines; no headcount was found. The Ceper casting cooperative had more than 4,000 workers (2019, pre-2023). GIAMM: an engine has 1,000-2,000 parts from about 500 tier-2/3 suppliers.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8409&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8409&flowCode=M",
+      "https://www.gaikindo.or.id/wp-content/uploads/2025/07/04.-GIAMM_GIIAS-31-JUL-2025-3.pdf",
+      "https://quick.co.id/fasilitas-produksi",
+      "https://quick.co.id/tentang-cv-karya-hidup-sentosa",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=mesin+diesel",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=motor+diesel",
+      "https://www.industry.co.id/read/49656/ikm-siap-berkontribusi-dalam-rantai-pasok-industri-otomotif-nasional"
+    ]
+  },
+  {
+    "product": "EV conversion kits and electric-motorcycle components (motors, controller housings, battery enclosures, swingarms); trade figures are a proxy: complete e-motorcycles and e-bikes (HS 871160)",
+    "family": "vehicles",
+    "hs": [
+      "871160"
+    ],
+    "imports_usd_m": {
+      "2023": 41.4,
+      "2024": 26.3,
+      "2025": 21.2
+    },
+    "exports_usd_m": {
+      "2023": 1.7,
+      "2024": 1.0,
+      "2025": 7.3
+    },
+    "top_origins_2025": null,
+    "local_now": "TKDN database (16 Oct 2026): 102 certified e-motorcycle models from 27 firms, all on Java. Median TKDN 46.4% (range 30.4-75.0%); only 15 models reach the 60% that applies from 1 Jan 2027. No sourced local share for motors, controllers or battery packs. Conversion: 194 conversions by Nov 2023 against a 1,000 target, with 13 licensed workshops (GGGI 2024). About 236,000 e-motorcycles on the road in Oct 2025, under 1% of the fleet (ESDM via Wikipedia).",
+    "local_makers": [
+      "PT Volta Indonesia Semesta (Kota Semarang)",
+      "PT Hartono Istana Teknologi/Polytron (Kab. Demak)",
+      "PT Industri Ion Mobilitas (Kab. Karawang)",
+      "PT Garda Energi Nasional Indonesia/SAVART (Kab. Mojokerto)",
+      "PT Terang Dunia Internusa/United (Kab. Bogor)",
+      "PT Electra Mobilitas Indonesia/ALVA (Kab. Bekasi)",
+      "PT Yadea Manufaktur Kendaraan Listrik (Kab. Bekasi)",
+      "PT Yifang Cargo Mutiara Elektronik/Electrum (Kab. Tangerang)",
+      "PT Triangle Motorindo/Viar (Kota Semarang)",
+      "PT Barisan Anak Pamungkas/Tangkas (Kota Semarang)",
+      "PT Ninetology Indonesia (Kab. Tangerang)",
+      "PT Industri Charged Mobilitas (Kab. Tangerang)",
+      "PT Gesits Motor Nusantara (Cileungsi, Kab. Bogor)",
+      "PT Astra Honda Motor (EV models)",
+      "PT ITS Tekno Sains (Kota Surabaya)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: hub-motor and mid-drive motor housings and end caps (die-cast then machined), shafts, swingarms and pivots, wheel hubs, brake mounts, battery-tray rails and terminals, controller heat-sink housings, conversion-kit motor mounts and adapter plates. 3D printing: fit-check prototypes of enclosures and brackets, low-volume (<1,000/yr) plastic covers and connector housings, sand-printed moulds for first-run aluminium housings, assembly fixtures.",
+    "potential_share": "Judgement, 3-5 years: if the 60% TKDN rule holds from 2027, locally made shares of machined/cast e-motorcycle metal parts (housings, swingarms, enclosures) in Indonesian-assembled models could reach 60-80%, from an unknown and probably lower base. Most certified models (median 46.4%) need about 14 more TKDN points, and cells and magnets are hard to localise, so metal parts are the cheapest points. The market is small. Estimate: 100,000 units/yr (the government's planned 2026 incentive quota) x Rp1.5-3.0M of machined/cast metal per unit (assumption) = Rp150-300 billion/yr, about US$9-18M at an assumed Rp16,500/US$. Complete e-2W imports (HS 871160) were US$21.2M in 2025, for scale. Conversion kits: 0-5% of this, since the programme stalled (194 conversions by Nov 2023). Reasoning: TKDN pull and planned incentives (Rp5M/unit for 100,000 units, not issued as of Aug 2026) versus weak demand (<1% of 6.41M sales in 2025) and cheap Chinese kits.",
+    "buyers": [
+      "E-motorcycle assemblers that must reach 60% TKDN (Volta, Polytron, ALVA, Yadea, Electrum/Yifang, Charged, Smoot, United, Viar, AHM EV)",
+      "EV car plants (BYD and VinFast in Subang; Geely, Xpeng, Aletra in Purwakarta; Chery in Kab. Bogor)",
+      "Fleets (Grab, Gojek/Electrum, SiCepat, PLN)",
+      "Certified conversion workshops (13 in 2024)",
+      "Government EV incentive: 100,000 e-motorcycles planned at Rp5M each (pending, Aug 2026)"
+    ],
+    "best_places": [
+      "Kab. Bekasi, West Java",
+      "Kab. Tangerang, Banten",
+      "Kota Semarang, Central Java",
+      "Kab. Demak, Central Java",
+      "Kab. Karawang, West Java",
+      "Kab. Subang, West Java"
+    ],
+    "certs_needed": [
+      "TKDN certificate (40% now, 60% from 1 Jan 2027, 80% from 2030 per Perpres 79/2023)",
+      "Kemenhub type approval (SUT/SRUT) for vehicles",
+      "Conversion-workshop certification under Permenhub 65/2020 (for conversions)",
+      "Battery-pack safety standards (specific SNI not verified)",
+      "ISO 9001 for tier suppliers"
+    ],
+    "jobs_note": "No headcount found for e-motorcycle assemblers or conversion workshops. Polytron has more than 10,000 employees across all products (via Wikipedia). BYD Subang reports more than 5,000 jobs (2026). AISMOLI counts 68 e-2W makers with 2.5M units/yr of capacity (Feb 2026, via Wikipedia), far above sales, so new jobs depend on demand, not capacity.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=871160&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=871160&flowCode=M",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=sepeda+motor+listrik",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=motor+listrik",
+      "https://gggi.org/wp-content/uploads/2025/03/01_GT_Situational-Analysis-Report.pdf",
+      "https://peraturan.bpk.go.id/Details/273447/perpres-no-79-tahun-2023",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8607387/menperin-siapkan-aturan-teknis-subsidi-kendaraan-listrik",
+      "https://id.wikipedia.org/wiki/Sepeda_motor_listrik",
+      "https://voltaindonesia.com/",
+      "https://id.wikipedia.org/wiki/Gesits",
+      "https://peraturan.bpk.go.id/Details/252444/permen-esdm-no-3-tahun-2023"
+    ]
+  },
+  {
+    "product": "Bicycles and bicycle parts (HS 8712, 871491-871499)",
+    "family": "vehicles",
+    "hs": [
+      "8712",
+      "871491",
+      "871492",
+      "871493",
+      "871494",
+      "871495",
+      "871496",
+      "871499"
+    ],
+    "imports_usd_m": {
+      "2023": 275.5,
+      "2024": 329.7,
+      "2025": 279.1
+    },
+    "exports_usd_m": {
+      "2023": 238.6,
+      "2024": 246.4,
+      "2025": 273.5
+    },
+    "top_origins_2025": null,
+    "local_now": "Unknown as a sourced share, but trade shows local assembly dominates: complete bicycles (8712) were exported for US$129.8M and imported for only US$7.8M in 2025 (Comtrade). PT Insera Sena (Polygon, Kab. Sidoarjo) states an annual capacity of one million bicycles. Indonesia is a net exporter of hubs and free-wheels (871493: exports US$37.2M vs imports US$21.7M in 2025) but imports frames (871491: US$74.6M, exports US$3.7M) and rims and spokes (871492: US$39.6M). The TKDN database holds no bicycle certificates.",
+    "local_makers": [
+      "PT Insera Sena/Polygon (Buduran, Kab. Sidoarjo)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC: hubs, freewheel bodies, cranks and spiders, stems, seat-post heads, dropouts and head tubes for welded aluminium frames, e-bike motor mounts. Welding jigs (CNC-cut). 3D printing: prototype lugs and dropouts, fixtures, and possibly premium printed titanium/aluminium parts (no local evidence).",
+    "potential_share": "Judgement, 3-5 years: replace 15-30% of frame and fork imports (871491), about US$11-22M (estimate: 0.15 and 0.30 x US$74.6M), anchored on Polygon's Sidoarjo plant and e-bike exports. CNC parts beyond that are small. All bicycle and part imports were US$279.1M in 2025. Reasoning: an existing assembler with exports to the US and EU and a hub export base work for it. Taiwan/China frame costs and no public-procurement pull (no TKDN demand) work against it.",
+    "buyers": [
+      "PT Insera Sena/Polygon (Sidoarjo)",
+      "Other bicycle assemblers (not verified)",
+      "E-bike exporters (Polygon's first e-bike export to the USA/EU, Dec 2024)",
+      "Domestic retail"
+    ],
+    "best_places": [
+      "Kab. Sidoarjo, East Java"
+    ],
+    "certs_needed": [
+      "ISO 4210 / EN ISO 4210 safety (export)",
+      "EN 15194 for e-bikes (EU export)",
+      "SNI for bicycles (mandatory status not verified)"
+    ],
+    "jobs_note": "No employee count found for Polygon or other bicycle makers. Capacity is 1M bicycles/yr (Insera Sena site).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8712,871491,871492,871493,871494,871495,871496,871499&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8712,871491,871492,871493,871494,871495,871496,871499&flowCode=M",
+      "http://www.insera.co.id/?page_id=8",
+      "https://www.polygonbikes.com/about-us/",
+      "https://en.wikipedia.org/wiki/Polygon_Bikes",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=sepeda",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-7670836/mendag-lepas-ekspor-sepeda-listrik-ke-amerika-dan-eropa-rp-7-8-m"
+    ]
+  },
+  {
+    "product": "Farm machinery and parts (HS 8432, 8433, 8436, 8437; trade figures are the four headings, which include their parts lines 843290, 843390, 843699, 843790)",
+    "family": "farm and food machinery",
+    "hs": [
+      "8432",
+      "843290",
+      "8433",
+      "843390",
+      "8436",
+      "843699",
+      "8437",
+      "843790"
+    ],
+    "imports_usd_m": {
+      "2023": 283.3,
+      "2024": 291.8,
+      "2025": 419.6
+    },
+    "exports_usd_m": {
+      "2023": 29.4,
+      "2024": 27.6,
+      "2025": 27.8
+    },
+    "top_origins_2025": null,
+    "local_now": "TKDN database (16 Oct 2026): 60 firms hold 262 farm-machine certificates, 54 of them on Java. Median certified TKDN: 2-wheel tractors 52.6%, threshers 45.6%, rice milling units 40.8%, 4-wheel tractors 35.9%, transplanters 33.9%, combine harvesters 33.0%. Quick's hand tractors with Kubota RD diesels made in Semarang certify at up to 83.1%; its petrol-engined model is at 40.2%. Quick held up to 70% of the hand-tractor market in 2017 (snippet, pre-2023). Hand-tractor imports (870110) were only US$0.6M in 2025, so hand tractors are almost wholly made locally (Comtrade). Kemenperin: 67 firms, 5,629 workers, US$90M exports in 2024.",
+    "local_makers": [
+      "CV Karya Hidup Sentosa/Quick (Kab. Kulon Progo)",
+      "PT Yanmar Diesel Indonesia (Kab. Pasuruan)",
+      "PT Iseki Indonesia (Kab. Pasuruan)",
+      "PT Kubota Indonesia (Kota Semarang)",
+      "PT Pindad (Kota Bandung)",
+      "PT Bahagia Jaya Sejahtera/BEJE (Kab. Bogor)",
+      "CV Phonna Raya Machinery/KOHPAD (Kab. Sukabumi)",
+      "PT Tanikaya Multi Sarana (Kab. Tangerang)",
+      "PT Corin Mulia Gemilang/MAXXI (Kab. Sidoarjo)",
+      "CV Javatech Agro Persada (Kab. Pati)",
+      "PT Arqom Technology Innovation (Kab. Bantul)",
+      "PT Pura Barutama/INARI (Kab. Kudus)",
+      "PT Agrindo (Kab. Gresik)",
+      "PT Tri Ratna Diesel Indonesia (Kab. Gresik)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC: gears, shafts, sprockets and gearbox housings for hand tractors and rotavators; rotary blades, threshing drums and concaves; combine header and track-drive parts; pulleys; machined castings. 3D printing: patterns and core boxes for gearbox and housing castings, scan-to-CAD of worn spares for old Japanese and Chinese machines, prototypes.",
+    "potential_share": "Judgement, 3-5 years: replace 15-25% of 2025 imports of HS 8432, 8433, 8436 and 8437, about US$63-105M (estimate: 0.15 and 0.25 x US$419.6M). The gain would come by raising combines and 4-wheel tractors from ~33-36% TKDN toward 45-50% with locally machined drivetrain and threshing parts, and by more local hand tractors and threshers. Reasoning: Kementan is a large repeat buyer (7,676 combines in 2020-2026; 16,717 2-wheel and 8,396 4-wheel tractors; 56,000 pumps in 2026), Java makers already hold certificates, and China supplies most imports (cheap but distant support). Against that: Kementan's TKDN floor is only 25%, so imported kits qualify; import costs from China are low; and there is no local engine supply for larger tractors.",
+    "buyers": [
+      "Kementan Ditjen PSP machinery aid (Bantuan Presiden; Brigade Pangan; UPJA; Poktan/Gapoktan)",
+      "Agrinas Pangan (Danantara) food-production centres (Rp8T capex plan)",
+      "Farmers and machinery-rental units financed by KUR (Rp320T in 2026, flat 6%)",
+      "Machine makers buying gears, shafts and blades (Quick, Yanmar, Kubota, MAXXI, Pindad)"
+    ],
+    "best_places": [
+      "Kab. Kulon Progo, DI Yogyakarta",
+      "Kab. Bantul, DI Yogyakarta",
+      "Kab. Pasuruan, East Java",
+      "Kab. Gresik, East Java",
+      "Kab. Sidoarjo, East Java",
+      "Kota Semarang, Central Java",
+      "Kab. Kudus, Central Java",
+      "Kab. Pati, Central Java"
+    ],
+    "certs_needed": [
+      "TKDN certificate (Kementan buys at least 25% TKDN with 40% company benefit weight)",
+      "ISO 9001",
+      "SNI and Kementan test certificates for farm machines where required (agency and standard numbers not verified)"
+    ],
+    "jobs_note": "Kemenperin: 67 farm-machinery firms with 5,629 workers (Jun 2025), about 84 per firm (arithmetic). Assembly and fabrication are labour-intensive. No jobs-per-unit data.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8432,8433,8436,8437&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8432,8433,8436,8437&flowCode=M",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=traktor+roda+2",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=traktor+roda+4",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=combine+harvester",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=power+thresher",
+      "https://psp.pertanian.go.id/berita/kementan-bantuan-presiden-sudah-tiba-petani-tuban-kini-dapat-panen-jagung-dengan-mesin-canggih",
+      "https://psp.pertanian.go.id/berita/kementan-siapkan-56-ribu-pompa-air-untuk-mitigasi-kekeringan-nasional",
+      "https://www.industry.co.id/read/108222/kementan-komitmen-realisasikan-100-persen-pengadaan-alsintan-bersertifikat-tkdn",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan",
+      "https://quick.co.id/fasilitas-produksi",
+      "https://quick.co.id/tentang-cv-karya-hidup-sentosa"
+    ]
+  },
+  {
+    "product": "Food and agro-processing machinery (HS 8438 incl. cocoa machinery 843820 and parts 843890, plus cooking/hot-drink machinery 841981; coffee and cocoa roasters and grinders; rice mills sit in 8437 and are counted in the farm line)",
+    "family": "farm and food machinery",
+    "hs": [
+      "8438",
+      "843820",
+      "843880",
+      "843890",
+      "841981"
+    ],
+    "imports_usd_m": {
+      "2023": 300.5,
+      "2024": 326.8,
+      "2025": 385.9
+    },
+    "exports_usd_m": {
+      "2023": 13.2,
+      "2024": 14.7,
+      "2025": 19.9
+    },
+    "top_origins_2025": null,
+    "local_now": "Unknown as a market share. TKDN database (16 Oct 2026): 26 firms hold coffee-machine certificates (roasters, grinders, hullers, pulpers; TKDN mostly 34-67%), 8 hold cocoa-machine certificates, and 26 hold rice-mill or huller certificates (rice milling unit median 40.8%; PT Agrindo's RMU at 66.6%). The Bugangan cluster (Semarang) has 56 small food-machine makers (snippet).",
+    "local_makers": [
+      "PT Riset Perkebunan Nusantara/LASINKO, linked to Puslitkoka (Kab. Jember)",
+      "PT Bahagia Jaya Sejahtera/BEJE (Kab. Bogor)",
+      "CV Phonna Raya Machinery/KOHPAD (Kab. Sukabumi)",
+      "PT Hinoka Alsindo Tekni (Kab. Bogor)",
+      "PT Multi Prima Inovasi (Kota Bogor)",
+      "PT Bangga Karya Indonesia (Kota Yogyakarta)",
+      "PT Sang General Industri (Kab. Aceh Besar)",
+      "PT Agrindo (Kab. Gresik)",
+      "PT Pura Barutama/INARI (Kab. Kudus)",
+      "PT Tri Ratna Diesel Indonesia (Kab. Gresik)",
+      "Bugangan food-machine cluster (Kota Semarang)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC and laser/press-brake fabrication of stainless drums, shafts, burr and blade carriers for grinders, roaster drums and bearing housings, huller rolls and RMU parts, cocoa press platens and ball-mill parts, cutter blades. 3D printing: prototypes, guards and chutes, non-food-contact covers; patterns for cast housings.",
+    "potential_share": "Judgement, 3-5 years: replace 10-15% of 2025 imports of HS 8438 plus 841981, about US$39-58M (estimate: 0.10 and 0.15 x US$385.9M). Gains would come mostly in SME-scale machines (roasters up to ~30 kg, grinders, cocoa machines, RMUs, cutters) where certified local makers already exist. Large automated lines stay imported. Reasoning: many small certified makers, government and agro-industry programmes that require domestic machines (Kemenperin 2026 restructuring), and labour-intensive fabrication work for it. Against that: thin engineering depth, food-safety design standards and the MBG kitchen moratorium since Jun 2026.",
+    "buyers": [
+      "Coffee roasteries, cafés and coffee-farmer cooperatives",
+      "Cocoa cooperatives and chocolate SMEs",
+      "Rice mills (RMU owners), Bulog, Agrinas Pangan",
+      "Kemenperin agro-industry machine-restructuring programme (domestic machines required, 2026)",
+      "MBG kitchens (moratorium on new kitchens since Jun 2026)",
+      "Sugar mills reactivated by SGN (Tasikmadu 2027, Pangka 2028)"
+    ],
+    "best_places": [
+      "Kab. Jember, East Java",
+      "Kab. Bogor, West Java",
+      "Kab. Sukabumi, West Java",
+      "Kota Yogyakarta, DI Yogyakarta",
+      "Kab. Kudus, Central Java",
+      "Kota Semarang, Central Java",
+      "Kab. Lampung Barat, Lampung",
+      "Kab. Aceh Besar, Aceh"
+    ],
+    "certs_needed": [
+      "Food-grade stainless (SUS 304/316) and hygienic design",
+      "TKDN certificate for government buyers",
+      "SNI where applicable (not verified)",
+      "ISO 9001"
+    ],
+    "jobs_note": "No headcount data. The Bugangan cluster has 56 small makers (snippet). Small coffee and cocoa machine makers are often sole proprietors near growers (e.g., four certified workshops in Kab. Lampung Barat).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8438,841981&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8438,841981&flowCode=M",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=sangrai+kopi",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=roasting",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=huller",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=kakao",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=rice+milling",
+      "https://iccri.co.id/",
+      "https://www.industry.co.id/read/30414/kemenperin-bangkitkan-kembali-kejayaan-sentra-ikm-logam-bugangan"
+    ]
+  },
+  {
+    "product": "Marine equipment: ship and boat propellers (HS 848710), outboard motors (HS 840721) and their parts, boat fittings (anchors HS 7316 as proxy)",
+    "family": "marine",
+    "hs": [
+      "848710",
+      "840721",
+      "7316"
+    ],
+    "imports_usd_m": {
+      "2023": 69.6,
+      "2024": 71.0,
+      "2025": 64.4
+    },
+    "exports_usd_m": {
+      "2023": 1.6,
+      "2024": 6.7,
+      "2025": 2.1
+    },
+    "top_origins_2025": null,
+    "local_now": "Unknown as a sourced share. One TKDN-certified propeller maker was found: CV Putra Karya Logam Sukses (Kab. Asahan), brass propellers at 72.7-83.4% TKDN. No TKDN certificate exists for outboard motors (0 results for 'motor tempel', 'mesin tempel', 'outboard', 16 Oct 2026). About 70% of shipyard components were imported in 2015 (pre-2023). 2025 imports: propellers US$27.7M, outboard motors US$30.2M (Comtrade).",
+    "local_makers": [
+      "CV Putra Karya Logam Sukses (Simpang Empat, Kab. Asahan, North Sumatra)",
+      "Tegal metal small firms with BKI-certified ship components (Kab. Tegal; 2015)",
+      "Juwana brass workshops (Kab. Pati; uncited)",
+      "Ceper foundries (Kab. Klaten)",
+      "PT Karya Marina Mandiri, fishing boats (Kota Jakarta Utara)",
+      "PT Blambangan Bahari Shipyard (Kab. Banyuwangi)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: propeller hub boring and keyways, blade finishing and pitch correction, dynamic balancing; propeller shafts, stern tubes, couplings, rudder stocks; stainless and bronze fittings (cleats, fairleads, bollards); outboard spare parts (skegs, brackets, propellers). 3D printing: printed blade and hub patterns or sand moulds for each diameter/pitch (replacing hand-carved wooden patterns), pitch-checking templates, and prototypes of fittings.",
+    "potential_share": "Judgement, 3-5 years: small-boat propellers could take 30-50% of propeller imports, about US$8-14M (estimate: 0.30 and 0.50 x US$27.7M), plus shafts and stern gear for KKP's planned 1,000 x 30 GT boats. Large classed ship propellers stay imported. Outboard motors: 0-5% (US$0-1.5M), parts only, since no local engine maker exists. Marine diesel engines (840810, not in this line's total) were a larger and rising import (US$205.6M in 2025). Reasoning: high certified TKDN is possible (Asahan 73-83%), casting skills exist in Tegal, Juwana and Ceper, and KKP's 1,582-vessel plan works for it. Against that: the vessel plan is not yet a pipeline, BKI class approval is needed for classed vessels, and Japanese/Chinese outboard brands hold the market.",
+    "buyers": [
+      "KKP vessel programme (1,582 vessels to 2028, incl. 1,000 x 30 GT for Kampung Nelayan Merah Putih; plan)",
+      "Shipyards building fishing boats (e.g., Blambangan Bahari Shipyard, Karya Marina Mandiri)",
+      "Fishermen and boat owners (replacement propellers)",
+      "PT PAL and commercial shipyards (repairs)"
+    ],
+    "best_places": [
+      "Kab. Tegal, Central Java",
+      "Kota Tegal, Central Java",
+      "Kab. Pati, Central Java",
+      "Kab. Klaten, Central Java",
+      "Kab. Asahan, North Sumatra",
+      "Kab. Banyuwangi, East Java"
+    ],
+    "certs_needed": [
+      "BKI class approval for propellers and fittings on classed vessels",
+      "Alloy and material certificates (brass, bronze, Ni-Al bronze)",
+      "TKDN certificate for KKP procurement",
+      "KKP vessel technical specifications"
+    ],
+    "jobs_note": "No headcount data for propeller workshops. Tegal's metal small firms employed 31,926 (2019, pre-2023). Prototyping a BKI-certified component cost Tegal firms Rp7-20M each (2015, pre-2023).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848710,840721,7316&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848710,840721,7316&flowCode=M",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=baling-baling",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=motor+tempel",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=outboard",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=kapal+ikan",
+      "https://www.jica.go.jp/project/english/indonesia/012/newsletter/c8h0vm00008bcv16-att/201505_in.pdf",
+      "https://id.wikipedia.org/wiki/Juwana,_Pati",
+      "https://www.seafoodsource.com/news/supply-trade/indonesia-plans-to-build-nearly-1-600-new-fishing-vessels-as-part-of-push-to-increase-national-fishery-output",
+      "https://kemenperin.go.id/artikel/72483060/Menperin-Sarmuji:-Rusia-Tawarkan-Kerja-Sama-Kapal-Ikan-dan-IT"
+    ]
+  },
+  {
+    "product": "Small engines and water pumps for farms (trade figures: HS 8413 all pumps, plus small petrol engines 840790 and small diesel engines 840890; farm-relevant pump lines are 841370 and 841381)",
+    "family": "farm and food machinery",
+    "hs": [
+      "8413",
+      "841370",
+      "841381",
+      "841391",
+      "840790",
+      "840890"
+    ],
+    "imports_usd_m": {
+      "2023": 1402.4,
+      "2024": 1443.2,
+      "2025": 1482.3
+    },
+    "exports_usd_m": {
+      "2023": 148.3,
+      "2024": 167.6,
+      "2025": 154.6
+    },
+    "top_origins_2025": null,
+    "local_now": "TKDN database (16 Oct 2026): 55 firms hold 265 irrigation/farm-pump certificates (median TKDN 40.0%, range 25.7-84.3%; a lower bound), and 73 of 74 pump firms are on Java. One TKDN-certified diesel-engine maker (44.5-47.8%) was found; no certificate for small petrol engines. Kubota RD diesels made in Semarang lift Quick's hand tractors to 80-83% TKDN, against 40% for a model with a Honda GX200 petrol engine. Kementan bought 734 TKDN-certified pumps in its 2022 pre-harvest round (pre-2023). The market share of local pumps is unknown.",
+    "local_makers": [
+      "PT Ebara Indonesia (Kota Depok)",
+      "PT Indosan Berkat Bersama/TRITOR (Kab. Sukoharjo)",
+      "CV Rejeki Abadi Machinery/RAM (Kab. Tegal)",
+      "PT Pabrik Mesin Guntur (Kota Malang)",
+      "PT Majulah Putra Bangsa (Kab. Tangerang)",
+      "PT Tri Ratna Diesel Indonesia (Kab. Gresik)",
+      "PT Panasonic Manufacturing Indonesia/SANYO (Kota Jakarta Timur)",
+      "PT Sinar Semesta, pump castings (Ceper, Kab. Klaten)",
+      "PT Geteka Founindo, impellers (Kota Jakarta Timur)",
+      "PT Kubota Indonesia, diesel engines (Kota Semarang)",
+      "PT Surya Indah Dieselindo Perkasa, diesel engines (Kota Jakarta Barat)",
+      "CV Karya Hidup Sentosa/Quick, vertical diesel engines (Kab. Kulon Progo)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Casting plus CNC: volute casings, impellers (turning, balancing), pump shafts and sleeves, mechanical-seal seats, engine flanges and couplings, base frames; small-engine parts (crankshafts, cam gears) for local engine assemblers. 3D printing: patterns and core boxes for casings and impellers across 2-6 inch sizes, prototype impellers for flow tests.",
+    "potential_share": "Judgement, 3-5 years: farm pump sets (casting plus CNC) could replace 10-20% of 2025 centrifugal-pump imports (841370: US$363.8M), about US$36-73M (estimate), and government-bought farm pumps could be mostly local. Small petrol and diesel engines (840790 plus 840890: US$284.3M in 2025) would gain only 5-10% (US$14-28M), mainly local assembly and machined parts for Kubota, Quick and the IN-DA diesel. The all-pump HS 8413 total (US$1,198.0M) is mostly industrial pumps and is not the base for this range. Reasoning: Kementan buys pumps by the tens of thousands (56,000 planned in 2026), certified local makers exist, and castings come from Ceper. Against that: Chinese engine-pump sets are cheap and the TKDN floor is low.",
+    "buyers": [
+      "Kementan (56,000 pumps in 2026; recipients Poktan, Gapoktan, UPJA, Brigade Pangan)",
+      "Kementerian PU irrigation (groundwater pumps under Inpres 2/2025)",
+      "Farmers via KUR",
+      "Pump assemblers buying castings and machined parts (Ebara, Indosan, Rejeki Abadi, Tri Ratna)"
+    ],
+    "best_places": [
+      "Kota Depok, West Java",
+      "Kab. Klaten, Central Java",
+      "Kab. Sukoharjo, Central Java",
+      "Kab. Tegal, Central Java",
+      "Kota Malang, East Java",
+      "Kab. Gresik, East Java",
+      "Kota Semarang, Central Java"
+    ],
+    "certs_needed": [
+      "TKDN certificate for Kementan/PU procurement",
+      "ISO 9001",
+      "Pump performance test certificates (head/flow curves)",
+      "SNI for pumps and engines where applicable (not verified)"
+    ],
+    "jobs_note": "No headcount found for pump makers. The Ceper casting cooperative had more than 4,000 workers (2019, pre-2023). Castings plus machining is more labour-intensive per US$ than assembly of imported engine-pump sets.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8413,840790,840890&flowCode=M,X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8413,840790,840890&flowCode=M",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pompa+irigasi",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=pompa+air",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=impeller",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=mesin+diesel",
+      "https://psp.pertanian.go.id/berita/kementan-siapkan-56-ribu-pompa-air-untuk-mitigasi-kekeringan-nasional",
+      "https://www.industry.co.id/read/108222/kementan-komitmen-realisasikan-100-persen-pengadaan-alsintan-bersertifikat-tkdn",
+      "https://quick.co.id/tentang-cv-karya-hidup-sentosa",
+      "https://psp.pertanian.go.id/berita/kementan-distribusikan-1000-pompa-air-untuk-antisipasi-kekeringan-di-grobogan"
+    ]
+  }
+]

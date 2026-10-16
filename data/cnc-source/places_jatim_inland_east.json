@@ -1,0 +1,401 @@
+[
+  {
+    "province": "Jawa Timur",
+    "area": "Malang Raya",
+    "level": "cluster",
+    "focus": {
+      "product": "Ammunition and defence metal components (cartridge cases, projectile and fuze parts, bomb casings) and their press tooling",
+      "hs": [
+        "930630",
+        "930690",
+        "820730"
+      ],
+      "why": "Turen hosts Pindad's 166-ha munitions division, TKDN-certified (2025) for 5.56, 7.62, 9 and 12.7 mm and large-calibre ammunition. A private plant, PT Sapta Inti Perkasa, has made ammunition in Malang since 2024 and targets hundreds of millions of rounds a year (Republika, Jan 2026). PT Sari Bahari in Pakis is TKDN-certified (76-87%) for practice and live bomb casings. Pindad took a Rp1.5T BTN facility in May 2026 partly for ammunition (earlier notes). Cases, projectiles and fuze parts are deep-drawn and CNC-turned, and the press dies, gauges and fixtures they need suit Malang's mould and CNC shops (Utama Molding, Prima Sakti Asia) and Polinema's manufacturing programmes. Supplier entry runs through Pindad, DEFEND ID and Kemhan licensing. If the map should stay civilian, use the first secondary instead.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Light CNC machine tools for SMEs: fibre-laser cutters, CNC routers and small milling machines",
+        "hs": [
+          "845611",
+          "845640",
+          "846592",
+          "845961"
+        ],
+        "why": "Malang has the region's small CNC-machine builders: Pioneer CNC Indonesia (Pakis; builds CNC machines and sells fibre-laser job work), PT Idukasih Robotika (laser-diode CNC, UMM campus) and Naratech (advertised CNC mill, no TKDN record). About 8-9 listed CNC and laser shops (2025-26) add depth. Its UMK is the highest of the five units (67-72% of Surabaya), which favours design-heavy products. Indonesia imported US$71.1M of laser-cutting machines (845611) in 2025, up from $43.6M in 2024; China supplied 62% of HS 8456 (earlier notes).",
+        "fit": "cnc"
+      },
+      {
+        "product": "Food and farm processing machines: pumps, mills, choppers, retorts, dryers and coffee roasters",
+        "hs": [
+          "841370",
+          "843880",
+          "841981",
+          "841939"
+        ],
+        "why": "TKDN-certified makers already exist. PT Pabrik Mesin Guntur (Sukun) makes irrigation pumps and rice polishers (TKDN 42.6-58.8%). PT Inovasi Anak Negeri (Pakis) makes choppers, mills, a mini retort, dryers, a ribbon mixer and a coffee roaster (40-48%). CV Tirta Armagitha makes a solar coffee/cocoa dryer. Local inputs include about 20,595 ha of coffee (2021), tea, milk and sugarcane.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Pindad (Persero) Divisi Munisi, Turen",
+      "PT Sapta Inti Perkasa (private ammunition plant)",
+      "Kementerian Pertahanan / TNI (via Pindad)",
+      "PG Kebon Agung",
+      "PG Krebet Baru",
+      "PT Rolas Nusantara Mandiri (tea unit, Wonosari)",
+      "PTPN I Regional 5 Kebun Bangelan (coffee)",
+      "Koperasi Agro Niaga (KAN) Jabung (dairy)",
+      "CV Karya Rasa Utama (kretek, Malang)"
+    ],
+    "local_inputs": [
+      "sugarcane",
+      "coffee (robusta and arabica; 20,595 ha in Kab. Malang, 2021)",
+      "tea",
+      "fresh milk"
+    ],
+    "clusters": [
+      "Turen munitions complex (Pindad, 166 ha) and defence suppliers in Pakis (PT Sari Bahari)",
+      "KEK Singhasari (tourism and digital technology, Singosari)",
+      "CNC and laser job shops in Pakis, Pakisaji, Singosari, Tajinan and Sumberpucung (Kab. Malang) and Lowokwaru, Blimbing, Sukun (Kota Malang)"
+    ],
+    "official_designation": "KEK Singhasari (PP 68/2019; operating since 21 Nov 2022): tourism and digital technology, no manufacturing. KIID regulation not retrieved.",
+    "umk_2026": "Kab. Malang Rp3,802,862; Kota Malang Rp3,736,101; Kota Batu Rp3,562,484 (Kepgub Jatim 100.3.3.1/937/013/2025; 67-72% of Surabaya's Rp5,288,796)",
+    "skills": "Polinema (Jurusan Teknik Mesin): D3 Teknik Mesin, D4 Teknik Mesin Produksi dan Perawatan, Magister Terapan Rekayasa Teknologi Manufaktur, Doktor Terapan Optimasi Desain Mekanik. UMM's vocational campus hosts PT Idukasih Robotika (CNC laser-diode machines). KEK Singhasari partners Universitas Brawijaya and UMM. No named SMK or BLK machining programme verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://www.malangterkini.id/2026/06/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Terbaru-2026-Hasil-Presisi-Dan-Berkualitas.html",
+      "https://www.malangterkini.id/2025/02/Rekomendasi-Jasa-CNC-Logam-Di-Malang-Info-Terbaru.html",
+      "https://www.naratech.co.id/product/mesin-cnc-milling-terbaik-produksi-anak-bangsa-ber-tkdn/",
+      "https://sipora.polije.ac.id/48664/",
+      "https://agengambar.com/hubungi-kami/",
+      "https://id.wikipedia.org/wiki/Kawasan_Ekonomi_Khusus_Singhasari",
+      "https://singhasari.co.id/",
+      "https://en.wikipedia.org/wiki/Pindad",
+      "https://id.wikipedia.org/wiki/Daftar_pabrik_gula_di_Indonesia",
+      "https://www.polinema.ac.id/",
+      "https://www.jawapos.com/surabaya-raya/2512250021/resmi-ini-daftar-umk-38-kabupatenkota-di-jawa-timur-2026-surabaya-nyaris-rp-53-juta",
+      "https://www.malangterkini.id/2026/01/Menjelajahi-Jejak-Hitam-Manis-Mengulas-Potensi-Besar-Kopi-Malang-dari-Sejarah-hingga-Pasar-Global.html",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=845611&flowCode=M",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,",
+      "https://ekonomi.republika.co.id/berita/t9f7o7416/penguatan-industri-pertahanan-percepat-kemandirian-alutsista"
+    ]
+  },
+  {
+    "province": "Jawa Timur",
+    "area": "Kediri–Blitar–Tulungagung",
+    "level": "cluster",
+    "focus": {
+      "product": "Spare and wear parts for kretek (cigarette) making machines",
+      "hs": [
+        "847890"
+      ],
+      "why": "Gudang Garam is headquartered in Kediri. It had about 208 ha of plants across Kediri and Pasuruan (2013) and 21,964 staff at end-2025, and keeps machine maintenance inside its Kediri production directorate, making it the cluster's largest single user of machine parts. Indonesia imported US$35.2M of tobacco-machinery parts (847890) in 2025: 33% from China, 28% Germany, 10% Korea. Polinema's Kediri campus teaches production-and-maintenance engineering, and UMK is 48-63% of Surabaya's. No local maker of these parts was found, so this is a demand-led bet that needs Gudang Garam's vendor approval. Other TKDN-certified metal and vehicle makers in the cluster (2024-26 lists): PT Bintang Kadiri (aluminium, copper and bimetal compression connectors and cable lugs, Kab. Kediri) and PT Multiparts Rakindo and PT Epower Motor Indonesia (three-wheel and electric motorcycles, Jombang).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "CNC routers, plasma and fibre-laser cutting machines",
+        "hs": [
+          "845611",
+          "845640",
+          "846592"
+        ],
+        "why": "CV Inseco CNC Indonesia (Ngadiluwih) has built CNC routers, fibre-laser, plasma and marking machines since 2019 and claims hundreds sold nationwide; Genesis Kediri and Master Tukang sell laser cutting nearby. Laser-machine imports (845611) rose to US$71.1M in 2025 from $43.6M in 2024 (earlier notes). The same routers could carve Tulungagung marble (inference; no CNC marble shop verified).",
+        "fit": "cnc"
+      },
+      {
+        "product": "Sugar-mill spare parts (shafts, gears, bushings, mill-roller parts)",
+        "hs": [
+          "843890",
+          "848340",
+          "848310"
+        ],
+        "why": "Eight mills are listed as active in the cluster: Ngadirejo, Merican, Pesantren Baru, Rejoso Manis Indo, Mojopanggung, Lestari, Cukir and Jombang (Wikipedia list edited Jul 2026). 843890 imports were US$45.8M in 2025 (earlier notes).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Gudang Garam Tbk (Kediri)",
+      "PG Ngadirejo",
+      "PG Pesantren Baru",
+      "PG Merican",
+      "PG Rejoso Manis Indo (Blitar)",
+      "PG Mojopanggung (Tulungagung)",
+      "PG Lestari (Nganjuk)",
+      "PG Cukir and PG Jombang (Jombang)",
+      "PT Kampung Coklat (Blitar)"
+    ],
+    "local_inputs": [
+      "tobacco and clove (kretek)",
+      "sugarcane",
+      "marble and onyx (Tulungagung)",
+      "cocoa (Blitar)"
+    ],
+    "clusters": [
+      "Gudang Garam plants, Kab. and Kota Kediri (~208 ha with Pasuruan, 2013)",
+      "Ngadiluwih (Kab. Kediri) CNC-machine and laser-cutting firms: Inseco, Master Tukang",
+      "Campurdarat marble centre (Tulungagung)"
+    ],
+    "official_designation": null,
+    "umk_2026": "Kab. Jombang Rp3,320,770; Kota Kediri Rp2,742,806; Kab. Kediri Rp2,651,603; Kota Blitar Rp2,639,518; Tulungagung Rp2,628,190; Kab. Blitar Rp2,567,744; Nganjuk Rp2,564,627; Trenggalek Rp2,530,313 (Kepgub Jatim 100.3.3.1/937/013/2025)",
+    "skills": "Polinema PSDKU Kota Kediri: D4 Teknik Mesin Produksi dan Perawatan and D3 Teknik Mesin. No named SMK or BLK machining programme verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://insecocnc.com/",
+      "https://genesiskediri.com/",
+      "https://mastertukang.co.id/kontraktor-laser-cutting-plat-ornamen-kediri/",
+      "https://www.gudanggaramtbk.com/tentang-kami/",
+      "https://id.wikipedia.org/wiki/Daftar_pabrik_gula_di_Indonesia",
+      "https://id.wikipedia.org/wiki/Kabupaten_Tulungagung",
+      "https://sipora.polije.ac.id/53203/",
+      "https://sipora.polije.ac.id/47564/",
+      "https://www.polinema.ac.id/",
+      "https://www.jawapos.com/surabaya-raya/2512250021/resmi-ini-daftar-umk-38-kabupatenkota-di-jawa-timur-2026-surabaya-nyaris-rp-53-juta",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847890&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=845611&flowCode=M",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,"
+    ]
+  },
+  {
+    "province": "Jawa Timur",
+    "area": "Madiun Raya",
+    "level": "cluster",
+    "focus": {
+      "product": "Rolling-stock components: bogie and underframe parts, couplers, brake parts and interior fittings for INKA",
+      "hs": [
+        "860799",
+        "860719",
+        "860730",
+        "860721"
+      ],
+      "why": "INKA (Madiun) is the biggest machined-parts buyer in the five units. Its TKDN rose from 33% to 52% (May 2026), it is building KRLs for KAI Commuter and 50 locomotive platforms for UGL Rail (Australia) to 2028, and its in-group supplier IMS runs an 11-ha component plant. Indonesia's rail-parts imports (8607) jumped to US$182.4M in 2025 from $70.7M in 2023 (China 45%, Japan 24%). The 2025 jump came mostly from 'other' rolling-stock parts (860799: US$91.5M, up from $18.9M in 2023), air brakes (860721: $20.3M, from $3.8M), whole bogies (860712: $14.4M) and couplers and buffers (860730: $7.7M); axles, wheels and bogie parts (860719) were $41.3M. Madiun has the region's deepest rail skills (PNM D4 Perkeretaapian, PPI D3 rail mechanics) and a UMK of about 48% of Surabaya's. Other TKDN-certified makers in the unit (2024-25 lists): PT Mitra Maharta (rice-mill chassis and grain-dryer parts, Ponorogo), PT Refindo Intiselaras Indonesia (steel rock bolts, Kota Madiun) and PT Gunung Mas Bersinar (bus bodies, Kab. Madiun).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Sugar-mill spare parts (shafts, gears, bushings, mill-roller parts)",
+        "hs": [
+          "843890",
+          "848340",
+          "848310"
+        ],
+        "why": "Five sugar mills listed as active in Madiun Raya (Pagotan, Rejoagung, Sudono, Rejosari, Purwodadi; Wikipedia list edited Jul 2026). Gears and shafts (8483) are Indonesia's largest machinable import line (US$843M in 2025, earlier notes).",
+        "fit": "cnc"
+      },
+      {
+        "product": "3D-printed masters, patterns and fixtures for fibreglass interior panels",
+        "hs": [],
+        "why": "INKA Multi Solusi makes interior panels and fibreglass parts for INKA in an 11-ha factory at Desa Bagi (2018). Printed masters and fixtures shorten mould-making; this is an inference, not a sourced INKA plan.",
+        "fit": "3d"
+      }
+    ],
+    "anchor_buyers": [
+      "PT INKA (Persero), Madiun",
+      "PT INKA Multi Solusi (IMS)",
+      "PT KAI and KAI Commuter (via INKA orders)",
+      "UGL Rail Services (Australia; 50 locomotive platforms to 2028)",
+      "PG Pagotan",
+      "PG Rejoagung",
+      "PG Sudono (Ngawi)",
+      "PG Rejosari and PG Purwodadi (Magetan)",
+      "PT Candi Loka (green tea, Ngawi)"
+    ],
+    "local_inputs": [
+      "sugarcane",
+      "tea (Ngawi)"
+    ],
+    "clusters": [
+      "INKA Madiun plant (~20 ha, 2019)",
+      "IMS factory, Desa Bagi, Kab. Madiun (11 ha, 2018)"
+    ],
+    "official_designation": null,
+    "umk_2026": "Kota Madiun Rp2,588,794; Ngawi Rp2,556,815; Magetan Rp2,553,866; Kab. Madiun Rp2,553,221; Ponorogo Rp2,549,876; Pacitan Rp2,514,892 (Kepgub Jatim 100.3.3.1/937/013/2025; about 48% of Surabaya)",
+    "skills": "Politeknik Negeri Madiun: Sarjana Terapan Perkeretaapian, Teknologi Rekayasa Otomotif, Teknologi Rekayasa Otomasi, teaching factory; INKA-PNM D4 railway vocational class (96 places, 2019). Politeknik Perkeretaapian Indonesia Madiun (Kemenhub): D3 Teknologi Mekanika Perkeretaapian and three other rail D3s. INKA scholarships to 77 PPI and PNM students (Oct 2023). SMKN 2 Madiun had INKA outreach (2018).",
+    "confidence": "high",
+    "sources": [
+      "https://www.inka.co.id/artikel/lanjutkan-ekspor-inka-kirim-locomotive-platform-ke-australia",
+      "https://www.inka.co.id/anak-perusahaan",
+      "https://www.inka.co.id/artikel/buka-pabrik-baru-ims-siap-go-global",
+      "https://www.inka.co.id/artikel/pt-imst-sukses-ekspor-bogie-frame-ke-bangladesh",
+      "https://www.inka.co.id/artikel/pabrik-baru-inka-di-banyuwangi-fokus-garap-kereta-ekspor",
+      "https://www.inka.co.id/e-procurement",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=industri%20kereta",
+      "https://emedia.dpr.go.id/news/2026/05/24/komisi-xi-apresiasi-capaian-tkdn-pt-inka-dorong-realisasi-pmn-tepat-sasaran",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8607&flowCode=M",
+      "https://pnm.ac.id/",
+      "https://ppi.ac.id/",
+      "https://www.inka.co.id/artikel/inka-dan-poltek-madiun-prakarsai-kelas-vokasi",
+      "https://www.inka.co.id/artikel/inka-salurkan-beasiswa-ke-dua-politeknik-di-madiun",
+      "https://id.wikipedia.org/wiki/Daftar_pabrik_gula_di_Indonesia",
+      "https://www.jawapos.com/surabaya-raya/2512250021/resmi-ini-daftar-umk-38-kabupatenkota-di-jawa-timur-2026-surabaya-nyaris-rp-53-juta",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=860711,860712,860719,860721,860729,860730,860791,860799&flowCode=M&partnerCode=0",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&cmdCode=860711,860712,860719,860721,860729,860730,860791,860799&flowCode=M&partnerCode=0",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,"
+    ]
+  },
+  {
+    "province": "Jawa Timur",
+    "area": "Tapal Kuda",
+    "level": "cluster",
+    "focus": {
+      "product": "Coffee and cocoa processing machines (pulpers, hullers, roasters, grinders) and their wear parts",
+      "hs": [
+        "841981",
+        "843820",
+        "843680",
+        "843880",
+        "843890"
+      ],
+      "why": "Jember is the only place in scope where local firms already make, sell and certify a machine line. RPN/ICCRI's LASINKO pulper, huller, roaster and grinder hold TKDN certificates of 36-53%, and PT Manufacture Dynamic Indonesia builds pulpers and roasters with its own fibre laser, lathe and bending machine. Next door, processors (PT NOR Coffee, Rolas Nusantara Mandiri, Fajar Group, PTPN estates) run roasters, grinders, sorters and deshellers that need wear parts. Indonesia imported US$70.8M of 'other' food-processing machinery (843880, the line holding coffee pulpers) in 2025, 60% from China, plus $45.8M of parts (843890) and $69.1M of commercial hot-drink and food-heating machines (841981, where many roasters are classed; earlier notes). UMK is 47-60% of Surabaya's.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Sugar-mill spare parts (shafts, gears, bushings, mill-roller and cane-railway parts)",
+        "hs": [
+          "843890",
+          "848340",
+          "848310"
+        ],
+        "why": "Nine mills listed as active (Semboro, Glenmore, Asembagus, Panji, Wringinanom, Prajekan, Wonolangan, Gending, Djatiroto). PG Glenmore runs a workshop and PG Djatiroto maintains cane-railway locomotives; PT Intidaya Dinamika Sejati in Jember already runs a machining division.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Can-seaming and fish-canning line spare parts for Muncar canneries",
+        "hs": [
+          "842290",
+          "843890"
+        ],
+        "why": "Muncar is one of Java's largest fishing ports with many fish plants; PT Sumber Yalasamudra and CV Pasific Harvest can lemuru sardines and run can seamers. No local maker of seamer parts was found; the nearest marine fabricator is PT Blambangan Bahari Shipyard (Srono), which is TKDN-certified for fishing-boat hulls (2024).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Riset Perkebunan Nusantara / ICCRI (Jember)",
+      "PT NOR Coffee Indonesia (Rambipuji, Jember)",
+      "PT Rolas Nusantara Mandiri (coffee unit, Jember)",
+      "PT Fajar Group Corpora (Kalibaru, Banyuwangi)",
+      "PTPN XII / PTPN I Regional 5 estates (coffee, cocoa, rubber)",
+      "PT SGN: PG Glenmore, PG Djatiroto, PG Semboro, PG Asembagus, PG Panji, PG Prajekan",
+      "PT INKA (Persero) Banyuwangi plant",
+      "PT KAI Daop 9 Jember depots",
+      "PT Sumber Yalasamudra (Muncar)",
+      "CV Pasific Harvest (Muncar)",
+      "CV Dwipa Nusantara Tobacco and PT Mangli Djaya Raya (cigars, Jember)"
+    ],
+    "local_inputs": [
+      "coffee (robusta and arabica)",
+      "cocoa",
+      "sugarcane",
+      "cigar tobacco",
+      "lemuru sardine",
+      "rubber"
+    ],
+    "clusters": [
+      "ICCRI coffee and cocoa research institute, Jember",
+      "Muncar fishing port and canneries (Banyuwangi)",
+      "INKA Banyuwangi plant (Kalipuro)"
+    ],
+    "official_designation": null,
+    "umk_2026": "Kab. Probolinggo Rp3,164,526; Kota Probolinggo Rp3,045,172; Jember Rp3,012,197; Banyuwangi Rp2,989,145; Lumajang Rp2,578,320; Bondowoso Rp2,496,886; Situbondo Rp2,483,962, the province's lowest (Kepgub Jatim 100.3.3.1/937/013/2025)",
+    "skills": "Politeknik Negeri Jember: Mesin Otomotif, Teknologi Rekayasa Mekatronika, Teknik Energi Terbarukan, Keteknikan Pertanian, Teknologi Rekayasa Pengemasan, teaching factory; its interns work in local machine shops. Politeknik Negeri Banyuwangi: Teknik Mesin. Polinema PSDKU Lumajang: D4 Teknologi Rekayasa Otomotif. BLK Banyuwangi trains INKA Banyuwangi recruits (2024); SMKN 1 Glagah signed an MoU with INKA (2019).",
+    "confidence": "medium",
+    "sources": [
+      "https://iccri.co.id/",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=riset%20perkebunan",
+      "https://sipora.polije.ac.id/38649/",
+      "https://sipora.polije.ac.id/46482/",
+      "https://sipora.polije.ac.id/45110/",
+      "https://sipora.polije.ac.id/48346/",
+      "https://sipora.polije.ac.id/32586/",
+      "https://sipora.polije.ac.id/23187/",
+      "https://sipora.polije.ac.id/32419/",
+      "https://sipora.polije.ac.id/32127/",
+      "https://sipora.polije.ac.id/27961/",
+      "https://id.wikipedia.org/wiki/Muncar,_Banyuwangi",
+      "https://www.inka.co.id/artikel/pabrik-inka-banyuwangi-siap-beroperasi-secara-penuh",
+      "https://id.wikipedia.org/wiki/Daftar_pabrik_gula_di_Indonesia",
+      "https://polije.ac.id/",
+      "https://www.poliwangi.ac.id/",
+      "https://www.polinema.ac.id/",
+      "https://www.jawapos.com/surabaya-raya/2512250021/resmi-ini-daftar-umk-38-kabupatenkota-di-jawa-timur-2026-surabaya-nyaris-rp-53-juta",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843880&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843890&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=841981&flowCode=M",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,"
+    ]
+  },
+  {
+    "province": "Jawa Timur",
+    "area": "Madura",
+    "level": "cluster",
+    "focus": {
+      "product": "Propellers, propeller shafts and stern fittings for small fishing and trading boats",
+      "hs": [
+        "848710",
+        "848310"
+      ],
+      "why": "Madura has a long tradition of motorised wooden cargo and fishing boats: leti-leti from Sumenep (about 1,000 in 1979, motorised from the early 1980s), golekan from Telaga Biru and janggolan from Kamal-Sampang. Indonesia imported US$27.7M of ship and boat propellers (848710) in 2025, up from $16.6M in 2023 (earlier notes). Propellers are cast, then bored, balanced and finished; shafts are turned. Low confidence: no current fleet, boatyard, buyer or machining-firm count was verified in Madura; Bangkalan sits in the Gerbangkertosusila (greater Surabaya) region across the Suramadu bridge.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Salt-washing and salt-processing machine wear parts",
+        "hs": [
+          "847410",
+          "847490"
+        ],
+        "why": "Sumenep is nicknamed 'Bumi Garam'; PT Garam runs salt factories in Sampang and Camplong and produced 450,107 t of crude salt in 2019 (pre-2023 figure). Washers, crushers and screw conveyors need replaceable stainless parts. Low confidence: no Madura buyer volumes found.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Extruder screws and dies for coconut-shell charcoal briquette makers",
+        "hs": [
+          "847990"
+        ],
+        "why": "PT Panda Coco Charcoal makes coconut-shell briquettes in Sumenep (Polije study, 2023). Extruder screws and dies wear fast and are machinable. Single-firm evidence, so low confidence.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Garam (Persero) salt factories (Sampang, Camplong) and Kalianget office",
+      "PT Marinal Indoprima (dried anchovy, Sumenep)",
+      "PT Panda Coco Charcoal (Sumenep)",
+      "Madura fishing and trading fleets (traditional boats)"
+    ],
+    "local_inputs": [
+      "sea salt",
+      "fish",
+      "coconut shell"
+    ],
+    "clusters": [
+      "PT Garam salt fields (Sumenep, Pamekasan, Sampang)",
+      "Kalianget port (Sumenep)"
+    ],
+    "official_designation": null,
+    "umk_2026": "Sumenep Rp2,553,688; Bangkalan Rp2,550,274; Pamekasan Rp2,528,004; Sampang Rp2,484,443 (Kepgub Jatim 100.3.3.1/937/013/2025; 47-48% of Surabaya)",
+    "skills": "Polinema PSDKU Pamekasan: D4 Teknik Otomotif Elektronik. Politeknik Negeri Madura (Sampang) and Universitas Trunojoyo Madura could not be checked (sites unreachable). No named SMK or BLK machining programme verified.",
+    "confidence": "low",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sumenep_Regency",
+      "https://id.wikipedia.org/wiki/Garam_(perusahaan)",
+      "https://sipora.polije.ac.id/27446/",
+      "https://sipora.polije.ac.id/39168/",
+      "https://en.wikipedia.org/wiki/Bangkalan_Regency",
+      "https://www.polinema.ac.id/",
+      "https://www.jawapos.com/surabaya-raya/2512250021/resmi-ini-daftar-umk-38-kabupatenkota-di-jawa-timur-2026-surabaya-nyaris-rp-53-juta",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848710&flowCode=M",
+      "https://en.wikipedia.org/wiki/Leti_leti",
+      "https://en.wikipedia.org/wiki/Golekan",
+      "https://en.wikipedia.org/wiki/Janggolan",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=_XO3tSoRY4lHDtw2EKfSt_-1gNj9Q-dwKGgBz5nb8EM,",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=2sOoXJh1Pq6y1tkg5oA7MV6Ia96M2Hfla6_ABTCB2u8,",
+      "https://tkdn.kemenperin.go.id/export_excel.php?thn=2LtIAq-S_CL6ShnR120ukm23GZ4e8eNd5rq2cOwvPnM,"
+    ]
+  }
+]

@@ -1,0 +1,295 @@
+[
+ {
+  "province": "Sumatera Utara",
+  "area": "Sumatera Utara",
+  "level": "province",
+  "focus": {
+   "product": "Palm-oil mill machinery and wear parts (screw-press worms, double-worm presses, ripple mills, press and digester spares)",
+   "hs": [
+    "847920",
+    "847990"
+   ],
+   "why": "Medan and Deli Serdang firms already hold TKDN for palm ripple mills and double-worm presses (57-66%) and alloy press worms (88.16%). Indonesia imported US$215.7M (847920) and US$258.8M (847990) in 2025. PTPN IV mills and KEK Sei Mangkei (29 firms, Rp33.15T invested by 2026) are the buyers on the doorstep.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Aluminium-smelter consumable castings for Inalum (anode yokes, stubs, bottom strippers)",
+    "hs": [],
+    "why": "PT Asia Raya Foundry holds TKDN 90.05% (anode yoke) and 94.22% (bottom stripper); Inalum's Kuala Tanjung smelter (250,000 t/yr) is Indonesia's only aluminium smelter to end-2021. No clean HS line (probably within 7325.99).",
+    "fit": "cnc"
+   },
+   {
+    "product": "Brass propellers and stern gear for fishing and coastal boats",
+    "hs": [
+     "848710",
+     "848310"
+    ],
+    "why": "CV Putra Karya Logam Sukses (Asahan) holds TKDN 72.74-83.41% for 44-72 inch 4-blade brass propellers. 3D-printed casting patterns plus CNC finishing would raise accuracy. National imports 2025: 848710 not retrieved (Comtrade quota, 16 Oct 2026); 848310 US$189.4M.",
+    "fit": "both"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Perkebunan Nusantara IV (PalmCo) palm-oil mills",
+   "PT Indonesia Asahan Aluminium (Inalum), Kuala Tanjung smelter",
+   "PT Unilever Oleochemical Indonesia and other KEK Sei Mangkei tenants",
+   "PT Toba Pulp Lestari (Toba)",
+   "Kawasan Industri Medan tenants"
+  ],
+  "local_inputs": [
+   "crude palm oil and palm kernel",
+   "primary aluminium ingot, billet and foundry alloys (Inalum)",
+   "steel rebar and light sections (Medan mills)"
+  ],
+  "clusters": [
+   "Kawasan Industri Medan (KIM 1-6: Mabar, Medan Deli; Saentis, Percut Sei Tuan)",
+   "KEK Sei Mangkei (Simalungun, 2,002.77 ha)",
+   "Kuala Tanjung smelter, port and industrial zone (Batu Bara)",
+   "Tanjung Morawa - Percut Sei Tuan foundry and fabrication belt (Deli Serdang)",
+   "Pusat Industri Kecil (PIK) Menteng, Medan"
+  ],
+  "official_designation": "KIID Kabupaten Simalungun (Permenperin 169/M-IND/PER/12/2012): palm-oil derivatives and by-products (feed, fertiliser, shell briquettes, soap). KEK Sei Mangkei (PP 29/2012). No provincial industri-unggulan Permenperin for Sumatera Utara found in JDIH Kemenperin.",
+  "umk_2026": "2026 amounts not retrieved. Medan has 2026 sectoral minimums for iron and steel casting, non-ferrous casting, nuts-and-bolts and steam-engine/turbine industries (WageIndicator, Oct 2026; values locked). Wage council began UMP 2027 talks on 24 Sep 2026.",
+  "skills": "Politeknik Negeri Medan (Teknik Mesin); Politeknik Teknologi Kimia Industri Medan and Balai Diklat Industri Medan (Kemenperin); BSPJI Medan (standards and testing). No count of SMK machining programmes found.",
+  "confidence": "medium",
+  "sources": [
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Victorindo+Kencana+Teknik",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Asia+Raya+Foundry",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Putra+Karya+Logam+Sukses",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Indonesia+Asahan+Aluminium",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=GROWTH+SUMATRA+INDUSTRY",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Inti+Baja+Indonesia",
+   "https://etd.repository.ugm.ac.id/home/detail_pencarian_downloadfiles/727791",
+   "https://kemenperin.go.id/direktori-perusahaan?nama=&kbli=&prov=ehCDQCBFt5DYprYqIgwr1h-bqWX8nCstPP1LL3NuLXY,",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=847920&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847990&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848710&flowCode=M",
+   "https://kek.go.id/media/press/ekspansi-uoi-rp2-59-triliun-perkuat-industri-dan-ekspor-di-kek-sei-mangkei",
+   "https://jdih.kemenperin.go.id/dokumen/view?id=1515",
+   "https://id.wikipedia.org/wiki/Inalum",
+   "https://id.wikipedia.org/wiki/Kawasan_Industri_Medan",
+   "https://id.wikipedia.org/wiki/Kawasan_Ekonomi_Khusus_Sei_Mangkei",
+   "https://id.wikipedia.org/wiki/Toba_Pulp_Lestari",
+   "https://kemenperin.go.id/daftar_alamat",
+   "https://id.wikipedia.org/wiki/Politeknik_Negeri_Medan",
+   "https://wageindicator.org/ai/work/minimum-wage/countries/indonesia/40790-north-sumatra/40800-medan-city/",
+   "https://disnaker.sumutprov.go.id/artikel/depeda-sumut-rapat-perdana-membahas-usulan-ump-sumut-2027"
+  ]
+ },
+ {
+  "province": "Riau",
+  "area": "Riau",
+  "level": "province",
+  "focus": {
+   "product": "Oilfield wellhead, downhole and pipeline components for the Rokan block (Duri-Dumai belt)",
+   "hs": [
+    "843143",
+    "848180",
+    "848190"
+   ],
+   "why": "Two Bathin Solapan (Duri) firms hold TKDN for wellhead and Xmas-tree parts, heat-treated couplings and crossovers (19-50%) and pipeline sleeves (58-68%). Riau has the most KBLI 25920 machining firms of the four provinces in SIINas (10). Pertamina Hulu Rokan runs Rokan (US$3.05B revenue, 2024). Indonesia imported US$242.7M (843143) and US$185.7M (848190) in 2025.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Pulp and paper machine spare parts (rolls, shafts, refiner, screen and pump parts) for RAPP Kerinci and IKPP Perawang",
+    "hs": [
+     "843991",
+     "843999"
+    ],
+    "why": "APRIL's Kerinci mill can make 2.8 Mt pulp and 1.15 Mt paper a year; IKPP's Perawang mill anchors 3.1 Mt/yr group pulp capacity (2021). No local TKDN maker of paper-machine parts was found. National imports 2025: 843991 not retrieved (Comtrade quota, 16 Oct 2026); 843999 not retrieved (Comtrade quota, 16 Oct 2026).",
+    "fit": "cnc"
+   },
+   {
+    "product": "Palm-oil mill wear parts and boiler spares",
+    "hs": [
+     "847990",
+     "840290"
+    ],
+    "why": "Palm-oil processing is Riau's official industri unggulan (Permenperin 131/2010) and Riau sets 2026 sectoral wages for the CPO industry. No Riau-based TKDN maker of mill parts was found; national imports 2025: 847990 US$258.8M; 840290 not retrieved (Comtrade quota, 16 Oct 2026).",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Pertamina Hulu Rokan (Rokan block)",
+   "PT Riau Andalan Pulp and Paper (APRIL), Pangkalan Kerinci",
+   "PT Indah Kiat Pulp & Paper, Perawang (Siak)",
+   "Lubuk Gaung (Dumai) palm-oil downstream plants: PT Sari Dumai Sejati, PT Ivo Mas Tunggal, PT Energi Sejahtera Mas, PT Sari Dumai Oleo, PT Energi Unggul Persada",
+   "PT Semen Padang Dumai plant"
+  ],
+  "local_inputs": [
+   "crude oil (Rokan block)",
+   "pulpwood and pulp",
+   "crude palm oil",
+   "coconut and copra"
+  ],
+  "clusters": [
+   "Duri oilfield-service belt (Bathin Solapan, Bengkalis)",
+   "Kawasan Industri Dumai (Pelintung) and Kawasan Industri Lubuk Gaung (Dumai)",
+   "Pangkalan Kerinci pulp and paper complex (Pelalawan)",
+   "Perawang pulp and paper complex (Siak)",
+   "Siak Hulu warehouse and fabrication strip on Pekanbaru's edge (Kampar)"
+  ],
+  "official_designation": "Industri unggulan Provinsi Riau 2011-2015 (Permenperin 131/M-IND/PER/12/2010): palm-oil processing (margarine, biodiesel, olein) and coconut processing (VCO, activated carbon, liquid smoke, mattresses and car seats, furniture). No KEK found in sources reached.",
+  "umk_2026": "2026 amounts not retrieved. Riau has 2026 sectoral minimums for oil-and-gas support, CPO, crumb rubber, copra and pulp-and-paper (Siak, Pelalawan) (WageIndicator, Oct 2026; values locked).",
+  "skills": "Politeknik Caltex Riau, Pekanbaru (founded 2001 with Caltex; D3 Mekatronika; D4 Teknik Mesin since 2016); BSPJI Pekanbaru (Kemenperin). No count of SMK machining programmes found.",
+  "confidence": "medium",
+  "sources": [
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Oms+Oilfield+Services",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Kwartindo+Utama+Teknik",
+   "https://kemenperin.go.id/direktori-perusahaan?nama=&kbli=&prov=h5kdoWTdkKA6SJRYKVGHBzC_kzW74s0P5uSTAZ3Qeqs,",
+   "https://id.wikipedia.org/wiki/Pertamina_Hulu_Rokan",
+   "https://en.wikipedia.org/wiki/Asia_Pacific_Resources_International_Holdings",
+   "https://id.wikipedia.org/wiki/Indah_Kiat_Pulp_%26_Paper",
+   "https://id.wikipedia.org/wiki/Kota_Dumai",
+   "https://jdih.kemenperin.go.id/dokumen/view?id=1179",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843143&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848190&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843999&flowCode=M",
+   "https://id.wikipedia.org/wiki/Politeknik_Caltex_Riau",
+   "https://kemenperin.go.id/daftar_alamat",
+   "https://wageindicator.org/ai/work/minimum-wage/countries/indonesia/40651-riau/"
+  ]
+ },
+ {
+  "province": "Sumatera Barat",
+  "area": "Sumatera Barat",
+  "level": "province",
+  "focus": {
+   "product": "Cement-plant wear and spare parts (mill and crusher liners, grinding media, kiln and cooler parts) for Semen Padang",
+   "hs": [
+    "847490",
+    "732591"
+   ],
+   "why": "Semen Padang runs five Indarung plants plus one in Dumai (8.9 Mt/yr, end-2020) and already holds TKDN for kiln shells (61.80% with local plate). Its parent SIG localised Rp652bn of spare parts in 2023. Indonesia imported US$288.1M of 847490 in 2025. The local metal base is thin (SIINas: 26 metal and machinery firms, no foundry), so this needs a foundry-plus-CNC build-up.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Small farm machines and alsintan spare parts (threshers, tillers, shellers, wear parts)",
+    "hs": [
+     "843390",
+     "843290"
+    ],
+    "why": "Dharmasraya had 347 metal IKM units (2019) and a DAK-built metal IKM centre (2018-19) for alsintan repair and parts that were brought in from outside; CV Citra Dragon Teknik (Padang Pariaman) builds threshers and tillers at TKDN 40%. National imports 2025: 843390 US$23.6M (88% China); 843290 US$8.4M.",
+    "fit": "cnc"
+   },
+   {
+    "product": "Forged hand tools and blades from the Sungai Pua iron and brass craft (Agam)",
+    "hs": [
+     "8201",
+     "8211"
+    ],
+    "why": "Sungai Pua is known for iron and brass craftsmen (Wikipedia). CNC or laser blanking and controlled heat treatment could lift quality. No firm-level or output data found. National imports 2025: 8201 not retrieved (Comtrade quota, 16 Oct 2026); 8211 not retrieved (Comtrade quota, 16 Oct 2026).",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Semen Padang (Indarung, Padang; SIG group)",
+   "PT Semen Indonesia (SIG) group spare-parts localisation programme"
+  ],
+  "local_inputs": [
+   "limestone and clay (cement)",
+   "crude palm oil (HS 15 = 85.39% of exports, H1 2026)",
+   "rubber (HS 40)",
+   "gambier (Pesisir Selatan)",
+   "coffee and spices (HS 09)"
+  ],
+  "clusters": [
+   "Indarung cement complex (Lubuk Kilangan, Padang)",
+   "Sentra IKM Logam Dharmasraya (Nagari Gunung Medan, Sitiung)",
+   "Sungai Pua iron and brass craft (Agam)",
+   "Kasang bypass km 25 steel fabricators (Batang Anai, Padang Pariaman)"
+  ],
+  "official_designation": "KIID Kota Bukittinggi (Permenperin 164/M-IND/PER/12/2012): embroidery (sulaman bordir). No provincial industri-unggulan Permenperin for Sumatera Barat found in JDIH Kemenperin.",
+  "umk_2026": "UMP 2026 set by Kepgub Sumbar No. 562-851-2025 (posted 22 Dec 2025); sectoral UMSP 2026 by Kepgub 562-853-2025; amounts not retrieved (decree file not reachable).",
+  "skills": "Politeknik Negeri Padang (Teknik Mesin, Teknik Manufaktur); Politeknik ATI Padang, Balai Diklat Industri Padang and SMK-SMTI Padang (all Kemenperin); BSPJI Padang. No count of SMK machining programmes found.",
+  "confidence": "medium",
+  "sources": [
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Semen+Padang",
+   "https://id.wikipedia.org/wiki/Semen_Padang_(perusahaan)",
+   "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=732591&flowCode=M",
+   "https://www.industry.co.id/read/71819/pacu-perekonomian-daerah-menperin-resmikan-sentra-ikm-logam-dharmasraya",
+   "https://ekonomi.republika.co.id/berita/qen5ea383/sentra-ikm-logam-akan-dibangun-di-sumbar",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Citra+Dragon+Teknik",
+   "https://id.wikipedia.org/wiki/Sungai_Pua,_Agam",
+   "https://sumbarprov.go.id/home/news/24125-west-sumatra-export-performance-first-semester-of-2026",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Nan+Tongga+Agsha+Pratama",
+   "https://sumbarprov.go.id/home/news/23871-keputusan-gubernur-sumatera-barat-nomor-562-851-2025-tentang-upah-minimum-provinsi-sumatera-barat-tahun-2026",
+   "https://jdih.kemenperin.go.id/dokumen/view?id=1511",
+   "https://kemenperin.go.id/direktori-perusahaan?nama=&kbli=&prov=dH1L8Mh_lQt9ynweGqgAQt06SfXnOsW51ueJX7uv5Kg,",
+   "https://id.wikipedia.org/wiki/Politeknik_Negeri_Padang",
+   "https://kemenperin.go.id/daftar_alamat"
+  ]
+ },
+ {
+  "province": "Aceh",
+  "area": "Aceh",
+  "level": "province",
+  "focus": {
+   "product": "Essential-oil distillers and small agro-processing machines",
+   "hs": [
+    "841940"
+   ],
+   "why": "Essential oils and fish processing are Aceh's official industri unggulan (Permenperin 130/2010). PT Sang General Industri (Aceh Besar) already holds TKDN 34-40% for SS304 essential-oil distillers, cocoa and threshing machines. Aceh's registered metal base is tiny (SIINas: 10 metal and machinery firms), so a fabrication-plus-CNC machinery niche is the realistic start. National imports 2025: 841940 not retrieved (Comtrade quota, 16 Oct 2026).",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Fishing-boat propellers, shafts and stern gear",
+    "hs": [
+     "848710",
+     "848310"
+    ],
+    "why": "Fish and seafood processing is Aceh's other official priority (Permenperin 130/2010). The nearest certified propeller maker is in Asahan, Sumatera Utara (TKDN 72.74-83.41%). 3D-printed patterns plus CNC finishing suit small batches. National imports 2025: 848710 not retrieved (Comtrade quota, 16 Oct 2026).",
+    "fit": "both"
+   },
+   {
+    "product": "Maintenance spares for KEK Arun Lhokseumawe gas, fertiliser and petrochemical plants (pump, valve and compressor parts)",
+    "hs": [
+     "841391",
+     "848190"
+    ],
+    "why": "KEK Arun (PP 5/2017) targets energy, petrochemicals, agro-industry, logistics and kraft paper; PIM runs urea (570,000 t/yr), ammonia and NPK plants; PT Wira Cipta Perkasa (Aceh Utara) packages gas compressors. National imports 2025: 841391 US$300.0M; 848190 US$185.7M.",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Pupuk Iskandar Muda (Lhokseumawe)",
+   "KEK Arun Lhokseumawe tenants (energy, petrochemical, agro-industry, logistics, kraft paper)",
+   "Arun LNG import and regasification terminal"
+  ],
+  "local_inputs": [
+   "essential-oil crops (KIID: minyak atsiri)",
+   "fish and marine products",
+   "cocoa",
+   "natural gas (Arun; LNG import terminal since 2015)"
+  ],
+  "clusters": [
+   "KEK Arun Lhokseumawe (Aceh Utara and Lhokseumawe)",
+   "Iskandar Muda Industrial Area (ex-AAF site)"
+  ],
+  "official_designation": "Industri unggulan Provinsi Aceh 2011-2015 (Permenperin 130/M-IND/PER/12/2010): essential oils (KBLI 20294) and marine-product processing (12 fish and seafood KBLIs). KEK Arun Lhokseumawe (PP 5/2017, operating since 14 Dec 2018).",
+  "umk_2026": "2026 amounts not retrieved. Aceh has a 2026 UMP plus sectoral minimums for the CPO industry, gas and coal mining and palm plantations (WageIndicator, Oct 2026; values locked).",
+  "skills": "Politeknik Negeri Lhokseumawe (Teknik Mesin: D3 Teknologi Mesin, D4 Teknologi Rekayasa Manufaktur); SMK-SMTI Banda Aceh (Kemenperin); BSPJI Banda Aceh. No count of SMK machining programmes found.",
+  "confidence": "low",
+  "sources": [
+   "https://jdih.kemenperin.go.id/dokumen/view?id=1138",
+   "https://jdih.kemenperin.go.id/common/dokumen/2010pmperin130.pdf",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sang+General+Industri",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Wira+Cipta+Perkasa",
+   "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Kakao+Jaya+Mandiri",
+   "https://kemenperin.go.id/direktori-perusahaan?nama=&kbli=&prov=qH6KCKkWFhD8UGv2rwsLvzOk-778LwSl9O2-qCSP-x8,",
+   "https://id.wikipedia.org/wiki/Kawasan_Ekonomi_Khusus_Arun_Lhokseumawe",
+   "https://id.wikipedia.org/wiki/Pupuk_Iskandar_Muda",
+   "https://en.wikipedia.org/wiki/Arun_gas_field",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=841940&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848710&flowCode=M",
+   "https://id.wikipedia.org/wiki/Politeknik_Negeri_Lhokseumawe",
+   "https://kemenperin.go.id/daftar_alamat",
+   "https://wageindicator.org/ai/work/minimum-wage/countries/indonesia/40536-nanggroe-aceh-darussalam/"
+  ]
+ }
+]

@@ -1,0 +1,710 @@
+[
+  {
+    "name": "PT FNF Metalindo Utama",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Tegal (Kab. or Kota not stated)",
+    "capabilities": null,
+    "serves": [
+      "automotive (motorcycles)"
+    ],
+    "makes": "70–80 motorcycle component items supplied to Astra Honda Motor since 2015",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jawapos.com/bisnis/01321948/200-umkm-naik-kelas-jadi-usaha-skala-besar",
+    "source_type": "news",
+    "evidence": "Tegal metal SME that entered AHM's supply chain in 2015 after audit; supplies 70–80 motorcycle component items.",
+    "source_year": 2021
+  },
+  {
+    "name": "PT Bimuda Karya Teknik",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Tegal (Kab. or Kota not stated)",
+    "capabilities": null,
+    "serves": [
+      "automotive (motorcycles and cars)",
+      "cement plants"
+    ],
+    "makes": "70 automotive component items for Astra (since 2018); chain drive (truck-loader chain) for Semen Indonesia plants",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://finance.detik.com/industri/d-7321752/sederet-ukm-ini-berhasil-tembus-pasok-suku-cadang-pabrik-semen",
+    "source_type": "news",
+    "evidence": "One of eight SIG-coached SMEs replacing imported spares (chain drive); Jawapos 2021 places it in Tegal supplying Astra.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Dharmapoli Metal",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Tegal (Kab. or Kota not stated)",
+    "capabilities": null,
+    "serves": [
+      "automotive (motorcycles)"
+    ],
+    "makes": "Two-wheeler components for Astra Honda Motor; first Tegal vendor to enter Astra's supply chain",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jawapos.com/bisnis/01321948/200-umkm-naik-kelas-jadi-usaha-skala-besar",
+    "source_type": "news",
+    "evidence": "Named as the first Tegal vendor into Astra's supply chain, supplying two-wheeler components to AHM.",
+    "source_year": 2021
+  },
+  {
+    "name": "PT Logam Jaya Sejahtera Tegal",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kab. Tegal (Adiwerna)",
+    "capabilities": null,
+    "serves": [
+      "electricity distribution network hardware"
+    ],
+    "makes": "Distribution-line hardware: cross arms, transformer brackets and stands, clamps, strain hooks, grounding rods",
+    "size_note": "18 TKDN-certified products",
+    "certs": [
+      "TKDN 40.43–100%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=oXpVu-g8v0xb8XBeDAmAseiLXgwPRZIylN9fTZgsruQ,",
+    "source_type": "government",
+    "evidence": "Kemenperin TKDN database lists 18 certified network-hardware products at TKDN 40–100%, address Adiwerna, Kab. Tegal.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Berkah Aneka Logam",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kab. Tegal (Adiwerna)",
+    "capabilities": null,
+    "serves": [
+      "electricity distribution network hardware"
+    ],
+    "makes": "Mounting brackets for fuse cut-outs and lightning arresters",
+    "size_note": null,
+    "certs": [
+      "TKDN 38–40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=gS37oMWnq1NFl0YegGBOPVSQm1lQmyU1bLq7R9yODuc,&id_siinas=gS37oMWnq1NFl0YegGBOPVSQm1lQmyU1bLq7R9yODuc,",
+    "source_type": "government",
+    "evidence": "TKDN database: two certified bracket products (38–40%); address Adiwerna, Kab. Tegal.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Benko Metalindo Prima",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kab. Tegal (LIK Takaru, Kramat)",
+    "capabilities": null,
+    "serves": [
+      "electricity distribution network hardware"
+    ],
+    "makes": "FCO (fuse cut-out) fuse holder sets",
+    "size_note": null,
+    "certs": [
+      "TKDN 94.72%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=wwPNK9yf8xll_R7uFNwduaLxE-ytq95ZerPUlAVNfGM,",
+    "source_type": "government",
+    "evidence": "TKDN database: FCO fuse holder set certified at 94.72%; address LIK Takaru, Kramat, Kab. Tegal.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Karya Manunggal Manufaktur",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kab. Tegal (Kebasen, Talang)",
+    "capabilities": null,
+    "serves": [
+      "shipbuilding"
+    ],
+    "makes": "Ship windows (fixed and opening) and watertight ship doors",
+    "size_note": null,
+    "certs": [
+      "TKDN 38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=wPROXxwEAtprN5OgYVYfShjMYVZ7FvAzLorXEnxENtE,&id_siinas=wPROXxwEAtprN5OgYVYfShjMYVZ7FvAzLorXEnxENtE,",
+    "source_type": "government",
+    "evidence": "TKDN database: ship windows and watertight ship door certified at 38%; address Talang, Kab. Tegal.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Mitra Karya Tegal",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kab. Tegal (LIK Takaru, Kramat)",
+    "capabilities": null,
+    "serves": [
+      "vehicle bodies"
+    ],
+    "makes": "Cargo boxes (bak cargo) for vehicles",
+    "size_note": null,
+    "certs": [
+      "TKDN 38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=sqMTURPlxz0Sqy8a-plddqSjb7Lg7JDbfpmTJcFREvM,&id_siinas=sqMTURPlxz0Sqy8a-plddqSjb7Lg7JDbfpmTJcFREvM,",
+    "source_type": "government",
+    "evidence": "TKDN database: cargo box certified at 38%; address Komplek LIK Takaru, Dampyak, Kramat, Kab. Tegal.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Rejeki Abadi Machinery",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kab. Tegal (Tarub)",
+    "capabilities": null,
+    "serves": [
+      "water pumping"
+    ],
+    "makes": "Water pumps",
+    "size_note": null,
+    "certs": [
+      "TKDN 42.72%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=-hZiemJCqcTmO-nRJyEWIGfSjkjj9I74S1YR3hvYTaY,",
+    "source_type": "government",
+    "evidence": "TKDN database: water pump certified at 42.72%; address Karangjati, Tarub, Kab. Tegal.",
+    "source_year": 2026
+  },
+  {
+    "name": "Koperasi Tegal Manufaktur Indonesia (Tegal Material Center)",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Tengah",
+    "city": "Tegal",
+    "capabilities": null,
+    "serves": [
+      "automotive component SMEs"
+    ],
+    "makes": "Metal raw-material supply, logistics and machining services for Tegal SMEs making car and motorcycle components",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://kemenperin.go.id/artikel/21550/Topang-Sektor-Otomotif,-Material-Center-di-Tegal-Pasok-Kebutuhan-IKM-Logam-",
+    "source_type": "government",
+    "evidence": "Kemenperin (Feb 2020): centre supplies metal materials, logistics and machining to SMEs; run by the cooperative with PT Duta Steel Industry.",
+    "source_year": 2020
+  },
+  {
+    "name": "PT Kubota Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (BSB Industrial Park, Mijen)",
+    "capabilities": null,
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Horizontal diesel engines, diesel motors and 4-wheel tractors",
+    "size_note": null,
+    "certs": [
+      "TKDN 25.39–71.5%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zpP98ip3zm0v1bsSWQsnnXDwlcisHZPIpOf1WpaGsyI,",
+    "source_type": "government",
+    "evidence": "TKDN database: dozens of diesel-engine and 4-wheel-tractor listings at 25–72% TKDN; address BSB Industrial Park, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Aegis Jaya Metalindo",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Kawasan Industri Wijayakusuma, Tugu)",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": null,
+    "makes": "Iron and steel castings",
+    "size_note": null,
+    "certs": [
+      "TKDN 100%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=AY8_4iKXn9ubSXqXJseTkTwFc3FMWDykI-8xH2rrBMY,",
+    "source_type": "government",
+    "evidence": "TKDN database: iron and steel castings certified at 100%; address Kawasan Industri Wijayakusuma, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bromindo Mekar Mitra",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Banyumanik)",
+    "capabilities": null,
+    "serves": [
+      "fire protection"
+    ],
+    "makes": "Fire-hose nozzles (1.5 in and 2.5 in, Guardall brand)",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=rSNvlR8TKHE5WG4nFNPrfZLVTgT4oUzOn6miB4ESHm8,&id_siinas=rSNvlR8TKHE5WG4nFNPrfZLVTgT4oUzOn6miB4ESHm8,",
+    "source_type": "government",
+    "evidence": "TKDN database: two hose-nozzle sizes certified at 40%; address Banyumanik, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Triangle Motorindo",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (BSB Industrial Park, Mijen)",
+    "capabilities": null,
+    "serves": [
+      "vehicles and logistics"
+    ],
+    "makes": "Road tractors for semi-trailers",
+    "size_note": null,
+    "certs": [
+      "TKDN 26.09–27.78%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Q548qcQW1P49GNpm-GCMW_X1PlV68dPpUH_xWX5iNj4,",
+    "source_type": "government",
+    "evidence": "TKDN database: semi-trailer road tractor certified at 26–28%; address BSB, Mijen, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Mega Boksindo",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Kawasan Industri Terboyo, Genuk)",
+    "capabilities": null,
+    "serves": [
+      "vehicles and logistics"
+    ],
+    "makes": "Two-wheel and four-wheel trailers",
+    "size_note": null,
+    "certs": [
+      "TKDN 38–40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=E2ls_hZoeWdxYXQCgVjIeXlJQhdmXVa451T7JcrTF8Q,&id_siinas=E2ls_hZoeWdxYXQCgVjIeXlJQhdmXVa451T7JcrTF8Q,",
+    "source_type": "government",
+    "evidence": "TKDN database: 2-wheel and 4-wheel trailers certified at 38–40%; address Kawasan Industri Terboyo, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Soraya Bumi Kita",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Kawasan Industri Candi, Ngaliyan)",
+    "capabilities": null,
+    "serves": [
+      "food service"
+    ],
+    "makes": "Dish and utensil dryers",
+    "size_note": null,
+    "certs": [
+      "TKDN 51.66–66.17%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Jg980F9dsACTKYamueUa6pCYt0DCaHUHNzyeABJxRfc,",
+    "source_type": "government",
+    "evidence": "TKDN database: tableware dryers certified at 52–66%; address Kawasan Industri Candi, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Niko Elektronik Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (LIK Banjardowo, Genuk)",
+    "capabilities": null,
+    "serves": [
+      "households",
+      "food service"
+    ],
+    "makes": "Gas stoves",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.48%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=IzmSaC0kxMVBP4oSThwf6F7QAExiB502HlOSscy6wqE,",
+    "source_type": "government",
+    "evidence": "TKDN database: gas stove certified at 41.48%; address Kawasan Industri Kecil Banjardowo, Genuk, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Cipta Gagah Perkasa",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Banjardowo, Genuk)",
+    "capabilities": null,
+    "serves": [
+      "households",
+      "food service"
+    ],
+    "makes": "Gas stoves",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.71%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=-43gu3b3SYMq9l3pqw0fzRIQKBewPFAOK22bZlTDP6Y,",
+    "source_type": "government",
+    "evidence": "TKDN database: gas stove certified at 41.71%; address Jl. Raya Semarang–Demak, Genuk, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Bartec Utama Mandiri",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Gunungpati)",
+    "capabilities": null,
+    "serves": [
+      "waste management"
+    ],
+    "makes": "Domestic waste-processing machines",
+    "size_note": null,
+    "certs": [
+      "TKDN 50.04%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=48BEHNqVv4PV8VeA4Cacy_-5Acu5B7711hO9YrGGZlo,",
+    "source_type": "government",
+    "evidence": "TKDN database: domestic waste-processing machine certified at 50.04%; address Gunungpati, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Excosindo Citra Persada",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Kawasan Industri Wijayakusuma, Tugu)",
+    "capabilities": null,
+    "serves": [
+      "garment"
+    ],
+    "makes": "Industrial, portable and bartack sewing machines; sewing-machine tables",
+    "size_note": null,
+    "certs": [
+      "TKDN 25–43.75%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=kdYiNLkoWO-0gS-at7ccWvFR_PHx8au_xhKhkv-M8wQ,",
+    "source_type": "government",
+    "evidence": "TKDN database: sewing machines (25%) and machine tables (43.75%); address Kawasan Industri Wijayakusuma, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Senjaya Sentosa",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Terboyo Wetan, Genuk)",
+    "capabilities": null,
+    "serves": [
+      "garment",
+      "household sewing"
+    ],
+    "makes": "Butterfly-brand sewing machines, machine stands and tables",
+    "size_note": null,
+    "certs": [
+      "TKDN 38–40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=QYjGaBx09yRyekmxVxF5xrCsGSiLx_sqkvd16yabXAQ,&id_siinas=QYjGaBx09yRyekmxVxF5xrCsGSiLx_sqkvd16yabXAQ,",
+    "source_type": "government",
+    "evidence": "TKDN database: six sewing-machine, stand and table products at 38–40%; address Terboyo Wetan, Genuk, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Dewandaru",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Semarang Barat)",
+    "capabilities": null,
+    "serves": [
+      "agriculture (irrigation)"
+    ],
+    "makes": "Irrigation pumps",
+    "size_note": null,
+    "certs": [
+      "TKDN 38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=6lkIbuMLt6g_gwAmg9h25F0rXxsrqh1Q96axG8Iw8gI,&id_siinas=6lkIbuMLt6g_gwAmg9h25F0rXxsrqh1Q96axG8Iw8gI,",
+    "source_type": "government",
+    "evidence": "TKDN database: irrigation pump certified at 38%; address Bojongsalaman, Semarang Barat.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Hadeka Mitra Utama",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Pedurungan)",
+    "capabilities": null,
+    "serves": [
+      "food service"
+    ],
+    "makes": "Ovens",
+    "size_note": null,
+    "certs": [
+      "TKDN 36%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=EZpIlbqe8yXhn-5dED_5mIEaNAFHn_vtepGD-2hDX44,&id_siinas=EZpIlbqe8yXhn-5dED_5mIEaNAFHn_vtepGD-2hDX44,",
+    "source_type": "government",
+    "evidence": "TKDN database: oven certified at 36%; address Penggaron Kidul, Pedurungan, Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Mutiara Cemerlang",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Bugangan)",
+    "capabilities": null,
+    "serves": [
+      "laundry",
+      "households"
+    ],
+    "makes": "Washing machines; up to Rp200 million monthly sales and 817 customers nationwide (2018)",
+    "size_note": "9 workers (2018)",
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/30414/kemenperin-bangkitkan-kembali-kejayaan-sentra-ikm-logam-bugangan",
+    "source_type": "news",
+    "evidence": "Bugangan metal-centre firm making washing machines, nine workers, up to Rp200 million monthly sales (April 2018).",
+    "source_year": 2018
+  },
+  {
+    "name": "Alberindo (Alat Berat Indonesia)",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang (Bugangan)",
+    "capabilities": null,
+    "serves": [
+      "construction"
+    ],
+    "makes": "Mini excavator 'Kasmino' (PC70 type, about Rp250 million); hydraulics imported, frame steel local",
+    "size_note": "5 workers (2018)",
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/30414/kemenperin-bangkitkan-kembali-kejayaan-sentra-ikm-logam-bugangan",
+    "source_type": "news",
+    "evidence": "Founded 2016 in Bugangan; builds a mini excavator in one to two months per unit with five workers (April 2018).",
+    "source_year": 2018
+  },
+  {
+    "name": "PT Indonesia Magma Chain",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kab. Demak (Karangawen)",
+    "capabilities": null,
+    "serves": [
+      "shipbuilding",
+      "marine"
+    ],
+    "makes": "Ship anchor chain",
+    "size_note": null,
+    "certs": [
+      "TKDN 58.15%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zoF5vkZvPmBeVcQRF59EmqYKP0CwgdI_1ep4ts0AAXk,",
+    "source_type": "government",
+    "evidence": "TKDN database: ship anchor chain certified at 58.15%; address Jl. Raya Semarang–Gubug, Karangawen, Demak.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sinergi Metal Teknik",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang",
+    "capabilities": [
+      "laser cutting"
+    ],
+    "serves": null,
+    "makes": "Laser-cutting service (directory category only)",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-laser-cutting-services-in-central-java",
+    "source_type": "directory",
+    "evidence": "Listed among 33 Semarang laser-cutting services in a scraped business directory updated 1 April 2026; not otherwise verified.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Laju Sinergi Metalindo",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": null,
+    "makes": "Metal foundry (directory category only)",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-foundries-in-central-java",
+    "source_type": "directory",
+    "evidence": "Listed under foundries in Semarang in a scraped business directory updated 1 April 2026; not otherwise verified.",
+    "source_year": 2026
+  },
+  {
+    "name": "Formstudio 3D Design & 3D Printing Service",
+    "kind": "3d_print_service",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang",
+    "capabilities": null,
+    "serves": null,
+    "makes": "3D design and 3D printing service",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-3d-printing-services-in-central-java",
+    "source_type": "directory",
+    "evidence": "Listed among 21 Semarang 3D-printing services in a scraped directory updated 1 April 2026; process and machines not stated.",
+    "source_year": 2026
+  },
+  {
+    "name": "make3d",
+    "kind": "3d_print_service",
+    "province": "Jawa Tengah",
+    "city": "Kota Semarang",
+    "capabilities": null,
+    "serves": null,
+    "makes": "3D printing service",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://rentechdigital.com/smartscraper/business-report-details/indonesia/list-of-3d-printing-services-in-central-java",
+    "source_type": "directory",
+    "evidence": "Listed among Semarang 3D-printing services in a scraped directory updated 1 April 2026; process and machines not stated.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pura Barutama",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kab. Kudus (Jekulo; also Jati)",
+    "capabilities": null,
+    "serves": [
+      "agriculture (rice and maize post-harvest)",
+      "printing"
+    ],
+    "makes": "Rice milling units, bed dryers (3.5 and 5 t), corn shellers, colour sorter, auto-weighing packers, combine harvester, brackets; security printing at its Jati site",
+    "size_note": null,
+    "certs": [
+      "TKDN 29.73–98.06%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=VfSmVEQrXq47JMvk4-ZzC58o0AnqJ4mIOhCZQ1ypyk4,",
+    "source_type": "government",
+    "evidence": "TKDN database: rice-milling units, bed dryers, corn shellers and packers certified 30–77% at its Jekulo site, Kudus.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Mandiri Garlica Pratama",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kab. Kudus (Jati)",
+    "capabilities": null,
+    "serves": [
+      "agriculture",
+      "food processing",
+      "tobacco processing"
+    ],
+    "makes": "Multi-crop and rice threshers, corn shellers, cob crushers, dryers, irrigation pumps, coffee/coconut/sago processors, tobacco-cutting blades",
+    "size_note": null,
+    "certs": [
+      "TKDN 6–57.95% (most 40–58%)"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=GBp6N_yWTFfQNt2bI8Z9BtVViMWMPeUKThzVGnhCpuc,",
+    "source_type": "government",
+    "evidence": "TKDN database: about 28 listings (threshers, shellers, dryers, pumps) mostly at 40–58%; address Tanjungkarang, Jati, Kudus.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Athoose Jaya Agritech",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kab. Kudus (Bae)",
+    "capabilities": null,
+    "serves": [
+      "agriculture",
+      "livestock feed"
+    ],
+    "makes": "Grain dryers, corn shellers and silage-processing machines",
+    "size_note": null,
+    "certs": [
+      "TKDN 40–55.38%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=dzFYRRR7HWcOcbfbEm6OCkQFp-EnSMxVtbh0K0lBrQU,&id_siinas=dzFYRRR7HWcOcbfbEm6OCkQFp-EnSMxVtbh0K0lBrQU,",
+    "source_type": "government",
+    "evidence": "TKDN database: dryers, corn shellers and silage machine certified at 40–55%; address Dersalam, Bae, Kudus.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sarana Agro Tekindo",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kab. Kudus (Jekulo)",
+    "capabilities": null,
+    "serves": [
+      "food processing"
+    ],
+    "makes": "Hexagonal seasoning mixers (Saeki brand)",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=kqcvGta49fh0MmAWjwxsPHskiQP5pX8dh0oTOtzituY,&id_siinas=kqcvGta49fh0MmAWjwxsPHskiQP5pX8dh0oTOtzituY,",
+    "source_type": "government",
+    "evidence": "TKDN database: seasoning mixer certified at 40%; address Hadipolo, Jekulo, Kudus.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Javatech Agro Persada",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kab. Pati (Gembong)",
+    "capabilities": null,
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Power threshers, 4-wheel and crawler tractors, corn shellers, grass choppers, hydraulic press, huskers, fertiliser processors",
+    "size_note": null,
+    "certs": [
+      "TKDN 26.97–56.21%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=FusEnDvZaM69ZrFjtoMvNkDXbxUB83PawUmORxWuffM,",
+    "source_type": "government",
+    "evidence": "TKDN database: threshers, tractors, shellers and choppers certified at 27–56%; address Kedungbulus, Gembong, Pati.",
+    "source_year": 2026
+  },
+  {
+    "name": "Sampurna Brass",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kab. Pati (Juwana)",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "hardware",
+      "home decor",
+      "export crafts"
+    ],
+    "makes": "Brass castings and crafts; cluster products include door handles, antique lamps and gas-stove, pump and compressor parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://ejournal.jatengprov.go.id/index.php/jurnaljateng/article/download/270/205",
+    "source_type": "government",
+    "evidence": "Provincial research journal names Sampurna Brass among Juwana's four large brass units (238 units; scrap-brass sand casting). Data 2009.",
+    "source_year": 2016
+  }
+]

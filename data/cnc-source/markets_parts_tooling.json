@@ -1,0 +1,761 @@
+[
+  {
+    "product": "Moulds: plastic injection/compression moulds (848071) and metal-casting moulds (848041, 848049, 848010), plus other 8480",
+    "family": "Toolmaking (moulds and dies)",
+    "hs": [
+      "8480",
+      "848071",
+      "848079",
+      "848041",
+      "848049",
+      "848010",
+      "848020",
+      "848030"
+    ],
+    "imports_usd_m": {
+      "2023": 281.0,
+      "2024": 351.4,
+      "2025": 403.3
+    },
+    "exports_usd_m": {
+      "2023": 33.0,
+      "2024": 32.0,
+      "2025": 29.5
+    },
+    "top_origins_2025": [
+      "China 61%",
+      "Korea 7%",
+      "Vietnam 7%",
+      "Japan 7%",
+      "Singapore 4%"
+    ],
+    "local_now": "No current sourced local share. Latest figure: IMDIA said mould-and-die localisation was 42% (2012) and 45% (2013); dies were ~80% local but moulds were mostly made abroad (Kontan, snippet; pre-2023). Kemenperin (22 Oct 2025): about 660 mould and die firms in SIINas employing >42,000 workers. Trade balance 2025: plastic injection moulds 848071 imports US$214.0M vs exports US$12.8M; die-casting moulds 848041 US$9.5M vs US$6.0M; other metal moulds 848049 US$14.4M vs US$1.1M.",
+    "local_makers": [
+      "PT Yotano Teknik Indonesia (city not stated; brick-press mould dies qualified by SIG, 2024)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "CNC: 3–5-axis high-speed milling of cavities and cores in pre-hardened or hardened tool steel, wire and sinker EDM, deep-hole drilling of cooling lines, grinding and polishing, then try-out. 3D: metal powder-bed inserts with conformal cooling for cycle-time-critical cavities; printed sand moulds/cores and printed patterns for metal-casting moulds and one-off castings; printed bridge tools for short runs. Process roles are industry practice (inference), not from an Indonesian source.",
+    "potential_share": "Judgement (3–5 years): 10–20% of 848071 imports (US$21–43M/yr = 10–20% × US$214.0M) plus 20–30% of 848079 blow/thermoform and other plastic moulds (US$21–31M/yr = 20–30% × US$104.5M), about US$42–74M/yr in total; die-casting and other metal moulds (848041+848049, US$23.9M) 20–30%. Reasoning: buyers are private (automotive 41%, electronics 16%, tools 14% of mould demand, Kemenperin 2022), so TKDN pulls only indirectly via vehicle and EV TKDN steps; China supplies 68% of 848071 on price and lead time; the binding limit is skilled toolmakers and EDM/5-axis capacity (IMDIA), not demand; a base of ~660 firms exists.",
+    "buyers": [
+      "Toyota Motor Manufacturing Indonesia",
+      "Astra Honda Motor",
+      "Astra Daihatsu Motor",
+      "Suzuki Indomobil Motor",
+      "BYD Indonesia (Subang plant)",
+      "VinFast Indonesia (Subang plant)",
+      "Semen Indonesia Group (brick-press moulds)"
+    ],
+    "best_places": [
+      "Kabupaten Bekasi, West Java",
+      "Kabupaten Karawang, West Java",
+      "Kabupaten Subang, West Java",
+      "Kabupaten Tegal, Central Java",
+      "Kabupaten Sidoarjo, East Java"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "IATF 16949 (automotive customers)",
+      "BNSP/SKKNI toolmaker competency certificates (IMDIA-run national certification)",
+      "TKDN certificate (Permenperin 35/2025) for government/BUMN sales"
+    ],
+    "jobs_note": "Kemenperin (22 Oct 2025): >42,000 workers in ~660 mould and die firms, about 64 per firm (arithmetic). Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$42–74M/yr made locally ≈ 1,060–4,630 direct jobs (estimate: US$42.3M ÷ US$40k = 1,058; US$74.2M ÷ US$16k = 4,634). Skill-limited: IMDIA reported ~2,500 nationally certified workers in 2016 (pre-2023).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8480&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8480&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/8480",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/8480",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8480&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848071&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848071&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848079&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848041&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848049&flowCode=M",
+      "https://bcasekuritas.co.id/en/latest-news/news/ri-jepang-siap-majukan-industri-mold-and-dies",
+      "https://www.medcom.id/ekonomi/bisnis/MkMPLYVb-diserap-sektor-otomotif-kemenperin-pecut-pengembangan-industri-perkakas",
+      "https://industri.kontan.co.id/news/industri-mold-dies-tambah-bahan-lokal",
+      "https://ekonomi.bisnis.com/read/20160301/257/524220/pengembangan-industri-mold-and-dies-terkendala-sdm",
+      "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+      "https://oto.detik.com/mobil/d-8641589/pabrik-byd-di-subang-diresmikan-pekan-ini-molor-dari-jadwal",
+      "https://cleantechnica.com/2025/12/17/vinfast-opens-indonesia-electric-vehicle-plant-just-17-months-after-groundbreaking/",
+      "https://setda.tegalkab.go.id/2024/02/27/ikm-logam-kabupaten-tegal-pasok-kebutuhan-industri-otomotif-nasional",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Press, stamping, punching and cutting tools (interchangeable tools, HS 8207; press dies = 820730)",
+    "family": "Toolmaking (moulds and dies)",
+    "hs": [
+      "8207",
+      "820730",
+      "820720",
+      "820750",
+      "820760",
+      "820770",
+      "820780",
+      "820790"
+    ],
+    "imports_usd_m": {
+      "2023": 226.7,
+      "2024": 209.3,
+      "2025": 195.5
+    },
+    "exports_usd_m": {
+      "2023": 39.4,
+      "2024": 31.1,
+      "2025": 30.5
+    },
+    "top_origins_2025": [
+      "China 28%",
+      "Japan 19%",
+      "Singapore 9%",
+      "Korea 8%",
+      "Taiwan (Other Asia nes) 6%",
+      "USA 6%"
+    ],
+    "local_now": "No current sourced local share. IMDIA: dies ~80% localised in 2013 (Kontan, snippet; pre-2023). Kemenperin: die exports US$8.7M in Jan–Aug 2022 and automotive takes 64% of die demand (Medcom, 10 Nov 2022; pre-2023). Press/stamping tools 820730 imports: 2025 US$49.7M (2025 origins: China 33%, Japan 22%, Korea 19%, Taiwan 10%).",
+    "local_makers": null,
+    "fit": "cnc",
+    "cnc_3d_role": "CNC: wire EDM of punches and die plates, CNC milling and jig/surface/profile grinding of die sets, heat treatment, try-out; regrinding and recoating of drills and cutters. 3D: minor (printed check fixtures, prototype forming tools). Carbide inserts (8209) need powder metallurgy, not CNC or 3D (inference from industry practice).",
+    "potential_share": "Judgement (3–5 years): 15–25% of 8207 imports (US$29–49M/yr = 15–25% × US$195.5M), mostly progressive/transfer press dies for auto, motorcycle, EV and appliance stampers plus regrind services; little in standard drills, taps and milling cutters, which are brand- and coating-driven (Japan, China). Reasoning: simple dies were already ~80% local in 2013, so what is still imported is high-precision tooling; new EV plants in Subang need new die sets and must reach 60% TKDN by 2027; wire-EDM capacity and toolmaker skills set the pace.",
+    "buyers": [
+      "Astra Honda Motor",
+      "Toyota Motor Manufacturing Indonesia",
+      "Astra Daihatsu Motor",
+      "Suzuki Indomobil Motor",
+      "BYD Indonesia (Subang plant)",
+      "VinFast Indonesia (Subang plant)",
+      "PT Dirgantara Indonesia (jigs and tooling)"
+    ],
+    "best_places": [
+      "Kabupaten Bekasi, West Java",
+      "Kabupaten Karawang, West Java",
+      "Kabupaten Tegal, Central Java",
+      "Kota Bandung, West Java"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "IATF 16949 (automotive customers)",
+      "AS9100 (aerospace tooling for PT DI)"
+    ],
+    "jobs_note": "Kemenperin counted 500 automotive-component IKM employing up to 25,000 workers (21 Feb 2020; pre-2023). Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$29–49M/yr made locally ≈ 730–3,050 direct jobs (estimate: US$29.3M ÷ US$40k = 733; US$48.9M ÷ US$16k = 3,055).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8207&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8207&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/8207",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/8207",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8207&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=820730&flowCode=M",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/820730",
+      "https://industri.kontan.co.id/news/industri-mold-dies-tambah-bahan-lokal",
+      "https://www.medcom.id/ekonomi/bisnis/MkMPLYVb-diserap-sektor-otomotif-kemenperin-pecut-pengembangan-industri-perkakas",
+      "https://ekonomi.bisnis.com/read/20160129/98/514346/pesawat-n219-dijadwalkan-terbang-perdana-juli-ini",
+      "https://oto.detik.com/mobil/d-8641589/pabrik-byd-di-subang-diresmikan-pekan-ini-molor-dari-jadwal",
+      "https://cleantechnica.com/2025/12/17/vinfast-opens-indonesia-electric-vehicle-plant-just-17-months-after-groundbreaking/",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan",
+      "https://kemenperin.go.id/artikel/21550/Topang-Sektor-Otomotif,-Material-Center-di-Tegal-Pasok-Kebutuhan-IKM-Logam-"
+    ]
+  },
+  {
+    "product": "Gears, gearing, transmission shafts, couplings, pulleys and bearing housings (HS 8483)",
+    "family": "Power-transmission parts",
+    "hs": [
+      "8483",
+      "848310",
+      "848320",
+      "848330",
+      "848340",
+      "848350",
+      "848360",
+      "848390"
+    ],
+    "imports_usd_m": {
+      "2023": 830.9,
+      "2024": 820.9,
+      "2025": 842.9
+    },
+    "exports_usd_m": {
+      "2023": 179.4,
+      "2024": 215.9,
+      "2025": 231.5
+    },
+    "top_origins_2025": [
+      "Japan 29%",
+      "China 28%",
+      "Germany 8%",
+      "USA 8%"
+    ],
+    "local_now": "No sourced local share. Indonesia exported US$231.5M of 8483 in 2025, including US$86.8M of gears and gearboxes (848340, 43% to Singapore), so some local capacity exists. PT Barata Indonesia (Gresik) casts sugar-mill pinions and gear wheels and has heavy CNC turning and boring (company site, 2026).",
+    "local_makers": [
+      "PT Barata Indonesia (Gresik)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC turning and boring of shafts, hubs and housings; gear hobbing, shaping and grinding of pinions, sprockets and girth-gear segments; spline and keyway cutting; induction or carburise hardening then grinding. 3D: printed sand moulds for one-off large gear blanks, couplings and housings; scanning to reverse-engineer worn or obsolete gears (inference).",
+    "potential_share": "Judgement (3–5 years): 5–10% of 8483 imports (US$42–84M/yr = 5–10% × US$842.9M), in large, low-volume industrial gears, pinions, shafts, couplings and plain-bearing housings for sugar, cement, palm-oil and mining plants. Most of the code is captive automotive drivetrain parts and branded gearboxes (Japan 29%, Germany 8%) that job shops will not displace. Limits: gear-cutting and grinding machines, heat treatment, gear-accuracy inspection, and Chinese prices (China 28%).",
+    "buyers": [
+      "Sinergi Gula Nusantara (SGN) sugar mills",
+      "Semen Indonesia Group",
+      "PT Perkebunan Nusantara",
+      "PT Freeport Indonesia",
+      "PT PLN Indonesia Power Services"
+    ],
+    "best_places": [
+      "Kabupaten Gresik, East Java",
+      "Kabupaten Klaten, Central Java",
+      "Kabupaten Bekasi, West Java",
+      "Kota Cilegon, Banten"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "Gear-accuracy inspection to ISO 1328 or AGMA",
+      "EN 10204 3.1 material certificates",
+      "TKDN certificate"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$42–84M/yr made locally ≈ 1,050–5,270 direct jobs (estimate: US$42.1M ÷ US$40k = 1,054; US$84.3M ÷ US$16k = 5,268).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8483&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8483&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/8483",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/8483",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=8483&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848340&flowCode=X",
+      "https://www.barata.id/",
+      "https://www.barata.id/id/fasilitas/untuk-pengerjaan-mesin/",
+      "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Pump parts (HS 841391): impellers, casings, wear rings, shafts and sleeves",
+    "family": "Pumps and valves",
+    "hs": [
+      "841391"
+    ],
+    "imports_usd_m": {
+      "2023": 289.7,
+      "2024": 296.6,
+      "2025": 300.0
+    },
+    "exports_usd_m": {
+      "2023": 41.7,
+      "2024": 59.8,
+      "2025": 43.1
+    },
+    "top_origins_2025": [
+      "China 40%",
+      "Japan 13%",
+      "USA 11%",
+      "Germany 5%",
+      "India 4%",
+      "Singapore 4%"
+    ],
+    "local_now": "No sourced market-wide share. Firm level: Grundfos Indonesia local content 29% (Fortune IDN, snippet, undated); Panasonic water pumps 60% TKDN (Republika, 9 Aug 2019, snippet; pre-2023); PT Duraquipt Cemerlang (Depok) is a TKDN-certified industrial pump maker that SKK Migas and SUCOFINDO assessed in May 2026 (Kontan, snippet); Bukaka says it has supplied >6,000 oil-and-gas pumps since 1986 (company site). Whole pumps (8413) imports were US$1,198.0M in 2025.",
+    "local_makers": [
+      "PT Duraquipt Cemerlang (Depok)",
+      "PT Torishima Guna Indonesia (Jakarta)",
+      "Grundfos Indonesia (Jakarta)",
+      "PT Bukaka Teknik Utama (city not stated on fetched page)",
+      "Ceper metal-casting IKM, Koperasi Batur Jaya (Klaten)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Casting plus CNC: impeller bores and trimming, dynamic balancing, casing faces and bores, wear rings, shaft sleeves, shafts and bearing housings; hard-facing or thermal spray of sleeves. 3D: printed sand moulds and cores for one-off impellers and casings of obsolete pumps (no pattern needed) and scan-based reverse engineering of worn impellers (inference).",
+    "potential_share": "Judgement (3–5 years): 15–25% of 841391 imports (US$45–75M/yr = 15–25% × US$300.0M) in water-utility, plantation, mill and general process pump wear parts. Lower in API 610 refinery and upstream pumps and in OEM-locked slurry pumps. Reasoning: TKDN pull is strong where buyers are SKK Migas contractors (58–59% TKDN in H1 2025) and BUMN; castings exist in Klaten and Gresik; China supplies 40% at low prices.",
+    "buyers": [
+      "SKK Migas contractors (KKKS), incl. Pertamina Hulu Energi",
+      "PDAM Surya Sembada Kota Surabaya",
+      "PT Perkebunan Nusantara",
+      "PT PLN Indonesia Power Services",
+      "PT Freeport Indonesia"
+    ],
+    "best_places": [
+      "Kota Depok, West Java",
+      "Kabupaten Bogor, West Java",
+      "Kota Jakarta Timur, DKI Jakarta",
+      "Kabupaten Klaten, Central Java"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "API 610 (oil and gas pumps)",
+      "TKDN certificate",
+      "Pump performance testing to ISO 9906 (complete pumps)"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$45–75M/yr made locally ≈ 1,120–4,690 direct jobs (estimate: US$45.0M ÷ US$40k = 1,125; US$75.0M ÷ US$16k = 4,688). Ceper's casting cooperative had 168 member firms and >4,000 workers in 2019 (pre-2023).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=841391&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=841391&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/841391",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/841391",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8413&flowCode=M",
+      "https://industri.kontan.co.id/news/dukung-tkdn-skk-migas-dorong-penggunaan-pompa-industri-lokal-di-sektor-hulu",
+      "https://listrikindonesia.com/detail/14955/pt-duraquipt-cemerlang-solusi-terpercaya-di-bidang-pompa-industri",
+      "https://www.fortuneidn.com/business/grundfos-investasi-us-2-juta-di-indonesia-untuk-pabrik-pompa-air-00-my5jv-xg0hp7",
+      "https://ekonomi.republika.co.id/berita/pvy0df370/kemenperin-dorong-ikm-pasok-komponen-industri-pompa-air",
+      "https://www.torishima.co.id/",
+      "https://www.bukaka.com/",
+      "https://www.industry.co.id/read/47090/ikm-logam-klaten-jateng-upaya-terus-hasilkan-produk-kompetitif",
+      "https://investortrust.id/business/73562/jauh-di-atas-target-tkdn-hulu-migas-capai-58-untuk-psn",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Valve parts (HS 848190): bodies, bonnets, discs, seats, stems and trims",
+    "family": "Pumps and valves",
+    "hs": [
+      "848190"
+    ],
+    "imports_usd_m": {
+      "2023": 151.8,
+      "2024": 202.9,
+      "2025": 185.7
+    },
+    "exports_usd_m": {
+      "2023": 26.5,
+      "2024": 25.8,
+      "2025": 24.6
+    },
+    "top_origins_2025": [
+      "China 25%",
+      "Singapore 14%",
+      "USA 11%",
+      "Italy 9%"
+    ],
+    "local_now": "No sourced local share. Valves remain under import licensing (Permendag 22/2025, in force Aug 2025). Whole valves and taps (8481) imports were US$1,386.2M in 2025. Named local valve work found: Barata's 3,850 mm hollow-cone valve (company site) and Pindad's DVKE2SCL rail brake distributor valve (company site).",
+    "local_makers": [
+      "PT Barata Indonesia (Gresik)",
+      "PT Pindad (Bandung)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC turning and milling of bodies and bonnets from castings or forgings, seat, ball, plug and gate machining and lapping, stem threading, hard-facing and grinding of trims, then pressure testing. 3D: printed sand moulds for one-off bodies; metal AM for small complex trims and cages only after qualification (inference).",
+    "potential_share": "Judgement (3–5 years): 10–20% of 848190 imports (US$19–37M/yr = 10–20% × US$185.7M) in replacement trims, seats, stems, discs and bodies for water, palm-oil, sugar and general utility valves, plus repair and re-machining. Hard in API 6D/600/6A oil-and-gas and severe-service trims (USA 11%, Italy 9%, Singapore 14% of imports). Import licensing on valves gives some cover.",
+    "buyers": [
+      "Pertamina refineries (incl. RDMP Balikpapan)",
+      "SKK Migas contractors (KKKS)",
+      "PT PLN Indonesia Power Services",
+      "PDAM water utilities",
+      "PT Kereta Api Indonesia (rail brake valves)"
+    ],
+    "best_places": [
+      "Kabupaten Gresik, East Java",
+      "Kota Bandung, West Java",
+      "Kota Cilegon, Banten",
+      "Kabupaten Bekasi, West Java"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "API 6D / API 600 / API 6A licences (oil and gas)",
+      "ASME B16.34 design and pressure tests",
+      "EN 10204 3.1 material certificates",
+      "TKDN certificate"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$19–37M/yr made locally ≈ 460–2,320 direct jobs (estimate: US$18.6M ÷ US$40k = 464; US$37.1M ÷ US$16k = 2,321).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848190&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=848190&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/848190",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/848190",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848190&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8481&flowCode=M",
+      "https://peraturan.bpk.go.id/Details/323198",
+      "https://www.dfdl.com/insights/legal-and-tax-updates/indonesia-new-import-regulations-permendag-16-2025-22-2025/",
+      "https://www.barata.id/",
+      "https://www.barata.id/id/industri-komponen-permesinan/",
+      "https://www.pindad.com/",
+      "https://investortrust.id/business/73562/jauh-di-atas-target-tkdn-hulu-migas-capai-58-untuk-psn",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Crusher, grinding, screening and mineral-processing machinery parts (HS 847490): liners, hammers, grate plates, mantles, concaves",
+    "family": "Mining, mineral and cement wear parts",
+    "hs": [
+      "847490"
+    ],
+    "imports_usd_m": {
+      "2023": 439.9,
+      "2024": 489.5,
+      "2025": 288.1
+    },
+    "exports_usd_m": {
+      "2023": 154.1,
+      "2024": 127.8,
+      "2025": 127.6
+    },
+    "top_origins_2025": [
+      "China 49%",
+      "Australia 14%",
+      "India 8%",
+      "Germany 5%",
+      "USA 4%",
+      "Korea 3%"
+    ],
+    "local_now": "No market-wide share. Indonesia exported US$154.1M (2023), US$127.8M (2024) and US$127.6M (2025) of 847490, mostly to Australia (41% in 2023; 43% in 2025; also Peru, Ghana, Côte d'Ivoire, Chile, South Africa); the 2023 shipment averaged ~US$3.1/kg (estimate: 154.1M ÷ 49.9M kg), typical of cast wear parts, so local foundries already make export-grade wear parts. SIG qualified 8 SMEs for 10 import-replacing spare-part types, including a vertical-roller-mill reject liner shell (Republika, 5 May 2024). Barata supplies liners, grate plates and hammers to the cement industry (company site, 2026).",
+    "local_makers": [
+      "PT Barata Indonesia (Gresik)",
+      "PT Papaja Maju Mandiri (city not stated)",
+      "CV Kawani Tekno Nusantara (Bandung)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Casting (high-chrome white iron, manganese steel, Ni-hard) is the main step; CNC finishes fit faces, bores and bolt holes and makes shafts, eccentrics, bushings and seats. 3D: printed sand moulds for one-off liners, hammers and obsolete crusher parts; 3D scanning of worn liners to measure wear and redesign profiles (inference).",
+    "potential_share": "Judgement (3–5 years): 20–35% of 847490 imports (US$58–101M/yr = 20–35% × US$288.1M). Reasoning: proven export capability, SIG's programme shows a qualification route, and wear parts are repeat consumables; limits are alloy and heat-treatment QA and OEM warranty on crusher and mill parts. Imports fell 41% in 2025 (US$489.5M to US$288.1M), so the base is volatile.",
+    "buyers": [
+      "Semen Indonesia Group (Tuban, Rembang; Semen Padang, Semen Tonasa)",
+      "Indocement",
+      "PT Freeport Indonesia (Grasberg)",
+      "IMIP smelter tenants (Morowali)"
+    ],
+    "best_places": [
+      "Kabupaten Gresik, East Java",
+      "Kabupaten Tuban, East Java",
+      "Kabupaten Klaten, Central Java",
+      "Kabupaten Morowali, Central Sulawesi"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "EN 10204 3.1 certificates with chemistry and hardness",
+      "ASTM A532 (high-chrome iron) / ASTM A128 (manganese steel) conformance",
+      "TKDN certificate"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$58–101M/yr made locally ≈ 1,440–6,300 direct jobs (estimate: US$57.6M ÷ US$40k = 1,441; US$100.8M ÷ US$16k = 6,302). Most would be foundry jobs rather than CNC.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=847490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=847490&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/847490",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/847490",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=X",
+      "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+      "https://www.barata.id/id/industri-semen/",
+      "https://www.barata.id/",
+      "https://www.fcx.com/sites/fcx/files/documents/sustainability/FCX2025_ESG_Performance_Data.xlsx",
+      "https://imip.co.id/",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Parts of excavators, bulldozers, graders, cranes and similar (HS 843149): buckets, teeth, adapters, cutting edges, pins and bushings",
+    "family": "Mining, mineral and cement wear parts",
+    "hs": [
+      "843149"
+    ],
+    "imports_usd_m": {
+      "2023": 898.9,
+      "2024": 778.8,
+      "2025": 796.3
+    },
+    "exports_usd_m": {
+      "2023": 262.4,
+      "2024": 259.4,
+      "2025": 244.3
+    },
+    "top_origins_2025": [
+      "China 41%",
+      "Japan 32%",
+      "Korea 6%",
+      "Italy 4%"
+    ],
+    "local_now": "No sourced share for parts. Heavy-equipment makers' association Hinabi: average heavy-equipment TKDN ~40%; engines and hydraulics still imported (Bisnis, 18 Nov 2024, snippet). Exports were US$262.4M (2023), US$259.4M (2024) and US$244.3M (2025); Japan took 33% in 2023 and 24% in 2024 (WITS), which suggests Japanese OEM plants in Indonesia ship parts into their own networks (inference).",
+    "local_makers": [
+      "PT Hitachi Construction Machinery Indonesia (West Java; city not stated)",
+      "PT United Tractors Pandu Engineering (city not stated)",
+      "PT Pindad (Bandung)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Casting or forging plus CNC: bucket teeth and adapters, cutting edges, pins and bushings, line boring of boom and arm bosses, track rollers and idlers; weld repair plus on-site line boring. 3D: sand-printed moulds for low-volume ground-engaging tools and obsolete parts; scanning to reverse-engineer buckets and wear packages (inference).",
+    "potential_share": "Judgement (3–5 years): 8–15% of 843149 imports (US$64–119M/yr = 8–15% × US$796.3M) in ground-engaging tools, wear plates, pins and bushings, bucket and attachment parts and remanufacturing. Most value (hydraulics, OEM-coded components) stays imported (China 41%, Japan 32%). Demand is cyclical: United Tractors' Komatsu mining unit sales fell 52% in Jan–May 2026.",
+    "buyers": [
+      "United Tractors (Komatsu distributor) and its mining contractors",
+      "PT Freeport Indonesia",
+      "PT Hitachi Construction Machinery Indonesia",
+      "IMIP smelter tenants (Morowali)"
+    ],
+    "best_places": [
+      "Kabupaten Bekasi, West Java",
+      "Kabupaten Karawang, West Java",
+      "Kota Balikpapan, East Kalimantan"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "OEM supplier approval (Komatsu, Hitachi, Caterpillar dealers)",
+      "EN 10204 3.1 material certificates",
+      "TKDN certificate"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$64–119M/yr made locally ≈ 1,590–7,470 direct jobs (estimate: US$63.7M ÷ US$40k = 1,593; US$119.4M ÷ US$16k = 7,465).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843149&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843149&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/843149",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/843149",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843149&flowCode=M",
+      "https://ekonomi.bisnis.com/read/20241118/257/1816744/produsen-kritisi-alat-berat-lokal-tak-jadi-prioritas-di-proyek-hilirisasi",
+      "https://investortrust.id/market/108081/united-tractors-launches-126-million-share-buyback-as-coal-uncertainty-weighs-on-operations",
+      "https://www.industry.co.id/read/154322/strategi-menperin-agus-pacu-ikm-logam-masuk-rantai-pasok-industri-besar",
+      "https://www.pindad.com/",
+      "https://www.fcx.com/sites/fcx/files/documents/sustainability/FCX2025_ESG_Performance_Data.xlsx",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Parts of pulp and paper machinery (HS 843991 pulp-making, 843999 paper/paperboard machines): rolls, refiner plates, screen baskets, doctor holders",
+    "family": "Process-plant spare parts",
+    "hs": [
+      "843991",
+      "843999",
+      "8439"
+    ],
+    "imports_usd_m": {
+      "2023": 390.4,
+      "2024": 99.4,
+      "2025": 106.6
+    },
+    "exports_usd_m": {
+      "2023": 2.4,
+      "2024": 1.0,
+      "2025": 0.7
+    },
+    "top_origins_2025": [
+      "China 51%",
+      "Finland 10%",
+      "USA 7%",
+      "Switzerland ~4%",
+      "Germany ~3%"
+    ],
+    "local_now": "unknown: no sourced local share or named local maker found (web search budget was exhausted during this research). Trade context (WITS): parts imports were US$390.4M in 2023, led by a 843999 spike (Finland 27%, Germany 22%), then US$99.4M in 2024 and US$106.6M in 2025; exports were under US$2.5M a year.",
+    "local_makers": null,
+    "fit": "both",
+    "cnc_3d_role": "CNC: large-roll turning and grinding (press, dryer and guide rolls), roll journals and bearing housings, refiner plate machining, screen basket and doctor-blade holder fabrication, balancing. 3D: printed sand moulds for refiner plates and agitator or pump impellers; scanning of worn refiner segments; printed polymer guards and brackets (inference).",
+    "potential_share": "Judgement (3–5 years): 5–15% of pulp and paper machinery parts imports (US$5–16M/yr = 5–15% × US$106.6M), limited to wear and non-critical parts (refiner plates, screen plates, rolls re-covering and regrinding, bearing housings, conveyor parts). Critical parts are tied to the original machine suppliers, buyers are private (no TKDN obligation), and only a few large mills buy.",
+    "buyers": [
+      "Asia Pulp & Paper (APP) / Sinar Mas mills",
+      "APRIL Group (Asia Pacific Resources International)"
+    ],
+    "best_places": [
+      "Kabupaten Pelalawan, Riau",
+      "Kabupaten Siak, Riau",
+      "Kabupaten Ogan Komering Ilir, South Sumatra",
+      "Kota Jambi, Jambi"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "OEM drawings or buyer approval",
+      "Dynamic balancing reports (ISO 21940/1940)"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$5–16M/yr made locally ≈ 130–1,000 direct jobs (estimate: US$5.3M ÷ US$40k = 133; US$16.0M ÷ US$16k = 999).",
+    "sources": [
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Imports/partner/ALL/product/843991",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Imports/partner/ALL/product/843991",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/843991",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Imports/partner/ALL/product/843999",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Imports/partner/ALL/product/843999",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/843999",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Exports/partner/ALL/product/843999",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Exports/partner/ALL/product/843991",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/843991",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/843991",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/843999",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/843999",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843991&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843999&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843991&flowCode=X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843999&flowCode=X",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843991&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843999&flowCode=M",
+      "https://www.aprilasia.com/",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Parts of industrial food and drink machinery incl. sugar-mill machinery (HS 843890)",
+    "family": "Process-plant spare parts",
+    "hs": [
+      "843890",
+      "843830"
+    ],
+    "imports_usd_m": {
+      "2023": 39.2,
+      "2024": 39.9,
+      "2025": 45.8
+    },
+    "exports_usd_m": {
+      "2023": 0.72,
+      "2024": 1.42,
+      "2025": 2.3
+    },
+    "top_origins_2025": [
+      "China 22%",
+      "Korea 11%",
+      "Italy 11%",
+      "Thailand 7%"
+    ],
+    "local_now": "No sourced share. Barata (Gresik), which began as a sugar-mill repair firm in 1901, casts sugar-mill pinions, gear wheels and mill stands (company site, 2026) and says it can build mills up to 15,000 TCD with high local content (Suara Surabaya, snippet, date unclear). In 2010 Barata (>Rp100bn) and Boma Bisma Indra (~Rp60bn) received state work on sugar-mill revitalisation (Kontan, snippet; pre-2023). APTRI (2022): all state sugar mills still run Dutch-era technology.",
+    "local_makers": [
+      "PT Barata Indonesia (Gresik)",
+      "PT Boma Bisma Indra (city not stated)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "Casting plus heavy CNC turning and grooving of mill roller shells and shafts, pinions and gear wheels, mill-stand machining, centrifugal basket and cane-knife hub machining, stainless food-machinery parts. 3D: printed sand for one-off pinion and housing castings; scanning of worn rollers (inference).",
+    "potential_share": "Judgement (3–5 years): 30–50% of 843890 imports (US$14–23M/yr = 30–50% × US$45.8M). The code is small and mixes all food machinery (bakery, meat, beverage), so the sugar part is a fraction; more sugar-mill spending sits in revitalisation projects (SGN reactivations: PG Bone 2025, PG Tasikmadu 2027, PG Pangka 2028) whose parts can fall under 8483 or 8479. BUMN buyers face TKDN rules, and heavy machining (Barata) already exists.",
+    "buyers": [
+      "Sinergi Gula Nusantara (SGN)",
+      "PT Perkebunan Nusantara III (Persero)"
+    ],
+    "best_places": [
+      "Kabupaten Gresik, East Java",
+      "Kabupaten Karanganyar, Central Java",
+      "Kabupaten Tegal, Central Java"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "Food-contact stainless steel material certificates",
+      "TKDN certificate (BUMN buyers)"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$14–23M/yr made locally ≈ 340–1,430 direct jobs (estimate: US$13.7M ÷ US$40k = 343; US$22.9M ÷ US$16k = 1,431).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843890&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843890&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/843890",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/843890",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=843890&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=8438&flowCode=M",
+      "https://www.barata.id/",
+      "https://www.barata.id/id/fasilitas/untuk-pengerjaan-mesin/",
+      "https://www.suarasurabaya.net/?p=483853",
+      "https://industri.kontan.co.id/news/barata-indonesia-siap-sokong-revitalisasi-pabrik-gula-1",
+      "https://ekonomi.republika.co.id/berita/re8wxq457/aptri-semua-pabrik-gula-milik-bumn-harus-direvitalisasi",
+      "https://ekonomi.republika.co.id/berita/srwnk5415/sejumlah-pabrik-gula-dorman-akan-diaktifkan-lagi",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Palm-oil mill machinery (HS 847920: oil-extraction machinery, e.g. screw presses, digesters) and its parts (inside HS 847990)",
+    "family": "Process-plant spare parts",
+    "hs": [
+      "847920",
+      "847990"
+    ],
+    "imports_usd_m": {
+      "2023": 333.2,
+      "2024": 338.7,
+      "2025": 215.7
+    },
+    "exports_usd_m": {
+      "2023": 0.05,
+      "2024": 0.14,
+      "2025": 0.2
+    },
+    "top_origins_2025": [
+      "Malaysia 73%",
+      "China 10%",
+      "Germany 5%",
+      "Singapore 5%",
+      "Italy 2%"
+    ],
+    "local_now": "No sourced market share. Project datapoint: CB Industrial's 60 t/h continuous-sterilisation mill for PT Ichtiar Gusti Pudi in Landak, West Kalimantan had IDR76.2bn (RM22.98M) local and US$6.73M (RM28.09M) imported content, ~45% local by value (The Edge; dated 'Dec 7', year not shown, likely pre-2023). A Riau study found local screw-press material tensile strength far below the OEM standard (snippet). Parts of 847990 (all 8479 machines, not palm-only) were US$258.8M imported in 2025.",
+    "local_makers": null,
+    "fit": "both",
+    "cnc_3d_role": "CNC: screw-press worms and shafts, press cages and cage bars, digester shafts and arms, sterilizer door hinges and locking rings, thresher drums, ripple-mill rotors and plates, conveyor screws; plus hard-facing and re-machining. 3D: scanning of worn worms to recover geometry; printed sand moulds for cast worm flights and ripple plates; metal AM is not cost-effective for these large wear parts (inference).",
+    "potential_share": "Judgement (3–5 years): 30–45% of mill wear and spare parts (value not separable in Comtrade) and 15–25% of complete extraction machinery imports (US$32–54M/yr = 15–25% × US$215.7M). Reasoning: hundreds of mills (GAPKI: '700+', undated) buy press worms and cages repeatedly; geometry is simple; but material and hardening quality fall short today, and Malaysian OEMs supply 73% of 847920 machinery imports (WITS 2025; 847990 parts: China 36%, Malaysia 14%).",
+    "buyers": [
+      "PT Perkebunan Nusantara (PTPN) palm-oil mills",
+      "PT Ichtiar Gusti Pudi (Landak mill)",
+      "GAPKI member mills"
+    ],
+    "best_places": [
+      "Kota Medan, North Sumatra",
+      "Kota Pekanbaru, Riau",
+      "Kabupaten Landak, West Kalimantan"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "Material and hardness certificates for hard-faced worms and cages",
+      "TKDN certificate (PTPN and other BUMN buyers)"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$32–54M/yr made locally ≈ 810–3,370 direct jobs (estimate: US$32.4M ÷ US$40k = 809; US$53.9M ÷ US$16k = 3,370). Parts work is not counted here.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=847920&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=847920&flowCode=X",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/847920",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/847920",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/847920",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=847990&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847990&flowCode=M",
+      "http://theedgemalaysia.com/article/cb-industrial-bags-palm-mill-contract-worth-rm51m-indonesia",
+      "https://gapki.id/",
+      "https://repository.uir.ac.id/2159/3/BAB%20II.pdf",
+      "https://ejurnal.umri.ac.id/index.php/JST/article/view/350",
+      "https://en.indotrading.com/jayatechpalmindo/wang-yuen/",
+      "https://www.industry.co.id/read/154322/strategi-menperin-agus-pacu-ikm-logam-masuk-rantai-pasok-industri-besar",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  },
+  {
+    "product": "Parts of conveyors, elevators and other lifting/handling machinery of HS 8428 (HS 843139): idlers, pulleys, sprockets, chain wheels, crane wheels",
+    "family": "Material handling parts",
+    "hs": [
+      "843139",
+      "843110",
+      "8428"
+    ],
+    "imports_usd_m": {
+      "2023": 197.9,
+      "2024": 222.1,
+      "2025": 211.6
+    },
+    "exports_usd_m": {
+      "2023": 3.2,
+      "2024": 14.5,
+      "2025": 2.4
+    },
+    "top_origins_2025": [
+      "China 61%",
+      "Australia 13%",
+      "USA 7%",
+      "Japan 4%",
+      "Germany 3%"
+    ],
+    "local_now": "No sourced share. SIG qualified local SMEs for belt-conveyor carry idlers (PT Sari Teknindo Perkasa, CV Desra Teknik), non-drive pulleys (PT Aneka Mitra Indoguna), roller pan conveyor parts (CV Kawani Tekno Nusantara) and truck-loader chain drives (PT Bimuda Karya Teknik) (Republika, 5 May 2024). Barata lists a conveyor for PLTU Jeranjang and harbour/gantry cranes (company site).",
+    "local_makers": [
+      "PT Sari Teknindo Perkasa (city not stated)",
+      "CV Desra Teknik (city not stated)",
+      "PT Aneka Mitra Indoguna (city not stated)",
+      "CV Kawani Tekno Nusantara (Bandung)",
+      "PT Bimuda Karya Teknik (city not stated)",
+      "PT Barata Indonesia (Gresik)"
+    ],
+    "fit": "cnc",
+    "cnc_3d_role": "CNC turning of idler rolls, shafts and pulley hubs, bearing-housing bores, sprocket and chain-wheel cutting, pulley lagging; crane wheels, drums and hooks need forging plus CNC. 3D: printed polymer seals, guards and chute liners; scanning to reverse-engineer old conveyor and crane parts (inference).",
+    "potential_share": "Judgement (3–5 years): 25–40% of 843139 imports (US$53–85M/yr = 25–40% × US$211.6M). Idlers, pulleys, shafts, sprockets and crane wheels are simple repeat consumables and SIG already buys them locally; limits are Chinese idler prices and bearing and seal quality.",
+    "buyers": [
+      "Semen Indonesia Group",
+      "PLN power plants (e.g. PLTU Jeranjang coal handling)",
+      "PT Freeport Indonesia",
+      "IMIP smelter tenants (Morowali)"
+    ],
+    "best_places": [
+      "Kabupaten Gresik, East Java",
+      "Kabupaten Tuban, East Java",
+      "Kota Bandung, West Java",
+      "Kota Cilegon, Banten"
+    ],
+    "certs_needed": [
+      "ISO 9001",
+      "TKDN certificate",
+      "K3 (occupational safety) inspection for lifting equipment (inference; rule not checked)"
+    ],
+    "jobs_note": "Estimate (method): direct jobs ≈ value made locally ÷ output per worker. Using US$16k–40k output per worker (US$16k = alsintan exports per worker, US$90M ÷ 5,629 workers, Kemenperin Jun 2025, a floor because it counts exports only; US$40k is an assumption), each US$10M/yr made locally ≈ 250–625 direct jobs. US$53–85M/yr made locally ≈ 1,320–5,290 direct jobs (estimate: US$52.9M ÷ US$40k = 1,322; US$84.6M ÷ US$16k = 5,290).",
+    "sources": [
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Imports/partner/ALL/product/843139",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Imports/partner/ALL/product/843139",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Imports/partner/ALL/product/843139",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2025/tradeflow/Exports/partner/ALL/product/843139",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2023/tradeflow/Exports/partner/ALL/product/843139",
+      "https://wits.worldbank.org/trade/comtrade/en/country/IDN/year/2024/tradeflow/Exports/partner/ALL/product/843139",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843139&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=843139&flowCode=X",
+      "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+      "https://www.barata.id/id/industri-komponen-permesinan/",
+      "https://www.pindad.com/",
+      "https://www.fcx.com/sites/fcx/files/documents/sustainability/FCX2025_ESG_Performance_Data.xlsx",
+      "https://investortrust.id/business/70444/industri-mesin-pertanian-lokal-siap-jadi-andalan-ketahanan-pangan"
+    ]
+  }
+]

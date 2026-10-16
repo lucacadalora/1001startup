@@ -1,0 +1,411 @@
+[
+  {
+    "province": "Maluku",
+    "area": "Maluku",
+    "level": "province",
+    "focus": {
+      "product": "Fishing-boat propulsion spares and repair: propellers, stern shafts, couplings and outboard or inboard engine parts",
+      "hs": [
+        "848710",
+        "848310",
+        "840991",
+        "840999"
+      ],
+      "why": "Fisheries lead the economy (agriculture, forestry and fisheries about 25% of GRDP in BPS 2015 data, pre-2023) and Tual landed about 30,638 t of seafood in 2019 (pre-2023). Indonesia imported US$24.5M of propellers and US$42.3M of outboard motors in 2024, 88% of the outboards from Japan. Honest answer: start as a repair and spare-parts service, not manufacturing.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Pump and process-plant spares for mining and gas (Wetar copper cathode plant; planned Abadi LNG)",
+        "hs": [
+          "841391",
+          "847490"
+        ],
+        "why": "Wetar is the only mine in Indonesia that produces copper cathodes on site (Merdeka). Abadi gas in the Masela Block (INPEX) is planned but not built. Politeknik Negeri Ambon runs oil and gas mechanical programmes.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Fish-meal and fish-processing plant wear parts (screws, conveyor and pump parts)",
+        "hs": [
+          "843890",
+          "841391"
+        ],
+        "why": "Fish meal is Tual's main industrial product (BPS Kota Tual 2020 via Wikipedia, pre-2023).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Batutua Kharisma Permai and PT Batutua Tembaga Raya (Wetar Copper Mine, Merdeka Copper Gold)",
+      "INPEX (Abadi gas field, Masela Block; not yet built)"
+    ],
+    "local_inputs": [
+      "tuna and other seafood (Tual about 30,638 t in 2019)",
+      "fish meal",
+      "copper ore and cathode (Wetar)",
+      "natural gas (Abadi field, undeveloped)"
+    ],
+    "clusters": [
+      "Wetar Copper Mine, Lurang village, North Wetar (Maluku Barat Daya)",
+      "Abadi gas field, Masela Block (Tanimbar; planned)"
+    ],
+    "official_designation": "No provincial KIID regulation retrieved. Kabupaten Seram Bagian Timur has an industry plan (RPIK) for 2023-2042 under Perda 2/2025 (snippet). Lumbung Ikan Nasional status not verified.",
+    "umk_2026": "UMP 2026 Rp3,334,490 (+6.14%; Kepgub Maluku 5430/2025). UMK Kota Ambon 2026 Rp3,381,225; Kota Tual and other regencies follow the UMP (Dealls, 19 Jan 2026).",
+    "skills": "Politeknik Negeri Ambon: D3 Teknik Mesin with 16 labs (production, SMAW-GMAW welding, tool grinding, metrology; no CNC named) plus oil and gas mechanical and production programmes. Politeknik Perikanan Negeri Tual (Langgur): fishing and marine technology, no machinery programme listed. No BLK or SMK machining data retrieved.",
+    "confidence": "low",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Maluku_(province)",
+      "https://en.wikipedia.org/wiki/Tual",
+      "https://merdekacoppergold.com/en/our-business/wetar-copper-mine/",
+      "https://en.wikipedia.org/wiki/Abadi_gas_field",
+      "https://polnam.ac.id/prodi/teknik-mesin/",
+      "https://polnam.ac.id/",
+      "https://polikant.ac.id/",
+      "https://dealls.com/pengembangan-karir/ump-maluku",
+      "https://dealls.com/pengembangan-karir/ump-2026",
+      "https://ekonomi.bisnis.com/read/20251224/12/1939387/resmi-ump-maluku-2026-naik-613-jadi-rp334-juta",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&cmdCode=848710&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&cmdCode=840721&flowCode=M"
+    ]
+  },
+  {
+    "province": "Papua",
+    "area": "Papua",
+    "level": "province",
+    "focus": {
+      "product": "Job-shop turning of vehicle, boat-engine and machinery spare parts (shafts, bushings, pins, threads), upgrading Jayapura's conventional lathe shops to CNC",
+      "hs": [
+        "840991",
+        "840999",
+        "848310",
+        "848390"
+      ],
+      "why": "Kota Jayapura already has many small lathe workshops, but most still use conventional HSS or solid-carbide tools and have few lathes (Universitas Cenderawasih, 2025). Trade and services dominate Jayapura's economy. Honest answer: a repair and spare-parts hub, not manufacturing.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Sago, cocoa and coffee processing machine parts (rasps, screws, rollers)",
+        "hs": [
+          "843880",
+          "843890"
+        ],
+        "why": "Sago is the staple food across Papua (Wikipedia). Local coffee roasters such as CV Garuda Mas Biak hold TKDN certificates. These machines need small batches of wear parts.",
+        "fit": "both"
+      },
+      {
+        "product": "3D-printed short-run plastic spares and casting patterns for remote fleets",
+        "hs": [],
+        "why": "Inference only: Jayapura is the trade hub for northern Papua and air or sea freight from Java is slow. No 3D-printing supplier was verified.",
+        "fit": "3d"
+      }
+    ],
+    "anchor_buyers": [],
+    "local_inputs": [
+      "sago",
+      "coastal fish",
+      "timber (community logging permits)",
+      "coffee (Biak roasters)",
+      "coconut-shell charcoal (Biak)"
+    ],
+    "clusters": [
+      "Kota Jayapura small lathe-workshop base (informal; Universitas Cenderawasih 2025)"
+    ],
+    "official_designation": "RIPPP 2022-2041 (Perpres 24/2023) covers all Papua provinces; its regional annex was not retrieved. No KIID retrieved for Kota Jayapura.",
+    "umk_2026": "UMP 2026 Rp4,436,283 (+3.51%; Dealls, Aug 2026). No UMK 2026 retrieved.",
+    "skills": "Universitas Cenderawasih Teknik Mesin (Waena, Jayapura) trained local lathe operators on insert tooling in April 2025. No polytechnic, SMK or BLK machining data retrieved.",
+    "confidence": "low",
+    "sources": [
+      "https://abdiinsani.unram.ac.id/index.php/jurnal/article/view/2610",
+      "https://en.wikipedia.org/wiki/Jayapura",
+      "https://en.wikipedia.org/wiki/Papua_(province)",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=biak",
+      "https://dealls.com/pengembangan-karir/ump-2026",
+      "https://peraturan.go.id/files/perpres-no-24-tahun-2023.pdf"
+    ]
+  },
+  {
+    "province": "Papua Barat",
+    "area": "Papua Barat",
+    "level": "province",
+    "focus": {
+      "product": "Plant-maintenance spares for cement and LNG: pump parts, shafts, gears and crusher or mill wear parts",
+      "hs": [
+        "841391",
+        "848390",
+        "847490"
+      ],
+      "why": "Continuous-process plants need fast spares: bp's Tangguh LNG (producing since June 2009) and PT Conch West Papua Cement (TKDN-certified Portland cement). Indonesia imported US$300M of pump parts and US$288M of 8474 crusher and mill parts in 2025, mostly from China. Honest answer: a repair and spares service.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Nutmeg (pala) processing equipment parts (dryers, crackers, syrup lines)",
+        "hs": [
+          "843880",
+          "843890"
+        ],
+        "why": "Fakfak produces fragrant nutmeg syrup (Wikipedia). Volumes were not retrieved.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "BP Berau Ltd (Tangguh LNG, Bintuni Bay)",
+      "PT Conch West Papua Cement (plant location not verified)"
+    ],
+    "local_inputs": [
+      "natural gas (Tangguh; proven reserves over 500 bcm)",
+      "nutmeg (Fakfak)",
+      "cement (PT Conch West Papua Cement)"
+    ],
+    "clusters": [
+      "Tangguh LNG (Bintuni Bay)"
+    ],
+    "official_designation": "RIPPP 2022-2041 (Perpres 24/2023); no KIID retrieved for Papua Barat.",
+    "umk_2026": "UMP 2026 Rp3,841,000 (+6.25%; Dealls, Aug 2026). No UMK retrieved.",
+    "skills": "Universitas Papua (Manokwari, founded 3 Nov 2000; a PTFI partner). No machining polytechnic, SMK or BLK data retrieved.",
+    "confidence": "low",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Tangguh_LNG",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=papua",
+      "https://en.wikipedia.org/wiki/West_Papua_(province)",
+      "https://en.wikipedia.org/wiki/Manokwari",
+      "https://ptfi.co.id/id/partnership",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=M",
+      "https://dealls.com/pengembangan-karir/ump-2026"
+    ]
+  },
+  {
+    "province": "Papua Barat Daya",
+    "area": "Papua Barat Daya",
+    "level": "province",
+    "focus": {
+      "product": "Ship-repair machining: propellers, stern shafts, couplings and pump parts for vessels using Sorong's port and dockyard",
+      "hs": [
+        "848710",
+        "848310",
+        "841391"
+      ],
+      "why": "Sorong is the region's port and oil hub: a 500,000 TEU container port opened on 20 Sep 2021, a Pertamina dockyard, the Kasim refinery and the Salawati and Klamono fields. KEK Sorong (PP 31/2016) lists logistics. Start as a repair service.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Nickel-mining equipment wear and spare parts",
+        "hs": [
+          "843149",
+          "847490"
+        ],
+        "why": "PT Gag Nikel (Antam) mines Gag Island in Raja Ampat, and KEK Sorong lists nickel processing.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Sago-processing machine parts (rasps, screw presses)",
+        "hs": [
+          "843890"
+        ],
+        "why": "PT ANJAP holds a sago concession of about 40,000 ha in South Sorong, Perhutani runs a sago factory in Kais, and KEK Sorong lists sago and forest-product processing.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [
+      "Pertamina (Sorong dockyard)",
+      "PT Kilang Pertamina Internasional Unit VII Kasim (refinery)",
+      "Pertamina EP (Salawati, Sele Linda and Klamono fields)",
+      "Petrogas (Basin) Ltd (Walio and Matoa fields, Kasim and Arar)",
+      "PT Gag Nikel (Antam)",
+      "PT ANJAP (ANJ Group, sago)",
+      "Perhutani (Kais sago factory)"
+    ],
+    "local_inputs": [
+      "crude oil and gas (Salawati, Klamono, Walio, Matoa)",
+      "nickel ore (Gag, Kawe and Manuran islands)",
+      "sago",
+      "palm oil (Salawati, Klamono, Segun)",
+      "mangrove crab and shrimp (South Sorong)"
+    ],
+    "clusters": [
+      "KEK Sorong (523.7 ha, Kabupaten Sorong)",
+      "Sorong container port"
+    ],
+    "official_designation": "KEK Sorong, PP 31/2016: sago, forest and plantation product processing, palm oil, nickel processing and logistics; operating since Oct 2019; investor response described as tepid (2023). Kota Sorong KIID regulation: Perda 21/2013 (snippet; content not retrieved).",
+    "umk_2026": "UMP 2026 Rp3,766,000 (+4.20%; Dealls, Aug 2026). No UMK retrieved.",
+    "skills": "No machining polytechnic, SMK or BLK data retrieved (web-search budget ran out before this was covered).",
+    "confidence": "medium",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Sorong",
+      "https://en.wikipedia.org/wiki/Southwest_Papua",
+      "https://id.wikipedia.org/wiki/Kawasan_ekonomi_khusus",
+      "https://www.beritasatu.com/ekonomi/846333/dewan-komisaris-pertamina-kunjungi-dockyard-sorong",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2024&cmdCode=848710&flowCode=M",
+      "https://dealls.com/pengembangan-karir/ump-2026"
+    ]
+  },
+  {
+    "province": "Papua Tengah",
+    "area": "Papua Tengah",
+    "level": "province",
+    "focus": {
+      "product": "Mining wear and spare parts plus component rebuild for the Grasberg district: crusher and mill parts, pump parts, gears and heavy-equipment components",
+      "hs": [
+        "847490",
+        "843149",
+        "841391",
+        "848390"
+      ],
+      "why": "PT Freeport Indonesia bought US$2,562M of goods for Grasberg in 2025, only US$320M (12%) of it from local (Papua) suppliers (FCX 2025 sustainability report). The PTFI ecosystem has about 34,000 workers, but local firms are mostly micro service and retail businesses. A Timika machining and rebuild hub could take part of this spend.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Cold-chain and fishing-boat spares at SKPT Mimika",
+        "hs": [
+          "841899",
+          "848710"
+        ],
+        "why": "SKPT Mimika (since 2017) handles tens of thousands of tonnes of fish a year, shipped frozen to Java, Jayapura and Merauke and exported to Malaysia and Singapore (Wikipedia).",
+        "fit": "both"
+      },
+      {
+        "product": "Palm-oil mill spare parts",
+        "hs": [
+          "847990"
+        ],
+        "why": "Oil palm in Nabire (PT Nabire Baru, PT Sariwana Adi Perkasa) and Mimika (PT Karya Bella Vita).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Freeport Indonesia (Grasberg minerals district)",
+      "PT Nabire Baru",
+      "PT Sariwana Adi Perkasa",
+      "PT Karya Bella Vita"
+    ],
+    "local_inputs": [
+      "copper-gold concentrate (Grasberg)",
+      "fish (SKPT Mimika)",
+      "palm oil (Nabire, Mimika)",
+      "coffee (Moanemani, Dogiyai)"
+    ],
+    "clusters": [
+      "Grasberg minerals district (Tembagapura)",
+      "Amamapare port (Portsite)",
+      "SKPT Mimika"
+    ],
+    "official_designation": "KIID Kabupaten Mimika: Permenperin 77/M-IND/PER/12/2013 of 23 Dec 2013 (pre-2023; the core industry it names was not retrieved). RIPPP 2022-2041 (Perpres 24/2023).",
+    "umk_2026": "UMP 2026 Rp4,285,848, unchanged from 2025 (Dealls, Aug 2026; one early list printed Rp4,295,848, snippet). No Mimika UMK retrieved.",
+    "skills": "PTFI Nemangkawi Mining Institute: over 300 apprentices entered in 2024-2025 (90% Indigenous Papuan, 25% women), about 40% offered PTFI jobs (FCX 2025 report). Politeknik Amamapare Timika not verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://www.fcx.com/sites/fcx/files/documents/sustainability/2025-annual-report-on-sustainability.pdf",
+      "https://ptfi.co.id/id/supporting-infrastructure",
+      "https://ptfi.co.id/id/economic-program",
+      "https://investortrust.id/business/99610/freeport-jadi-pendorong-ekonomi-papua-dari-royalti-hingga-serapan-tenaga-kerja",
+      "https://en.wikipedia.org/wiki/Central_Papua",
+      "https://paralegal.id/peraturan/peraturan-menteri-perindustrian-nomor-77-m-ind-per-12-2013/",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=847490&flowCode=M",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+      "https://dealls.com/pengembangan-karir/ump-2026"
+    ]
+  },
+  {
+    "province": "Papua Pegunungan",
+    "area": "Papua Pegunungan",
+    "level": "province",
+    "focus": {
+      "product": "Repair and spare-parts service: CNC-turned and 3D-printed small spares (vehicle, generator-set, pump and coffee-machine parts) to cut waits for air freight",
+      "hs": [
+        "8409",
+        "848390",
+        "843890"
+      ],
+      "why": "The highlands depend on air transport, and every regency capital has an airport (Wikipedia). No machining capacity was found here. Honest answer: a spares-on-demand repair service, not manufacturing.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Coffee pulper and huller wear parts for highland Arabica",
+        "hs": [
+          "843880",
+          "843890"
+        ],
+        "why": "Inference: highland Arabica such as Okmemin single-origin (CV Ngapdon Papua Jaya, TKDN-certified) needs small processing machines; the origin district was not verified.",
+        "fit": "both"
+      }
+    ],
+    "anchor_buyers": [],
+    "local_inputs": [
+      "sweet potato",
+      "Arabica coffee (volumes not retrieved)"
+    ],
+    "clusters": [],
+    "official_designation": "RIPPP 2022-2041 (Perpres 24/2023); no KIID retrieved.",
+    "umk_2026": "UMP 2026 Rp4,508,714 (+5.20%; Dealls, Aug 2026).",
+    "skills": "None verified.",
+    "confidence": "low",
+    "sources": [
+      "https://en.wikipedia.org/wiki/Highland_Papua",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=papua",
+      "https://dealls.com/pengembangan-karir/ump-2026"
+    ]
+  },
+  {
+    "province": "Papua Selatan",
+    "area": "Papua Selatan",
+    "level": "province",
+    "focus": {
+      "product": "Farm-machinery wear and spare parts (tractor, harvester and rice-mill parts) for the Merauke food estate",
+      "hs": [
+        "843290",
+        "843390",
+        "843790"
+      ],
+      "why": "Merauke was named one of five national food-estate areas in 2022 (rice and corn; Papua's provisional allocation 200,000 ha), after the stalled MIFEE plan from 2010. Mechanised fields need fast local spares. TKDN-certified tractor and harvester makers exist in Indonesia, but none was verified locally.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "Boat and cold-chain spares for Arafura fisheries landed at Merauke",
+        "hs": [
+          "848710",
+          "841899"
+        ],
+        "why": "The government plans to require fish caught in the Arafura to be landed at Merauke, where about 20,000 non-local vessels operate (minister, 2023, via Wikipedia).",
+        "fit": "both"
+      },
+      {
+        "product": "Palm-oil mill spare parts",
+        "hs": [
+          "847990"
+        ],
+        "why": "Korindo-linked plantations in Merauke and Boven Digoel (PT Tunas Sawa Erma and others).",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "Korindo-linked plantations (PT Tunas Sawa Erma, PT Dongin Prabawa, PT Berkat Cipta Abadi, PT Papua Agro Lestari)"
+    ],
+    "local_inputs": [
+      "rice",
+      "corn",
+      "sugarcane (MIFEE plans)",
+      "palm oil",
+      "fish and gulama fish maw",
+      "agarwood (Mappi, Asmat)"
+    ],
+    "clusters": [
+      "Merauke food estate (MIFEE and national food estate)"
+    ],
+    "official_designation": "National food-estate area (2022): rice and corn in Merauke, Boven Digoel, Mappi and Keerom (pre-2023). RIPPP 2022-2041 (Perpres 24/2023). Details of the 2024-2026 national strategic project not verified.",
+    "umk_2026": "UMP 2026 Rp4,508,850 (+5.20%) per Dealls (Aug 2026); another report gives Rp4,508,100 (snippet), a conflict.",
+    "skills": "No machining institute verified. Kemnaker planned a BLK (UPTP) in Mappi in 2021 (snippet, pre-2023).",
+    "confidence": "low",
+    "sources": [
+      "https://cenderawasihpos.jawapos.com/lintas-papua/merauke/05/06/2022/merauke-ditetapkan-salah-satu-kawasan-food-estate-di-indonesia/",
+      "https://en.wikipedia.org/wiki/South_Papua",
+      "https://en.wikipedia.org/wiki/Merauke_Regency",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=raja+ampat",
+      "https://dealls.com/pengembangan-karir/ump-2026"
+    ]
+  }
+]

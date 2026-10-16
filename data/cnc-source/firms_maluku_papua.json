@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Workshop Bubut Andre",
+    "kind": "cnc_job_shop",
+    "province": "Papua",
+    "city": "Kota Jayapura",
+    "capabilities": [
+      "conventional lathe turning"
+    ],
+    "serves": [
+      "machinery repair",
+      "local manufacturing support"
+    ],
+    "makes": "Lathe job work. Hosted Universitas Cenderawasih's insert-tooling training in April 2025. No CNC machine reported; listed under cnc_job_shop only as the nearest kind.",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://abdiinsani.unram.ac.id/index.php/jurnal/article/view/2610",
+    "source_type": "news",
+    "evidence": "Uncen paper (Jurnal Abdi Insani, Jul 2025): insert-tool training held 12-13 Apr 2025 at local lathe workshop 'Andre', Kota Jayapura.",
+    "source_year": 2025
+  },
+  {
+    "name": "PT Freeport Indonesia (captive maintenance and steel-fabrication workshops)",
+    "kind": "laser_plasma_fabricator",
+    "province": "Papua Tengah",
+    "city": "Kabupaten Mimika",
+    "capabilities": [
+      "steel fabrication",
+      "equipment maintenance"
+    ],
+    "serves": [
+      "copper-gold mining (own Grasberg operations)"
+    ],
+    "makes": "In-house workshops for its own mine, not a job shop open to outside customers. Cutting methods and machine counts are not stated.",
+    "size_note": "Workshop headcount not stated; whole operation had 6,630 employees and 27,707 contractor workers in 2025 (Investortrust, 10 Apr 2026)",
+    "certs": [],
+    "website": "https://ptfi.co.id",
+    "source_url": "https://ptfi.co.id/id/supporting-infrastructure",
+    "source_type": "company_site",
+    "evidence": "PTFI lists project-area workshops 'from equipment maintenance workshops to steel fabrication workshops in the lowlands'.",
+    "source_year": null
+  }
+]

@@ -31,6 +31,7 @@
   var ID_PASAR = '9374a26f-0da4-4be0-82a2-1638fad1cda4';
   var ID_1001 = 'f0f2d734-d9b2-43cc-9a5a-bf02b5b02ae9';
   var ID_UMKM = '18e8fa5f-17c5-4df2-9d44-580b68092917';
+  var ID_CNC = 'de76eb14-f31d-4ec4-8f4b-11b62bcb14b7';   // cnc.vantis.sh, CNC + 3D map (working name)
   /* 1001 answers on both its old vantis.sh host and its own domain during the
    * migration. Both map to the same website id so the move reads as one site
    * with continuous history, not two half-sites split on the day DNS flipped.
@@ -43,6 +44,7 @@
     'umkm.vantis.sh': ID_UMKM,
     '1001umkm.id': ID_UMKM,
     'www.1001umkm.id': ID_UMKM,
+    'cnc.vantis.sh': ID_CNC,
   };
   var HOSTNAME = location.hostname;
   /* Databuddy website id, per host. Hosts not listed here load Umami only. */
@@ -53,7 +55,8 @@
   var DB_ID = DB_SITES[HOSTNAME];
   var WEBSITE_ID = SITES[HOSTNAME] || SITES['pasar.vantis.sh'];
   var SITE_NAME = WEBSITE_ID === ID_1001 ? '1001startup.id'
-    : WEBSITE_ID === ID_UMKM ? '1001umkm.id' : 'PASAR';
+    : WEBSITE_ID === ID_UMKM ? '1001umkm.id'
+    : WEBSITE_ID === ID_CNC ? 'CNC + 3D Indonesia' : 'PASAR';
   var POLICY_URL = 'https://vantis.sh/cookies/';
 
   /* ── consent record ──────────────────────────────────────────────────────

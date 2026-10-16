@@ -1,0 +1,492 @@
+[
+  {
+    "name": "PT Barata Indonesia (Persero)",
+    "kind": "foundry_machining",
+    "province": "East Java",
+    "city": "Gresik",
+    "capabilities": [
+      "foundry: cast iron, ductile iron, alloy cast iron, carbon and alloy steel, heat-resistant steel",
+      "heavy CNC turning (1,000 x 7,500 mm)",
+      "vertical lathe (6,000 mm table)",
+      "heavy universal lathe (1,500 x 10,000 mm)",
+      "horizontal boring and plano milling (160 mm spindle)",
+      "deep-hole boring",
+      "plate rolling to 85 mm"
+    ],
+    "serves": [
+      "sugar mills",
+      "cement plants",
+      "rail (PT KAI)",
+      "power plants (turbine components)",
+      "oil and gas",
+      "dams (hydromechanical)"
+    ],
+    "makes": "Sugar-mill pinions, gear wheels and mill stands; cement liners, grate plates and hammers; rail bogies and couplers; turbine components; hollow-cone valves; cranes and conveyors",
+    "size_note": "Foundry capacity stated as up to 12,800 t/yr (homepage) and up to 15,000 t/yr (11 Sep 2026 news); turbine MRO centre with PLN Indonesia Power Services and Technofit planned at its Cilegon turbine-component plant by 2027",
+    "certs": [
+      "AAR (Association of American Railroads) certification since 2011"
+    ],
+    "website": "https://www.barata.id/",
+    "source_url": "https://www.barata.id/id/fasilitas/untuk-pengerjaan-mesin/",
+    "source_type": "company_site",
+    "evidence": "Facilities list CNC lathe 1000 x 7500 mm, vertical lathe 6000 mm table, heavy lathe 1500 x 10000 mm.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Kawani Tekno Nusantara",
+    "kind": "precision_parts_supplier",
+    "province": "West Java",
+    "city": "Bandung",
+    "capabilities": [
+      "job-order machining and fabrication",
+      "precision measuring for QC"
+    ],
+    "serves": [
+      "cement (Semen Indonesia Group)",
+      "Astra supply chain (YDBA programme)"
+    ],
+    "makes": "Shaft impeller for rotary-packer filling spout, clinker-cooler wedge pieces, roller pan conveyor parts",
+    "size_note": "Order for 1,000 wedge-cooler pieces for SIG's Rembang plant; YDBA 'UMKM Mandiri' in 2024 and ISO-certified, reported as PT Kawani Tekno Nusantara (investortrust.id, 8 Jul 2026)",
+    "certs": [
+      "ISO certified (standard not stated)"
+    ],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+    "source_type": "news",
+    "evidence": "Kawani received an order for 1,000 wedge cooler pieces for Semen Gresik's Rembang plant after trials.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Papaja Maju Mandiri",
+    "kind": "precision_parts_supplier",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "wear-part manufacture (method not stated)"
+    ],
+    "serves": [
+      "cement (Semen Indonesia Group)"
+    ],
+    "makes": "Liner shell lower reject for raw mill (vertical roller mill)",
+    "size_note": "One of 8 SIG-mentored SMEs (2024)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+    "source_type": "news",
+    "evidence": "SIG lists Papaja Maju Mandiri as making the liner shell lower reject raw mill.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Yotano Teknik Indonesia",
+    "kind": "mould_die_maker",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "mould and die making"
+    ],
+    "serves": [
+      "cement and building materials (Semen Indonesia Group)"
+    ],
+    "makes": "Bottom dies mold U for interlock brick moulding",
+    "size_note": "One of 8 SIG-mentored SMEs (2024)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+    "source_type": "news",
+    "evidence": "SIG lists Yotano Teknik Indonesia as making bottom dies mold U for interlock brick moulds.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Bimuda Karya Teknik",
+    "kind": "precision_parts_supplier",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "power-transmission parts"
+    ],
+    "serves": [
+      "cement (Semen Indonesia Group)"
+    ],
+    "makes": "Chain drive for truck loader",
+    "size_note": "One of 8 SIG-mentored SMEs (2024)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+    "source_type": "news",
+    "evidence": "SIG lists Bimuda Karya Teknik as making the chain drive for truck loaders.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Sari Teknindo Perkasa",
+    "kind": "precision_parts_supplier",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "conveyor idler manufacture"
+    ],
+    "serves": [
+      "cement (Semen Indonesia Group)"
+    ],
+    "makes": "Carry idler for belt conveyor",
+    "size_note": "One of 8 SIG-mentored SMEs (2024)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+    "source_type": "news",
+    "evidence": "SIG lists Sari Teknindo Perkasa, with CV Desra Teknik, as making belt-conveyor carry idlers.",
+    "source_year": 2024
+  },
+  {
+    "name": "CV Desra Teknik",
+    "kind": "precision_parts_supplier",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "conveyor idler manufacture"
+    ],
+    "serves": [
+      "cement (Semen Indonesia Group)"
+    ],
+    "makes": "Carry idler for belt conveyor",
+    "size_note": "One of 8 SIG-mentored SMEs (2024)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+    "source_type": "news",
+    "evidence": "SIG lists CV Desra Teknik, with Sari Teknindo Perkasa, as making belt-conveyor carry idlers.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Aneka Mitra Indoguna",
+    "kind": "precision_parts_supplier",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "conveyor pulley manufacture"
+    ],
+    "serves": [
+      "cement (Semen Indonesia Group)"
+    ],
+    "makes": "Non-drive pulley for belt conveyor",
+    "size_note": "One of 8 SIG-mentored SMEs (2024)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+    "source_type": "news",
+    "evidence": "SIG lists Aneka Mitra Indoguna as making non-drive pulleys for belt conveyors.",
+    "source_year": 2024
+  },
+  {
+    "name": "Koperasi Batur Jaya (Ceper metal-casting IKM)",
+    "kind": "foundry_machining",
+    "province": "Central Java",
+    "city": "Klaten",
+    "capabilities": [
+      "metal casting",
+      "machining"
+    ],
+    "serves": [
+      "rail (PT KAI)",
+      "automotive (TMMIN)",
+      "industrial machinery",
+      "water pumps",
+      "ships"
+    ],
+    "makes": "Metallic brake blocks, cylinder sleeves, pump and factory machine parts",
+    "size_note": "168 member IKM and >4,000 workers (2019; pre-2023)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/47090/ikm-logam-klaten-jateng-upaya-terus-hasilkan-produk-kompetitif",
+    "source_type": "news",
+    "evidence": "Koperasi Batur Jaya had 168 member IKM in metal casting employing more than 4,000 workers.",
+    "source_year": 2019
+  },
+  {
+    "name": "PT Duraquipt Cemerlang",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Depok",
+    "capabilities": [
+      "industrial pump manufacture"
+    ],
+    "serves": [
+      "upstream oil and gas (KKKS)",
+      "industry"
+    ],
+    "makes": "Industrial pumps (Dura Pump)",
+    "size_note": "TKDN-certified; SKK Migas and SUCOFINDO visited the Depok plant in May 2026 (snippet)",
+    "certs": [
+      "TKDN certificate"
+    ],
+    "website": null,
+    "source_url": "https://industri.kontan.co.id/news/dukung-tkdn-skk-migas-dorong-penggunaan-pompa-industri-lokal-di-sektor-hulu",
+    "source_type": "news",
+    "evidence": "SKK Migas and SUCOFINDO visited Duraquipt's Depok pump plant to assess supply to upstream contractors (snippet).",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Torishima Guna Indonesia",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Jakarta",
+    "capabilities": [
+      "pump and pumping-system manufacture"
+    ],
+    "serves": [
+      "water utilities (PDAM)",
+      "buildings",
+      "industry"
+    ],
+    "makes": "End-suction, multi-stage high-pressure, double-suction and vertical mixed-flow pumps",
+    "size_note": "Address in Pulogadung Industrial Estate; factory site not stated on fetched page",
+    "certs": [],
+    "website": "https://www.torishima.co.id/",
+    "source_url": "https://www.torishima.co.id/",
+    "source_type": "company_site",
+    "evidence": "Supplies pumps for PDAM Surya Sembada Surabaya, the Umbulan project and an East Kalimantan water transfer.",
+    "source_year": 2026
+  },
+  {
+    "name": "Grundfos Indonesia",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Jakarta",
+    "capabilities": [
+      "submersible pump manufacture"
+    ],
+    "serves": [
+      "water",
+      "regional export"
+    ],
+    "makes": "Submersible pumps",
+    "size_note": "Local content 29% (snippet; date not shown)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.fortuneidn.com/business/grundfos-investasi-us-2-juta-di-indonesia-untuk-pabrik-pompa-air-00-my5jv-xg0hp7",
+    "source_type": "news",
+    "evidence": "Grundfos Indonesia's local content is 29%; its Jakarta plant makes submersible pumps (snippet).",
+    "source_year": null
+  },
+  {
+    "name": "PT Bukaka Teknik Utama",
+    "kind": "machinery_maker",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "oil and gas equipment",
+      "road construction equipment",
+      "special purpose vehicles",
+      "galvanizing 40,000 t/yr"
+    ],
+    "serves": [
+      "oil and gas",
+      "infrastructure"
+    ],
+    "makes": "Oil and gas pumps (>6,000 supplied since 1986); subsidiaries Bukaka Forging Industries and Bukaka Teknik Utama Balikpapan",
+    "size_note": "Plant city not stated on fetched page",
+    "certs": [],
+    "website": "https://www.bukaka.com/",
+    "source_url": "https://www.bukaka.com/",
+    "source_type": "company_site",
+    "evidence": "Bukaka says it has supplied more than 6,000 pumps of various specifications since 1986.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pindad (Persero)",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Bandung",
+    "capabilities": [
+      "heavy equipment",
+      "generators (Siemens licence)",
+      "rail brake valves",
+      "marine cranes"
+    ],
+    "serves": [
+      "defence",
+      "rail (PT KAI)",
+      "mining",
+      "agriculture",
+      "power"
+    ],
+    "makes": "Excava 200 and amphibious excavators, 3 t provision crane, DVKE2SCL brake distributor valve, PTM45 tractor",
+    "size_note": "Head office Bandung; plant locations not listed on fetched page",
+    "certs": [],
+    "website": "https://www.pindad.com/",
+    "source_url": "https://www.pindad.com/",
+    "source_type": "company_site",
+    "evidence": "Pindad lists the DVKE2SCL brake distributor valve, a 3-ton provision crane and the Excava 200 excavator.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Hitachi Construction Machinery Indonesia",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": null,
+    "capabilities": [
+      "construction machinery manufacture"
+    ],
+    "serves": [
+      "mining",
+      "construction"
+    ],
+    "makes": "Hitachi excavators and parts (products not detailed in source)",
+    "size_note": "Host of a field visit for 30 Karawang/Bekasi metal IKM, 29–30 Jul 2026; province inferred from that West Java programme, plant city not stated in source",
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/154322/strategi-menperin-agus-pacu-ikm-logam-masuk-rantai-pasok-industri-besar",
+    "source_type": "news",
+    "evidence": "Kemenperin took 30 Karawang and Bekasi metal IKM on field visits including PT Hitachi Construction Machinery Indonesia.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yogya Presisi Teknikatama Industri (YPTI)",
+    "kind": "cnc_machine_builder",
+    "province": "DI Yogyakarta",
+    "city": "Yogyakarta",
+    "capabilities": [
+      "CNC machine building",
+      "machining"
+    ],
+    "serves": [
+      "aerospace (PT Dirgantara Indonesia)",
+      "metal IKM"
+    ],
+    "makes": "CNC machines; machine revitalisation and maintenance training for PTDI",
+    "size_note": "Framework agreement with PTDI on 12 Mar 2025 (snippet); host of 2026 IKM field visit",
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/154322/strategi-menperin-agus-pacu-ikm-logam-masuk-rantai-pasok-industri-besar",
+    "source_type": "news",
+    "evidence": "YPTI hosted a field visit for 30 metal IKM during Kemenperin's July 2026 partnership facilitation.",
+    "source_year": 2026
+  },
+  {
+    "name": "Teknik Jaya",
+    "kind": "cnc_job_shop",
+    "province": "West Java",
+    "city": "Subang",
+    "capabilities": [
+      "CNC turning",
+      "CNC milling",
+      "CNC router",
+      "plasma cutting",
+      "laser cutting",
+      "3D printing"
+    ],
+    "serves": [
+      "general industry (job orders)"
+    ],
+    "makes": "Machined parts to order",
+    "size_note": "About 13 CNC machines (turning and milling) plus router, plasma, laser and a 3D printer",
+    "certs": [],
+    "website": "https://teknikjaya.co.id/",
+    "source_url": "https://teknikjaya.co.id/harga-jasa-cnc/",
+    "source_type": "company_site",
+    "evidence": "Subang (Ciasem) job shop runs about 13 CNC machines plus CNC router, plasma, laser and 3D printer.",
+    "source_year": null
+  },
+  {
+    "name": "PT Presisi Widya",
+    "kind": "cnc_job_shop",
+    "province": "West Java",
+    "city": "Bekasi",
+    "capabilities": [
+      "CNC milling",
+      "CNC cutting",
+      "CNC lathe"
+    ],
+    "serves": [
+      "general industry"
+    ],
+    "makes": "Machined parts to order",
+    "size_note": "Size not stated",
+    "certs": [],
+    "website": "https://presisiwidya.co.id/",
+    "source_url": "https://presisiwidya.co.id/jasa-cnc-milling-cutting-lathe-pt-presisi-widya/",
+    "source_type": "company_site",
+    "evidence": "Bekasi job shop offers CNC milling, cutting and lathe services (snippet).",
+    "source_year": null
+  },
+  {
+    "name": "PT Primera Meka Mix (Mekamix)",
+    "kind": "cnc_job_shop",
+    "province": "West Java",
+    "city": "Bekasi",
+    "capabilities": [
+      "CNC milling"
+    ],
+    "serves": [
+      "general industry"
+    ],
+    "makes": "Machined parts to order",
+    "size_note": "Size not stated",
+    "certs": [],
+    "website": "https://www.mekamix.co.id/",
+    "source_url": "https://www.mekamix.co.id/jasa-milling-cnc-di-bekasi/",
+    "source_type": "company_site",
+    "evidence": "Mekamix offers CNC milling services in Bekasi (snippet).",
+    "source_year": null
+  },
+  {
+    "name": "PT TEHA",
+    "kind": "precision_parts_supplier",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "assembly jig making"
+    ],
+    "serves": [
+      "aerospace (PT Dirgantara Indonesia)"
+    ],
+    "makes": "Assembly jigs for the N219 aircraft",
+    "size_note": "One of 12 local jig producers for N219 (2016; pre-2023)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.bisnis.com/read/20160129/98/514346/pesawat-n219-dijadwalkan-terbang-perdana-juli-ini",
+    "source_type": "news",
+    "evidence": "PT TEHA was among 12 local producers that made N219 assembly jigs (snippet).",
+    "source_year": 2016
+  },
+  {
+    "name": "PT Mulia Bangun Sentosa",
+    "kind": "precision_parts_supplier",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "assembly jig making"
+    ],
+    "serves": [
+      "aerospace (PT Dirgantara Indonesia)"
+    ],
+    "makes": "Assembly jigs for the N219 aircraft",
+    "size_note": "One of 12 local jig producers for N219 (2016; pre-2023)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://ekonomi.bisnis.com/read/20160129/98/514346/pesawat-n219-dijadwalkan-terbang-perdana-juli-ini",
+    "source_type": "news",
+    "evidence": "PT Mulia Bangun Sentosa was among 12 local producers that made N219 assembly jigs (snippet).",
+    "source_year": 2016
+  },
+  {
+    "name": "PT Boma Bisma Indra (Persero)",
+    "kind": "machinery_maker",
+    "province": null,
+    "city": null,
+    "capabilities": [
+      "sugar-mill equipment",
+      "machinery"
+    ],
+    "serves": [
+      "sugar mills"
+    ],
+    "makes": "Sugar-mill revitalisation work",
+    "size_note": "Received ~Rp60bn of state sugar-mill revitalisation work in 2010 (snippet; pre-2023)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://industri.kontan.co.id/news/barata-indonesia-siap-sokong-revitalisasi-pabrik-gula-1",
+    "source_type": "news",
+    "evidence": "Boma Bisma Indra received about Rp60 billion of state-budget sugar-mill revitalisation work in 2010 (snippet).",
+    "source_year": 2010
+  }
+]

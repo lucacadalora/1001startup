@@ -1,0 +1,1027 @@
+[
+  {
+    "product": "Desktop and education 3D printers (FDM) made or assembled locally",
+    "family": "3D printers (machines)",
+    "hs": [
+      "848520"
+    ],
+    "imports_usd_m": {
+      "2023": 1.403,
+      "2024": 1.163,
+      "2025": 2.335
+    },
+    "exports_usd_m": {
+      "2023": 0.0,
+      "2024": 0.023,
+      "2025": 0.054
+    },
+    "top_origins_2025": [
+      "China 78%",
+      "Türkiye 17%",
+      "Hong Kong 2%",
+      "Singapore 1%",
+      "Czechia 1%"
+    ],
+    "local_now": "Unknown share. Three local FDM printers hold TKDN certificates (Subsolid XS 40.00%, Haltech H-01 33.40%, AM-22 27.03%; Kemenperin TKDN database, read 16 Oct 2026), plus Politeknik Astra's Innostra 3-in-1 (43% local content, 2023). Volumes are not public. The retail market is led by imported Chinese brands (China 78% of 2025 imports) sold through distributors such as TekLab (Bambu Lab, 2026), AXI (Creality, 2023), Raja 3D and 3D Zaiku.",
+    "local_makers": [
+      "3DPrint.id / PT Metafuse Rekacipta Indonesia (Bandung)",
+      "CV Acta Techno Inava, Haltech brand (Sleman)",
+      "PT Alpha Karya Mechatronics (Tangerang Selatan)",
+      "Politeknik Astra, Innostra (Cikarang, Bekasi)",
+      "PT Tridiku Teknokarya Indonesia (city not stated; ITS-linked)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Local makers build frames, plates, hotends and brackets with CNC (aluminium) and 3D printing, and import motion parts and electronics. CNC shops can supply the machined parts.",
+    "potential_share": "Judgement (not sourced): 20-40% of public-sector and education units and 5-15% of all units within 3-5 years. Reasoning: Perpres 46/2025 makes government, BUMN and BUMD buyers prioritise products with TKDN above 25%, and local TKDN models exist. Most buyers, though, are private hobbyists and SMEs, who choose Bambu Lab or Creality on price and performance. Value is small: 5-15% of US$2.3M (2025 imports) is about US$0.1-0.35M a year.",
+    "buyers": [
+      "SMKs and polytechnics (e-katalog)",
+      "universities",
+      "SMEs (UMKM) and hobbyists",
+      "corporate R&D labs"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Sleman, DI Yogyakarta",
+      "Kota Tangerang Selatan, Banten",
+      "Kabupaten Bekasi, Jawa Barat",
+      "Kota Surabaya, Jawa Timur"
+    ],
+    "certs_needed": [
+      "TKDN certificate (Permenperin 35/2025)",
+      "INAPROC e-katalog listing for public buyers"
+    ],
+    "jobs_note": "No employment data found. Local makers appear to be small firms (CV/PT, university spin-offs). Assembly plus machined-parts supply is a few dozen jobs per maker at most (judgement).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=848520",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848520",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=Ue76PG97xk7N53-sWB4ilUjPMrXXMX9WmmYovKP3u3A,&id_siinas=Ue76PG97xk7N53-sWB4ilUjPMrXXMX9WmmYovKP3u3A,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=3Oj04DNpPD89mq5CVuDgYW-qBl0wmP8cRCOuDQrCcK4,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zXV8M70fzNbgYsIXihDSIXRszHX4bduAwqshsNMjTo8,",
+      "https://3dprint.id/",
+      "https://www.polytechnic.astra.ac.id/en/berhasil-tingkatkan-tkdn-mesin-cnc-innostra-diapresiasi-presiden-ri-joko-widodo-di-lpdp-festival-2023/",
+      "https://ugm.ac.id/id/berita/herianto-dikukuhkan-jadi-guru-besar-ugm-bidang-sistem-manufaktur-aditif/",
+      "https://inet.detik.com/consumer/d-8389005/teklab-jadi-distributor-printer-3d-bambu-lab-di-indonesia",
+      "https://finance.detik.com/foto-bisnis/d-6758572/mengintip-3d-print-fest-karya-anak-bangsa",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-7903398/prabowo-terbitkan-aturan-tkdn-buat-belanja-pemerintah-bumn-ini-isinya"
+    ]
+  },
+  {
+    "product": "Industrial and metal additive-manufacturing machines (powder-bed, DED, binder jet)",
+    "family": "3D printers (machines)",
+    "hs": [
+      "848510",
+      "848530",
+      "848580"
+    ],
+    "imports_usd_m": {
+      "2023": 1.66,
+      "2024": 5.132,
+      "2025": 2.836
+    },
+    "exports_usd_m": {
+      "2023": 0.0,
+      "2024": 0.0,
+      "2025": 0.003
+    },
+    "top_origins_2025": [
+      "China 99%",
+      "Japan 1%"
+    ],
+    "local_now": "About 0%. No local maker of industrial or metal AM machines was found. 848510 (metal deposit) imports came 99% from China in 2023 and 2025. In 2025, 58,705 kg cost US$2.7M, about US$46 per kg. That is low for metal powder-bed machines, so the line may include non-AM deposition equipment (inference).",
+    "local_makers": [],
+    "fit": "3d",
+    "cnc_3d_role": "Buyers would use these machines for metal parts (implants, tooling inserts, spares) and finish the parts on CNC. The machines themselves are not a realistic local product.",
+    "potential_share": "Judgement (not sourced): 0-5% local within 3-5 years. Reasoning: lasers, optics, powder handling and controls are all imported, and annual demand is a few million US$. Indonesia gains more by using the machines (see the implant and tooling segments) than by building them.",
+    "buyers": [
+      "universities and BRIN labs",
+      "implant makers",
+      "mould makers",
+      "aerospace/defence (PT DI, Pindad) (not verified)"
+    ],
+    "best_places": [
+      "Kota Surabaya, Jawa Timur",
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Bekasi, Jawa Barat"
+    ],
+    "certs_needed": [],
+    "jobs_note": "None for the machines. Operators and post-processing (CNC, heat treatment) jobs would sit at the users.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=848510,848530,848580",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848510"
+    ]
+  },
+  {
+    "product": "Clear aligners (3D-printed arch models plus thermoformed trays)",
+    "family": "Dental and medical",
+    "hs": [],
+    "imports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "exports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "top_origins_2025": [],
+    "local_now": "Unknown share. The Indonesian brand Rata claims '70.000+' patients and '100+ Klinik Rata & partner' in '50+ kota' within 3 years. Its price starts at Rp5.9M, against Rp20M for braces and Rp50M for 'other brands' (rata.id, read 16 Oct 2026). Where Rata's aligners are made is not stated. Zenyum (Singapore, ISO 13485) sells in Indonesia. No aligner appears in the TKDN database (searched 16 Oct 2026). Estimate: 70,000 x Rp5.9M = about Rp413bn cumulative, roughly US$25M at an assumed Rp16,500 per US$. That is a lower bound because prices only 'start from' Rp5.9M.",
+    "local_makers": [
+      "Rata (HQ city not stated; clinics in 50+ cities)"
+    ],
+    "fit": "3d",
+    "cnc_3d_role": "Each treatment stage needs a resin arch model printed by SLA/DLP. PET-G sheet is thermoformed over it, then trimmed by CNC, laser or hand. Direct-printed aligners are emerging. CNC's role is limited to trimming fixtures.",
+    "potential_share": "Judgement (not sourced): 50-80% of aligner models for Indonesian patients printed in Indonesia within 3-5 years. Reasoning: models are per-patient, bulky and short-lived, so a local scan-print-thermoform loop beats shipping. The low-price local brand already has national clinic reach. Foreign premium brands may keep producing abroad.",
+    "buyers": [
+      "orthodontists and dental clinics",
+      "consumers (direct-to-consumer)"
+    ],
+    "best_places": [
+      "DKI Jakarta",
+      "Kota Surabaya, Jawa Timur",
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Sleman, DI Yogyakarta"
+    ],
+    "certs_needed": [
+      "Kemenkes izin edar (AKD for domestic devices)",
+      "CPAKB (Indonesian device GMP)",
+      "ISO 13485"
+    ],
+    "jobs_note": "No data. The work is semi-automated digital lab work (treatment-planning technicians, print and thermoform operators).",
+    "sources": [
+      "https://rata.id",
+      "https://www.zenyum.com/id-id",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=aligner"
+    ]
+  },
+  {
+    "product": "Dental restorations, models and surgical guides (dental labs)",
+    "family": "Dental and medical",
+    "hs": [
+      "902121",
+      "902129"
+    ],
+    "imports_usd_m": {
+      "2023": 0.617,
+      "2024": 1.566,
+      "2025": 1.5
+    },
+    "exports_usd_m": {
+      "2023": 0.554,
+      "2024": 0.34,
+      "2025": 0.107
+    },
+    "top_origins_2025": [
+      "Korea 62%",
+      "USA 23%",
+      "Spain 6%",
+      "India 4%",
+      "China 1%"
+    ],
+    "local_now": "Unknown. Finished dental fittings are a small import (US$1.5M in 2025), so most crowns and dentures are presumably made in domestic labs (inference). No dental-lab 3D-printing user was found in sources. UGM's engineering faculty works with its dentistry faculty on dental phantoms and dental 3D printing (UGM, 24 Jun 2025).",
+    "local_makers": [],
+    "fit": "both",
+    "cnc_3d_role": "CAD/CAM milling (zirconia, PMMA) and resin printing (models, surgical guides, temporary crowns, denture bases) work side by side in a digital dental lab.",
+    "potential_share": "Judgement (not sourced): 30-60% of big-city dental-lab model and guide work digital within 5 years. Import substitution is small (US$1.5M). Reasoning: intraoral scanning is spreading with aligners, and printing removes plaster work.",
+    "buyers": [
+      "dental clinics",
+      "dental labs",
+      "hospitals",
+      "dental faculties"
+    ],
+    "best_places": [
+      "DKI Jakarta",
+      "Kota Surabaya, Jawa Timur",
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Sleman, DI Yogyakarta"
+    ],
+    "certs_needed": [
+      "Kemenkes izin edar for dental devices",
+      "ISO 13485 for device manufacturers"
+    ],
+    "jobs_note": "No data. Digital labs swap plaster and wax technicians for scan, CAD and printer operators.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=902121,902129",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902121,902129",
+      "https://ugm.ac.id/id/berita/herianto-dikukuhkan-jadi-guru-besar-ugm-bidang-sistem-manufaktur-aditif/",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=gigi+tiruan"
+    ]
+  },
+  {
+    "product": "Orthopaedic implants, including patient-specific and porous metal-AM implants",
+    "family": "Dental and medical",
+    "hs": [
+      "902110",
+      "902131"
+    ],
+    "imports_usd_m": {
+      "2023": 34.582,
+      "2024": 39.213,
+      "2025": 50.868
+    },
+    "exports_usd_m": {
+      "2023": 0.13,
+      "2024": 0.42,
+      "2025": 0.379
+    },
+    "top_origins_2025": [
+      "China 35%",
+      "USA 25%",
+      "Korea 12%",
+      "Germany 7%",
+      "Switzerland 5%"
+    ],
+    "local_now": "Unknown. In Dec 2022 Marthys said its one-machine plant limited it to about a 15% market-share target (the only share figure found, older than 2023). TKDN-certified local implants exist: Marthys titanium CMF plate 77.32%, Eka Ormed SS316L implants 43-80%, Risa bone plates 30-40%. Kemenkes said only about 20% of 56,000 registered devices are made domestically (Jun 2025, snippet).",
+    "local_makers": [
+      "PT Marthys Orthopaedic Indonesia (Prigen, Pasuruan)",
+      "PT Risa Implantama (Surabaya)",
+      "PT Eka Ormed Indonesia (Gedangan, Sidoarjo)",
+      "PT Indonesia Teknologi Rotnhkard (Semarang)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Standard plates, screws and nails are multi-axis and Swiss-type CNC work (Risa cites multi-axis machining of Ti-6Al-4V plus wire EDM). Metal powder-bed AM adds porous acetabular cups, cranio-maxillofacial and patient-specific plates and cutting guides, which are then finished on CNC.",
+    "potential_share": "Judgement (not sourced): local makers (all processes) 20-35% of 902110+902131 value within 3-5 years. AM-specific implants 1-3% of segment value, about US$0.5-1.5M a year (0.01-0.03 x US$50.9M, 2025). Reasoning: e-katalog TKDN preference and certified local makers on one side. On the other, ISO 13485 and izin edar barriers, and the Feb 2026 US deal exempting US goods from TKDN (the US supplies about a quarter of imports).",
+    "buyers": [
+      "Kemenkes and regional (RSUD) hospitals via e-katalog",
+      "private hospital groups",
+      "orthopaedic and maxillofacial surgeons"
+    ],
+    "best_places": [
+      "Kota Surabaya, Jawa Timur",
+      "Kabupaten Sidoarjo, Jawa Timur",
+      "Kabupaten Pasuruan, Jawa Timur",
+      "Kota Semarang, Jawa Tengah"
+    ],
+    "certs_needed": [
+      "ISO 13485",
+      "CPAKB",
+      "Kemenkes izin edar (AKD)",
+      "TKDN certificate",
+      "biocompatibility testing (ISO 10993, industry norm)"
+    ],
+    "jobs_note": "No headcount found. Marthys' plant could make 664 device types (Dec 2022). Implant machining needs skilled CNC and EDM operators, QA and cleanroom packing staff.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=902110,902131",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902110,902131",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=EpRVwBhWrwzj56TcMU0J5niac5kjkfZwlo9O1H2ih5M,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=PugHsrVIhIl383YRgR_ihPdd-W2lma4vB8NUAYWGB5s,&id_siinas=PugHsrVIhIl383YRgR_ihPdd-W2lma4vB8NUAYWGB5s,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=VikwN7TXWMRfZhOaoxG7NQ_gPvqXaqZ1VM4ZXo5hFCI,&id_siinas=VikwN7TXWMRfZhOaoxG7NQ_gPvqXaqZ1VM4ZXo5hFCI,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=WuFYALGmI5RWBjUApdt036QPMqAUG2B1200D4jrQE3U,&id_siinas=WuFYALGmI5RWBjUApdt036QPMqAUG2B1200D4jrQE3U,",
+      "https://risaimplantama.com/",
+      "https://wartaekonomi.co.id/read465570/pabrik-baru-pt-marthys-orthopedic-indonesia-diharapkan-mampu-tekan-serbuan-produk-impor",
+      "https://farmalkes.kemkes.go.id/en/?p=183606",
+      "https://ekonomi.bisnis.com/read/20250619/257/1886436/80-alat-kesehatan-indonesia-produk-impor",
+      "https://www.rajahtannasia.com/viewpoints/understanding-the-new-u-s-indonesia-trade-agreement-and-what-it-means-for-businesses/"
+    ]
+  },
+  {
+    "product": "Prosthetics and orthotics (sockets, limbs, braces, custom insoles)",
+    "family": "Dental and medical",
+    "hs": [
+      "902139"
+    ],
+    "imports_usd_m": {
+      "2023": 0.143,
+      "2024": 0.726,
+      "2025": 1.765
+    },
+    "exports_usd_m": {
+      "2023": 3.74,
+      "2024": 10.771,
+      "2025": 10.955
+    },
+    "top_origins_2025": [
+      "Costa Rica 27%",
+      "USA 24%",
+      "Singapore 13%",
+      "Germany 11%",
+      "India 7%"
+    ],
+    "local_now": "Unknown. Small local makers hold TKDN certificates for prosthetic legs and hands (CV Isipa 36-38%, PT Ibrahim Rehabilitasi Servis 38%) and orthoses (Jayamas cervical collar 45.05%, Pratama Sentra Rehabilitasi TLSO). No local 3D-printed socket or orthosis maker was found. HS 902139 covers all artificial body parts other than joints. Orthoses sit in 902110 with implants, so this segment's trade figures are a loose proxy.",
+    "local_makers": [
+      "CV Isipa (Kota Jambi)",
+      "PT Ibrahim Rehabilitasi Servis (Tuban)",
+      "PT Pratama Sentra Rehabilitasi (Tangerang Selatan)",
+      "PT Jayamas Medica Industri (Krian, Sidoarjo)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "3D scanning plus FDM/SLS printing of sockets, covers, wrist-hand orthoses and insoles. CNC makes pylons, adapters and foam or plaster positive moulds.",
+    "potential_share": "Judgement (not sourced): 10-25% of new fittings at Java hospital and O&P workshops use scan-and-print within 5 years. Import substitution is small (902139 imports US$1.8M in 2025). Reasoning: the products are per-patient and local by nature. Printing cuts plaster casting and visits, but clinician (O&P) capacity, not machines, is the bottleneck.",
+    "buyers": [
+      "hospitals and rehabilitation centres",
+      "social-affairs and disability programmes",
+      "NGOs",
+      "patients (out of pocket)"
+    ],
+    "best_places": [
+      "Kota Tangerang Selatan, Banten",
+      "Kabupaten Sidoarjo, Jawa Timur",
+      "Kabupaten Tuban, Jawa Timur",
+      "Kota Jambi, Jambi"
+    ],
+    "certs_needed": [
+      "Kemenkes izin edar",
+      "TKDN certificate (for public procurement)",
+      "ISO 13485 (for scale)"
+    ],
+    "jobs_note": "Labour-intensive clinical work. Printing shifts hours from plaster moulding to scanning and CAD.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=902139",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902139",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=fbAtLrM5jqYOsmfOiuw_bWPjZHCBaKv1HGb91-AYqEg,&id_siinas=fbAtLrM5jqYOsmfOiuw_bWPjZHCBaKv1HGb91-AYqEg,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=3J-wi2TF0EBaxo2QPscuLaVhUulGGTn6t0o_ED0aUoI,&id_siinas=3J-wi2TF0EBaxo2QPscuLaVhUulGGTn6t0o_ED0aUoI,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=S7ZTQdBGeQw8A7GEVKFrLXUyRc69JNJveuiLmUwrQy0,&id_siinas=S7ZTQdBGeQw8A7GEVKFrLXUyRc69JNJveuiLmUwrQy0,",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=orthosis"
+    ]
+  },
+  {
+    "product": "Hearing-aid shells and custom earmoulds",
+    "family": "Dental and medical",
+    "hs": [
+      "902140"
+    ],
+    "imports_usd_m": {
+      "2023": 2.662,
+      "2024": 3.003,
+      "2025": 2.829
+    },
+    "exports_usd_m": {
+      "2023": 0.213,
+      "2024": 0.061,
+      "2025": 0.011
+    },
+    "top_origins_2025": [
+      "Denmark 57%",
+      "Singapore 18%",
+      "Malaysia 9%",
+      "Mexico 6%",
+      "China 5%"
+    ],
+    "local_now": "About 0% for the devices: no hearing aid appears in the TKDN database (searched 16 Oct 2026). Comtrade estimates 20,566 units imported in 2025. Local custom-shell or earmould printing is unknown.",
+    "local_makers": [],
+    "fit": "3d",
+    "cnc_3d_role": "Ear-impression scans go to SLA/DLP-printed custom in-the-ear shells and earmoulds. The electronics are imported.",
+    "potential_share": "Judgement (not sourced): custom shells and earmoulds 20-40% printed locally in clinic labs within 3-5 years, but under 5% of 902140 value. The electronics stay imported, and devices dominate the value.",
+    "buyers": [
+      "hearing centres and audiologists",
+      "ENT hospitals"
+    ],
+    "best_places": [
+      "DKI Jakarta",
+      "Kota Surabaya, Jawa Timur",
+      "Kota Bandung, Jawa Barat"
+    ],
+    "certs_needed": [
+      "Kemenkes izin edar",
+      "ISO 13485 (for shell makers)"
+    ],
+    "jobs_note": "Very small (a few technicians per lab).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=902140",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902140",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=alat+bantu+dengar"
+    ]
+  },
+  {
+    "product": "Jewellery: castable wax/resin patterns and CAD masters for gold and silver",
+    "family": "Jewellery",
+    "hs": [
+      "711319",
+      "711311"
+    ],
+    "imports_usd_m": {
+      "2023": 39.613,
+      "2024": 45.088,
+      "2025": 53.893
+    },
+    "exports_usd_m": {
+      "2023": 5528.608,
+      "2024": 5293.958,
+      "2025": 7839.518
+    },
+    "top_origins_2025": [
+      "Italy 30%",
+      "Thailand 19%",
+      "USA 13%",
+      "Switzerland 10%",
+      "France 9%"
+    ],
+    "local_now": "Already in use in Bali. Celuk's government silver centre (Kemenperin and Pemkab Gianyar, built 2016/2018, revitalised 2022) has 3D design, 3D printing, CNC engraving and milling, laser and casting. Celuk has 152 IKM units, 2,364 workers, 4,515 kg a year and Rp158bn turnover (Warta Ekonomi, 23 Apr 2025). Flow Jewelry Studio (Denpasar, over 50 staff) does hand wax carving and 3D printing for global private-label clients, with Solidscape as its partner. The share of patterns printed nationally is unknown. HS 7113 exports were US$7.84bn in 2025 against US$54M of imports.",
+    "local_makers": [
+      "Sentra IKM Perak Celuk shared facility (Gianyar)",
+      "Flow Jewelry Studio / PT DMD Asia (Denpasar)",
+      "PT Untung Bersama Sejahtera / UBS (city not stated on its site)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Castable-resin or wax printing (SLA/DLP, material jetting) and CNC wax milling make the lost-wax casting patterns. CNC also does diamond-cut faceting and master-mould work.",
+    "potential_share": "Judgement (not sourced): within 3-5 years, 40-70% of new-design pattern-making digital (printed or CNC-milled wax) at large gold factories and export studios, and 15-30% in craft clusters such as Celuk and Kotagede. Celuk already has a shared 3D-printing and CNC facility. This is process share, not import substitution. It protects an export base that grew from US$5.29bn (2024) to US$7.84bn (2025).",
+    "buyers": [
+      "gold jewellery manufacturers",
+      "silver craft workshops",
+      "export and private-label buyers"
+    ],
+    "best_places": [
+      "Kabupaten Gianyar (Celuk), Bali",
+      "Kota Denpasar, Bali",
+      "Kotagede, Kota Yogyakarta, DI Yogyakarta",
+      "Kota Surabaya, Jawa Timur",
+      "DKI Jakarta"
+    ],
+    "certs_needed": [],
+    "jobs_note": "Digital patterns cut hand-carving hours. Setting, polishing and finishing stay labour-intensive. Celuk alone has 2,364 workers in 152 IKM units (2025).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=711319,711311",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=711319,711311",
+      "https://wartaekonomi.co.id/read564599/kembangkan-sentra-ikm-kemenperin-pemda-gianyar-dorong-penguatan-ekosistem-kerajinan-perak?page=all",
+      "https://www.flowjewelrystudio.com/",
+      "https://ubslifestyle.com/"
+    ]
+  },
+  {
+    "product": "Rapid tooling: printed bridge-tool inserts and metal-AM conformal-cooling inserts for plastic moulds",
+    "family": "Moulds and tooling",
+    "hs": [
+      "848071",
+      "848079"
+    ],
+    "imports_usd_m": {
+      "2023": 189.685,
+      "2024": 249.964,
+      "2025": 318.555
+    },
+    "exports_usd_m": {
+      "2023": 15.891,
+      "2024": 21.263,
+      "2025": 16.988
+    },
+    "top_origins_2025": [
+      "China 62%",
+      "Viet Nam 9%",
+      "Korea 9%",
+      "Japan 5%",
+      "Canada 3%"
+    ],
+    "local_now": "Mould localisation was about 45% in 2013 (IMDIA, snippet, older than 2023). No AM-tooling user was found. Kemenperin's SIINas counts about 660 mould and die firms with 35,000-40,000 units a year of capacity (Oct 2025).",
+    "local_makers": [],
+    "fit": "both",
+    "cnc_3d_role": "CNC and EDM make mould bases and cavities. 3D printing adds printed polymer inserts for 50-500-shot bridge tools, metal-AM conformal-cooling inserts finished by CNC and EDM, and printed masters for silicone and vacuum casting.",
+    "potential_share": "Judgement (not sourced): AM-assisted tooling addresses 2-5% of 848071+848079 import value, about US$6.4-15.9M at the 2025 level of US$318.6M (0.02-0.05 x 318.6), within 3-5 years. The larger prize is CNC mould making itself (see the CNC research).",
+    "buyers": [
+      "automotive and motorcycle tier-1/2 suppliers",
+      "appliance and electronics makers",
+      "packaging and consumer-goods moulders",
+      "footwear sole moulders"
+    ],
+    "best_places": [
+      "Kabupaten Bekasi, Jawa Barat",
+      "Kabupaten Karawang, Jawa Barat",
+      "Kabupaten Tangerang, Banten",
+      "Kabupaten Sidoarjo, Jawa Timur"
+    ],
+    "certs_needed": [
+      "IATF 16949 supplier requirements (automotive, industry norm)",
+      "ISO 9001"
+    ],
+    "jobs_note": "Skilled toolroom jobs (CNC, EDM, mould design). About 42,000 workers in mould and die firms (SIINas, Oct 2025).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=848071,848079",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848071,848079",
+      "https://www.liputan6.com/bisnis/read/6192169/ada-potensi-660-perusahaan-indonesia-jepang-garap-pengembangan-industri-mold-and-dies",
+      "https://industri.kontan.co.id/news/industri-mold-dies-tambah-bahan-lokal"
+    ]
+  },
+  {
+    "product": "Foundry patterns, core boxes and printed sand moulds",
+    "family": "Moulds and tooling",
+    "hs": [
+      "848030"
+    ],
+    "imports_usd_m": {
+      "2023": 17.55,
+      "2024": 22.239,
+      "2025": 10.821
+    },
+    "exports_usd_m": {
+      "2023": 1.209,
+      "2024": 1.37,
+      "2025": 1.254
+    },
+    "top_origins_2025": [
+      "Japan 43%",
+      "China 24%",
+      "Taiwan (Other Asia nes) 13%",
+      "Malaysia 7%",
+      "Thailand 4%"
+    ],
+    "local_now": "Unknown. Ceper (Klaten) foundries face a shortage of pattern and mould makers ('napel') (snippet). The Batur Jaya cooperative (Klaten) counts 168 foundry SMEs with 4,500 workers (snippet, date not given).",
+    "local_makers": [
+      "Ceper foundry cluster, Koperasi Batur Jaya (Klaten)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Patterns and core boxes are CNC-milled from wood, resin board or aluminium, or 3D-printed (FDM/SLA) for short runs and complex cores. Binder-jet sand printing can skip patterns for prototypes.",
+    "potential_share": "Judgement (not sourced): 10-25% of imported moulding patterns replaced by local CNC+printed patterns within 3-5 years, about US$1.1-2.7M at the 2025 level of US$10.8M. Reasoning: pattern-maker shortage in Ceper, patterns are bulky to ship, and imports fell from US$22.2M (2024) to US$10.8M (2025).",
+    "buyers": [
+      "foundries (automotive, pumps, valves, agricultural parts)",
+      "machinery makers"
+    ],
+    "best_places": [
+      "Kabupaten Klaten (Ceper), Jawa Tengah",
+      "Kota Tegal, Jawa Tengah",
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Sidoarjo, Jawa Timur"
+    ],
+    "certs_needed": [
+      "ISO 9001 (for automotive foundry customers)"
+    ],
+    "jobs_note": "Pattern making is skilled work. Digital patterns could relieve the napel shortage rather than cut jobs.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=848030",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=848030",
+      "https://ojs.isbi.ac.id/index.php/prosidingpasca/article/view/1358/904",
+      "https://industri.kontan.co.id/news/klaten-tekan-pengangguran-lewat-ikm-logam"
+    ]
+  },
+  {
+    "product": "Drone airframes, parts and payload mounts",
+    "family": "Drones and aerospace",
+    "hs": [
+      "8806"
+    ],
+    "imports_usd_m": {
+      "2023": 29.853,
+      "2024": 48.644,
+      "2025": 96.569
+    },
+    "exports_usd_m": {
+      "2023": 2.857,
+      "2024": 7.844,
+      "2025": 11.566
+    },
+    "top_origins_2025": [
+      "China 58%",
+      "Türkiye 25%",
+      "Singapore 10%",
+      "Cyprus 5%",
+      "Hong Kong 1%"
+    ],
+    "local_now": "Unknown share. At least six TKDN-certified local drone makers exist, at 25-57% TKDN (searched 16 Oct 2026). 3DPrint.id lists drone and survey firms Aeroterrascan and Aerogeosurvey as clients.",
+    "local_makers": [
+      "PT Bandung Mekatronika Teknologi (Kota Bandung)",
+      "PT Bentara Tabang Nusantara (Kabupaten Bandung)",
+      "PT Aerotek Global Inovasi (Kota Yogyakarta)",
+      "PT Corin Mulia Gemilang (Sidoarjo)",
+      "PT Dgnet Indonesia (Kabupaten Tangerang)",
+      "PT Ener Sky Innovation (Kabupaten Serang)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "3D printing for prototypes, brackets, gimbal and payload mounts, ducts and low-volume housings. CNC for carbon plates, motor mounts and the moulds for composite airframes.",
+    "potential_share": "Judgement (not sourced): local drones 10-20% of 8806 import value, about US$10-19M at the 2025 level of US$96.6M, within 3-5 years, concentrated in agricultural and survey drones. Military UAVs (Türkiye and Cyprus supplied 30% in 2025) stay imported. Printed and machined parts are about 10-20% of a local drone's bill of materials (judgement).",
+    "buyers": [
+      "plantations and agricultural programmes",
+      "mapping and survey firms",
+      "defence and police",
+      "disaster agencies"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "Kabupaten Bandung, Jawa Barat",
+      "Kota Yogyakarta, DI Yogyakarta",
+      "Kabupaten Sidoarjo, Jawa Timur",
+      "Kabupaten Tangerang, Banten"
+    ],
+    "certs_needed": [
+      "TKDN certificate",
+      "DGCA/Kemenhub drone registration and operating rules (not verified)"
+    ],
+    "jobs_note": "Assembly, composite layup, machining and test pilots. No headcount found.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=8806",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=8806",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=7oQek6yUY-mAI_uoURSp9DsHHGmTMFYzTTgowOLHrpQ,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=o3dwi9iGbTFwS_hJLuQG_MsxFVfo4r_zfbEABtAtiTY,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=IVrnXpBAYKEOP8ZfGBiUy4Lnt88TbiCcVpTMGwPOyj0,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=bUh4iLgyYxrxoj4ZJMN-d90QlZ2Hkd9vaH9v3InNBlI,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=dE_cl58GsST19qTdFWygxDpLtUy2q_UOOyB5OqGraI0,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ibxpsaMWUChHjsnAKAE11mxyQIV2z2iVgz-Yo1oH0IU,",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=drone",
+      "https://3dprint.id/"
+    ]
+  },
+  {
+    "product": "Teaching aids and anatomical / medical training models",
+    "family": "Education",
+    "hs": [
+      "902300"
+    ],
+    "imports_usd_m": {
+      "2023": 53.659,
+      "2024": 36.981,
+      "2025": 24.972
+    },
+    "exports_usd_m": {
+      "2023": 3.754,
+      "2024": 4.178,
+      "2025": 4.576
+    },
+    "top_origins_2025": [
+      "Poland 29%",
+      "China 22%",
+      "Japan 9%",
+      "USA 8%",
+      "Germany 4%"
+    ],
+    "local_now": "Unknown. Local TKDN makers exist for anatomical and school teaching aids: CV Berkat Anugrah at 41-66%, CV Inti Citra Usaha at 38-40%. No 3D-printed product is among them. 902300 covers all demonstration apparatus and models, not only printed models.",
+    "local_makers": [
+      "CV Berkat Anugrah (Jombang)",
+      "CV Inti Citra Usaha (Kabupaten Tangerang)"
+    ],
+    "fit": "3d",
+    "cnc_3d_role": "Printed anatomical and dental phantoms, organ and surgical-planning models, and science and maths teaching models. CNC and laser make MDF and acrylic kits.",
+    "potential_share": "Judgement (not sourced): 10-25% of 902300 imports replaced within 3-5 years, about US$2.5-6.2M at the 2025 level of US$25.0M. Reasoning: imports already fell from US$53.7M (2023), TKDN makers exist, and UGM shows medical-faculty demand (anatomy and cardiology products, dental phantoms).",
+    "buyers": [
+      "SMK/SMP/SD schools via e-katalog",
+      "medical and dental faculties",
+      "hospitals (surgical planning)"
+    ],
+    "best_places": [
+      "Kabupaten Sleman, DI Yogyakarta",
+      "Kabupaten Jombang, Jawa Timur",
+      "Kabupaten Tangerang, Banten",
+      "Kota Surabaya, Jawa Timur"
+    ],
+    "certs_needed": [
+      "TKDN certificate",
+      "e-katalog listing"
+    ],
+    "jobs_note": "Small-batch printing and finishing jobs, spread across many SMEs.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=902300",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=902300",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=JHQ3dAyiVtODBCGsgFAlz8O9wMtuJesszRWXkRqhQoE,",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=ygSrsiveIx2oxJG1Gz8XJv6Lb6eS7eHQwrWfufPZJ9Y,&id_siinas=ygSrsiveIx2oxJG1Gz8XJv6Lb6eS7eHQwrWfufPZJ9Y,",
+      "https://ugm.ac.id/id/berita/herianto-dikukuhkan-jadi-guru-besar-ugm-bidang-sistem-manufaktur-aditif/"
+    ]
+  },
+  {
+    "product": "Construction 3D printing (3DCP) of walls, small buildings and street furniture",
+    "family": "Construction",
+    "hs": [],
+    "imports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "exports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "top_origins_2025": [],
+    "local_now": "Pilot stage. The Indocement Collaborative Hub (about 120 m2) was printed by Modula3D with a COBOD BOD3 printer (Aug 2025). Autoconz lists a 3DCP bench at Banjaratma rest area and giant lettering at UNU Yogyakarta. The same detik article links a story on a 3D-printed bus stop in Bali finished in four days. A TKDN-certified 3DCP mortar (AUTOCONZ, 68.29%) exists.",
+    "local_makers": [
+      "Modula3D / PT Modula Tiga Dimensi (Jakarta)",
+      "Autoconz / PT Berdikari Teknologi Indonesia (Sleman and Bantul, DIY)",
+      "PT Indocement Tunggal Prakarsa (user)"
+    ],
+    "fit": "3d",
+    "cnc_3d_role": "Gantry printers extrude special mortar. CNC plays a minor role (formwork, moulds for openings).",
+    "potential_share": "Judgement (not sourced): under 1% of wall construction within 5 years. Niches are public facilities, bus stops, feature walls and fast low-rise builds. Modula3D claims a simple house in 6 days and over 70% less wall time (Aug 2025).",
+    "buyers": [
+      "property developers",
+      "BUMN contractors",
+      "public works",
+      "cement makers"
+    ],
+    "best_places": [
+      "DKI Jakarta",
+      "Kabupaten Sleman, DI Yogyakarta",
+      "Kabupaten Bantul, DI Yogyakarta"
+    ],
+    "certs_needed": [
+      "TKDN for mortar",
+      "building permit (PBG) and structural approval (not verified)"
+    ],
+    "jobs_note": "Cuts masonry labour per wall and adds printer-operator and materials jobs.",
+    "sources": [
+      "https://www.detik.com/properti/berita/d-8069146/teknologi-makin-canggih-kini-bangun-rumah-cuma-6-hari-pakai-printer-3d",
+      "https://modula3d.com/",
+      "https://www.autoconz.com/",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=UlP12slmJdv64PzMdEY1r_ZyibC5RroLdv2xosz-5LI,"
+    ]
+  },
+  {
+    "product": "Product prototyping, jigs and fixtures, and low-volume end-use parts for manufacturers",
+    "family": "Services",
+    "hs": [],
+    "imports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "exports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "top_origins_2025": [],
+    "local_now": "A service market of unknown size. Service bureaus and resellers list manufacturer clients. 3DPrint.id (Bandung, since 2015) names Astra Honda Motor, Laksana Karoseri, Formulatrix and XL Axiata. Raja 3D (Jakarta) shows Omron, Bayer Indonesia, PGN and LAPAN. A TKDN-certified e-KTP reader uses resin-3D-printed casings (Softorb, 33.48%). Indonesia exported US$44M of jigs and fixtures in Jan-Aug 2022 (Kemenperin, snippet, older than 2023).",
+    "local_makers": [
+      "FOMU 3D Print / PT FOMU Karya Bersama (Jakarta Barat)",
+      "3DPrint.id / PT Metafuse Rekacipta Indonesia (Bandung)",
+      "Raja 3D / PT Kirana Sakti Komputindo (Jakarta Selatan)",
+      "PT 3D Zaiku Indonesia (Jakarta Barat)",
+      "PT Astragraphia Xprins Indonesia (Jakarta)",
+      "Teknik Jaya (Subang)",
+      "PT Softorb Technology Indonesia (Jakarta Barat, user)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "FDM and resin printing for prototypes, assembly jigs, gauges, end-of-arm tooling and enclosures. CNC for metal fixtures and production versions.",
+    "potential_share": "Judgement (not sourced): local bureaus can hold 70-90% of domestic prototyping and jig work within 3-5 years because turnaround beats imports. Growth is limited by thin SLS/MJF and metal capacity, which was not found locally.",
+    "buyers": [
+      "automotive and motorcycle plants",
+      "electronics and appliance makers",
+      "FMCG and cosmetics",
+      "telecoms and research institutes"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "Kota Jakarta Barat, DKI Jakarta",
+      "Kota Jakarta Selatan, DKI Jakarta",
+      "Kabupaten Bekasi, Jawa Barat",
+      "Kota Surabaya, Jawa Timur"
+    ],
+    "certs_needed": [
+      "ISO 9001 (for industrial clients)"
+    ],
+    "jobs_note": "Design-heavy jobs (CAD, printing, finishing). No headcount data.",
+    "sources": [
+      "https://fomu.co.id/",
+      "https://3dprint.id/",
+      "https://printer3d.co.id/",
+      "https://www.3dzaiku.com/",
+      "https://finance.detik.com/foto-bisnis/d-6820520/kolaborasi-hasilkan-teknologi-solusi-manufaktur",
+      "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=bNMt9vJ0Hvqams6jdfnFU38nfoo7gCyaLNXBWF7DFaU,",
+      "https://teknikjaya.co.id/harga-jasa-cnc/",
+      "https://www.medcom.id/ekonomi/bisnis/MkMPLYVb-diserap-sektor-otomotif-kemenperin-pecut-pengembangan-industri-perkakas"
+    ]
+  },
+  {
+    "product": "Architectural and property scale models (maket)",
+    "family": "Services",
+    "hs": [],
+    "imports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "exports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "top_origins_2025": [],
+    "local_now": "Service market of unknown size. FOMU 3D Print (Jakarta Barat, 70+ machines, since 2015) lists 'maket arsitektur' work, with logos including Intiland, AECOM and Kementerian PUPR. 3DPrint.id (Bandung) lists SHAU Architects and Jaya Real Property as clients. The TKDN database lists educational 'maket' products made of MDF and acrylic, not printed ones.",
+    "local_makers": [
+      "FOMU 3D Print / PT FOMU Karya Bersama (Jakarta Barat)",
+      "3DPrint.id / PT Metafuse Rekacipta Indonesia (Bandung)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "FDM and resin printing for buildings, terrain and details. Laser and CNC cutting for bases, acrylic and MDF.",
+    "potential_share": "Judgement (not sourced): 30-60% of model-making hours in Jakarta and Bandung studios move to printing within 3-5 years. No import base: this is a local service, so the gain is productivity and quality, not import substitution.",
+    "buyers": [
+      "property developers",
+      "architecture firms",
+      "government (public works)",
+      "exhibitions"
+    ],
+    "best_places": [
+      "Kota Jakarta Barat, DKI Jakarta",
+      "Kota Bandung, Jawa Barat",
+      "Kota Surabaya, Jawa Timur"
+    ],
+    "certs_needed": [],
+    "jobs_note": "Model makers shift from hand-cutting to CAD and print finishing.",
+    "sources": [
+      "https://fomu.co.id/",
+      "https://3dprint.id/",
+      "https://tkdn.kemenperin.go.id/search.php?where=produk&what=maket"
+    ]
+  },
+  {
+    "product": "Spare parts on demand (obsolete polymer and metal parts for plants, mills, mines and rail)",
+    "family": "Services",
+    "hs": [],
+    "imports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "exports_usd_m": {
+      "2023": null,
+      "2024": null,
+      "2025": null
+    },
+    "top_origins_2025": [],
+    "local_now": "Unknown. No Indonesian on-demand spare-parts programme using 3D printing was found in this research.",
+    "local_makers": [],
+    "fit": "both",
+    "cnc_3d_role": "Reverse engineering (3D scanning), printing of polymer parts and casting patterns, and CNC machining of metal replacements.",
+    "potential_share": "Judgement (not sourced, low confidence): 1-3% of MRO spares within 3-5 years, mostly obsolete polymer parts and casting patterns. Reasoning: there is no evidence base yet, and qualifying parts for plant use takes time.",
+    "buyers": [
+      "sugar mills and plantations",
+      "smelters and mines",
+      "power plants",
+      "railways"
+    ],
+    "best_places": [
+      "Kota Surabaya, Jawa Timur",
+      "Kabupaten Bekasi, Jawa Barat"
+    ],
+    "certs_needed": [],
+    "jobs_note": "No data.",
+    "sources": []
+  },
+  {
+    "product": "Custom-fit eyewear frames",
+    "family": "Consumer products",
+    "hs": [
+      "900311",
+      "900319"
+    ],
+    "imports_usd_m": {
+      "2023": 38.531,
+      "2024": 34.129,
+      "2025": 40.616
+    },
+    "exports_usd_m": {
+      "2023": 0.555,
+      "2024": 0.58,
+      "2025": 0.531
+    },
+    "top_origins_2025": [
+      "China 63%",
+      "Italy 18%",
+      "Hong Kong 7%",
+      "Japan 4%",
+      "Korea 1%"
+    ],
+    "local_now": "Unknown. No local 3D-printed eyewear maker was found.",
+    "local_makers": [],
+    "fit": "3d",
+    "cnc_3d_role": "SLS/MJF nylon or resin printing of frames, then dyeing and hinge assembly. CNC for metal parts.",
+    "potential_share": "Judgement (not sourced): 0-3% of frame imports, about US$0-1.2M at the 2025 level of US$40.6M. Niche custom and fashion frames only. No SLS/MJF capacity was found locally.",
+    "buyers": [
+      "optical chains",
+      "consumers"
+    ],
+    "best_places": [
+      "DKI Jakarta",
+      "Kota Bandung, Jawa Barat"
+    ],
+    "certs_needed": [],
+    "jobs_note": "Very small.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=900311,900319",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=900311"
+    ]
+  },
+  {
+    "product": "Toys, figures and collectibles (custom and small-batch), plus prototypes for toy exporters",
+    "family": "Consumer products",
+    "hs": [
+      "950300"
+    ],
+    "imports_usd_m": {
+      "2023": 193.581,
+      "2024": 243.35,
+      "2025": 343.532
+    },
+    "exports_usd_m": {
+      "2023": 508.527,
+      "2024": 605.574,
+      "2025": 650.856
+    },
+    "top_origins_2025": [],
+    "local_now": "Indonesia is a net toy exporter (US$651M exports vs US$344M imports in 2025). 3D-printed toy making is at hobby and SME level, for example the Bambu Lab creative hub at Urban Republic Dago, Bandung (Aug 2026).",
+    "local_makers": [],
+    "fit": "3d",
+    "cnc_3d_role": "FDM and resin printing for sculpts, prototypes and short runs. CNC makes the steel injection moulds for mass production.",
+    "potential_share": "Judgement (not sourced): under 0.5% of toy market value. The real role is sculpt and prototype work for exporters and SME custom goods.",
+    "buyers": [
+      "toy exporters",
+      "SMEs (UMKM) and creators",
+      "consumers"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "DKI Jakarta"
+    ],
+    "certs_needed": [],
+    "jobs_note": "Creator and SME jobs. Each is small.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=950300",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=950300",
+      "https://www.detik.com/jabar/wisata/d-8629770/warga-bandung-kini-bisa-bikin-mainan-sendiri-pakai-alat-ini"
+    ]
+  },
+  {
+    "product": "3D-printing filament and resin materials",
+    "family": "Materials",
+    "hs": [
+      "391690"
+    ],
+    "imports_usd_m": {
+      "2023": 16.151,
+      "2024": 19.088,
+      "2025": 20.245
+    },
+    "exports_usd_m": {
+      "2023": 16.332,
+      "2024": 13.56,
+      "2025": 13.016
+    },
+    "top_origins_2025": [
+      "China 50%",
+      "Singapore 23%",
+      "Japan 6%",
+      "Korea 4%",
+      "Italy 4%"
+    ],
+    "local_now": "Unknown. 391690 is a broad proxy: monofilament over 1 mm, rods and profiles of other plastics, not only 3D filament. 3D Zaiku runs a filament store (3dfilament.co.id). ITS and UGM student teams made filament from plastic waste (UGM, Jul 2024).",
+    "local_makers": [
+      "PT 3D Zaiku Indonesia (Jakarta Barat, distributor)"
+    ],
+    "fit": "3d",
+    "cnc_3d_role": "Extrusion of PLA, PETG and PP filament and formulation of resins. Not a CNC product.",
+    "potential_share": "Judgement (not sourced): 10-20% of local filament demand from local extruders within 3-5 years, mostly PETG/PP and recycled grades. PLA resin is not made locally (inference).",
+    "buyers": [
+      "printer owners",
+      "schools",
+      "service bureaus"
+    ],
+    "best_places": [
+      "Kota Surabaya, Jawa Timur",
+      "Kabupaten Sleman, DI Yogyakarta",
+      "Kota Jakarta Barat, DKI Jakarta"
+    ],
+    "certs_needed": [],
+    "jobs_note": "Small extrusion lines (a few workers each).",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=391690",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=391690",
+      "https://www.3dfilament.co.id/",
+      "https://ugm.ac.id/id/berita/tim-pkm-ugm-cetuskan-inovasi-filamen-3d-printing-berbahan-dasar-limbah-botol-plastik/",
+      "https://www.its.ac.id/news/sinergi-its-industri-tingkatkan-kualitas-produk-additive-manufacturing-melalui-workshop-3d-printing/"
+    ]
+  },
+  {
+    "product": "Aerospace and defence MRO parts (tooling, interior and non-structural parts)",
+    "family": "Drones and aerospace",
+    "hs": [
+      "880730"
+    ],
+    "imports_usd_m": {
+      "2023": 416.7,
+      "2024": 234.394,
+      "2025": 438.282
+    },
+    "exports_usd_m": {
+      "2023": 100.674,
+      "2024": 312.087,
+      "2025": 132.493
+    },
+    "top_origins_2025": [
+      "France 31%",
+      "USA 21%",
+      "Singapore 19%",
+      "Spain 12%",
+      "Malaysia 3%"
+    ],
+    "local_now": "Unknown. PT DI signed a framework with the Yogyakarta machine builder YPTI (12 Mar 2025, snippet). No aerospace AM user was found in sources.",
+    "local_makers": [
+      "PT Dirgantara Indonesia (Bandung)"
+    ],
+    "fit": "both",
+    "cnc_3d_role": "Printed drill and assembly jigs, cabin and interior parts, and ducting. Certified metal AM flight parts need OEM and DGCA approval, so CNC remains the main route for metal parts.",
+    "potential_share": "Judgement (not sourced): 0.5-2% of 880730 import value, about US$2-9M at the 2025 level of US$438M, within 3-5 years. Mostly tooling and non-structural parts. Certification gates everything else.",
+    "buyers": [
+      "airlines and MROs",
+      "PT DI",
+      "defence forces"
+    ],
+    "best_places": [
+      "Kota Bandung, Jawa Barat",
+      "Kota Tangerang, Banten"
+    ],
+    "certs_needed": [
+      "AS9100 (industry norm)",
+      "DGCA/OEM part approvals (industry norm)"
+    ],
+    "jobs_note": "Few, high-skill jobs.",
+    "sources": [
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&flowCode=M,X&cmdCode=880730",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&flowCode=M&cmdCode=880730",
+      "https://www.industry.co.id/read/140610/kemenperin-dukung-sinergi-ptdi-dan-ypti-kuatkan-rantai-pasok-industri-dirgantara"
+    ]
+  }
+]

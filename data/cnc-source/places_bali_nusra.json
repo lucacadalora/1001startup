@@ -1,0 +1,245 @@
+[
+  {
+    "province": "Bali",
+    "area": "Bali",
+    "level": "province",
+    "focus": {
+      "product": "Silver and gold jewelry made with 3D-printed wax/resin patterns, CNC engraving and lost-wax casting (Celuk–Gianyar and Denpasar private-label shops)",
+      "hs": [
+        "7113",
+        "711311",
+        "711319"
+      ],
+      "why": "Precious metals and jewelry (HS 71) were Bali's 3rd-largest export in 2024 (US$79.9m, 12.6% of US$634.5m) and 2nd-largest in 2025; Thailand demand for HS 71 drove a 186.7% jump in H1 2026. The Celuk centre (152 IKM, 2,364 workers, Rp158 bn/yr, 2025) already has 3D printing, CNC engraving/milling, laser cutting and casting; Flow Jewelry Studio and SUNSRI run CAD/wax-printing/casting lines for brands. 3D printing cuts pattern time; CNC adds engraving and findings.",
+      "fit": "both"
+    },
+    "also": [
+      {
+        "product": "CNC-routed wood carvings, statues and hospitality furniture parts (Gianyar/Mas carving belt, hotel-furniture exporters)",
+        "hs": [
+          "4420",
+          "9403"
+        ],
+        "why": "Wood and wood articles (HS 44, US$37.9m) and furniture/lamps (HS 94, US$37.7m) together were 11.9% of Bali exports in 2024; DPR research lists wood carving and crafts among Bali's priority subsectors; Warisan, whose head-office phone uses Bali's 0361 code, says it serves 1,000+ hospitality clients in 50+ countries. Only one CNC carving shop (Ferry Laser) was verified, so this is a gap to fill.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Laser-cut and CNC-formed architectural metalwork, signage and fit-out parts for hotels, villas and the two Denpasar KEKs",
+        "hs": [
+          "7308",
+          "9405"
+        ],
+        "why": "Cahaya Abadi Laser (fiber laser, rolling, bending) names hotel projects; Ferry Laser and Bali Signage cluster in Padangsambian; KEK Kura Kura Bali (498 ha, tourism + creative industry) and KEK Sanur (41.26 ha, health + tourism) add build-out demand. Mostly sold on-island, so trade codes are indicative only.",
+        "fit": "cnc"
+      }
+    ],
+    "anchor_buyers": [
+      "International jewelry brands buying private-label work (Flow Jewelry Studio)",
+      "Celuk silver IKM using the Kemenperin silver centre (152 units)",
+      "Importers in the US, China, Thailand, Australia and France (Bali's top export markets, H1 2026)",
+      "Hotels and resorts, e.g. The Trans Resort Bali (named by Cahaya Abadi Laser)",
+      "Warisan (teak hospitality furniture; Four Seasons, Aman, Six Senses projects; Bali phone code, factory location not stated)",
+      "Rip Curl surfboard factory, Bali",
+      "KEK Kura Kura Bali",
+      "KEK Sanur"
+    ],
+    "local_inputs": [
+      "tuna",
+      "shrimp",
+      "seaweed",
+      "coffee (Kintamani, Pupuan)",
+      "cashew (Kubu)",
+      "Amed salt",
+      "cloves",
+      "Bali cattle",
+      "wood for carving and furniture",
+      "silver and gold (largely bought in)"
+    ],
+    "clusters": [
+      "Celuk silver and gold craft village and Kemenperin silver IKM centre (Sukawati, Gianyar)",
+      "Mas woodcarving village (Ubud, Gianyar)",
+      "Padangsambian signage and laser-cutting shops (Denpasar Barat)",
+      "KEK Kura Kura Bali (Serangan, Denpasar Selatan; 498 ha)",
+      "KEK Sanur (Denpasar Selatan; 41.26 ha)"
+    ],
+    "official_designation": "No Kemenperin KIID regulation and no provincial RPIP Perda for Bali were found (JDIH Kemenperin blocks crawlers; BPK legal database search found none). DPR research (2022) lists weaving, crafts, wood carving, other goods, tenun ikat/textiles and food and beverage as Bali's priority manufacturing subsectors by LQ. RPJMD Bali 2025-2029 (Perda 3/2025) names Kerajinan Perak Celuk among regional potentials. KEK Kura Kura Bali (PP 23/2023: tourism, creative industry) and KEK Sanur (PP 41/2022: health, tourism).",
+    "umk_2026": "UMP Bali 2026 Rp3,207,459 (detik, Jan 2026; a Feb 2026 detikBali article prints Rp3,204,459, +7.04%). UMK 2026: Badung Rp3,791,002.57; Denpasar Rp3,499,878.78; Gianyar Rp3,316,798.48; Tabanan Rp3,287,678.87; Bangli, Buleleng, Jembrana, Karangasem and Klungkung at the UMP.",
+    "skills": "Politeknik Negeri Bali (Jimbaran, Badung): Teknik Mesin D3, Refrigerasi dan Tata Udara D3, D4 Teknologi Rekayasa Utilitas Mekanikal-Elektrikal (Wikipedia, unreferenced); no manufacturing programme listed. Kemenperin's BDI Denpasar and BPIFK back the Celuk silver centre (2025). SMKN 1 Sukawati (Gianyar) teaches crafts (kriya), sculpture and interior and hotel furniture. No SMK machining programme or BLK machining course was verified.",
+    "confidence": "medium",
+    "sources": [
+      "https://wartaekonomi.co.id/read564599/kembangkan-sentra-ikm-kemenperin-pemda-gianyar-dorong-penguatan-ekosistem-kerajinan-perak?page=all",
+      "https://peraturan.bpk.go.id/Details/344560/perda-prov-bali-no-3-tahun-2025",
+      "https://www.detik.com/bali/bisnis/d-8337486/ekspor-bali-2025-turun-10-65-industri-pengolahan-tertekan",
+      "https://www.detik.com/bali/bisnis/d-8602485/pengiriman-ke-thailand-melonjak-186-persen-di-tengah-lesunya-kinerja-ekspor-bali",
+      "https://www.detik.com/bali/berita/d-8286067/resmi-berlaku-1-januari-2026-ini-daftar-lengkap-umk-se-bali-terbaru",
+      "https://www.detik.com/bali/berita/d-8365548/serikat-pekerja-soroti-ump-naik-tapi-belum-seimbang-dengan-biaya-hidup-di-bali",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://peraturan.bpk.go.id/Details/246940/pp-no-23-tahun-2023",
+      "https://peraturan.bpk.go.id/Details/230500/pp-no-41-tahun-2022",
+      "https://berkas.dpr.go.id/pusaka/files/infografis/infografis-public-91.pdf",
+      "https://www.flowjewelrystudio.com/",
+      "https://sunsrijewelry.com/?p=51077",
+      "https://lasercutbali.com/",
+      "https://ferrylaser.com/",
+      "https://www.warisan.com/",
+      "https://www.ultimatebali.com/inspiration/where-to-score-a-sweet-surfboard-in-bali/",
+      "https://id.wikipedia.org/wiki/Politeknik_Negeri_Bali",
+      "https://smkn1sukawati.sch.id/",
+      "https://id.wikipedia.org/wiki/Mas,_Ubud,_Gianyar"
+    ]
+  },
+  {
+    "province": "Nusa Tenggara Barat",
+    "area": "Nusa Tenggara Barat",
+    "level": "province",
+    "focus": {
+      "product": "Machined wear and spare parts plus repair for the Batu Hijau mine, the AMMAN copper smelter and refinery, and their contractors (bushings, shafts, pump and valve parts, crusher and liner parts)",
+      "hs": [
+        "8431",
+        "8474",
+        "8413",
+        "8481",
+        "8483"
+      ],
+      "why": "AMMAN spent US$2.03bn with domestic suppliers in 2025 but only US$95.3m (about 4.7%) went to suppliers based in NTB; it employs 2,875 staff and 21,792 contractors. Its smelter (900 kt/yr concentrate, 220 kt/yr cathode) made first cathode in March 2025 and is still ramping up. NTB's RPIP lists capital goods, components and industrial services; Kab. Sumbawa's RPIK names CNC lathes, CNC milling, CNC plasma and 3D printers under machine repair and installation (2024-2029).",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Farm and food-processing machines and their parts (corn shellers and dryers, seaweed and fish processing)",
+        "hs": [
+          "8433",
+          "8437",
+          "8438"
+        ],
+        "why": "NTB's RPIP priorities start with food and upstream agro industries; Kab. Sumbawa's leading products include corn, cattle, seaweed farming and processing and fish preserving (2016 study). SIINas lists 9 named NTB machinery firms, 5 of them in KBLI 28250 (food machinery) or 28210 (farm machinery).",
+        "fit": "cnc"
+      },
+      {
+        "product": "Gold, silver and pearl jewelry (Sekarbela, Mataram) using 3D-printed wax patterns",
+        "hs": [
+          "7113",
+          "7116"
+        ],
+        "why": "Wikipedia (uncited) says most Sekarbela residents work in gold and pearl craft; SIINas holds 33 NTB jewelry registrations (27 under KBLI 32115); AMMAN's refinery produced 124,723 oz refined gold and 283.4 koz refined silver in 2025; RPIP lists 'Industri Kriya dan Aneka'. Evidence is thinner than for Bali.",
+        "fit": "3d"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Amman Mineral Nusa Tenggara (Batu Hijau copper-gold mine)",
+      "PT Amman Mineral Industri (copper smelter and precious metals refinery, near Benete port)",
+      "AMMAN contractors (21,792 contractor workers, Dec 2025)",
+      "KEK Mandalika (tourism zone, Lombok Tengah)"
+    ],
+    "local_inputs": [
+      "copper concentrate (446,563 t in 2025)",
+      "copper cathode (79,849 t in 2025)",
+      "refined gold (124,723 oz in 2025)",
+      "refined silver (283.4 koz in 2025)",
+      "sulphuric acid (421,879 t in 2025)",
+      "corn",
+      "cattle",
+      "seaweed",
+      "fish",
+      "pearls",
+      "wood for furniture"
+    ],
+    "clusters": [
+      "Batu Hijau mine and smelter ring (Kawasan Lingkar Tambang Batu Hijau, Sumbawa Barat)",
+      "KEK Mandalika (Lombok Tengah; 1,035.67 ha)",
+      "Sekarbela gold and pearl craft (Kota Mataram)",
+      "Kab. Sumbawa metal, machinery and engineering IKM (17 sentra, 427 units, 807 workers, 2022)"
+    ],
+    "official_designation": "RPIP NTB 2021-2041 (Perda NTB 13/2021, Pasal 5) names ten industri unggulan, including capital goods, components and industrial services, and basic metals and non-metal minerals; Kab. Sumbawa's RPIK summarises the RPIP priorities as food, upstream agro, machinery/transport equipment/renewables, smelter derivatives, herbal pharma and creative industries. Kab. Sumbawa RPIK 2024-2044 (Perda 7/2024) lists CNC plasma cutting, CNC 3D printers, CNC lathes and CNC milling for 2024-2029. KEK Mandalika (PP 52/2014; tourism; 1,035.67 ha). No Kemenperin KIID regulation found.",
+    "umk_2026": "UMP NTB 2026 Rp2,673,898 (+2.72%, Kepgub 100.3.3.1-683 of 24 Dec 2025, per detikBali; detikFinance prints Rp2,673,861). UMK 2026: Sumbawa Barat Rp3,136,468; Kota Mataram Rp3,019,015; Kota Bima Rp2,831,163; Sumbawa Rp2,747,478; Lombok Barat Rp2,712,254 (lowest).",
+    "skills": "Universitas Mataram: S-1 Teknik Mesin and S-1 Teknik Pertanian (Wikipedia). AMMAN trains maintenance staff in electrical, mechanical, welding and fabrication roles and logged 570,000+ training hours in 2025. No state polytechnic, SMK machining programme or BLK machining course was verified in this pass.",
+    "confidence": "medium",
+    "sources": [
+      "https://www.amman.co.id/rails/active_storage/blobs/proxy/eyJfcmFpbHMiOnsiZGF0YSI6NjE0NSwicHVyIjoiYmxvYl9pZCJ9fQ==--063e809101a3c4d0ff04429af5c9b5d7ec4720ee/Sustainability%20Report%202025%20-%20PT%20Amman%20Mineral%20Internasional%20Tbk.pdf?disposition=inline",
+      "https://www.amman.co.id/sustainability-report",
+      "https://www.amman.co.id/amman-mineral-industri",
+      "https://www.detik.com/bali/bisnis/d-8477778/amnt-ajukan-perpanjangan-ekspor-konsentrat-ke-esdm",
+      "https://peraturan.bpk.go.id/Details/204480/perda-prov-nusa-tenggara-barat-no-13-tahun-20",
+      "https://peraturan.bpk.go.id/Details/353173/perda-kab-sumbawa-no-7-tahun-2024",
+      "https://peraturan.bpk.go.id/Details/5491/pp-no-52-tahun-2014",
+      "https://www.detik.com/bali/nusra/d-8287566/daftar-umk-di-seluruh-kabupaten-ntb-berlaku-1-januari-sumbawa-barat-tertinggi",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+      "https://id.wikipedia.org/wiki/Sekarbela,_Mataram",
+      "https://id.wikipedia.org/wiki/Universitas_Mataram",
+      "https://en.wikipedia.org/wiki/Batu_Hijau_mine"
+    ]
+  },
+  {
+    "province": "Nusa Tenggara Timur",
+    "area": "Nusa Tenggara Timur",
+    "level": "province",
+    "focus": {
+      "product": "Machined spare parts and small machines for seaweed, salt and fish processing (cutters, shafts, bushings, rollers, dryer and washer parts), made and repaired by metal workshops at KI Bolok, Kupang",
+      "hs": [
+        "8438",
+        "8474",
+        "8419"
+      ],
+      "why": "NTT's RPIP 2023-2043 makes seaweed processing (carrageenan, chips, jelly, agar: Kupang, Rote Ndao, Sabu Raijua, Sumba Timur), iodized salt and fish processing (all regencies) provincial priorities, and schedules food-processing automation (2023-28), industrial tools (2029-33) and CNC machines (2034-43), with industrial services at the Bengkel Logam in KI Bolok. NTT's machinery subsector output was zero in 2017-2020 and manufacturing was about 1.3% of GRDP (BPS via RPIP), so parts come from outside; Kota Kupang's UMK is Rp2.53m.",
+      "fit": "cnc"
+    },
+    "also": [
+      {
+        "product": "Repair parts for farm machinery (alsintan) and small processing machines for cashew, moringa and coffee",
+        "hs": [
+          "8433",
+          "8437",
+          "8438"
+        ],
+        "why": "The RPIP action plan for 2023-2028 is to improve alsintan repair services in production centres and train Bengkel Logam staff with machine-industry institutes; cashew (Kab. Kupang to Flores Timur), moringa and coffee (Manggarai, Ngada, Ende, Sikka, Sumba Barat) are listed industri unggulan.",
+        "fit": "cnc"
+      },
+      {
+        "product": "Moulds and prototypes for high-quality carton and bioplastic packaging for NTT food products (Kota Kupang)",
+        "hs": [
+          "8480"
+        ],
+        "why": "The RPIP's capital-goods table lists 'Kemasan Berkualitas Tinggi (basis karton dan bioplastik)' in Kota Kupang for every period to 2043; 3D printing suits low-volume packaging prototypes and thermoforming moulds. No local maker was found.",
+        "fit": "3d"
+      }
+    ],
+    "anchor_buyers": [
+      "PT Semen Kupang (cement plant; TKDN-certified PCC cement)",
+      "PT Kawasan Industri Bolok (Perseroda) and its estate tenants (about 200 ha)",
+      "Seaweed processors in Kupang, Rote Ndao, Sabu Raijua and Sumba Timur (named in RPIP by area, not by firm)"
+    ],
+    "local_inputs": [
+      "seaweed",
+      "salt",
+      "fish",
+      "coffee",
+      "moringa (kelor)",
+      "cashew",
+      "sugar cane (Sumba Timur)",
+      "cattle and feed crops",
+      "lontar palm",
+      "zeolite"
+    ],
+    "clusters": [
+      "Kawasan Industri Bolok (Kab. Kupang; about 200 ha; PT KI Bolok (Perseroda), Perda 6/2019)",
+      "Kawasan Industri Kanatang (Sumba Timur)",
+      "Kawasan Industri Maurole (Ende; not yet operating)",
+      "Seaweed belt: Kupang, Rote Ndao, Sabu Raijua, Sumba Timur"
+    ],
+    "official_designation": "RPIP NTT 2023-2043 (Perda NTT 2/2023, Pasal 6) names six industri unggulan: food; pharma, cosmetics and health equipment; textiles, leather, footwear and miscellaneous; capital goods, components, auxiliary materials and industrial services; upstream agro; basic chemicals. Its capital-goods table schedules food-processing automation (2023-2028), industrial tools (2029-2033) and CNC machines (2034-2043), and plans to upgrade the provincial Bengkel Logam into a UPT Logam. No KEK in NTT; no Kemenperin KIID regulation found.",
+    "umk_2026": "UMP NTT 2026 Rp2,455,898 (+5.45%); UMK Kota Kupang Rp2,532,852; the other 21 regencies follow the UMP (detikBali, 1 Jan 2026).",
+    "skills": "Politeknik Negeri Kupang, Jurusan Teknik Mesin: D3 Teknik Mesin, D3 Mesin Otomotif, D4 Teknik Mesin Produksi dan Perawatan (pnk.ac.id). The RPIP lists UPT Pelatihan Tenaga Kerja (Disnakertrans NTT, Kota Kupang), Balai Pelatihan Teknologi Tepat Guna (Noelbaki, Kab. Kupang) and a Balai Latihan Kerja Luar Negeri, plus 10 IKM sentra and 1 UPT under Disperindag NTT.",
+    "confidence": "low",
+    "sources": [
+      "https://peraturan.bpk.go.id/Details/282322/perda-prov-nusa-tenggara-timur-no-2-tahun-202",
+      "https://www.detik.com/bali/nusra/d-8287703/besaran-umk-di-22-kabupaten-kota-ntt-tahun-2026-daerah-ini-paling-tinggi",
+      "https://finance.detik.com/berita-ekonomi-bisnis/d-8295123/daftar-lengkap-ump-di-38-provinsi-yang-langsung-berlaku-januari-2026",
+      "https://pnk.ac.id/",
+      "https://tkdn.kemenperin.go.id/search.php?where=perush&what=kupang",
+      "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=mC-0BzjjZqLYu-Kkc9Rg4j15GLTQBzgR3uIgp3mgKSg%2C",
+      "https://id.wikipedia.org/wiki/Kawasan_Ekonomi_Khusus",
+      "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2023&partnerCode=0&flowCode=X&cmdCode=7113,7117,7101,4420,9403,4421,1212,2501,0102,2603,7403,7402,0801,0901,7106,7108"
+    ]
+  }
+]

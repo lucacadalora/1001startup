@@ -1,0 +1,314 @@
+[
+ {
+  "province": "Jawa Barat",
+  "area": "Bandung Raya",
+  "level": "cluster",
+  "focus": {
+   "product": "Aerospace and defence precision parts: aerostructure detail parts, assembly jigs and fixtures, and small-arms components",
+   "hs": [
+    "880730",
+    "930591",
+    "930599"
+   ],
+   "why": "Only unit with an aerospace prime (PT DI: aerostructures for Airbus, Boeing and Bell programmes; state order of 80 CN235 and 30 N219, Jul 2026), a defence prime buying CNC lathes and machining centres for its 2026 weapons-division programme (Pindad), an AS9100 Tier-2 machinist (Pudak, snippet) and the deepest skills base (Polman, ITB, Polban). Indonesia imported US$438.3M of aircraft parts (880730) and US$22.0M of arms parts (930591 US$2.1M, 930599 US$19.9M) in 2025. Risk: PT DI plans to move CN235/N219 production to Kertajati, so Bandung should supply parts and tooling rather than assembly.",
+   "fit": "both"
+  },
+  "also": [
+   {
+    "product": "Rotating-equipment and process-plant spare parts (pump, turbine and gearbox parts; cement-plant spares)",
+    "hs": [
+     "841391",
+     "848340",
+     "848390"
+    ],
+    "why": "TAKA Turbo/TAKA Precision (turbomachinery parts, gearbox work, ISO 9001:2008) and Kawani (import-substitute spares for Semen Indonesia) already do this work. 2025 imports: pump parts 841391 US$300.0M, gears/gearboxes 848340 US$279.5M, 848390 US$118.7M.",
+    "fit": "cnc"
+   },
+   {
+    "product": "Training-class CNC machines and FDM 3D printers with TKDN certificates",
+    "hs": [
+     "845961",
+     "845710",
+     "848520"
+    ],
+    "why": "Two of the ten CNC machine makers on page 1 of Kemenperin's TKDN search for 'cnc' are here (Polman Didaktik KHD40, 42.08%; Riset Maju Bersama, 38%), plus 3D-printer maker Metafuse (Subsolid XS, 40%). SMK, polytechnic and government buyers must prefer TKDN goods. The import market for plastic 3D printers (848520) was only US$2.3M in 2025, so the case is public procurement, not import substitution.",
+    "fit": "both"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Dirgantara Indonesia (Persero)",
+   "PT Pindad (Persero)",
+   "Collins Aerospace and Meggitt (buy from Pudak, per press snippet)",
+   "Turkish Aerospace Indonesia (studying an assembly site, Jun 2026)",
+   "PT Semen Indonesia (buys spares from Kawani)"
+  ],
+  "local_inputs": null,
+  "clusters": [
+   "PT DI aircraft complex, Jl. Pajajaran (Kota Bandung)",
+   "Pindad complex, Jl. Gatot Subroto (Kota Bandung)",
+   "Gedebage industrial area (Kota Bandung)",
+   "Sentra sepatu Cibaduyut (Kota Bandung)",
+   "KPI Butom, Buahdua (Kab. Sumedang, Rebana plan)"
+  ],
+  "official_designation": "No West Java KIID regulation found. RPIK Kota Bandung 2019-2039 (Perda Kota Bandung 11/2019; text not retrieved) and RPIP Jawa Barat 2018-2038 (Perda Jabar 8/2018). Sumedang's KPI Butom is in the Rebana plan (Perpres 87/2021): food and drink, textiles, logistics, agro-industry, wood furniture.",
+  "umk_2026": "Rp3,949,855 (Kab. Sumedang) to Rp4,737,678 (Kota Bandung); Kab. Bandung 3,972,202; Kab. Bandung Barat 3,990,428; Kota Cimahi 4,090,568 (Kepgub 561.7/Kep.862-Kesra/2025)",
+  "skills": "Polman Bandung (founded 1977; production-based education; D3 precision tool making, manufacturing, metal casting; D4 manufacturing, mechatronics, UAV systems; claims 1,000+ industry partners); BBPVP Bandung (Kemnaker training centre, manufacturing and automotive streams); ITB (machine-tool development centre MTIDC with Korea's KIAT, 2022); Polban (D3 Teknik Mesin, D3 Aeronautika, D4 Proses Manufaktur); SMKN 6 Bandung (138 grade-XI machining students); SMKN 2 Cimahi (uses a Kemenperin IoT CNC, 2022). No BLK/BBPVP CNC data verified.",
+  "confidence": "high",
+  "sources": [
+   "https://www.indonesian-aerospace.com/en/portfolio/aerostructure",
+   "https://indonesian-aerospace.com/en/media/news/detail/1711/on-a-major-mission-iae-set-to-relocate-cn235-and-n219-production-to-kertajati-airport",
+   "https://pindad.com/procurement-info",
+   "https://pudak-scientific.com/en/partner.php",
+   "https://perpustakaan.dpr.go.id/epaper/index/popup/id/15441",
+   "https://www.detik.com/jabar/berita/d-8524785/turki-lirik-indonesia-untuk-bangun-industri-perakitan-pesawat",
+   "https://karir.itb.ac.id/company/146974",
+   "https://ekonomi.republika.co.id/berita/sd0mf6349/sig-rilis-daftar-ukm-gantikan-sparepart-impor-di-pabrik-semen",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=cnc",
+   "https://tkdn.kemenperin.go.id/search.php?where=produk&what=3d+printer",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=880730&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=841391&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=930591,930599,848520&flowCode=M",
+   "https://peraturan.bpk.go.id/Details/136672/perda-kota-bandung-no-11-tahun-2019",
+   "https://peraturan.bpk.go.id/Details/179928/perpres-no-87-tahun-2021",
+   "https://www.detik.com/jabar/bisnis/d-8276785/daftar-lengkap-besaran-ump-umk-jabar-2026",
+   "https://www.polban.ac.id",
+   "https://www.polman-bandung.ac.id",
+   "https://bbpvpbandung.kemnaker.go.id",
+   "https://www.detik.com/jabar/bisnis/d-6535637/ancaman-kepunahan-perajin-sepatu-di-cibaduyut-bandung"
+  ]
+ },
+ {
+  "province": "Jawa Barat",
+  "area": "Subang–Patimban",
+  "level": "cluster",
+  "focus": {
+   "product": "Stamping dies, welding jigs and checking fixtures for the Subang EV and vehicle body lines (BYD, VinFast, Pindad national car)",
+   "hs": [
+    "820730"
+   ],
+   "why": "Three vehicle plants are in or coming to Subang: BYD (up to 150,000 units/yr, 200+ supply partners, moving from 40% to 60% TKDN by Jan 2027), VinFast (171 ha, scaling to 350,000/yr, land reserved for suppliers) and Pindad's national-car plant (60 ha first phase, 50,000/yr by 2028). The Rebana plan assigns metal, machinery and transport equipment to KPI Patimban and both Cipali Subang KPIs. The local job shop (Teknik Jaya, about 13 CNCs) already makes jigs, fixtures and mould parts. Press tools (820730) imports were US$49.7M in 2025. Jigs and fixtures have no single HS code.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Injection moulds for vehicle interior and exterior plastic parts",
+    "hs": [
+     "848071"
+    ],
+    "why": "Indonesia imported US$214.0M of 848071 moulds in 2025, 68% from China; local-content steps at BYD and VinFast push plastic parts and their moulds onshore.",
+    "fit": "cnc"
+   },
+   {
+    "product": "Machined parts for defence vehicles and energetic-material plants (Pindad national car, Dahana)",
+    "hs": [
+     "871000",
+     "930690"
+    ],
+    "why": "Pindad is building its national-car plant in Subang and Dahana runs its Energetic Material Center there; KPI Cipali Subang Timur lists defence. Demand is plan-stage and buyer-specific.",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "BYD Auto Indonesia (Subang Smartpolitan plant)",
+   "VinFast Indonesia (Subang plant)",
+   "PT Pindad (Persero), national-car plant in Subang",
+   "PT Dahana (Energetic Material Center, Subang)"
+  ],
+  "local_inputs": null,
+  "clusters": [
+   "Subang Smartpolitan (Cipeundeuy)",
+   "KI Rebana Teknopolis (Cibogo, Cipeundeuy, Kalijati)",
+   "KI Grand Rebana (Cipunagara)",
+   "KI Taifa (Pagaden)",
+   "KPI Patimban (Pusakanagara)",
+   "KPI Cipali Subang Barat and Timur",
+   "Patimban Port (car terminal 218,000 CBU/yr; container terminal 250,000 TEU/yr since Jan 2026)"
+  ],
+  "official_designation": "Perpres 87/2021 (Rebana): KPI Patimban (food, metal, machinery, electronics, integrated logistics), KPI Cipali Subang Barat (paper, food, metal, machinery, electronics, transport equipment), KPI Cipali Subang Timur (metal, machinery, electronics, defence, automotive and shipbuilding, dry port). Rebana action plan 2020-2030 in Pergub Jabar 14/2023. No Subang RPIK found.",
+  "umk_2026": "Rp3,737,482 (Kab. Subang)",
+  "skills": "Politeknik Negeri Subang (machine maintenance and repair department; 675 new students in 10 programmes, Aug 2026; CNC internships at Teknik Jaya Component, Sep 2026). Perpres 87/2021 plans a Kemenperin vocational training centre at Cipeundeuy and a maritime academy at Pusakanagara.",
+  "confidence": "medium",
+  "sources": [
+   "https://teknikjaya.co.id/harga-jasa-cnc/",
+   "https://industri.kontan.co.id/news/pabrik-byd-subang-resmi-beroperasi-pemerintah-dorong-tkdn-kendaraan-listrik",
+   "https://oto.detik.com/mobil/d-8641589/pabrik-byd-di-subang-diresmikan-pekan-ini-molor-dari-jadwal",
+   "https://cleantechnica.com/2025/12/17/vinfast-opens-indonesia-electric-vehicle-plant-just-17-months-after-groundbreaking/",
+   "https://oto.detik.com/mobil/d-8529472/pabrik-mobnas-di-subang-ditargetkan-bisa-produksi-300-ribu-mobil-setahun",
+   "https://dahana.id/getting-closer-with-dahanas-defense-industry-in-subang/",
+   "https://peraturan.bpk.go.id/Details/179928/perpres-no-87-tahun-2021",
+   "https://peraturan.bpk.go.id/Details/272441/pergub-prov-jawa-barat-no-14-tahun-2023",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=820730&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848071&flowCode=M",
+   "https://www.polsub.ac.id",
+   "https://finance.detik.com/infrastruktur/d-8576169/pelabuhan-patimban-resmi-layani-pengiriman-peti-kemas-internasional",
+   "https://www.detik.com/jabar/bisnis/d-8276785/daftar-lengkap-besaran-ump-umk-jabar-2026"
+  ]
+ },
+ {
+  "province": "Jawa Barat",
+  "area": "Cirebon–Indramayu–Majalengka",
+  "level": "cluster",
+  "focus": {
+   "product": "CNC-cut and bent metal frames, components and weaving jigs for rattan, synthetic-rattan and aluminium furniture",
+   "hs": [
+    "940179",
+    "940320",
+    "940199"
+   ],
+   "why": "Furniture is the unit's largest existing manufacturing base: Kab. Cirebon exported US$66.6M of rattan furniture in 2022 (24.9% of its non-oil exports; aluminium furniture also listed) and rattan furniture/crafts counted 1,520 firms and 65,696 workers in 2023 (plus 1,441 wood-furniture firms). The Kab. Cirebon industry plan (Perda 1/2026) names rattan/wood furniture a leading industry, and the Rebana plan lists furniture for KPI Cirebon and the Tegalwangi (Weru) small-industry centre. Asmindo Cirebon wants output near '70% machine accuracy' (Oct 2024), and the provincial rattan service unit in Cirebon (9,000 m2, shared machines) is a ready host for common CNC equipment. Nationally, Indonesia exported US$98.8M of metal-framed seats (940179) and US$70.2M of other metal furniture (940320) in 2025, against US$19.7M of rattan furniture (940383), so metal frames are where furniture export value sits. Frames, brackets and forming jigs suit CNC laser/plasma cutting, tube bending and routing; 3D printing suits design prototypes. Inference: no Cirebon CNC supplier was verified.",
+   "fit": "both"
+  },
+  "also": [
+   {
+    "product": "Aerostructure detail parts, ground-support equipment and MRO tooling for the Kertajati aerospace estate",
+    "hs": [
+     "880730"
+    ],
+    "why": "PT DI signed an MoU (Jul 2026) to move CN235/N219 production, testing and MRO, then aerostructures, to Kertajati (Majalengka); KPI Kertajati targets aviation, defence, sensors and robotics; Polman Bandung's Majalengka campus (Panyingkiran) is already open. Plan-stage demand.",
+    "fit": "both"
+   },
+   {
+    "product": "Pump, valve and compressor spare parts for the Balongan refinery and planned petrochemical estate",
+    "hs": [
+     "841391",
+     "848190"
+    ],
+    "why": "Pertamina's RU VI Balongan refines 150,000 bbl/day (Jan 2026) and the Rebana plan includes a Balongan petrochemical industrial estate. 2025 imports: pump parts 841391 US$300.0M, valve parts 848190 US$185.7M. Local sourcing data not found.",
+    "fit": "cnc"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Kilang Pertamina Internasional, Refinery Unit VI Balongan (Indramayu)",
+   "PT Dirgantara Indonesia (planned Kertajati production and MRO)",
+   "PT Bandarudara Internasional Jawa Barat (BIJB Kertajati)",
+   "CV Aksata Furnicraft Internasional (rattan furniture exporter, Weru)",
+   "Jatiwangi roof-tile works (about 150 still operating, 2026)"
+  ],
+  "local_inputs": [
+   "rattan",
+   "teak, mahogany, pine and other plantation wood",
+   "andesite and other non-metallic minerals",
+   "clay (Jatiwangi tiles)",
+   "salt",
+   "refinery products and naphtha (Balongan)"
+  ],
+  "clusters": [
+   "SIKM Tegalwangi, Weru (rattan furniture)",
+   "SIKM Trusmi Kulon, Plered (batik)",
+   "KPI Cirebon",
+   "KPI and SIKM Jatiwangi (Majalengka)",
+   "KPI Kertajati and Kertajati Aerocity / KI Kertajati",
+   "KPI Balongan and KI Petrokimia Balongan (Indramayu)",
+   "KI Sultan Werdinata, Losarang (Indramayu)",
+   "Sukra industrial zone, 2,112 ha near Patimban (Indramayu, Dec 2025)",
+   "SIKM Cigandamekar (Kuningan)"
+  ],
+  "official_designation": "Perpres 87/2021 (Rebana; covers Kota/Kab. Cirebon, Indramayu, Majalengka, Kuningan). RPIK Kab. Cirebon 2025-2045 (Perda 1/2026) leading industries: agri-food, seafood and salt; rattan/wood/bamboo crafts and rattan/wood furniture; batik, textiles and garments. KPI Kertajati: aviation, cargo, electronics, sensors, robotics, electric vehicles, defence, textiles.",
+  "umk_2026": "Rp2,369,379 (Kab. Kuningan) to Rp2,910,254 (Kab. Indramayu); Kota Cirebon 2,878,646; Kab. Cirebon 2,880,797; Kab. Majalengka 2,595,368",
+  "skills": "ITB Kampus Cirebon (Arjawinangun), the only engineering campus in Kab. Cirebon per its RPIK; 109 SMKs with 59,823 students in Kab. Cirebon (2022); Polman Bandung's Kampus 2 Majalengka (PSDKU, Panyingkiran) already runs new D3 machine maintenance, D4 manufacturing design and D4 automation programmes (Perpres 87/2021 had budgeted Rp500bn for it); ITB Cirebon expansion planned at Rp1.7T; Universitas Majalengka mechanical engineering ran CNC-router training (2021). Politeknik Negeri Indramayu not verified (site blocked).",
+  "confidence": "medium",
+  "sources": [
+   "https://peraturan.bpk.go.id/Details/351387/perda-kab-cirebon-no-1-tahun-2026",
+   "https://peraturan.bpk.go.id/Download/415167/Perda%20Cirebon%20Nomor%201%20Tahun%202026.pdf",
+   "https://peraturan.bpk.go.id/Details/179928/perpres-no-87-tahun-2021",
+   "https://www.detik.com/jabar/bisnis/d-7392608/geliat-kerajinan-rotan-cirebon-yang-dilirik-pasar-eropa",
+   "https://www.detik.com/jabar/cirebon-raya/d-7317970/pasar-eropa-lesu-pengusaha-kerajinan-rotan-cirebon-lirik-asean",
+   "https://www.detik.com/jabar/cirebon-raya/d-7590590/pengusaha-mebel-cirebon-keluhkan-minimnya-pameran-perlindungan-desain",
+   "https://indonesian-aerospace.com/en/media/news/detail/1713/turning-kertajati-airport-in-majalengka-into-an-aerospace-industry-base-iae-set-to-produce-80-cn235",
+   "https://finance.detik.com/energi/d-8332181/kilang-balongan-suplai-bbm-jakarta-dan-sekitarnya-produksi-150-ribu-barel-hari",
+   "https://www.detik.com/jabar/cirebon-raya/d-8347233/jejak-genteng-jatiwangi-berawal-dari-masjid-jadi-industri-rakyat",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848190&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=940179,940320,940383&flowCode=X",
+   "https://www.detik.com/jabar/bisnis/d-8276785/daftar-lengkap-besaran-ump-umk-jabar-2026",
+   "https://www.ejournal.unma.ac.id/index.php/bernas/article/download/1295/832/5304",
+   "https://www.polman-bandung.ac.id",
+   "https://www.detik.com/jabar/cirebon-raya/d-8265626/2-112-hektare-lahan-di-sukra-indramayu-disiapkan-untuk-kawasan-industri"
+  ]
+ },
+ {
+  "province": "Jawa Barat",
+  "area": "Priangan Timur",
+  "level": "cluster",
+  "focus": {
+   "product": "Forged blades and hand tools finished on CNC and laser (golok/machetes, knives, hoes, sickles)",
+   "hs": [
+    "820140",
+    "820130",
+    "820190",
+    "821192"
+   ],
+   "why": "The densest metal-working base in the unit is blades: Garut has 536 small units making cutting and hand tools (223 for carpentry, 313 household; provincial RPIP data cited in Garut RPIK 2021, pre-2023) and Kab. Tasikmalaya 323 golok units with 1,664 workers and Rp124.8bn yearly output (2018 data; Manonjaya incl. Galonggong, Cikatomas, Singaparna). Ciamis adds Kampung Dokdak (Baregbeg), with about 30 toolmaker groups making knives, machetes, golok, hoes and axes for Tasikmalaya, Banjar, Pangandaran and Bandung; a 2024 university programme gave them belt grinders and blowers. Smiths mostly work by hand and lose to factory and Chinese tools (Garut 2019, Pangandaran 2021). CNC/laser blanking, CNC grinding and fixtured heat treatment would standardise blades. Kab. Tasikmalaya's plan lists basic metals and capital goods/components as leading industries, zones golok making in Manonjaya, Cikatomas and Singaparna, and notes iron sand and iron ore on its south coast. Trade check (2025): imports of hoes, machetes and other farm hand tools (820130/820140/820190) were under US$0.3M, fixed-blade knives (821192) US$3.1M (75% China), and exports were near zero. The case is upgrading a large domestic cluster and building exports, not import substitution.",
+   "fit": "cnc"
+  },
+  "also": [
+   {
+    "product": "Leather cutting (clicker) dies and embossing plates for Garut leather and Tasikmalaya footwear",
+    "hs": [
+     "820730",
+     "820890"
+    ],
+    "why": "Sukaregang (Garut) has 330 tanneries, 387 leather-garment and 284 leather-goods units (RPIP data cited in Garut RPIK 2021, pre-2023); Kota Tasikmalaya has 536 footwear units (2018). In Feb 2024 the cooperatives minister said Sukaregang still works with simple tools. HS for steel-rule dies varies between 8207 and 8208.",
+    "fit": "cnc"
+   },
+   {
+    "product": "Sandal and shoe sole moulds, with 3D-printed patterns, for Tasikmalaya footwear makers and Garut's Chang Shin plant",
+    "hs": [
+     "848071",
+     "848079"
+    ],
+    "why": "Kota Tasikmalaya's industry plan (2022) targets rubber/foam sole inputs for its 536 footwear units (2018 count); PT Chang Shin Reksa Jaya runs a bonded footwear plant in Garut. 2025 imports: outer soles 640620 US$183.9M (China 59%, Viet Nam 31%), moulds 848071 US$214.0M and 848079 US$104.5M.",
+    "fit": "both"
+   }
+  ],
+  "anchor_buyers": [
+   "PT Chang Shin Reksa Jaya (footwear, Garut bonded zone)",
+   "Sukaregang tanneries and leather-garment makers (Garut)",
+   "Footwear and kelom geulis makers of Kota Tasikmalaya",
+   "Golok and hand-tool workshops of Garut and Kab. Tasikmalaya",
+   "PT Hini Daiki Indonesia (caps and jackets, Cisayong, about 660 workers)"
+  ],
+  "local_inputs": [
+   "hides and leather (Sukaregang)",
+   "scrap and leaf-spring steel (blades)",
+   "iron sand, south coast of Kab. Tasikmalaya (about 2.75 billion t resource)",
+   "iron ore, Kab. Tasikmalaya (over 41 Mt inferred)",
+   "mahogany and albasia wood (kelom geulis)",
+   "bamboo, mendong and pandan",
+   "buffalo horn (golok handles)"
+  ],
+  "clusters": [
+   "Sentra penyamakan kulit Sukaregang (Garut Kota, Karangpawitan; expansion zoned in Cibatu and Selaawi)",
+   "Garut large-industry zone, 701 ha (Leles, Selaawi, Balubur Limbangan, Cibatu)",
+   "Golok centres in Manonjaya (incl. Galonggong), Cikatomas and Singaparna (Kab. Tasikmalaya)",
+   "Cimaragas blacksmiths, Cilawu (Garut)",
+   "Kelom geulis makers, Tamansari and Cibeureum (Kota Tasikmalaya)",
+   "Bordir (embroidery) centres, Kab. and Kota Tasikmalaya",
+   "Golok makers of Cintakarya, Parigi (Pangandaran)",
+   "Kampung Dokdak toolmakers, Baregbeg (Ciamis), about 30 groups (2024)"
+  ],
+  "official_designation": "Perpres 87/2021 (Jabar Selatan) sets no manufacturing role: Garut agribusiness and fisheries; Kab. Tasikmalaya fisheries; Ciamis agribusiness; Pangandaran tourism and fisheries. RPIK Garut 2021-2041 (Perda 6/2021): leather, footwear, textile and miscellaneous; food; coffee; essential oils. RPIK Kab. Tasikmalaya 2020-2040 (Perda 4/2021): food; textile, leather, footwear; basic metals and non-metal minerals (zoning table names iron and steel processing, 'golok etc.', in Manonjaya, Cikatomas and Singaparna); electronics; capital goods, components and industrial services. RPIK Kota Tasikmalaya 2021-2041 (Perda 1/2022): embroidery, garments, batik, footwear incl. kelom geulis, wood furniture, woven mendong/bamboo, food.",
+  "umk_2026": "Rp2,351,250 (Kab. Pangandaran) to Rp2,980,336 (Kota Tasikmalaya); Kab. Garut 2,472,227; Kab. Tasikmalaya 2,871,874; Kab. Ciamis 2,373,643; Kota Banjar 2,361,777",
+  "skills": "Kota Tasikmalaya: SMK 2 (machining, IT, construction), SMK 3 (leather, metal and wood crafts), Universitas Siliwangi and a city craft design and appropriate-technology centre (since 2018), per RPIK 2022. Institut Teknologi Garut lists industrial engineering but no mechanical engineering programme (site, Oct 2026). No polytechnic machining programme or BLK CNC course verified for Garut, Ciamis, Banjar or Pangandaran.",
+  "confidence": "medium",
+  "sources": [
+   "https://peraturan.bpk.go.id/Details/208391/perda-kab-garut-no-6-tahun-2021",
+   "https://peraturan.bpk.go.id/Download/202476/PERDA%20NO%206%20TH%202021%20TTG%20RENCANA%20PEMBANGUNAN%20INSDUSTRI%20KABUPATEN%20TAHUN%202021-2041%20N_sign.pdf",
+   "https://peraturan.bpk.go.id/Details/207553/perda-kab-tasikmalaya-no-4-tahun-2021",
+   "https://peraturan.bpk.go.id/Download/201595/PERDA%20NOMOR%204%20TAHUN%202021.pdf",
+   "https://peraturan.bpk.go.id/Details/209150/perda-kota-tasikmalaya-no-1-tahun-2022",
+   "https://peraturan.bpk.go.id/Download/203246/NOMOR%201%20TAHUN%202022%20LAMPIRAN%20RPIK.pdf",
+   "https://peraturan.bpk.go.id/Details/179928/perpres-no-87-tahun-2021",
+   "https://www.liputan6.com/regional/read/3993225/perajin-pandai-besi-garut-riwayatmu-kini",
+   "https://timesindonesia.co.id/ekonomi/333282/pengrajin-golok-di-pangandaran-pertahankan-kualitas-dan-ciri-khas",
+   "https://journals.unpad.ac.id/jkip/article/download/11623/5440",
+   "https://www.detik.com/jabar/wisata/d-7539141/transformasi-kampung-dokdak-jadi-wisata-edukasi-di-ciamis",
+   "https://www.detik.com/jabar/bisnis/d-7198433/menkop-teten-dorong-produk-kulit-sukaregang-garut-kuasai-pasar-nasional",
+   "https://www.detik.com/jabar/budaya/d-7018542/denyut-usaha-kelom-geulis-alas-kaki-dari-tasik-yang-jadi-wbtb",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=848071&flowCode=M",
+   "https://www.detik.com/jabar/bisnis/d-8276785/daftar-lengkap-besaran-ump-umk-jabar-2026",
+   "https://itg.ac.id",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&cmdCode=820130,820140,820190,821192,640620&flowCode=M",
+   "https://comtradeapi.un.org/public/v1/preview/C/A/HS?reporterCode=360&period=2025&partnerCode=0&cmdCode=820130,820140,820190,821192&flowCode=X"
+  ]
+ }
+]

@@ -289,12 +289,19 @@ const chain1001 = require('./views/chain1001');
 const pagesumkm = require('./views/pagesumkm');
 const companyumkm = require('./views/companyumkm');
 const mapumkm = require('./views/mapumkm');
+/* CNC + 3D Indonesia (working name) — the China-style "one place, one product"
+   map for CNC machining and 3D printing (Luca, 16 Oct 2026, slice 1 go). Same
+   host-branch mechanism as umkm, own views + data file (scripts/cnc-build.py). */
+const pagescnc = require('./views/pagescnc');
+const mapcnc = require('./views/mapcnc');
+const researchcnc = require('./views/researchcnc');
 /* Shares px's notion of which hostnames ARE 1001, so the shell a visitor gets
  * and the bucket their view lands in can never disagree — startsWith('1001')
  * said no to www.1001startup.id while px.ALIAS said yes, which served the PASAR
  * page under 1001's numbers. */
 const is1001 = (req) => px.canonHost(hostOf(req)) === '1001.vantis.sh';
 const isUmkm = (req) => px.canonHost(hostOf(req)) === 'umkm.vantis.sh';
+const isCnc = (req) => px.canonHost(hostOf(req)) === 'cnc.vantis.sh';
 /* Set by rewriteUrl when the request came in under /id/ on a 1001 hostname. */
 const langOf = (req) => ((req.raw && req.raw.lang1001) === 'id' ? 'id' : 'en');
 const langPfx = (req) => (langOf(req) === 'id' ? '/id' : '');
@@ -356,6 +363,77 @@ fastify.get('/data/umkm-map.json', async (req, reply) => {
   const body = umkmMapFeed();
   if (!body) return reply.code(404).send({ error: 'not_found' });
   const tag = `W/"${umkmCache.mtime.toString(36)}-${body.length.toString(36)}"`;
+  reply.header('Cache-Control', 'no-cache').header('ETag', tag);
+  if (req.headers['if-none-match'] === tag) return reply.code(304).send();
+  return reply.type('application/json').send(body);
+});
+/* cnc.json gets the same mtime-cached load as umkm.json; the map reads a slim
+   derived feed (places with their card fields, firms with theirs) and never
+   the gated full file. */
+const CNC_FILE = path.join(__dirname, 'public', 'data', 'cnc.json');
+let cncCache = { mtime: 0, data: null, map: null };
+function cncData() {
+  let st;
+  try { st = fs.statSync(CNC_FILE); } catch { return cncCache.data; }
+  if (st.mtimeMs !== cncCache.mtime) {
+    try { cncCache = { mtime: st.mtimeMs, data: JSON.parse(fs.readFileSync(CNC_FILE, 'utf8')), map: null }; }
+    catch { /* mid-write: keep the last good copy */ }
+  }
+  return cncCache.data;
+}
+/* company webs (research section): one JSON per group in data/cnc-webs/,
+   written by scripts/cnc-webs-import.py; re-read when any file changes */
+const CNC_WEBS_DIR = path.join(__dirname, 'data', 'cnc-webs');
+let cncWebsCache = { sig: '', list: [] };
+function cncWebs() {
+  let files;
+  try { files = fs.readdirSync(CNC_WEBS_DIR).filter((f) => f.endsWith('.json')).sort(); } catch { return cncWebsCache.list; }
+  const sig = files.map((f) => { try { return f + ':' + fs.statSync(path.join(CNC_WEBS_DIR, f)).mtimeMs; } catch { return f; } }).join('|');
+  if (sig !== cncWebsCache.sig) {
+    const list = [];
+    for (const f of files) {
+      try {
+        const w = JSON.parse(fs.readFileSync(path.join(CNC_WEBS_DIR, f), 'utf8'));
+        if (w && w.slug && Array.isArray(w.entities) && Array.isArray(w.links)) list.push(w);
+      } catch { /* mid-write: skip this round */ }
+    }
+    list.sort((a, b) => (a.order || 99) - (b.order || 99) || String(a.title).localeCompare(String(b.title)));
+    cncWebsCache = { sig, list };
+  }
+  return cncWebsCache.list;
+}
+function cncMapFeed() {
+  const d = cncData();
+  if (!d) return null;
+  const webs = cncWebs();
+  if (cncCache.map && cncCache.mapSig !== cncWebsCache.sig) cncCache.map = null;
+  if (!cncCache.map) {
+    cncCache.mapSig = cncWebsCache.sig;
+    const TM = (d.method && d.method.tier_meta) || {};
+    cncCache.map = JSON.stringify({
+      families: d.families || [],
+      firms_unmapped: (d.totals && d.totals.firms_unmapped) || 0,
+      places: (d.places || []).map((p) => ({
+        id: p.id, area: p.area, province: p.province, level: p.level, island: p.island, lat: p.lat, lon: p.lon,
+        focus: p.focus, also: p.also, anchor_buyers: p.anchor_buyers, local_inputs: p.local_inputs,
+        clusters: p.clusters, official_designation: p.official_designation, umk_2026: p.umk_2026,
+        skills: p.skills, confidence: p.confidence, sources: p.sources, firms_n: p.firms_n,
+      })),
+      firms: (d.firms || []).filter((f) => f.lat !== null && f.lat !== undefined).map((f) => ({
+        id: f.id, name: f.name, kind_label: f.kind_label, city: f.city, province: f.province,
+        lat: f.lat, lon: f.lon, geo_kind: f.geo_kind, tier_rank: f.tier_rank,
+        tier_label: (TM[f.tier] || {}).label || f.tier, capabilities: f.capabilities, makes: f.makes,
+        source_url: f.source_url, website: f.website, web: researchcnc.webSlugFor(f.name, webs),
+      })),
+    });
+  }
+  return cncCache.map;
+}
+fastify.get('/data/cnc-map.json', async (req, reply) => {
+  if (!isCnc(req)) return reply.code(404).send({ error: 'not_found' });
+  const body = cncMapFeed();
+  if (!body) return reply.code(404).send({ error: 'not_found' });
+  const tag = `W/"${cncCache.mtime.toString(36)}-${body.length.toString(36)}"`;
   reply.header('Cache-Control', 'no-cache').header('ETag', tag);
   if (req.headers['if-none-match'] === tag) return reply.code(304).send();
   return reply.type('application/json').send(body);
@@ -422,6 +500,7 @@ const modelTex = () => {
 };
 fastify.get('/', async (req, reply) => {
   if (isUmkm(req)) { reply.type('text/html').send(pagesumkm.landing({ data: umkmData() })); return; }
+  if (isCnc(req)) { reply.type('text/html').send(pagescnc.landing({ data: cncData(), webs: cncWebs() })); return; }
   if (is1001(req)) { reply.type('text/html').send(pages1001.landing({ data: censusData(), lang: langOf(req) })); return; }
   const st = S.stats.get();
   const counts = {};
@@ -473,15 +552,23 @@ function linksData() {
   return linksCache.data;
 }
 fastify.get('/research', async (req, reply) => {
+  if (isCnc(req)) return reply.type('text/html').send(researchcnc.index({ webs: cncWebs() }));
   if (!is1001(req)) return reply.redirect('/');
   reply.type('text/html').send(research1001.index({ lang: langOf(req) }));
 });
 fastify.get('/research/', async (req, reply) => {
+  if (isCnc(req)) return reply.code(301).header('location', '/research').send();
   if (!is1001(req)) return reply.redirect('/');
   const query = req.url.includes('?') ? req.url.slice(req.url.indexOf('?')) : '';
   return reply.code(301).header('location', langPfx(req) + '/research' + query).send();
 });
 fastify.get('/research/:slug', async (req, reply) => {
+  if (isCnc(req)) {
+    const webs = cncWebs();
+    const w = webs.find((x) => x.slug === req.params.slug);
+    if (!w) return reply.code(404).type('text/html').send(pagescnc.notFound());
+    return reply.type('text/html').send(researchcnc.web({ web: w, webs }));
+  }
   if (!is1001(req)) return reply.redirect('/');
   if (req.params.slug !== research1001.SLUG) return reply.code(404).type('text/html').send(research1001.notFound({ lang: langOf(req) }));
   reply.type('text/html').send(research1001.article({ lang: langOf(req) }));
@@ -781,6 +868,9 @@ fastify.get('/map', async (req, reply) => {
   if (isUmkm(req)) {
     return reply.type('text/html').send(mapumkm.page({ data: umkmData(), embed: !!(req.query && req.query.embed) }));
   }
+  if (isCnc(req)) {
+    return reply.type('text/html').send(mapcnc.page({ data: cncData(), embed: !!(req.query && req.query.embed) }));
+  }
   const qs = String(req.raw.url).split('?')[1];
   if (!is1001(req)) return reply.redirect('/jakarta' + (qs ? '?' + qs : ''));
   /* ?city= is a camera preset (any city with a company on the map, or
@@ -820,7 +910,7 @@ fastify.get('/census', async (req, reply) => {
 fastify.get('/stats', async (req, reply) => {
   /* umkm counts views (px.HOSTS) but has no stats page yet — a PASAR-chromed
      stats page under the 1001umkm brand would be worse than none. */
-  if (isUmkm(req)) return reply.redirect('/');
+  if (isUmkm(req) || isCnc(req)) return reply.redirect('/');
   const host = hostOf(req);
   const range = String((req.query && req.query.range) || '24h');
   let data;
@@ -1245,12 +1335,25 @@ fastify.get('/data/umkm.json', async (req, reply) => {
   reply.header('Cache-Control', 'no-store');
   return reply.sendFile('data/umkm.json');
 });
+/* And for the CNC + 3D map's working file: the site shows every row with its
+   source; whether the file itself is ever published is Luca's call. */
+fastify.get('/data/cnc.json', async (req, reply) => {
+  if (!leads.authed(req)) {
+    return reply.code(403).type('application/json').send({
+      error: 'not_public',
+      message: 'The working file is not published. Every firm and focus place is shown with its sources on the site.',
+    });
+  }
+  reply.header('Cache-Control', 'no-store');
+  return reply.sendFile('data/cnc.json');
+});
 
 /* ── 404 ───────────────────────────────────────────────────────────── */
 fastify.setNotFoundHandler((req, reply) => {
   if (req.url.startsWith('/api/')) return reply.code(404).send({ error: 'not_found' });
   /* each brand 404s in its own shell — a typo on umkm must not surface PASAR */
   if (isUmkm(req)) return reply.code(404).type('text/html').send(companyumkm.notFound({ data: umkmData() }));
+  if (isCnc(req)) return reply.code(404).type('text/html').send(pagescnc.notFound());
   if (is1001(req)) {
     /* /company/gojek/ is the same page with a stray slash — 301 to the clean
        URL instead of 404ing (canonical hygiene; crawlers follow pasted links).

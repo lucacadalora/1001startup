@@ -1,0 +1,464 @@
+[
+  {
+    "name": "Flow Jewelry Studio (managed by PT DMD Asia)",
+    "kind": "foundry_machining",
+    "province": "Bali",
+    "city": "Denpasar",
+    "capabilities": [
+      "CAD (SolidWorks, ZBrush)",
+      "wax 3D printing",
+      "hand wax carving",
+      "rubber moulds",
+      "wax injection",
+      "lost-wax casting",
+      "stone setting",
+      "plating"
+    ],
+    "serves": [
+      "international jewelry brands (private label)"
+    ],
+    "makes": "Private-label silver and gold jewelry from CAD and 3D-printed wax models through casting, stone setting and plating",
+    "size_note": "Over 50 full-time staff (company site)",
+    "certs": [],
+    "website": "https://www.flowjewelrystudio.com/",
+    "source_url": "https://www.flowjewelrystudio.com/",
+    "source_type": "company_site",
+    "evidence": "Site lists 3D printing of wax models from CAD, rubber moulds, wax injection and casting; Solidscape shown as partner; over 50 staff.",
+    "source_year": 2026
+  },
+  {
+    "name": "SUNSRI House of Jewelry",
+    "kind": "foundry_machining",
+    "province": "Bali",
+    "city": "Gianyar (Celuk, Sukawati)",
+    "capabilities": [
+      "3D design (CAD)",
+      "3D printing (prototypes)",
+      "wax carving",
+      "rubber and silicone moulds",
+      "lost-wax casting"
+    ],
+    "serves": [
+      "independent jewelry brands and start-ups",
+      "custom orders"
+    ],
+    "makes": "Sterling silver, brass and copper jewelry; custom design and manufacturing",
+    "size_note": null,
+    "certs": [],
+    "website": "https://sunsrijewelry.com/",
+    "source_url": "https://sunsrijewelry.com/?p=51077",
+    "source_type": "company_site",
+    "evidence": "Pre-production page describes 3D design, 3D printing for prototypes, wax carving, rubber/silicone moulds and lost-wax casting; Celuk silver manufacturer since 1979.",
+    "source_year": 2026
+  },
+  {
+    "name": "Sentra Industri Kerajinan Perak Desa Celuk (Kemenperin and Pemkab Gianyar)",
+    "kind": "3d_print_service",
+    "province": "Bali",
+    "city": "Gianyar (Celuk, Sukawati)",
+    "capabilities": [
+      "2D/3D design",
+      "3D printing",
+      "CNC engraving",
+      "CNC milling",
+      "laser cutting",
+      "laser marking",
+      "casting",
+      "silver assay"
+    ],
+    "serves": [
+      "Celuk silver craft small industries (IKM)"
+    ],
+    "makes": "Government-run shared design, casting and finishing facility for silver craft IKM",
+    "size_note": "Serves a cluster of 152 IKM units with 2,364 workers, 4,515 kg/yr output, Rp158 bn/yr turnover (2025)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://wartaekonomi.co.id/read564599/kembangkan-sentra-ikm-kemenperin-pemda-gianyar-dorong-penguatan-ekosistem-kerajinan-perak?page=all",
+    "source_type": "news",
+    "evidence": "Government silver centre on Jl. Klaci lists casting, 2D/3D design, CNC engraving and milling, 3D printing, laser cutting and marking machines.",
+    "source_year": 2025
+  },
+  {
+    "name": "Cahaya Abadi Laser",
+    "kind": "laser_plasma_fabricator",
+    "province": "Bali",
+    "city": "Denpasar (Denpasar Timur)",
+    "capabilities": [
+      "fiber laser cutting",
+      "pipe and WF rolling",
+      "sheet bending",
+      "metal fabrication"
+    ],
+    "serves": [
+      "hotels and resorts",
+      "commercial buildings",
+      "villas and housing"
+    ],
+    "makes": "Laser-cut decorative panels, stairs and railings, canopies and fences in steel and stainless steel",
+    "size_note": null,
+    "certs": [],
+    "website": "https://lasercutbali.com/",
+    "source_url": "https://lasercutbali.com/",
+    "source_type": "company_site",
+    "evidence": "Denpasar firm offers fiber-laser cutting, pipe/WF rolling and bending; names Trans hotel projects; claims 15+ years' experience.",
+    "source_year": 2026
+  },
+  {
+    "name": "Ferry Laser",
+    "kind": "laser_plasma_fabricator",
+    "province": "Bali",
+    "city": "Denpasar (Padangsambian Kaja)",
+    "capabilities": [
+      "laser cutting",
+      "laser engraving",
+      "CNC router (3D carving)"
+    ],
+    "serves": [
+      "signage (neon box cutting)",
+      "invitations and printed goods",
+      "custom orders"
+    ],
+    "makes": "Laser-cut and engraved wood, MDF, acrylic, leather and bamboo pieces; CNC-carved 3D patterns",
+    "size_note": null,
+    "certs": [],
+    "website": "https://ferrylaser.com/",
+    "source_url": "https://ferrylaser.com/",
+    "source_type": "company_site",
+    "evidence": "Bali engraving and cutting shop, active since 2006, runs a laser cutter/engraver and a CNC machine for 3D carving.",
+    "source_year": 2026
+  },
+  {
+    "name": "Bali Signage",
+    "kind": "laser_plasma_fabricator",
+    "province": "Bali",
+    "city": "Denpasar (Padangsambian)",
+    "capabilities": [
+      "laser-cut acrylic",
+      "metal letter fabrication (stainless, galvanized, brass)",
+      "neon box fabrication"
+    ],
+    "serves": [
+      "businesses needing signage"
+    ],
+    "makes": "Embossed letters, neon boxes, acrylic signs, totem and pylon signs",
+    "size_note": "Site claims 547 completed projects",
+    "certs": [],
+    "website": "https://www.balisignage.com/",
+    "source_url": "https://www.balisignage.com/",
+    "source_type": "company_site",
+    "evidence": "Signage maker lists 'acrylic laser', stainless, galvanized and brass letters and neon boxes; machines not named.",
+    "source_year": 2026
+  },
+  {
+    "name": "Nuanu Creative City (3D-printing lab)",
+    "kind": "3d_print_service",
+    "province": "Bali",
+    "city": "Tabanan (Beraban, Kediri)",
+    "capabilities": [
+      "3D concrete printing (single-arm L3D1 printer)",
+      "small 3D-printing lab"
+    ],
+    "serves": [
+      "own development (Nuanu)",
+      "planned education programmes"
+    ],
+    "makes": "3D-printed concrete structures; first was a bus stop (2025)",
+    "size_note": null,
+    "certs": [],
+    "website": "https://www.nuanu.com/",
+    "source_url": "https://www.indotelko.com/read/1745361263/nuanu-perkenalkan-halte-bus-hasil-cetak-3d-pertama-di-bali",
+    "source_type": "news",
+    "evidence": "Nuanu's first 3D-printed structure, a bus stop, was printed by a single-arm L3D1 printer in four days; lab to expand.",
+    "source_year": 2025
+  },
+  {
+    "name": "BIKIN makerspace",
+    "kind": "3d_print_service",
+    "province": "Bali",
+    "city": "Denpasar",
+    "capabilities": [
+      "3D printing (type not stated)"
+    ],
+    "serves": [
+      "youth training"
+    ],
+    "makes": "Community makerspace that hosted a US Consulate 3D-printer training",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://bali.antaranews.com/berita/127253/konjen-as-surabaya-latih-3d-printer-pemuda-bali",
+    "source_type": "news",
+    "evidence": "(snippet) US Consulate Surabaya trained Bali youths on 3D printers with BIKIN makerspace Denpasar; article not opened because antaranews blocks Claude.",
+    "source_year": null
+  },
+  {
+    "name": "PT Akasha Shatya Wibawa",
+    "kind": "machinery_maker",
+    "province": "Bali",
+    "city": null,
+    "capabilities": [
+      "lifting and handling equipment (KBLI 28160; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: lifting and handling equipment (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=0bCtGgIPKU5sHVP-I3RJR_zaGkICRuxrBuLF8pn6okw%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Bali, KBLI 28160: lifting and handling equipment; list page 1, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Kawan Sukses Berjaya",
+    "kind": "machinery_maker",
+    "province": "Bali",
+    "city": null,
+    "capabilities": [
+      "pumps, compressors, taps and valves (KBLI 28130; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: pumps, compressors, taps and valves (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=0bCtGgIPKU5sHVP-I3RJR_zaGkICRuxrBuLF8pn6okw%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Bali, KBLI 28130: pumps, compressors, taps and valves; list page 32, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Leo Raja Pompa",
+    "kind": "machinery_maker",
+    "province": "Bali",
+    "city": null,
+    "capabilities": [
+      "pumps, compressors, taps and valves (KBLI 28130; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: pumps, compressors, taps and valves (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=0bCtGgIPKU5sHVP-I3RJR_zaGkICRuxrBuLF8pn6okw%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Bali, KBLI 28130: pumps, compressors, taps and valves; list page 35, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Wira Dharma Mandiri",
+    "kind": "machinery_maker",
+    "province": "Bali",
+    "city": null,
+    "capabilities": [
+      "metal-forming machinery and machine tools group (KBLI 28223; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: metal-forming machinery and machine tools group (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=0bCtGgIPKU5sHVP-I3RJR_zaGkICRuxrBuLF8pn6okw%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Bali, KBLI 28223: metal-forming machinery and machine tools group; list page 62, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Anugerah Trilimas Indonesia",
+    "kind": "foundry_machining",
+    "province": "Bali",
+    "city": null,
+    "capabilities": [
+      "metal forging, pressing and stamping (KBLI 25910; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: metal forging, pressing and stamping (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=0bCtGgIPKU5sHVP-I3RJR_zaGkICRuxrBuLF8pn6okw%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Bali, KBLI 25910: metal forging, pressing and stamping; list page 2, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Alat Permesinan Sumbawa Mandiri",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "food, beverage and tobacco processing machinery (KBLI 28250; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: food, beverage and tobacco processing machinery (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28250: food, beverage and tobacco processing machinery; list page 2, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Sinar Agro Teknik",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "food, beverage and tobacco processing machinery (KBLI 28250; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: food, beverage and tobacco processing machinery (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28250: food, beverage and tobacco processing machinery; list page 37, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Tefa Kalipantung",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "food, beverage and tobacco processing machinery (KBLI 28250; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: food, beverage and tobacco processing machinery (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28250: food, beverage and tobacco processing machinery; list page 43, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Laskar Enginering Lombok",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "agricultural and forestry machinery (KBLI 28210; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: agricultural and forestry machinery (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28210: agricultural and forestry machinery; list page 21, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Bale Berkah Bor",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "agricultural and forestry machinery (KBLI 28210; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: agricultural and forestry machinery (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28210: agricultural and forestry machinery; list page 6, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Mataram Teknik",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "other general-purpose machinery (KBLI 28199; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: other general-purpose machinery (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28199: other general-purpose machinery; list page 24, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Global Enjinering Sampah Indonesia Timur",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "other general-purpose machinery (KBLI 28199; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: other general-purpose machinery (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28199: other general-purpose machinery; list page 13, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Ardika Teknika",
+    "kind": "machinery_maker",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "metal-forming machinery and machine tools group (KBLI 28222; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: metal-forming machinery and machine tools group (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 28222: metal-forming machinery and machine tools group; list page 4, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Sagara Jaya Teknik",
+    "kind": "cnc_job_shop",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "metal machining and treatment services (KBLI 25920; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: metal machining and treatment services (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 25920: metal machining and treatment services; list page 36, data 16 Oct 2026.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Vector Utama Indonesia",
+    "kind": "foundry_machining",
+    "province": "Nusa Tenggara Barat",
+    "city": null,
+    "capabilities": [
+      "non-ferrous metal casting (KBLI 24320; CNC not confirmed)"
+    ],
+    "serves": [],
+    "makes": "Registered activity: non-ferrous metal casting (products not verified)",
+    "size_note": null,
+    "certs": [],
+    "website": null,
+    "source_url": "https://kemenperin.go.id/direktori-perusahaan?kbli=&prov=DRelepyjdDkPntAag94avf-ou4ALhHIRkWctL4k3cxk%2C",
+    "source_type": "government",
+    "evidence": "SIINas (Kemenperin) lists it in Nusa Tenggara Barat, KBLI 24320: non-ferrous metal casting; list page 44, data 16 Oct 2026.",
+    "source_year": 2026
+  }
+]

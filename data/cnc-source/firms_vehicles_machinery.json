@@ -1,0 +1,1193 @@
+[
+  {
+    "name": "CV Karya Hidup Sentosa (QUICK)",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kab. Kulon Progo (plant at Tuksono, Sentolo); head office Kota Yogyakarta",
+    "capabilities": [
+      "CNC machining centres and lathes",
+      "CNC grinding",
+      "CNC induction hardening",
+      "gear shaping and hobbing",
+      "induction-furnace foundry",
+      "CMM inspection"
+    ],
+    "serves": [
+      "Kementan farm-machinery aid",
+      "farmers and dealers",
+      "exports to 16 countries"
+    ],
+    "makes": "Hand (2-wheel) tractors, 4-wheel tractors, combine harvester, transport tractors, vertical diesel engines, gensets, castings, spare parts",
+    "size_note": "198 CNC machines, 78 conventional machines, 33 gear machines (site footer 2021); TKDN certificates 35.9-83.1% (2026)",
+    "certs": [
+      "ISO 9001:2015 (SGS)",
+      "TKDN certificates"
+    ],
+    "website": "https://quick.co.id",
+    "source_url": "https://quick.co.id/fasilitas-produksi",
+    "source_type": "company_site",
+    "evidence": "CNC Machining Center, CNC Lathe, CNC Grinding, CNC Induction Hardening (Total: 198 unit); gear shaping and hobbing machines (33 unit).",
+    "source_year": 2021
+  },
+  {
+    "name": "PT Kubota Indonesia",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kota Semarang (Bukit Semarang Baru industrial park)",
+    "capabilities": [
+      "diesel engine assembly",
+      "tractor assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers",
+      "Quick (shareholder and main dealer)"
+    ],
+    "makes": "Horizontal diesel engines (plant set up 1973 with Quick) and 4-wheel tractors",
+    "size_note": "4-wheel tractor certificates at 26.3-27.9% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=zpP98ip3zm0v1bsSWQsnnXDwlcisHZPIpOf1WpaGsyI,",
+    "source_type": "government",
+    "evidence": "Traktor 4 Roda, TKDN 26.27-27.93%; address Taman Industri Bukit Semarang Baru (BSB), Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yanmar Diesel Indonesia",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Pasuruan (Pandaan)",
+    "capabilities": [
+      "tractor and combine assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers"
+    ],
+    "makes": "Agricultural tractors, 4-wheel tractors, combine harvesters",
+    "size_note": "TKDN 25.9-65.6% across 10 certificates (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=hZtJ9or6n0N_-3ZfQhdXJs_uSDLj0aE1e2-elk3xRFw,",
+    "source_type": "government",
+    "evidence": "Traktor Pertanian, Combine Harvester, Traktor Roda 4; TKDN 25.90-65.58%; Pandaan, Kabupaten Pasuruan, Jawa Timur.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Iseki Indonesia",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Pasuruan (PIER industrial estate, Kraton)",
+    "capabilities": [
+      "tractor assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers"
+    ],
+    "makes": "4-wheel tractors",
+    "size_note": "TKDN 34.7-37.2% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=nkYg2bLSCFJhIo4cFI-cit1O8JWpr_rGNVMngTADzhE,",
+    "source_type": "government",
+    "evidence": "Traktor Roda 4 (ISEKI), TKDN 34.69-37.23%; PIER, Kraton, Kabupaten Pasuruan.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pindad",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kota Bandung",
+    "capabilities": [
+      "defence-grade machining and fabrication",
+      "tractor and combine assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers",
+      "Kemhan/TNI (core business)"
+    ],
+    "makes": "Paddy combine harvesters and 4-wheel tractors (alongside defence products)",
+    "size_note": "Farm-machine certificates at 30.7-36.7% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=V3Uj7Zgo_JKjgsBwGrhZlOh3IYltEOWm-7z_RcU7n_E,",
+    "source_type": "government",
+    "evidence": "Paddy Combine Harvester; Traktor Roda 4; Combine Harvester (PINDAD), TKDN 30.68-36.70%; Kiaracondong, Kota Bandung.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bahagia Jaya Sejahtera (BEJE)",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Bogor (Ciawi)",
+    "capabilities": [
+      "farm-machine fabrication and assembly",
+      "pump assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers",
+      "coffee processors",
+      "rice mills"
+    ],
+    "makes": "2- and 4-wheel tractors, rice milling unit set and polisher, coffee roasters, hullers and grinders, irrigation pumps, boat tractors",
+    "size_note": "25 farm-machine certificates; TKDN 33-67% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=zRAvnZfegnRHwG18a0gcC93_08ChTTxOjguQd078dAo,&id_siinas=zRAvnZfegnRHwG18a0gcC93_08ChTTxOjguQd078dAo,",
+    "source_type": "government",
+    "evidence": "Mesin Traktor Roda Dua, Mesin RMU Set, Mesin Sangrai Kopi (BEJE); TKDN 33.39-66.98%; Ciawi, Kabupaten Bogor.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Phonna Raya Machinery (KOHPAD)",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Sukabumi (Cicurug)",
+    "capabilities": [
+      "farm-machine fabrication and assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers",
+      "coffee and cocoa processors"
+    ],
+    "makes": "2- and 4-wheel tractors, threshers, combine harvesters, transplanters, pumps, coffee pulpers, hullers and roasters, cocoa butter press",
+    "size_note": "TKDN 33.6-77.3% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=4T9UT8dW_Alt3l0KdapuqI1hpkeGYovufmCT4uf5caE,",
+    "source_type": "government",
+    "evidence": "Traktor Roda Dua; Combine Harvester; Mesin Sangrai Kopi Kohpad; TKDN 33.58-77.31%; Cicurug, Kabupaten Sukabumi.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Tanikaya Multi Sarana",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kab. Tangerang (Curug); branch in Kab. Banyumas, Central Java",
+    "capabilities": [
+      "farm-machine assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers"
+    ],
+    "makes": "Power threshers, 4-wheel tractors, paddy combine harvesters",
+    "size_note": "21 certificates; TKDN 24.1-54.2% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=AV4FDX4XkxdWmJYR7KWQuAJVKAWnNVs1AV8A9GJzNFI,",
+    "source_type": "government",
+    "evidence": "POWER THRESHER; TRAKTOR RODA 4; PADDY COMBINE HARVESTER (TANIKAYA); TKDN 24.13-54.23%; Curug, Kabupaten Tangerang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Corin Mulia Gemilang (MAXXI)",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Sidoarjo (Balongbendo)",
+    "capabilities": [
+      "farm-machine assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers"
+    ],
+    "makes": "Combine harvesters, 4-wheel tractors, rice transplanters",
+    "size_note": "TKDN 25.4-37.5% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=bUh4iLgyYxrxoj4ZJMN-d90QlZ2Hkd9vaH9v3InNBlI,",
+    "source_type": "government",
+    "evidence": "Combine Harvester; Traktor Roda 4; Rice Transplanter (MAXXI); TKDN 25.44-37.45%; Balongbendo, Kabupaten Sidoarjo.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Javatech Agro Persada",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kab. Pati (Gembong)",
+    "capabilities": [
+      "farm-machine fabrication and assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers",
+      "rice mills"
+    ],
+    "makes": "Tractors, combine harvesters, transplanters, threshers, rice milling units, water pumps",
+    "size_note": "TKDN 27.0-54.8% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=FusEnDvZaM69ZrFjtoMvNkDXbxUB83PawUmORxWuffM,",
+    "source_type": "government",
+    "evidence": "TRAKTOR RODA 4; Combine Harvester; Rice Milling Unit; Pompa Air (JAVATECH); TKDN 26.97-54.82%; Gembong, Kabupaten Pati.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Arqom Technology Innovation",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kab. Bantul (Sewon)",
+    "capabilities": [
+      "farm and food machine fabrication"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers",
+      "coffee and cocoa processors"
+    ],
+    "makes": "2- and 4-wheel tractors, transplanters, power threshers, petrol and diesel pumps, coffee and cocoa roasters, grinders",
+    "size_note": "TKDN 25.9-62.6% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=CnCdLuOCvzuPkVndhebU7-iXnUSLSe4vt_TX6mrM5dg,",
+    "source_type": "government",
+    "evidence": "Traktor Roda 2; Transplanter; Power Thresher; Mesin Sangrai Kopi; TKDN 25.92-62.63%; Sewon, Kabupaten Bantul.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pura Barutama (INARI)",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kab. Kudus (Jekulo)",
+    "capabilities": [
+      "farm and rice-mill machine manufacturing"
+    ],
+    "serves": [
+      "Kementan",
+      "rice mills",
+      "farmers"
+    ],
+    "makes": "Rice milling units (multi-phase), huskers, dryers, hand tractors, combine harvesters",
+    "size_note": "RMU 40.9-55.5%, husker 56.6% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=VfSmVEQrXq47JMvk4-ZzC58o0AnqJ4mIOhCZQ1ypyk4,",
+    "source_type": "government",
+    "evidence": "Rice Milling Unit Multifase (INARI) TKDN 40.92-55.48%; Husker 56.57%; Jekulo, Kabupaten Kudus.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Agrindo",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Gresik (Driyorejo)",
+    "capabilities": [
+      "rice-mill and tractor manufacturing"
+    ],
+    "serves": [
+      "Kementan",
+      "rice mills",
+      "farmers"
+    ],
+    "makes": "Rice milling units (multi-phase), 4-wheel tractors",
+    "size_note": "RMU 66.6% TKDN; tractors 37.1-43.3% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=d0VZ-znkD5Hu6znwYklaYWuQ76XIRn26fQestoLzQQY,",
+    "source_type": "government",
+    "evidence": "RICE MILLING UNIT (RMU) MULTIFASE (AGRINDO) TKDN 66.57%; TRAKTOR RODA 4 37.09-43.27%; Driyorejo, Kabupaten Gresik.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Tri Ratna Diesel Indonesia (CROWN)",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Gresik (Driyorejo)",
+    "capabilities": [
+      "farm machine and pump manufacturing"
+    ],
+    "serves": [
+      "Kementan",
+      "rice mills",
+      "farmers"
+    ],
+    "makes": "Rice milling units, grain dryers, cultivators, disc ploughs, irrigation pumps",
+    "size_note": "RMU 34.9-41.7%, pumps 45.6-60.8% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=uAUdyd4AYxP8OtQI_Phm6_NRuTCKqSTqrN84ygrHgnc,",
+    "source_type": "government",
+    "evidence": "Rice Milling Unit (RMU) Multifase (CROWN) 34.87-41.74%; Pompa Irigasi 45.63-60.84%; Kabupaten Gresik.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Riset Perkebunan Nusantara (LASINKO)",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Jember (Rambipuji)",
+    "capabilities": [
+      "coffee-machine design and making"
+    ],
+    "serves": [
+      "coffee roasters and processors",
+      "plantations"
+    ],
+    "makes": "Coffee roasting machines and coffee hullers",
+    "size_note": "Roaster 52.8% TKDN, huller 36.1% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Xtbd83AtqLaIkMwyLXsOh4eGcUDU3vxehc1LOjVx4KQ,",
+    "source_type": "government",
+    "evidence": "Mesin Sangrai Kopi (LASINKO) TKDN 52.78%; Mesin Pengupas Kulit Kopi (Huller) 36.07%; Rambipuji, Kabupaten Jember.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sang General Industri",
+    "kind": "machinery_maker",
+    "province": "Aceh",
+    "city": "Kab. Aceh Besar (Krueng Barona Jaya)",
+    "capabilities": [
+      "food-machine fabrication"
+    ],
+    "serves": [
+      "cocoa processors",
+      "essential-oil distillers",
+      "farmers"
+    ],
+    "makes": "Cocoa butter press, cocoa powder roaster, cocoa bean sorter, chocolate refiner, essential-oil stills, power thresher",
+    "size_note": "TKDN 38-40% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=5xqykt2srDadMHG0M6i18UDZVThwnzr9wrKoborNuv4,&id_siinas=5xqykt2srDadMHG0M6i18UDZVThwnzr9wrKoborNuv4,",
+    "source_type": "government",
+    "evidence": "Mesin Pengempa Lemak Kakao; Mesin Penyangrai Bubuk Kakao; Mesin Sortasi Biji Kakao; TKDN 38-40%; Kabupaten Aceh Besar.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Multi Prima Inovasi",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kota Bogor (Bubulak)",
+    "capabilities": [
+      "food-machine fabrication"
+    ],
+    "serves": [
+      "cocoa processors"
+    ],
+    "makes": "Cocoa roaster, cocoa ball mill, winnower, hydraulic cocoa butter press",
+    "size_note": "TKDN 34-40% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=KEy0Qcl1h6YeLGdJ8AXPm3xk1folypKhdk7755LLubc,&id_siinas=KEy0Qcl1h6YeLGdJ8AXPm3xk1folypKhdk7755LLubc,",
+    "source_type": "government",
+    "evidence": "Mesin Roaster Kakao; Ball Mill Kakao; Mesin Winnower Biji Kakao; Pengempa Lemak Kakao Hydrolik; Kota Bogor.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Hinoka Alsindo Tekni",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Bogor",
+    "capabilities": [
+      "food-machine fabrication"
+    ],
+    "serves": [
+      "coffee processors"
+    ],
+    "makes": "Coffee hullers and coffee roasters",
+    "size_note": "TKDN 26.9-66.8% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=eX16fE_2MIoer-fhYY3T3DEcIHMYWwacYcbZj4IHXwo,",
+    "source_type": "government",
+    "evidence": "Mesin Pengupas Kopi; Mesin Sangrai Kopi (HAT); TKDN 26.88-66.84%; Kabupaten Bogor.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bangga Karya Indonesia",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kota Yogyakarta (Jetis)",
+    "capabilities": [
+      "food-machine fabrication"
+    ],
+    "serves": [
+      "coffee and cocoa processors",
+      "farmers"
+    ],
+    "makes": "Coffee roasters, cocoa roasters, steamers and sifters, power threshers",
+    "size_note": "TKDN 34-38% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=JCRsn5eRCMl3lo82ACmHV-k-ymeQ60DZBKaCDwgiS5c,&id_siinas=JCRsn5eRCMl3lo82ACmHV-k-ymeQ60DZBKaCDwgiS5c,",
+    "source_type": "government",
+    "evidence": "Mesin Sangrai Biji Kopi (roaster); Mesin Sangrai Kakao; Power Thresher Multiguna; TKDN 34-38%; Kota Yogyakarta.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Ebara Indonesia",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kota Depok (Cimanggis)",
+    "capabilities": [
+      "pump manufacturing"
+    ],
+    "serves": [
+      "irrigation and flood control",
+      "industry",
+      "oil and gas",
+      "buildings"
+    ],
+    "makes": "Irrigation and flood pumps (self-priming, mixed-flow), industrial and fire pumps",
+    "size_note": "53 certificates; irrigation pumps 46.4-65.0% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=NQq0K8foI3pW2tflUvOj9uf6IFodVovkao_l6F1EsaI,",
+    "source_type": "government",
+    "evidence": "Pompa Air Irigasi dan Banjir, Self-Priming Pump 50-200SQP, TKDN 55.97-62.15%; Cimanggis, Kota Depok.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Indosan Berkat Bersama (TRITOR)",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kab. Sukoharjo (Kartasura)",
+    "capabilities": [
+      "pump manufacturing"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers"
+    ],
+    "makes": "Irrigation centrifugal pumps",
+    "size_note": "TKDN 50.2-68.6% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=xhrn0YkNS686OsglpvqZZx0_SVM9xFPLK_M-IMZvagA,",
+    "source_type": "government",
+    "evidence": "POMPA AIR SENTRIFUGAL UNTUK IRIGASI (TRITOR), TKDN 50.18-68.57%; Kartasura, Kabupaten Sukoharjo.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Rejeki Abadi Machinery (RAM)",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kab. Tegal (Tarub)",
+    "capabilities": [
+      "pump manufacturing"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers"
+    ],
+    "makes": "Water pumps and irrigation centrifugal pumps with engines",
+    "size_note": "TKDN 42.7-88.7% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=-hZiemJCqcTmO-nRJyEWIGfSjkjj9I74S1YR3hvYTaY,",
+    "source_type": "government",
+    "evidence": "Pompa Air; Pompa Air Sentrifugal untuk Irigasi (RAM), TKDN 42.72-88.72%; Tarub, Kabupaten Tegal.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Pabrik Mesin Guntur",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kota Malang (Sukun)",
+    "capabilities": [
+      "pump manufacturing"
+    ],
+    "serves": [
+      "farmers",
+      "industry"
+    ],
+    "makes": "Horizontal centrifugal pumps and water pumps",
+    "size_note": "TKDN 42.6-58.8% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=KfOX9wD4vQDHWviYw0muI1IVTP293MOFH9ceE2ZK_fc,",
+    "source_type": "government",
+    "evidence": "Pompa Sentrifugal Horizontal; pompa air (GUNTUR, KAPUAS), TKDN 42.56-58.84%; Sukun, Kota Malang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Majulah Putra Bangsa",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kab. Tangerang (Pasar Kemis)",
+    "capabilities": [
+      "pump assembly"
+    ],
+    "serves": [
+      "Kementan",
+      "farmers"
+    ],
+    "makes": "Irrigation centrifugal pump sets with engines",
+    "size_note": "18 certificates; TKDN 32.2-78.4% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=E8wvDkNErOYmIyA0UgeJ9RyEqOjT46HFhmyyZt9LiPQ,",
+    "source_type": "government",
+    "evidence": "Pompa Air Sentrifugal Irigasi Dengan Penggerak (BRS, HINOKA, KOKOH); TKDN 32.19-78.44%; Kabupaten Tangerang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Panasonic Manufacturing Indonesia",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur (Pasar Rebo)",
+    "capabilities": [
+      "pump and appliance manufacturing"
+    ],
+    "serves": [
+      "households",
+      "retail",
+      "government buyers"
+    ],
+    "makes": "SANYO-brand water pumps",
+    "size_note": "Pump certificates at 17.0-35.9% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=D9ndwty0iZWLxjOrjlwjiHPMnsnHuKtUesgViTxWWyM,",
+    "source_type": "government",
+    "evidence": "Pompa Air (SANYO), TKDN 17.04-35.92%; Pasar Rebo, Kota Jakarta Timur.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sinar Semesta",
+    "kind": "foundry_machining",
+    "province": "Central Java",
+    "city": "Kab. Klaten (Klepu, Ceper)",
+    "capabilities": [
+      "iron and steel casting",
+      "pump-part casting"
+    ],
+    "serves": [
+      "pump makers"
+    ],
+    "makes": "Cast iron and steel parts, including submersible pump casting assemblies",
+    "size_note": "Casting certificate at 94.07% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=NhPMXmxTd1MUCmSAAurIVJIlAVRYBtrYQH0l8hhCOZU,",
+    "source_type": "government",
+    "evidence": "Besi dan Baja Cor: Casting Part Assy Submersible, TKDN 94.07%; Klepu, Ceper, Kabupaten Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Geteka Founindo",
+    "kind": "foundry_machining",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Timur (Pulogadung industrial estate)",
+    "capabilities": [
+      "casting",
+      "impeller making"
+    ],
+    "serves": [
+      "pump makers",
+      "oil and gas"
+    ],
+    "makes": "Multistage pump impellers",
+    "size_note": "Impeller certificate at 94.58% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=GTUBQZGwUgbSUE0oEAP0fRodkhfqL6485sparUY_eE4,",
+    "source_type": "government",
+    "evidence": "Impeller, Multi Stage (GTK), Mesin dan Peralatan Migas, TKDN 94.58%; Kawasan Industri Pulogadung, Jakarta Timur.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Surya Indah Dieselindo Perkasa (IN-DA)",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Barat (Kalideres)",
+    "capabilities": [
+      "diesel engine assembly"
+    ],
+    "serves": [
+      "farm and industrial machine makers",
+      "government buyers"
+    ],
+    "makes": "Diesel engines (brand IN-DA/INDA)",
+    "size_note": "9 certificates at 44.5-47.8% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=OC04EE4ZZnJ8eI-rMu-l7JjE0TvmFFXojcIlpGTsPNQ,",
+    "source_type": "government",
+    "evidence": "Mesin Diesel (IN-DA, INDA), TKDN 44.49-47.79%; Kalideres, Kota Jakarta Barat.",
+    "source_year": 2026
+  },
+  {
+    "name": "Koperasi Batur Jaya (Ceper metal-casting cooperative)",
+    "kind": "foundry_machining",
+    "province": "Central Java",
+    "city": "Kab. Klaten (Batur, Ceper)",
+    "capabilities": [
+      "metal casting",
+      "machining"
+    ],
+    "serves": [
+      "PT KAI (brake blocks)",
+      "Toyota TMMIN (cylinder sleeves)",
+      "industry"
+    ],
+    "makes": "Railway brake blocks, cylinder sleeves, machine and pump parts",
+    "size_note": "168 member foundries, more than 4,000 workers (2019) [pre-2023]",
+    "certs": [],
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/47090/ikm-logam-klaten-jateng-upaya-terus-hasilkan-produk-kompetitif",
+    "source_type": "news",
+    "evidence": "168 member IKM in metal casting employing more than 4,000 workers; supplied brake blocks to PT KAI; cylinder sleeves for TMMIN.",
+    "source_year": 2019
+  },
+  {
+    "name": "CV Putra Karya Logam Sukses",
+    "kind": "foundry_machining",
+    "province": "North Sumatra",
+    "city": "Kab. Asahan (Simpang Empat)",
+    "capabilities": [
+      "brass casting",
+      "propeller making"
+    ],
+    "serves": [
+      "fishing-boat owners",
+      "boatyards"
+    ],
+    "makes": "Brass ship and boat propellers (e.g., 4-blade 66 x 48 x 4)",
+    "size_note": "Propeller certificates at 72.7-83.4% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=G750YqNKR1_vbcov62Ful2eJcECmgD-flVAjhPV6roQ,",
+    "source_type": "government",
+    "evidence": "BALING-BALING KAPAL, Kuningan (Dua Ikan Tongkol), TKDN 72.74%; 4 BLADE 66 x 48 x 4, 83.41%; Kabupaten Asahan.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Dharma Polimetal Tbk",
+    "kind": "precision_parts_supplier",
+    "province": "West Java",
+    "city": "Kab. Bekasi (Cikarang Selatan)",
+    "capabilities": [
+      "stamping, welding and machining of chassis parts",
+      "3-wheeler assembly"
+    ],
+    "serves": [
+      "motorcycle OEMs",
+      "car OEMs",
+      "government buyers"
+    ],
+    "makes": "Swing arms and other 2W/4W parts; PowerAce 3-wheel motorcycles incl. electric TRIEX",
+    "size_note": "Swing arm 60.09% TKDN; 3-wheelers 48.1-61.2% (2026); named in Astra's Supply Chain 4.0 lighthouse (GIAMM 2025)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=mUKDHt9F4hQNAnKNbUOzs0vXJu4yagztC8Y3eFHIxCU,",
+    "source_type": "government",
+    "evidence": "Swing Arm, TKDN 60.09%; Sepeda Motor Roda Tiga (PowerAce) 48.09-61.21%; Cikarang Selatan, Kabupaten Bekasi.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Indoprima Gemilang",
+    "kind": "precision_parts_supplier",
+    "province": "East Java",
+    "city": "Kota Surabaya (Tandes)",
+    "capabilities": [
+      "friction-material and brake-part making"
+    ],
+    "serves": [
+      "vehicle aftermarket",
+      "government fleets"
+    ],
+    "makes": "Brake linings",
+    "size_note": "TKDN 40.7-51.3% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=IsygnVVG04KhPUQp_LwvBA6-HNfA3KXBXmt4-u9WT5E,",
+    "source_type": "government",
+    "evidence": "BRAKE LINING - KAMPAS REM, TKDN 40.72-51.28%; Tandes, Kota Surabaya.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Astra Honda Motor",
+    "kind": "machinery_maker",
+    "province": "DKI Jakarta",
+    "city": "Kota Jakarta Utara (Pegangsaan Dua); also Kab. Karawang (Cikampek), West Java",
+    "capabilities": [
+      "motorcycle and engine manufacturing"
+    ],
+    "serves": [
+      "domestic market",
+      "exports"
+    ],
+    "makes": "Petrol and electric motorcycles (Honda), incl. EM1 e:, CUV e:, ICON e:",
+    "size_note": "Petrol models 45.2-51.1% TKDN, EVs 40.5-47.1% (2026); about 22,400 employees and 5.3M/yr capacity in 2015 [pre-2023]",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=_sS82Lqg9Xg-Bc8gEX4RLAVF1PhQMa9DhTHa5mj6p6Y,",
+    "source_type": "government",
+    "evidence": "HONDA PCX 160 CBS TKDN 51.10%; HONDA CUV e: 47.06%; Honda EM1 e: 40.56%; Pegangsaan Dua and Cikampek.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yamaha Indonesia Motor Manufacturing",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Karawang (KIIC, Teluk Jambe Timur); also Kota Jakarta Timur (Cakung)",
+    "capabilities": [
+      "motorcycle manufacturing"
+    ],
+    "serves": [
+      "domestic market",
+      "exports"
+    ],
+    "makes": "Petrol and hybrid motorcycles (Yamaha)",
+    "size_note": "12 models at 47.1-58.7% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Cdf1x7baY55nWcTmYQvva55DQ5QgmpHTyYlF5HZyGmo,",
+    "source_type": "government",
+    "evidence": "FAZZIO HYBRID TKDN 58.72%; LEXI LX STANDARD 56.55%; Vega Force 55.01%; KIIC, Kabupaten Karawang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Volta Indonesia Semesta",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kota Semarang (Kawasan Industri Candi, Ngaliyan)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers",
+      "logistics fleets (e.g., SiCepat)"
+    ],
+    "makes": "Electric motorcycles (VOLTA) and battery-swap stations",
+    "size_note": "12 models at 44.1-55.1% TKDN (2026); >300 swap stations",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": "https://voltaindonesia.com",
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=xBZPs7bdCcs-g2GU2I7AzgUjY1xSSb3QhtFss4wTBLI,",
+    "source_type": "government",
+    "evidence": "VOLTA 415 A/T TKDN 46.50%; 401 R A/T 55.12%; Kawasan Industri Candi, Ngaliyan, Kota Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Hartono Istana Teknologi (Polytron)",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kab. Demak (Sayung); head office Kab. Kudus",
+    "capabilities": [
+      "electronics and e-motorcycle manufacturing"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles (FOX series) plus electronics",
+    "size_note": "e-2W 42.5-51.0% TKDN (2026); >10,000 employees (all products, via Wikipedia)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": "https://polytron.co.id",
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=K1r-98cjvCgInYAFsM9tHnxvN-MU6jO5G90GKS90ycc,",
+    "source_type": "government",
+    "evidence": "KENDARAAN BERMOTOR LISTRIK (SEPEDA MOTOR RODA DUA) POLYTRON FOX S TKDN 51.03%; Sayung, Kabupaten Demak.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Industri Ion Mobilitas (ION Mobility)",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Karawang (Ciampel)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles M1-S (10-12.5 kW, NMC battery)",
+    "size_note": "TKDN 65.1-66.4% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=8uq4jshXhKQLd0ZCtvwcCzvCJ9jItLWg7MJZ5oGd-Hg,",
+    "source_type": "government",
+    "evidence": "Kendaraan Bermotor Listrik (Sepeda Motor) M1-S A/T TKDN 66.35%; Ciampel, Kabupaten Karawang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Garda Energi Nasional Indonesia (SAVART)",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Mojokerto (Jetis)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles (SAVART A-1, S-1P)",
+    "size_note": "TKDN 74.3-75.0% (2026), highest among e-motorcycles found",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=LatUsBEvLMvZWHMP4_ms4hulHQFDO8WJdOOPkWIqAdo,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik SAVART A-1 TKDN 75.03%; S-1P 74.27%; Jetis, Kabupaten Mojokerto.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Terang Dunia Internusa (United, Avand)",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Bogor (Kawasan Industri Branta Mulia, Citeureup)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers",
+      "government buyers"
+    ],
+    "makes": "Electric motorcycles (UNITED, AVAND)",
+    "size_note": "TKDN 44.0-68.2% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ziNu4Vkke7PqTLhOCmFEH6gNeztp6KNB9It3yB6lstU,",
+    "source_type": "government",
+    "evidence": "Motor Listrik MT1500 (UNITED) TKDN 68.23%; SC121 (AVAND) 67.38%; Citeureup, Kabupaten Bogor.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Electra Mobilitas Indonesia (ALVA)",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Bekasi (Cikarang Pusat)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles (ALVA)",
+    "size_note": "7 models at 41.2-44.5% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=OSCxmWfJ6dm_MtjcSeV5MjDWepDHWU_vFPUZW4D0JUo,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik ALVA, TKDN 41.15-44.46%; Jayamukti, Cikarang Pusat, Kabupaten Bekasi.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yadea Manufaktur Kendaraan Listrik",
+    "kind": "machinery_maker",
+    "province": "West Java",
+    "city": "Kab. Bekasi (Serang Baru)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles (YADEA Velax)",
+    "size_note": "TKDN 30.4-56.9% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=CDfGU0lzZfXAI_sNuwoISgr3M5RoC-TwumfnSLuUv2Y,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik Velax H A/T (YADEA) TKDN 56.91%; Serang Baru, Kabupaten Bekasi.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Triangle Motorindo (Viar)",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kota Semarang (Mijen; Bukit Semarang Baru)",
+    "capabilities": [
+      "motorcycle and 3-wheeler assembly"
+    ],
+    "serves": [
+      "consumers",
+      "government buyers"
+    ],
+    "makes": "Motorcycles, 3-wheel cargo bikes, electric motorcycles (VIAR)",
+    "size_note": "e-2W V1 68.75% TKDN; petrol 3-wheelers 28-33% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": "https://www.viarmotor.com",
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Q548qcQW1P49GNpm-GCMW_X1PlV68dPpUH_xWX5iNj4,",
+    "source_type": "government",
+    "evidence": "Motor Listrik V 1 V A/T (VIAR) TKDN 68.75%; Jatibarang, Mijen, Kota Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Barisan Anak Pamungkas (Tangkas)",
+    "kind": "machinery_maker",
+    "province": "Central Java",
+    "city": "Kota Semarang (BSB industrial estate, Mijen)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles (TANGKAS)",
+    "size_note": "TKDN 62.9-64.3% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=TZGKdWdjIjZjlmTN0e6igVJ_XqITlgs765rF8SClHDU,",
+    "source_type": "government",
+    "evidence": "Kendaraan Bermotor Listrik Roda Dua (TANGKAS) TKDN 62.91-64.30%; Kawasan Industri BSB, Kota Semarang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Ninetology Indonesia (enine)",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kab. Tangerang (Balaraja)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles (enine)",
+    "size_note": "TKDN 64.1-64.4% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=KBypb89nHxYiUqkBkIo3ZeM_Hd52oeI4us5rCHVwfm0,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik Roda Dua (enine) TKDN 64.14-64.42%; Balaraja, Kabupaten Tangerang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yifang Cargo Mutiara Elektronik",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kab. Tangerang (Balaraja)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers",
+      "ride-hailing fleets"
+    ],
+    "makes": "Electric motorcycles (Electrum, OFERO, SUNRA, LISGO)",
+    "size_note": "19 models at 40.1-42.5% TKDN (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=cJ2_3nKHX2Ki1MXDnFDWiyrEvEp20hm7LlVWgrhH9Z8,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik (Electrum, OFERO, SUNRA), TKDN 40.10-42.48%; Balaraja, Kabupaten Tangerang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Industri Charged Mobilitas",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kab. Tangerang (Cikupa)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles (CHARGED RIMAU)",
+    "size_note": "TKDN 40.0% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=AUcOvswkiWTZYsMUj9MvUCGCa_HikaDrSb11MXyJTs0,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik RIMAU A/T (CHARGED), 4000 W, TKDN 40.00%; Cikupa, Kabupaten Tangerang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Smoot Motor Indonesia",
+    "kind": "machinery_maker",
+    "province": "Banten",
+    "city": "Kota Tangerang",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers",
+      "ride-hailing fleets"
+    ],
+    "makes": "Electric motorcycles with swappable batteries (smoot)",
+    "size_note": "TKDN 45.6% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=jcSkCMTu8skH5IzSOKScSD8u9NHwyJgmNXkrUr7jlxo,",
+    "source_type": "government",
+    "evidence": "Kendaraan Bermotor Listrik Berbasis Baterai Roda Dua DE SULTAN A/T, TKDN 45.63%; Kota Tangerang.",
+    "source_year": 2026
+  },
+  {
+    "name": "Mobil Listrik Indonesia",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Pasuruan (Sukorejo)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles",
+    "size_note": "TKDN 58.2-59.0% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=2vEhJh1uJ9u4b-bYAT-s_NN-3P8jBxU7nrJCCeTck14,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik, TKDN 58.24-59.00%; Sukorejo, Kabupaten Pasuruan.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Epower Motor Indonesia",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Jombang (Mojoagung)",
+    "capabilities": [
+      "e-motorcycle assembly"
+    ],
+    "serves": [
+      "consumers"
+    ],
+    "makes": "Electric motorcycles",
+    "size_note": "TKDN 57.7% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=IlXtE6hQhUUhdOmnT4LcU6ToSXSjpzXrH4cgeeQdOmQ,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Listrik Roda Dua, TKDN 57.74%; Mojoagung, Kabupaten Jombang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT ITS Tekno Sains",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kota Surabaya (ITS campus, Sukolilo)",
+    "capabilities": [
+      "e-motorcycle development and assembly"
+    ],
+    "serves": [
+      "consumers",
+      "government buyers"
+    ],
+    "makes": "Electric motorcycle TS-1",
+    "size_note": "TKDN 46.1% (2026)",
+    "certs": [
+      "TKDN certificates"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=pKDMFssCBKnt6LopEIFFXiA6FPspJbsxjabbVBR0Uh0,",
+    "source_type": "government",
+    "evidence": "Sepeda Motor Roda Dua TS-1 A/T, TKDN 46.10%; Kampus ITS Sukolilo, Kota Surabaya.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Insera Sena (Polygon)",
+    "kind": "machinery_maker",
+    "province": "East Java",
+    "city": "Kab. Sidoarjo (Buduran)",
+    "capabilities": [
+      "frame welding",
+      "painting",
+      "assembly",
+      "QA lab",
+      "testing ground"
+    ],
+    "serves": [
+      "domestic retail",
+      "export markets"
+    ],
+    "makes": "Bicycles and e-bikes (Polygon)",
+    "size_note": "Annual capacity of one million bicycles; over five million produced since 1989",
+    "certs": [],
+    "website": "https://www.polygonbikes.com",
+    "source_url": "http://www.insera.co.id/?page_id=8",
+    "source_type": "company_site",
+    "evidence": "With an annual production capacity of one million bicycles; welding, painting, assembly, QA lab, testing ground.",
+    "source_year": null
+  }
+]

@@ -1,0 +1,1037 @@
+[
+  {
+    "name": "Koperasi Batur Jaya",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting",
+      "machining"
+    ],
+    "serves": [
+      "automotive (TMMIN supplier)",
+      "railway (KAI)",
+      "public works"
+    ],
+    "makes": "Cooperative of Ceper foundries: cylinder sleeves, railway brake blocks, manhole covers, gratings, drains, lamp posts",
+    "size_note": "137 member IKM (2021); 168 members and >4,000 workers (2019)",
+    "certs": [
+      "TKDN 41.25-48.39% (castings)"
+    ],
+    "website": null,
+    "source_url": "https://www.industry.co.id/read/95189/luar-biasa-kemenperin-sukses-rangkul-ikm-logam-pasok-komponen-industri-otomotif",
+    "source_type": "news",
+    "evidence": "137 member IKM; shipped 200 cylinder sleeves to a TMMIN supplier in Jan 2019; TMMIN mentoring and machine support since late 2016.",
+    "source_year": 2021
+  },
+  {
+    "name": "PT Aneka Adhilogam Karya",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "water and pipe networks",
+      "public works"
+    ],
+    "makes": "Cast pipe fittings (bends, collars, connectors, tees) and drainage gratings, brand AAK",
+    "size_note": null,
+    "certs": [
+      "TKDN 39.48-98.32%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Aneka+Adhilogam+Karya",
+    "source_type": "government",
+    "evidence": "TKDN database lists AAK bends, collars, connectors and tees (39.5-52.8%) plus gratings (97.8-98.3%); registered at Batur, Tegalrejo, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Atmaja Jaya",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "water pipelines",
+      "fire protection",
+      "ports"
+    ],
+    "makes": "FC cast hydrant bodies, blind flanges ND50-1200, flange adaptors, dismantling joints, reducers, tees, couplings, mooring bollards 15-200 t",
+    "size_note": null,
+    "certs": [
+      "TKDN 34.00-96.06%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Atmaja+Jaya",
+    "source_type": "government",
+    "evidence": "TKDN database: hydrant bodies (96.06%), blind flanges ND50-1200, dismantling joints, all-flange tees and reducers; registered in Tegalrejo, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Baja Kurnia",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "fire protection",
+      "water networks"
+    ],
+    "makes": "Gate valves and one-, two- and three-way hydrant pillars",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Baja+Kurnia",
+    "source_type": "government",
+    "evidence": "TKDN database lists gate valves and one/two/three-way hydrant pillars at 40% local content; registered in Jeblogan, Ceper, Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Aneka Metal Industri",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting",
+      "machining"
+    ],
+    "serves": [
+      "oil and gas equipment (inferred)",
+      "heavy machinery"
+    ],
+    "makes": "Large crank arms (shaft dia. 130-200 mm, 1.9-2.75 m), crank-pin bearings, centre and equalizer bearing housings, saddle brackets",
+    "size_note": null,
+    "certs": [
+      "TKDN 42.00-54.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Aneka+Metal+Industri",
+    "source_type": "government",
+    "evidence": "TKDN database: crank arms with 130-200 mm shafts, crank-pin bearings ID 140-170 mm, bearing housings up to OD 340 mm; Bakalan, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sinar Semesta",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "water and pump networks"
+    ],
+    "makes": "FC250 grey-iron castings: covers, flange and cup junctions, bearing cups, bell mouths",
+    "size_note": null,
+    "certs": [
+      "TKDN 94.07%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sinar+Semesta",
+    "source_type": "government",
+    "evidence": "TKDN database: FC250 iron castings (covers, flange and cup junctions, bearing cups, bell mouths) at 94.07%; Jl. Solo-Yogya km 26, Klepu, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Jaya Warsa",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "water pipelines"
+    ],
+    "makes": "Flange adaptors PN10/16 and JIS, 2-24 inch",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Jaya+Warsa",
+    "source_type": "government",
+    "evidence": "TKDN database lists flange adaptors PN10/16/JIS, 2-24 inch, at 38% local content; registered in Tegalrejo, Ceper, Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Samudera Steel",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "agriculture (irrigation)",
+      "general industry"
+    ],
+    "makes": "Iron and steel castings; centrifugal irrigation pumps (without drive)",
+    "size_note": null,
+    "certs": [
+      "TKDN 81.74-97.79%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Samudera+Steel",
+    "source_type": "government",
+    "evidence": "TKDN database: iron and steel castings plus centrifugal irrigation pumps without drive, 81.7-97.8% local content; Bakalan, Ceper, Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Wijaya Sakti Metalindo",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "general industry",
+      "public works"
+    ],
+    "makes": "Iron and steel castings",
+    "size_note": null,
+    "certs": [
+      "TKDN 67.79-87.36%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Wijaya+Sakti+Metalindo",
+    "source_type": "government",
+    "evidence": "TKDN database lists seven iron and steel casting certificates at 67.8-87.4%; registered on Jl. Kop Batur Jaya, Ngawonggo, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Sinta Makmur",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "general industry",
+      "public works"
+    ],
+    "makes": "Cast iron products",
+    "size_note": null,
+    "certs": [
+      "TKDN 54.60-67.65%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sinta+Makmur",
+    "source_type": "government",
+    "evidence": "TKDN database lists eight cast-iron (besi cor) certificates at 54.6-67.7% local content; registered in Bakalan, Ceper, Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Dwi Logam Jaya",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "metrology (weights)",
+      "public works"
+    ],
+    "makes": "Calibration weights (anak timbangan), manhole covers, gratings, bollards, street furniture",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.23-56.30%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Dwi+Logam+Jaya",
+    "source_type": "government",
+    "evidence": "TKDN database: calibration weights, manhole covers, gratings, bollards and street furniture at 40.2-56.3%; Bakalan Baru, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Merapi Bhakti Utama",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "fire protection",
+      "public works"
+    ],
+    "makes": "Hydrants, grill gratings, manholes",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.14-42.17%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Merapi+Bhakti+Utama",
+    "source_type": "government",
+    "evidence": "TKDN database lists hydrants, grill gratings and manholes at 41.1-42.2% local content; registered in Ngawonggo, Ceper, Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Mega Jaya Logam",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "construction",
+      "public works"
+    ],
+    "makes": "Deck drains, roof drains, bollards, lamp posts, tree grates, park benches",
+    "size_note": null,
+    "certs": [
+      "TKDN 44.83-79.09%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Mega+Jaya+Logam",
+    "source_type": "government",
+    "evidence": "TKDN database: deck and roof drains, bollards, lamp posts and tree grates at 44.8-79.1%; Jl. Besole-Batur, Bakalan, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Mandiri Sukses Logam",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "public works",
+      "roads"
+    ],
+    "makes": "Manhole covers including heavy-duty hinged types, gratings, park benches",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00-63.41%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Mandiri+Sukses+Logam",
+    "source_type": "government",
+    "evidence": "TKDN database lists round and square heavy-duty hinged manhole covers and gratings at 38.0-63.4%; registered in Bakalan, Ceper.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Futake Indonesia",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [],
+    "serves": [
+      "food processing"
+    ],
+    "makes": "Slicing machine (mesin perajang)",
+    "size_note": null,
+    "certs": [
+      "TKDN 23.17%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Futake+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN database lists a slicing machine (mesin perajang) at 23.17% local content; registered in Klepu, Ceper, Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Moftech Medical System",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Klaten",
+    "capabilities": [],
+    "serves": [
+      "healthcare",
+      "dental"
+    ],
+    "makes": "Stainless-steel surgical, dental and midwifery instrument sets; autoclaves 12-23 l",
+    "size_note": null,
+    "certs": [
+      "TKDN 34.00-40.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Moftech+Medical",
+    "source_type": "government",
+    "evidence": "TKDN database: stainless dental, surgical and midwifery instrument sets plus 12-23 l autoclaves at 34-40%; Jemawan, Jatinom, Klaten.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT ATMI Solo",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Tengah",
+    "city": "Kota Surakarta",
+    "capabilities": [
+      "precision machining",
+      "sheet metal fabrication",
+      "CNC panel bending"
+    ],
+    "serves": [
+      "education (SMK, polytechnics)",
+      "healthcare",
+      "offices and warehouses"
+    ],
+    "makes": "CNC lathe Leanturn LT 300-100 (ATMIPRO), single-purpose machines, medical devices (dental unit, EKG, infusion pump), lockers, racks",
+    "size_note": null,
+    "certs": [
+      "TKDN 45.66% (CNC lathe)",
+      "TKDN 30.32-56.75% (other products)"
+    ],
+    "website": "https://www.atmi.co.id",
+    "source_url": "https://www.atmi.co.id/",
+    "source_type": "company_site",
+    "evidence": "ATMI Group firm 'engaged in precision parts, machinery, and sheet metal fabrication'; runs a Machine Development Center and Salvagnini inline panel bender.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Inox Reka Presisi",
+    "kind": "foundry_machining",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Karanganyar",
+    "capabilities": [
+      "casting",
+      "investment casting",
+      "heat treatment"
+    ],
+    "serves": [
+      "palm oil",
+      "oil and gas",
+      "mining",
+      "chemicals",
+      "pulp and paper"
+    ],
+    "makes": "Stainless, high-chrome and high-nickel castings: impellers, volute casings, screws, couplings, rotors",
+    "size_note": "50 employees; 30 t/month (company site)",
+    "certs": [
+      "TKDN 15.98-23.15% (impeller, volute casing, casing cover)"
+    ],
+    "website": "https://inoxrekapresisi.com",
+    "source_url": "https://inoxrekapresisi.com/",
+    "source_type": "company_site",
+    "evidence": "Lost-wax and sand casting with 150-700 kg induction furnaces, spectrometer and heat treatment; 30 t/month, 50 employees.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Ateka Tehnik",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Karanganyar",
+    "capabilities": [],
+    "serves": [
+      "rice milling",
+      "agriculture"
+    ],
+    "makes": "Rice milling unit",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.15%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Ateka+Tehnik",
+    "source_type": "government",
+    "evidence": "TKDN database lists a rice milling unit at 41.15% local content; registered in Kedungjeruk, Mojogedang, Karanganyar.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Gentama Multi Utama",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Karanganyar",
+    "capabilities": [],
+    "serves": [
+      "rice milling",
+      "agriculture"
+    ],
+    "makes": "Rice milling unit set (Genum)",
+    "size_note": null,
+    "certs": [
+      "TKDN 40.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Gentama+Multi+Utama",
+    "source_type": "government",
+    "evidence": "TKDN database lists the Genum rice milling unit set at 40% local content; registered in Kedungjeruk, Mojogedang, Karanganyar.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Budi Mukti",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Sukoharjo",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "food processing",
+      "waste handling"
+    ],
+    "makes": "Leaf and multi-blade shredders, multi-purpose grinders, tuber slicers",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Budi+Mukti",
+    "source_type": "government",
+    "evidence": "TKDN database: shredders, grinders and slicers at 38%; registered in the small-industry development complex, Jl. Raya Kartasura km 8, Pabelan.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Hikari Agro Makmur",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Wonogiri",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "waste handling"
+    ],
+    "makes": "Shredder and chopper machines",
+    "size_note": null,
+    "certs": [
+      "TKDN 28.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Hikari+Agro+Makmur",
+    "source_type": "government",
+    "evidence": "TKDN database lists a shredder/chopper/slicer machine at 28% local content; registered in Tambakmerang, Girimarto, Wonogiri.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT DTECH Inovasi Indonesia (DTECH-ENGINEERING)",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Tengah",
+    "city": "Kota Salatiga",
+    "capabilities": [
+      "CNC milling",
+      "CNC machine building"
+    ],
+    "serves": [
+      "rail (INKA seats)",
+      "motorcycle aftermarket",
+      "education"
+    ],
+    "makes": "SUPERMILL 3-axis CNC milling machines with Indonesian-language software; executive and luxury train seats for INKA; linked to the ARM (Arumi Motoparts) CNC motorcycle-parts brand",
+    "size_note": "about 450 staff, about 200 of them on train seats (Apr 2024)",
+    "certs": [
+      "TKDN 40.91% (SUPERMILL, Sep 2021; not found in 16 Oct 2026 database search)"
+    ],
+    "website": "https://www.dtech-engineering.com",
+    "source_url": "https://www.detik.com/jateng/bisnis/d-7283139/dtech-engineering-mendunia-arfian-fuadi-kini-besut-akademi-inovasi-gratis",
+    "source_type": "news",
+    "evidence": "About 450 staff (Apr 2024), about 200 on train seats; builds CNC machines with Indonesian-language software; runs a free teaching-factory academy.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Karilla Berkat Abadi",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kota Magelang",
+    "capabilities": [],
+    "serves": [
+      "LPG distribution",
+      "energy"
+    ],
+    "makes": "LPG cylinder valves",
+    "size_note": null,
+    "certs": [
+      "TKDN 85.09-89.93%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Karilla+Berkat+Abadi",
+    "source_type": "government",
+    "evidence": "TKDN database lists LPG cylinder valves (katup tabung LPG) at 85.1-89.9% local content; registered in Wates, Magelang Utara.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Saisaku Tehnik Magelang",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Magelang",
+    "capabilities": [],
+    "serves": [
+      "crafts (bamboo)",
+      "food processing",
+      "waste handling"
+    ],
+    "makes": "Bamboo-splitting machine, oil spinner, waste incinerator, multi-purpose waste carts",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Saisaku+Tehnik",
+    "source_type": "government",
+    "evidence": "TKDN database lists a bamboo-splitting machine, oil spinner and incinerator at 38%; registered in Ngadiharjo, Borobudur, Magelang.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Tanikaya Multi Sarana",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Banyumas",
+    "capabilities": [],
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Power threshers (multi-commodity, mobile); four-wheel tractor TR-450",
+    "size_note": null,
+    "certs": [
+      "TKDN 24.13-54.23%"
+    ],
+    "website": "https://tanikaya.com",
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tanikaya+Multi+Sarana",
+    "source_type": "government",
+    "evidence": "TKDN database: 18 power-thresher certificates at 24.1-54.2%, registered in Sokaraja, Banyumas; its site lists a TR-450 four-wheel tractor.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Doobu Sukses Bersama",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Banyumas",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "feed milling"
+    ],
+    "makes": "Hammer mill DSB HM 1000; plough wheels",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Doobu+Sukses+Bersama",
+    "source_type": "government",
+    "evidence": "TKDN database lists a hammer mill (DSB HM 1000) and plough wheels at 38% local content; registered in Sokaraja, Banyumas.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Inafa Teknik",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Banyumas",
+    "capabilities": [],
+    "serves": [
+      "agriculture"
+    ],
+    "makes": "Rice thresher",
+    "size_note": null,
+    "certs": [
+      "TKDN 45.29%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Inafa+Teknik",
+    "source_type": "government",
+    "evidence": "TKDN database lists a rice thresher (mesin perontok padi) at 45.29% local content; registered in Tipar Kidul, Ajibarang, Banyumas.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Astana Wira Karya",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Banyumas",
+    "capabilities": [],
+    "serves": [
+      "agriculture (irrigation)"
+    ],
+    "makes": "Centrifugal irrigation pumps with drive",
+    "size_note": null,
+    "certs": [
+      "TKDN 66.67%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Astana+Wira+Karya",
+    "source_type": "government",
+    "evidence": "TKDN database lists a driven centrifugal irrigation pump at 66.67% local content; registered in Karangklesem, Purwokerto Selatan.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Bhuana Agrotech",
+    "kind": "machinery_maker",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Banyumas",
+    "capabilities": [],
+    "serves": [
+      "agriculture (irrigation)"
+    ],
+    "makes": "Water pumps; solar-powered pumps",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00-40.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Bhuana+Agrotech",
+    "source_type": "government",
+    "evidence": "TKDN database lists water pumps and solar-powered pumps at 38-40%; same Purwokerto Selatan address as PT Astana Wira Karya.",
+    "source_year": 2026
+  },
+  {
+    "name": "RAS (knalpot maker)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Purbalingga",
+    "capabilities": [
+      "exhaust fabrication (manual)"
+    ],
+    "serves": [
+      "motorcycle and scooter aftermarket",
+      "export"
+    ],
+    "makes": "Motorcycle and Vespa exhaust systems",
+    "size_note": "60 workers (2019)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://finance.detik.com/solusiukm/d-4640139/lika-liku-knalpot-purbalingga-yang-bersaing-dengan-produk-dunia",
+    "source_type": "news",
+    "evidence": "Purbalingga knalpot brand employing 60 workers; sells in the Netherlands and was promoting Vespa exhausts in Italy (2019).",
+    "source_year": 2019
+  },
+  {
+    "name": "Red Line (knalpot maker)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Tengah",
+    "city": "Kabupaten Purbalingga",
+    "capabilities": [
+      "exhaust fabrication (manual)"
+    ],
+    "serves": [
+      "motorcycle aftermarket"
+    ],
+    "makes": "Motorcycle exhaust systems",
+    "size_note": "production runs of 400-600 units; about Rp80 million monthly revenue (2019)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://finance.detik.com/solusiukm/d-4640139/lika-liku-knalpot-purbalingga-yang-bersaing-dengan-produk-dunia",
+    "source_type": "news",
+    "evidence": "Local Purbalingga knalpot brand; one production run reaches 400-600 units; monthly revenue about Rp80 million (2019).",
+    "source_year": 2019
+  },
+  {
+    "name": "CV Karya Hidup Sentosa (Quick)",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Kulon Progo",
+    "capabilities": [
+      "casting",
+      "CNC machining"
+    ],
+    "serves": [
+      "agriculture",
+      "engines (Kubota Indonesia)",
+      "industrial belts (Mitsuboshi)"
+    ],
+    "makes": "Two-wheel and four-wheel tractors, combine harvester QH-11, diesel engines, gensets; iron castings (exhaust manifolds, brake drums, cylinder blocks, couplings)",
+    "size_note": "about 3,000 employees and more than 100 CNC machines; capacity 110,000 hand tractors and 7,800 t castings a year (industry.co.id, Nov 2017; older than 2023)",
+    "certs": [
+      "TKDN 35.87-83.09%"
+    ],
+    "website": "https://www.quick.co.id",
+    "source_url": "https://www.quick.co.id/",
+    "source_type": "company_site",
+    "evidence": "Site lists tractors, QH-11 harvester exported to Senegal (2022) and a casting unit working with Kubota Indonesia and Mitsuboshi Belting.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yogya Presisi Tehnikatama Industri (YPTI)",
+    "kind": "cnc_machine_builder",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [
+      "CNC machine building",
+      "CNC milling",
+      "aircraft components"
+    ],
+    "serves": [
+      "aerospace (PTDI; INACOM member)",
+      "education",
+      "IKM"
+    ],
+    "makes": "Joglo VF-500i 3-axis CNC vertical machining centre (Mitsubishi M80 control); aircraft components; supply and revitalisation of PTDI production machinery (framework agreement, Mar 2025)",
+    "size_note": null,
+    "certs": [
+      "TKDN 46.34%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Yogya+Presisi+Tehnikatama",
+    "source_type": "government",
+    "evidence": "TKDN database lists a CNC milling machine (Mesin Frais CNC) at 46.34%; registered on Jalan Cangkringan, Tirtomartani, Kalasan, Sleman.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sinar Mulia Teknalum",
+    "kind": "foundry_machining",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": [
+      "electrical equipment"
+    ],
+    "makes": "Aluminium castings",
+    "size_note": null,
+    "certs": [
+      "TKDN 55.33%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Sinar+Mulia+Teknalum",
+    "source_type": "government",
+    "evidence": "TKDN database lists aluminium castings (electrical-equipment group) at 55.33%; Jl. Cangkringan km 1.5, Dhuri, Tirtomartani, Kalasan.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Mega Andalan Kalasan (MAK)",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [],
+    "serves": [
+      "healthcare",
+      "export"
+    ],
+    "makes": "Hospital beds, operating-room and patient-transfer equipment, examination tables, medical cabinets and trolleys",
+    "size_note": "700+ employees; 150K bed-equivalents/yr; 140K m2 production area (company)",
+    "certs": [
+      "TKDN 43.75-76.27%"
+    ],
+    "website": "https://www.mak-techno.com",
+    "source_url": "https://domestic.mak-techno.com/id",
+    "source_type": "company_site",
+    "evidence": "Company site: 700+ employees, capacity 150K bed-equivalents a year, 234 product series, exports to 51 countries.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Arqom Technology Innovation",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "food processing"
+    ],
+    "makes": "Combine harvesters, cultivators, tractors, presses, dryers, vacuum packers, food-processing machines",
+    "size_note": null,
+    "certs": [
+      "TKDN 25.92-62.63%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Arqom+Technology",
+    "source_type": "government",
+    "evidence": "TKDN database: 34 certificates for combine harvesters, cultivators, tractors, presses and dryers at 25.9-62.6%; Donoharjo, Ngaglik, Sleman.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Tunas Karya",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "tobacco",
+      "coffee",
+      "waste handling"
+    ],
+    "makes": "Tobacco slicer (Jogtec), plastic shredders, cassava slicers, coffee pulper, retort steriliser",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00-40.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tunas+Karya",
+    "source_type": "government",
+    "evidence": "TKDN database lists the Jogtec tobacco slicer, plastic shredders, cassava slicers and a coffee pulper at 38-40%; Pakem, Sleman.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Acta Techno Inava",
+    "kind": "3d_printer_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Sleman",
+    "capabilities": [],
+    "serves": [
+      "education",
+      "prototyping"
+    ],
+    "makes": "3D printer Haltech H-01",
+    "size_note": null,
+    "certs": [
+      "TKDN 33.40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Acta+Techno+Inava",
+    "source_type": "government",
+    "evidence": "TKDN database lists the 3D Printer Haltech H-01 at 33.40% local content; registered in Sinduharjo, Ngaglik, Sleman.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Rumah Mesin",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Bantul",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "waste handling"
+    ],
+    "makes": "Multi-commodity threshers; plastic and organic shredders",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00-43.75%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Rumah+Mesin",
+    "source_type": "government",
+    "evidence": "TKDN database lists a multi-commodity thresher and plastic and organic shredders at 38-43.75%; Jl. Parangtritis km 5.6, Sewon, Bantul.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bangga Karya Indonesia",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kota Yogyakarta",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "coffee",
+      "food processing"
+    ],
+    "makes": "Power threshers, coffee dryers, onion slicers, organic shredders",
+    "size_note": null,
+    "certs": [
+      "TKDN 14.00-38.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Bangga+Karya+Indonesia",
+    "source_type": "government",
+    "evidence": "TKDN database lists power threshers, coffee dryers, onion slicers and organic shredders at 14-38%; Gowongan, Jetis, Kota Yogyakarta.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Utama Reka Teknik Sejahtera",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Bantul",
+    "capabilities": [],
+    "serves": [
+      "agriculture",
+      "food processing"
+    ],
+    "makes": "Drying machines",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Utama+Reka+Teknik",
+    "source_type": "government",
+    "evidence": "TKDN database lists a drying machine (mesin pengering) at 38% local content; registered in Jambidan, Banguntapan, Bantul.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Bengkel Madanitec Jogja",
+    "kind": "machinery_maker",
+    "province": "DI Yogyakarta",
+    "city": "Kabupaten Bantul",
+    "capabilities": [],
+    "serves": [
+      "waste handling",
+      "agriculture"
+    ],
+    "makes": "Organic waste shredder",
+    "size_note": null,
+    "certs": [
+      "TKDN 38.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Madanitec",
+    "source_type": "government",
+    "evidence": "TKDN database lists an organic waste shredder at 38% local content; registered in Wirokerten, Banguntapan, Bantul.",
+    "source_year": 2026
+  },
+  {
+    "name": "UPT Desain dan Industri, Pemerintah Kota Yogyakarta (formerly UPT Logam)",
+    "kind": "cnc_job_shop",
+    "province": "DI Yogyakarta",
+    "city": "Kota Yogyakarta",
+    "capabilities": [
+      "CNC milling (VMC)",
+      "CNC turning",
+      "die casting",
+      "conventional machining",
+      "welding",
+      "solid modelling"
+    ],
+    "serves": [
+      "IKM",
+      "manufacturing start-ups"
+    ],
+    "makes": "Public hourly machine rental, die casting, design and drawing services; manages the Pusat Desain Industri Nasional (PDIN)",
+    "size_note": null,
+    "certs": [],
+    "website": "https://uptlogam.jogjakota.go.id",
+    "source_url": "https://uptlogam.jogjakota.go.id/page/index/daftar-layanan",
+    "source_type": "government",
+    "evidence": "Tariffs under Perda 10/2023: vertical milling Rp150,000/h, CNC lathe Rp80,000/h, die casting Rp9,000/shot; renamed from UPT Logam by Perwal 76/2025.",
+    "source_year": 2026
+  },
+  {
+    "name": "Balai Besar Kerajinan dan Batik (BBKB), Kemenperin",
+    "kind": "3d_print_service",
+    "province": "DI Yogyakarta",
+    "city": "Kota Yogyakarta",
+    "capabilities": [
+      "3D printing (resin masters)",
+      "rubber moulds",
+      "wax tree assembly",
+      "silver and pewter casting",
+      "CNC router (3-axis, 90 x 90 cm)",
+      "conventional milling and turning"
+    ],
+    "serves": [
+      "jewellery and silver craft",
+      "wood and furniture",
+      "metal IKM",
+      "batik"
+    ],
+    "makes": "Public technology services: 3D-printed resin masters, rubber moulds, wax trees, silver and pewter casting and finishing; wood and metal machine services",
+    "size_note": "24 wood machines including a 3-axis CNC router; 12 metal machines (May 2026)",
+    "certs": [],
+    "website": "https://bbkb.kemenperin.go.id",
+    "source_url": "https://bbkb.kemenperin.go.id/post/read/layanan_optimalisasi_teknologi_industri_0",
+    "source_type": "government",
+    "evidence": "Kemenperin centre lists jewellery services: 3D-printed master resin, rubber moulds, wax tree assembly, silver and pewter casting; tariffs under PP 54/2021.",
+    "source_year": 2026
+  },
+  {
+    "name": "IKM MD Putra",
+    "kind": "foundry_machining",
+    "province": "DI Yogyakarta",
+    "city": "Kota Yogyakarta",
+    "capabilities": [
+      "casting",
+      "CNC (mould-making with the UPT)"
+    ],
+    "serves": [
+      "drum-band instruments",
+      "household goods"
+    ],
+    "makes": "Drum-band spare parts, candle holders and crate nails cast from scrap metal",
+    "size_note": "9 workers; about 100 kg of metal a day; one melting unit (Jun 2026)",
+    "certs": [],
+    "website": null,
+    "source_url": "https://uptlogam.jogjakota.go.id/detail/index/49371/kunjungan-kepala-upt-desain-dan-industri-ke-ikm-md-putra-pendataan-dan-identifikasi-tantangan-produksi-2026-06-18",
+    "source_type": "government",
+    "evidence": "UPT visit, 18 Jun 2026: nine workers casting scrap metal in Nitikan, Umbulharjo; moulds made on CNC with the UPT.",
+    "source_year": 2026
+  }
+]

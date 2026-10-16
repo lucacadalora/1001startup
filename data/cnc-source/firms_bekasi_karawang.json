@@ -1,0 +1,1088 @@
+[
+  {
+    "name": "PT Banshu Plastic Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "mould and die making",
+      "jig & checking fixtures",
+      "plastic injection moulding",
+      "metal stamping"
+    ],
+    "serves": [
+      "automotive",
+      "electronics",
+      "industrial"
+    ],
+    "makes": "Injection moulds, dies, jigs and checking fixtures; moulded and stamped auto parts",
+    "size_note": null,
+    "certs": [
+      "ISO 9001:2015",
+      "ISO 14001:2015",
+      "IATF 16949:2016"
+    ],
+    "website": "https://banshuplastic.com",
+    "source_url": "https://banshuplastic.com/about/about-banshu-plastic-indonesia",
+    "source_type": "company_site",
+    "evidence": "Company site: Jababeka (Cikarang) plant does injection moulding, mould and die making, jig and checking fixtures, metal stamping; ISO 9001/14001, IATF 16949.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Mytek Selaras Teknik",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "mould making",
+      "jig making",
+      "CNC milling",
+      "grinding"
+    ],
+    "serves": null,
+    "makes": "Plastic moulds, jigs and die-casting moulds",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.cake.me/companies/pt-mytek-selaras-teknik",
+    "source_type": "directory",
+    "evidence": "(snippet) Directory: Delta Silicon 1, Lippo Cikarang firm makes plastic moulds, jigs, die-casting moulds; has CNC, milling, grinding machines.",
+    "source_year": null
+  },
+  {
+    "name": "PT Presisi Widya",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Barat",
+    "city": "Bekasi (Kota/Kab. not stated)",
+    "capabilities": [
+      "CNC milling",
+      "CNC turning",
+      "surface grinding",
+      "laser cutting",
+      "busbar fabrication"
+    ],
+    "serves": null,
+    "makes": "Job-shop CNC machining, surface grinding, busbar fabrication and laser cutting",
+    "size_note": null,
+    "certs": [
+      "ISO 9001:2015"
+    ],
+    "website": "https://presisiwidya.co.id",
+    "source_url": "https://presisiwidya.co.id/jasa-cnc-milling-cutting-lathe-pt-presisi-widya/",
+    "source_type": "company_site",
+    "evidence": "Company site (2023 page): Bekasi firm in machining, surface grinding and fabrication since 1992; offers CNC milling, turning, laser cutting; ISO 9001:2015.",
+    "source_year": 2023
+  },
+  {
+    "name": "PT Primera Meka Mix (Mekamix)",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "CNC milling",
+      "precision parts",
+      "jig & fixture making",
+      "machine and spare-part building"
+    ],
+    "serves": null,
+    "makes": "CNC-milled precision parts, jigs and fixtures, industrial machines and spare parts",
+    "size_note": null,
+    "certs": null,
+    "website": "https://www.mekamix.co.id",
+    "source_url": "https://www.mekamix.co.id/jasa-milling-cnc-di-bekasi/",
+    "source_type": "company_site",
+    "evidence": "Company site: machine and spare-part maker in Tarumajaya, Kab. Bekasi; service unit lists precision parts, machining, jigs and fixtures; CNC milling.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Toyota Tsusho Mechanical & Engineering Service Indonesia",
+    "kind": "cnc_job_shop",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "mechanical workshop"
+    ],
+    "serves": null,
+    "makes": "Mechanical workshop services",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 estate tenant list describes its business as 'Mechanical Workshop' (Cikarang Barat).",
+    "source_year": 2026
+  },
+  {
+    "name": "PT CNC Controller Indonesia",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Barat",
+    "city": "Kota Bekasi",
+    "capabilities": [
+      "CNC machine building",
+      "CNC milling"
+    ],
+    "serves": null,
+    "makes": "3-axis CNC milling machine (5.5 kW/8,000 rpm spindle, 1000x500 mm table)",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.89%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=kN7fY5gcfg0SkQ1nK7dc_XwYzNifb-L3qjn8J0dhdXE,",
+    "source_type": "government",
+    "evidence": "Kemenperin TKDN database: Rawalumbu, Kota Bekasi firm certified for a CNC milling machine, travel 300x225x280 mm, TKDN 41.89%.",
+    "source_year": 2026
+  },
+  {
+    "name": "Politeknik Astra (ASTRAtech) - Innostra CNC, with PT Astra Otoparts WINTEQ",
+    "kind": "cnc_machine_builder",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "CNC milling",
+      "laser engraving",
+      "3D printing (type not stated)"
+    ],
+    "serves": [
+      "vocational schools (SMK)"
+    ],
+    "makes": "Innostra 3-in-1 machine: milling, laser engraving and 3D printing, for SMK training",
+    "size_note": null,
+    "certs": [
+      "TKDN 43% (maker's claim)"
+    ],
+    "website": "https://www.polytechnic.astra.ac.id",
+    "source_url": "https://www.polytechnic.astra.ac.id/en/berhasil-tingkatkan-tkdn-mesin-cnc-innostra-diapresiasi-presiden-ri-joko-widodo-di-lpdp-festival-2023/",
+    "source_type": "company_site",
+    "evidence": "Polytechnic news, Aug 2023: Innostra released 26 Jul 2023 at Cikarang campus with Astra Otoparts-WINTEQ; three functions; TKDN 43%, about 20% cheaper.",
+    "source_year": 2023
+  },
+  {
+    "name": "PT Indonesia Shibaura Wing",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "plate cutting (method not stated)",
+      "bending",
+      "machining",
+      "welding"
+    ],
+    "serves": null,
+    "makes": "Steel plate processing: cutting, bending, machining and welding",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, 'Steel Plate Processing (Cutting, Bending, Machining and Welding)'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Shibaura Shearing Indonesia",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "plate cutting (method not stated)",
+      "bending",
+      "machining",
+      "welding"
+    ],
+    "serves": null,
+    "makes": "Steel plate processing: cutting, bending, machining and welding",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, 'Steel Plate Processing (Cutting, Bending, Machining and Welding)'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Hanken Indonesia",
+    "kind": "laser_plasma_fabricator",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "sheet-metal fabrication"
+    ],
+    "serves": [
+      "construction machinery"
+    ],
+    "makes": "Sheet-metal fabrication for construction machinery",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, 'Sheet Metal Fabrication for Construction Machinery'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Atsumi Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "gear machining"
+    ],
+    "serves": [
+      "engines / motor vehicles"
+    ],
+    "makes": "Machined steel engine gears: camshaft, crankshaft, idle, starting and balancer gears (RD 85 series)",
+    "size_note": null,
+    "certs": [
+      "TKDN 58.40-85.00%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=Iie2fN0QD6hbkv0HLB1WGZdQeDS75umRTEANAVBAm5M,",
+    "source_type": "government",
+    "evidence": "TKDN database: two Jababeka (Cikarang Utara) plants; certified machined steel gears for RD 85-series engines, TKDN 58.4-85%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Epsindo Jaya Pratama",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "bushing manufacture"
+    ],
+    "serves": null,
+    "makes": "Bushings for 0.5-1.5 inch shafts, series 400 to 675",
+    "size_note": null,
+    "certs": [
+      "TKDN 73.75%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=c4cByufmC6tMvTPlAEIXHI2E8qG0YTETfdSeXl5-cgY,",
+    "source_type": "government",
+    "evidence": "TKDN database: Jababeka (Cikarang Utara) firm certified for bushings, TKDN 73.75%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Fusoh Tube Parts Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "bushing manufacture from seamless tube"
+    ],
+    "serves": [
+      "mining machinery"
+    ],
+    "makes": "S45C bushings incl. oil-groove types, OD 68-238 mm",
+    "size_note": null,
+    "certs": [
+      "TKDN 13.01-19.03%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=VtunGuCW2fu58tPbfSjjeHxPoXTu2yXRwWLkkrnSImg,",
+    "source_type": "government",
+    "evidence": "TKDN database: Jababeka 6 (Cikarang Timur) firm certified for S45C bushings under mining machinery, TKDN 13-19%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Lerindro Internasional",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kota Bekasi",
+    "capabilities": [
+      "pump-part manufacture"
+    ],
+    "serves": [
+      "oil and gas pumps"
+    ],
+    "makes": "Throat bushings 1-4.5 inch for API 674 pumps",
+    "size_note": null,
+    "certs": [
+      "TKDN 25.21%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=B-d_J0-mMy4VsCf53JbXKVTm2h4ZXPTpdaqYRKSLyFA,",
+    "source_type": "government",
+    "evidence": "TKDN database: Pondokgede, Kota Bekasi firm certified for throat bushings for API 674 pumps, TKDN 25.21%.",
+    "source_year": 2026
+  },
+  {
+    "name": "CV Kito Multi Industri",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "wear-part and sprocket manufacture (process not stated)"
+    ],
+    "serves": [
+      "cement plants",
+      "mining",
+      "smelting"
+    ],
+    "makes": "Sprockets, wheels, pulleys, links; crusher, kiln, grate-cooler and smelting wear parts",
+    "size_note": null,
+    "certs": [
+      "TKDN 41.04-48.04%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=bqPthrZAYa_g08r3QxoaXNIhlEalfxX3yhuOHk7wO9Y,",
+    "source_type": "government",
+    "evidence": "TKDN database: Tambun Utara, Kab. Bekasi IKM certified for sprockets, crusher, kiln and grate-cooler spare parts, TKDN 41-48%. Sectors inferred.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Kanefusa Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "cutting-tool manufacture"
+    ],
+    "serves": null,
+    "makes": "Cutting tools",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO EJIP tenant list (2026): Jl. Cisokan Raya 8D, 'Cutting Tool Manufacturing'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Musashi Auto Parts Indonesia (EJIP plant)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Automotive parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO EJIP sheet (Apr 2026) names it a main Japanese tenant; list shows 'Automotive Manufacturing'. Second plant in Suryacipta.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Otics Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Automotive parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO lists (2026): EJIP plot 5C-1 'Automotive Manufacturing'; also a GIIC tenant (parent Otics, Nishio, Aichi), four-wheel sector.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Daisho Precision",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "automotive (4-wheel)"
+    ],
+    "makes": "Precision automotive parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_02-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO GIIC tenant list (2026): parent Daisho Seiki (Kurashiki), four-wheel sector.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Matsuo Precision Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "automotive (4-wheel)"
+    ],
+    "makes": "Precision automotive parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_02-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO GIIC tenant list (2026): parent Matsuo Seisakusho (Obu, Aichi), four-wheel sector.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT NHK Precision Parts Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "automotive (4-wheel)"
+    ],
+    "makes": "Precision automotive parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_02-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO GIIC tenant list (2026): parent NHK Spring (Yokohama), four-wheel sector.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Dharma Polimetal Tbk",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "metal fabrication"
+    ],
+    "serves": null,
+    "makes": "Metal fabrication",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list shows 'PT. Darma Polimetal Tbk', business 'Metal Fabrication'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sunstar Engineering Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "motorcycle"
+    ],
+    "makes": "Motorcycle rear sprockets and disc brakes",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm making motorcycle parts (rear sprockets, disc brakes).",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yutaka Manufacturing Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "motorcycle",
+      "automotive"
+    ],
+    "makes": "Disc plates for motorcycle brakes; motorcycle and car parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: two plants; disc plates for motorcycle braking systems and parts for motorcycles and automobiles.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT AKS Precision Ball Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "bearings"
+    ],
+    "makes": "Steel balls for ball bearings",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, manufacturing and sales of steel balls for ball bearings.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Mikuni Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "motorcycle",
+      "automotive"
+    ],
+    "makes": "Vehicle and motorcycle components and industrial equipment",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm making industrial equipment and components for vehicles and motorcycles.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT KYB Hydraulics Manufacturing Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "hydraulics"
+    ],
+    "makes": "Hydraulic components",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, manufacturing and sales of hydraulic components.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Meiwa Mold Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "mould design",
+      "mould making"
+    ],
+    "serves": null,
+    "makes": "Moulds (design, manufacture, sales)",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, 'Design, Manufacturing and Sales of Mold'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yamaha Motor Mold Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": null,
+    "serves": [
+      "motorcycle"
+    ],
+    "makes": "Machinery and equipment for manufacturing processes and metal work",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, 'Industry of machinery/equipment for manufacturing process/metal work'; mould focus inferred from name.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Umeda Factory Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "press die making",
+      "precision metal stamping"
+    ],
+    "serves": null,
+    "makes": "Precision stampings and dies",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, 'Precision Metal Stamping and Dies Maker'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Rhythm Manufacturing Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "press die making",
+      "precision metal stamping"
+    ],
+    "serves": null,
+    "makes": "Precision stampings and dies",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Japanese firm, 'Precision Metal Stamping and Dies Maker'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT MS Mold Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "mould making"
+    ],
+    "serves": [
+      "automotive (4-wheel)"
+    ],
+    "makes": "Moulds for car parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_02-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO GIIC tenant list (2026): parent Kanto Seisakusho (Koto-ku, Tokyo), four-wheel sector.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Wing Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "die-part manufacture"
+    ],
+    "serves": null,
+    "makes": "Die parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO EJIP tenant list (2026): Jl. Citanduy Raya 7J-1, business 'Die parts'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Progress Diecast",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": null,
+    "makes": "Die castings",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO EJIP tenant list (2026): Jl. Cilosari 1, plots 7F-2 and 7G-1, 'Casting Manufacturing'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Yanmar Indonesia",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": null,
+    "makes": "Castings",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_01-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO EJIP tenant list (2026): Jl. Cisokan 1, plot 1A-1, business 'Casting industry'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Fukuyama Giken Indonesia",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "forging"
+    ],
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Forgings: yokes, flanges, rocker arms, connectors",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: 'Forging Industry (Yoke, Flange, Rocker Arm, Connector)'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Sankei Gohsyu Industries",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "forging"
+    ],
+    "serves": [
+      "automotive",
+      "motorcycle"
+    ],
+    "makes": "Forged goods and car and motorcycle parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: two entries; forging goods, automobile and motorcycle parts, and automotive components.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Global Dimensi Metalindo",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "forging",
+      "pressing",
+      "metal forming"
+    ],
+    "serves": null,
+    "makes": "Forged, pressed and formed metal parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://mm2100.co.id/tenant/",
+    "source_type": "company_site",
+    "evidence": "MM2100 tenant list: Indonesian firm, 'Forging, pressing, printing and metal forming industries'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Baoforging International Indonesia",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Bekasi",
+    "capabilities": [
+      "forging"
+    ],
+    "serves": [
+      "oil and gas (inferred)"
+    ],
+    "makes": "Forged steel, 150-800 mm diameter and API wellhead size classes",
+    "size_note": null,
+    "certs": [
+      "TKDN 25%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=ct4q0zb7AIeciakeqNNVLNarr7kmpXeMTgvQFwZ8zH8,",
+    "source_type": "government",
+    "evidence": "TKDN database: KITIC estate, Serang Baru, Kab. Bekasi; forged steel up to 21-1/4 inch, PSL1-3 classes, TKDN 25%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Blimbing Jaya Teknindo",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kota Bekasi",
+    "capabilities": null,
+    "serves": [
+      "material handling"
+    ],
+    "makes": "Horizontal belt conveyors",
+    "size_note": null,
+    "certs": [
+      "TKDN 40%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=hG7pl74WgtT2zHSHbRWiaHL6jENxctpsz8gnsyr9eFw,&id_siinas=hG7pl74WgtT2zHSHbRWiaHL6jENxctpsz8gnsyr9eFw,",
+    "source_type": "government",
+    "evidence": "TKDN database: Mustikajaya, Kota Bekasi firm certified for horizontal conveyors, TKDN 40%.",
+    "source_year": 2026
+  },
+  {
+    "name": "Fuji Technica (KIIC tenant; Indonesian entity name not shown)",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "motorcycle",
+      "automotive",
+      "construction machinery"
+    ],
+    "makes": null,
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_03-3.pdf",
+    "source_type": "company_site",
+    "evidence": "KIIC brochure in JETRO 2026 folder lists Fuji Technica among Japanese two-wheel, auto and construction-machinery tenants.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Toyo Dies Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": null,
+    "makes": null,
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO Suryacipta tenant list (2026): Japanese-origin, 'Steel & Metal'. Die-maker kind inferred from company name.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Molds & Dies Indonesia",
+    "kind": "mould_die_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "building materials"
+    ],
+    "makes": null,
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO Suryacipta tenant list (2026): Italian-origin, 'Building Materials'. Mould/die kind inferred from company name.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Akinawa Presisma Masintek",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": [
+      "precision machining",
+      "metal stamping",
+      "special-purpose machines"
+    ],
+    "serves": null,
+    "makes": "Precision machined and stamped parts; custom special-purpose machines",
+    "size_note": "11-50 employees (directory, snippet)",
+    "certs": null,
+    "website": null,
+    "source_url": "https://sgpgrid.com/company/akinawa-presisma-masintek-pt-ID0000",
+    "source_type": "directory",
+    "evidence": "(snippet) Directory: Karawang Barat firm offering high-precision machining, metal stamping parts and custom special-purpose machines; 11-50 employees.",
+    "source_year": null
+  },
+  {
+    "name": "PT Kiyokuni Technologies",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": [
+      "metal stamping"
+    ],
+    "serves": null,
+    "makes": "Metal stamping parts up to 618x647 mm",
+    "size_note": null,
+    "certs": [
+      "TKDN 11.38-41.65%"
+    ],
+    "website": null,
+    "source_url": "https://tkdn.kemenperin.go.id/sertifikat_perush.php?id=vqUH9qalfsZtbUNxr_FTaBzIcQ11dCMcjVMHKpkQJeU,&id_siinas=YDxar7nYz_Z0Tl55K4RIxw2cC5vdqImynBgogF4iuMk,",
+    "source_type": "government",
+    "evidence": "TKDN database: Suryacipta (Ciampel, Kab. Karawang) firm certified for metal stamping parts, TKDN 11-42%.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Kiyokuni High Precision Automotive Ind",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": null,
+    "makes": "Precision parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO Suryacipta tenant list (2026): Japanese-origin, listed under 'Electronics'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Daihatsu Drivetrain Manufacturing Indonesia (DDMI)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Drivetrain components",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO Suryacipta tenant list (2026): Japanese-origin, 'Automotive & Parts'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Art Piston Indonesia",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "automotive"
+    ],
+    "makes": null,
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO Suryacipta tenant list (2026): Japanese-origin, 'Automotive & Parts'.",
+    "source_year": 2026
+  },
+  {
+    "name": "PT Musashi Auto Parts Indonesia (Suryacipta plant)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Automotive parts",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO Suryacipta tenant list (2026): Japanese-origin, 'Automotive & Parts'.",
+    "source_year": 2026
+  },
+  {
+    "name": "Honda Precision Parts Manufacturing (Indotaisei)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "automotive"
+    ],
+    "makes": "Precision parts (per company name); parent Honda Motor",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://news.lifenesia.com/wp-content/uploads/2024/03/%E3%82%A4%E3%83%B3%E3%83%89%E5%A4%A7%E6%88%90%E5%B7%A5%E6%A5%AD%E5%9B%A3%E5%9C%B0%E3%80%80%E5%85%A5%E5%B1%85%E4%BC%81%E6%A5%AD%E4%B8%80%E8%A6%A7%E6%94%B9%E5%AE%9A.pdf",
+    "source_type": "directory",
+    "evidence": "Indotaisei estate tenant list (Mar 2024) lists it under parent Honda Motor, in Kalihurip, Cikampek.",
+    "source_year": 2024
+  },
+  {
+    "name": "Amtek Engineering Jakarta (Indotaisei)",
+    "kind": "precision_parts_supplier",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": null,
+    "makes": null,
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://news.lifenesia.com/wp-content/uploads/2024/03/%E3%82%A4%E3%83%B3%E3%83%89%E5%A4%A7%E6%88%90%E5%B7%A5%E6%A5%AD%E5%9B%A3%E5%9C%B0%E3%80%80%E5%85%A5%E5%B1%85%E4%BC%81%E6%A5%AD%E4%B8%80%E8%A6%A7%E6%94%B9%E5%AE%9A.pdf",
+    "source_type": "directory",
+    "evidence": "Indotaisei estate tenant list (Mar 2024) lists Amtek Engineering Jakarta.",
+    "source_year": 2024
+  },
+  {
+    "name": "Koyama Casting Indonesia (Indotaisei)",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": null,
+    "makes": "Castings",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://news.lifenesia.com/wp-content/uploads/2024/03/%E3%82%A4%E3%83%B3%E3%83%89%E5%A4%A7%E6%88%90%E5%B7%A5%E6%A5%AD%E5%9B%A3%E5%9C%B0%E3%80%80%E5%85%A5%E5%B1%85%E4%BC%81%E6%A5%AD%E4%B8%80%E8%A6%A7%E6%94%B9%E5%AE%9A.pdf",
+    "source_type": "directory",
+    "evidence": "Indotaisei estate tenant list (Mar 2024) lists Koyama Casting Indonesia (parent Koyama Chuko-sho).",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Dongil Casting",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": [
+      "casting"
+    ],
+    "serves": null,
+    "makes": "Castings",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_05-2.pdf",
+    "source_type": "government",
+    "evidence": "JETRO Suryacipta tenant list (2026): South Korean-origin, 'Steel & Metal'.",
+    "source_year": 2026
+  },
+  {
+    "name": "Aisin Takaoka (KIIC tenant; Indonesian entity name not shown)",
+    "kind": "foundry_machining",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "automotive"
+    ],
+    "makes": null,
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://www.jetro.go.jp/ext_images/world/asia/idn/sez/pdf/2026/01_03-3.pdf",
+    "source_type": "company_site",
+    "evidence": "KIIC brochure in JETRO 2026 folder lists Aisin Takaoka among Japanese two-wheel, auto and construction-machinery tenants.",
+    "source_year": 2024
+  },
+  {
+    "name": "PT Tsubaki Indonesia Manufacturing",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": null,
+    "makes": "Listed among electronic/machinery tenants",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://kiic.co.id/tenant-company/",
+    "source_type": "company_site",
+    "evidence": "KIIC website names Tsubaki Indonesia Manufacturing among major Electronic/Machinery tenants (site copyright 2022).",
+    "source_year": 2022
+  },
+  {
+    "name": "Sumitomo Construction Machinery (KIIC tenant)",
+    "kind": "machinery_maker",
+    "province": "Jawa Barat",
+    "city": "Kab. Karawang",
+    "capabilities": null,
+    "serves": [
+      "construction machinery"
+    ],
+    "makes": "Construction machinery",
+    "size_note": null,
+    "certs": null,
+    "website": null,
+    "source_url": "https://kiic.co.id/tenant-company/",
+    "source_type": "company_site",
+    "evidence": "KIIC website lists 'Sumitomo Machinery'; KIIC brochure lists Sumitomo Construction Machinery among tenants.",
+    "source_year": 2022
+  }
+]

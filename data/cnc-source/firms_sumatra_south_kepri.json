@@ -1,0 +1,1075 @@
+[
+ {
+  "name": "PT Citra Tubindo Tbk",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Kabil Integrated Industrial Estate)",
+  "capabilities": [
+   "OCTG threading (API and premium connections)",
+   "heat treatment",
+   "coupling and cross-over manufacture"
+  ],
+  "serves": [
+   "oil and gas",
+   "mining"
+  ],
+  "makes": "Finish-threaded casing, tubing and pup joints (incl. 13% Cr), couplings, flow couplings, cross-overs; line pipe",
+  "size_note": null,
+  "certs": [
+   "ISO 9001:2015 (API)",
+   "ISO 14001:2015",
+   "TKDN 15.93-58.97% by product"
+  ],
+  "website": "https://www.citratubindo.com",
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Citra+Tubindo",
+  "source_type": "government",
+  "evidence": "TKDN register lists heat-treated finish-threaded 13Cr casing/tubing, couplings and cross-overs with premium connections, TKDN up to 58.97%.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Telaga Mas Mulia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Kabil, Telaga Punggur)",
+  "capabilities": [
+   "OCTG threading (API and licensed premium connections)",
+   "coupling manufacture"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "Threaded casing, tubing, pup joints and couplings; 13% Cr casing with premium connections",
+  "size_note": "31,408 m2 site; 15,000 t pipe storage; 36,000 t/yr production capacity (company site)",
+  "certs": [
+   "API 5CT",
+   "JFE premium-connection licences (Lion, Fox, Bear, Tiger)",
+   "TKDN 27.10-29.24% by product"
+  ],
+  "website": "https://www.telaga-mm.com",
+  "source_url": "https://www.telaga-mm.com/",
+  "source_type": "company_site",
+  "evidence": "Local OCTG processor founded 3 May 2007 in Telaga Punggur, Batam; pipe threading and couplings; 36,000 t/yr capacity.",
+  "source_year": 2017
+ },
+ {
+  "name": "PT Servotech Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Taiwan Industrial Park, Kabil)",
+  "capabilities": [
+   "API 5CT pipe threading 2-3/8 to 20 in",
+   "wellhead and Xmas tree manufacture",
+   "pumping unit manufacture",
+   "ERW and heat treatment"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "Threaded casing and tubing (J55-Q125), API 6A wellheads and Xmas trees, API 11E pumping units, licensed premium connections",
+  "size_note": null,
+  "certs": [
+   "API 5CT"
+  ],
+  "website": "https://www.servotech.co.id",
+  "source_url": "https://www.servotech.co.id/",
+  "source_type": "company_site",
+  "evidence": "Site: API 5CT-certified threader for 2-3/8 to 20 in casing/tubing; wellhead, Xmas tree and pumping-unit manufacture; Kabil, Batam.",
+  "source_year": null
+ },
+ {
+  "name": "PT Rainbow Tubulars Manufacture",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "OCTG manufacture",
+   "API threading",
+   "premium-connection threading (JFE, Hunting approved 2025)"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "OCTG casing and tubing, line pipe; second plant (RTM 2) under construction since 2024",
+  "size_note": null,
+  "certs": [
+   "API 5CT",
+   "API 5L",
+   "API 5B",
+   "API Q1",
+   "ISO 9001:2015",
+   "ISO 14001:2015",
+   "ISO 45001:2018",
+   "TKDN 36.65% (seamless line pipe)"
+  ],
+  "website": "https://www.rainbowtubulars.com",
+  "source_url": "https://www.rainbowtubulars.com/",
+  "source_type": "company_site",
+  "evidence": "Founded June 2016; API 5CT/5L 2017; TKDN 2018; RTM 2 plant 2024; JFE and Hunting approved its premium threading 2025.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Cladtek Bi Metal Manufacturing",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Batu Ampar)",
+  "capabilities": [
+   "CRA lined and clad pipe manufacture",
+   "premium-connection threading"
+  ],
+  "serves": [
+   "oil and gas",
+   "subsea pipelines"
+  ],
+  "makes": "Mechanically lined CRA tubulars with metal-to-metal premium connections; RapidPipe connectors",
+  "size_note": null,
+  "certs": [],
+  "website": "https://www.cladtek.com",
+  "source_url": "https://www.cladtek.com/",
+  "source_type": "company_site",
+  "evidence": "Batu Ampar, Batam plant; mechanically lined tubulars with gas-tight premium connections and CRA solutions for subsea flowlines and risers.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT APPIPA Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Kabil, Nongsa)",
+  "capabilities": [
+   "OCTG threading (API and premium connections)",
+   "weld-on connectors",
+   "pipe-end swaging",
+   "coupling manufacture"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "Threaded casing (incl. 13-15% Cr, ERW 16-20 in from local pipe), OCTG couplings and flow couplings",
+  "size_note": null,
+  "certs": [
+   "TKDN 10.65-56.34% by product"
+  ],
+  "website": "http://www.appipa.net",
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=APPIPA",
+  "source_type": "government",
+  "evidence": "TKDN register lists APPIPA casing (up to 56.34% using local ERW pipe) and OCTG couplings; its site gives a Kabil, Batam threading plant.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Hunting Energy Asia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "OCTG threading (API)",
+   "coupling manufacture",
+   "heat-treated casing"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "Heat-treated API casing 4-1/2 to 13-3/8 in, casing couplings 4-1/2 to 20 in, tubing couplings 2-3/8 to 3-1/2 in",
+  "size_note": null,
+  "certs": [
+   "TKDN 26.02-31.88% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Hunting+Energy",
+  "source_type": "government",
+  "evidence": "TKDN register lists heat-treated API casing and casing/tubing couplings by PT Hunting Energy Asia, TKDN 26-32%; SIINas lists it in Kepri (KBLI 24103).",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Hydril Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "OCTG threading (API and premium connections)",
+   "heat treatment"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "Finish-threaded seamless casing 16-20 in with premium connections; seamless casing 14-20 in with API connections",
+  "size_note": null,
+  "certs": [
+   "TKDN 16.92-26.42% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Hydril",
+  "source_type": "government",
+  "evidence": "TKDN register lists heat-treated premium-connection casing 16-20 in (26.42%) and API casing 14-20 in; SIINas lists it in Kepri (domain tenaris.com).",
+  "source_year": 2026
+ },
+ {
+  "name": "PT H-Tech Oilfield Equipment",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "large-diameter pipe threading",
+   "welding"
+  ],
+  "serves": [
+   "oil and gas"
+  ],
+  "makes": "Conductor pipe 18-5/8 to 30 in with proprietary weld-on and threaded connections (National brand)",
+  "size_note": null,
+  "certs": [
+   "TKDN certificates (conductor pipe)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=H-Tech+Oilfield",
+  "source_type": "government",
+  "evidence": "TKDN register lists conductor pipe 18-5/8 to 30 in with proprietary weld-on connections, brand National; SIINas lists it in Kepri (domain nov.com).",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Duta Dimensi",
+  "kind": "cnc_job_shop",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Executive Industrial Park, Batam Centre); branch Lobam, Bintan",
+  "capabilities": [
+   "CNC milling",
+   "CNC turning",
+   "wire EDM",
+   "fabrication"
+  ],
+  "serves": [
+   "semiconductor",
+   "electronics",
+   "automotive",
+   "oil and gas"
+  ],
+  "makes": "Precision machined parts and tooling, oil-and-gas tooling equipment, structures and piping",
+  "size_note": "Founded 2011; Foca Seki CNC mill 600x850x600 mm, Femco CNC lathes up to 24 in x 50 in, wire cut; 10 micron stated",
+  "certs": [],
+  "website": "https://www.dutadimensi.co.id",
+  "source_url": "https://www.dutadimensi.co.id/facility",
+  "source_type": "company_site",
+  "evidence": "Facility page lists CNC machining centres, CNC lathes, milling and wire-cut machines at 10-micron accuracy; Batam plant, Bintan branch.",
+  "source_year": null
+ },
+ {
+  "name": "PT Precindo Abadi",
+  "kind": "cnc_job_shop",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Bintang Industrial Park 1, Batu Ampar)",
+  "capabilities": [
+   "jig and fixture design",
+   "jig and fixture fabrication"
+  ],
+  "serves": [
+   "manufacturing plants (jigs and fixtures)"
+  ],
+  "makes": "Jigs and fixtures, engineered fabrication",
+  "size_note": "65 staff; founded 2008",
+  "certs": [
+   "ISO 9001:2015 (TUV Rheinland)"
+  ],
+  "website": "https://www.precindoabadi.com",
+  "source_url": "https://www.precindoabadi.com/",
+  "source_type": "company_site",
+  "evidence": "Founded 2008, jig and fixture specialist with 65 professionals; ISO 9001:2015 by TUV Rheinland; Batu Ampar, Batam.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Mandiri Gifha Nusantara",
+  "kind": "cnc_job_shop",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam",
+  "capabilities": [
+   "precision machining (hard materials)",
+   "tool and die making",
+   "jig and fixture",
+   "hard chrome plating",
+   "hydraulic cylinder fabrication"
+  ],
+  "serves": [
+   "multinational and local manufacturers in Batam"
+  ],
+  "makes": "Machined parts, tooling, dies, jigs and fixtures, hydraulic cylinders, conveyors, steel structures",
+  "size_note": null,
+  "certs": [],
+  "website": "https://www.mgnusantara.com",
+  "source_url": "https://www.mgnusantara.com/",
+  "source_type": "company_site",
+  "evidence": "Site: supplier of precision machined parts in hard materials, tooling, dies, jigs and fixtures, hydraulic cylinders and hard chrome; Batam.",
+  "source_year": null
+ },
+ {
+  "name": "PT Karya Sempurna Abadi",
+  "kind": "cnc_job_shop",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam",
+  "capabilities": [
+   "machining",
+   "metal fabrication"
+  ],
+  "serves": [
+   "offshore (DNV 2.7-1 products)"
+  ],
+  "makes": "Fabricated metal and machined parts; DNV 2.7-1 certified standard products",
+  "size_note": null,
+  "certs": [
+   "DNV 2.7-1 (stated)"
+  ],
+  "website": "http://www.ptksa.com",
+  "source_url": "http://www.ptksa.com/",
+  "source_type": "company_site",
+  "evidence": "Site title reads 'Fabrication of Metal and Machining Part, DNV 2.7-1 Certified Standard Products, located in Batam'; body failed to load.",
+  "source_year": null
+ },
+ {
+  "name": "PT A & One Precision Engineering Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kabupaten Bintan (Bintan Industrial Estate, Lobam)",
+  "capabilities": [
+   "5-axis",
+   "CNC milling",
+   "mill-turn",
+   "laser cutting",
+   "sheet metal fabrication",
+   "robotic welding",
+   "CMM inspection",
+   "clean room"
+  ],
+  "serves": [
+   "aerospace",
+   "biomedical",
+   "energy",
+   "semiconductor"
+  ],
+  "makes": "High-mix low-volume precision machined parts and sheet-metal assemblies",
+  "size_note": "Group machine list (not split by plant): DMG Mori NMV5000/NMV3000 5-axis, Mazak Integrex i-200, DMG Mori NHX 10000",
+  "certs": [],
+  "website": "https://www.a-oneprecision.com",
+  "source_url": "https://www.a-oneprecision.com/",
+  "source_type": "company_site",
+  "evidence": "Group site lists PT A & One Precision Engineering Indonesia at Bintan Industrial Estate Lobam; 5-axis and mill-turn machines; aerospace, semiconductor customers.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Sys-mac Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "3- to 5-axis CNC machining",
+   "clean room assembly",
+   "factory automation"
+  ],
+  "serves": [
+   "semiconductor and photonics",
+   "medical devices",
+   "electronics"
+  ],
+  "makes": "Precision machined parts and automation equipment (Sys-Mac Automation group, Singapore)",
+  "size_note": null,
+  "certs": [
+   "ISO 9001 (group)",
+   "ISO 13485 (group)"
+  ],
+  "website": "https://www.sysmac.com.sg",
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Sys-mac&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "SIINas lists PT Sys-mac Indonesia in Kepri under KBLI 28221; parent Sys-Mac states 3-5-axis CNC, ISO 9001/13485, four countries.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Three Cast Indonesia",
+  "kind": "foundry_machining",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "casting",
+   "aluminium die casting",
+   "CNC machining",
+   "CNC turning",
+   "surface treatment"
+  ],
+  "serves": [
+   "industrial component buyers"
+  ],
+  "makes": "Aluminium die-cast parts with CNC machining and surface treatment (Three Cast group, Malaysia)",
+  "size_note": null,
+  "certs": [],
+  "website": "https://www.threecast.com.my",
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Three+Cast&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "SIINas lists PT Three Cast Indonesia in Kepri (KBLI 25910); group site: aluminium die casting, CNC machining and turning, about 28 years.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Uni Metaltech Industry",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Kara Industrial Park, Batam Centre)",
+  "capabilities": [
+   "precision metal stamping"
+  ],
+  "serves": [
+   "electrical",
+   "electronics",
+   "automotive"
+  ],
+  "makes": "Battery contacts, cable terminals and custom stamped metal parts",
+  "size_note": "Incorporated 2000; about 3,000 m2 factory",
+  "certs": [],
+  "website": "https://www.umistamping.com",
+  "source_url": "https://www.umistamping.com/",
+  "source_type": "company_site",
+  "evidence": "Precision metal stamping company incorporated 2000 in Batam, Kara Industrial Park; about 3,000 m2; battery contacts and cable terminals.",
+  "source_year": null
+ },
+ {
+  "name": "PT Batam Well Industry",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Bintang Industrial Park II, Tanjung Uncang)",
+  "capabilities": [
+   "screw and fastener manufacturing"
+  ],
+  "serves": [
+   "export markets (Europe, Americas, Asia, Australia)",
+   "construction (deck screws)"
+  ],
+  "makes": "Screws, incl. CE-marked deck screws",
+  "size_note": null,
+  "certs": [
+   "ISO 9001:2015",
+   "ISO 14001",
+   "amfori BSCI"
+  ],
+  "website": "https://www.bwi.co.id",
+  "source_url": "https://www.bwi.co.id/",
+  "source_type": "company_site",
+  "evidence": "Screw maker in Bintang Industrial Park II, Tanjung Uncang; ISO 9001, ISO 14001, BSCI; CE-marked deck screws news 16 Sep 2025.",
+  "source_year": 2025
+ },
+ {
+  "name": "PT Tomoe Valve Batam",
+  "kind": "machinery_maker",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Latrade Industrial Park, Tanjung Uncang)",
+  "capabilities": [
+   "valve manufacturing"
+  ],
+  "serves": [
+   "oil and gas",
+   "process industries"
+  ],
+  "makes": "Butterfly, ball, gate, globe and check valves",
+  "size_note": null,
+  "certs": [
+   "TKDN 22.40-31.91% by product"
+  ],
+  "website": "https://www.tomoe-batam.com",
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Tomoe+Valve",
+  "source_type": "government",
+  "evidence": "TKDN register lists butterfly, ball, gate, globe and check valves by PT Tomoe Valve Batam, TKDN 22.40-31.91%.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Austin Engineering Indonesia",
+  "kind": "machinery_maker",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Kabil Integrated Industrial Estate, Batu Besar, Nongsa)",
+  "capabilities": [
+   "heavy fabrication",
+   "mining equipment manufacture"
+  ],
+  "serves": [
+   "mining"
+  ],
+  "makes": "Mining equipment design, manufacture and through-life support (Austin Engineering, Perth)",
+  "size_note": null,
+  "certs": [],
+  "website": "https://www.austineng.com",
+  "source_url": "https://www.austineng.com/",
+  "source_type": "company_site",
+  "evidence": "Austin Engineering lists its Batam facility at Kabil Integrated Industrial Estate; mining equipment design, manufacture and through-life support.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Racer Technology Batam",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (from registered name)",
+  "capabilities": [
+   "machining",
+   "PCB assembly",
+   "ultrasonic welding",
+   "electroplating"
+  ],
+  "serves": [
+   "medical devices",
+   "electronics",
+   "IoT"
+  ],
+  "makes": "Contract design and manufacture of electronics, IoT and medical devices (Racer Technology, Singapore)",
+  "size_note": null,
+  "certs": [],
+  "website": "https://www.racer.com.sg",
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Racer+Technology&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "SIINas lists PT Racer Technology Batam (KBLI 22206); group site lists machining, PCB assembly, electroplating for medical and electronics customers.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Ennovi Precision Machining Services Batam",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (from registered name)",
+  "capabilities": [
+   "precision machining"
+  ],
+  "serves": [
+   "automotive and EV",
+   "electronics"
+  ],
+  "makes": "Precision machined components; sister Batam units do metal casting, polymer parts and integrated engineering (ENNOVI, ex-Interplex)",
+  "size_note": null,
+  "certs": [],
+  "website": "https://ennovi.com",
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Ennovi&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "SIINas lists four ENNOVI Batam units: precision machining, metal cast, polymer and integrated engineering services; ennovi.com claims in-house tooling.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Vortex Energy Batam",
+  "kind": "machinery_maker",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (Tunas Bizpark, Batam Centre)",
+  "capabilities": [
+   "metalworking machine-tool industry (KBLI 28220)",
+   "Industry 4.0 and education equipment"
+  ],
+  "serves": [
+   "industry",
+   "vocational education"
+  ],
+  "makes": "Industry 4.0 and education solutions (with sister PT MES Teknologi Indonesia)",
+  "size_note": null,
+  "certs": [],
+  "website": "https://www.pt-vortex.com",
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Vortex+Energy&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "SIINas lists PT Vortex Energy Batam under KBLI 28220; its site offers industrial and education Industry 4.0 solutions from Tunas Bizpark.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Fast Precision Manufacturing Indonesia",
+  "kind": "cnc_job_shop",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "machining services (KBLI 25920)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 25920 (machining services); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Fast+Precision+Manufacturing+Indonesia&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 25920 (machining services); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Armada Precision Tooling",
+  "kind": "cnc_job_shop",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "machining services (tooling) (KBLI 25920)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 25920 (machining services (tooling)); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Armada+Precision+Tooling&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 25920 (machining services (tooling)); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Global Harvest Precision Engineering",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "forging, pressing and stamping (KBLI 25910)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 25910 (forging, pressing and stamping); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Global+Harvest+Precision+Engineering&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 25910 (forging, pressing and stamping); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Sun Precision Engineering Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "forging, pressing and stamping (KBLI 25910)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 25910 (forging, pressing and stamping); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Sun+Precision+Engineering+Indonesia&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 25910 (forging, pressing and stamping); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Sinometal Stamping Technology Batam",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": "Kota Batam (from registered name)",
+  "capabilities": [
+   "machining services (metal stamping) (KBLI 25920)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 25920 (machining services (metal stamping)); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Sinometal+Stamping+Technology+Batam&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 25920 (machining services (metal stamping)); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Perfect Precision Engineering Indonesia",
+  "kind": "precision_parts_supplier",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "screws, bolts and fasteners (KBLI 25952)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 25952 (screws, bolts and fasteners); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Perfect+Precision+Engineering+Indonesia&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 25952 (screws, bolts and fasteners); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Microcast Technology Indonesia",
+  "kind": "foundry_machining",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "non-ferrous casting (KBLI 24320)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 24320 (non-ferrous casting); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Microcast+Technology+Indonesia&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 24320 (non-ferrous casting); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Asia Foundry & Engineering",
+  "kind": "foundry_machining",
+  "province": "Kepulauan Riau",
+  "city": null,
+  "capabilities": [
+   "non-ferrous casting (KBLI 24320)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 24320 (non-ferrous casting); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Asia+Foundry&kbli=&prov=d_6LRe0K-myaHNofmityPTFUXnCdgWUDYPbIwv41Lpo%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Kepulauan Riau under KBLI 24320 (non-ferrous casting); no website or product list verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Global Teknik Industri",
+  "kind": "cnc_job_shop",
+  "province": "Sumatera Selatan",
+  "city": "Kabupaten Banyuasin (Jl. Tanjung Api-Api, Talang Kelapa, near Palembang)",
+  "capabilities": [
+   "hydraulic cylinder manufacture and reconditioning",
+   "hard chrome plating",
+   "metal spray",
+   "seal making",
+   "bucket repair",
+   "fabrication"
+  ],
+  "serves": [
+   "mining",
+   "heavy equipment"
+  ],
+  "makes": "Hydraulic and telescopic cylinders, track adjusters, recoil springs, seals; bucket repair; site service",
+  "size_note": null,
+  "certs": [],
+  "website": "https://www.gti-chrome.com",
+  "source_url": "https://www.gti-chrome.com/",
+  "source_type": "company_site",
+  "evidence": "Site lists recondition and manufacture of hydraulic cylinders, hard chrome, metal spray, bucket repair, track adjusters and recoil springs; Banyuasin, Palembang.",
+  "source_year": 2024
+ },
+ {
+  "name": "PT Shima Prima Utama",
+  "kind": "machinery_maker",
+  "province": "Sumatera Selatan",
+  "city": null,
+  "capabilities": [
+   "steel and aluminium tube fabrication",
+   "medical furniture and mobility-aid assembly"
+  ],
+  "serves": [
+   "hospitals and clinics",
+   "home care"
+  ],
+  "makes": "SHIMA motorized and manual hospital beds, haemodialysis chairs, wheelchairs, crutches, trolleys",
+  "size_note": null,
+  "certs": [
+   "TKDN 35.20-62.56% by product"
+  ],
+  "website": "https://www.shima-indonesia.com",
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Shima+Prima",
+  "source_type": "government",
+  "evidence": "TKDN register lists SHIMA hospital beds, haemodialysis chair, wheelchairs and crutches, TKDN 35-63%; SIINas lists the firm in Sumatera Selatan (KBLI 32502).",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Utama Cipta Tata Asri",
+  "kind": "machinery_maker",
+  "province": "Sumatera Selatan",
+  "city": null,
+  "capabilities": [
+   "wastewater treatment unit manufacture"
+  ],
+  "serves": [
+   "industrial and municipal wastewater"
+  ],
+  "makes": "OSITECH WT Pro hydro-injector IPAL units (0.5-42 m3), Hydro Metal Protector",
+  "size_note": null,
+  "certs": [
+   "TKDN 40.00-61.77% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Utama+Cipta+Tata+Asri",
+  "source_type": "government",
+  "evidence": "TKDN register lists OSITECH wastewater treatment units, TKDN 40-61.77%; SIINas lists the firm in Sumatera Selatan (KBLI 28299).",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Ratna Hapsari Mahakarya Cendekia",
+  "kind": "machinery_maker",
+  "province": "Sumatera Selatan",
+  "city": null,
+  "capabilities": [
+   "water treatment unit manufacture"
+  ],
+  "serves": [
+   "water and wastewater treatment"
+  ],
+  "makes": "BIO-RO reverse-osmosis units and AORA wastewater treatment units",
+  "size_note": null,
+  "certs": [
+   "TKDN 38-40% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Ratna+Hapsari",
+  "source_type": "government",
+  "evidence": "TKDN register lists BIO-RO reverse-osmosis and AORA wastewater units, TKDN 38-40%; SIINas lists it in Sumatera Selatan (KBLI 28199).",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Sinar Berlian Indah",
+  "kind": "machinery_maker",
+  "province": "Sumatera Selatan",
+  "city": null,
+  "capabilities": [
+   "machine-tool industry (KBLI 28224)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 28224 (machine-tool group); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Sinar+Berlian+Indah&kbli=&prov=LT6Nl1-93HfnTOoo8L8ysPSKCRwmEnlqszx6HfH2tdk%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists CV Sinar Berlian Indah in Sumatera Selatan under KBLI 28224; no website or products verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Lambang Jaya",
+  "kind": "machinery_maker",
+  "province": "Lampung",
+  "city": null,
+  "capabilities": [
+   "agricultural machinery manufacture",
+   "hydraulic implement manufacture"
+  ],
+  "serves": [
+   "sugarcane plantations",
+   "cassava farming",
+   "rice farming"
+  ],
+  "makes": "Disc ploughs, disc and offset harrows, rippers, furrowers, cassava planters and harvesters, cane side-tippers, cage wheels, combine harvester, rice transplanter",
+  "size_note": null,
+  "certs": [
+   "TKDN 25.93-51.31% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Lambang+Jaya",
+  "source_type": "government",
+  "evidence": "TKDN register lists cassava planter and harvester, cane side-tipper, ploughs, harrows, rippers; TKDN 25.9-51.3%; SIINas Lampung, KBLI 28210.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Bhumi Jaya Agro Mandiri",
+  "kind": "machinery_maker",
+  "province": "Lampung",
+  "city": null,
+  "capabilities": [
+   "agricultural implement manufacture"
+  ],
+  "serves": [
+   "plantations and farms"
+  ],
+  "makes": "Disc plough 2x22 in, 3-base ridger, 4-tyne fertilizer applicator",
+  "size_note": null,
+  "certs": [
+   "TKDN 32.70-42.26% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Bhumi+Jaya+Agro",
+  "source_type": "government",
+  "evidence": "TKDN register lists disc plough, ridger and fertilizer applicator, TKDN 32.7-42.26%; SIINas lists the firm in Lampung (KBLI 28210).",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Serumpun Jaya Teknik",
+  "kind": "machinery_maker",
+  "province": "Lampung",
+  "city": null,
+  "capabilities": [
+   "food-processing machinery manufacture"
+  ],
+  "serves": [
+   "coffee and cocoa processors"
+  ],
+  "makes": "Wet-coffee breakers, coffee pulpers, coffee/cocoa roasters, coffee-bean sorters",
+  "size_note": null,
+  "certs": [
+   "TKDN 34-40% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Serumpun+Jaya+Teknik",
+  "source_type": "government",
+  "evidence": "TKDN register lists coffee pulper, wet-coffee breaker, coffee/cocoa roaster and bean sorter, TKDN 34-40%; SIINas Lampung, KBLI 28210.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Lampung Andalas Shipbuilding & Engineering",
+  "kind": "machinery_maker",
+  "province": "Lampung",
+  "city": null,
+  "capabilities": [
+   "heavy fabrication",
+   "pressure vessel fabrication"
+  ],
+  "serves": [
+   "palm-oil mills",
+   "process plants"
+  ],
+  "makes": "Palm-oil sterilizer doors (900-2100 mm), 3,000 t storage tanks, 45 t thermal deaerators",
+  "size_note": null,
+  "certs": [
+   "TKDN 55.02% (thermal deaerator)"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Lampung+Andalas",
+  "source_type": "government",
+  "evidence": "TKDN register lists sterilizer doors, 3,000-tonne storage tanks and a 45-tonne thermal deaerator (TKDN 55.02%); SIINas Lampung, KBLI 33201.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Bahagia Alam Sejati",
+  "kind": "machinery_maker",
+  "province": "Lampung",
+  "city": null,
+  "capabilities": [
+   "pump manufacture"
+  ],
+  "serves": [
+   "agriculture and water supply"
+  ],
+  "makes": "JAGAT centrifugal water pumps NS100 (4 in) and NS200 (8 in)",
+  "size_note": null,
+  "certs": [
+   "TKDN 40% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Bahagia+Alam+Sejati",
+  "source_type": "government",
+  "evidence": "TKDN register lists JAGAT centrifugal water pumps 4 in and 8 in, TKDN 40%; SIINas lists it in Lampung under KBLI 28130.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Arufal Teknik Lampung",
+  "kind": "machinery_maker",
+  "province": "Lampung",
+  "city": null,
+  "capabilities": [
+   "food-processing machinery (KBLI 28250)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 28250 (food-processing machinery); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Arufal+Teknik+Lampung&kbli=&prov=EtDhV24I_AgUTjwdPnaAJCuEdnS41hZIYUPlkeLCd04%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Lampung under KBLI 28250 (food, beverage and tobacco machinery); products not verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Teknik Mesin Indonesia",
+  "kind": "machinery_maker",
+  "province": "Lampung",
+  "city": null,
+  "capabilities": [
+   "food-processing machinery (KBLI 28250)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 28250 (food-processing machinery); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Teknik+Mesin+Indonesia&kbli=&prov=EtDhV24I_AgUTjwdPnaAJCuEdnS41hZIYUPlkeLCd04%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Lampung under KBLI 28250 (food, beverage and tobacco machinery); products not verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Hartake Sukses Mandiri",
+  "kind": "machinery_maker",
+  "province": "Jambi",
+  "city": null,
+  "capabilities": [
+   "agricultural machinery manufacture"
+  ],
+  "serves": [
+   "farms and plantations"
+  ],
+  "makes": "HSM 505 chopper machine, 500-700 kg/h",
+  "size_note": null,
+  "certs": [
+   "TKDN 38%"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Hartake",
+  "source_type": "government",
+  "evidence": "TKDN register lists the HSM 505 chopper (500-700 kg/h), TKDN 38%; SIINas lists CV Hartake Sukses Mandiri in Jambi, KBLI 28210.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Isipa",
+  "kind": "precision_parts_supplier",
+  "province": "Jambi",
+  "city": null,
+  "capabilities": [
+   "prosthetic limb fabrication"
+  ],
+  "serves": [
+   "amputees, hospitals and rehabilitation services"
+  ],
+  "makes": "Above- and below-knee prosthetic legs; upper- and lower-arm prosthetic hands",
+  "size_note": null,
+  "certs": [
+   "TKDN 36-38% by product"
+  ],
+  "website": null,
+  "source_url": "https://tkdn.kemenperin.go.id/search.php?where=perush&what=Isipa",
+  "source_type": "government",
+  "evidence": "TKDN register lists CV Isipa prosthetic legs (36%) and hands (38%); SIINas lists it in Jambi under KBLI 32502. No 3D printing verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "CV Panca Logam Delapan Delapan",
+  "kind": "cnc_job_shop",
+  "province": "Bengkulu",
+  "city": null,
+  "capabilities": [
+   "machining services (KBLI 25920)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 25920 (special metalworking services); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Panca+Logam+Delapan&kbli=&prov=7PXdLsCfLTabVYR-HdFCQ1lgobeRW7wKz4lderTiLAA%2C",
+  "source_type": "government",
+  "evidence": "Only firm in Bengkulu's SIINas listing (335 firms) registered under KBLI 25920 metalworking services; no website or products verified.",
+  "source_year": 2026
+ },
+ {
+  "name": "PT Dok dan Perkapalan Air Kantung",
+  "kind": "machinery_maker",
+  "province": "Kepulauan Bangka Belitung",
+  "city": "Kota Pangkalpinang (Selindung industrial area)",
+  "capabilities": [
+   "shipbuilding",
+   "ship repair",
+   "docking",
+   "repair engineering",
+   "ship equipment supply"
+  ],
+  "serves": [
+   "tin mining (PT Timah)",
+   "shipping"
+  ],
+  "makes": "Cutter-suction dredgers (kapal isap), tugs, barges, cargo and drilling vessels, aluminium patrol boats",
+  "size_note": "Founded 1 Feb 1996; 99.99% owned by PT Timah; yards at Selindung (Bangka) and East Lombok",
+  "certs": [],
+  "website": "https://pt-dak.co.id",
+  "source_url": "https://ptdak.co.id/",
+  "source_type": "company_site",
+  "evidence": "PT Timah subsidiary shipyard (founded 1996) building and repairing suction dredgers, tugs, barges and drilling vessels; Selindung, Pangkalpinang.",
+  "source_year": null
+ },
+ {
+  "name": "PT Power Machine International",
+  "kind": "machinery_maker",
+  "province": "Kepulauan Bangka Belitung",
+  "city": null,
+  "capabilities": [
+   "general-purpose machinery (KBLI 28199)"
+  ],
+  "serves": [],
+  "makes": "Registered under KBLI 28199 (other general-purpose machinery); products not verified",
+  "size_note": null,
+  "certs": [],
+  "website": null,
+  "source_url": "https://kemenperin.go.id/direktori-perusahaan?nama=Power+Machine+International&kbli=&prov=qPoGfR2CPXOIzHC-qtcv3dZPViN_U5d_HfvBDijVZDU%2C",
+  "source_type": "government",
+  "evidence": "Kemenperin SIINas directory lists the firm in Bangka Belitung under KBLI 28199; the province's only registered machinery maker found.",
+  "source_year": 2026
+ }
+]
