@@ -16,6 +16,7 @@ const { esc } = require('../lib/util');
 const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
 const { shell } = require('./browse1001');
+const { stateSites } = require('./dcstate1001');
 
 const DATA = path.join(__dirname, '..', 'data', 'datacenter.json');
 const WEBS = path.join(__dirname, '..', 'data', 'dc-webs');
@@ -585,7 +586,7 @@ ${risk ? `<section class="wrap" id="risk">
   ${webs}
   ${(D.connectors || []).length ? `<div class="eyebrow" style="margin-top:40px"><span class="sq"></span>WHO CONNECTS THE GROUPS</div><p class="lede">The companies and people that turn up in more than one group's web: the utility and estate land under them, the builders and banks they share, and the people who sit on several boards. ${(D.connectors || []).length} in all.</p>${connectorGrid(D)}` : ''}
 </section>
-<section class="wrap" id="projects">
+${stateSites(D.projects.length)}<section class="wrap" id="projects">
   <div class="eyebrow"><span class="sq"></span>EVERY PROJECT</div>
   <p class="lede">Open a row for why it sits where it does, where its power comes from and which vendors a source names. “Site inferred” marks a link we matched to the site ourselves because the source doesn’t name it.</p>
   <div class="tools"><input id="dc-q" type="search" placeholder="Find a project or company" aria-label="Find a project or company">${regionChips}<select id="dc-cell" aria-label="Matrix cell">${cellOpts}</select><span class="mono" id="dc-count" style="font-size:11px;color:#6B6B73"></span></div>

@@ -23,6 +23,53 @@
   var rk = function (e, k) { return e.ranks[k] ? '#' + e.ranks[k] + (e.tied && e.tied[k] ? '=' : '') : ''; };
   var state = { x: PRESETS[0].x, y: PRESETS[0].y, preset: 0, cluster: 'all', pinned: null };
 
+  /* subsidiaries for the card: the #bm-subs block, present only while the page's switch is on */
+  var SUBS = (function () { var n = document.getElementById('bm-subs'); if (!n) return null; try { return JSON.parse(n.textContent); } catch (err) { return null; } })();
+  var ST = { active: 'active', not_yet_operating: 'not yet operating', unknown: 'status not stated', dormant: 'dormant', liquidation: 'in liquidation', merged: 'merged', divested: 'sold' };
+  var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+  function day(iso) { var m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(iso || ''); return m ? (m[3] ? Number(m[3]) + ' ' : '') + MON[Number(m[2]) - 1] + ' ' + m[1] : (iso || ''); }
+  function pct(v) { return v == null ? '—' : (v >= 100 ? 100 : Math.floor(v * 100) / 100) + '%'; }   /* 99.998 shows as 99.99, never 100 */
+  function subsBlock(slug) {
+    var g = SUBS && SUBS.groups && SUBS.groups[slug];
+    if (!g) return null;
+    var U = function (i) { return i != null && i >= 0 ? g.urls[i] : null; };
+    var stake = function (v, i) { var u = U(i); return u ? el('a', { href: u, target: '_blank', rel: 'noopener', title: 'Source: ' + host(u), text: pct(v) }) : pct(v); };
+    var act = g.subs.filter(function (r) { return r[2] === 'active'; });
+    var rest = g.subs.filter(function (r) { return r[2] !== 'active'; });
+    var box = el('div', { class: 'subs' }, el('div', { class: 'h' }, el('b', { text: 'Subsidiaries and stakes' }),
+      el('span', { text: g.t1 ? g.t1a + ' of ' + g.t1 + ' active' : 'none found' })));
+    function row(r, nest) {
+      var d = el('div', { class: 'bm-sub' }, el('span', { class: 'n', text: r[0] }), el('span', { class: 'p' }, stake(r[1], r[4])));
+      var meta = [r[3], r[2] !== 'active' ? (ST[r[2]] || r[2]) : ''].filter(Boolean).join(' · ');
+      if (meta) d.append(el('span', { class: 's', text: meta }));
+      var ks = nest && r[5] ? r[5] : [];
+      if (ks.length) {
+        var ul = el('ul');
+        ks.forEach(function (k) {
+          ul.append(el('li', null, el('span', { text: k[0] + (k[2] !== 'active' ? ' (' + (ST[k[2]] || k[2]) + ')' : '') }), el('span', { class: 'p' }, stake(k[1], k[4]))));
+        });
+        d.append(el('details', null, el('summary', { text: ks.length === 1 ? '1 company under it' : ks.length + ' companies under it' }), ul));
+      }
+      return d;
+    }
+    var list = el('div');
+    act.forEach(function (r, i) { var d = row(r, true); if (i >= 6) d.hidden = true; list.append(d); });
+    box.append(list);
+    if (act.length > 6) box.append(el('button', { class: 'more', type: 'button', text: 'Show all ' + act.length,
+      onclick: function (ev) { ev.stopPropagation(); Array.prototype.forEach.call(list.children, function (c) { c.hidden = false; }); ev.currentTarget.remove(); } }));
+    if (rest.length) {
+      var gone = el('div');
+      rest.forEach(function (r) { gone.append(row(r, false)); });
+      box.append(el('details', { class: 'gone' }, el('summary', { text: rest.length + ' more: not active or status not stated' }), gone));
+    }
+    var b = g.basis, bu = b ? U(b.u) : null;
+    var nt = el('p', { class: 'nt' }, 'As of ' + (b && b.as_of ? day(b.as_of) : 'its latest filing') + ', from ');
+    nt.append(bu ? el('a', { href: bu, target: '_blank', rel: 'noopener', text: host(bu) }) : 'its filings', '. Tap a stake for its source.');
+    box.append(nt);
+    if (g.note) box.append(el('p', { class: 'nt', text: g.note }));
+    return box;
+  }
+
   /* controls */
   var pBox = $('#bm-presets');
   PRESETS.forEach(function (p, i) {
@@ -231,6 +278,7 @@
       why.append(pp);
     });
     if (why.childNodes.length) card.append(why);
+    var sb = subsBlock(e.slug); if (sb) card.append(sb);
     card.classList.toggle('sheet', !wide());
     card.hidden = false; idle.hidden = wide();
     Object.keys(badges).forEach(function (s) { badges[s].classList.toggle('on', s === e.slug); });

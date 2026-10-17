@@ -17,6 +17,7 @@ const { esc } = require('../lib/util');
 const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
 const { shell } = require('./browse1001');
+const { liveFlag } = require('../lib/flaglive');
 
 const FILE = path.join(__dirname, '..', 'data', 'bumn.json');
 let cache = { mtime: 0, data: null };
@@ -28,12 +29,30 @@ function load() {
   return cache.data;
 }
 
+/* Subsidiaries in each company's card (Luca, 18 Oct 2026: "list each BUMN's active
+   subsidiaries in its side panel, with stake, status and the date of the statement behind it").
+   data/bumn-subs.json comes from ~/projects/bumn-group-webs/tools/export-site.py: per BUMN its
+   direct subsidiaries and stakes (and the companies under each), each stake linked to the filing
+   or page it was read from. Shown only while data/bumnsubs.live exists (BUMNSUBS_PREVIEW=1 on a
+   test port); without it the page is byte-identical to before. */
+const subsLive = liveFlag('bumnsubs.live', 'BUMNSUBS_PREVIEW');
+const SUBS = path.join(__dirname, '..', 'data', 'bumn-subs.json');
+let subsCache = { mtime: 0, data: null };
+function loadSubs() {
+  try {
+    const st = fs.statSync(SUBS);
+    if (st.mtimeMs !== subsCache.mtime) subsCache = { mtime: st.mtimeMs, data: JSON.parse(fs.readFileSync(SUBS, 'utf8')) };
+  } catch (e) { /* keep the last good copy */ }
+  return subsCache.data;
+}
+
 /* cache-buster from the script's own mtime, so editing public/js/bumn1001.js needs no restart */
 const JS = path.join(__dirname, '..', 'public', 'js', 'bumn1001.js');
 const ver = () => { try { return String(Math.floor(fs.statSync(JS).mtimeMs / 1000)); } catch (e) { return '0'; } };
 
 function page({ lang = 'en' }) {
   const D = load();
+  const S = subsLive() ? loadSubs() : null;
   const p = '/bumn';
   if (!D) return null;
   const n = D.entities.length;
@@ -122,7 +141,26 @@ function page({ lang = 'en' }) {
 .bm-m p,.bm-m li{color:#52525B;font-size:14.5px;line-height:1.6;max-width:88ch}
 .bm-m ul{padding-left:18px;margin:6px 0 16px}
 .bm-f{font:400 13px/1.6 'IBM Plex Mono',monospace;background:#F7F8F4;border:1px solid #F1F1F1;padding:10px 12px;margin:8px 0;overflow-x:auto;white-space:pre}
-@media(max-width:760px){
+${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6px}
+.bm-card .subs .h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:2px}
+.bm-card .subs .h b,.bm-card .subs summary{font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#6B6B73}
+.bm-card .subs .h span{font:400 10.5px/1.3 'IBM Plex Mono',monospace;color:#9A9AA0;white-space:nowrap}
+.bm-sub{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:1px 8px;padding:6px 0;border-bottom:1px solid #F4F4F4}
+.bm-sub .n{font-weight:600;font-size:13px;line-height:1.3;min-width:0}
+.bm-sub .s{grid-column:1/-1;color:#6B6B73;font-size:12px;line-height:1.35}
+.bm-sub .p,.bm-sub li .p{font:400 12px/1.3 'IBM Plex Mono',monospace;text-align:right;white-space:nowrap}
+.bm-sub .p a,.bm-card .subs .nt a{color:#2A6E9F;text-decoration:none;border-bottom:1px solid #D9E3EC}
+.bm-sub details{grid-column:1/-1;margin-top:2px}
+.bm-sub summary{cursor:pointer;font:400 11px/1.3 'IBM Plex Mono',monospace;color:#6B6B73}
+.bm-sub ul{list-style:none;margin:5px 0 2px;padding:0 0 0 10px;border-left:2px solid #F1F1F1;display:grid;gap:4px}
+.bm-sub li{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:6px;font-size:12.5px;line-height:1.3;color:#3F3F46}
+.bm-card .subs .more{all:unset;cursor:pointer;font:400 11px/1.3 'IBM Plex Mono',monospace;color:#2A6E9F;margin-top:7px;display:inline-block}
+.bm-card .subs .more:focus-visible{outline:2px solid #000}
+.bm-card .subs .gone{margin-top:8px}
+.bm-card .subs .gone summary{cursor:pointer}
+.bm-card .subs .nt{color:#6B6B73;font-size:12px;line-height:1.4;margin-top:7px}
+@media(min-width:1000px){.bm-side{max-height:calc(100vh - 24px);overflow:auto}}
+` : ''}@media(max-width:760px){
   .bm-q{font-size:9.5px;max-width:40%}
   #bm-presets,#bm-clusters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-20px;padding-inline:20px}
   #bm-presets::-webkit-scrollbar,#bm-clusters::-webkit-scrollbar{display:none}
@@ -177,7 +215,7 @@ function page({ lang = 'en' }) {
   <details class="bm-m"><summary>Method, data dates and limits</summary>${method}</details>
 </section>
 <script type="application/json" id="bm-data">${JSON.stringify(D).replace(/</g, '\\u003c')}</script>
-<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
+${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
   const crumb = [{ name: '1001startup.id', path: '/' }, { name: 'BUMN', path: p }];
   const ld = {
     '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on ten yardsticks',

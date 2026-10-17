@@ -1,0 +1,194 @@
+{
+ "asof": "2026-10-17",
+ "sites": [
+  {
+   "name": "PLN Icon Plus Data Center, Gandul",
+   "slug": "pln",
+   "group": "PLN",
+   "status": "Running",
+   "rents": true,
+   "what": "Icon Plus's own data-centre site in Gandul, Cinere (Depok), running since 2012 to an Uptime Tier III design; its Data Center 2 received a TIA-942 Rating 3 design certificate on 1 Feb 2026. It sells colocation and virtual private data-centre services.",
+   "u": "https://tangsel.inews.id/read/655957/keamanan-data-nasional-ini-peran-strategis-data-center-pln-icon-plus-lindungi-data-publik"
+  },
+  {
+   "name": "PGNCOM Data Center, Jakarta and Batam",
+   "slug": "pertamina",
+   "group": "Pertamina",
+   "status": "Running",
+   "rents": true,
+   "what": "PGNCOM colocation data centres in Jakarta and Batam: 80 racks, power upgradable to 800 kVA, meet-me room, SGIX and IIX presence; Uptime Institute lists \"PGNCom DC Ketapang\" in West Jakarta.",
+   "u": "https://pgncom.co.id/news-detail/30/data-center"
+  },
+  {
+   "name": "Pertamina Sinergi Data Center",
+   "slug": "pertamina",
+   "group": "Pertamina",
+   "status": "Running",
+   "rents": false,
+   "what": "Pertamina's own enterprise data centre in Jakarta. Uptime Institute lists Tier III design and constructed-facility awards for it.",
+   "u": "https://uptimeinstitute.com/uptime-institute-awards/datacenter/pertamina-sinergi-data-center-psdc/1394"
+  },
+  {
+   "name": "PGE Kamojang geothermal data centre",
+   "slug": "pertamina",
+   "group": "Pertamina",
+   "status": "Planned",
+   "rents": false,
+   "what": "Planned 5 MW (utility load) data centre at Kamojang, West Java, powered by a dedicated ~5 MW geothermal unit (about US$19m); PGE calls it a pilot to validate the business model.",
+   "u": "https://pge.pertamina.com/Media/Uploads/investor/Keterbukaan%20Informasi/(REV)%20KI%20Studi%20Kelayakan%20(63101%20dan%2063102)_r.pdf"
+  },
+  {
+   "name": "BRI data centres and recovery site",
+   "slug": "bri",
+   "group": "BRI",
+   "status": "Running",
+   "rents": false,
+   "what": "BRI's own data centres, which also host the IT of its subsidiaries. In 2025 BRI added mechanical and electrical capacity, and a Rp471.2 bn purchase for new data-centre IT was 76% done at 30 Jun 2026. BRI does not say where the sites are.",
+   "u": "https://ir-bri.com/misc/AR/AR2025-EN.pdf"
+  },
+  {
+   "name": "IT Center BRI Ragunan",
+   "slug": "bri",
+   "group": "BRI",
+   "status": "Being built",
+   "rents": false,
+   "what": "BRI's new IT campus in Ragunan, South Jakarta: a 13-floor 'Techno' building and a 5-floor 'Cloud' building, 18,914 m2 of offices and data centre, built by Hutama Karya; Rp777.6 bn spent by 30 Jun 2026.",
+   "u": "https://indopremier.com/xdir/news/LAPORAN%20KEUANGAN/2026/q2/BBRI_Q2_2026.pdf"
+  },
+  {
+   "name": "Kawasan IT Tabanan, Bali",
+   "slug": "bri",
+   "group": "BRI",
+   "status": "Being built",
+   "rents": false,
+   "what": "BRI's IT site under construction in Tabanan, Bali, with Rp140.5 bn spent by 30 Jun 2026. BRI has not said what role it will play.",
+   "u": "https://indopremier.com/xdir/news/LAPORAN%20KEUANGAN/2026/q2/BBRI_Q2_2026.pdf"
+  },
+  {
+   "name": "BNI Data Center, Slipi",
+   "slug": "bni",
+   "group": "BNI",
+   "status": "Running",
+   "rents": false,
+   "what": "BNI's own data centre in Slipi, Jakarta. Uptime Institute lists Tier III awards for it, and BNI says it runs three Uptime-certified data centres.",
+   "u": "https://uptimeinstitute.com/component/tierachievement/datacenter/bni-data-center-slipi/735"
+  },
+  {
+   "name": "Mandiri recovery centre, Injoko (Surabaya)",
+   "slug": "mandiri",
+   "group": "Mandiri",
+   "status": "Running",
+   "rents": false,
+   "what": "Bank Mandiri's own disaster-recovery data centre in Surabaya. Uptime Institute lists Tier IV awards for its design (2024) and its first built phase (2026).",
+   "u": "https://uptimeinstitute.com/component/tierachievement/datacenter/drc-1-injoko-surabaya/2080?Itemid="
+  },
+  {
+   "name": "Mandiri data centre (Plaza Mandiri) and Rempoa",
+   "slug": "mandiri",
+   "group": "Mandiri",
+   "status": "Not stated",
+   "rents": false,
+   "what": "Bank Mandiri said in 2016 that its main data centre was at Plaza Mandiri (Jakarta) with a backup recovery centre at Rempoa (South Jakarta).",
+   "u": "https://keuangan.kontan.co.id/news/bank-mandiri-belum-tertarik-sewakan-jaringan-ti"
+  },
+  {
+   "name": "BTN Data Center, Sentul",
+   "slug": "btn",
+   "group": "BTN",
+   "status": "Running",
+   "rents": false,
+   "what": "One of BTN's two data centres, named in its Sep 2026 tender for fibre links between them. BTN does not say whether it owns the building. In 2017 it named Surabaya and Sentul as its data-centre sites, with Telkom as partner.",
+   "u": "https://www.btn.co.id/-/media/Files/procurement/2026/Sep/131-BTN-PFAD-IX-2026.pdf"
+  },
+  {
+   "name": "BTN Data Center, Bitera",
+   "slug": "btn",
+   "group": "BTN",
+   "status": "Running",
+   "rents": false,
+   "what": "BTN's second data centre, named in the same Sep 2026 tender. Its location and operator are not stated.",
+   "u": "https://www.btn.co.id/-/media/Files/procurement/2026/Sep/131-BTN-PFAD-IX-2026.pdf"
+  },
+  {
+   "name": "Taspen recovery centre",
+   "slug": "taspen",
+   "group": "Taspen",
+   "status": "Running",
+   "rents": false,
+   "what": "Taspen's own disaster-recovery data centre for its IT systems; a 2018 Supreme Court release places it in Denpasar.",
+   "u": "https://www.taspen.co.id/uploads/KQqOdJGVxc51aP5UIKMjv5CwMgBSZHq7s46lNn2m.pdf"
+  },
+  {
+   "name": "Jasa Marga data centre and recovery centre",
+   "slug": "jasa-marga",
+   "group": "Jasa Marga",
+   "status": "Running",
+   "rents": false,
+   "what": "Jasa Marga's own data centre and a disaster-recovery centre for its SAP systems. Its 2026 plans include a Rp16.0 bn refresh of the recovery-centre equipment. Locations are not stated.",
+   "u": "https://rup.jasamarga.co.id/ruang-publik/rup/detail/89df34ef-a2f5-4ae2-a454-bb5f4e626fbb"
+  },
+  {
+   "name": "HK Tower data centre",
+   "slug": "hutama-karya",
+   "group": "Hutama Karya",
+   "status": "Running",
+   "rents": false,
+   "what": "Hutama Karya's own data centre in its HK Tower head office in Cawang, Jakarta; Datwyler designed it and supplied racks and copper and fibre cabling.",
+   "u": "https://datwyler-itinfra.com/en_apac/references/pt.-hutama-karya-from-consulting-to-turn-key-solution"
+  },
+  {
+   "name": "KAI data centre, Bandung",
+   "slug": "kai",
+   "group": "KAI",
+   "status": "Running",
+   "rents": false,
+   "what": "KAI's own corporate data centre. Its 2024 annual report describes a new data centre built to a Tier III study, and in May 2025 PLN connected 555 kVA to a new KAI data-centre building in Bandung.",
+   "u": "https://ppid.kai.id/media/konten/112_annual_report_2024.pdf"
+  },
+  {
+   "name": "Krakatau data centre and recovery site (KITech)",
+   "slug": "krakatau-steel",
+   "group": "Krakatau Steel",
+   "status": "Running",
+   "rents": true,
+   "what": "The Krakatau Steel group's in-house data centre and IT recovery centre, built by KITech in 2016 and shared by group companies; a 2025 drill moved all critical services to the recovery centre. Its estate company KSI also sells a 24-hour data-centre service to estate tenants. Size and tier are not disclosed.",
+   "u": "https://www.krakatausteel.com/pdf/Laporan%20Tahunan%20dan%20Keberlanjutan%202025.pdf"
+  },
+  {
+   "name": "SIG data centre, Gresik",
+   "slug": "sig",
+   "group": "SIG",
+   "status": "Running",
+   "rents": false,
+   "what": "SIG's own data-centre facility in Gresik, run by its ICT department; SISI provides managed IT infrastructure services.",
+   "u": "https://jatengaja.com/read/dukung-proses-bisnis-sig-manfaatkan-cloud-amazon-web-services"
+  },
+  {
+   "name": "AirNav head-office data centre",
+   "slug": "airnav",
+   "group": "AirNav",
+   "status": "Running",
+   "rents": false,
+   "what": "AirNav runs its own data centre at its head office; a 2023 tender (PKT/2023/057) upgraded its reliability. Since Sep 2025 Alibaba Cloud provides the disaster-recovery copy.",
+   "u": "https://eproc.airnavindonesia.co.id/vms/web/index.php/homepage/index/page/14.shtml"
+  },
+  {
+   "name": "ID FOOD in-house server room",
+   "slug": "id-food",
+   "group": "ID FOOD",
+   "status": "Running",
+   "rents": false,
+   "what": "ID FOOD's own data-centre (server) room; PT Telematic Multisystem did its preventive maintenance in Sep 2024.",
+   "u": "https://ppid.idfood.co.id/upload/Daftar%20Penyedia%20atau%20Vendor.pdf"
+  },
+  {
+   "name": "Telin data centres, Hong Kong and Timor-Leste",
+   "slug": "telkom",
+   "group": "Telkom",
+   "status": "Running",
+   "rents": false,
+   "what": "Two overseas data centres run by Telin, one in Hong Kong and one in Timor-Leste, separate from NeutraDC's sites in Singapore.",
+   "u": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf"
+  }
+ ]
+}
