@@ -29,6 +29,30 @@
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   function day(iso) { var m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(iso || ''); return m ? (m[3] ? Number(m[3]) + ' ' : '') + MON[Number(m[2]) - 1] + ' ' + m[1] : (iso || ''); }
   function pct(v) { return v == null ? '—' : (v >= 100 ? 100 : Math.floor(v * 100) / 100) + '%'; }   /* 99.998 shows as 99.99, never 100 */
+  var TIES = (function () { var n = document.getElementById('bm-ties'); if (!n) return null; try { return JSON.parse(n.textContent); } catch (err) { return null; } })();
+  function tiesBlock(slug) {
+    var rows = TIES && TIES.groups && TIES.groups[slug];
+    if (!rows || !rows.length) return null;
+    var total = rows.reduce(function (n, r) { return n + r[2].length; }, 0);
+    var box = el('div', { class: 'ties' }, el('div', { class: 'h' }, el('b', { text: 'Ties to data centres' }),
+      el('span', { text: total + (total === 1 ? ' tie' : ' ties') })));
+    var list = el('div'), lastType = null, shown = 0;
+    rows.forEach(function (r, i) {
+      var hide = i >= 6;
+      if (r[0] !== lastType) { var th = el('div', { class: 't', text: TIES.types[r[0]] || r[0] }); if (hide) th.hidden = true; list.append(th); lastType = r[0]; }
+      var who = el('span', { class: 'c' });
+      r[2].forEach(function (p, j) { if (j) who.append(', '); who.append(p[1] ? el('a', { href: p[1], text: p[0] }) : p[0]); });
+      var meta = el('span', { class: 'm' }, (r[4] === 'confirmed' ? 'Confirmed' : "Company's word") + (r[5] ? ' · ' + r[5] : '') + ' · ');
+      meta.append(el('a', { href: r[6], target: '_blank', rel: 'noopener', text: host(r[6]) }));
+      var d = el('div', { class: 'bm-tie' }, who, el('span', { class: 'd', text: (r[1] ? r[1] + ': ' : '') + r[3] }), meta);
+      if (hide) d.hidden = true; else shown++;
+      list.append(d);
+    });
+    box.append(list);
+    if (rows.length > shown) box.append(el('button', { class: 'more', type: 'button', text: 'Show all ' + total,
+      onclick: function (ev) { ev.stopPropagation(); Array.prototype.forEach.call(list.children, function (c) { c.hidden = false; }); ev.currentTarget.remove(); } }));
+    return box;
+  }
   function subsBlock(slug) {
     var g = SUBS && SUBS.groups && SUBS.groups[slug];
     if (!g) return null;
@@ -279,6 +303,7 @@
     });
     if (why.childNodes.length) card.append(why);
     var sb = subsBlock(e.slug); if (sb) card.append(sb);
+    var tb = tiesBlock(e.slug); if (tb) card.append(tb);
     card.classList.toggle('sheet', !wide());
     card.hidden = false; idle.hidden = wide();
     Object.keys(badges).forEach(function (s) { badges[s].classList.toggle('on', s === e.slug); });

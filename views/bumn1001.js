@@ -46,6 +46,21 @@ function loadSubs() {
   return subsCache.data;
 }
 
+/* Ties to data centres in each card (Luca, 18 Oct 2026, "ties block on /bumn"): data/bumn-ties.json,
+   from the same research (confirmed or company-stated ties only, each with its source). Shown only
+   while data/bumnties.live exists (BUMNTIES_PREVIEW=1 on a test port); the same switch turns on the
+   state layer on /data-center (views/dcstate1001.js). */
+const tiesLive = liveFlag('bumnties.live', 'BUMNTIES_PREVIEW');
+const TIES = path.join(__dirname, '..', 'data', 'bumn-ties.json');
+let tiesCache = { mtime: 0, data: null };
+function loadTies() {
+  try {
+    const st = fs.statSync(TIES);
+    if (st.mtimeMs !== tiesCache.mtime) tiesCache = { mtime: st.mtimeMs, data: JSON.parse(fs.readFileSync(TIES, 'utf8')) };
+  } catch (e) { /* keep the last good copy */ }
+  return tiesCache.data;
+}
+
 /* cache-buster from the script's own mtime, so editing public/js/bumn1001.js needs no restart */
 const JS = path.join(__dirname, '..', 'public', 'js', 'bumn1001.js');
 const ver = () => { try { return String(Math.floor(fs.statSync(JS).mtimeMs / 1000)); } catch (e) { return '0'; } };
@@ -53,6 +68,8 @@ const ver = () => { try { return String(Math.floor(fs.statSync(JS).mtimeMs / 100
 function page({ lang = 'en' }) {
   const D = load();
   const S = subsLive() ? loadSubs() : null;
+  const T = tiesLive() ? loadTies() : null;
+  const TJ = T ? { types: T.types, groups: T.groups } : null;
   const p = '/bumn';
   if (!D) return null;
   const n = D.entities.length;
@@ -160,6 +177,19 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
 .bm-card .subs .gone summary{cursor:pointer}
 .bm-card .subs .nt{color:#6B6B73;font-size:12px;line-height:1.4;margin-top:7px}
 @media(min-width:1000px){.bm-side{max-height:calc(100vh - 24px);overflow:auto}}
+` : ''}${TJ ? `.bm-card .ties{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:8px}
+.bm-card .ties .h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;margin-bottom:2px}
+.bm-card .ties .h b,.bm-card .ties .t{font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#6B6B73}
+.bm-card .ties .h span{font:400 10.5px/1.3 'IBM Plex Mono',monospace;color:#9A9AA0;white-space:nowrap}
+.bm-card .ties .t{margin-top:9px;color:#3F3F46}
+.bm-tie{padding:6px 0;border-bottom:1px solid #F4F4F4;display:grid;gap:2px}
+.bm-tie .c{font-weight:600;font-size:13px;line-height:1.3}
+.bm-tie .c a{color:#0B0B0C;text-decoration:none;border-bottom:1px solid #C9C9CF}
+.bm-tie .d{color:#3F3F46;font-size:12.5px;line-height:1.4}
+.bm-tie .m{font:400 10.5px/1.3 'IBM Plex Mono',monospace;color:#9A9AA0;letter-spacing:.03em}
+.bm-tie .m a{color:#2A6E9F;text-decoration:none;border-bottom:1px solid #D9E3EC}
+.bm-card .ties .more{all:unset;cursor:pointer;font:400 11px/1.3 'IBM Plex Mono',monospace;color:#2A6E9F;margin-top:7px;display:inline-block}
+.bm-card .ties .more:focus-visible{outline:2px solid #000}
 ` : ''}@media(max-width:760px){
   .bm-q{font-size:9.5px;max-width:40%}
   #bm-presets,#bm-clusters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-20px;padding-inline:20px}
@@ -215,7 +245,7 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
   <details class="bm-m"><summary>Method, data dates and limits</summary>${method}</details>
 </section>
 <script type="application/json" id="bm-data">${JSON.stringify(D).replace(/</g, '\\u003c')}</script>
-${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
+${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}${TJ ? `<script type="application/json" id="bm-ties">${JSON.stringify(TJ).replace(/</g, '\\u003c')}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
   const crumb = [{ name: '1001startup.id', path: '/' }, { name: 'BUMN', path: p }];
   const ld = {
     '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on ten yardsticks',
