@@ -1,0 +1,200 @@
+{
+  "asof": "2026-10-17",
+  "rows": [
+    ["equip", "Equipment risk", "Chips, power and cooling kit: design, making, supply"],
+    ["build", "Build risk", "Construction, fit-out and handover"],
+    ["land", "Land risk", "Plots, estate permits, zoning"],
+    ["power", "Power risk", "Grid connection, substations, supply"],
+    ["capital", "Capital risk", "Paying for the halls and the GPUs"],
+    ["customers", "Customer risk", "Leases, cloud contracts, filling the halls"]
+  ],
+  "groups": [
+    ["vendors", "Vendors", "Sell the chips and the kit"],
+    ["builders", "Builders", "Build on contract"],
+    ["landpower", "Land and power", "Sell the plots and the electricity"],
+    ["operators", "Operators and AI clouds", "Own the halls or the GPUs"]
+  ],
+  "bottom_line": [
+    "<strong>Power and land sit outside the operator.</strong> PLN builds the substations and supplies almost every site, and estates such as GIIC zone and sell the plots. No operator here makes its own power at scale; DCI's 30 MW solar farm in Karawang is the exception.",
+    "<strong>Operators carry the capital and the customers.</strong> DCI, NeutraDC and STT GDC pay for the halls and rent them out. Builders such as Total and Acset are paid per contract, though STT GDC alone was a fifth of Total's 2025 revenue.",
+    "<strong>In the biggest AI deal, NVIDIA shares the risk.</strong> Firmus buys the GPUs for its 360 MW Batam campus, but says NVIDIA gives credit support and takes a share of the cloud revenue."
+  ],
+  "method": [
+    "<b>Primary</b>: the company does it, owns it or pays for it, per a source. <b>Shared</b>: it splits that with a named partner, such as a joint venture, a plot bought inside an estate, a building rented from a partner or a revenue share. <b>Limited</b>: it only sells, builds or rents on contract, or no source ties it to that risk.",
+    "Every Primary and Shared cell opens the filing or company page it rests on, with the quoted line. Limited cells carry a source only when one says what the company does instead.",
+    "The ten columns are companies on this page with the most sourced ties, two or more per role. The levels are our reading of those sources, checked 17 Oct 2026.",
+    "Most figures come from the companies' own annual reports and statements (DCI, Total Bangun Persada, Acset, PT PP, Puradelta Lestari, Telkom), their releases (Firmus, STT GDC, Digital Edge) and PLN's statements. \"Company's word\" marks a claim only that company has made."
+  ],
+  "cols": [
+    {
+      "k": "nvidia", "n": "NVIDIA", "g": "vendors", "logo": "/assets/dc/logo/nvidia.com.png", "sub": "AI chips",
+      "cells": {
+        "equip": {"lv": "p", "t": "Makes the GPUs", "note": "Supplies up to 170,000 accelerators for Firmus' Batam AI factory in 2027-2028, and the H100 servers in Lintasarta's GPU Merdeka cloud.", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "The agreement covers up to 170,000 NVIDIA AI accelerators across Grace-Blackwell, Vera-Rubin, and Vera platforms through 2027 and 2028"},
+          {"u": "https://www.lintasarta.net/en/news/lintasarta-presents-gpu-merdeka-an-advanced-sovereign-ai-cloud-for-indonesia-powered-by-nvidia-ai/", "t": "lintasarta.net", "ev": "confirmed", "q": "GPU Merdeka features high-performance GPU servers with a configuration of 8x NVIDIA H100 SXM Tensor Core GPUs in one server."}]},
+        "build": {"lv": "l", "t": "Certifies halls, doesn't build", "note": "Its DGX-Ready programme certified BDx's CGK4 campus in April 2025. That is a certification, not construction.", "src": [
+          {"u": "https://www.bdxworld.com/bdx-achieves-certification-in-the-nvidia-dgx-ready-data-center-program-to-power-ai-data-centres-in-the-region/", "t": "bdxworld.com", "ev": "confirmed", "q": "among the first in the country to achieve NVIDIA DGX-Ready certification"}]},
+        "land": {"lv": "l", "t": "No site role", "note": "No source puts NVIDIA on the land of an Indonesian site.", "src": []},
+        "power": {"lv": "l", "t": "No power role", "note": "No source puts NVIDIA on a site's power supply.", "src": []},
+        "capital": {"lv": "s", "t": "Credit support for Firmus", "note": "Firmus buys the GPUs, and says the deal runs on a revenue-sharing and credit-support model with NVIDIA. The terms are not published.", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "through economic alignment with a revenue-sharing and credit-support model"}]},
+        "customers": {"lv": "s", "t": "Share of Firmus' cloud revenue", "note": "Firmus says NVIDIA earns both product revenue and a share of the cloud revenue on the capacity it supports, so NVIDIA's income moves with Firmus' sales.", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "with NVIDIA earning both standard product revenue and a share of the cloud revenue on the supported capacity"}]}
+      }
+    },
+    {
+      "k": "huawei", "n": "Huawei", "g": "vendors", "logo": "/assets/dc/logo/huawei.com.png", "sub": "Power and cooling kit",
+      "cells": {
+        "equip": {"lv": "p", "t": "Makes UPS, cooling, modules", "note": "Huawei's own case study: its modular data-centre kit (FusionModule2000, UPS5000-E UPS, NetCol5000-A in-row cooling) turned an office area at Matrix NAP Info into a data-centre hall. It also supplied 3 Indonesia's prefab site in Malang.", "src": [
+          {"u": "https://e.huawei.com/id/case-studies/id/matrix-nap-info-fm2000", "t": "e.huawei.com", "ev": "confirmed", "q": "The project adopted Huawei's latest Smart Modular Data Center Solution"},
+          {"u": "https://ekonomi.republika.co.id/berita/qbymmj2417000/gunakan-solusi-modular-huawei-3-bangun-data-center-baru", "t": "republika.co.id", "ev": "reported", "q": "Huawei menerapkan solusi prefabrikasi modular yang menghemat waktu konstruksi secara signifikan"}]},
+        "build": {"lv": "p", "t": "Fit-out contractor, prefab halls", "note": "Telkom's 2025 20-F lists PT Huawei Tech Investment as general contractor for NeutraDC's level-3 and level-4 'Delta Project' fit-out, March 2025 to March 2028. In Batam, Aesler signed Huawei Digital Power to build its prefab data centres.", "src": [
+          {"u": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf", "t": "Telkom 20-F", "ev": "confirmed", "q": "TDE and PT Huawei Tech Investment March 24, 2025 - Contract Agreement of General Contractor (\"GC\") for Delta Project Level-3 March 23, 2028 and Level-4 Fit Out Works"},
+          {"u": "https://w.media/huawei-to-construct-88mw-data-centre-in-batam-indonesia/", "t": "w.media", "ev": "reported", "q": "has signed a cooperation agreement regarding a data centre construction with Huawei Digital Power"}]},
+        "land": {"lv": "l", "t": "No site role", "note": "No source puts Huawei on the land of an Indonesian site.", "src": []},
+        "power": {"lv": "l", "t": "No supply role", "note": "Huawei sells UPS and power gear, counted under equipment. No source has it supplying electricity.", "src": []},
+        "capital": {"lv": "l", "t": "Paid per contract", "note": "Paid for kit and fit-out work; no source has it funding a campus.", "src": []},
+        "customers": {"lv": "l", "t": "Paid per contract", "note": "Its pay does not depend on who rents the halls.", "src": []}
+      }
+    },
+    {
+      "k": "totl", "n": "Total Bangun Persada", "g": "builders", "logo": "/assets/dc/logo/totalbp.com.png", "sub": "General contractor",
+      "cells": {
+        "equip": {"lv": "l", "t": "Not a kit maker", "note": "A builder; no source has it making data-centre equipment.", "src": []},
+        "build": {"lv": "p", "t": "Main contractor: STT GDC, EDGE2", "note": "Its filings list STT GDC's 'Iris 2', 'Iris 3' and 'IRIS 5 & 6' contracts, 'Edge2 DC Phase III' for Digital Edge, and a share, with Shimizu, of the 'JKT11 Project in Cikarang', which we match to Microsoft.", "src": [
+          {"u": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf", "t": "totalbp.com", "ev": "confirmed", "q": "IRIS 5 & 6 PT STT GDC Indonesia 1 April 2026/ 31 Juli 2027/"},
+          {"u": "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf", "t": "totalbp.com", "ev": "confirmed", "q": "Edge2 DC Phase III PT Ekagrata Data Gemilang 15 September 2025/ 13 Juni 2026/"},
+          {"u": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf", "t": "totalbp.com", "ev": "inferred", "q": "the Entity with Shimizu Corporation had entered into KSO to conduct the construction of JKT11 Project in Cikarang"}]},
+        "land": {"lv": "l", "t": "No site role", "note": "Builds on land its clients own.", "src": []},
+        "power": {"lv": "l", "t": "No supply role", "note": "No source has it supplying power.", "src": []},
+        "capital": {"lv": "l", "t": "Paid per contract", "note": "Paid by the owner as the work goes on; no source has it funding a campus.", "src": []},
+        "customers": {"lv": "l", "t": "STT GDC: 21% of its revenue", "note": "Paid by contract, not by tenants. But STT GDC alone was 20.55% of its 2025 revenue (Rp801.7 bn), its biggest customer, so a slowdown at one operator would show.", "src": [
+          {"u": "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf", "t": "totalbp.com", "ev": "confirmed", "q": "PT STT GDC Indonesia 801.661.104 20,55%"}]}
+      }
+    },
+    {
+      "k": "acset", "n": "Acset", "g": "builders", "logo": "/assets/dc/logo/acset.co.png", "sub": "Shell and structure",
+      "cells": {
+        "equip": {"lv": "l", "t": "Not a kit maker", "note": "A builder; no source has it making data-centre equipment.", "src": []},
+        "build": {"lv": "p", "t": "Shells: SMX01, BDx, GDS Nongsa", "note": "Its annual reports list the SMX01 main building for Sinar Mas (Rp802.9 bn, from August 2025, 39 months), BDx CGK3's shell (topped off December 2024) and 'GDS Data Center Nongsa' in Batam (Rp321.0 bn).", "src": [
+          {"u": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf", "t": "acset.co", "ev": "confirmed", "q": "SMX 01 Data Center 100% 802,900 PT Kuningan Mas Gemilang Agustus/August 2025 39 bulan/months"},
+          {"u": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2024_Completed.pdf", "t": "acset.co", "ev": "confirmed", "q": "Topping Off Data Center BDx CGK3 TB Simatupang"},
+          {"u": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf", "t": "acset.co", "ev": "confirmed", "q": "GDS Data Center Nongsa 100% 320.968 PT GDS IDC Service"}]},
+        "land": {"lv": "l", "t": "No site role", "note": "Builds on land its clients own.", "src": []},
+        "power": {"lv": "l", "t": "No supply role", "note": "No source has it supplying power.", "src": []},
+        "capital": {"lv": "l", "t": "Paid per contract", "note": "Paid by the owner as the work goes on; no source has it funding a campus.", "src": []},
+        "customers": {"lv": "l", "t": "Paid per contract", "note": "Its pay does not depend on who rents the halls.", "src": []}
+      }
+    },
+    {
+      "k": "pln", "n": "PLN", "g": "landpower", "logo": "/assets/dc/logo/pln.co.id.png", "sub": "State utility",
+      "cells": {
+        "equip": {"lv": "l", "t": "No data-centre kit", "note": "PLN buys grid gear for its own substations; it supplies no data-centre equipment.", "src": []},
+        "build": {"lv": "l", "t": "Builds the grid side only", "note": "PLN builds substations and lines (see power and capital), not data halls.", "src": []},
+        "land": {"lv": "l", "t": "No site role", "note": "No source puts PLN on the land of a data-centre site.", "src": []},
+        "power": {"lv": "p", "t": "Supplies the grid, builds substations", "note": "48 of the 57 sites on our power matrix draw on the grid: PLN, PLN Batam or an estate utility. PLN finished a 150 kV 'Data Center' substation in GIIC in November 2024, and signed Digital Edge for 2 x 725 MVA.", "src": [
+          {"u": "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558", "t": "zonapasar.com", "ev": "company_claim", "q": "PT PLN (Persero) berhasil menyelesaikan pembangunan Gardu Induk 150 kV Data Center"},
+          {"u": "https://id.digitaledgedc.com/news/digital-edge-tops-out-cgk1-secures-largest-indonesia-power-deal", "t": "digitaledgedc.com", "ev": "confirmed", "q": "structured as 2 x 725 MVA across two independent feeds"}]},
+        "capital": {"lv": "s", "t": "Pays for substations and lines", "note": "PLN says it put more than Rp312 bn into the GIIC 'Data Center' substation and its lines, which Elsewedy built with it, ahead of the halls drawing the load.", "src": [
+          {"u": "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558", "t": "zonapasar.com", "ev": "company_claim", "q": "PLN menginvestasikan dana lebih dari Rp 312 Milyar untuk membangun Gardu Induk 150 kV Data Center beserta dengan transmisinya."},
+          {"u": "https://infobanknews.com/elsewedy-dan-pln-bangun-gardu-induk-data-center-rp1885-miliar/", "t": "infobanknews.com", "ev": "confirmed", "q": "PT Elsewedy Electric Indonesia (Elsewedy) dan PT PLN (Persero) membangun Gardu Induk 150kV"}]},
+        "customers": {"lv": "l", "t": "Paid for power delivered", "note": "PLN is paid for the electricity it delivers, not for filling halls.", "src": []}
+      }
+    },
+    {
+      "k": "giic", "n": "GIIC estate", "g": "landpower", "logo": "/assets/dc/logo/deltamas.id.png", "sub": "Puradelta Lestari, Sinar Mas Land", "web": "sinar-mas",
+      "cells": {
+        "equip": {"lv": "l", "t": "No kit role", "note": "No source has the estate supplying data-centre equipment.", "src": []},
+        "build": {"lv": "l", "t": "Buyers build their own", "note": "Plot buyers such as STT GDC and Digital Edge hire their own builders.", "src": []},
+        "land": {"lv": "p", "t": "Zones and sells the plots", "note": "Puradelta's data-centre zone in GIIC had 15 data-centre tenants at end-2025. It sold Rp741.5 bn of land to Digital Edge's DGE1 in Q1 2026 and Rp446.1 bn to PDG in Q2 2026.", "src": [
+          {"u": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf", "t": "deltamas.id", "ev": "confirmed", "q": "the area has become home to 15 data center tenants, including PT Telkom Indonesia Tbk"},
+          {"u": "https://deltamas.id/wp-content/uploads/2026/05/Financial-Statement-31-Maret-2026.pdf", "t": "deltamas.id", "ev": "confirmed", "q": "PT. Digital Gayana Ekagrata 741.502.389.285 70,97%"},
+          {"u": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf", "t": "deltamas.id", "ev": "confirmed", "q": "PT. Princeton Digital Group 446.124.000.000 24,90%"}]},
+        "power": {"lv": "s", "t": "Lined up 993 MVA from PLN", "note": "Puradelta advertises premium PLN supply of 993 MVA for the zone. PLN builds and runs the substations.", "src": [
+          {"u": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf", "t": "deltamas.id", "ev": "confirmed", "q": "pasokan listrik premium 993 MVA dari PLN"}]},
+        "capital": {"lv": "l", "t": "Paid when plots sell", "note": "The sources show land sales, so the estate is paid when a plot changes hands.", "src": []},
+        "customers": {"lv": "l", "t": "One DC buyer: 71% of Q1 sales", "note": "It does not rent out halls, but its sales lean on data-centre buyers: Digital Edge's DGE1 was 70.97% of Q1 2026 sales.", "src": [
+          {"u": "https://deltamas.id/wp-content/uploads/2026/05/Financial-Statement-31-Maret-2026.pdf", "t": "deltamas.id", "ev": "confirmed", "q": "PT. Digital Gayana Ekagrata 741.502.389.285 70,97%"}]}
+      }
+    },
+    {
+      "k": "dci", "n": "DCI Indonesia", "g": "operators", "logo": "/assets/dc/logo/dci-indonesia.com.png", "sub": "Listed operator", "web": "dci",
+      "cells": {
+        "equip": {"lv": "l", "t": "Buys the kit", "note": "DCI buys its gear from suppliers; no source has it making equipment.", "src": []},
+        "build": {"lv": "s", "t": "Hires builders; Salim built H2", "note": "DCI hired PT Sumaraja Indah for its JK3 and JK5 buildings at Cibitung. Its H2 buildings in Karawang belong to DISM, a Salim company, which DCI pays to use.", "src": [
+          {"u": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf", "t": "DCI filing", "ev": "confirmed", "q": "On January 17, 2018, the Company and PT Sumaraja Indah entered into a cooperation agreement for civil works project and data center construction."},
+          {"u": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia", "t": "dci-indonesia.com", "ev": "company_claim", "q": "DISM, a part of Salim Group, is the official partner of DCI Platform."}]},
+        "land": {"lv": "s", "t": "Own plot; H2 on Salim's estate", "note": "Its H1 campus sits on DCI's own land in the MM2100 estate, Bekasi. H2 is built in an industrial estate owned by the Salim Group.", "src": [
+          {"u": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf", "t": "DCI filing", "ev": "confirmed", "q": "the data center facility is located in Bekasi Regency, West Java Province"},
+          {"u": "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5", "t": "fortuneidn.com", "ev": "reported", "q": "di kawasan industri milik Salim Group"}]},
+        "power": {"lv": "s", "t": "Estate utility, plus 30 MW solar", "note": "Cikarang Listrindo, the private utility in its Bekasi estate, billed Rp396.8 bn of DCI's Rp457.8 bn electricity cost in 2025. H2 has a solar farm DCI says can reach 30 MW.", "src": [
+          {"u": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf", "t": "DCI filing", "ev": "confirmed", "q": "PT Cikarang Listrindo Tbk shall provide electricity services to the Company's data center buildings"},
+          {"u": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia", "t": "dci-indonesia.com", "ev": "company_claim", "q": "The total electrical capacity generated by solar power can reach 30 MW"}]},
+        "capital": {"lv": "p", "t": "Own campuses; Salim funds H2", "note": "Cibitung and Surabaya are on DCI's own books; Surabaya's first phase carried Rp280.3 bn at end-2025. DISM owns the H2 buildings, and DCI paid it Rp255.3 bn in 2025 to use them.", "src": [
+          {"u": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf", "t": "DCI filing", "ev": "confirmed", "q": "Pusat data E 2 (Phase 1)"},
+          {"u": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf", "t": "DCI filing", "ev": "confirmed", "q": "for the use of PT Datacenter Indonesia Sukses Makmur's data center building by the Company"}]},
+        "customers": {"lv": "p", "t": "Rents halls on multi-year deals", "note": "DCI earns from renting space and power. Indonet has been a customer since a 2013 master service agreement, and Bank JTrust named DCI's Jakarta E1 as its site in 2024.", "src": [
+          {"u": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf", "t": "DCI filing", "ev": "confirmed", "q": "On November 1, 2013, the Company and PT Indointernet Tbk entered into a master service agreement"},
+          {"u": "https://datacenternews.asia/story/dci-indonesia-debuts-e1-tier-iv-data-centre-in-central-jakarta", "t": "datacenternews.asia", "ev": "company_claim", "q": "We chose E1 because DCI offers the best service quality and certification."}]}
+      }
+    },
+    {
+      "k": "neutradc", "n": "NeutraDC", "g": "operators", "logo": "/assets/dc/logo/neutradc.com.png", "sub": "Telkom's data centres", "web": "neutradc",
+      "cells": {
+        "equip": {"lv": "l", "t": "Buys the kit", "note": "NeutraDC buys its gear; Huawei and others supply and fit it out.", "src": []},
+        "build": {"lv": "s", "t": "Hires PT PP, Adhi, Huawei", "note": "PT PP built Telkom's Cikarang hyperscale data centre (Rp314.1 bn, 2020-22) and, with Adhi Karya, the Batam campus (Rp746.5 bn). Huawei holds a fit-out contract.", "src": [
+          {"u": "https://homepage.ptpp.co.id/storage/4796/ANNUAL-REPORT-PTPP-2022.pdf", "t": "ptpp.co.id", "ev": "confirmed", "q": "Hyperscale Data Center Telkom Cikarang 314.141.901.239 PT Telkom Indonesia Tbk. 30 Desember 2020 / 15 Maret 2022 /"},
+          {"u": "https://homepage.ptpp.co.id/storage/8538/PTPP---AR-2025---260504-low.pdf", "t": "ptpp.co.id", "ev": "confirmed", "q": "Project Bromo General Contractor Works Batam 746.460.000.000 PT. Teknologi Data Infrastruktur 10-Dec-24 1-Feb-26"}]},
+        "land": {"lv": "s", "t": "GIIC plot; Kabil estate, Batam", "note": "Telkom is one of the 15 data-centre tenants of the GIIC zone, where its Cikarang hyperscale site sits. The Batam campus is in the Kabil Industrial Estate.", "src": [
+          {"u": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf", "t": "deltamas.id", "ev": "confirmed", "q": "the area has become home to 15 data center tenants, including PT Telkom Indonesia Tbk"},
+          {"u": "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/", "t": "plnbatam.com", "ev": "confirmed", "q": "PT Teknologi Data Infrastruktur (NeutraDC Nxera Batam) untuk penyediaan listrik bagi pengembangan Diamond Data Center yang berlokasi di Kabil Industrial Estate"}]},
+        "power": {"lv": "s", "t": "PLN feeds, premium in Batam", "note": "PLN says its GIIC 'Data Center' substation serves Telkom. In Batam, PLN Batam signed a premium supply of up to 90 MVA, phased from 2025 to 2028.", "src": [
+          {"u": "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558", "t": "zonapasar.com", "ev": "company_claim", "q": "Telkom, STT Global Data Center dan perusahaan lainnya di kawasan industri tersebut."},
+          {"u": "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/", "t": "plnbatam.com", "ev": "confirmed", "q": "Layanan Khusus Premium Diamond Data Center Tegangan Menengah dengan kapasitas total hingga 90 MVA, yang akan disalurkan secara bertahap mulai tahun 2025 hingga 2028"}]},
+        "capital": {"lv": "p", "t": "Telkom pays; Singtel 36% in Batam", "note": "Telkom owns all of NeutraDC and put in Rp1.63 tn in June 2024 for 18 MW more at Cikarang. In Batam, Singtel's Nxera holds 35.63% of the campus company.", "src": [
+          {"u": "https://www.kabarbursa.com/market-hari-ini/telkom-tlkm-kantongi-100-persen-saham-tde-intip-strategi-di-baliknya", "t": "kabarbursa.com", "ev": "confirmed", "q": "10.504.517.594.408 lembar atau 100 persen saham TDE menjadi milik Telkom"},
+          {"u": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf", "t": "Telkom 20-F", "ev": "confirmed", "q": "increase Telkom’s contributed capital in TDE by Rp1,626,900,000,000"},
+          {"u": "https://links.sgx.com/1.0.0/corporate-announcements/HVHTA24E2HQXCS41/889656_20260521-Ann%20LR706A.pdf", "t": "sgx.com", "ev": "confirmed", "q": "Nxera ID’s shareholding interest in PT TDI increased from 35% to 35.63% after PT Medco did not participate in the PT TDI Subscription"}]},
+        "customers": {"lv": "p", "t": "Rents space; Gorilla 5.5 MW", "note": "Gorilla Technology secured an initial 5.5 MW at NeutraDC, expected to grow to 18 MW by November 2026.", "src": [
+          {"u": "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia", "t": "newsfilecorp.com", "ev": "company_claim", "q": "Secures initial 5.5 megawatts (\"MW\") of capacity with NeutraDC, expected to scale to 18MW by November 2026"}]}
+      }
+    },
+    {
+      "k": "stt", "n": "STT GDC", "g": "operators", "logo": "/assets/dc/logo/sttgdc.com.png", "sub": "KKR and Singtel owned", "web": "stt-gdc",
+      "cells": {
+        "equip": {"lv": "l", "t": "Buys the kit", "note": "STT GDC buys its gear; no source has it making equipment.", "src": []},
+        "build": {"lv": "s", "t": "Hires Total Bangun Persada", "note": "Total's filings list STT GDC's 'Iris 2', 'Iris 3' and 'IRIS 5 & 6' contracts, which we match to Jakarta 2, 3, 5 and 6.", "src": [
+          {"u": "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf", "t": "totalbp.com", "ev": "confirmed", "q": "Iris 2 PT STT GDC Indonesia 29 Juli 2024/ 31 Januari 2026/"},
+          {"u": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf", "t": "totalbp.com", "ev": "confirmed", "q": "IRIS 5 & 6 PT STT GDC Indonesia 1 April 2026/ 31 Juli 2027/"}]},
+        "land": {"lv": "s", "t": "Bought its plots in GIIC", "note": "STT GDC bought Rp210.8 bn of GIIC land from Puradelta in H1 2025 and Rp213.0 bn in H1 2026.", "src": [
+          {"u": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf", "t": "deltamas.id", "ev": "confirmed", "q": "PT. STT GDC Indonesia 212.952.000.000 11,89% 210.792.000.000 35,30%"}]},
+        "power": {"lv": "s", "t": "Own 150 kV substation off PLN", "note": "STT says the campus has its own 150 kV substation, the first energised for a data-centre campus in Indonesia, with independent connections to several PLN substations.", "src": [
+          {"u": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-indonesia-expanding-footprint-second-data-centre", "t": "sttgdc.com", "ev": "company_claim", "q": "The campus features its own dedicated 150kV substation, ensuring redundancy with independent connections to multiple PLN substations."},
+          {"u": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions", "t": "sttgdc.com", "ev": "company_claim", "q": "the first to be energised for a data centre campus in Indonesia"}]},
+        "capital": {"lv": "p", "t": "KKR 75%, Singtel 25%", "note": "Since 31 August 2026 KKR holds 75% of STT GDC and Singtel 25%. The Indonesian business is a joint venture with Triputra and Temasek; their shares are not published.", "src": [
+          {"u": "https://links.sgx.com/1.0.0/corporate-announcements/M50Z72RSWTHSPQ0J/902977_Ann_20260831.pdf", "t": "sgx.com", "ev": "confirmed", "q": "indirectly held by Singtel Investor and KKR Opal in the respective proportions of 25% and 75%"},
+          {"u": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-expands-into-Indonesia", "t": "sttgdc.com", "ev": "confirmed", "q": "the entry into a strategic partnership with Indonesian conglomerate Triputra Group as well as Temasek"}]},
+        "customers": {"lv": "p", "t": "Rents halls to clouds and firms", "note": "STT sells colocation; it says the Jakarta campus is built for hyperscale and enterprise customers.", "src": [
+          {"u": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions", "t": "sttgdc.com", "ev": "company_claim", "q": "reinforcing the campus’ ability to deliver scalable, power-secured infrastructure for hyperscale and enterprise customers"}]}
+      }
+    },
+    {
+      "k": "firmus", "n": "Firmus", "g": "operators", "logo": "/assets/dc/logo/firmus.co.png", "sub": "AI cloud, Batam", "web": "dayone",
+      "cells": {
+        "equip": {"lv": "s", "t": "Designs its own cooling modules", "note": "Firmus designs its liquid-cooled HyperCube AI-factory modules to NVIDIA's DSX blueprints; Benmax makes them, and Firmus agreed in August 2026 to buy Benmax's fabrication business.", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "Firmus' proprietary HyperCube platform, a liquid-cooled AI Factory architecture developed in Australia and co-designed to NVIDIA DSX blueprints"},
+          {"u": "https://firmus.co/newsroom/firmus-to-acquire-benmax-s-fabrication-design-and-projects-businesses-accelerating-ai-factory-deployments", "t": "firmus.co", "ev": "company_claim", "q": "Firmus' HyperCube is the company's modular AI Factory system, designed and manufactured in regional NSW by Benmax."}]},
+        "build": {"lv": "s", "t": "DayOne builds the campus", "note": "Firmus says its Batam campus is being developed in partnership with DayOne. DayOne has not named Firmus itself.", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "Firmus' Batam campus is being developed in partnership with DayOne, a Singapore-headquartered global digital infrastructure platform."}]},
+        "land": {"lv": "l", "t": "On DayOne's site", "note": "The campus goes on DayOne's land in Batam.", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "Firmus' Batam campus is being developed in partnership with DayOne, a Singapore-headquartered global digital infrastructure platform."}]},
+        "power": {"lv": "l", "t": "Rides DayOne's PLN Batam deal", "note": "PLN Batam calls Firmus the first result of its supply deal with DayOne.", "src": [
+          {"u": "https://www.plnbatam.com/pln-batam-dan-bp-batam-sambut-baik-ekspansi-firmus-technologies-menjadikan-kota-batam-sebagai-hub-digital-terdepan-di-asia-tenggara/", "t": "plnbatam.com", "ev": "confirmed", "q": "Kerja sama PLN Batam dengan DayOne mulai membuahkan hasil, ditandai dengan rencana masuknya Firmus"}]},
+        "capital": {"lv": "p", "t": "Buys up to 170,000 GPUs", "note": "Firmus' deal covers up to 170,000 NVIDIA accelerators in 2027-2028 for a 360 MW campus in Batam. NVIDIA gives credit support (see NVIDIA).", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "anchored by a dedicated 360 MW NVIDIA DSX AI Factory campus in Batam, Indonesia"}]},
+        "customers": {"lv": "p", "t": "Sells AI compute (US$25-30 bn)", "note": "Firmus expects US$25-30 bn from committed offtake agreements over the first six years of the NVIDIA deal.", "src": [
+          {"u": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives", "t": "firmus.co", "ev": "company_claim", "q": "Based on customer commitments, Firmus expects to receive between US$25 and US$30 billion from committed offtake agreements during the first six years of the partnership."}]}
+      }
+    }
+  ]
+}

@@ -39,6 +39,17 @@ function loadWeb(slug) {
   } catch (e) { return webCache[slug] ? webCache[slug].data : null; }
 }
 const ver = (file) => { try { return String(Math.floor(fs.statSync(path.join(__dirname, '..', 'public', 'js', file)).mtimeMs / 1000)); } catch (e) { return '0'; } };
+/* Risk matrix (Luca, 17 Oct 2026: a US "who carries which risk" chart, made for Indonesia).
+ * Curated by hand in data/dc-risk.json from the sourced ties on this page; read per request. */
+const RISK = path.join(__dirname, '..', 'data', 'dc-risk.json');
+let riskCache = { mtime: 0, data: null };
+function loadRisk() {
+  try {
+    const st = fs.statSync(RISK);
+    if (st.mtimeMs !== riskCache.mtime) riskCache = { mtime: st.mtimeMs, data: JSON.parse(fs.readFileSync(RISK, 'utf8')) };
+  } catch (e) { /* keep the last good copy */ }
+  return riskCache.data;
+}
 
 const COLS = [
   ['grid', 'Grid-connected', 'PLN or PLN Batam feed; diesel only as standby'],
@@ -188,6 +199,67 @@ function connectorGrid(D) {
   }).join('');
   return `<div class="cxwrap"><table class="cxg"><thead>${head}</thead><tbody>${body}</tbody></table></div>
 <p class="cxkey mono"><span><i class="cx"></i>tied to the group directly</span><span><i class="cx via"></i>through one of its companies, sites or people</span><span>tap a square to open that tie</span></p>`;
+}
+
+const LEVEL = { p: 'Primary', s: 'Shared', l: 'Limited' };
+const RK_EV = { confirmed: ['ok', 'Confirmed'], company_claim: ['only', "Company's word"], reported: ['part', 'Reported'], inferred: ['no', 'Our match'] };
+function riskSection(R) {
+  if (!R || !(R.cols || []).length) return '';
+  const rows = R.rows || [];
+  const groups = (R.groups || []).filter(([g]) => R.cols.some((c) => c.g === g));
+  const gname = Object.fromEntries(groups.map(([g, t]) => [g, t]));
+  const pid = (c, r) => `rk-${c.k}-${r}`;
+  const logo = (c, cls) => mark(c.logo, c.n, cls);
+  const cell = (c, r) => (c.cells || {})[r] || { lv: 'l', t: '—', note: '', src: [] };
+  // desktop grid: group bands, company heads, then one row per risk
+  let col = 2;
+  const bands = groups.map(([g, t, s]) => {
+    const n = R.cols.filter((c) => c.g === g).length;
+    const html = `<div class="rk-band g-${esc(g)}" style="grid-column:${col} / span ${n}"><b>${esc(t)}</b><small>${esc(s)}</small></div>`;
+    col += n;
+    return html;
+  }).join('');
+  const heads = R.cols.map((c, i) => `<div class="rk-head g-${esc(c.g)}" style="grid-column:${i + 2}">${logo(c, 'mk rk-lg')}<b>${esc(c.n)}</b><small>${esc(c.sub || '')}</small></div>`).join('');
+  const body = rows.map(([r, rt, rs], ri) => `<div class="rk-row" style="grid-row:${ri + 3}"><b>${esc(rt)}</b><small>${esc(rs)}</small></div>` + R.cols.map((c, ci) => {
+    const x = cell(c, r);
+    return `<button type="button" class="rk-c g-${esc(c.g)} lv-${esc(x.lv)}" style="grid-column:${ci + 2};grid-row:${ri + 3}" popovertarget="${pid(c, r)}" aria-label="${esc(`${c.n}, ${rt.toLowerCase()}: ${LEVEL[x.lv]}. ${x.t}`)}"><span class="rk-pill">${LEVEL[x.lv]}</span><span class="rk-t">${esc(x.t)}</span></button>`;
+  }).join('')).join('');
+  // phone: one card per risk, companies grouped by level
+  const cards = rows.map(([r, rt, rs]) => {
+    const lanes = ['p', 's', 'l'].map((lv) => {
+      const cs = R.cols.filter((c) => cell(c, r).lv === lv);
+      if (!cs.length) return '';
+      const items = cs.map((c) => (lv === 'l'
+        ? `<button type="button" class="rk-chip" popovertarget="${pid(c, r)}">${logo(c)}<span>${esc(c.n)}</span></button>`
+        : `<button type="button" class="rk-it g-${esc(c.g)} lv-${lv}" popovertarget="${pid(c, r)}">${logo(c, 'mk rk-lg')}<span><b>${esc(c.n)}</b><small>${esc(cell(c, r).t)}</small></span></button>`)).join('');
+      return `<div class="rk-lane lv-${lv}"><span class="rk-lk">${LEVEL[lv]}</span><div class="rk-items${lv === 'l' ? ' compact' : ''}">${items}</div></div>`;
+    }).join('');
+    return `<section class="rk-card"><h3>${esc(rt)}</h3><p>${esc(rs)}</p>${lanes}</section>`;
+  }).join('');
+  // one source panel per cell, shared by both layouts
+  const pops = R.cols.map((c) => rows.map(([r, rt]) => {
+    const x = cell(c, r);
+    const src = (x.src || []).map((s) => {
+      const [ec, et] = RK_EV[s.ev] || RK_EV.confirmed;
+      return `<li><span class="rk-sl">${a(s.u, s.t)}<span class="ev ${ec}">${esc(et)}</span></span>${s.q ? `<q>${esc(s.q)}</q>` : ''}</li>`;
+    }).join('');
+    return `<div popover id="${pid(c, r)}" class="rk-pop g-${esc(c.g)}">
+  <div class="rk-ph">${logo(c, 'mk rk-lg')}<span><b>${esc(c.n)}</b><small>${esc([c.sub, gname[c.g]].filter(Boolean).join(' · '))}</small></span><button type="button" class="rk-x" popovertarget="${pid(c, r)}" popovertargetaction="hide" aria-label="Close">×</button></div>
+  <div class="rk-pr"><span class="k">${esc(rt)}</span><span class="rk-pill lv-${esc(x.lv)}">${LEVEL[x.lv]}</span></div>
+  <p class="rk-pt">${esc(x.t)}</p>
+  ${x.note ? `<p class="rk-pn">${esc(x.note)}</p>` : ''}
+  ${src ? `<ul class="rk-src">${src}</ul>` : '<p class="rk-none">No source names a role here, so it reads as limited.</p>'}
+  ${c.web ? `<p class="toweb"><a href="/data-center/${esc(c.web)}">Company web${c.web === 'dayone' ? ' for DayOne' : ''} →</a></p>` : ''}
+</div>`;
+  }).join('')).join('');
+  const asof = R.asof ? new Date(R.asof + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }) : '';
+  return `<div class="rk" role="group" aria-label="Who carries which risk" style="--rk-n:${R.cols.length}">${bands}${heads}${body}</div>
+<p class="rk-rail">Swipe across for the other risks →</p>
+<div class="rk-cards">${cards}</div>
+<div class="rk-key"><span><i class="rk-sw lv-p"></i><b>Primary</b> does it, owns it or pays for it</span><span><i class="rk-sw lv-s"></i><b>Shared</b> splits it with a named partner</span><span><i class="rk-sw lv-l"></i><b>Limited</b> sells, builds or rents on contract</span><span>Tap any cell for its source${asof ? ` · checked ${esc(asof)}` : ''}</span></div>
+${(R.bottom_line || []).length ? `<ul class="bl-list rk-bl">${R.bottom_line.map((x) => `<li>${x}</li>`).join('')}</ul>` : ''}
+${(R.method || []).length ? `<details class="dcm rk-m"><summary>How the levels were set</summary><ul>${R.method.map((m) => `<li>${m}</li>`).join('')}</ul></details>` : ''}
+${pops}`;
 }
 
 function webCards(D) {
@@ -384,6 +456,86 @@ a.cx:hover{outline:2px solid #E8734B;outline-offset:1px}
 .dcm ul{padding:0 0 16px 18px;display:grid;gap:6px}
 .dcm li{color:#52525B;font-size:14px;line-height:1.6;max-width:92ch}
 .sec-nav{display:flex;flex-wrap:wrap;gap:6px;margin-top:22px}
+/* who carries the risk */
+.g-vendors{--d:#23477A;--t:#D7E3F4;--b:#EEF3FA}
+.g-builders{--d:#4A3E8E;--t:#E1DDF4;--b:#F3F1FB}
+.g-landpower{--d:#1E6A3D;--t:#D3E9D9;--b:#EDF6EF}
+.g-operators{--d:#B2492A;--t:#F6DCCD;--b:#FBF1EB}
+.rk{display:grid;grid-template-columns:176px repeat(var(--rk-n),minmax(0,1fr));column-gap:4px;margin-top:8px}
+.rk-band{grid-row:1;padding:9px 8px 8px;display:grid;gap:2px;text-align:center;background:var(--b);border-radius:6px 6px 0 0;border-bottom:1px solid rgba(0,0,0,.07)}
+.rk-band b{font-size:13.5px;font-weight:600;letter-spacing:-0.005em}
+.rk-band small{font-size:11px;color:#52525B;line-height:1.3}
+.rk-head{grid-row:2;display:grid;justify-items:center;align-content:start;gap:5px;padding:12px 4px 10px;text-align:center;min-width:0;background:var(--b)}
+.rk-head .rk-lg{width:30px;height:30px}
+.rk-head b{font-size:13px;font-weight:600;line-height:1.2;overflow-wrap:anywhere}
+.rk-head small{font-size:10.5px;color:#6B6B73;line-height:1.3}
+.rk-row{grid-column:1;display:grid;align-content:center;gap:3px;padding:10px 12px 10px 2px;border-top:1px solid #E7E7E7}
+.rk-row b{font-size:15px;font-weight:600;letter-spacing:-0.01em;line-height:1.2}
+.rk-row small{font-size:12px;color:#6B6B73;line-height:1.35}
+.rk-c{all:unset;box-sizing:border-box;display:grid;grid-template-rows:auto 1fr;gap:6px;align-content:start;padding:9px 6px 11px;text-align:center;cursor:pointer;min-width:0;background:var(--b);border-top:1px solid rgba(0,0,0,.07)}
+.rk-c:hover .rk-pill{box-shadow:0 0 0 2px #000}
+.rk-c:focus-visible{outline:2px solid #000;outline-offset:1px}
+.rk-pill{display:block;font-size:12px;font-weight:600;line-height:1;padding:8px 4px;border-radius:5px}
+.lv-p .rk-pill,.rk-pill.lv-p{background:var(--d);color:#fff}
+.lv-s .rk-pill,.rk-pill.lv-s{background:var(--t);color:#18181B}
+.lv-l .rk-pill,.rk-pill.lv-l{background:#fff;color:#71717A;box-shadow:inset 0 0 0 1px #E4E4E7}
+.rk-c.lv-l:hover .rk-pill{box-shadow:0 0 0 2px #000}
+.rk-t{font-size:11.5px;line-height:1.35;color:#52525B;overflow-wrap:anywhere}
+.rk-key{display:flex;flex-wrap:wrap;gap:6px 18px;font:400 10.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.03em;color:#6B6B73;margin-top:12px}
+.rk-key span{display:inline-flex;align-items:center;gap:6px}
+.rk-key b{color:#000;font-weight:400;text-transform:uppercase}
+.rk-sw{display:inline-block;width:22px;height:11px;border-radius:3px}
+.rk-sw.lv-p{background:#3F3F46}.rk-sw.lv-s{background:#E4E4E7}.rk-sw.lv-l{background:#fff;box-shadow:inset 0 0 0 1px #D4D4D8}
+.rk-bl{margin-top:24px}
+.rk-m{margin-top:18px}
+.rk-cards{display:none}
+.rk-card{border:1px solid #E7E7E7;padding:14px 14px 12px;display:grid;gap:10px;align-content:start;min-width:0}
+.rk-card h3{font-size:17px;font-weight:600;letter-spacing:-0.01em}
+.rk-card>p{font-size:12.5px;color:#6B6B73;margin-top:-6px}
+.rk-lane{display:grid;gap:6px}
+.rk-lk{font:400 10px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:#6B6B73}
+.rk-items{display:grid;gap:6px}
+.rk-items.compact{display:flex;flex-wrap:wrap;gap:5px}
+.rk-it{all:unset;box-sizing:border-box;display:flex;gap:10px;align-items:center;padding:8px 10px;border-radius:6px;cursor:pointer;min-width:0}
+.rk-it>span{min-width:0}
+.rk-it.lv-p{background:var(--d);color:#fff}
+.rk-it.lv-p small{color:rgba(255,255,255,.84)}
+.rk-it.lv-s{background:var(--t);color:#000}
+.rk-it.lv-s small{color:#3F3F46}
+.rk-it b{display:block;font-size:13.5px;font-weight:600;line-height:1.2}
+.rk-it small{display:block;font-size:12px;line-height:1.35}
+.rk-it .rk-lg{width:26px;height:26px}
+.rk-chip{all:unset;box-sizing:border-box;display:inline-flex;align-items:center;gap:6px;border:1px solid #E4E4E7;padding:4px 8px 4px 4px;font-size:12.5px;font-weight:500;cursor:pointer;border-radius:4px}
+.rk-it:focus-visible,.rk-chip:focus-visible{outline:2px solid #000;outline-offset:2px}
+.rk-rail{display:none;font:400 10.5px/1.4 'IBM Plex Mono',monospace;letter-spacing:.04em;text-transform:uppercase;color:#6B6B73;margin:0 0 8px}
+@media(max-width:1020px){.rk{display:none}.rk-cards{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}}
+@media(max-width:640px){
+  .rk-rail{display:block}
+  .rk-cards{grid-template-columns:none;grid-auto-flow:column;grid-auto-columns:86%;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;margin:0 -20px;padding:0 20px 8px;scroll-padding-left:20px;scrollbar-width:none}
+  .rk-cards::-webkit-scrollbar{display:none}
+  .rk-card{scroll-snap-align:start}
+}
+.rk-pop{inset:0;margin:auto;border:1px solid #000;padding:16px 18px 16px;width:min(440px,calc(100vw - 32px));max-height:min(78vh,640px);overflow:auto;background:#fff;color:#000;box-shadow:0 18px 50px rgba(0,0,0,.18)}
+.rk-pop::backdrop{background:rgba(0,0,0,.18)}
+.rk-ph{display:flex;align-items:center;gap:10px}
+.rk-ph>span{flex:1;min-width:0}
+.rk-ph b{display:block;font-size:16px;font-weight:600;line-height:1.2}
+.rk-ph small{display:block;font-size:12px;color:#6B6B73;line-height:1.35}
+.rk-ph .rk-lg{width:30px;height:30px}
+.rk-x{all:unset;cursor:pointer;font-size:24px;line-height:1;padding:4px 8px;color:#52525B}
+.rk-x:focus-visible{outline:2px solid #000}
+.rk-pr{display:flex;align-items:center;gap:10px;margin-top:14px}
+.rk-pr .rk-pill{display:inline-block;padding:6px 10px}
+.rk-pt{font-size:18px;font-weight:600;letter-spacing:-0.01em;line-height:1.25;margin-top:8px}
+.rk-pn{font-size:14px;line-height:1.55;color:#3F3F46;margin-top:6px}
+.rk-src{list-style:none;display:grid;gap:10px;margin-top:12px;padding-top:10px;border-top:1px solid #F1F1F1}
+.rk-sl{display:flex;flex-wrap:wrap;gap:6px 10px;align-items:center}
+.rk-sl a{font-size:12.5px;color:#000;text-decoration:none;border-bottom:1px solid #A1A1AA}
+.rk-src q{display:block;font-size:12px;line-height:1.45;color:#6B6B73;margin-top:4px;overflow-wrap:anywhere}
+.rk-none{font-size:13px;color:#6B6B73;margin-top:10px}
+.rk-pop .toweb{margin-top:14px}
+.ev.no{color:#8E8E93;border-color:#D9D9DE}
+@media(max-width:640px){.rk-pop{inset:auto 0 0 0;margin:0;width:100%;max-width:none;max-height:82vh;border-width:1px 0 0;border-radius:14px 14px 0 0}}
 `;
 
 function page({ lang = 'en' } = {}) {
@@ -400,6 +552,7 @@ function page({ lang = 'en' } = {}) {
   const regionChips = ['all', 'jkt', 'batam', 'other'].map((k) => `<button type="button" class="chip" data-region="${k}" aria-pressed="${k === 'all'}">${esc(k === 'all' ? 'All' : REGION[k])}</button>`).join('');
   const cellOpts = [['all', 'Every cell'], ...ROWS.flatMap(([r, rt]) => COLS.map(([c, t]) => [`${r}-${c}`, `${t} · ${rt}`])), ['unplaced', 'Not placed']]
     .filter(([k]) => k === 'all' || D.projects.some((x) => x.cell === k)).map(([k, t]) => `<option value="${esc(k)}">${esc(t)}</option>`).join('');
+  const risk = riskSection(loadRisk());
   const webs = (D.webs || []).length ? `<div class="wgrid">${webCards(D)}</div>` : '<div class="wpending">The company webs are being researched: owners, campuses, tenants, power, builders, lenders and the people linking them, for DCI, BDx, NeutraDC, Digital Edge, DayOne, PDG, STT GDC and SM+.</div>';
   const body = `
 <style>${CSS}</style>
@@ -407,7 +560,7 @@ function page({ lang = 'en' } = {}) {
   <div class="eyebrow"><span class="sq"></span>DATA CENTRES · INDONESIA · ${esc(asof.toUpperCase())}</div>
   <h1>Who powers Indonesia’s data centres</h1>
   <p class="sub">${D.projects.length} data-centre projects, placed by where their power comes from and whether the site is new, with the companies that own, power, build and equip them. Every tie links to its source.</p>
-  <nav class="sec-nav" aria-label="On this page"><a class="chip" href="#matrix">Matrix</a><a class="chip" href="#webs">Company webs</a><a class="chip" href="#projects">Projects</a><a class="chip" href="#vendors">Vendors</a><a class="chip" href="#rules">Rules</a><a class="chip" href="#method">Method</a></nav>
+  <nav class="sec-nav" aria-label="On this page"><a class="chip" href="#matrix">Matrix</a>${risk ? '<a class="chip" href="#risk">Who carries the risk</a>' : ''}<a class="chip" href="#webs">Company webs</a><a class="chip" href="#projects">Projects</a><a class="chip" href="#vendors">Vendors</a><a class="chip" href="#rules">Rules</a><a class="chip" href="#method">Method</a></nav>
 </section>
 <section class="wrap" id="matrix" style="padding-top:8px">
   <div class="eyebrow"><span class="sq"></span>THE POWER MATRIX</div>
@@ -421,6 +574,11 @@ function page({ lang = 'en' } = {}) {
   <div class="eyebrow"><span class="sq"></span>WHAT THE MAP SHOWS</div>
   <ul class="bl-list">${(D.bottom_line || []).map((x) => `<li>${x}</li>`).join('')}</ul>
 </section>
+${risk ? `<section class="wrap" id="risk">
+  <div class="eyebrow"><span class="sq"></span>WHO CARRIES THE RISK</div>
+  <p class="lede">Six risks in building and running a data centre, and how ten companies on this page share them, from chip makers to the operators who rent out the halls. Every level rests on a filing or company page.</p>
+  ${risk}
+</section>` : ''}
 <section class="wrap" id="webs">
   <div class="eyebrow"><span class="sq"></span>SUPPLY CHAIN · COMPANY WEBS</div>
   <p class="lede">One map per data-centre group: who owns it, the campuses it runs, who rents its space, where its power comes from, who builds and equips it, who lends to it, and the people who link those companies. Same method as the company webs on our CNC research.</p>
