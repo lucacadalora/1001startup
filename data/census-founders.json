@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-10T07:21:08Z",
+ "generated": "2026-10-17T23:38:10Z",
  "rule": "Founder names publish only with the company's own page, or two independent reputable sources, or Endeavor plus one more; aggregators never count.",
  "companies": {
   "gojek": {
@@ -4293,6 +4293,17 @@
     "https://ekbis.sindonews.com/berita/1436784/34/ceo-founder-dicoding-narenda-wicaksono-mencetak-talenta-unggul-it-indonesia"
    ],
    "note": "Founded on 5 January 2015 by Narenda Wicaksono with co-founders Ash-Shidiqqul Akbar Hidayat and Kevin Kurniawan, per Dicoding's own blog."
+  },
+  "sumopod": {
+   "founders": [
+    "Ariaseta Setia Alam"
+   ],
+   "founded": 2025,
+   "sources": [
+    "https://www.dicoding.com/events/9410",
+    "https://aiclub.id/event/builders-story-ep06-sumopod"
+   ],
+   "note": "Ariaseta Setia Alam is named as SumoPod's founder by Dicoding (DevCoach workshop, 12 Sep 2025) and by AIClub Indonesia (Builder's Story, 9 Oct 2026). His own LinkedIn profile dates the role from May 2025; he previously led KodingWorks, the trading name of the company that operates SumoPod."
   },
   "sokratech": {
    "founders": [
