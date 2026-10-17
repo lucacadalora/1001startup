@@ -1,0 +1,1609 @@
+{
+ "slug": "dayone",
+ "title": "DayOne",
+ "order": 5,
+ "center": "dayone",
+ "bottom_line": "DayOne is no longer a GDS company: its 5 Oct 2026 F-1 lists Coatue and Hillhouse at 19.5% each, GDS at 19.4% after selling US$385 mn of shares back in Jan 2026, and Achi Capital at 15.6%. Its Batam business sits in PT DayOne Data Centers Indonesia, owned 60% by DayOne and 40% by Indonesia's sovereign fund INA, which also put money into DayOne itself in the Series C (most likely US$200 mn through PT Lestari Investasi Indonesia). Both campuses are on Citramas estates: the 72 MW Nongsa campus (let to \"a leading U.S. hyperscaler\", reportedly Oracle; structure built by Astra's Acset; financed by a Rp6.7 tn DBS/UOB loan) takes power through Tamarin's estate grid, while Kabil has its own 511 MVA PLN Batam contract for 360 MW of IT capacity, 240 MW of it already contracted and most likely for Firmus's NVIDIA AI factory.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:19:59Z",
+ "entities": [
+  {
+   "id": "dayone",
+   "name": "DayOne",
+   "legal_name": "DayOne Data Centers Limited",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore-headquartered data-centre developer spun out of GDS: incorporated in the Cayman Islands on 18 May 2022 as DigitalLand Holdings Limited, renamed DayOne on 1 Jan 2025. Filed an F-1 on 5 Oct 2026 for a Nasdaq IPO (ticker DODC). In Batam it has 72 MW in service, 240 MW under construction and 120 MW of secured powered land; Indonesia brought in US$59.4 mn of its US$484.3 mn revenue in 2025, and the F-1 cites Structure Research for a ~66% share of Batam bookings.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/",
+    "https://dayonedc.com/market/batam"
+   ]
+  },
+  {
+   "id": "dayone-sg",
+   "name": "DayOne Data Centers Singapore",
+   "legal_name": "DayOne Data Centers Singapore Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "DayOne's wholly owned Singapore holding company. It owns 60% of PT DayOne Data Centers Indonesia and 0.001% of each Digitalland PT, and it is the party that must buy out INA's 40% if INA uses its exchange right. Bloomberg names it as Oracle's partner.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg",
+    "https://news.bgov.com/tech-and-telecom-law/oracle-said-to-move-ahead-with-cloud-services-plan-in-indonesia"
+   ]
+  },
+  {
+   "id": "dayone-indonesia",
+   "name": "PT DayOne Data Centers Indonesia",
+   "legal_name": "PT DayOne Data Centers Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "The Indonesian holding joint venture: DayOne Data Centers Singapore 60%, INA 40%. It owns 99.999% of PT Digitalland Services One and Two. Its shareholders' agreement was amended on 3 Jun 2026; INA put in US$82.5 mn in Apr-Jun 2026, matched pro rata by DayOne.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg"
+   ]
+  },
+  {
+   "id": "digitalland-services-one",
+   "name": "PT Digitalland Services One",
+   "legal_name": "PT Digitalland Services One",
+   "kind": "company",
+   "city": "Batam",
+   "what": "DayOne's Indonesian company for the Kabil campus. It signed the 511 MVA PJBTL (17 Apr 2026) and the green-energy Head of Agreement (17 Aug 2026) with PLN Batam. PLN Batam and BP Batam spell it 'PT Digitalland Service One'. It sits in the slot of GDS's former PT GDS IDC Service (our reading of the One/Two names).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg",
+    "https://ptsp.bpbatam.go.id/en/investasi-digital-menguat-bp-batam-dukung-proyek-pusat-data-dayone-pln-batam/",
+    "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+    "https://www.plnbatam.com/momentum-kemerdekaan-pln-batam-teken-empat-kerja-sama-strategis-untuk-perkuat-energi-hijau-dan-sdm/",
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465924053528/gds-20231231xex8d1.htm"
+   ]
+  },
+  {
+   "id": "digitalland-services-two",
+   "name": "PT Digitalland Services Two",
+   "legal_name": "PT Digitalland Services Two",
+   "kind": "company",
+   "city": null,
+   "what": "DayOne's significant Indonesian subsidiary (F-1 Exhibit 21.1). In 2025 it was granted a 100% corporate income tax cut for 20 years from the year commercial production starts. The F-1 does not say which campus it holds. It sits in the slot of GDS's former PT GDS IDC Services Two (our reading).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752dex211.htm",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg",
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465924053528/gds-20231231xex8d1.htm"
+   ]
+  },
+  {
+   "id": "pt-gds-idc-service",
+   "name": "PT GDS IDC Service",
+   "legal_name": "PT GDS IDC Service",
+   "kind": "company",
+   "city": "Batam",
+   "what": "GDS-era Indonesian company, listed as a GDS subsidiary in GDS's 20-F for FY2022 and FY2023 alongside PT GDS IDC Services Two. It was Acset's client for 'GDS Data Center Nongsa' phases I-II (Katadata, Jul 2023: 40 MW Tier 3 in two phases, 28,730 m2, Rp4 tn). The name is absent from DayOne's 2026 structure chart, so it was most likely renamed (our reading).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465924053528/gds-20231231xex8d1.htm",
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+    "https://dinsights.katadata.co.id/read/2023/07/04/gds-idc-service-constructs-batams-largest-data-center-in-nongsa"
+   ]
+  },
+  {
+   "id": "dayone-nongsa",
+   "name": "DayOne Nongsa Digital Park (NDP)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Batam",
+   "what": "DayOne's first Batam campus, in KEK Nongsa: 72 MW in service. Per the F-1, it was delivered to 'a leading U.S. hyperscaler' whose first 34 MW was later upsized to 72 MW. Three buildings, 68,812 m2 GFA, LEED Gold for building NDP C, on leasehold (HGB) land. It started as a 28 MW plan at DayOne's Jul 2022 groundbreaking, when DayOne was still GDS's international arm, and was financed by the Rp6.7 tn DBS/UOB loan. Status: operating.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/market/batam",
+    "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2025/dbs-uob-arrange-loan-for-data-centre-development-project-by-dayone.page",
+    "https://dayonedc.com/markets/dayone-data-centers-indonesia-data-center-officially-begins-construction-forward-looking-blueprint-to-unleash-digital-potential-in-southeast-asia/"
+   ]
+  },
+  {
+   "id": "dayone-kabil",
+   "name": "DayOne Kabil Industrial Tech Park (KITP)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Batam",
+   "what": "DayOne's second Batam campus, inside Kabil Integrated Industrial Estate. It has 360 MW of IT power capacity: 240 MW contracted to 'a leading technology company' and under construction, plus 120 MW of secured powered land (F-1). Grid supply is a PLN Batam PJBTL of about 511 MVA (~450 MW), delivered in phases in 2026-2027. Status: under construction.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/markets/dayone-signs-indonesias-largest-511mva-450mw-ppa-to-expand-hyperscale-data-center-platform-in-batam/",
+    "https://ptsp.bpbatam.go.id/en/investasi-digital-menguat-bp-batam-dukung-proyek-pusat-data-dayone-pln-batam/"
+   ]
+  },
+  {
+   "id": "firmus-batam-ai-factory",
+   "name": "Firmus NVIDIA DSX AI Factory, Batam",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Batam",
+   "what": "Planned 360 MW AI factory (IT or facility basis not stated) for up to 170,000 NVIDIA accelerators in 2027-2028, developed with DayOne. PLN Batam gives a Q1 2027 operating target, and BTW Media places it at Kabil Tech Park. Status: announced.",
+   "sources": [
+    "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives",
+    "https://www.plnbatam.com/pln-batam-dan-bp-batam-sambut-baik-ekspansi-firmus-technologies-menjadikan-kota-batam-sebagai-hub-digital-terdepan-di-asia-tenggara/",
+    "https://btw.media/en/firmus-nvidia-plan-360mw-ai-hub-in-batam"
+   ]
+  },
+  {
+   "id": "gds",
+   "name": "GDS Holdings",
+   "legal_name": "GDS Holdings Limited",
+   "kind": "company",
+   "city": "Shanghai",
+   "what": "Nasdaq- and HKEX-listed Chinese data-centre operator. It is DayOne's former parent and now its third-largest shareholder, with 19.4%.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465926003057/tm262902d1_ex99-1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465926000411/tm261784d1_ex99-1.htm"
+   ]
+  },
+  {
+   "id": "coatue",
+   "name": "Coatue",
+   "legal_name": "Coatue Tactical Solutions PS Holdings AIV 11 LP / AIV 12 LP; Coatue PC LLC",
+   "kind": "fund",
+   "city": null,
+   "what": "US investment firm. It led DayOne's Series C and holds 19.5% as converted; its vehicles are registered in Wilmington, Delaware.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465926000411/tm261784d1_ex99-1.htm"
+   ]
+  },
+  {
+   "id": "hillhouse",
+   "name": "Hillhouse",
+   "legal_name": "Hillhouse Investment Management, Ltd. (HGDC, HGDK, HGDO II, HBYT Co-Investment Holdings)",
+   "kind": "fund",
+   "city": "Singapore",
+   "what": "Asian investment firm. It invested in all three DayOne rounds and holds 19.5%. The shares held by HGDC, HGDK and HGDO II are pledged to lenders (F-1).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "achi-capital",
+   "name": "Achi Capital",
+   "legal_name": "AchiCapital GP Limited (Achi Capital Partners Fund LP)",
+   "kind": "fund",
+   "city": null,
+   "what": "Investment firm controlled by Timothy Chu-Wan Chen. It invested in all three rounds through Luminous Knowledge, Grand Slam, Prosperis Holding and Nocturne Rise, and holds 15.6% of DayOne.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "baupost",
+   "name": "Baupost",
+   "legal_name": "Baupost Private Investments A-2, B-2, C-2, BVI-2, BVII-2, BVIII-2 and BVIV-2, L.L.C.",
+   "kind": "fund",
+   "city": null,
+   "what": "US investor. It put US$150 mn into Series B and about US$168 mn into Series C, roughly 4.1% as converted (our arithmetic from the F-1).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "princeville",
+   "name": "Princeville Global",
+   "legal_name": "Princeville Global Datacenter Development Investments Limited; Princeville Global III ANZ Fund",
+   "kind": "fund",
+   "city": null,
+   "what": "Investor in all three rounds, US$154.4 mn in total, about 2.2% as converted (our arithmetic).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "svf2",
+   "name": "SVF II Atlantic (SoftBank Vision Fund 2)",
+   "legal_name": "SVF II Atlantic (DE) LLC",
+   "kind": "fund",
+   "city": null,
+   "what": "Bought US$50 mn of Series B on 31 Dec 2024. 'SVF II' is SoftBank Vision Fund 2's naming, so the SoftBank link is our reading.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "alpha-jwc",
+   "name": "Alpha JWC Ventures",
+   "legal_name": "Alpha JWC Ventures III, L.P.; PT AJWCS Sinergi Tiga",
+   "kind": "fund",
+   "city": "Jakarta",
+   "what": "Indonesia-focused early- to growth-stage investment firm founded in 2015 (its site). It put US$34.2 mn into DayOne's Series B and C.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.alphajwc.com/"
+   ]
+  },
+  {
+   "id": "lestari",
+   "name": "PT Lestari Investasi Indonesia",
+   "legal_name": "PT Lestari Investasi Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Indonesian vehicle that bought US$200 mn of DayOne Series C on 31 Dec 2025 (about 1.7% as converted). Its president director, Andry Setiawan, was INA's co-CIO, so it is most likely INA's vehicle (our reading).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752dex101.htm",
+    "https://www.asiaasset.com/people-moves/indonesia-wealth-fund-ina-promotes-duo-to-cios/"
+   ]
+  },
+  {
+   "id": "ina",
+   "name": "INA (Indonesia Investment Authority)",
+   "legal_name": null,
+   "kind": "fund",
+   "city": "Jakarta",
+   "what": "Indonesia's sovereign wealth fund. It has been DayOne's 40% partner in the Indonesian JV since 2023, joined DayOne's Series C at group level (Jan 2026), and lent to DayOne in 2024-2025.",
+   "sources": [
+    "https://dayonedc.com/headliners/dayone-formalizes-joint-venture-with-ina-propelling-digital-infrastructure-development-in-indonesia/",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465926000411/tm261784d1_ex99-1.htm",
+    "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2025/dbs-uob-arrange-loan-for-data-centre-development-project-by-dayone.page"
+   ]
+  },
+  {
+   "id": "dbs",
+   "name": "DBS",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore bank. With UOB, it provided the Rp6.7 tn (SGD 530 mn) loan for DayOne's Nongsa campus (Jun 2025).",
+   "sources": [
+    "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2025/dbs-uob-arrange-loan-for-data-centre-development-project-by-dayone.page",
+    "https://w.media/dayone-ina-get-us-411-million-from-singapore-banks-to-build-3-data-centers-in-batam/"
+   ]
+  },
+  {
+   "id": "uob",
+   "name": "UOB (United Overseas Bank)",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore bank. With DBS, it provided the Rp6.7 tn (SGD 530 mn) loan for DayOne's Nongsa campus (Jun 2025).",
+   "sources": [
+    "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2025/dbs-uob-arrange-loan-for-data-centre-development-project-by-dayone.page",
+    "https://w.media/dayone-ina-get-us-411-million-from-singapore-banks-to-build-3-data-centers-in-batam/"
+   ]
+  },
+  {
+   "id": "morgan-stanley",
+   "name": "Morgan Stanley",
+   "legal_name": null,
+   "kind": "company",
+   "city": "New York",
+   "what": "IPO underwriter for DayOne's proposed Nasdaq listing (Oct 2026).",
+   "sources": [
+    "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/"
+   ]
+  },
+  {
+   "id": "jp-morgan",
+   "name": "J.P. Morgan",
+   "legal_name": null,
+   "kind": "company",
+   "city": "New York",
+   "what": "IPO underwriter for DayOne's proposed Nasdaq listing (Oct 2026).",
+   "sources": [
+    "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/"
+   ]
+  },
+  {
+   "id": "bofa-securities",
+   "name": "BofA Securities",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Charlotte",
+   "what": "IPO underwriter for DayOne's proposed Nasdaq listing (Oct 2026).",
+   "sources": [
+    "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/"
+   ]
+  },
+  {
+   "id": "citigroup",
+   "name": "Citigroup",
+   "legal_name": null,
+   "kind": "company",
+   "city": "New York",
+   "what": "IPO underwriter for DayOne's proposed Nasdaq listing (Oct 2026).",
+   "sources": [
+    "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/"
+   ]
+  },
+  {
+   "id": "oracle",
+   "name": "Oracle",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "US cloud company. Bloomberg (Jul 2025, unnamed sources) reported it would lease DayOne's Nongsa Digital Park data centres as sole tenant of plots for at least 120 MW. Oracle has not confirmed.",
+   "sources": [
+    "https://news.bgov.com/tech-and-telecom-law/oracle-said-to-move-ahead-with-cloud-services-plan-in-indonesia"
+   ]
+  },
+  {
+   "id": "bytedance",
+   "name": "ByteDance",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "TikTok owner. It is DayOne's largest customer group-wide (69.4% of 2025 revenue, described but not named in the F-1; Bloomberg names it). We found no source placing it in Batam.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://news.bgov.com/tech-and-telecom-law/oracle-said-to-move-ahead-with-cloud-services-plan-in-indonesia"
+   ]
+  },
+  {
+   "id": "firmus",
+   "name": "Firmus Technologies",
+   "legal_name": "Firmus Technologies Pty Ltd",
+   "kind": "company",
+   "city": null,
+   "what": "Australian AI-factory company that PLN Batam describes as NVIDIA-backed. It is building a 360 MW NVIDIA DSX campus in Batam with DayOne. By Sep 2026 it listed seven AI factories in Australia, Singapore, Indonesia and Malaysia.",
+   "sources": [
+    "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives",
+    "https://www.plnbatam.com/pln-batam-dan-bp-batam-sambut-baik-ekspansi-firmus-technologies-menjadikan-kota-batam-sebagai-hub-digital-terdepan-di-asia-tenggara/",
+    "https://firmus.co/newsroom/firmus-surpasses-900-mw-contracted-capacity-adds-openai-as-anchor-customer-and-expands-into-malaysia"
+   ]
+  },
+  {
+   "id": "nvidia",
+   "name": "NVIDIA",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Santa Clara",
+   "what": "Chipmaker supplying up to 170,000 accelerators and its DSX AI-factory platform for Firmus' Batam campus, under a partnership that runs to 2034.",
+   "sources": [
+    "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives"
+   ]
+  },
+  {
+   "id": "benmax",
+   "name": "Benmax",
+   "legal_name": null,
+   "kind": "company",
+   "city": "New South Wales",
+   "what": "Designs and makes Firmus' HyperCube liquid-cooled modules in regional NSW. Firmus agreed on 13 Aug 2026 to buy Benmax's fabrication, design and projects businesses for A$300 mn.",
+   "sources": [
+    "https://firmus.co/newsroom/firmus-to-acquire-benmax-s-fabrication-design-and-projects-businesses-accelerating-ai-factory-deployments"
+   ]
+  },
+  {
+   "id": "pln-batam",
+   "name": "PLN Batam",
+   "legal_name": "PT Pelayanan Listrik Nasional Batam",
+   "kind": "utility",
+   "city": "Batam",
+   "what": "Batam's electricity utility and a PLN subsidiary. It supplies DayOne Kabil (511 MVA PJBTL) and the Nongsa estate grid run by Tamarin.",
+   "sources": [
+    "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+    "https://www.plnbatam.com/listrik-jantung-pertumbuhan-ekonomi-digital-pln-batam-siap-berikan-pasokan-andal-dukung-kek-nongsa/"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State electricity company and parent of PLN Batam.",
+   "sources": [
+    "https://www.plnbatam.com/listrik-jantung-pertumbuhan-ekonomi-digital-pln-batam-siap-berikan-pasokan-andal-dukung-kek-nongsa/"
+   ]
+  },
+  {
+   "id": "maxpower",
+   "name": "Maxpower Indonesia",
+   "legal_name": "PT Maxpower Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Gas-engine power producer named by Tamarin (2022) as the second power source for the KEK Nongsa estate grid.",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/"
+   ]
+  },
+  {
+   "id": "tamarin",
+   "name": "Tamarin (Nongsa Digital Park)",
+   "legal_name": "PT Taman Resor Internet",
+   "kind": "company",
+   "city": "Batam",
+   "what": "Citramas subsidiary that develops and manages KEK Nongsa / Nongsa Digital Park (166.45 ha under Government Regulation 68/2021; Citramas gives NDP as 188.04 ha). It buys power from PLN Batam and Maxpower and distributes it to NDP data centres over its own grid. Its PJBTL rose from 389 to 1,064 MVA in Dec 2024.",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+    "https://www.plnbatam.com/listrik-jantung-pertumbuhan-ekonomi-digital-pln-batam-siap-berikan-pasokan-andal-dukung-kek-nongsa/",
+    "https://setkab.go.id/pemerintah-terbitkan-pp-kek-batam-aero-technic-dan-kek-nongsa-digital-park/",
+    "https://www.citramas.com/nongsa_digital"
+   ]
+  },
+  {
+   "id": "citramas",
+   "name": "Citramas Group",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Batam",
+   "what": "Batam group chaired by Kris Wiluan. It owns Nongsa Digital Park (through Tamarin) and Kabil Integrated Industrial Estate, the estates that host both DayOne campuses.",
+   "sources": [
+    "https://www.citramas.com/",
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+    "https://dayonedc.com/markets/dayone-data-centers-indonesia-data-center-officially-begins-construction-forward-looking-blueprint-to-unleash-digital-potential-in-southeast-asia/"
+   ]
+  },
+  {
+   "id": "kiie",
+   "name": "Kabil Integrated Industrial Estate (KIIE)",
+   "legal_name": "PT Kabil Indonusa Estate; PT Kabil Citranusa",
+   "kind": "company",
+   "city": "Batam",
+   "what": "Citramas' 538 ha industrial estate on Batam's east coast, run through PT Kabil Indonusa Estate and PT Kabil Citranusa. It hosts DayOne KITP.",
+   "sources": [
+    "https://www.citramas.com/kabil_integrated_industrial_estate",
+    "https://dayonedc.com/markets/dayone-signs-indonesias-largest-511mva-450mw-ppa-to-expand-hyperscale-data-center-platform-in-batam/"
+   ]
+  },
+  {
+   "id": "bp-batam",
+   "name": "BP Batam",
+   "legal_name": "Badan Pengusahaan Kawasan Perdagangan Bebas dan Pelabuhan Bebas Batam",
+   "kind": "government",
+   "city": "Batam",
+   "what": "Batam Free Trade Zone authority. It hosted the DayOne-PLN Batam PJBTL signing, handles licensing, and requires data centres in Nongsa and Kabil to desalinate their own water.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://ptsp.bpbatam.go.id/en/investasi-digital-menguat-bp-batam-dukung-proyek-pusat-data-dayone-pln-batam/",
+    "https://dayonedc.com/markets/dayone-signs-indonesias-largest-511mva-450mw-ppa-to-expand-hyperscale-data-center-platform-in-batam/",
+    "https://gokepri.com/bp-batam-dorong-investor-pusat-data-olah-air-laut-sendiri/"
+   ]
+  },
+  {
+   "id": "dewan-nasional-kek",
+   "name": "Dewan Nasional KEK (National SEZ Council)",
+   "legal_name": null,
+   "kind": "government",
+   "city": "Jakarta",
+   "what": "National council for Special Economic Zones. KEK Nongsa was set up by Government Regulation 68/2021 (signed 8 Jun 2021, 166.45 ha), and the council named Tamarin its developer-manager (decree 2/2021).",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+    "https://setkab.go.id/pemerintah-terbitkan-pp-kek-batam-aero-technic-dan-kek-nongsa-digital-park/"
+   ]
+  },
+  {
+   "id": "usgbc",
+   "name": "USGBC (LEED)",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Washington, DC",
+   "what": "Green-building body behind LEED. DayOne lists LEED Gold for building NDP C.",
+   "sources": [
+    "https://dayonedc.com/market/batam"
+   ]
+  },
+  {
+   "id": "acset",
+   "name": "Acset",
+   "legal_name": "PT Acset Indonusa Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Astra-group contractor, 91.17% held by PT Karya Supra Perkasa. It built the structure of 'GDS Data Center Nongsa' phases I-II.",
+   "sources": [
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf"
+   ]
+  },
+  {
+   "id": "stt-gdc",
+   "name": "STT GDC (ST Telemedia Global Data Centres)",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore data-centre group. Its STT Group entities hold a minority stake in GDS (F-1). DayOne's chairman Lim Ah Doo was a director there.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "jamie-khoo",
+   "name": "Jamie Khoo",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "DayOne CEO since 2024 and director since 2026. Earlier about a decade at GDS as Deputy CFO, then COO, and senior finance roles at ST Telemedia, ABB, EY and Baker Hughes.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/"
+   ]
+  },
+  {
+   "id": "william-huang",
+   "name": "William Wei Huang",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Shanghai",
+   "what": "Chairman of GDS and its CEO since 2002. DayOne director since 2022 (Chairman and CEO in 2022 releases). Under the shareholders' deed he can name one post-IPO director.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/markets/dayone-data-centers-indonesia-data-center-officially-begins-construction-forward-looking-blueprint-to-unleash-digital-potential-in-southeast-asia/",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752dex44.htm"
+   ]
+  },
+  {
+   "id": "lim-ah-doo",
+   "name": "Lim Ah Doo",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "DayOne chairman since Apr 2026 and director since 2024. Former director of STT GDC and ST Telemedia; chairman of Olam Group until Apr 2026; earlier chairman of Morgan Grenfell (Asia).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "andy-okada",
+   "name": "Andy (Satoshi) Okada",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Tokyo",
+   "what": "DayOne director since 2023. President of a SoftBank-Alibaba joint venture and President and CEO of Alibaba Japan; earlier a SoftBank Japan executive.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/leadership"
+   ]
+  },
+  {
+   "id": "nicolas-aguzin",
+   "name": "Nicolás Aguzín",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Hong Kong",
+   "what": "DayOne director since 2026. CEO of HKEX 2021-2024, earlier at J.P. Morgan; director of MercadoLibre, Globant and Pampa Energia; founder of Aguave Capital.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/leadership"
+   ]
+  },
+  {
+   "id": "timothy-chen",
+   "name": "Timothy Chu-Wan Chen",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DayOne director since 2026. Partner of Achi Capital since 2022 and controlling shareholder of AchiCapital GP; earlier CEO of VIA China.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "douglas-farrell",
+   "name": "Douglas Farrell",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DayOne director since 2026. Founder and managing partner of Quintet Partners (2016); earlier deputy CEO of Vinhomes and head of M&A, Australia and NZ, at Citigroup.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "bob-mccooey",
+   "name": "Bob McCooey",
+   "legal_name": null,
+   "kind": "person",
+   "city": "New York",
+   "what": "Vice Chairman of Nasdaq. DayOne board advisor since 2024; becomes a director when the F-1 takes effect.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/leadership"
+   ]
+  },
+  {
+   "id": "yan-chengkang",
+   "name": "Yan Chengkang (CK)",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "DayOne CFO since Mar 2026. At Hillhouse 2023-2026 (a Managing Director, per DayOne's site), KKR 2013-2022 and Citi 2009-2013.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+    "https://dayonedc.com/leadership"
+   ]
+  },
+  {
+   "id": "daniel-fertig",
+   "name": "Daniel Fertig",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Hong Kong",
+   "what": "DayOne Chief Legal Officer since Jun 2026; previously a capital-markets partner at Simpson Thacher & Bartlett.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "philippe-laffont",
+   "name": "Philippe Laffont",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Managing member of Coatue Structured Fund GP LLC and of Coatue PC LLC, the entities behind Coatue's DayOne shares.",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "lei-zhang",
+   "name": "Lei Zhang",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "May be deemed to control Hillhouse Investment Management, the manager of the Hillhouse funds holding DayOne shares (F-1; he disclaims beneficial ownership).",
+   "sources": [
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm"
+   ]
+  },
+  {
+   "id": "ridha-wirakusumah",
+   "name": "Ridha Wirakusumah",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "INA CEO until 15 Feb 2026. He signed the DayOne joint venture in 2023 and was quoted on the Series C in Jan 2026.",
+   "sources": [
+    "https://dayonedc.com/headliners/dayone-formalizes-joint-venture-with-ina-propelling-digital-infrastructure-development-in-indonesia/",
+    "https://www.sec.gov/Archives/edgar/data/1526125/000110465926000411/tm261784d1_ex99-1.htm",
+    "https://www.asiaasset.com/people-moves/indonesia-wealth-fund-inas-co-cio-andry-setiawan-resigns-report-says/"
+   ]
+  },
+  {
+   "id": "andry-setiawan",
+   "name": "Andry Setiawan",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "INA managing director of investments from 2021, co-CIO from Jun 2025, resigned Feb 2026 (Bloomberg via Asia Asset). President Director of PT Lestari Investasi Indonesia (Dec 2025). Earlier director of investment at PT Danareksa.",
+   "sources": [
+    "https://www.asiaasset.com/people-moves/indonesia-wealth-fund-ina-promotes-duo-to-cios/",
+    "https://www.asiaasset.com/people-moves/indonesia-wealth-fund-inas-co-cio-andry-setiawan-resigns-report-says/",
+    "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752dex101.htm"
+   ]
+  },
+  {
+   "id": "johan-batubara",
+   "name": "Johan Batubara",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "INA Director of Investments, quoted on the DayOne Batam project in Jul 2025.",
+   "sources": [
+    "http://www.ina.go.id/ina-in-the-news/indonesias-ina-ramps-up-digital-infra-investments-after-record-fdi/"
+   ]
+  },
+  {
+   "id": "kwin-fo",
+   "name": "Kwin Fo",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Batam",
+   "what": "President Director (Direktur Utama) of PT PLN Batam in 2026; spoke at the DayOne PJBTL and the Firmus welcome.",
+   "sources": [
+    "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+    "https://www.plnbatam.com/pln-batam-dan-bp-batam-sambut-baik-ekspansi-firmus-technologies-menjadikan-kota-batam-sebagai-hub-digital-terdepan-di-asia-tenggara/",
+    "https://ptsp.bpbatam.go.id/en/investasi-digital-menguat-bp-batam-dukung-proyek-pusat-data-dayone-pln-batam/"
+   ]
+  },
+  {
+   "id": "amsakar-achmad",
+   "name": "Amsakar Achmad",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Batam",
+   "what": "Head of BP Batam and Mayor of Batam. He spoke at the DayOne PJBTL signing (Apr 2026) and on DayOne's desalination plan (Sep 2026).",
+   "sources": [
+    "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+    "https://ptsp.bpbatam.go.id/en/investasi-digital-menguat-bp-batam-dukung-proyek-pusat-data-dayone-pln-batam/",
+    "https://gokepri.com/data-center-dayone-bawa-investasi-swro-rp180-miliar-ke-batam/"
+   ]
+  },
+  {
+   "id": "li-claudia-chandra",
+   "name": "Li Claudia Chandra",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Batam",
+   "what": "Deputy Head of BP Batam and Deputy Mayor of Batam; welcomed the Firmus-NVIDIA-DayOne project (Jun 2026).",
+   "sources": [
+    "https://www.plnbatam.com/pln-batam-dan-bp-batam-sambut-baik-ekspansi-firmus-technologies-menjadikan-kota-batam-sebagai-hub-digital-terdepan-di-asia-tenggara/",
+    "https://ptsp.bpbatam.go.id/en/investasi-digital-menguat-bp-batam-dukung-proyek-pusat-data-dayone-pln-batam/"
+   ]
+  },
+  {
+   "id": "kris-wiluan",
+   "name": "Kris Wiluan",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Batam",
+   "what": "Chairman of Citramas Group. He attended DayOne's NDP groundbreaking (Jul 2022) and GDS's piling ceremony (Oct 2022).",
+   "sources": [
+    "https://dayonedc.com/markets/dayone-data-centers-indonesia-data-center-officially-begins-construction-forward-looking-blueprint-to-unleash-digital-potential-in-southeast-asia/",
+    "https://gokepri.com/menko-perekonomian-resmikan-tiang-pancang-pertama-gds-data-center-di-batam/"
+   ]
+  },
+  {
+   "id": "mike-wiluan",
+   "name": "Michael Kristian (Mike) Wiluan",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Batam",
+   "what": "President Director of PT Tamarin, who signed its 2022 power MoU with PLN Batam; CEO of Nongsa Digital Park in 2022.",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+    "https://dayonedc.com/markets/dayone-data-centers-indonesia-data-center-officially-begins-construction-forward-looking-blueprint-to-unleash-digital-potential-in-southeast-asia/"
+   ]
+  },
+  {
+   "id": "ken-miyauchi",
+   "name": "Ken Miyauchi",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Tokyo",
+   "what": "DayOne board advisor since 2024; board director of SoftBank Group Corp and former President and CEO of SoftBank Corp.",
+   "sources": [
+    "https://dayonedc.com/leadership"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "gds",
+   "to": "dayone",
+   "relation": "owns",
+   "detail": "Holds 64,000,000 ordinary shares, 19.4% as converted, and is the third-largest holder. DayOne was GDS's wholly owned subsidiary until the Series A (Jun 2024). GDS fell below 50% with the Series B and deconsolidated DayOne on 31 Dec 2024 (35.6% per The Tech Capital, Jul 2025). In Jan 2026 it sold 11,000,000 shares back to DayOne for US$385 mn.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Following these transactions, GDS’s shareholding has been reduced to 19.4%, becoming our third largest shareholder."
+  },
+  {
+   "from": "coatue",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "19.5% as converted (64.16 mn shares). US$450 mn of Series B (31 Dec 2024) plus US$1,345.5 mn of Series C (Dec 2025-Jun 2026), about US$1.80 bn in all. It led the over-US$2.0 bn Series C.",
+   "evidence": "confirmed",
+   "date": "2024-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Coatue Management entities 64,157,144 (4) 19.5"
+  },
+  {
+   "from": "hillhouse",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "19.5% as converted (64.15 mn shares). US$290 mn of Series A (4 Jun 2024), US$166 mn of Series B (31 Dec 2024) and about US$798 mn of Series C (Dec 2025-Jun 2026) through HGDC, HGDK, HGDO II and HBYT Co-Investment.",
+   "evidence": "confirmed",
+   "date": "2024-06",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Hillhouse entities 64,152,591 (5) 19.5"
+  },
+  {
+   "from": "achi-capital",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "15.6% as converted (51.5 mn shares). US$210 mn of Series A (Jun 2024, Luminous Knowledge), US$119.4 mn of Series B (Dec 2024, Grand Slam) and US$830 mn of Series C (Jan-Apr 2026, Prosperis Holding and Nocturne Rise).",
+   "evidence": "confirmed",
+   "date": "2024-06",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Achi entities 51,535,580 (7) 15.6"
+  },
+  {
+   "from": "baupost",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "US$150 mn of Series B (31 Dec 2024) and US$168 mn of Series C (31 Dec 2025 and 27 Apr 2026) through seven Baupost Private Investments vehicles, about 4.1% as converted (our arithmetic).",
+   "evidence": "confirmed",
+   "date": "2024-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Baupost Private Investments BVIV-2, L.L.C. December 31, 2024 3,188,572 US$55,800,010.00"
+  },
+  {
+   "from": "princeville",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "US$31.5 mn of Series A (Jun 2024), US$16.4 mn of Series B (Dec 2024) and US$106.5 mn of Series C (Dec 2025 and Apr 2026), about 2.2% as converted (our arithmetic).",
+   "evidence": "confirmed",
+   "date": "2024-06",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Princeville Global Datacenter Development Investments Limited June 4, 2024 2,817,727 US$28,177,270.00"
+  },
+  {
+   "from": "svf2",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "US$50 mn of Series B (2,857,143 shares at US$17.50) on 31 Dec 2024, about 0.9% as converted.",
+   "evidence": "confirmed",
+   "date": "2024-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "SVF II Atlantic (DE) LLC December 31, 2024 2,857,143 US$50,000,002.50"
+  },
+  {
+   "from": "alpha-jwc",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "US$15.0 mn of Series B (31 Dec 2024) and US$19.2 mn of Series C (Dec 2025 and Apr 2026) through Alpha JWC Ventures III, L.P. and PT AJWCS Sinergi Tiga, about 0.4% as converted.",
+   "evidence": "confirmed",
+   "date": "2024-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Alpha JWC Ventures III, L.P. December 31, 2024 851,914 US$14,908,495.00"
+  },
+  {
+   "from": "lestari",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "US$200 mn of Series C (5,714,286 shares at US$35) on 31 Dec 2025, about 1.7% as converted.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "PT Lestari Investasi Indonesia December 31, 2025 5,714,286 US$200,000,010.00"
+  },
+  {
+   "from": "ina",
+   "to": "lestari",
+   "relation": "owns",
+   "detail": "Our reading. Lestari's president director, Andry Setiawan, was INA's co-CIO when he signed for it (31 Dec 2025). INA says it joined DayOne's Series C. The F-1 says the sovereign wealth fund that invests in DayOne's Indonesian data centres is also a DayOne shareholder.",
+   "evidence": "inferred",
+   "date": "2025-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752dex101.htm",
+   "quote": "PT Lestari Investasi Indonesia By: /s/ Andry Setiawan Name: Andry Setiawan Title: President Director"
+  },
+  {
+   "from": "ina",
+   "to": "dayone",
+   "relation": "invested_in",
+   "detail": "INA joined DayOne's over-US$2.0 bn Series C (announced 5 Jan 2026) at group level, on top of its 40% Indonesian JV stake. The release gives no amount; US$200 mn via PT Lestari Investasi Indonesia is our reading.",
+   "evidence": "confirmed",
+   "date": "2026-01",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1526125/000110465926000411/tm261784d1_ex99-1.htm",
+   "quote": "supported by additional leading institutions, including the Indonesia Investment Authority (INA), Indonesia’s sovereign wealth fund"
+  },
+  {
+   "from": "ina",
+   "to": "dayone-indonesia",
+   "relation": "owns",
+   "detail": "40% non-controlling stake in PT DayOne Data Centers Indonesia (DayOne SG holds 60%). After the IPO INA can swap it for DayOne shares, or DayOne can pay cash at an independently valued price.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "In Indonesia, our data center operations are conducted through a subsidiary in which a sovereign wealth fund holds a 40% non-controlling interest."
+  },
+  {
+   "from": "ina",
+   "to": "dayone-indonesia",
+   "relation": "invested_in",
+   "detail": "INA contributed US$82.5 mn of capital in Apr and Jun 2026, matched pro rata by DayOne, so the 60/40 split did not change.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "In April and June 2026, the minority shareholder made capital contributions of $82.5 million to PT DayOne Data Centers Indonesia."
+  },
+  {
+   "from": "ina",
+   "to": "dayone",
+   "relation": "joint_venture",
+   "detail": "Joint venture for a nationwide Indonesian data-centre platform: first pact 1 Sep 2023, definitive agreements 16 Oct 2023 witnessed by President Joko Widodo. The first project is the NDP campus.",
+   "evidence": "confirmed",
+   "date": "2023-10",
+   "source_url": "https://dayonedc.com/headliners/dayone-formalizes-joint-venture-with-ina-propelling-digital-infrastructure-development-in-indonesia/",
+   "quote": "has officially formed a joint venture with Indonesia Investment Authority (INA), Indonesia’s sovereign wealth fund"
+  },
+  {
+   "from": "dayone",
+   "to": "dayone-sg",
+   "relation": "owns",
+   "detail": "100% (F-1 corporate structure chart, Oct 2026).",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg",
+   "quote": "DayOne Data Centers Singapore Pte. Ltd."
+  },
+  {
+   "from": "dayone-sg",
+   "to": "dayone-indonesia",
+   "relation": "owns",
+   "detail": "60% of PT DayOne Data Centers Indonesia (INA holds 40%), per the F-1 structure chart. Under the Jun 2026 amendment, DayOne SG must buy INA's shares if INA uses its exchange right.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg",
+   "quote": "PT DayOne Data Centers Indonesia"
+  },
+  {
+   "from": "dayone-indonesia",
+   "to": "digitalland-services-one",
+   "relation": "owns",
+   "detail": "99.999%; DayOne Data Centers Singapore holds the other 0.001% (F-1 chart).",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg",
+   "quote": "PT Digitalland Services One"
+  },
+  {
+   "from": "dayone-indonesia",
+   "to": "digitalland-services-two",
+   "relation": "owns",
+   "detail": "99.999%; DayOne Data Centers Singapore holds the other 0.001% (F-1 chart).",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/g223752g12v12.jpg",
+   "quote": "PT Digitalland Services Two"
+  },
+  {
+   "from": "gds",
+   "to": "pt-gds-idc-service",
+   "relation": "owns",
+   "detail": "Listed as a GDS subsidiary in GDS's 20-F for FY2022 and FY2023, next to PT GDS IDC Services Two, before DayOne left the GDS group.",
+   "evidence": "confirmed",
+   "date": "2024-04",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1526125/000110465924053528/gds-20231231xex8d1.htm",
+   "quote": "PT GDS IDC SERVICE"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "gds",
+   "relation": "owns",
+   "detail": "The STT Group (STT Singapore DC Pte. Ltd. and STT DEFU 2 Pte. Ltd.) holds a minority stake in GDS; it ceased to be a DayOne related party in 2025.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "which has minority equity ownership in GDSH"
+  },
+  {
+   "from": "dayone",
+   "to": "dayone-nongsa",
+   "relation": "runs",
+   "detail": "72 MW in service and fully billed in Batam. The anchor, 'a leading U.S. hyperscaler', took 34 MW first and later 72 MW.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "obtained an initial anchor commitment of 34MW from a leading U.S. hyperscaler, which was later upsized to 72MW"
+  },
+  {
+   "from": "dayone",
+   "to": "dayone-kabil",
+   "relation": "runs",
+   "detail": "Second Batam location secured in 2026: 360 MW of IT power capacity, 240 MW of it contracted to 'a leading technology company' and under construction.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "we secured a second location at Kabil Industrial Tech Park (KITP) in 2026 with 360MW of IT Power Capacity, of which 240MW have been contracted to a leading technology company"
+  },
+  {
+   "from": "digitalland-services-one",
+   "to": "dayone-kabil",
+   "relation": "runs",
+   "detail": "The PT that signed the KITP power contract (PJBTL) with PLN Batam on 17 Apr 2026; BP Batam and PLN Batam both name it.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+   "quote": "Chief Executive Officer (CEO) PT Digitalland Service One (DayOne), Jamie Khoo"
+  },
+  {
+   "from": "pt-gds-idc-service",
+   "to": "dayone-nongsa",
+   "relation": "runs",
+   "detail": "Developer of 'GDS Data Center Nongsa' phases I-II (Acset's client from Oct 2023). We read this as DayOne's NDP campus under its GDS-era company name: GDS's Batam project passed to DayOne, and NDP is DayOne's only operating Indonesian campus.",
+   "evidence": "inferred",
+   "date": "2023-10",
+   "source_url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+   "quote": "GDS Data Center Nongsa 100% 320.968 PT GDS IDC Service"
+  },
+  {
+   "from": "dayone",
+   "to": "firmus-batam-ai-factory",
+   "relation": "built",
+   "detail": "Firmus says its Batam campus is being developed in partnership with DayOne, and BTW Media says DayOne is constructing it. DayOne itself has not named Firmus, including in its F-1.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives",
+   "quote": "Firmus' Batam campus is being developed in partnership with DayOne, a Singapore-headquartered global digital infrastructure platform."
+  },
+  {
+   "from": "firmus",
+   "to": "firmus-batam-ai-factory",
+   "relation": "runs",
+   "detail": "360 MW NVIDIA DSX AI Factory for AI-native customers; the NVIDIA partnership runs to 2034. Firmus expects US$25-30 bn of offtake over six years (revenue, not capex).",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives",
+   "quote": "anchored by a dedicated 360 MW NVIDIA DSX AI Factory campus in Batam, Indonesia"
+  },
+  {
+   "from": "firmus",
+   "to": "dayone-kabil",
+   "relation": "tenant_of",
+   "detail": "Our reading. The F-1 says KITP has 360 MW of IT capacity with 240 MW contracted to 'a leading technology company'. Firmus' DayOne campus is also 360 MW. PLN Batam calls Firmus the first result of its DayOne deal, and BTW Media places the campus at Kabil Tech Park on DayOne's PLN Batam PPA.",
+   "evidence": "inferred",
+   "date": "2026-07",
+   "source_url": "https://btw.media/en/firmus-nvidia-plan-360mw-ai-hub-in-batam",
+   "quote": "a 360MW Nvidia DSX AI Factory campus at Kabil Tech Park in Batam, Indonesia"
+  },
+  {
+   "from": "nvidia",
+   "to": "firmus-batam-ai-factory",
+   "relation": "supplies",
+   "detail": "Up to 170,000 accelerators (Grace-Blackwell, Vera-Rubin, Vera) in 2027-2028, plus the DSX platform. NVIDIA earns product revenue and a share of the cloud revenue.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://firmus.co/newsroom/firmus-to-build-170-000-gpu-ai-factor-y-campus-with-nvidia-for-global-ai-natives",
+   "quote": "The agreement covers up to 170,000 NVIDIA AI accelerators across Grace-Blackwell, Vera-Rubin, and Vera platforms through 2027 and 2028"
+  },
+  {
+   "from": "benmax",
+   "to": "firmus",
+   "relation": "supplies",
+   "detail": "Makes Firmus' HyperCube liquid-cooled AI-factory modules in regional NSW. Firmus says its Batam campus integrates HyperCube, but this release does not name Batam. Firmus agreed to buy Benmax's fabrication, design and projects businesses for A$300 mn (13 Aug 2026).",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://firmus.co/newsroom/firmus-to-acquire-benmax-s-fabrication-design-and-projects-businesses-accelerating-ai-factory-deployments",
+   "quote": "Firmus' HyperCube is the company's modular AI Factory system, designed and manufactured in regional NSW by Benmax."
+  },
+  {
+   "from": "oracle",
+   "to": "dayone-nongsa",
+   "relation": "tenant_of",
+   "detail": "Our reading. Bloomberg (11 Jul 2025, unnamed sources) says Oracle will lease DayOne's NDP data centres as sole tenant of plots for at least 120 MW. The F-1 says NDP's 72 MW went to 'a leading U.S. hyperscaler', and DayOne's 2025 Indonesia revenue (US$59.4 mn) equals one >10% customer's revenue. Neither company has confirmed.",
+   "evidence": "inferred",
+   "date": "2025-07",
+   "source_url": "https://news.bgov.com/tech-and-telecom-law/oracle-said-to-move-ahead-with-cloud-services-plan-in-indonesia",
+   "quote": "The American tech giant will lease DayOne’s data centers located at Nongsa Digital Park on the Indonesian island of Batam"
+  },
+  {
+   "from": "bytedance",
+   "to": "dayone",
+   "relation": "tenant_of",
+   "detail": "Group-wide largest customer: 69.4% of 2025 and 69.2% of H1 2026 revenue. The F-1 describes it without naming it; Bloomberg names ByteDance. The F-1's top-five table puts the top customer by bookings in Johor, Bangkok and Helsinki, not Batam (our reading).",
+   "evidence": "inferred",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "our largest customer, a global technology company with a leading short-form video platform serving a worldwide audience, accounted for 69.4% and 69.2%"
+  },
+  {
+   "from": "pln-batam",
+   "to": "dayone-kabil",
+   "relation": "supplies_power",
+   "detail": "PJBTL of about 511 MVA (~450 MW of grid capacity), the largest data-centre power contract in Indonesia, signed 17 Apr 2026 at BP Batam. Supply comes in phases over 2026-2027.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://dayonedc.com/markets/dayone-signs-indonesias-largest-511mva-450mw-ppa-to-expand-hyperscale-data-center-platform-in-batam/",
+   "quote": "the largest long-term power purchase agreement (PPA) in Indonesia, at approximately 511 MVA, equivalent to around 450 MW of grid capacity"
+  },
+  {
+   "from": "pln-batam",
+   "to": "dayone-kabil",
+   "relation": "partner",
+   "detail": "MoUs on connectivity and electrical-infrastructure services for KITP, signed with the PJBTL.",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://dayonedc.com/markets/dayone-signs-indonesias-largest-511mva-450mw-ppa-to-expand-hyperscale-data-center-platform-in-batam/",
+   "quote": "memoranda of understanding covering connectivity and electrical infrastructure services for DayOne Kabil Industrial Tech Park (KITP)"
+  },
+  {
+   "from": "pln-batam",
+   "to": "digitalland-services-one",
+   "relation": "renewable_deal",
+   "detail": "Head of Agreement (17 Aug 2026): PLN Batam to supply green energy from ground-mounted or floating solar (PLTS) with battery storage (BESS). The size is to be set in a joint planning session.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://www.plnbatam.com/momentum-kemerdekaan-pln-batam-teken-empat-kerja-sama-strategis-untuk-perkuat-energi-hijau-dan-sdm/",
+   "quote": "PLN Batam akan menyediakan energi hijau dari PLTS ground-mounted atau floating yang dikombinasikan dengan Battery Energy Storage System (BESS)"
+  },
+  {
+   "from": "pln-batam",
+   "to": "dayone-kabil",
+   "relation": "built",
+   "detail": "Open tender (21 Sep 2026, bids closed 6 Oct 2026) for a 150 kV underground cable from GI Tanjung Kasam to 'GIS C Dayone' plus two line bays. No winner has been published. The tender names no campus. Kabil is our reading: GI Tanjung Kasam stands at the Tanjung Kasam power station in Telaga Punggur, Nongsa (Global Energy Monitor), on the east coast where KIIE lies, and KITP is the DayOne campus with a direct high-voltage PLN Batam contract (NDP draws through Tamarin's estate grid).",
+   "evidence": "inferred",
+   "date": "2026-09",
+   "source_url": "https://www.plnbatam.com/wp-content/uploads/2026/09/06.-Pengumuman-PEMBANGUNAN-TRANSMISI-150-KV-UNDERGROUND-CABLE-UGC-DAYONE-1.pdf",
+   "quote": "PEMBANGUNAN TRANSMISI 150 kV UNDERGROUND CABLE (UGC) DARI GI TANJUNG KASAM KE GIS C DAYONE"
+  },
+  {
+   "from": "pln-batam",
+   "to": "tamarin",
+   "relation": "supplies_power",
+   "detail": "Supplies the KEK Nongsa estate grid. An MoU of 28 Oct 2022 covers power supply and management for the park's data centres. A PJBTL amendment on 11 Dec 2024 raised connected capacity from 389 MVA to 1,064 MVA and added a renewable-energy MoU.",
+   "evidence": "company_claim",
+   "date": "2024-12",
+   "source_url": "https://www.plnbatam.com/listrik-jantung-pertumbuhan-ekonomi-digital-pln-batam-siap-berikan-pasokan-andal-dukung-kek-nongsa/",
+   "quote": "sebelumnya 389 MVA menjadi 1064 MVA"
+  },
+  {
+   "from": "maxpower",
+   "to": "tamarin",
+   "relation": "supplies_power",
+   "detail": "Named by Tamarin's president director as the second power source for KEK Nongsa data centres, alongside PLN Batam.",
+   "evidence": "company_claim",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "berasal dari dua sumber penyediaan Listrik yaitu PLN Batam dan PT Maxpower Indonesia"
+  },
+  {
+   "from": "tamarin",
+   "to": "dayone-nongsa",
+   "relation": "supplies_power",
+   "detail": "Our reading. Tamarin distributes PLN Batam and Maxpower power to the data-centre tenants of KEK Nongsa over its own local grid, and DayOne NDP is one of them. No DayOne-specific supply contract was found.",
+   "evidence": "inferred",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "TAMARIN akan membangun Grid Local untuk distribusi listrik kepada Data centre"
+  },
+  {
+   "from": "pln",
+   "to": "pln-batam",
+   "relation": "owns",
+   "detail": "PLN Batam is a subsidiary of PT PLN (Persero).",
+   "evidence": "company_claim",
+   "date": "2024-12",
+   "source_url": "https://www.plnbatam.com/listrik-jantung-pertumbuhan-ekonomi-digital-pln-batam-siap-berikan-pasokan-andal-dukung-kek-nongsa/",
+   "quote": "PLN Batam bukan hanya anak perusahaan PT PLN (Persero)"
+  },
+  {
+   "from": "citramas",
+   "to": "tamarin",
+   "relation": "owns",
+   "detail": "Tamarin is a Citramas Group subsidiary.",
+   "evidence": "company_claim",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "PT Tamarin adalah anak perusahaan dari Citramas Group"
+  },
+  {
+   "from": "citramas",
+   "to": "kiie",
+   "relation": "owns",
+   "detail": "KIIE manages Citramas' 538 ha estate through PT Kabil Indonusa Estate and PT Kabil Citranusa.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.citramas.com/kabil_integrated_industrial_estate",
+   "quote": "Kabil Integrated Industrial Estate (KIIE) manages Citramas Group’s industrial estate, consisting of PT Kabil Indonusa Estate (KIE) and PT Kabil Citranusa (KCN)."
+  },
+  {
+   "from": "tamarin",
+   "to": "dayone-nongsa",
+   "relation": "partner",
+   "detail": "Estate: DayOne's campus sits in Nongsa Digital Park, the KEK that Tamarin develops and manages. NDP's CEO and the Citramas chairman attended DayOne's Jul 2022 groundbreaking.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://dayonedc.com/market/batam",
+   "quote": "As a 72MW data center inside Batam's Nongsa Digital Park Special Economic Zone"
+  },
+  {
+   "from": "kiie",
+   "to": "dayone-kabil",
+   "relation": "partner",
+   "detail": "Estate: KITP is DayOne's campus inside Kabil Integrated Industrial Estate.",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://dayonedc.com/markets/dayone-signs-indonesias-largest-511mva-450mw-ppa-to-expand-hyperscale-data-center-platform-in-batam/",
+   "quote": "its new data center campus located in Kabil Integrated Industrial Estate (KIIE), Batam"
+  },
+  {
+   "from": "dewan-nasional-kek",
+   "to": "tamarin",
+   "relation": "regulates",
+   "detail": "KEK Nongsa was set up by Government Regulation 68/2021 (8 Jun 2021). The national SEZ council named Tamarin its developer and manager (BUPP) by decree 2/2021 of 5 Jul 2021.",
+   "evidence": "company_claim",
+   "date": "2021-07",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "Keputusan Ketua Dewan Nasional Kawasan Ekonomi Khusus No. 2 Tahun 2021 tanggal 5 Juli 2021"
+  },
+  {
+   "from": "bp-batam",
+   "to": "dayone-indonesia",
+   "relation": "regulates",
+   "detail": "Batam is a Free Trade Zone administered by BP Batam, which oversees compliance and licensing there. DayOne's land is held as HGB under another party's management right (HPL), whose holder must approve renewals; the F-1 does not name the holder.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "administered by the Batam Free Trade and Free Port Zone Authority"
+  },
+  {
+   "from": "bp-batam",
+   "to": "dayone-kabil",
+   "relation": "partner",
+   "detail": "Hosted the 17 Apr 2026 PJBTL signing at its Balairung Sari hall. Its head pledged faster licensing and integrated infrastructure; BP Batam's own release says the same.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://dayonedc.com/markets/dayone-signs-indonesias-largest-511mva-450mw-ppa-to-expand-hyperscale-data-center-platform-in-batam/",
+   "quote": "including the role of BP Batam in facilitating investment, streamlining regulatory processes, and infrastructure development"
+  },
+  {
+   "from": "bp-batam",
+   "to": "dayone-nongsa",
+   "relation": "partner",
+   "detail": "Water: BP Batam makes Nongsa and Kabil data centres build their own seawater desalination. DayOne is preparing a ~Rp180 bn SWRO plant to hand over to BP Batam (Sep 2026); the reports name no campus, but a 23 Sep 2026 report calls DayOne the one operating facility that responded. The F-1 notes late-Sep 2026 protests near NDP over local water shortages.",
+   "evidence": "company_claim",
+   "date": "2026-09",
+   "source_url": "https://gokepri.com/data-center-dayone-bawa-investasi-swro-rp180-miliar-ke-batam/",
+   "quote": "DayOne bahkan menyiapkan SWRO senilai sekitar Rp180 miliar yang nantinya diserahkan kepada BP Batam."
+  },
+  {
+   "from": "dbs",
+   "to": "dayone-nongsa",
+   "relation": "lends_to",
+   "detail": "Co-lender with UOB of the Rp6.7 tn (SGD 530 mn; ~US$411-412 mn) facility for the three-building, ~72 MW NDP campus (5 Jun 2025), called the largest rupiah data-centre financing. The F-1 shows an Indonesian term loan drawn from 2025 and due 2031 (IndONIA + 275 bp), US$297.3 mn outstanding on 30 Jun 2026; this is probably the same facility (our reading).",
+   "evidence": "confirmed",
+   "date": "2025-06",
+   "source_url": "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2025/dbs-uob-arrange-loan-for-data-centre-development-project-by-dayone.page",
+   "quote": "DBS and UOB have jointly provided a landmark IDR 6.7 trillion (SGD 530 million) loan"
+  },
+  {
+   "from": "uob",
+   "to": "dayone-nongsa",
+   "relation": "lends_to",
+   "detail": "Co-lender with DBS of the Rp6.7 tn (SGD 530 mn) facility for the NDP campus, a project jointly developed by DayOne and INA (5 Jun 2025).",
+   "evidence": "confirmed",
+   "date": "2025-06",
+   "source_url": "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2025/dbs-uob-arrange-loan-for-data-centre-development-project-by-dayone.page",
+   "quote": "Upon completion by end-2025, the DayOne Nongsa Digital Park Data Centre campus will have a combined IT load capacity of around 72MW."
+  },
+  {
+   "from": "ina",
+   "to": "dayone",
+   "relation": "lends_to",
+   "detail": "2024 loan to DayOne at 3-month JIBOR + 1.5%: US$39.6 mn outstanding at end-2024, interest capitalised into property, repaid in Mar 2025.",
+   "evidence": "confirmed",
+   "date": "2025-03",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "In 2024, the Company entered into a loan agreement with the Indonesia Investment Authority"
+  },
+  {
+   "from": "morgan-stanley",
+   "to": "dayone",
+   "relation": "partner",
+   "detail": "IPO underwriter for DayOne's proposed Nasdaq listing of ADSs (ticker DODC). The F-1 was filed 5 Oct 2026; size and price are not yet set.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/",
+   "quote": "Morgan Stanley, J.P. Morgan, BofA Securities, and Citigroup will act as underwriters of the IPO."
+  },
+  {
+   "from": "jp-morgan",
+   "to": "dayone",
+   "relation": "partner",
+   "detail": "IPO underwriter for DayOne's proposed Nasdaq listing of ADSs (ticker DODC). The F-1 was filed 5 Oct 2026; size and price are not yet set.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/",
+   "quote": "Morgan Stanley, J.P. Morgan, BofA Securities, and Citigroup will act as underwriters of the IPO."
+  },
+  {
+   "from": "bofa-securities",
+   "to": "dayone",
+   "relation": "partner",
+   "detail": "IPO underwriter for DayOne's proposed Nasdaq listing of ADSs (ticker DODC). The F-1 was filed 5 Oct 2026; size and price are not yet set.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/",
+   "quote": "Morgan Stanley, J.P. Morgan, BofA Securities, and Citigroup will act as underwriters of the IPO."
+  },
+  {
+   "from": "citigroup",
+   "to": "dayone",
+   "relation": "partner",
+   "detail": "IPO underwriter for DayOne's proposed Nasdaq listing of ADSs (ticker DODC). The F-1 was filed 5 Oct 2026; size and price are not yet set.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://dayonedc.com/headliners/dayone-files-registration-statement-for-proposed-initial-public-offering/",
+   "quote": "Morgan Stanley, J.P. Morgan, BofA Securities, and Citigroup will act as underwriters of the IPO."
+  },
+  {
+   "from": "acset",
+   "to": "dayone-nongsa",
+   "relation": "built",
+   "detail": "Structure contractor for 'GDS Data Center Nongsa' phases I-II for PT GDS IDC Service: Rp321.0 bn, signed Oct 2023, 16 months. That client paid Acset Rp629.8 bn in 2024 (19.85% of Acset revenue) and Rp110.1 bn in 2025. That this is DayOne's NDP campus is our reading.",
+   "evidence": "inferred",
+   "date": "2023-10",
+   "source_url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+   "quote": "GDS Data Center Nongsa 100% 320.968 PT GDS IDC Service"
+  },
+  {
+   "from": "usgbc",
+   "to": "dayone-nongsa",
+   "relation": "certifies",
+   "detail": "LEED Gold for building NDP C, as listed by DayOne.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://dayonedc.com/market/batam",
+   "quote": "LEED Gold: NDP C"
+  },
+  {
+   "from": "jamie-khoo",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "CEO since 2024 and executive director since 2026; holds options over 9.1 mn shares (2.7%).",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Ms. Jamie Khoo has served as a director since 2026 and Chief Executive Officer of DayOne Data Centers since 2024"
+  },
+  {
+   "from": "jamie-khoo",
+   "to": "digitalland-services-one",
+   "relation": "director_of",
+   "detail": "Named by PLN Batam as CEO of PT Digitalland Service One at the 17 Apr 2026 PJBTL signing.",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+   "quote": "Chief Executive Officer (CEO) PT Digitalland Service One (DayOne), Jamie Khoo"
+  },
+  {
+   "from": "jamie-khoo",
+   "to": "gds",
+   "relation": "director_of",
+   "detail": "Former GDS executive: about a decade as Deputy CFO, then COO, before DayOne.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "she spent a decade at GDS as Deputy CFO and later COO"
+  },
+  {
+   "from": "william-huang",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Director since 2022 (Chairman and CEO in 2022, Chairman in 2023). Holds options over 11.8 mn shares (3.5%) and can name one post-IPO director under the shareholders' deed.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "He has served as a director since 2022."
+  },
+  {
+   "from": "william-huang",
+   "to": "gds",
+   "relation": "director_of",
+   "detail": "Chairman of GDS's board; CEO since 2002.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Huang is the chairman of GDS’s board of directors and, since 2002, has served as its chief executive officer."
+  },
+  {
+   "from": "lim-ah-doo",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Non-executive chairman since Apr 2026; director since 2024.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Lim Ah Doo has served as a director since 2024 and as Chairman of the Board since April 2026."
+  },
+  {
+   "from": "lim-ah-doo",
+   "to": "stt-gdc",
+   "relation": "director_of",
+   "detail": "Former director of STT GDC and key subsidiaries (STT GDC India, VIRTUS) and of parent ST Telemedia, for more than a decade.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "as a director of STT GDC and its key subsidiaries"
+  },
+  {
+   "from": "andy-okada",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Non-executive director since 2023; President of a SoftBank-Alibaba JV and of Alibaba Japan.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Andy Okada has served as a director since 2023."
+  },
+  {
+   "from": "nicolas-aguzin",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Non-executive director since 2026; HKEX CEO 2021-2024.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Alejandro Nicolás Aguzín has served as a director since 2026."
+  },
+  {
+   "from": "timothy-chen",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Non-executive director since 2026; Achi Capital's representative on the board.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Timothy Chu-Wan Chen has served as a director since 2026."
+  },
+  {
+   "from": "timothy-chen",
+   "to": "achi-capital",
+   "relation": "owns",
+   "detail": "Controlling shareholder of AchiCapital GP, which holds all the voting power of the Achi funds (15.6% of DayOne); partner of Achi Capital since 2022.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Timothy Chu-Wan Chen is the controlling shareholder of AchiCapital GP."
+  },
+  {
+   "from": "douglas-farrell",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Non-executive director since 2026; founder of Quintet Partners.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Douglas Farrell has served as a director since 2026."
+  },
+  {
+   "from": "bob-mccooey",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Nasdaq Vice Chairman; board advisor since 2024; becomes a director when the F-1 takes effect.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Bob McCooey will be appointed as a director of the Company effective upon the effectiveness of this registration statement."
+  },
+  {
+   "from": "yan-chengkang",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Chief Financial Officer since Mar 2026.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Yan Chengkang (CK) has served as our Chief Financial Officer since March 2026."
+  },
+  {
+   "from": "yan-chengkang",
+   "to": "hillhouse",
+   "relation": "director_of",
+   "detail": "At Hillhouse 2023-2026, DayOne's 19.5% shareholder, before becoming DayOne's CFO; a Managing Director there per DayOne's site.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Prior to joining DayOne, Mr. Yan was with Hillhouse from 2023 to 2026"
+  },
+  {
+   "from": "daniel-fertig",
+   "to": "dayone",
+   "relation": "director_of",
+   "detail": "Chief Legal Officer since Jun 2026; former Simpson Thacher & Bartlett partner.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Daniel Fertig has served as our Chief Legal Officer since June 2026."
+  },
+  {
+   "from": "philippe-laffont",
+   "to": "coatue",
+   "relation": "director_of",
+   "detail": "Managing member of Coatue Structured Fund GP LLC (general partner of the AIV 11 and AIV 12 holding LPs) and of Coatue PC LLC.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Philippe Laffont serves as the managing member of Coatue Structured Fund GP LLC"
+  },
+  {
+   "from": "lei-zhang",
+   "to": "hillhouse",
+   "relation": "owns",
+   "detail": "May be deemed to control Hillhouse Investment Management, the sole manager of the funds holding DayOne shares; he disclaims beneficial ownership.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752df1.htm",
+   "quote": "Mr. Lei Zhang may be deemed to have controlling power over HIM."
+  },
+  {
+   "from": "ridha-wirakusumah",
+   "to": "ina",
+   "relation": "director_of",
+   "detail": "INA CEO; signed the DayOne JV (2023) and called the Series C 'a deepening of our partnership at the global platform level' (Jan 2026). His term ended 15 Feb 2026.",
+   "evidence": "confirmed",
+   "date": "2026-01",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1526125/000110465926000411/tm261784d1_ex99-1.htm",
+   "quote": "Ridha Wirakusumah, CEO of the Indonesia Investment Authority (INA), DayOne’s joint venture partner"
+  },
+  {
+   "from": "andry-setiawan",
+   "to": "ina",
+   "relation": "director_of",
+   "detail": "Managing director of investments from 2021; co-chief investment officer from Jun 2025; resigned Feb 2026 (Bloomberg via Asia Asset).",
+   "evidence": "confirmed",
+   "date": "2025-06",
+   "source_url": "https://www.asiaasset.com/people-moves/indonesia-wealth-fund-ina-promotes-duo-to-cios/",
+   "quote": "The Indonesia Investment Authority (INA) has promoted Andry Setiawan and Christopher Ganis to chief investment officers"
+  },
+  {
+   "from": "andry-setiawan",
+   "to": "lestari",
+   "relation": "director_of",
+   "detail": "President Director of PT Lestari Investasi Indonesia; signed DayOne's investor rights agreement for it (31 Dec 2025).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/2118192/000119312526414188/d223752dex101.htm",
+   "quote": "Name: Andry Setiawan Title: President Director"
+  },
+  {
+   "from": "johan-batubara",
+   "to": "ina",
+   "relation": "director_of",
+   "detail": "INA Director of Investments; said INA began working with DayOne in late 2023, when one of the three Batam buildings was already finished.",
+   "evidence": "company_claim",
+   "date": "2025-07",
+   "source_url": "http://www.ina.go.id/ina-in-the-news/indonesias-ina-ramps-up-digital-infra-investments-after-record-fdi/",
+   "quote": "says Johan Batubara, INA’s Director of Investments"
+  },
+  {
+   "from": "kwin-fo",
+   "to": "pln-batam",
+   "relation": "director_of",
+   "detail": "President Director of PT PLN Batam; spoke at the DayOne PJBTL (Apr 2026), the Firmus welcome (Jun 2026) and the Aug 2026 green-energy signings.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+   "quote": "Direktur Utama PT PLN Batam, Kwin Fo"
+  },
+  {
+   "from": "amsakar-achmad",
+   "to": "bp-batam",
+   "relation": "director_of",
+   "detail": "Head of BP Batam and Mayor of Batam (BP Batam's own release gives the same title).",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://www.plnbatam.com/pln-batam-dan-dayone-wujudkan-data-center-terbesar-di-indonesia-perkuat-kota-batam-sebagai-destinasi-utama-investasi-industri-digital/",
+   "quote": "Kepala BP Batam sekaligus Wali Kota Batam, Amsakar Achmad"
+  },
+  {
+   "from": "li-claudia-chandra",
+   "to": "bp-batam",
+   "relation": "director_of",
+   "detail": "Deputy Head of BP Batam and Deputy Mayor of Batam (BP Batam's own release gives the same title).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://www.plnbatam.com/pln-batam-dan-bp-batam-sambut-baik-ekspansi-firmus-technologies-menjadikan-kota-batam-sebagai-hub-digital-terdepan-di-asia-tenggara/",
+   "quote": "Wakil Kepala BP Batam, Li Claudia Chandra"
+  },
+  {
+   "from": "kris-wiluan",
+   "to": "citramas",
+   "relation": "director_of",
+   "detail": "Chairman of Citramas Group; attended DayOne's NDP groundbreaking on 14 Jul 2022.",
+   "evidence": "company_claim",
+   "date": "2022-07",
+   "source_url": "https://dayonedc.com/markets/dayone-data-centers-indonesia-data-center-officially-begins-construction-forward-looking-blueprint-to-unleash-digital-potential-in-southeast-asia/",
+   "quote": "Mr. Bapak Kris Wiluan, Chairman of Citramas Group"
+  },
+  {
+   "from": "mike-wiluan",
+   "to": "tamarin",
+   "relation": "director_of",
+   "detail": "President Director of PT Tamarin (signed the Oct 2022 MoU with PLN Batam); also CEO of Nongsa Digital Park in DayOne's 2022 release.",
+   "evidence": "confirmed",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "Michael Kristian Wiluan selaku Direktur Utama PT Tamarin"
+  },
+  {
+   "from": "ken-miyauchi",
+   "to": "dayone",
+   "relation": "partner",
+   "detail": "Board advisor since 2024; board director of SoftBank Group Corp.",
+   "evidence": "confirmed",
+   "date": "2026",
+   "source_url": "https://dayonedc.com/leadership",
+   "quote": "Ken Miyauchi joined DayOne as a Board advisor in 2024."
+  }
+ ],
+ "operators": [
+  "DayOne"
+ ],
+ "counts": {
+  "entities": 62,
+  "links": 84,
+  "confirmed": 53,
+  "dropped": 0
+ }
+}

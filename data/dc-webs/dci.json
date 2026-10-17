@@ -1,0 +1,2209 @@
+{
+ "slug": "dci",
+ "title": "DCI Indonesia",
+ "order": 1,
+ "center": "dci",
+ "bottom_line": "DCI is still controlled by its three founders (Toto Sugiri 29.9%, Marina Budiman 22.5%, Han Arming Hanafia 14.1%), with Anthoni Salim at 11.1% since May 2021, but its growth outside Cibitung runs on Salim money: Salim's DISM and DISP own the H2 Karawang and E1 Jakarta buildings, which DCI operates for a 10-15% revenue share and rents capacity in (Rp264.8 bn in 2025, 22.7% of its cost of revenues), and Salim's Gallant Venture is co-developing the 1,000 MW Bintan park.\nPower at the main Cibitung campus comes from the estate utility Cikarang Listrindo (Rp396.8 bn, 87% of DCI's 2025 electricity bill), plus DCI's own licensed standby generation; no DCI filing names PLN.\nPT Sumaraja Indah built JK3, JK5 and JK6. The money now comes from BCA, which replaced Bank Mandiri in 2026 with up to Rp18.6 tn of investment loans to build capacity that customers have already contracted.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:25:29Z",
+ "entities": [
+  {
+   "id": "dci",
+   "name": "DCI Indonesia",
+   "legal_name": "PT DCI Indonesia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesia's largest colocation operator (IDX: DCII, listed 6 Jan 2021): nine data centres at Cibitung, Karawang, Jakarta and Surabaya with 128 MW of IT load at end-2025 (website: 132 MW shell). 2025 revenue Rp2.54 tn and net profit Rp1.0 tn; controlled by its three founders, with Anthoni Salim holding 11.12%.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://dci-indonesia.com/data-centers"
+   ]
+  },
+  {
+   "id": "dci-h1-cibitung",
+   "name": "DCI H1 Campus, Cibitung",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bekasi (MM2100 estate, Cibitung)",
+   "what": "DCI-owned campus on 8.5 ha in the MM2100 estate: JK1 (3 MW, 2013), JK2 (7 MW), JK3 (12 MW, 2020), JK5 (15 MW, 2021) and JK6 (36 MW, Jun 2025, liquid cooling); 75 MW IT live per DCI's website, scalable to 300 MW. JK6 phases 3-5 were 80% done and JK7/JK8 foundations under way at 30 Jun 2026. Operating.",
+   "sources": [
+    "https://dci-indonesia.com/data-centers",
+    "https://dci-indonesia.com/news/pt-dci-indonesias-latest-third-building-jk3-has-opened-with-a-capacity-of-12-mw",
+    "https://dci-indonesia.com/news/unveiling-jk5-data-center-building-dci-indonesia-sets-a-higher-bar-for-data-center-industry-in-indonesia",
+    "https://dci-indonesia.com/news/dci-indonesia-launches-ai-ready-jk6-with-36-mw-capacity",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "dci-h2-karawang",
+   "name": "DCI H2 Campus, Karawang",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Karawang (Pertiwi Lestari estate)",
+   "what": "86 ha campus in the Pertiwi Lestari estate. H2-01 (12 MW, 2021) and H2-02 (15 MW, Jun 2023) belong to Salim's DISM and are run by DCI: 27 MW at the H2-02 launch, 30 MW IT on DCI's website today, scalable to 600+ MW, with an on-site solar farm of 'up to 30 MW' on 30 ha. Acset lists foundation works for 'H2 - 03' in 2025. Operating.",
+   "sources": [
+    "https://dci-indonesia.com/data-centers",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606854053-kqrf0f.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+    "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5"
+   ]
+  },
+  {
+   "id": "dci-e1-jakarta",
+   "name": "DCI E1, Jakarta",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta (Ariobimo Sentral, Kuningan)",
+   "what": "Tier IV edge data centre at Ariobimo Sentral, Kuningan: 18-19 MW IT, 11 floors, about 4,000 racks, operating since Dec 2023. The building is DISP's (Salim-linked); DCI operates it.",
+   "sources": [
+    "https://dci-indonesia.com/data-centers",
+    "https://dci-indonesia.com/news/dci-indonesia-tops-off-the-first-tier-iv-data-center-in-downtown-jakarta-marking-a-milestone-in-dci-platforms-expansion",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+    "https://dci-indonesia.com/news/dci-indonesias-tier-iv-data-center-e1-is-operational-and-serving-various-users-in-the-heart-of-jakarta",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf"
+   ]
+  },
+  {
+   "id": "dci-e2-surabaya",
+   "name": "DCI E2, Surabaya",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Surabaya (Intiland Tower)",
+   "what": "9 MW IT data centre at Intiland Tower, Surabaya, next to the city's main internet exchange; built by DCI 'greenfield-to-operational in under 12 months' (Rp280.3 bn carrying value at end-2025) and inaugurated 6 Apr 2026. Operating.",
+   "sources": [
+    "https://dci-indonesia.com/data-centers",
+    "https://dci-indonesia.com/news/dci-indonesia-inaugurates-e2-surabaya-expanding-its-platform-to-eastern-indonesia",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf"
+   ]
+  },
+  {
+   "id": "dci-h5-bintan",
+   "name": "DCI H5 Data Center Park, Bintan",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bintan, Riau Islands",
+   "what": "Planned park of up to 1,000 MW IT on 700 ha, co-developed with Salim-controlled Gallant Venture; the park is to supply its own power (gas, then solar). In initial land development per the 2025 annual report; Forbes says ready in 2027. Planned.",
+   "sources": [
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/"
+   ]
+  },
+  {
+   "id": "dci-platform",
+   "name": "DCI Platform",
+   "legal_name": null,
+   "kind": "brand",
+   "city": null,
+   "what": "DCI's brand for the data centres it runs, including partner-owned buildings registered as 'DCI Platform members' (Salim's DISM and DISP).",
+   "sources": [
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf"
+   ]
+  },
+  {
+   "id": "sarana-megahtama",
+   "name": "Sarana Megahtama",
+   "legal_name": "PT Sarana Megahtama",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Data-centre services company (est. 2003; Jl. Kuningan Barat II No. 11) that DCI took 50.005% of for Rp110 bn on 7 Jul 2023 'for future data center expansion'; total assets Rp218 bn at end-2025. Which site it will hold is not disclosed.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606854053-kqrf0f.pdf"
+   ]
+  },
+  {
+   "id": "inti-indotek",
+   "name": "Inti Indotek Informatika",
+   "legal_name": "PT Inti Indotek Informatika",
+   "kind": "company",
+   "city": null,
+   "what": "Holds the other 49.995% of PT Sarana Megahtama. Its own owners were not found (one search).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "dci-international",
+   "name": "DCI International Holding",
+   "legal_name": "DCI International Holding Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore holding company (est. 14 Jun 2011) that owned 99.996% of DCI before the Jan 2021 IPO; owned by Toto Sugiri 40.23%, Marina Budiman 32.08%, Han Arming Hanafia 20.11%, Bing Moniaga 6.03% and three small holders. Directors: Marina Budiman, Chan Wang Hong.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf"
+   ]
+  },
+  {
+   "id": "toto-sugiri",
+   "name": "Otto Toto Sugiri",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Co-founder, President Director and CEO of DCI (President Director since 2016, President Commissioner 2012-2016) and its largest shareholder (29.90%). Founded Sigma Cipta Caraka (1989) and Indonet (1994); President Commissioner of DISM, DISP and Sarana Pactindo.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://en.wikipedia.org/wiki/Otto_Toto_Sugiri",
+    "https://katadata.co.id/amp/ekonopedia/profil/61727410b61b2/kisah-toto-sugiri-membangun-dci-indonesia-hingga-sahamnya-melesat"
+   ]
+  },
+  {
+   "id": "marina-budiman",
+   "name": "Marina Budiman",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Co-founder and President Commissioner of DCI since 2016 (President Director 2012-2016); holds 22.51%. Worked at Sigma Cipta Caraka 1989-2010 (CFO 2000-2008, Sales and Delivery Director 2008-2010) after Bank Bali.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://investor.equinix.com/news-events/press-releases/detail/602/pt-dci-and-equinix-announce-opening-of-new-data-center-in"
+   ]
+  },
+  {
+   "id": "han-arming-hanafia",
+   "name": "Han Arming Hanafia",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Co-founder and one of DCI's three controlling shareholders (14.11%), with no board seat; held 7.45% of Indonet until 2023.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+    "https://www.idxchannel.com/inspirator/inilah-sumber-kekayaan-han-arming-hanafia-yang-mencapai-usd119-miliar/all"
+   ]
+  },
+  {
+   "id": "anthoni-salim",
+   "name": "Anthoni Salim",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Head of the Salim Group and a director of Indofood. Bought 192.74 m DCI shares on 31 May 2021 at Rp5,277 (Rp1.01 tn) on top of 72.29 m held before, reaching 11.12%; his family controls Gallant Venture (Forbes).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://www.cnbcindonesia.com/market/20210604103039-17-250630/terbang-5500-ini-6-fakta-saham-yang-diborong-anthoni-salim?page=all",
+    "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/",
+    "https://www.indofood.com/company/board-of-directors"
+   ]
+  },
+  {
+   "id": "axton-salim",
+   "name": "Axton Salim",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Executive Director of the Salim Group (DCI release, Dec 2023) and a director of Indofood; spoke at the E1 inauguration.",
+   "sources": [
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+    "https://www.indofood.com/company/board-of-directors"
+   ]
+  },
+  {
+   "id": "bing-moniaga",
+   "name": "Bing Moniaga",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Early DCI shareholder: 6.03% of DCI International Holding (2020) and 4.94% of DCI (Apr 2021); held 6.44% of Indonet until 2023; one of four shareholders who sold DCI land in 2020.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf"
+   ]
+  },
+  {
+   "id": "djarot-subiantoro",
+   "name": "Djarot Subiantoro",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DCI commissioner 2019-2021 and 0.78% shareholder until he sold all 18.66 m shares on 31 May 2021, the day Anthoni Salim bought; President Director of Sigma Cipta Caraka 1999-2010 and of PT Indointernet from 2011; president of the software association Aspiluki (2020 prospectus).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605729217-ubyl9k.pdf",
+    "https://www.cnbcindonesia.com/market/20210604103039-17-250630/terbang-5500-ini-6-fakta-saham-yang-diborong-anthoni-salim?page=all"
+   ]
+  },
+  {
+   "id": "evelyn",
+   "name": "Evelyn",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "DCI director since Apr 2023 (Director of Finance from 2025); earlier General Manager Finance at Indonet (2012-2019).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606854053-kqrf0f.pdf"
+   ]
+  },
+  {
+   "id": "indri-hidayat",
+   "name": "Indri Koesindrijastoeti Hidayat",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "DCI Director of Corporate Affairs since Apr 2025 after four years as DCI independent commissioner (2021-2025); Indonet independent commissioner 2021-2024; member of AXA Mandiri Financial Services' nomination and remuneration committee (2023-); Bank Permata director 2009-2018.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605729217-ubyl9k.pdf"
+   ]
+  },
+  {
+   "id": "lucas-adrian",
+   "name": "Lucas Adrian",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "DCI director since the 30 Mar 2026 AGM; at DCI since 2012 (operations manager, head of automation, VP operations); at Indonet 2010-2012.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1775099058150-wu1h84.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774610910516-m2eh1o.pdf"
+   ]
+  },
+  {
+   "id": "darwin-noerhadi",
+   "name": "Darwin Cyril Noerhadi",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "DCI independent commissioner and audit-committee chair since Apr 2025; on the supervisory board of the Indonesia Investment Authority since 2021; commissioner of PT Medikaloka Hermina Tbk (2017-) and PT Daya Intiguna Yasa Tbk (2024-); president director of the Indonesia Stock Exchange 1996-1999.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf"
+   ]
+  },
+  {
+   "id": "jc-gani",
+   "name": "Jui Chihtra (JC) Gani",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DCI director from 2016 (marketing) until he resigned in Apr 2023, later DCI senior advisor; founder and commissioner of PT GASI; joined Sigma Cipta Caraka as operations director in 1999.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606854053-kqrf0f.pdf",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta"
+   ]
+  },
+  {
+   "id": "marco-cioffi",
+   "name": "Marco Cioffi",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DCI director from 2019 (operations; later deputy president director) until he resigned at the 16 Oct 2023 EGM; ex-Bain & Company principal.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606717777-dnnyj3.pdf",
+    "https://dci-indonesia.com/news/dci-indonesia-wins-two-awards-at-the-wmedia-awards-2022"
+   ]
+  },
+  {
+   "id": "nancy-herawati",
+   "name": "Nancy Herawati",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DCI independent commissioner 2020-Apr 2025; independent commissioner of PT Bank Multiarta Sentosa since 2012 (2020 prospectus).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "ricky-garyati",
+   "name": "Ricky Garyati",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Director of PT Datacenter Indonesia Sukses Makmur (DISM) and in DISP's management team; presented DISM's H2 solar PV project at APNIC 52 (Sep 2021).",
+   "sources": [
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+    "https://conference.apnic.net/52/assets/files/APBS588/Datacenter-Solar-PV-project.pdf"
+   ]
+  },
+  {
+   "id": "reginald-hamdani",
+   "name": "Reginald Hamdani",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Salim Group representative at the E1 topping-off (May 2023) and named in DISP's management team (Dec 2023).",
+   "sources": [
+    "https://dci-indonesia.com/news/dci-indonesia-tops-off-the-first-tier-iv-data-center-in-downtown-jakarta-marking-a-milestone-in-dci-platforms-expansion",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta"
+   ]
+  },
+  {
+   "id": "salim-group",
+   "name": "Salim Group",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Anthoni Salim's family conglomerate (Indofood and others); DCI's strategic partner for H2 (via DISM), E1 (via DISP) and Bintan (via Gallant Venture).",
+   "sources": [
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+    "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5",
+    "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/"
+   ]
+  },
+  {
+   "id": "dism",
+   "name": "DISM",
+   "legal_name": "PT Datacenter Indonesia Sukses Makmur",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Salim Group company that owns the H2 Karawang data-centre buildings and their solar project; Toto Sugiri is its President Commissioner. DCI runs them for a 10-15% share of monthly recurring revenue (Rp41.2 bn in 2025) and rents capacity back (Rp255.3 bn in 2025). Salim reportedly sought US$500 m of loans for it in 2021.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia",
+    "https://conference.apnic.net/52/assets/files/APBS588/Datacenter-Solar-PV-project.pdf",
+    "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5"
+   ]
+  },
+  {
+   "id": "disp",
+   "name": "DISP",
+   "legal_name": "PT Datacenter Indonesia Sukses Perkasa",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Salim-linked owner of the E1 building in Kuningan; DCI operates E1 under a 24 Nov 2023 agreement (US$250,000 set-up fee, 10-15% revenue share) and paid DISP Rp9.2 bn in 2025 for using the building.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://dci-indonesia.com/news/dci-indonesia-tops-off-the-first-tier-iv-data-center-in-downtown-jakarta-marking-a-milestone-in-dci-platforms-expansion",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta"
+   ]
+  },
+  {
+   "id": "gallant-venture",
+   "name": "Gallant Venture",
+   "legal_name": "Gallant Venture Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "SGX-listed utilities provider and master planner of industrial parks and resorts in Batam and Bintan, controlled by Anthoni Salim's family (Forbes); co-developing the Bintan data-centre park and planning 900 MW of gas plants and a 2 GW solar farm.",
+   "sources": [
+    "https://www.gallantventure.com/wbn/slot/u307/gallantventure.com.sg/www/who.htm",
+    "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/"
+   ]
+  },
+  {
+   "id": "indofood",
+   "name": "Indofood",
+   "legal_name": "PT Indofood Sukses Makmur Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Salim Group's listed food company; Anthoni Salim and Axton Salim sit on its board of directors.",
+   "sources": [
+    "https://www.indofood.com/company/board-of-directors"
+   ]
+  },
+  {
+   "id": "pertiwi-lestari",
+   "name": "Pertiwi Lestari Industrial Estate",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Karawang",
+   "what": "Industrial estate in Karawang that Fortune IDN (citing Bloomberg) describes as Salim Group-owned; site of DCI's H2 campus.",
+   "sources": [
+    "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5",
+    "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia"
+   ]
+  },
+  {
+   "id": "mm2100",
+   "name": "MM2100 Industrial Estate",
+   "legal_name": "Megalopolis Manunggal 2100",
+   "kind": "company",
+   "city": "Bekasi",
+   "what": "Industrial estate in Cibitung/Cikarang Barat, Bekasi, home of DCI's H1 campus and one of Cikarang Listrindo's five licensed supply areas.",
+   "sources": [
+    "https://cdn.baxtel.com/data-centers/dci-indonesia/files/dci-company-profile.pdf",
+    "https://www.listrindo.com/uploads/annual_report/POWR_Annual_Report_2025.pdf"
+   ]
+  },
+  {
+   "id": "indonet",
+   "name": "Indonet",
+   "legal_name": "PT Indointernet Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Internet and network provider (IDX: EDGE) founded by Toto Sugiri in 1994; controlled by Digital Edge since Jun 2021 (92.1% from Dec 2023). DCI customer since 2013, DCI's network supplier, and briefly a lender (2020).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+    "https://indonet.id/wp-content/uploads/2025/05/Fakta-Material-Transaksi-Pengambilalihan-Saham.pdf",
+    "https://indonet.id/wp-content/uploads/2025/05/KI-Perubahan-Pemegang-Saham.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf"
+   ]
+  },
+  {
+   "id": "digital-edge",
+   "name": "Digital Edge",
+   "legal_name": "Digital Edge (Hong Kong) Ltd",
+   "kind": "company",
+   "city": "Hong Kong",
+   "what": "Asia-Pacific data-centre platform that bought 47% of Indonet on 11 Jun 2021 at Rp10,495 a share (59.1% control) and lifted its stake to 92.1% in Dec 2023, buying out the DCI founders.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2025/05/Fakta-Material-Transaksi-Pengambilalihan-Saham.pdf",
+    "https://indonet.id/wp-content/uploads/2025/05/KI-Perubahan-Pemegang-Saham.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf"
+   ]
+  },
+  {
+   "id": "ekagrata",
+   "name": "EDGE DC (Ekagrata)",
+   "legal_name": "PT Ekagrata Data Gemilang",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonet's data-centre subsidiary that built EDGE2 in Jakarta. DCI advised on its design and operations for a fee and a 5-7% revenue share (Rp18.3 bn in 2025) and buys colocation from it (Rp37.7 bn in 2025).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf"
+   ]
+  },
+  {
+   "id": "sigma",
+   "name": "Sigma Cipta Caraka",
+   "legal_name": "PT Sigma Cipta Caraka",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IT services and data-centre firm founded by Toto Sugiri in 1989 (Balicamp was set up under it), later acquired by Telkom. DCI founders and early directors worked there until 2010.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://katadata.co.id/amp/ekonopedia/profil/61727410b61b2/kisah-toto-sugiri-membangun-dci-indonesia-hingga-sahamnya-melesat"
+   ]
+  },
+  {
+   "id": "telkom",
+   "name": "Telkom Indonesia",
+   "legal_name": "PT Telkom Indonesia (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State telecom group that acquired Sigma Cipta Caraka (end-2007 per Katadata).",
+   "sources": [
+    "https://katadata.co.id/amp/ekonopedia/profil/61727410b61b2/kisah-toto-sugiri-membangun-dci-indonesia-hingga-sahamnya-melesat"
+   ]
+  },
+  {
+   "id": "sarana-pactindo",
+   "name": "Sarana Pactindo",
+   "legal_name": "PT Sarana Pactindo",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Company that absorbed PT Fortress Data Services (SaaS and IT for financial institutions) in 2025; founded and chaired by Toto Sugiri. DCI customer since 2022 (Rp14.3 bn revenue in 2025) and a listed DCI managed-services partner.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://dci-indonesia.com/managed-services-reseller-partners",
+    "https://en.wikipedia.org/wiki/Otto_Toto_Sugiri"
+   ]
+  },
+  {
+   "id": "redkendi",
+   "name": "Redkendi Andalan Mitra",
+   "legal_name": "PT Redkendi Andalan Mitra",
+   "kind": "company",
+   "city": null,
+   "what": "Company where Toto Sugiri has been a commissioner since 2018 (DCII AR 2025); its business was not checked.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "tiga-daya-digital",
+   "name": "Tiga Daya Digital Indonesia",
+   "legal_name": "PT Tiga Daya Digital Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Company where Toto Sugiri has been a commissioner since 2018 (DCII AR 2025); its business was not checked.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "smartfarm-agro",
+   "name": "Smartfarm Agro Indonesia",
+   "legal_name": "PT Smartfarm Agro Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Company where Toto Sugiri has been a commissioner since 2019 (DCII AR 2025); its business was not checked.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "tokoplas",
+   "name": "Tokoplas Ecommerce Indonesia",
+   "legal_name": "PT Tokoplas Ecommerce Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Company where Toto Sugiri has been a commissioner since 2019 (DCII AR 2025); its business was not checked.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "ina",
+   "name": "Indonesia Investment Authority (INA)",
+   "legal_name": null,
+   "kind": "fund",
+   "city": "Jakarta",
+   "what": "Indonesia's sovereign wealth fund; DCI independent commissioner Darwin Cyril Noerhadi has sat on its supervisory board since 2021.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "bank-jtrust",
+   "name": "Bank JTrust Indonesia",
+   "legal_name": "PT Bank JTrust Indonesia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Bank whose president director named it an E1 customer (Mar 2024).",
+   "sources": [
+    "https://datacenternews.asia/story/dci-indonesia-debuts-e1-tier-iv-data-centre-in-central-jakarta"
+   ]
+  },
+  {
+   "id": "iforte",
+   "name": "iForte",
+   "legal_name": "PT iForte Solusi Infotek",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Connectivity provider serving its customers from E1 since Jan 2024.",
+   "sources": [
+    "https://dci-indonesia.com/news/dci-indonesias-tier-iv-data-center-e1-is-operational-and-serving-various-users-in-the-heart-of-jakarta"
+   ]
+  },
+  {
+   "id": "google-cloud",
+   "name": "Google Cloud",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Global cloud provider; one of the six logos on DCI's cloud-providers page ('Access 6 global cloud providers'). Which DCI site and how much capacity are not public.",
+   "sources": [
+    "https://dci-indonesia.com/cloud-providers",
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "aws",
+   "name": "Amazon Web Services (AWS)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Global cloud provider; one of the six logos on DCI's cloud-providers page ('Access 6 global cloud providers'). Which DCI site and how much capacity are not public.",
+   "sources": [
+    "https://dci-indonesia.com/cloud-providers",
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "microsoft-azure",
+   "name": "Microsoft Azure",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Global cloud provider; one of the six logos on DCI's cloud-providers page ('Access 6 global cloud providers'). Which DCI site and how much capacity are not public.",
+   "sources": [
+    "https://dci-indonesia.com/cloud-providers",
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "alibaba-cloud",
+   "name": "Alibaba Cloud",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Global cloud provider; one of the six logos on DCI's cloud-providers page ('Access 6 global cloud providers'). Which DCI site and how much capacity are not public.",
+   "sources": [
+    "https://dci-indonesia.com/cloud-providers",
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "huawei-cloud",
+   "name": "Huawei Cloud",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Global cloud provider; one of the six logos on DCI's cloud-providers page ('Access 6 global cloud providers'). Which DCI site and how much capacity are not public.",
+   "sources": [
+    "https://dci-indonesia.com/cloud-providers",
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "byteplus",
+   "name": "BytePlus",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "ByteDance's enterprise cloud brand; one of the six logos on DCI's cloud-providers page ('Access 6 global cloud providers'). Which DCI site and how much capacity are not public.",
+   "sources": [
+    "https://dci-indonesia.com/cloud-providers",
+    "https://dci-indonesia.com/data-centers",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf"
+   ]
+  },
+  {
+   "id": "sumaraja",
+   "name": "Sumaraja Indah",
+   "legal_name": "PT Sumaraja Indah",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "General contractor that built DCI's JK3, JK5 and JK6 under a Jan 2018 civil-works agreement; its portfolio also lists 'Giant Horse Data Centre H2.01' (Karawang, 2020) and 'Data Center Edge Kuningan' (2020).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://www.sumarajaindah.com/copy-of-our-portfolio"
+   ]
+  },
+  {
+   "id": "acset",
+   "name": "Acset",
+   "legal_name": "PT Acset Indonusa Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed contractor whose 2025 annual report lists foundation works for 'H2 - 03 Data Center (Karawang - Jawa Barat)'.",
+   "sources": [
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf"
+   ]
+  },
+  {
+   "id": "furutec",
+   "name": "Furutec (EITA Resources)",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Malaysia",
+   "what": "Malaysian busduct maker (part of EITA Resources) that supplied the power-distribution busducts for DISM H2-02 (2024).",
+   "sources": [
+    "https://eita.com.my/projects/furutec-projects/"
+   ]
+  },
+  {
+   "id": "trakindo",
+   "name": "Trakindo",
+   "legal_name": "PT Trakindo Utama",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Caterpillar equipment dealer; supply agreement with DCI since 5 Dec 2017 for procurement, delivery, installation and maintenance (goods not named).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605767818-sqzied.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf"
+   ]
+  },
+  {
+   "id": "willowglen",
+   "name": "Willowglen Indonesia",
+   "legal_name": "PT Willowglen Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Listed as a DCI related party 'under common control' in 2017 (Rp409 m of DCI's cost of revenues); no longer related at end-2018.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf"
+   ]
+  },
+  {
+   "id": "deteksi-instalasi",
+   "name": "Deteksi Instalasi Nasional",
+   "legal_name": "PT Deteksi Instalasi Nasional",
+   "kind": "company",
+   "city": null,
+   "what": "Electrical inspection body that issued 14 operating-worthiness certificates (SLO) in 2019 for H1 installations of 2,000-2,750 kVA each.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf"
+   ]
+  },
+  {
+   "id": "equinix",
+   "name": "Equinix",
+   "legal_name": "Equinix, Inc.",
+   "kind": "company",
+   "city": "Singapore (South Asia office)",
+   "what": "Global data-centre operator; partnered with DCI from Oct 2012 and advised on the design and operations of its first Cibitung data centre (opened May 2013). In 2020 DCI Cloud Connect reached cloud providers via Equinix Cloud Exchange.",
+   "sources": [
+    "https://investor.equinix.com/news-events/press-releases/detail/602/pt-dci-and-equinix-announce-opening-of-new-data-center-in",
+    "https://dci-indonesia.com/news/indonesia-data-center-certified-tier-iv",
+    "https://cdn.baxtel.com/data-centers/dci-indonesia/files/dci-company-profile.pdf"
+   ]
+  },
+  {
+   "id": "uptime-institute",
+   "name": "Uptime Institute",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Data-centre certification body: Tier IV Design for DCI's first building (first in Southeast Asia) and Tier IV Gold operational sustainability (TCOS) in Oct 2023.",
+   "sources": [
+    "https://dci-indonesia.com/news/dci-indonesia-sets-new-industry-benchmark-as-first-in-southeast-asia-to-achieve-uptime-institute-tier-iv-gold-certification-of-operational-sustainability",
+    "https://dci-indonesia.com/news/indonesia-data-center-certified-tier-iv",
+    "https://dci-indonesia.com/data-centers"
+   ]
+  },
+  {
+   "id": "cikarang-listrindo",
+   "name": "Cikarang Listrindo",
+   "legal_name": "PT Cikarang Listrindo Tbk",
+   "kind": "utility",
+   "city": "Bekasi",
+   "what": "Private power utility (IDX: POWR) licensed to supply five Bekasi industrial estates including MM2100, from its own gas turbines, coal/biomass co-firing plant and solar; DCI's largest supplier.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://www.listrindo.com/uploads/annual_report/POWR_Annual_Report_2025.pdf"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "utility",
+   "city": "Jakarta",
+   "what": "State electricity utility. No DCI filing names it as a supplier.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf"
+   ]
+  },
+  {
+   "id": "bekasi-dpmptsp",
+   "name": "Bekasi Regency licensing office (DPMPTSP)",
+   "legal_name": "Dinas Penanaman Modal dan Pelayanan Terpadu Satu Pintu Kabupaten Bekasi",
+   "kind": "government",
+   "city": "Bekasi",
+   "what": "Bekasi Regency's investment and one-stop licensing office.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf"
+   ]
+  },
+  {
+   "id": "bank-mandiri",
+   "name": "Bank Mandiri",
+   "legal_name": "PT Bank Mandiri (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State bank; DCI's main lender from 2023 until BCA refinanced most of its loans in Apr 2026.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf"
+   ]
+  },
+  {
+   "id": "bca",
+   "name": "BCA",
+   "legal_name": "PT Bank Central Asia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Bank; DCI's main lender since 2026, with investment facilities of up to Rp18.6 tn.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1777973423225-91m72n.pdf",
+    "https://www.petromindo.com/news/article/fitch-affirms-dci-indonesia-at-aa-idn-outlook-stable"
+   ]
+  },
+  {
+   "id": "ocbc-nisp",
+   "name": "OCBC NISP",
+   "legal_name": "PT Bank OCBC NISP Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Bank that financed DCI from Nov 2016 until Bank Mandiri took over the debt in May 2023.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf"
+   ]
+  },
+  {
+   "id": "buana-capital",
+   "name": "Buana Capital Sekuritas",
+   "legal_name": "PT Buana Capital Sekuritas",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Securities firm; sole managing underwriter of DCI's Jan 2021 IPO.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf"
+   ]
+  },
+  {
+   "id": "fitch",
+   "name": "Fitch Ratings Indonesia",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Rating agency; rates DCI AA-(idn), Stable (affirmed 16 Jul 2026).",
+   "sources": [
+    "https://www.petromindo.com/news/article/fitch-affirms-dci-indonesia-at-aa-idn-outlook-stable"
+   ]
+  },
+  {
+   "id": "ojk",
+   "name": "OJK",
+   "legal_name": "Otoritas Jasa Keuangan",
+   "kind": "government",
+   "city": "Jakarta",
+   "what": "Indonesia's financial services regulator.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1777973423225-91m72n.pdf"
+   ]
+  },
+  {
+   "id": "mega-manunggal",
+   "name": "Mega Manunggal Property",
+   "legal_name": "PT Mega Manunggal Property Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed property company that sold DCI two Bekasi plots (21,455 m2 for Rp100.0 bn) on 13 Oct 2020.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf"
+   ]
+  },
+  {
+   "id": "intikom",
+   "name": "Intikom",
+   "legal_name": "PT Intikom Berlian Mustika",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IT lifecycle and infrastructure firm listed as a DCI managed-services and reseller partner.",
+   "sources": [
+    "https://dci-indonesia.com/managed-services-reseller-partners"
+   ]
+  },
+  {
+   "id": "metrocom",
+   "name": "Metrocom Global Solusi",
+   "legal_name": "PT Metrocom Global Solusi",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Security-focused systems integrator listed as a DCI managed-services and reseller partner.",
+   "sources": [
+    "https://dci-indonesia.com/managed-services-reseller-partners"
+   ]
+  },
+  {
+   "id": "cushman-wakefield",
+   "name": "Cushman & Wakefield",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Global commercial real-estate firm listed as a DCI managed-services and reseller partner.",
+   "sources": [
+    "https://dci-indonesia.com/managed-services-reseller-partners"
+   ]
+  },
+  {
+   "id": "idxsti",
+   "name": "IDX STI",
+   "legal_name": "PT IDX Solusi Teknologi Informasi",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IT subsidiary of Indonesia's stock-exchange bodies (SROs), listed as a DCI managed-services and reseller partner.",
+   "sources": [
+    "https://dci-indonesia.com/managed-services-reseller-partners"
+   ]
+  },
+  {
+   "id": "wir-group",
+   "name": "WIR Group",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Technology group that ran a metaverse data-protection collaboration with DCI (DCII AR 2022).",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606489857-67mb71.pdf"
+   ]
+  },
+  {
+   "id": "bank-bjb",
+   "name": "Bank BJB",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Bandung",
+   "what": "West Java regional bank; DCII's AR 2022 reports a 'Bank BJB Collaboration with DCI Indonesia and AWS'.",
+   "sources": [
+    "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606489857-67mb71.pdf"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "toto-sugiri",
+   "to": "dci",
+   "relation": "owns",
+   "detail": "Holds 712,784,905 shares (29.90%) as President Director; one of the three controlling founders. Unchanged from 2021 to 30 Jun 2026.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "Otto Toto Sugiri (Direktur Utama) 712.784.905 29,90%"
+  },
+  {
+   "from": "marina-budiman",
+   "to": "dci",
+   "relation": "owns",
+   "detail": "Holds 536,505,149 shares (22.51%) as President Commissioner; controlling founder. She sold 89.58 m shares on 31 May 2021, the day Anthoni Salim bought at the same price (CNBC Indonesia).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "Marina Budiman (Komisaris Utama) 536.505.149 22,51%"
+  },
+  {
+   "from": "han-arming-hanafia",
+   "to": "dci",
+   "relation": "owns",
+   "detail": "Holds 336,352,227 shares (14.11%); controlling founder without a board seat. He sold 56.18 m shares on 31 May 2021, the day Anthoni Salim bought at the same price (CNBC Indonesia).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "Han Arming Hanafia 336.352.227 14,11%"
+  },
+  {
+   "from": "anthoni-salim",
+   "to": "dci",
+   "relation": "owns",
+   "detail": "Holds 265,033,461 shares (11.12%), non-controlling; built up in May 2021 (192.74 m shares bought on 31 May at Rp5,277, Rp1.01 tn, per CNBC Indonesia).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "Anthoni Salim 265.033.461 11,12%"
+  },
+  {
+   "from": "anthoni-salim",
+   "to": "dci",
+   "relation": "invested_in",
+   "detail": "Bought 192.74 m DCI shares on 31 May 2021 at Rp5,277 each (Rp1.01 tn), adding to 72.29 m (3.03%) held before; Djarot Subiantoro, Marina Budiman and Han Arming Hanafia sold 164.4 m shares the same day at the same price.",
+   "evidence": "company_claim",
+   "date": "2021-05",
+   "source_url": "https://www.cnbcindonesia.com/market/20210604103039-17-250630/terbang-5500-ini-6-fakta-saham-yang-diborong-anthoni-salim?page=all",
+   "quote": "Transaksi pembelian ini dilakukan pada 31 Mei 2021 dengan harga Rp 5.277/saham"
+  },
+  {
+   "from": "dci-international",
+   "to": "dci",
+   "relation": "owns",
+   "detail": "Owned 2,026,096,000 shares (99.996%) before the Jan 2021 IPO (Gunawan Tenggarahardja held the other 0.004%); by Apr 2021 the founders held their DCI shares directly.",
+   "evidence": "confirmed",
+   "date": "2020-10",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "DCI International Holding Pte. Ltd. 2.026.096.000 253.262.000.000 99,996"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "dci-international",
+   "relation": "owns",
+   "detail": "Held 25,048,168 shares (40.23%) of the pre-IPO parent.",
+   "evidence": "confirmed",
+   "date": "2020-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Otto Toto Sugiri 25.048.168 40,23"
+  },
+  {
+   "from": "marina-budiman",
+   "to": "dci-international",
+   "relation": "owns",
+   "detail": "Held 19,975,670 shares (32.08%) of the pre-IPO parent (spelled 'Marina Boediman').",
+   "evidence": "confirmed",
+   "date": "2020-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Marina Boediman 19.975.670 32,08"
+  },
+  {
+   "from": "han-arming-hanafia",
+   "to": "dci-international",
+   "relation": "owns",
+   "detail": "Held 12,524,084 shares (20.11%) of the pre-IPO parent.",
+   "evidence": "confirmed",
+   "date": "2020-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Han Arming Hanafia 12.524.084 20,11"
+  },
+  {
+   "from": "bing-moniaga",
+   "to": "dci-international",
+   "relation": "owns",
+   "detail": "Held 3,757,329 shares (6.03%) of the pre-IPO parent.",
+   "evidence": "confirmed",
+   "date": "2020-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Bing Moniaga 3.757.329 6,03"
+  },
+  {
+   "from": "bing-moniaga",
+   "to": "dci",
+   "relation": "owns",
+   "detail": "Held 117,764,991 DCI shares (4.94%) at 30 Apr 2021; no longer a >5% or listed holder in later reports.",
+   "evidence": "confirmed",
+   "date": "2021-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+   "quote": "117.764.991 4,94%"
+  },
+  {
+   "from": "djarot-subiantoro",
+   "to": "dci",
+   "relation": "owns",
+   "detail": "Held 18,662,395 shares (0.783%) at 30 Apr 2021 while a commissioner; sold them all on 31 May 2021 at Rp5,277, the price Anthoni Salim paid that day (CNBC Indonesia).",
+   "evidence": "confirmed",
+   "date": "2021-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+   "quote": "18.662.395 0,783%"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "dci",
+   "relation": "founded",
+   "detail": "One of the three founders who are DCI's ultimate controlling parties; DCI was set up on 18 Jul 2011.",
+   "evidence": "confirmed",
+   "date": "2011-07",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "The ultimate controlling parties of the Company are 3 of the Company's founders, who are Otto Toto Sugiri, Marina Budiman and Han Arming Hanafia."
+  },
+  {
+   "from": "marina-budiman",
+   "to": "dci",
+   "relation": "founded",
+   "detail": "One of the three founders who are DCI's ultimate controlling parties; DCI was set up on 18 Jul 2011.",
+   "evidence": "confirmed",
+   "date": "2011-07",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "The ultimate controlling parties of the Company are 3 of the Company's founders, who are Otto Toto Sugiri, Marina Budiman and Han Arming Hanafia."
+  },
+  {
+   "from": "han-arming-hanafia",
+   "to": "dci",
+   "relation": "founded",
+   "detail": "One of the three founders who are DCI's ultimate controlling parties; DCI was set up on 18 Jul 2011.",
+   "evidence": "confirmed",
+   "date": "2011-07",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "The ultimate controlling parties of the Company are 3 of the Company's founders, who are Otto Toto Sugiri, Marina Budiman and Han Arming Hanafia."
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "dci",
+   "relation": "director_of",
+   "detail": "President Director since 2016 (President Commissioner 2012-2016); calls himself Founder and CEO.",
+   "evidence": "confirmed",
+   "date": "2016",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT DCI Indonesia Tbk - President Director"
+  },
+  {
+   "from": "marina-budiman",
+   "to": "dci",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner since 2016; President Director 2012-2016 (named 'president director' in Equinix's May 2013 release).",
+   "evidence": "confirmed",
+   "date": "2016",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT DCI Indonesia Tbk - President Commissioner 2016 - present"
+  },
+  {
+   "from": "evelyn",
+   "to": "dci",
+   "relation": "director_of",
+   "detail": "Director since 14 Apr 2023 (finance and corporate affairs, Director of Finance from 2025).",
+   "evidence": "confirmed",
+   "date": "2023-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT DCI Indonesia Tbk - Director of Finance 2025 - present"
+  },
+  {
+   "from": "indri-hidayat",
+   "to": "dci",
+   "relation": "director_of",
+   "detail": "Director of Corporate Affairs since 22 Apr 2025; DCI independent commissioner 2021-2025.",
+   "evidence": "confirmed",
+   "date": "2025-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT DCI Indonesia Tbk - Director of Corporate Affairs"
+  },
+  {
+   "from": "lucas-adrian",
+   "to": "dci",
+   "relation": "director_of",
+   "detail": "Appointed director for five years at the 30 Mar 2026 AGM; VP Operations before.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1775099058150-wu1h84.pdf",
+   "quote": "Menyetujui pengangkatan Tuan LUCAS ADRIAN sebagai"
+  },
+  {
+   "from": "darwin-noerhadi",
+   "to": "dci",
+   "relation": "commissioner_of",
+   "detail": "Independent commissioner since 22 Apr 2025 and audit-committee chairman.",
+   "evidence": "confirmed",
+   "date": "2025-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT DCI Indonesia Tbk - Independent Commissioner 2025 - present"
+  },
+  {
+   "from": "djarot-subiantoro",
+   "to": "dci",
+   "relation": "commissioner_of",
+   "detail": "Commissioner from 2019; resigned at the 2021 AGM, when Indri Koesindrijastoeti Hidayat joined as independent commissioner.",
+   "evidence": "confirmed",
+   "date": "2019",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Mulai bergabung dengan Perseroan sebagai Komisaris pada tahun 2019"
+  },
+  {
+   "from": "nancy-herawati",
+   "to": "dci",
+   "relation": "commissioner_of",
+   "detail": "Independent commissioner from 2020 until she resigned in 2025.",
+   "evidence": "confirmed",
+   "date": "2020",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Beliau mulai bergabung dengan Perseroan sebagai Komisaris Independen pada tahun 2020"
+  },
+  {
+   "from": "jc-gani",
+   "to": "dci",
+   "relation": "director_of",
+   "detail": "Marketing director from 2016; resigned in Apr 2023 (replaced by Evelyn); named DCI senior advisor in Dec 2023.",
+   "evidence": "confirmed",
+   "date": "2016",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Mulai bergabung dengan Perseroan sebagai Direktur Pemasaran pada tahun 2016"
+  },
+  {
+   "from": "marco-cioffi",
+   "to": "dci",
+   "relation": "director_of",
+   "detail": "Operations director from 2019 (later deputy president director); resignation accepted at the 16 Oct 2023 EGM.",
+   "evidence": "confirmed",
+   "date": "2023-10",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606717777-dnnyj3.pdf",
+   "quote": "MARCO CIOFFI dari jabatannya sebagai Direktur Perseroan"
+  },
+  {
+   "from": "marina-budiman",
+   "to": "dci-international",
+   "relation": "director_of",
+   "detail": "Director of the Singapore holding company (with Chan Wang Hong) at the time of the IPO.",
+   "evidence": "confirmed",
+   "date": "2020",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Direktur : Marina Budiman"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "sigma",
+   "relation": "founded",
+   "detail": "Founder and director of Sigma Cipta Caraka 1989-2010; Katadata dates his exit to end-2007, when Telkom took it over.",
+   "evidence": "confirmed",
+   "date": "1989",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Sigma Cipta Caraka - Founder & Director 1989 - 2010"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "indonet",
+   "relation": "founded",
+   "detail": "Founder (1994) and Vice President Commissioner of PT Indointernet until 2024; controller until Digital Edge bought control in Jun 2021.",
+   "evidence": "confirmed",
+   "date": "1994",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Indointernet Tbk - Founder & 1994 - 2024"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Vice President Commissioner until an EGM approved his resignation on 14 Mar 2024, after which Indonet stopped being a DCI related party.",
+   "evidence": "confirmed",
+   "date": "2024-03",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "approved resignation of Otto Toto Sugiri as Vice Commissioner"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Held 66,898,100 Indonet shares (16.56%) on 1 Jan 2023 and none by 31 Dec 2023, when Digital Edge's SPV bought 666.7 m shares (inferred: his, Han's and Bing's).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+   "quote": "Otto Toto Sugiri 66.898.100 16,56"
+  },
+  {
+   "from": "han-arming-hanafia",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Held 30,094,000 Indonet shares (7.45%) on 1 Jan 2023; none by 31 Dec 2023.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+   "quote": "Han Arming Hanafia 30.094.000 7,45"
+  },
+  {
+   "from": "bing-moniaga",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Held 26,040,600 Indonet shares (6.44%) on 1 Jan 2023; none by 31 Dec 2023.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+   "quote": "Bing Moniaga 26.040.600 6,44"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "ekagrata",
+   "relation": "commissioner_of",
+   "detail": "Commissioner until an EGM approved his resignation on 2 Apr 2024; Ekagrata then stopped being a DCI related party.",
+   "evidence": "confirmed",
+   "date": "2024-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "approved resignation of Otto Toto Sugiri as Commissioner"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "sarana-pactindo",
+   "relation": "commissioner_of",
+   "detail": "Founder and President Commissioner since 2016 (Wikipedia puts the 'founder' title on PT Fortress Data Services, merged into Sarana Pactindo in 2025).",
+   "evidence": "confirmed",
+   "date": "2016",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Sarana Pactindo - Founder &"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "dism",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner of DISM since 2020; DCI's annual report flags this as his link to an affiliated party.",
+   "evidence": "confirmed",
+   "date": "2020",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Datacenter Indonesia Sukses Makmur - President Commissioner"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "disp",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner of DISP since 2020.",
+   "evidence": "confirmed",
+   "date": "2020",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Datacenter Indonesia Sukses Perkasa - President Commissioner"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "redkendi",
+   "relation": "commissioner_of",
+   "detail": "Commissioner since 2018.",
+   "evidence": "confirmed",
+   "date": "2018",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Redkendi Andalan Mitra - Commissioner"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "tiga-daya-digital",
+   "relation": "commissioner_of",
+   "detail": "Commissioner since 2018.",
+   "evidence": "confirmed",
+   "date": "2018",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Tiga Daya Digital Indonesia - Commissioner"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "smartfarm-agro",
+   "relation": "commissioner_of",
+   "detail": "Commissioner since 2019.",
+   "evidence": "confirmed",
+   "date": "2019",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Smartfarm Agro Indonesia - Commissioner"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "tokoplas",
+   "relation": "commissioner_of",
+   "detail": "Commissioner since 2019.",
+   "evidence": "confirmed",
+   "date": "2019",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Tokoplas Ecommerce Indonesia - Commissioner"
+  },
+  {
+   "from": "marina-budiman",
+   "to": "sigma",
+   "relation": "director_of",
+   "detail": "Sales and Delivery Director 2008-2010; CFO 2000-2008 and project manager from 1989.",
+   "evidence": "confirmed",
+   "date": "2008",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Sigma Cipta Caraka - Sales and Delivery Director"
+  },
+  {
+   "from": "djarot-subiantoro",
+   "to": "sigma",
+   "relation": "director_of",
+   "detail": "President Director of Sigma Cipta Caraka 1999-2010.",
+   "evidence": "confirmed",
+   "date": "1999",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "sebagai Presiden Direktur dari PT Sigma Cipta Caraka pada tahun 1999 sampai tahun 2010"
+  },
+  {
+   "from": "djarot-subiantoro",
+   "to": "indonet",
+   "relation": "director_of",
+   "detail": "President Director of PT Indointernet from 2011 (as of the Dec 2020 prospectus).",
+   "evidence": "confirmed",
+   "date": "2011",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Presiden Direktur PT Indointernet mulai tahun 2011 hingga sekarang"
+  },
+  {
+   "from": "jc-gani",
+   "to": "sigma",
+   "relation": "director_of",
+   "detail": "Joined Sigma Cipta Caraka as operations director in 1999.",
+   "evidence": "confirmed",
+   "date": "1999",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "PT Sigma Cipta Caraka sebagai Direktur Operasional"
+  },
+  {
+   "from": "indri-hidayat",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Independent commissioner of PT Indointernet 2021-2024.",
+   "evidence": "confirmed",
+   "date": "2021",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Indointernet Tbk - Independent Commissioner 2021 - 2024"
+  },
+  {
+   "from": "darwin-noerhadi",
+   "to": "ina",
+   "relation": "commissioner_of",
+   "detail": "Member of the INA supervisory board (Dewan Pengawas) since 2021.",
+   "evidence": "confirmed",
+   "date": "2021",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "Indonesia Investment Authority - 2021 - present Anggota Dewan Pengawas"
+  },
+  {
+   "from": "telkom",
+   "to": "sigma",
+   "relation": "owns",
+   "detail": "Telkom took over Sigma Cipta Caraka, which became Telkomsigma; Katadata dates it to end-2007 (another snippet says 2010).",
+   "evidence": "company_claim",
+   "date": "2007",
+   "source_url": "https://katadata.co.id/amp/ekonopedia/profil/61727410b61b2/kisah-toto-sugiri-membangun-dci-indonesia-hingga-sahamnya-melesat",
+   "quote": "Akhir 2007, Toto resmi berpisah dengan Sigma, setelah perusahaan resmi diakuisisi PT Telkom Indonesia."
+  },
+  {
+   "from": "digital-edge",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Bought 47% on 11 Jun 2021 at Rp10,495 a share, reaching 59.1% and replacing Toto Sugiri as controller; its wholly owned SPV bought another 666.7 m shares on 15 Dec 2023, taking it to 92.10%.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/05/KI-Perubahan-Pemegang-Saham.pdf",
+   "quote": "1.860.651.500 lembar saham Perseroan yang merupakan 92,10% kepemilikan saham dalam Perseroan"
+  },
+  {
+   "from": "indonet",
+   "to": "ekagrata",
+   "relation": "owns",
+   "detail": "Ekagrata ('EDGE DC') is Indonet's subsidiary and built the EDGE2 data centre in Jakarta.",
+   "evidence": "confirmed",
+   "date": "2023",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+   "quote": "the Company has developed a new data center - EDGE2"
+  },
+  {
+   "from": "anthoni-salim",
+   "to": "salim-group",
+   "relation": "owns",
+   "detail": "Controller of the Salim Group (Fortune IDN, Sep 2021).",
+   "evidence": "company_claim",
+   "date": "2021-09",
+   "source_url": "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5",
+   "quote": "pengendali Salim Group, Anthoni Salim"
+  },
+  {
+   "from": "anthoni-salim",
+   "to": "gallant-venture",
+   "relation": "owns",
+   "detail": "Gallant Venture is controlled by Anthoni Salim and his family, who hold stakes in both DCI and Gallant (Forbes, Oct 2025).",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/",
+   "quote": "controlada por el magnate Anthoni Salim y su familia"
+  },
+  {
+   "from": "anthoni-salim",
+   "to": "indofood",
+   "relation": "director_of",
+   "detail": "Listed on Indofood's board of directors page (titles not shown).",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.indofood.com/company/board-of-directors",
+   "quote": "Anthoni Salim"
+  },
+  {
+   "from": "axton-salim",
+   "to": "indofood",
+   "relation": "director_of",
+   "detail": "Listed on Indofood's board of directors page (titles not shown).",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.indofood.com/company/board-of-directors",
+   "quote": "Axton Salim"
+  },
+  {
+   "from": "axton-salim",
+   "to": "salim-group",
+   "relation": "director_of",
+   "detail": "Executive Director of the Salim Group; spoke at the E1 inauguration on 18 Dec 2023.",
+   "evidence": "company_claim",
+   "date": "2023-12",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+   "quote": "Axton Salim - Executive Director of Salim Group"
+  },
+  {
+   "from": "salim-group",
+   "to": "dism",
+   "relation": "owns",
+   "detail": "DCI calls DISM 'a part of Salim Group' and the official partner of DCI Platform.",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia",
+   "quote": "DISM, a part of Salim Group, is the official partner of DCI Platform."
+  },
+  {
+   "from": "salim-group",
+   "to": "disp",
+   "relation": "owns",
+   "detail": "Inferred from two facts: DCI calls E1 'the second collaboration between DCI and Salim Group' (Dec 2023), and DCI's accounts show E1-period payments to DISP for the use of DISP's data-centre building (agreement of 24 Nov 2023). No filing states DISP's owners.",
+   "evidence": "inferred",
+   "date": "2023-12",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+   "quote": "This E1 data center building is a realization of the second collaboration between DCI and Salim Group"
+  },
+  {
+   "from": "salim-group",
+   "to": "pertiwi-lestari",
+   "relation": "owns",
+   "detail": "Fortune IDN (citing Bloomberg) says H2 is built in an industrial estate owned by the Salim Group.",
+   "evidence": "company_claim",
+   "date": "2021-09",
+   "source_url": "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5",
+   "quote": "di kawasan industri milik Salim Group"
+  },
+  {
+   "from": "salim-group",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Strategic partner: H2 and E1 were built by Salim companies (DISM, DISP) and are run by DCI; Bintan is planned with Salim's Gallant Venture.",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia",
+   "quote": "the strategic partnership between DCI Indonesia and Salim Group"
+  },
+  {
+   "from": "ricky-garyati",
+   "to": "dism",
+   "relation": "director_of",
+   "detail": "Director of DISM at the H2-02 inauguration (Jun 2023).",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-second-data-center-in-karawang-pioneering-the-first-solar-powered-data-center-in-indonesia",
+   "quote": "Ricky Garyati, Director of PT Datacenter Indonesia Sukses Makmur (DISM)"
+  },
+  {
+   "from": "ricky-garyati",
+   "to": "disp",
+   "relation": "director_of",
+   "detail": "Named in DISP's management team at the E1 inauguration (role not specified).",
+   "evidence": "company_claim",
+   "date": "2023-12",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+   "quote": "the Management Team of PT Datacenter Indonesia Sukses Perkasa - Sutjahyo Budiman, Reginald Hamdani and Ricky Garyati"
+  },
+  {
+   "from": "reginald-hamdani",
+   "to": "disp",
+   "relation": "director_of",
+   "detail": "Named in DISP's management team (role not specified); attended the E1 topping-off as Salim Group representative.",
+   "evidence": "company_claim",
+   "date": "2023-12",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-and-salim-group-inaugurate-first-tier-iv-data-center-in-downtown-jakarta",
+   "quote": "the Management Team of PT Datacenter Indonesia Sukses Perkasa - Sutjahyo Budiman, Reginald Hamdani and Ricky Garyati"
+  },
+  {
+   "from": "dci",
+   "to": "dci-h1-cibitung",
+   "relation": "owns",
+   "detail": "DCI's own campus: its data-centre facility, land and buildings are in Bekasi Regency (MM2100); 73-75 MW IT live, JK7/JK8 foundations at 2.5-2.8% in Jun 2026.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "the data center facility is located in Bekasi Regency, West Java Province"
+  },
+  {
+   "from": "dci",
+   "to": "dci-e2-surabaya",
+   "relation": "owns",
+   "detail": "Built on DCI's own books: E2 phase 1 was 80.98% complete at end-2025 with a Rp280.3 bn carrying value; opened 6 Apr 2026 with 9 MW.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "Pusat data E 2 (Phase 1)"
+  },
+  {
+   "from": "dism",
+   "to": "dci-h2-karawang",
+   "relation": "owns",
+   "detail": "DISM owns the H2 data-centre buildings: DCI pays DISM for 'the use of' its building (Rp255.3 bn in 2025, Rp149.6 bn in 1H2026); DCI and DISM jointly announced H2-02 in Jun 2023.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "for the use of PT Datacenter Indonesia Sukses Makmur's data center building by the Company"
+  },
+  {
+   "from": "disp",
+   "to": "dci-e1-jakarta",
+   "relation": "owns",
+   "detail": "Inferred from two facts: DCI pays DISP for 'the use of' DISP's data-centre building under a 24 Nov 2023 agreement (Rp9.2 bn in 2025), and DCI and DISP jointly held E1's topping-off (May 2023) before E1 opened in Dec 2023.",
+   "evidence": "inferred",
+   "date": "2023-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "for the use of PT Datacenter Indonesia Sukses Perkasa's data center building by the Company"
+  },
+  {
+   "from": "dci",
+   "to": "dci-h2-karawang",
+   "relation": "runs",
+   "detail": "Operates DISM's H2 buildings under an 18 Jun 2021 operation and support agreement: US$500,000 set-up fee plus 10-15% of monthly recurring revenue (10% at 10 MW+ billable from Dec 2023); Rp41.2 bn earned in 2025.",
+   "evidence": "confirmed",
+   "date": "2021-06",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "On June 18, 2021, the Company and PT Datacenter Indonesia Sukses Makmur entered into a data center facility operation and support agreement"
+  },
+  {
+   "from": "dci",
+   "to": "dci-e1-jakarta",
+   "relation": "runs",
+   "detail": "Operates DISP's E1 building under a 24 Nov 2023 agreement: US$250,000 set-up fee plus 10-15% of monthly recurring revenue; Rp1.3 bn earned in 2025.",
+   "evidence": "confirmed",
+   "date": "2023-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "On November 24, 2023, the Company and PT Datacenter Indonesia Sukses Perkasa entered into a data center facility operation and support agreement"
+  },
+  {
+   "from": "dci",
+   "to": "dci-h5-bintan",
+   "relation": "joint_venture",
+   "detail": "Co-developing the 1,000 MW, 700 ha park with Gallant Venture; partners will sell or lease land to hyperscalers (Forbes, Oct 2025). DCI's 2025 annual report says it is in initial land development.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/",
+   "quote": "están construyendo conjuntamente un complejo de centros de datos a escala gigavatio en la isla de Bintan"
+  },
+  {
+   "from": "gallant-venture",
+   "to": "dci-h5-bintan",
+   "relation": "joint_venture",
+   "detail": "Gallant's CEO Eugene Cho Park: Gallant is a major landowner and utility provider and the DCI project 'combines our strengths'.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/",
+   "quote": "El proyecto con DCI combina nuestras fortalezas"
+  },
+  {
+   "from": "dci",
+   "to": "sarana-megahtama",
+   "relation": "owns",
+   "detail": "Took 50.005% by subscribing 5,001 new shares for Rp110 bn on 7 Jul 2023, 'for future data center expansion'; consolidated subsidiary.",
+   "evidence": "confirmed",
+   "date": "2023-07",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "the Company obtained control over SMT through acquisition of 5,001 new shares issued by SMT"
+  },
+  {
+   "from": "inti-indotek",
+   "to": "sarana-megahtama",
+   "relation": "owns",
+   "detail": "Holds 49.995% of SMT.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774859795115-bpn28p.pdf",
+   "quote": "PT Inti Indotek Informatika 49,995%"
+  },
+  {
+   "from": "dci-platform",
+   "to": "dci",
+   "relation": "brand_of",
+   "detail": "DCI's platform brand; partner-owned facilities such as DISM's are 'registered as DCI Platform members' for the revenue-share fee.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "registered as DCI Platform members"
+  },
+  {
+   "from": "indonet",
+   "to": "dci",
+   "relation": "tenant_of",
+   "detail": "Customer under a 1 Nov 2013 master service agreement; DCI revenue from Indonet Rp16.6 bn in 2025 and Rp15.3 bn in 2024.",
+   "evidence": "confirmed",
+   "date": "2013-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "On November 1, 2013, the Company and PT Indointernet Tbk entered into a master service agreement"
+  },
+  {
+   "from": "sarana-pactindo",
+   "to": "dci",
+   "relation": "tenant_of",
+   "detail": "Customer under a 16 Nov 2022 master service agreement signed as PT Fortress Data Services (merged into Sarana Pactindo, addendum 14 Mar 2025); Rp14.3 bn revenue in 2025.",
+   "evidence": "confirmed",
+   "date": "2022-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "On November 16, 2022, the Company and PT Fortress Data Services entered into a master service agreement"
+  },
+  {
+   "from": "dci",
+   "to": "dism",
+   "relation": "tenant_of",
+   "detail": "DCI orders capacity in DISM's buildings 'to fulfill customer's contracted capacity' (MSA of 8 Aug 2023, from 2 Jan 2023): Rp255.3 bn in 2025 (21.9% of cost of revenues), Rp149.6 bn in 1H2026.",
+   "evidence": "confirmed",
+   "date": "2023-08",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "to fulfill customer's contracted capacity"
+  },
+  {
+   "from": "dci",
+   "to": "disp",
+   "relation": "tenant_of",
+   "detail": "DCI pays DISP for using its data-centre building: Rp9.2 bn in 2025, Rp4.6 bn in 2024.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "PT Datacenter Indonesia Sukses Perkasa charged the Company Rp9,229"
+  },
+  {
+   "from": "dci",
+   "to": "ekagrata",
+   "relation": "tenant_of",
+   "detail": "DCI buys colocation from Ekagrata (EDGE2) under a 24 May 2022 agreement running to 31 May 2027, plus a 31 May 2022 master purchase agreement; Rp37.7 bn of cost in 2025.",
+   "evidence": "confirmed",
+   "date": "2022-05",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "the Company shall buy colocation services from PT Ekagrata Data Gemilang"
+  },
+  {
+   "from": "dci",
+   "to": "ekagrata",
+   "relation": "partner",
+   "detail": "Operation and technical-support deal of 16 Nov 2020 for the data centre Ekagrata planned (EDGE2): design and construction advice, operating support, joint selling; Rp4.35 bn one-off fee plus 5-7% of colocation revenue (Rp18.3 bn in 2025).",
+   "evidence": "confirmed",
+   "date": "2020-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "PT Ekagrata Data Gemilang is planning to build a data center"
+  },
+  {
+   "from": "bank-jtrust",
+   "to": "dci-e1-jakarta",
+   "relation": "tenant_of",
+   "detail": "Named as an E1 customer by Bank JTrust's president director Ritsuo Fukadai (Mar 2024).",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://datacenternews.asia/story/dci-indonesia-debuts-e1-tier-iv-data-centre-in-central-jakarta",
+   "quote": "We chose E1 because DCI offers the best service quality and certification."
+  },
+  {
+   "from": "iforte",
+   "to": "dci-e1-jakarta",
+   "relation": "tenant_of",
+   "detail": "Connectivity provider serving its customers from E1 since Jan 2024.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesias-tier-iv-data-center-e1-is-operational-and-serving-various-users-in-the-heart-of-jakarta",
+   "quote": "Our connectivity business has been actively serving customers at E1 since January 2024."
+  },
+  {
+   "from": "google-cloud",
+   "to": "dci-h1-cibitung",
+   "relation": "tenant_of",
+   "detail": "Inferred from two DCI statements: its cloud-providers page shows six provider logos (Google Cloud, AWS, Microsoft Azure, Alibaba Cloud, Huawei Cloud, BytePlus) under 'Access 6 global cloud providers', and its data-centres page says H1 lets customers 'colocate with 6 global cloud providers' (the 2025 annual report also counts 6 global cloud providers among 270+ customers). Contract size not public.",
+   "evidence": "inferred",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/cloud-providers",
+   "quote": "Access 6 global cloud providers from Indonesia's first and leading Tier IV data center."
+  },
+  {
+   "from": "aws",
+   "to": "dci-h1-cibitung",
+   "relation": "tenant_of",
+   "detail": "Inferred from two DCI statements: its cloud-providers page shows six provider logos (Google Cloud, AWS, Microsoft Azure, Alibaba Cloud, Huawei Cloud, BytePlus) under 'Access 6 global cloud providers', and its data-centres page says H1 lets customers 'colocate with 6 global cloud providers' (the 2025 annual report also counts 6 global cloud providers among 270+ customers). Contract size not public. DCII's AR 2022 also reports a Bank BJB collaboration with DCI and AWS.",
+   "evidence": "inferred",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/cloud-providers",
+   "quote": "Access 6 global cloud providers from Indonesia's first and leading Tier IV data center."
+  },
+  {
+   "from": "microsoft-azure",
+   "to": "dci-h1-cibitung",
+   "relation": "tenant_of",
+   "detail": "Inferred from two DCI statements: its cloud-providers page shows six provider logos (Google Cloud, AWS, Microsoft Azure, Alibaba Cloud, Huawei Cloud, BytePlus) under 'Access 6 global cloud providers', and its data-centres page says H1 lets customers 'colocate with 6 global cloud providers' (the 2025 annual report also counts 6 global cloud providers among 270+ customers). Contract size not public.",
+   "evidence": "inferred",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/cloud-providers",
+   "quote": "Access 6 global cloud providers from Indonesia's first and leading Tier IV data center."
+  },
+  {
+   "from": "alibaba-cloud",
+   "to": "dci-h1-cibitung",
+   "relation": "tenant_of",
+   "detail": "Inferred from two DCI statements: its cloud-providers page shows six provider logos (Google Cloud, AWS, Microsoft Azure, Alibaba Cloud, Huawei Cloud, BytePlus) under 'Access 6 global cloud providers', and its data-centres page says H1 lets customers 'colocate with 6 global cloud providers' (the 2025 annual report also counts 6 global cloud providers among 270+ customers). Contract size not public.",
+   "evidence": "inferred",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/cloud-providers",
+   "quote": "Access 6 global cloud providers from Indonesia's first and leading Tier IV data center."
+  },
+  {
+   "from": "huawei-cloud",
+   "to": "dci-h1-cibitung",
+   "relation": "tenant_of",
+   "detail": "Inferred from two DCI statements: its cloud-providers page shows six provider logos (Google Cloud, AWS, Microsoft Azure, Alibaba Cloud, Huawei Cloud, BytePlus) under 'Access 6 global cloud providers', and its data-centres page says H1 lets customers 'colocate with 6 global cloud providers' (the 2025 annual report also counts 6 global cloud providers among 270+ customers). Contract size not public. DCII's AR 2022 also reports a 'DCI x Huawei Cloud' launch event.",
+   "evidence": "inferred",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/cloud-providers",
+   "quote": "Access 6 global cloud providers from Indonesia's first and leading Tier IV data center."
+  },
+  {
+   "from": "byteplus",
+   "to": "dci-h1-cibitung",
+   "relation": "tenant_of",
+   "detail": "Inferred from two DCI statements: its cloud-providers page shows six provider logos (Google Cloud, AWS, Microsoft Azure, Alibaba Cloud, Huawei Cloud, BytePlus) under 'Access 6 global cloud providers', and its data-centres page says H1 lets customers 'colocate with 6 global cloud providers' (the 2025 annual report also counts 6 global cloud providers among 270+ customers). Contract size not public.",
+   "evidence": "inferred",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/cloud-providers",
+   "quote": "Access 6 global cloud providers from Indonesia's first and leading Tier IV data center."
+  },
+  {
+   "from": "cikarang-listrindo",
+   "to": "dci-h1-cibitung",
+   "relation": "supplies_power",
+   "detail": "Supplies DCI's data-centre buildings under a 15 Feb 2016 agreement (auto-renewing while it holds its licence): Rp396.8 bn in 2025, 15.62% of DCI revenue and 87% of its Rp457.8 bn electricity bill; Rp259.9 bn in 1H2026. Dual feeds per DCI's 2020 profile.",
+   "evidence": "confirmed",
+   "date": "2016-02",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "PT Cikarang Listrindo Tbk shall provide electricity services to the Company's data center buildings"
+  },
+  {
+   "from": "cikarang-listrindo",
+   "to": "mm2100",
+   "relation": "supplies_power",
+   "detail": "MM-2100 is one of the five Bekasi estates Listrindo supplies under its integrated public-supply licence (IUPTLU, 4 Jun 2024); its energised data-centre load across the five estates rose from 212 MVA (2024) to 227 MVA (2025).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.listrindo.com/uploads/annual_report/POWR_Annual_Report_2025.pdf",
+   "quote": "the 5 (five) major industrial areas of Jababeka Industrial Estate, MM-2100, East Jakarta Industrial Park, Hyundai Inti Development, and Lippo Cikarang"
+  },
+  {
+   "from": "pln",
+   "to": "dci-h1-cibitung",
+   "relation": "supplies_power",
+   "detail": "Kontan (page blocked, snippet only) reported that DCI deliberately takes two power sources at Cibitung, Listrindo and PLN; DCI's website says '2 diverse utility providers from different power substations'.",
+   "evidence": "snippet",
+   "date": null,
+   "source_url": "https://industri.kontan.co.id/news/dci-indonesia-bangun-pusat-data-kedua-berkapasits-7-megawatt?page=all",
+   "quote": "perusahaannya sengaja menyediakan dua sumber daya listrik yakni dari PT Cikarang Listrindo dan dari PT PLN"
+  },
+  {
+   "from": "pln",
+   "to": "dci",
+   "relation": "supplies_power",
+   "detail": "Inferred from two facts: DCI's 2025 electricity cost was Rp457.8 bn but Listrindo billed Rp396.8 bn (FS 2025), and Listrindo only serves five Bekasi estates (POWR AR 2025), so the ~Rp61 bn balance for H2 Karawang, E1 Jakarta and other sites most likely went to PLN. No DCI filing names PLN.",
+   "evidence": "inferred",
+   "date": "2025",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "Listrik 457.760"
+  },
+  {
+   "from": "dism",
+   "to": "dci-h2-karawang",
+   "relation": "supplies_power",
+   "detail": "DISM's 'Pertiwi Lestari DC' solar PV project (land prep phase 1 due Dec 2021) feeds H2; DCI says the solar farm on 30 ha 'can reach 30 MW' (Jun 2023). Owner of record, MWp, panels and EPC not disclosed.",
+   "evidence": "company_claim",
+   "date": "2021-09",
+   "source_url": "https://conference.apnic.net/52/assets/files/APBS588/Datacenter-Solar-PV-project.pdf",
+   "quote": "Solar Panel PV Project"
+  },
+  {
+   "from": "gallant-venture",
+   "to": "dci-h5-bintan",
+   "relation": "supplies_power",
+   "detail": "Planned: the park will start on fossil-fuel plants, then use Gallant's planned 2 GW solar farm and 900 MW of gas plants (Forbes); DCI's site says power, water and connectivity are 'provided by the data center park itself'.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://forbes.es/empresas/817783/dci-indonesia-la-iniciativa-del-magnate-anthoni-salim-para-construir-un-centro-de-datos-cerca-de-singapur/",
+   "quote": "las centrales eléctricas de gas de 900 megavatios que está desarrollando Gallant Venture"
+  },
+  {
+   "from": "bekasi-dpmptsp",
+   "to": "dci-h1-cibitung",
+   "relation": "regulates",
+   "detail": "Issued DCI's own-use power operating licence (IUPTLS) No. 671/91/29.1.21.0/DPMPTSP/2019 for the data-centre's electrical installation, 12 Jul 2019, valid to 12 Jul 2029.",
+   "evidence": "confirmed",
+   "date": "2019-07",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Izin Operasi Usaha Penyediaan Tenaga Listrik Untuk Kepentingan Sendiri"
+  },
+  {
+   "from": "deteksi-instalasi",
+   "to": "dci-h1-cibitung",
+   "relation": "certifies",
+   "detail": "Issued 14 SLO certificates in Jan-Oct 2019 for installed capacities of 2,000-2,750 kVA each (32,000 kVA in all), most likely H1's standby generating sets given the own-use power licence.",
+   "evidence": "confirmed",
+   "date": "2019",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "diterbitkan oleh PT Deteksi Instalasi Nasional."
+  },
+  {
+   "from": "sumaraja",
+   "to": "dci-h1-cibitung",
+   "relation": "built",
+   "detail": "Civil works and construction under a 17 Jan 2018 agreement: JK3 Rp246.9 bn (done 31 May 2020), JK5 Rp98.3 bn (done 30 Jun 2021), JK6 purchase orders Rp299.0 bn (2024) plus Rp27.4 bn (2025).",
+   "evidence": "confirmed",
+   "date": "2018-01",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "On January 17, 2018, the Company and PT Sumaraja Indah entered into a cooperation agreement for civil works project and data center construction."
+  },
+  {
+   "from": "sumaraja",
+   "to": "dci-h2-karawang",
+   "relation": "built",
+   "detail": "Inferred from two facts: Sumaraja's portfolio lists 'Giant Horse Data Centre H2.01' in Karawang (2020), and H2-01 is the first building of the H2 Karawang campus (opened Nov 2021) whose JK buildings Sumaraja built for DCI.",
+   "evidence": "inferred",
+   "date": "2020",
+   "source_url": "https://www.sumarajaindah.com/copy-of-our-portfolio",
+   "quote": "Giant Horse Data Centre H2.01"
+  },
+  {
+   "from": "sumaraja",
+   "to": "dci-e1-jakarta",
+   "relation": "built",
+   "detail": "Weak inference from two facts: Sumaraja lists 'Data Center Edge Kuningan' (Jakarta Selatan, 2020), and E1 is DCI's first 'edge' data centre, in Kuningan. The 2020 date is early for a building topped out in May 2023, so treat as unconfirmed.",
+   "evidence": "inferred",
+   "date": "2020",
+   "source_url": "https://www.sumarajaindah.com/copy-of-our-portfolio",
+   "quote": "Data Center Edge Kuningan"
+  },
+  {
+   "from": "acset",
+   "to": "dci-h2-karawang",
+   "relation": "built",
+   "detail": "Inferred from two facts: Acset's 2025 annual report lists foundation works for 'H2 - 03 Data Center (Karawang - Jawa Barat)' without naming the client, and H2-01/H2-02 are the buildings of DCI's H2 campus in Karawang.",
+   "evidence": "inferred",
+   "date": "2025",
+   "source_url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+   "quote": "H2 - 03 Data Center (Karawang - Jawa Barat)"
+  },
+  {
+   "from": "furutec",
+   "to": "dci-h2-karawang",
+   "relation": "supplies",
+   "detail": "Supplied the busducts for power distribution at 'DISM H2-02' (2024).",
+   "evidence": "company_claim",
+   "date": "2024",
+   "source_url": "https://eita.com.my/projects/furutec-projects/",
+   "quote": "Furutec's busducts form the backbone of the power distribution system at DISM H2-02."
+  },
+  {
+   "from": "trakindo",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "Supply agreement of 5 Dec 2017 covering procurement, delivery, installation and maintenance; the goods are not named. Trakindo sells Caterpillar gensets and DCI's IPO money paid for 'Genset JK5 Phase 1' (Rp58.4 bn), so gensets are likely (inferred).",
+   "evidence": "confirmed",
+   "date": "2017-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605767818-sqzied.pdf",
+   "quote": "PT Trakindo Utama shall provide procurement, delivery and installation and maintenance"
+  },
+  {
+   "from": "willowglen",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "Related party 'under common control' until 2018: Rp409 m of DCI's 2017 cost of revenues (0.52%) and Rp345 m owed at end-2017. Service not described.",
+   "evidence": "confirmed",
+   "date": "2017",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "PT Willowglen Indonesia 409 0,52"
+  },
+  {
+   "from": "mega-manunggal",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "Sold DCI two Bekasi land plots on 13 Oct 2020: 7,370 m2 for Rp32.4 bn and 14,085 m2 for Rp67.6 bn.",
+   "evidence": "confirmed",
+   "date": "2020-10",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+   "quote": "PT Mega Manunggal Property Tbk agreed that the sale and purchase price of the land amounted to Rp32,428"
+  },
+  {
+   "from": "toto-sugiri",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "One of four shareholders who sold DCI 20,606 m2 of Bekasi land for Rp125.97 bn (agreement 6 Oct 2020, paid 7 Oct 2020), just before the IPO.",
+   "evidence": "confirmed",
+   "date": "2020-10",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+   "quote": "Mrs. Marina Budiman, Mr. Otto Toto Sugiri, Mr. Bing Moniaga and Mr. Han Arming Hanafia, for several parcels of land with total area of 20,606 m2"
+  },
+  {
+   "from": "marina-budiman",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "One of four shareholders who sold DCI 20,606 m2 of Bekasi land for Rp125.97 bn (agreement 6 Oct 2020, paid 7 Oct 2020), just before the IPO.",
+   "evidence": "confirmed",
+   "date": "2020-10",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+   "quote": "Mrs. Marina Budiman, Mr. Otto Toto Sugiri, Mr. Bing Moniaga and Mr. Han Arming Hanafia, for several parcels of land with total area of 20,606 m2"
+  },
+  {
+   "from": "han-arming-hanafia",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "One of four shareholders who sold DCI 20,606 m2 of Bekasi land for Rp125.97 bn (agreement 6 Oct 2020, paid 7 Oct 2020), just before the IPO.",
+   "evidence": "confirmed",
+   "date": "2020-10",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+   "quote": "Mrs. Marina Budiman, Mr. Otto Toto Sugiri, Mr. Bing Moniaga and Mr. Han Arming Hanafia, for several parcels of land with total area of 20,606 m2"
+  },
+  {
+   "from": "bing-moniaga",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "One of four shareholders who sold DCI 20,606 m2 of Bekasi land for Rp125.97 bn (agreement 6 Oct 2020, paid 7 Oct 2020), just before the IPO.",
+   "evidence": "confirmed",
+   "date": "2020-10",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774605281414-tcs2is.pdf",
+   "quote": "Mrs. Marina Budiman, Mr. Otto Toto Sugiri, Mr. Bing Moniaga and Mr. Han Arming Hanafia, for several parcels of land with total area of 20,606 m2"
+  },
+  {
+   "from": "equinix",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Partnership announced Oct 2012: Equinix gave 'extensive advisory support' on the design and operations of DCI's first Cibitung building (JK1, opened May 2013) and kept giving operational support; in 2020 DCI Cloud Connect used Equinix Cloud Exchange.",
+   "evidence": "confirmed",
+   "date": "2013-05",
+   "source_url": "https://investor.equinix.com/news-events/press-releases/detail/602/pt-dci-and-equinix-announce-opening-of-new-data-center-in",
+   "quote": "Equinix has provided extensive advisory support to PT DCI in the design and operations of the PT DCI data center"
+  },
+  {
+   "from": "uptime-institute",
+   "to": "dci",
+   "relation": "certifies",
+   "detail": "Tier IV Design certification for the first Cibitung building (first in Southeast Asia) and Tier IV Gold Certification of Operational Sustainability in Oct 2023; E1 is Tier IV certified.",
+   "evidence": "company_claim",
+   "date": "2023-10",
+   "source_url": "https://dci-indonesia.com/news/dci-indonesia-sets-new-industry-benchmark-as-first-in-southeast-asia-to-achieve-uptime-institute-tier-iv-gold-certification-of-operational-sustainability",
+   "quote": "the first data center operator in Southeast Asia to be awarded the Tier IV Gold Certification of Operational Sustainability (TCOS)"
+  },
+  {
+   "from": "mm2100",
+   "to": "dci-h1-cibitung",
+   "relation": "partner",
+   "detail": "Host estate of the H1 campus; DCI's 2020 profile sells MM2100's private power ('only 2 weeks of lead time to upgrade power capacity').",
+   "evidence": "company_claim",
+   "date": "2020-12",
+   "source_url": "https://cdn.baxtel.com/data-centers/dci-indonesia/files/dci-company-profile.pdf",
+   "quote": "Situated in the MM2100 Industrial Estate"
+  },
+  {
+   "from": "pertiwi-lestari",
+   "to": "dci-h2-karawang",
+   "relation": "partner",
+   "detail": "Host estate of the H2 campus.",
+   "evidence": "company_claim",
+   "date": "2021-09",
+   "source_url": "https://www.fortuneidn.com/business/bangun-pusat-data-di-karawang-salim-group-cari-pembiayaan-00-3dhnm-x6ggg5",
+   "quote": "di kawasan Industri Pertiwi Lestari Karawang, Jawa Barat"
+  },
+  {
+   "from": "sarana-pactindo",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Listed under its former name Fortress Data Services as a DCI managed-services and reseller partner for financial institutions.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/managed-services-reseller-partners",
+   "quote": "Fortress Data Services is a Full-Stack SaaS & Ecosystem Partner for the Financial Services Industry"
+  },
+  {
+   "from": "intikom",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Listed as a DCI managed-services and reseller partner.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/managed-services-reseller-partners",
+   "quote": "Intikom is a leading Enterprise IT Lifecycle & Infrastructure Partner."
+  },
+  {
+   "from": "metrocom",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Listed as a DCI managed-services and reseller partner.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/managed-services-reseller-partners",
+   "quote": "Metrocom is a security-centric systems integrator (SI)"
+  },
+  {
+   "from": "cushman-wakefield",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Listed as a DCI managed-services and reseller partner.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/managed-services-reseller-partners",
+   "quote": "Cushman & Wakefield are a full-service global commercial real estate company"
+  },
+  {
+   "from": "idxsti",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Listed as a DCI managed-services and reseller partner.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://dci-indonesia.com/managed-services-reseller-partners",
+   "quote": "PT IDX Solusi Teknologi Teknologi, as a subsidiary of SRO"
+  },
+  {
+   "from": "wir-group",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Collaboration on data protection for metaverse projects, reported in DCII's 2022 annual report.",
+   "evidence": "company_claim",
+   "date": "2022",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606489857-67mb71.pdf",
+   "quote": "Collaboration of WIR Group and DCI to Ensure the Data Protection and Security in Metaverse"
+  },
+  {
+   "from": "bank-bjb",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Joint event with DCI and AWS on modernising IT infrastructure, reported in DCII's 2022 annual report; whether BJB is a tenant is not stated.",
+   "evidence": "company_claim",
+   "date": "2022",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774606489857-67mb71.pdf",
+   "quote": "Bank BJB Collaboration with DCI Indonesia and AWS in Supporting IT Digital Enablement"
+  },
+  {
+   "from": "bank-mandiri",
+   "to": "dci",
+   "relation": "lends_to",
+   "detail": "Term loans up to Rp1.25 tn (11 May 2023, 7.5% fixed for 3 years; took over the OCBC NISP debt), a Rp1.0 tn capex facility (13 Sep 2024) and a Rp475 bn term loan at 4.6% fixed (10 Dec 2025): Rp1.89 tn owed at end-2025. The 2023 and 2024 facilities were repaid by 13 Apr 2026; Rp457.7 bn still owed at 30 Jun 2026.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "have been fully repaid by the Company, as evidenced by the Letter of Full Settlement dated April 13, 2026"
+  },
+  {
+   "from": "bca",
+   "to": "dci",
+   "relation": "lends_to",
+   "detail": "Investment credit: KI-1 Rp1.58 tn to refinance Mandiri (16 Mar 2026), plus KI-2 Rp2.8 tn and KI-3 Rp14.2 tn (30 Apr 2026, Rp17 tn) to build data centres for already-contracted capacity; Rp2.12 tn drawn at 30 Jun 2026; secured on land, all DC machinery and insurance claims. BCA is not a DCI affiliate.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1777973423225-91m72n.pdf",
+   "quote": "Fasilitas Kredit Investasi dengan total limit kredit sampai dengan Rp17.000.000.000.000,-"
+  },
+  {
+   "from": "ocbc-nisp",
+   "to": "dci",
+   "relation": "lends_to",
+   "detail": "Banking facilities from 21 Nov 2016 (working capital, term loans TL1-TL6, FL) at 3-month JIBOR + 2.5%, about Rp1.36 tn owed at 31 Oct 2020, secured on H1 land (SHGB 200, 33,531 m2), machinery and receivables; taken over by Bank Mandiri in May 2023.",
+   "evidence": "confirmed",
+   "date": "2016-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "PT Bank OCBC NISP Tbk tanggal 21 November 2016"
+  },
+  {
+   "from": "indonet",
+   "to": "dci",
+   "relation": "lends_to",
+   "detail": "Short-term related-party loan of Rp75 bn at 9.5% (5-28 Feb 2020), repaid on 25 and 28 Feb 2020.",
+   "evidence": "confirmed",
+   "date": "2020-02",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "the Company obtained loan from PT Indo Internet amounting to Rp75,000 with interest expense 9.5%"
+  },
+  {
+   "from": "indonet",
+   "to": "dci",
+   "relation": "supplies",
+   "detail": "Data-network subscription since 7 Nov 2016 (auto-renewing yearly); Rp3.7 bn of DCI cost in 2025.",
+   "evidence": "confirmed",
+   "date": "2016-11",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774607245009-qojuzs.pdf",
+   "quote": "the Company agreed to use and subscribe to data communication network services provided by PT Indointernet Tbk"
+  },
+  {
+   "from": "buana-capital",
+   "to": "dci",
+   "relation": "partner",
+   "detail": "Sole managing underwriter (full commitment) of the IPO: 357,561,900 new shares at Rp420 (about Rp150 bn), listed 6 Jan 2021.",
+   "evidence": "confirmed",
+   "date": "2020-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1774604346391-yvxazc.pdf",
+   "quote": "Penawaran Umum Perdana Saham ini dilakukan oleh Penjamin Pelaksana Emisi Efek, yaitu PT Buana Capital Sekuritas."
+  },
+  {
+   "from": "fitch",
+   "to": "dci",
+   "relation": "certifies",
+   "detail": "National long-term rating AA-(idn), Stable, affirmed 16 Jul 2026: 250+ customers, hyperscale clients 65% of recurring revenue in 2025 (70-90% expected), average lease 7-10 years, power cost passed through to hyperscale clients, funding limited to secured bank loans.",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://www.petromindo.com/news/article/fitch-affirms-dci-indonesia-at-aa-idn-outlook-stable",
+   "quote": "Fitch estimates that hyperscale clients will account for 70%-90% of DCI's recurring revenue in the medium term (2025: 65%)."
+  },
+  {
+   "from": "ojk",
+   "to": "dci",
+   "relation": "regulates",
+   "detail": "Declared the IPO registration effective (letter S-306/D.04/2020, 29 Dec 2020); DCI files material-transaction reports to OJK, e.g. the Rp17 tn BCA facility (5 May 2026).",
+   "evidence": "confirmed",
+   "date": "2020-12",
+   "source_url": "https://d2gr9f68xie3i0.cloudfront.net/uploads/media_libraries/1784731132589-ssacg5.pdf",
+   "quote": "No. S-306/D.04/2020 dated December 29, 2020"
+  }
+ ],
+ "operators": [
+  "DCI"
+ ],
+ "counts": {
+  "entities": 76,
+  "links": 125,
+  "confirmed": 81,
+  "dropped": 0
+ }
+}

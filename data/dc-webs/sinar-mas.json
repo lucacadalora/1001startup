@@ -1,0 +1,2875 @@
+{
+ "slug": "sinar-mas",
+ "title": "SM+ (Sinar Mas)",
+ "order": 8,
+ "center": "sm-plus",
+ "bottom_line": "Franky Oesman Widjaja controls DSSA (59.9% through PT Sinar Mas Tunggal), which owns SM+ outright, but SM+'s flagship SMX01 is a joint venture in which Korea's KIRA holds about half; LG Sinar Mas (the LG CNS joint venture) designs it, installs its Rp1.23 tn of electrical, cooling and IT systems and will run it, Acset puts up the Rp803 bn building, and the money comes from about Rp1.1 tn of DSSA bonds and sukuk plus a Rp2.97 tn Mandiri loan. No Sinar Mas power plant feeds it: DSSA sold its captive plants to the APP paper mills in 2024 and 75% of its three coal IPPs (which sell to PLN outside Java) to China's Datang in 2020, so SMX01's power deal is with PLN's Jakarta unit. The edge network is about 10 MW of former Smartfren buildings, not the 43 MW analysts cite, and Sinar Mas's bigger data-centre role is as landlord: its Kota Deltamas estate sold GIIC land to Microsoft, AWS, PDG, STT GDC and others, and data-centre buyers made up 94% of the estate company's land sales in H1 2026.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:30:38Z",
+ "entities": [
+  {
+   "id": "sm-plus",
+   "name": "SM+ Data Centers",
+   "legal_name": "PT SMPlus Digital Investama",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Sinar Mas's data-centre and digital-infrastructure platform under DSSA ('SM+ Holdings'). It runs 25 edge data centres in 24 cities (about 10 MW) and is building the SMX01 metro data centre in Jakarta's CBD. In Oct 2026 it agreed to buy PDG's five Indonesian enterprise data centres, which would take it to 31 sites in 25 cities.",
+   "sources": [
+    "https://smplus.com/about-us/",
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "dssa",
+   "name": "DSSA (Dian Swastatika Sentosa)",
+   "legal_name": "PT Dian Swastatika Sentosa Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IDX-listed Sinar Mas holding (IDX: DSSA) for coal (GEMS), renewables, digital infrastructure (SM+, MoraRepublic) and chemicals; 59.90% owned by PT Sinar Mas Tunggal. It sold its captive power plants to the Indah Kiat and Pindo Deli paper mills on 30 Apr 2024.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/en/press-release/dssa-bukukan-kinerja-keuangan-semester-i-2026-yang-sehat-perkuat-ekosistem-ai-dan-infrastruktur-digital-1790838523697"
+   ]
+  },
+  {
+   "id": "sinar-mas-tunggal",
+   "name": "Sinar Mas Tunggal",
+   "legal_name": "PT Sinar Mas Tunggal",
+   "kind": "company",
+   "city": null,
+   "what": "DSSA's main shareholder (59.90% at 31 Dec 2025), controlled by Franky Oesman Widjaja according to DSSA's annual report.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "dsst-mas-gemilang",
+   "name": "DSST Mas Gemilang",
+   "legal_name": "PT DSST Mas Gemilang",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "DSSA's 99.999% holding company for its technology businesses. It sits above SM+ (PT SMPlus Digital Investama), MyRepublic's owner PT Innovate Mas Utama and PT Bali Media Telekomunikasi.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/Capital_Increase_on_PT_BMT.pdf"
+   ]
+  },
+  {
+   "id": "smplus-sentra-data",
+   "name": "SMPlus Sentra Data (SMSD)",
+   "legal_name": "PT SMPlus Sentra Data",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Holding company 99.999% owned by SM+. It owns half of KMG (the SMX01 company) plus SMSDP and SMSS, and passes DSSA bond money on to KMG.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf"
+   ]
+  },
+  {
+   "id": "smplus-sentra-data-persada",
+   "name": "SMPlus Sentra Data Persada (SMSDP)",
+   "legal_name": "PT SMPlus Sentra Data Persada",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "SM+'s edge data-centre company, founded 27 Nov 2023 for 'hosting activities'. In Dec 2023 it agreed to buy Smartfren's and Smart Telecom's data-centre property in 21 cities for Rp544.2 bn; commercial operation started in 2024.",
+   "sources": [
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "kuningan-mas-gemilang",
+   "name": "Kuningan Mas Gemilang (KMG)",
+   "legal_name": "PT Kuningan Mas Gemilang",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "SMX01's project company, set up on 30 Apr 2024. DSSA's effective stake fell from 99.999% (2024) to 50.000% (2025); SM+ and LG name KIRA as its joint-venture partner. KMG holds the SMX01 land, the LG Sinar Mas and Acset contracts and a Rp2.97 tn Mandiri loan.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2024.pdf",
+    "https://www.lg.co.kr/media/release/29226"
+   ]
+  },
+  {
+   "id": "smplus-solusi-sejahtera",
+   "name": "SMPlus Solusi Sejahtera (SMSS)",
+   "legal_name": "PT SMPlus Solusi Sejahtera (formerly PT Teknovatus Solusi Sejahtera)",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Technology-services company, operating since 2014, bought by SM+ on 7 Aug 2024 from PT Bakti Taruna Sejati and renamed; financed by BSI.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2024.pdf"
+   ]
+  },
+  {
+   "id": "lg-sinar-mas",
+   "name": "LG Sinar Mas (LGSM)",
+   "legal_name": "PT LG Sinarmas Technology Solutions",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IT-services and data-centre joint venture of LG CNS and SM+ (agreement 27 Mar 2024, company set up 25 Jul 2024, launched 10 Sep 2024). It is SMX01's design, build and operating partner; SM+ holds 49.999%.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://smplus.com/driving-indonesias-digital-transformation-sinar-mas-and-lgcns-establish-joint-venture/",
+    "https://www.lg.co.kr/media/release/28124",
+    "https://www.lgsinarmas.com/about"
+   ]
+  },
+  {
+   "id": "lg-cns",
+   "name": "LG CNS",
+   "legal_name": "LG CNS Co., Ltd.",
+   "kind": "company",
+   "city": "Seoul",
+   "what": "Korean IT-services company of the LG group and co-owner of LG Sinar Mas. Through the JV it leads the roughly KRW 100 bn cooling, power and telecom package for SMX01. LG Sinar Mas calls it the largest data-centre operator in Korea.",
+   "sources": [
+    "https://www.lg.co.kr/media/release/29226",
+    "https://www.lgsinarmas.com/about"
+   ]
+  },
+  {
+   "id": "kira",
+   "name": "KIRA (Korea Investment Real Asset Management)",
+   "legal_name": "Korea Investment Real Asset Management Co., Ltd. (investing via KIRA SG One Pte. Ltd.)",
+   "kind": "fund",
+   "city": "Seoul",
+   "what": "Korean alternative-asset manager, a direct subsidiary of Korea Investment Holdings, with over US$5 bn under management (Dec 2024). It is SM+'s joint-venture partner in KMG/SMX01 and lent KMG and SMSD a US$15.5 mn convertible loan through KIRA SG One Pte. Ltd.",
+   "sources": [
+    "https://smplus.com/sm-breaks-ground-on-flagship-data-center-in-jakartas-central-business-district/",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://smplus.com/sinar-mas-and-kira-to-build-ai-ready-data-center-in-indonesia/"
+   ]
+  },
+  {
+   "id": "bumi-serpong-damai",
+   "name": "Bumi Serpong Damai (BSDE)",
+   "legal_name": "PT Bumi Serpong Damai Tbk",
+   "kind": "company",
+   "city": "Tangerang",
+   "what": "Listed property developer and a Sinar Mas affiliate (DSSA files deals with it as affiliated transactions). It sold KMG the SMX01 plot in Menteng Atas, South Jakarta (deed 28 May 2025), which DSSA disclosed as an affiliated transaction.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://www.idnfinancials.com/news/54974/bsde-earns-idr-617-4-billion-from-land-sale-to-dssa",
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "smx01",
+   "name": "SMX01 (Jakarta CBD)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta",
+   "what": "SM+'s flagship metro data centre in Menteng Atas, Setiabudi, South Jakarta: US$300 mn+, 18 MW IT at start (DSSA: 18.0 MW+) scalable to 60 MW, about 15,500 m2 of white space for about 2,400 racks of up to 130 kW, Tier IV design. Under construction: topped off May 2026, ready for service targeted Q4 2026.",
+   "sources": [
+    "https://smplus.com/sm-breaks-ground-on-flagship-data-center-in-jakartas-central-business-district/",
+    "https://smplus.com/sm-data-centers-kira-and-lg-sinar-mas-mark-smx01-topping-off-strengthening-indonesias-digital-infrastructure-foundation/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://www.lg.co.kr/media/release/29226",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://www.idnfinancials.com/news/54974/bsde-earns-idr-617-4-billion-from-land-sale-to-dssa"
+   ]
+  },
+  {
+   "id": "sm-plus-sme01",
+   "name": "SM+ BSD (SME01)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "South Tangerang",
+   "what": "SM+ edge data centre SME01 at CBD BSD Lot 12.A, Serpong Utara, South Tangerang. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme02",
+   "name": "SM+ Medan (SME02)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Deli Serdang",
+   "what": "SM+ edge data centre SME02 at Jl. Pulau Batam No.4, Percut Sei Tuan, Deli Serdang. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme03",
+   "name": "SM+ Bandung (SME03)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bandung",
+   "what": "SM+ edge data centre SME03 at Jl. Soekarno-Hatta No.546, Buahbatu, Bandung. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme04",
+   "name": "SM+ Makassar (SME04)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Makassar",
+   "what": "SM+ edge data centre SME04 at Jl. Urip Sumoharjo No.168, Panakkukang, Makassar. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme05",
+   "name": "SM+ Palembang (SME05)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Palembang",
+   "what": "SM+ edge data centre SME05 at Jl. Gubernur H. A Bastari, Jakabaring, Palembang. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme06",
+   "name": "SM+ Bogor (SME06)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bogor",
+   "what": "SM+ edge data centre SME06 at Jl. Raya Cibuluh No.219, Bogor Utara. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme07",
+   "name": "SM+ Semarang (SME07)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Semarang",
+   "what": "SM+ edge data centre SME07 at Jl. Bukit Puncak No.3, Banyumanik, Semarang. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme08",
+   "name": "SM+ Surabaya (SME08)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Surabaya",
+   "what": "SM+ edge data centre SME08 at 5th floor of Sinar Mas Land Plaza, Jl. Pemuda 60-70, Surabaya. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme09",
+   "name": "SM+ Yogyakarta (SME09)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Yogyakarta",
+   "what": "SM+ edge data centre SME09 at Jl. Kenari No.62, Umbulharjo, Yogyakarta. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme10",
+   "name": "SM+ Banjarmasin (SME10)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Banjarmasin",
+   "what": "SM+ edge data centre SME10 at Jl. A. Yani Km 4.5 No 56, Banjarmasin Timur. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme11",
+   "name": "SM+ Aceh (SME11)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Banda Aceh",
+   "what": "SM+ edge data centre SME11 at Jl. Tunggai VII, Lamgugob, Syiah Kuala, Banda Aceh. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme12",
+   "name": "SM+ Padang (SME12)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Padang",
+   "what": "SM+ edge data centre SME12 at Jl. Dr. Soetomo No.61C, Padang Timur. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme13",
+   "name": "SM+ Pekanbaru (SME13)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Pekanbaru",
+   "what": "SM+ edge data centre SME13 at Jl. Jend. Sudirman No.444, Pekanbaru. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme14",
+   "name": "SM+ Batam (SME14)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Batam",
+   "what": "SM+ edge data centre SME14 at Ruko Trafalgar Dutamas blok T1-3, Batam Center, Nongsa. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme15",
+   "name": "SM+ Lampung (SME15)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bandar Lampung",
+   "what": "SM+ edge data centre SME15 at Jl. Arif Rahman Hakim No.68, Bandar Lampung. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme16",
+   "name": "SM+ Jakarta (SDC) (SME16)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta",
+   "what": "SM+ edge data centre SME16 at Sinar Mas Land Plaza Tower 3, Jl. M.H. Thamrin 51, Central Jakarta. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme17",
+   "name": "SM+ Cirebon (SME17)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cirebon",
+   "what": "SM+ edge data centre SME17 at Jl. Raya Gunung Sunan Jati, Suranenggala, Cirebon Regency. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme18",
+   "name": "SM+ Solo (SME18)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Karanganyar",
+   "what": "SM+ edge data centre SME18 at Jl. Adi Sucipto No.33, Colomadu, Karanganyar (Solo). SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme19",
+   "name": "SM+ Madiun (SME19)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Madiun",
+   "what": "SM+ edge data centre SME19 at Jl. Raya Ponorogo-Madiun No.71, Taman, Madiun. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme20",
+   "name": "SM+ Malang (SME20)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Malang",
+   "what": "SM+ edge data centre SME20 at Jl. Bunga Coklat No.15, Lowokwaru, Malang. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme21",
+   "name": "SM+ Jember (SME21)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jember",
+   "what": "SM+ edge data centre SME21 at Jl. Majapahit No.6, Kaliwates, Jember. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme22",
+   "name": "SM+ Denpasar (SME22)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Badung",
+   "what": "SM+ edge data centre SME22 at Bali Tower Office, Jl. Sunset Road No.5, Kuta, Badung. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme23",
+   "name": "SM+ Manado (SME23)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Manado",
+   "what": "SM+ edge data centre SME23 at Jl. Diponegoro 7A No.22, Wenang, Manado. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme24",
+   "name": "SM+ Jambi (SME24)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jambi",
+   "what": "SM+ edge data centre SME24 at Jl. Rd Poerboyo Kolopaking No.15, Telanaipura, Jambi. SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026). Its city is on the list of 21 cities where SMSDP bought Smartfren/Smart Telecom data-centre property in Dec 2023 (match by city, inferred).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "sm-plus-sme25",
+   "name": "SM+ BSD (SME25)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "South Tangerang",
+   "what": "SM+ edge data centre SME25 at BSD, South Tangerang (second BSD site; no street address in SM+'s detail list). SM+ lists it as operating. No per-site MW is published; the 25 edge sites total about 10 MW installed and about 12 MW more under development (DSSA, Jun 2026).",
+   "sources": [
+    "https://smplus.com/edge-dc/",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf"
+   ]
+  },
+  {
+   "id": "pdg",
+   "name": "Princeton Digital Group (PDG)",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore-based data-centre operator. It is selling its five-site Indonesian enterprise business to SM+ while keeping its ~400 MW hyperscale campuses (JC2, JC3, JC4); in H1 2026 it paid DMAS Rp446.1 bn, matching its JC4 'powered land' purchase in GIIC.",
+   "sources": [
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+    "https://princetondg.com/press-releases/pdg-acquires-240-mw-of-powered-land-in-jakarta-advancing-its-rapid-expansion-across-asia/"
+   ]
+  },
+  {
+   "id": "pdg-id-enterprise",
+   "name": "PDG Indonesia enterprise data centres (ID1)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "PDG's 'ID1' portfolio: five operational data centres in Cibitung, Bintaro, Bandung, Pekanbaru and Surabaya, 11 MW in total, PUE 1.74; PDG bought them from XL Axiata in 2019. SM+ signed to buy the business on 12 Oct 2026; closing is pending and no price is published.",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/",
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "pdg-id1-cibitung",
+   "name": "PDG Cibitung enterprise site",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bekasi Regency",
+   "what": "Operational enterprise data centre in PDG's ID1 portfolio (11 MW across five sites; no per-site MW). PDG lists it as 'Jakarta Cibitung', the same location as the 22 MW JC2 hyperscale building that PDG keeps. Due to pass to SM+ when the Oct 2026 deal closes (inferred).",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/"
+   ]
+  },
+  {
+   "id": "pdg-id1-bintaro",
+   "name": "PDG Bintaro (JB1)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta (Bintaro)",
+   "what": "Operational enterprise data centre in PDG's ID1 portfolio (11 MW across five sites; no per-site MW). PDG calls it JB1 Bintaro; it got new HVAC and piloted HVO fuel for its generators. Due to pass to SM+ when the Oct 2026 deal closes (inferred).",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/"
+   ]
+  },
+  {
+   "id": "pdg-id1-bandung",
+   "name": "PDG Bandung (BD1)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bandung",
+   "what": "Operational enterprise data centre in PDG's ID1 portfolio (11 MW across five sites; no per-site MW). PDG calls it BD1 Bandung; it got new HVAC systems. Due to pass to SM+ when the Oct 2026 deal closes (inferred).",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/"
+   ]
+  },
+  {
+   "id": "pdg-id1-surabaya",
+   "name": "PDG Surabaya (SB1)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Surabaya",
+   "what": "Operational enterprise data centre in PDG's ID1 portfolio (11 MW across five sites; no per-site MW). PDG calls it SB1 Surabaya; it got new HVAC systems. Due to pass to SM+ when the Oct 2026 deal closes (inferred).",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/"
+   ]
+  },
+  {
+   "id": "pdg-id1-pekanbaru",
+   "name": "PDG Pekanbaru",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Pekanbaru",
+   "what": "Operational enterprise data centre in PDG's ID1 portfolio (11 MW across five sites; no per-site MW). PDG lists it as 'Pekanbaru'. Due to pass to SM+ when the Oct 2026 deal closes (inferred).",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/"
+   ]
+  },
+  {
+   "id": "ubs",
+   "name": "UBS AG Singapore Branch",
+   "legal_name": "UBS AG, Singapore Branch",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Exclusive financial adviser to SM+ on the PDG acquisition (Oct 2026).",
+   "sources": [
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "acset",
+   "name": "Acset",
+   "legal_name": "PT Acset Indonusa Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed Indonesian contractor; SMX01's building contractor. KMG was 32.74% of Acset's revenue in H1 2026 (Rp292.0 bn).",
+   "sources": [
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+    "https://www.acset.co/assets/file/investor/financial/Laporan_Keuangan_Q2_2026.pdf"
+   ]
+  },
+  {
+   "id": "lg-electronics",
+   "name": "LG Electronics",
+   "legal_name": "LG Electronics Inc.",
+   "kind": "company",
+   "city": "Seoul",
+   "what": "Supplies the data-centre cooling for SMX01's hybrid air- and liquid-cooled design in LG CNS's 'One LG' package.",
+   "sources": [
+    "https://www.lg.co.kr/media/release/29226"
+   ]
+  },
+  {
+   "id": "lg-energy-solution",
+   "name": "LG Energy Solution",
+   "legal_name": "LG Energy Solution, Ltd.",
+   "kind": "company",
+   "city": "Seoul",
+   "what": "Supplies battery solutions for SMX01 in the same 'One LG' package (UPS or storage not stated).",
+   "sources": [
+    "https://www.lg.co.kr/media/release/29226"
+   ]
+  },
+  {
+   "id": "konst",
+   "name": "Konst",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Taipei",
+   "what": "Taiwanese AI-infrastructure firm founded in 2024 (about 42 MW in operation and development in nine countries). In Aug 2026 it signed for liquid-cooled, high-density capacity at SMX01 for GPU cloud, its first deployment outside Taiwan.",
+   "sources": [
+    "https://baxtel.com/news/taiwanese-cloud-provider-konst-leases-capacity-at-lg-sinar-mas-data-center-in-indonesia",
+    "https://www.theguru.co.kr/mobile/article.html?no=105615",
+    "https://www.blackridgeresearch.com/news-releases/konst-expands-ai-infrastructure-with-three-party-data-center-deal-in-jakarta-indonesia"
+   ]
+  },
+  {
+   "id": "giga-computing",
+   "name": "Giga Computing",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Taipei",
+   "what": "GIGABYTE subsidiary supplying the GPU servers for Konst's deployment at SMX01 (tenant equipment, not the building's).",
+   "sources": [
+    "https://baxtel.com/news/taiwanese-cloud-provider-konst-leases-capacity-at-lg-sinar-mas-data-center-in-indonesia",
+    "https://www.theguru.co.kr/mobile/article.html?no=105615"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "utility",
+   "city": "Jakarta",
+   "what": "State power utility. Its Jakarta Raya distribution unit (UID Jakarta Raya) signed SMX01's supply agreement with KMG in Nov 2024; it supplies GIIC's data-centre zone (993 MVA) and buys the output of the IPPs in which DSSA keeps 25%.",
+   "sources": [
+    "https://koran-jakarta.com/2024-11-25/investor-terus-tumbuh-pln-jakarta-siapkan-listriknya",
+    "https://smplus.com/sm-partners-with-pln-to-provide-reliable-electricity-for-jakartas-upcoming-ai-ready-data-center/",
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+    "https://www.gem.wiki/Sumsel-5_power_station"
+   ]
+  },
+  {
+   "id": "cikarang-listrindo",
+   "name": "Cikarang Listrindo",
+   "legal_name": "PT Cikarang Listrindo Tbk",
+   "kind": "utility",
+   "city": "Bekasi",
+   "what": "Listed private power producer (IDX: POWR) serving the Cikarang industrial estates. It supplies PDG's Cibitung campus, including biomass power for up to 20% of the campus since Aug 2023.",
+   "sources": [
+    "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/",
+    "https://www.listrindo.com/uploads/annual_report/POWR_Annual_Report_2025.pdf"
+   ]
+  },
+  {
+   "id": "datang-dssp-power",
+   "name": "Datang DSSP Power Indonesia (DDPI)",
+   "legal_name": "PT Datang DSSP Power Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Holds Sinar Mas's three coal IPPs (Sumsel-5 300 MW, Kalselteng-1 200 MW, Kendari-3 100 MW: 600 MW). DSSA sold 75% to Datang Overseas in Dec 2020 and keeps 25% through PT Energi Mas Anugerah Semesta.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://www.gem.wiki/Kendari-3_power_station"
+   ]
+  },
+  {
+   "id": "datang-overseas",
+   "name": "Datang Overseas (Hong Kong)",
+   "legal_name": "Datang Overseas (Hong Kong) Energy Investment Co., Limited",
+   "kind": "state_firm",
+   "city": "Hong Kong",
+   "what": "Overseas investment arm of China's Datang power group; bought 75% of DDPI from DSSA in Dec 2020 (US$394 mn according to Global Energy Monitor).",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://www.gem.wiki/Kendari-3_power_station"
+   ]
+  },
+  {
+   "id": "dssp-power-sumsel",
+   "name": "DSSP Power Sumsel (PLTU Sumsel-5)",
+   "legal_name": "PT DSSP Power Sumsel",
+   "kind": "company",
+   "city": "Musi Banyuasin",
+   "what": "2 x 150 MW coal IPP in Musi Banyuasin, South Sumatra, commercial since 2016; sells to PLN under a 25-year build-own-operate-transfer PPA. It paid DSSA's group US$43.2 mn in 2025.",
+   "sources": [
+    "https://www.gem.wiki/Sumsel-5_power_station",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "dssp-power-kendari",
+   "name": "DSSP Power Kendari (PLTU Kendari-3)",
+   "legal_name": "PT DSSP Power Kendari",
+   "kind": "company",
+   "city": "Kendari",
+   "what": "2 x 50 MW coal IPP in Southeast Sulawesi, commercial since 2019; paid DSSA's group US$27.1 mn in 2025.",
+   "sources": [
+    "https://www.gem.wiki/Kendari-3_power_station",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "sks-listrik-kalimantan",
+   "name": "SKS Listrik Kalimantan (PLTU Kalselteng-1)",
+   "legal_name": "PT SKS Listrik Kalimantan",
+   "kind": "company",
+   "city": "Gunung Mas",
+   "what": "2 x 100 MW coal IPP in Gunung Mas, Central Kalimantan (built by Dongfang Electric, commissioned 2020); paid DSSA's group US$30.7 mn in 2025.",
+   "sources": [
+    "https://www.gem.wiki/Kalselteng-1_power_station",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "golden-energy-mines",
+   "name": "Golden Energy Mines (GEMS)",
+   "legal_name": "PT Golden Energy Mines Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "DSSA's 51%-owned coal miner and trader (Borneo Indobara, Kuansing Inti Makmur and others). DSSA says energy cash flow lets it invest in renewables and digital infrastructure.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/en/press-release/dssa-bukukan-kinerja-keuangan-semester-i-2026-yang-sehat-perkuat-ekosistem-ai-dan-infrastruktur-digital-1790838523697"
+   ]
+  },
+  {
+   "id": "daya-mas-bumi-sentosa",
+   "name": "Daya Mas Bumi Sentosa (DMBS)",
+   "legal_name": "PT Daya Mas Bumi Sentosa",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Geothermal JV of DSSA (through PT DSSR Daya Mas Sakti) and PT FirstGen Geothermal Indonesia: six working areas with about 440 MW of potential in West Java, East Nusa Tenggara, Jambi, West Sumatra and Central Sulawesi, still at exploration and development stage. No data-centre supply found.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/en/press-release/dssa-terus-bangun-ekosistem-infrastruktur-digital-dan-teknologi-dan-energi-berkelanjutan-1783002560979",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf"
+   ]
+  },
+  {
+   "id": "firstgen-geothermal",
+   "name": "FirstGen Geothermal Indonesia",
+   "legal_name": "PT FirstGen Geothermal Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesian unit of the Philippines' Energy Development Corporation (First Gen group); DSSA's geothermal JV partner.",
+   "sources": [
+    "https://dssa.co.id/en/press-release/dssa-terus-bangun-ekosistem-infrastruktur-digital-dan-teknologi-dan-energi-berkelanjutan-1783002560979",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf"
+   ]
+  },
+  {
+   "id": "trina-mas-agra",
+   "name": "Trina Mas Agra Indonesia (TMAI)",
+   "legal_name": "PT Trina Mas Agra Indonesia",
+   "kind": "company",
+   "city": "Kendal",
+   "what": "Solar cell and module factory in Kendal Industrial Park (about 1 GW a year, opened Jun 2025), a JV of DSSA, Trina Solar Energy Development Pte. Ltd. and PT PLN Indonesia Power Renewables. A supplier of panels, not of power to data centres.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/en/press-release/dssa-bukukan-kinerja-keuangan-semester-i-2026-yang-sehat-perkuat-ekosistem-ai-dan-infrastruktur-digital-1790838523697"
+   ]
+  },
+  {
+   "id": "dian-solar",
+   "name": "Dian Solar",
+   "legal_name": "PT Daya Mas Agra Sejahtera (brand owner)",
+   "kind": "brand",
+   "city": "Jakarta",
+   "what": "DSSA's solar brand (panels and rooftop systems), launched 2024; rooftop contracts include 1.6 MWp in Marunda and Sentul and 0.8 MWp in Riau. No data-centre installation found.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "bank-mandiri",
+   "name": "Bank Mandiri",
+   "legal_name": "PT Bank Mandiri (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State bank; lent KMG up to Rp2.97 tn over seven years for SMX01 (15 Jan 2026). It also lends to MyRepublic (EMR).",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "bca",
+   "name": "BCA",
+   "legal_name": "PT Bank Central Asia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Lent SMSDP up to Rp400 bn (3 Nov 2025) for data-centre development, with a DSSA corporate guarantee; nothing drawn at end-2025.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "bank-syariah-indonesia",
+   "name": "Bank Syariah Indonesia (BSI)",
+   "legal_name": "PT Bank Syariah Indonesia Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Islamic bank; financed SMSS with a Rp5.2 bn musyarakah facility and a Rp15.4 bn line facility (Jan 2024; the line was repaid in Nov 2025).",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "aldiracita-sekuritas",
+   "name": "Aldiracita Sekuritas",
+   "legal_name": "PT Aldiracita Sekuritas Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Joint lead underwriter of DSSA's Rp7 tn shelf bond and sukuk programme (first tranche Mar 2024); later tranches funded SMX01 and the edge network.",
+   "sources": [
+    "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+    "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf"
+   ]
+  },
+  {
+   "id": "bca-sekuritas",
+   "name": "BCA Sekuritas",
+   "legal_name": "PT BCA Sekuritas",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Joint lead underwriter of DSSA's Rp7 tn shelf bond and sukuk programme (first tranche Mar 2024); later tranches funded SMX01 and the edge network.",
+   "sources": [
+    "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+    "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf"
+   ]
+  },
+  {
+   "id": "bni-sekuritas",
+   "name": "BNI Sekuritas",
+   "legal_name": "PT BNI Sekuritas",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Joint lead underwriter of DSSA's Rp7 tn shelf bond and sukuk programme (first tranche Mar 2024); later tranches funded SMX01 and the edge network.",
+   "sources": [
+    "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+    "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf"
+   ]
+  },
+  {
+   "id": "mandiri-sekuritas",
+   "name": "Mandiri Sekuritas",
+   "legal_name": "PT Mandiri Sekuritas",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Joint lead underwriter of DSSA's Rp7 tn shelf bond and sukuk programme (first tranche Mar 2024); later tranches funded SMX01 and the edge network.",
+   "sources": [
+    "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+    "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf"
+   ]
+  },
+  {
+   "id": "trimegah-sekuritas",
+   "name": "Trimegah Sekuritas",
+   "legal_name": "PT Trimegah Sekuritas Indonesia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Joint lead underwriter of DSSA's Rp7 tn shelf bond and sukuk programme (first tranche Mar 2024); later tranches funded SMX01 and the edge network.",
+   "sources": [
+    "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+    "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf"
+   ]
+  },
+  {
+   "id": "xlsmart",
+   "name": "XLSMART",
+   "legal_name": "PT XLSMART Telecom Sejahtera Tbk (IDX: EXCL)",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Mobile operator that DSSA's report calls 'formerly known as PT Smartfren Telecom Tbk'. Smartfren and its unit Smart Telecom sold SM+ its first edge data centres (21 cities, Dec 2023); DSSA now owns 24.57% of XLSMART through BMT, and XLSMART signed an MoU with SM+ in Aug 2026.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+    "https://dssa.co.id/en/press-release/dssa-terus-bangun-ekosistem-infrastruktur-digital-dan-teknologi-dan-energi-berkelanjutan-1783002560979",
+    "https://smplus.com/from-ai-infrastructure-to-connectivity-sm-data-centers-lg-sinar-mas-advances-partnerships-at-ignite-pro-and-batic-2026/"
+   ]
+  },
+  {
+   "id": "bali-media-telekomunikasi",
+   "name": "Bali Media Telekomunikasi (BMT)",
+   "legal_name": "PT Bali Media Telekomunikasi",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "DSSA holding company (99.99% through DSST) that owns 24.57% of XLSMART; DSST added Rp8.54 tn of capital on 6 Jul 2026.",
+   "sources": [
+    "https://dssa.co.id/documents/Capital_Increase_on_PT_BMT.pdf",
+    "https://dssa.co.id/en/press-release/dssa-terus-bangun-ekosistem-infrastruktur-digital-dan-teknologi-dan-energi-berkelanjutan-1783002560979"
+   ]
+  },
+  {
+   "id": "morarepublic",
+   "name": "MoraRepublic",
+   "legal_name": "PT Ekamas Mora Republik Tbk (IDX: MORA)",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Fibre and FTTH operator formed on 22 Apr 2026 by merging Moratelindo with DSSA's MyRepublic (PT Eka Mas Republik); DSSA's effective stake is 50.5%, held via PT Innovate Mas Utama. It runs six data centres (3.3 MW) and signed an MoU with SM+ in Aug 2026.",
+   "sources": [
+    "https://dssa.co.id/en/press-release/morarepublic-resmi-berdiri-siap-dukung-percepatan-dan-pemerataan-ekosistem-digital-di-indonesia-1776942340722",
+    "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+    "https://investortrust.id/market/98178/sinar-mas-strikes-again-shareholders-approve-landmark-merger-of-moratelindo-and-myrepublic",
+    "https://www.moratelindo.co.id/download/press-release/2025-12-18%20-%20Press-Release_%20Moratelindo%20and%20MyRepublic%20Indonesia%20Announce%20Strategic%20Merger%20to%20Accelerate%20Equitable%20Development%20of%20Digital%20Ecosystem%20in%20Indonesia.pdf"
+   ]
+  },
+  {
+   "id": "moratelindo-dcs",
+   "name": "Moratelindo data centres (6 sites)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta",
+   "what": "Six data centres with 3.3 MW (Sep 2025) that MoraRepublic took over from Moratelindo; no site-level figures (the map's moratelindo-dcs record lists Jakarta, Batam, Medan, Palembang, Surabaya and Denpasar). Operating.",
+   "sources": [
+    "https://www.moratelindo.co.id/download/press-release/2025-12-18%20-%20Press-Release_%20Moratelindo%20and%20MyRepublic%20Indonesia%20Announce%20Strategic%20Merger%20to%20Accelerate%20Equitable%20Development%20of%20Digital%20Ecosystem%20in%20Indonesia.pdf",
+    "https://dssa.co.id/en/press-release/morarepublic-resmi-berdiri-siap-dukung-percepatan-dan-pemerataan-ekosistem-digital-di-indonesia-1776942340722"
+   ]
+  },
+  {
+   "id": "telin",
+   "name": "Telin",
+   "legal_name": "PT Telekomunikasi Indonesia International",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Carrier that hosted BATIC 2026, where it signed an MoU with SM+ Data Centers; also on SM+'s partner list.",
+   "sources": [
+    "https://smplus.com/from-ai-infrastructure-to-connectivity-sm-data-centers-lg-sinar-mas-advances-partnerships-at-ignite-pro-and-batic-2026/",
+    "https://smplus.com/partnerships/"
+   ]
+  },
+  {
+   "id": "apjii",
+   "name": "APJII",
+   "legal_name": "Asosiasi Penyelenggara Jasa Internet Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesian internet service providers' association; its MoU with SM+ brings the Indonesia Internet Exchange (IIX) into SMX01.",
+   "sources": [
+    "https://smplus.com/the-architect-of-indonesias-digital-sovereignty-sm-data-centers-and-apjii-forge-a-historic-alliance-to-redefine-the-national-connectivity-frontier/"
+   ]
+  },
+  {
+   "id": "telkom",
+   "name": "Telkom Indonesia",
+   "legal_name": "PT Telkom Indonesia (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State telco. Its NeutraDC campus is a tenant of GIIC's data-centre zone, and its logo is on SM+'s partner list.",
+   "sources": [
+    "https://smplus.com/partnerships/",
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "indosat",
+   "name": "Indosat",
+   "legal_name": "PT Indosat Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Mobile operator; logo on SM+'s partner list (Oct 2026).",
+   "sources": [
+    "https://smplus.com/partnerships/"
+   ]
+  },
+  {
+   "id": "pln-icon-plus",
+   "name": "PLN Icon Plus",
+   "legal_name": null,
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "PLN group telecom company (logo 'PLN Icon Plus'); logo on SM+'s partner list (Oct 2026).",
+   "sources": [
+    "https://smplus.com/partnerships/"
+   ]
+  },
+  {
+   "id": "china-mobile-intl",
+   "name": "China Mobile International",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Hong Kong",
+   "what": "International carrier; logo on SM+'s partner list (Oct 2026).",
+   "sources": [
+    "https://smplus.com/partnerships/"
+   ]
+  },
+  {
+   "id": "zenlayer",
+   "name": "Zenlayer",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Edge cloud and network provider; logo on SM+'s partner list (Oct 2026).",
+   "sources": [
+    "https://smplus.com/partnerships/"
+   ]
+  },
+  {
+   "id": "sinarmas-land",
+   "name": "Sinarmas Land",
+   "legal_name": "Sinarmas Land Limited",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Sinar Mas group property company. It owns 100% of PT Sumber Arusmulia, DMAS's 57.28% shareholder, and formed a hyperscale data-centre JV with K2 Data Centres in 2022. CEO: Muktar Widjaja.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+    "https://structureresearch.net/?p=80400"
+   ]
+  },
+  {
+   "id": "sumber-arusmulia",
+   "name": "Sumber Arusmulia",
+   "legal_name": "PT Sumber Arusmulia",
+   "kind": "company",
+   "city": null,
+   "what": "Holding company 100% owned by Sinarmas Land Ltd; owns 57.28% of DMAS.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf"
+   ]
+  },
+  {
+   "id": "puradelta-lestari",
+   "name": "Puradelta Lestari (DMAS)",
+   "legal_name": "PT Puradelta Lestari Tbk",
+   "kind": "company",
+   "city": "Bekasi",
+   "what": "IDX-listed developer of Kota Deltamas and the GIIC industrial estate in Cikarang. Ultimate controller: Margaretha Natalia Widjaja; shareholders PT Sumber Arusmulia 57.28%, Sojitz 25.00%, public 17.72%. Data-centre buyers made up 93.6% of its H1 2026 sales (Digital Gayana Ekagrata, PDG, Indoedge, STT GDC).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+    "https://deltamas.id/wp-content/uploads/2025/07/DMAS-Financial-Statement-FY-2024-1.pdf"
+   ]
+  },
+  {
+   "id": "sojitz",
+   "name": "Sojitz",
+   "legal_name": "Sojitz Corporation",
+   "kind": "company",
+   "city": "Tokyo",
+   "what": "Japanese trading house; 25.00% shareholder of DMAS since 1996, paid a 2% commission when it brings in buyers or tenants.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf"
+   ]
+  },
+  {
+   "id": "giic-data-center-zone",
+   "name": "GIIC data-centre zone (Kota Deltamas)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bekasi Regency",
+   "what": "About 300 ha data-centre zone inside the GIIC industrial estate at Kota Deltamas, Cikarang, developed by DMAS since 2021: over 80% sold, 15 data-centre tenants, 993 MVA of PLN supply (DMAS, 2025). Operating.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "microsoft",
+   "name": "Microsoft Indonesia",
+   "legal_name": "PT Microsoft Operations Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Microsoft's Indonesian data-centre company; bought Rp810.4 bn of GIIC land from DMAS in 2024 (40.9% of DMAS's sales) for its GIIC campus (JKT 11).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2025/07/DMAS-Financial-Statement-FY-2024-1.pdf"
+   ]
+  },
+  {
+   "id": "amazon-data-services",
+   "name": "AWS (Amazon Data Services Indonesia)",
+   "legal_name": "PT Amazon Data Services Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "AWS's Indonesian data-centre company; bought Rp395.5 bn of GIIC land from DMAS in 2023 (20.9% of DMAS's sales).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2025/07/DMAS-Financial-Statement-FY-2024-1.pdf"
+   ]
+  },
+  {
+   "id": "stt-gdc",
+   "name": "STT GDC Indonesia",
+   "legal_name": "PT STT GDC Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Builds the STT Jakarta campus in GIIC; bought Rp210.8 bn of DMAS land in 2025 and Rp213.0 bn in H1 2026.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf"
+   ]
+  },
+  {
+   "id": "templemore",
+   "name": "Templemore Real Estate and Data Centre",
+   "legal_name": "PT Templemore Real Estate and Data Centre",
+   "kind": "company",
+   "city": null,
+   "what": "Bought Rp173.5 bn of land from DMAS in 2025 (13.6% of DMAS's sales); the operator behind it is not identified.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "indoedge",
+   "name": "Indoedge Real Estate and Data Center",
+   "legal_name": "PT Indoedge Real Estate And Data Center",
+   "kind": "company",
+   "city": null,
+   "what": "Bought Rp276.1 bn of land from DMAS in H1 2026 (15.4% of DMAS's sales); the operator behind it is not identified.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf"
+   ]
+  },
+  {
+   "id": "digital-gayana-ekagrata",
+   "name": "Digital Gayana Ekagrata",
+   "legal_name": "PT Digital Gayana Ekagrata",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Bought Rp741.5 bn of GIIC land from DMAS in Q1 2026 (41.4% of DMAS's H1 2026 sales). The map's vendor research ties it to Indonet's GAIA data-centre project in Cikarang (not re-checked here).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf"
+   ]
+  },
+  {
+   "id": "komdigi",
+   "name": "Komdigi (PDN Cikarang)",
+   "legal_name": "Kementerian Komunikasi dan Digital",
+   "kind": "government",
+   "city": "Jakarta",
+   "what": "Ministry that owns national data centre PDN 1 in GIIC; DMAS lists the PDN as a tenant of its data-centre zone.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "k2-data-centres",
+   "name": "K2 Data Centres",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Data-centre developer wholly owned by the Kuok Group; formed a hyperscale data-centre JV with Sinarmas Land in 2022.",
+   "sources": [
+    "https://structureresearch.net/?p=80400",
+    "https://baxtel.com/data-center/k2-jakarta-1"
+   ]
+  },
+  {
+   "id": "k2-jkt1",
+   "name": "K2 JKT 1",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bekasi Regency",
+   "what": "First campus of the K2 Data Centres and Sinarmas Land JV: four buildings in Bekasi Regency built to Tier III and LEED Gold, phase 1 due 2024; Baxtel places it at Kota Deltamas. Search snippets give 58.8 MW at full build-out. Current status not confirmed.",
+   "sources": [
+    "https://baxtel.com/data-center/k2-jakarta-1",
+    "https://structureresearch.net/?p=80400"
+   ]
+  },
+  {
+   "id": "golden-agri-resources",
+   "name": "Golden Agri-Resources",
+   "legal_name": "Golden Agri-Resources Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Sinar Mas's SGX-listed palm-oil group; Franky Oesman Widjaja is its Chairman and CEO, and Muktar Widjaja an Executive Director and President Director.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "franky-oesman-widjaja",
+   "name": "Franky Oesman Widjaja",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Controls PT Sinar Mas Tunggal, DSSA's main shareholder; DSSA President Commissioner 2011-2025 (not on DSSA's board page in Oct 2026); Chairman and CEO of Golden Agri-Resources. Signed the LG CNS and KIRA partnerships for Sinar Mas in 2024.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/en/board-of-commissioners",
+    "https://smplus.com/driving-indonesias-digital-transformation-sinar-mas-and-lgcns-establish-joint-venture/",
+    "https://smplus.com/sinar-mas-and-kira-to-build-ai-ready-data-center-in-indonesia/"
+   ]
+  },
+  {
+   "id": "l-krisnan-cahya",
+   "name": "L. Krisnan Cahya",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DSSA President Director since 2009; Commissioner of XLSMART since 2025; earlier President Commissioner (2012-2021) and President Director (2011-2012) of GEMS.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/en/board-of-directors"
+   ]
+  },
+  {
+   "id": "lokita-prasetya",
+   "name": "Lokita Prasetya",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DSSA Vice President Director (energy and chemicals) since 2021, director since 2018; President Commissioner of GEMS since 2021.",
+   "sources": [
+    "https://dssa.co.id/en/board-of-directors",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "david-fernando-audy",
+   "name": "David Fernando Audy",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DSSA Director for the technology and digital-infrastructure business from Jun 2024, listed as DSSA President Commissioner in Oct 2026; independent commissioner of PT Fore Kopi Indonesia Tbk since 2025; former president director and CEO of PT Media Nusantara Citra Tbk (2016-2021).",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/en/board-of-commissioners"
+   ]
+  },
+  {
+   "id": "handhianto-suryo-kentjono",
+   "name": "Handhianto Suryo Kentjono",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DSSA Commissioner since Jun 2024 (DSSA Director 2021-2024); President Commissioner of SM+ edge company SMSDP in Dec 2023.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "hermawan-tarjono",
+   "name": "Hermawan Tarjono",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DSSA Director for HR, legal affairs and compliance since 2011; Commissioner of SMSDP in Dec 2023.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "herson-suindah",
+   "name": "Herson Suindah",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Director and Group CEO of SM+ Holdings; President Director of SMSDP (Dec 2023); DSSA's data-centre lead in its 2025 annual report.",
+   "sources": [
+    "https://smplus.com/sm-data-centers-kira-and-lg-sinar-mas-mark-smx01-topping-off-strengthening-indonesias-digital-infrastructure-foundation/",
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "andre-pratama",
+   "name": "Andre Pratama",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Director of SM+ edge company SMSDP (Dec 2023).",
+   "sources": [
+    "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf"
+   ]
+  },
+  {
+   "id": "bill-cheng",
+   "name": "Bill Cheng",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Introduced as Sinar Mas Senior Advisor at the LG CNS JV signing (Mar 2024) and as SM+ chairman in LG CNS's photo caption for the SMX01 contract (Aug 2025).",
+   "sources": [
+    "https://smplus.com/driving-indonesias-digital-transformation-sinar-mas-and-lgcns-establish-joint-venture/",
+    "https://biz.newdaily.co.kr/site/data/html/2025/08/06/2025080600034.html"
+   ]
+  },
+  {
+   "id": "timotius-max-sulaiman",
+   "name": "Timotius Max Sulaiman",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DSSA Director (fibre infrastructure, pay TV and internet) from 2025; President Director and CEO of MyRepublic Indonesia; President Director of MoraRepublic since 22 Apr 2026; no longer on DSSA's board page in Oct 2026.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://www.moratelindo.co.id/download/press-release/2025-12-18%20-%20Press-Release_%20Moratelindo%20and%20MyRepublic%20Indonesia%20Announce%20Strategic%20Merger%20to%20Accelerate%20Equitable%20Development%20of%20Digital%20Ecosystem%20in%20Indonesia.pdf",
+    "https://dssa.co.id/en/press-release/morarepublic-resmi-berdiri-siap-dukung-percepatan-dan-pemerataan-ekosistem-digital-di-indonesia-1776942340722",
+    "https://dssa.co.id/en/board-of-directors"
+   ]
+  },
+  {
+   "id": "marlo-budiman",
+   "name": "Marlo Budiman",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "DSSA Vice President Director since the AGM of 10 Jun 2026; previously President Director of PT Lippo Malls Indonesia (2023-Jan 2026) and President Commissioner of PT Multipolar Technology Tbk (Jan-Apr 2026).",
+   "sources": [
+    "https://dssa.co.id/en/board-of-directors"
+   ]
+  },
+  {
+   "id": "donghyup-han",
+   "name": "Han Donghyup",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CEO of LG Sinar Mas since 2024; previously head of LG CNS's Indonesian and Chinese subsidiaries.",
+   "sources": [
+    "https://www.lg.co.kr/media/release/28124",
+    "https://smplus.com/sm-data-centers-kira-and-lg-sinar-mas-mark-smx01-topping-off-strengthening-indonesias-digital-infrastructure-foundation/"
+   ]
+  },
+  {
+   "id": "ariawan",
+   "name": "Ariawan",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Director and COO of LG Sinar Mas; signed the Konst agreement for SMX01 (Aug 2026).",
+   "sources": [
+    "https://smplus.com/from-ai-infrastructure-to-connectivity-sm-data-centers-lg-sinar-mas-advances-partnerships-at-ignite-pro-and-batic-2026/",
+    "https://baxtel.com/news/taiwanese-cloud-provider-konst-leases-capacity-at-lg-sinar-mas-data-center-in-indonesia"
+   ]
+  },
+  {
+   "id": "hyun-shin-gyoon",
+   "name": "Hyun Shin-gyoon",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CEO of LG CNS; signed the Sinar Mas JV agreement (Mar 2024) and launched LG Sinar Mas (Sep 2024).",
+   "sources": [
+    "https://www.lg.co.kr/media/release/28124",
+    "https://smplus.com/driving-indonesias-digital-transformation-sinar-mas-and-lgcns-establish-joint-venture/"
+   ]
+  },
+  {
+   "id": "yong-sik-kim",
+   "name": "Kim Yong Sik",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CEO of KIRA, SM+'s investment partner in SMX01.",
+   "sources": [
+    "https://smplus.com/sm-data-centers-kira-and-lg-sinar-mas-mark-smx01-topping-off-strengthening-indonesias-digital-infrastructure-foundation/",
+    "https://smplus.com/sinar-mas-and-kira-to-build-ai-ready-data-center-in-indonesia/"
+   ]
+  },
+  {
+   "id": "muktar-widjaja",
+   "name": "Muktar Widjaja",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Commissioner of DMAS; CEO of Sinarmas Land Ltd since 2006; President Commissioner of BSDE since 2007; Executive Director and President Director of Golden Agri-Resources since 2018; Vice President Commissioner of DSSA 2011-2013.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "margaretha-natalia-widjaja",
+   "name": "Margaretha Natalia Widjaja",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Named by DMAS's 2025 annual report as its appointed ultimate controller, above Sinarmas Land Ltd.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme01",
+   "relation": "runs",
+   "detail": "SM+ lists SME01 (BSD) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "BSD – SME01"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme02",
+   "relation": "runs",
+   "detail": "SM+ lists SME02 (Medan) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Medan – SME02"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme03",
+   "relation": "runs",
+   "detail": "SM+ lists SME03 (Bandung) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Bandung – SME03"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme04",
+   "relation": "runs",
+   "detail": "SM+ lists SME04 (Makassar) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Makassar – SME04"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme05",
+   "relation": "runs",
+   "detail": "SM+ lists SME05 (Palembang) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Palembang – SME05"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme06",
+   "relation": "runs",
+   "detail": "SM+ lists SME06 (Bogor) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Bogor – SME06"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme07",
+   "relation": "runs",
+   "detail": "SM+ lists SME07 (Semarang) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Semarang – SME07"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme08",
+   "relation": "runs",
+   "detail": "SM+ lists SME08 (Surabaya) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Surabaya – SME08"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme09",
+   "relation": "runs",
+   "detail": "SM+ lists SME09 (Yogyakarta) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Yogyakarta – SME09"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme10",
+   "relation": "runs",
+   "detail": "SM+ lists SME10 (Banjarmasin) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Banjarmasin – SME10"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme11",
+   "relation": "runs",
+   "detail": "SM+ lists SME11 (Aceh) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Aceh – SME11"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme12",
+   "relation": "runs",
+   "detail": "SM+ lists SME12 (Padang) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Padang – SME12"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme13",
+   "relation": "runs",
+   "detail": "SM+ lists SME13 (Pekanbaru) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Pekanbaru – SME13"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme14",
+   "relation": "runs",
+   "detail": "SM+ lists SME14 (Batam) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Batam – SME14"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme15",
+   "relation": "runs",
+   "detail": "SM+ lists SME15 (Lampung) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Lampung – SME15"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme16",
+   "relation": "runs",
+   "detail": "SM+ lists SME16 (Jakarta (SDC)) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Jakarta (SDC) – SME16"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme17",
+   "relation": "runs",
+   "detail": "SM+ lists SME17 (Cirebon) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Cirebon – SME17"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme18",
+   "relation": "runs",
+   "detail": "SM+ lists SME18 (Solo) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Solo – SME18"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme19",
+   "relation": "runs",
+   "detail": "SM+ lists SME19 (Madiun) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Madiun – SME19"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme20",
+   "relation": "runs",
+   "detail": "SM+ lists SME20 (Malang) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Malang – SME20"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme21",
+   "relation": "runs",
+   "detail": "SM+ lists SME21 (Jember) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Jember – SME21"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme22",
+   "relation": "runs",
+   "detail": "SM+ lists SME22 (Denpasar) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Denpasar – SME22"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme23",
+   "relation": "runs",
+   "detail": "SM+ lists SME23 (Manado) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Manado – SME23"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme24",
+   "relation": "runs",
+   "detail": "SM+ lists SME24 (Jambi) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "Jambi – SME24"
+  },
+  {
+   "from": "sm-plus",
+   "to": "sm-plus-sme25",
+   "relation": "runs",
+   "detail": "SM+ lists SME25 (BSD) among the 25 edge data centres it operates.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/edge-dc/",
+   "quote": "BSD – SME25"
+  },
+  {
+   "from": "pdg-id-enterprise",
+   "to": "pdg-id1-cibitung",
+   "relation": "runs",
+   "detail": "ID1 site 'Jakarta Cibitung'. That ID1 is the business being sold is inferred: PDG's sale covers five operational sites in Greater Jakarta, Bandung, Surabaya and Pekanbaru, and its report lists exactly these five as ID1.",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "ID1 Indonesia Jakarta Cibitung Operational 11"
+  },
+  {
+   "from": "pdg-id-enterprise",
+   "to": "pdg-id1-bintaro",
+   "relation": "runs",
+   "detail": "ID1 site in Bintaro (JB1); same inference about the sale as for Cibitung.",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "JB1 Bintaro, BD1 Bandung, and SB1 Surabaya were equipped with new HVAC systems"
+  },
+  {
+   "from": "pdg-id-enterprise",
+   "to": "pdg-id1-bandung",
+   "relation": "runs",
+   "detail": "ID1 site in Bandung (BD1); same inference about the sale.",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "JB1 Bintaro, BD1 Bandung, and SB1 Surabaya were equipped with new HVAC systems"
+  },
+  {
+   "from": "pdg-id-enterprise",
+   "to": "pdg-id1-surabaya",
+   "relation": "runs",
+   "detail": "ID1 site in Surabaya (SB1); same inference about the sale.",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "JB1 Bintaro, BD1 Bandung, and SB1 Surabaya were equipped with new HVAC systems"
+  },
+  {
+   "from": "pdg-id-enterprise",
+   "to": "pdg-id1-pekanbaru",
+   "relation": "runs",
+   "detail": "ID1 site in Pekanbaru; same inference about the sale.",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "Pekanbaru"
+  },
+  {
+   "from": "pdg",
+   "to": "pdg-id-enterprise",
+   "relation": "owns",
+   "detail": "PDG owns the enterprise business it is selling; it entered Indonesia in 2019 by buying these facilities.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/",
+   "quote": "PDG acquired the facilities when it entered Indonesia in 2019"
+  },
+  {
+   "from": "sm-plus",
+   "to": "pdg-id-enterprise",
+   "relation": "owns",
+   "detail": "Definitive agreement signed 12 Oct 2026 for SM+ (PT SMPlus Digital Investama and affiliates) to buy PDG's enterprise data-centre business: five operating sites. Not yet closed; price not disclosed.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/",
+   "quote": "signed a definitive agreement to sell its enterprise data center business in Indonesia to PT SMPlus Digital Investama"
+  },
+  {
+   "from": "ubs",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "Exclusive financial adviser to SM+ on the purchase of PDG's Indonesian enterprise business.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+   "quote": "is acting as exclusive financial advisor to SM+ on the transaction"
+  },
+  {
+   "from": "franky-oesman-widjaja",
+   "to": "sinar-mas-tunggal",
+   "relation": "owns",
+   "detail": "Controls PT Sinar Mas Tunggal, DSSA's main shareholder (DSSA calls him the company's individual controller).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT Sinar Mas Tunggal is the Main Shareholder of the Company, controlled by Mr. Franky Oesman Widjaja"
+  },
+  {
+   "from": "sinar-mas-tunggal",
+   "to": "dssa",
+   "relation": "owns",
+   "detail": "59.90% of DSSA (4,615,523,200 shares) at 31 Dec 2025; the public holds 20.42% and DSSA's own treasury 19.68%.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT Sinar Mas Tunggal : 59.90%"
+  },
+  {
+   "from": "dssa",
+   "to": "dsst-mas-gemilang",
+   "relation": "owns",
+   "detail": "99.999%, direct.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT DSST Mas Gemilang (DSST) Jakarta Penyertaan saham/ - 99,999"
+  },
+  {
+   "from": "dsst-mas-gemilang",
+   "to": "sm-plus",
+   "relation": "owns",
+   "detail": "99.999% of PT SMPlus Digital Investama (SMDI, i.e. SM+), through DSST.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT SMPlus Digital Investama (SMDI) Jakarta Penyertaan saham/ - 99,999"
+  },
+  {
+   "from": "sm-plus",
+   "to": "smplus-sentra-data",
+   "relation": "owns",
+   "detail": "99.999% of PT SMPlus Sentra Data (SMSD), through SMDI.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT SMPlus Sentra Data (SMSD) Jakarta Penyertaan saham/ - 99,999"
+  },
+  {
+   "from": "smplus-sentra-data",
+   "to": "kuningan-mas-gemilang",
+   "relation": "owns",
+   "detail": "DSSA's effective stake in KMG (held through SMSD) was 50.000% at end-2025, down from 99.999% at end-2024; KMG shows US$53.7 mn of non-controlling interest.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT Kuningan Mas Gemilang (KMG) Jakarta Aktivitas hosting / - 50,000 99,999"
+  },
+  {
+   "from": "smplus-sentra-data",
+   "to": "smplus-sentra-data-persada",
+   "relation": "owns",
+   "detail": "99.999% of SMSDP, the edge data-centre company (commercial operation from 2024).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT SMPlus Sentra Data Persada (SMSDP) Jakarta Aktivitas hosting / 2024 99,999"
+  },
+  {
+   "from": "smplus-sentra-data",
+   "to": "smplus-solusi-sejahtera",
+   "relation": "owns",
+   "detail": "99.999% of SMSS, bought on 7 Aug 2024 from PT Bakti Taruna Sejati (US$1.62 mn).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT SMPlus Solusi Sejahtera (SMSS) Jakarta Jasa teknologi dan kegiatan terkait 2014 99,999"
+  },
+  {
+   "from": "kira",
+   "to": "kuningan-mas-gemilang",
+   "relation": "joint_venture",
+   "detail": "SM+'s joint-venture partner in SMX01; LG's release calls KMG a joint venture of Sinar Mas and KIRA. With DSSA's stake at 50.000%, KIRA's share is about 50% (inferred from the two filings).",
+   "evidence": "confirmed",
+   "date": "2025-03",
+   "source_url": "https://smplus.com/sm-breaks-ground-on-flagship-data-center-in-jakartas-central-business-district/",
+   "quote": "alongside its joint venture partner, Korea Investment Real Asset Management (KIRA)"
+  },
+  {
+   "from": "kira",
+   "to": "kuningan-mas-gemilang",
+   "relation": "lends_to",
+   "detail": "Interest-free convertible loan of up to US$15.5 mn, 2-year term, signed 23 Jul 2024 by KMG and SMSD with KIRA SG One Pte. Ltd. (KIRA's vehicle).",
+   "evidence": "confirmed",
+   "date": "2024-07",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "signed signed non-interest bearing Convertible Loan Agreement with a maximum facility amount of US$ 15,500,000"
+  },
+  {
+   "from": "kuningan-mas-gemilang",
+   "to": "smx01",
+   "relation": "runs",
+   "detail": "KMG is SMX01's project company; it signed the MEP/ICT contract with LG Sinar Mas on 4 Aug 2025.",
+   "evidence": "confirmed",
+   "date": "2025-08",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "for data center project SMX01"
+  },
+  {
+   "from": "sm-plus",
+   "to": "smx01",
+   "relation": "runs",
+   "detail": "SM+ markets SMX01 as its metro data centre (RFS 2H-2026).",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/about-us/",
+   "quote": "Metro Data Center: Jakarta – SMX01, RFS in 2H-2026"
+  },
+  {
+   "from": "bumi-serpong-damai",
+   "to": "kuningan-mas-gemilang",
+   "relation": "supplies",
+   "detail": "Sold KMG the SMX01 land (affiliated transaction disclosed 28 May 2025). Search snippets (IDNFinancials, page 403) give 8,516 m2 in Menteng Atas for Rp617.41 bn.",
+   "evidence": "confirmed",
+   "date": "2025-05",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "Affiliated Transaction in the form of purchase of land by PT Kuningan Mas Gemilang, a subsidiary,"
+  },
+  {
+   "from": "sm-plus",
+   "to": "lg-sinar-mas",
+   "relation": "joint_venture",
+   "detail": "SMDI (SM+) set up PT LG Sinarmas Technology Solutions with LG CNS on 25 Jul 2024 and holds 49.999% (JV agreement signed in Seoul on 27 Mar 2024).",
+   "evidence": "confirmed",
+   "date": "2024-07",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "SMDI has an ownership interest in LGSTS of 49.999%"
+  },
+  {
+   "from": "lg-cns",
+   "to": "lg-sinar-mas",
+   "relation": "joint_venture",
+   "detail": "LG CNS owns the other half; Baxtel and IDNFinancials (snippet) describe a 50:50 JV.",
+   "evidence": "confirmed",
+   "date": "2024-09",
+   "source_url": "https://baxtel.com/news/taiwanese-cloud-provider-konst-leases-capacity-at-lg-sinar-mas-data-center-in-indonesia",
+   "quote": "LG Sinar Mas is a 50:50 JV between LG CNS and Sinar Mas"
+  },
+  {
+   "from": "lg-sinar-mas",
+   "to": "smx01",
+   "relation": "built",
+   "detail": "Rp1,226.7 bn contract with KMG (4 Aug 2025) for MEP works, long-lead equipment, ICT, security and integrated management and control systems; DSSA disclosed it as an affiliated transaction.",
+   "evidence": "confirmed",
+   "date": "2025-08",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "agreement with PT LG Sinarmas Technology Solutions with value of transaction Rp 1,226,728,020,000"
+  },
+  {
+   "from": "lg-sinar-mas",
+   "to": "smx01",
+   "relation": "runs",
+   "detail": "Named SMX01's 'Design and Operation Partner' (technology advisor and operator) in the joint SM+/KIRA/LGSM topping-off release.",
+   "evidence": "confirmed",
+   "date": "2026-05",
+   "source_url": "https://smplus.com/sm-data-centers-kira-and-lg-sinar-mas-mark-smx01-topping-off-strengthening-indonesias-digital-infrastructure-foundation/",
+   "quote": "As the Design and Operation Partner of SMX01, LG Sinar Mas"
+  },
+  {
+   "from": "lg-cns",
+   "to": "smx01",
+   "relation": "designed",
+   "detail": "LG CNS did KMG's consulting and design contract in 2024 and leads the ~KRW 100 bn cooling, power and telecom package through LG Sinar Mas (11 floors, 46,281 m2, 30 MW power intake; KMG plans 220 MW intake later).",
+   "evidence": "company_claim",
+   "date": "2025-08",
+   "source_url": "https://www.lg.co.kr/media/release/29226",
+   "quote": "LG CNS는 지난해 KMG와 AI데이터센터 구축 컨설팅 및 설계 사업 계약을 체결해"
+  },
+  {
+   "from": "acset",
+   "to": "smx01",
+   "relation": "built",
+   "detail": "Main building contract 'SMX 01 Data Center' from KMG: Rp802.9 bn, Aug 2025, 39 months.",
+   "evidence": "confirmed",
+   "date": "2025-08",
+   "source_url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+   "quote": "SMX 01 Data Center 100% 802,900 PT Kuningan Mas Gemilang Agustus/August 2025 39 bulan/months"
+  },
+  {
+   "from": "lg-electronics",
+   "to": "smx01",
+   "relation": "supplies",
+   "detail": "Data-centre cooling in LG CNS's 'One LG' package for KMG.",
+   "evidence": "company_claim",
+   "date": "2025-08",
+   "source_url": "https://www.lg.co.kr/media/release/29226",
+   "quote": "LG전자의 데이터센터 냉각 기술"
+  },
+  {
+   "from": "lg-energy-solution",
+   "to": "smx01",
+   "relation": "supplies",
+   "detail": "Battery solutions in the same 'One LG' package.",
+   "evidence": "company_claim",
+   "date": "2025-08",
+   "source_url": "https://www.lg.co.kr/media/release/29226",
+   "quote": "LG에너지솔루션의 배터리 솔루션"
+  },
+  {
+   "from": "konst",
+   "to": "smx01",
+   "relation": "tenant_of",
+   "detail": "Signed in Taipei (Aug 2026) with SM+ and LG Sinar Mas to take high-density capacity at SMX01; coverage cites 27 MW total and 6 MW in phase 1. Konst's chairman and LGSM's COO are both quoted.",
+   "evidence": "confirmed",
+   "date": "2026-08",
+   "source_url": "https://baxtel.com/news/taiwanese-cloud-provider-konst-leases-capacity-at-lg-sinar-mas-data-center-in-indonesia",
+   "quote": "Konst is leasing capacity at LG Sinar Mas’ upcoming SMX01 data center in Jakarta"
+  },
+  {
+   "from": "giga-computing",
+   "to": "konst",
+   "relation": "supplies",
+   "detail": "GPUs for Konst at SMX01; Raydian Cloud runs deployment and operations.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://baxtel.com/news/taiwanese-cloud-provider-konst-leases-capacity-at-lg-sinar-mas-data-center-in-indonesia",
+   "quote": "Giga Computing will supply the GPUs, while Raydian Cloud will manage deployment and operations"
+  },
+  {
+   "from": "pln",
+   "to": "smx01",
+   "relation": "supplies_power",
+   "detail": "PLN UID Jakarta Raya signed a power-supply agreement with PT Kuningan Mas Gemilang for SMX01 on 22-25 Nov 2024, part of 1,000 MVA signed with four customers (KMG, MRT Jakarta, BDx's Starone, REI DKI). SMX01's own MVA is not published; PLN also offered RECs and dedicated renewable supply.",
+   "evidence": "confirmed",
+   "date": "2024-11",
+   "source_url": "https://koran-jakarta.com/2024-11-25/investor-terus-tumbuh-pln-jakarta-siapkan-listriknya",
+   "quote": "PT Kuningan Mas Gemilang (SM+, bagian dari grup Sinar Mas)"
+  },
+  {
+   "from": "cikarang-listrindo",
+   "to": "pdg-id1-cibitung",
+   "relation": "supplies_power",
+   "detail": "Listrindo supplies PDG's Cibitung data-centre campus (biomass-sourced power for up to 20% since Aug 2023). If the ID1 Cibitung site is on that campus, SM+ would inherit this supplier: inferred from PDG's Listrindo release and the 'Jakarta Cibitung' site list.",
+   "evidence": "inferred",
+   "date": "2023-08",
+   "source_url": "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/",
+   "quote": "powering initially up to 20% of its data center campus in Cibitung"
+  },
+  {
+   "from": "dssa",
+   "to": "datang-dssp-power",
+   "relation": "owns",
+   "detail": "25% of DDPI through subsidiary PT Energi Mas Anugerah Semesta (EMAS); DSSA's share of DDPI's 2025 profit was US$11.7 mn.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "EMAS has an ownership interest in DDPI of 25%"
+  },
+  {
+   "from": "datang-overseas",
+   "to": "datang-dssp-power",
+   "relation": "owns",
+   "detail": "75% bought from DSSA in Dec 2020 (strategic partnership).",
+   "evidence": "confirmed",
+   "date": "2020-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "the divestment of 75% shares of PT Datang DSSP Power"
+  },
+  {
+   "from": "datang-dssp-power",
+   "to": "dssp-power-sumsel",
+   "relation": "owns",
+   "detail": "Sumsel-5 project company; GEM lists its owners as China Datang Overseas 75% and DSSA 25%, matching DDPI's split.",
+   "evidence": "company_claim",
+   "date": "2025-07",
+   "source_url": "https://www.gem.wiki/Sumsel-5_power_station",
+   "quote": "China Datang Overseas Investment Co Ltd [75.0%]; PT Dian Swastatika Sentosa Tbk [25.0%]"
+  },
+  {
+   "from": "datang-dssp-power",
+   "to": "dssp-power-kendari",
+   "relation": "owns",
+   "detail": "Kendari-3 project company; GEM says DSSA's 25%-owned DDPI holds 600 MW including Kendari-3 (100 MW).",
+   "evidence": "company_claim",
+   "date": "2025-07",
+   "source_url": "https://www.gem.wiki/Kendari-3_power_station",
+   "quote": "Kendari-3 power station with 100MW"
+  },
+  {
+   "from": "datang-dssp-power",
+   "to": "sks-listrik-kalimantan",
+   "relation": "owns",
+   "detail": "Kalselteng-1 project company (PT SKS Listrik Kalimantan); GEM lists DDPI as the plant's 100% owner.",
+   "evidence": "company_claim",
+   "date": "2025-07",
+   "source_url": "https://www.gem.wiki/Kalselteng-1_power_station",
+   "quote": "PT Datang DSSP Power Indonesia [100%]"
+  },
+  {
+   "from": "dssp-power-sumsel",
+   "to": "pln",
+   "relation": "supplies_power",
+   "detail": "Sells Sumsel-5's 300 MW to PLN under a PPA signed Feb 2012 (25-year BOOT). This power goes to the Sumatra grid, not to SM+'s Jakarta data centres.",
+   "evidence": "company_claim",
+   "date": "2012-02",
+   "source_url": "https://www.gem.wiki/Sumsel-5_power_station",
+   "quote": "PLN signed a power purchase agreement (PPA) with DSSP Power Sumsel"
+  },
+  {
+   "from": "dssp-power-kendari",
+   "to": "pln",
+   "relation": "supplies_power",
+   "detail": "Kendari-3 is an IPP in PLN's supply plan (RUPTL), so its output is sold to PLN; inferred from GEM's IPP and RUPTL references, no PPA text opened.",
+   "evidence": "inferred",
+   "date": "2019-10",
+   "source_url": "https://www.gem.wiki/Kendari-3_power_station",
+   "quote": "Groundbreaking of IPP Kendari-3"
+  },
+  {
+   "from": "sks-listrik-kalimantan",
+   "to": "pln",
+   "relation": "supplies_power",
+   "detail": "Kalselteng-1 is a mine-mouth IPP in PLN's 2015-2024 supply plan, so its output is sold to PLN; inferred, no PPA text opened.",
+   "evidence": "inferred",
+   "date": "2020",
+   "source_url": "https://www.gem.wiki/Kalselteng-1_power_station",
+   "quote": "This project is mentioned on Table 13 of the 2015-2024 PT PLN long range supply plan"
+  },
+  {
+   "from": "dssa",
+   "to": "dssp-power-sumsel",
+   "relation": "supplies",
+   "detail": "DSSA's group booked US$43.2 mn of 2025 revenue from DSSP Power Sumsel and says it sells coal to related parties; that the revenue is coal is inferred from the two notes.",
+   "evidence": "inferred",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT DSSP Power Sumsel 43.157.089"
+  },
+  {
+   "from": "dssa",
+   "to": "sks-listrik-kalimantan",
+   "relation": "supplies",
+   "detail": "US$30.7 mn of 2025 revenue from SKS Listrik Kalimantan; coal supply inferred as above.",
+   "evidence": "inferred",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT SKS Listrik Kalimantan 30.748.072"
+  },
+  {
+   "from": "dssa",
+   "to": "dssp-power-kendari",
+   "relation": "supplies",
+   "detail": "US$27.1 mn of 2025 revenue from DSSP Power Kendari; coal supply inferred as above.",
+   "evidence": "inferred",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT DSSP Power Kendari 27.081.779"
+  },
+  {
+   "from": "dssa",
+   "to": "golden-energy-mines",
+   "relation": "owns",
+   "detail": "51.000% effective, held directly since the 2023 restructuring.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT Golden Energy Mines Tbk (GEM) Jakarta Perdagangan batubara/ 2010 51,000"
+  },
+  {
+   "from": "dssa",
+   "to": "daya-mas-bumi-sentosa",
+   "relation": "joint_venture",
+   "detail": "DSSA's effective stake is 50.000% (JV agreed 27 Aug 2025).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT Daya Mas Bumi Sentosa (DMBS) Jakarta Penyertaan saham/ - 50,000"
+  },
+  {
+   "from": "firstgen-geothermal",
+   "to": "daya-mas-bumi-sentosa",
+   "relation": "joint_venture",
+   "detail": "Partner in DSSA's geothermal JV (up to 440 MW potential across six areas).",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://dssa.co.id/en/press-release/dssa-terus-bangun-ekosistem-infrastruktur-digital-dan-teknologi-dan-energi-berkelanjutan-1783002560979",
+   "quote": "a joint venture formed through a strategic partnership with PT FirstGen Geothermal Indonesia"
+  },
+  {
+   "from": "dssa",
+   "to": "trina-mas-agra",
+   "relation": "joint_venture",
+   "detail": "JV with Trina Solar Energy Development and PT PLN Indonesia Power Renewables for a ~1 GW/year cell and module plant in Kendal (opened Jun 2025); DSSA's stake not stated in the report.",
+   "evidence": "confirmed",
+   "date": "2025-06",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "joint venture with Trina Solar Energy Development Pte. Ltd. and PT PLN Indonesia Power Renewables"
+  },
+  {
+   "from": "dian-solar",
+   "to": "dssa",
+   "relation": "brand_of",
+   "detail": "Brand of DSSA subsidiary PT Daya Mas Agra Sejahtera.",
+   "evidence": "confirmed",
+   "date": "2024",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT Daya Mas Agra Sejahtera, a subsidiary, established a solar panel development business under the Dian Solar brand"
+  },
+  {
+   "from": "bank-mandiri",
+   "to": "kuningan-mas-gemilang",
+   "relation": "lends_to",
+   "detail": "Seven-year term loan of up to Rp2.97 tn signed 15 Jan 2026.",
+   "evidence": "confirmed",
+   "date": "2026-01",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "signed a credit facility term loan from MANDIRI for a seven (7) years period with limit up to Rp 2,970,000,000,000"
+  },
+  {
+   "from": "bca",
+   "to": "smplus-sentra-data-persada",
+   "relation": "lends_to",
+   "detail": "Loan of up to Rp400 bn signed 3 Nov 2025 'for its data center business development', guaranteed by DSSA; nil outstanding at 31 Dec 2025.",
+   "evidence": "confirmed",
+   "date": "2025-11",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "signed a loan agreement with BCA with a limit of up to Rp 400,000,000,000"
+  },
+  {
+   "from": "bank-syariah-indonesia",
+   "to": "smplus-solusi-sejahtera",
+   "relation": "lends_to",
+   "detail": "Musyarakah facility up to Rp5.2 bn (to Jul 2027) and a Rp15.4 bn, 72-month line facility, both 9 Jan 2024; the line was repaid 19 Nov 2025.",
+   "evidence": "confirmed",
+   "date": "2024-01",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "signed an Akad Pembiayaan Prinsip Musyarakah with BSI"
+  },
+  {
+   "from": "dssa",
+   "to": "smplus-sentra-data",
+   "relation": "lends_to",
+   "detail": "From its 2024 Phase III shelf bonds DSSA lent SMSD Rp481.7 bn, and from Phase III sukuk Rp181.8 bn, for on-lending to KMG to build data centres; both fully used by 30 Jun 2026 (booked as fixed assets).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf",
+   "quote": "The funds received by KMG will be used for the expansion of its business, focusing on the construction and development of data centers"
+  },
+  {
+   "from": "dssa",
+   "to": "smplus-sentra-data-persada",
+   "relation": "lends_to",
+   "detail": "Rp450.5 bn of the 2025 Phase IV sukuk went 'directly by the Company to SSDP' for 'the development of SSDP's data center'. SSDP is not defined; it matches PT SMPlus Sentra Data Persada (press abbreviates its sisters SSD and SDI), so the target is inferred.",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://dssa.co.id/documents/107d633a9e_808b2629b1.pdf",
+   "quote": "with the entire amount to be disbursed directly by the Company to SSDP"
+  },
+  {
+   "from": "dsst-mas-gemilang",
+   "to": "smplus-sentra-data-persada",
+   "relation": "lends_to",
+   "detail": "DSST and other affiliates funded about Rp460 bn of the Rp544.2 bn edge-site purchase from Smartfren (Dec 2023), with SM+ capital covering the rest.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+   "quote": "This Transaction will be financed with a combination of SM+ capital and funding from PT DSST"
+  },
+  {
+   "from": "aldiracita-sekuritas",
+   "to": "dssa",
+   "relation": "partner",
+   "detail": "Joint lead underwriter of DSSA's Rp7 tn shelf bonds and sukuk (idAA from PEFINDO); Rp1.11 tn of the Phase III-IV proceeds went to SM+ data centres.",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+   "quote": "joint lead underwriters for the PUB are PT Aldiracita Sekuritas Indonesia, PT BCA Sekuritas, PT BNI Sekuritas"
+  },
+  {
+   "from": "bca-sekuritas",
+   "to": "dssa",
+   "relation": "partner",
+   "detail": "Joint lead underwriter of DSSA's Rp7 tn shelf bonds and sukuk (idAA from PEFINDO); Rp1.11 tn of the Phase III-IV proceeds went to SM+ data centres.",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+   "quote": "joint lead underwriters for the PUB are PT Aldiracita Sekuritas Indonesia, PT BCA Sekuritas, PT BNI Sekuritas"
+  },
+  {
+   "from": "bni-sekuritas",
+   "to": "dssa",
+   "relation": "partner",
+   "detail": "Joint lead underwriter of DSSA's Rp7 tn shelf bonds and sukuk (idAA from PEFINDO); Rp1.11 tn of the Phase III-IV proceeds went to SM+ data centres.",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+   "quote": "joint lead underwriters for the PUB are PT Aldiracita Sekuritas Indonesia, PT BCA Sekuritas, PT BNI Sekuritas"
+  },
+  {
+   "from": "mandiri-sekuritas",
+   "to": "dssa",
+   "relation": "partner",
+   "detail": "Joint lead underwriter of DSSA's Rp7 tn shelf bonds and sukuk (idAA from PEFINDO); Rp1.11 tn of the Phase III-IV proceeds went to SM+ data centres.",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+   "quote": "PT BNI Sekuritas, PT Mandiri Sekuritas and PT Trimegah Sekuritas Indonesia Tbk"
+  },
+  {
+   "from": "trimegah-sekuritas",
+   "to": "dssa",
+   "relation": "partner",
+   "detail": "Joint lead underwriter of DSSA's Rp7 tn shelf bonds and sukuk (idAA from PEFINDO); Rp1.11 tn of the Phase III-IV proceeds went to SM+ data centres.",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://dssa.co.id/en/press-release/oversubscription-of-dssas-bonds-and-sukuk-mudharabah-offering",
+   "quote": "PT BNI Sekuritas, PT Mandiri Sekuritas and PT Trimegah Sekuritas Indonesia Tbk"
+  },
+  {
+   "from": "xlsmart",
+   "to": "smplus-sentra-data-persada",
+   "relation": "supplies",
+   "detail": "As Smartfren and its 99.99% unit Smart Telecom (Smartel), sold SMSDP land and/or structures plus data-centre facilities in 21 cities for Rp544.2 bn (agreement 19 Dec 2023; affiliated transaction). No leaseback was disclosed.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+   "quote": "Smartfren and Smartel to SM+, which was signed by SM+, Smartfren, and Smartel on December 19, 2023"
+  },
+  {
+   "from": "dsst-mas-gemilang",
+   "to": "bali-media-telekomunikasi",
+   "relation": "owns",
+   "detail": "99.99% (PT Sinarmas Sukses Sejahtera holds one share); DSST subscribed Rp8.54 tn of new BMT shares on 6 Jul 2026, a material transaction.",
+   "evidence": "confirmed",
+   "date": "2026-07",
+   "source_url": "https://dssa.co.id/documents/Capital_Increase_on_PT_BMT.pdf",
+   "quote": "DSST 11,193,772,119 11,193,772,119,000 99.99"
+  },
+  {
+   "from": "bali-media-telekomunikasi",
+   "to": "xlsmart",
+   "relation": "invested_in",
+   "detail": "BMT owns 24.57% of XLSMART; DSSA completed its BMT share acquisition in 2026.",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://dssa.co.id/en/press-release/dssa-terus-bangun-ekosistem-infrastruktur-digital-dan-teknologi-dan-energi-berkelanjutan-1783002560979",
+   "quote": "a company that owns 24.57% of shares in PT XLSMART Telecom Sejahtera Tbk"
+  },
+  {
+   "from": "xlsmart",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "One of three MoUs SM+ Data Centers signed at BATIC 2026 (with Telin, XLSMART and MoraRepublic).",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://smplus.com/from-ai-infrastructure-to-connectivity-sm-data-centers-lg-sinar-mas-advances-partnerships-at-ignite-pro-and-batic-2026/",
+   "quote": "three Memoranda of Understanding (MoUs) signed with Telin, XLSMART, and MoraRepublic"
+  },
+  {
+   "from": "dssa",
+   "to": "morarepublic",
+   "relation": "owns",
+   "detail": "Effective 50.5% after the merger became effective on 22 Apr 2026; control passed from PT Candrakarya Multikreasi to DSSA's PT Innovate Mas Utama (Investortrust).",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://dssa.co.id/documents/Annual_PE_2026_Materi.pdf",
+   "quote": "effective ownership of 50.5%"
+  },
+  {
+   "from": "morarepublic",
+   "to": "moratelindo-dcs",
+   "relation": "runs",
+   "detail": "Moratelindo managed six data centres with 3.3 MW as of Sep 2025; both Moratelindo and DSSA state it.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.moratelindo.co.id/download/press-release/2025-12-18%20-%20Press-Release_%20Moratelindo%20and%20MyRepublic%20Indonesia%20Announce%20Strategic%20Merger%20to%20Accelerate%20Equitable%20Development%20of%20Digital%20Ecosystem%20in%20Indonesia.pdf",
+   "quote": "manages 6 data centers with 3.3 megawatts of capacity"
+  },
+  {
+   "from": "morarepublic",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "MoU signed at BATIC 2026; SM+ and MoraRepublic held a joint session on data centres and connectivity.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://smplus.com/from-ai-infrastructure-to-connectivity-sm-data-centers-lg-sinar-mas-advances-partnerships-at-ignite-pro-and-batic-2026/",
+   "quote": "three Memoranda of Understanding (MoUs) signed with Telin, XLSMART, and MoraRepublic"
+  },
+  {
+   "from": "telin",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "MoU with SM+ Data Centers at BATIC 2026 (Aug 2026).",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://smplus.com/from-ai-infrastructure-to-connectivity-sm-data-centers-lg-sinar-mas-advances-partnerships-at-ignite-pro-and-batic-2026/",
+   "quote": "three Memoranda of Understanding (MoUs) signed with Telin, XLSMART, and MoraRepublic"
+  },
+  {
+   "from": "apjii",
+   "to": "smx01",
+   "relation": "partner",
+   "detail": "MoU signed 23 Apr 2026 by SM+ CEO Herson Suindah and APJII chairman Muhammad Arif to host the Indonesia Internet Exchange (IIX) at SMX01; SM+ says it has 57+ ISP partners.",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://smplus.com/the-architect-of-indonesias-digital-sovereignty-sm-data-centers-and-apjii-forge-a-historic-alliance-to-redefine-the-national-connectivity-frontier/",
+   "quote": "the strategic integration of the Indonesia Internet Exchange (IIX)"
+  },
+  {
+   "from": "telkom",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "Telkom Indonesia is one of about 70 logos on SM+'s Partnerships page (Oct 2026); the page does not say what each partnership covers.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/partnerships/",
+   "quote": "SM+ collaborates with industry-leading partners to deliver world-class technology and connectivity solutions"
+  },
+  {
+   "from": "indosat",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "Indosat is one of about 70 logos on SM+'s Partnerships page (Oct 2026); the page does not say what each partnership covers.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/partnerships/",
+   "quote": "SM+ collaborates with industry-leading partners to deliver world-class technology and connectivity solutions"
+  },
+  {
+   "from": "pln-icon-plus",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "PLN Icon Plus is one of about 70 logos on SM+'s Partnerships page (Oct 2026); the page does not say what each partnership covers.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/partnerships/",
+   "quote": "SM+ collaborates with industry-leading partners to deliver world-class technology and connectivity solutions"
+  },
+  {
+   "from": "china-mobile-intl",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "China Mobile International is one of about 70 logos on SM+'s Partnerships page (Oct 2026); the page does not say what each partnership covers.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/partnerships/",
+   "quote": "SM+ collaborates with industry-leading partners to deliver world-class technology and connectivity solutions"
+  },
+  {
+   "from": "zenlayer",
+   "to": "sm-plus",
+   "relation": "partner",
+   "detail": "Zenlayer is one of about 70 logos on SM+'s Partnerships page (Oct 2026); the page does not say what each partnership covers.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/partnerships/",
+   "quote": "SM+ collaborates with industry-leading partners to deliver world-class technology and connectivity solutions"
+  },
+  {
+   "from": "margaretha-natalia-widjaja",
+   "to": "sinarmas-land",
+   "relation": "owns",
+   "detail": "DMAS's 2025 annual report names her the appointed ultimate controller, shown above Sinarmas Land Ltd in its ownership chart.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "The ultimate ownership and control rest with Margaretha Natalia Widjaja"
+  },
+  {
+   "from": "sinarmas-land",
+   "to": "sumber-arusmulia",
+   "relation": "owns",
+   "detail": "100%.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Sinarmas Land Ltd 100,00% PT Sumber Arusmulia"
+  },
+  {
+   "from": "sumber-arusmulia",
+   "to": "puradelta-lestari",
+   "relation": "owns",
+   "detail": "57.28% (27.6 bn shares).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "PT Sumber Arusmulia 57,28%"
+  },
+  {
+   "from": "sojitz",
+   "to": "puradelta-lestari",
+   "relation": "owns",
+   "detail": "25.00% since 1996.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Sojitz Corporation 25,00%"
+  },
+  {
+   "from": "puradelta-lestari",
+   "to": "giic-data-center-zone",
+   "relation": "runs",
+   "detail": "Developed the ~300 ha data-centre zone in GIIC since 2021; over 80% sold by end-2025.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Zona Data Center seluas ±300 hektar sejak tahun 2021"
+  },
+  {
+   "from": "pln",
+   "to": "giic-data-center-zone",
+   "relation": "supplies_power",
+   "detail": "DMAS says PLN supplies 'premium' power of up to 993 MVA to the data-centre zone; PLN's dedicated GI 150 kV Data Center substation in GIIC (120 MVA) opened Nov 2024 (map record).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "pasokan listrik premium 993 MVA dari PLN"
+  },
+  {
+   "from": "microsoft",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Bought Rp810.4 bn of land from DMAS in 2024 (40.88% of DMAS's sales).",
+   "evidence": "confirmed",
+   "date": "2024",
+   "source_url": "https://deltamas.id/wp-content/uploads/2025/07/DMAS-Financial-Statement-FY-2024-1.pdf",
+   "quote": "PT Microsoft Operations Indonesia 810.393.850.000 40,88%"
+  },
+  {
+   "from": "amazon-data-services",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Bought Rp395.5 bn of land from DMAS in 2023 (20.89% of DMAS's sales).",
+   "evidence": "confirmed",
+   "date": "2023",
+   "source_url": "https://deltamas.id/wp-content/uploads/2025/07/DMAS-Financial-Statement-FY-2024-1.pdf",
+   "quote": "PT Amazon Data Services Indonesia - - 395.523.000.000 20,89%"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Bought Rp213.0 bn of land from DMAS in H1 2026 and Rp210.8 bn in H1 2025.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+   "quote": "PT. STT GDC Indonesia 212.952.000.000 11,89% 210.792.000.000 35,30%"
+  },
+  {
+   "from": "templemore",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Bought Rp173.5 bn of land from DMAS in 2025 (13.59% of sales); a data-centre buyer by its name, operator unknown.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "PT Templemore Real Estate and Data Centre 173.529.200.000 13,59%"
+  },
+  {
+   "from": "indoedge",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Bought Rp276.1 bn of land from DMAS in H1 2026 (15.41% of sales); operator unknown.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+   "quote": "PT. Indoedge Real Estate And Data Center 276.061.800.000 15,41%"
+  },
+  {
+   "from": "digital-gayana-ekagrata",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Bought Rp741.5 bn of land from DMAS in Q1 2026, making it DMAS's biggest buyer in H1 2026 (41.39% of sales).",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+   "quote": "PT. Digital Gayana Ekagrata 741.502.389.285 41,39%"
+  },
+  {
+   "from": "pdg",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Paid DMAS Rp446.1 bn in H1 2026, 24.9% of DMAS's sales; this matches PDG's JC4 'powered land' purchase in GIIC (Apr 2026).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+   "quote": "PT. Princeton Digital Group 446.124.000.000 24,90%"
+  },
+  {
+   "from": "telkom",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "DMAS names Telkom among the 15 data-centre tenants of the GIIC zone (Telkom's NeutraDC HDC Cikarang).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "rumah bagi 15 tenant pusat data, termasuk PT Telkom Indonesia"
+  },
+  {
+   "from": "komdigi",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "DMAS names the National Data Centre (PDN) of the communications ministry as a tenant of the zone.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Pusat Data Nasional Kementerian Kominfo"
+  },
+  {
+   "from": "k2-data-centres",
+   "to": "sinarmas-land",
+   "relation": "joint_venture",
+   "detail": "JV formed in 2022 to own, develop and operate hyperscale data centres in Indonesia; a second campus is planned in Karawang (snippet).",
+   "evidence": "confirmed",
+   "date": "2022",
+   "source_url": "https://structureresearch.net/?p=80400",
+   "quote": "formed a JV with Indonesia’s Sinarmas Land to develop hyperscale data centres"
+  },
+  {
+   "from": "k2-data-centres",
+   "to": "k2-jkt1",
+   "relation": "runs",
+   "detail": "The JV's first project, K2 JKT 1, in Bekasi Regency with four data-centre buildings.",
+   "evidence": "company_claim",
+   "date": "2024",
+   "source_url": "https://baxtel.com/data-center/k2-jakarta-1",
+   "quote": "Their inaugural project, K2 Data Centre Jakarta 1 Campus (K2 JKT 1), will be located in Bekasi Regency, Greater Jakarta, featuring four data center facilities"
+  },
+  {
+   "from": "k2-jkt1",
+   "to": "giic-data-center-zone",
+   "relation": "tenant_of",
+   "detail": "Baxtel's location for K2 JKT 1 is Kota Deltamas, and the JV partner Sinarmas Land controls the Kota Deltamas estate (DMAS), so the campus very likely sits on DMAS land: inferred.",
+   "evidence": "inferred",
+   "date": "2024",
+   "source_url": "https://baxtel.com/data-center/k2-jakarta-1",
+   "quote": "Kota Deltamas"
+  },
+  {
+   "from": "franky-oesman-widjaja",
+   "to": "dssa",
+   "relation": "commissioner_of",
+   "detail": "DSSA President Commissioner from the AGM of 31 May 2011, reappointed 2014, 2019 and 2024; DSSA's board page lists David Fernando Audy as President Commissioner in Oct 2026.",
+   "evidence": "confirmed",
+   "date": "2011",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "He was first appointed as the President Commissioner of the Company based on the resolution of the"
+  },
+  {
+   "from": "franky-oesman-widjaja",
+   "to": "golden-agri-resources",
+   "relation": "director_of",
+   "detail": "Chairman (since 2000) and Chief Executive Officer (since 1996) of Golden Agri-Resources.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "Chairman (since 2000), Chief Executive Officer (since 1996), and member of the Nomination and"
+  },
+  {
+   "from": "franky-oesman-widjaja",
+   "to": "lg-sinar-mas",
+   "relation": "founded",
+   "detail": "As 'Board Member of Sinar Mas' he attended the JV signing with LG CNS in Seoul (27 Mar 2024) and the LG Sinar Mas launch (10 Sep 2024).",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://smplus.com/driving-indonesias-digital-transformation-sinar-mas-and-lgcns-establish-joint-venture/",
+   "quote": "The signing ceremony was attended by Sinar Mas Board Member, Franky Oesman Widjaja"
+  },
+  {
+   "from": "l-krisnan-cahya",
+   "to": "dssa",
+   "relation": "director_of",
+   "detail": "DSSA President Director since the AGM of 24 Jul 2009.",
+   "evidence": "confirmed",
+   "date": "2009",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "He was first appointed as President Director of the Company based on the resolution of the Company’s"
+  },
+  {
+   "from": "l-krisnan-cahya",
+   "to": "xlsmart",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of XLSMART since 2025.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "Commissioner of PT XLSMART Telecom Sejahtera Tbk (since 2025)"
+  },
+  {
+   "from": "lokita-prasetya",
+   "to": "dssa",
+   "relation": "director_of",
+   "detail": "DSSA Vice President Director since 2021 (director since 2018).",
+   "evidence": "confirmed",
+   "date": "2021",
+   "source_url": "https://dssa.co.id/en/board-of-directors",
+   "quote": "He was first appointed as Director of the Company based on the resolution of the Company’s AGM on May 25, 2018"
+  },
+  {
+   "from": "lokita-prasetya",
+   "to": "golden-energy-mines",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner of GEMS since 2021.",
+   "evidence": "confirmed",
+   "date": "2021",
+   "source_url": "https://dssa.co.id/en/board-of-directors",
+   "quote": "President Commissioner of PT Golden Energy Mines Tbk (since 2021)"
+  },
+  {
+   "from": "david-fernando-audy",
+   "to": "dssa",
+   "relation": "director_of",
+   "detail": "DSSA Director of Technology Business (digital infrastructure and technology), appointed Jun 2024.",
+   "evidence": "confirmed",
+   "date": "2024-06",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "Director of Technology Business"
+  },
+  {
+   "from": "david-fernando-audy",
+   "to": "dssa",
+   "relation": "commissioner_of",
+   "detail": "Listed as DSSA President Commissioner on DSSA's board page (Oct 2026).",
+   "evidence": "confirmed",
+   "date": "2026",
+   "source_url": "https://dssa.co.id/en/board-of-commissioners",
+   "quote": "David Fernando Audy President Commissioner"
+  },
+  {
+   "from": "handhianto-suryo-kentjono",
+   "to": "dssa",
+   "relation": "commissioner_of",
+   "detail": "DSSA Commissioner from the AGM of 25 Jun 2024; previously a DSSA director (2021-2024).",
+   "evidence": "confirmed",
+   "date": "2024-06",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "He was first appointed as Commissioner of the Company based on the resolution of the Company’s AGM"
+  },
+  {
+   "from": "handhianto-suryo-kentjono",
+   "to": "smplus-sentra-data-persada",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner of SMSDP (Dec 2023).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+   "quote": "President Commissioner : Handhianto Suryo Kentjono"
+  },
+  {
+   "from": "hermawan-tarjono",
+   "to": "dssa",
+   "relation": "director_of",
+   "detail": "DSSA Director (HR, legal affairs and compliance) since the AGM of 31 May 2011.",
+   "evidence": "confirmed",
+   "date": "2011",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "Director of HR, Legal Affairs, and"
+  },
+  {
+   "from": "hermawan-tarjono",
+   "to": "smplus-sentra-data-persada",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of SMSDP (Dec 2023).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+   "quote": "Commissioner : Hermawan Tarjono"
+  },
+  {
+   "from": "herson-suindah",
+   "to": "smplus-sentra-data-persada",
+   "relation": "director_of",
+   "detail": "President Director of SMSDP (Dec 2023).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+   "quote": "President Director : Herson Suindah"
+  },
+  {
+   "from": "herson-suindah",
+   "to": "sm-plus",
+   "relation": "director_of",
+   "detail": "President Director and Group CEO of SM+ Holdings; signed the PDG, APJII and Konst deals.",
+   "evidence": "confirmed",
+   "date": "2026-05",
+   "source_url": "https://smplus.com/sm-data-centers-kira-and-lg-sinar-mas-mark-smx01-topping-off-strengthening-indonesias-digital-infrastructure-foundation/",
+   "quote": "said Herson Suindah, President Director and Group CEO of SM+ Holdings"
+  },
+  {
+   "from": "andre-pratama",
+   "to": "smplus-sentra-data-persada",
+   "relation": "director_of",
+   "detail": "Director of SMSDP (Dec 2023).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://dssa.co.id/documents/1__KI_B_Ind_B_Eng_final2.pdf",
+   "quote": "Director : Andre Pratama"
+  },
+  {
+   "from": "bill-cheng",
+   "to": "sm-plus",
+   "relation": "director_of",
+   "detail": "LG CNS's photo caption for the Aug 2025 SMX01 contract calls him chairman ('회장') of SM+; SM+'s own Apr 2024 release calls him Sinar Mas Senior Advisor.",
+   "evidence": "company_claim",
+   "date": "2025-08",
+   "source_url": "https://biz.newdaily.co.kr/site/data/html/2025/08/06/2025080600034.html",
+   "quote": "빌쳉(Bill Cheng) 회장"
+  },
+  {
+   "from": "timotius-max-sulaiman",
+   "to": "dssa",
+   "relation": "director_of",
+   "detail": "DSSA Director appointed in 2025 (fibre infrastructure, pay TV and internet).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "Direktur/Director - Timotius Max Sulaiman, S.E."
+  },
+  {
+   "from": "timotius-max-sulaiman",
+   "to": "morarepublic",
+   "relation": "director_of",
+   "detail": "President Director (Direktur Utama) of MoraRepublic from 22 Apr 2026.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://dssa.co.id/en/press-release/morarepublic-resmi-berdiri-siap-dukung-percepatan-dan-pemerataan-ekosistem-digital-di-indonesia-1776942340722",
+   "quote": "Timotius M. Sulaiman, SE, Direktur Utama PT Ekamas Mora Republik Tbk"
+  },
+  {
+   "from": "marlo-budiman",
+   "to": "dssa",
+   "relation": "director_of",
+   "detail": "DSSA Vice President Director, first appointed at the AGM of 10 Jun 2026.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://dssa.co.id/en/board-of-directors",
+   "quote": "He was first appointed as Director of the Company based on the resolution of the Company’s AGM on June 10, 2026."
+  },
+  {
+   "from": "donghyup-han",
+   "to": "lg-sinar-mas",
+   "relation": "director_of",
+   "detail": "Head (대표) of LG Sinar Mas from its launch; formerly ran LG CNS's Indonesia and China subsidiaries.",
+   "evidence": "confirmed",
+   "date": "2024-09",
+   "source_url": "https://www.lg.co.kr/media/release/28124",
+   "quote": "한동협 법인장이 대표직을 맡았다"
+  },
+  {
+   "from": "ariawan",
+   "to": "lg-sinar-mas",
+   "relation": "director_of",
+   "detail": "Director and COO of LG Sinar Mas.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://smplus.com/from-ai-infrastructure-to-connectivity-sm-data-centers-lg-sinar-mas-advances-partnerships-at-ignite-pro-and-batic-2026/",
+   "quote": "Ariawan, Director & COO of LG Sinar Mas"
+  },
+  {
+   "from": "hyun-shin-gyoon",
+   "to": "lg-cns",
+   "relation": "director_of",
+   "detail": "CEO of LG CNS.",
+   "evidence": "confirmed",
+   "date": "2025-08",
+   "source_url": "https://www.lg.co.kr/media/release/29226",
+   "quote": "LG CNS CEO 현신균 사장"
+  },
+  {
+   "from": "yong-sik-kim",
+   "to": "kira",
+   "relation": "director_of",
+   "detail": "CEO of KIRA.",
+   "evidence": "confirmed",
+   "date": "2026-05",
+   "source_url": "https://smplus.com/sm-data-centers-kira-and-lg-sinar-mas-mark-smx01-topping-off-strengthening-indonesias-digital-infrastructure-foundation/",
+   "quote": "said Yong Sik Kim, CEO of KIRA"
+  },
+  {
+   "from": "muktar-widjaja",
+   "to": "puradelta-lestari",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner of DMAS (term 2025-2028).",
+   "evidence": "confirmed",
+   "date": "2025-04",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Presiden Komisaris Muktar Widjaja"
+  },
+  {
+   "from": "muktar-widjaja",
+   "to": "sinarmas-land",
+   "relation": "director_of",
+   "detail": "Chief Executive Officer of Sinarmas Land Ltd since 2006 (director since 1997).",
+   "evidence": "confirmed",
+   "date": "2006",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Chief Executive Officer of Sinarmas Land Ltd (since 2006)"
+  },
+  {
+   "from": "muktar-widjaja",
+   "to": "bumi-serpong-damai",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner of BSDE since 2007.",
+   "evidence": "confirmed",
+   "date": "2007",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "President Commissioner of PT Bumi Serpong Damai Tbk"
+  },
+  {
+   "from": "muktar-widjaja",
+   "to": "golden-agri-resources",
+   "relation": "director_of",
+   "detail": "Executive Director and President Director of Golden Agri-Resources since 2018.",
+   "evidence": "confirmed",
+   "date": "2018",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Direktur Eksekutif & Direktur Utama Golden Agri Resources"
+  },
+  {
+   "from": "muktar-widjaja",
+   "to": "dssa",
+   "relation": "commissioner_of",
+   "detail": "Vice President Commissioner of DSSA, 2011-2013.",
+   "evidence": "confirmed",
+   "date": "2011",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Vice President Commissioner of PT Dian Swastatika Sentosa"
+  }
+ ],
+ "operators": [
+  "SM+ (Sinar Mas)"
+ ],
+ "counts": {
+  "entities": 114,
+  "links": 146,
+  "confirmed": 78,
+  "dropped": 0
+ }
+}

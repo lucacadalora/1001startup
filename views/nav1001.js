@@ -1,4 +1,5 @@
 'use strict';
+const { dcLive } = require('../lib/dclive');
 /**
  * ONE header for every 1001startup.id page. Five views used to carry their own
  * copy of this block and they had already drifted apart (each page showed a
@@ -39,6 +40,7 @@ const NAV = [
     key: 'census', label: 'Census', id: 'Sensus', items: [
       { label: 'Sectors', id: 'Sektor', desc: 'The census grouped by what companies build', id_desc: 'Sensus dikelompokkan menurut apa yang dibangun tiap perusahaan', href: '/sector' },
       { label: 'State companies (BUMN)', id: 'BUMN', desc: '42 BUMN on six yardsticks, as a logo quadrant', id_desc: '42 BUMN pada enam tolok ukur, dalam kuadran logo', href: '/bumn' },
+      { label: 'Data centres', id: 'Pusat data', desc: 'Who powers them, and the companies that own and build them', id_desc: 'Siapa yang memasok listriknya, dan perusahaan di baliknya', href: '/data-center' },
       { label: 'The monthly report', id: 'Laporan bulanan', desc: 'Four findings from the census, figures frozen', id_desc: 'Empat temuan dari sensus, angkanya dibekukan', href: '/report' },
       { label: 'Billion-dollar startups', id: 'Startup unicorn', desc: 'Every census company valued at US$1B or more', id_desc: 'Perusahaan sensus bervaluasi US$1 miliar ke atas', href: '/unicorn' },
       { label: 'Valuation', id: 'Valuasi', desc: 'What the combined figure contains', id_desc: 'Isi angka valuasi gabungan', href: '/coverage#valuation' },
@@ -84,7 +86,7 @@ function header(active, opts) {
     if (!n.items) return `<a${on ? ` class="${on.trim()}"` : ''} href="${esc(PF + n.href)}">${esc(L(n.label, n.id))}</a>`;
     return `<div class="dd${n.align === 'r' ? ' r' : ''}">
       <button class="dd-b${on}" type="button" aria-expanded="false">${esc(L(n.label, n.id))}<span class="cv" aria-hidden="true"></span></button>
-      <div class="dd-p"><div class="dd-i">${n.items.map(item).join('')}</div></div>
+      <div class="dd-p"><div class="dd-i">${n.items.filter((it) => it.href !== '/data-center' || dcLive()).map(item).join('')}</div></div>
     </div>`;
   }).join('');
   /* The language switch. Real links, no JS: EN is the bare URL, ID the /id

@@ -1,0 +1,2219 @@
+{
+ "slug": "neutradc",
+ "title": "NeutraDC",
+ "order": 3,
+ "center": "neutradc",
+ "bottom_line": "NeutraDC (PT Telkom Data Ekosistem) has been 100% Telkom since Telkom bought Telkomsigma's last 19.19% in September 2026, and Telkom (52% held through Danantara) is now weighing binding offers to sell a stake by end-2026, while its Batam growth site is already a joint venture with Singtel's Nxera (35.63%) and Medco Power (about 3%). All firm power comes from PLN: its GIIC 150 kV data-centre substation feeds Cikarang (plus an August 2026 MoU for up to 200 MW more) and a 90 MVA premium PLN Batam contract feeds Batam, while the green supply is still certificates and MoUs (PLN RECs, Pertamina, Medco solar). State contractors built the shells (PT PP at Cikarang for Rp314 bn, a PP-Adhi joint operation at Batam for Rp746 bn), and ZTE and Huawei hold the \"Delta Project\" fit-out contracts that most likely sit in Cikarang.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:20:42Z",
+ "entities": [
+  {
+   "id": "neutradc",
+   "name": "NeutraDC",
+   "legal_name": "PT Telkom Data Ekosistem",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Telkom's data-centre company (formerly PT Sigma Tata Sadaya, renamed TDE in 2022; NeutraDC is its brand). Runs HDC Cikarang, enterprise DCs in Serpong, Sentul and Surabaya, NeutraDC Singapore and 60% of the Batam JV: ~49.9 MW effective capacity in 1H26; 2025 revenue Rp1,594 bn, EBITDA Rp572 bn, net profit Rp150 bn. Telkom is selling a stake to a strategic partner: binding offers under evaluation, completion targeted end-2026 (the ~70% figure is an analyst estimate).",
+   "sources": [
+    "https://www.neutradc.com/about-us",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+    "https://katadata.co.id/finansial/bursa/6a9e796d86aba/progres-telkom-tlkm-jual-mayoritas-saham-neutradc-target-rampung-akhir-2026",
+    "https://www.sec.gov/Archives/edgar/data/1001807/000155837023005567/tmb-20221231x20f.htm"
+   ]
+  },
+  {
+   "id": "telkom",
+   "name": "Telkom Indonesia",
+   "legal_name": "PT Telkom Indonesia (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State-controlled telco (IDX: TLKM, NYSE: TLK). PT Danantara Asset Management holds 52.09%, the Government holds the single Dwiwarna share, the public 47.91% (31 Dec 2025). Parent of NeutraDC (100%), Telin, Telkomsigma and Mitratel (72%).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "telkomsigma",
+   "name": "Telkomsigma",
+   "legal_name": "PT Sigma Cipta Caraka",
+   "kind": "company",
+   "city": null,
+   "what": "Telkom's 100% IT-services unit. TDE was its subsidiary PT Sigma Tata Sadaya until Telkom took 99.89% in Dec 2021; it moved its Sentul, Serpong and Surabaya DCs into TDE in 2022 and sold its last 19.19% of TDE to Telkom in Sep 2026.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1650549534763_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20220421_20-F_EDGAR.pdf",
+    "https://www.sec.gov/Archives/edgar/data/1001807/000155837023005567/tmb-20221231x20f.htm",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://www.kabarbursa.com/market-hari-ini/telkom-tlkm-kantongi-100-persen-saham-tde-intip-strategi-di-baliknya"
+   ]
+  },
+  {
+   "id": "graha-telkomsigma",
+   "name": "Graha Telkomsigma",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Telkom second-tier subsidiary ('cucu usaha') that sold the Graha Telkom Sigma 1 (GTS 1) land and building to TDE for Rp555.5 bn in 2025 (affiliated transaction).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf"
+   ]
+  },
+  {
+   "id": "telin",
+   "name": "Telin",
+   "legal_name": "PT Telekomunikasi Indonesia International",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Telkom's 100% international arm (subsea cables). Telin Singapore sold its DC business to NeutraDC Singapore for US$219 m (completed 29 Feb 2024); Telkom's two other overseas DCs (Hong Kong, Timor-Leste) stay outside NeutraDC; Telin signed a carrier MSA with the Batam JV on 30 Oct 2025.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://investortrust.id/market/2734/telkom-tlkm-tuntaskan-pengalihan-bisnis-data-center-bernilai-us-219-juta",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+    "https://www.telin.net/en/company/news/neutradc-nxera-batam-and-telin-sign-msa-to-strengthen-regional-connectivity-and-data-center-collaboration"
+   ]
+  },
+  {
+   "id": "mitratel",
+   "name": "Mitratel",
+   "legal_name": "PT Dayamitra Telekomunikasi Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Telkom's 72%-owned tower company. No data-centre link to NeutraDC was found in Telkom's filings or press (one search).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "neutradc-singapore",
+   "name": "NeutraDC Singapore",
+   "legal_name": "NeutraDC Singapore Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "TDE's 100% Singapore unit, set up 7 Dec 2023; took over Telin Singapore's three DCs (17.4 MW, 90% occupied in 1H26). Office at Keppel Bay Tower; CEO Sendang Praptomo; holds a Singapore SBO telecom licence (NeutraDC claim).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1745858382424_original_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20250428_20-F_EDGAR.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://www.neutradc.com/data-center/singapore",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+    "https://investortrust.id/business/8773/perkuat-portofolio-bisnis-neutradc-selesaikan-konsolidasi-data-center-telin-singapore"
+   ]
+  },
+  {
+   "id": "tdi",
+   "name": "NeutraDC Nxera Batam (TDI)",
+   "legal_name": "PT Teknologi Data Infrastruktur",
+   "kind": "company",
+   "city": "Batam",
+   "what": "Joint venture that develops and runs the Batam campus: TDE 60% (Telkom 20-F), Singtel's Nxera ID 35.63% and Medco Power about 3% after the Dec 2025 capital call; paid-up capital about IDR 768 bn (Singtel). Registered at Gedung Telkom STO Batam.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://links.sgx.com/1.0.0/corporate-announcements/HVHTA24E2HQXCS41/889656_20260521-Ann%20LR706A.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem"
+   ]
+  },
+  {
+   "id": "hdc-cikarang",
+   "name": "HDC Cikarang",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bekasi (GIIC, Kota Deltamas)",
+   "what": "Hyperscale campus in GIIC Deltamas: three 4-storey DC buildings plus an office; site claims up to 120 MW IT. Phase-1 is 21.5 MW: 10 MW IT live at end-2025 (20-F), 15.5 MW effective in 1H26, 96% occupied and 'fully leased'; Phase-2 starts 2027. Operating since 2023; PLN MoU for up to 200 MW more (Aug 2026).",
+   "sources": [
+    "https://www.neutradc.com/data-center/jakarta-hq",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+    "https://www.neutradc.com/about-us",
+    "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw"
+   ]
+  },
+  {
+   "id": "neutradc-nxera-batam",
+   "name": "NeutraDC Nxera Batam campus (BTM-1)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Batam (Kabil, KIIE)",
+   "what": "Hyperscale campus in the Kabil Integrated Industrial Estate, owned by the TDI JV. BTM-1: 18 MW initial IT load, scalable to 54 MW; topped out 30 Oct 2025; Uptime Tier III design-certified. Telkom's 1H26 deck: 6 MW 'Live on 2H 2026', Phase-1 18 MW by 2027. BTM-1 fully committed (Gorilla anchor), BTM-2 being prepared; a Jun 2026 release calls it a 100 MW campus. Telkom put total investment at US$581 m (Oct 2023).",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+    "https://www.neutradc.com/news/60643/data-center-fully-secured-before-launch-telkom-indonesia-accelerates-expansion-of-neutradc-capacity-in-batam",
+    "https://www.neutradc.com/news/50720/the-vice-minister-of-state-owned-enterprises-supports-telkomgroups-optimistic-move-to-become-the-largest-data-center-player-in-the-region-through-neutradc",
+    "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/",
+    "https://www.neutradc.com/data-center/batam"
+   ]
+  },
+  {
+   "id": "dc-serpong",
+   "name": "NeutraDC Serpong",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Tangerang Selatan (Serpong)",
+   "what": "Enterprise DC operating since 2000: up to 14 MW IT, 7-storey DC building with its own power house. One of the '3S' enterprise DCs (Serpong, Sentul, Surabaya: ~16 MW, 78% occupied in 1H26); ex-Telkomsigma, in TDE since 2022.",
+   "sources": [
+    "https://www.neutradc.com/data-center/jakarta-hq",
+    "https://www.neutradc.com/about-us",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "dc-sentul",
+   "name": "NeutraDC Sentul",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bogor (Sentul City)",
+   "what": "Enterprise DC acquired in 2012: up to 5.5 MW IT, 4-storey DC building with power house; ex-Telkomsigma, in TDE since 2022. Operating.",
+   "sources": [
+    "https://www.neutradc.com/data-center/jakarta-hq",
+    "https://www.neutradc.com/about-us",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "dc-surabaya",
+   "name": "NeutraDC Surabaya",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Surabaya (Citraland, Lakarsantri)",
+   "what": "Enterprise DC operating since 2008: up to 3 MW IT; ex-Telkomsigma, in TDE since 2022. Operating.",
+   "sources": [
+    "https://www.neutradc.com/data-center/jakarta-hq",
+    "https://www.neutradc.com/about-us",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "sng-3",
+   "name": "NeutraDC SNG-3",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Singapore (8 Sunview Drive)",
+   "what": "Flagship Singapore DC opened 2016: 16.8 MW IT, Tier IV design and Tier III facility certificates; ex-Telin Singapore. Operating.",
+   "sources": [
+    "https://www.neutradc.com/data-center/singapore",
+    "https://www.neutradc.com/about-us"
+   ]
+  },
+  {
+   "id": "sng-1",
+   "name": "NeutraDC SNG-1",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Singapore (Changi North Way)",
+   "what": "Singapore DC opened 2011: 420 kW IT, Tier III design; ex-Telin Singapore. Operating.",
+   "sources": [
+    "https://www.neutradc.com/data-center/singapore",
+    "https://www.neutradc.com/about-us"
+   ]
+  },
+  {
+   "id": "sng-2",
+   "name": "NeutraDC SNG-2",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Singapore (Tai Seng Avenue)",
+   "what": "Singapore DC opened 2012: 142 kW IT; ex-Telin Singapore. Operating.",
+   "sources": [
+    "https://www.neutradc.com/data-center/singapore",
+    "https://www.neutradc.com/about-us"
+   ]
+  },
+  {
+   "id": "neucentrix",
+   "name": "neuCentrIX edge DCs",
+   "legal_name": null,
+   "kind": "brand",
+   "city": null,
+   "what": "Telkom's edge-DC brand, sold by NeutraDC as 'EdgeDC': 26 sites and 3,060 racks (Telkom 1H26 deck); NeutraDC's page says 20 cities and 6 MW; Jayapura (Dec 2025) is the 28th site. Telkom builds many of them in converted telephone-exchange (STO) buildings (Bisnis 2021, search-level); the list of converted sites isn't published.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+    "https://www.neutradc.com/data-center/jakarta-hq",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+    "https://teknologi.bisnis.com/read/20210716/101/1418486/pusat-data-edge-telkom-tlkm-cocok-buat-5g"
+   ]
+  },
+  {
+   "id": "ai-1gw",
+   "name": "AI data-centre plan (up to 1 GW)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": null,
+   "what": "Announced programme: AI data centres of up to 1 GW in Batam, Jabodetabek, Java and Manado, phased, plus 26 edge DCs in 21 cities. Presented by NeutraDC's president director at Danantara's AI data-centre and electrification workshop (reported 23 Sep 2026). No sites, dates, contracts or investment named.",
+   "sources": [
+    "https://investortrust.id/market/117171/danantara-dan-telkom-petakan-kebutuhan-data-center-ai-hingga-1-gw"
+   ]
+  },
+  {
+   "id": "dc-manado",
+   "name": "NeutraDC Manado (planned)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Manado",
+   "what": "Planned large DC in Manado on Telkom's eastern cable route; feasibility study, build in 3-4 years (Bisnis, 26 Aug 2026; page returns 403, search-level only).",
+   "sources": [
+    "https://teknologi.bisnis.com/read/20260826/101/1999034/telkom-neutradc-bakal-bangun-data-center-di-manado"
+   ]
+  },
+  {
+   "id": "dam",
+   "name": "Danantara Asset Management",
+   "legal_name": "PT Danantara Asset Management (Persero)",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Danantara's operational holding (renamed from PT Biro Klasifikasi Indonesia); direct holder of 52.09% of Telkom.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "danantara",
+   "name": "Danantara Indonesia",
+   "legal_name": "Badan Pengelola Investasi Daya Anagata Nusantara (BPI Danantara)",
+   "kind": "fund",
+   "city": "Jakarta",
+   "what": "Indonesia's sovereign investment agency, wholly owned by the Government; majority holder of DAM. Hosted the Sep 2026 workshop where NeutraDC set out its 1 GW AI plan.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://investortrust.id/market/117171/danantara-dan-telkom-petakan-kebutuhan-data-center-ai-hingga-1-gw"
+   ]
+  },
+  {
+   "id": "gov-indonesia",
+   "name": "Government of Indonesia",
+   "legal_name": null,
+   "kind": "government",
+   "city": "Jakarta",
+   "what": "Holds Telkom's single Series A Dwiwarna share and controls it through BPI Danantara and DAM.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "singtel",
+   "name": "Singtel",
+   "legal_name": "Singapore Telecommunications Limited",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore telco. Its subsidiary Nxera ID owns 35.63% of TDI; Singtel's own indirect interest is 30.36% (29 Dec 2025).",
+   "sources": [
+    "https://links.sgx.com/1.0.0/corporate-announcements/HVHTA24E2HQXCS41/889656_20260521-Ann%20LR706A.pdf"
+   ]
+  },
+  {
+   "id": "nxera-id",
+   "name": "Nxera ID",
+   "legal_name": "Nxera ID Pte. Ltd. (formerly ST Dynamo ID Pte. Ltd.)",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singtel subsidiary that holds the TDI stake: 35% through the 2023 and 2024 share issues, 35.63% after the Dec 2025 capital call.",
+   "sources": [
+    "https://links.sgx.com/1.0.0/corporate-announcements/HVHTA24E2HQXCS41/889656_20260521-Ann%20LR706A.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1745858382424_original_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20250428_20-F_EDGAR.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "nxera",
+   "name": "Nxera (Singtel Digital InfraCo)",
+   "legal_name": null,
+   "kind": "brand",
+   "city": "Singapore",
+   "what": "Singtel's regional data-centre business, run with Singtel Digital InfraCo; co-brand and JV partner of NeutraDC Nxera Batam. CEO Bill Chang, CFO Cyndi Pei.",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+    "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia"
+   ]
+  },
+  {
+   "id": "medco-power",
+   "name": "Medco Power",
+   "legal_name": "PT Medco Power Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesian IPP (gas and renewables) in the MedcoEnergi Group. TDI shareholder (5% of the 2023 and 2024 share issues, Rp31 bn + Rp40 bn; skipped the Dec 2025 call). Renewable partner for Batam: JV MoU (Jun 2022), green-energy MoU (Jul 2023) and renewable-supply MoU (7 Jul 2025); developing solar in KIIE.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1745858382424_original_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20250428_20-F_EDGAR.pdf",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://links.sgx.com/1.0.0/corporate-announcements/HVHTA24E2HQXCS41/889656_20260521-Ann%20LR706A.pdf",
+    "https://investortrust.id/business/71954/neutradc-nxera-gandeng-medco-power-hadirkan-energi-terbarukan-untuk-data-center-berbasis-ai",
+    "https://www.neutradc.com/news/50780/neutradc-data-center-commitment-to-implemented-renewable-energy-principles",
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "gorilla",
+   "name": "Gorilla Technology",
+   "legal_name": "Gorilla Technology Group Inc.",
+   "kind": "company",
+   "city": "London",
+   "what": "Nasdaq-listed (GRRR) AI-infrastructure firm. Anchor tenant at BTM-1: 5.5 MW, scaling to ~18 MW by Nov 2026 (May 2026). In Jun 2026 it signed a 5-year AI compute contract worth ~US$2.5 bn with an unnamed 'high investment-grade' customer, hosted at NeutraDC Batam (~1,000 B300 GPU servers), with debt offers covering ~70% of project cost (lenders unnamed).",
+   "sources": [
+    "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia",
+    "https://www.newsfilecorp.com/release/302522/Gorilla-Technology-Secures-Transformational-US2.5-Billion-FiveYear-AI-GPUaaS-Compute-Contract-Converting-AI-Data-Centre-Capacity-into-LongTerm-Contracted-Revenue",
+    "https://www.neutradc.com/news/60643/data-center-fully-secured-before-launch-telkom-indonesia-accelerates-expansion-of-neutradc-capacity-in-batam"
+   ]
+  },
+  {
+   "id": "permana-net",
+   "name": "Permana Net",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "ISP; signed a Master Service Agreement with NeutraDC Nxera Batam on 30 Oct 2025.",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem"
+   ]
+  },
+  {
+   "id": "super-sistem",
+   "name": "Super Sistem",
+   "legal_name": "Super Sistem Cruz Pte. Ltd. (Super Sistem Group)",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Subsea-cable developer: Batam MSA (Oct 2025) and MoU with NeutraDC Singapore (Nov 2025) to land its SSBS Batam-Singapore cable (part of the 4,700 km BTI system) directly at NeutraDC Singapore and NeutraDC Batam.",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+    "https://www.neutradc.com/news/51138/neutradc-singapore-and-super-sistem-strengthen-regional-digital-connectivity-ecosystem"
+   ]
+  },
+  {
+   "id": "litup",
+   "name": "LitUp Network Indonesia",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Network operator; Batam MSA (30 Oct 2025).",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem"
+   ]
+  },
+  {
+   "id": "iforte",
+   "name": "Iforte",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Network operator; Batam MSA (30 Oct 2025).",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem"
+   ]
+  },
+  {
+   "id": "matrix-nap",
+   "name": "Matrix NAP Info",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Carrier and internet-exchange operator; Batam MSA (30 Oct 2025).",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem"
+   ]
+  },
+  {
+   "id": "moratelindo",
+   "name": "Moratelindo",
+   "legal_name": "PT Mora Telematika Indonesia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Fibre carrier and DC operator; Batam MSA (30 Oct 2025).",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem"
+   ]
+  },
+  {
+   "id": "seax",
+   "name": "SEAX",
+   "legal_name": "Super Sea Cable Networks Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Subsea and terrestrial network (Singapore-Batam-Malaysia); MoU with NeutraDC Singapore (Oct 2025) to connect to NeutraDC Nxera Batam.",
+   "sources": [
+    "https://www.neutradc.com/news/51100/neutradc-singapore-and-seax-strengthen-regional-connectivity-through-a-strategic-mou"
+   ]
+  },
+  {
+   "id": "sembcorp",
+   "name": "Sembcorp Development",
+   "legal_name": "Sembcorp Development Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Sembcorp Industries unit; MoU (25 Aug 2025) to develop low-carbon data centres in Indonesia, Johor and Singapore with NeutraDC, using Sembcorp's green-energy know-how.",
+   "sources": [
+    "https://www.neutradc.com/news/50853/neutradc-summit-2025-driving-global-collaboration-launching-ai-innovations-and-signing-strategic-mou",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "amd",
+   "name": "AMD",
+   "legal_name": "Advanced Micro Devices, Inc.",
+   "kind": "company",
+   "city": null,
+   "what": "GPU maker. 2024 agreement on accelerator infrastructure and GPU-as-a-Service (Telkom 20-F); MoU with NeutraDC Singapore (signed Oct, announced Nov 2025) for Instinct accelerator proofs of concept. Neutra Compute uses NVIDIA and AMD GPUs.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://www.neutradc.com/news/51119/neutradc-signs-strategic-mou-with-amd-to-drive-ai-ecosystem-integration",
+    "https://www.neutradc.com/news/60268/strategic-partnership-memorandum-signed-between-neutradc-and-ishikari-renewable-energy-data-center-no1"
+   ]
+  },
+  {
+   "id": "cirrascale",
+   "name": "Cirrascale",
+   "legal_name": "Cirrascale Pte. Ltd. / Cirrascale Cloud Services",
+   "kind": "company",
+   "city": null,
+   "what": "GPU-cloud provider; MoU (26 Aug 2024) and 2024 agreements to offer GPU-as-a-Service incl. in Singapore.",
+   "sources": [
+    "https://www.neutradc.com/news/50779/neutradc-signs-mou-with-hpe-cirrascale-and-datacanvas-limited-for-ai-ecosystem-collaboration",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "datacanvas",
+   "name": "DataCanvas",
+   "legal_name": "DataCanvas Limited",
+   "kind": "company",
+   "city": null,
+   "what": "AI data-centre operating-system and software maker; MoU (26 Aug 2024).",
+   "sources": [
+    "https://www.neutradc.com/news/50779/neutradc-signs-mou-with-hpe-cirrascale-and-datacanvas-limited-for-ai-ecosystem-collaboration",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "hpe-indonesia",
+   "name": "HPE Indonesia",
+   "legal_name": "PT Hewlett Packard Enterprise Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Hardware partner; MoU (26 Aug 2024) to supply AI computing hardware into NeutraDC's AI ecosystem.",
+   "sources": [
+    "https://www.neutradc.com/news/50779/neutradc-signs-mou-with-hpe-cirrascale-and-datacanvas-limited-for-ai-ecosystem-collaboration"
+   ]
+  },
+  {
+   "id": "naver-cloud",
+   "name": "NAVER Cloud",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Korean cloud provider; MoU with NeutraDC and Cisco (16 Feb 2023) on cloud services in Indonesia.",
+   "sources": [
+    "https://www.neutradc.com/news/50764/neutradc-naver-cloud-and-cisco-collaborate-to-boost-cloud-adoption-drive-digital-transformation-in-indonesia",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "cisco",
+   "name": "Cisco",
+   "legal_name": "Cisco Systems, Inc.",
+   "kind": "company",
+   "city": null,
+   "what": "MoU with NeutraDC and NAVER Cloud (16 Feb 2023) on secure cloud services.",
+   "sources": [
+    "https://www.neutradc.com/news/50764/neutradc-naver-cloud-and-cisco-collaborate-to-boost-cloud-adoption-drive-digital-transformation-in-indonesia",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "cmi",
+   "name": "China Mobile International",
+   "legal_name": "China Mobile International Limited",
+   "kind": "company",
+   "city": "Hong Kong",
+   "what": "China Mobile's international arm; MoU (29 Mar 2023) to bring Chinese firms to NeutraDC and explore DC development.",
+   "sources": [
+    "https://www.neutradc.com/news/50777/neutradc-enters-a-memorandum-of-understanding-mou-with-china-mobile-international"
+   ]
+  },
+  {
+   "id": "bdx-indonesia",
+   "name": "BDx Indonesia",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "DC joint venture of BDx Data Centers, Indosat and Lintasarta; MoU (21 Jan 2024) with NeutraDC to interconnect their Internet Exchanges.",
+   "sources": [
+    "https://www.neutradc.com/news/50761/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia"
+   ]
+  },
+  {
+   "id": "f5",
+   "name": "F5",
+   "legal_name": "F5, Inc.",
+   "kind": "company",
+   "city": null,
+   "what": "Application-security and delivery vendor; NeutraDC uses its technology (Telkom 20-F) and signed an MoU on AI-secure connectivity (3 Mar 2026).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://www.neutradc.com/news/60323/neutradc-partners-with-f5-inc-to-deliver-ai-secure-connectivity-solutions-for-indonesias-digital-ecosystem"
+   ]
+  },
+  {
+   "id": "ishikari-dc",
+   "name": "Ishikari RE Data Center No.1",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Ishikari (Hokkaido)",
+   "what": "15 MW Hokkaido DC led by Tokyu Fudosan, Flower Communications and Agility Asset Advisors; MoU with NeutraDC for cross-border GPU-as-a-Service and colocation (Telkom 20-F: Jan 2026).",
+   "sources": [
+    "https://www.neutradc.com/news/60268/strategic-partnership-memorandum-signed-between-neutradc-and-ishikari-renewable-energy-data-center-no1",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "lynx-analytics",
+   "name": "Lynx Analytics",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Agentic-AI framework partner of NeutraDC (2025, per Telkom 20-F).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "nus-stdct",
+   "name": "NUS STDCT",
+   "legal_name": "National University of Singapore (Sustainable Tropical Data Centre Testbed)",
+   "kind": "government",
+   "city": "Singapore",
+   "what": "NUS-led testbed for tropical, AI-ready data centres; NeutraDC joined STDCT 2.0 (five-year consortium, steering committee seat) in Dec 2025.",
+   "sources": [
+    "https://www.neutradc.com/news/51247/neutradc-joins-nus-led-sustainable-tropical-data-centre-testbed-as-partner"
+   ]
+  },
+  {
+   "id": "polibatam",
+   "name": "Batam State Polytechnic",
+   "legal_name": "Politeknik Negeri Batam",
+   "kind": "government",
+   "city": "Batam",
+   "what": "Talent-development MoU with NeutraDC Nxera Batam (13 Jun 2024).",
+   "sources": [
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "sg-edb",
+   "name": "Singapore EDB",
+   "legal_name": "Economic Development Board",
+   "kind": "government",
+   "city": "Singapore",
+   "what": "Telkom's 1H26 deck says EDB and MTI 'awarded Telkom Group to expand DC development in Singapore' (6 Jul 2026); NeutraDC is not among the four DC-CFA2 winners EDB announced on 21 Aug 2026 (search-level), so the award's form is unclear.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+    "https://www.edb.gov.sg/en/news-and-insights/four-data-centre-proposals-selected-as-part-of-second-data-centre"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "utility",
+   "city": "Jakarta",
+   "what": "State utility. Built and runs the GIIC 150 kV 'Data Center' substation that serves Telkom; power MoUs with Telkom (8 Oct 2024) and NeutraDC (11 Aug 2026, up to 200 MW more at Cikarang); sells Renewable Energy Certificates from PLTA Cirata to the Telkom group (Rp35,000/MWh, subsidiaries included).",
+   "sources": [
+    "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+    "https://investortrust.id/business/43732/neutradc-perkuat-posisi-sebagai-ai-enabler-dan-penyedia-layanan-data-center-terkemuka",
+    "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw",
+    "https://eppid.telkom.co.id/data/image_upload/page/1762853164915_20241210_TOR-Penyediaan-Renewable-Energy-Certificate_signed.pdf",
+    "https://www.indotelko.com/read/1766505240/ini-rekam-jejak-neutradc-sepanjang-2025"
+   ]
+  },
+  {
+   "id": "pln-batam",
+   "name": "PLN Batam",
+   "legal_name": "PT PLN Batam",
+   "kind": "utility",
+   "city": "Batam",
+   "what": "Batam's electricity utility. PJBTL with TDI (3 Oct 2025): premium medium-voltage 'Diamond Data Center' service up to 90 MVA, staged 2025-2028, minimum term 5 years.",
+   "sources": [
+    "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/",
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "pln-es",
+   "name": "PLN Electricity Services",
+   "legal_name": "PT PLN Electricity Services",
+   "kind": "state_firm",
+   "city": null,
+   "what": "PLN unit that co-signed NeutraDC's Cikarang power MoU (11 Aug 2026).",
+   "sources": [
+    "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw"
+   ]
+  },
+  {
+   "id": "gi-dc-giic",
+   "name": "GI 150 kV Data Center (GIIC)",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "Bekasi (Kota Deltamas)",
+   "what": "PLN's 150 kV substation for GIIC data centres: 2 x 60 MVA = 120 MVA, with 150 kV lines to Deltamas, KIIC II/Margakarya and THK (PLN spent over Rp312 bn incl. lines); completed Nov 2024; serves Amazon, Microsoft, Komdigi, Telkom and STT GDC. Elsewedy built the substation (Rp188.5 bn).",
+   "sources": [
+    "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+    "https://infobanknews.com/elsewedy-dan-pln-bangun-gardu-induk-data-center-rp1885-miliar/"
+   ]
+  },
+  {
+   "id": "pertamina-ppi",
+   "name": "Pertamina Power Indonesia",
+   "legal_name": "PT Pertamina Power Indonesia",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Pertamina's power and renewables arm. Telkom says HDC Cikarang uses renewable energy 'in collaboration with' PPI (Jul 2023); whether that is RECs, a PPA or on-site solar is not stated.",
+   "sources": [
+    "https://www.telkom.co.id/sites/news-resources/en_US/news/telkom-consistently-implements-net-zero-emissions-in-neutradc-hyperscale-data-center-construction-2049"
+   ]
+  },
+  {
+   "id": "pt-pp",
+   "name": "PT PP",
+   "legal_name": "PT PP (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State contractor. Built HDC Cikarang for Telkom (Rp314.1 bn, 30 Dec 2020-15 Mar 2022) and holds 55% of the PP-Adhi joint operation building Batam BTM-1.",
+   "sources": [
+    "https://homepage.ptpp.co.id/storage/4796/ANNUAL-REPORT-PTPP-2022.pdf",
+    "https://homepage.ptpp.co.id/storage/8538/PTPP---AR-2025---260504-low.pdf"
+   ]
+  },
+  {
+   "id": "adhi-karya",
+   "name": "Adhi Karya",
+   "legal_name": "PT Adhi Karya (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State contractor; 45% of the PP-Adhi joint operation for Batam BTM-1 (its share Rp335.9 bn).",
+   "sources": [
+    "https://adhi.co.id/wp-content/uploads/2026/07/ADHI-LK_30-JUNI-2026.pdf"
+   ]
+  },
+  {
+   "id": "kso-pp-adhi",
+   "name": "KSO PP-Adhi",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Joint operation (KSO) of PT PP (55%) and Adhi Karya (45%), general contractor for TDI's BTM-1 ('Project Bromo'): Rp746.46 bn. Dates differ by filing: PP 10 Dec 2024-1 Feb 2026, Telkom 3 Jan 2025-26 Feb 2026, Adhi to 2 Apr 2026. Sponsor of NeutraDC Summit 2025.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://homepage.ptpp.co.id/storage/8538/PTPP---AR-2025---260504-low.pdf",
+    "https://adhi.co.id/wp-content/uploads/2026/07/ADHI-LK_30-JUNI-2026.pdf",
+    "https://www.neutradc.com/news/50853/neutradc-summit-2025-driving-global-collaboration-launching-ai-innovations-and-signing-strategic-mou"
+   ]
+  },
+  {
+   "id": "nusacipta",
+   "name": "Nusacipta Indonesia",
+   "legal_name": "PT Nusacipta Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Piling and cut-and-fill contractor for TDI's 'Bromo Project' in Batam (1 Jul 2024-12 Jun 2025).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1745858382424_original_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20250428_20-F_EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "zte",
+   "name": "ZTE Indonesia",
+   "legal_name": "PT ZTE Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "TDE's general contractor for 'Delta Project' Level-2 fit-out works (14 Oct 2024-14 Oct 2027).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "huawei",
+   "name": "Huawei Tech Investment",
+   "legal_name": "PT Huawei Tech Investment",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "TDE's general contractor for 'Delta Project' Level-3 and Level-4 fit-out works (24 Mar 2025-23 Mar 2028); sponsor of NeutraDC Summit 2025.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+    "https://www.neutradc.com/news/50853/neutradc-summit-2025-driving-global-collaboration-launching-ai-innovations-and-signing-strategic-mou"
+   ]
+  },
+  {
+   "id": "elsewedy",
+   "name": "Elsewedy Electric Indonesia",
+   "legal_name": "PT Elsewedy Electric Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Built PLN's 150 kV 'KTT Data Center' substation in Kota Deltamas (Rp188.5 bn).",
+   "sources": [
+    "https://infobanknews.com/elsewedy-dan-pln-bangun-gardu-induk-data-center-rp1885-miliar/"
+   ]
+  },
+  {
+   "id": "uptime",
+   "name": "Uptime Institute",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Data-centre tier certifier: BTM-1 holds a Tier III Certification of Design Documents (Oct 2025); NeutraDC says Cikarang is certified Tier III and Tier IV.",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+    "https://www.neutradc.com/about-us"
+   ]
+  },
+  {
+   "id": "kabil-indonusa",
+   "name": "Kabil Indonusa Estate",
+   "legal_name": "PT Kabil Indonusa Estate",
+   "kind": "company",
+   "city": "Batam",
+   "what": "Estate company of Citramas Group's 538 ha Kabil Integrated Industrial Estate (with PT Kabil Citranusa); water supply MoU with NeutraDC Nxera Batam (13 Jun 2024).",
+   "sources": [
+    "https://www.citramas.com/kabil_integrated_industrial_estate",
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "citramas",
+   "name": "Citramas Group",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Batam",
+   "what": "Batam business group founded 1980; owns the Kabil Integrated Industrial Estate and Nongsa Digital Park.",
+   "sources": [
+    "https://www.citramas.com/",
+    "https://www.citramas.com/citramas-group",
+    "https://www.citramas.com/kabil_integrated_industrial_estate"
+   ]
+  },
+  {
+   "id": "puradelta",
+   "name": "Puradelta Lestari (Kota Deltamas)",
+   "legal_name": "PT Puradelta Lestari Tbk",
+   "kind": "company",
+   "city": "Bekasi",
+   "what": "Developer of Kota Deltamas/GIIC. Its ~300 ha Data Center Zone has 993 MVA of PLN supply and 15 DC tenants including PT Telkom Indonesia Tbk (end-2025).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "hsbc-id",
+   "name": "HSBC Indonesia",
+   "legal_name": "PT Bank HSBC Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Short-term credit lines (opened 2018-2023, Rp2,588 bn in total across seven Telkom units including TDE, maturing Jan-Oct 2026). TDE's drawn share isn't disclosed; the only lender to TDE found.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf"
+   ]
+  },
+  {
+   "id": "goldman",
+   "name": "Goldman Sachs",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Reported adviser (2024) on finding an investor for Telkom's DC business (search-level).",
+   "sources": [
+    "https://www.datacenterdynamics.com/en/news/telkom-indonesia-selects-investment-advisors-to-find-backer-for-data-center-business/"
+   ]
+  },
+  {
+   "id": "mandiri-sekuritas",
+   "name": "Mandiri Sekuritas",
+   "legal_name": "PT Mandiri Sekuritas",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Reported adviser (2024) on finding an investor for Telkom's DC business (search-level).",
+   "sources": [
+    "https://www.datacenterdynamics.com/en/news/telkom-indonesia-selects-investment-advisors-to-find-backer-for-data-center-business/"
+   ]
+  },
+  {
+   "id": "andreuw",
+   "name": "Andreuw Th.A.F",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CEO of TDE / NeutraDC Group from 2022 (BATIC 2022) to at least Jun 2026; signed NeutraDC's MoUs with CMI, BDx, HPE/Cirrascale/DataCanvas, Sembcorp and F5. Earlier led at Telin (Singapore) and held roles at Telkomsel (speaker bio, no titles or years).",
+   "sources": [
+    "https://www.neutradc.com/news/50711/telkom-leads-the-strengthening-data-center-ecosystem-through-neutradc-and-neucentrix",
+    "https://www.neutradc.com/news/50777/neutradc-enters-a-memorandum-of-understanding-mou-with-china-mobile-international",
+    "https://www.neutradc.com/news/60643/data-center-fully-secured-before-launch-telkom-indonesia-accelerates-expansion-of-neutradc-capacity-in-batam",
+    "https://www.ecommerceexpo-dmexco.asia/speakers/andreuw-thaf"
+   ]
+  },
+  {
+   "id": "rakhmad",
+   "name": "Rakhmad Tunggal Afifuddin",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Director of NeutraDC Group (named Aug-Sep 2026); signed the Cikarang PLN MoU and presented the 1 GW AI plan.",
+   "sources": [
+    "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw",
+    "https://investortrust.id/market/117171/danantara-dan-telkom-petakan-kebutuhan-data-center-ai-hingga-1-gw"
+   ]
+  },
+  {
+   "id": "bogi",
+   "name": "Bogi Witjaksono",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Telkom Director of Wholesale & International Service (28 May 2021-27 May 2025); Commissioner of TDE, Telin and Telkomsat from 2023.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf"
+   ]
+  },
+  {
+   "id": "michael-adiguna",
+   "name": "Michael Adiguna",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Commissioner of TDE; Telkom VP Wholesale Product & Service (2021-); member of Telkom's integrated-governance committee (Apr 2024-).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf"
+   ]
+  },
+  {
+   "id": "dian-siswarini",
+   "name": "Dian Siswarini",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Director of Telkom since 27 May 2025; told parliament on 24 Jun 2026 that Telkom is seeking a strategic partner for its DC business.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+    "https://investortrust.id/market/107437/potensi-cuan-di-bisnis-ai-dan-cloud-telkom-tlkm-cari-mitra-data-center",
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem"
+   ]
+  },
+  {
+   "id": "seno-soemadji",
+   "name": "Seno Soemadji",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Telkom Director of Strategic Business Development & Portfolio since 27 May 2025; Telkom's voice on NeutraDC deals (Gorilla, F5, Danantara workshop).",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+    "https://www.neutradc.com/news/60643/data-center-fully-secured-before-launch-telkom-indonesia-accelerates-expansion-of-neutradc-capacity-in-batam",
+    "https://www.neutradc.com/news/60323/neutradc-partners-with-f5-inc-to-deliver-ai-secure-connectivity-solutions-for-indonesias-digital-ecosystem",
+    "https://investortrust.id/market/117171/danantara-dan-telkom-petakan-kebutuhan-data-center-ai-hingga-1-gw"
+   ]
+  },
+  {
+   "id": "budi-satria",
+   "name": "Budi Satria Dharma Purba",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Telkom Director of Wholesale & International Service since 12 Dec 2025 (spokesman on the NeutraDC stake sale); CEO of Telin in 2024.",
+   "sources": [
+    "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+    "https://katadata.co.id/finansial/bursa/6a9e796d86aba/progres-telkom-tlkm-jual-mayoritas-saham-neutradc-target-rampung-akhir-2026",
+    "https://investortrust.id/business/8773/perkuat-portofolio-bisnis-neutradc-selesaikan-konsolidasi-data-center-telin-singapore"
+   ]
+  },
+  {
+   "id": "sendang",
+   "name": "Sendang Praptomo",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CEO of NeutraDC Singapore (2024-2025); signed the AMD, SEAX and NUS agreements.",
+   "sources": [
+    "https://investortrust.id/business/8773/perkuat-portofolio-bisnis-neutradc-selesaikan-konsolidasi-data-center-telin-singapore",
+    "https://www.neutradc.com/news/51119/neutradc-signs-strategic-mou-with-amd-to-drive-ai-ecosystem-integration",
+    "https://www.neutradc.com/news/51100/neutradc-singapore-and-seax-strengthen-regional-connectivity-through-a-strategic-mou",
+    "https://www.neutradc.com/news/51247/neutradc-joins-nus-led-sustainable-tropical-data-centre-testbed-as-partner"
+   ]
+  },
+  {
+   "id": "indrama",
+   "name": "Indrama Yusuf Muda Purba",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Director / CEO of PT Teknologi Data Infrastruktur (NeutraDC Nxera Batam), 2023-2026; signed the PLN Batam PJBTL and the Medco renewable MoU.",
+   "sources": [
+    "https://www.neutradc.com/news/50708/batam-is-projected-to-become-the-central-of-data-center-industry-growth-in-the-southeast-asia-region",
+    "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/",
+    "https://investortrust.id/business/71954/neutradc-nxera-gandeng-medco-power-hadirkan-energi-terbarukan-untuk-data-center-berbasis-ai",
+    "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia"
+   ]
+  },
+  {
+   "id": "agustinus",
+   "name": "Agustinus Budi Wibowo",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CFRO of NeutraDC Nxera Batam (2024).",
+   "sources": [
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "kevin-wong",
+   "name": "Kevin Wong Ka Vin",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "COO of NeutraDC Nxera Batam (2024).",
+   "sources": [
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "iskandar",
+   "name": "Iskandar Sastrowiranu",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Nxera's Country Manager, Indonesia (Mar 2026-) and COO of NeutraDC Nxera; earlier COO of Greenex Data Center, director of Datagarda, and roles at Schneider Electric and Emerson Network Power.",
+   "sources": [
+    "https://nxera-dc.com/about-us/leadership/iskandar-sastrowiranu"
+   ]
+  },
+  {
+   "id": "cyndi-pei",
+   "name": "Cyndi Pei",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CFO of Singtel Digital InfraCo and Nxera; Commissioner of NeutraDC Nxera Batam (2026).",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+    "https://www.neutradc.com/news/60643/data-center-fully-secured-before-launch-telkom-indonesia-accelerates-expansion-of-neutradc-capacity-in-batam",
+    "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia"
+   ]
+  },
+  {
+   "id": "bill-chang",
+   "name": "Bill Chang",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CEO of Singtel's Digital InfraCo and Nxera; Nxera's lead on the Batam JV.",
+   "sources": [
+    "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "imron-gazali",
+   "name": "Imron Gazali",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Director & COO of PT Medco Power Indonesia (2024).",
+   "sources": [
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "femi-sastrena",
+   "name": "Femi Sastrena",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Director, Chief Commercial and Business Development Officer of Medco Power; signed the 7 Jul 2025 renewable MoU.",
+   "sources": [
+    "https://investortrust.id/business/71954/neutradc-nxera-gandeng-medco-power-hadirkan-energi-terbarukan-untuk-data-center-berbasis-ai"
+   ]
+  },
+  {
+   "id": "kwin-fo",
+   "name": "Kwin Fo",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Director of PLN Batam; signed the 90 MVA PJBTL with TDI (3 Oct 2025).",
+   "sources": [
+    "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/"
+   ]
+  },
+  {
+   "id": "susiana-mutia",
+   "name": "Susiana Mutia",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Director of PLN Electricity Services; signed the Cikarang MoU (11 Aug 2026).",
+   "sources": [
+    "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw"
+   ]
+  },
+  {
+   "id": "peters-vincen",
+   "name": "Peters Vincen",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "President Director of PT Kabil Indonusa Estate (2024).",
+   "sources": [
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "kris-wiluan",
+   "name": "Kris Wiluan",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Commissioner of PT Kabil Indonusa Estate (2024).",
+   "sources": [
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "jay-chandan",
+   "name": "Jay Chandan",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Chairman & CEO of Gorilla Technology.",
+   "sources": [
+    "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "gov-indonesia",
+   "to": "telkom",
+   "relation": "owns",
+   "detail": "Holds Telkom's single Series A Dwiwarna share (special rights); ultimate controlling shareholder.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "Government - 0.00% (one share)"
+  },
+  {
+   "from": "gov-indonesia",
+   "to": "danantara",
+   "relation": "owns",
+   "detail": "BPI Danantara is wholly owned by the Government (Law 16/2025).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "BPI Danantara, an institution wholly owned by the Government"
+  },
+  {
+   "from": "danantara",
+   "to": "dam",
+   "relation": "owns",
+   "detail": "GR 16/2025 moved DAM's Series B shares to BPI Danantara, making it DAM's majority shareholder.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "resulting in BPI Danantara becoming DAM’s majority shareholder"
+  },
+  {
+   "from": "dam",
+   "to": "telkom",
+   "relation": "owns",
+   "detail": "52.09% of Telkom at 31 Dec 2025 (public 47.91%).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "– PT Danantara Asset Management – 52.09%"
+  },
+  {
+   "from": "telkom",
+   "to": "neutradc",
+   "relation": "owns",
+   "detail": "100%. Telkom bought Telkomsigma's 19.19% (1,445,020 Series A and 2,015,637,361,776 Series B shares) in Sep 2026 to support its 'Unlock DC Co' strategic-partner programme, so it now holds all 10.5 tn TDE shares directly (IDX disclosure via Kabarbursa).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://www.kabarbursa.com/market-hari-ini/telkom-tlkm-kantongi-100-persen-saham-tde-intip-strategi-di-baliknya",
+   "quote": "10.504.517.594.408 lembar atau 100 persen saham TDE menjadi milik Telkom"
+  },
+  {
+   "from": "telkom",
+   "to": "neutradc",
+   "relation": "invested_in",
+   "detail": "Capital increase of Rp1,626.9 bn on 4 Jun 2024 to add 18 MW of IT load at Cikarang.",
+   "evidence": "confirmed",
+   "date": "2024-06",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "increase Telkom’s contributed capital in TDE by Rp1,626,900,000,000"
+  },
+  {
+   "from": "telkomsigma",
+   "to": "neutradc",
+   "relation": "owns",
+   "detail": "TDE (then PT Sigma Tata Sadaya) was Sigma's subsidiary until Telkom's takeover on 27 Dec 2021 (Telkom 99.89%, Sigma diluted to 0.11%, Rp2,106 bn paid in cash and in kind); Sigma later held 19.19% until Sep 2026.",
+   "evidence": "confirmed",
+   "date": "2021-12",
+   "source_url": "https://www.sec.gov/Archives/edgar/data/1001807/000155837023005567/tmb-20221231x20f.htm",
+   "quote": "TDE was previously Sigma’s subsidiary"
+  },
+  {
+   "from": "telkom",
+   "to": "telkomsigma",
+   "relation": "owns",
+   "detail": "100% subsidiary.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "PT Sigma Cipta Caraka (“Sigma”) Hardware and software computer consultation service 1988 100 100"
+  },
+  {
+   "from": "telkom",
+   "to": "telin",
+   "relation": "owns",
+   "detail": "100% subsidiary.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "PT Telekomunikasi Indonesia International (“Telin”) International telecommunication and information services 1995 100 100"
+  },
+  {
+   "from": "telkom",
+   "to": "mitratel",
+   "relation": "owns",
+   "detail": "72% of the tower company (no DC link to NeutraDC found).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "Leasing of towers and digital support services for mobile 1995 72 72"
+  },
+  {
+   "from": "telkomsigma",
+   "to": "graha-telkomsigma",
+   "relation": "owns",
+   "detail": "Telkom's annual report calls Graha Telkomsigma a second-tier subsidiary ('cucu usaha'); its name points to Telkomsigma as the direct parent (not stated).",
+   "evidence": "inferred",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Graha Telkomsigma merupakan cucu usaha"
+  },
+  {
+   "from": "neutradc",
+   "to": "neutradc-singapore",
+   "relation": "owns",
+   "detail": "100%; TDE set up NeutraDC Singapore on 7 Dec 2023 with one S$1 share.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1745858382424_original_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20250428_20-F_EDGAR.pdf",
+   "quote": "TDE established NeutraDC Singapore which is domiciled in Singapore on December 7, 2023"
+  },
+  {
+   "from": "neutradc",
+   "to": "tdi",
+   "relation": "owns",
+   "detail": "60% (Telkom 20-F, 2024 and 2025). TDE took 2,451,319 shares (Rp256 bn) in Oct 2023, 4,830,000 (Rp483 bn) in Oct 2024 and 4,620,000 (Rp462 bn) in Dec 2025; with Singtel's 35.63% our arithmetic puts TDE near 61% after Dec 2025.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "PT Teknologi Data Infrastruktur (“TDI”) Telecommunication service and data center 2013 60 60"
+  },
+  {
+   "from": "singtel",
+   "to": "nxera-id",
+   "relation": "owns",
+   "detail": "Singtel subsidiary. Singtel's indirect interest in TDI (30.36%) vs Nxera ID's 35.63% implies Singtel holds about 85% of the Nxera ID chain (our arithmetic).",
+   "evidence": "confirmed",
+   "date": "2024-05",
+   "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/HVHTA24E2HQXCS41/889656_20260521-Ann%20LR706A.pdf",
+   "quote": "Singtel announced that its subsidiary, Nxera ID Pte. Ltd. (“Nxera ID”)"
+  },
+  {
+   "from": "nxera-id",
+   "to": "tdi",
+   "relation": "invested_in",
+   "detail": "Subscribed 35% of TDI (announced 23 May 2024; Rp217 bn in Oct 2023, Rp282 bn in Oct 2024 per Telkom); after the Dec 2025 capital call (Rp270 bn from Nxera ID) its stake rose to 35.63% because Medco did not join; Singtel's indirect interest 30.36%.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/HVHTA24E2HQXCS41/889656_20260521-Ann%20LR706A.pdf",
+   "quote": "Nxera ID’s shareholding interest in PT TDI increased from 35% to 35.63% after PT Medco did not participate in the PT TDI Subscription"
+  },
+  {
+   "from": "medco-power",
+   "to": "tdi",
+   "relation": "invested_in",
+   "detail": "Took 296,826 shares (Rp31 bn) in Oct 2023 and 402,500 (Rp40 bn) in Oct 2024, 5% of each issue; skipped the Dec 2025 call, so about 3.3% now (our arithmetic).",
+   "evidence": "confirmed",
+   "date": "2023-10",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1745858382424_original_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20250428_20-F_EDGAR.pdf",
+   "quote": "PT Medco Power Indonesia acquired 296,826 shares or amounting to Rp31 billion"
+  },
+  {
+   "from": "nxera",
+   "to": "singtel",
+   "relation": "brand_of",
+   "detail": "Nxera is Singtel's data-centre business (run with Singtel Digital InfraCo).",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Together with our partners Nxera (Singtel) and Medco"
+  },
+  {
+   "from": "neutradc",
+   "to": "nxera",
+   "relation": "joint_venture",
+   "detail": "Partners in the Batam JV company NeutraDC Nxera Batam (TDI): TDE majority and operator, Nxera minority.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.neutradc.com/news/60643/data-center-fully-secured-before-launch-telkom-indonesia-accelerates-expansion-of-neutradc-capacity-in-batam",
+   "quote": "through its joint venture data center company, NeutraDC Nxera Batam"
+  },
+  {
+   "from": "neutradc",
+   "to": "hdc-cikarang",
+   "relation": "runs",
+   "detail": "Telkom moved the then-unfinished Cikarang hyperscale DC into TDE in 2021; 10 MW IT live at end-2025, 15.5 MW effective in 1H26.",
+   "evidence": "confirmed",
+   "date": "2021",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "We transferred our then-under-construction Cikarang HyperScale data center to NeutraDC in 2021"
+  },
+  {
+   "from": "neutradc",
+   "to": "dc-serpong",
+   "relation": "runs",
+   "detail": "Enterprise DC moved from Telkomsigma into TDE in 2022 (up to 14 MW IT).",
+   "evidence": "confirmed",
+   "date": "2022",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "transferred our enterprise data center business in Sentul, Serpong, and Surabaya from Telkom Sigma in 2022"
+  },
+  {
+   "from": "neutradc",
+   "to": "dc-sentul",
+   "relation": "runs",
+   "detail": "Enterprise DC moved from Telkomsigma into TDE in 2022 (up to 5.5 MW IT).",
+   "evidence": "confirmed",
+   "date": "2022",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "transferred our enterprise data center business in Sentul, Serpong, and Surabaya from Telkom Sigma in 2022"
+  },
+  {
+   "from": "neutradc",
+   "to": "dc-surabaya",
+   "relation": "runs",
+   "detail": "Enterprise DC moved from Telkomsigma into TDE in 2022 (up to 3 MW IT).",
+   "evidence": "confirmed",
+   "date": "2022",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "transferred our enterprise data center business in Sentul, Serpong, and Surabaya from Telkom Sigma in 2022"
+  },
+  {
+   "from": "neutradc-singapore",
+   "to": "sng-3",
+   "relation": "runs",
+   "detail": "Flagship 16.8 MW IT facility.",
+   "evidence": "company_claim",
+   "date": "2024",
+   "source_url": "https://www.neutradc.com/data-center/singapore",
+   "quote": "Our flagship facility, NeutraDC SNG-3 at 8 Sunview Drive"
+  },
+  {
+   "from": "neutradc-singapore",
+   "to": "sng-1",
+   "relation": "runs",
+   "detail": "420 kW IT; dual-site pair with SNG-3.",
+   "evidence": "company_claim",
+   "date": "2024",
+   "source_url": "https://www.neutradc.com/data-center/singapore",
+   "quote": "dual-site redundancy with NeutraDC SNG-1 at Changi North Way"
+  },
+  {
+   "from": "neutradc-singapore",
+   "to": "sng-2",
+   "relation": "runs",
+   "detail": "142 kW IT.",
+   "evidence": "company_claim",
+   "date": "2024",
+   "source_url": "https://www.neutradc.com/data-center/singapore",
+   "quote": "NeutraDC SNG-2 at Tai Seng Avenue"
+  },
+  {
+   "from": "tdi",
+   "to": "neutradc-nxera-batam",
+   "relation": "runs",
+   "detail": "TDI develops and will operate the Batam 'Diamond Data Center' in the Kabil Industrial Estate (PLN Batam's counterparty).",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/",
+   "quote": "PT Teknologi Data Infrastruktur (NeutraDC Nxera Batam) untuk penyediaan listrik bagi pengembangan Diamond Data Center yang berlokasi di Kabil Industrial Estate"
+  },
+  {
+   "from": "neucentrix",
+   "to": "telkom",
+   "relation": "brand_of",
+   "detail": "Telkom's edge-DC brand: 2,757 racks at end-2025 (Telkom 20-F); 26 sites and 3,060 racks in 1H26.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "Our neuCentrIX data centers in Indonesia had an aggregate capacity of 2,757 racks as of December 31, 2025."
+  },
+  {
+   "from": "neutradc",
+   "to": "neucentrix",
+   "relation": "runs",
+   "detail": "NeutraDC sells neuCentrIX as its EdgeDC product and counts the sites as its own; Telkom's filings call them Telkom's, so who operates them day to day is unclear.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.neutradc.com/about-us",
+   "quote": "We have 19 neuCentrIX edge data centers that are located in various cities across Indonesia"
+  },
+  {
+   "from": "neutradc",
+   "to": "ai-1gw",
+   "relation": "runs",
+   "detail": "Plan for AI data centres of up to 1 GW, phased, with a three-region strategy; no sites or contracts.",
+   "evidence": "company_claim",
+   "date": "2026-09",
+   "source_url": "https://investortrust.id/market/117171/danantara-dan-telkom-petakan-kebutuhan-data-center-ai-hingga-1-gw",
+   "quote": "NeutraDC menyiapkan AI data center hingga 1 GW di Batam, Jabodetabek, Jawa, dan Manado."
+  },
+  {
+   "from": "neutradc",
+   "to": "dc-manado",
+   "relation": "runs",
+   "detail": "Planned Manado DC, feasibility study, 3-4 years out (search result; Bisnis returns 403).",
+   "evidence": "snippet",
+   "date": "2026-08",
+   "source_url": "https://teknologi.bisnis.com/read/20260826/101/1999034/telkom-neutradc-bakal-bangun-data-center-di-manado",
+   "quote": "Telkom (NeutraDC) Bakal Bangun Data Center di Manado"
+  },
+  {
+   "from": "gorilla",
+   "to": "neutradc-nxera-batam",
+   "relation": "tenant_of",
+   "detail": "Capacity agreement: ~5.5 MW at first, ~18 MW by Nov 2026 (subject to definitive documents); NeutraDC names Gorilla as a BTM-1 tenant; Gorilla's ~US$2.5 bn GPU contract (Jun 2026) is hosted there.",
+   "evidence": "confirmed",
+   "date": "2026-05",
+   "source_url": "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia",
+   "quote": "securing an initial allocation of approximately 5.5MW of capacity, expected to scale to approximately 18MW by November 2026"
+  },
+  {
+   "from": "telkom",
+   "to": "puradelta",
+   "relation": "tenant_of",
+   "detail": "Deltamas lists Telkom among the 15 DC tenants of its ~300 ha GIIC Data Center Zone (993 MVA PLN supply), home of HDC Cikarang.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "the area has become home to 15 data center tenants, including PT Telkom Indonesia Tbk"
+  },
+  {
+   "from": "tdi",
+   "to": "kabil-indonusa",
+   "relation": "tenant_of",
+   "detail": "The campus sits in the Kabil Integrated Industrial Estate, which Citramas says PT Kabil Indonusa Estate and PT Kabil Citranusa manage; the land seller or lessor is not named.",
+   "evidence": "inferred",
+   "date": "2024",
+   "source_url": "https://www.citramas.com/kabil_integrated_industrial_estate",
+   "quote": "Spanning over 538 hectares of coastal waterfront land, the estate is strategically located along Batam’s eastern seaboard."
+  },
+  {
+   "from": "kabil-indonusa",
+   "to": "tdi",
+   "relation": "supplies",
+   "detail": "Water MoU (13 Jun 2024): supply and maintenance of clean water for the DC site.",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "A partnership was established with PT Kabil Indonusa Estate in the provision and maintenance of clean water needs for the data center development area."
+  },
+  {
+   "from": "citramas",
+   "to": "kabil-indonusa",
+   "relation": "owns",
+   "detail": "Citramas runs its Kabil estate through PT Kabil Indonusa Estate (KIE) and PT Kabil Citranusa (KCN).",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.citramas.com/kabil_integrated_industrial_estate",
+   "quote": "Kabil Integrated Industrial Estate (KIIE) manages Citramas Group’s industrial estate, consisting of PT Kabil Indonusa Estate (KIE) and PT Kabil Citranusa (KCN)."
+  },
+  {
+   "from": "telin",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Master Service Agreement (30 Oct 2025) on connectivity and DC services in Batam; both sides announced it.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://www.telin.net/en/company/news/neutradc-nxera-batam-and-telin-sign-msa-to-strengthen-regional-connectivity-and-data-center-collaboration",
+   "quote": "Telin and NeutraDC Nxera Batam signed a Master Service Agreement to enhance collaboration in connectivity and data center services"
+  },
+  {
+   "from": "permana-net",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Carrier MSA signed with NeutraDC Nxera Batam at the BTM-1 topping-off (30 Oct 2025), one of seven.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Permana Net, Super Sistem Group, LitUp Network Indonesia, Iforte, Telin, Matrix Nap Info, and Moratelindo"
+  },
+  {
+   "from": "super-sistem",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Carrier MSA signed with NeutraDC Nxera Batam at the BTM-1 topping-off (30 Oct 2025), one of seven.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Permana Net, Super Sistem Group, LitUp Network Indonesia, Iforte, Telin, Matrix Nap Info, and Moratelindo"
+  },
+  {
+   "from": "litup",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Carrier MSA signed with NeutraDC Nxera Batam at the BTM-1 topping-off (30 Oct 2025), one of seven.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Permana Net, Super Sistem Group, LitUp Network Indonesia, Iforte, Telin, Matrix Nap Info, and Moratelindo"
+  },
+  {
+   "from": "iforte",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Carrier MSA signed with NeutraDC Nxera Batam at the BTM-1 topping-off (30 Oct 2025), one of seven.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Permana Net, Super Sistem Group, LitUp Network Indonesia, Iforte, Telin, Matrix Nap Info, and Moratelindo"
+  },
+  {
+   "from": "matrix-nap",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Carrier MSA signed with NeutraDC Nxera Batam at the BTM-1 topping-off (30 Oct 2025), one of seven.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Permana Net, Super Sistem Group, LitUp Network Indonesia, Iforte, Telin, Matrix Nap Info, and Moratelindo"
+  },
+  {
+   "from": "moratelindo",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Carrier MSA signed with NeutraDC Nxera Batam at the BTM-1 topping-off (30 Oct 2025), one of seven.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Permana Net, Super Sistem Group, LitUp Network Indonesia, Iforte, Telin, Matrix Nap Info, and Moratelindo"
+  },
+  {
+   "from": "super-sistem",
+   "to": "neutradc-singapore",
+   "relation": "partner",
+   "detail": "MoU (Nov 2025): Super Sistem will build and run the SSBS Batam-Singapore cable (part of the 4,700 km BTI system) landing directly at NeutraDC Singapore and NeutraDC Batam.",
+   "evidence": "company_claim",
+   "date": "2025-11",
+   "source_url": "https://www.neutradc.com/news/51138/neutradc-singapore-and-super-sistem-strengthen-regional-digital-connectivity-ecosystem",
+   "quote": "the new cable system will be directly connected, without intermediaries, to NeutraDC Singapore and NeutraDC Batam data centers"
+  },
+  {
+   "from": "seax",
+   "to": "neutradc-singapore",
+   "relation": "partner",
+   "detail": "MoU (Oct 2025) to link Singapore, Batam and Malaysia; in Batam the network connects to NeutraDC Nxera Batam.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51100/neutradc-singapore-and-seax-strengthen-regional-connectivity-through-a-strategic-mou",
+   "quote": "In Batam, this network will be connected to NeutraDC Nxera Batam"
+  },
+  {
+   "from": "telin",
+   "to": "neutradc-singapore",
+   "relation": "supplies",
+   "detail": "Telin Singapore sold its DC business (SNG-1/2/3) to NeutraDC Singapore for US$219 m, completed 29 Feb 2024 (Telkom's IDX disclosure, quoted by Investortrust).",
+   "evidence": "confirmed",
+   "date": "2024-02",
+   "source_url": "https://investortrust.id/market/2734/telkom-tlkm-tuntaskan-pengalihan-bisnis-data-center-bernilai-us-219-juta",
+   "quote": "menyelesaikan pengalihan bisnis data center miliknya Telekominukasi Indonesia Interantional Pte Ltd (TelinSG) kepada NeutraDC Signapore Pte Ltd (NDSG)"
+  },
+  {
+   "from": "telkomsigma",
+   "to": "neutradc",
+   "relation": "supplies",
+   "detail": "Transferred its enterprise DCs in Sentul, Serpong and Surabaya to TDE in 2022.",
+   "evidence": "confirmed",
+   "date": "2022",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "transferred our enterprise data center business in Sentul, Serpong, and Surabaya from Telkom Sigma in 2022"
+  },
+  {
+   "from": "graha-telkomsigma",
+   "to": "neutradc",
+   "relation": "supplies",
+   "detail": "Sold the land and building of Graha Telkom Sigma 1 (GTS 1) to TDE for Rp555.5 bn in 2025, an affiliated transaction.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Rp555.500.000.000"
+  },
+  {
+   "from": "sembcorp",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "MoU (25 Aug 2025) to develop low-carbon data centres in Indonesia, Johor and Singapore.",
+   "evidence": "confirmed",
+   "date": "2025-08",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "NeutraDC entered into a strategic partnership with Sembcorp Development Ltd. to develop low-carbon data centers across Southeast Asia"
+  },
+  {
+   "from": "amd",
+   "to": "neutradc-singapore",
+   "relation": "partner",
+   "detail": "MoU (signed Oct 2025, announced 20 Nov 2025) for proofs of concept with AMD Instinct accelerators and joint AI training.",
+   "evidence": "company_claim",
+   "date": "2025-11",
+   "source_url": "https://www.neutradc.com/news/51119/neutradc-signs-strategic-mou-with-amd-to-drive-ai-ecosystem-integration",
+   "quote": "NeutraDC Singapore Pte. Ltd. (“NeutraDC”) announced the signing of a Memorandum of Understanding (MoU) with AMD"
+  },
+  {
+   "from": "cirrascale",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "2024 agreements (MoU 26 Aug 2024) to deliver GPU-as-a-Service, including for customers in Singapore.",
+   "evidence": "confirmed",
+   "date": "2024",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "NeutraDC has also entered into agreements with Advanced Micro Devices and Cirrascale Cloud Services in 2024"
+  },
+  {
+   "from": "datacanvas",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "AI data-centre OS and model-workflow partner (MoU 26 Aug 2024).",
+   "evidence": "confirmed",
+   "date": "2024-08",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "NeutraDC has further partnered with DataCanvas for automated AI model development workflows"
+  },
+  {
+   "from": "hpe-indonesia",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "MoU (26 Aug 2024): HPE Indonesia to provide AI computing hardware for NeutraDC's AI ecosystem.",
+   "evidence": "company_claim",
+   "date": "2024-08",
+   "source_url": "https://www.neutradc.com/news/50779/neutradc-signs-mou-with-hpe-cirrascale-and-datacanvas-limited-for-ai-ecosystem-collaboration",
+   "quote": "PT Hewlett Packard Enterprise (HPE) Indonesia, a global leader in hardware solutions and technology services, will contribute by providing cutting-edge hardware"
+  },
+  {
+   "from": "naver-cloud",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "MoU with Cisco (16 Feb 2023) on cloud adoption in Indonesia.",
+   "evidence": "confirmed",
+   "date": "2023-02",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "ongoing collaborations with NAVER Cloud and Cisco to support cloud adoption and enterprise digital services"
+  },
+  {
+   "from": "cisco",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "MoU with NAVER Cloud (16 Feb 2023) on secure cloud services.",
+   "evidence": "confirmed",
+   "date": "2023-02",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "ongoing collaborations with NAVER Cloud and Cisco to support cloud adoption and enterprise digital services"
+  },
+  {
+   "from": "cmi",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "MoU (29 Mar 2023) to serve Chinese firms entering Indonesia and explore DC development.",
+   "evidence": "company_claim",
+   "date": "2023-03",
+   "source_url": "https://www.neutradc.com/news/50777/neutradc-enters-a-memorandum-of-understanding-mou-with-china-mobile-international",
+   "quote": "NeutraDC, a brand of PT Telkom Data Ekosistem (TDE), has entered a Memorandum of Understanding (MOU) with China Mobile International (CMI)"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "MoU (21 Jan 2024, PTC Honolulu) to build an interconnected Internet Exchange ecosystem; witnessed by the Telkom and Indosat CEOs.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://www.neutradc.com/news/50761/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia",
+   "quote": "Memorandum of Understanding (MoU) between NeutraDC, a subsidiary of Telkom Indonesia, and BDx Indonesia"
+  },
+  {
+   "from": "f5",
+   "to": "neutradc",
+   "relation": "supplies",
+   "detail": "NeutraDC uses F5's application security and delivery technology across its multi-cloud platform; MoU on AI-secure connectivity signed 3 Mar 2026.",
+   "evidence": "confirmed",
+   "date": "2026",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "NeutraDC also uses application security and delivery technologies from F5, Inc."
+  },
+  {
+   "from": "ishikari-dc",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "Cross-border GPU connectivity (Jan 2026): NeutraDC to offer colocation in Singapore/Indonesia to Ishikari users and a POP plus Neutra Compute in Hokkaido.",
+   "evidence": "confirmed",
+   "date": "2026-01",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "established cross-border GPU connectivity with the Ishikari Renewable Energy Data Center No. 1 in January 2026"
+  },
+  {
+   "from": "lynx-analytics",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "Agentic-AI framework work in 2025.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "developed agentic AI framework capabilities in collaboration with Lynx Analytics in 2025"
+  },
+  {
+   "from": "nus-stdct",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "Consortium agreement (Dec 2025): NeutraDC joins STDCT 2.0, a five-year testbed for power, cooling and water efficiency of AI data centres in the tropics, with a steering-committee seat.",
+   "evidence": "company_claim",
+   "date": "2025-12",
+   "source_url": "https://www.neutradc.com/news/51247/neutradc-joins-nus-led-sustainable-tropical-data-centre-testbed-as-partner",
+   "quote": "signed a consortium agreement to formalise NeutraDC’s partnership with STDCT 2.0"
+  },
+  {
+   "from": "polibatam",
+   "to": "tdi",
+   "relation": "partner",
+   "detail": "Talent-development MoU (13 Jun 2024).",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "A collaboration was formed with Batam State Polytechnic to develop digital talents for work in the data center industry."
+  },
+  {
+   "from": "sg-edb",
+   "to": "neutradc",
+   "relation": "regulates",
+   "detail": "Telkom says EDB and MTI awarded it room to expand DC development in Singapore (6 Jul 2026); form of the award not stated.",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1786075591827_original_TLKM-1H26-Corporate-Presentation-Infomemo.pdf",
+   "quote": "Singapore Economic Development Board (EDB) and Ministry of Trade & Industry (MTI) awarded Telkom Group to expand DC development in Singapore (6 July 2026)"
+  },
+  {
+   "from": "danantara",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "Danantara's Sep 2026 AI data-centre and electrification workshop, where NeutraDC presented its up-to-1 GW plan; Telkom frames it as building national AI infrastructure with Danantara. No investment named.",
+   "evidence": "company_claim",
+   "date": "2026-09",
+   "source_url": "https://investortrust.id/market/117171/danantara-dan-telkom-petakan-kebutuhan-data-center-ai-hingga-1-gw",
+   "quote": "memperkuat peran dalam pembangunan infrastruktur Artificial Intelligence (AI) nasional bersama Danantara Indonesia"
+  },
+  {
+   "from": "pln-batam",
+   "to": "neutradc-nxera-batam",
+   "relation": "supplies_power",
+   "detail": "PJBTL signed 3 Oct 2025: premium medium-voltage 'Diamond Data Center' service up to 90 MVA, delivered in stages 2025-2028, minimum term 5 years; Telkom's 20-F confirms the 90 MVA contract.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/",
+   "quote": "Layanan Khusus Premium Diamond Data Center Tegangan Menengah dengan kapasitas total hingga 90 MVA, yang akan disalurkan secara bertahap mulai tahun 2025 hingga 2028"
+  },
+  {
+   "from": "medco-power",
+   "to": "neutradc-nxera-batam",
+   "relation": "renewable_deal",
+   "detail": "MoU (7 Jul 2025, following a Jul 2023 MoU) to bring renewable power to the Batam campus; Medco is developing a solar plant in KIIE. Size, route and contract form not disclosed.",
+   "evidence": "confirmed",
+   "date": "2025-07",
+   "source_url": "https://investortrust.id/business/71954/neutradc-nxera-gandeng-medco-power-hadirkan-energi-terbarukan-untuk-data-center-berbasis-ai",
+   "quote": "Medco Power juga sedang mengembangkan pembangkit listrik tenaga surya di kawasan Kabil Integrated Industrial Estate (KIIE)"
+  },
+  {
+   "from": "gi-dc-giic",
+   "to": "hdc-cikarang",
+   "relation": "supplies_power",
+   "detail": "PLN's dedicated GIIC 150 kV 'Data Center' substation (120 MVA) is to meet the DC loads of Komdigi, Telkom, STT GDC and others; Telkom's HDC is the GIIC site served.",
+   "evidence": "company_claim",
+   "date": "2024-11",
+   "source_url": "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+   "quote": "Telkom, STT Global Data Center dan perusahaan lainnya di kawasan industri tersebut."
+  },
+  {
+   "from": "pln",
+   "to": "gi-dc-giic",
+   "relation": "runs",
+   "detail": "PLN finished the GI 150 kV Data Center and three 150 kV lines (over Rp312 bn incl. lines) in Nov 2024.",
+   "evidence": "company_claim",
+   "date": "2024-11",
+   "source_url": "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+   "quote": "PT PLN (Persero) berhasil menyelesaikan pembangunan Gardu Induk 150 kV Data Center"
+  },
+  {
+   "from": "elsewedy",
+   "to": "gi-dc-giic",
+   "relation": "built",
+   "detail": "Built the 150 kV 'KTT Data Center' substation with PLN in Kota Deltamas (Rp188.5 bn); both companies quoted.",
+   "evidence": "confirmed",
+   "date": "2023",
+   "source_url": "https://infobanknews.com/elsewedy-dan-pln-bangun-gardu-induk-data-center-rp1885-miliar/",
+   "quote": "PT Elsewedy Electric Indonesia (Elsewedy) dan PT PLN (Persero) membangun Gardu Induk 150kV"
+  },
+  {
+   "from": "pln",
+   "to": "hdc-cikarang",
+   "relation": "supplies_power",
+   "detail": "MoU signed 11 Aug 2026 in Bandung (PLN UID Jawa Barat and PLN Electricity Services) to secure phased supply for up to 200 MW more hyperscale capacity at Cikarang; no MVA, substation or tariff named.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw",
+   "quote": "Kapasitas tambahan yang disiapkan direncanakan bakal mencapai 200 MW."
+  },
+  {
+   "from": "pln-es",
+   "to": "neutradc",
+   "relation": "partner",
+   "detail": "Co-signed the 11 Aug 2026 Cikarang power MoU.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw",
+   "quote": "Direktur Utama PLN Electricity Services Susiana Mutia"
+  },
+  {
+   "from": "pln",
+   "to": "neutradc",
+   "relation": "supplies_power",
+   "detail": "Telkom-PLN MoU (8 Oct 2024, signed at HDC Cikarang) on secure, stable power for Telkom's data-centre business.",
+   "evidence": "company_claim",
+   "date": "2024-10",
+   "source_url": "https://investortrust.id/business/43732/neutradc-perkuat-posisi-sebagai-ai-enabler-dan-penyedia-layanan-data-center-terkemuka",
+   "quote": "melakukan kerja sama strategis dengan PT PLN (Persero) perihal suplai energi yang terjamin dan stabil"
+  },
+  {
+   "from": "pln",
+   "to": "neutradc",
+   "relation": "renewable_deal",
+   "detail": "NeutraDC says it obtained Renewable Energy Certificates from PLN in 2025; Telkom's REC tender buys PLTA Cirata RECs for the group, sites not named.",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://www.indotelko.com/read/1766505240/ini-rekam-jejak-neutradc-sepanjang-2025",
+   "quote": "NeutraDC sudah memperoleh Renewable Energy Certificate (REC) dari PLN"
+  },
+  {
+   "from": "pln",
+   "to": "ai-1gw",
+   "relation": "supplies_power",
+   "detail": "PLN said it is ready to be a strategic partner for reliable and green power at gigawatt scale; no contract.",
+   "evidence": "company_claim",
+   "date": "2026-09",
+   "source_url": "https://investortrust.id/market/117171/danantara-dan-telkom-petakan-kebutuhan-data-center-ai-hingga-1-gw",
+   "quote": "PLN menyampaikan kesiapan menjadi mitra strategis dalam menyediakan reliable power dan green energy"
+  },
+  {
+   "from": "pertamina-ppi",
+   "to": "hdc-cikarang",
+   "relation": "renewable_deal",
+   "detail": "Telkom says Cikarang uses renewable energy with PPI; form not stated (could be certificates). A 2024 CEO quote adds solar panels and a 3 MW renewable target at Cikarang.",
+   "evidence": "company_claim",
+   "date": "2023-07",
+   "source_url": "https://www.telkom.co.id/sites/news-resources/en_US/news/telkom-consistently-implements-net-zero-emissions-in-neutradc-hyperscale-data-center-construction-2049",
+   "quote": "NeutraDC has a hyperscale data center in Cikarang that uses renewable energy to operate the data center in collaboration with Pertamina Power Indonesia (PPI)."
+  },
+  {
+   "from": "pt-pp",
+   "to": "hdc-cikarang",
+   "relation": "built",
+   "detail": "Contract for Telkom's Hyperscale Data Center Cikarang: Rp314.1 bn, 30 Dec 2020-15 Mar 2022 (PT PP annual report 2022).",
+   "evidence": "confirmed",
+   "date": "2020-12",
+   "source_url": "https://homepage.ptpp.co.id/storage/4796/ANNUAL-REPORT-PTPP-2022.pdf",
+   "quote": "Hyperscale Data Center Telkom Cikarang 314.141.901.239 PT Telkom Indonesia Tbk."
+  },
+  {
+   "from": "kso-pp-adhi",
+   "to": "neutradc-nxera-batam",
+   "relation": "built",
+   "detail": "General contractor for TDI's data-centre construction, 3 Jan 2025-26 Feb 2026 (Telkom 20-F); 'Project Bromo', Rp746.46 bn (PT PP).",
+   "evidence": "confirmed",
+   "date": "2025-01",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "Procurement for General Contractor for Data Center Construction"
+  },
+  {
+   "from": "pt-pp",
+   "to": "kso-pp-adhi",
+   "relation": "joint_venture",
+   "detail": "PT PP holds 55% of the PP-Adhi Karya joint operation; contract with TDI Rp746.46 bn, 10 Dec 2024-1 Feb 2026.",
+   "evidence": "confirmed",
+   "date": "2024-12",
+   "source_url": "https://homepage.ptpp.co.id/storage/8538/PTPP---AR-2025---260504-low.pdf",
+   "quote": "Project Bromo General Contractor Works Batam 746.460.000.000 PT. Teknologi Data Infrastruktur 10-Dec-24 1-Feb-26"
+  },
+  {
+   "from": "adhi-karya",
+   "to": "kso-pp-adhi",
+   "relation": "joint_venture",
+   "detail": "Adhi holds 45% ('JV Adhi - PT PP (Project Bromo General Contractor)'); its share Rp335.9 bn, 10 Dec 2024-2 Apr 2026.",
+   "evidence": "confirmed",
+   "date": "2024-12",
+   "source_url": "https://adhi.co.id/wp-content/uploads/2026/07/ADHI-LK_30-JUNI-2026.pdf",
+   "quote": "Project Bromo General Contractor Works 335,907,000,000 PT. Teknologi Data Infrastruktur 10-Dec-2024 2-Apr-2026"
+  },
+  {
+   "from": "nusacipta",
+   "to": "neutradc-nxera-batam",
+   "relation": "built",
+   "detail": "Piling and cut-and-fill for TDI's 'Bromo Project' (Batam), 1 Jul 2024-12 Jun 2025.",
+   "evidence": "confirmed",
+   "date": "2024-07",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1745858382424_original_PERUSAHAAN_PERSEROAN_PERSERO_PT_TELEKOMUNIKASI_INDONESIA_TBK_20250428_20-F_EDGAR.pdf",
+   "quote": "Pilling and Cut and Fill for Bromo Project"
+  },
+  {
+   "from": "zte",
+   "to": "hdc-cikarang",
+   "relation": "built",
+   "detail": "Telkom's 20-F lists TDE's general-contractor deal with PT ZTE Indonesia for 'Delta Project' Level-2 fit-out (14 Oct 2024-14 Oct 2027) without naming the site. We match 'Delta' to HDC Cikarang in Kota Deltamas: Telkom put Rp1.63 tn into TDE in Jun 2024 for 18 MW more there, and its 1H26 deck says Cikarang's 4th floor is being developed.",
+   "evidence": "inferred",
+   "date": "2024-10",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "Contract Agreement of General Contractor (\"GC\") for Delta Project Level-2 Fit"
+  },
+  {
+   "from": "huawei",
+   "to": "hdc-cikarang",
+   "relation": "built",
+   "detail": "Telkom's 20-F lists TDE's general-contractor deal with PT Huawei Tech Investment for 'Delta Project' Level-3 and Level-4 fit-out (24 Mar 2025-23 Mar 2028); site matched to HDC Cikarang the same way as ZTE's Level-2 job.",
+   "evidence": "inferred",
+   "date": "2025-03",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "Contract Agreement of General Contractor (\"GC\") for Delta Project Level-3"
+  },
+  {
+   "from": "uptime",
+   "to": "neutradc-nxera-batam",
+   "relation": "certifies",
+   "detail": "Tier III Certification of Design Documents for BTM-1 (announced 30 Oct 2025).",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "it has achieved the Uptime Institute Tier III Certification of Design Documents (TCDD)"
+  },
+  {
+   "from": "uptime",
+   "to": "hdc-cikarang",
+   "relation": "certifies",
+   "detail": "Tier III and Tier IV certificates, per NeutraDC.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.neutradc.com/about-us",
+   "quote": "certified by Uptime Institute Tier III & Tier IV"
+  },
+  {
+   "from": "hsbc-id",
+   "to": "neutradc",
+   "relation": "lends_to",
+   "detail": "Short-term bank-loan lines opened 2018-2023, Rp2,588 bn in total shared by Sigma, Metra, PINS, Metranet, Telkomsat, GSD and TDE (1-month JIBOR + 0.35% / 3-month JIBOR + 2.00%; maturing Jan-Oct 2026; unsecured).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778861459016_original_PERUSAHAAN-PERSEROAN-PERSERO-PT-TELEKOMUNIKASI-INDONESIA-TBK-20260515-20-F-EDGAR.pdf",
+   "quote": "GSD, TDE"
+  },
+  {
+   "from": "goldman",
+   "to": "telkom",
+   "relation": "partner",
+   "detail": "Reported adviser to Telkom on finding an investor for its DC business (Goldman Sachs; search result only, DCD returns 403).",
+   "evidence": "snippet",
+   "date": "2024",
+   "source_url": "https://www.datacenterdynamics.com/en/news/telkom-indonesia-selects-investment-advisors-to-find-backer-for-data-center-business/",
+   "quote": "telkom indonesia selects investment advisors to find backer for data center business"
+  },
+  {
+   "from": "mandiri-sekuritas",
+   "to": "telkom",
+   "relation": "partner",
+   "detail": "Reported adviser to Telkom on finding an investor for its DC business (Mandiri Sekuritas; search result only, DCD returns 403).",
+   "evidence": "snippet",
+   "date": "2024",
+   "source_url": "https://www.datacenterdynamics.com/en/news/telkom-indonesia-selects-investment-advisors-to-find-backer-for-data-center-business/",
+   "quote": "telkom indonesia selects investment advisors to find backer for data center business"
+  },
+  {
+   "from": "andreuw",
+   "to": "neutradc",
+   "relation": "director_of",
+   "detail": "CEO of Telkom Data Ekosistem (NeutraDC) from 2022 to at least Jun 2026.",
+   "evidence": "company_claim",
+   "date": "2023-03",
+   "source_url": "https://www.neutradc.com/news/50777/neutradc-enters-a-memorandum-of-understanding-mou-with-china-mobile-international",
+   "quote": "Andreuw Th.A.F, Chief Executive Officer, Telkom Data Ekosistem (NeutraDC)"
+  },
+  {
+   "from": "rakhmad",
+   "to": "neutradc",
+   "relation": "director_of",
+   "detail": "President Director of NeutraDC Group by Aug 2026.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw",
+   "quote": "Direktur Utama NeutraDC Group Rakhmad Tunggal Afifuddin"
+  },
+  {
+   "from": "bogi",
+   "to": "neutradc",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of TDE since 2023.",
+   "evidence": "confirmed",
+   "date": "2023",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Komisaris, PT Telkom Data Ekosistem (NeutraDC)"
+  },
+  {
+   "from": "bogi",
+   "to": "telkom",
+   "relation": "director_of",
+   "detail": "Director of Wholesale & International Service from the 28 May 2021 AGM until the 27 May 2025 AGM.",
+   "evidence": "confirmed",
+   "date": "2021-05",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Bogi Witjaksono sebagai Direktur Wholesale & International Service"
+  },
+  {
+   "from": "bogi",
+   "to": "telin",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of Telin since 2023.",
+   "evidence": "confirmed",
+   "date": "2023",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Komisaris, PT Telekomunikasi Indonesia International (Telin)"
+  },
+  {
+   "from": "michael-adiguna",
+   "to": "neutradc",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of TDE (listed in Telkom's integrated-governance committee, Apr 2024-).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Komisaris PT Telkom Data Ekosistem"
+  },
+  {
+   "from": "dian-siswarini",
+   "to": "telkom",
+   "relation": "director_of",
+   "detail": "President Director since the 27 May 2025 AGM.",
+   "evidence": "confirmed",
+   "date": "2025-05",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Dian Siswarini sebagai Direktur Utama"
+  },
+  {
+   "from": "seno-soemadji",
+   "to": "telkom",
+   "relation": "director_of",
+   "detail": "Director of Strategic Business Development & Portfolio since the 27 May 2025 AGM.",
+   "evidence": "confirmed",
+   "date": "2025-05",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "Seno Soemadji sebagai Direktur Strategic Business Development & Portfolio"
+  },
+  {
+   "from": "budi-satria",
+   "to": "telkom",
+   "relation": "director_of",
+   "detail": "Director of Wholesale & International Service since the 12 Dec 2025 EGM, replacing Honesti Basyir.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://www.telkom.co.id/minio/show/data/lampiran/1778677674968_original_TLKM-2025AR-fullbook-54-00-hires.pdf",
+   "quote": "mengangkat Budi Satria Dharma Purba sebagai penggantinya"
+  },
+  {
+   "from": "budi-satria",
+   "to": "telin",
+   "relation": "director_of",
+   "detail": "CEO of Telin (Mar 2024).",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://investortrust.id/business/8773/perkuat-portofolio-bisnis-neutradc-selesaikan-konsolidasi-data-center-telin-singapore",
+   "quote": "Chief Executive Officer Telin, Budi Satria Dharma Purba"
+  },
+  {
+   "from": "sendang",
+   "to": "neutradc-singapore",
+   "relation": "director_of",
+   "detail": "CEO of NeutraDC Singapore (Mar 2024-Dec 2025).",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://investortrust.id/business/8773/perkuat-portofolio-bisnis-neutradc-selesaikan-konsolidasi-data-center-telin-singapore",
+   "quote": "CEO NeutraDC Singapore, Sendang Praptomo"
+  },
+  {
+   "from": "indrama",
+   "to": "tdi",
+   "relation": "director_of",
+   "detail": "President Director (CEO) of PT Teknologi Data Infrastruktur, 2023-2026.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/",
+   "quote": "Direktur Utama PT Teknologi Data Infrastruktur, Indrama Yusuf Muda Purba"
+  },
+  {
+   "from": "agustinus",
+   "to": "tdi",
+   "relation": "director_of",
+   "detail": "CFRO of NeutraDC Nxera Batam (Jun 2024).",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "Agustinus Budi Wibowo, CFRO of NeutraDC Nxera Batam"
+  },
+  {
+   "from": "kevin-wong",
+   "to": "tdi",
+   "relation": "director_of",
+   "detail": "COO of NeutraDC Nxera Batam (Jun 2024).",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "Kevin Wong Ka Vin, COO of NeutraDC Nxera Batam"
+  },
+  {
+   "from": "iskandar",
+   "to": "tdi",
+   "relation": "director_of",
+   "detail": "COO of NeutraDC Nxera (the Singtel-Telkom-Medco JV) in 2026.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://nxera-dc.com/about-us/leadership/iskandar-sastrowiranu",
+   "quote": "He also serves as Chief Operating Officer of NeutraDC Nxera Data Centre"
+  },
+  {
+   "from": "iskandar",
+   "to": "nxera",
+   "relation": "director_of",
+   "detail": "Nxera's Country Manager, Indonesia since Mar 2026 (executive, not a board seat).",
+   "evidence": "company_claim",
+   "date": "2026-03",
+   "source_url": "https://nxera-dc.com/about-us/leadership/iskandar-sastrowiranu",
+   "quote": "assumed his current role as Country Manager, Indonesia in March 2026"
+  },
+  {
+   "from": "cyndi-pei",
+   "to": "tdi",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of NeutraDC Nxera Batam (May 2026).",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.neutradc.com/news/60643/data-center-fully-secured-before-launch-telkom-indonesia-accelerates-expansion-of-neutradc-capacity-in-batam",
+   "quote": "Cyndi Pei, Commissioner of NeutraDC Nxera Batam"
+  },
+  {
+   "from": "cyndi-pei",
+   "to": "nxera",
+   "relation": "director_of",
+   "detail": "CFO of Singtel Digital InfraCo and Nxera.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Cyndi Pei, CFO of Singtel Digital InfraCo and Nxera"
+  },
+  {
+   "from": "bill-chang",
+   "to": "nxera",
+   "relation": "director_of",
+   "detail": "CEO of Singtel's Digital InfraCo and Nxera.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.neutradc.com/news/51114/telkomgroup-tops-off-neutradc-nxera-batam-hyperscale-data-center-to-power-the-ai-ecosystem",
+   "quote": "Bill Chang, CEO of Singtel’s Digital InfraCo and Nxera"
+  },
+  {
+   "from": "imron-gazali",
+   "to": "medco-power",
+   "relation": "director_of",
+   "detail": "Director & COO (Jun 2024).",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "Imron Gazali, Director & Chief Operating Officer at PT Medco Power Indonesia"
+  },
+  {
+   "from": "femi-sastrena",
+   "to": "medco-power",
+   "relation": "director_of",
+   "detail": "Director, Chief Commercial and Business Development Officer; signed the 7 Jul 2025 MoU.",
+   "evidence": "company_claim",
+   "date": "2025-07",
+   "source_url": "https://investortrust.id/business/71954/neutradc-nxera-gandeng-medco-power-hadirkan-energi-terbarukan-untuk-data-center-berbasis-ai",
+   "quote": "Director, Chief Commercial and Business Development Officer Medco Power, Femi Sastrena"
+  },
+  {
+   "from": "kwin-fo",
+   "to": "pln-batam",
+   "relation": "director_of",
+   "detail": "President Director; signed the 90 MVA PJBTL (3 Oct 2025).",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://www.plnbatam.com/pln-batam-tandatangani-perjanjian-penyediaan-listrik-premium-dengan-pt-teknologi-data-infrastruktur/",
+   "quote": "Direktur Utama PLN Batam, Kwin Fo"
+  },
+  {
+   "from": "susiana-mutia",
+   "to": "pln-es",
+   "relation": "director_of",
+   "detail": "President Director; signed the 11 Aug 2026 Cikarang MoU.",
+   "evidence": "company_claim",
+   "date": "2026-08",
+   "source_url": "https://inet.detik.com/telecommunication/d-8618366/neutradc-gaet-pln-ekspansi-kapasitas-data-center-di-cikarang-hingga-200-mw",
+   "quote": "Direktur Utama PLN Electricity Services Susiana Mutia"
+  },
+  {
+   "from": "peters-vincen",
+   "to": "kabil-indonusa",
+   "relation": "director_of",
+   "detail": "President Director (Jun 2024).",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "Peters Vincen, President Director of PT Kabil Indonusa Estate"
+  },
+  {
+   "from": "kris-wiluan",
+   "to": "kabil-indonusa",
+   "relation": "commissioner_of",
+   "detail": "Commissioner (Jun 2024).",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "Kris Wiluan, Commissioner of PT Kabil Indonusa Estate"
+  },
+  {
+   "from": "jay-chandan",
+   "to": "gorilla",
+   "relation": "director_of",
+   "detail": "Chairman & CEO; signed the NeutraDC capacity agreement (May 2026).",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.newsfilecorp.com/release/298853/Gorilla-Technology-Secures-Strategic-AI-Data-Centre-Capacity-with-NeutraDC-Accelerating-Commercial-AI-Deployment-Across-Asia",
+   "quote": "Jay Chandan, Chairman & CEO, Gorilla Technology"
+  }
+ ],
+ "operators": [
+  "NeutraDC",
+  "Telkom (neuCentrIX)"
+ ],
+ "counts": {
+  "entities": 89,
+  "links": 112,
+  "confirmed": 52,
+  "dropped": 0
+ }
+}

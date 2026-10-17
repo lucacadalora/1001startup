@@ -1,0 +1,2538 @@
+{
+ "slug": "digital-edge",
+ "title": "Digital Edge",
+ "order": 4,
+ "center": "digital-edge",
+ "bottom_line": "Digital Edge Indonesia (PT Ekagrata Data Gemilang) is 99.83% owned by Indonet, 92.10% of which belongs to Digital Edge's two Hong Kong companies, now taking it private at Rp11,500 a share; Indonet's 2025 annual report traces control up to Stonepeak entities that co-founder Michael Dorrell controls 100%. The 500 MW CGK campus sits in separate Indonet project companies, which bought Rp741.5 bn of GIIC land from Puradelta Lestari (Sinar Mas Land and Sojitz) and borrowed US$665 m from eight banks led by BCA, Credit Agricole and DBS, plus US$530.2 m from eleven lenders in September 2026. Its power comes only from PLN (2 x 725 MVA on redundant feeds, through the new 350 MVA GI Sukamahi substation); no CGK tenant is named anywhere, CoreWeave included, and the only named builder is a Total Bangun Persada and Accesstech joint operation on a \"GAIA\" project, which we match to CGK.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:40:00Z",
+ "entities": [
+  {
+   "id": "digital-edge",
+   "name": "Digital Edge Indonesia",
+   "legal_name": "PT Ekagrata Data Gemilang",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Digital Edge's Indonesian data-centre operator, set up in 2018 and branded EDGE DC until December 2025. It owns and runs EDGE1 (6 MW) and EDGE2 (23 MW) in South Jakarta and fronts the 500 MW CGK Campus. Owned 99.83% by Indonet and 0.17% by Digital Edge (Hong Kong).",
+   "sources": [
+    "https://id.digitaledgedc.com/news/edge-dc-rebrands-as-digital-edge-indonesia",
+    "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+    "https://id.digitaledgedc.com/about",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "digital-edge-group",
+   "name": "Digital Edge (group)",
+   "legal_name": "Digital Edge (Singapore) Holdings Pte Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore-based Asia-Pacific data-centre platform set up in 2020 by Stonepeak and former Equinix, Facebook, Tata Communications and Macquarie executives. Says it has 1.8 GW of secured IT power in nine countries (May 2026). Top operating company above the two Hong Kong holding firms that own Indonet.",
+   "sources": [
+    "https://www.digitaledgedc.com/jp/resources/newsroom/digital-edge-and-stonepeak-infrastructure-partners-announce-formation-of-a-diversified-asia-pacific-data-center-platform-with-a-usd1-billion-capital-commitment/",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "de-hk",
+   "name": "Digital Edge (Hong Kong)",
+   "legal_name": "Digital Edge (Hong Kong) Ltd",
+   "kind": "company",
+   "city": "Hong Kong",
+   "what": "Investment holding company registered in Hong Kong on 24 July 2019, 100% owned by Digital Edge (Singapore) Holdings. Holds 59.10% of Indonet directly and made the 2026 go-private tender offer. Directors: Jonathan Walbridge and John Yung.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  },
+  {
+   "id": "de-hk-spvi",
+   "name": "Digital Edge (HK) SPVI",
+   "legal_name": "Digital Edge (HK) SPVI Limited",
+   "kind": "company",
+   "city": "Hong Kong",
+   "what": "Wholly owned by Digital Edge (Hong Kong). Bought the Indonet founders' 33.0% on 15 December 2023.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2025/05/KI-Perubahan-Pemegang-Saham.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "dea-topco",
+   "name": "DEA TopCo LP",
+   "legal_name": "DEA TopCo LP",
+   "kind": "fund",
+   "city": "Cayman Islands",
+   "what": "Cayman limited partnership that is the sole shareholder of Digital Edge (Singapore) Holdings. Its general partner is Stonepeak DEA Cayman GP LLC. The limited partners and their economic shares are not disclosed.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "stonepeak-dea-cayman-gp",
+   "name": "Stonepeak DEA Cayman GP",
+   "legal_name": "Stonepeak DEA Cayman GP LLC",
+   "kind": "fund",
+   "city": "Cayman Islands",
+   "what": "General partner (100% control) of DEA TopCo LP.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "stonepeak-dea-holdings-uk",
+   "name": "Stonepeak DEA Holdings (UK)",
+   "legal_name": "Stonepeak DEA Holdings (UK) Ltd",
+   "kind": "company",
+   "city": "United Kingdom",
+   "what": "Managing member (100% control) of Stonepeak DEA Cayman GP LLC; controlled by Michael Dorrell through intermediate holding companies.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "stonepeak",
+   "name": "Stonepeak",
+   "legal_name": null,
+   "kind": "fund",
+   "city": "New York",
+   "what": "US alternative investment firm (infrastructure and real assets). Made the founding investment in Digital Edge in 2020 (US$1 bn equity commitment with its investors and management); its credit arm co-arranged Digital Edge's US$575 m HoldCo loan in May 2026.",
+   "sources": [
+    "https://www.digitaledgedc.com/jp/resources/newsroom/digital-edge-and-stonepeak-infrastructure-partners-announce-formation-of-a-diversified-asia-pacific-data-center-platform-with-a-usd1-billion-capital-commitment/",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-raises-over-us1-6-billion-in-new-equity-and-debt-capital-to-fund-continued-platform-expansion/",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+    "https://stonepeak.com/team/michael-dorrell/"
+   ]
+  },
+  {
+   "id": "indonet",
+   "name": "Indonet",
+   "legal_name": "PT Indointernet Tbk",
+   "kind": "company",
+   "city": "South Tangerang",
+   "what": "Indonesia's first commercial ISP (1994), listed on IDX in February 2021 (ticker EDGE). Fiber and connectivity business and holding company for Digital Edge Indonesia and the DGE project companies. 92.10% Digital Edge and 7.90% public at 30 June 2026; going private through a Rp11,500-a-share tender offer (June to September 2026), with trading suspended since 10 February 2026.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/Brochure-Tender-Offer_EDGE_ENG.pdf",
+    "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf",
+    "https://indonet.id/wp-content/uploads/2025/05/Fakta-Material-Transaksi-Pengambilalihan-Saham.pdf",
+    "https://bcasekuritas.co.id/en/latest-news/news/penawaran-tender-digital-edge-serap-711-juta-lembar-saham-indointernet"
+   ]
+  },
+  {
+   "id": "dge1",
+   "name": "DGE1 (Digital Gayana Ekagrata)",
+   "legal_name": "PT Digital Gayana Ekagrata",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonet project company since 2025, 99.99% Indonet (the rest EDG). Borrower of the US$665 m green loan (March 2026) that Digital Edge says funds CGK phase one, and buyer of Rp741.5 bn of Kota Deltamas land in Q1 2026. Total assets Rp5.40 tn at 30 June 2026.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Keterbukaan-Informasi_16-Mar-2026.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/05/Financial-Statement-31-Maret-2026.pdf"
+   ]
+  },
+  {
+   "id": "dge2",
+   "name": "DGE2 (Digital Gayana Ekaprana)",
+   "legal_name": "PT Digital Gayana Ekaprana",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Second Indonet project company since 2025, 99.99% Indonet. Co-signed the GAIA 1 supply contracts and borrowed a US$530.2 m facility on 2 September 2026 for its data-centre project (not named). Total assets Rp1.17 tn at 30 June 2026.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "dge3",
+   "name": "DGE3 (Digital Gayana Ekatama)",
+   "legal_name": "PT Digital Gayana Ekatama",
+   "kind": "company",
+   "city": null,
+   "what": "Third project company (2026). Indonet injected Rp25 bn in July 2026 and Rp16 bn on 13 October 2026 for capital expenditure; its project is not described.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/07/KI-Transaksi-Afiliasi-21-July.pdf",
+    "https://indonet.id/wp-content/uploads/2026/10/DGE-KI-Transaksi-Afiliasi-261014.pdf"
+   ]
+  },
+  {
+   "id": "net-soft",
+   "name": "Net Soft",
+   "legal_name": "PT Net Soft",
+   "kind": "company",
+   "city": "South Tangerang",
+   "what": "Indonet subsidiary (99.52%) in trading and IT services; parent of Fast Speed Network.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "fast-speed-network",
+   "name": "Fast Speed Network",
+   "legal_name": "Fast Speed Network Pte Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore bandwidth and telecom unit, 100% owned through Net Soft since 2015.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "wiratapura",
+   "name": "Wiratapura Indo Parahyangan",
+   "legal_name": "PT Wiratapura Indo Parahyangan",
+   "kind": "company",
+   "city": "Bandung",
+   "what": "Bandung IT-services company, 60% owned by Indonet.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "edge-dc-brand",
+   "name": "EDGE DC (former brand)",
+   "legal_name": null,
+   "kind": "brand",
+   "city": "Jakarta",
+   "what": "Name PT Ekagrata Data Gemilang traded under from 2018 until it became Digital Edge Indonesia on 9 December 2025.",
+   "sources": [
+    "https://id.digitaledgedc.com/news/edge-dc-rebrands-as-digital-edge-indonesia"
+   ]
+  },
+  {
+   "id": "epix",
+   "name": "EPIX",
+   "legal_name": null,
+   "kind": "brand",
+   "city": "Jakarta",
+   "what": "Edge Peering Internet Exchange, a carrier-neutral internet exchange at EDGE1 and EDGE2; Indonet says it reached 1.2 Tbps of traffic in 2025, and the operator lists 100+ peering members.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://id.digitaledgedc.com/solutions/epix-internet-exchange",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-availability-of-23-mw-data-center-in-downtown-jakarta/"
+   ]
+  },
+  {
+   "id": "edge1",
+   "name": "EDGE1",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta",
+   "what": "Jl. Kuningan Barat Raya, Mampang Prapatan, South Jakarta. Operating: 6 MW IT, 1,200-1,300 racks on 5 data-hall floors, launched October 2021 and fully contracted within two years. PLN 18 MVA premium supply, 100% PLN renewable certificates. 92 networks listed in PeeringDB.",
+   "sources": [
+    "https://indonet.id/the-first-edge-data-center-edge1-in-downtown-jakarta/",
+    "https://id.digitaledgedc.com/data-centers/edge1",
+    "https://id.digitaledgedc.com/news/topping-off-ceremony-marks-edge-dc-construction-milestone-for-its-upcoming-energy-efficient-data-center-edge2/",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://www.peeringdb.com/fac/11837"
+   ]
+  },
+  {
+   "id": "edge2",
+   "name": "EDGE2",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta",
+   "what": "Jl. Kuningan Mulia, Setiabudi, South Jakarta. Operating: 23 MW IT, 3,400+ racks over 15 floors. Construction from September 2022, topped out August 2023, open 28 February 2024, Phase III works to June 2026. PUE 1.24, Nortek StatePoint liquid cooling, LEED Gold (October 2025), PLN 40 MVA premium supply.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-deepens-presence-in-south-east-asia-with-23mw-colocation-facility-in-jakarta/",
+    "https://id.digitaledgedc.com/news/topping-off-ceremony-marks-edge-dc-construction-milestone-for-its-upcoming-energy-efficient-data-center-edge2/",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-availability-of-23-mw-data-center-in-downtown-jakarta/",
+    "https://id.digitaledgedc.com/news/edge2-receives-leed-gold-certification",
+    "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf",
+    "https://id.digitaledgedc.com/data-centers/edge2"
+   ]
+  },
+  {
+   "id": "cgk-campus",
+   "name": "CGK Campus (GIIC, Cikarang)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bekasi Regency",
+   "what": "GIIC estate, Kota Deltamas, Central Cikarang, on up to 25 ha. Under construction: 500 MW IT planned across four buildings (scalable to 1 GW), US$4.5 bn. First building CGK1 topped out June 2026 for service in Q4 2026; buildings two and three due Q1 and Q2 2027. PLN 2 x 725 MVA; 150 kV GI Sukamahi (350 MVA) energised 15 June 2026. Target PUE 1.25, direct-to-chip liquid cooling; spec sheet lists VESDA and Novec fire systems. Indonet's accounts call the project companies' data centre \"GAIA 1\" (our match to CGK phase one).",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-4-5b-cgk-500mw-ai-ready-hyperscale-campus-indonesia/",
+    "https://id.digitaledgedc.com/news/digital-edge-tops-out-cgk1-secures-largest-indonesia-power-deal",
+    "https://id.digitaledgedc.com/wp-content/uploads/2026/01/cgk_campus-specsheet.pdf",
+    "https://id.digitaledgedc.com/data-centers/cgk-campus",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://www.peeringdb.com/fac/17150"
+   ]
+  },
+  {
+   "id": "indonet-dcs",
+   "name": "Indonet DCs (Cyber Building, Rempoa)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta / South Tangerang",
+   "what": "Indonet's own small data centres: floor 8 of the Cyber Building (Jakarta) and Rempoa (South Tangerang). Capacity not published; operating.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/04/Public-Expose-2026-material.pdf"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State power utility. Supplies all three Digital Edge sites with premium dual-source service and sold EDG renewable energy certificates.",
+   "sources": [
+    "https://www.antaranews.com/berita/5601100/pln-pasok-listrik-pusat-data-2x725-mva-dukung-ekosistem-digital",
+    "https://listrikindonesia.com/detail/10057/pln-tambah-listrik-premium-40-mva-ke-perusahaan-data-center",
+    "https://listrikindonesia.com/detail/9637/kian-diminati-pln-berikan-layanan-sertifikat-energi-hijau-404-mwh-ke-perusahaan-data-center"
+   ]
+  },
+  {
+   "id": "gi-sukamahi",
+   "name": "GI 150 kV Sukamahi",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "Bekasi Regency",
+   "what": "PLN 150 kV substation, 350 MVA, energised by PLN UIP JBT on 15 June 2026 toward the customer \"KTT 5 Digital Edge 1\" (the CGK campus). Builder not named.",
+   "sources": [
+    "https://www.jabarnews.com/daerah/pln-operasikan-gi-150-kv-sukamahi-dukung-data-center-digital-edge/"
+   ]
+  },
+  {
+   "id": "peak-energy",
+   "name": "Peak Energy",
+   "legal_name": "Peak Energy Investments Ltd",
+   "kind": "company",
+   "city": null,
+   "what": "Stonepeak-backed renewable developer and power producer in Asia; June 2024 pact to pursue 500 MW of renewable capacity for Digital Edge sites, Indonesia included. No Indonesian project named yet.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-and-peak-energy-partner-to-deliver-renewable-energy-solutions-for-data-centers-across-asia-pacific/"
+   ]
+  },
+  {
+   "id": "total-bangun-persada",
+   "name": "Total Bangun Persada",
+   "legal_name": "PT Total Bangun Persada Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed Indonesian building contractor. Built EDGE2 Phase III for EDG and holds 50% of the joint operation building the \"GAIA Project in Cikarang\".",
+   "sources": [
+    "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf",
+    "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf"
+   ]
+  },
+  {
+   "id": "accesstech",
+   "name": "Accesstech Engineering",
+   "legal_name": "Accesstech Engineering Pte Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore contractor for high-tech and data-centre construction and prefabricated MEP; Jakarta office (PT Accesstech Super Jaya). 50% partner in the GAIA joint operation.",
+   "sources": [
+    "https://www.accesstech.com.sg/",
+    "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf"
+   ]
+  },
+  {
+   "id": "kso-total-accesstech",
+   "name": "KSO Total-Accesstech (GAIA)",
+   "legal_name": "KSO Total - Accesstech",
+   "kind": "company",
+   "city": "Cikarang",
+   "what": "50:50 joint operation formed 25 November 2025; won the \"GAIA Project in Cikarang\" by letter of award dated 5 December 2025. Total's stake was carried at Rp28.45 bn on 30 June 2026.",
+   "sources": [
+    "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf",
+    "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf"
+   ]
+  },
+  {
+   "id": "nortek",
+   "name": "Nortek (StatePoint)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Maker of the StatePoint liquid cooling system specified for EDGE2.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-deepens-presence-in-south-east-asia-with-23mw-colocation-facility-in-jakarta/",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "furutec",
+   "name": "Furutec (EITA)",
+   "legal_name": "EITA Resources Berhad",
+   "kind": "company",
+   "city": "Malaysia",
+   "what": "Furutec is the busduct brand of Malaysia's EITA Resources; it supplied busducts to \"Digital Edge's Jakarta facility\" in 2024 (building not named).",
+   "sources": [
+    "https://eita.com.my/projects/furutec-projects/"
+   ]
+  },
+  {
+   "id": "juniper",
+   "name": "Juniper Networks",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "US network vendor; Indonet runs its newest data-centre network on Juniper QFX switches and Apstra software (November 2022).",
+   "sources": [
+    "https://indonet.id/indonet-partners-with-juniper-networks-for-intent-based-networking-software-to-automate-and-modernize-network-deployment/"
+   ]
+  },
+  {
+   "id": "dci-indonesia",
+   "name": "DCI Indonesia",
+   "legal_name": "PT DCI Indonesia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed Indonesian data-centre operator founded in 2012 by Otto Toto Sugiri, its President Director since 2016. EDGE1 adopted DCI's design and operating platform (2021), and Indonet bought data-centre and connectivity services from DCI while both were under Sugiri's control.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2020.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2022.pdf",
+    "https://indonet.id/the-first-edge-data-center-edge1-in-downtown-jakarta/",
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf"
+   ]
+  },
+  {
+   "id": "puradelta-lestari",
+   "name": "Puradelta Lestari (Kota Deltamas)",
+   "legal_name": "PT Puradelta Lestari Tbk",
+   "kind": "company",
+   "city": "Bekasi Regency",
+   "what": "Sinar Mas Land and Sojitz joint venture that develops Kota Deltamas and the GIIC industrial estate. Sold Rp741.5 bn of land to DGE1 in Q1 2026, 71% of its sales that quarter.",
+   "sources": [
+    "https://deltamas.id/en/",
+    "https://deltamas.id/wp-content/uploads/2026/05/Financial-Statement-31-Maret-2026.pdf"
+   ]
+  },
+  {
+   "id": "bca",
+   "name": "BCA",
+   "legal_name": "PT Bank Central Asia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonet group's main bank: EDG's Rp2.81 tn facility (2022), the Rp5.5 tn Indonet/EDG facility (October 2025) and a Rp1.7 tn top-up (October 2026); also lead arranger and green coordinator on the US$665 m green loan.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2025/05/Indonet-Disclosure-of-Information-Material-Transaction-29032022-min.pdf",
+    "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/10/KI-6-Okt-2026.pdf",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/"
+   ]
+  },
+  {
+   "id": "bnp-paribas",
+   "name": "BNP Paribas",
+   "legal_name": "PT Bank BNP Paribas Indonesia / BNP Paribas",
+   "kind": "company",
+   "city": null,
+   "what": "Lead arranger on the US$665 m green loan; lender on the US$530.2 m DGE2 facility and the US$575 m HoldCo loan.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/"
+   ]
+  },
+  {
+   "id": "clifford-capital",
+   "name": "Clifford Capital",
+   "legal_name": "Clifford Capital Credit Solutions Pte Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore lender on all three 2026 Digital Edge loans: US$665 m green loan, US$530.2 m DGE2 facility and US$575 m HoldCo loan.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/"
+   ]
+  },
+  {
+   "id": "credit-agricole-cib",
+   "name": "Credit Agricole CIB",
+   "legal_name": "Crédit Agricole Corporate and Investment Bank",
+   "kind": "company",
+   "city": null,
+   "what": "Lead arranger and green facility coordinator on the US$665 m green loan.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+    "https://indonet.id/wp-content/uploads/2026/03/Keterbukaan-Informasi_16-Mar-2026.pdf"
+   ]
+  },
+  {
+   "id": "dbs",
+   "name": "DBS",
+   "legal_name": "PT Bank DBS Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Lead arranger and green facility coordinator on the US$665 m green loan; lender on the US$530.2 m DGE2 facility.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "ocbc",
+   "name": "OCBC",
+   "legal_name": "Oversea-Chinese Banking Corporation Limited / PT Bank OCBC NISP Tbk",
+   "kind": "company",
+   "city": null,
+   "what": "OCBC was a lead arranger on the US$665 m green loan; its Indonesian bank OCBC NISP lends on the US$530.2 m DGE2 facility.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+    "https://indonet.id/wp-content/uploads/2026/03/Keterbukaan-Informasi_16-Mar-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "mizuho",
+   "name": "Mizuho Bank",
+   "legal_name": "Mizuho Bank Ltd",
+   "kind": "company",
+   "city": null,
+   "what": "Lead arranger on the US$665 m green loan.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+    "https://indonet.id/wp-content/uploads/2026/03/Keterbukaan-Informasi_16-Mar-2026.pdf"
+   ]
+  },
+  {
+   "id": "smbc",
+   "name": "SMBC",
+   "legal_name": "PT Bank SMBC Indonesia Tbk / Sumitomo Mitsui Banking Corporation",
+   "kind": "company",
+   "city": null,
+   "what": "SMBC Indonesia was a lead arranger on the US$665 m green loan; SMBC was a lead arranger, bookrunner and sustainability-linked-loan coordinator on the US$575 m HoldCo loan.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+    "https://indonet.id/wp-content/uploads/2026/03/Keterbukaan-Informasi_16-Mar-2026.pdf",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/"
+   ]
+  },
+  {
+   "id": "bank-mayapada",
+   "name": "Bank Mayapada",
+   "legal_name": "PT Bank Mayapada Internasional Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Named as a lender in the US$665 m DGE1 facility in Indonet's June 2026 accounts; not in the March 2026 lender list.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  },
+  {
+   "id": "bangkok-bank",
+   "name": "Bangkok Bank",
+   "legal_name": "Bangkok Bank Public Company Limited",
+   "kind": "company",
+   "city": "Bangkok",
+   "what": "Lender on the US$530.2 m DGE2 facility (September 2026).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "bank-of-china-hk",
+   "name": "Bank of China (Hong Kong)",
+   "legal_name": "Bank Of China (Hong Kong) Limited, Jakarta Branch",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Lender on the US$530.2 m DGE2 facility.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "first-abu-dhabi-bank",
+   "name": "First Abu Dhabi Bank",
+   "legal_name": "First Abu Dhabi Bank PJSC, Singapore Branch",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Lender on the US$530.2 m DGE2 facility.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "mufg",
+   "name": "MUFG Bank",
+   "legal_name": "MUFG Bank, Ltd.",
+   "kind": "company",
+   "city": null,
+   "what": "Jakarta and Singapore branches lend on the US$530.2 m DGE2 facility; MUFG was a lead arranger, bookrunner and sustainability-linked-loan coordinator on the US$575 m HoldCo loan.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/"
+   ]
+  },
+  {
+   "id": "cimb-niaga",
+   "name": "CIMB Niaga",
+   "legal_name": "PT Bank CIMB Niaga Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Lender on the US$530.2 m DGE2 facility.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "bank-permata",
+   "name": "Bank Permata",
+   "legal_name": "PT Bank Permata Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Lender on the US$530.2 m DGE2 facility.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf"
+   ]
+  },
+  {
+   "id": "deutsche-bank",
+   "name": "Deutsche Bank",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Lead arranger and bookrunner on the US$575 m HoldCo loan (May 2026).",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/"
+   ]
+  },
+  {
+   "id": "standard-chartered",
+   "name": "Standard Chartered",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Lead arranger, bookrunner and sustainability-linked-loan coordinator on the US$575 m HoldCo loan.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/"
+   ]
+  },
+  {
+   "id": "moodys",
+   "name": "Moody's Ratings",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Gave Digital Edge's Green Finance Framework an SQS2 (very good) sustainability score (November 2024).",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-publishes-green-finance-framework/"
+   ]
+  },
+  {
+   "id": "usgbc",
+   "name": "USGBC (LEED)",
+   "legal_name": "U.S. Green Building Council",
+   "kind": "company",
+   "city": null,
+   "what": "Runs the LEED rating system; EDGE2 was certified LEED Gold in October 2025.",
+   "sources": [
+    "https://id.digitaledgedc.com/news/edge2-receives-leed-gold-certification"
+   ]
+  },
+  {
+   "id": "apjii",
+   "name": "APJII (IIX)",
+   "legal_name": "Asosiasi Penyelenggara Jasa Internet Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesian ISP association that runs the IIX internet exchange; IIX points of presence at EDGE1 (2022) and EDGE2 (April 2025); IIX route servers are the only network listed at the CGK campus in PeeringDB.",
+   "sources": [
+    "https://indonet.id/edge-dc-partnership-with-apjii/",
+    "https://id.digitaledgedc.com/id/acara-id/konektivitas-tanpa-batas-edge-dc-dan-apjii-luncurkan-iix-di-edge2-jakarta",
+    "https://www.peeringdb.com/fac/17150"
+   ]
+  },
+  {
+   "id": "google",
+   "name": "Google",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Digital Edge Indonesia is a Google Verified Peering Provider (silver tier).",
+   "sources": [
+    "https://id.digitaledgedc.com/solutions/epix-internet-exchange/peering-with-google"
+   ]
+  },
+  {
+   "id": "alibaba-cloud",
+   "name": "Alibaba Cloud",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonet is an official Alibaba Cloud distribution partner (Velocity Partner Award, 2025).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/04/Public-Expose-2026-material.pdf"
+   ]
+  },
+  {
+   "id": "byteplus",
+   "name": "BytePlus",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonet is an official BytePlus distribution partner.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/04/Public-Expose-2026-material.pdf"
+   ]
+  },
+  {
+   "id": "aws",
+   "name": "Amazon Web Services",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonet is an AWS Direct Connect partner.",
+   "sources": [
+    "https://indonet.id/indonet-extends-customers-networks-to-aws-with-aws-direct-connect/"
+   ]
+  },
+  {
+   "id": "komdigi",
+   "name": "Komdigi",
+   "legal_name": "Kementerian Komunikasi dan Digital",
+   "kind": "government",
+   "city": "Jakarta",
+   "what": "Telecom ministry; Indonet holds telecom licences and must notify it of shareholding changes once private.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf"
+   ]
+  },
+  {
+   "id": "bytedance",
+   "name": "ByteDance (AS396986)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Content network that lists a presence at EDGE1 in PeeringDB.",
+   "sources": [
+    "https://www.peeringdb.com/fac/11837"
+   ]
+  },
+  {
+   "id": "akamai",
+   "name": "Akamai (AS20940)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "CDN that lists a presence at EDGE1 in PeeringDB (also Akamai Direct Connect).",
+   "sources": [
+    "https://www.peeringdb.com/fac/11837"
+   ]
+  },
+  {
+   "id": "huawei-cloud",
+   "name": "Huawei Cloud (AS136907)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Cloud network that lists a presence at EDGE1 in PeeringDB.",
+   "sources": [
+    "https://www.peeringdb.com/fac/11837"
+   ]
+  },
+  {
+   "id": "telin",
+   "name": "Telin (AS7713)",
+   "legal_name": "Telekomunikasi Indonesia International",
+   "kind": "company",
+   "city": null,
+   "what": "Telkom group's international carrier; lists a presence at EDGE1 in PeeringDB.",
+   "sources": [
+    "https://www.peeringdb.com/fac/11837"
+   ]
+  },
+  {
+   "id": "lintasarta",
+   "name": "Lintasarta (AS4800)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonesian network provider listed at both EDGE1 and EDGE2 in PeeringDB.",
+   "sources": [
+    "https://www.peeringdb.com/fac/11837",
+    "https://www.peeringdb.com/fac/15081"
+   ]
+  },
+  {
+   "id": "biznet",
+   "name": "Biznet (AS17451)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonesian network provider listed at EDGE1 in PeeringDB.",
+   "sources": [
+    "https://www.peeringdb.com/fac/11837"
+   ]
+  },
+  {
+   "id": "edgenext",
+   "name": "EdgeNext (AS139057)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "CDN listed at EDGE2 in PeeringDB.",
+   "sources": [
+    "https://www.peeringdb.com/fac/15081"
+   ]
+  },
+  {
+   "id": "michael-dorrell",
+   "name": "Michael Dorrell",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Chairman, CEO and co-founder of Stonepeak; named in Indonet's 2025 annual report as the person with 100% control of the Stonepeak entities above Digital Edge.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://stonepeak.com/team/michael-dorrell/"
+   ]
+  },
+  {
+   "id": "samuel-lee",
+   "name": "Samuel Lee",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Founding CEO of Digital Edge (2020 to Q2 2025), then Senior Advisor to the Board; earlier President of Equinix Asia-Pacific (2005-2019).",
+   "sources": [
+    "https://www.digitaledgedc.com/jp/resources/newsroom/digital-edge-and-stonepeak-infrastructure-partners-announce-formation-of-a-diversified-asia-pacific-data-center-platform-with-a-usd1-billion-capital-commitment/",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/"
+   ]
+  },
+  {
+   "id": "john-freeman",
+   "name": "John Freeman",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "Digital Edge co-founder; CEO since Q2 2025 (earlier Chief Legal & Compliance Officer, Group President 2024). Indonet commissioner June 2022 to April 2026. Previously at Tata Communications (2004-2019).",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/04/Ringkasan-RUPST-RUPSLB-22-Apr.pdf"
+   ]
+  },
+  {
+   "id": "jonathan-walbridge",
+   "name": "Jonathan Walbridge",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "Digital Edge founder and CFO (2020-); President Commissioner of Indonet; director of Digital Edge (Hong Kong). Previously Macquarie infrastructure funds (2006-2019).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  },
+  {
+   "id": "jonathan-chou",
+   "name": "Jonathan Chou",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Hong Kong",
+   "what": "Digital Edge founder and Chief Strategist (2020-); Indonet commissioner June 2022 to March 2026. Previously Equinix Asia-Pacific (2004-2019).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/KI-Pengunduran-Diri-Anggota-Dewan-Komisaris.pdf"
+   ]
+  },
+  {
+   "id": "andrew-rigoli",
+   "name": "Andrew (Andy) Rigoli",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Digital Edge co-founder and Chief Business Operations Officer (Hong Kong, from January 2020). Indonet President Director May 2024 to April 2026, then commissioner; director of EDG. Previously Equinix (2002-2019).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/indonet-leadership-update/",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf"
+   ]
+  },
+  {
+   "id": "john-yung",
+   "name": "John Yung",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Director of Digital Edge (Hong Kong) Ltd, the Indonet tender offeror.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf"
+   ]
+  },
+  {
+   "id": "andrew-thomas",
+   "name": "Andrew Thomas",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Senior Managing Director at Stonepeak and Chairman of the Digital Edge board.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-raises-over-us1-6-billion-in-new-equity-and-debt-capital-to-fund-continued-platform-expansion/"
+   ]
+  },
+  {
+   "id": "eanna-murphy",
+   "name": "Eanna Murphy",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Non-executive director of Digital Edge from February 2025; Senior Operating Partner at Stonepeak; earlier COO of Yondr.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/"
+   ]
+  },
+  {
+   "id": "maile-kaiser",
+   "name": "Maile Kaiser",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Non-executive director of Digital Edge from February 2025; Chief Revenue Officer at CoreSite.",
+   "sources": [
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/"
+   ]
+  },
+  {
+   "id": "horatio-chan",
+   "name": "Horatio Chan",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Indonet Director of Strategy (from May 2023) and Business Development Senior Director at Digital Edge Hong Kong; earlier Equinix (2008-2020).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  },
+  {
+   "id": "donauly-situmorang",
+   "name": "Donauly Elena Situmorang",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Indonet President Director since 22 April 2026 (before that Director of Finance & Corporate Affairs; Corporate Secretary since 2021); commissioner of EDG; director of PT Pantja Tirta Drawana; earlier EY Indonesia.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/04/Ringkasan-RUPST-RUPSLB-22-Apr.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+    "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "agus-ariyanto",
+   "name": "Agus Ariyanto",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Indonet Director of Operations since June 2025; earlier network roles at PT Supra Primatama Nusantara (2004-2024).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  },
+  {
+   "id": "yudie-haryanto",
+   "name": "Yudie Haryanto",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Indonet Director of Sales & Marketing since June 2025; APJII supervisory board member (2024-2028); earlier PT Supra Primatama Nusantara (2007-2024).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  },
+  {
+   "id": "sabam-hutajulu",
+   "name": "Sabam Hutajulu",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Indonet independent commissioner (from March 2024); independent commissioner of PT Air Asia Indonesia since October 2022; earlier Pertamina finance roles.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  },
+  {
+   "id": "rinaldi-firmansyah",
+   "name": "Rinaldi Firmansyah",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Indonet vice president commissioner (independent) March 2024 to March 2026. President Commissioner of Pertamina Hulu Energi from 2020, commissioner of Indonesia Infrastructure Finance and Bluebird; former Telkom President Director and Chairman of PLN Batam (2013-2016).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/KI-Pengunduran-Diri-Anggota-Dewan-Komisaris.pdf"
+   ]
+  },
+  {
+   "id": "stephen-weiss",
+   "name": "Stephen Weiss",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Indonet commissioner March 2024 to March 2026; Vice President Director of PT Profesional Telekomunikasi Indonesia since 2012.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/KI-Pengunduran-Diri-Anggota-Dewan-Komisaris.pdf"
+   ]
+  },
+  {
+   "id": "stephanus-oscar",
+   "name": "Stephanus Oscar",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "CEO of Digital Edge Indonesia (EDGE DC) and President Director of EDG.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+    "https://id.digitaledgedc.com/about"
+   ]
+  },
+  {
+   "id": "anthony-waludin",
+   "name": "Anthony Jauw Waludin",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Director of EDG; Director of Sales & Marketing, Digital Edge Indonesia.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+    "https://id.digitaledgedc.com/about"
+   ]
+  },
+  {
+   "id": "otto-toto-sugiri",
+   "name": "Otto Toto Sugiri",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Founded Indonet (1994) and DCI Indonesia (2012; President Director since 2016). His Indonet stake fell from 38.9% to 16.56% in 2021 when Digital Edge took control, and he sold the rest to Digital Edge in December 2023. Earlier founded Sigma Cipta Caraka (1989).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2020.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2022.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+    "https://www.digitaledgedc.com/resources/newsroom/digital-edge-increases-its-majority-investment-in-pt-indointernet-tbk/"
+   ]
+  },
+  {
+   "id": "han-arming-hanafia",
+   "name": "Han Arming Hanafia",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Indonet founding shareholder (21.87% before the 2021 IPO); sold out to Digital Edge in December 2023.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf"
+   ]
+  },
+  {
+   "id": "bing-moniaga",
+   "name": "Bing Moniaga",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Indonet founding shareholder (18.92% before the 2021 IPO); sold out to Digital Edge in December 2023.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf",
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf"
+   ]
+  },
+  {
+   "id": "marina-budiman",
+   "name": "Marina Budiman",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Indonet founding shareholder (4.81% before the 2021 IPO, 1.64% at end-2021).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf"
+   ]
+  },
+  {
+   "id": "disp",
+   "name": "Datacenter Indonesia Sukses Perkasa",
+   "legal_name": "PT Datacenter Indonesia Sukses Perkasa",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Company where Toto Sugiri has been President Commissioner since 2022.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2022.pdf"
+   ]
+  },
+  {
+   "id": "sigma-cipta-caraka",
+   "name": "Sigma Cipta Caraka (Telkomsigma)",
+   "legal_name": "PT Sigma Cipta Caraka",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IT-services firm founded and chaired by Toto Sugiri from 1989 to 2007; now Telkomsigma.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf",
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "pertamina-hulu-energi",
+   "name": "Pertamina Hulu Energi",
+   "legal_name": "PT Pertamina Hulu Energi",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Pertamina upstream unit; Rinaldi Firmansyah is President Commissioner (since 2020).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "indonesia-infrastructure-finance",
+   "name": "Indonesia Infrastructure Finance",
+   "legal_name": "PT Indonesia Infrastructure Finance",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Infrastructure lender; Rinaldi Firmansyah is a commissioner.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "bluebird",
+   "name": "Bluebird",
+   "legal_name": "PT Bluebird Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed transport company; Rinaldi Firmansyah is a commissioner.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "pln-batam",
+   "name": "PLN Batam",
+   "legal_name": "PT PLN Batam",
+   "kind": "state_firm",
+   "city": "Batam",
+   "what": "PLN's Batam utility; Rinaldi Firmansyah was its Chairman (2013-2016).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "telkom",
+   "name": "Telkom Indonesia",
+   "legal_name": "PT Telekomunikasi Indonesia Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State telecom group; Rinaldi Firmansyah was its President Director and Finance Director (2004-2012) and a commissioner (2015-2019).",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "protelindo",
+   "name": "Protelindo",
+   "legal_name": "PT Profesional Telekomunikasi Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Tower company; Stephen Weiss has been Vice President Director since 2012.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "airasia-indonesia",
+   "name": "AirAsia Indonesia",
+   "legal_name": "PT Air Asia Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Airline; Sabam Hutajulu has been an independent commissioner since October 2022.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf"
+   ]
+  },
+  {
+   "id": "pantja-tirta-drawana",
+   "name": "Pantja Tirta Drawana",
+   "legal_name": "PT Pantja Tirta Drawana",
+   "kind": "company",
+   "city": null,
+   "what": "Company where Donauly Elena Situmorang is a director (since 2021); a small Indonet customer reported as a related party.",
+   "sources": [
+    "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+    "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "michael-dorrell",
+   "to": "stonepeak-dea-holdings-uk",
+   "relation": "owns",
+   "detail": "100% control through intermediate holding companies; no other person holds 20% or more of the Stonepeak-controlled entities in the chain (Indonet 2025 annual report).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "No natural person other than Michael Dorrell directly or indirectly beneficially owns 20% or more of any of the Stonepeak-controlled"
+  },
+  {
+   "from": "stonepeak",
+   "to": "stonepeak-dea-holdings-uk",
+   "relation": "owns",
+   "detail": "The annual report calls every entity in the chain above Digital Edge \"Stonepeak-controlled\"; percentages shown are control, not economic ownership.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "beneficially owns 20% or more of any of the Stonepeak-controlled"
+  },
+  {
+   "from": "stonepeak-dea-holdings-uk",
+   "to": "stonepeak-dea-cayman-gp",
+   "relation": "owns",
+   "detail": "Managing member, 100% control.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Managing member (100% control)"
+  },
+  {
+   "from": "stonepeak-dea-cayman-gp",
+   "to": "dea-topco",
+   "relation": "owns",
+   "detail": "General partner, 100% control.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "General Partner (100% control)"
+  },
+  {
+   "from": "dea-topco",
+   "to": "digital-edge-group",
+   "relation": "owns",
+   "detail": "Sole shareholder of Digital Edge (Singapore) Holdings Pte Ltd (100% control).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Sole shareholder (100% control)"
+  },
+  {
+   "from": "digital-edge-group",
+   "to": "de-hk",
+   "relation": "owns",
+   "detail": "Owns 100% of Digital Edge (Hong Kong) Ltd (paid-up capital US$250,000).",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf",
+   "quote": "Digital Edge (Singapore) 100 100,00% Holdings Pte Ltd"
+  },
+  {
+   "from": "de-hk",
+   "to": "de-hk-spvi",
+   "relation": "owns",
+   "detail": "Owns 100% of Digital Edge (HK) SPVI Limited.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/05/KI-Perubahan-Pemegang-Saham.pdf",
+   "quote": "Digital Edge (HK) SPVI Limited is a company wholly owned by Digital Edge (Hong Kong) Ltd"
+  },
+  {
+   "from": "de-hk",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "59.10% (1,193,969,000 shares). Took control on 11 June 2021 by buying 189,903,500 shares (47%) at Rp10,495 a share from the founders led by Otto Toto Sugiri (US$165 m by Digital Edge's count; Indonet material-fact report of 15 June 2021). In June-September 2026 it offered Rp11,500 a share for the 7.90% public float to delist Indonet; period I bought 7,118,700 shares, final result not yet published.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Digital EDGE (Hongkong) Limited 1,193,969,000 59.10%"
+  },
+  {
+   "from": "de-hk-spvi",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "33.00% (666,682,500 shares) bought off-exchange from Otto Toto Sugiri and four other founders on 15 December 2023, taking the Digital Edge group to 92.10%; paid with Digital Edge capital plus an external debt facility (lender not named).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/05/KI-Perubahan-Pemegang-Saham.pdf",
+   "quote": "owns directly and indirectly a total of 1,860,651,500 shares of the Company representing 92.10% shareholding"
+  },
+  {
+   "from": "indonet",
+   "to": "digital-edge",
+   "relation": "owns",
+   "detail": "99.83% of PT Ekagrata Data Gemilang (1,013,198 shares); the shares are pledged to BCA.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "PT Indointernet Tbk 1,013,198 99.83%"
+  },
+  {
+   "from": "de-hk",
+   "to": "digital-edge",
+   "relation": "owns",
+   "detail": "0.17% of PT Ekagrata Data Gemilang (1,686 shares) held directly.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "Digital Edge (Hong Kong) Limited 1,686 0.17%"
+  },
+  {
+   "from": "indonet",
+   "to": "dge1",
+   "relation": "owns",
+   "detail": "99.99% (the remaining 0.01% sits with EDG per the 2025 annual report chart); capital injections include Rp640 bn in May 2026 and Rp437 bn on 13 October 2026.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "PT Digital Gayana Ekagrata Jakarta, 2025 99.99% 99.99%"
+  },
+  {
+   "from": "indonet",
+   "to": "dge2",
+   "relation": "owns",
+   "detail": "99.99%; capital injections include Rp460 bn in May 2026 and Rp32 bn on 13 October 2026.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "PT Digital Gayana Ekaprana Jakarta, 2025 99.99% 99.99%"
+  },
+  {
+   "from": "indonet",
+   "to": "dge3",
+   "relation": "owns",
+   "detail": "99.99% of the DGE companies; Rp25 bn injected in July 2026 and Rp16 bn on 13 October 2026.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/10/DGE-KI-Transaksi-Afiliasi-261014.pdf",
+   "quote": "owns 99.99% of the total issued"
+  },
+  {
+   "from": "indonet",
+   "to": "net-soft",
+   "relation": "owns",
+   "detail": "99.52%.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "PT Net Soft (“NS”) Tangerang Selatan, 99.52% 99.52%"
+  },
+  {
+   "from": "net-soft",
+   "to": "fast-speed-network",
+   "relation": "owns",
+   "detail": "100%, since 2015.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Fast Speed Network Pte. Ltd. (“FSN”) Singapura, 2015 100.00% 100.00%"
+  },
+  {
+   "from": "indonet",
+   "to": "wiratapura",
+   "relation": "owns",
+   "detail": "60%.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "PT Wiratapura Indo Parahyangan (“WIP”) Bandung, 2017 60.00% 60.00%"
+  },
+  {
+   "from": "stonepeak",
+   "to": "digital-edge-group",
+   "relation": "invested_in",
+   "detail": "Founding investor in 2020: Stonepeak, its investors and management committed US$1 bn of equity; a January 2025 round added about US$640 m of equity from existing and new investors, including unnamed sovereign wealth funds.",
+   "evidence": "company_claim",
+   "date": "2025-01",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-raises-over-us1-6-billion-in-new-equity-and-debt-capital-to-fund-continued-platform-expansion/",
+   "quote": "Since making the founding investment in Digital Edge in 2020, Stonepeak has been proud to support the platform’s expansion"
+  },
+  {
+   "from": "otto-toto-sugiri",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Held 48.61% before the February 2021 IPO and 16.56% after Digital Edge's June 2021 purchase; sold the rest to Digital Edge (HK) SPVI on 15 December 2023.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+   "quote": "Otto Toto Sugiri 66.898.100 16,56 - -"
+  },
+  {
+   "from": "han-arming-hanafia",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Held 21.87% before the IPO and 7.45% from 2021 until selling to Digital Edge in December 2023.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+   "quote": "Han Arming Hanafia 30.094.000 7,45 - -"
+  },
+  {
+   "from": "bing-moniaga",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Held 18.92% before the IPO and 6.44% from 2021 until selling to Digital Edge in December 2023.",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-Indonet-2023.pdf",
+   "quote": "Bing Moniaga 26.040.600 6,44 - -"
+  },
+  {
+   "from": "marina-budiman",
+   "to": "indonet",
+   "relation": "owns",
+   "detail": "Held 4.81% before the IPO (3.9% after it) and 1.64% at the end of 2021.",
+   "evidence": "confirmed",
+   "date": "2021-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf",
+   "quote": "Marina Budiman 15.560.000 3,9 6.625.100 1,64"
+  },
+  {
+   "from": "edge-dc-brand",
+   "to": "digital-edge",
+   "relation": "brand_of",
+   "detail": "Trading name until the 9 December 2025 rebrand to Digital Edge Indonesia.",
+   "evidence": "company_claim",
+   "date": "2025-12",
+   "source_url": "https://id.digitaledgedc.com/news/edge-dc-rebrands-as-digital-edge-indonesia",
+   "quote": "has rebranded as Digital Edge Indonesia"
+  },
+  {
+   "from": "epix",
+   "to": "indonet",
+   "relation": "brand_of",
+   "detail": "Indonet runs the EPIX internet exchange, which reached 1.2 Tbps of traffic in 2025.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Exchange) achieved a milestone of 1.2 Tbps"
+  },
+  {
+   "from": "digital-edge",
+   "to": "edge1",
+   "relation": "runs",
+   "detail": "EDG owns the EDGE1 building in Mampang Prapatan and is its sole operator (6 MW IT).",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "EDGE1 data center building owned by EDG, located in Mampang"
+  },
+  {
+   "from": "digital-edge",
+   "to": "edge2",
+   "relation": "runs",
+   "detail": "EDG owns the EDGE2 building in Setiabudi (23 MW IT).",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "EDGE2 data center building owned by EDG, located in Setiabudi"
+  },
+  {
+   "from": "digital-edge",
+   "to": "cgk-campus",
+   "relation": "runs",
+   "detail": "Digital Edge Indonesia markets the campus and signed the PLN power deal; the assets sit in the DGE project companies.",
+   "evidence": "company_claim",
+   "date": "2026-01",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-4-5b-cgk-500mw-ai-ready-hyperscale-campus-indonesia/",
+   "quote": "With strategic sites in Jakarta’s CBD and GIIC Bekasi"
+  },
+  {
+   "from": "dge1",
+   "to": "cgk-campus",
+   "relation": "runs",
+   "detail": "Inferred: DGE1 borrowed US$665 m on 12 March 2026 for \"DGE's data center project\" (Indonet filing), which Digital Edge says funds CGK phase one, and it bought Rp741.5 bn of Kota Deltamas land in Q1 2026 (Puradelta accounts).",
+   "evidence": "inferred",
+   "date": "2026-03",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "will be used to finance the construction of DGE’s"
+  },
+  {
+   "from": "dge2",
+   "to": "cgk-campus",
+   "relation": "runs",
+   "detail": "Inferred: Indonet's June 2026 accounts say EDG, DGE1 and DGE2 signed the supplier contracts for \"data center GAIA 1\", and Total's filings place the GAIA project in Cikarang.",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "the development of data center GAIA 1"
+  },
+  {
+   "from": "indonet",
+   "to": "indonet-dcs",
+   "relation": "runs",
+   "detail": "Indonet's own Cyber Building (floor 8) and Rempoa data centres.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Indonet Cyber (Fl. 8) DC & Rempoa DC are built for"
+  },
+  {
+   "from": "indonet",
+   "to": "cgk-campus",
+   "relation": "supplies",
+   "detail": "Indonet's fiber (new fully underground routes) connects the campus to its metro network and to EDGE1/EDGE2.",
+   "evidence": "company_claim",
+   "date": "2026-01",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-4-5b-cgk-500mw-ai-ready-hyperscale-campus-indonesia/",
+   "quote": "The campus will be underpinned by the extensive fiber and network assets of Indonet"
+  },
+  {
+   "from": "bytedance",
+   "to": "edge1",
+   "relation": "tenant_of",
+   "detail": "ByteDance's network (AS396986) lists EDGE1 as one of its facilities in PeeringDB (self-reported).",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://www.peeringdb.com/fac/11837",
+   "quote": "ByteDance 396986"
+  },
+  {
+   "from": "akamai",
+   "to": "edge1",
+   "relation": "tenant_of",
+   "detail": "Akamai (AS20940, plus Akamai Direct Connect AS20189) lists EDGE1 in PeeringDB.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://www.peeringdb.com/fac/11837",
+   "quote": "Akamai Technologies 20940"
+  },
+  {
+   "from": "huawei-cloud",
+   "to": "edge1",
+   "relation": "tenant_of",
+   "detail": "Huawei Cloud Global (AS136907) lists EDGE1 in PeeringDB.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://www.peeringdb.com/fac/11837",
+   "quote": "Huawei Cloud Global 136907"
+  },
+  {
+   "from": "telin",
+   "to": "edge1",
+   "relation": "tenant_of",
+   "detail": "Telin (AS7713) lists EDGE1 in PeeringDB.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://www.peeringdb.com/fac/11837",
+   "quote": "Telekomunikasi Indonesia Int (TELIN) 7713"
+  },
+  {
+   "from": "lintasarta",
+   "to": "edge1",
+   "relation": "tenant_of",
+   "detail": "Lintasarta (AS4800) lists EDGE1 and EDGE2 in PeeringDB.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://www.peeringdb.com/fac/11837",
+   "quote": "Lintasarta 4800"
+  },
+  {
+   "from": "biznet",
+   "to": "edge1",
+   "relation": "tenant_of",
+   "detail": "Biznet Networks (AS17451) lists EDGE1 in PeeringDB.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://www.peeringdb.com/fac/11837",
+   "quote": "Biznet Networks 17451"
+  },
+  {
+   "from": "edgenext",
+   "to": "edge2",
+   "relation": "tenant_of",
+   "detail": "EdgeNext (AS139057) lists EDGE2 in PeeringDB.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://www.peeringdb.com/fac/15081",
+   "quote": "EdgeNext 139057"
+  },
+  {
+   "from": "indonet",
+   "to": "dci-indonesia",
+   "relation": "tenant_of",
+   "detail": "Indonet bought data-centre and connectivity services from DCI (Rp4.7 bn prepaid at end-2021); DCI was under common control with Indonet at end-2020 through Toto Sugiri.",
+   "evidence": "confirmed",
+   "date": "2021-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf",
+   "quote": "PT DCI Indonesia Tbk. 4.745 5.510"
+  },
+  {
+   "from": "pln",
+   "to": "edge1",
+   "relation": "supplies_power",
+   "detail": "18 MVA premium supply from PLN UP3 Bulungan, two sources with automatic changeover.",
+   "evidence": "confirmed",
+   "date": "2022-09",
+   "source_url": "https://id.digitaledgedc.com/id/berita-id/edge-dc-kembali-mendapatkan-layanan-premium-platinum-pln",
+   "quote": "Data Center 1 (EDGE 1) at Tendean with 18 MVA supplied by PLN UP3 Bulungan"
+  },
+  {
+   "from": "pln",
+   "to": "edge2",
+   "relation": "supplies_power",
+   "detail": "40 MVA Premium Platinum supply from PLN UID Jakarta Raya (UP3 Menteng), signed September 2022; 58 MVA in total for EDG.",
+   "evidence": "confirmed",
+   "date": "2022-09",
+   "source_url": "https://id.digitaledgedc.com/id/berita-id/edge-dc-kembali-mendapatkan-layanan-premium-platinum-pln",
+   "quote": "securing a 40 MVA power supply from PLN Unit Induk Distribusi (UID) Jakarta Raya"
+  },
+  {
+   "from": "pln",
+   "to": "cgk-campus",
+   "relation": "supplies_power",
+   "detail": "PJBTL signed October 2025 for 2 x 650 MVA, raised in June 2026 to 2 x 725 MVA (two independent 150 kV feeds) with premium service, delivered in phases to 2030; the feeds are redundant, so not 1.45 GW of usable load.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://id.digitaledgedc.com/news/digital-edge-tops-out-cgk1-secures-largest-indonesia-power-deal",
+   "quote": "structured as 2 x 725 MVA across two independent feeds"
+  },
+  {
+   "from": "gi-sukamahi",
+   "to": "cgk-campus",
+   "relation": "supplies_power",
+   "detail": "PLN energised the 350 MVA, 150 kV GI Sukamahi toward customer \"KTT 5 Digital Edge 1\" on 15 June 2026.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.jabarnews.com/daerah/pln-operasikan-gi-150-kv-sukamahi-dukung-data-center-digital-edge/",
+   "quote": "Pengoperasian GI 150 kV Sukamahi arah pelanggan KTT 5 Digital Edge 1 pada 15 Juni 2026"
+  },
+  {
+   "from": "pln",
+   "to": "digital-edge",
+   "relation": "renewable_deal",
+   "detail": "Bought 404 MWh of PLN renewable energy certificates in May 2022, the first Jakarta data centre to do so; EDGE1 now runs on 100% PLN certificates (paper green, power still from the grid).",
+   "evidence": "confirmed",
+   "date": "2022-05",
+   "source_url": "https://listrikindonesia.com/detail/9637/kian-diminati-pln-berikan-layanan-sertifikat-energi-hijau-404-mwh-ke-perusahaan-data-center",
+   "quote": "EDGE DC membeli 404 unit REC PLN"
+  },
+  {
+   "from": "peak-energy",
+   "to": "digital-edge-group",
+   "relation": "partner",
+   "detail": "June 2024 agreement to pursue an initial 500 MW of solar, wind and storage for Digital Edge sites in Japan, Korea, Indonesia, India and the Philippines; no Indonesian project named.",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-and-peak-energy-partner-to-deliver-renewable-energy-solutions-for-data-centers-across-asia-pacific/",
+   "quote": "including Japan, Korea, Indonesia, India, and the Philippines"
+  },
+  {
+   "from": "puradelta-lestari",
+   "to": "dge1",
+   "relation": "supplies",
+   "detail": "Sold Rp741.5 bn of Kota Deltamas industrial land to DGE1 in Q1 2026 (70.97% of Puradelta's sales that quarter), the CGK campus site.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/05/Financial-Statement-31-Maret-2026.pdf",
+   "quote": "PT. Digital Gayana Ekagrata 741.502.389.285 70,97%"
+  },
+  {
+   "from": "puradelta-lestari",
+   "to": "cgk-campus",
+   "relation": "supplies",
+   "detail": "The campus cooling plant ties into the GIIC estate's double-loop recycled water system (GIIC is Puradelta's estate).",
+   "evidence": "company_claim",
+   "date": "2026-01",
+   "source_url": "https://id.digitaledgedc.com/wp-content/uploads/2026/01/cgk_campus-specsheet.pdf",
+   "quote": "Integrated with GIIC’s double-loop recycled water"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "edge2",
+   "relation": "built",
+   "detail": "Contractor for \"Edge2 DC Phase III\" for PT Ekagrata Data Gemilang, 15 September 2025 to 13 June 2026.",
+   "evidence": "confirmed",
+   "date": "2025-09",
+   "source_url": "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf",
+   "quote": "Edge2 DC Phase III PT Ekagrata Data Gemilang 15 September 2025/ 13 Juni 2026/"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "digital-edge",
+   "relation": "built",
+   "detail": "Search snippet only (Kontan, page blocked): Total's H1 2023 construction revenue included Rp130.72 bn from PT Ekagrata Data Gemilang while EDGE2 was being built, which suggests Total also built the main EDGE2 phases.",
+   "evidence": "snippet",
+   "date": "2023-06",
+   "source_url": "https://investasi.kontan.co.id/news/capaian-kontrak-baru-total-bangun-persada-totl-masih-sejalan-dengan-target",
+   "quote": "PT Ekagrata Data Gemilang Rp 130,72 miliar"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "kso-total-accesstech",
+   "relation": "joint_venture",
+   "detail": "50% of the joint operation (KSO) with Accesstech, formed 25 November 2025; investment Rp28.45 bn at 30 June 2026.",
+   "evidence": "confirmed",
+   "date": "2025-11",
+   "source_url": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf",
+   "quote": "KSO Total - Accesstech Proyek GAIA/ KSO Total - Accesstech GAIA Project 28.450.533 --"
+  },
+  {
+   "from": "accesstech",
+   "to": "kso-total-accesstech",
+   "relation": "joint_venture",
+   "detail": "50% of the joint operation with Total Bangun Persada for the GAIA project.",
+   "evidence": "confirmed",
+   "date": "2025-11",
+   "source_url": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf",
+   "quote": "conduct the construction of GAIA Project in Cikarang"
+  },
+  {
+   "from": "kso-total-accesstech",
+   "to": "cgk-campus",
+   "relation": "built",
+   "detail": "Inferred: the KSO won the \"GAIA Project in Cikarang\" (letter of award 5 December 2025), and Indonet's June 2026 accounts show EDG, DGE1 and DGE2 signing Rp15.5 tn of consultancy, contractor and equipment contracts for \"data center GAIA 1\". Total's filing does not name the client.",
+   "evidence": "inferred",
+   "date": "2025-12",
+   "source_url": "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf",
+   "quote": "Based on Letter of Award dated December 5, 2025,"
+  },
+  {
+   "from": "nortek",
+   "to": "edge2",
+   "relation": "supplies",
+   "detail": "StatePoint liquid cooling specified in the September 2022 design (design PUE 1.27; achieved 1.24); Indonet's 2025 annual report says EDGE2 uses Nortek cooling.",
+   "evidence": "company_claim",
+   "date": "2022-09",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-deepens-presence-in-south-east-asia-with-23mw-colocation-facility-in-jakarta/",
+   "quote": "leverage Nortek’s innovative StatePoint ® liquid cooling technology"
+  },
+  {
+   "from": "furutec",
+   "to": "digital-edge",
+   "relation": "supplies",
+   "detail": "Busduct systems for \"Digital Edge's Jakarta facility\" (2024); the building is not named, EDGE2 is the likeliest.",
+   "evidence": "company_claim",
+   "date": "2024",
+   "source_url": "https://eita.com.my/projects/furutec-projects/",
+   "quote": "Furutec contributed robust busduct systems to Digital Edge's Jakarta facility"
+  },
+  {
+   "from": "juniper",
+   "to": "indonet",
+   "relation": "supplies",
+   "detail": "QFX Series switches and Apstra software for the network fabric of Indonet's newest data centre (announced 30 November 2022).",
+   "evidence": "confirmed",
+   "date": "2022-11",
+   "source_url": "https://indonet.id/indonet-partners-with-juniper-networks-for-intent-based-networking-software-to-automate-and-modernize-network-deployment/",
+   "quote": "has selected Juniper Apstra to help automate, modernize and facilitate"
+  },
+  {
+   "from": "dci-indonesia",
+   "to": "edge1",
+   "relation": "designed",
+   "detail": "EDGE1 adopted DCI's platform for infrastructure design, operating standards and its 99.999% SLA (2021), while DCI and Indonet shared Toto Sugiri as controller.",
+   "evidence": "company_claim",
+   "date": "2021-10",
+   "source_url": "https://indonet.id/the-first-edge-data-center-edge1-in-downtown-jakarta/",
+   "quote": "EDGE DC has also partnered up with PT DCI Indonesia Tbk"
+  },
+  {
+   "from": "bca",
+   "to": "indonet",
+   "relation": "lends_to",
+   "detail": "Amended and restated facility of 6 October 2025 to joint borrowers Indonet and EDG: up to Rp5.5 tn (about US$325 m) to refinance the 2022 loan, finish EDGE2 and fund fiber and general needs; secured on EDGE1/EDGE2 land and buildings, Indonet fiber and the 99.83% EDG stake.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "with a total maximum amount of Rp5,500,000,000,000"
+  },
+  {
+   "from": "bca",
+   "to": "digital-edge",
+   "relation": "lends_to",
+   "detail": "EDG's bank since its first credit agreement (28 March 2022, up to Rp2.81 tn to refinance EDGE1 and build EDGE2). On 2 October 2026 BCA added facility KI-5 of up to Rp1.7 tn for EDG and Indonet (9 years, floating rate) for data-centre projects and fiber, secured on EDG land, buildings and equipment.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/10/KI-6-Okt-2026.pdf",
+   "quote": "IDR1,700,000,000,000 (one trillion"
+  },
+  {
+   "from": "bca",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders. Also green facility coordinator.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "bnp-paribas",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "clifford-capital",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "credit-agricole-cib",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders. Also green facility coordinator.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "dbs",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders. Also green facility coordinator.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "ocbc",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "mizuho",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "smbc",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$665 m green loan signed 12 March 2026 for CGK phase one (Term SOFR + 2.60%, 5 years; secured on DGE1's project and its shares). Indonet's IDX filing lists the same eight lenders.",
+   "evidence": "confirmed",
+   "date": "2026-03",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-secures-indonesias-largest-data-center-green-loan/",
+   "quote": "This green loan financing was led by BNP Paribas, Clifford Capital, Crédit Agricole CIB, DBS, Mizuho, OCBC, PT Bank Central Asia Tbk, and SMBC as Mandated Lead Arrangers"
+  },
+  {
+   "from": "bank-mayapada",
+   "to": "dge1",
+   "relation": "lends_to",
+   "detail": "Listed among the lenders of the US$665 m DGE1 facility in Indonet's 30 June 2026 accounts, though not in the March 2026 lender list.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Tbk dan PT Bank Mayapada Internasional Tbk"
+  },
+  {
+   "from": "bangkok-bank",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "Bangkok Bank Public Company"
+  },
+  {
+   "from": "bank-of-china-hk",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "Limited Jakarta Branch;"
+  },
+  {
+   "from": "clifford-capital",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "Clifford Capital Credit Solutions Pte. Ltd.;"
+  },
+  {
+   "from": "first-abu-dhabi-bank",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "First Abu Dhabi Bank PJSC, Singapore Branch;"
+  },
+  {
+   "from": "mufg",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "MUFG Bank, Ltd., Singapore"
+  },
+  {
+   "from": "bnp-paribas",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "g. PT Bank BNP Paribas"
+  },
+  {
+   "from": "cimb-niaga",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "h. PT Bank CIMB Niaga Tbk;"
+  },
+  {
+   "from": "dbs",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "i. PT Bank DBS Indonesia;"
+  },
+  {
+   "from": "bank-permata",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "j. PT Bank Permata Tbk;"
+  },
+  {
+   "from": "ocbc",
+   "to": "dge2",
+   "relation": "lends_to",
+   "detail": "Lender to DGE2's US$530.2 m credit facility signed 2 September 2026 for its data-centre project (Term SOFR + 2.50-2.60%, 5 years; guaranteed by DGE2, Indonet and EDG).",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/09/Keterbukaan-Informasi-3-Sep.pdf",
+   "quote": "k. PT Bank OCBC NISP Tbk."
+  },
+  {
+   "from": "clifford-capital",
+   "to": "digital-edge-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger of Digital Edge's inaugural US$575 m HoldCo loan (22 May 2026) for campus expansion incl. South East Asia.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+   "quote": "Clifford Capital, Deutsche Bank, MUFG, Sumitomo Mitsui Banking Corporation and Standard Chartered acting as mandated lead arrangers"
+  },
+  {
+   "from": "deutsche-bank",
+   "to": "digital-edge-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger of Digital Edge's inaugural US$575 m HoldCo loan (22 May 2026) for campus expansion incl. South East Asia.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+   "quote": "Clifford Capital, Deutsche Bank, MUFG, Sumitomo Mitsui Banking Corporation and Standard Chartered acting as mandated lead arrangers"
+  },
+  {
+   "from": "mufg",
+   "to": "digital-edge-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger of Digital Edge's inaugural US$575 m HoldCo loan (22 May 2026) for campus expansion incl. South East Asia.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+   "quote": "Clifford Capital, Deutsche Bank, MUFG, Sumitomo Mitsui Banking Corporation and Standard Chartered acting as mandated lead arrangers"
+  },
+  {
+   "from": "smbc",
+   "to": "digital-edge-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger of Digital Edge's inaugural US$575 m HoldCo loan (22 May 2026) for campus expansion incl. South East Asia.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+   "quote": "Clifford Capital, Deutsche Bank, MUFG, Sumitomo Mitsui Banking Corporation and Standard Chartered acting as mandated lead arrangers"
+  },
+  {
+   "from": "standard-chartered",
+   "to": "digital-edge-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger of Digital Edge's inaugural US$575 m HoldCo loan (22 May 2026) for campus expansion incl. South East Asia.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+   "quote": "Clifford Capital, Deutsche Bank, MUFG, Sumitomo Mitsui Banking Corporation and Standard Chartered acting as mandated lead arrangers"
+  },
+  {
+   "from": "bnp-paribas",
+   "to": "digital-edge-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger of Digital Edge's inaugural US$575 m HoldCo loan (22 May 2026) for campus expansion incl. South East Asia.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+   "quote": "alongside BNP Paribas and Stonepeak Credit as mandated lead arrangers"
+  },
+  {
+   "from": "stonepeak",
+   "to": "digital-edge-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger of Digital Edge's inaugural US$575 m HoldCo loan (22 May 2026) for campus expansion incl. South East Asia (as Stonepeak Credit).",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-575m-holdco-financing/",
+   "quote": "alongside BNP Paribas and Stonepeak Credit as mandated lead arrangers"
+  },
+  {
+   "from": "moodys",
+   "to": "digital-edge-group",
+   "relation": "certifies",
+   "detail": "Second-party opinion on the Green Finance Framework used for the CGK green loan: SQS2 (very good).",
+   "evidence": "company_claim",
+   "date": "2024-11",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-publishes-green-finance-framework/",
+   "quote": "achieving an SQS2 sustainability score (very good)"
+  },
+  {
+   "from": "usgbc",
+   "to": "edge2",
+   "relation": "certifies",
+   "detail": "LEED Gold certification, October 2025.",
+   "evidence": "company_claim",
+   "date": "2025-10",
+   "source_url": "https://id.digitaledgedc.com/news/edge2-receives-leed-gold-certification",
+   "quote": "has officially achieved LEED Gold Certification"
+  },
+  {
+   "from": "apjii",
+   "to": "edge1",
+   "relation": "partner",
+   "detail": "IIX point of presence launched at EDGE1 (agreement March 2022).",
+   "evidence": "company_claim",
+   "date": "2022-03",
+   "source_url": "https://indonet.id/edge-dc-partnership-with-apjii/",
+   "quote": "Indonesia Internet Exchange (“IIX”) at EDGE1 facility"
+  },
+  {
+   "from": "apjii",
+   "to": "edge2",
+   "relation": "partner",
+   "detail": "Second IIX point of presence, at EDGE2 (22 April 2025).",
+   "evidence": "company_claim",
+   "date": "2025-04",
+   "source_url": "https://id.digitaledgedc.com/id/acara-id/konektivitas-tanpa-batas-edge-dc-dan-apjii-luncurkan-iix-di-edge2-jakarta",
+   "quote": "Indonesia Internet Exchange (“IIX”) di fasilitas kedua mereka, yaitu EDGE2"
+  },
+  {
+   "from": "google",
+   "to": "digital-edge",
+   "relation": "partner",
+   "detail": "Digital Edge Indonesia is a Google Verified Peering Provider (silver, PoP redundancy verified).",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://id.digitaledgedc.com/solutions/epix-internet-exchange/peering-with-google",
+   "quote": "As a Google Verified Peering Provider (VPP), Digital Edge Indonesia provides"
+  },
+  {
+   "from": "alibaba-cloud",
+   "to": "indonet",
+   "relation": "partner",
+   "detail": "Official Alibaba Cloud distribution partner; Velocity Partner Award 2025.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "We strengthened partnerships with Alibaba Cloud and"
+  },
+  {
+   "from": "byteplus",
+   "to": "indonet",
+   "relation": "partner",
+   "detail": "Official BytePlus distribution partner (AI workloads, media, education).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "BytePlus, focusing on AI-driven workloads and sector-"
+  },
+  {
+   "from": "aws",
+   "to": "indonet",
+   "relation": "partner",
+   "detail": "AWS Direct Connect partner (with AWS Service Delivery designation).",
+   "evidence": "company_claim",
+   "date": "2022-11",
+   "source_url": "https://indonet.id/indonet-extends-customers-networks-to-aws-with-aws-direct-connect/",
+   "quote": "Indonet is now an official Amazon Web Services (AWS) Direct Connect partner"
+  },
+  {
+   "from": "komdigi",
+   "to": "indonet",
+   "relation": "regulates",
+   "detail": "Indonet's telecom licences mean it must notify Komdigi of shareholding changes once it is private.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf",
+   "quote": "the Company is required to notify KOMDIGI of such proposed change in shareholding composition"
+  },
+  {
+   "from": "michael-dorrell",
+   "to": "stonepeak",
+   "relation": "founded",
+   "detail": "Chairman, CEO and co-founder of Stonepeak (founded 2011).",
+   "evidence": "company_claim",
+   "date": "2011",
+   "source_url": "https://stonepeak.com/team/michael-dorrell/",
+   "quote": "Michael is the Chairman, CEO and Co-Founder of Stonepeak"
+  },
+  {
+   "from": "andrew-thomas",
+   "to": "digital-edge-group",
+   "relation": "director_of",
+   "detail": "Chairman of the board; Senior Managing Director at Stonepeak.",
+   "evidence": "company_claim",
+   "date": "2025-02",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/",
+   "quote": "Andrew Thomas, Senior Managing Director at Stonepeak and Chairman of the Board of Digital Edge"
+  },
+  {
+   "from": "eanna-murphy",
+   "to": "digital-edge-group",
+   "relation": "director_of",
+   "detail": "Non-executive director from February 2025; Senior Operating Partner at Stonepeak, ex-COO of Yondr.",
+   "evidence": "company_claim",
+   "date": "2025-02",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/",
+   "quote": "Eanna is a Senior Operating Partner at Stonepeak"
+  },
+  {
+   "from": "maile-kaiser",
+   "to": "digital-edge-group",
+   "relation": "director_of",
+   "detail": "Non-executive director from February 2025; Chief Revenue Officer at CoreSite.",
+   "evidence": "company_claim",
+   "date": "2025-02",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/",
+   "quote": "Maile is currently Chief Revenue Officer at CoreSite"
+  },
+  {
+   "from": "samuel-lee",
+   "to": "digital-edge-group",
+   "relation": "founded",
+   "detail": "Founding CEO (2020); earlier President of Equinix Asia-Pacific 2005-2019.",
+   "evidence": "company_claim",
+   "date": "2020-08",
+   "source_url": "https://www.digitaledgedc.com/jp/resources/newsroom/digital-edge-and-stonepeak-infrastructure-partners-announce-formation-of-a-diversified-asia-pacific-data-center-platform-with-a-usd1-billion-capital-commitment/",
+   "quote": "The platform is led by CEO Samuel Lee"
+  },
+  {
+   "from": "samuel-lee",
+   "to": "digital-edge-group",
+   "relation": "director_of",
+   "detail": "Handed the CEO role to John Freeman in Q2 2025 and became Senior Advisor to the Board.",
+   "evidence": "company_claim",
+   "date": "2025-02",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/",
+   "quote": "Samuel will transition to the role of Senior Advisor to the Board"
+  },
+  {
+   "from": "john-freeman",
+   "to": "digital-edge-group",
+   "relation": "director_of",
+   "detail": "CEO from Q2 2025; founding executive and board member since 2020.",
+   "evidence": "company_claim",
+   "date": "2025-02",
+   "source_url": "https://www.digitaledgedc.com/resources/newsroom/digital-edge-announces-leadership-updates/",
+   "quote": "Group President John Freeman will succeed Samuel Lee as Chief Executive Officer"
+  },
+  {
+   "from": "john-freeman",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Commissioner from June 2022; dismissed at the 22 April 2026 AGM.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Komisaris John Randall Freeman Commissioner"
+  },
+  {
+   "from": "jonathan-walbridge",
+   "to": "digital-edge-group",
+   "relation": "founded",
+   "detail": "Founder and CFO of Digital Edge (2020-); signs its financings.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Founder and Chief Financial Officer at"
+  },
+  {
+   "from": "jonathan-walbridge",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner of Indonet.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Komisaris Utama Jonathan Paul Walbridge President Commissioner"
+  },
+  {
+   "from": "jonathan-walbridge",
+   "to": "de-hk",
+   "relation": "director_of",
+   "detail": "Director of Digital Edge (Hong Kong) Ltd.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf",
+   "quote": "Director : Jonathan Paul WALBRIDGE"
+  },
+  {
+   "from": "john-yung",
+   "to": "de-hk",
+   "relation": "director_of",
+   "detail": "Director of Digital Edge (Hong Kong) Ltd.",
+   "evidence": "confirmed",
+   "date": "2026-04",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/04/2.b.-Revisi-Tambahan-KI_17-April-2026_ENG.pdf",
+   "quote": "Director : John Chi Ming YUNG"
+  },
+  {
+   "from": "jonathan-chou",
+   "to": "digital-edge-group",
+   "relation": "founded",
+   "detail": "Founder and Chief Strategist (2020-); ex-Equinix Asia-Pacific VP Corporate Development.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Founder and Chief-Strategist at Digital"
+  },
+  {
+   "from": "jonathan-chou",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Commissioner from June 2022; resigned 23 March 2026.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Komisaris Jonathan Jiang Chou Commissioner"
+  },
+  {
+   "from": "andrew-rigoli",
+   "to": "digital-edge-group",
+   "relation": "founded",
+   "detail": "One of Digital Edge's founders; Chief Business Operations Officer at Digital Edge Hong Kong since January 2020.",
+   "evidence": "company_claim",
+   "date": "2024-03",
+   "source_url": "https://indonet.id/indonet-leadership-update/",
+   "quote": "one of the founders of Digital Edge"
+  },
+  {
+   "from": "andrew-rigoli",
+   "to": "indonet",
+   "relation": "director_of",
+   "detail": "President Director May 2024 to 22 April 2026 (called CEO of Indonet in January 2026).",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Direktur Utama Andrew Joseph Rigoli President Director"
+  },
+  {
+   "from": "andrew-rigoli",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Commissioner since the 22 April 2026 AGM.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Komisaris Andrew Joseph Rigoli Commissioner"
+  },
+  {
+   "from": "andrew-rigoli",
+   "to": "digital-edge",
+   "relation": "director_of",
+   "detail": "Director of PT Ekagrata Data Gemilang.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "Director : Andrew Joseph Rigoli"
+  },
+  {
+   "from": "horatio-chan",
+   "to": "indonet",
+   "relation": "director_of",
+   "detail": "Director of Strategy (from May 2023); also Business Development Senior Director, Digital Edge Hong Kong.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Direktur Horatio Vai Kei Chan Director"
+  },
+  {
+   "from": "donauly-situmorang",
+   "to": "indonet",
+   "relation": "director_of",
+   "detail": "President Director since 22 April 2026; earlier Director of Finance & Corporate Affairs and Corporate Secretary.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Direktur Utama Donauly Elena Situmorang President Director"
+  },
+  {
+   "from": "donauly-situmorang",
+   "to": "digital-edge",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of PT Ekagrata Data Gemilang.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "Commissioner : Donauly Elena Situmorang"
+  },
+  {
+   "from": "donauly-situmorang",
+   "to": "pantja-tirta-drawana",
+   "relation": "director_of",
+   "detail": "Director since 2021; the company buys small services from Indonet and is reported as a related party (same key management).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Director at PT Pantja Tirta Drawana"
+  },
+  {
+   "from": "agus-ariyanto",
+   "to": "indonet",
+   "relation": "director_of",
+   "detail": "Director of Operations since June 2025.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Direktur Agus Ariyanto Director"
+  },
+  {
+   "from": "yudie-haryanto",
+   "to": "indonet",
+   "relation": "director_of",
+   "detail": "Director of Sales & Marketing since June 2025.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Direktur Yudie Haryanto Director"
+  },
+  {
+   "from": "sabam-hutajulu",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Independent commissioner (from March 2024); chaired the April 2026 meetings that approved the delisting.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Komisaris Independen Sabam Hutajulu Independent Commissioner"
+  },
+  {
+   "from": "sabam-hutajulu",
+   "to": "airasia-indonesia",
+   "relation": "commissioner_of",
+   "detail": "Independent commissioner and audit committee chair since October 2022.",
+   "evidence": "confirmed",
+   "date": "2022-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "PT Air Asia Indonesia since October"
+  },
+  {
+   "from": "rinaldi-firmansyah",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Vice President Commissioner (independent) from March 2024; resigned 22 March 2026.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Komisaris Independen Rinaldi Firmansyah Independent Commissioner"
+  },
+  {
+   "from": "rinaldi-firmansyah",
+   "to": "pertamina-hulu-energi",
+   "relation": "commissioner_of",
+   "detail": "Listed in his work history as President Commissioner since 2020.",
+   "evidence": "confirmed",
+   "date": "2020",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Pertamina Hulu Energi since 2020."
+  },
+  {
+   "from": "rinaldi-firmansyah",
+   "to": "indonesia-infrastructure-finance",
+   "relation": "commissioner_of",
+   "detail": "Commissioner (concurrent position in 2025).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Commissioner at PT Indonesia"
+  },
+  {
+   "from": "rinaldi-firmansyah",
+   "to": "bluebird",
+   "relation": "commissioner_of",
+   "detail": "Commissioner (concurrent position in 2025).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Commissioner at PT Bluebird Tbk."
+  },
+  {
+   "from": "rinaldi-firmansyah",
+   "to": "pln-batam",
+   "relation": "commissioner_of",
+   "detail": "Listed as Chairman of PT PLN Batam, 2013-2016.",
+   "evidence": "confirmed",
+   "date": "2013",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Chairman at PT PLN Batam (2013-"
+  },
+  {
+   "from": "rinaldi-firmansyah",
+   "to": "telkom",
+   "relation": "director_of",
+   "detail": "President Director and Finance Director of Telkom 2004-2012 (commissioner 2015-2019).",
+   "evidence": "confirmed",
+   "date": "2004",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "President Director and Finance"
+  },
+  {
+   "from": "stephen-weiss",
+   "to": "indonet",
+   "relation": "commissioner_of",
+   "detail": "Commissioner from March 2024; resigned 22 March 2026.",
+   "evidence": "confirmed",
+   "date": "2025-12",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/08/FS-Indonet-30-June-2026.pdf",
+   "quote": "Komisaris Stephen Duffus Weiss Commissioner"
+  },
+  {
+   "from": "stephen-weiss",
+   "to": "protelindo",
+   "relation": "director_of",
+   "detail": "Vice President Director of PT Profesional Telekomunikasi Indonesia since 2012.",
+   "evidence": "confirmed",
+   "date": "2012",
+   "source_url": "https://indonet.id/wp-content/uploads/2026/03/Indonet-Annual-Report-2025.pdf",
+   "quote": "Vice President Director at PT Profesional"
+  },
+  {
+   "from": "stephanus-oscar",
+   "to": "digital-edge",
+   "relation": "director_of",
+   "detail": "President Director of PT Ekagrata Data Gemilang and CEO of Digital Edge Indonesia.",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "President Director : Stephanus Oscar"
+  },
+  {
+   "from": "anthony-waludin",
+   "to": "digital-edge",
+   "relation": "director_of",
+   "detail": "Director of PT Ekagrata Data Gemilang (sales & marketing).",
+   "evidence": "confirmed",
+   "date": "2025-10",
+   "source_url": "https://indonet.id/wp-content/uploads/2025/10/ID-Transaction-6-Oct-2025.pdf",
+   "quote": "Director : Anthony Jauw Waludin"
+  },
+  {
+   "from": "otto-toto-sugiri",
+   "to": "indonet",
+   "relation": "founded",
+   "detail": "Founded Indonet in 1994; President Commissioner 2013-2022 and Vice President Commissioner 2022-2023.",
+   "evidence": "confirmed",
+   "date": "1994",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2020.pdf",
+   "quote": "Otto Toto Sugiri founded Indonet in 1994 and founded DCI Indonesia in"
+  },
+  {
+   "from": "otto-toto-sugiri",
+   "to": "dci-indonesia",
+   "relation": "founded",
+   "detail": "Founded DCI Indonesia in 2012.",
+   "evidence": "confirmed",
+   "date": "2012",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2020.pdf",
+   "quote": "Otto Toto Sugiri founded Indonet in 1994 and founded DCI Indonesia in"
+  },
+  {
+   "from": "otto-toto-sugiri",
+   "to": "dci-indonesia",
+   "relation": "director_of",
+   "detail": "President Director of PT DCI Indonesia Tbk since 2016.",
+   "evidence": "confirmed",
+   "date": "2016",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2022.pdf",
+   "quote": "President Director of PT DCI Indonesia Tbk since 2016."
+  },
+  {
+   "from": "otto-toto-sugiri",
+   "to": "digital-edge",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of PT Ekagrata Data Gemilang from 2021 (no longer listed in October 2025).",
+   "evidence": "confirmed",
+   "date": "2021",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2022.pdf",
+   "quote": "Commissioner of PT Ekagrata Data Gemilang since 2021."
+  },
+  {
+   "from": "otto-toto-sugiri",
+   "to": "disp",
+   "relation": "commissioner_of",
+   "detail": "President Commissioner since 2022.",
+   "evidence": "confirmed",
+   "date": "2022",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Indonet-Annual-Report-2022.pdf",
+   "quote": "President Commissioner of PT Datacenter Indonesia Sukses Perkasa"
+  },
+  {
+   "from": "otto-toto-sugiri",
+   "to": "sigma-cipta-caraka",
+   "relation": "founded",
+   "detail": "Founder and chairman, 1989-2007.",
+   "evidence": "confirmed",
+   "date": "1989",
+   "source_url": "https://indonet.id/wp-content/uploads/2024/12/Integrated-Report-2021-PT-Indointernet-Tbk.pdf",
+   "quote": "Founder and Chairman of PT Sigma Cipta Caraka (1989-2007)."
+  }
+ ],
+ "operators": [
+  "Digital Edge"
+ ],
+ "counts": {
+  "entities": 97,
+  "links": 135,
+  "confirmed": 93,
+  "dropped": 0
+ }
+}

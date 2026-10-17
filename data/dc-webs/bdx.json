@@ -1,0 +1,1164 @@
+{
+ "slug": "bdx",
+ "title": "BDx Indonesia",
+ "order": 2,
+ "center": "bdx-indonesia",
+ "bottom_line": "BDx Indonesia (PT Starone Mitra Telekomunikasi) has been 75% owned since 2 June 2022 by I Squared Capital's BDx (through BDX Asia Data Center Holdings, Singapore), with Indosat at 17.5% and its subsidiary Lintasarta at 7.5%, and Bloomberg reported in February 2026 that I Squared was weighing a sale of BDx at about US$2 billion.\nAll of its power is PLN grid supply under a 2 June 2026 contract for about 1.2 GW (CGK4 788, now 845 MVA, through a new 150 kV substation PLN is building at Jatiluhur; CGK3A about 60 MVA; CGK5 385 MVA), while the \"renewable-powered\" Jatiluhur label rests only on unsigned hydropower talks with Perum Jasa Tirta II, and West Java stopped the 640 MW CGK4 expansion over missing AMDAL and PBG permits and its draw on Jatiluhur reservoir water.\nAcset (Astra group) built the CGK3A and CGK4 shells and Bank Permata, BCA and KB Bank lead its debt (US$320 million, April 2026), but no public source names a tenant other than its own shareholders, an equipment maker or a commissioner.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:20Z",
+ "entities": [
+  {
+   "id": "bdx-indonesia",
+   "name": "BDx Indonesia",
+   "legal_name": "PT Starone Mitra Telekomunikasi",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Data-centre joint venture since 2 Jun 2022 (BDx 75%, Indosat 17.5%, Lintasarta 7.5%), built on SMT, the Indosat company that received Indosat's and Lintasarta's data centres in Apr 2022. Runs CGK1-CGK5 around Jakarta plus ten former Indosat colocation/edge sites; MNC Sekuritas puts live capacity at ~102 MW (Sep 2026). Office: Intiland Tower 19th floor, Jl. Jend. Sudirman Kav 32, Jakarta.",
+   "sources": [
+    "https://www.lintasarta.net/en/about-lintasarta/",
+    "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/",
+    "https://emitennews.com/news/indosat-isat-teken-transaksi-rp2057-miliar-intip-lengkapnya",
+    "https://investortrust.id/market/21665/indosat-isat-alihkan-bisnis-data-center-bernilai-rp-2-65-triliun",
+    "https://www.bdxworld.com/about",
+    "https://www.mncsekuritas.id/assetweb//files/Indonesia_Data_Center_Thematic_Report_-_MNC_Sekuritas_Report_040926.pdf"
+   ]
+  },
+  {
+   "id": "bdx-asia-holdings",
+   "name": "BDX Asia Data Center Holdings",
+   "legal_name": "BDX Asia Data Center Holdings Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "BDx holding company (Pte. Ltd., so Singapore-registered) that bought 75% of PT Starone Mitra Telekomunikasi from Indosat in 2022 for US$227.5 mn, US$187.5 mn at closing and the rest over five years.",
+   "sources": [
+    "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/",
+    "https://investortrust.id/market/21665/indosat-isat-alihkan-bisnis-data-center-bernilai-rp-2-65-triliun",
+    "https://emitennews.com/news/indosat-isat-teken-transaksi-rp2057-miliar-intip-lengkapnya"
+   ]
+  },
+  {
+   "id": "bdx-data-centers",
+   "name": "BDx Data Centers",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore-based data-centre group (Big Data Exchange), a portfolio company of I Squared Capital; operates in Singapore, Indonesia, Hong Kong and Taiwan (18 data centres and 50 edge sites in its Apr 2026 release). CEO Mayank Srivastava; told DealStreetAsia in Jul 2026 it is open to an IPO.",
+   "sources": [
+    "https://www.bdxworld.com/about",
+    "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/",
+    "https://www.dealstreetasia.com/?p=487469",
+    "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/"
+   ]
+  },
+  {
+   "id": "i-squared-capital",
+   "name": "I Squared Capital",
+   "legal_name": null,
+   "kind": "fund",
+   "city": null,
+   "what": "Independent global infrastructure investor founded in 2012, about US$60 bn under management; owns BDx. Bloomberg reported in Feb 2026 that it was weighing a ~US$2 bn sale of BDx (seen in search results only; no deal found by Oct 2026).",
+   "sources": [
+    "https://isquaredcapital.com/",
+    "https://isquaredcapital.com/our-people/",
+    "https://www.bdxworld.com/about",
+    "https://news.bgov.com/private-equity/i-squared-said-to-weigh-sale-of-2-billion-data-center-firm-bdx"
+   ]
+  },
+  {
+   "id": "indosat",
+   "name": "Indosat Ooredoo Hutchison",
+   "legal_name": "PT Indosat Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed Indonesian telco (IOH), 65.6% held by Ooredoo Hutchison Asia. Put its data centres into SMT, sold 75% of SMT to BDx in 2022 and its ten colocation/edge sites to SMT in Dec 2023; head office at Jl. Medan Merdeka Barat No. 21, Jakarta.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indosat_Ooredoo_Hutchison",
+    "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+    "https://investortrust.id/market/21665/indosat-isat-alihkan-bisnis-data-center-bernilai-rp-2-65-triliun",
+    "https://emitennews.com/news/indosat-isat-teken-transaksi-rp2057-miliar-intip-lengkapnya"
+   ]
+  },
+  {
+   "id": "lintasarta",
+   "name": "Lintasarta",
+   "legal_name": "PT Aplikanusa Lintasarta",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "ICT and network company founded in 1988, a subsidiary of PT Indosat Tbk; holds 7.5% of BDx Indonesia after contributing its data centres in 2022. President Director & CEO Armand Hermawan since Apr 2026.",
+   "sources": [
+    "https://www.lintasarta.net/en/about-lintasarta/",
+    "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/",
+    "https://emitennews.com/news/indosat-isat-teken-transaksi-rp2057-miliar-intip-lengkapnya"
+   ]
+  },
+  {
+   "id": "ooredoo-hutchison-asia",
+   "name": "Ooredoo Hutchison Asia",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Holding venture of Qatar's Ooredoo and CK Hutchison's Hutchison Asia Telecom Group; owns 65.6% of Indosat.",
+   "sources": [
+    "https://en.wikipedia.org/wiki/Indosat_Ooredoo_Hutchison",
+    "https://www.sdxcentral.com/news/bdx-to-acquire-data-center-portfolio-from-indonesias-indosat/"
+   ]
+  },
+  {
+   "id": "cgk1",
+   "name": "BDx CGK1 (Central Jakarta)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta",
+   "what": "8 MW IT, operational, at Jl. Medan Merdeka Barat No. 21, Gambir. That is Indosat's head-office address, so CGK1 most likely sits in Indosat's HQ building (our inference from the two addresses).",
+   "sources": [
+    "https://www.bdxworld.com/cgk1",
+    "https://en.wikipedia.org/wiki/Indosat_Ooredoo_Hutchison"
+   ]
+  },
+  {
+   "id": "cgk2",
+   "name": "BDx CGK2 (Technopark BSD)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "South Tangerang",
+   "what": "3.4 MW IT, operational, Taman Tekno Blok D No.08 in Technopark BSD; Baxtel lists it as the former 'Lintasarta Technopark Data Center', built 2016.",
+   "sources": [
+    "https://www.bdxworld.com/cgk2",
+    "https://baxtel.com/data-center/bdx-cgk2"
+   ]
+  },
+  {
+   "id": "cgk3",
+   "name": "BDx CGK3/3A 'AI Campus 1' (Cilandak)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta",
+   "what": "26 MW IT on a 60 MVA PLN supply, operational, Jl. T.B. Simatupang Raya Kav.10. CGK3A (greenfield, 15 MW planned, 14,127 m2) broke ground Apr 2023 and was topped off Dec 2024; BDx says the AI-focused CGK3 went live Sep 2025; liquid-cooled, with 7.1 MW of NVIDIA GB200 delivered in 143 days. Hosts the BDx IX PoP and an APJII IIX node.",
+   "sources": [
+    "https://www.bdxworld.com/cgk3a",
+    "https://www.bdxworld.com/bdx-indonesia-to-start-construction-of-a-new-data-center-providing-world-class-technology-and-expertise/",
+    "https://www.bdxworld.com/cgk3a-proven-speed-to-power/",
+    "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/",
+    "https://www.bdxworld.com/bdx-data-centers-announces-milestone-partnership-with-apjii-to-boost-indonesias-digital-infrastructure/",
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2024_Completed.pdf"
+   ]
+  },
+  {
+   "id": "cgk4",
+   "name": "BDx CGK4 'AI Campus 2' (Jatiluhur)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Purwakarta",
+   "what": "640 MW IT planned on 111,000 m2 (180,000 m2 GFA) with 845 MVA from PLN, ~5 km from Jatiluhur Dam. Phase 1 built in 75 days (Jul 2024; MNC: 72 MW live). Six-building AI Campus 2 broke ground 22 Sep 2026 (Building 1 = 120 MW, first phase contracted to an unnamed customer for early 2027); West Java halted it around 30 Sep-2 Oct 2026 because the AMDAL and PBG permits were not issued and over its use of Jatiluhur water.",
+   "sources": [
+    "https://www.bdxworld.com/locations/cgk4/",
+    "https://www.bdxworld.com/bdx-data-centers-launches-the-first-phase-of-500mw-renewable-powered-ai-campus-in-indonesia/",
+    "https://www.fortuneidn.com/tech/pt-bdx-data-centers-memulai-pembangunan-ai-campus-2-cgk4-00-6cmtl-4lbcj4",
+    "https://www.globaldatacenterhub.com/p/indonesias-ai-build-out-runs-on-power",
+    "https://technode.global/2026/09/30/indonesias-west-java-asks-singapores-bdx-to-halt-data-center-1-week-after-groundbreaking/",
+    "https://investortrust.id/business/118147/amdal-dan-pbg-belum-rampung-proyek-data-center-ai-bdx-di-purwakarta-dihentikan-sementara"
+   ]
+  },
+  {
+   "id": "cgk5",
+   "name": "BDx CGK5 'AI Campus 3' (Suryacipta)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Karawang",
+   "what": "In development at Kawasan Industri Suryacipta I6-7B2, Ciampel: 290 MW IT on BDx's page (100 MW when announced Nov 2022; MNC: +110 MW under construction), 385 MVA from PLN, 50,000 m2 site bought from PT Suryacipta Swadaya.",
+   "sources": [
+    "https://www.bdxworld.com/cgk5",
+    "https://www.bdxworld.com/bdx-indonesia-launches-the-development-of-a-new-100mw-hyperscale-data-center-campus-in-suryacipta-jakarta/",
+    "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+    "https://www.mncsekuritas.id/assetweb//files/Indonesia_Data_Center_Thematic_Report_-_MNC_Sekuritas_Report_040926.pdf"
+   ]
+  },
+  {
+   "id": "bdx-edge-sites",
+   "name": "Ex-Indosat colocation and edge sites (10)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Jakarta, Surabaya, Batam, Medan, Makassar, Bandung, Semarang",
+   "what": "Ten carrier-neutral colocation and edge sites bought from Indosat for IDR 2,625 bn (agreements signed 18 Dec 2023, announced 9 Jan 2024), connected to six domestic and five international subsea cables; MNC counts ~30 MW across BDx's edge campuses.",
+   "sources": [
+    "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+    "https://investortrust.id/market/21665/indosat-isat-alihkan-bisnis-data-center-bernilai-rp-2-65-triliun",
+    "https://www.kabarbursa.com/market-hari-ini/indosat-isat-alihkan-aset-pusat-data-ke-smt",
+    "https://www.mncsekuritas.id/assetweb//files/Indonesia_Data_Center_Thematic_Report_-_MNC_Sekuritas_Report_040926.pdf"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "utility",
+   "city": "Jakarta",
+   "what": "State power utility. Signed a 30 MVA PPA with BDx Indonesia through PLN UID Jakarta Raya (Jun 2025) and a PJBTL on 2 Jun 2026 for ~1.2 GW across CGK4, CGK3A and CGK5.",
+   "sources": [
+    "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+    "https://www.bdxworld.com/bdx-data-centers-secures-indonesias-largest-data-center-power-commitment-at-1-2-gw-strengthening-strategic-partnership-with-pln-across-national-ai-infrastructure-platform/",
+    "https://w.media/bdx-inks-deal-with-pln-to-power-its-indonesian-data-centers/",
+    "https://www.bdxworld.com/bdx-data-centers-and-indonesias-pln-sign-power-agreement-to-support-national-digital-infrastructure/"
+   ]
+  },
+  {
+   "id": "gi-jatiluhur-baru",
+   "name": "GI 150 kV Jatiluhur Baru",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "Purwakarta",
+   "what": "New 150 kV substation PLN is building to feed BDx's CGK4 campus; no contractor or equipment maker named.",
+   "sources": [
+    "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+    "https://www.globaldatacenterhub.com/p/indonesias-ai-build-out-runs-on-power"
+   ]
+  },
+  {
+   "id": "jasa-tirta-ii",
+   "name": "Perum Jasa Tirta II",
+   "legal_name": "Perum Jasa Tirta II",
+   "kind": "state_firm",
+   "city": "Purwakarta",
+   "what": "State firm that runs the Jatiluhur reservoir and the dam's 187.5 MW hydropower plant. BDx says it is exploring a hydropower arrangement with it for CGK4; no signed deal or PJT II statement found.",
+   "sources": [
+    "https://www.globaldatacenterhub.com/p/indonesias-ai-build-out-runs-on-power",
+    "https://www.bdxworld.com/esg",
+    "https://www.fortuneidn.com/tech/pt-bdx-data-centers-memulai-pembangunan-ai-campus-2-cgk4-00-6cmtl-4lbcj4",
+    "https://katadata.co.id/digital/teknologi/6ac1cc3fd9e4c/kdm-setop-proyek-data-center-bdx-di-jatiluhur-konsumsi-air-jadi-sorotan"
+   ]
+  },
+  {
+   "id": "pdam-purwakarta",
+   "name": "PDAM Purwakarta",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "Purwakarta",
+   "what": "Purwakarta regency water utility with a 3,000 L/s allocation from the Jatiluhur reservoir; West Java's governor said CGK4's cooling water would come through it (about 14% of that allocation).",
+   "sources": [
+    "https://katadata.co.id/digital/teknologi/6ac1cc3fd9e4c/kdm-setop-proyek-data-center-bdx-di-jatiluhur-konsumsi-air-jadi-sorotan",
+    "https://asianews.network/Water-concerns-triggers-suspension-of-indonesias-west-Java-data-centre-project/"
+   ]
+  },
+  {
+   "id": "acset",
+   "name": "Acset",
+   "legal_name": "PT Acset Indonusa Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed building contractor controlled by PT United Tractors Tbk (Astra group) through PT Karya Supra Perkasa (91.17%); shell-and-core contractor for BDx CGK3A and CGK4.",
+   "sources": [
+    "https://www.acset.co/assets/file/investor/annual/Fostering_Opportunities_For_Sustainable_Excellence_(2023)2.pdf",
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2024_Completed.pdf",
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf"
+   ]
+  },
+  {
+   "id": "atmc",
+   "name": "ATMC Pump Services",
+   "legal_name": "PT ATMC Pump Services",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Acset's 100% concrete-pump rental subsidiary; its profile lists 'BDX Data Center' among projects it supplied.",
+   "sources": [
+    "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf"
+   ]
+  },
+  {
+   "id": "schneider-electric",
+   "name": "Schneider Electric",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Equipment maker; its 2021 case study covers Galaxy VX UPS, Uniflair cooling, APC racks, NetBotz, PowerLogic and EcoStruxure at Lintasarta's three Tier III data centres (sites not named).",
+   "sources": [
+    "https://download.se.com/files?p_Doc_Ref=ID_Lintasarta_DataCenter_19982&p_enDocType=Case+Study&p_File_Name=Lintasarta+-+Case+Study_FINAL.pdf"
+   ]
+  },
+  {
+   "id": "nvidia",
+   "name": "NVIDIA",
+   "legal_name": "NVIDIA Corporation",
+   "kind": "company",
+   "city": null,
+   "what": "GPU maker. Certified CGK4 under its DGX-Ready Data Center program (Apr 2025); 7.1 MW of GB200 capacity was commissioned at CGK3A in 2025; its Feb 2024 AI-cloud MoU with Indosat and Lintasarta was to run in BDx data centres.",
+   "sources": [
+    "https://www.bdxworld.com/bdx-achieves-certification-in-the-nvidia-dgx-ready-data-center-program-to-power-ai-data-centres-in-the-region/",
+    "https://www.bdxworld.com/cgk3a-proven-speed-to-power/",
+    "https://www.bdxworld.com/bdx-indonesia-is-proud-to-be-associated-with-nvidias-ai-cloud-deal-with-indosat-and-lintasarta/",
+    "https://www.bdxworld.com/bdx-data-centers-introduces-indonesias-first-sovereign-ai-data-center-built-with-nvidia-accelerated-computing/"
+   ]
+  },
+  {
+   "id": "bank-permata",
+   "name": "Bank Permata",
+   "legal_name": "PT Bank Permata Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Lender to BDx Indonesia since Jan 2024; a mandated lead arranger of the US$320 mn loan closed 1 Apr 2026.",
+   "sources": [
+    "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+    "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/"
+   ]
+  },
+  {
+   "id": "bca",
+   "name": "BCA",
+   "legal_name": "PT Bank Central Asia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Lender to BDx Indonesia since Jan 2024; a mandated lead arranger of the US$320 mn loan closed 1 Apr 2026.",
+   "sources": [
+    "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+    "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/"
+   ]
+  },
+  {
+   "id": "kb-bank",
+   "name": "KB Bank (formerly Bank KB Bukopin)",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Named 'Bank Bukopin' in BDx's Jan 2024 release and 'KB Bank' in its Apr 2026 release; treated as one bank after its rebrand (our inference).",
+   "sources": [
+    "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+    "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/"
+   ]
+  },
+  {
+   "id": "king-wood",
+   "name": "King & Wood",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Law firm reported (search result only; the law.asia page returns 403) to have advised BDx on the US$320 mn syndicated loan.",
+   "sources": [
+    "https://law.asia/king-and-wood-indonesia-data-centre-syndicated-loan-bdx/"
+   ]
+  },
+  {
+   "id": "neutradc",
+   "name": "NeutraDC",
+   "legal_name": "PT Telkom Data Ekosistem",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Telkom Indonesia's data-centre arm. IX-interconnection partner of BDx Indonesia since a Jan 2024 MoU; Phase I (Aug 2024) linked BDx CGK3/3A with NeutraDC Cikarang across a planned 108 sites.",
+   "sources": [
+    "https://www.bdxworld.com/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia/",
+    "https://www.bdxworld.com/bdx-indonesia-and-neutradc-unveil-phase-i-of-interconnected-data-center-ecosystem/"
+   ]
+  },
+  {
+   "id": "telkom",
+   "name": "Telkom Indonesia",
+   "legal_name": "PT Telkom Indonesia (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State telco; parent of NeutraDC.",
+   "sources": [
+    "https://www.bdxworld.com/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia/"
+   ]
+  },
+  {
+   "id": "apjii",
+   "name": "APJII",
+   "legal_name": "Asosiasi Penyelenggara Jasa Internet Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesia's ISP association, which runs the IIX exchange; added an IIX node at BDx CGK3A in Jan 2025 (an MoU renewal dated 9 Sep 2026 appears in a search result only; its page did not load).",
+   "sources": [
+    "https://www.bdxworld.com/bdx-data-centers-announces-milestone-partnership-with-apjii-to-boost-indonesias-digital-infrastructure/"
+   ]
+  },
+  {
+   "id": "suryacipta-swadaya",
+   "name": "Suryacipta Swadaya",
+   "legal_name": "PT Suryacipta Swadaya",
+   "kind": "company",
+   "city": "Karawang",
+   "what": "Developer of Suryacipta City of Industry, Karawang; sold BDx Indonesia the 12-acre CGK5 plot (Nov 2022).",
+   "sources": [
+    "https://www.bdxworld.com/bdx-indonesia-launches-the-development-of-a-new-100mw-hyperscale-data-center-campus-in-suryacipta-jakarta/"
+   ]
+  },
+  {
+   "id": "ssia",
+   "name": "Surya Semesta Internusa",
+   "legal_name": "PT Surya Semesta Internusa Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed parent of PT Suryacipta Swadaya.",
+   "sources": [
+    "https://www.bdxworld.com/bdx-indonesia-launches-the-development-of-a-new-100mw-hyperscale-data-center-campus-in-suryacipta-jakarta/"
+   ]
+  },
+  {
+   "id": "west-java-gov",
+   "name": "West Java Provincial Government",
+   "legal_name": "Pemerintah Provinsi Jawa Barat",
+   "kind": "government",
+   "city": "Bandung",
+   "what": "Under Governor Dedi Mulyadi, ordered CGK4 construction stopped (inspection 28 Sep, halt reported 30 Sep-2 Oct 2026) until AMDAL and PBG permits are issued; also questioned the campus's water use.",
+   "sources": [
+    "https://technode.global/2026/09/30/indonesias-west-java-asks-singapores-bdx-to-halt-data-center-1-week-after-groundbreaking/",
+    "https://investortrust.id/business/118147/amdal-dan-pbg-belum-rampung-proyek-data-center-ai-bdx-di-purwakarta-dihentikan-sementara",
+    "https://katadata.co.id/digital/teknologi/6ac1cc3fd9e4c/kdm-setop-proyek-data-center-bdx-di-jatiluhur-konsumsi-air-jadi-sorotan"
+   ]
+  },
+  {
+   "id": "purwakarta-dlh",
+   "name": "Purwakarta Regency Environmental Agency",
+   "legal_name": null,
+   "kind": "government",
+   "city": "Purwakarta",
+   "what": "Regency environmental agency reviewing the CGK4 AMDAL (Jakarta Post via ANN, 1 Oct 2026).",
+   "sources": [
+    "https://asianews.network/Water-concerns-triggers-suspension-of-indonesias-west-Java-data-centre-project/"
+   ]
+  },
+  {
+   "id": "agus-hartono-wijaya",
+   "name": "Agus Hartono Wijaya",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "President Director & CEO of BDx Indonesia since Dec 2022; earlier ~20 years in business development, marketing and operations, including a country-manager role in hospitality (company not named).",
+   "sources": [
+    "https://www.bdxworld.com/bdx-indonesia-names-agus-hartono-wijaya-as-president-director-and-ceo-to-lead-major-data-center-modernization-and-greenfield-developments/",
+    "https://www.bdxworld.com/about",
+    "https://www.bdxworld.com/bdx-indonesia-support-flood-affected-communities-across-sumatra/"
+   ]
+  },
+  {
+   "id": "mayank-srivastava",
+   "name": "Mayank Srivastava",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "CEO of BDx Data Centers (Chief Development Officer in May 2022); Interim President Director of BDx Indonesia from Jun 2022 until Agus Hartono Wijaya's appointment in Dec 2022.",
+   "sources": [
+    "https://www.bdxworld.com/about",
+    "https://www.bdxworld.com/big-data-exchange-bdx-expands-into-indonesia-through-us-300m-indosat-ooredoo-hutchison-and-lintasarta-joint-venture/",
+    "https://www.bdxworld.com/big-data-exchange-bdx-launches-bdx-indonesia-world-class-data-centers-to-partner-in-indonesias-digital-transformation-journey/",
+    "https://www.bdxworld.com/bdx-indonesia-launches-the-development-of-a-new-100mw-hyperscale-data-center-campus-in-suryacipta-jakarta/"
+   ]
+  },
+  {
+   "id": "braham-singh",
+   "name": "Braham Singh",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "CEO of BDx when the Indonesian JV was signed and completed (May-Jun 2022).",
+   "sources": [
+    "https://www.bdxworld.com/big-data-exchange-bdx-expands-into-indonesia-through-us-300m-indosat-ooredoo-hutchison-and-lintasarta-joint-venture/",
+    "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/"
+   ]
+  },
+  {
+   "id": "sujit-panda",
+   "name": "Sujit Panda",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Chief Operating Officer of BDx Data Centers; gave BDx's statement on the APJII IIX node at CGK3A (Jan 2025).",
+   "sources": [
+    "https://www.bdxworld.com/about",
+    "https://www.bdxworld.com/bdx-data-centers-announces-milestone-partnership-with-apjii-to-boost-indonesias-digital-infrastructure/",
+    "https://www.bdxworld.com/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia/"
+   ]
+  },
+  {
+   "id": "gautam-bhandari",
+   "name": "Gautam Bhandari",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Co-founder, Managing Partner and Global CIO of I Squared Capital; attended the Jan 2024 BDx Indonesia-NeutraDC MoU signing.",
+   "sources": [
+    "https://isquaredcapital.com/our-people/",
+    "https://www.bdxworld.com/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia/"
+   ]
+  },
+  {
+   "id": "sadek-wahba",
+   "name": "Sadek Wahba",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Founder, Chairman and Managing Partner of I Squared Capital.",
+   "sources": [
+    "https://isquaredcapital.com/our-people/"
+   ]
+  },
+  {
+   "id": "vikram-sinha",
+   "name": "Vikram Sinha",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "President Director & CEO of Indosat Ooredoo Hutchison and a commissioner of Lintasarta; spoke for Indosat on each BDx Indonesia deal from 2022 to 2024.",
+   "sources": [
+    "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+    "https://www.lintasarta.net/en/about-lintasarta/",
+    "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/"
+   ]
+  },
+  {
+   "id": "arya-damar",
+   "name": "Arya Damar",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "President Director of Lintasarta when the JV was formed (2022).",
+   "sources": [
+    "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/",
+    "https://www.bdxworld.com/bdx-indonesia-names-agus-hartono-wijaya-as-president-director-and-ceo-to-lead-major-data-center-modernization-and-greenfield-developments/"
+   ]
+  },
+  {
+   "id": "bayu-hanantasena",
+   "name": "Bayu Hanantasena",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Lintasarta CEO at the Feb 2024 NVIDIA AI-cloud deal.",
+   "sources": [
+    "https://www.bdxworld.com/bdx-indonesia-is-proud-to-be-associated-with-nvidias-ai-cloud-deal-with-indosat-and-lintasarta/"
+   ]
+  },
+  {
+   "id": "armand-hermawan",
+   "name": "Armand Hermawan",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "President Director & CEO of Lintasarta since Apr 2026.",
+   "sources": [
+    "https://www.lintasarta.net/en/about-lintasarta/"
+   ]
+  },
+  {
+   "id": "adi-priyanto",
+   "name": "Adi Priyanto",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "PLN Director of Retail & Commerce; PLN's spokesman on the Jun 2026 PJBTL with BDx.",
+   "sources": [
+    "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+    "https://www.bdxworld.com/bdx-data-centers-secures-indonesias-largest-data-center-power-commitment-at-1-2-gw-strengthening-strategic-partnership-with-pln-across-national-ai-infrastructure-platform/"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "bdx-asia-holdings",
+   "to": "bdx-indonesia",
+   "relation": "owns",
+   "detail": "Holds 75% since the JV closed on 2 Jun 2022, bought from Indosat for US$227.5 mn (US$187.5 mn at closing, the rest over five years).",
+   "evidence": "confirmed",
+   "date": "2022-06",
+   "source_url": "https://emitennews.com/news/indosat-isat-teken-transaksi-rp2057-miliar-intip-lengkapnya",
+   "quote": "17,5 persen saham SMT dikuasai Indosat, Lintasarta 7,5 persen, dan 75 persen BDX"
+  },
+  {
+   "from": "indosat",
+   "to": "bdx-indonesia",
+   "relation": "owns",
+   "detail": "Holds 17.5% since 2 Jun 2022, down from 70% in Apr 2022 (briefly 18.88% after the Rp205.7 bn land-and-building contribution of 23 Dec 2022, before 75% of the new shares passed to BDx).",
+   "evidence": "confirmed",
+   "date": "2022-06",
+   "source_url": "https://emitennews.com/news/indosat-isat-teken-transaksi-rp2057-miliar-intip-lengkapnya",
+   "quote": "17,5 persen saham SMT dikuasai Indosat"
+  },
+  {
+   "from": "lintasarta",
+   "to": "bdx-indonesia",
+   "relation": "owns",
+   "detail": "Holds 7.5% since 2 Jun 2022, down from 30% in Apr 2022 (briefly 9.27% after the Dec 2022 contribution).",
+   "evidence": "confirmed",
+   "date": "2022-06",
+   "source_url": "https://emitennews.com/news/indosat-isat-teken-transaksi-rp2057-miliar-intip-lengkapnya",
+   "quote": "Lintasarta 7,5 persen, dan 75 persen BDX"
+  },
+  {
+   "from": "indosat",
+   "to": "bdx-indonesia",
+   "relation": "owns",
+   "detail": "Indosat's Dec 2023 disclosure on the Rp2.65 tn asset transfer says Indosat and Lintasarta together still hold 25% and BDX Asia the rest (MNC Sekuritas still cites 'ISAT's 25% stake' in Sep 2026).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://investortrust.id/market/21665/indosat-isat-alihkan-bisnis-data-center-bernilai-rp-2-65-triliun",
+   "quote": "Indosat bersama dengan anak usahanya PT Aplikanusa Lintasarta bertindak sebagai pemegang 25% saham"
+  },
+  {
+   "from": "bdx-data-centers",
+   "to": "bdx-asia-holdings",
+   "relation": "owns",
+   "detail": "Inferred from two facts: Lintasarta's release names BDX Asia Data Center Holdings Pte. Ltd. as 'BDx', and BDx's Jun 2025 release calls BDx Indonesia 'a subsidiary of BDx Data Centers'.",
+   "evidence": "inferred",
+   "date": "2022-06",
+   "source_url": "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/",
+   "quote": "BDX Asia Data Center Holdings Pte. Ltd. (\"BDx\")"
+  },
+  {
+   "from": "i-squared-capital",
+   "to": "bdx-data-centers",
+   "relation": "owns",
+   "detail": "BDx calls itself an I Squared Capital portfolio company in every release from 2022 to 2026; Bloomberg reported in Feb 2026 that I Squared was weighing a ~US$2 bn sale (search result only).",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/",
+   "quote": "Backed by global infrastructure investor I Squared Capital"
+  },
+  {
+   "from": "bdx-data-centers",
+   "to": "bdx-indonesia",
+   "relation": "joint_venture",
+   "detail": "Share purchase and JV agreements with Indosat, Lintasarta and SMT signed 12 May 2022 (enterprise value US$300 mn; Indosat estimated Rp3.3 tn) and completed 2 Jun 2022, which Lintasarta calls an IDR 4.4 tn JV with an IDR 9 tn capex plan.",
+   "evidence": "confirmed",
+   "date": "2022-06",
+   "source_url": "https://www.lintasarta.net/en/news/ready-to-deliver-world-class-data-center-business-bdx-indonesia-established-to-support-indonesias-digital-transformation-agenda/",
+   "quote": "launched a IDR4.4 trillion JV company named PT Starone Mitra Telekomunikasi"
+  },
+  {
+   "from": "indosat",
+   "to": "lintasarta",
+   "relation": "owns",
+   "detail": "Lintasarta says it is a subsidiary of PT Indosat Tbk; the stake is not given on its page.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.lintasarta.net/en/about-lintasarta/",
+   "quote": "Lintasarta is a subsidiary of PT Indosat Tbk"
+  },
+  {
+   "from": "ooredoo-hutchison-asia",
+   "to": "indosat",
+   "relation": "owns",
+   "detail": "Holds 65.6% of Indosat (shareholder list as of 4 Jan 2022, read on Wikipedia; the Government of Indonesia holds 9.6% plus a golden share).",
+   "evidence": "confirmed",
+   "date": "2022-01",
+   "source_url": "https://en.wikipedia.org/wiki/Indosat_Ooredoo_Hutchison",
+   "quote": "Ooredoo Hutchison Asia (65.6%), which is jointly owned by Ooredoo and Hutchison Asia Telecom Group"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "cgk1",
+   "relation": "runs",
+   "detail": "Runs CGK1, 8 MW IT, operational.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.bdxworld.com/cgk1",
+   "quote": "Jl. Medan Merdeka Barat No. 21, Gambir, Central Jakarta"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "cgk2",
+   "relation": "runs",
+   "detail": "Runs CGK2, 3.4 MW IT, operational, inside Technopark BSD.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.bdxworld.com/cgk2",
+   "quote": "Taman Tekno Blok D No.08, Tangerang"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "cgk3",
+   "relation": "runs",
+   "detail": "Runs CGK3/3A, 26 MW IT on 60 MVA, operational.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.bdxworld.com/cgk3a",
+   "quote": "Jl. T.B. Simatupang Raya Kav.10, Cilandak, South Jakarta"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "cgk4",
+   "relation": "runs",
+   "detail": "Runs CGK4, 640 MW IT planned on 845 MVA of PLN supply.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.bdxworld.com/locations/cgk4/",
+   "quote": "a 640MW secured, phased development"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "cgk5",
+   "relation": "runs",
+   "detail": "Develops CGK5, 290 MW IT on 385 MVA, not yet operating.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.bdxworld.com/cgk5",
+   "quote": "Kawasan Industri Suryacipta I6-7B2, Desa Mulyasari, Ciampel, Karawang, West Java"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "bdx-edge-sites",
+   "relation": "runs",
+   "detail": "Took over Indosat's ten colocation and edge sites for IDR 2,625 bn (asset transfer signed 18 Dec 2023, announced 9 Jan 2024).",
+   "evidence": "confirmed",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+   "quote": "ten strategic sites connected to six domestic and five international subsea cables"
+  },
+  {
+   "from": "indosat",
+   "to": "bdx-indonesia",
+   "relation": "partner",
+   "detail": "Sold BDx Indonesia its ten-site colocation and edge portfolio for IDR 2,625 bn (forward and asset-transfer agreements signed 18 Dec 2023).",
+   "evidence": "confirmed",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+   "quote": "This IDR 2,625 billion transaction further expands the partnership between Indosat and BDx"
+  },
+  {
+   "from": "bdx-indonesia",
+   "to": "indosat",
+   "relation": "tenant_of",
+   "detail": "SMT rents data-centre rooms at 46 Indosat locations, Rp12.04 bn in total per Investortrust (Kabarbursa: a master property lease of Rp1.204 bn a year for 14 years).",
+   "evidence": "confirmed",
+   "date": "2023-12",
+   "source_url": "https://investortrust.id/market/21665/indosat-isat-alihkan-bisnis-data-center-bernilai-rp-2-65-triliun",
+   "quote": "Perseroan juga menyewakan ruangan pusat data yang berada di 46 lokasi kepada SMT dengan total transaksi Rp 12,04 miliar."
+  },
+  {
+   "from": "indosat",
+   "to": "bdx-indonesia",
+   "relation": "tenant_of",
+   "detail": "Indosat's CEO said its Feb 2024 NVIDIA AI-cloud deal would run in BDx Indonesia data centres (DCD also read the Jan 2024 site sale as a sale-leaseback that keeps Indosat as a customer).",
+   "evidence": "company_claim",
+   "date": "2024-02",
+   "source_url": "https://www.bdxworld.com/bdx-indonesia-is-proud-to-be-associated-with-nvidias-ai-cloud-deal-with-indosat-and-lintasarta/",
+   "quote": "the technology would be implemented by data centers operated by BDx Indonesia"
+  },
+  {
+   "from": "lintasarta",
+   "to": "bdx-indonesia",
+   "relation": "tenant_of",
+   "detail": "BDx calls itself Lintasarta's data-centre partner for the NVIDIA GPU cloud (Feb 2024), with no site or MW given.",
+   "evidence": "company_claim",
+   "date": "2024-02",
+   "source_url": "https://www.bdxworld.com/bdx-indonesia-is-proud-to-be-associated-with-nvidias-ai-cloud-deal-with-indosat-and-lintasarta/",
+   "quote": "As Lintasarta’s data center partner"
+  },
+  {
+   "from": "apjii",
+   "to": "cgk3",
+   "relation": "tenant_of",
+   "detail": "Placed a new Indonesia Internet Exchange (IIX) node at CGK3A under a data-centre cooperation agreement (Jan 2025).",
+   "evidence": "company_claim",
+   "date": "2025-01",
+   "source_url": "https://www.bdxworld.com/bdx-data-centers-announces-milestone-partnership-with-apjii-to-boost-indonesias-digital-infrastructure/",
+   "quote": "CGK 3A campus in Southern Jakarta"
+  },
+  {
+   "from": "neutradc",
+   "to": "bdx-indonesia",
+   "relation": "partner",
+   "detail": "Signed an internet-exchange interconnection MoU on 21 Jan 2024; Phase I (Aug 2024) links BDx CGK3/3A with NeutraDC Cikarang toward 108 interconnected sites.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia/",
+   "quote": "to strengthen digital infrastructure by establishing an interconnected Internet Exchange (IX) ecosystem"
+  },
+  {
+   "from": "telkom",
+   "to": "neutradc",
+   "relation": "owns",
+   "detail": "NeutraDC (PT Telkom Data Ekosistem) is Telkom's data-centre subsidiary.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/telkom-indonesia-and-indosat-ooredoo-hutchison-empower-indonesia-through-strategic-partnership-between-neutradc-and-bdx-indonesia/",
+   "quote": "NeutraDC, a subsidiary of Telkom Indonesia"
+  },
+  {
+   "from": "nvidia",
+   "to": "cgk4",
+   "relation": "certifies",
+   "detail": "Certified CGK4 under the NVIDIA DGX-Ready Data Center program on 17 Apr 2025, with NVIDIA's senior director of AI systems quoted.",
+   "evidence": "confirmed",
+   "date": "2025-04",
+   "source_url": "https://www.bdxworld.com/bdx-achieves-certification-in-the-nvidia-dgx-ready-data-center-program-to-power-ai-data-centres-in-the-region/",
+   "quote": "among the first in the country to achieve NVIDIA DGX-Ready certification"
+  },
+  {
+   "from": "nvidia",
+   "to": "cgk3",
+   "relation": "partner",
+   "detail": "7.1 MW of NVIDIA GB200 IT capacity was commissioned at CGK3A in 2025, ready in 143 days; who owns the GPUs is not stated.",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://www.bdxworld.com/cgk3a-proven-speed-to-power/",
+   "quote": "7.1 MW of NVIDIA GB200. Delivered in 143 Days."
+  },
+  {
+   "from": "suryacipta-swadaya",
+   "to": "cgk5",
+   "relation": "partner",
+   "detail": "The estate developer sold BDx Indonesia the 12-acre CGK5 plot in Suryacipta City of Industry (Nov 2022).",
+   "evidence": "company_claim",
+   "date": "2022-11",
+   "source_url": "https://www.bdxworld.com/bdx-indonesia-launches-the-development-of-a-new-100mw-hyperscale-data-center-campus-in-suryacipta-jakarta/",
+   "quote": "12 acres of land acquired from PT Suryacipta Swadaya"
+  },
+  {
+   "from": "ssia",
+   "to": "suryacipta-swadaya",
+   "relation": "owns",
+   "detail": "Listed parent of the Suryacipta estate developer.",
+   "evidence": "company_claim",
+   "date": "2022-11",
+   "source_url": "https://www.bdxworld.com/bdx-indonesia-launches-the-development-of-a-new-100mw-hyperscale-data-center-campus-in-suryacipta-jakarta/",
+   "quote": "As a subsidiary of publicly listed PT Surya Semesta Internusa Tbk (SSIA)"
+  },
+  {
+   "from": "west-java-gov",
+   "to": "cgk4",
+   "relation": "regulates",
+   "detail": "Governor Dedi Mulyadi inspected the site on 28 Sep 2026 and ordered AI Campus 2 construction stopped until the AMDAL and PBG permits are issued, citing missing permits rather than an environmental violation and raising water use.",
+   "evidence": "confirmed",
+   "date": "2026-09",
+   "source_url": "https://technode.global/2026/09/30/indonesias-west-java-asks-singapores-bdx-to-halt-data-center-1-week-after-groundbreaking/",
+   "quote": "It's being halted because the permits have not yet been issued."
+  },
+  {
+   "from": "purwakarta-dlh",
+   "to": "cgk4",
+   "relation": "regulates",
+   "detail": "Is reviewing the CGK4 environmental impact assessment (AMDAL) after the halt.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://asianews.network/Water-concerns-triggers-suspension-of-indonesias-west-Java-data-centre-project/",
+   "quote": "The Purwakarta Regency Environmental Agency is currently reviewing the AMDAL."
+  },
+  {
+   "from": "pln",
+   "to": "cgk4",
+   "relation": "supplies_power",
+   "detail": "PJBTL signed 2 Jun 2026 for 788 MVA in pairs of 150, 265 and 380 MVA, which BDx's CGK4 page and the Sep 2026 groundbreaking now give as 845 MVA.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://www.bdxworld.com/bdx-data-centers-secures-indonesias-largest-data-center-power-commitment-at-1-2-gw-strengthening-strategic-partnership-with-pln-across-national-ai-infrastructure-platform/",
+   "quote": "Securing 788 MVA of contracted grid power"
+  },
+  {
+   "from": "pln",
+   "to": "cgk3",
+   "relation": "supplies_power",
+   "detail": "The same Jun 2026 PJBTL raises CGK3A supply to about 60 MVA.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://www.bdxworld.com/bdx-data-centers-secures-indonesias-largest-data-center-power-commitment-at-1-2-gw-strengthening-strategic-partnership-with-pln-across-national-ai-infrastructure-platform/",
+   "quote": "to ~60 MVA"
+  },
+  {
+   "from": "pln",
+   "to": "cgk5",
+   "relation": "supplies_power",
+   "detail": "The same Jun 2026 PJBTL has PLN build a 385 MVA high-voltage connection for CGK5 (substation not named).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+   "quote": "serta mengembangkan jaringan tegangan tinggi berkapasitas 385 MVA guna mendukung operasional site CGK5"
+  },
+  {
+   "from": "pln",
+   "to": "bdx-indonesia",
+   "relation": "supplies_power",
+   "detail": "A 30 MVA power purchase agreement with PLN UID Jakarta Raya (19 Jun 2025) for CGK3A and CGK4.",
+   "evidence": "confirmed",
+   "date": "2025-06",
+   "source_url": "https://w.media/bdx-inks-deal-with-pln-to-power-its-indonesian-data-centers/",
+   "quote": "power purchase agreement with PT PLN (Persero)"
+  },
+  {
+   "from": "pln",
+   "to": "gi-jatiluhur-baru",
+   "relation": "built",
+   "detail": "PLN is building the new 150 kV Jatiluhur Baru substation itself for the BDx campus; no contractor is named.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+   "quote": "PLN juga membangun Gardu Induk (GI) 150 kilovolt (kV) Jatiluhur Baru"
+  },
+  {
+   "from": "gi-jatiluhur-baru",
+   "to": "cgk4",
+   "relation": "supplies_power",
+   "detail": "Will feed the CGK4 campus as part of the 788-845 MVA supply.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+   "quote": "yang akan memasok listrik ke kawasan data center BDx"
+  },
+  {
+   "from": "jasa-tirta-ii",
+   "to": "cgk4",
+   "relation": "renewable_deal",
+   "detail": "Talks only: BDx says it is pursuing hydropower from the dam's 187.5 MW plant, but nothing is signed, no PJT II statement was found and no REC or PLN green tariff backs the 'renewable-powered' label.",
+   "evidence": "company_claim",
+   "date": "2026-09",
+   "source_url": "https://www.bdxworld.com/esg",
+   "quote": "a hydroelectric-power arrangement with PJT"
+  },
+  {
+   "from": "pdam-purwakarta",
+   "to": "cgk4",
+   "relation": "supplies",
+   "detail": "Planned cooling water drawn from Jatiluhur through PDAM Purwakarta, about 14% of its 3,000 L/s allocation per the governor (Jakarta Post: 6,000 m3/day at first, up to 384 L/s within 5-10 years).",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://katadata.co.id/digital/teknologi/6ac1cc3fd9e4c/kdm-setop-proyek-data-center-bdx-di-jatiluhur-konsumsi-air-jadi-sorotan",
+   "quote": "PDAM Kabupaten Purwakarta memiliki alokasi resmi air dari Waduk Jatiluhur sebesar 3.000 liter per detik."
+  },
+  {
+   "from": "acset",
+   "to": "cgk3",
+   "relation": "built",
+   "detail": "Shell-and-core contractor for CGK3A, at the groundbreaking on 10 Apr 2023 and topped off on 16 Dec 2024 (value not disclosed).",
+   "evidence": "confirmed",
+   "date": "2024-12",
+   "source_url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2024_Completed.pdf",
+   "quote": "Topping Off Data Center BDx CGK3 TB Simatupang"
+  },
+  {
+   "from": "acset",
+   "to": "cgk4",
+   "relation": "built",
+   "detail": "Shell-and-core contractor for 'BDX Data Center CGK 4' in 2024-2025, before the Sep 2026 AI Campus 2 groundbreaking (value not disclosed; no builder named for AI Campus 2 or CGK5).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2024_Completed.pdf",
+   "quote": "BDX Data Center CGK 4 - Shell & Core"
+  },
+  {
+   "from": "atmc",
+   "to": "bdx-indonesia",
+   "relation": "supplies",
+   "detail": "Supplied concrete pumps for a 'BDX Data Center' project (site not named); ATMC is 100% owned by Acset.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.acset.co/assets/file/investor/annual/ARSR_ACSET_2025_100426_FA_OJK.pdf",
+   "quote": "Arumaya Office, BDX Data Center, dan Simpang Susun Tol Bitung."
+  },
+  {
+   "from": "schneider-electric",
+   "to": "cgk2",
+   "relation": "supplies",
+   "detail": "Inferred from two facts: Schneider equipped Lintasarta's three Tier III data centres (UPS, cooling, racks, DCIM; 2021 case study, sites unnamed) and CGK2 is the former Lintasarta Technopark DC (Baxtel).",
+   "evidence": "inferred",
+   "date": "2021",
+   "source_url": "https://download.se.com/files?p_Doc_Ref=ID_Lintasarta_DataCenter_19982&p_enDocType=Case+Study&p_File_Name=Lintasarta+-+Case+Study_FINAL.pdf",
+   "quote": "Being in three different locations makes it a more challenging task"
+  },
+  {
+   "from": "bca",
+   "to": "bdx-indonesia",
+   "relation": "lends_to",
+   "detail": "One of three Indonesian banks providing debt to BDx Indonesia at the Jan 2024 edge-site deal.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+   "quote": "Three Indonesian banks – BCA, Bank Permata, and Bank Bukopin – are providing debt to BDx Indonesia"
+  },
+  {
+   "from": "bank-permata",
+   "to": "bdx-indonesia",
+   "relation": "lends_to",
+   "detail": "One of three Indonesian banks providing debt to BDx Indonesia at the Jan 2024 edge-site deal.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+   "quote": "Three Indonesian banks – BCA, Bank Permata, and Bank Bukopin – are providing debt to BDx Indonesia"
+  },
+  {
+   "from": "kb-bank",
+   "to": "bdx-indonesia",
+   "relation": "lends_to",
+   "detail": "As 'Bank Bukopin', one of three Indonesian banks providing debt to BDx Indonesia at the Jan 2024 edge-site deal.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+   "quote": "Three Indonesian banks – BCA, Bank Permata, and Bank Bukopin – are providing debt to BDx Indonesia"
+  },
+  {
+   "from": "bank-permata",
+   "to": "bdx-indonesia",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$320 mn facility closed 1 Apr 2026 for CGK3, refinancing and CGK4/CGK5 grid capacity of 1.2 GVA (the release does not name the borrowing entity).",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/",
+   "quote": "Led by Bank Permata, BCA, and KB Bank"
+  },
+  {
+   "from": "bca",
+   "to": "bdx-indonesia",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$320 mn facility closed 1 Apr 2026 for CGK3, refinancing and CGK4/CGK5 grid capacity.",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/",
+   "quote": "Led by Bank Permata, BCA, and KB Bank"
+  },
+  {
+   "from": "kb-bank",
+   "to": "bdx-indonesia",
+   "relation": "lends_to",
+   "detail": "Mandated lead arranger of the US$320 mn facility closed 1 Apr 2026 for CGK3, refinancing and CGK4/CGK5 grid capacity.",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://technode.global/prnasia/bdx-secures-us320-million-loan-to-accelerate-ai-ready-data-center-infrastructure-in-asia/",
+   "quote": "Led by Bank Permata, BCA, and KB Bank"
+  },
+  {
+   "from": "king-wood",
+   "to": "bdx-data-centers",
+   "relation": "partner",
+   "detail": "Legal adviser to BDx on the US$320 mn syndicated loan for Indonesian data centres (lenders' counsel not found).",
+   "evidence": "snippet",
+   "date": "2026-04",
+   "source_url": "https://law.asia/king-and-wood-indonesia-data-centre-syndicated-loan-bdx/",
+   "quote": "King & Wood has advised Singapore-headquartered BDx Data Centres on a USD320 million syndicated loan"
+  },
+  {
+   "from": "agus-hartono-wijaya",
+   "to": "bdx-indonesia",
+   "relation": "director_of",
+   "detail": "President Director and CEO since Dec 2022, still in the role at the Sep 2026 groundbreaking.",
+   "evidence": "company_claim",
+   "date": "2022-12",
+   "source_url": "https://www.bdxworld.com/bdx-indonesia-names-agus-hartono-wijaya-as-president-director-and-ceo-to-lead-major-data-center-modernization-and-greenfield-developments/",
+   "quote": "the appointment of Mr. Agus Hartono Wijaya as President Director and CEO of BDx Indonesia"
+  },
+  {
+   "from": "mayank-srivastava",
+   "to": "bdx-indonesia",
+   "relation": "director_of",
+   "detail": "Interim President Director of the JV from its launch in Jun 2022 until Dec 2022.",
+   "evidence": "company_claim",
+   "date": "2022-06",
+   "source_url": "https://www.bdxworld.com/big-data-exchange-bdx-launches-bdx-indonesia-world-class-data-centers-to-partner-in-indonesias-digital-transformation-journey/",
+   "quote": "Interim President Director of the Joint Venture"
+  },
+  {
+   "from": "mayank-srivastava",
+   "to": "bdx-data-centers",
+   "relation": "director_of",
+   "detail": "Group CEO (Chief Development Officer at the May 2022 signing, CEO by Nov 2022).",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.bdxworld.com/about",
+   "quote": "Mayank Srivastava, Chief Executive Officer"
+  },
+  {
+   "from": "braham-singh",
+   "to": "bdx-data-centers",
+   "relation": "director_of",
+   "detail": "CEO of BDx at the May 2022 signing and Jun 2022 completion of the Indonesian JV.",
+   "evidence": "company_claim",
+   "date": "2022-05",
+   "source_url": "https://www.bdxworld.com/big-data-exchange-bdx-expands-into-indonesia-through-us-300m-indosat-ooredoo-hutchison-and-lintasarta-joint-venture/",
+   "quote": "Braham Singh, CEO of BDx"
+  },
+  {
+   "from": "sujit-panda",
+   "to": "bdx-data-centers",
+   "relation": "director_of",
+   "detail": "Chief Operating Officer (executive), who gave BDx's statement on the APJII node at CGK3A in Jan 2025.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.bdxworld.com/about",
+   "quote": "Sujit Panda, Chief Operating Officer"
+  },
+  {
+   "from": "gautam-bhandari",
+   "to": "i-squared-capital",
+   "relation": "founded",
+   "detail": "Co-founder, Managing Partner and Global CIO, who attended the Jan 2024 BDx Indonesia-NeutraDC MoU signing for I Squared.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://isquaredcapital.com/our-people/",
+   "quote": "Co-Founder, Managing Partner, Global Chief Investment Officer"
+  },
+  {
+   "from": "sadek-wahba",
+   "to": "i-squared-capital",
+   "relation": "founded",
+   "detail": "Founder, Chairman and Managing Partner of the firm founded in 2012.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://isquaredcapital.com/our-people/",
+   "quote": "Founder, Chairman, Managing Partner"
+  },
+  {
+   "from": "vikram-sinha",
+   "to": "indosat",
+   "relation": "director_of",
+   "detail": "President Director and CEO of Indosat Ooredoo Hutchison, quoted on the 2022 JV, the Dec 2022 CEO appointment and the 2024 site sale.",
+   "evidence": "company_claim",
+   "date": "2024-01",
+   "source_url": "https://www.bdxworld.com/indosat-ooredoo-hutchison-and-bdx-indonesia-advance-indonesias-digital-future-with-landmark-data-center-deal/",
+   "quote": "President Director and Chief Executive Officer of Indosat Ooredoo Hutchison"
+  },
+  {
+   "from": "vikram-sinha",
+   "to": "lintasarta",
+   "relation": "commissioner_of",
+   "detail": "Sits on Lintasarta's board of commissioners (President Commissioner: Dody Budi Waluyo).",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.lintasarta.net/en/about-lintasarta/",
+   "quote": "Commissioner"
+  },
+  {
+   "from": "arya-damar",
+   "to": "lintasarta",
+   "relation": "director_of",
+   "detail": "President Director of Lintasarta when the JV was formed in 2022.",
+   "evidence": "company_claim",
+   "date": "2022-12",
+   "source_url": "https://www.bdxworld.com/bdx-indonesia-names-agus-hartono-wijaya-as-president-director-and-ceo-to-lead-major-data-center-modernization-and-greenfield-developments/",
+   "quote": "President Director of Lintasarta"
+  },
+  {
+   "from": "bayu-hanantasena",
+   "to": "lintasarta",
+   "relation": "director_of",
+   "detail": "Lintasarta CEO at the Feb 2024 NVIDIA AI-cloud deal.",
+   "evidence": "company_claim",
+   "date": "2024-02",
+   "source_url": "https://www.bdxworld.com/bdx-indonesia-is-proud-to-be-associated-with-nvidias-ai-cloud-deal-with-indosat-and-lintasarta/",
+   "quote": "Lintasarta CEO"
+  },
+  {
+   "from": "armand-hermawan",
+   "to": "lintasarta",
+   "relation": "director_of",
+   "detail": "President Director and CEO of Lintasarta since Apr 2026.",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://www.lintasarta.net/en/about-lintasarta/",
+   "quote": "President Director & CEO of Lintasarta since April 2026"
+  },
+  {
+   "from": "adi-priyanto",
+   "to": "pln",
+   "relation": "director_of",
+   "detail": "PLN Director of Retail and Commerce, PLN's spokesman on the 2 Jun 2026 PJBTL with BDx.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://wartaekonomi.co.id/read614674/pln-siap-salurkan-listrik-ke-bdx-data-centers-sebesar-12-gw",
+   "quote": "Direktur Retail dan Niaga PLN"
+  }
+ ],
+ "operators": [
+  "BDx"
+ ],
+ "counts": {
+  "entities": 43,
+  "links": 60,
+  "confirmed": 20,
+  "dropped": 0
+ }
+}

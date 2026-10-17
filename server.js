@@ -713,6 +713,33 @@ fastify.get('/bumn', async (req, reply) => {
   if (!html) return reply.code(503).type('text/plain').send('The BUMN data is being rebuilt. Try again in a minute.');
   reply.type('text/html').send(html);
 });
+/* /data-center — who powers Indonesia's data centres: the power matrix, every project
+   with its power source and named vendors, and one company web per data-centre group
+   (views/datacenter1001.js; data/datacenter.json + data/dc-webs/ from scripts/dc-build.py,
+   mtime-cached, so a data rebuild needs no restart). English only for now. */
+const datacenter1001 = require('./views/datacenter1001');
+const { dcLive } = require('./lib/dclive');
+fastify.get('/data-center', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  if (!dcLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  const html = datacenter1001.page({ lang: 'en' });
+  if (!html) return reply.code(503).type('text/plain').send('The data-centre map is being rebuilt. Try again in a minute.');
+  reply.type('text/html').send(html);
+});
+fastify.get('/data-center/:slug', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  if (!dcLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  const html = datacenter1001.web({ slug: String((req.params && req.params.slug) || ''), lang: 'en' });
+  if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  reply.type('text/html').send(html);
+});
+for (const alias of ['/datacenter', '/data-centre', '/data-centers', '/data-center/']) {
+  fastify.get(alias, async (req, reply) => {
+    if (!is1001(req)) return reply.redirect('/');
+    if (!dcLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+    return reply.code(301).header('location', '/data-center').send();
+  });
+}
 /* /about — who builds the census (views/about1001.js). /tentang is the
    Indonesian word people type; it 301s to the /id page of the same route. */
 const about1001 = require('./views/about1001');

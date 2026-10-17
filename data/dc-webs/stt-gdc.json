@@ -1,0 +1,1723 @@
+{
+ "slug": "stt-gdc",
+ "title": "STT GDC",
+ "order": 7,
+ "center": "stt-gdc",
+ "bottom_line": "STT GDC Indonesia (PT STT GDC Indonesia) is a joint venture with Triputra and Temasek, and STT GDC controls it. Since 31 Aug 2026, STT GDC itself is owned 75% by KKR and 25% by Singtel, after a S$6.6 bn buyout of ST Telemedia, but Temasek has not left: it is still a direct JV partner and owns about 51.69% of Singtel. The 374 MW campus in GIIC is powered only by PLN, through PLN's shared 120 MVA \"Data Center\" substation (Amazon, Microsoft, Komdigi and Telkom use it too) and STT's own on-campus 150 kV substation; no contracted MVA has been published, and the renewable plan with PLN has no stated form or size. Total Bangun Persada builds it on its \"Iris\" contracts, and STT was that contractor's biggest customer in 2025 (Rp801.7 bn, 20.55% of revenue); the land was bought from Sinar Mas's Puradelta (Rp210.8 bn in 2025), and the build is funded by an IDR 8.8 tn loan from OCBC, HSBC and BNI with a green tranche.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:19:17Z",
+ "entities": [
+  {
+   "id": "stt-gdc",
+   "name": "STT GDC Indonesia",
+   "legal_name": "PT STT GDC Indonesia",
+   "kind": "company",
+   "city": "Jakarta (office); Cikarang, Bekasi (campus)",
+   "what": "Indonesian company of the STT GDC joint venture with Triputra and Temasek. It builds and runs the STT Jakarta campus in GIIC, Kota Deltamas: nine buildings listed at 374 MW IT ('more than 360MW'), 42 MW live (Jakarta 1 and 2) in Oct 2026.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+    "https://www.sttgdc.com/id-en/locations/jakarta",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_2_Factsheet-vJul2026.pdf"
+   ]
+  },
+  {
+   "id": "stt-gdc-jvco",
+   "name": "STT GDC Indonesia JVCo",
+   "legal_name": "STT GDC Indonesia JVCo Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore holding company of the Indonesian joint venture. STT GDC's Indonesia page names its board: Liu Chee Ming (chair), Zulkifli Baharudin, Arif Rachmat (Triputra), Ing Hie Kwik (Temasek) and Bruno Lopez. The shareholding split is not published.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "stt-gdc-group",
+   "name": "STT GDC (STTGDC)",
+   "legal_name": "STT GDC Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore data-centre group set up by ST Telemedia in 2014: 2.3-2.7 GW of capacity across 12 markets (STT's own pages differ), 780 MW operating by Sep 2026. Owned 75% by KKR and 25% by Singtel since 31 Aug 2026.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+    "https://www.sttgdc.com/id-en/newsroom/kkr-singtel-consortium-completes-acquisition-of-sttgdc-company-launches-refreshed-global-brand-next-phase-of-growth",
+    "https://links.sgx.com/1.0.0/corporate-announcements/M50Z72RSWTHSPQ0J/902977_Ann_20260831.pdf"
+   ]
+  },
+  {
+   "id": "st-telemedia",
+   "name": "ST Telemedia",
+   "legal_name": "Singapore Technologies Telemedia Pte Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Temasek-owned investor in communications, data centres and infrastructure technology. It founded STT GDC and sold its remaining ~81.7% (held through STT Communications Ltd.) to KKR and Singtel for S$6.6 bn, completed 31 Aug 2026.",
+   "sources": [
+    "https://www.sttelemedia.com/",
+    "https://links.sgx.com/1.0.0/corporate-announcements/Y85UPC7OFANTRQ15/874052_20260204-ann.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value"
+   ]
+  },
+  {
+   "id": "temasek",
+   "name": "Temasek",
+   "legal_name": "Temasek Holdings (Private) Limited",
+   "kind": "state_firm",
+   "city": "Singapore",
+   "what": "Singapore state investment company. It wholly owns the ST Telemedia group, holds about 51.69% of Singtel, and is itself a named partner in the Indonesian JV.",
+   "sources": [
+    "https://links.sgx.com/1.0.0/corporate-announcements/Y85UPC7OFANTRQ15/874052_20260204-ann.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-expands-into-Indonesia",
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_2_Factsheet-vJul2026.pdf"
+   ]
+  },
+  {
+   "id": "kkr",
+   "name": "KKR",
+   "legal_name": "KKR & Co. Inc.",
+   "kind": "company",
+   "city": "New York",
+   "what": "Global investment firm. Through KKR Opal Topco LP it holds 75% of STT GDC since 31 Aug 2026, after a 2024 preference-share investment; it also owns 20% of Singtel's Nxera.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel",
+    "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+    "https://links.sgx.com/1.0.0/corporate-announcements/M50Z72RSWTHSPQ0J/902977_Ann_20260831.pdf"
+   ]
+  },
+  {
+   "id": "kkr-apii",
+   "name": "KKR Asia Pacific Infrastructure Investors II",
+   "legal_name": null,
+   "kind": "fund",
+   "city": null,
+   "what": "KKR fund that made KKR's June 2024 investment in STT GDC (redeemable preference shares with warrants).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel"
+   ]
+  },
+  {
+   "id": "singtel",
+   "name": "Singtel",
+   "legal_name": "Singapore Telecommunications Limited",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore telecom group, about 51.69% held by Temasek. Holds 25% of STT GDC through Singtel Interactive Pte. Ltd. since 31 Aug 2026 and runs its own data-centre arm, Nxera.",
+   "sources": [
+    "https://links.sgx.com/1.0.0/corporate-announcements/Y85UPC7OFANTRQ15/874052_20260204-ann.pdf",
+    "https://links.sgx.com/1.0.0/corporate-announcements/M50Z72RSWTHSPQ0J/902977_Ann_20260831.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel"
+   ]
+  },
+  {
+   "id": "nxera",
+   "name": "Nxera",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singtel's regional data-centre arm; KKR bought 20% of it in Sep 2023. Its CEO Bill Chang backed Telkom's NeutraDC Nxera Batam project in 2024.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel",
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "neutradc-nxera-batam",
+   "name": "NeutraDC Nxera Batam",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Batam",
+   "what": "Telkom-group data-centre company building an AI data centre in the Kabil industrial estate, Batam (piling ceremony 13 Jun 2024). Covered by the NeutraDC web.",
+   "sources": [
+    "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure"
+   ]
+  },
+  {
+   "id": "triputra",
+   "name": "Triputra Group",
+   "legal_name": "PT Triputra Investindo Arya",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesian conglomerate founded in 1998 by former Astra CEO T.P. Rachmat (agribusiness, manufacturing, energy, trading and services, education). Local partner in the STT GDC Indonesia JV since May 2021.",
+   "sources": [
+    "https://triputra-group.com/tentang-kami/profil/",
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-expands-into-Indonesia"
+   ]
+  },
+  {
+   "id": "virtus",
+   "name": "VIRTUS Data Centres",
+   "legal_name": "Virtus HoldCo Limited",
+   "kind": "company",
+   "city": "London",
+   "what": "STT GDC's UK data-centre business, majority-owned by STT GDC (Macquarie's MEIF7 holds a significant minority). JV director Zulkifli Baharudin sits on the Virtus HoldCo board.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/the-company",
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "stt-jakarta-1",
+   "name": "STT Jakarta 1",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "First building, Block EA-1, GIIC: up to 18 MW IT (19.5 MW in 2022-23 releases), 18,474 m2 gross floor area. Operating since June 2023. Uptime Tier III design, LEED Gold, design PUE 1.41, fed by two 20 kV utility supplies.",
+   "sources": [
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2025-09/stt_jakarta_1_factsheet-vaugust2025.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+    "https://www.sttgdc.com/id-en/locations/jakarta"
+   ]
+  },
+  {
+   "id": "stt-jakarta-2",
+   "name": "STT Jakarta 2",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "24 MW IT, 21,291 m2 gross floor area. Ground broken Sep 2024, topped out Apr 2025, operating since 10 Jun 2026. Liquid-cooling ready, design PUE under 1.30, fed by the campus 150 kV substation.",
+   "sources": [
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_2_Factsheet-vJul2026.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-indonesia-expanding-footprint-second-data-centre",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+    "https://w.media/stt-gdc-tops-off-stt-jakarta-2-breaks-ground-on-stt-jakarta-3"
+   ]
+  },
+  {
+   "id": "stt-jakarta-3",
+   "name": "STT Jakarta 3",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "Up to 24 MW IT, 16,876 m2 gross floor area. Ground broken Apr 2025, topped out 10 Jun 2026, ready for service Q1 2027 per its factsheet. Built with STT's first Indonesian green-loan tranche; PUE target 1.30.",
+   "sources": [
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_3_Factsheet-vJul2026.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche",
+    "https://w.media/stt-gdc-tops-off-stt-jakarta-2-breaks-ground-on-stt-jakarta-3"
+   ]
+  },
+  {
+   "id": "stt-jakarta-4",
+   "name": "STT Jakarta 4",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "Listed at 48 MW IT and 'Under Development' on STT's page; an Apr 2025 report gave 32 MW. No dates published.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/locations/jakarta",
+    "https://w.media/stt-gdc-tops-off-stt-jakarta-2-breaks-ground-on-stt-jakarta-3"
+   ]
+  },
+  {
+   "id": "stt-jakarta-5",
+   "name": "STT Jakarta 5",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "40 MW IT, 18,000 m2 gross floor area. Ground broken 10 Jun 2026, ready for service Q4 2027. Liquid-cooling ready, design PUE under 1.38.",
+   "sources": [
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-05/STT%20Jakarta%205_Factsheet-vMay2026.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions"
+   ]
+  },
+  {
+   "id": "stt-jakarta-6",
+   "name": "STT Jakarta 6",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "40 MW IT, 18,000 m2 gross floor area. Ground broken 10 Jun 2026, ready for service Q4 2027. Twin of Jakarta 5.",
+   "sources": [
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-05/STT%20Jakarta%206_Factsheet-vMay2026.pdf",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions"
+   ]
+  },
+  {
+   "id": "stt-jakarta-7",
+   "name": "STT Jakarta 7",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "60 MW IT, listed as 'Under Development' on STT's page; no dates.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/locations/jakarta"
+   ]
+  },
+  {
+   "id": "stt-jakarta-8",
+   "name": "STT Jakarta 8",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "60 MW IT, listed as 'Under Development' on STT's page; no dates.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/locations/jakarta"
+   ]
+  },
+  {
+   "id": "stt-jakarta-9",
+   "name": "STT Jakarta 9",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang, Bekasi",
+   "what": "60 MW IT, listed as 'Under Development' on STT's page; no dates.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/locations/jakarta"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "utility",
+   "city": "Jakarta",
+   "what": "State electricity company. It feeds the campus through its GIIC 'Data Center' substation and STT's own 150 kV substation, and is STT's partner on a renewable-energy plan.",
+   "sources": [
+    "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-indonesia-expanding-footprint-second-data-centre",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions"
+   ]
+  },
+  {
+   "id": "pln-gi-dc-giic",
+   "name": "PLN GI 150 kV Data Center (GIIC)",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "Kota Deltamas, Cikarang",
+   "what": "PLN substation for GIIC data centres: 2 x 60 MVA (120 MVA) with 150 kV lines to Deltamas, KIIC II/Margakarya and THK, more than Rp312 bn, finished Nov 2024. PLN names Amazon, Microsoft, Komdigi, Telkom and STT as users.",
+   "sources": [
+    "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+    "https://listrikindonesia.com/detail/12488/kolaborasi-pln-elsewedy-wujud-nyata-elektrifikasi-ri"
+   ]
+  },
+  {
+   "id": "stt-substation",
+   "name": "STT Jakarta campus 150 kV substation",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "Cikarang, Bekasi",
+   "what": "High-voltage substation on the STT campus that feeds Jakarta 2, 3, 5 and 6 at 20 kV (N+1). STT calls it the first energised for a data-centre campus in Indonesia, with independent links to several PLN substations. Owner, MVA and builder not published.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-indonesia-expanding-footprint-second-data-centre",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_2_Factsheet-vJul2026.pdf"
+   ]
+  },
+  {
+   "id": "elsewedy-electric",
+   "name": "Elsewedy Electric Indonesia",
+   "legal_name": "PT Elsewedy Electric Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Indonesian transformer maker of Egypt's Elsewedy Electric group; PLN's contractor for the GI 150 kV 'KTT Data Center' in GIIC.",
+   "sources": [
+    "https://listrikindonesia.com/detail/12488/kolaborasi-pln-elsewedy-wujud-nyata-elektrifikasi-ri"
+   ]
+  },
+  {
+   "id": "puradelta-lestari",
+   "name": "Puradelta Lestari (Kota Deltamas / GIIC)",
+   "legal_name": "PT Puradelta Lestari Tbk",
+   "kind": "company",
+   "city": "Cikarang Pusat, Bekasi",
+   "what": "IDX: DMAS. Developer of Kota Deltamas and the GIIC industrial estate. Its ~300 ha data-centre zone (since 2021) had 15 DC tenants at end-2025, with 993 MVA of PLN 'premium' supply, fibre ducts for up to 12 ISPs and recycled water for DC cooling.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "sinarmas-land",
+   "name": "Sinarmas Land",
+   "legal_name": "Sinarmas Land Limited",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Sinar Mas group property company; ultimate parent of Puradelta Lestari through PT Sumber Arusmulia (57.28%).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "sojitz",
+   "name": "Sojitz",
+   "legal_name": "Sojitz Corporation",
+   "kind": "company",
+   "city": "Tokyo",
+   "what": "Japanese trading house; holds 25.00% of Puradelta Lestari.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "total-bangun-persada",
+   "name": "Total Bangun Persada",
+   "legal_name": "PT Total Bangun Persada Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IDX: TOTL. Building contractor. PT STT GDC Indonesia was its largest customer in 2025 (20.55% of revenue), through contracts named 'Iris 2', 'Iris 3' and 'IRIS 5 & 6'.",
+   "sources": [
+    "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf",
+    "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf"
+   ]
+  },
+  {
+   "id": "xtralis",
+   "name": "Xtralis (VESDA)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Maker of VESDA aspirating smoke detectors; VESDA appears in the factsheets of Jakarta 1, 2, 3, 5 and 6 (installer not named).",
+   "sources": [
+    "https://www.xtralis.com/",
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2025-09/stt_jakarta_1_factsheet-vaugust2025.pdf"
+   ]
+  },
+  {
+   "id": "uptime-institute",
+   "name": "Uptime Institute",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Data-centre rating body; certified the design documents of Jakarta 1 (Phase 1) at Tier III.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/resources/STT-Jakarta-1-Achieves-Uptime-Institute-Tier-III-Certification-of-Design-Documents"
+   ]
+  },
+  {
+   "id": "usgbc",
+   "name": "USGBC (LEED)",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "US Green Building Council, which runs LEED; Jakarta 1 is LEED Gold and the later buildings target LEED Gold.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+    "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2025-09/stt_jakarta_1_factsheet-vaugust2025.pdf"
+   ]
+  },
+  {
+   "id": "ocbc",
+   "name": "OCBC (OCBC Ltd and OCBC NISP)",
+   "legal_name": "Oversea-Chinese Banking Corporation Limited / PT Bank OCBC NISP Tbk",
+   "kind": "company",
+   "city": "Singapore / Jakarta",
+   "what": "Lead bank on STT GDC Indonesia's IDR 8.8 tn facility (coordinating bank, sole green coordinator, facility agent) and a lead arranger of the S$5 bn buyout loan.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche",
+    "https://www.dbs.com/newsroom/DBS_OCBC_and_UOB_support_SGD_5_billion_sustainability_linked_loan_alongside_other_lenders_for_KKR_and_Singtel_Groups_Acquisition_of_ST_Telemedia_Global_Data_Centres"
+   ]
+  },
+  {
+   "id": "hsbc-indonesia",
+   "name": "HSBC Indonesia",
+   "legal_name": "PT Bank HSBC Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Arranger of STT GDC Indonesia's IDR 8.8 tn facility (Jun 2026).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche"
+   ]
+  },
+  {
+   "id": "bni",
+   "name": "BNI",
+   "legal_name": "PT Bank Negara Indonesia (Persero) Tbk",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State-owned bank (IDX: BBNI); arranger of STT GDC Indonesia's IDR 8.8 tn facility (Jun 2026).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche",
+    "https://pasardana.id/news/2026/6/3/didukung-bni-hsbc-dan-ocbc-stt-gdc-kantongi-pendanaan-hijau-rp8-8-triliun-untuk-bangun-data-center-berkapasitas-360-mw-di-indonesia"
+   ]
+  },
+  {
+   "id": "dbs",
+   "name": "DBS",
+   "legal_name": "DBS Bank Ltd",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Lead arranger and bookrunner of the S$5 bn sustainability-linked loan for the KKR-Singtel buyout. JV chairman Liu Chee Ming sits on the board of its Hong Kong bank.",
+   "sources": [
+    "https://www.dbs.com/newsroom/DBS_OCBC_and_UOB_support_SGD_5_billion_sustainability_linked_loan_alongside_other_lenders_for_KKR_and_Singtel_Groups_Acquisition_of_ST_Telemedia_Global_Data_Centres",
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "uob",
+   "name": "UOB",
+   "legal_name": "United Overseas Bank Limited",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Lead arranger and bookrunner of the S$5 bn sustainability-linked loan for the KKR-Singtel buyout (Aug 2026).",
+   "sources": [
+    "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2026/uob-supports-5billion-sll-kkr-singtel-sttgdc.page"
+   ]
+  },
+  {
+   "id": "bkpm",
+   "name": "Ministry of Investment (BKPM)",
+   "legal_name": null,
+   "kind": "government",
+   "city": "Jakarta",
+   "what": "Indonesia's investment ministry and investment board; its SE Asia investment-promotion director spoke for the government at the 10 Jun 2026 expansion ceremony.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+    "https://investortrust.id/business/105970/bkpm-sebut-ekspansi-data-center-stt-gdc-perkuat-daya-tarik-investasi-digital-indonesia"
+   ]
+  },
+  {
+   "id": "apjii",
+   "name": "APJII (IIX)",
+   "legal_name": "Asosiasi Penyelenggara Jasa Internet Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesian ISP association (founded 1996) that runs the Indonesia Internet Exchange (IIX); opened an IIX node in Jakarta 1.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-and-apjii-ink-partnership-boost-internet-connectivity-stt-jakarta-1"
+   ]
+  },
+  {
+   "id": "atmi-cikarang",
+   "name": "ATMI Cikarang",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Cikarang",
+   "what": "Vocational institute in Cikarang that hosts STT GDC's Data Centre Laboratory Learning Centre (MoU 10 Jun 2026).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-strengthens-indonesia-digital-ecosystem-through-talent-development-and-community-initiatives",
+    "https://investortrust.id/business/105970/bkpm-sebut-ekspansi-data-center-stt-gdc-perkuat-daya-tarik-investasi-digital-indonesia"
+   ]
+  },
+  {
+   "id": "epi",
+   "name": "EPI",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Data-centre training firm delivering the Data Centre Fundamentals Certificate (DCFC) course in STT GDC Indonesia's talent programme.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-strengthens-indonesia-digital-ecosystem-through-talent-development-and-community-initiatives"
+   ]
+  },
+  {
+   "id": "nvidia",
+   "name": "NVIDIA",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Santa Clara",
+   "what": "GPU maker. STT GDC is an NVIDIA colocation partner and says its Jakarta halls are engineered for NVIDIA Vera Rubin platforms.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-achieves-certification-nvidia-dgx-ready-data-center-program"
+   ]
+  },
+  {
+   "id": "moratelindo",
+   "name": "Moratelindo",
+   "legal_name": "PT Mora Telematika Indonesia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Telecom infrastructure and network provider (IDX: MORA); first carrier to sign for a PoP in Jakarta 1 (Dec 2022).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-celebrates-topping-out-of-first-data-centre-in-indonesia",
+    "https://www.sttgdc.com/id-en/services/connectivity/carriers"
+   ]
+  },
+  {
+   "id": "lightstorm",
+   "name": "Lightstorm",
+   "legal_name": "PT Lightstorm Indonesia Telekomunikasi",
+   "kind": "company",
+   "city": null,
+   "what": "Carrier-neutral network platform; PoP MoU (Jun 2023) and listed carrier at Jakarta 1.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+    "https://www.sttgdc.com/id-en/services/connectivity/carriers"
+   ]
+  },
+  {
+   "id": "weave",
+   "name": "Weave",
+   "legal_name": "PT Integrasi Jaringan Ekosistem",
+   "kind": "company",
+   "city": null,
+   "what": "Connectivity infrastructure company; PoP MoU at Jakarta 1 (Jun 2023).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1"
+   ]
+  },
+  {
+   "id": "pgas-telkom",
+   "name": "PGAS Telekomunikasi Nusantara",
+   "legal_name": "PT PGAS Telekomunikasi Nusantara",
+   "kind": "company",
+   "city": null,
+   "what": "Domestic and international fibre network provider; PoP MoU at Jakarta 1 (Jun 2023).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1"
+   ]
+  },
+  {
+   "id": "sinergy-networks",
+   "name": "Sinergy Networks",
+   "legal_name": "PT Sinergi Inti Andalan Prima Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Telecom services company (IDX: INET); PoP MoU at Jakarta 1 (Jun 2023). Its unit SIDI also runs a small data centre (power-map record sidi-jkt01-cyber-1).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1"
+   ]
+  },
+  {
+   "id": "berca",
+   "name": "Berca Hardayaperkasa",
+   "legal_name": "PT Berca Hardayaperkasa",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "ICT company; MoU (Jun 2023) to explore managed services delivered from Jakarta 1.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1"
+   ]
+  },
+  {
+   "id": "iconplus",
+   "name": "PLN Icon Plus",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Network provider listed as 'Iconplus' on STT's carrier page for Jakarta 1 (internet access, IP transit, IX, layer 1-3).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/services/connectivity/carriers"
+   ]
+  },
+  {
+   "id": "fiber-media-indonesia",
+   "name": "Fiber Media Indonesia",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Dark-fibre provider listed on STT's carrier page for Jakarta 1.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/services/connectivity/carriers"
+   ]
+  },
+  {
+   "id": "xenith-ig",
+   "name": "Xenith IG",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Dark-fibre provider listed on STT's carrier page for Jakarta 1.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/services/connectivity/carriers"
+   ]
+  },
+  {
+   "id": "smt",
+   "name": "SMT",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Listed by STT as the dark-fibre provider 'within Greenland International Industrial Centre' for Jakarta 1; full name not given.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/services/connectivity/carriers"
+   ]
+  },
+  {
+   "id": "bruno-lopez",
+   "name": "Bruno Lopez",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "President and Group CEO of STT GDC since 2014; listed on the Indonesia JV board; earlier CEO and executive director of Keppel Data Centres.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions"
+   ]
+  },
+  {
+   "id": "hendrikus-gozali",
+   "name": "Hendrikus Hendra Gozali",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Country Head, Indonesia, heading PT STT GDC Indonesia since 1 Aug 2022; earlier Indonesia country GM at Johnson Controls, with roles at Honeywell, Schindler and Trane.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership",
+    "https://www.itnews.asia/news/stt-gdc-appoints-indonesia-leader-583724"
+   ]
+  },
+  {
+   "id": "lionel-yeo",
+   "name": "Lionel Yeo",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "CEO, Southeast Asia, STT GDC (quoted on the Indonesia business from Dec 2022 to Jun 2026).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-celebrates-topping-out-of-first-data-centre-in-indonesia",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-strengthens-indonesia-digital-ecosystem-through-talent-development-and-community-initiatives"
+   ]
+  },
+  {
+   "id": "nelson-lim",
+   "name": "Nelson Lim",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "Group CFO of STT GDC; spoke for the Jun 2026 Indonesia financing and the Jan 2024 S$450m perpetual issue.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche"
+   ]
+  },
+  {
+   "id": "liu-chee-ming",
+   "name": "Liu Chee Ming",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Hong Kong",
+   "what": "Non-executive chairman of STT GDC Indonesia JVCo; managing director of Platinum Holdings (founded 1996); independent director of DBS Bank (Hong Kong) since 2018 and non-executive director of MGM China since 2021.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "zulkifli-baharudin",
+   "name": "Zulkifli Baharudin",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "Director of STT GDC Indonesia JVCo; executive chairman of Indo-Trans Corporation since 2011; non-executive director of Virtus HoldCo since 2017.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "arif-rachmat",
+   "name": "Arif Rachmat",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Director of STT GDC Indonesia JVCo and commissioner of Triputra (PT Triputra Investindo Arya); spoke for Triputra as its director when the JV was announced in 2021. Vice chairman of KADIN, per STT's page.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership",
+    "https://triputra-group.com/tentang-kami/profil/",
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-expands-into-Indonesia"
+   ]
+  },
+  {
+   "id": "ing-hie-kwik",
+   "name": "Ing Hie Kwik",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Director of STT GDC Indonesia JVCo; Operating Partner at Temasek since 2018; founded Sternbridge Partners (2015-2018); earlier Indonesia head of Affinity Equity Partners (2009-2014) and president director of Morgan Stanley Indonesia (2007-2009).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "tp-rachmat",
+   "name": "T.P. Rachmat",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Theodore Permadi Rachmat, former CEO of Astra; founded Triputra (PT Triputra Investindo Arya) in 1998.",
+   "sources": [
+    "https://triputra-group.com/tentang-kami/profil/",
+    "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-expands-into-Indonesia"
+   ]
+  },
+  {
+   "id": "stephen-miller",
+   "name": "Stephen Miller",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "President and Group CEO of ST Telemedia (2024-2026 releases).",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel"
+   ]
+  },
+  {
+   "id": "david-luboff",
+   "name": "David Luboff",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Co-head of KKR Asia Pacific and head of Asia Pacific infrastructure; KKR's spokesman on both STT GDC deals.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel"
+   ]
+  },
+  {
+   "id": "arthur-lang",
+   "name": "Arthur Lang",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "Group CFO of Singtel; Singtel's spokesman on both STT GDC deals.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+    "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel"
+   ]
+  },
+  {
+   "id": "keppel-dc",
+   "name": "Keppel Data Centres",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Keppel group's data-centre business; Bruno Lopez was its CEO and executive director before founding STT GDC.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "platinum-holdings",
+   "name": "Platinum Holdings",
+   "legal_name": "Platinum Holdings Company Limited",
+   "kind": "company",
+   "city": null,
+   "what": "Company Liu Chee Ming set up in March 1996 and still runs as managing director.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "indo-trans",
+   "name": "Indo-Trans Corporation",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Logistics and supply-chain company across Indo-China; Zulkifli Baharudin is executive chairman.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "sternbridge",
+   "name": "Sternbridge Partners",
+   "legal_name": null,
+   "kind": "fund",
+   "city": null,
+   "what": "Investment firm Ing Hie Kwik founded and ran from 2015 to 2018; it took a significant minority stake in DCI Indonesia.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  },
+  {
+   "id": "dci-indonesia",
+   "name": "DCI Indonesia",
+   "legal_name": "PT DCI Indonesia Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Listed Indonesian data-centre operator (IDX: DCII); has its own web in this set.",
+   "sources": [
+    "https://www.sttgdc.com/id-en/about-us/our-leadership"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "temasek",
+   "to": "st-telemedia",
+   "relation": "owns",
+   "detail": "Temasek owns all of the ST Telemedia group; its STT Communications Ltd., the company that sold STT GDC, is 'an indirect wholly-owned subsidiary of Temasek' (Singtel's SGX filing).",
+   "evidence": "confirmed",
+   "date": "2026-02",
+   "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/Y85UPC7OFANTRQ15/874052_20260204-ann.pdf",
+   "quote": "The Seller is an indirect wholly-owned subsidiary of Temasek."
+  },
+  {
+   "from": "st-telemedia",
+   "to": "stt-gdc-group",
+   "relation": "founded",
+   "detail": "Set up STT GDC in 2014 and kept control until it sold its ~81.7% (fully diluted) to the KKR-Singtel consortium for S$6.6 bn cash in two S$3.3 bn tranches (signed 4 Feb 2026, completed 31 Aug 2026).",
+   "evidence": "confirmed",
+   "date": "2014",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+   "quote": "Established in 2014 by ST Telemedia"
+  },
+  {
+   "from": "kkr",
+   "to": "stt-gdc-group",
+   "relation": "owns",
+   "detail": "75% since 31 Aug 2026 through KKR Opal Topco LP and the bid vehicle Opal Bidco Pte. Ltd.; before the buyout KKR held 14.1% (1.35 bn preference shares plus S$958m of warrants).",
+   "evidence": "confirmed",
+   "date": "2026-08",
+   "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/M50Z72RSWTHSPQ0J/902977_Ann_20260831.pdf",
+   "quote": "indirectly held by Singtel Investor and KKR Opal in the respective proportions of 25% and 75%"
+  },
+  {
+   "from": "singtel",
+   "to": "stt-gdc-group",
+   "relation": "owns",
+   "detail": "25% since 31 Aug 2026 through Singtel Interactive Pte. Ltd.: S$740m of new cash plus the 4.2% it already held (400m preference shares and S$284m of warrants from 2024).",
+   "evidence": "confirmed",
+   "date": "2026-08",
+   "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/Y85UPC7OFANTRQ15/874052_20260204-ann.pdf",
+   "quote": "Singtel Investor has committed a sum in cash equal to S$740 million"
+  },
+  {
+   "from": "kkr-apii",
+   "to": "stt-gdc-group",
+   "relation": "invested_in",
+   "detail": "Jun 2024: the KKR-led consortium with Singtel agreed to put S$1.75 bn into STT GDC as redeemable preference shares with warrants (S$1.24 bn more if exercised); KKR's share came from this fund.",
+   "evidence": "confirmed",
+   "date": "2024-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel",
+   "quote": "KKR is making this investment from its Asia Pacific Infrastructure Investors II Fund."
+  },
+  {
+   "from": "kkr",
+   "to": "kkr-apii",
+   "relation": "runs",
+   "detail": "KKR manages the fund that made its 2024 STT GDC investment.",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel",
+   "quote": "KKR is making this investment from its Asia Pacific Infrastructure Investors II Fund."
+  },
+  {
+   "from": "temasek",
+   "to": "singtel",
+   "relation": "owns",
+   "detail": "About 51.69% of Singtel (direct and deemed, 28 Jan 2026), so Temasek keeps an indirect interest in STT GDC through Singtel's 25%.",
+   "evidence": "confirmed",
+   "date": "2026-01",
+   "source_url": "https://links.sgx.com/1.0.0/corporate-announcements/Y85UPC7OFANTRQ15/874052_20260204-ann.pdf",
+   "quote": "representing an aggregate of approximately 51.69% of the"
+  },
+  {
+   "from": "singtel",
+   "to": "nxera",
+   "relation": "owns",
+   "detail": "Nxera is Singtel's regional data-centre arm.",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel",
+   "quote": "regional data centre arm Nxera"
+  },
+  {
+   "from": "kkr",
+   "to": "nxera",
+   "relation": "invested_in",
+   "detail": "KKR bought 20% of Nxera in Sep 2023 (stated in the joint KKR-Singtel-STT GDC release).",
+   "evidence": "confirmed",
+   "date": "2023-09",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-raises-1.75billion-from-kkr-led-consortium-with-singtel",
+   "quote": "In September 2023, KKR acquired a 20% stake in Nxera"
+  },
+  {
+   "from": "nxera",
+   "to": "neutradc-nxera-batam",
+   "relation": "partner",
+   "detail": "Nxera's CEO Bill Chang attended the Jun 2024 piling ceremony of the Telkom-group Batam data centre that carries Nxera's name and pledged support; this source does not state a shareholding.",
+   "evidence": "company_claim",
+   "date": "2024-06",
+   "source_url": "https://www.neutradc.com/news/50759/neutradc-nxera-batam-holds-piling-ceremony-for-data-center-with-ai-infrastructure",
+   "quote": "Bill Chang, Director at Nxera, conveyed collaborative support with NeutraDC Batam"
+  },
+  {
+   "from": "stt-gdc-group",
+   "to": "virtus",
+   "relation": "owns",
+   "detail": "STT GDC holds a majority stake in VIRTUS, its UK business.",
+   "evidence": "company_claim",
+   "date": null,
+   "source_url": "https://www.sttgdc.com/id-en/about-us/the-company",
+   "quote": "We have also acquired a majority stake in VIRTUS Data Centres"
+  },
+  {
+   "from": "stt-gdc-group",
+   "to": "stt-gdc-jvco",
+   "relation": "owns",
+   "detail": "STT GDC lists Indonesia among its subsidiaries (not among its associates and JVs), so it controls the Indonesian JV; the split with Triputra and Temasek is not published.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/group-of-companies",
+   "quote": "subsidiary companies in Singapore, India, United Kingdom, Indonesia, Korea and Japan"
+  },
+  {
+   "from": "triputra",
+   "to": "stt-gdc-jvco",
+   "relation": "joint_venture",
+   "detail": "JV partner since 25 May 2021, announced with STT GDC and Temasek with a quote from Triputra director Arif Rachmat; first plan was a 72 MW campus in GIIC. Stake not disclosed.",
+   "evidence": "confirmed",
+   "date": "2021-05",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-expands-into-Indonesia",
+   "quote": "the entry into a strategic partnership with Indonesian conglomerate Triputra Group as well as Temasek"
+  },
+  {
+   "from": "temasek",
+   "to": "stt-gdc-jvco",
+   "relation": "joint_venture",
+   "detail": "Temasek is a direct JV partner, separate from its former holding in STT GDC via ST Telemedia; the Jul 2026 factsheets still name it after ST Telemedia's exit. Stake not disclosed.",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_2_Factsheet-vJul2026.pdf",
+   "quote": "A JOINT VENTURE OF STT GDC, TRIPUTRA, TEMASEK"
+  },
+  {
+   "from": "stt-gdc-jvco",
+   "to": "stt-gdc",
+   "relation": "owns",
+   "detail": "Inferred: STT's Indonesia page gives the JVCo board as the board for its Indonesian business, and the PT's factsheets call it a JV of the same three partners. Exact holding chain not published.",
+   "evidence": "inferred",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Liu Chee Ming is Chairman and Director on the board of STT GDC Indonesia JVCo Pte. Ltd."
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-1",
+   "relation": "runs",
+   "detail": "First building, opened 21 Jun 2023: 18 MW IT on the current factsheet, 19.5 MW in the launch release.",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+   "quote": "has officially launched its first data centre facility, STT Jakarta 1, in Bekasi, Jawa Barat"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-2",
+   "relation": "runs",
+   "detail": "24 MW IT; ground broken 11 Sep 2024, operating since 10 Jun 2026.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+   "quote": "STT Jakarta 2 commences operations with 24MW of IT load capacity."
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-3",
+   "relation": "runs",
+   "detail": "Up to 24 MW IT; topped out 10 Jun 2026; ready for service Q1 2027 per the Jul 2026 factsheet.",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_3_Factsheet-vJul2026.pdf",
+   "quote": "STT Jakarta 3 (RFS: Q1 2027)"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-4",
+   "relation": "runs",
+   "detail": "48 MW IT listed as under development (32 MW in an Apr 2025 report).",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/locations/jakarta",
+   "quote": "STT Jakarta 4 is built to the highest industry standards"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-5",
+   "relation": "runs",
+   "detail": "40 MW IT; ground broken 10 Jun 2026; ready for service Q4 2027.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-05/STT%20Jakarta%205_Factsheet-vMay2026.pdf",
+   "quote": "STT Jakarta 5 (RFS: Q4 2027)"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-6",
+   "relation": "runs",
+   "detail": "40 MW IT; ground broken 10 Jun 2026; ready for service Q4 2027.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-05/STT%20Jakarta%206_Factsheet-vMay2026.pdf",
+   "quote": "STT Jakarta 6 (RFS: Q4 2027)"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-7",
+   "relation": "runs",
+   "detail": "60 MW IT, planned; no dates.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/locations/jakarta",
+   "quote": "STT Jakarta 7 Cikarang, Bekasi, Indonesia IT Load (MW) 60"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-8",
+   "relation": "runs",
+   "detail": "60 MW IT, planned; no dates.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/locations/jakarta",
+   "quote": "STT Jakarta 8 Cikarang, Bekasi, Indonesia IT Load (MW) 60"
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-jakarta-9",
+   "relation": "runs",
+   "detail": "60 MW IT, planned; no dates.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/locations/jakarta",
+   "quote": "STT Jakarta 9 Cikarang, Bekasi, Indonesia IT Load (MW) 60"
+  },
+  {
+   "from": "pln",
+   "to": "pln-gi-dc-giic",
+   "relation": "runs",
+   "detail": "PLN built the GI 150 kV Data Center and its lines for more than Rp312 bn: 2 x 60 MVA = 120 MVA, completed Nov 2024.",
+   "evidence": "confirmed",
+   "date": "2024-11",
+   "source_url": "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+   "quote": "PLN menginvestasikan dana lebih dari Rp 312 Milyar untuk membangun Gardu Induk 150 kV Data Center beserta dengan transmisinya."
+  },
+  {
+   "from": "pln-gi-dc-giic",
+   "to": "stt-gdc",
+   "relation": "supplies_power",
+   "detail": "PLN's project manager names 'STT Global Data Center' among the users of this 120 MVA substation, next to Amazon, Microsoft, Komdigi and Telkom. STT's contracted MVA is not published.",
+   "evidence": "confirmed",
+   "date": "2024-11",
+   "source_url": "https://zonapasar.com/wujudkan-semangat-hari-pahlawan-pln-berhasil-tuntaskan-sistem-kelistrikan-data-center-di-giic-cikarang-siap-hadapi-kebutuhan-pasar-internasional-48558",
+   "quote": "Telkom, STT Global Data Center dan perusahaan lainnya di kawasan industri tersebut."
+  },
+  {
+   "from": "pln",
+   "to": "stt-substation",
+   "relation": "supplies_power",
+   "detail": "STT: the campus's own 150 kV substation has independent connections to several PLN substations, with dual feeds to the buildings.",
+   "evidence": "company_claim",
+   "date": "2024-09",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-indonesia-expanding-footprint-second-data-centre",
+   "quote": "The campus features its own dedicated 150kV substation, ensuring redundancy with independent connections to multiple PLN substations."
+  },
+  {
+   "from": "stt-gdc",
+   "to": "stt-substation",
+   "relation": "runs",
+   "detail": "On-site high-voltage substation, energised by Jun 2026; STT says it was the first energised for a data-centre campus in Indonesia. A STTGDC-PLN 'inauguration & signing' was on the 10 Jun 2026 ceremony agenda.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+   "quote": "the first to be energised for a data centre campus in Indonesia"
+  },
+  {
+   "from": "stt-substation",
+   "to": "stt-jakarta-2",
+   "relation": "supplies_power",
+   "detail": "N+1 20 kV distribution from the on-campus 150 kV substation; 24 MW IT.",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_2_Factsheet-vJul2026.pdf",
+   "quote": "N+1 20kV distribution supported by 150kV substation on"
+  },
+  {
+   "from": "stt-substation",
+   "to": "stt-jakarta-3",
+   "relation": "supplies_power",
+   "detail": "N+1 20 kV distribution from the on-campus 150 kV substation; up to 24 MW IT.",
+   "evidence": "company_claim",
+   "date": "2026-07",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-07/STT_Jakarta_3_Factsheet-vJul2026.pdf",
+   "quote": "N+1 20kV distribution and supported by 150kV substation on"
+  },
+  {
+   "from": "stt-substation",
+   "to": "stt-jakarta-5",
+   "relation": "supplies_power",
+   "detail": "N+1 20 kV distribution from the on-campus 150 kV substation; 40 MW IT.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-05/STT%20Jakarta%205_Factsheet-vMay2026.pdf",
+   "quote": "N+1 20kV distribution and supported by 150kV substation on"
+  },
+  {
+   "from": "stt-substation",
+   "to": "stt-jakarta-6",
+   "relation": "supplies_power",
+   "detail": "N+1 20 kV distribution from the on-campus 150 kV substation; 40 MW IT.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2026-05/STT%20Jakarta%206_Factsheet-vMay2026.pdf",
+   "quote": "N+1 20kV distribution and supported by 150kV substation on"
+  },
+  {
+   "from": "pln",
+   "to": "stt-jakarta-1",
+   "relation": "supplies_power",
+   "detail": "Inferred: Jakarta 1's factsheet lists two diverse 20 kV utility supplies, and Puradelta's 2025 annual report says GIIC power comes from PLN; the factsheet itself does not name PLN.",
+   "evidence": "inferred",
+   "date": "2025-08",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2025-09/stt_jakarta_1_factsheet-vaugust2025.pdf",
+   "quote": "2 diverse and redundant 20kV utility supplies and sub-stations"
+  },
+  {
+   "from": "pln",
+   "to": "stt-gdc",
+   "relation": "renewable_deal",
+   "detail": "STT says it is running a renewable-energy plan with PLN so the campus is carbon-neutral from day one; form (RECs or green tariff) and volume not stated.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+   "quote": "STT GDC is implementing a renewable energy strategy in collaboration with PLN"
+  },
+  {
+   "from": "elsewedy-electric",
+   "to": "pln-gi-dc-giic",
+   "relation": "built",
+   "detail": "Contracted by PLN for the GI 150 kV 'KTT Data Center' in GIIC: US$12.6m (about Rp188.5 bn). That this is the same 'GI 150 kV Data Center' PLN finished in Nov 2024 is our inference (same name, estate and timing).",
+   "evidence": "inferred",
+   "date": "2024-01",
+   "source_url": "https://listrikindonesia.com/detail/12488/kolaborasi-pln-elsewedy-wujud-nyata-elektrifikasi-ri",
+   "quote": "Pekerjaan Gardu Induk 150kV Konsumen Tingkat Tinggi Data Center (KTT Data Center) di kawasan industri Greenland International Industrial Center"
+  },
+  {
+   "from": "puradelta-lestari",
+   "to": "stt-gdc",
+   "relation": "supplies",
+   "detail": "Sold GIIC industrial land to PT STT GDC Indonesia: Rp210.79 bn in 2025, 16.50% of Puradelta's 2025 sales. STT also said in Dec 2022 it had signed a land contract for a second building (seller not named).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "PT STT GDC Indonesia 210.792.000.000 16,50%"
+  },
+  {
+   "from": "sinarmas-land",
+   "to": "puradelta-lestari",
+   "relation": "owns",
+   "detail": "Ultimate parent; holds 57.28% through PT Sumber Arusmulia.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Sinarmas Land Limited is the ultimate"
+  },
+  {
+   "from": "sojitz",
+   "to": "puradelta-lestari",
+   "relation": "owns",
+   "detail": "25.00% of Puradelta Lestari.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Sojitz Corporation 25,00%"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "stt-gdc",
+   "relation": "built",
+   "detail": "Contractor for PT STT GDC Indonesia: Rp147.2 bn of TOTL revenue in 2024 (4.77%), Rp801.7 bn in 2025 (20.55%, its largest customer) and Rp306.0 bn in 1H2026 (14.87%).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf",
+   "quote": "PT STT GDC Indonesia 801.661.104 20,55%"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "stt-jakarta-2",
+   "relation": "built",
+   "detail": "'Iris 2' contract for PT STT GDC Indonesia, 29 Jul 2024 to 31 Jan 2026 (first due 31 Jul 2025). Inferred as Jakarta 2: the campus project name is 'STT Iris' (DataCenterMap snippet) and the dates fit (ground broken Sep 2024, opened Jun 2026).",
+   "evidence": "inferred",
+   "date": "2024-07",
+   "source_url": "https://www.totalbp.com/assets/docs/ARTotal2025_LK_medres1.pdf",
+   "quote": "Iris 2 PT STT GDC Indonesia 29 Juli 2024/ 31 Januari 2026/"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "stt-jakarta-3",
+   "relation": "built",
+   "detail": "'Iris 3' contract, 24 Jan 2025 to 16 Mar 2026. Inferred as Jakarta 3 (ground broken Apr 2025, topped out Jun 2026).",
+   "evidence": "inferred",
+   "date": "2025-01",
+   "source_url": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf",
+   "quote": "Iris 3 PT STT GDC Indonesia 24 Januari 2025/ 16 Maret 2026/"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "stt-jakarta-5",
+   "relation": "built",
+   "detail": "'IRIS 5 & 6' contract, 1 Apr 2026 to 31 Jul 2027. Inferred as Jakarta 5 and 6 (ground broken 10 Jun 2026, ready Q4 2027).",
+   "evidence": "inferred",
+   "date": "2026-04",
+   "source_url": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf",
+   "quote": "IRIS 5 & 6 PT STT GDC Indonesia 1 April 2026/ 31 Juli 2027/"
+  },
+  {
+   "from": "total-bangun-persada",
+   "to": "stt-jakarta-6",
+   "relation": "built",
+   "detail": "'IRIS 5 & 6' contract, 1 Apr 2026 to 31 Jul 2027. Inferred as Jakarta 5 and 6 (ground broken 10 Jun 2026, ready Q4 2027).",
+   "evidence": "inferred",
+   "date": "2026-04",
+   "source_url": "https://www.totalbp.com/assets/docs/TOTL%20HY2026%20%2829Jul%29.pdf",
+   "quote": "IRIS 5 & 6 PT STT GDC Indonesia 1 April 2026/ 31 Juli 2027/"
+  },
+  {
+   "from": "xtralis",
+   "to": "stt-gdc",
+   "relation": "supplies",
+   "detail": "Inferred: STT's factsheets for Jakarta 1, 2, 3, 5 and 6 list VESDA smoke detection, and Xtralis calls VESDA its own technology. Installer and contract not named.",
+   "evidence": "inferred",
+   "date": "2025-08",
+   "source_url": "https://assets.sttelemediagdc.com/sttgdc/global_en/public/2025-09/stt_jakarta_1_factsheet-vaugust2025.pdf",
+   "quote": "VESDA and smoke detectors"
+  },
+  {
+   "from": "uptime-institute",
+   "to": "stt-jakarta-1",
+   "relation": "certifies",
+   "detail": "Tier III Certification of Design Documents for Phase 1 of Jakarta 1.",
+   "evidence": "company_claim",
+   "date": "2023",
+   "source_url": "https://www.sttgdc.com/id-en/resources/STT-Jakarta-1-Achieves-Uptime-Institute-Tier-III-Certification-of-Design-Documents",
+   "quote": "has received the Uptime Institute Tier III Certification of Design Documents for Phase 1 of its first data centre facility STT Jakarta 1"
+  },
+  {
+   "from": "usgbc",
+   "to": "stt-jakarta-1",
+   "relation": "certifies",
+   "detail": "LEED Gold for Jakarta 1; Jakarta 2, 3, 5 and 6 target LEED Gold.",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+   "quote": "LEED Gold certification, ensuring the new data centre is amongst the most sustainable data centres in Indonesia."
+  },
+  {
+   "from": "ocbc",
+   "to": "stt-gdc",
+   "relation": "lends_to",
+   "detail": "IDR 8.8 tn (~US$500m) upsized USD/IDR facility with STT's first Indonesian green term-loan tranche (for Jakarta 3); OCBC Ltd and OCBC NISP arranged it and act as coordinating banks, sole green coordinator and facility agent (Jun 2026).",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche",
+   "quote": "Oversea-Chinese Banking Corporation Limited and PT Bank OCBC NISP Tbk (collectively, OCBC) also acted as Coordinating Banks, Sole Green Coordinator and Facility Agent"
+  },
+  {
+   "from": "hsbc-indonesia",
+   "to": "stt-gdc",
+   "relation": "lends_to",
+   "detail": "Arranger of the IDR 8.8 tn facility with OCBC NISP and BNI (Jun 2026).",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche",
+   "quote": "The financing was arranged by PT Bank OCBC NISP Tbk, PT Bank HSBC Indonesia and PT Bank Negara Indonesia (Persero) Tbk"
+  },
+  {
+   "from": "bni",
+   "to": "stt-gdc",
+   "relation": "lends_to",
+   "detail": "State bank BNI is an arranger of the IDR 8.8 tn facility (Jun 2026).",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://pasardana.id/news/2026/6/3/didukung-bni-hsbc-dan-ocbc-stt-gdc-kantongi-pendanaan-hijau-rp8-8-triliun-untuk-bangun-data-center-berkapasitas-360-mw-di-indonesia",
+   "quote": "Pendanaan tersebut diatur oleh PT Bank OCBC NISP Tbk (IDX: NISP), PT Bank HSBC Indonesia, dan PT Bank Negara Indonesia (Persero) Tbk (IDX: BBNI)."
+  },
+  {
+   "from": "dbs",
+   "to": "stt-gdc-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger and bookrunner of the S$5 bn sustainability-linked loan that the buyout vehicle drew to pay the S$6.6 bn price and fund future capex; KPIs are renewable share and share of green data centres (Aug 2026).",
+   "evidence": "confirmed",
+   "date": "2026-08",
+   "source_url": "https://www.dbs.com/newsroom/DBS_OCBC_and_UOB_support_SGD_5_billion_sustainability_linked_loan_alongside_other_lenders_for_KKR_and_Singtel_Groups_Acquisition_of_ST_Telemedia_Global_Data_Centres",
+   "quote": "DBS, OCBC and UOB participated in a landmark SGD 5 billion sustainability-linked loan supporting the acquisition of ST Telemedia Global Data Centres (STT GDC)"
+  },
+  {
+   "from": "uob",
+   "to": "stt-gdc-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger and bookrunner of the same S$5 bn sustainability-linked buyout loan (Aug 2026).",
+   "evidence": "confirmed",
+   "date": "2026-08",
+   "source_url": "https://www.uob.com.sg/uobgroup/newsroom/news-releases/2026/uob-supports-5billion-sll-kkr-singtel-sttgdc.page",
+   "quote": "DBS, OCBC and UOB are among the Mandated Lead Arrangers and Bookrunners (MLABs) and Sustainability-Linked Loan Coordinators (SLLCs) for the financing."
+  },
+  {
+   "from": "ocbc",
+   "to": "stt-gdc-group",
+   "relation": "lends_to",
+   "detail": "Lead arranger and bookrunner of the same S$5 bn sustainability-linked buyout loan (Aug 2026).",
+   "evidence": "confirmed",
+   "date": "2026-08",
+   "source_url": "https://www.dbs.com/newsroom/DBS_OCBC_and_UOB_support_SGD_5_billion_sustainability_linked_loan_alongside_other_lenders_for_KKR_and_Singtel_Groups_Acquisition_of_ST_Telemedia_Global_Data_Centres",
+   "quote": "We are proud to support KKR and Singtel in this landmark transaction"
+  },
+  {
+   "from": "bkpm",
+   "to": "stt-gdc",
+   "relation": "partner",
+   "detail": "BKPM's SE Asia investment-promotion director Saribua Siahaan spoke for the government at the 10 Jun 2026 expansion ceremony; the ministry promised easier permits for DC investors.",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://investortrust.id/business/105970/bkpm-sebut-ekspansi-data-center-stt-gdc-perkuat-daya-tarik-investasi-digital-indonesia",
+   "quote": "Direktur Promosi Investasi Asia Tenggara, Australia, Selandia Baru dan Pasifik Kementerian Investasi/BKPM, Saribua Siahaan mengatakan, prospek industri pusat data Indonesia masih sangat besar."
+  },
+  {
+   "from": "apjii",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "IIX internet-exchange node in Jakarta 1 (signed 8 Aug 2024; APJII chairman Muhammad Arif quoted).",
+   "evidence": "confirmed",
+   "date": "2024-08",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-and-apjii-ink-partnership-boost-internet-connectivity-stt-jakarta-1",
+   "quote": "a strategic partnership to expand Indonesia Internet Exchange’s (IIX) coverage in Greater Jakarta with an IIX node in STT Jakarta 1"
+  },
+  {
+   "from": "atmi-cikarang",
+   "to": "stt-gdc",
+   "relation": "partner",
+   "detail": "MoU signed 10 Jun 2026; hosts STT GDC's Data Centre Laboratory Learning Centre with UPS and transformer training rigs; interns since Sep 2025.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-strengthens-indonesia-digital-ecosystem-through-talent-development-and-community-initiatives",
+   "quote": "STT GDC Indonesia has established a Data Centre Laboratory Learning Centre in West Java, in partnership with local vocational institution ATMI Cikarang"
+  },
+  {
+   "from": "epi",
+   "to": "stt-gdc",
+   "relation": "partner",
+   "detail": "Delivers the Data Centre Fundamentals Certificate course in STT GDC Indonesia's talent programme.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-strengthens-indonesia-digital-ecosystem-through-talent-development-and-community-initiatives",
+   "quote": "a partnership with EPI to deliver globally recognised Data Centre Fundamentals Certificate (DCFC®) training"
+  },
+  {
+   "from": "nvidia",
+   "to": "stt-gdc",
+   "relation": "partner",
+   "detail": "STT GDC is an NVIDIA colocation partner (DGX-Ready since Mar 2025 for Singapore 6 and Bangkok 1, not Jakarta) and says its Jakarta halls are engineered for Vera Rubin and Vera Rubin Ultra.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-accelerates-jakarta-campus-expansion-power-indonesia-ai-and-digital-ambitions",
+   "quote": "As an NVIDIA colocation partner, STT GDC is aligning its Jakarta campus designs"
+  },
+  {
+   "from": "moratelindo",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "MoU (Dec 2022) to put a PoP in Jakarta 1; listed as carrier 'Moratel' there (internet, IP transit, IX, international, layer 1-2).",
+   "evidence": "company_claim",
+   "date": "2022-12",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-celebrates-topping-out-of-first-data-centre-in-indonesia",
+   "quote": "Moratelindo will set up a point-of-presence (PoP) in STT Jakarta 1"
+  },
+  {
+   "from": "lightstorm",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "PoP MoU signed at the Jakarta 1 launch (Jun 2023); listed carrier there.",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+   "quote": "PT Lightstorm Indonesia Telekomunikasi (Lightstorm), a carrier-neutral network infrastructure platform;"
+  },
+  {
+   "from": "weave",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "PoP MoU signed at the Jakarta 1 launch (Jun 2023).",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+   "quote": "PT Integrasi Jaringan Ekosistem (Weave), a connectivity infrastructure company;"
+  },
+  {
+   "from": "pgas-telkom",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "PoP MoU signed at the Jakarta 1 launch (Jun 2023).",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+   "quote": "PT PGAS Telekomunikasi Nusantara, a provider of international and domestic Indonesia fibre optic-based telecommunications networks; and"
+  },
+  {
+   "from": "sinergy-networks",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "PoP MoU signed at the Jakarta 1 launch (Jun 2023).",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+   "quote": "Pt. Sinergi Inti Andalan Prima Tbk (Sinergy Networks), a telecommunications service company."
+  },
+  {
+   "from": "berca",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "MoU (Jun 2023) to explore managed services delivered from Jakarta 1.",
+   "evidence": "company_claim",
+   "date": "2023-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/st-telemedia-global-data-centres-launches-stt-jakarta-1",
+   "quote": "The first MOU signed with PT Berca Hardayaperkasa, a leading information communication technology company, focuses on jointly exploring managed services to be delivered at STT Jakarta 1."
+  },
+  {
+   "from": "iconplus",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "Listed carrier at Jakarta 1: internet access, IP transit, IX, layer 1-3.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/services/connectivity/carriers",
+   "quote": "Iconplus DATA CENTRE STT Jakarta 1"
+  },
+  {
+   "from": "fiber-media-indonesia",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "Listed dark-fibre provider at Jakarta 1.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/services/connectivity/carriers",
+   "quote": "Fiber Media Indonesia DATA CENTRE STT Jakarta 1 SERVICES Dark Fibre"
+  },
+  {
+   "from": "xenith-ig",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "Listed dark-fibre provider at Jakarta 1.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/services/connectivity/carriers",
+   "quote": "Xenith IG DATA CENTRE STT Jakarta 1 SERVICES Dark Fibre"
+  },
+  {
+   "from": "smt",
+   "to": "stt-jakarta-1",
+   "relation": "partner",
+   "detail": "Listed dark-fibre provider inside the GIIC estate for Jakarta 1.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/services/connectivity/carriers",
+   "quote": "SMT DATA CENTRE STT Jakarta 1 SERVICES Dark Fibre (within Greenland International Industrial Centre)"
+  },
+  {
+   "from": "bruno-lopez",
+   "to": "stt-gdc-group",
+   "relation": "director_of",
+   "detail": "President and Group CEO since the company began in 2014.",
+   "evidence": "company_claim",
+   "date": "2014",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "He has led the company since its inception in 2014"
+  },
+  {
+   "from": "bruno-lopez",
+   "to": "stt-gdc-jvco",
+   "relation": "director_of",
+   "detail": "Listed in the 'Board of Directors' section of STT GDC's Indonesia leadership page with the four JVCo directors.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Bruno Lopez is President and Group Chief Executive Officer of STTGDC."
+  },
+  {
+   "from": "bruno-lopez",
+   "to": "keppel-dc",
+   "relation": "director_of",
+   "detail": "CEO and executive director of Keppel Data Centres before STT GDC (before 2014).",
+   "evidence": "company_claim",
+   "date": null,
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Prior to STTGDC, Bruno was Chief Executive Officer and Executive Director of Keppel Data Centres"
+  },
+  {
+   "from": "hendrikus-gozali",
+   "to": "stt-gdc",
+   "relation": "director_of",
+   "detail": "Country Head, Indonesia, heading PT STT GDC Indonesia from 1 Aug 2022 (still in role Oct 2026).",
+   "evidence": "company_claim",
+   "date": "2022-08",
+   "source_url": "https://www.itnews.asia/news/stt-gdc-appoints-indonesia-leader-583724",
+   "quote": "Gozali’s appointment to head PT STT GDC Indonesia is effective from August 1."
+  },
+  {
+   "from": "lionel-yeo",
+   "to": "stt-gdc-group",
+   "relation": "director_of",
+   "detail": "CEO, Southeast Asia (quoted on Indonesia from Dec 2022 to Jun 2026).",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-strengthens-indonesia-digital-ecosystem-through-talent-development-and-community-initiatives",
+   "quote": "Lionel Yeo, Chief Executive Officer – Southeast Asia, STT GDC"
+  },
+  {
+   "from": "nelson-lim",
+   "to": "stt-gdc-group",
+   "relation": "director_of",
+   "detail": "Group CFO; spoke for the IDR 8.8 tn Indonesia financing.",
+   "evidence": "company_claim",
+   "date": "2026-06",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/stt-gdc-expands-indonesia-financing-portfolio-support-stt-jakarta-campus-growth-and-first-green-term-loan-tranche",
+   "quote": "said Nelson Lim, Group Chief Financial Officer, ST Telemedia Global Data Centres"
+  },
+  {
+   "from": "liu-chee-ming",
+   "to": "stt-gdc-jvco",
+   "relation": "director_of",
+   "detail": "Non-executive chairman of the Indonesian JV holding company.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Liu Chee Ming is Chairman and Director on the board of STT GDC Indonesia JVCo Pte. Ltd."
+  },
+  {
+   "from": "liu-chee-ming",
+   "to": "platinum-holdings",
+   "relation": "founded",
+   "detail": "Set up Platinum Holdings in March 1996; managing director.",
+   "evidence": "company_claim",
+   "date": "1996-03",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Liu is currently the Managing Director of Platinum Holdings Company Limited, which he established in March 1996"
+  },
+  {
+   "from": "liu-chee-ming",
+   "to": "dbs",
+   "relation": "director_of",
+   "detail": "Independent non-executive director of DBS Bank (Hong Kong) Limited, a DBS subsidiary, since Jun 2018.",
+   "evidence": "company_claim",
+   "date": "2018-06",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "In June 2018, he was appointed as an Independent Non-Executive Director of DBS Bank (Hong Kong) Limited"
+  },
+  {
+   "from": "zulkifli-baharudin",
+   "to": "stt-gdc-jvco",
+   "relation": "director_of",
+   "detail": "Director of the Indonesian JV holding company.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Zulkifli Bin Baharudin serves as Director on the board of STT GDC Indonesia JVCo Pte. Ltd."
+  },
+  {
+   "from": "zulkifli-baharudin",
+   "to": "virtus",
+   "relation": "director_of",
+   "detail": "Non-executive director of Virtus HoldCo Limited since 2017.",
+   "evidence": "company_claim",
+   "date": "2017",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Zulkifli has been the Non-Executive Director on the Board of Virtus HoldCo Limited and Omni Holdco, LLC since 2017 and 2018, respectively"
+  },
+  {
+   "from": "zulkifli-baharudin",
+   "to": "indo-trans",
+   "relation": "director_of",
+   "detail": "Executive chairman of Indo-Trans Corporation since 2011.",
+   "evidence": "company_claim",
+   "date": "2011",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Since 2011, Mr Zulkifli has been serving as the executive chairman of Indo-Trans Corporation"
+  },
+  {
+   "from": "arif-rachmat",
+   "to": "stt-gdc-jvco",
+   "relation": "director_of",
+   "detail": "Director of the Indonesian JV holding company; Triputra's representative.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Arif Rachmat serves as Director on the board of STT GDC Indonesia JVCo Pte. Ltd."
+  },
+  {
+   "from": "arif-rachmat",
+   "to": "triputra",
+   "relation": "commissioner_of",
+   "detail": "Commissioner of PT Triputra Investindo Arya (Triputra's board page); signed the 2021 JV as 'Director, Triputra Group'.",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://triputra-group.com/tentang-kami/profil/",
+   "quote": "Arif Rachmat Commissioner"
+  },
+  {
+   "from": "ing-hie-kwik",
+   "to": "stt-gdc-jvco",
+   "relation": "director_of",
+   "detail": "Director of the Indonesian JV holding company; Temasek's representative.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Ing Hie Kwik serves as Director on the board of STT GDC Indonesia JVCo Pte. Ltd."
+  },
+  {
+   "from": "ing-hie-kwik",
+   "to": "temasek",
+   "relation": "director_of",
+   "detail": "Operating Partner at Temasek since 2018 (an executive role, not a Temasek board seat).",
+   "evidence": "company_claim",
+   "date": "2018",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "Mr Ing Hie Kwik has been an Operating Partner at Temasek since 2018"
+  },
+  {
+   "from": "ing-hie-kwik",
+   "to": "sternbridge",
+   "relation": "founded",
+   "detail": "Founded and ran Sternbridge Partners, 2015-2018.",
+   "evidence": "company_claim",
+   "date": "2015",
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "he founded and managed Sternbridge Partners (2015 to 2018), which invested a significant minority stake in DCI"
+  },
+  {
+   "from": "sternbridge",
+   "to": "dci-indonesia",
+   "relation": "invested_in",
+   "detail": "Took a significant minority stake in DCI Indonesia (in 2015-2018, per STT's biography of Kwik).",
+   "evidence": "company_claim",
+   "date": null,
+   "source_url": "https://www.sttgdc.com/id-en/about-us/our-leadership",
+   "quote": "he founded and managed Sternbridge Partners (2015 to 2018), which invested a significant minority stake in DCI"
+  },
+  {
+   "from": "tp-rachmat",
+   "to": "triputra",
+   "relation": "founded",
+   "detail": "Founded PT Triputra Investindo Arya in 1998 after leading Astra.",
+   "evidence": "confirmed",
+   "date": "1998",
+   "source_url": "https://triputra-group.com/tentang-kami/profil/",
+   "quote": "Theodore Permadi Rachmat, mantan CEO Astra Group, memulai bisnisnya sendiri dengan mendirikan PT. Triputra Investindo Arya pada tahun 1998"
+  },
+  {
+   "from": "stephen-miller",
+   "to": "st-telemedia",
+   "relation": "director_of",
+   "detail": "President and Group CEO of ST Telemedia; spoke for the seller in the 2026 sale.",
+   "evidence": "company_claim",
+   "date": "2026-02",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+   "quote": "Stephen Miller, President & Group CEO of ST Telemedia"
+  },
+  {
+   "from": "david-luboff",
+   "to": "kkr",
+   "relation": "director_of",
+   "detail": "Co-head of KKR Asia Pacific and head of Asia Pacific infrastructure.",
+   "evidence": "company_claim",
+   "date": "2026-02",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+   "quote": "David Luboff, Co-Head of KKR Asia Pacific and Head of Asia Pacific Infrastructure at KKR"
+  },
+  {
+   "from": "arthur-lang",
+   "to": "singtel",
+   "relation": "director_of",
+   "detail": "Group CFO of Singtel.",
+   "evidence": "company_claim",
+   "date": "2026-02",
+   "source_url": "https://www.sttgdc.com/id-en/newsroom/kkr-led-consortium-to-fully-acquire-stt-gdc-13.8-billion-enterprise-value",
+   "quote": "Arthur Lang, Group Chief Financial Officer of Singtel"
+  }
+ ],
+ "operators": [
+  "STT GDC"
+ ],
+ "counts": {
+  "entities": 69,
+  "links": 89,
+  "confirmed": 20,
+  "dropped": 0
+ }
+}

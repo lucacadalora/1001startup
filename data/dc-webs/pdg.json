@@ -1,0 +1,1623 @@
+{
+ "slug": "pdg",
+ "title": "Princeton Digital Group",
+ "order": 6,
+ "center": "pdg",
+ "bottom_line": "PDG's five old enterprise sites came from XL Axiata in 2019 through a joint venture, PT Princeton Digital Group Data Centres, in which XL kept 14.82% after 2022; on 12 Oct 2026 PDG agreed to sell those sites to Sinar Mas's SM+. Its hyperscale arm, PT Princeton Digital Group, owns JC2 and paid Sinarmas Land's Puradelta Lestari about Rp618 bn for the JC3 and JC4 land in GIIC, so Sinar Mas both sold PDG its new land and is buying its old sites. Power comes from estate grids and PLN, not PDG's own plants (Cikarang Listrindo at Cibitung with up to 20% biomass from a coal co-firing plant, a PLN bay of up to 200 MVA at GI Sukamahi for JC3, Tamarin and PLN Batam for the unbuilt Batam campus), and no builder or equipment maker is named for any Indonesian site.",
+ "generated": "2026-10-17T05:33:50Z",
+ "checked_utc": "2026-10-17T05:20:59Z",
+ "entities": [
+  {
+   "id": "pdg",
+   "name": "Princeton Digital Group (PDG)",
+   "legal_name": "Princeton Digital Group Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore-based data-centre developer and operator, set up in 2017-18 by Rangu Salgame and Varoon Raghavan with Warburg Pincus. It reports 1.8 GW+ across Asia. Its 2025-26 report gives Indonesia as Jakarta 388 MW, other sites 12 MW and Batam 96 MW, mostly planned.",
+   "sources": [
+    "https://princetondg.com/about-us-2026/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://www.peeringdb.com/api/org?name__contains=Princeton",
+    "https://gokepri.com/princeton-digital-group-investasi-rp144-triliun-di-batam/"
+   ]
+  },
+  {
+   "id": "pdg_indonesia_alpha",
+   "name": "PDG (Indonesia Alpha)",
+   "legal_name": "Princeton Digital Group (Indonesia Alpha) Pte. Ltd.",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Singapore holding company that bought XL Axiata's shares in PT Princeton Digital Group Data Centres and held 85.18% of it after the Aug 2022 capital increase.",
+   "sources": [
+    "https://www.emitennews.com/news/xl-axiata-excl-kurangi-saham-di-perusahaan-data-center-sisanya-cuma-30-persen",
+    "https://www.emitennews.com/news/seriusi-pangkalan-data-xl-axiata-excl-perkuat-modal-entitas-usaha-rp135-triliun",
+    "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3"
+   ]
+  },
+  {
+   "id": "pdgdc",
+   "name": "PDG Data Centres (PDGDC)",
+   "legal_name": "PT Princeton Digital Group Data Centres",
+   "kind": "company",
+   "city": null,
+   "what": "Joint venture formed in 2019 to hold XL Axiata's five data centres. Paid-up capital was Rp1.35 tn after Aug 2022: Indonesia Alpha 85.18%, XL 14.82%. Probably the holder of the five enterprise sites PDG agreed to sell to SM+ in Oct 2026, though no source names the entity sold.",
+   "sources": [
+    "https://www.emitennews.com/news/seriusi-pangkalan-data-xl-axiata-excl-perkuat-modal-entitas-usaha-rp135-triliun",
+    "https://www.emitennews.com/news/xl-axiata-excl-kurangi-saham-di-perusahaan-data-center-sisanya-cuma-30-persen",
+    "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+    "https://princetondg.com/press-releases/pdg-to-acquire-majority-stake-in-xl-axiatas-data-center-portfolio-in-indonesia/"
+   ]
+  },
+  {
+   "id": "pt_pdg",
+   "name": "PT Princeton Digital Group",
+   "legal_name": "PT Princeton Digital Group",
+   "kind": "company",
+   "city": null,
+   "what": "PDG's Indonesian company for its new hyperscale campuses. It borrowed the IDR 1.7 tn JC2 green loan (2025) and bought GIIC land from Puradelta Lestari for Rp171.5 bn (Q3 2024) and Rp446.1 bn (Q2 2026). Its shareholders, and whether it is separate from PDGDC, are not public.",
+   "sources": [
+    "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus",
+    "https://deltamas.id/wp-content/uploads/2025/10/DMAS-Financial-Statement-30-Sept-2025.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+    "https://www.peeringdb.com/api/fac?org_id=24686"
+   ]
+  },
+  {
+   "id": "jc1",
+   "name": "JC1 Cibitung",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang Barat, Bekasi (MM2100 estate)",
+   "what": "Operating data centre at Jl. Sumbawa No.1, Mekarwangi, on the same 19,550 m2 campus as JC2. It is almost certainly XL Axiata's former Cibitung site: XLSmart lists a facility, 'XLSmart Cibitung (JNB2)', at the same street address. It is one of the five ID1 enterprise sites (11 MW for all five) and is in the SM+ sale signed 12 Oct 2026, which has not closed.",
+   "sources": [
+    "https://www.peeringdb.com/api/fac?org_id=24686",
+    "https://www.peeringdb.com/api/fac/11141",
+    "https://princetondg.com/press-releases/pdg-announces-150-million-new-data-center-indonesia/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/epi-awarded-pdg-cibitung-dcs-tia-942-rated-3-design-certifications/",
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "jb1",
+   "name": "JB1 Bintaro",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Pondok Aren, South Tangerang (Bintaro)",
+   "what": "Operating ex-XL enterprise data centre, one of PDG's five ID1 sites. It was a pilot site for HVO fuel, got a new HVAC system in 2025 (510 kg of refrigerant recovered), and is in the SM+ sale (not closed).",
+   "sources": [
+    "https://www.peeringdb.com/api/fac?org_id=24686",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "bd1",
+   "name": "BD1 Bandung",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Bandung",
+   "what": "Operating ex-XL enterprise data centre at Jl. Soekarno Hatta No.779, Bandung, one of PDG's five ID1 sites. It is covered by PLN geothermal RECs (2023), got a new HVAC system in 2025, and is in the SM+ sale (not closed).",
+   "sources": [
+    "https://www.peeringdb.com/api/fac?org_id=24686",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-procures-renewable-energy-from-geothermal-sources-for-3-data-centers-in-indonesia/",
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "sb1",
+   "name": "SB1 Surabaya",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Surabaya",
+   "what": "Operating ex-XL enterprise data centre at Jl. Raya Rungkut Industri II No.15, Surabaya, one of PDG's five ID1 sites. It got a new HVAC system in 2025 and is in the SM+ sale (not closed).",
+   "sources": [
+    "https://www.peeringdb.com/api/fac?org_id=24686",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "pdg_pekanbaru",
+   "name": "PDG Pekanbaru",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Pekanbaru",
+   "what": "Operating ex-XL enterprise data centre in Pekanbaru (code and address not found), one of PDG's five ID1 sites. It is covered by PLN geothermal RECs (2023) and is in the SM+ sale (not closed).",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-procures-renewable-energy-from-geothermal-sources-for-3-data-centers-in-indonesia/",
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "jc2",
+   "name": "JC2 Cibitung",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Cikarang Barat, Bekasi (MM2100 estate)",
+   "what": "22 MW hyperscale data centre at Jl. Sumba Blok A-B Kav. B12-1, MM2100. It was announced in Aug 2021 (US$150 m) and opened on 25 Sep 2023. It holds BCA Green Mark Platinum, PUE is under 1.40, and an IDR 1.7 tn green club loan (2025) finances it. PDG keeps it.",
+   "sources": [
+    "https://www.peeringdb.com/api/fac?org_id=24686",
+    "https://princetondg.com/press-releases/pdg-announces-150-million-new-data-center-indonesia/",
+    "https://princetondg.com/press-releases/princeton-digital-group-launches-its-22mw-hyperscale-data-center-in-greater-jakarta-2/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus"
+   ]
+  },
+  {
+   "id": "jc3",
+   "name": "JC3 GIIC",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "GIIC, Kota Deltamas, Bekasi Regency",
+   "what": "120 MW AI-ready campus, US$1 bn, 25 km from JC2. Ground was broken on 19 Nov 2025 and the first phase is due for service in Q4 2026 (not yet confirmed live). Hybrid air and liquid cooling, up to 140 kW per rack, with dual PLN feeds. Under construction.",
+   "sources": [
+    "https://princetondg.com/press-releases/princeton-digital-group-breaks-ground-on-milestone-usd-1-billion-120-mw-greater-jakarta-campus/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+    "https://www.jabarnews.com/daerah/data-center-gi-sukamahi-layani-pdg-jc3-200-mva/",
+    "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/"
+   ]
+  },
+  {
+   "id": "jc4",
+   "name": "JC4 GIIC",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "GIIC, Kota Deltamas, Bekasi Regency",
+   "what": "Planned 240 MW campus: four 60 MW buildings on 106,217 m2 of 'powered land' 1.7 km from JC3, sharing JC3's power and connectivity. Bought in Apr 2026; PDG says construction has started.",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-acquires-240-mw-of-powered-land-in-jakarta-advancing-its-rapid-expansion-across-asia/",
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf"
+   ]
+  },
+  {
+   "id": "pdg_batam",
+   "name": "PDG Nongsa campus (Batam)",
+   "legal_name": null,
+   "kind": "campus",
+   "city": "Nongsa, Batam (Nongsa Digital Park, KEK Nongsa)",
+   "what": "Planned 96 MW campus: four 24 MW buildings on 15 acres (about 6 ha) in Nongsa Digital Park, about US$1 bn (Rp14.46 tn). Announced 20 Feb 2023 under PDG's 'SG+' plan; power 'fully secured'. No construction or opening confirmed by Oct 2026; local press says '120 MW reported' as of Jan 2026.",
+   "sources": [
+    "https://princetondg.com/press-releases/princeton-digital-group-announces-sg-a-comprehensive-strategy-for-the-singapore-region-with-an-initial-investment-plan-of-us1b-expanding-to-batam-and-johor/",
+    "https://gokepri.com/deretan-investasi-data-centre-ratusan-triliun-di-batam/",
+    "https://gokepri.com/princeton-digital-group-investasi-rp144-triliun-di-batam/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "warburg_pincus",
+   "name": "Warburg Pincus",
+   "legal_name": null,
+   "kind": "fund",
+   "city": "New York",
+   "what": "US private-equity firm that set up PDG with its founders in 2017. PDG called it its 'largest institutional investor' in 2020 and said in Jul 2025 that it 'will continue to be PDG's largest shareholder'. Stake % not public.",
+   "sources": [
+    "https://princetondg.com/pdg-in-the-news/mtd-asia-dc-forum-interview-warburg-pincus-pdg/",
+    "https://princetondg.com/press-releases/ontario-teachers-leads-us360m-investment-pdg/",
+    "https://princetondg.com/press-releases/stonepeak-to-invest-usd-1-3-billion-in-princeton-digital-group/",
+    "https://princetondg.com/newsroom/princeton-digital-group-journey/"
+   ]
+  },
+  {
+   "id": "otpp",
+   "name": "Ontario Teachers'",
+   "legal_name": "Ontario Teachers' Pension Plan Board",
+   "kind": "fund",
+   "city": "Toronto",
+   "what": "Canadian pension fund. It led PDG's US$360 m equity round (Oct 2020) and invested again in the Feb 2022 round.",
+   "sources": [
+    "https://princetondg.com/press-releases/ontario-teachers-leads-us360m-investment-pdg/",
+    "https://princetondg.com/press-releases/pdg-raises-500m-plus-latest-equity-round/"
+   ]
+  },
+  {
+   "id": "mubadala",
+   "name": "Mubadala",
+   "legal_name": "Mubadala Investment Company",
+   "kind": "fund",
+   "city": "Abu Dhabi",
+   "what": "Abu Dhabi state investor. It led PDG's US$500 m+ equity round with US$350 m (Feb 2022).",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-raises-500m-plus-latest-equity-round/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "stonepeak",
+   "name": "Stonepeak",
+   "legal_name": null,
+   "kind": "fund",
+   "city": "New York",
+   "what": "Infrastructure investor. US$1.3 bn preferred equity in PDG, announced 18 Jul 2025 and closed 8 Aug 2025.",
+   "sources": [
+    "https://princetondg.com/press-releases/stonepeak-to-invest-usd-1-3-billion-in-princeton-digital-group/",
+    "https://stonepeak.com/news/stonepeak-completes-usd-1-3-billion-investment-in-princeton-digital-group"
+   ]
+  },
+  {
+   "id": "xl",
+   "name": "XL Axiata (now XLSmart)",
+   "legal_name": "PT XLSmart Telecom Sejahtera Tbk (formerly PT XL Axiata Tbk)",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Telco. In 2019 it sold PDG 70% of its five data centres (a JV, PDGDC) and leases back part of them. Its stake fell to 14.82% after Aug 2022. On PeeringDB it lists a facility, 'XLSmart Cibitung (JNB2)', at JC1's street address.",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-to-acquire-majority-stake-in-xl-axiatas-data-center-portfolio-in-indonesia/",
+    "https://www.emitennews.com/news/xl-axiata-excl-kurangi-saham-di-perusahaan-data-center-sisanya-cuma-30-persen",
+    "https://www.emitennews.com/news/seriusi-pangkalan-data-xl-axiata-excl-perkuat-modal-entitas-usaha-rp135-triliun",
+    "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+    "https://www.peeringdb.com/api/fac/11141"
+   ]
+  },
+  {
+   "id": "smplus",
+   "name": "SM+",
+   "legal_name": "PT SMPlus Digital Investama",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Sinar Mas's (DSSA) edge and metro data-centre platform: 25 facilities in 24 cities, about 40 MW (DSSA 2025). On 12 Oct 2026 it agreed to buy PDG's five enterprise data centres, taking it to 31 sites in 25 cities; UBS advises SM+.",
+   "sources": [
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+    "https://princetondg.com/press-releases/princeton-digital-group-signs-definitive-agreement-to-sell-its-indonesia-enterprise-business-to-sm/"
+   ]
+  },
+  {
+   "id": "dssa",
+   "name": "DSSA (Dian Swastatika Sentosa)",
+   "legal_name": "PT Dian Swastatika Sentosa Tbk",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "IDX-listed Sinar Mas energy and infrastructure company. It owns 99.999% of SM+ through PT DSST Mas Gemilang. Its main shareholder is PT Sinar Mas Tunggal (59.90%).",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "mmid",
+   "name": "MM2100 estate (PT MMID)",
+   "legal_name": "PT Megalopolis Manunggal Industrial Development",
+   "kind": "company",
+   "city": "Cikarang Barat, Bekasi",
+   "what": "Developer of the MM2100 Industrial Town, set up in 1990 by Marubeni and the Manunggal Group. The estate's electricity comes from Cikarang Listrindo. JC1 and JC2 sit in it.",
+   "sources": [
+    "https://mm2100.co.id/company/",
+    "https://mm2100.co.id/infrastructure/",
+    "https://www.peeringdb.com/api/fac?org_id=24686"
+   ]
+  },
+  {
+   "id": "marubeni",
+   "name": "Marubeni",
+   "legal_name": "Marubeni Corporation",
+   "kind": "company",
+   "city": "Tokyo",
+   "what": "Japanese trading house; co-founder of the MM2100 estate developer (1990).",
+   "sources": [
+    "https://mm2100.co.id/company/"
+   ]
+  },
+  {
+   "id": "manunggal_group",
+   "name": "Manunggal Group",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonesian group; co-founder of the MM2100 estate developer with Marubeni (1990).",
+   "sources": [
+    "https://mm2100.co.id/company/"
+   ]
+  },
+  {
+   "id": "dmas",
+   "name": "Puradelta Lestari (Kota Deltamas / GIIC)",
+   "legal_name": "PT Puradelta Lestari Tbk",
+   "kind": "company",
+   "city": "Cikarang Pusat, Bekasi",
+   "what": "IDX-listed developer of Kota Deltamas and the GIIC estate. Its data-centre zone covers about 300 ha, with up to 993 MVA from PLN and 15 data-centre tenants. Owners: PT Sumber Arusmulia (Sinarmas Land) 57.28%, Sojitz 25%. It sold land to PT Princeton Digital Group in 2024 and 2026.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+    "https://deltamas.id/wp-content/uploads/2025/10/DMAS-Financial-Statement-30-Sept-2025.pdf",
+    "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf"
+   ]
+  },
+  {
+   "id": "sinarmas_land",
+   "name": "Sinarmas Land",
+   "legal_name": "Sinarmas Land Limited",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Sinar Mas property arm. It owns 100% of PT Sumber Arusmulia, which holds 57.28% of Puradelta Lestari (GIIC).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "sojitz",
+   "name": "Sojitz",
+   "legal_name": "Sojitz Corporation",
+   "kind": "company",
+   "city": "Tokyo",
+   "what": "Japanese trading house; has held 25% of Puradelta Lestari (GIIC developer) since 1996.",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "tamarin",
+   "name": "Nongsa Digital Park (Tamarin)",
+   "legal_name": "PT Taman Resor Internet",
+   "kind": "company",
+   "city": "Batam",
+   "what": "Citramas Group company that manages KEK Nongsa / Nongsa Digital Park. It runs the park's own local power grid, fed by PLN Batam and Maxpower Indonesia.",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+    "https://gokepri.com/deretan-investasi-data-centre-ratusan-triliun-di-batam/"
+   ]
+  },
+  {
+   "id": "citramas",
+   "name": "Citramas Group",
+   "legal_name": null,
+   "kind": "company",
+   "city": "Batam",
+   "what": "Batam property group; parent of PT Taman Resor Internet (Nongsa Digital Park).",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/"
+   ]
+  },
+  {
+   "id": "listrindo",
+   "name": "Cikarang Listrindo",
+   "legal_name": "PT Cikarang Listrindo Tbk",
+   "kind": "utility",
+   "city": "Bekasi",
+   "what": "IDX-listed private power producer that supplies the MM2100 estate. Since Aug 2023 it has sold PDG biomass-sourced power for up to 20% of the Cibitung campus, plus biomass I-RECs. Its biomass-capable plant is the 280 MW PLTU Co-firing Babelan, which can co-fire 70 MW of biomass.",
+   "sources": [
+    "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/",
+    "https://mm2100.co.id/infrastructure/",
+    "https://www.listrindo.com/uploads/annual_report/POWR_Annual_Report_2025.pdf",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "pln",
+   "name": "PLN",
+   "legal_name": "PT PLN (Persero)",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "State electricity company. It feeds JC3 with dual 150 kV feeds (a bay of up to 200 MVA, energised Sep 2026), and PDG was the first corporate buyer of its RECs (Kamojang geothermal, from 2020).",
+   "sources": [
+    "https://www.jabarnews.com/daerah/data-center-gi-sukamahi-layani-pdg-jc3-200-mva/",
+    "https://princetondg.com/press-releases/princeton-digital-group-breaks-ground-on-milestone-usd-1-billion-120-mw-greater-jakarta-campus/",
+    "https://ekonomi.republika.co.id/berita/qj6eoc349/pln-luncurkan-sertifikat-energi-terbarukan"
+   ]
+  },
+  {
+   "id": "gi_sukamahi",
+   "name": "GI 150 kV Data Center / Sukamahi",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "GIIC, Bekasi Regency",
+   "what": "PLN 150 kV customer substation for the GIIC data centres. Bay KTT 10 / Line UGC 2 serves PDG JC3 (up to 200 MVA, energised Sep 2026). Probably the 'KTT Data Center' substation Elsewedy contracted to build in 2024.",
+   "sources": [
+    "https://www.jabarnews.com/daerah/data-center-gi-sukamahi-layani-pdg-jc3-200-mva/",
+    "https://listrikindonesia.com/detail/12488/kolaborasi-pln-elsewedy-wujud-nyata-elektrifikasi-ri"
+   ]
+  },
+  {
+   "id": "elsewedy",
+   "name": "Elsewedy Electric Indonesia",
+   "legal_name": "PT Elsewedy Electric Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Electrical contractor; signed with PLN in Jan 2024 to build the 150 kV 'KTT Data Center' substation at GIIC (US$12.6 m: transformers and civil works).",
+   "sources": [
+    "https://listrikindonesia.com/detail/12488/kolaborasi-pln-elsewedy-wujud-nyata-elektrifikasi-ri"
+   ]
+  },
+  {
+   "id": "kamojang",
+   "name": "PLTP Kamojang",
+   "legal_name": null,
+   "kind": "utility",
+   "city": "Kamojang, West Java",
+   "what": "PLN geothermal plant (140 MW), registered in Nov 2020 to issue PLN's renewable energy certificates. It is the source of PDG's RECs for its Jakarta, Bandung and Pekanbaru sites.",
+   "sources": [
+    "https://ekonomi.republika.co.id/berita/qj6eoc349/pln-luncurkan-sertifikat-energi-terbarukan",
+    "https://princetondg.com/press-releases/princeton-digital-group-procures-renewable-energy-from-geothermal-sources-for-3-data-centers-in-indonesia/"
+   ]
+  },
+  {
+   "id": "pln_batam",
+   "name": "PLN Batam",
+   "legal_name": "PT PLN Batam",
+   "kind": "utility",
+   "city": "Batam",
+   "what": "Batam's electricity company. Under an Oct 2022 MoU it supplies Tamarin's KEK Nongsa network for data centres.",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/"
+   ]
+  },
+  {
+   "id": "maxpower",
+   "name": "Maxpower Indonesia",
+   "legal_name": "PT Maxpower Indonesia",
+   "kind": "company",
+   "city": null,
+   "what": "Power producer named by Tamarin as the second supply source, after PLN Batam, for KEK Nongsa's data centres.",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/"
+   ]
+  },
+  {
+   "id": "pertamina_patra_niaga",
+   "name": "Pertamina Patra Niaga",
+   "legal_name": "PT Pertamina Patra Niaga",
+   "kind": "state_firm",
+   "city": "Jakarta",
+   "what": "Downstream subholding of state oil company Pertamina. It supplies HVO to replace diesel in PDG's Indonesian backup generators (agreement Sep 2025, after pilots at JC2 and JB1).",
+   "sources": [
+    "https://princetondg.com/press-releases/princeton-digital-group-and-pertamina-patra-niaga-forge-landmark-hvo-partnership-pioneering-sustainable-fuel-use-in-indonesia-to-advance-climate-and-community-well-being/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "recoolit",
+   "name": "Recoolit",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonesian refrigerant-recovery company. PDG used it when it replaced the HVAC systems at JB1, BD1 and SB1 (1,019 tCO2e avoided).",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "waste4change",
+   "name": "Waste4Change",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Indonesian waste-management company running PDG's waste programme across its Indonesian sites from 2026.",
+   "sources": [
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "epi",
+   "name": "EPI Group",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Data-centre certification body. It awarded JC1 and JC2 TIA-942 Rated-3 design certificates (Mar 2022).",
+   "sources": [
+    "https://princetondg.com/press-releases/epi-awarded-pdg-cibitung-dcs-tia-942-rated-3-design-certifications/"
+   ]
+  },
+  {
+   "id": "bca_sg",
+   "name": "BCA Singapore (Green Mark)",
+   "legal_name": "Building and Construction Authority",
+   "kind": "government",
+   "city": "Singapore",
+   "what": "Singapore agency whose Green Mark scheme rated JC2 Platinum.",
+   "sources": [
+    "https://princetondg.com/press-releases/princeton-digital-group-launches-its-22mw-hyperscale-data-center-in-greater-jakarta-2/"
+   ]
+  },
+  {
+   "id": "dbs",
+   "name": "DBS",
+   "legal_name": "DBS Bank Ltd (PT Bank DBS Indonesia in Indonesia)",
+   "kind": "company",
+   "city": "Singapore",
+   "what": "Bank. Through PT Bank DBS Indonesia it co-arranged the IDR 1.7 tn JC2 green club loan (2025); it also co-underwrote the US$456 m JC3 facility (2026).",
+   "sources": [
+    "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus",
+    "https://princetondg.com/press-releases/princeton-digital-group-converts-usd-105-million-loan-into-green-financing-for-indonesia-data-center/",
+    "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/"
+   ]
+  },
+  {
+   "id": "uob_indonesia",
+   "name": "UOB Indonesia",
+   "legal_name": "PT Bank UOB Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Bank; co-arranged the IDR 1.7 tn JC2 green club loan with Bank DBS Indonesia, both acting as green loan coordinators (Mar 2025).",
+   "sources": [
+    "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus",
+    "https://princetondg.com/press-releases/princeton-digital-group-converts-usd-105-million-loan-into-green-financing-for-indonesia-data-center/"
+   ]
+  },
+  {
+   "id": "hsbc",
+   "name": "HSBC",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Bank; co-underwrote the US$456 m JC3 green syndicated facility (May 2026).",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/"
+   ]
+  },
+  {
+   "id": "maybank",
+   "name": "Maybank",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Bank; co-underwrote the US$456 m JC3 green syndicated facility (May 2026).",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/"
+   ]
+  },
+  {
+   "id": "smbc",
+   "name": "SMBC",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Bank; co-underwrote the US$456 m JC3 green syndicated facility (May 2026).",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/"
+   ]
+  },
+  {
+   "id": "standard_chartered",
+   "name": "Standard Chartered",
+   "legal_name": null,
+   "kind": "company",
+   "city": null,
+   "what": "Bank; co-underwrote the US$456 m JC3 green syndicated facility (May 2026).",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/"
+   ]
+  },
+  {
+   "id": "apjii",
+   "name": "APJII",
+   "legal_name": "Asosiasi Penyelenggara Jasa Internet Indonesia",
+   "kind": "company",
+   "city": "Jakarta",
+   "what": "Indonesian ISP association that runs the Indonesia Internet Exchange (IIX). PDG partnership since Apr 2022.",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-apjii-strategic-partnership-boost-internet-connectivity-indonesia/"
+   ]
+  },
+  {
+   "id": "bp_batam",
+   "name": "BP Batam",
+   "legal_name": "Badan Pengusahaan Batam",
+   "kind": "government",
+   "city": "Batam",
+   "what": "Batam free-zone authority. Its chairman welcomed PDG's 96 MW Nongsa project (Feb 2023).",
+   "sources": [
+    "https://princetondg.com/press-releases/princeton-digital-group-announces-sg-a-comprehensive-strategy-for-the-singapore-region-with-an-initial-investment-plan-of-us1b-expanding-to-batam-and-johor/"
+   ]
+  },
+  {
+   "id": "rangu_salgame",
+   "name": "Rangu Salgame",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "Co-founder, Chairman and CEO of PDG. PDG's bio says he worked earlier at Tata Communications, Cisco Systems and Verizon, and is a board director of BCIU.",
+   "sources": [
+    "https://princetondg.com/leadership-2026/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "varoon_raghavan",
+   "name": "Varoon Raghavan",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "Co-founder and Chief Operating Officer of PDG; earlier at Tata Communications (PDG bio).",
+   "sources": [
+    "https://princetondg.com/leadership-2026/",
+    "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf"
+   ]
+  },
+  {
+   "id": "frederic_van_husen",
+   "name": "Frederic Daniel Van Husen",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "PDG's General Manager, Indonesia (2026); earlier led DKSH's technology business in Indonesia (PDG bio).",
+   "sources": [
+    "https://princetondg.com/leadership-2026/",
+    "https://princetondg.com/press-releases/pdg-acquires-240-mw-of-powered-land-in-jakarta-advancing-its-rapid-expansion-across-asia/"
+   ]
+  },
+  {
+   "id": "stephanus_tumbelaka",
+   "name": "Stephanus Tumbelaka",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Managing Director of PDG Indonesia in PDG releases from Jun 2020 to Aug 2023. He fronted the PLN REC, APJII, EPI and Cikarang Listrindo deals.",
+   "sources": [
+    "https://princetondg.com/pdg-in-the-news/pdg-targets-untapped-potential-hybrid-cloud-indonesia/",
+    "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/",
+    "https://ekonomi.republika.co.id/berita/qj6eoc349/pln-luncurkan-sertifikat-energi-terbarukan"
+   ]
+  },
+  {
+   "id": "niall_hannigan",
+   "name": "Niall Hannigan",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Singapore",
+   "what": "PDG's Chief Financial Officer; quoted on the JC2 green loan (2025). Earlier CFO of Masdar for 14 years (PDG bio).",
+   "sources": [
+    "https://princetondg.com/leadership-2026/",
+    "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus"
+   ]
+  },
+  {
+   "id": "dian_siswarini",
+   "name": "Dian Siswarini",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "President Director and CEO of XL Axiata when it sold 70% of its data centres to PDG (2019) and cut its stake (2022).",
+   "sources": [
+    "https://princetondg.com/press-releases/pdg-to-acquire-majority-stake-in-xl-axiatas-data-center-portfolio-in-indonesia/",
+    "https://katadata.co.id/amp/finansial/korporasi/6283498817a80/xl-axiata-kurangi-saham-di-perusahaan-data-center-kini-tersisa-30"
+   ]
+  },
+  {
+   "id": "herson_suindah",
+   "name": "Herson Suindah",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "President Director and Group CEO of SM+ Holdings (2026); announced the purchase of PDG's enterprise data centres.",
+   "sources": [
+    "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/"
+   ]
+  },
+  {
+   "id": "franky_widjaja",
+   "name": "Franky Oesman Widjaja",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Controls PT Sinar Mas Tunggal, DSSA's main shareholder (59.90%), per DSSA's 2025 annual report.",
+   "sources": [
+    "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf"
+   ]
+  },
+  {
+   "id": "margaretha_widjaja",
+   "name": "Margaretha Natalia Widjaja",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Named by Puradelta Lestari (GIIC developer) as holding its ultimate ownership and control (2025).",
+   "sources": [
+    "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf"
+   ]
+  },
+  {
+   "id": "matius_sugiaman",
+   "name": "Matius Sugiaman",
+   "legal_name": null,
+   "kind": "person",
+   "city": null,
+   "what": "Commercial Director of PT Cikarang Listrindo Tbk (2023); announced the PDG biomass contract.",
+   "sources": [
+    "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/"
+   ]
+  },
+  {
+   "id": "alimuddin_baso",
+   "name": "Alimuddin Baso",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Jakarta",
+   "what": "Director of Central Marketing & Trading at PT Pertamina Patra Niaga (2025); announced the HVO deal with PDG.",
+   "sources": [
+    "https://princetondg.com/press-releases/princeton-digital-group-and-pertamina-patra-niaga-forge-landmark-hvo-partnership-pioneering-sustainable-fuel-use-in-indonesia-to-advance-climate-and-community-well-being/"
+   ]
+  },
+  {
+   "id": "michael_wiluan",
+   "name": "Michael Kristian Wiluan",
+   "legal_name": null,
+   "kind": "person",
+   "city": "Batam",
+   "what": "President Director (Direktur Utama) of PT Taman Resor Internet (Tamarin), the Nongsa Digital Park manager (2022).",
+   "sources": [
+    "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/"
+   ]
+  }
+ ],
+ "links": [
+  {
+   "from": "warburg_pincus",
+   "to": "pdg",
+   "relation": "founded",
+   "detail": "Rangu Salgame set up PDG with Warburg Pincus in 2017 (PDG's report says founded 'in partnership with Warburg Pincus'; its About page says 2018).",
+   "evidence": "company_claim",
+   "date": "2017",
+   "source_url": "https://princetondg.com/pdg-in-the-news/mtd-asia-dc-forum-interview-warburg-pincus-pdg/",
+   "quote": "together with Warburg Pincus in 2017"
+  },
+  {
+   "from": "warburg_pincus",
+   "to": "pdg",
+   "relation": "owns",
+   "detail": "Largest shareholder: 'largest institutional investor' (Oct 2020) and still the largest after Stonepeak's US$1.3 bn (Jul 2025, in a release quoting Warburg's Ellen Ng). Stake % not published.",
+   "evidence": "confirmed",
+   "date": "2025-07",
+   "source_url": "https://princetondg.com/press-releases/stonepeak-to-invest-usd-1-3-billion-in-princeton-digital-group/",
+   "quote": "Warburg Pincus will continue to be PDG's largest shareholder."
+  },
+  {
+   "from": "otpp",
+   "to": "pdg",
+   "relation": "invested_in",
+   "detail": "Led a US$360 m equity round with Warburg Pincus participating (20 Oct 2020); also invested in the Feb 2022 round. Stake not disclosed.",
+   "evidence": "confirmed",
+   "date": "2020-10",
+   "source_url": "https://princetondg.com/press-releases/ontario-teachers-leads-us360m-investment-pdg/",
+   "quote": "a new US$360M equity investment"
+  },
+  {
+   "from": "mubadala",
+   "to": "pdg",
+   "relation": "invested_in",
+   "detail": "Led the US$500 m+ equity round with US$350 m (22 Feb 2022); Warburg Pincus and Ontario Teachers' also put money in.",
+   "evidence": "confirmed",
+   "date": "2022-02",
+   "source_url": "https://princetondg.com/press-releases/pdg-raises-500m-plus-latest-equity-round/",
+   "quote": "closed an equity investment from Mubadala Investment Company (Mubadala) as a lead investor for $350M"
+  },
+  {
+   "from": "stonepeak",
+   "to": "pdg",
+   "relation": "invested_in",
+   "detail": "US$1.3 bn preferred equity, announced 18 Jul 2025 and closed 8 Aug 2025. Stake and board rights not disclosed.",
+   "evidence": "confirmed",
+   "date": "2025-08",
+   "source_url": "https://stonepeak.com/news/stonepeak-completes-usd-1-3-billion-investment-in-princeton-digital-group",
+   "quote": "the close of its previously announced USD 1.3 billion preferred equity investment in Princeton Digital Group"
+  },
+  {
+   "from": "xl",
+   "to": "pdg",
+   "relation": "joint_venture",
+   "detail": "In June-July 2019 XL put its five data centres into a new company, PT Princeton Digital Group Data Centres, and sold PDG 70%; PDG planned to expand the sites and build a hyperscale data centre. The price was not disclosed.",
+   "evidence": "confirmed",
+   "date": "2019-07",
+   "source_url": "https://princetondg.com/press-releases/pdg-to-acquire-majority-stake-in-xl-axiatas-data-center-portfolio-in-indonesia/",
+   "quote": "a 70% stake in XL Axiata's data center portfolio"
+  },
+  {
+   "from": "pdg",
+   "to": "pdg_indonesia_alpha",
+   "relation": "owns",
+   "detail": "XL's disclosures call the buyer 'Princeton Digital Group (Indonesia Alpha) Pte Ltd (PDG)'. Its place in PDG's group chart is not published, so this link rests on the name and that label.",
+   "evidence": "inferred",
+   "date": "2022-05",
+   "source_url": "https://www.emitennews.com/news/xl-axiata-excl-kurangi-saham-di-perusahaan-data-center-sisanya-cuma-30-persen",
+   "quote": "kepada Princeton Digital Group (Indonesia Alpha) Pte Ltd (PDG)"
+  },
+  {
+   "from": "pdg_indonesia_alpha",
+   "to": "pdgdc",
+   "relation": "owns",
+   "detail": "85.18% (11.5 m shares, Rp1.15 tn) after it alone took up new shares on 4 Aug 2022, lifting capital from Rp670 bn to Rp1.35 tn. It had 70% after buying 245,362 shares from XL on 13 May 2022.",
+   "evidence": "confirmed",
+   "date": "2022-08",
+   "source_url": "https://www.emitennews.com/news/seriusi-pangkalan-data-xl-axiata-excl-perkuat-modal-entitas-usaha-rp135-triliun",
+   "quote": "Lalu Princeton Digital Group (Indonesia Alpha) 11,5 juta lembar atau setara 85,18 persen senilai Rp1,15 triliun."
+  },
+  {
+   "from": "xl",
+   "to": "pdgdc",
+   "relation": "owns",
+   "detail": "14.82% (2.01 m shares, Rp201 bn) after the Aug 2022 capital increase; 33.66% before May 2022 and 30% from May to Aug 2022. No later figure found, including after XL's 2025 merger into XLSmart.",
+   "evidence": "confirmed",
+   "date": "2022-08",
+   "source_url": "https://www.emitennews.com/news/seriusi-pangkalan-data-xl-axiata-excl-perkuat-modal-entitas-usaha-rp135-triliun",
+   "quote": "XL Axiata sebanyak 2,01 juta lembar atau 14,82 persen saham senilai Rp201 miliar."
+  },
+  {
+   "from": "xl",
+   "to": "pdgdc",
+   "relation": "tenant_of",
+   "detail": "Under the 2019 deal XL leases back part of the transferred data-centre assets for 10 years, extendable by 5 (XL's report, quoted by Fortune IDN).",
+   "evidence": "confirmed",
+   "date": "2019-06",
+   "source_url": "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+   "quote": "penjualan saham dan sewa balik untuk sebagian dari aset tersebut selama periode sepuluh tahun"
+  },
+  {
+   "from": "pdg",
+   "to": "jc1",
+   "relation": "runs",
+   "detail": "Operates JC1 on the Cibitung campus it shares with JC2; PDG gave the pair 35 MW in 2022, later figures are lower (see notes).",
+   "evidence": "company_claim",
+   "date": "2022-03",
+   "source_url": "https://princetondg.com/press-releases/epi-awarded-pdg-cibitung-dcs-tia-942-rated-3-design-certifications/",
+   "quote": "JC1 and JC2 combined will be able to offer 35 MW capacity"
+  },
+  {
+   "from": "pdg",
+   "to": "jb1",
+   "relation": "runs",
+   "detail": "Operates JB1 Bintaro, one of the five ID1 enterprise sites (11 MW in total); it piloted HVO at JB1.",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "Following successful pilot projects at JC2 (Jakarta Cibitung) and JB1 (Jakarta Bintaro)"
+  },
+  {
+   "from": "pdg",
+   "to": "bd1",
+   "relation": "runs",
+   "detail": "Operates BD1 Bandung, one of the five ID1 enterprise sites; HVAC replaced in 2025 (26 kg R22 recovered).",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "JB1 Bintaro, BD1 Bandung, and SB1 Surabaya were equipped with new HVAC systems."
+  },
+  {
+   "from": "pdg",
+   "to": "sb1",
+   "relation": "runs",
+   "detail": "Operates SB1 Surabaya, one of the five ID1 enterprise sites; HVAC replaced in 2025 (28 kg R22 recovered).",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "JB1 Bintaro, BD1 Bandung, and SB1 Surabaya were equipped with new HVAC systems."
+  },
+  {
+   "from": "pdg",
+   "to": "pdg_pekanbaru",
+   "relation": "runs",
+   "detail": "Operates a Pekanbaru data centre, one of the five ID1 enterprise sites, covered by PLN geothermal RECs.",
+   "evidence": "company_claim",
+   "date": "2023-02",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-procures-renewable-energy-from-geothermal-sources-for-3-data-centers-in-indonesia/",
+   "quote": "procured Renewable Energy Certificates (RECs) for three of its data centers in Jakarta, Bandung and Pekanbaru."
+  },
+  {
+   "from": "pdg",
+   "to": "jc2",
+   "relation": "runs",
+   "detail": "Opened the 22 MW JC2 on 25 Sep 2023 (US$150 m, announced Aug 2021).",
+   "evidence": "company_claim",
+   "date": "2023-09",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-launches-its-22mw-hyperscale-data-center-in-greater-jakarta-2/",
+   "quote": "22MW hyperscale data center facility(JC2)"
+  },
+  {
+   "from": "pdg",
+   "to": "jc3",
+   "relation": "runs",
+   "detail": "Building the 120 MW, US$1 bn JC3 (ground broken 19 Nov 2025; first phase due Q4 2026).",
+   "evidence": "company_claim",
+   "date": "2025-11",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "Broke ground on JC3, a 120MW campus in Jakarta built for scale, speed and sustainability"
+  },
+  {
+   "from": "pdg",
+   "to": "jc4",
+   "relation": "runs",
+   "detail": "Bought 106,217 m2 of powered land for JC4: four 60 MW buildings, 240 MW planned (30 Apr 2026).",
+   "evidence": "company_claim",
+   "date": "2026-04",
+   "source_url": "https://princetondg.com/press-releases/pdg-acquires-240-mw-of-powered-land-in-jakarta-advancing-its-rapid-expansion-across-asia/",
+   "quote": "a total planned capacity of 240 MW"
+  },
+  {
+   "from": "pdg",
+   "to": "pdg_batam",
+   "relation": "runs",
+   "detail": "Announced a 96 MW, 4 x 24 MW campus in Nongsa Digital Park (20 Feb 2023); no build confirmed by Oct 2026.",
+   "evidence": "company_claim",
+   "date": "2023-02",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-announces-sg-a-comprehensive-strategy-for-the-singapore-region-with-an-initial-investment-plan-of-us1b-expanding-to-batam-and-johor/",
+   "quote": "four buildings of up to 24 MW capacity each"
+  },
+  {
+   "from": "pdgdc",
+   "to": "jc1",
+   "relation": "owns",
+   "detail": "Inferred: PDGDC was formed in 2019 to take over XL's five data centres, and PDG's report lists its five enterprise (ID1) sites as Cibitung, Bintaro, Bandung, Pekanbaru and Surabaya, so Cibitung (JC1) is most likely held by PDGDC. No filing seen names the asset owner.",
+   "evidence": "inferred",
+   "date": "2019-06",
+   "source_url": "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+   "quote": "membentuk perusahaan baru, mengalihkan aset tertentu"
+  },
+  {
+   "from": "pdgdc",
+   "to": "jb1",
+   "relation": "owns",
+   "detail": "Inferred: PDGDC was formed in 2019 to take over XL's five data centres, and PDG's report lists its five enterprise (ID1) sites as Cibitung, Bintaro, Bandung, Pekanbaru and Surabaya, so Bintaro (JB1) is most likely held by PDGDC. No filing seen names the asset owner.",
+   "evidence": "inferred",
+   "date": "2019-06",
+   "source_url": "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+   "quote": "membentuk perusahaan baru, mengalihkan aset tertentu"
+  },
+  {
+   "from": "pdgdc",
+   "to": "bd1",
+   "relation": "owns",
+   "detail": "Inferred: PDGDC was formed in 2019 to take over XL's five data centres, and PDG's report lists its five enterprise (ID1) sites as Cibitung, Bintaro, Bandung, Pekanbaru and Surabaya, so Bandung (BD1) is most likely held by PDGDC. No filing seen names the asset owner.",
+   "evidence": "inferred",
+   "date": "2019-06",
+   "source_url": "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+   "quote": "membentuk perusahaan baru, mengalihkan aset tertentu"
+  },
+  {
+   "from": "pdgdc",
+   "to": "sb1",
+   "relation": "owns",
+   "detail": "Inferred: PDGDC was formed in 2019 to take over XL's five data centres, and PDG's report lists its five enterprise (ID1) sites as Cibitung, Bintaro, Bandung, Pekanbaru and Surabaya, so Surabaya (SB1) is most likely held by PDGDC. No filing seen names the asset owner.",
+   "evidence": "inferred",
+   "date": "2019-06",
+   "source_url": "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+   "quote": "membentuk perusahaan baru, mengalihkan aset tertentu"
+  },
+  {
+   "from": "pdgdc",
+   "to": "pdg_pekanbaru",
+   "relation": "owns",
+   "detail": "Inferred: PDGDC was formed in 2019 to take over XL's five data centres, and PDG's report lists its five enterprise (ID1) sites as Cibitung, Bintaro, Bandung, Pekanbaru and Surabaya, so Pekanbaru is most likely held by PDGDC. No filing seen names the asset owner.",
+   "evidence": "inferred",
+   "date": "2019-06",
+   "source_url": "https://www.fortuneidn.com/market/tinggal-30-xl-axiata-lepas-sebagian-saham-anak-usaha-pusat-data-00-65c21-zt7wj3",
+   "quote": "membentuk perusahaan baru, mengalihkan aset tertentu"
+  },
+  {
+   "from": "pdg",
+   "to": "pt_pdg",
+   "relation": "owns",
+   "detail": "Inferred from the name: DBS's release treats 'PT Princeton Digital Group (PDG)' as PDG itself. Share register not seen; it may be held via Indonesia Alpha or another vehicle.",
+   "evidence": "inferred",
+   "date": "2025-03",
+   "source_url": "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus",
+   "quote": "PT Princeton Digital Group (PDG)"
+  },
+  {
+   "from": "pt_pdg",
+   "to": "jc2",
+   "relation": "owns",
+   "detail": "Inferred: PT Princeton Digital Group is the borrower of the IDR 1.7 tn loan for JC2, and JC2's PeeringDB address reads 'PT Princeton Digital Group, Jalan Sumba'.",
+   "evidence": "inferred",
+   "date": "2025-03",
+   "source_url": "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus",
+   "quote": "JC2, its 22 MW AI-ready data center campus located in Cibitung"
+  },
+  {
+   "from": "pt_pdg",
+   "to": "jc3",
+   "relation": "owns",
+   "detail": "Inferred: Puradelta Lestari booked a Rp171.5 bn sale to PT Princeton Digital Group in Q3 2024 (in its 9M 2024 figures but not its H1 2024 ones), the year PDG says it bought land for a 120 MW Greater Jakarta campus. JC3 is in GIIC.",
+   "evidence": "inferred",
+   "date": "2024-09",
+   "source_url": "https://deltamas.id/wp-content/uploads/2025/10/DMAS-Financial-Statement-30-Sept-2025.pdf",
+   "quote": "171.468.000.000 10,30%"
+  },
+  {
+   "from": "pt_pdg",
+   "to": "jc4",
+   "relation": "owns",
+   "detail": "Inferred: Puradelta Lestari booked a Rp446.1 bn sale to PT Princeton Digital Group in Q2 2026 (absent from Q1), matching PDG's 30 Apr 2026 purchase of the 106,217 m2 JC4 plot in GIIC (about Rp4.2 m per m2).",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+   "quote": "PT. Princeton Digital Group 446.124.000.000 24,90%"
+  },
+  {
+   "from": "smplus",
+   "to": "jc1",
+   "relation": "invested_in",
+   "detail": "Signed a definitive agreement on 12 Oct 2026 to buy PDG's enterprise business: five operating data centres, price not disclosed, subject to closing. The sale lists 'Greater Jakarta' sites; with JC2 kept, the Greater Jakarta pair of PDG's five ID1 sites is JC1 Cibitung and JB1 Bintaro.",
+   "evidence": "inferred",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+   "quote": "namely Greater Jakarta, Bandung, Surabaya and Pekanbaru"
+  },
+  {
+   "from": "smplus",
+   "to": "jb1",
+   "relation": "invested_in",
+   "detail": "Signed a definitive agreement on 12 Oct 2026 to buy PDG's enterprise business: five operating data centres, price not disclosed, subject to closing. The sale lists 'Greater Jakarta' sites; with JC2 kept, the Greater Jakarta pair of PDG's five ID1 sites is JC1 Cibitung and JB1 Bintaro.",
+   "evidence": "inferred",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+   "quote": "namely Greater Jakarta, Bandung, Surabaya and Pekanbaru"
+  },
+  {
+   "from": "smplus",
+   "to": "bd1",
+   "relation": "invested_in",
+   "detail": "Signed a definitive agreement on 12 Oct 2026 to buy PDG's enterprise business: five operating data centres, price not disclosed, subject to closing. Bandung is named by both PDG and SM+.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+   "quote": "namely Greater Jakarta, Bandung, Surabaya and Pekanbaru"
+  },
+  {
+   "from": "smplus",
+   "to": "sb1",
+   "relation": "invested_in",
+   "detail": "Signed a definitive agreement on 12 Oct 2026 to buy PDG's enterprise business: five operating data centres, price not disclosed, subject to closing. Surabaya is named by both PDG and SM+.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+   "quote": "namely Greater Jakarta, Bandung, Surabaya and Pekanbaru"
+  },
+  {
+   "from": "smplus",
+   "to": "pdg_pekanbaru",
+   "relation": "invested_in",
+   "detail": "Signed a definitive agreement on 12 Oct 2026 to buy PDG's enterprise business: five operating data centres, price not disclosed, subject to closing. Pekanbaru is named by both PDG and SM+.",
+   "evidence": "confirmed",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+   "quote": "namely Greater Jakarta, Bandung, Surabaya and Pekanbaru"
+  },
+  {
+   "from": "dssa",
+   "to": "smplus",
+   "relation": "owns",
+   "detail": "99.999% through PT DSST Mas Gemilang (DSSA annual report 2025, subsidiaries table).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "developing data infrastructure through PT SMPlus Digital Investama (“SM+”), a subsidiary"
+  },
+  {
+   "from": "franky_widjaja",
+   "to": "dssa",
+   "relation": "owns",
+   "detail": "Controls PT Sinar Mas Tunggal, which holds 59.90% of DSSA.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://dssa.co.id/documents/Annual_Report_DSSA_2025.pdf",
+   "quote": "PT Sinar Mas Tunggal is the Main Shareholder of the Company, controlled by Mr. Franky Oesman Widjaja"
+  },
+  {
+   "from": "mmid",
+   "to": "jc2",
+   "relation": "partner",
+   "detail": "Estate host: JC2 (and JC1, on the same campus) sit in the MM2100 Industrial Town.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://www.peeringdb.com/api/fac?org_id=24686",
+   "quote": "Kawasan Industri MM2100, PT Princeton Digital Group Jalan Sumba Blok A-B, Kav. B12-1"
+  },
+  {
+   "from": "marubeni",
+   "to": "mmid",
+   "relation": "founded",
+   "detail": "Co-founded the MM2100 developer in 1990 (current stake not stated).",
+   "evidence": "company_claim",
+   "date": "1990",
+   "source_url": "https://mm2100.co.id/company/",
+   "quote": "Established in 1990 by Marubeni Corporation of Japan and the Manunggal Group of Indonesia"
+  },
+  {
+   "from": "manunggal_group",
+   "to": "mmid",
+   "relation": "founded",
+   "detail": "Co-founded the MM2100 developer in 1990 (current stake not stated).",
+   "evidence": "company_claim",
+   "date": "1990",
+   "source_url": "https://mm2100.co.id/company/",
+   "quote": "Established in 1990 by Marubeni Corporation of Japan and the Manunggal Group of Indonesia"
+  },
+  {
+   "from": "dmas",
+   "to": "pt_pdg",
+   "relation": "supplies",
+   "detail": "Sold land to PT Princeton Digital Group: Rp171.5 bn in Jul-Sep 2024 (10.30% of 9M 2024 sales) and Rp446.1 bn in Apr-Jun 2026 (24.90% of H1 2026 sales), about Rp617.6 bn in all (DMAS financial statements).",
+   "evidence": "confirmed",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+   "quote": "PT. Princeton Digital Group 446.124.000.000 24,90%"
+  },
+  {
+   "from": "dmas",
+   "to": "jc3",
+   "relation": "supplies",
+   "detail": "Inferred: the Rp171.5 bn Q3 2024 land sale to PT Princeton Digital Group is most likely the JC3 plot in GIIC (PDG names no seller).",
+   "evidence": "inferred",
+   "date": "2024-09",
+   "source_url": "https://deltamas.id/wp-content/uploads/2025/10/DMAS-Financial-Statement-30-Sept-2025.pdf",
+   "quote": "171.468.000.000 10,30%"
+  },
+  {
+   "from": "dmas",
+   "to": "jc4",
+   "relation": "supplies",
+   "detail": "Inferred: the Rp446.1 bn Q2 2026 land sale to PT Princeton Digital Group matches the JC4 'powered land' bought in Apr 2026 (PDG names no seller).",
+   "evidence": "inferred",
+   "date": "2026-06",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/08/Financial-Statement-June-30-2026.pdf",
+   "quote": "PT. Princeton Digital Group 446.124.000.000 24,90%"
+  },
+  {
+   "from": "sinarmas_land",
+   "to": "dmas",
+   "relation": "owns",
+   "detail": "57.28% through its 100%-owned PT Sumber Arusmulia; DMAS names Margaretha Natalia Widjaja as ultimate controller.",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "The Company’s majority shareholder is PT Sumber Arusmulia, holding 57.28% of the shares."
+  },
+  {
+   "from": "sojitz",
+   "to": "dmas",
+   "relation": "owns",
+   "detail": "25.00% since 1996 (then Nissho Iwai).",
+   "evidence": "confirmed",
+   "date": "1996",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "Sojitz Corporation (formerly Nissho Iwai Corporation) acquired a 25.00% shareholding in the Company."
+  },
+  {
+   "from": "margaretha_widjaja",
+   "to": "dmas",
+   "relation": "owns",
+   "detail": "Ultimate owner and controller of Puradelta Lestari per its 2025 annual report (via Sinarmas Land and PT Sumber Arusmulia).",
+   "evidence": "confirmed",
+   "date": "2025",
+   "source_url": "https://deltamas.id/wp-content/uploads/2026/09/ARSR-DMAS-2025.pdf",
+   "quote": "The ultimate ownership and control rest with Margaretha Natalia Widjaja."
+  },
+  {
+   "from": "tamarin",
+   "to": "pdg_batam",
+   "relation": "partner",
+   "detail": "Inferred estate host: PDG's campus is inside Nongsa Digital Park, which Tamarin manages.",
+   "evidence": "inferred",
+   "date": "2026-05",
+   "source_url": "https://gokepri.com/deretan-investasi-data-centre-ratusan-triliun-di-batam/",
+   "quote": "dikelola PT Taman Resor Internet (Tamarin)"
+  },
+  {
+   "from": "citramas",
+   "to": "tamarin",
+   "relation": "owns",
+   "detail": "Tamarin is a Citramas Group subsidiary.",
+   "evidence": "confirmed",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "anak perusahaan dari Citramas Group"
+  },
+  {
+   "from": "listrindo",
+   "to": "jc2",
+   "relation": "supplies_power",
+   "detail": "Campus electricity: PDG's 2025 emissions use Cikarang Listrindo's grid factor for the 'JC Campus' (JC1 + JC2), and MM2100 gets its power from Listrindo. PLN supply to the campus is not mentioned.",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "Cikarang Listrindo for the JC Campus in Indonesia"
+  },
+  {
+   "from": "listrindo",
+   "to": "jc1",
+   "relation": "supplies_power",
+   "detail": "Same campus supply as JC2 (the 'JC Campus' in PDG's emissions method).",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "Cikarang Listrindo for the JC Campus in Indonesia"
+  },
+  {
+   "from": "listrindo",
+   "to": "mmid",
+   "relation": "supplies_power",
+   "detail": "Private power supplier to the whole MM2100 estate.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://mm2100.co.id/infrastructure/",
+   "quote": "Electricity supplied by PT. CIKARANG LISTRINDO, an excellent private power supply company"
+  },
+  {
+   "from": "listrindo",
+   "to": "pdg",
+   "relation": "renewable_deal",
+   "detail": "Multi-year contract (8 Aug 2023): biomass-sourced power from Listrindo's 'mixed fuel plant' for up to 20% of the 30 MW Cibitung campus, plus biomass I-RECs (a first for a data-centre operator). The plant is almost certainly the 280 MW coal-fired PLTU Co-firing Babelan (70 MW co-firing), so this is a biomass share of a coal plant's output.",
+   "evidence": "confirmed",
+   "date": "2023-08",
+   "source_url": "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/",
+   "quote": "powering initially up to 20% of its data center campus in Cibitung"
+  },
+  {
+   "from": "pln",
+   "to": "pdg",
+   "relation": "renewable_deal",
+   "detail": "PDG was the first buyer of PLN's renewable energy certificates when PLN launched them in Nov 2020 (from the 140 MW PLTP Kamojang).",
+   "evidence": "confirmed",
+   "date": "2020-11",
+   "source_url": "https://ekonomi.republika.co.id/berita/qj6eoc349/pln-luncurkan-sertifikat-energi-terbarukan",
+   "quote": "sebagai pembeli pertama REC PLN"
+  },
+  {
+   "from": "kamojang",
+   "to": "pdg",
+   "relation": "renewable_deal",
+   "detail": "PLN-issued RECs from PLTP Kamojang cover three PDG sites: Jakarta, Bandung and Pekanbaru (announced 14 Feb 2023; PLN Jakarta Raya distribution GM quoted). Volume not given.",
+   "evidence": "confirmed",
+   "date": "2023-02",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-procures-renewable-energy-from-geothermal-sources-for-3-data-centers-in-indonesia/",
+   "quote": "the certificates are from electricity generated from the geothermal project, PLTP Kamojang."
+  },
+  {
+   "from": "pln",
+   "to": "jc3",
+   "relation": "supplies_power",
+   "detail": "Dual PLN grid feeds with the full capacity contracted (PDG). PLN's UIP JBT energised a bay of up to 200 MVA for JC3 in Sep 2026.",
+   "evidence": "confirmed",
+   "date": "2025-11",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-breaks-ground-on-milestone-usd-1-billion-120-mw-greater-jakarta-campus/",
+   "quote": "dual-grid power feeds from PT Perusahaan Listrik Negara (PLN Persero)"
+  },
+  {
+   "from": "gi_sukamahi",
+   "to": "jc3",
+   "relation": "supplies_power",
+   "detail": "Bay KTT 10, Line UGC 2 (underground cable) at GI 150 kV Data Center/Sukamahi, up to 200 MVA for PDG JC3, energised by PLN (statement of 17 Sep 2026).",
+   "evidence": "company_claim",
+   "date": "2026-09",
+   "source_url": "https://www.jabarnews.com/daerah/data-center-gi-sukamahi-layani-pdg-jc3-200-mva/",
+   "quote": "PLN telah melakukan energize Gardu Induk (GI) 150 kV Data Center/Sukamahi Bay KTT 10 arah pelanggan Princeton Digital Group (PDG) JC3 Line UGC 2."
+  },
+  {
+   "from": "pln",
+   "to": "gi_sukamahi",
+   "relation": "runs",
+   "detail": "PLN substation; the JC3 bay was built and energised by PLN UIP JBT (contractor not named).",
+   "evidence": "company_claim",
+   "date": "2026-09",
+   "source_url": "https://www.jabarnews.com/daerah/data-center-gi-sukamahi-layani-pdg-jc3-200-mva/",
+   "quote": "hingga 200 Mega Volt Ampere (MVA)"
+  },
+  {
+   "from": "elsewedy",
+   "to": "gi_sukamahi",
+   "relation": "built",
+   "detail": "Inferred: in Jan 2024 Elsewedy signed with PLN to build the 150 kV 'KTT Data Center' substation in GIIC (US$12.6 m, about Rp188.5 bn); PLN now calls the GIIC data-centre substation 'GI 150 kV Data Center/Sukamahi'. Who built the JC3 bay is not stated.",
+   "evidence": "inferred",
+   "date": "2024-01",
+   "source_url": "https://listrikindonesia.com/detail/12488/kolaborasi-pln-elsewedy-wujud-nyata-elektrifikasi-ri",
+   "quote": "Pekerjaan Gardu Induk 150kV Konsumen Tingkat Tinggi Data Center (KTT Data Center)"
+  },
+  {
+   "from": "pln",
+   "to": "jc4",
+   "relation": "supplies_power",
+   "detail": "Inferred: PDG says JC4 shares power infrastructure with JC3 (dual PLN feeds) and has power 'allocated' for 240 MW, without naming the utility; Puradelta says GIIC data centres can draw up to 993 MVA from PLN.",
+   "evidence": "inferred",
+   "date": "2026-04",
+   "source_url": "https://princetondg.com/press-releases/pdg-acquires-240-mw-of-powered-land-in-jakarta-advancing-its-rapid-expansion-across-asia/",
+   "quote": "enables shared power and connectivity infrastructure"
+  },
+  {
+   "from": "pln_batam",
+   "to": "tamarin",
+   "relation": "supplies_power",
+   "detail": "MoU of 28 Oct 2022 for PLN Batam to supply power that Tamarin distributes on its own local grid to KEK Nongsa data centres; Tamarin forecast 530 MW of need by 2030.",
+   "evidence": "confirmed",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "Kerjasama Penyediaan & Pengelolaan Tenaga Listrik Untuk Mendukung Kebutuhan Listrik Data Center di KEK Nongsa"
+  },
+  {
+   "from": "maxpower",
+   "to": "tamarin",
+   "relation": "supplies_power",
+   "detail": "Named by Tamarin as the second supply source for KEK Nongsa data centres.",
+   "evidence": "company_claim",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "dua sumber penyediaan Listrik yaitu PLN Batam dan PT Maxpower Indonesia"
+  },
+  {
+   "from": "tamarin",
+   "to": "pdg_batam",
+   "relation": "supplies_power",
+   "detail": "Inferred: PDG says power for all 96 MW is secured but names no supplier; Tamarin runs the power network for every data centre in KEK Nongsa.",
+   "evidence": "inferred",
+   "date": "2023-02",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-announces-sg-a-comprehensive-strategy-for-the-singapore-region-with-an-initial-investment-plan-of-us1b-expanding-to-batam-and-johor/",
+   "quote": "Power is fully secured for the entire 96 MW capacity."
+  },
+  {
+   "from": "pertamina_patra_niaga",
+   "to": "pdg",
+   "relation": "supplies",
+   "detail": "HVO (hydrotreated vegetable oil) to replace diesel in backup generators across PDG's Indonesian sites (agreement 10 Sep 2025), after pilots at JC2 and JB1 with Pertamina's lab support; PDG claims 70-90% lower emissions.",
+   "evidence": "confirmed",
+   "date": "2025-09",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-and-pertamina-patra-niaga-forge-landmark-hvo-partnership-pioneering-sustainable-fuel-use-in-indonesia-to-advance-climate-and-community-well-being/",
+   "quote": "to roll out Hydrotreated Vegetable Oil (HVO) as a replacement for diesel fuel across its Indonesian operations"
+  },
+  {
+   "from": "recoolit",
+   "to": "pdg",
+   "relation": "supplies",
+   "detail": "Recovered and handled old refrigerants when PDG replaced HVAC at JB1 (510 kg), SB1 (28 kg) and BD1 (26 kg): 1,019 tCO2e avoided.",
+   "evidence": "company_claim",
+   "date": "2025",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "PDG partnered with Recoolit, Indonesia’s first company specializing in sustainable refrigerant management."
+  },
+  {
+   "from": "waste4change",
+   "to": "pdg",
+   "relation": "supplies",
+   "detail": "Integrated waste-management programme across PDG's Indonesian sites from 2026.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "partnership with Waste4Change across our Indonesia portfolio in 2026"
+  },
+  {
+   "from": "epi",
+   "to": "jc1",
+   "relation": "certifies",
+   "detail": "TIA-942 Rated-3 design certificate (8 Mar 2022); EPI's chairman quoted.",
+   "evidence": "confirmed",
+   "date": "2022-03",
+   "source_url": "https://princetondg.com/press-releases/epi-awarded-pdg-cibitung-dcs-tia-942-rated-3-design-certifications/",
+   "quote": "TIA-942 Rated-3 Design Certifications"
+  },
+  {
+   "from": "epi",
+   "to": "jc2",
+   "relation": "certifies",
+   "detail": "TIA-942 Rated-3 design certificate (8 Mar 2022), before construction ended.",
+   "evidence": "confirmed",
+   "date": "2022-03",
+   "source_url": "https://princetondg.com/press-releases/epi-awarded-pdg-cibitung-dcs-tia-942-rated-3-design-certifications/",
+   "quote": "TIA-942 Rated-3 Design Certifications"
+  },
+  {
+   "from": "bca_sg",
+   "to": "jc2",
+   "relation": "certifies",
+   "detail": "Green Mark Platinum rating for JC2, announced at its launch (25 Sep 2023).",
+   "evidence": "company_claim",
+   "date": "2023-09",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-launches-its-22mw-hyperscale-data-center-in-greater-jakarta-2/",
+   "quote": "BCA Green Mark Platinum"
+  },
+  {
+   "from": "dbs",
+   "to": "pt_pdg",
+   "relation": "lends_to",
+   "detail": "Through PT Bank DBS Indonesia, co-arranged an IDR 1.7 tn club green loan for JC2 with UOB Indonesia (13 Mar 2025); PDG describes it as converting a US$105 m loan to green financing.",
+   "evidence": "confirmed",
+   "date": "2025-03",
+   "source_url": "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus",
+   "quote": "Bank DBS Indonesia and Bank UOB Indonesia have successfully arranged an IDR 1.7trillion club loan facility"
+  },
+  {
+   "from": "uob_indonesia",
+   "to": "pt_pdg",
+   "relation": "lends_to",
+   "detail": "Co-arranged the IDR 1.7 tn JC2 club green loan; both banks acted as green loan coordinators (Mar 2025).",
+   "evidence": "confirmed",
+   "date": "2025-03",
+   "source_url": "https://www.dbs.com/newsroom/Bank_DBS_Indonesia_and_Bank_UOB_Indonesia_arrange_IDR17T_club_green_loan_for_Princeton_Digital_Groups_data_center_campus",
+   "quote": "Bank DBS Indonesia and Bank UOB Indonesia have successfully arranged an IDR 1.7trillion club loan facility"
+  },
+  {
+   "from": "dbs",
+   "to": "jc3",
+   "relation": "lends_to",
+   "detail": "One of five banks underwriting the fully underwritten US$456 m green syndicated facility for JC3; with a ~US$400 m accordion still being raised, the total is about US$856 m (7 May 2026). Borrower entity not named.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/",
+   "quote": "underwritten by DBS, HSBC, Maybank, SMBC, and Standard Chartered"
+  },
+  {
+   "from": "hsbc",
+   "to": "jc3",
+   "relation": "lends_to",
+   "detail": "One of five banks underwriting the fully underwritten US$456 m green syndicated facility for JC3; with a ~US$400 m accordion still being raised, the total is about US$856 m (7 May 2026). Borrower entity not named.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/",
+   "quote": "underwritten by DBS, HSBC, Maybank, SMBC, and Standard Chartered"
+  },
+  {
+   "from": "maybank",
+   "to": "jc3",
+   "relation": "lends_to",
+   "detail": "One of five banks underwriting the fully underwritten US$456 m green syndicated facility for JC3; with a ~US$400 m accordion still being raised, the total is about US$856 m (7 May 2026). Borrower entity not named.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/",
+   "quote": "underwritten by DBS, HSBC, Maybank, SMBC, and Standard Chartered"
+  },
+  {
+   "from": "smbc",
+   "to": "jc3",
+   "relation": "lends_to",
+   "detail": "One of five banks underwriting the fully underwritten US$456 m green syndicated facility for JC3; with a ~US$400 m accordion still being raised, the total is about US$856 m (7 May 2026). Borrower entity not named.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/",
+   "quote": "underwritten by DBS, HSBC, Maybank, SMBC, and Standard Chartered"
+  },
+  {
+   "from": "standard_chartered",
+   "to": "jc3",
+   "relation": "lends_to",
+   "detail": "One of five banks underwriting the fully underwritten US$456 m green syndicated facility for JC3; with a ~US$400 m accordion still being raised, the total is about US$856 m (7 May 2026). Borrower entity not named.",
+   "evidence": "company_claim",
+   "date": "2026-05",
+   "source_url": "https://princetondg.com/press-releases/pdg-raising-usd-856-million-debt-for-its-hyperscale-data-center-expansion-in-indonesia/",
+   "quote": "underwritten by DBS, HSBC, Maybank, SMBC, and Standard Chartered"
+  },
+  {
+   "from": "apjii",
+   "to": "pdg",
+   "relation": "partner",
+   "detail": "Partnership of 21 Apr 2022 giving APJII members in Jakarta, Bandung, Surabaya and Pekanbaru easier access to IIX through PDG's sites; APJII's chair quoted.",
+   "evidence": "confirmed",
+   "date": "2022-04",
+   "source_url": "https://princetondg.com/press-releases/pdg-apjii-strategic-partnership-boost-internet-connectivity-indonesia/",
+   "quote": "APJII commits to support Indonesia's vision to become the largest digital economy power in the region."
+  },
+  {
+   "from": "bp_batam",
+   "to": "pdg_batam",
+   "relation": "partner",
+   "detail": "BP Batam's chairman Muhammad Rudi welcomed the 96 MW project in PDG's Feb 2023 release.",
+   "evidence": "confirmed",
+   "date": "2023-02",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-announces-sg-a-comprehensive-strategy-for-the-singapore-region-with-an-initial-investment-plan-of-us1b-expanding-to-batam-and-johor/",
+   "quote": "We are happy to work with PDG as they build their 96 MW hyperscale project"
+  },
+  {
+   "from": "rangu_salgame",
+   "to": "pdg",
+   "relation": "founded",
+   "detail": "Co-founder (with Varoon Raghavan, backed by Warburg Pincus).",
+   "evidence": "company_claim",
+   "date": "2017",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "Founded by Rangu Salgame and Varoon Raghavan, in partnership with Warburg Pincus"
+  },
+  {
+   "from": "rangu_salgame",
+   "to": "pdg",
+   "relation": "director_of",
+   "detail": "Chairman and CEO; earlier at Tata Communications, Cisco Systems and Verizon.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://princetondg.com/leadership-2026/",
+   "quote": "Chairman, Chief Executive Officer and Co-Founder"
+  },
+  {
+   "from": "varoon_raghavan",
+   "to": "pdg",
+   "relation": "founded",
+   "detail": "Co-founder.",
+   "evidence": "company_claim",
+   "date": "2017",
+   "source_url": "https://princetondg.com/wp-content/uploads/2026/06/PDG-SustainabilityReport-25-26-EN.pdf",
+   "quote": "Founded by Rangu Salgame and Varoon Raghavan, in partnership with Warburg Pincus"
+  },
+  {
+   "from": "varoon_raghavan",
+   "to": "pdg",
+   "relation": "runs",
+   "detail": "Chief Operating Officer; spoke for PDG on JC2, JC3, HVO and the SM+ sale; earlier at Tata Communications.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://princetondg.com/leadership-2026/",
+   "quote": "Chief Operating Officer and Co-Founder"
+  },
+  {
+   "from": "frederic_van_husen",
+   "to": "pdg",
+   "relation": "runs",
+   "detail": "General Manager, Indonesia (2026); earlier led DKSH's technology business in Indonesia.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://princetondg.com/leadership-2026/",
+   "quote": "Prior to joining PDG, Frederic led DKSH's Technology business in Indonesia"
+  },
+  {
+   "from": "stephanus_tumbelaka",
+   "to": "pdg",
+   "relation": "runs",
+   "detail": "Managing Director of PDG Indonesia (named Jun 2020 to Aug 2023).",
+   "evidence": "company_claim",
+   "date": "2023-08",
+   "source_url": "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/",
+   "quote": "Managing Director, PDG Indonesia"
+  },
+  {
+   "from": "niall_hannigan",
+   "to": "pdg",
+   "relation": "runs",
+   "detail": "Chief Financial Officer (quoted on the JC2 green loan in Mar 2025); earlier CFO of Masdar for 14 years.",
+   "evidence": "company_claim",
+   "date": "2026",
+   "source_url": "https://princetondg.com/leadership-2026/",
+   "quote": "Prior to PDG, Niall was the CFO of Masdar"
+  },
+  {
+   "from": "dian_siswarini",
+   "to": "xl",
+   "relation": "director_of",
+   "detail": "President Director and CEO of XL Axiata at the 2019 sale (still CEO in May 2022).",
+   "evidence": "company_claim",
+   "date": "2019-07",
+   "source_url": "https://princetondg.com/press-releases/pdg-to-acquire-majority-stake-in-xl-axiatas-data-center-portfolio-in-indonesia/",
+   "quote": "President Director and CEO, XL Axiata"
+  },
+  {
+   "from": "herson_suindah",
+   "to": "smplus",
+   "relation": "runs",
+   "detail": "President Director and Group CEO of SM+ Holdings.",
+   "evidence": "company_claim",
+   "date": "2026-10",
+   "source_url": "https://smplus.com/sm-to-acquire-princeton-digital-groups-enterprise-data-centre-business-in-indonesia/",
+   "quote": "President Director and Group CEO of SM+ Holdings"
+  },
+  {
+   "from": "matius_sugiaman",
+   "to": "listrindo",
+   "relation": "director_of",
+   "detail": "Commercial Director of Cikarang Listrindo at the PDG biomass deal.",
+   "evidence": "company_claim",
+   "date": "2023-08",
+   "source_url": "https://princetondg.com/newsroom/princeton-digital-group-signs-groundbreaking-renewable-energy-contract-with-cikarang-listrindo-for-its-data-center-campus-in-greater-jakarta/",
+   "quote": "Commercial Director of PT Cikarang Listrindo Tbk"
+  },
+  {
+   "from": "alimuddin_baso",
+   "to": "pertamina_patra_niaga",
+   "relation": "director_of",
+   "detail": "Director of Central Marketing & Trading at the HVO deal.",
+   "evidence": "company_claim",
+   "date": "2025-09",
+   "source_url": "https://princetondg.com/press-releases/princeton-digital-group-and-pertamina-patra-niaga-forge-landmark-hvo-partnership-pioneering-sustainable-fuel-use-in-indonesia-to-advance-climate-and-community-well-being/",
+   "quote": "Director of Central Marketing & Trading at PT Pertamina Patra Niaga"
+  },
+  {
+   "from": "michael_wiluan",
+   "to": "tamarin",
+   "relation": "director_of",
+   "detail": "President Director of PT Tamarin at the PLN Batam MoU.",
+   "evidence": "company_claim",
+   "date": "2022-10",
+   "source_url": "https://www.plnbatam.com/penandatanganan-mou-penyediaan-pengelolaan-tenaga-listrik-antara-pt-pln-batam-dan-pt-tamarin/",
+   "quote": "Direktur Utama PT Tamarin"
+  }
+ ],
+ "operators": [
+  "PDG"
+ ],
+ "counts": {
+  "entities": 60,
+  "links": 87,
+  "confirmed": 30,
+  "dropped": 0
+ }
+}
