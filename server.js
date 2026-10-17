@@ -176,7 +176,7 @@ fastify.addHook('onRequest', async (req, reply) => {
    duplicate-content URL is ever minted, and the redirect is the honest state
    ("this page has no Indonesian version yet"). Add a route's pattern here the
    day its view learns lang. */
-const ID_READY = new Set(['/', '/closed', '/map', '/company/:id', '/jakarta',
+const ID_READY = new Set(['/', '/startups', '/closed', '/map', '/company/:id', '/jakarta',
   '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
   '/investors', '/investor/:slug', '/stats', '/about', '/report', '/report/:edition', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
   '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask']);
@@ -191,6 +191,23 @@ fastify.addHook('preHandler', (req, reply, done) => {
       return reply.header('location', '/id' + p.replace(/\/+$/, '') + (qs ? '?' + qs : '')).code(301).send();
     }
     if (!ID_READY.has(route)) return reply.redirect(req.raw.url || '/');
+  }
+  done();
+});
+/* umkm.vantis.sh folds into 1001startup.id/umkm while the front-page switch is
+   on (lib/homelive.js): every page address forwards with a 301 to its new
+   home — / and /map to /umkm (the isometric map is not carried over), a
+   profile to /umkm/company/<id>. Static files and data routes are left alone. */
+fastify.addHook('onRequest', (req, reply, done) => {
+  if ((req.method === 'GET' || req.method === 'HEAD') && isUmkm(req) && homeLive()) {
+    const [p, qs] = String(req.url || '/').split('?');
+    if (!/^\/(assets|css|js|data|_v)\//.test(p) && !/^\/(favicon\.ico|robots\.txt)$/.test(p)) {
+      const m = /^\/company\/([^/]+)\/?$/.exec(p);
+      const keep = new URLSearchParams(qs || '');
+      keep.delete('embed'); keep.delete('panel');
+      const q = keep.toString();
+      return reply.code(301).header('location', 'https://1001startup.id' + (m ? '/umkm/company/' + m[1] : '/umkm') + (q ? '?' + q : '')).send();
+    }
   }
   done();
 });
@@ -287,6 +304,13 @@ const chain1001 = require('./views/chain1001');
 /* 1001umkm.id — the export supplier census, sibling product of 1001startup.id
    (Luca, Aug 31 2026). Same host-branch mechanism, own views + data file. */
 const pagesumkm = require('./views/pagesumkm');
+/* The four-dataset front page (Luca, 18 Oct 2026): / becomes the front door to
+   the startup census, BUMN, data centres and the exporter census; the startup
+   table moves to /startups; umkm.vantis.sh folds into /umkm. All of it hangs
+   on ONE switch, data/home.live (lib/homelive.js) — remove the file and the
+   old front page, menu and umkm host come back within 10 s, no restart. */
+const home1001 = require('./views/home1001');
+const { homeLive } = require('./lib/homelive');
 const companyumkm = require('./views/companyumkm');
 const mapumkm = require('./views/mapumkm');
 /* CNC + 3D Indonesia (working name) — the China-style "one place, one product"
@@ -501,11 +525,110 @@ const modelTex = () => {
 fastify.get('/', async (req, reply) => {
   if (isUmkm(req)) { reply.type('text/html').send(pagesumkm.landing({ data: umkmData() })); return; }
   if (isCnc(req)) { reply.type('text/html').send(pagescnc.landing({ data: cncData(), webs: cncWebs() })); return; }
-  if (is1001(req)) { reply.type('text/html').send(pages1001.landing({ data: censusData(), lang: langOf(req) })); return; }
+  if (is1001(req)) {
+    if (homeLive()) { reply.type('text/html').send(homePage(langOf(req))); return; }
+    reply.type('text/html').send(pages1001.landing({ data: censusData(), lang: langOf(req) })); return;
+  }
   const st = S.stats.get();
   const counts = {};
   for (const r of S.countsByCategory.all()) counts[r.category] = r.n;
   reply.type('text/html').send(pages.home({ stats: st, counts, authed: !!currentMerchant(req) }));
+});
+/* ── the four-dataset front page and what moved for it (lib/homelive.js) ── */
+function homePage(lang) {
+  const census = censusData();
+  const links = linksData() || {};
+  return home1001.home({
+    census, bumn: bumn1001.load(), dc: datacenter1001.load(), umkm: umkmData(), lang,
+    extra: {
+      mapped: ((census && census.companies) || []).filter((c) => c.lat && c.lon).length,
+      edges: (links.counts || {}).edges || 0,
+      closed: (closedRegister().entries || []).length,
+    },
+  });
+}
+/* the startup table, unchanged, at its own address once / is the front door;
+   before that it IS the front page, so this address only points there */
+fastify.get('/startups', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  if (!homeLive()) return reply.redirect(langPfx(req) + '/#companies');
+  reply.type('text/html').send(pages1001.landing({ data: censusData(), lang: langOf(req), path: '/startups' }));
+});
+/* The exporter census under 1001startup.id (was umkm.vantis.sh). English
+   only, like /bumn and /data-center (/id/umkm 302s here through ID_READY).
+   Table + every profile; the isometric export map is NOT carried over —
+   1001's only map is the logo map (Luca, 12 Oct). */
+const UMKM_BASE = '/umkm';
+fastify.get('/umkm', async (req, reply) => {
+  if (!is1001(req) || !homeLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  reply.type('text/html').send(pagesumkm.landing({ data: umkmData(), base: UMKM_BASE }));
+});
+fastify.get('/umkm/company/:id', async (req, reply) => {
+  if (!is1001(req) || !homeLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  const data = umkmData();
+  const id = String((req.params && req.params.id) || '');
+  const c = ((data && data.companies) || []).find((x) => x.id === id);
+  if (!c) return reply.code(404).type('text/html').send(companyumkm.notFound({ data, base: UMKM_BASE }));
+  if (req.query && req.query.panel) return reply.type('text/html').send(companyumkm.card({ c, data, base: UMKM_BASE }));
+  reply.type('text/html').send(companyumkm.page({ c, data, base: UMKM_BASE }));
+});
+for (const p of ['/umkm/map', '/umkm/company']) {
+  fastify.get(p, async (req, reply) => {
+    if (!is1001(req) || !homeLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+    return reply.code(301).header('location', UMKM_BASE).send();
+  });
+}
+/* One search box over the four datasets (public/js/home1001.js): names,
+   sector/kind and place only — what every public table already prints. Never
+   the gated working files' contact, funding-source or trade-term fields. */
+let searchCache = { key: '', body: '' };
+function searchIndex() {
+  const census = censusData() || {};
+  const bumn = bumn1001.load() || {};
+  const dc = dcLive() ? (datacenter1001.load() || {}) : {};
+  const um = umkmData() || {};
+  const key = [census.generated, bumn.asof, dc.asof, um.generated, dcLive()].join('|');
+  if (searchCache.key === key) return searchCache.body;
+  const r = [];
+  const short = (s) => String(s || '').replace(/\s*\(.*\)$/, '');
+  for (const c of census.companies || []) {
+    r.push([c.name, 's', [c.sector_label, c.kota].filter(Boolean).join(' · '), c.id, c.logo || '', [c.legal_name, c.province].filter(Boolean).join(' ')]);
+  }
+  for (const e of bumn.entities || []) {
+    r.push([e.short, 'b', e.name !== e.short ? e.name : (e.sector || ''), '/bumn#' + e.slug, e.logo || '', [e.name, e.sector, e.cluster].filter(Boolean).join(' ')]);
+  }
+  if (dc.projects) {
+    const webOf = { DCI: 'dci', BDx: 'bdx', NeutraDC: 'neutradc', 'Digital Edge': 'digital-edge', DayOne: 'dayone', PDG: 'pdg', 'STT GDC': 'stt-gdc', 'SM+ (Sinar Mas)': 'sinar-mas' };
+    const ops = new Map();
+    for (const p of dc.projects) {
+      if (!ops.has(p.op)) ops.set(p.op, { logo: p.logo || '', first: p.id, n: 0, places: new Set() });
+      const o = ops.get(p.op); o.n++; if (!o.logo && p.logo) o.logo = p.logo;
+      o.places.add(String(p.region || '').replace(/-/g, ' '));
+    }
+    for (const [op, o] of ops) {
+      r.push([op, 'd', `${o.n} project${o.n > 1 ? 's' : ''} · ${[...o.places].filter(Boolean).slice(0, 3).join(', ')}`,
+        webOf[op] ? '/data-center/' + webOf[op] : '/data-center#p-' + o.first, o.logo, 'data centre data center']);
+    }
+    for (const p of dc.projects) {
+      r.push([short(p.name), 'p', [p.op, p.loc].filter(Boolean).join(' · '), '/data-center#p-' + p.id, p.logo || '', [p.op, p.loc, p.region, 'data centre'].join(' ')]);
+    }
+  }
+  for (const c of um.companies || []) {
+    /* 1,410 rows: the id stands in for the URL (the client rebuilds
+       /umkm/company/<id>), no logo (most are monogram tiles), and the
+       products line is cut to its first words — enough to find "coffee" */
+    r.push([c.name, 'e', [c.sector, c.city || c.province].filter(Boolean).join(' · '), c.id, '', [String(c.products || '').slice(0, 70), c.province].filter(Boolean).join(' ')]);
+  }
+  searchCache = { key, body: JSON.stringify({ v: key, r }) };
+  return searchCache.body;
+}
+fastify.get('/data/search-index.json', async (req, reply) => {
+  if (!is1001(req) || !homeLive()) return reply.code(404).send({ error: 'not_found' });
+  const body = searchIndex();
+  const tag = `W/"${Buffer.from(searchCache.key).toString('base64').slice(-16)}-${body.length.toString(36)}"`;
+  reply.header('Cache-Control', 'no-cache').header('ETag', tag);
+  if (req.headers['if-none-match'] === tag) return reply.code(304).send();
+  return reply.type('application/json').send(body);
 });
 /* 1001startup.id only: THE WIRE — automated startup journalism over the
    census. public/data/census-news.json is written ONLY by
@@ -783,9 +906,11 @@ function sitemap1001() {
   const data = censusData() || {};
   const links = linksData() || {};
   const nw = newsData() || {};
-  const key = [data.generated || '', nw.generated || '', Object.keys(links.byCompany || {}).length, closedRegister().generated || ''].join('|');
+  const key = [data.generated || '', nw.generated || '', Object.keys(links.byCompany || {}).length, closedRegister().generated || '', homeLive()].join('|');
   if (smCache.key === key) return smCache.xml;
   const paths = ['/', '/news', '/research', research1001.ARTICLE_PATH, '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn', '/about'];
+  /* the startup table's own address once / is the four-dataset front page */
+  if (homeLive()) paths.splice(1, 0, '/startups');
   for (const c of data.companies || []) paths.push('/company/' + c.id);
   /* closed companies have their own pages too */
   for (const s of closed1001.closedSlugs(closedRegister(), liveIds(data))) paths.push('/company/' + s);
@@ -864,8 +989,14 @@ How to read the figures when citing:
 - Cite the company page URL, e.g. ${O}/company/gojek
 
 ## Key pages
-- [The census table](${O}/): every company, ranked, with funding, valuation, jobs and output
-- [Sensus dalam Bahasa Indonesia](${O}/id/)
+${homeLive() ? `- [Front page](${O}/): the four datasets — startups, state companies (BUMN), data centres, exporters
+- [The startup census table](${O}/startups): every company, ranked, with funding, valuation, jobs and output
+- [Sensus dalam Bahasa Indonesia](${O}/id/startups)
+- [State companies (BUMN)](${O}/bumn): 42 BUMN on ten yardsticks, every score with its reason and source (English)
+- [Data centres](${O}/data-center): who powers Indonesia's data centres, project by project, with company webs (English)
+- [Exporters (UMKM)](${O}/umkm): exporting SMEs with products, markets and an evidence tier per row (English)`
+  : `- [The census table](${O}/): every company, ranked, with funding, valuation, jobs and output
+- [Sensus dalam Bahasa Indonesia](${O}/id/)`}
 - [Company profiles](${O}/company/gojek): one page per company at /company/<id>, also at /id/company/<id>
 - [Closed startups](${O}/closed): Indonesian startups that shut down, with dates, causes and sources
 - [Investors](${O}/investors): every fund with the census rows it backs

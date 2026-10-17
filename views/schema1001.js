@@ -61,6 +61,67 @@ function siteLd(lang, { companies } = {}) {
   return ld(org) + ld(site) + (dataset ? ld(dataset) : '');
 }
 
+/* The startup census as a Dataset on its own page (/startups, once the
+   four-dataset front page holds the brand entity). Same wording as siteLd's. */
+function datasetLd(lang, { companies, path = '/startups' } = {}) {
+  if (!companies) return '';
+  const url = I18N.ORIGIN + I18N.pfx(lang) + path;
+  return ld({
+    '@context': 'https://schema.org',
+    '@type': 'Dataset',
+    name: lang === 'id' ? 'Sensus Startup Indonesia' : 'The Indonesian Startup Census',
+    description: lang === 'id'
+      ? `Data ${companies} startup Indonesia yang beroperasi: pendanaan yang diumumkan, valuasi, jumlah pekerja bertanggal, sektor, investor, dan alamat kantor pusat. Sumber publik; setiap angka turunan diberi label estimasi.`
+      : `${companies} operating Indonesian startups: disclosed funding, valuations, dated headcounts, sector, investors and head-office address. Public sources; every derived figure is a labeled estimate.`,
+    url,
+    isAccessibleForFree: true,
+    creator: { '@type': 'Organization', name: '1001startup.id', url: I18N.ORIGIN + '/' },
+    spatialCoverage: { '@type': 'Place', name: 'Indonesia' },
+  });
+}
+
+/* The four-dataset front page: the brand entity plus a DataCatalog naming
+   each census. `sets` = [{ name, name_id, description, description_id, path }];
+   every entry is a live page, nothing is asserted the pages cannot back. */
+function catalogLd(lang, sets) {
+  const pf = I18N.pfx(lang);
+  const home = I18N.ORIGIN + (pf || '') + '/';
+  const org = {
+    '@context': 'https://schema.org',
+    '@type': 'Organization',
+    name: '1001startup.id',
+    url: I18N.ORIGIN + '/',
+    logo: I18N.ORIGIN + '/assets/favicon-1001-512.png',
+    description: lang === 'id'
+      ? 'Data perusahaan Indonesia dari sumber publik: startup, BUMN, pusat data, dan UMKM eksportir.'
+      : "Indonesia's company data from public sources: startups, state companies, data centres and exporters.",
+  };
+  const site = {
+    '@context': 'https://schema.org',
+    '@type': 'WebSite',
+    name: lang === 'id' ? 'Data Startup dan Perusahaan Indonesia — 1001startup.id' : "Indonesia's Startup and Company Data — 1001startup.id",
+    url: home,
+    inLanguage: lang === 'id' ? 'id-ID' : 'en',
+    publisher: { '@type': 'Organization', name: '1001startup.id', url: I18N.ORIGIN + '/' },
+  };
+  const catalog = {
+    '@context': 'https://schema.org',
+    '@type': 'DataCatalog',
+    name: lang === 'id' ? 'Dataset 1001startup.id' : 'The 1001startup.id datasets',
+    url: home,
+    publisher: { '@type': 'Organization', name: '1001startup.id', url: I18N.ORIGIN + '/' },
+    dataset: (sets || []).map((d) => ({
+      '@type': 'Dataset',
+      name: lang === 'id' ? (d.name_id || d.name) : d.name,
+      description: lang === 'id' ? (d.description_id || d.description) : d.description,
+      url: I18N.ORIGIN + (d.en_only ? '' : pf) + d.path,
+      isAccessibleForFree: true,
+      spatialCoverage: { '@type': 'Place', name: 'Indonesia' },
+    })),
+  };
+  return ld(org) + ld(site) + ld(catalog);
+}
+
 /* BreadcrumbList. `trail` is [{name, path}] with paths BARE (unprefixed) —
    the language prefix is applied here so the /id trail cites /id URLs. The
    last item is the current page and still carries its own URL, which is what
@@ -98,4 +159,4 @@ function fitDesc(variants, max = 165) {
   return last.slice(0, last.lastIndexOf(' ', max - 1)).replace(/[,;:—-]$/, '') + '…';
 }
 
-module.exports = { siteLd, breadcrumbLd, fitTitle, fitDesc };
+module.exports = { siteLd, datasetLd, catalogLd, breadcrumbLd, fitTitle, fitDesc };

@@ -194,7 +194,20 @@
     });
   });
 
+  /* deep links from the 1001startup.id front page and its search box:
+     ?s=<sector> picks the sector chip, ?q=<text> fills the search */
+  var qp = new URLSearchParams(location.search);
+  if (qp.get('q')) q.value = qp.get('q');
+  if (qp.get('s')) {
+    chips.querySelectorAll('.chip').forEach(function (x) {
+      if (x.dataset.s === qp.get('s')) {
+        chips.querySelectorAll('.chip').forEach(function (y) { y.classList.remove('on'); });
+        x.classList.add('on'); sec = x.dataset.s;
+      }
+    });
+  }
   apply();
+  if ((qp.get('q') || qp.get('s')) && anchor) anchor.scrollIntoView({ block: 'start' });
 })();
 
 /* ── mark explanations ───────────────────────────────────────────────────────

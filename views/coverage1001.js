@@ -65,7 +65,7 @@ function coverage({ data, lang = 'en' }) {
     <p class="lede">${L(`${fmt(VAL.with_mark)} of the ${fmt(T.companies)} companies carry a valuation we could source.
     ${(VAL.excluded || []).length ? `${fmt((VAL.excluded || []).length)} of them sit inside a parent counted on its own row, so ` : ''}${fmt(VAL.marked)} marks
     add to <strong>${usdB(VAL.combined_usd_m)}</strong> — the combined-valuation figure on the
-    <a href="${PF}/">front page</a>. The other
+    <a href="${NAV.censusHome(PF)}">${NAV.censusHome('') === '/' ? 'front page' : 'startup table'}</a>. The other
     ${fmt(T.companies - VAL.with_mark)} rows carry no public figure, and none is inferred from funding, headcount or
     output, so this is a sum over ${Math.round((VAL.with_mark / T.companies) * 100)}% of the census rather than a reading
     of the whole ecosystem. Each mark is taken at the entity its source values, so a group listing covers operations
@@ -93,10 +93,10 @@ function coverage({ data, lang = 'en' }) {
       <div class="cell"><div class="t">${fmt(T.companies - VAL.with_mark)}</div>
         <div class="d mono">${L('No mark on record', 'Tanpa valuasi tercatat')}</div>
         <div class="dd">${L(`Including companies that have raised well over US$100M. Filter the
-        <a href="${PF}/#companies">census table</a> with <em>Valuation on record</em> to see the ${fmt(VAL.with_mark)} rows
+        <a href="${NAV.censusHref(PF)}">census table</a> with <em>Valuation on record</em> to see the ${fmt(VAL.with_mark)} rows
         that carry one.`,
         `Termasuk perusahaan yang menghimpun jauh di atas US$100 juta. Saring
-        <a href="${PF}/#companies">tabel sensus</a> dengan filter <em>Ada valuasi tercatat</em> untuk melihat ${fmt(VAL.with_mark)} baris
+        <a href="${NAV.censusHref(PF)}">tabel sensus</a> dengan filter <em>Ada valuasi tercatat</em> untuk melihat ${fmt(VAL.with_mark)} baris
         yang membawanya.`)}</div></div>
     </div>
     ${(VAL.excluded || []).length ? `<div class="tablewrap out">
@@ -126,7 +126,7 @@ function coverage({ data, lang = 'en' }) {
   <section class="wrap" id="funding">
     <div class="eyebrow"><span class="sq"></span>${L('WHAT THE DISCLOSED-FUNDING TOTAL CONTAINS', 'APA ISI TOTAL PENDANAAN YANG DIUMUMKAN')}</div>
     <p class="lede">${L(`${fmt(FU.with_figure)} of the ${fmt(T.companies)} companies carry a funding figure, and they add to
-    <strong>${usdB(FU.total_usd_m)}</strong> — the disclosed-funding figure on the <a href="${PF}/">front page</a>.
+    <strong>${usdB(FU.total_usd_m)}</strong> — the disclosed-funding figure on the <a href="${NAV.censusHome(PF)}">${NAV.censusHome('') === '/' ? 'front page' : 'startup table'}</a>.
     All ${fmt(FU.sourced)} of them link to the source that carries the number${FU.tracker_count ? `, though ${fmt(FU.tracker_count)} of those links
     go to a data provider rather than a round announcement and are marked <span class="estt">trk</span>` : ''}. What the total is
     NOT is a measure of how much money the ecosystem has raised:
@@ -217,13 +217,13 @@ function coverage({ data, lang = 'en' }) {
     <p class="lede">${L(`${fmt((YC.in_census || 0) + (YC.outside || []).length)} companies in Y Combinator's directory carry Indonesia
     in their location or region tags${YC.source && YC.source.checked ? ` (checked ${esc(YC.source.checked)})` : ''}.
     ${fmt(YC.in_census)} of them operate inside the census area and are counted — filter the
-    <a href="${PF}/#companies">census table</a> with the <em>Y Combinator only</em> button.
+    <a href="${NAV.censusHref(PF)}">census table</a> with the <em>Y Combinator only</em> button.
     The remaining ${(YC.outside || []).length} are listed below with the reason they are not counted,
     so the gap is stated rather than hidden.`,
     `${fmt((YC.in_census || 0) + (YC.outside || []).length)} perusahaan di direktori Y Combinator mencantumkan Indonesia
     pada tag lokasi atau kawasannya${YC.source && YC.source.checked ? ` (dicek ${esc(YC.source.checked)})` : ''}.
     ${fmt(YC.in_census)} di antaranya beroperasi di dalam wilayah sensus dan ikut dihitung — saring
-    <a href="${PF}/#companies">tabel sensus</a> dengan tombol <em>Y Combinator saja</em>.
+    <a href="${NAV.censusHref(PF)}">tabel sensus</a> dengan tombol <em>Y Combinator saja</em>.
     ${(YC.outside || []).length} sisanya tercantum di bawah beserta alasan mereka tidak dihitung —
     celahnya dinyatakan, bukan disembunyikan.`)}</p>
     <div class="grid ycg">
@@ -245,12 +245,12 @@ function coverage({ data, lang = 'en' }) {
     <p class="lede">${L(`Endeavor selects <em>entrepreneurs</em>, not companies: founders pass an International Selection
     Panel and join the network for life, and their company joins Endeavor Indonesia's roster.
     That roster holds ${fmt((ED.source && ED.source.roster_count) || ((ED.in_census || 0) + (ED.pending || []).length))} companies${ED.source && ED.source.checked ? `, read from Endeavor's own site on ${esc(ED.source.checked)}` : ''} —
-    ${fmt(ED.in_census)} of them are in <a href="${PF}/#companies">this census</a> and carry the badge; filter to them with the
+    ${fmt(ED.in_census)} of them are in <a href="${NAV.censusHref(PF)}">this census</a> and carry the badge; filter to them with the
     <em>Endeavor only</em> button.`,
     `Endeavor memilih <em>entrepreneur</em>, bukan perusahaan: founder lolos International Selection
     Panel, bergabung ke jaringannya seumur hidup, dan perusahaannya masuk roster Endeavor Indonesia.
     Roster itu memuat ${fmt((ED.source && ED.source.roster_count) || ((ED.in_census || 0) + (ED.pending || []).length))} perusahaan${ED.source && ED.source.checked ? `, kami baca langsung dari situs Endeavor pada ${esc(ED.source.checked)}` : ''} —
-    ${fmt(ED.in_census)} di antaranya ada di <a href="${PF}/#companies">sensus ini</a> dan menyandang badge; saring lewat
+    ${fmt(ED.in_census)} di antaranya ada di <a href="${NAV.censusHref(PF)}">sensus ini</a> dan menyandang badge; saring lewat
     tombol <em>Endeavor saja</em>.`)}</p>
     <div class="grid edg">
       ${ED.companies.map((e) => `<div class="cell"><div class="t mono">${esc(e.name)}${e.year ? ` · ${e.year}` : ''}</div><div class="d">${e.who && e.who.length ? esc(e.who.join(' · ')) : '&nbsp;'}</div></div>`).join('')}
@@ -280,7 +280,7 @@ function coverage({ data, lang = 'en' }) {
     Singapore before that. The evidenced roster holds
     ${fmt((AN.source && AN.source.roster_count) || ((AN.in_census || 0) + (AN.pending || []).length + (AN.outside || []).length))} companies${AN.source && AN.source.checked ? `, read from Antler's own directory, demo days and batch announcements on ${esc(AN.source.checked)}` : ''} —
     a floor, not a ceiling: the late-2022 funded batch was never published and early deaths drop off Antler's
-    directory. ${fmt(AN.in_census)} roster ${AN.in_census === 1 ? 'company is' : 'companies are'} in <a href="${PF}/#companies">this census</a> and carry the badge; filter to them
+    directory. ${fmt(AN.in_census)} roster ${AN.in_census === 1 ? 'company is' : 'companies are'} in <a href="${NAV.censusHref(PF)}">this census</a> and carry the badge; filter to them
     with the <em>Antler only</em> button. An Antler check alone does not create a census row — every row still has
     to pass the same entity, headcount and liveness tests.`,
     `Antler menjalankan residensi Jakarta sejak 2022 (kohor ID1 dan seterusnya; cek pertama
@@ -288,7 +288,7 @@ function coverage({ data, lang = 'en' }) {
     Singapura sebelum itu. Roster berbasis bukti memuat
     ${fmt((AN.source && AN.source.roster_count) || ((AN.in_census || 0) + (AN.pending || []).length + (AN.outside || []).length))} perusahaan${AN.source && AN.source.checked ? `, kami baca dari direktori Antler sendiri, demo day, dan pengumuman batch per ${esc(AN.source.checked)}` : ''} —
     batas bawah, bukan langit-langit: batch yang didanai pada akhir 2022 tak pernah dipublikasikan, dan yang gugur lebih awal
-    menghilang dari direktori Antler. ${fmt(AN.in_census)} perusahaan roster ada di <a href="${PF}/#companies">sensus ini</a> dan menyandang badge; saring
+    menghilang dari direktori Antler. ${fmt(AN.in_census)} perusahaan roster ada di <a href="${NAV.censusHref(PF)}">sensus ini</a> dan menyandang badge; saring
     lewat tombol <em>Antler saja</em>. Cek dari Antler semata tidak menciptakan baris sensus — setiap baris tetap
     harus lolos uji entitas, jumlah pekerja, dan cek operasional yang sama.`)}</p>
     ${AN.companies && AN.companies.length ? `<div class="grid ang">
@@ -371,8 +371,8 @@ function coverage({ data, lang = 'en' }) {
           <td class="n mono">${w.w ? '× ' + fmt(w.w.rate) : '—'}</td>
           <td class="n mono">${w.w ? fmt(w.w.bn, 1) : '—'}</td></tr>`).join('')}</tbody>
       </table></div>
-      <div class="foot-note mono">${L(`Every output cell in the <a href="${PF}/#companies">census table</a> is this multiplication and nothing else — click any of them for its own working.${NOHC ? ` ${fmt(NOHC)} companies have no headcount we could source, so they carry no output at all — the census leaves the cell empty instead of imputing one from funding.` : ''}`,
-      `Setiap sel output di <a href="${PF}/#companies">tabel sensus</a> adalah perkalian ini, bukan yang lain — klik salah satu selnya untuk melihat perhitungannya sendiri.${NOHC ? ` ${fmt(NOHC)} perusahaan tidak punya jumlah pekerja yang bisa kami telusuri sumbernya, jadi tidak membawa output sama sekali — sensus membiarkan selnya kosong alih-alih menaksirnya dari pendanaan.` : ''}`)}</div>` : ''}
+      <div class="foot-note mono">${L(`Every output cell in the <a href="${NAV.censusHref(PF)}">census table</a> is this multiplication and nothing else — click any of them for its own working.${NOHC ? ` ${fmt(NOHC)} companies have no headcount we could source, so they carry no output at all — the census leaves the cell empty instead of imputing one from funding.` : ''}`,
+      `Setiap sel output di <a href="${NAV.censusHref(PF)}">tabel sensus</a> adalah perkalian ini, bukan yang lain — klik salah satu selnya untuk melihat perhitungannya sendiri.${NOHC ? ` ${fmt(NOHC)} perusahaan tidak punya jumlah pekerja yang bisa kami telusuri sumbernya, jadi tidak membawa output sama sekali — sensus membiarkan selnya kosong alih-alih menaksirnya dari pendanaan.` : ''}`)}</div>` : ''}
       <ul>${GT.LIMITS.map((l) => `<li>${esc(l)}</li>`).join('')}</ul>
       ${FLAGGED.length ? `<div class="tablewrap out"><table>
         <thead><tr><th>${L('Where this estimate runs high', 'Di mana estimasi ini terlalu tinggi')}</th><th class="n">${L('Jobs', 'Lapangan kerja')}</th><th class="n">${L('Output IDR bn/yr', 'Output IDR mlr/thn')}</th><th>${L('Why', 'Alasan')}</th></tr></thead>

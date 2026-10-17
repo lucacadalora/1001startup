@@ -291,4 +291,17 @@
   new ResizeObserver(function () { if (field.clientWidth === lastW) return; lastW = field.clientWidth; cancelAnimationFrame(raf); raf = requestAnimationFrame(draw); }).observe(field);
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(draw);
   draw();
+
+  /* /bumn#<slug> — a link from the 1001startup.id front page or its search
+     box: pin that company's card, the same as a click on its table row */
+  function fromHash() {
+    var slug = decodeURIComponent((location.hash || '').slice(1));
+    var hit = slug ? E.filter(function (x) { return x.slug === slug; })[0] : null;
+    if (!hit) return;
+    state.pinned = hit.slug;
+    field.scrollIntoView({ block: 'center' });
+    setTimeout(function () { show(hit, true); }, 350);
+  }
+  fromHash();
+  window.addEventListener('hashchange', fromHash);
 })();

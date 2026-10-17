@@ -1,0 +1,31 @@
+{
+ "dc": {
+  "bf-btm": "/assets/home/dc-bf-btm.70a63ed0.webp",
+  "bf-grid": "/assets/home/dc-bf-grid.0e924a8c.webp",
+  "bf-hybrid": "/assets/home/dc-bf-hybrid.81582fc9.webp",
+  "bf-offgrid": "/assets/home/dc-bf-offgrid.51cd5f05.webp",
+  "gf-btm": "/assets/home/dc-gf-btm.330fe5bb.webp",
+  "gf-grid": "/assets/home/dc-gf-grid.3d415143.webp",
+  "gf-hybrid": "/assets/home/dc-gf-hybrid.e90c9a15.webp",
+  "gf-offgrid": "/assets/home/dc-gf-offgrid.61a73e86.webp"
+ },
+ "map": "/assets/home/map-preview.6df9ded1.webp",
+ "sprites": {
+  "Agriculture": "/assets/home/sp-agriculture.4322bd1c.webp",
+  "Automotive & Industrial": "/assets/home/sp-automotive-industrial.b5b9e99a.webp",
+  "Coconut & Charcoal": "/assets/home/sp-coconut-charcoal.7859c607.webp",
+  "Coffee & Tea": "/assets/home/sp-coffee-tea.d4136843.webp",
+  "Cosmetics & Essential Oils": "/assets/home/sp-cosmetics-oils.81acdd0f.webp",
+  "Fisheries & Seaweed": "/assets/home/sp-fisheries-seaweed.19afc6f7.webp",
+  "Food & Beverage": "/assets/home/sp-fnb.d3d82821.webp",
+  "Footwear": "/assets/home/sp-footwear.b72ff6b0.webp",
+  "Furniture": "/assets/home/sp-furniture.b8b09624.webp",
+  "Handicraft": "/assets/home/sp-handicraft.5c808a9a.webp",
+  "Home Decor": "/assets/home/sp-home-decor.db013bad.webp",
+  "Jewelry": "/assets/home/sp-jewelry.7c432a7f.webp",
+  "Leather Goods": "/assets/home/sp-leather-goods.3364f5e6.webp",
+  "Spices": "/assets/home/sp-spices.61720827.webp",
+  "Stone & Building Materials": "/assets/home/sp-stone-building.c76e84de.webp",
+  "Textiles & Fashion": "/assets/home/sp-textiles-fashion.aa8d69a8.webp"
+ }
+}

@@ -13,6 +13,9 @@
 const { esc } = require('../lib/util');
 const { V } = require('./html');
 const UM = require('./pagesumkm');
+/* base '/umkm' = the 1001startup.id version (lib/homelive.js): 1001 header and
+   menu, links under /umkm. base '' = umkm.vantis.sh exactly as before. */
+const NAV = require('./nav1001');
 
 const fmt = (n) => (n === null || n === undefined || n === '') ? '—' : Number(n).toLocaleString('en-US');
 const host = (u) => { try { return new URL(u).hostname.replace(/^www\./, ''); } catch { return 'source'; } };
@@ -25,7 +28,7 @@ function factRow(k, v, u) {
 }
 const section = (h, body) => body ? `<section class="cp-sec"><h3 class="cp-h3">${esc(h)}</h3>${body}</section>` : '';
 
-function card({ c, data, standalone }) {
+function card({ c, data, standalone, base = '' }) {
   const TM = ((data && data.method) || {}).tier_meta || {};
   const t = TM[c.tier] || {};
   const total = ((data && data.totals) || {}).exporters;
@@ -69,7 +72,7 @@ function card({ c, data, standalone }) {
   </header>
 
   <dl class="cp-facts">
-    ${factRow('Verified', `${UM.tierMark(c, TM)} <span class="cp-u">tier ${c.tier_rank} of 6</span>${
+    ${factRow('Verified', `${UM.tierMark(c, TM, base)} <span class="cp-u">tier ${c.tier_rank} of 6</span>${
       c.source_url ? ` <a class="cp-srcl" href="${esc(c.source_url)}" target="_blank" rel="noopener nofollow" title="${esc(c.verification)}">${esc(host(c.source_url))}</a>` : ''}`)}
     ${factRow('Export markets', c.markets ? esc(c.markets) : blank())}
     ${factRow('Certifications', c.certs ? esc(c.certs) : blank())}
@@ -92,7 +95,7 @@ function card({ c, data, standalone }) {
     return urls.length ? `<ol class="cp-src">${urls.map((u) => `<li><a href="${esc(u)}" target="_blank" rel="noopener nofollow"><span class="cp-srch">${esc(host(u))}</span><span class="cp-srcu">${esc(u)}</span></a></li>`).join('')}</ol>` : '';
   })())}
 
-  ${sib.length ? section('Comparable in ' + c.sector, `<div class="cp-sibs">${sib.map((s) => `<a class="cp-sib" href="/company/${esc(s.id)}" data-cp="${esc(s.id)}">
+  ${sib.length ? section('Comparable in ' + c.sector, `<div class="cp-sibs">${sib.map((s) => `<a class="cp-sib" href="${base}/company/${esc(s.id)}" data-cp="${esc(s.id)}">
       <span class="cp-sibn">${esc(s.name)}</span><span class="cp-sibr">#${s.rank}${s.province ? ' · ' + esc(s.province) : ''}</span></a>`).join('')}</div>`) : ''}
 
   <footer class="cp-foot">
@@ -102,7 +105,7 @@ function card({ c, data, standalone }) {
 </article>`;
 }
 
-function shell({ title, desc, body, path }) {
+function shell({ title, desc, body, path, base = '' }) {
   return `<!doctype html>
 <html lang="en">
 <head>
@@ -112,8 +115,11 @@ function shell({ title, desc, body, path }) {
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="noindex, nofollow">
 <meta name="theme-color" content="#ffffff">
-<link rel="icon" type="image/png" href="/assets/favicon-umkm.png">
-<link rel="apple-touch-icon" href="/assets/favicon-umkm.png">
+${base ? `<link rel="canonical" href="https://1001startup.id${esc(base + path)}">
+<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicon-1001-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-1001.png">` : `<link rel="icon" type="image/png" href="/assets/favicon-umkm.png">
+<link rel="apple-touch-icon" href="/assets/favicon-umkm.png">`}
 <link rel="preload" href="/assets/fonts/overused-grotesk-vf.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/px.css?v=${V}">
@@ -125,13 +131,15 @@ function shell({ title, desc, body, path }) {
 body{background:#fff;color:#000;font:500 16px/1.5 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.01em}
 a{color:inherit}
 .mono{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em}
-.banner{background:${UM.GRAD};color:#fff;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:center;padding:8px 12px}
-${UM.HEADCSS}
+.banner{background:${UM.GRAD};color:${base ? '#000' : '#fff'};font:400 11px/1${base ? '.35' : ''} 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:center;padding:8px 12px}
+${base ? NAV.css : UM.HEADCSS}
 .pgwrap{max-width:880px;margin:0 auto;padding:34px 20px 64px}
 .bk{display:inline-block;margin-bottom:18px;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;text-decoration:none;color:#8E8E93}
 .bk:hover{color:#000}
 ${UM.TBCSS}
-${UM.NOTECSS}
+${UM.NOTECSS}${base ? `
+/* long exporter names in the comparable list pushed a 360 px phone sideways */
+.cp-sibs{grid-template-columns:minmax(0,1fr)}.cp-sib{min-width:0}.cp-sibn{min-width:0}.cp-sibr{flex:none;white-space:nowrap}` : ''}
 .ftlegal{max-width:880px;margin:0 auto;display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;border-top:1px solid #E7E7E7;padding:18px 20px 28px;font-size:10.5px;line-height:1.6;color:#8E8E93}
 .ftlegal a{color:inherit;text-decoration:none;border-bottom:1px solid #D9D9D9}
 .ftlegal a:hover{color:#000;border-bottom-color:#000}
@@ -139,9 +147,9 @@ ${UM.NOTECSS}
 </head>
 <body>
 <div class="banner">WORKING DRAFT · PUBLIC SOURCES ONLY · EVERY ROW LINKS TO THE SOURCE IT WAS COMPILED FROM</div>
-${UM.header('')}
+${base ? NAV.header('', { lang: 'en', path: base + path, translated: false }) : UM.header('')}
 <main class="pgwrap">
-<a class="bk" href="/#exporters">← All exporters</a>
+<a class="bk" href="${base || '/'}#exporters">← All exporters</a>
 ${body}
 </main>
 <div class="note" id="note" role="tooltip" hidden>
@@ -152,28 +160,31 @@ ${body}
   <div class="nl" hidden></div>
 </div>
 <footer><div class="ftlegal mono">
-  <span>© 2026 1001umkm.id · the census of Indonesian exporting SMEs</span>
+  <span>© 2026 ${base ? '1001startup.id' : '1001umkm.id'} · the census of Indonesian exporting SMEs</span>
   <span><a href="https://vantis.sh/cookies/" data-vs-reopen>Cookies</a></span>
 </div></footer>
-<script src="/js/umkm.js?v=${V}" defer></script>
+${base ? `<script src="/js/nav1001.js?v=${V}" defer></script>
+` : ''}<script src="/js/umkm.js?v=${V}" defer></script>
 <script src="/js/px.js?v=${V}" defer></script>
 <script src="/assets/js/consent.js?v=${V}" defer></script>
 </body>
 </html>`;
 }
 
-function page({ c, data }) {
+function page({ c, data, base = '' }) {
   return shell({
-    title: `${c.name} — 1001umkm.id`,
+    base,
+    title: `${c.name} — ${base ? '1001startup.id' : '1001umkm.id'}`,
     desc: `${c.name}: ${c.sector} exporter${c.province ? ' from ' + c.province : ''} — products, export markets, trade terms, verification and contact channels.`,
-    body: card({ c, data, standalone: true }),
+    body: card({ c, data, standalone: true, base }),
     path: '/company/' + c.id,
   });
 }
 
-function notFound({ data }) {
+function notFound({ data, base = '' }) {
   return shell({
-    title: 'Not in the census — 1001umkm.id',
+    base,
+    title: `Not in the census — ${base ? '1001startup.id' : '1001umkm.id'}`,
     desc: 'Nothing at this address.',
     body: `<article class="cp"><h2 class="cp-name">Nothing at this address.</h2>
     <p class="cp-p" style="margin-top:12px">No exporter — and no page — carries this address. The full table is one click back.</p></article>`,

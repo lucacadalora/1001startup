@@ -117,7 +117,7 @@ function login({ error, lang = 'en' }) {
   <p class="gfoot">
     ${L('Runs spend real credits on the Vantis Card rail.',
     'Setiap pencarian memakai kredit sungguhan di jalur Vantis Card.')}<br>
-    <a href="${PF}/">${L('Back to the census', 'Kembali ke sensus')}</a>
+    <a href="${NAV.censusHome(PF)}">${L('Back to the census', 'Kembali ke sensus')}</a>
   </p>
 </div></div>
 </body>

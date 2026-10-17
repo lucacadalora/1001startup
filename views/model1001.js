@@ -513,7 +513,7 @@ ${NAV.header('method', { lang, path: '/model', translated: true })}
 </main>
 <footer>
   <span>${L('1001startup.id — the census of Indonesian startups', '1001startup.id — sensus startup Indonesia')}</span>
-  <span><a href="${PF}/">${L('Back to the census', 'Kembali ke sensus')}</a> · ${L('Anchors', 'Anchor')}: BPS · ${L('FX', 'Kurs')} ${fmt(v.fx)} · ${L('updated', 'diperbarui')} ${esc(upd)}</span>
+  <span><a href="${NAV.censusHome(PF)}">${L('Back to the census', 'Kembali ke sensus')}</a> · ${L('Anchors', 'Anchor')}: BPS · ${L('FX', 'Kurs')} ${fmt(v.fx)} · ${L('updated', 'diperbarui')} ${esc(upd)}</span>
 </footer>
 <div id="tip" role="status"></div>
 <script src="/js/nav1001.js?v=${V}" defer></script>

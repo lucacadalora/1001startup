@@ -174,8 +174,8 @@ ${NAV.header('map', { lang, path })}`}
   <div class="lm-foot"><span class="more">${L('Drag to pan · scroll to zoom · click a logo', 'Seret untuk menggeser · gulir untuk zoom · klik logo')}<span class="sep">/</span><b>${located}</b> ${L('of', 'dari')} ${esc(n)} ${L('companies placed', 'perusahaan terpetakan')}<span class="sep">/</span></span>${tiles
     ? '<a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a> · <a href="https://protomaps.com" target="_blank" rel="noopener">Protomaps</a>'
     : 'Natural Earth'}</div>
-  <noscript><div class="lm-msg"><p>${L('The map needs JavaScript. The same companies are in', 'Peta ini memerlukan JavaScript. Perusahaan yang sama ada di')} <a href="${PF}/#companies">${L('the census table', 'tabel sensus')}</a>.</p></div></noscript>
-  <div class="lm-msg" id="lm-msg" hidden><p>${L('This browser has WebGL switched off, so the map cannot draw. The same companies are in', 'WebGL di peramban ini nonaktif, jadi peta tidak dapat digambar. Perusahaan yang sama ada di')} <a href="${PF}/#companies">${L('the census table', 'tabel sensus')}</a>.</p></div>
+  <noscript><div class="lm-msg"><p>${L('The map needs JavaScript. The same companies are in', 'Peta ini memerlukan JavaScript. Perusahaan yang sama ada di')} <a href="${NAV.censusHref(PF)}">${L('the census table', 'tabel sensus')}</a>.</p></div></noscript>
+  <div class="lm-msg" id="lm-msg" hidden><p>${L('This browser has WebGL switched off, so the map cannot draw. The same companies are in', 'WebGL di peramban ini nonaktif, jadi peta tidak dapat digambar. Perusahaan yang sama ada di')} <a href="${NAV.censusHref(PF)}">${L('the census table', 'tabel sensus')}</a>.</p></div>
 </div>
 </main>
 ${embed ? '' : `<script src="/js/nav1001.js?v=${V}" defer></script>`}

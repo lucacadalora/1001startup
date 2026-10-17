@@ -201,7 +201,12 @@
     vaBtn.setAttribute('aria-pressed', valOnly ? 'true' : 'false');
     apply();
   });
+  /* ?q= from the 1001startup.id front-page search box (and its no-JS form)
+     fills the search before the first draw */
+  var qp0 = new URLSearchParams(location.search).get('q');
+  if (qp0) q.value = qp0;
   apply();
+  if (qp0 && anchor) anchor.scrollIntoView({ block: 'start' });
 })();
 
 /* ── mark explanations ───────────────────────────────────────────────────────

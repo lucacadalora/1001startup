@@ -447,7 +447,7 @@ function page({ c, data, links, lang = 'en', og }) {
   return SHELL(
     `<nav class="crumb"><a href="${PF}/">1001startup.id</a> / <a href="${PF}/sector/${esc(c.sector_key || 'misc')}">${esc(c.sector_label || L('Companies', 'Perusahaan'))}</a> / ${esc(c.name)}</nav>
 ${card({ c, data, standalone: true, links, lang })}
-<p class="crumb" style="margin:22px 0 0"><a href="${PF}/#companies">&larr; ${L('Back to the census', 'Kembali ke sensus')}</a></p>`,
+<p class="crumb" style="margin:22px 0 0"><a href="${NAV.censusHref(PF)}">&larr; ${L('Back to the census', 'Kembali ke sensus')}</a></p>`,
     { title: SCHEMA.fitTitle(lang === 'id'
       ? [...((c.founders || []).length ? [`${c.name} — pendiri, pendanaan, valuasi — 1001startup.id`, `${c.name} — pendiri, pendanaan, valuasi`] : []),
         `${c.name} — pendanaan, valuasi, jumlah karyawan — 1001startup.id`,
@@ -480,7 +480,7 @@ function notFound({ data, lang = 'en' }) {
     <h1 style="font-size:34px;letter-spacing:-0.02em;font-weight:500;margin-bottom:12px">${L('No company at that address.', 'Tidak ada perusahaan di alamat itu.')}</h1>
     <p style="color:#52525B;max-width:60ch">${L(`The census holds ${n} companies right now and this is not one of them — it may have been removed by the liveness screen, or it may never have been added.`,
       `Sensus saat ini memuat ${n} perusahaan dan yang ini bukan salah satunya — mungkin sudah dihapus oleh uji operasional, atau memang tidak pernah ditambahkan.`)}
-    <a href="${PF}/#companies">${L('Search the table', 'Telusuri tabelnya')}</a>${L(', or see ', ', atau lihat ')}<a href="${PF}/closed">${L('what closed', 'yang tutup')}</a>.</p>`,
+    <a href="${NAV.censusHref(PF)}">${L('Search the table', 'Telusuri tabelnya')}</a>${L(', or see ', ', atau lihat ')}<a href="${PF}/closed">${L('what closed', 'yang tutup')}</a>.</p>`,
     { title: `${L('Not in the census', 'Tidak ada di sensus')} — 1001startup.id`, desc: L('No company at that address.', 'Tidak ada perusahaan di alamat itu.'), lang, noindex: true });
 }
 

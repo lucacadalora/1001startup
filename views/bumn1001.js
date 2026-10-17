@@ -192,4 +192,4 @@ function page({ lang = 'en' }) {
   });
 }
 
-module.exports = { page };
+module.exports = { page, load };

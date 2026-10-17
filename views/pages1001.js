@@ -11,10 +11,14 @@ const GVA = require('./gva');      // one explanation of Output, shared with the
 const NAV = require('./nav1001');  // one header for every 1001 page
 const I18N = require('./i18n1001'); // /id — Bahasa Indonesia lives at /id/<path>
 const SCHEMA = require('./schema1001'); // Organization/WebSite/Dataset + breadcrumbs
+const FOOT = require('./footer1001'); // one footer, columns from the nav data
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
 
-function landing({ data, lang = 'en' }) {
+/* path: '/' while the old front page is live, '/startups' once the
+   four-dataset front page takes / (lib/homelive.js). Same page either way —
+   only its address, canonical pair and structured data follow it. */
+function landing({ data, lang = 'en', path = '/' }) {
   const L = I18N.mkL(lang);   // L('english', 'indonesian') — falls back to English
   const PF = I18N.pfx(lang);  // '' or '/id': prefix for every in-site link
   const fmt = (n, d = 0) => (n === null || n === undefined) ? '—'
@@ -458,20 +462,6 @@ function landing({ data, lang = 'en' }) {
       <span class="go">${esc(f.go)} →</span></a>`).join('');
   const ecoCards = ECO.map((x) => `<a href="${esc(x.href)}">
       <span class="rt">${esc(x.rt)}</span><h3>${x.t}</h3><p>${x.d}</p></a>`).join('');
-  /* footer columns COME FROM the nav data (views/nav1001.js), so a rename
-     there renames here too; Coverage and Live traffic are added by hand
-     because they sit in no dropdown. */
-  const navGroupOf = (key) => NAV.NAV.find((n) => n.key === key) || {};
-  const ftItem = (it) => it.href
-    ? `<li><a href="${esc(PF + it.href)}">${esc(L(it.label, it.id))}</a></li>`
-    : `<li><span class="off">${esc(L(it.label, it.id))}${it.tag ? `<em>${esc(L(it.tag, it.id_tag))}</em>` : ''}</span></li>`;
-  const ftCol = (title, lis) => `<div class="ftcol"><h4>${esc(title)}</h4><ul>${lis.join('')}</ul></div>`;
-  const ftSite = NAV.NAV.filter((n) => !n.items).map(ftItem)
-    .concat([ftItem({ label: 'Live traffic', id: 'Statistik pengunjung', href: '/stats' })]);
-  const ftCensus = (navGroupOf('census').items || []).map(ftItem)
-    .concat([ftItem({ label: 'Coverage', id: 'Cakupan', href: '/coverage' })]);
-  const ftMethod = (navGroupOf('method').items || []).map(ftItem);
-  const ftAgents = (navGroupOf('agents').items || []).map(ftItem);
   const hcDated = companies.filter((c) => c.employees_asof).length;
   const hcCo = companies.filter((c) => c.employees_kind === 'company').length;
   const hcSpread = companies.filter((c) => c.employees_spread).length;
@@ -611,8 +601,9 @@ function landing({ data, lang = 'en' }) {
 <title>${L("Indonesia's Startup Census — 1001startup.id", T.companies ? `Sensus Startup Indonesia: ${fmt(T.companies)} Perusahaan — 1001startup.id` : 'Sensus Startup Indonesia — 1001startup.id')}</title>
 <meta name="description" content="${L('The census of Indonesian startups: who they are, where they sit, what they raised, whom they employ, and what they add to the economy.', `Sensus startup Indonesia: daftar ${fmt(T.companies)} perusahaan dengan data pendanaan, valuasi, jumlah pekerja, dan peta kantornya. Sumber publik saja, estimasi diberi label.`)}">
 <meta name="robots" content="index, follow">
-${I18N.headTags(lang, '/')}
-${I18N.ogImage()}${SCHEMA.siteLd(lang, { companies: T.companies })}
+${I18N.headTags(lang, path)}
+${I18N.ogImage()}${path === '/' ? SCHEMA.siteLd(lang, { companies: T.companies })
+  : SCHEMA.datasetLd(lang, { companies: T.companies, path }) + SCHEMA.breadcrumbLd(lang, [{ name: '1001startup.id', path: '/' }, { name: L('Startups', 'Startup'), path }])}
 <meta property="og:title" content="${L("1001startup.id — Indonesia's startup graph", '1001startup.id — Sensus Startup Indonesia')}">
 <meta property="og:description" content="${esc(String(T.companies || '') + L(' companies tracked — funding, jobs, and the economic weight of the ecosystem.', ' perusahaan terdata — data pendanaan, lapangan kerja, dan bobot ekonomi ekosistem startup Indonesia.'))}">
 <meta name="theme-color" content="#ffffff">
@@ -825,33 +816,11 @@ button.estt:focus-visible,button.nofig:focus-visible,button.hc:focus-visible{out
 .eco a:hover .rt{color:#000}
 .eco h3{font-size:16.5px;font-weight:500;letter-spacing:-0.015em;margin-bottom:8px}
 .eco p{color:#52525B;font-size:12.5px;line-height:1.5}
-/* ── footer: columns from the nav data + the outline wordmark ── */
-.ft{border-top:1px solid #E7E7E7;margin-top:64px}
-.ftin{max-width:1180px;margin:0 auto;padding:46px 20px 28px}
-.ftgrid{display:grid;grid-template-columns:1.35fr repeat(4,1fr);gap:36px 28px}
-@media(max-width:1000px){.ftgrid{grid-template-columns:repeat(2,1fr)}.ftbrand{grid-column:1/-1}}
-@media(max-width:520px){.ftgrid{grid-template-columns:1fr}}
-.fbx{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;margin-bottom:14px}
-.fbx i{width:26px;height:26px;border:1.5px solid #000;display:grid;place-items:center;font:600 9px/1 'IBM Plex Mono',monospace;font-style:normal}
-.ftbrand .fth{font-size:20px;font-weight:500;letter-spacing:-0.02em;line-height:1.2;max-width:18ch}
-.ftbrand p{margin-top:10px;color:#6B6B73;font-size:13px;line-height:1.55;max-width:30ch}
-.ftcol h4{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#74747D;margin-bottom:13px;display:flex;align-items:center;gap:7px}
-.ftcol h4::before{content:'';width:5px;height:5px;background:#000;display:inline-block;flex:none}
-.ftcol ul{list-style:none}
-.ftcol li{margin-bottom:8px}
-.ftcol a{text-decoration:none;color:#52525B;font-size:13.5px}
-.ftcol a:hover{color:#000}
-.ftcol .off{color:#74747D;font-size:13.5px}
-.ftcol .off em{font:400 8.5px/1 'IBM Plex Mono',monospace;font-style:normal;text-transform:uppercase;letter-spacing:.06em;border:1px solid #E7E7E7;padding:2px 4px;margin-left:6px;vertical-align:1px}
-.ftmark{display:block;width:100%;height:auto;margin:44px 0 6px}
-.ftlegal{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;border-top:1px solid #E7E7E7;padding-top:18px;font-size:10.5px;line-height:1.6;color:#6B6B73}
-.ftlegal a{color:inherit;text-decoration:none;border-bottom:1px solid #D9D9D9}
-.ftlegal a:hover{color:#000;border-bottom-color:#000}
-</style>
+${FOOT.css}</style>
 </head>
 <body>
 <div class="banner">${L('WORKING DRAFT · PUBLIC SOURCES ONLY · EVERY DERIVED FIGURE IS A LABELED ESTIMATE', 'DOKUMEN KERJA · SUMBER PUBLIK SAJA · ANGKA TURUNAN SELALU BERLABEL ESTIMASI')}</div>
-${NAV.header('', { lang, path: '/' })}
+${NAV.header('', { lang, path })}
 <section class="hero">
   <h1>${L("Indonesia's startup graph.", 'Sensus startup Indonesia.')}</h1>
   <div>
@@ -877,32 +846,7 @@ ${body}
   <div class="nm" hidden></div>
   <div class="nl" hidden></div>
 </div>
-<footer class="ft">
-  <div class="ftin">
-    <div class="ftgrid">
-      <div class="ftbrand">
-        <a class="fbx" href="${PF}/"><i>1001</i>1001startup.id</a>
-        <div class="fth">${L('The census of Indonesian startups.', 'Sensus startup Indonesia.')}</div>
-        <p>${L('Public sources only; every derived figure is a labeled estimate.', 'Hanya sumber publik; setiap angka turunan adalah estimasi berlabel.')}</p>
-      </div>
-      ${ftCol('1001startup.id', ftSite)}
-      ${ftCol(L(navGroupOf('census').label || 'Census', navGroupOf('census').id), ftCensus)}
-      ${ftCol(L(navGroupOf('method').label || 'Method', navGroupOf('method').id), ftMethod)}
-      ${ftCol(L(navGroupOf('agents').label || 'Agents', navGroupOf('agents').id), ftAgents)}
-    </div>
-    <svg class="ftmark" viewBox="0 0 1200 168" aria-hidden="true" focusable="false">
-      <defs><linearGradient id="ftg" x1="0" y1="0" x2="1" y2="0">
-        <stop offset="0" stop-color="#E8734B"/><stop offset=".34" stop-color="#F3C64B"/>
-        <stop offset=".68" stop-color="#7AB88A"/><stop offset="1" stop-color="#4E7A96"/>
-      </linearGradient></defs>
-      <text x="600" y="126" text-anchor="middle" textLength="1156" lengthAdjust="spacingAndGlyphs" font-family="'Overused Grotesk',system-ui,sans-serif" font-size="148" font-weight="500" letter-spacing="-3" fill="none" stroke="url(#ftg)" stroke-width="1.5">1001startup.id</text>
-    </svg>
-    <div class="ftlegal mono">
-      <span>© 2026 1001startup.id · ${L('the census of Indonesian startups', 'sensus startup Indonesia')}</span>
-      <span><a href="${PF}/stats">${L('Live traffic', 'Statistik pengunjung')}</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>${L('Cookies', 'Cookie')}</a> · ${L('Boundaries © OpenStreetMap · Anchors: BPS · updated', 'Batas wilayah © OpenStreetMap · Anchor: BPS · diperbarui')} ${esc(((data && data.generated) || '').slice(0, 10))}</span>
-    </div>
-  </div>
-</footer>
+${FOOT.footer({ lang, legalRight: `<a href="${PF}/stats">${L('Live traffic', 'Statistik pengunjung')}</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>${L('Cookies', 'Cookie')}</a> · ${L('Boundaries © OpenStreetMap · Anchors: BPS · updated', 'Batas wilayah © OpenStreetMap · Anchor: BPS · diperbarui')} ${esc(((data && data.generated) || '').slice(0, 10))}` })}
 <script src="/js/nav1001.js?v=${V}" defer></script>
 <script src="/js/1001.js?v=${V}" defer></script>
 <script src="/js/company1001.js?v=${V}" defer></script>

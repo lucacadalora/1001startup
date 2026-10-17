@@ -1,5 +1,6 @@
 'use strict';
 const { dcLive } = require('../lib/dclive');
+const { homeLive } = require('../lib/homelive');
 /**
  * ONE header for every 1001startup.id page. Five views used to carry their own
  * copy of this block and they had already drifted apart (each page showed a
@@ -68,6 +69,30 @@ const NAV = [
   },
 ];
 
+/* The four-dataset front page (lib/homelive.js, Luca 18 Oct 2026): the
+   startups table moves to /startups and "Companies" becomes a Datasets menu
+   holding the four censuses. BUMN and Data centres move here out of Census.
+   While the switch is off, NAV above is served exactly as before. */
+const DATASETS = {
+  key: 'datasets', label: 'Datasets', id: 'Dataset', items: [
+    { label: 'Startups', id: 'Startup', desc: 'The startup census: funding, investors, headcount and offices', id_desc: 'Sensus startup: pendanaan, investor, jumlah pekerja, dan kantor', href: '/startups' },
+    { label: 'State companies (BUMN)', id: 'BUMN', desc: '42 BUMN on ten yardsticks, as a logo quadrant', id_desc: '42 BUMN pada sepuluh tolok ukur, dalam kuadran logo', href: '/bumn' },
+    { label: 'Data centres', id: 'Pusat data', desc: 'Who powers them, and the companies that own and build them', id_desc: 'Siapa yang memasok listriknya, dan perusahaan di baliknya', href: '/data-center' },
+    { label: 'Exporters (UMKM)', id: 'Eksportir (UMKM)', desc: 'Exporting SMEs: what they make, where they ship, how each was verified', id_desc: 'UMKM eksportir: produknya, pasar tujuannya, dan cara tiap baris diverifikasi', href: '/umkm' },
+  ],
+};
+const MOVED = new Set(['/bumn', '/data-center']);
+const NAV_LIVE = [DATASETS].concat(NAV.filter((n) => n.key !== 'companies').map((n) => (n.key === 'census'
+  ? Object.assign({}, n, { items: n.items.filter((it) => !MOVED.has(it.href)) })
+  : n)));
+/* the nav as it should render right now */
+const navNow = () => (homeLive() ? NAV_LIVE : NAV);
+/* where "the full census" lives: /startups once the front page is live, the
+   old landing's table anchor before that. PF is '' or '/id'. */
+const censusHref = (PF) => (PF || '') + (homeLive() ? '/startups' : '/#companies');
+/* "back to the census" links that went to the bare front page */
+const censusHome = (PF) => (PF || '') + (homeLive() ? '/startups' : '/');
+
 /** active: 'companies' | 'news' | 'research' | 'map' | 'chain' | 'census' | 'method' | 'agents' | ''
  *  opts:   { lang: 'en'|'id', path: bare path+query of this page for the
  *            language switch, translated: false when no /id version exists } */
@@ -75,13 +100,16 @@ function header(active, opts) {
   const { lang = 'en', path = '/', translated = true } = opts || {};
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
+  const live = homeLive();
+  /* once live, the four dataset pages light up the Datasets menu */
+  if (live && (active === 'companies' || /^\/(startups|bumn|data-center|umkm)(\/|\?|#|$)/.test(path || ''))) active = 'datasets';
   const item = (it) => {
     const body = `<b>${esc(L(it.label, it.id))}${it.tag ? `<em class="ntag">${esc(L(it.tag, it.id_tag))}</em>` : ''}</b><i>${esc(L(it.desc || '', it.id_desc))}</i>`;
     return it.href
       ? `<a class="di" href="${esc(PF + it.href)}">${body}</a>`
       : `<span class="di off">${body}</span>`;
   };
-  const links = NAV.map((n) => {
+  const links = navNow().map((n) => {
     const on = n.key === active ? ' on' : '';
     if (!n.items) return `<a${on ? ` class="${on.trim()}"` : ''} href="${esc(PF + n.href)}">${esc(L(n.label, n.id))}</a>`;
     return `<div class="dd${n.align === 'r' ? ' r' : ''}">
@@ -98,9 +126,14 @@ function header(active, opts) {
   const lsw = `<div class="lsw" aria-label="${lang === 'id' ? 'Bahasa' : 'Language'}">
     <a href="${esc(p)}"${lang === 'id' ? '' : ' class="on" aria-current="true"'} lang="en" hreflang="en" title="English">EN</a><span class="ls" aria-hidden="true">/</span><a href="${esc(idHref)}"${lang === 'id' ? ' class="on" aria-current="true"' : ''} lang="id" hreflang="id" title="Bahasa Indonesia">ID</a>
   </div>`;
-  return `<header class="hd1001"><div class="hrow">
-  <a class="brand" href="${esc(PF + '/')}"><span class="bx">1001</span>1001startup.id</a>
-  <nav class="hnav" aria-label="Site">
+  /* live: on a phone the header is one row (brand + Menu) and the links open
+     as an in-flow sheet under it — the wrapped three-row header took a third
+     of the first screen. public/js/nav1001.js toggles .mopen. */
+  const mtog = live ? `
+  <button class="mtog" type="button" aria-expanded="false" aria-controls="hnav1001" data-open="${esc(L('Close', 'Tutup'))}" data-shut="Menu"><span class="mtl">Menu</span><span class="mti" aria-hidden="true"></span></button>` : '';
+  return `<header class="hd1001${live ? ' m1' : ''}"><div class="hrow">
+  <a class="brand" href="${esc(PF + '/')}"><span class="bx">1001</span>1001startup.id</a>${mtog}
+  <nav class="hnav"${live ? ' id="hnav1001"' : ''} aria-label="Site">
     ${links}
     ${lsw}
     <!--PX-BADGE-->
@@ -147,6 +180,26 @@ a.di:hover{background:#F6F6F6}
 .dd-p{position:fixed;left:12px;right:12px;top:auto;padding-top:0}
 .dd-i{min-width:0;box-shadow:0 16px 40px rgba(0,0,0,.16)}
 .lsw{margin-left:4px;padding-left:10px}}
+.mtog{display:none}
+@media(max-width:700px){
+.hd1001.m1 .hrow{flex-wrap:wrap;gap:0;padding:12px 16px}
+.hd1001.m1 .mtog{display:flex;align-items:center;gap:9px;margin-left:auto;background:#fff;border:1px solid #000;color:#000;padding:10px 12px;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;cursor:pointer;min-height:40px}
+.hd1001.m1 .mti{width:14px;height:9px;border-top:1.5px solid currentColor;border-bottom:1.5px solid currentColor;position:relative}
+.hd1001.m1 .mti::after{content:'';position:absolute;left:0;right:0;top:3px;border-top:1.5px solid currentColor}
+.hd1001.m1.mopen .mtog{background:#000;color:#fff}
+.hd1001.m1 .hnav{display:none;width:100%;flex-direction:column;align-items:stretch;gap:0;margin:12px 0 0;border-top:1px solid #E7E7E7;font-size:16px}
+.hd1001.m1.mopen .hnav{display:flex}
+.hd1001.m1 .hnav>a,.hd1001.m1 .dd-b{width:100%;padding:14px 2px;border-bottom:1px solid #F1F1F1;color:#000;justify-content:space-between}
+.hd1001.m1 .hnav>a.on,.hd1001.m1 .dd-b.on{box-shadow:inset 3px 0 #E8734B;padding-left:12px}
+.hd1001.m1 .dd{position:static}
+.hd1001.m1 .dd:hover>.dd-p,.hd1001.m1 .dd:focus-within>.dd-p{display:none}
+.hd1001.m1 .dd-p{position:static;padding:0}
+.hd1001.m1 .dd.open>.dd-p{display:block}
+.hd1001.m1 .dd-i{min-width:0;box-shadow:none;border:0;border-bottom:1px solid #F1F1F1;padding:4px 0 8px 12px}
+.hd1001.m1 .di{padding:10px 4px}
+.hd1001.m1 .lsw{margin:14px 0 4px;padding:0;border:0;font-size:12px}
+.hd1001.m1 .hnav>.pxb,.hd1001.m1 .hnav>[class*="px"]{margin:10px 0 6px;align-self:flex-start}
+}
 `;
 
-module.exports = { header, css, NAV };
+module.exports = { header, css, NAV, NAV_LIVE, navNow, censusHref, censusHome };

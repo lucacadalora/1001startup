@@ -680,4 +680,4 @@ function web({ slug, lang = 'en' }) {
   });
 }
 
-module.exports = { page, web };
+module.exports = { page, web, load };

@@ -272,7 +272,7 @@ function sector({ data, key, lang = 'en' }) {
     ? `Sensus mencatat ${fmt(A.n)} startup ${esc(name)} yang beroperasi di Indonesia. Total pendanaan yang diumumkan mencapai ${usdProse(A.funding, 'id')} dari ${fmt(A.fundedN)} perusahaan, dengan perkiraan ${fmt(A.jobs)} lapangan kerja dan output sekitar ${gvaProse(A.gva, 'id')} per tahun (estimasi). Klik perusahaan mana pun untuk profil lengkapnya beserta semua sumbernya.`
     : `The census tracks ${fmt(A.n)} operating ${esc(name)} startups in Indonesia — ${usdProse(A.funding, 'en')} of disclosed funding across ${fmt(A.fundedN)} companies, roughly ${fmt(A.jobs)} jobs (estimated), and ${gvaProse(A.gva, 'en')} a year of output (estimated). Click any company for its full profile and every source behind it.`}</p>
   <div class="cta">
-    <a class="btn primary" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
+    <a class="btn primary" href="${NAV.censusHref(PF)}">${L('The full census', 'Sensus lengkap')}</a>
     <a class="btn" href="${PF}/map">${L('See the map', 'Lihat petanya')}</a>
     <a class="btn" href="${PF}/sector">${L('All sectors', 'Semua sektor')}</a>
   </div>
@@ -356,7 +356,7 @@ function sectorHub({ data, lang = 'en' }) {
   <h1>${esc(h1)}.</h1>
   <p class="sub">${esc(fact)}</p>
   <div class="cta">
-    <a class="btn primary" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
+    <a class="btn primary" href="${NAV.censusHref(PF)}">${L('The full census', 'Sensus lengkap')}</a>
     <a class="btn" href="${PF}/unicorn">${L('Billion-dollar startups', 'Startup unicorn')}</a>
     <a class="btn" href="${PF}/investors">${L('Investors', 'Investor')}</a>
   </div>
@@ -429,8 +429,8 @@ function city({ data, slug, lang = 'en' }) {
       : `. Their output is not estimated yet: the census's anchors are Jakarta's and would overstate it. ${esc(name)} is not on the map yet either.`}`}</p>
   <div class="cta">
     ${mapHref ? `<a class="btn primary" href="${mapHref}">${L('Open the map', 'Buka petanya')}</a>
-    <a class="btn" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>`
-      : `<a class="btn primary" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
+    <a class="btn" href="${NAV.censusHref(PF)}">${L('The full census', 'Sensus lengkap')}</a>`
+      : `<a class="btn primary" href="${NAV.censusHref(PF)}">${L('The full census', 'Sensus lengkap')}</a>
     <a class="btn" href="${PF}/coverage#scope">${L('Where the line is', 'Batas cakupan')}</a>`}
   </div>
 </section>
@@ -519,7 +519,7 @@ function unicorn({ data, lang = 'en' }) {
     ? `Sensus mencatat ${fmt(big.length)} perusahaan dengan valuasi US$1 miliar ke atas — ${fmt(priv.length)} dari putaran pendanaan privat, ${fmt(listed.length)} dari kapitalisasi pasar di bursa, dan ${fmt(est.length)} hasil estimasi. Istilah "unicorn" secara konvensi dipakai untuk perusahaan privat, jadi ketiganya ditampilkan terpisah, bukan dijumlahkan menjadi satu angka.`
     : `The census carries ${fmt(big.length)} companies valued at US$1B or more — ${fmt(priv.length)} from private rounds, ${fmt(listed.length)} from a live market capitalisation, and ${fmt(est.length)} estimated. "Unicorn" conventionally describes a private company, so the three are shown apart rather than added into one headline.`}</p>
   <div class="cta">
-    <a class="btn primary" href="${PF}/#companies">${L('The full census', 'Sensus lengkap')}</a>
+    <a class="btn primary" href="${NAV.censusHref(PF)}">${L('The full census', 'Sensus lengkap')}</a>
     <a class="btn" href="${PF}/coverage#valuation">${L('What the valuation figures contain', 'Isi angka valuasi')}</a>
   </div>
 </section>

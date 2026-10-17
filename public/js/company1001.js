@@ -25,6 +25,11 @@
   /* /id pages fetch the /id fragment and push /id URLs, so the drawer, the
      address bar and a copied link all stay in the reader's language */
   var PFX = location.pathname === '/id' || location.pathname.indexOf('/id/') === 0 ? '/id' : '';
+  /* a table can name its own profile address (the exporter census on
+     1001startup.id lives at /umkm/company/<id>, English only) */
+  var BASE = tbl.getAttribute('data-base');
+  if (BASE) PFX = '';
+  else BASE = '/company/';
   var IDL = document.documentElement.lang === 'id';
   var T = IDL
     ? { prev: '&lsaquo; Sebelumnya', prevA: 'Perusahaan sebelumnya', next: 'Berikutnya &rsaquo;', nextA: 'Perusahaan berikutnya', close: 'Tutup', err: 'Profil ini gagal dimuat. ', open: 'Buka sebagai halaman' }
@@ -117,7 +122,7 @@
     steps();
     closeBtn.focus();
 
-    var url = PFX + '/company/' + encodeURIComponent(id);
+    var url = PFX + BASE + encodeURIComponent(id);
     if (replace || (!first && pushed)) history.replaceState({ cp: id }, '', url);
     else { history.pushState({ cp: id }, '', url); pushed++; }
 

@@ -13,6 +13,13 @@
  */
 const { esc } = require('../lib/util');
 const { V } = require('./html');   // shared cache-buster: /js and /css ship immutable for a year
+/* Since 18 Oct 2026 the same census also renders INSIDE 1001startup.id at
+   /umkm (lib/homelive.js): pass base '/umkm' and the page takes the 1001
+   header, menu and footer, its links live under /umkm, and the isometric map
+   section is left out (1001's only map is the logo map). base '' = the
+   umkm.vantis.sh page exactly as it was. */
+const NAV = require('./nav1001');
+const FOOT = require('./footer1001');
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
 
@@ -98,7 +105,7 @@ const NOTECSS = `
    and tap — same idiom as the census's est/trk marks) */
 const note = (o) => `data-n="${esc(JSON.stringify(o))}"`;
 
-function tierMark(c, TM) {
+function tierMark(c, TM, base = '') {
   const t = TM[c.tier] || {};
   const split = c.tier_src
     ? ' The compiling sweep filed this row as “' + c.tier_src + '”; it is shown here as ' +
@@ -113,26 +120,51 @@ function tierMark(c, TM) {
     m: c.verification,
     l: [
       c.source_url ? { h: c.source_url, t: 'Open the source — ' + srcHost(c.source_url) + ' ↗' } : null,
-      { h: '/company/' + c.id, t: 'Full record for ' + c.name + ' →' },
-      { h: '/#verification', t: 'What the six tiers mean →' },
+      { h: base + '/company/' + c.id, t: 'Full record for ' + c.name + ' →' },
+      { h: (base || '/') + '#verification', t: 'What the six tiers mean →' },
     ].filter(Boolean),
   })} aria-expanded="false" aria-label="${esc((t.label || c.tier) + ' — show what this verification tier means')}">${esc(t.short || c.tier)}</button>`;
 }
 
 /* 33 rows arrived with descriptive text where the source link belongs. Rather
    than let a badge link nowhere, the row carries its own mark saying so. */
-function noSrcMark(c) {
+function noSrcMark(c, base = '') {
   return `<button type="button" class="nosrc" ${note({
     k: 'nosrc',
     t: 'No source link recorded',
     b: 'The research sweep wrote a description of this company where the source URL belongs, so there is no page to open. '
       + 'The text it recorded is kept on the profile, and the row stays in the census marked like this rather than '
       + 'being dressed up with a link that does not exist.',
-    l: [{ h: '/company/' + c.id, t: 'What was recorded for ' + c.name + ' →' }],
+    l: [{ h: base + '/company/' + c.id, t: 'What was recorded for ' + c.name + ' →' }],
   })} aria-expanded="false" aria-label="No source link recorded — show what that means">no link</button>`;
 }
 
-function landing({ data }) {
+/* the umkm.vantis.sh footer's own CSS (the 1001 version uses footer1001.css) */
+const FOOTCSS = `/* footer */
+.ft{border-top:1px solid #E7E7E7;margin-top:64px}
+.ftin{max-width:1180px;margin:0 auto;padding:46px 20px 28px}
+.ftgrid{display:grid;grid-template-columns:1.35fr repeat(3,1fr);gap:36px 28px}
+@media(max-width:1000px){.ftgrid{grid-template-columns:repeat(2,1fr)}.ftbrand{grid-column:1/-1}}
+@media(max-width:520px){.ftgrid{grid-template-columns:1fr}}
+.fbx{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;margin-bottom:14px}
+.fbx i{width:26px;height:26px;border:1.5px solid #000;display:grid;place-items:center;font:600 9px/1 'IBM Plex Mono',monospace;font-style:normal}
+.ftbrand .fth{font-size:20px;font-weight:500;letter-spacing:-0.02em;line-height:1.2;max-width:18ch}
+.ftbrand p{margin-top:10px;color:#8E8E93;font-size:13px;line-height:1.55;max-width:30ch}
+.ftcol h4{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#B4B4B8;margin-bottom:13px;display:flex;align-items:center;gap:7px}
+.ftcol h4::before{content:'';width:5px;height:5px;background:#000;display:inline-block;flex:none}
+.ftcol ul{list-style:none}
+.ftcol li{margin-bottom:8px}
+.ftcol a{text-decoration:none;color:#52525B;font-size:13.5px}
+.ftcol a:hover{color:#000}
+.ftcol .off{color:#B4B4B8;font-size:13.5px}
+.ftcol .off em{font:400 8.5px/1 'IBM Plex Mono',monospace;font-style:normal;text-transform:uppercase;letter-spacing:.06em;border:1px solid #E7E7E7;padding:2px 4px;margin-left:6px;vertical-align:1px}
+.ftmark{display:block;width:100%;height:auto;margin:44px 0 6px}
+.ftlegal{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;border-top:1px solid #E7E7E7;padding-top:18px;font-size:10.5px;line-height:1.6;color:#8E8E93}
+.ftlegal a{color:inherit;text-decoration:none;border-bottom:1px solid #D9D9D9}
+.ftlegal a:hover{color:#000;border-bottom-color:#000}
+`;
+
+function landing({ data, base = '' }) {
   const T = (data && data.totals) || {};
   const companies = (data && data.companies) || [];
   const TM = ((data && data.method) || {}).tier_meta || {};
@@ -155,7 +187,7 @@ function landing({ data }) {
     <tr data-f="${esc([c.name, c.sector, c.industry, c.city || '', c.province || '', c.certs || '']
       .filter(Boolean).join(' ').toLowerCase())}" data-s="${esc(c.sector)}" data-t="${c.tier_rank}" data-p="${esc(c.province || '')}" data-c="${(c.email || c.phone || c.url) ? '1' : ''}" data-id="${esc(c.id)}">
       <td class="rk" data-v="${c.rank}">${c.rank}</td>
-      <td data-v="${esc(c.name.toLowerCase())}">${c.logo ? `<img class="lg" src="${esc(c.logo)}" alt="" loading="lazy" width="18" height="18">` : ''}<a class="cp-link" href="/company/${esc(c.id)}">${esc(c.name)}</a>${tierMark(c, TM)}${c.source_missing ? noSrcMark(c) : ''}</td>
+      <td data-v="${esc(c.name.toLowerCase())}">${c.logo ? `<img class="lg" src="${esc(c.logo)}" alt="" loading="lazy" width="18" height="18">` : ''}<a class="cp-link" href="${base}/company/${esc(c.id)}">${esc(c.name)}</a>${tierMark(c, TM, base)}${c.source_missing ? noSrcMark(c, base) : ''}</td>
       <td class="mu" data-v="${esc(c.sector.toLowerCase())}">${esc(c.sector)}</td>
       <td class="mu" data-v="${esc(locCell(c).toLowerCase())}">${esc(locCell(c) || '—')}</td>
       <td class="pr"><div class="cl">${esc(c.products || '—')}</div></td>
@@ -199,14 +231,17 @@ function landing({ data }) {
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>1001umkm.id — Indonesia's export supplier census</title>
+<title>${base ? "Indonesia's Export Supplier Census — 1001startup.id" : "1001umkm.id — Indonesia's export supplier census"}</title>
 <meta name="description" content="The census of Indonesian exporting UMKM/SMEs: ${fmt(T.exporters)} suppliers across ${T.sectors} product sectors — what they make, the markets they ship to, how each entry was verified, and how to reach them. Built for overseas buyers sourcing from Indonesia.">
 <meta name="robots" content="noindex, nofollow">
-<meta property="og:title" content="1001umkm.id — Indonesia's export supplier census">
+<meta property="og:title" content="${base ? "1001startup.id — Indonesia's export supplier census" : "1001umkm.id — Indonesia's export supplier census"}">${base ? `
+<link rel="canonical" href="https://1001startup.id${base}">` : ''}
 <meta property="og:description" content="${fmt(T.exporters)} verified-source Indonesian exporters — products, markets, verification tiers and direct contact channels.">
 <meta name="theme-color" content="#ffffff">
-<link rel="icon" type="image/png" href="/assets/favicon-umkm.png">
-<link rel="apple-touch-icon" href="/assets/favicon-umkm.png">
+${base ? `<link rel="icon" href="/favicon.ico" sizes="32x32">
+<link rel="icon" type="image/png" href="/assets/favicon-1001-192.png" sizes="192x192">
+<link rel="apple-touch-icon" href="/assets/apple-touch-icon-1001.png">` : `<link rel="icon" type="image/png" href="/assets/favicon-umkm.png">
+<link rel="apple-touch-icon" href="/assets/favicon-umkm.png">`}
 <link rel="preload" href="/assets/fonts/overused-grotesk-vf.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="/assets/fonts/plex-mono-400.woff2" as="font" type="font/woff2" crossorigin>
 <link rel="stylesheet" href="/css/px.css?v=${V}">
@@ -218,8 +253,8 @@ function landing({ data }) {
 body{background:#fff;color:#000;font:500 16px/1.5 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.01em}
 a{color:inherit}
 .mono{font-family:'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em}
-.banner{background:${GRAD};color:#fff;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:center;padding:8px 12px}
-${HEADCSS}
+.banner{background:${GRAD};color:${base ? '#000' : '#fff'};font:400 11px/1${base ? '.35' : ''} 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;text-align:center;padding:8px 12px}
+${base ? NAV.css : HEADCSS}
 .hero{max-width:1180px;margin:0 auto;padding:64px 20px 54px;display:grid;grid-template-columns:1.15fr .85fr;gap:44px;align-items:start}
 @media(max-width:880px){.hero{grid-template-columns:1fr;padding-top:40px}}
 .hero h1{font-size:clamp(40px,5.6vw,72px);line-height:1.02;letter-spacing:-0.03em;font-weight:500}
@@ -354,33 +389,16 @@ ${NOTECSS}
 .dcell p{color:#52525B;font-size:13.5px;line-height:1.55;max-width:72ch}
 .dcell .dmeta{font:400 10px/1.7 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#B4B4B8;text-align:right;white-space:nowrap}
 @media(max-width:720px){.dcell .dmeta{text-align:left}}
-/* footer */
-.ft{border-top:1px solid #E7E7E7;margin-top:64px}
-.ftin{max-width:1180px;margin:0 auto;padding:46px 20px 28px}
-.ftgrid{display:grid;grid-template-columns:1.35fr repeat(3,1fr);gap:36px 28px}
-@media(max-width:1000px){.ftgrid{grid-template-columns:repeat(2,1fr)}.ftbrand{grid-column:1/-1}}
-@media(max-width:520px){.ftgrid{grid-template-columns:1fr}}
-.fbx{display:inline-flex;align-items:center;gap:10px;font-weight:600;text-decoration:none;margin-bottom:14px}
-.fbx i{width:26px;height:26px;border:1.5px solid #000;display:grid;place-items:center;font:600 9px/1 'IBM Plex Mono',monospace;font-style:normal}
-.ftbrand .fth{font-size:20px;font-weight:500;letter-spacing:-0.02em;line-height:1.2;max-width:18ch}
-.ftbrand p{margin-top:10px;color:#8E8E93;font-size:13px;line-height:1.55;max-width:30ch}
-.ftcol h4{font:400 10px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.08em;color:#B4B4B8;margin-bottom:13px;display:flex;align-items:center;gap:7px}
-.ftcol h4::before{content:'';width:5px;height:5px;background:#000;display:inline-block;flex:none}
-.ftcol ul{list-style:none}
-.ftcol li{margin-bottom:8px}
-.ftcol a{text-decoration:none;color:#52525B;font-size:13.5px}
-.ftcol a:hover{color:#000}
-.ftcol .off{color:#B4B4B8;font-size:13.5px}
-.ftcol .off em{font:400 8.5px/1 'IBM Plex Mono',monospace;font-style:normal;text-transform:uppercase;letter-spacing:.06em;border:1px solid #E7E7E7;padding:2px 4px;margin-left:6px;vertical-align:1px}
-.ftmark{display:block;width:100%;height:auto;margin:44px 0 6px}
-.ftlegal{display:flex;gap:16px;flex-wrap:wrap;justify-content:space-between;border-top:1px solid #E7E7E7;padding-top:18px;font-size:10.5px;line-height:1.6;color:#8E8E93}
-.ftlegal a{color:inherit;text-decoration:none;border-bottom:1px solid #D9D9D9}
-.ftlegal a:hover{color:#000;border-bottom-color:#000}
-</style>
+${base ? FOOT.css + `
+/* phone fixes for the 1001 version: the coverage bars' minimum width and long
+   exporter names in the drawer's comparable list pushed a 360 px screen sideways */
+@media(max-width:420px){.covtbl .cbar{min-width:56px}}
+.cp-sibs{grid-template-columns:minmax(0,1fr)}.cp-sib{min-width:0}.cp-sibn{min-width:0}.cp-sibr{flex:none;white-space:nowrap}
+` : FOOTCSS}</style>
 </head>
 <body>
 <div class="banner">WORKING DRAFT · PUBLIC SOURCES ONLY · EVERY ROW LINKS TO THE SOURCE IT WAS COMPILED FROM</div>
-${header('')}
+${base ? NAV.header('', { lang: 'en', path: base, translated: false }) : header('')}
 <section class="hero">
   <h1>Indonesia's export supplier census.</h1>
   <div>
@@ -390,7 +408,7 @@ ${header('')}
     overseas buyers sourcing from Indonesia.</p>
     <div class="cta">
       <a class="btn primary" href="#exporters">Browse the exporters</a>
-      <a class="btn" href="/map">See them on the map</a>
+      ${base ? '' : '<a class="btn" href="/map">See them on the map</a>'}
       <a class="btn" href="#verification">How rows are verified</a>
     </div>
   </div>
@@ -427,7 +445,7 @@ ${header('')}
     </div>
     <div class="rowhint mono">Click any exporter for its full profile — products, markets, trade terms, contact channels and the source behind the row. Hover a verification badge for what it means.</div>
   </div>
-  <div class="tablewrap"><table id="tbl">
+  <div class="tablewrap"><table id="tbl"${base ? ` data-base="${base}/company/"` : ''}>
     <thead><tr>${[
       ['#', 'num', 'rk', 1], ['Exporter', 'txt', '', 1], ['Sector', 'txt', 'mu', 1], ['Location', 'txt', 'mu', 1],
       ['Products', '', '', 0], ['Export markets', '', '', 0], ['Contact', 'num', 'ct', 1],
@@ -446,7 +464,7 @@ ${header('')}
   </ul>
 </section>
 
-<section class="wrap" id="map">
+${base ? '' : `<section class="wrap" id="map">
   <div class="eyebrow"><span class="sq"></span>THE MAP</div>
   <h2 class="h2">Every exporter, across the whole archipelago.</h2>
   <p class="lede">${fmt(T.mapped)} of ${fmt(T.exporters)} exporters plotted at their recorded city, on one
@@ -463,7 +481,7 @@ ${header('')}
     <iframe class="mapframe" src="/map?embed=1" title="The export map" loading="lazy"></iframe>
     <a class="mapshield" id="mapshield" href="/map"><span>Click to explore the live map</span></a>
   </div>
-</section>
+</section>`}
 
 <section class="wrap" id="sectors">
   <div class="eyebrow"><span class="sq"></span>THE SECTORS</div>
@@ -539,7 +557,10 @@ ${header('')}
   <div class="nl" hidden></div>
 </div>
 
-<footer class="ft">
+${base ? FOOT.footer({ lang: 'en',
+    tagline: 'Indonesia’s company data, from public sources.',
+    legalLeft: 'the census of Indonesian exporting SMEs',
+    legalRight: `<a href="/stats">Live traffic</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>Cookies</a> · Sources: InaExport (Kemendag) · TEI / IFEX · public reporting · updated ${esc(((data && data.generated) || '').slice(0, 10))}` }) : `<footer class="ft">
   <div class="ftin">
     <div class="ftgrid">
       <div class="ftbrand">
@@ -577,8 +598,9 @@ ${header('')}
       <span><a href="https://vantis.sh/cookies/" data-vs-reopen>Cookies</a> · Sources: InaExport (Kemendag) · TEI / IFEX · public reporting · updated ${esc(((data && data.generated) || '').slice(0, 10))}</span>
     </div>
   </div>
-</footer>
-<script src="/js/umkm.js?v=${V}" defer></script>
+</footer>`}
+${base ? `<script src="/js/nav1001.js?v=${V}" defer></script>
+` : ''}<script src="/js/umkm.js?v=${V}" defer></script>
 <script src="/js/company1001.js?v=${V}" defer></script>
 <script src="/js/px.js?v=${V}" defer></script>
 <script src="/assets/js/consent.js?v=${V}" defer></script>

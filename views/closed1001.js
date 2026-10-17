@@ -395,7 +395,7 @@ ${NAV.header('census', { lang, path })}
   ${srcs ? `<h2>${L('Where it is written down', 'Di mana tertulis')}</h2><ul class="srcl">${srcs}</ul>` : ''}
   <div class="cta">
     <a class="btn primary" href="${PF}/closed#register">${L(`All ${n} companies that stopped`, `Semua ${n} perusahaan yang berhenti`)}</a>
-    <a class="btn" href="${PF}/">${L('The living census', 'Sensus yang masih hidup')}</a>
+    <a class="btn" href="${NAV.censusHome(PF)}">${L('The living census', 'Sensus yang masih hidup')}</a>
   </div>
 </main>
 <footer>
