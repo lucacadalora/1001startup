@@ -836,6 +836,18 @@ fastify.get('/bumn', async (req, reply) => {
   if (!html) return reply.code(503).type('text/plain').send('The BUMN data is being rebuilt. Try again in a minute.');
   reply.type('text/html').send(html);
 });
+/* /bumn/<slug> — one BUMN's group map: revenue by business as a Sankey, then the companies in
+   each business (views/bumnsankey1001.js, data/bumn-sankey.json). A 404 while data/bumnsankey.live
+   is absent (BUMNSANKEY_PREVIEW=1 on a test port); /bumn/ alone goes back to /bumn. */
+const bumnsankey1001 = require('./views/bumnsankey1001');
+fastify.get('/bumn/:slug', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const slug = String((req.params && req.params.slug) || '');
+  if (!slug) return reply.code(301).header('location', '/bumn').send();
+  const html = bumnsankey1001.page({ slug, lang: 'en' });
+  if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  reply.type('text/html').send(html);
+});
 /* /data-center — who powers Indonesia's data centres: the power matrix, every project
    with its power source and named vendors, and one company web per data-centre group
    (views/datacenter1001.js; data/datacenter.json + data/dc-webs/ from scripts/dc-build.py,

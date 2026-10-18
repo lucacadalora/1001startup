@@ -18,6 +18,10 @@ const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
 const { shell } = require('./browse1001');
 const { liveFlag } = require('../lib/flaglive');
+/* Group maps (Luca, 18 Oct 2026: a Sankey per BUMN, revenue by business out to its companies):
+   views/bumnsankey1001.js serves /bumn/<slug>; while data/bumnsankey.live exists (BUMNSANKEY_PREVIEW=1)
+   the cards link to it through the #bm-maps block. Without the switch the page is unchanged. */
+const sankey = require('./bumnsankey1001');
 
 const FILE = path.join(__dirname, '..', 'data', 'bumn.json');
 /* The 56-company version (Luca, 18 Oct 2026: add the 14 BUMN Danantara lists that the page lacked):
@@ -76,6 +80,7 @@ function page({ lang = 'en' }) {
   const S = subsLive() ? loadSubs() : null;
   const T = tiesLive() ? loadTies() : null;
   const TJ = T ? { types: T.types, groups: T.groups } : null;
+  const MAPS = sankey.slugs();
   const p = '/bumn';
   if (!D) return null;
   const n = D.entities.length;
@@ -196,6 +201,9 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
 .bm-tie .m a{color:#2A6E9F;text-decoration:none;border-bottom:1px solid #D9E3EC}
 .bm-card .ties .more{all:unset;cursor:pointer;font:400 11px/1.3 'IBM Plex Mono',monospace;color:#2A6E9F;margin-top:7px;display:inline-block}
 .bm-card .ties .more:focus-visible{outline:2px solid #000}
+` : ''}${MAPS.length ? `.bm-card .gm{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:0 0 10px;padding:9px 10px;border:1px solid #000;font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#000;text-decoration:none}
+.bm-card .gm:hover{background:#000;color:#fff}
+.bm-card .gm:focus-visible{outline:2px solid #000;outline-offset:2px}
 ` : ''}@media(max-width:760px){
   .bm-q{font-size:9.5px;max-width:40%}
   #bm-presets,#bm-clusters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-20px;padding-inline:20px}
@@ -251,7 +259,7 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
   <details class="bm-m"><summary>Method, data dates and limits</summary>${method}</details>
 </section>
 <script type="application/json" id="bm-data">${JSON.stringify(D).replace(/</g, '\\u003c')}</script>
-${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}${TJ ? `<script type="application/json" id="bm-ties">${JSON.stringify(TJ).replace(/</g, '\\u003c')}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
+${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}${TJ ? `<script type="application/json" id="bm-ties">${JSON.stringify(TJ).replace(/</g, '\\u003c')}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-maps">${JSON.stringify(MAPS)}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
   const crumb = [{ name: '1001startup.id', path: '/' }, { name: 'BUMN', path: p }];
   const ld = {
     '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on ten yardsticks',

@@ -27,6 +27,8 @@
 
   /* subsidiaries for the card: the #bm-subs block, present only while the page's switch is on */
   var SUBS = (function () { var n = document.getElementById('bm-subs'); if (!n) return null; try { return JSON.parse(n.textContent); } catch (err) { return null; } })();
+  /* group maps: the #bm-maps block lists the companies with a /bumn/<slug> page, present only while that switch is on */
+  var MAPS = (function () { var n = document.getElementById('bm-maps'); if (!n) return []; try { return JSON.parse(n.textContent); } catch (err) { return []; } })();
   var ST = { active: 'active', not_yet_operating: 'not yet operating', unknown: 'status not stated', dormant: 'dormant', liquidation: 'in liquidation', merged: 'merged', divested: 'sold' };
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   function day(iso) { var m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(iso || ''); return m ? (m[3] ? Number(m[3]) + ' ' : '') + MON[Number(m[2]) - 1] + ' ' + m[1] : (iso || ''); }
@@ -286,6 +288,7 @@
     var hd = el('div', { class: 'hd' }, el('img', { src: e.logo, alt: '' }), el('div', null, el('div', { class: 'nm', text: e.name }), el('div', { class: 'cl', text: e.sector })));
     if (pin) hd.append(el('button', { class: 'x', type: 'button', 'aria-label': 'Close', text: '×', onclick: function (ev) { ev.stopPropagation(); state.pinned = null; hide(); } }));
     card.append(hd);
+    if (MAPS.indexOf(e.slug) >= 0) card.append(el('a', { class: 'gm', href: '/bumn/' + encodeURIComponent(e.slug) }, el('span', { text: 'Group map: money by business, every company' }), el('span', { 'aria-hidden': 'true', text: '→' })));
     ORDER.forEach(function (k) {
       var v = e.scores[k];
       card.append(el('div', { class: 'bm-sr' }, el('span', { class: 'k', text: DIMS[k].label }),
