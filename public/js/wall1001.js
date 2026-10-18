@@ -8,7 +8,7 @@
  *
  * The clock counts seconds while the tab is on screen, across pages, in
  * localStorage, and never resets (Luca's call 3). When it reaches the limit
- * (120 s, call 1) the page blurs and a sign-in card covers it at once (call 2),
+ * (45 s, was 120 s) the page blurs and a sign-in card covers it at once (call 2),
  * with no close button. The card holds /signin?embed=1 in a same-origin frame,
  * so Clerk runs only there and every other page keeps its strict CSP. When the
  * frame says the reader is signed in, the wall lifts in place, no reload.
@@ -29,7 +29,7 @@
     if (d.off === '1') return;
   }
 
-  var LIMIT = Math.max(1, parseInt(d.limit, 10) || 120);
+  var LIMIT = Math.max(1, parseInt(d.limit, 10) || 45);
   var TEST = d.test === '1';
   var LANG = d.lang === 'id' ? 'id' : 'en';
   var PF = LANG === 'id' ? '/id' : '';
