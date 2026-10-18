@@ -41,6 +41,46 @@ function slugs() {
   const D = load();
   return D ? Object.keys(D.groups) : [];
 }
+/* a small version of each map for the /bumn card, drawn by public/js/bumn1001.js (Luca, 18 Oct 2026:
+   "when clicking the company, make a mini sankey so people noticing, i even need 2 minutes to figure
+   out the link"). Money maps: the first lens's businesses in their own order; counts maps: the
+   branches. Five rows at most: past five, the four biggest stay and the rest are lumped into one.
+   Each row is [label, size, kind, figure]; kind c = core business or active branch, o = other
+   business, x = branch not running, m = the lumped rest. */
+function minis() {
+  if (!live()) return {};
+  const D = load();
+  if (!D) return {};
+  const out = {};
+  Object.entries(D.groups).forEach(([slug, G]) => { const m = mini(G); if (m) out[slug] = m; });
+  return out;
+}
+function mini(G) {
+  const TOP = 4;
+  const keep = (rows, more) => {
+    if (rows.length <= TOP + 1) return rows;
+    const big = new Set(rows.slice().sort((a, b) => b[1] - a[1]).slice(0, TOP));
+    const rest = rows.filter((r) => !big.has(r));
+    return rows.filter((r) => big.has(r)).concat([more(rest)]);
+  };
+  if (G.basis === 'segments' && G.segments && G.measures) {
+    const lens = Object.keys(G.measures)[0];
+    const { M, segs } = lensOf(G, lens);
+    const t = base(M);
+    const rows = segs.filter((b) => b.v > 0).map((b) => [b.extra ? 'Not in a segment' : b.s.plain || b.s.name, b.v, b.s.core ? 'c' : 'o', pc(b.v, t)]);
+    if (!rows.length) return null;
+    const word = G.seg_word ? G.seg_word.replace(/y$/, 'ie') + 's' : 'businesses';
+    return { k: 's', h: `${M.short || M.label}, ${G.period}`, tot: money(G, M.total),
+      r: keep(rows, (rest) => { const v = rest.reduce((a, r) => a + r[1], 0); return [`${rest.length} more ${word}`, v, 'm', pc(v, t)]; }) };
+  }
+  if (G.tops && G.tops.length) {
+    const rows = G.tops.map((x) => [x.name, x.n, ST[x.status] ? 'x' : 'c', String(x.n)]);
+    const all = G.tops.reduce((a, x) => a + x.n, 0);
+    return { k: 'c', h: 'Companies per branch', tot: `${all} ${all === 1 ? 'company' : 'companies'}`,
+      r: keep(rows, (rest) => { const v = rest.reduce((a, r) => a + r[1], 0); return [`${rest.length} more branches`, v, 'm', String(v)]; }) };
+  }
+  return null;
+}
 
 const KIND = {
   priority: { label: 'National programme', c: '#eb6834' },
@@ -901,4 +941,4 @@ function page({ slug, lang = 'en' }) {
   });
 }
 
-module.exports = { page, slugs, load, live };
+module.exports = { page, slugs, minis, load, live };

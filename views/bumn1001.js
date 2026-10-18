@@ -81,6 +81,7 @@ function page({ lang = 'en' }) {
   const T = tiesLive() ? loadTies() : null;
   const TJ = T ? { types: T.types, groups: T.groups } : null;
   const MAPS = sankey.slugs();
+  const MINIS = MAPS.length ? sankey.minis() : {};
   const p = '/bumn';
   if (!D) return null;
   const n = D.entities.length;
@@ -211,9 +212,21 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
 .bm-tie .m a{color:#2A6E9F;text-decoration:none;border-bottom:1px solid #D9E3EC}
 .bm-card .ties .more{all:unset;cursor:pointer;font:400 11px/1.3 'IBM Plex Mono',monospace;color:#2A6E9F;margin-top:7px;display:inline-block}
 .bm-card .ties .more:focus-visible{outline:2px solid #000}
-` : ''}${MAPS.length ? `.bm-card .gm{display:flex;justify-content:space-between;gap:8px;align-items:center;margin:0 0 10px;padding:9px 10px;border:1px solid #000;font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#000;text-decoration:none}
-.bm-card .gm:hover{background:#000;color:#fff}
+` : ''}${MAPS.length ? `.bm-card .gm{display:block;margin:0 0 12px;border:1px solid #000;color:#000;text-decoration:none;background:#fff}
 .bm-card .gm:focus-visible{outline:2px solid #000;outline-offset:2px}
+.bm-card .gm-h{display:flex;justify-content:space-between;align-items:baseline;gap:8px;padding:8px 10px 0;font:400 10px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#6B6B73}
+.bm-card .gm-h b{font:600 13px/1.2 'Overused Grotesk',system-ui,sans-serif;letter-spacing:0;text-transform:none;color:#000;white-space:nowrap}
+.bm-card .gm-m{position:relative;display:block;margin:8px 10px 10px}
+.bm-card .gm-m svg{position:absolute;left:0;top:0;overflow:visible}
+.bm-card .gm-m .bd{transition:fill .15s}
+.bm-card .gm-r{position:absolute;right:0;display:flex;flex-direction:column;justify-content:center;height:28px;white-space:nowrap}
+.bm-card .gm-r .n{overflow:hidden;text-overflow:ellipsis;font:500 12px/15px 'Overused Grotesk',system-ui,sans-serif}
+.bm-card .gm-r .f{font:400 10px/13px 'IBM Plex Mono',monospace;color:#6B6B73}
+.bm-card .gm-r.x .n,.bm-card .gm-r.m .n{color:#6B6B73;font-weight:400}
+.bm-card .gm-go{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:9px 10px;background:#000;color:#fff;font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase}
+.bm-card .gm:hover .gm-go{background:#2A2A2E}
+.bm-card .gm:hover .gm-m .bd.c{fill:#B4B4AB}
+.bm-card .gm:hover .gm-m .bd.o{fill:#DCDCD5}
 ` : ''}@media(max-width:760px){
   .bm-q{font-size:9.5px;max-width:40%}
   #bm-presets,#bm-clusters{flex-wrap:nowrap;overflow-x:auto;scrollbar-width:none;margin-inline:-20px;padding-inline:20px}
@@ -271,7 +284,7 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
   <details class="bm-m"><summary>Method, data dates and limits</summary>${method}</details>
 </section>
 <script type="application/json" id="bm-data">${JSON.stringify(D).replace(/</g, '\\u003c')}</script>
-${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}${TJ ? `<script type="application/json" id="bm-ties">${JSON.stringify(TJ).replace(/</g, '\\u003c')}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-maps">${JSON.stringify(MAPS)}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
+${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}${TJ ? `<script type="application/json" id="bm-ties">${JSON.stringify(TJ).replace(/</g, '\\u003c')}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-maps">${JSON.stringify(MAPS)}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-minis">${JSON.stringify(MINIS).replace(/</g, '\\u003c')}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
   const crumb = [{ name: '1001startup.id', path: '/' }, { name: 'BUMN', path: p }];
   const ld = {
     '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on ten yardsticks',

@@ -29,6 +29,37 @@
   var SUBS = (function () { var n = document.getElementById('bm-subs'); if (!n) return null; try { return JSON.parse(n.textContent); } catch (err) { return null; } })();
   /* group maps: the #bm-maps block lists the companies with a /bumn/<slug> page, present only while that switch is on */
   var MAPS = (function () { var n = document.getElementById('bm-maps'); if (!n) return []; try { return JSON.parse(n.textContent); } catch (err) { return []; } })();
+  /* the small map for each card (#bm-minis, views/bumnsankey1001.js minis()): the group's bar on the left, one band per
+     business (or branch) to its own bar on the right, the label beside it; the whole block links to the full map */
+  var MINI = (function () { var n = document.getElementById('bm-minis'); if (!n) return {}; try { return JSON.parse(n.textContent); } catch (err) { return {}; } })();
+  function miniMap(e, m) {
+    var W = 64, bw = 6, SLOT = 30, GAP = 2, LH = Math.min(84, 22 * m.r.length + 10);   /* one or two rows get a thinner bar */
+    var tot = m.r.reduce(function (a, r) { return a + r[1]; }, 0) || 1;
+    var rows = [], y = 0, sum = 0;
+    m.r.forEach(function (r) {
+      var h = Math.max(2, r[1] / tot * LH), slot = Math.max(SLOT, h + 4);
+      rows.push({ r: r, h: h, mid: y + slot / 2 }); y += slot + GAP; sum += h;
+    });
+    var H = Math.max(y - GAP, sum), yL = (H - sum) / 2, a = yL, cx = W / 2, f = function (v) { return Math.round(v * 10) / 10; };
+    var svg = '<rect x="0" y="' + f(yL) + '" width="' + bw + '" height="' + f(sum) + '" fill="#0B0B0C"/>';
+    var box = el('span', { class: 'gm-m', style: 'height:' + Math.ceil(H) + 'px' });
+    rows.forEach(function (o) {
+      var a1 = a + o.h, b0 = o.mid - o.h / 2, b1 = o.mid + o.h / 2, k = o.r[2];
+      svg += '<path class="bd ' + (k === 'c' ? 'c' : 'o') + '" fill="' + (k === 'c' ? '#C9C9C1' : '#ECECE7') + '" d="M' + bw + ' ' + f(a) + 'C' + cx + ' ' + f(a) + ' ' + cx + ' ' + f(b0) + ' ' + (W - bw) + ' ' + f(b0) +
+        'L' + (W - bw) + ' ' + f(b1) + 'C' + cx + ' ' + f(b1) + ' ' + cx + ' ' + f(a1) + ' ' + bw + ' ' + f(a1) + 'Z"/>' +
+        '<rect x="' + (W - bw) + '" y="' + f(b0) + '" width="' + bw + '" height="' + f(o.h) + '" fill="' + (k === 'x' || k === 'm' ? '#9A9AA0' : '#0B0B0C') + '"/>';
+      box.append(el('span', { class: 'gm-r ' + k, title: o.r[0], style: 'left:' + (W + 8) + 'px;top:' + f(o.mid - 14) + 'px' }, el('span', { class: 'n', text: o.r[0] }),
+        el('span', { class: 'f', text: m.k === 'c' ? o.r[3] + (o.r[1] === 1 ? ' company' : ' companies') : o.r[3] })));
+      a = a1;
+    });
+    var pic = el('span', { 'aria-hidden': 'true' });
+    pic.innerHTML = '<svg width="' + W + '" height="' + Math.ceil(H) + '" viewBox="0 0 ' + W + ' ' + Math.ceil(H) + '">' + svg + '</svg>';
+    box.prepend(pic);
+    return el('a', { class: 'gm', href: '/bumn/' + encodeURIComponent(e.slug) },
+      el('span', { class: 'gm-h' }, el('span', { text: m.h }), el('b', { text: m.tot })),
+      box,
+      el('span', { class: 'gm-go' }, el('span', { text: m.k === 'c' ? 'Group map: every company in the group' : 'Group map: every business, every company' }), el('span', { 'aria-hidden': 'true', text: '→' })));
+  }
   var ST = { active: 'active', not_yet_operating: 'not yet operating', unknown: 'status not stated', dormant: 'dormant', liquidation: 'in liquidation', merged: 'merged', divested: 'sold' };
   var MON = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
   function day(iso) { var m = /^(\d{4})-(\d{2})(?:-(\d{2}))?/.exec(iso || ''); return m ? (m[3] ? Number(m[3]) + ' ' : '') + MON[Number(m[2]) - 1] + ' ' + m[1] : (iso || ''); }
@@ -288,7 +319,8 @@
     var hd = el('div', { class: 'hd' }, el('img', { src: e.logo, alt: '' }), el('div', null, el('div', { class: 'nm', text: e.name }), el('div', { class: 'cl', text: e.sector })));
     if (pin) hd.append(el('button', { class: 'x', type: 'button', 'aria-label': 'Close', text: '×', onclick: function (ev) { ev.stopPropagation(); state.pinned = null; hide(); } }));
     card.append(hd);
-    if (MAPS.indexOf(e.slug) >= 0) card.append(el('a', { class: 'gm', href: '/bumn/' + encodeURIComponent(e.slug) }, el('span', { text: 'Group map: money by business, every company' }), el('span', { 'aria-hidden': 'true', text: '→' })));
+    if (MINI[e.slug]) card.append(miniMap(e, MINI[e.slug]));
+    else if (MAPS.indexOf(e.slug) >= 0) card.append(el('a', { class: 'gm', href: '/bumn/' + encodeURIComponent(e.slug) }, el('span', { class: 'gm-go' }, el('span', { text: 'Group map: money by business, every company' }), el('span', { 'aria-hidden': 'true', text: '→' }))));
     ORDER.forEach(function (k) {
       var v = e.scores[k];
       card.append(el('div', { class: 'bm-sr' }, el('span', { class: 'k', text: DIMS[k].label }),
