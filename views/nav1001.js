@@ -40,7 +40,7 @@ const NAV = [
   {
     key: 'census', label: 'Census', id: 'Sensus', items: [
       { label: 'Sectors', id: 'Sektor', desc: 'The census grouped by what companies build', id_desc: 'Sensus dikelompokkan menurut apa yang dibangun tiap perusahaan', href: '/sector' },
-      { label: 'State companies (BUMN)', id: 'BUMN', desc: '42 BUMN on six yardsticks, as a logo quadrant', id_desc: '42 BUMN pada enam tolok ukur, dalam kuadran logo', href: '/bumn' },
+      { label: 'State companies (BUMN)', id: 'BUMN', desc: 'State companies on ten yardsticks, as a logo quadrant', id_desc: 'BUMN pada sepuluh tolok ukur, dalam kuadran logo', href: '/bumn' },
       { label: 'Data centres', id: 'Pusat data', desc: 'Who powers them, and the companies that own and build them', id_desc: 'Siapa yang memasok listriknya, dan perusahaan di baliknya', href: '/data-center' },
       { label: 'The monthly report', id: 'Laporan bulanan', desc: 'Four findings from the census, figures frozen', id_desc: 'Empat temuan dari sensus, angkanya dibekukan', href: '/report' },
       { label: 'Billion-dollar startups', id: 'Startup unicorn', desc: 'Every census company valued at US$1B or more', id_desc: 'Perusahaan sensus bervaluasi US$1 miliar ke atas', href: '/unicorn' },
@@ -76,7 +76,7 @@ const NAV = [
 const DATASETS = {
   key: 'datasets', label: 'Datasets', id: 'Dataset', items: [
     { label: 'Startups', id: 'Startup', desc: 'The startup census: funding, investors, headcount and offices', id_desc: 'Sensus startup: pendanaan, investor, jumlah pekerja, dan kantor', href: '/startups' },
-    { label: 'State companies (BUMN)', id: 'BUMN', desc: '42 BUMN on ten yardsticks, as a logo quadrant', id_desc: '42 BUMN pada sepuluh tolok ukur, dalam kuadran logo', href: '/bumn' },
+    { label: 'State companies (BUMN)', id: 'BUMN', desc: 'State companies on ten yardsticks, as a logo quadrant', id_desc: 'BUMN pada sepuluh tolok ukur, dalam kuadran logo', href: '/bumn' },
     { label: 'Data centres', id: 'Pusat data', desc: 'Who powers them, and the companies that own and build them', id_desc: 'Siapa yang memasok listriknya, dan perusahaan di baliknya', href: '/data-center' },
     { label: 'Exporters (UMKM)', id: 'Eksportir (UMKM)', desc: 'Exporting SMEs: what they make, where they ship, how each was verified', id_desc: 'UMKM eksportir: produknya, pasar tujuannya, dan cara tiap baris diverifikasi', href: '/umkm' },
   ],

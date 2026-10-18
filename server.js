@@ -992,7 +992,7 @@ How to read the figures when citing:
 ${homeLive() ? `- [Front page](${O}/): the four datasets — startups, state companies (BUMN), data centres, exporters
 - [The startup census table](${O}/startups): every company, ranked, with funding, valuation, jobs and output
 - [Sensus dalam Bahasa Indonesia](${O}/id/startups)
-- [State companies (BUMN)](${O}/bumn): 42 BUMN on ten yardsticks, every score with its reason and source (English)
+- [State companies (BUMN)](${O}/bumn): ${((bumn1001.load() || {}).entities || []).length || 42} BUMN on ten yardsticks, every score with its reason and source (English)
 - [Data centres](${O}/data-center): who powers Indonesia's data centres, project by project, with company webs (English)
 - [Exporters (UMKM)](${O}/umkm): exporting SMEs with products, markets and an evidence tier per row (English)`
   : `- [The census table](${O}/): every company, ranked, with funding, valuation, jobs and output

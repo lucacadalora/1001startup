@@ -19,6 +19,8 @@
     return n;
   }
   var fmt = function (v, d) { return v == null ? '—' : Number(v).toFixed(d == null ? 1 : d); };
+  /* money in IDR trillion: under 1 trillion needs two decimals, or a Rp47 bn loss reads as -0.0 */
+  var dp = function (v) { var x = Math.abs(v); return x >= 100 ? 0 : x >= 1 ? 1 : 2; };
   var host = function (u) { try { return new URL(u).hostname.replace(/^www\./, ''); } catch (e) { return ''; } };
   var rk = function (e, k) { return e.ranks[k] ? '#' + e.ranks[k] + (e.tied && e.tied[k] ? '=' : '') : ''; };
   var state = { x: PRESETS[0].x, y: PRESETS[0].y, preset: 0, cluster: 'all', pinned: null };
@@ -274,7 +276,7 @@
   function fig(k, f, why) {
     var c = el('div', { class: 'fig' }, el('div', { class: 'k', text: k }));
     if (f && f.v != null) {
-      c.append(el('div', { class: 'v' }, f.url ? el('a', { href: f.url, target: '_blank', rel: 'noopener', title: host(f.url), text: fmt(f.v, Math.abs(f.v) >= 100 ? 0 : 1) }) : fmt(f.v)));
+      c.append(el('div', { class: 'v' }, f.url ? el('a', { href: f.url, target: '_blank', rel: 'noopener', title: host(f.url), text: fmt(f.v, dp(f.v)) }) : fmt(f.v)));
       c.append(el('div', { class: 'p', text: f.period || '' }));
     } else c.append(el('div', { class: 'v', title: why || 'No public figure found', text: '—' }));
     return c;
@@ -349,7 +351,7 @@
       ['total_assets', 'revenue', 'net_profit'].forEach(function (k) {
         var f = (e.fin || {})[k];
         var yr = f && f.period && !/202[4-9]/.test(f.period) ? (f.period.match(/20\d\d/) || [''])[0] : '';
-        if (f && f.v != null) tr.append(el('td', { class: 'n', title: f.period || '' }, f.url ? el('a', { href: f.url, target: '_blank', rel: 'noopener', title: (f.period || '') + ' · ' + host(f.url), text: fmt(f.v, Math.abs(f.v) >= 100 ? 0 : 1) }) : fmt(f.v),
+        if (f && f.v != null) tr.append(el('td', { class: 'n', title: f.period || '' }, f.url ? el('a', { href: f.url, target: '_blank', rel: 'noopener', title: (f.period || '') + ' · ' + host(f.url), text: fmt(f.v, dp(f.v)) }) : fmt(f.v),
           yr ? el('span', { class: 'r', text: yr }) : null));
         else tr.append(el('td', { class: 'dash', title: 'No public figure found', text: '—' }));
       });

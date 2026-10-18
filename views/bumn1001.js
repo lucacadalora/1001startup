@@ -20,11 +20,17 @@ const { shell } = require('./browse1001');
 const { liveFlag } = require('../lib/flaglive');
 
 const FILE = path.join(__dirname, '..', 'data', 'bumn.json');
-let cache = { mtime: 0, data: null };
+/* The 56-company version (Luca, 18 Oct 2026: add the 14 BUMN Danantara lists that the page lacked):
+   data/bumn-56.json, served instead of data/bumn.json while data/bumn56.live exists
+   (BUMN56_PREVIEW=1 on a test port); remove the file and the 42-company page is back within 10 s. */
+const FILE56 = path.join(__dirname, '..', 'data', 'bumn-56.json');
+const all56 = liveFlag('bumn56.live', 'BUMN56_PREVIEW');
+let cache = { file: '', mtime: 0, data: null };
 function load() {
+  const file = all56() && fs.existsSync(FILE56) ? FILE56 : FILE;
   try {
-    const st = fs.statSync(FILE);
-    if (st.mtimeMs !== cache.mtime) cache = { mtime: st.mtimeMs, data: JSON.parse(fs.readFileSync(FILE, 'utf8')) };
+    const st = fs.statSync(file);
+    if (file !== cache.file || st.mtimeMs !== cache.mtime) cache = { file, mtime: st.mtimeMs, data: JSON.parse(fs.readFileSync(file, 'utf8')) };
   } catch (e) { /* keep the last good copy */ }
   return cache.data;
 }
