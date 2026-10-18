@@ -179,7 +179,7 @@ fastify.addHook('onRequest', async (req, reply) => {
 const ID_READY = new Set(['/', '/startups', '/closed', '/map', '/company/:id', '/jakarta',
   '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
   '/investors', '/investor/:slug', '/stats', '/about', '/report', '/report/:edition', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
-  '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask']);
+  '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask', '/signin']);
 fastify.addHook('preHandler', (req, reply, done) => {
   if (req.raw && req.raw.lang1001 === 'id') {
     const route = req.routeOptions && req.routeOptions.url;
@@ -1518,6 +1518,11 @@ fastify.delete('/api/admin/merchants/:id', async (req, reply) => {
    another session edits this repo concurrently and a small surface is the
    point. Routes inside are all is1001-gated. */
 const leads = require('./lib/leads-routes')(fastify, { db, is1001, PROD, ipOf, langOf });
+
+/* ── 1001startup.id: reader accounts (/signin) ───────────────────────── */
+/* Login wall slice 1 (Luca, 18 Oct 2026): email + 6-digit code, 30-day
+   session. Same one-line pattern; nobody is forced to sign in yet. */
+const accounts = require('./lib/account1001')(fastify, { db, is1001, PROD, ipOf, langOf });
 
 /* ── 1001startup.id: the census read API (/api/census/*) ─────────────── */
 /* Same one-line pattern. Read-only over the public layer. Built for the census

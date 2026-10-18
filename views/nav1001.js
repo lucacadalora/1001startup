@@ -138,6 +138,7 @@ function header(active, opts) {
   <nav class="hnav"${live ? ' id="hnav1001"' : ''} aria-label="Site">
     ${links}
     ${lsw}
+    <!--ACCT1001-->
     <!--PX-BADGE-->
   </nav>
 </div></header>`;
@@ -175,6 +176,11 @@ a.di:hover{background:#F6F6F6}
 .lsw a:hover{color:#000}
 .lsw a.on{color:#000;box-shadow:inset 0 -2px #000}
 .lsw .ls{color:#D9D9DE}
+/* the account link, filled per request by lib/account1001.js */
+.hnav>a.acct{margin-left:10px;border:1px solid #000;color:#000;padding:7px 12px;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;white-space:nowrap}
+.hnav>a.acct:hover{background:#000;color:#fff}
+.hnav>a.acct.on{border-color:#D9D9DE;color:#52525B}
+.hnav>a.acct.on:hover{border-color:#000;background:#fff;color:#000}
 @media(max-width:1280px){.hd1001 .hrow{flex-wrap:wrap;gap:12px}.hnav{margin-left:0;flex-wrap:wrap}}
 @media(max-width:700px){.hd1001 .hrow{flex-wrap:wrap;gap:10px}.hnav{gap:2px;font-size:13px;flex-wrap:wrap}
 .hnav>a,.dd-b{padding:6px 8px}
@@ -200,6 +206,7 @@ a.di:hover{background:#F6F6F6}
 .hd1001.m1 .dd-i{min-width:0;box-shadow:none;border:0;border-bottom:1px solid #F1F1F1;padding:4px 0 8px 12px}
 .hd1001.m1 .di{padding:10px 4px}
 .hd1001.m1 .lsw{margin:14px 0 4px;padding:0;border:0;font-size:12px}
+.hd1001.m1 .hnav>a.acct{width:auto;align-self:flex-start;margin:12px 0 4px;padding:12px 16px;border:1px solid #000;font-size:12px;justify-content:center}
 .hd1001.m1 .hnav>.pxb,.hd1001.m1 .hnav>[class*="px"]{margin:10px 0 6px;align-self:flex-start}
 }
 `;
