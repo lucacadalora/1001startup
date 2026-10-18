@@ -125,43 +125,7 @@ function dcWebs(dc) {
   }));
 }
 
-/* ── 02's group map: one group's money split by business (bands sized by rupiah, as on /bumn),
-   each business running on into the companies the group places in it. Server-drawn, no script. ── */
-const initials = (n) => String(n || '?').replace(/^(PT|CV)\.?\s+/i, '').split(/[\s/&+()-]+/).filter((w) => /^[A-Za-z0-9]/.test(w)).slice(0, 2).map((w) => w[0]).join('').toUpperCase() || '?';
-function groupMap(g, L) {
-  const W = 72, bw = 7, SLOT = 48, GAP = 4, LH = 150;
-  const f = (v) => Math.round(v * 10) / 10;
-  const tot = g.r.reduce((a, r) => a + r.v, 0) || 1;
-  const rows = [];
-  let y = 0, sum = 0;
-  for (const r of g.r) {
-    const h = Math.max(2, (r.v / tot) * LH), slot = Math.max(SLOT, h + 6);
-    rows.push({ r, h, mid: y + slot / 2 }); y += slot + GAP; sum += h;
-  }
-  const H = Math.ceil(Math.max(y - GAP, sum)), cx = W / 2;
-  let a = (H - sum) / 2;
-  let svg = `<rect x="0" y="${f(a)}" width="${bw}" height="${f(sum)}" fill="#0B0B0C"/>`;
-  const labels = rows.map((o) => {
-    const a1 = a + o.h, b0 = o.mid - o.h / 2, b1 = o.mid + o.h / 2, k = o.r.k;
-    svg += `<path fill="${k === 'c' ? '#C9C9C1' : '#ECECE7'}" d="M${bw} ${f(a)}C${cx} ${f(a)} ${cx} ${f(b0)} ${W - bw} ${f(b0)}L${W - bw} ${f(b1)}C${cx} ${f(b1)} ${cx} ${f(a1)} ${bw} ${f(a1)}Z"/>`
-      + `<rect x="${W - bw}" y="${f(b0)}" width="${bw}" height="${f(o.h)}" fill="${k === 'm' ? '#9A9AA0' : '#0B0B0C'}"/>`;
-    a = a1;
-    const cos = o.r.cos, n = cos.length;
-    const discs = cos.slice(0, 5).map((c, i) => `<i class="dk${i >= 2 ? ' d3' : ''}${i >= 3 ? ' d4' : ''}${c.live ? '' : ' off'}" title="${esc(c.n)}">${c.logo ? `<img src="${esc(c.logo)}" alt="" width="24" height="24" loading="lazy" decoding="async">` : `<em>${esc(initials(c.n))}</em>`}</i>`).join('')
-      + (n > 5 ? `<i class="dm dk-more">+${n - 5}</i>` : '') + (n > 3 ? `<i class="dm ph-more">+${n - 3}</i>` : '') + (n > 2 ? `<i class="dm p2-more">+${n - 2}</i>` : '');
-    return `<span class="gmr ${k}" style="left:${W + 10}px;top:${f(o.mid)}px">
-        <span class="gt"><span class="n" title="${esc(o.r.n)}">${esc(o.r.n)}</span><span class="f">${esc(o.r.pc)}${n ? `<span class="fc"> · ${n} ${n === 1 ? L('company', 'perusahaan') : L('companies', 'perusahaan')}</span>` : ''}</span></span>
-        ${n ? `<span class="gc">${discs}<span class="sr">${esc(cos.map((c) => c.n).join(', '))}</span></span>` : ''}</span>`;
-  }).join('');
-  const head = L(g.h, g.h.replace(/^Revenue/, 'Pendapatan').replace(/^Capex/, 'Belanja modal'));
-  return `<a class="gmh" href="/bumn/${esc(g.slug)}">
-      <span class="gmh-h"><span class="gl">${g.logo ? `<img src="${esc(g.logo)}" alt="" width="18" height="18" loading="lazy">` : ''}${esc(g.short)} · ${esc(head)}</span><b>${esc(g.tot)}</b></span>
-      <span class="gmh-m" style="height:${H}px"><svg aria-hidden="true" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}">${svg}</svg>${labels}</span>
-      <span class="gmh-go"><span>${L(`${esc(g.short)} group map: ${g.nseg} businesses, ${g.all} companies`, `Peta grup ${esc(g.short)}: ${g.nseg} bisnis, ${g.all} perusahaan`)}</span><span aria-hidden="true">→</span></span>
-    </a>`;
-}
-
-function home({ census, bumn, dc, umkm, peering, bumnGroup, bumnSubs, bumnMaps = [], extra = {}, lang = 'en' }) {
+function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
   const A = assets();
@@ -180,10 +144,6 @@ function home({ census, bumn, dc, umkm, peering, bumnGroup, bumnSubs, bumnMaps =
   const bumnStat = (k) => ((bumn && bumn.stats) || []).find((x) => String(x.k || '').toLowerCase().includes(k)) || null;
   const divs = bumnStat('dividends');
   const nDims = bumn && bumn.dimOrder ? bumn.dimOrder.length : 0;
-  /* 02 grows into the groups (subsidiaries + group maps) while both of /bumn's switches are on */
-  const nSubs = (bumnSubs && bumnSubs.all) || 0;
-  const bGroups = !!(nBumn && nSubs && bumnGroup && bumnMaps.length);
-  const nMoneyMaps = bumnMaps.filter((g) => g.basis === 'segments').length;
   const umkmSectors = (umkm && umkm.by_sector) || [];
   const asOfC = dateOf(census && census.generated, lang);
   const asOfB = dateOf(bumn && bumn.asof, lang);
@@ -284,19 +244,7 @@ function home({ census, bumn, dc, umkm, peering, bumnGroup, bumnSubs, bumnMaps =
       ${fact ? `<p class="dfact">${fact}</p>` : ''}
       <div class="dcta"><a class="btn primary" href="${PF}/startups">${L(`Browse all ${fmt(T.companies)}`, `Lihat ${fmt(T.companies)} startup`)} →</a><a class="lk" href="${PF}/map">${L('Logo map', 'Peta logo')}</a><a class="lk" href="${PF}/investors">${L('Investors', 'Investor')}</a></div>
     </article>`,
-    bGroups ? `<article class="dset" style="--dc:${DC.b}">
-      <div class="dtop mono"><span class="dno">02</span><span class="dlab">${L('State companies', 'BUMN')}</span>${updated(asOfB)}</div>
-      <h3><a href="/bumn">${L('Every BUMN and the companies under it', 'Setiap BUMN dan perusahaan di bawahnya')}</a></h3>
-      <p class="dsub">${L(`${nBumn} state companies on ${nDims || 'ten'} yardsticks, and the ${fmt(nSubs)} subsidiaries and stakes beneath them. ${bumnMaps.length} group maps show each group’s businesses and the companies in each, ${nMoneyMaps} with the money split. Every figure carries its source.`, `${nBumn} BUMN pada ${nDims || 'sepuluh'} tolok ukur, dan ${fmt(nSubs)} anak usaha serta kepemilikan saham di bawahnya. ${bumnMaps.length} peta grup menunjukkan bisnis tiap grup dan perusahaan di tiap bisnis, ${nMoneyMaps} di antaranya dengan pembagian uangnya. Setiap angka disertai sumbernya.`)}</p>
-      ${figs([[fmt(nBumn), L('state companies', 'BUMN')], [fmt(nSubs), L('subsidiaries and stakes', 'anak usaha dan saham')], [fmt(bumnMaps.length), L('group maps', 'peta grup')]])}
-      <div class="dprev bvw">
-        <input type="radio" name="bv" id="bv-g" class="sr" checked><input type="radio" name="bv" id="bv-q" class="sr">
-        <div class="bvt mono" role="presentation"><label for="bv-g">${L(`Group map · ${esc(bumnGroup.short)}`, `Peta grup · ${esc(bumnGroup.short)}`)}</label><label for="bv-q">${L('Quadrant', 'Kuadran')}</label></div>
-        <div class="bv bv-g">${groupMap(bumnGroup, L)}</div>
-        <div class="bv bv-q">${quadHtml}</div>
-      </div>
-      <div class="dcta"><a class="btn primary" href="/bumn">${L(`See all ${nBumn} BUMN`, `Lihat ${nBumn} BUMN`)} →</a><a class="lk" href="/bumn/${esc(bumnGroup.slug)}">${L(`${esc(bumnGroup.short)}’s group map`, `Peta grup ${esc(bumnGroup.short)}`)}</a></div>
-    </article>` : nBumn ? `<article class="dset" style="--dc:${DC.b}">
+    nBumn ? `<article class="dset" style="--dc:${DC.b}">
       <div class="dtop mono"><span class="dno">02</span><span class="dlab">${L('State companies', 'BUMN')}</span>${updated(asOfB)}</div>
       <h3><a href="/bumn">${L('BUMN on one quadrant', 'BUMN dalam satu kuadran')}</a></h3>
       <p class="dsub">${L(`${nBumn} state companies on ${nDims || 'ten'} yardsticks — pick two and see who sits where. Every score carries its reason and its source.`, `${nBumn} BUMN pada ${nDims || 'sepuluh'} tolok ukur — pilih dua dan lihat posisi masing-masing. Setiap skor disertai alasan dan sumbernya.`)}</p>
@@ -358,8 +306,8 @@ function home({ census, bumn, dc, umkm, peering, bumnGroup, bumnSubs, bumnMaps =
 
   const title = L("Indonesia's Startup and Company Data — 1001startup.id", 'Data Startup dan Perusahaan Indonesia — 1001startup.id');
   const desc = peerOn ? L(
-    `Five datasets on Indonesia's companies and its internet — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN${bGroups ? ` with ${fmt(nSubs)} subsidiaries and stakes` : ''}, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters and the peering map of ${fmt(PT.ix)} internet exchanges — every figure linked to its source.`,
-    `Lima dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN${bGroups ? ` dengan ${fmt(nSubs)} anak usaha dan saham` : ''}, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`) : L(
+    `Five datasets on Indonesia's companies and its internet — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters and the peering map of ${fmt(PT.ix)} internet exchanges — every figure linked to its source.`,
+    `Lima dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`) : L(
     `Four datasets on Indonesia's companies — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} data-centre projects and ${fmt(U.exporters)} exporters — every figure linked to its source.`,
     `Empat dataset perusahaan Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, dan ${fmt(U.exporters)} UMKM eksportir — setiap angka tertaut ke sumbernya.`);
   const catalog = [
@@ -502,35 +450,6 @@ ${NAV.css}
 .bqn{position:absolute;aspect-ratio:1/1;transform:translate(-50%,-50%);border-radius:50%;background:#fff;box-shadow:0 0 0 1px #E2E3DE,0 2px 6px rgba(0,0,0,.07);overflow:hidden;display:block}
 .bqn img{width:100%;height:100%;object-fit:contain;padding:12%}
 .bqn:hover{z-index:2;box-shadow:0 0 0 1.5px #000}
-/* 02: group map | quadrant (two radios, no script) */
-.bvt{display:flex;gap:0;margin:0 0 12px;border-bottom:1px solid #E7E7E7}
-.bvt label{font-size:10.5px;color:#6B6B73;padding:0 0 9px;margin:0 18px -1px 0;cursor:pointer;border-bottom:2px solid transparent}
-.bvt label:hover{color:#000}
-#bv-g:checked~.bvt label[for=bv-g],#bv-q:checked~.bvt label[for=bv-q]{color:#000;border-bottom-color:#000}
-#bv-g:focus-visible~.bvt label[for=bv-g],#bv-q:focus-visible~.bvt label[for=bv-q]{outline:2px solid #000;outline-offset:3px}
-.bv-q,#bv-q:checked~.bv-g{display:none}
-#bv-q:checked~.bv-q{display:block}
-.gmh{display:block;border:1px solid #000;text-decoration:none;color:#000;background:#fff}
-.gmh-h{display:flex;justify-content:space-between;align-items:center;gap:10px;padding:10px 12px 0;font:400 10px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#6B6B73}
-.gmh-h .gl{display:flex;align-items:center;gap:7px;min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.gmh-h .gl img{width:18px;height:18px;object-fit:contain;flex:none}
-.gmh-h b{font:600 14px/1.2 'Overused Grotesk',system-ui,sans-serif;letter-spacing:0;text-transform:none;color:#000;white-space:nowrap}
-.gmh-m{position:relative;display:block;margin:12px 12px 12px}
-.gmh-m svg{position:absolute;left:0;top:0}
-.gmr{position:absolute;right:0;transform:translateY(-50%);display:flex;align-items:center;gap:10px;min-width:0}
-.gmr .gt{flex:1;min-width:0;display:flex;flex-direction:column}
-.gmr .n{font:500 13px/18px 'Overused Grotesk',system-ui,sans-serif;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
-.gmr .f{font:400 10px/14px 'IBM Plex Mono',monospace;color:#6B6B73;white-space:nowrap}
-.gmr.m .n{color:#6B6B73;font-weight:400}
-.gmr .gc{flex:none;display:flex;gap:3px;align-items:center}
-.gmr .dk{width:24px;height:24px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px #E2E3DE;display:flex;align-items:center;justify-content:center;overflow:hidden;font-style:normal}
-.gmr .dk img{width:100%;height:100%;object-fit:contain;padding:3px}
-.gmr .dk em{font:400 8.5px/1 'IBM Plex Mono',monospace;font-style:normal;color:#52525B;letter-spacing:.02em}
-.gmr .dk.off{opacity:.45}
-.gmr .dm{font:400 10px/1 'IBM Plex Mono',monospace;font-style:normal;color:#52525B;padding:0 2px}
-.gmr .ph-more,.gmr .p2-more{display:none}
-.gmh-go{display:flex;justify-content:space-between;gap:8px;align-items:center;padding:10px 12px;background:#000;color:#fff;font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase}
-.gmh:hover .gmh-go{background:#2A2A2E}
 /* 03 */
 .dcg{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
 .dcc{text-decoration:none;display:block;min-width:0}
@@ -645,19 +564,8 @@ ${FOOT.css}
 .acc>div{padding:24px 18px}
 .acc>div+div{border-left:0;border-top:1px solid #E7E7E7}
 .dcta .btn{flex:1 1 100%;text-align:center}
-.gmh-m{margin:10px}
-.gmr{gap:6px}
-.gmr .n{font-size:12px;line-height:16px;white-space:normal;display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2}
-.gmr .dk{width:22px;height:22px}
-.gmr .dk.d4,.gmr .dk-more,.gmr .fc{display:none}
-.gmr .ph-more{display:inline}
 .dpm a{aspect-ratio:3/2}
 .dpm img{object-position:0 50%}
-}
-/* ── small phones: two logos per business in 02's group map ── */
-@media(max-width:380px){
-.gmr .dk.d3,.gmr .ph-more{display:none}
-.gmr .p2-more{display:inline}
 }
 </style>
 </head>
