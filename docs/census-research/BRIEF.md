@@ -17,8 +17,9 @@ Files in this folder (read-only for you):
 - `example-rows.json`: two published rows. Match this shape and this depth exactly.
 - `example-rejected.json`: how a rejection is written.
 - `pending-rosters.json`, `backlog-w1.json`: lists some lanes start from.
-- `tools/exa.py` (search + page contents through Exa; its own quota) and `tools/li.py` (live LinkedIn
-  company-page read: people count, band, HQ). Run them with `python3 -I`.
+- `tools/li.py` (live LinkedIn company-page read: people count, band, HQ; a direct fetch, free). Run it
+  with `python3 -I`. `tools/exa.py` exists but Exa is Luca's PAID account: do not use it unless the
+  wave's lead says Luca approved Exa for this run (18 Oct 2026: "you suck exa credits").
 - `claims.tsv`: shared, append-only. Before you research a candidate, run
   `grep -i "<name>" claims.tsv`; if another lane claimed it, skip it. Otherwise claim it:
   `printf '%s\t%s\n' "<lane>" "<name>" >> claims.tsv`.
@@ -129,10 +130,11 @@ Aggregators never count. `not_applicable` for a foreign group's arm or a bank un
 ## Tools and limits
 
 - WebSearch is SHARED by every lane (about 200 per turn in total): use at most 15 WebSearch calls.
-  Lean on `tools/exa.py search` / `exa.py contents` (separate quota), WebFetch, `curl -sL -A "Mozilla/5.0
-  ..."` and `tools/li.py`.
-- companieshouse.id, forbes.com, bisnis.com, kontan and some others block this machine: read them with
-  `python3 -I tools/exa.py contents <url>` (add `--live` for pages that change).
+  Lean on WebFetch, `curl -sL -A "Mozilla/5.0 ..."`, the registries' own pages and `tools/li.py`. No Exa
+  unless the lead says Luca approved it for this run.
+- companieshouse.id, forbes.com, bisnis.com, kontan and some others block this machine: use another
+  outlet that carries the same fact, or WebFetch; only with Luca's approval for the run, a single
+  `python3 -I tools/exa.py contents <url>` for a page nothing else can reach.
 - Write ONLY inside your own folder `<wave>/<lane>/`. Never write anywhere under ~/projects. Do not edit
   `tools/` or the shared files (except appending to `claims.tsv`). Run Python that reads downloaded pages
   with `python3 -I`, and keep downloads in a `dl/` subfolder of your lane folder.

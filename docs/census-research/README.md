@@ -4,10 +4,10 @@ How the 18 Oct 2026 "more legit startups" wave was run, kept so the next wave
 starts from here instead of from a lost session folder.
 
 1. Make a wave folder (`export CENSUS_WAVE=~/census-wave`), copy `BRIEF.md` and
-   `VERIFY.md` into it, plus `scripts/census-research/exa.py` and `li.py` under
-   `tools/`. Write `existing.tsv` (census names, legal names, closed register,
+   `VERIFY.md` into it, plus `scripts/census-research/li.py` under `tools/`
+   (`exa.py` only if Luca approves Exa spend for the run: Exa is his paid account). Write `existing.tsv` (census names, legal names, closed register,
    removals, scope.outside and prior rejections) and an empty `claims.tsv`.
-2. One research agent per lane (a fund's portfolio, a roster, a regulator's list,
+2. Ask Luca before a big fan-out if it would use Exa. One research agent per lane (a fund's portfolio, a roster, a regulator's list,
    a news window) works to `BRIEF.md` and writes `<lane>/out.json`.
 3. `python3 scripts/census-research/check_lane.py $CENSUS_WAVE/<lane>/out.json --urls`
    for the mechanical checks, then one hostile fact-checker per lane works to
