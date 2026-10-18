@@ -1,0 +1,682 @@
+{
+ "wave": "more-legit-2026-10",
+ "written": "2026-10-18",
+ "why": "Leads the 18 Oct 2026 lanes found but did not finish: each entry says what is still missing (entity, head office, a dated 2026 headcount, liveness, or a test-1 question). Start the next wave here; claim names before researching.",
+ "backlog": [
+  {
+   "name": "NAMA Beauty",
+   "city": "Jakarta Pusat",
+   "why_notable": "Luna Maya's D2C cosmetics and skincare brand (co-founded with Marcel Lukman, 2019); US$5 million seed led by AC Ventures with SiCepat and DMMX (Nov 2021, about Rp71 billion per Katadata). Verified: PT Nama Cantik Abadi (AHU 970385, Wisma Nugra Santana Lt. 7, Jl. Jend. Sudirman Kav. 7-8, Jakarta Pusat), which a BPOM-data mirror (Cekhalal.id) listed as the registrant for NAMA products and which is the employer on NAMA's Jobstreet profile; LinkedIn shows 29 people (band 51-200) on 17 Oct 2026; namabeauty.co answers. Missing: a dated 2026 operating signal (latest dated coverage found is Dec 2025, its recruitment page has no openings, the company LinkedIn page shows no recent posts, and it is no longer on ACV's portfolio page).",
+   "source": "https://companieshouse.id/nama-cantik-abadi ; https://id.jobstreet.com/companies/pt-nama-cantik-abadi-168556304974584 ; https://www.cekhalal.id/pendaftar/pt-nama-cantik-abadi/ ; https://katadata.co.id/digital/startup/617f78ccaa1bd/startup-milik-luna-maya-raih-rp-71-miliar-dari-ac-ventures-dan-sicepat ; https://www.linkedin.com/company/namabeauty",
+   "lane": "acv"
+  },
+  {
+   "name": "Gajiku",
+   "city": "Jakarta",
+   "why_notable": "Earned-wage-access and HR app (attendance, payroll, employee loans); US$1.1 million seed led by AC Ventures (Jan 2022, The Business Times, e27, DailySocial); LinkedIn 30 people (band 11-50, HQ Jakarta) on 17 Oct 2026; Android app updated 16 Jul 2026. Missing: an Indonesian PT. Its site, terms and app listing name only Sampradaa Pte Ltd (Singapore). Note: PT Gaji Pintar Indonesia, at Sampoerna Strategic Square, is wagely's entity, not Gajiku's.",
+   "source": "https://www.gajikuapp.com/privacy-policy ; https://www.businesstimes.com.sg/startups-tech/startups/ac-ventures-leads-us1.1m-seed-round-in-indonesian-salary-on-demand-platform ; https://www.linkedin.com/company/gajiku",
+   "lane": "acv"
+  },
+  {
+   "name": "Rosé All Day Cosmetics",
+   "city": "Jakarta",
+   "why_notable": "ACV-backed cosmetics brand; US$5.4 million financing led by SWC Global (Dec 2023, ACV); on ACV's list of its companies among Tech in Asia's 50 most-funded Indonesian startups (Mar 2025). On 17 Oct 2026 roseallday.co showed only a 'temporarily offline' notice pointing buyers to Shopee, Tokopedia and TikTok Shop. Missing: a working site, the PT and a headcount.",
+   "source": "https://acvcap.com/insights/acv-portfolio-news/swc-global-leads-us5-4m-financing-for-ac-ventures-backed-rose-all-day-cosmetics/ ; https://www.roseallday.co/",
+   "lane": "acv"
+  },
+  {
+   "name": "ONIC Esports",
+   "city": "Jakarta Pusat",
+   "why_notable": "Major Indonesian esports organisation (founded 26 Jul 2018); Agaeti Ventures, a predecessor of AC Ventures, invested in 2019 (Hybrid.co.id, 18 Aug 2019) and ACV lists the stake as exited; PT. Onic Esport Indonesia is in the register (AHU 1237436, The Boulevard Office Lt. 6, Jl. Fachrudin No. 5, Jakarta Pusat); LinkedIn shows 124 people (band 51-200) on 17 Oct 2026. Missing: ownership. IDN Times (3 Sep 2026) says ONIC now sits under PT Daidan Aditama Yaksa, a mining and shipping company, which would fail test 1 if confirmed; no sized funding round is on record.",
+   "source": "https://companieshouse.id/onic-esport-indonesia ; https://www.idntimes.com/business/finance/siapa-pemilik-onic-e-sport-sekarang-ini-profil-lengkapnya-00-kf7vq-5z4r21 ; https://hybrid.co.id/post/agaeti-venture-sponsori-onic-esports-karena-dampak-sosial-ke-milenial/",
+   "lane": "acv"
+  },
+  {
+   "name": "HonestDocs (HDmall.id)",
+   "city": "Jakarta Selatan",
+   "why_notable": "ACV-backed health information and health-services marketplace; the Indonesian sites honestdocs.id and hdmall.id are run by PT Bimini Longevity Indonesia (terms and contact pages; AHU 995206, WeWork Revenue Tower, SCBD). The group (HD) is headquartered in Bangkok and its LinkedIn page counts 1,734 people group-wide. Missing: an Indonesian headcount for the arm.",
+   "source": "https://www.honestdocs.id/campaigns/kontak-kami ; https://companieshouse.id/bimini-longevity-indonesia ; https://www.linkedin.com/company/honestdocs",
+   "lane": "acv"
+  },
+  {
+   "name": "Gmeelan",
+   "city": "Jakarta (per its LinkedIn page; unconfirmed)",
+   "why_notable": "ACV-backed skincare brand started in 2020 by Guangzhou Jimi Biotech (China) that grew on TikTok Shop; its LinkedIn page and Lazada's brand wiki give Indonesia/Jakarta as headquarters. Missing: an Indonesian PT, an Indonesian headcount, and confirmation that the operating head office is Indonesian rather than the Chinese parent.",
+   "source": "https://gmeelan.com/ ; https://www.linkedin.com/company/gmeelanjimi ; https://www.innohere.com/ir/134837.html",
+   "lane": "acv"
+  },
+  {
+   "name": "WaterHub",
+   "city": "Kota Bekasi",
+   "why_notable": "Not an ACV company (lead for another lane): quota-based drinking-water refill stations with an app; seed round led by Archipelago VC with The Radical Fund (founder Lyonda Huwaidi's post, 22 Aug 2025; e27, 2 Sep 2025); address Jl. Harapan Indah Boulevard No. 28, Bekasi. Not researched further.",
+   "source": "https://waterhub.co.id/ ; https://e27.co/turning-the-tide-waterhub-tackles-indonesias-drinking-water-paradox-20250901/",
+   "lane": "acv"
+  },
+  {
+   "name": "Manuva (formerly Tjetak)",
+   "city": "Jakarta Pusat",
+   "why_notable": "Venture-backed Jakarta packaging and consumer-staples company, ready for a row except liveness. Entity: PT Katalisator Asa Indonesia (developer of its Manuva Retail app on Google Play, package com.tjetak.distribution, last updated 28 Jan 2025; AHU business number 831767 on companieshouse.id, registered at EV Hive D Lab, Jalan Riau No. 1, Jakarta Pusat; Jobstreet listings in Feb 2026 read 'PT. Katalisator Asa Indonesia (Manuva)'); Singapore holdco Asa Technology Pte. Ltd. (Allen & Gledhill, 2 Sep 2024). Founders Anggara Pranaspati, Raffisal Damanhuri and Hasandi Patriawan (Tin Men Capital release; e27; Antara). Money: Series A led by Vertex Ventures, amount undisclosed (Kompas 24 Aug 2020, KrASIA 25 Aug 2020, e27); US$8M financing on 11 Sep 2023 of which Tin Men Capital invested US$3M, other investors unnamed and the equity/debt split not stated (Tin Men release, TNGlobal, KrASIA); Series A2 led by Journey Capital Partners into Asa Technology Pte. Ltd., amount not public (Allen & Gledhill 2 Sep 2024; DealStreetAsia 19 Aug 2024, paywalled); DealStreetAsia's 7 Aug 2025 newsletter also reports a Manuva capital raise (redacted). No separately announced seed round was found. Headcount: LinkedIn 153 people, band 201-500, HQ Jl. Jend. Sudirman No. 86, Tanah Abang, Jakarta Pusat 10250, read 2026-10-17; the page now calls Manuva a consumer-staples company with its own brands (food packaging, disposable essentials; brands on its site include Kertas Nasi Bersih, Eracup, Erapack, Jambu, Raizen, Super and Soff) serving 12,000 active outlets in Indonesia and the US; staff include sales canvassers, so workforce_kind would be frontline. Test 1 would pass (venture-backed consumer-goods brand company with its own ordering app, comparable to accepted consumer brands). 2026 signals: LinkedIn hiring posts for Semarang sales roles (latest ~Jan 2026) and Jobstreet sales listings (Feb 2026). WHY HELD BACK: its only site, manuva.com (tjetak.com redirects there; LinkedIn still gives manuva.com), reset every connection on 17 Oct 2026, from this machine and from 39 test points in about 30 countries including Jakarta, on both http and https; manuva.id is a parked domain. Recheck manuva.com (and any new brand domain) before adding; the company's last company-page post is ~9 months old.",
+   "source": "https://www.linkedin.com/company/manuvaindonesia",
+   "lane": "ajwc"
+  },
+  {
+   "name": "Loket (PT Global Loket Sejahtera)",
+   "city": "Jakarta",
+   "why_notable": "Event-ticketing platform founded in 2013 by Edy Sulistyo and Bagus Utama, sold to Gojek in August 2017 and bought back from GoTo by the two founders in a separate deal announced in September 2023 (Bisnis, CNBC Indonesia, Fortune Indonesia, 18 Sep 2023). Not in the census or claims; not researched here (entity, headcount, liveness and any post-2023 funding still to check; it is no longer a GoTo unit if the buy-back closed).",
+   "source": "https://market.bisnis.com/read/20230918/7/1695782/goto-jual-goplay-ke-mantan-direksinya-misi-patrick-walujo-tercapai",
+   "lane": "ajwc"
+  },
+  {
+   "name": "RoomMe (Ruangkami by RoomMe)",
+   "city": "Jakarta",
+   "why_notable": "Vertex Ventures, BAce Capital and KK Fund-backed virtual kost operator founded in 2017 (Series A in 2019, amount not disclosed: DealStreetAsia, 27 May 2019; Hybrid.co.id, 17 Oct 2019), once reported at nearly 10,000 rooms in 12 cities (KrASIA, 10 Sep 2020). Entity and money check out, but liveness and headcount do not: roomme.id answers (2026 copyright, five blog posts June-September 2026, listings edited up to 30 Sep 2026) and now shows about 52 building listings under 'Ruangkami by Roomme', but the LinkedIn page (32 people, band 201-500, read 17 Oct 2026) has no posts, an APK mirror shows the tenant app's last update in October 2022, no 2026 news or hiring was found, CEO Glen Ramersan joined TNB Aura as managing partner in March 2023 and the former head of operations now runs his own business. Missing: a 2026 operating signal outside its own site and a current team size. Not absorbed by Rukita or Mamikos (no deal found; still run by PT Duit Orang Tua).",
+   "source": "https://www.vertexventures.sg/projects/roomme/",
+   "lane": "ajwc"
+  },
+  {
+   "name": "Confiction Labs (RIFTSTORM; formerly Mythic Protocol)",
+   "city": "Bandung (team); Singapore (entity)",
+   "why_notable": "Venture-backed game company whose co-op looter-shooter RIFTSTORM entered Steam Early Access on 11 Aug 2026 (developers Confiction Labs and Agate; publishers Confiction Labs and Gamersky Games; 709 user reviews, 70% positive, read 17 Oct 2026). Seed round of US$6.5M closed in Sep 2023, co-led by Shima Capital and Alpha JWC Ventures with Saison Capital, GDP Venture, Planetarium Labs, Arcane Group, Presto Labs, MARBLEX, EMURGO Ventures, Hyperithm and angels (company release on PR Newswire, 12 Sep 2023; PocketGamer.biz, 13 Sep 2023; company LinkedIn post, 15 Sep 2023). LinkedIn: 30 people, band 51-200, HQ Singapore (read 17 Oct 2026). Not submitted as a row because test 2 and geography are incomplete: the only legal entity found is the Singapore company Mythic Alliance Pte. Ltd. (UEN 202214971K, named in the confiction.com footer; registered at Duo Tower, 3 Fraser Street, Singapore); no Indonesian PT and no Indonesian street address for Confiction were found. The team looks Indonesian (CEO Arief Widhiyasa, VP of Engineering Teguh Budi Wicaksono and Creative Director Fandry Indrayadi all list Bandung on their LinkedIn profiles; Agate's 11 Jun 2025 release calls RIFTSTORM a homegrown Indonesian game made by more than 120 local talents), so it would count Sokratech-style if an Indonesian PT or Bandung office address is found. Also to settle before a row: whether Confiction is independent of Agate (already in the census; Arief Widhiyasa is Agate's vice chairman and Agate co-develops RIFTSTORM, so some of the team may be Agate staff), and the size of the remaining team: the company wrote on 9 Jul 2026 that it was realigning its 'scant few remaining resources' to game development and dropping web3 work, and LinkedIn's count (30) is below its band. Sector would be media (gaming).",
+   "source": "https://www.confiction.com/collaborative-entertainment-riftstorm-and-the-future/ ; https://store.steampowered.com/app/2282790/RIFTSTORM/ ; https://www.prnewswire.com/news-releases/mythic-protocol-raises-6-5-million-seed-round-amidst-bear-market-to-build-the-world-first-collaborative-entertainment-301924770.html ; https://www.pocketgamer.biz/mythic-protocol-raises-65m-towards-blockchain-collaboration-and-cross-platform-ambitions/ ; https://www.linkedin.com/company/confiction-labs ; https://agate.id/news/riftstorm-an-ambitious-game-project-by-agate-and-confiction-labs-featured-at-steam-next-fest/ ; https://opengovsg.com/corporate/202214971K",
+   "lane": "ajwc"
+  },
+  {
+   "name": "BenihBaik.com",
+   "city": "Jakarta Barat (LinkedIn HQ line)",
+   "why_notable": "Donation-crowdfunding and CSR-management platform founded by journalist Andy F. Noya with Anggit Hernowo and Firdaus Juli (Hybrid.co.id, Dec 2019); 53 people on LinkedIn (read 2026-10-17, band 51-200, page type non-profit); listed on Alpha JWC Ventures' portfolio page (Oct 2026). Not submitted: the only Alpha JWC ties found are joint CSR programmes (2021), no investment announcement was found, and the legal entity and its for-profit status are not yet confirmed.",
+   "source": "https://www.alphajwc.com/portfolio_item/benihbaik/",
+   "lane": "ajwc"
+  },
+  {
+   "name": "Fairbanc (PT Fairbanc Technologies Indonesia)",
+   "city": "Jakarta Selatan (South Quarter Tower A, Lt. 18, Cilandak Barat, per its own contact page)",
+   "why_notable": "B2B pay-later credit for small retailers buying from consumer-goods brands; AFTECH member record updated 7 Aug 2026; 25 people on LinkedIn (read 2026-10-17; page HQ San Francisco). Not submitted: fairbanc.app sits behind a bot check and did not answer this machine, Vertex marks it exited, and one tracker calls it out of business, so liveness needs a fresh 2026 operating signal first.",
+   "source": "https://fintech.id/en/community/aftech-members/66ca05c3d5d4ab5c2dfa3c90",
+   "lane": "ajwc"
+  },
+  {
+   "name": "Target Media Nusantara (TMN)",
+   "city": "Jakarta",
+   "why_notable": "Indoor-screen advertising network (7,250+ screens claimed); Series A from Alpha JWC Ventures, amount undisclosed (DealStreetAsia, 15 Nov 2018; Alpha JWC release, 30 Nov 2018). Not researched further: its own site calls it the Indonesian branch office of China Focus Media Group, so test 1 (foreign group's arm, media network rather than a tech product) is doubtful.",
+   "source": "https://www.alphajwc.com/en/targetmedianusantara-series-a/",
+   "lane": "ajwc"
+  },
+  {
+   "name": "Pallav Technologies (PT Pallav Teknologi Resolusindo; Pallav Technologies Pte Ltd)",
+   "city": "Jakarta Selatan (Gedung 18 Office Park, Lt. 25, Jl. TB Simatupang Kav. 18, Kebagusan, Pasar Minggu, per its site footer; the PT is registered at Pulogadung Trade Centre, Jakarta Timur)",
+   "why_notable": "AI credit-underwriting and loan-servicing platform for banks, multifinance firms and fintechs, plus a debt-collections service; co-founded by Nathan Gunawan (CEO), Vikram Jain, Sajan Pruthi and Jason Rusli (own about page); 63 people on LinkedIn (read 2026-10-17, band 11-50). Seed round, amount undisclosed, from M Venture Partners, Kadan Capital and Monk's Hill Ventures with angels (DailySocial, 30 Sep 2024); a 2025 round; and a March 2026 round led by Intudo Ventures with M Venture Partners and Kadan Capital, amount redacted (DealStreetAsia, 31 Mar 2026). Not submitted because test 1 needs a judgment: its collections page calls Pallav 'an agency' with '100+ agents' in desk and field collection, and the Indonesian PT's name (Resolusindo) suggests it is the collections company, so it is unclear whether its own software or the staffed collections service is the main business. Also check whether collectors are salaried (frontline) and which entity runs the software.",
+   "source": "https://www.pallav.tech/collections",
+   "lane": "ajwc"
+  },
+  {
+   "name": "Zenius (PT Zenius Education)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Relaunched edtech (founded 2004, paused Jan 2024, back since Jul 2024). Its real LinkedIn page is linkedin.com/company/pt-zenius-education (the slug 'zenius' is an unrelated brain-training app): 285 people on 17 Oct 2026 but a self-declared band of 11-50, so the count is almost certainly inflated by pre-2024 staff who never updated their profiles. A row needs a dated 2026 statement of the current team size and the current legal entity (PT Zona Edukasi Nusantara vs PT Zona Akselerasi Pendidikan vs 'PT Zenius Education' on LinkedIn). Founder Sabda PS still lists himself as Founder & CEO (Sep 2026).",
+   "source": "https://www.linkedin.com/company/pt-zenius-education",
+   "lane": "backlog"
+  },
+  {
+   "name": "Yesdok (PT Yes Dok Indonesia)",
+   "city": "Jakarta Selatan (Sampoerna Strategic Square, Jl. Jend. Sudirman 45-46)",
+   "why_notable": "Video-call telemedicine since 2016 (10th-anniversary company post 15 Sep 2026); site names PT Yes Dok Indonesia plus YesDok Pte. Ltd. (Singapore). LinkedIn shows 161 people on 17 Oct 2026 against a band of 11-50, likely inflated by partner doctors; the 2026 company post says it added a digital-marketing agency and KOL-management unit in 2023, so the agency share needs checking; site footer still says 2023. Wright Partners joined as operating JV partner in 2021 (no amount).",
+   "source": "https://www.linkedin.com/posts/yesdok_yesdok-10th-activity-7505515242945220608-Tk2w",
+   "lane": "backlog"
+  },
+  {
+   "name": "Ibunda.id (PT Ibunda Sehat Mental)",
+   "city": "Jakarta Selatan (Jl. Ampera Raya Blok Rini No. 12A, Ragunan, Pasar Minggu)",
+   "why_notable": "Online and offline psychological counselling since 2015 (founder Arif Fajar Saputra); entity and address from its terms page; LinkedIn shows 189 people on 17 Oct 2026 (band 51-200). Open: how many of the 189 are salaried staff rather than associate psychologists paid per session; no outside funding found; whether it is a tech platform or mainly a counselling-services business.",
+   "source": "https://www.ibunda.id/terms-and-conditions",
+   "lane": "backlog"
+  },
+  {
+   "name": "Stechoq (PT STECHOQ Robotika Indonesia)",
+   "city": "Kabupaten Sleman (Jl. Belimbing No. A17, Sidoarum, Godean)",
+   "why_notable": "Industrial R&D company founded 2015, 100% domestic capital, with its own MES/WMS (installed at automotive suppliers since 2017), autonomous mobile robots and lab kits; LinkedIn shows 99 people on 17 Oct 2026 (band 51-200); hiring through 2026. Open: the agency test, because the site also sells project-based automation work (prototype quote, then production quote) and an academy, with no revenue split published; no outside funding found.",
+   "source": "https://stechoq.com/about.html",
+   "lane": "backlog"
+  },
+  {
+   "name": "Edufic",
+   "city": "Kota Surabaya",
+   "why_notable": "Islamic family-education platform (online classes for children and parenting courses), founder and CEO Ario Muhammad; LinkedIn 64 people on 17 Oct 2026, band 11-50, with staff in Indonesia, Turkey, Egypt and Taiwan. Open: whether the count is mostly freelance tutors, whether it is a product or a tutoring service, and the legal entity (its sites are eduficglobal.id and edufic.id; edufic.com is an unrelated Indian company).",
+   "source": "https://eduficglobal.id/en/",
+   "lane": "backlog"
+  },
+  {
+   "name": "KALM Counseling",
+   "city": "Jakarta Pusat",
+   "why_notable": "Online counselling platform; LinkedIn shows 77 people on 17 Oct 2026 but a self-declared band of 2-10, which suggests most are freelance counsellors; kalm.co.id did not answer on 17 Oct 2026. Needs its live domain, entity and staff count.",
+   "source": "https://www.linkedin.com/company/kalm-counseling",
+   "lane": "backlog"
+  },
+  {
+   "name": "Maxxi Tani (PT Maxxi Tani Teknologi)",
+   "city": "Kota Surabaya",
+   "why_notable": "253 people on LinkedIn on 17 Oct 2026 (band 201-500); mechanised-farming and XAG drone-spraying services with an app. Test 1 (ownership, services vs product) still unresolved.",
+   "source": "https://www.linkedin.com/company/maxxi-tani",
+   "lane": "backlog"
+  },
+  {
+   "name": "FisTx (PT Aditya Inovasi Makmur)",
+   "city": "Kabupaten Sleman",
+   "why_notable": "Aquaculture water-treatment tech; LinkedIn shows 37 people on 17 Oct 2026 (HQ Depok, Sleman). fistx.id did not answer on 17 Oct 2026, so the live domain and the entity still need confirming.",
+   "source": "https://www.linkedin.com/company/fistx",
+   "lane": "backlog"
+  },
+  {
+   "name": "Floq (PT Kripto Maksima Koin)",
+   "city": "Jakarta Selatan (Equity Tower lt. 18, SCBD)",
+   "why_notable": "OJK-licensed digital-asset trader (licence S-21/D.07/2025, 1 Feb 2025; Play listing 1M+ downloads; site footer (c)2026 PT Kripto Maksima Koin). Investortrust (18 Apr 2025) asked whether Timothy Ronald (Akademi Crypto, Ternak Uang) had bought PT Kripto Maksima Koin from GoTo and renamed it FLOQ; Tempo (5 Oct 2025) interviews founder and CEO Yudhono Rawis (ex-Tokocrypto). Open for test 1: who owns it now and whether GoTo kept a stake (a GoTo unit would be an incumbent's arm). LinkedIn slug is floq_id (not read: rate-limited). Crypto rows need a sector string that leads with 'web3/crypto'.",
+   "source": "https://floq.co.id/riplay",
+   "lane": "backlog"
+  },
+  {
+   "name": "Coinvest (PT Pedagang Aset Kripto)",
+   "city": "unverified",
+   "why_notable": "OJK-licensed digital-asset trader since October 2025 (OJK announcement PENG-20.IK.01.2025; CFX member no. 25). LinkedIn page pt-pedagang-aset-kripto shows only about 3 people in public indexes, so probably below the bar; site pedagangkripto.com not checked.",
+   "source": "https://ojk.go.id/id/berita-dan-kegiatan/pengumuman/Pages/Pemberian-Izin-Usaha-Pedagang-Aset-Keuangan-Digital-PT-Pedagang-Aset-Kripto.aspx",
+   "lane": "backlog"
+  },
+  {
+   "name": "SIPS Edutech Indonesia",
+   "city": "Kota Makassar (Jl. Hertasning Utara II No. 28F)",
+   "why_notable": "Makassar health-education group: Sejawat Indonesia (accredited CME and peer-network platform for medical professionals) plus SIPS Institute (clinic-management training), SIPS Digital Creative (creative work for pharma and healthcare), SIPS Consulting and Kinsips; site live with 2026 posts (Jan and Apr 2026) and footer (c) SIPS Edutech Indonesia 2026; LinkedIn sipsedutechid 21 people (17 Oct 2026). Open: the agency test (much of the group sells training, consulting and creative services; Sejawat Indonesia may be the product to count), the legal entity from a first-party page or registry, and funding.",
+   "source": "https://sipsedutech.id/",
+   "lane": "backlog"
+  },
+  {
+   "name": "VehiLoc",
+   "city": "Kota Semarang (Jl. Jeruk I No. 22, Lamper Lor, Semarang Selatan)",
+   "why_notable": "GPS fleet-tracking platform; vehiloc.com answers (login page, footer (c) 2025) and gives the Semarang head office plus workshops in Jakarta, Semarang and Tengaran, with clients such as Semarang city agencies and bus operators. Open: no legal entity on the site, no LinkedIn page at /company/vehiloc, no 2026 signal and no funding found.",
+   "source": "https://vehiloc.com/",
+   "lane": "backlog"
+  },
+  {
+   "name": "GoCement",
+   "city": "Kota Surabaya per LinkedIn; the Play listing gives Jl. Kedoya Angsana Raya Blok 2 No. 2, Kebon Jeruk, Jakarta Barat",
+   "why_notable": "B2B marketplace for building materials for small contractors, using Triputra Group's PT Drymix plant for private-label products (Kejora Capital's portfolio page); seed round from Arise (MDI Ventures and Finch Capital), MDI Ventures, Beenext and Ideosource in Oct 2021 (Hybrid.co.id, e27; amount undisclosed), later backed by Foundamental (2022 seed) and Kejora; co-founders Djonny Suwanto (CEO) and Asanga Abhayawardhana (Foundamental). 38 people on LinkedIn (gocementid, band 51-200, HQ Surabaya) read 17 Oct 2026. Not submitted: no 2026 operating signal found (Android app last updated 1 Jul 2025; the CEO was promoting an unrelated air-purifier brand in Dec 2025), the legal entity was not established, and the head office is unclear (Surabaya on LinkedIn, Jakarta Barat on the Play listing).",
+   "source": "https://hybrid.co.id/post/gocement-terima-pendanaan-tahap-awal-digitalkan-industri-konstruksi-melalui-marketplace-b2b/",
+   "lane": "cvc"
+  },
+  {
+   "name": "Seeds (Seeds Finance, PT Benih Investasi Teknologi)",
+   "city": "Jakarta Selatan (Apartemen Casablanca, Jl. Casablanca Kav. 12, per the register and the Play listing)",
+   "why_notable": "Gamified investing-education app (stock-market simulator, tournaments) from Iterative's Winter 2025 batch; announced a US$1.5M seed round led by Crestone Venture Capital with Ruvento, SGgrow, Metalabs, Iterative, DeVC and Seven Capital Valor (own release, 15 Dec 2025); 38 people on LinkedIn (finance-seeds, band 51-200, HQ Jakarta) read 17 Oct 2026; PT Benih Investasi Teknologi is AHU 1242125. Not submitted: seeds.finance returned a redirect loop to every non-browser fetch on 17 Oct 2026, so the site could not be confirmed as answering; the Android app was last updated 31 Jul 2025; the only 2026 signal found is the CEO's LinkedIn post of 4 Feb 2026 on a Bittime partnership; and the site promotes a 'Seeds Token' (EduFi, GameFi and DeFi) that needs a look before publishing. Founder: Willy Tan (CEO).",
+   "source": "https://pinionnewswire.com/press-release/seeds-finance-raises-1-5m-seed-round-to-make-global-investing-education-fun-social-and-accessible/",
+   "lane": "cvc"
+  },
+  {
+   "name": "MOOIMOM",
+   "city": "Jakarta Utara (per LinkedIn)",
+   "why_notable": "Maternity and baby direct-to-consumer brand founded 2016, backed by East Ventures and Skystar Capital (both portfolio pages); 20 people on LinkedIn (mooimom-co-id) read 17 Oct 2026 against a band of 51-200, which suggests many store and warehouse staff without profiles. Test 1 needs care: job boards (Glints, Pintarnya) present it as part of TNP Group, a retail and trading group founded around 2012 with interests in industry, trading, retail, media and real estate, and name the operator PT TNP Maternity and Baby Trading at Ruko Graha Boulevard Blok B No. 3, Kelapa Gading, Jakarta Utara (not confirmed from a first-party page or the register); mooimom.com also lists an Australian representative office and LinkedIn shows staff in Taiwan and China. Round amounts not found; may belong to the East Ventures lane.",
+   "source": "https://east.vc/id/portfolio/mooimom",
+   "lane": "cvc"
+  },
+  {
+   "name": "Arshipelago",
+   "city": "Jakarta (per LinkedIn)",
+   "why_notable": "Inter-island container-shipping booking platform for small freight forwarders, Iterative Winter 2024 (founders Achmad Feisal Anshari, CEO, and Sherwin Setiobudi, CFO, per Iterative); 16 people on LinkedIn read 17 Oct 2026; site live. Not submitted: the site names no legal entity or address, no amount is on record, and the CEO's LinkedIn headline now leads with another company (Alcavella), so who runs it today needs checking.",
+   "source": "https://www.iterative.vc/post/introducing-iteratives-winter-2024-batch",
+   "lane": "cvc"
+  },
+  {
+   "name": "Pasarnow",
+   "city": "Jakarta",
+   "why_notable": "E-grocery and fresh-produce distributor that raised a US$3.3M seed led by East Ventures with Skystar Capital and Prasetia Dwidharma (e27, 7 Sep 2021) and a later Series A. Probably closed: pasarnow.com did not answer on 17 Oct 2026 and its app appears to be gone from Google Play; needs two reputable closure sources and an end date before it goes to the closed register.",
+   "source": "https://e27.co/indonesian-e-grocer-pasarnow-to-expand-to-new-cities-with-a-us3-3m-funding-led-by-east-ventures-20210907/",
+   "lane": "cvc"
+  },
+  {
+   "name": "Bungkuus",
+   "city": "Jakarta (per LinkedIn)",
+   "why_notable": "Blind-box promotion app for F&B outlets, Iterative Winter 2025 (founder David Alexander); app on Google Play and site live, but only 3 people on LinkedIn on 17 Oct 2026 and no other funding on record, so below the bar for now.",
+   "source": "https://iterative.vc/post/meet-iteratives-winter-2025-batch",
+   "lane": "cvc"
+  },
+  {
+   "name": "Kentara, Pasima, bukaPO (Iterative Summer 2023, Indonesia)",
+   "city": null,
+   "why_notable": "Indonesian companies on Iterative's companies page (Kentara: financing agents for logistics; Pasima: automotive-services app; bukaPO: pre-order community marketplace). kentara.id and pasima.id did not answer on 17 Oct 2026; bukapo.com returned an empty page. Not researched further.",
+   "source": "https://www.iterative.vc/companies",
+   "lane": "cvc"
+  },
+  {
+   "name": "UENA (PT Ujirasa Eka Nagari)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Hyperlocal daily-meal brand with its own kitchens and in-house delivery; seed led by East Ventures with IDN Media (Sep 2022) and a round co-led by East Ventures and Trihill Capital (May 2023), amounts undisclosed; LinkedIn lists 101 people (band 11-50), many likely salaried kitchen staff (frontline). PT Ujirasa Eka Nagari is named in the app terms and Play listing and registered at 18 Office Park, Jl. TB Simatupang No. 18 (AHU 1261717). Missing: a 2026 company operating signal (the Android app was last updated 22 Jul 2024; only an East Ventures feature of 21 Nov 2025 and staff posts were found).",
+   "source": "https://east.vc/news/press-release/uena-raised-new-funding-co-led-by-east-ventures-and-trihill-capital",
+   "lane": "ev"
+  },
+  {
+   "name": "Bicarakan.id (PT Bicarakan Isi Hatimu)",
+   "city": "Jakarta",
+   "why_notable": "Online and offline psychologist counselling platform with two Rumah Bicara centres (Bintaro, Puri Indah); East Ventures portfolio company (seed); LinkedIn lists 52 people (band 11-50). Missing: how many of those are contracted psychologists paid per session rather than staff, a sourced round (East Ventures list only), a street address and a dated 2026 company signal.",
+   "source": "https://www.bicarakan.id/",
+   "lane": "ev"
+  },
+  {
+   "name": "Quintal (PT Quintal Edutama Solusindo)",
+   "city": "Jakarta Barat",
+   "why_notable": "School SaaS (LMS, student information, report cards, fees, admissions, computer-based tests); seed from East Ventures (Aug 2016, DealStreetAsia); LinkedIn lists 25 people; registered at Ruko Sedayu Square Blok D No. 11, Jl. Outer Ring Road (AHU 727925). Missing: a 2026 operating signal from the company (latest company job posts found are from March 2025). Namesakes: Quintal Group and Quintal Logistics on LinkedIn are unrelated foreign companies.",
+   "source": "https://www.quintal.id/",
+   "lane": "ev"
+  },
+  {
+   "name": "Superkul (PT Superkul Amerta Indonesia)",
+   "city": "Jakarta Barat",
+   "why_notable": "Refrigerated same-day last-mile delivery (-22C to +10C) for food and pharma; seed led by East Ventures (Aug 2022); LinkedIn lists 19 people; site footer gives Ruko Golden 8, Jl. Panjang No. 8, Kedoya Utara, Kebon Jeruk. Missing: any 2026 operating signal (site copyright still 2024).",
+   "source": "https://east.vc/news/press-release/superkul-raised-seed-funding-led-by-east-ventures",
+   "lane": "ev"
+  },
+  {
+   "name": "ARIA",
+   "city": "unverified",
+   "why_notable": "Agricultural drone and IoT services for plantations and large farms; US$5 million seed led by East Ventures with Triputra Group, Michael Sampoerna, Arkana Ventures and GK-Plug & Play (East Ventures release, 29 Aug 2022). Missing: entity, the right LinkedIn page (linkedin.com/company/aria-indonesia is an unrelated namesake), headcount and a 2026 signal; aria-indonesia.id did not answer on 17 Oct 2026.",
+   "source": "https://east.vc/news/press-release/aria-secured-us-5-million-seed-funding-led-by-east-ventures",
+   "lane": "ev"
+  },
+  {
+   "name": "GENEXYZ",
+   "city": "Jakarta (unverified)",
+   "why_notable": "Meta-human (virtual influencer) IP studio; US$1 million (Rp14 billion) seed led by East Ventures (East Ventures release and Antara, 2 Aug 2023); LinkedIn lists 15 people. Missing: legal entity (genexyz.com shows almost nothing), address and a 2026 signal.",
+   "source": "https://east.vc/news/press-release/genexyz-raised-seed-stage-funding-led-by-east-ventures",
+   "lane": "ev"
+  },
+  {
+   "name": "Moosa Genetics (PT Moosa Genetika Farmindo)",
+   "city": "unverified",
+   "why_notable": "Livestock genomics and reproduction biotech (IVF, embryo transfer, DNA tests for cattle); partnered with Bappenas on the Sapi Merah Putih calf programme (Bappenas, 8 Aug 2025); East Ventures portfolio (seed). Missing: LinkedIn shows only 5 people (band 11-50), no sourced round, address and a 2026 signal.",
+   "source": "https://www.bappenas.go.id/en/berita/dukung-perencanaan-pembangunan-nasional-bappenas-bersama-pt-moosa-genetika-farmindo-kembangkan-pedet-sapi-merah-putih-AAxm1",
+   "lane": "ev"
+  },
+  {
+   "name": "Kabina",
+   "city": "Jakarta (unverified)",
+   "why_notable": "Property and construction startup; seed led by East Ventures (18 Aug 2022). Not yet checked for 2026 activity, entity or headcount.",
+   "source": "https://east.vc/news/press-release/kabina-raised-seed-funding-led-by-east-ventures",
+   "lane": "ev"
+  },
+  {
+   "name": "Bioma",
+   "city": "Jakarta (unverified)",
+   "why_notable": "Product-as-a-service rental startup founded by former Listee executives; pre-seed co-led by East Ventures and Init-6 (4 Oct 2022). Not yet checked for 2026 activity, entity or headcount.",
+   "source": "https://east.vc/news/press-release/bioma-raised-pre-seed-funding-co-led-by-east-ventures-and-init-6",
+   "lane": "ev"
+  },
+  {
+   "name": "Kasual",
+   "city": "Jakarta (unverified)",
+   "why_notable": "D2C made-to-measure daywear brand; seed led by East Ventures (9 Nov 2021). Not yet checked for 2026 activity.",
+   "source": "https://east.vc/news/press-release/kasual-raises-seed-funding-from-east-ventures",
+   "lane": "ev"
+  },
+  {
+   "name": "GREENS",
+   "city": "Jakarta (unverified)",
+   "why_notable": "Integrated food-technology and farming startup (digital 'metafarmer' programme, Plaza Indonesia space); pre-seed led by East Ventures (2 Aug 2022). Not yet checked.",
+   "source": "https://east.vc/news/press-release/greens-secured-pre-seed-funding-led-by-east-ventures",
+   "lane": "ev"
+  },
+  {
+   "name": "Qazwa (PT Qazwa Mitra Hasanah)",
+   "city": "Jakarta Selatan",
+   "why_notable": "OJK-licensed sharia P2P lender for MSMEs (KEP-80/D.05/2021, 24 Aug 2021; on the 31 Jul 2026 directory), founded 16 Mar 2018 per TrenAsia, CEO Dikry Paren; LinkedIn 10 people (read 2026-10-17, band 11-50). Not submitted: no outside funding on record, owners unknown and a 2026 operating signal was not confirmed.",
+   "source": "https://qazwa.id/tentang-kami",
+   "lane": "fintech"
+  },
+  {
+   "name": "Ezeelink (PT Ezeelink Indonesia)",
+   "city": "Jakarta Pusat",
+   "why_notable": "Bank Indonesia-licensed payment company since 2012 (Category 1 PJP, BI licence 23/572/DKSP/Srt/B of 1 Jul 2021, e-money register entry UE0350; SNAP open-API approval 2023) selling QRIS acceptance, payment collection, payment links and Alipay/WeChat Pay acceptance, at Wisma Techking 2, Jl. AM Sangaji No. 24, Jakarta Pusat; LinkedIn 53 people (read 2026-10-17, band 201-500); own blog posts through July 2026. Not submitted: owners and any outside backing are unknown (only co-founder Heyden Lui's own profile names a founder), there is no press coverage to confirm test 1, and a 2023 student report says it began acquiring a rural bank (BPR) in 2020, which needs checking.",
+   "source": "https://ezeelink.co.id/",
+   "lane": "fintech"
+  },
+  {
+   "name": "ASLI RI (PT Asli Rancangan Indonesia)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Biometric e-KYC and identity-verification company founded 4 Apr 2018 (AFPI profile), recorded with OJK as a digital financial innovation provider in 2020 (Kompas), at Bulungan Business Center, Jl. Bulungan No. 15, Jakarta Selatan; LinkedIn 102 people (read 2026-10-17, band 201-500); itself an investor in Qlue (2021) and LoginID. Not submitted: owners, founders and any outside funding are unknown, its CEO is a retired police general and it says it serves the intelligence and security market, so whether it is venture-built or part of a group could not be settled; no 2026 operating signal was confirmed.",
+   "source": "https://www.asliri.id/",
+   "lane": "fintech"
+  },
+  {
+   "name": "Batumbu (PT Berdayakan Usaha Indonesia)",
+   "city": "Jakarta",
+   "why_notable": "OJK-licensed SME lender (KEP-11/D.05/2021, 23 Feb 2021; on the 31 Jul 2026 directory) described by Bisnis (11 Jul 2024) as a joint venture of PT Triputra Investindo Arya (Triputra Group's holding) and Validus Investment Holdings Pte. Ltd. (Validus, the venture-backed Singapore SME lender). Not submitted: the ownership split is not published, so it is unclear whether it is a conglomerate unit (out) or Validus's Indonesian arm (a row at its Indonesian slice). Its 2024 money from FMO and Oikocredit is debt, not equity.",
+   "source": "https://finansial.bisnis.com/read/20240711/563/1781415/fintech-batumbu-milik-jv-triputra-raih-pendanaan-rp243-miliar-dari-bank-asal-belanda",
+   "lane": "fintech"
+  },
+  {
+   "name": "KawanCicil (PT Kawan Cicil Teknologi Utama)",
+   "city": "Jakarta Pusat",
+   "why_notable": "OJK-licensed supply-chain and invoice lender (KEP-101/D.05/2021, 17 Sep 2021; on the 31 Jul 2026 directory), founded 2017 (AFPI), listed as a portfolio company of Living Lab Ventures, Sinar Mas Land's venture arm. Not submitted: its LinkedIn page (kawan-cicil) lists only 3 people (read 2026-10-17), no round size or founder names were found, and no 2026 operating signal beyond the regulator list.",
+   "source": "https://www.livinglab.ventures/portfolio/kawan-cicil",
+   "lane": "fintech"
+  },
+  {
+   "name": "Accurate (PT Cipta Piranti Sejahtera / CPSSoft)",
+   "city": "Tangerang Selatan",
+   "why_notable": "Large bootstrapped accounting/ERP SaaS (founded 1998); Rakus (TSE-listed) bought 14.9% in Dec 2024 (Rakus release, 13 Dec 2024). Entity confirmed (AHU 719970, Jl. Jalur Sutera 25BC, Pakualam, Serpong Utara). Held back on headcount only: Rakus's release said 285 employees in Dec 2024, while LinkedIn shows 610 on 'Accurate Indonesia' and 89 on the CPSSoft page (2026-10-17), probably including reseller-partner staff; needs a dated 2026 company figure or a check of who the 610 are.",
+   "source": "https://www.rakus.co.jp/news/2024/1213.html",
+   "lane": "news"
+  },
+  {
+   "name": "HashMicro (PT HashMicro Solusi Indonesia)",
+   "city": "Singapore head office; Indonesian arm in Jakarta",
+   "why_notable": "ERP vendor; LinkedIn gives Singapore as headquarters ('Established in Singapore', 561 people, band 501-1,000, read 2026-10-17), while the Indonesian site footer names PT HashMicro Solusi Indonesia. Answer to the lead's question: head office is Singapore. It can only count at its Indonesian slice (Indonesian payroll); no Indonesia-only headcount source found yet.",
+   "source": "https://www.linkedin.com/company/hashmicro",
+   "lane": "news"
+  },
+  {
+   "name": "Bythen (ByThen Pte. Ltd.; PT Bythen Teknologi Indonesia)",
+   "city": "Jakarta / Tangerang",
+   "why_notable": "US$5M seed Jan 2025 led by Vector Inc. and Skystar Capital with East Ventures, BEENEXT, OSK, AppWorks (DailySocial, DealStreetAsia, e27); founders Kevin Mintaraga (ex-Bridestory), Erick Saputra, Ferry Dianto, Nathalia Isadora, William Nagata; 43 people on LinkedIn (Jakarta). Missing: the site's terms name only ByThen Pte. Ltd. (Singapore); the Indonesian PT appears only in a vendor database, and no Indonesian street address is published. Pivoted from virtual influencers to an AI video producer for global creators.",
+   "source": "https://news.dailysocial.id/post/pendanaan-awal-bythen/",
+   "lane": "news"
+  },
+  {
+   "name": "UangCermat (UangCermat International Pte Ltd)",
+   "city": "Singapore holdco; Indonesian operations",
+   "why_notable": "Payroll-linked lending for blue-collar workers; US$26M financing announced Jan 2026 (Cocoon Capital release; reported as a US$6.4M Series A plus debt). Missing: site footer names only the Singapore company, LinkedIn shows 6 people with Singapore as location; needs the Indonesian PT/OJK licence and Indonesian headcount, and the equity/debt split.",
+   "source": "https://cocooncap.com/uangcermat-raises-26m-financing-round/",
+   "lane": "news"
+  },
+  {
+   "name": "Kozystay",
+   "city": "Jakarta",
+   "why_notable": "Short-term rental and aparthotel operator; Series A (undisclosed) Aug 2025 from Integra Partners, Cercano Management, Intudo (e27, DealStreetAsia, company LinkedIn); 211 people on LinkedIn (HQ Jakarta, read 2026-10-17), likely including salaried housekeeping staff (frontline). Missing: the Indonesian PT (site and terms name none; Kozystay Pte. Ltd. is the Singapore company) and a sized round. Seed round from Cercano Management reported by DailySocial (3 Oct 2023, amount to check): https://news.dailysocial.id/post/pendanaan-awal-proptech-kozystay/",
+   "source": "https://e27.co/kozystay-funding-20250819/",
+   "lane": "news"
+  },
+  {
+   "name": "Gadjian (operated by PT Fatiha Sakti, Fast8 group)",
+   "city": "Jakarta Selatan",
+   "why_notable": "HR/payroll SaaS (Golden Gate Ventures seed 2016), head office Menara Bidakara 2, Jl. Gatot Subroto Kav. 71-73, Tebet, Jakarta Selatan; earlier set aside only for region. Its privacy policy and terms name PT Fatiha Sakti as the operator, and Gadjian Academy calls itself 'by Fast8', so the census unit may be the Fast8 group (Gadjian, Hadirr) rather than the brand. Missing: a 2026 headcount: the LinkedIn page its site links to (linkedin.com/company/gadjian) returns 404 on 2026-10-17; the Hadirr page lists 6 people and Gadjian Academy 2.",
+   "source": "https://www.gadjian.com/en/privacy",
+   "lane": "news"
+  },
+  {
+   "name": "GLAIR (glair.ai)",
+   "city": "Jakarta Barat",
+   "why_notable": "AI company (eKYC, document AI for banks and insurers), 48 people on LinkedIn (Jakarta Selatan); its about page lists GDP Labs' CEO and CTO On Lee at the top and gives Jl. KS Tubun Raya No. 85A, Slipi. Needs a check whether GLAIR is its own PT or a GDP Labs/GDP Venture product line (test 1 and 2).",
+   "source": "https://glair.ai/about-us",
+   "lane": "news"
+  },
+  {
+   "name": "Kitar",
+   "city": "unknown (Indonesia priority market)",
+   "why_notable": "Used-electronics recommerce; pre-Series A of more than US$10M led by Source Code Capital with Hike Capital and MindWorks Capital (DailySocial, 17 Apr 2026); three mall stores and five workstations in Indonesia. Head office, entity and headcount not checked (site rate-limited, no LinkedIn page found).",
+   "source": "https://news.dailysocial.id/post/platform-recommerce-kitar-raup-pendanaan-us10-juta-fokus-perkuat-pasar-indonesia/",
+   "lane": "news"
+  },
+  {
+   "name": "Forstok (PT Forstok Teknologi Indonesia)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Multichannel e-commerce inventory SaaS with a new AI-agent product (Forstok 2.0). Entity confirmed: the site names PT. Forstok Teknologi Indonesia at Jl. TB Simatupang No. 18, Jakarta Selatan 12520; the register (AHU 777392) gives Gedung Kemang 15, Jl. Kemang Raya No. 15. LinkedIn lists 26 people (band 11-50, read 2026-10-17). Missing: a dated 2026 operating signal (the site carries no dates and no 2026 news was found) and any sourced funding (only tracker entries).",
+   "source": "https://new.forstok.com/",
+   "lane": "news"
+  },
+  {
+   "name": "LIQUID8",
+   "city": "Kota Depok",
+   "why_notable": "Liquidation and resale of e-commerce returns, failed deliveries and overstock; pre-seed from SPIL Ventures, amount undisclosed (DailySocial, 7 Feb 2025; DealStreetAsia, 6 Feb 2025); co-founders Mike Roosevelt (CEO) and Niko Abdulrachman (COO) per the company's board page; office Jl. Cilodong Raya No. 89, Depok; 31 people on LinkedIn (Jakarta, read 2026-10-17); company LinkedIn post on 22 May 2026. Missing: its PT (the site names none; a registered PT Revolusi Likuid Indonesia in Bekasi is not tied to it by any source), and the CEO's own LinkedIn now headlines another company, so leadership should be rechecked.",
+   "source": "https://news.dailysocial.id/post/pendanaan-liquid8-spil-ventures/",
+   "lane": "news"
+  },
+  {
+   "name": "Nafas",
+   "city": "Singapore head office; Indonesian operations (Jakarta)",
+   "why_notable": "Indoor/outdoor air-quality sensors, analytics and filtration for buildings; funding from Rigel Capital and QDB (DealStreetAsia, Apr 2025). LinkedIn gives Singapore as headquarters (46 people, read 2026-10-17); a separate 'PT. Nafasindo' page lists 59 people but is not tied to Nafas by any source. Needs the Indonesian PT and an Indonesia-only headcount.",
+   "source": "https://www.linkedin.com/company/nafasairquality",
+   "lane": "news"
+  },
+  {
+   "name": "Tumbuh",
+   "city": "unknown",
+   "why_notable": "Antler 2023 BNPL and embedded financing for small businesses; no website is on Antler's list and none was found, and no 2026 signal is on record. Likely dormant; confirm before rejecting (the word 'tumbuh' is shared by unrelated companies).",
+   "source": "https://www.antler.co/portfolio?location=Indonesia",
+   "lane": "rosters"
+  },
+  {
+   "name": "Logice (logiceindonesia.com)",
+   "city": "Jakarta (cold storage at Batuceper, Kota Tangerang)",
+   "why_notable": "Antler-backed cold-chain storage and delivery for F&B outlets, run through WhatsApp-based warehouse tools; says 300+ B2B customers. Company LinkedIn post of 22 Aug 2026 announced a S$500,000 investment from TISI Inc. at the NUS Enterprise Deep SAGE demo day (about US$394,000 at 0.788 USD/SGD on 21 Aug 2026). LinkedIn: 11 people, Jakarta, read 17 Oct 2026; posts to Sep 2026. Missing for a row: the legal entity (no PT on the site or in the register found).",
+   "source": "https://www.linkedin.com/posts/logice-indonesia_logice-deepsage-deeptech-activity-7496868777624522752-cewu",
+   "lane": "rosters"
+  },
+  {
+   "name": "Sqouts (wawancara.ai)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Antler pre-seed (2023) voice-AI interviews, oral exams, surveys and role-play training in English and Bahasa Indonesia; LinkedIn 16 people, South Jakarta, read 17 Oct 2026; office at SMESCO Tower lt. 6, Jl. Gatot Subroto Kav. 94 (wawancara.ai terms). Missing for a row: the legal entity name.",
+   "source": "https://careers.antler.co/companies/sqouts",
+   "lane": "rosters"
+  },
+  {
+   "name": "SECHA (sechahome.com)",
+   "city": "Jakarta",
+   "why_notable": "Antler 2022 renovation design-finance-build platform; bank financing routes with Amar Bank and Permata Bank (founder Josephine Petra Lovensa's post, 3 Feb 2026); LinkedIn 6 people, read 17 Oct 2026. The Antler roster gives PT Kesempatan Kedua Milenial (AHU 1306131, Menara Cakrawala, Jakarta Pusat), but no first-party page ties that PT to Secha yet.",
+   "source": "https://www.sechahome.com/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Printerous",
+   "city": "Jakarta Barat",
+   "why_notable": "Endeavor company; online print and packaging procurement; US$1.4M pre-Series A led by Golden Gate Ventures (TechCrunch, Feb 2017) and an undisclosed Series A led by BAce Capital, AddVentures, GDP Venture and Gobi (IndoTelko, Feb 2020); LinkedIn 31 people, read 17 Oct 2026. printerous.com did not answer (timeout and HTTP 500) on 17 Oct 2026; recheck the site and the PT before a row.",
+   "source": "https://www.linkedin.com/company/printerous",
+   "lane": "rosters"
+  },
+  {
+   "name": "Kora (koraagri.com)",
+   "city": "Indonesia (entity unclear)",
+   "why_notable": "Co-farming and post-harvest (corn) agritech; Antler and eFishery's CEO backed it (e27, 15 Sep 2023; Tech in Asia, Jun 2024); founder Dian Prayogi. koraagri.com did not answer here on 17 Oct 2026 and the LinkedIn slug was not found; needs the entity (Antler's directory tags it Singapore) and a headcount.",
+   "source": "https://e27.co/antler-efishery-ceo-back-indonesias-b2b-agritech-startup-kora-20230915/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Agri Sparta",
+   "city": "Jakarta Selatan",
+   "why_notable": "Antler 2022 farming-as-a-service for rice; Bulog MoU (Fortune Indonesia, 28 Jun 2024); LinkedIn 11 people, Jakarta Selatan, read 17 Oct 2026. agrisparta.com no longer resolves; check for a new site before deciding.",
+   "source": "https://www.linkedin.com/company/agrisparta",
+   "lane": "rosters"
+  },
+  {
+   "name": "ZIWA",
+   "city": "Jakarta",
+   "why_notable": "Antler 2022 mental-health support community app; LinkedIn 10 people, Jakarta, read 17 Oct 2026. ziwaku.com no longer resolves; check whether the app is still live in the stores before deciding.",
+   "source": "https://www.linkedin.com/company/ziwaku",
+   "lane": "rosters"
+  },
+  {
+   "name": "Akar (AKAR Farm)",
+   "city": "unknown",
+   "why_notable": "Antler 2022 modular indoor-farming hardware. akar.cloud no longer resolves; akarfarm.com (container farms and greenhouses, 'designed, grown and monitored by AKAR') is live and may be the same company. Needs the entity, a headcount and confirmation that it is the same Akar.",
+   "source": "https://akarfarm.com/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Safelog.AI (safelogai.com)",
+   "city": "Jakarta",
+   "why_notable": "Antler 2023 AI background-screening agent; safelog.ai no longer resolves but safelogai.com is live with enterprise screening products. Needs the entity and a headcount.",
+   "source": "https://www.safelogai.com/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Manuport",
+   "city": "Jakarta",
+   "why_notable": "Apparel and uniform manufacturing platform; LinkedIn says backed by Antler (ID3) and Iterative (W24); 4 people on LinkedIn, read 17 Oct 2026; manuport.co is live (beta). Small; needs the entity and a clearer operating signal.",
+   "source": "https://www.linkedin.com/company/manuport-id",
+   "lane": "rosters"
+  },
+  {
+   "name": "Snef",
+   "city": "Jakarta? (LinkedIn HQ Singapore)",
+   "why_notable": "Antler 2024 AI social commerce for creators selling to Indonesian buyers (IDR prices, Jakarta stores, © 2026); LinkedIn 7 people with Singapore as HQ, read 17 Oct 2026. Needs an Indonesian entity and where the team sits.",
+   "source": "https://snef.co/",
+   "lane": "rosters"
+  },
+  {
+   "name": "YoboLabs (yobolabs.ai)",
+   "city": "unclear (LinkedIn HQ San Francisco; Singapore location)",
+   "why_notable": "Iterative S25 and Antler-backed AI growth tool for F&B, beauty and retail brands; LinkedIn 35 people, read 17 Oct 2026. Its LinkedIn calls it a 'growth team and agency' while the site compares Yobo against agencies as a product; decide test 1 and find an Indonesian entity.",
+   "source": "https://www.linkedin.com/company/yoboai",
+   "lane": "rosters"
+  },
+  {
+   "name": "rAIgine",
+   "city": "Jakarta",
+   "why_notable": "Antler 2024 AI operations software for factories; site © 2026 with manufacturer testimonials; LinkedIn 7 people, Jakarta, read 17 Oct 2026. Needs the legal entity.",
+   "source": "https://www.linkedin.com/company/raigine",
+   "lane": "rosters"
+  },
+  {
+   "name": "Harvesea",
+   "city": "Jakarta Timur",
+   "why_notable": "Antler 2024 wholesale seafood supplier; site live; LinkedIn 3 people, read 17 Oct 2026. Very small; needs the entity and evidence of an operating business.",
+   "source": "https://www.linkedin.com/company/harvesea",
+   "lane": "rosters"
+  },
+  {
+   "name": "FranchiseOne (franchise.one)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Antler 2024 franchise enabler; site names PT Revolusi Teknologi Internasional, Gedung Artha Graha SCBD (© 2025). The LinkedIn page found ('Brands speak. We amplify.') shows no people count and may not be the same company; needs a headcount source and a 2026 signal.",
+   "source": "https://franchise.one/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Adamata",
+   "city": "Indonesia",
+   "why_notable": "Antler 2024 AI robotic sorting of Indonesian mixed waste ('Waste Mining' in Antler's directory); LinkedIn 6 people, read 17 Oct 2026; adamata.co is a near-empty page. Needs the entity, address and a 2026 signal.",
+   "source": "https://www.antler.co/portfolio?location=Indonesia",
+   "lane": "rosters"
+  },
+  {
+   "name": "Loop Health Indonesia",
+   "city": "Jakarta",
+   "why_notable": "Antler 2023 type-2 diabetes coaching app; LinkedIn 7 people, read 17 Oct 2026; site footer still 2024. Needs a 2026 signal and the entity.",
+   "source": "https://www.linkedin.com/company/loop-health-indonesia",
+   "lane": "rosters"
+  },
+  {
+   "name": "Ovy Health",
+   "city": "unknown",
+   "why_notable": "Antler 2023 fertility and reproductive-health assistant (formerly Plans); ovyhealth.com is live; no LinkedIn page found. Needs the entity, a headcount and a 2026 signal.",
+   "source": "https://www.ovyhealth.com/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Moneta (moneta.sg)",
+   "city": "unclear (.sg domain)",
+   "why_notable": "Antler 2024 AI risk management for lenders, listed in Antler's directory; moneta.sg is a near-empty page and no LinkedIn page was found. Needs proof of an Indonesian entity and team.",
+   "source": "https://moneta.sg/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Blu IQ Tech",
+   "city": "unknown",
+   "why_notable": "Antler 2024 IoT and AI for fishing efficiency; bluiq.tech is live with a 2024 footer; the LinkedIn slug found belongs to an unrelated Colombian page. Needs a 2026 signal, entity and headcount.",
+   "source": "https://www.bluiq.tech/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Rainmaker (rainmaker.co.id)",
+   "city": "unknown",
+   "why_notable": "Antler 2024 AI sales assistant for insurance agents; a LinkedIn page 'rainmaker-ai' shows 4 people but no HQ, so it may not be the same company. Needs a confirmed company page, entity and 2026 signal.",
+   "source": "https://www.rainmaker.co.id/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Prowriting",
+   "city": "Jakarta",
+   "why_notable": "Antler 2023 AI UX-writing assistant; may have been renamed (one listing points to contexa.app). Check the rename before deciding.",
+   "source": "https://betalist.com/startups/prowriting-biz",
+   "lane": "rosters"
+  },
+  {
+   "name": "Eduku",
+   "city": "unknown",
+   "why_notable": "Antler 2022 school LMS (PT Generasi Muda Maju); student app on Google Play (5,000+ installs) and a LinkAja partnership in Nov 2022; no website found. Check the app's last update date before deciding.",
+   "source": "https://play.google.com/store/apps/details?hl=id&id=id.eduku.student",
+   "lane": "rosters"
+  },
+  {
+   "name": "Lighthouse Indonesia (LIGHThouse Clinic)",
+   "city": "Jakarta",
+   "why_notable": "Medically supervised weight-control clinic chain (17 clinics in Jakarta, Tangerang, Surabaya, Medan, Makassar); DealStreetAsia reported new funding on 16 Apr 2026. A venture-funded clinic chain: test 1 (tech company or not) is a policy call, as with ZAP.",
+   "source": "https://www.dealstreetasia.com/stories/lighthouse-clinic-funding-479226",
+   "lane": "rosters"
+  },
+  {
+   "name": "ZAP Clinic",
+   "city": "Jakarta Selatan",
+   "why_notable": "Aesthetic clinic chain founded by Fadly Sahab (started 2009); LinkedIn 1,022 people, read 17 Oct 2026; site © 2026. Investor history unclear (press links it to an IPO plan with a Sandiaga Uno company). Needs a decision on test 1 for venture-backed clinic chains and a sourced round.",
+   "source": "https://www.linkedin.com/company/zap-clinic",
+   "lane": "rosters"
+  },
+  {
+   "name": "Synergy Efficiency Solutions (SES)",
+   "city": "Jakarta",
+   "why_notable": "Energy-efficiency services company (ESCO model) in New Energy Nexus's NEXVentures portfolio; sells consulting and energy-saving projects. Needs a test 1 decision (project and consulting business vs product), entity and headcount.",
+   "source": "https://newenergynexus.ventures/portfolio/synergy-efficiency-solutions/",
+   "lane": "rosters"
+  },
+  {
+   "name": "CRP Group (Cita Rasa Prima)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Restaurant group behind Warunk Upnormal and Upnormal Coffee (PT Citarasaprima Indonesia Berjaya and sister companies; Ariobimo Sentral lt. 8); launched Pesendulu.com in 2019. Needs evidence of venture backing (else test 1 fails) and a headcount.",
+   "source": "https://citarasaprima.com/tentang-kami/",
+   "lane": "rosters"
+  },
+  {
+   "name": "The Goods Dept (The Goods Group)",
+   "city": "Jakarta Selatan",
+   "why_notable": "Multi-label fashion and lifestyle retail chain run by PT Cipta Retail Prakarsa (Kemang); LinkedIn 67 people. Likely fails test 1 (retail chain) unless a venture round is sourced.",
+   "source": "https://thegoodsdept.com/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Qraved",
+   "city": "Jakarta Pusat",
+   "why_notable": "Endeavor food-discovery platform; qraved.com still answers with restaurant guides and a chat line; LinkedIn 19 people, read 17 Oct 2026. Needs a dated 2026 signal, the current owner/entity and its funding history before deciding.",
+   "source": "https://www.qraved.com/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Foodizz",
+   "city": "unknown",
+   "why_notable": "Endeavor culinary-business learning platform; foodizz.id is live with e-courses; the LinkedIn page found looks wrong. Needs entity, headcount and funding.",
+   "source": "https://foodizz.id/",
+   "lane": "rosters"
+  },
+  {
+   "name": "Glints (Indonesian arm)",
+   "city": "Jakarta",
+   "why_notable": "Singapore-headquartered recruitment platform with a large Indonesian business; the group LinkedIn page lists 921 people (read 17 Oct 2026) but gives no Indonesia-only count. A row needs the Indonesian PT and an Indonesian-payroll headcount; group funding stays in the note only.",
+   "source": "https://www.linkedin.com/company/glints",
+   "lane": "rosters"
+  },
+  {
+   "name": "99 Group Indonesia (99.co Indonesia, Rumah123)",
+   "city": "Jakarta",
+   "why_notable": "Indonesian arm of Singapore's 99 Group (99.co, Rumah123, SRX); group LinkedIn 617 people (HQ Singapore); the Rumah123 page lists 65 people, Jakarta (read 17 Oct 2026). A row needs the Indonesian PT and an Indonesia-only headcount.",
+   "source": "https://www.linkedin.com/company/rumah123",
+   "lane": "rosters"
+  },
+  {
+   "name": "Carro (Indonesian arm)",
+   "city": "Jakarta",
+   "why_notable": "Singapore used-car marketplace (carro.co/id is live); a row needs the Indonesian PT and an Indonesia-only headcount; group funding stays in the note only.",
+   "source": "https://carro.co/id/id",
+   "lane": "rosters"
+  }
+ ],
+ "lane_notes": {
+  "acv": "AC Ventures now trades as ACV Capital (acvcap.com; acv.vc redirects). Its portfolio page and sitemap list 72 companies (59 current, 13 exited). Most of the Indonesian ones are already in the census: Astro, Fore, ESB, Stockbit, Bibit, Xurya, BRIK, Xendit, Durianpay, JULO, Legit, Kargo, Otoklix, Reku, Shipper, Logisly, Soul Parking, majoo, Bobobox, FUSE, NalaGenetics, OY!, Segari, Waste4Change, ALAMI, Aruna, Akseleran, Ayoconnect, BukuWarung, CoLearn, Fazz, GoWork, Hacktiv8, Paxel, Sirka, Skor, StickEarn, Wahyoo, Dekoruma, Female Daily, Kata.ai, plus MAKA Motors, Koltiva, Broom, PINA and NOBI from its news pages; ErudiFi's Indonesian arm is Danacita (in census); Yummy Corp, Warung Pintar, EdenFarm, KitaBeli and Ula are already decided. Grow Commerce (ACV-led seed) was already claimed by the backlog lane; Finantier by the fintech lane. Tanaku (East Ventures-led) and Sarana AI (Fortress Data Services) surfaced but are not ACV deals and were not claimed. Only one new row passed all tests (KLAR Smile); the rest of ACV's uncovered Indonesian names are in rejected, closed or backlog with the missing piece named. All dates are UTC: LinkedIn counts were read on 17 Oct 2026 UTC (18 Oct local). KLAR's LinkedIn post dates were taken from the post identifiers (24 Jan 2026 and 2 Sep 2026).",
+  "ajwc": "Lane ajwc. Portfolio lists read: Alpha JWC (45 items in its site's portfolio data, Oct 2026), Openspace (48 companies on openspace.vc/portfolio), Vertex Ventures SEA & India (106 projects in its site's page data) and Intudo (39 companies on intudovc.com/portfolio; intudo.com refuses this machine). Insignia's portfolio is served by a private API, so it was covered only through its announcements (Elevarm and FishLog are in the census; Se'Indonesia, its 2025 Series A lead, is a row here). Skipped because other lanes had claimed them: HappyFresh and Cicil (backlog lane), Online Pajak (rosters), Gredu and Kozystay (news). Unchecked names on these lists that may be Indonesian: K-Life / Inniko (lifestyle stores, on both Alpha JWC's and Vertex's lists), Venti, U Partners and From This Island (Alpha JWC), ReturnKey (Vertex, marked exited), Sermorpheus, Slice and Pallav Technologies (Intudo). Review notes: the TipTip, Cosmart, Alterra and Filmore rows were researched in parallel and reviewed here; Alterra is set to 0.8 because no Bank Indonesia licence was confirmed and its LinkedIn count may undercount; Cosmart's 2026 operating signal is thin (a staff sales post of July 2026 and the live catalogue), and Filmore has a co-founder from the family that controls the Mayapada group, so both carry 0.75. TipTip's Series A was announced as 'more than US$13 million', so its US$23 million total is a slight floor. Fintelite's operating company is in Singapore and its Indonesian PT is linked through the Sribuu name; it is counted in Jakarta on the Sokratech pattern. Se'Indonesia's US$9.7 million Series A figure comes from a company statement carried by SindoNews (14 Sep 2025); Insignia's own release gave no amount, so the reviewer may prefer to treat it as undisclosed. Sermorpheus (Intudo, web3 brand enabler) did not answer at sermorpheus.com on 17 Oct 2026; it may have closed, but no second source was found, so it is not in the closed list. Slice (slice.id, PT Sarana Kreator Teknologi, 16 people on LinkedIn as Slice International) was not researched further. Everywhere.id (formerly GoPlay, sold by GoTo to its CEO in Sep 2023): its US$15 million 2020 round size comes from DealStreetAsia, CNBC Indonesia, Bisnis and Katadata rather than the company, and the US$60 million 2020 valuation was moved out of the valuation field into the note because it predates the sale. Loket, bought back from GoTo by its founders in 2023, is in the backlog unresearched. All dates are UTC; every LinkedIn read and liveness check in this lane was made on 2026-10-17 UTC. Cosmart: row submitted. The lead's note that the seed was 'reportedly led by Vertex' is not supported: every announcement (The Business Times, TNGlobal, Katadata, DealStreetAsia via Vertex, Lightspeed) lists Lightspeed, East Ventures and Vertex with no lead, so no lead is named. The pivot from the 2022 consumer membership app to business procurement is shown only by the company's own site, LinkedIn page and a May 2024 co-founder post; no press report of it was found. Its 2026 signal is a corporate sales manager's 10 Jul 2026 LinkedIn promotion plus the live site with current prices; the company page itself has no visible 2026 posts. Site footer terms/privacy links 404; entity taken from the footer and the AHU mirror (no. 1207204, est. 1 Nov 2021). Manuva: backlog only, because manuva.com did not answer from anywhere on 17 Oct 2026 (connection reset from this machine, from the web-fetch service, from the page-contents service's live crawl, and from 39 check-host.net locations including Jakarta), which fails the brief's 'site answers today' rule even though LinkedIn (153 people) and Feb 2026 job listings suggest the company still operates. Everything needed for its row is in the backlog entry; recheck the site later. Dates: all reads on 2026-10-17 UTC. TipTip: entity PT Tiptip Network Indonesia (terms, privacy, both app stores, AHU 1196805); two Singapore companies (TIPTIP HOLDINGS PTE. LTD. 202131435N and TIPTIP NETWORK PTE. LTD. 202131452G, both 9 Sep 2021, Paya Lebar Road 409051, from the data.gov.sg ACRA UEN dataset d_3f960c10fed6145404ca7b821f263b87) are treated as holdco context and the row is counted at the Jakarta GoWork address per the Sokratech rule; no source says which Singapore company owns the PT. Pivot confirmed: creator monetisation (2022) to event/concert ticketing, plus SPARK sponsorship and SatuSatu Bali activities (May 2026 release). Funding US$23M = US$10M seed (Mar 2022) + US$13M Series A ('over US$13M', Nov 2022), both led by East Ventures; no later round found. Everywhere.id: it is the former GoPlay, Gojek's VOD unit, sold by GoTo to its CEO Edy Sulistyo in Sep 2023, so it is not a GoTo brand any more; reviewer may want to confirm the GoTo row does not list GoPlay. Entity PT Produksi Kreatif Anak Bangsa is named by Everywhere.id's own privacy policy and terms, which play.everywhere.id loads from /api/v1/terms (the page HTML itself is empty until JS runs). Funding US$15M is from press (DealStreetAsia 2020 via The Business Times; CNBC Indonesia, Bisnis, Katadata 2023), never stated by the company; set as 'disclosed'. Change to 'undisclosed' with null if the reviewer wants company or investor confirmation only. Valuation US$60M (2020, reported Sep 2023) is stale and set with valuation_kind 'reported'; null it if the census enum or policy does not allow a pre-sale valuation. Founders: Everywhere.id left 'insufficient' because no company page or two outlets call Edy Sulistyo its founder (he led GoPlay from Aug 2018 and bought it in 2023). 2026 liveness for Everywhere.id rests on its own LinkedIn posts (6 and 10 Aug 2026, Indomaret screen advertising) and live sites; no 2026 press. employees_asof, added and liveness_checked = 2026-10-17 (UTC date when li.py ran and the sites were checked). Alterra: row submitted as 'Alterra (Alterra Bills)' (Alpha JWC roster name 'Alterra'; PT Sepulsa Teknologi Indonesia). Headcount uses the Alterra Bills LinkedIn page (67), the page the site links to and the only active one; older group pages exist (Alterra Indonesia 100, Sepulsa 19, Terra Data Indonesia 7, all read 2026-10-17) and were NOT added because they overlap and may hold stale profiles, so 67 may undercount. Funding: Series B early 2018 is the only announced round, amount never disclosed, hence 'undisclosed'; SoftBank (logo on the About page) and Captii Ventures (portfolio page) are named backers without a round, kept out of investors[]. Bank Indonesia licence: not shown on the site (footer has OSS and Komdigi badges only); the BI licence register page loads only its first page of 2,823 entries, so absence was not proven either way. Sector string tested against the regex list: fintech fires first. RoomMe: backlogged, not rejected. Facts for promotion if a reviewer accepts own-site blog posts and listing edits as the 2026 signal: legal entity PT Duit Orang Tua (roomme.id terms and privacy policy; Google Play developer of com.roomme.tenant; AHU 722036 on companieshouse.id, registered at Jalan Tiang Bendera IV Nomor 34 I-J, Jakarta Barat, i.e. Tambora, last amendment 26 Feb 2020); LinkedIn HQ line is Indosurya Life Center 6th floor, Jl. M.H. Thamrin Kav. 8-9, Jakarta Pusat, which may be old; LinkedIn 32 people on 2026-10-17; Series A led by BAce Capital with Vertex Ventures and KK Fund, amount undisclosed (Hybrid.co.id 17 Oct 2019; DealStreetAsia 27 May 2019 says Vertex's investment was part of the Series A); founders per Vertex: Glen Ramersan (CEO), Winoto Hartanto, Eric Arifin, Arifin Daniel. Frontline: in May and September 2024 'Ruangkami by RoomMe (Management Hospitality)' advertised front-desk agent jobs (one at a budget hotel in Setiabudi), so it has had some salaried on-site staff, but nothing confirms that in 2026. A Singapore 'RoomMe Pte. Ltd.' (UEN 201900225E, holding company) appears in an ACRA mirror; its link to the Indonesian business was not verified. Its listings also appear on SewaKost and RumahQu under 'Ruangkami Management'. Namesakes: roomme.app (a US roommate-matching app) and a Nigerian Roomme are unrelated. Filmore: submitted as a row (confidence 0.8). Legal name combines the clinic operator named on filmoremedical.com (PT Rumah Perempuan Sehati, AHU 1517609) with PT Teman Perempuan Sehati (AHU 1165530), the employer on Filmore's Jobstreet ads at the same Mayapada Tower 1 address; no Filmore site names the second PT, so drop it from legal_name if the reviewer wants first-party only. No sized round exists anywhere: funding_status undisclosed; investors are Vertex (portfolio page) and Kejora Capital (portfolio page, invested 2023); Billy Boen (Maven Asia Capital) says on LinkedIn he and his team were the first investor but no round or vehicle is named, so he is left out of investors. Co-founder Grace Tahir is of the Mayapada family and the HQ is in Mayapada Tower 1: treated as an independent venture-backed startup since no source calls it a Mayapada unit; flag if the reviewer disagrees. workforce_kind set to frontline (own clinics with full-time GPs, nurses, front-desk staff). Job-aggregator copies (Joblum, 26 Jul 2026) of a Filmore ad mention a 'Filmore Medical Clinic - Kelapa Gading' not yet on the location page; not used in public text. Founding year: 2022 launch (IDN Times, 27 Jan 2022; LinkedIn founded 2022) vs '2023' in the Nov 2025 company statement; 2022 used. Confiction Labs: backlogged, not rejected: entity is Singapore (Mythic Alliance Pte. Ltd.), no Indonesian PT or Indonesian address found, but the leadership is in Bandung; also needs an Agate double-count check (Agate co-develops RIFTSTORM). Its seed figure (US$6.5M, Sep 2023) is from the company's own release and PocketGamer.biz. One spelling difference: the PR Newswire release text misspells one investor; the company's own LinkedIn post says 'GDP Venture', used here.",
+  "backlog": "Lane 'backlog' (backlog-w1.json, 57 entries). Worked in this pass: HappyFresh (entries 17 and 28 are the same company, one row), Kulina, PrimaKu, Nexmedis, Looyal, Cicil and PARTO.ID as rows; Riliv, Mobilkamu and Grow Commerce rejected; Zenius, Yesdok, Ibunda.id, Stechoq, Edufic, KALM, Maxxi Tani and FisTx returned to backlog with what is still missing. Not reached in this pass, still open as in backlog-w1.json: Rize, Agros, Ternakin, HiFeed, Zentide (two entries), Hyoshii Farm, Kora, Moosa Genetics, Widya Robotics, JogjaKita, Xerpihan, Neutura, SuperFood, Magna Karsa Mulya, Tensai Innovations, Bingkai Karya, GLife/PanenID, Amalan, the other OJK-licensed crypto traders (Bitwyre, which now redirects to onecrypto.id, Kriptosukses, OSL Indonesia, ASTAL, CYRA, CoinX; Floq and Coinvest are in this backlog with findings; SIPS Edutech is too), Paprika, Mallsampah, Maxride, Gmango, KPay, LOKAL, Puleh, Kuan Timor. PARTO.ID's head office is resolved to Kota Jambi (registered address, supplier-site footer and LinkedIn agree; the Jakarta Barat office on parto.id is treated as a branch). Useful LinkedIn reads from 17 Oct 2026 for the next pass: mallsampah 10, gmango 12 (Ambon); the slug 'ternakin' is an unrelated NTT livestock page (Ternak Indonesia). Reviewer calls: (1) HappyFresh counts the group's rounds (raised by iCart Group Pte. Ltd. while it also ran Malaysia and Thailand) because the company is Jakarta-headquartered and now Indonesia-only; if the reviewer reads the global-parent rule the other way, set funding to null/parent and keep the story in funding_note. Its LinkedIn count (398) is well above its band (51-200). (2) Kulina's investor list holds East Ventures on the strength of East Ventures' own portfolio page, without a dated round. (3) Kulina's and Looyal's entities come from their own sites; no registry extract was read for them. (4) Cicil and HappyFresh have Singapore holding companies (Cicil Technologies Pte. Ltd.; iCart Group Pte. Ltd.) and are counted at their Jakarta head offices, like the Sokratech example. Dates: LinkedIn counts were read on 17 Oct 2026 UTC.",
+  "cvc": "Lane cvc (corporate and local VC portfolios). Sources used for discovery: Skystar Capital's portfolio page, Iterative's companies page and batch posts, Kejora Capital's portfolio, Mandiri Capital Indonesia's site and releases, BNI Ventures' and BRI Ventures' sites. MDI Ventures' portfolio page returned a server error and its site's portfolio data was not readable, so MDI was covered only through news; Venturra, Prasetia's investment site and TMI/Telkomsel Ventures' own sites did not answer, and Teja Ventures' portfolio page shows logos only. Not added because already in the census: KedaiPangan (= KreasiPangan, formerly Kedai Sayur, a Kejora portfolio company), and Skystar/Teja/Iterative names such as Lifepack, Ringkas, Grouu, Green Rebel, Rekosistem, Reku, MAKA Motors, LedgerOwl, Xeratic, Setoko, Momofin, SPUN, Sokratech, CareNow, Qalboo, Zi.Care, Cavos. Claimed by other lanes and left alone: Bythen (news), ONIC Esports (acv), Kipin (news), Filmore (ajwc), Olsera (news), YoboLabs and Moneta (rosters). Rows dated 2026-10-17: every LinkedIn count and site check in this lane was made on 17 Oct 2026 UTC. Sembuh AI's US$ figure converts S$500,000 at the ECB reference rate of 27 Mar 2026 (S$1 = US$0.77655). GORO: Robert Hoving's current role at GORO is unclear (his LinkedIn now leads with Fondo); Andryan Gouw is CEO per Kontan, Nov 2025. Fineksi: LinkedIn sets Singapore as headquarters and the site lists a Singapore office; the row is counted at the Indonesian PT because the customers and the CEO are in Jakarta. Inspigo: Telkomsel Ventures lists it; its LinkedIn page moved from /company/inspigoindonesia to /company/inspigo-ai (same page, 39 people). Inspigo was taken in by Signific Digital Asia Pte Ltd in 2021 (Bisnis.com called it a takeover); test 1 is passed on the basis that Signific is an investment vehicle through which Telkomsel's venture arm invested, not an operating group. Seeds was left in backlog only because seeds.finance was in a redirect loop on 17 Oct 2026 (it redirects to itself), so the site could not be shown to answer; re-check in a browser. Claims recorded under cvc that were not researched to a row: Mooimom, Pasarnow, Kentara, KedaiPangan (already in census), Bungkuus, Arshipelago, GoCement (all in backlog or notes).",
+  "ev": "Source list: east.vc/portfolio now redirects to the home page, and the portfolio detail pages redirect too, but the WordPress archive of the 'portfolio' post type still lists every company with country, status and stage tags: https://east.vc/?post_type=portfolio (39 pages, 381 companies, 184 tagged Indonesia). Diff of the Indonesian entries against existing.tsv: about 70 are already in the census or decided (including renames such as Xeratic/PHI Integration). Claimed by other lanes before this lane started, so not researched here: Nexmedis, Cicil, Kulina, Grow Commerce, Mobilkamu (backlog lane); Glints (rosters); KLAR Smile (acv); Bythen (news); TipTip, Fairbanc, Cosmart (ajwc); MOOIMOM, Pasarnow (cvc); Finantier (fintech). EV 'exit' entries that are now brands of companies already in the census, not rows: Jurnal and Talenta (Mekari), Loket and Moka (GoTo), Kudo (Grab), Bridestory (Blibli), Orami (acquired by SIRCLO per East Ventures' release sirclo-acquires-orami), Justika (Hukumonline's PT Justika Siar Publika), Desty (Mekari, already rejected). Not tech startups: ISMAYA Group (lifestyle and F&B group), Asian Surf Cooperative. Most 'inactive' EV entries (Berrybenka, Popbox, Bizzy, Tanaku and ~40 older seed bets) were not researched for the closed register. Reviewer: (1) existing.tsv's 'Antler-check names that are not Antler's' line includes Amoda and Bicarakan.id; both are East Ventures companies, and AMODA is now a row here. (2) The census row ALAMI Sharia may need renaming to Hijra (see rejection). (3) Claimed by ev and left unfinished (backlog or untouched): UENA, Bicarakan.id, Quintal, Superkul, ARIA, GENEXYZ, Moosa Genetics, Kabina, Bioma, Kasual, GREENS, Avarik Saga (web3 game), Synergo (2017 HR tech), Copra (web3 lending protocol), Medico (2016 hospital SaaS), Asumsi (asumsi.id now publishes regional government news; ownership not checked). Dates: all LinkedIn counts and site checks were made on 17 Oct 2026 UTC (early 18 Oct in Jakarta). Getstok's funding rests only on East Ventures' own portfolio list; CB Insights and PitchBook show a US$10.7 million Series A that no announcement supports.",
+  "fintech": "All LinkedIn reads and liveness checks were done on 17 Oct 2026 UTC (18 Oct local time), so employees_asof, added and liveness_checked are 2026-10-17. Licence numbers come from OJK's LPBBTI directory as of 31 Jul 2026 (94 licensed lenders, PDF published 6 Oct 2026) and from Bank Indonesia's payment-system licence register (exported 17 Oct 2026). Seeds: Cicil was already claimed by the backlog lane and was left alone; Danakini stays a prior rejection, and OJK's July 2026 directory now lists PT Dana Kini Indonesia under the name BantuFazz, which fits its reported sale and points to the Fazz group (FAZZ is in the census), so no reversal. KrediFazz (PT KrediFazz Digital Indonesia) is another Fazz-branded lender on the OJK list and was not researched. Claimed but not finished (free for a later pass): Rupiah Cepat (PT Kredit Utama Fintech Indonesia, KEP-132/D.05/2019; Suara and CNBC Indonesia, May 2025, describe it as foreign-controlled, so test 1 is doubtful), Pinjam Yuk (PT Kuaikuai Tech Indonesia, KEP-2/D.05/2021), Fintag (PT Fintegra Homido Indonesia, KEP-131/D.05/2019, about 10 people), Lumbung Dana, now RpDana (PT Lumbung Dana Indonesia, KEP-21/D.05/2021; 2025 audited statements on rpdana.co.id would show owners), Danamart (securities crowdfunding, PT Dana Agung Nusantara, KEP-15/D.04/2023), Qazwa (PT Qazwa Mitra Hasanah, KEP-80/D.05/2021), Samir (PT Sahabat Mikro Fintek, KEP-105/D.05/2021; board reshuffle Sep 2026), Ethis (PT Ethis Fintek Indonesia, KEP-104/D.05/2021, a subsidiary of Singapore's Ethis Group per its 2021 release) and Crowdo (PT Mediator Komunitas Indonesia, KEP-133/D.05/2019; site loan-performance counters show zero). Triaged without claiming and not submitted: Danabijak (ownership moved in Aug 2024 to a restaurant-group owner, Bisnis), Virgo (PT Capital Net Indonesia, tied to the Alfamart ecosystem), KasPro (PT Solusi Pasti Indonesia, affiliated with DigiAsia Bios). GajiGesa and YUKK are not rejected for quality: both are real venture-backed companies now owned by census companies (Kredivo Group and iSeller). Paprika is the w1 backlog item; its head office is still unresolved and it now shows 3 people on LinkedIn. ",
+  "news": "Reversals (McEasy, Olsera, Kledo) are full rows with a 'reverses' field: each was a prior_rejection_w1 set aside under the earlier regional scope (Kledo: LinkedIn then showed no count) and passes all tests now. All LinkedIn reads and site checks were done on 2026-10-17 UTC (just before midnight UTC), so added/liveness_checked = 2026-10-17. Founders are 'insufficient' for Olsera, Kledo and Kipin (one outlet or a personal blog only). Seeds answered: HashMicro's head office is Singapore (backlog, needs Indonesia-only headcount); Everpro is an Evermos brand (rejected); Mbizmarket is a Lippo Group affiliate (rejected); Gredu's site is stopped and its apex domain redirects to a gambling site (rejected; closed-register check suggested); Looyal was already claimed by the backlog lane. Claimed by this lane but left in backlog: Accurate (CPSSoft), HashMicro, Bythen, UangCermat, Kozystay, Gadjian, Glair.ai, Kitar, Forstok, LIQUID8, Nafas. Funding-news sources that looked machine-written (bernas.id 'Agenc1st', jppos.id, beritana.com 'Ambi') were not used.",
+  "rosters": "Lane rosters, 17 Oct 2026 UTC (all LinkedIn reads and site checks 2026-10-17). Already decided before this wave, not re-researched: Ula (closed_register), Qlue (removed/dropped), Mapan (prior_rejection_w1). HappyFresh was already claimed by the backlog lane, so it was skipped. ClaimMind ('MTA' on the roster): the roster says Antler 2025, but the MTA/ClaimMind entry could not be found in Antler's public portfolio directory or job board, so the row records no investor and funding none_on_record; add Antler if the lead can see the directory entry. Konstruksi.AI and Ternakin: Antler's 31 Jan 2024 release gives only a batch total (US$750,000 for its Indonesian pre-seed batch, inside US$5.1M for 37 SEA startups), so both are 'undisclosed'. TADA: LinkedIn count 373 is well above the self-declared 51-200 band; used per the rules, flagged in the note. OnlinePajak rebranded to Achilles in Jul-Aug 2026; the row keeps the OnlinePajak name with Achilles in brackets and uses PT Achilles Advanced Systems (online-pajak.com footer); achilles.id names PT Achilles Advanced Management. My resolver failed for some domains; every dead-domain rejection was re-checked on 1.1.1.1 and 8.8.8.8. Akar and Safelog look like they moved domains (backlog, not rejected). Venture-backed clinic chains (ZAP Clinic, LIGHThouse) and the ESCO SES need a policy call on test 1, so they are in backlog rather than rejected."
+ }
+}
