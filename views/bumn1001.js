@@ -86,7 +86,17 @@ function page({ lang = 'en' }) {
   const n = D.entities.length;
   const asof = new Date(D.asof + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' });
   const h1 = 'Indonesia’s state companies, mapped';
-  const stats = (D.stats || []).map(s => `<div class="cell"><div class="v">${s.u ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.v)}</a>` : esc(s.v)}</div><div class="k">${esc(s.k)}</div></div>`).join('');
+  /* with the subsidiaries switched on, a tile right after the company count totals every company
+     under the groups (Luca, 18 Oct 2026: "still 56? you need to put the data also of the total
+     subsidiary"): direct holdings + one level down + deeper, the same members as the group maps */
+  const tiles = (D.stats || []).slice();
+  if (S && S.groups) {
+    const G = Object.values(S.groups).filter(Boolean);
+    const all = G.reduce((a, g) => a + (g.t1 || 0) + (g.t2 || 0) + (g.deeper || 0), 0);
+    const direct = G.reduce((a, g) => a + (g.t1 || 0), 0);
+    if (all) tiles.splice(1, 0, { v: all.toLocaleString('en-US'), k: `Subsidiaries and stakes under the ${n}, at every level (${direct.toLocaleString('en-US')} held directly)`, u: null });
+  }
+  const stats = tiles.map(s => `<div class="cell"><div class="v">${s.u ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.v)}</a>` : esc(s.v)}</div><div class="k">${esc(s.k)}</div></div>`).join('');
   const dnt = (D.danantara || []).map(d => `<li>${esc(d.t)} ${d.u ? `<a href="${esc(d.u)}" target="_blank" rel="noopener">${esc(new URL(d.u).hostname.replace(/^www\./, ''))}</a>` : ''}</li>`).join('');
   const method = (D.method || []).map(m => `${m.h ? `<h3>${esc(m.h)}</h3>` : ''}${m.p ? `<p>${esc(m.p)}</p>` : ''}${m.f ? `<div class="bm-f">${esc(m.f)}</div>` : ''}${m.list ? `<ul>${m.list.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}`).join('');
   const body = `
@@ -211,13 +221,15 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
   #bm-presets .chip,#bm-clusters .chip{flex:0 0 auto}
 }
 @media(prefers-reduced-motion:reduce){.bm-b{transition:none}.bm-b:hover,.bm-b.on{transform:none}}
+.stats.s5{grid-template-columns:repeat(5,1fr)}
+@media(max-width:1100px){.stats.s5{grid-template-columns:repeat(2,1fr)}.stats.s5 .cell:last-child{grid-column:1/-1}}
 </style>
 <section class="hero">
   <div class="eyebrow"><span class="sq"></span>STATE COMPANIES · BUMN · ${esc(asof.toUpperCase())}</div>
   <h1>${esc(h1)}</h1>
   <p class="sub">${n} BUMN on ten yardsticks: where their money comes from and how much they handle, then national priority, strategic weight, duty, reach, prestige and risk. Pick two to see who sits where. Every score carries its reason and its source.</p>
 </section>
-<div class="stats">${stats}</div>
+<div class="stats${tiles.length === 5 ? ' s5' : ''}">${stats}</div>
 <section class="bm" style="padding-top:40px">
   <div class="eyebrow"><span class="sq"></span>THE QUADRANT</div>
   <p class="lede">Each logo is one state company, on the same 0–5 scale both ways. The lines cross at the median, so half the companies sit on each side of each line. Tap a logo for its scores, figures and sources.</p>
