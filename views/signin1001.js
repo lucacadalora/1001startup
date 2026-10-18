@@ -3,19 +3,19 @@
  * 1001startup.id — /signin (+ /id/signin). Reader accounts, login wall slice 1
  * (Luca, 18 Oct 2026; plan https://claude.ai/artifact/UsFcmrbQjNFJQACJDAmGDK).
  *
- * Three states of one page: the email step, the code step, and "you're signed
- * in". Email + 6-digit code only (Luca's call 4: like gamescool.id, no other
- * options shown). Nobody is forced here yet; the wall that sends people to
- * this page is slice 2.
+ * Two states: the sign-in form (Clerk's email-code flow, mounted into
+ * #si-clerk by public/js/signin1001.js) and "you're signed in", which is ours
+ * and needs no Clerk at all. Email code only (Luca's call 4, like gamescool.id).
+ * Nobody is forced here yet; the wall that sends people to this page is slice 2.
  *
  * Built on browse1001's shell so the header, footer and consent behave like
  * every other 1001 page. Forms post to BARE URLs with a hidden lang field: an
  * /id POST would hit the ID_READY preHandler and 302 (see leads1001.js).
- * No client JS; the page works before and without it.
  */
 const { esc } = require('../lib/util');
 const I18N = require('./i18n1001');
 const { shell } = require('./browse1001');
+const { V } = require('./html');
 
 const CSS = `<style>
 .si{max-width:1180px;margin:0 auto;padding:56px 20px 8px;display:grid;place-items:center}
@@ -59,57 +59,28 @@ const note = (L) => `<p class="si-note">${L(
   'We keep your email to sign you in. It is never shown on the site. Signing in sets one cookie that keeps you signed in for 30 days.',
   'Email kamu kami simpan untuk proses masuk, dan tidak pernah ditampilkan di situs. Masuk menyimpan satu cookie agar kamu tetap masuk selama 30 hari.')}</p>`;
 
-/** The email step. */
-function emailStep({ lang = 'en', next = '', error = '', email = '' }) {
+/** The sign-in form: Clerk's email-code flow, mounted by public/js/signin1001.js. */
+function signIn({ lang = 'en', next = '', pk = '', fapi = '', out = false }) {
   const L = I18N.mkL(lang);
+  const ready = !!(pk && fapi);
   return page({
     lang, path: '/signin', title: L('Sign in — 1001startup.id', 'Masuk — 1001startup.id'),
     body: `
+<div class="si-intro">
 <div class="si-k"><span class="sq" aria-hidden="true"></span>${L('Sign in', 'Masuk')}</div>
 <h1>${L('Sign in to 1001startup.id', 'Masuk ke 1001startup.id')}</h1>
 <p class="si-sub">${L('Free. Type your email and we send you a 6-digit code. No password.',
     'Gratis. Ketik email kamu, kami kirim kode 6 angka. Tanpa kata sandi.')}</p>
-<form class="si-f" method="POST" action="/signin/code">
-  <label for="si-email">Email</label>
-  <input id="si-email" name="email" type="email" inputmode="email" autocomplete="email" autocapitalize="off" spellcheck="false" maxlength="254" required autofocus value="${esc(email)}" placeholder="${L('you@company.com', 'kamu@perusahaan.com')}">
-  ${error ? `<p class="si-err" role="alert">${esc(error)}</p>` : ''}
-  ${hidden(lang, next)}
-  <button class="btn primary" type="submit">${L('Send code', 'Kirim kode')}</button>
-</form>
-${note(L)}`,
-  });
-}
-
-/** The code step. */
-function codeStep({ lang = 'en', next = '', error = '', email = '', dead = false }) {
-  const L = I18N.mkL(lang);
-  const PF = I18N.pfx(lang);
-  const back = `${PF}/signin${next ? '?next=' + encodeURIComponent(next) : ''}`;
-  return page({
-    lang, path: '/signin', title: L('Enter your code — 1001startup.id', 'Masukkan kode — 1001startup.id'),
-    body: `
-<div class="si-k"><span class="sq" aria-hidden="true"></span>${L('Sign in', 'Masuk')}</div>
-<h1>${L('Check your email', 'Cek email kamu')}</h1>
-<p class="si-sub">${L(`We sent a 6-digit code to <b>${esc(email)}</b>. It works for 10 minutes.`,
-    `Kami mengirim kode 6 angka ke <b>${esc(email)}</b>. Berlaku 10 menit.`)}</p>
-${dead ? `<div class="si-f">
-  <p class="si-err" role="alert">${esc(error)}</p>
-  <form method="POST" action="/signin/code">
-    <input type="hidden" name="email" value="${esc(email)}">${hidden(lang, next)}
-    <button class="btn primary" type="submit">${L('Send a new code', 'Kirim kode baru')}</button>
-  </form>
-</div>` : `<form class="si-f" method="POST" action="/signin/verify">
-  <label for="si-code">${L('Code', 'Kode')}</label>
-  <input id="si-code" class="code" name="code" type="text" inputmode="numeric" autocomplete="one-time-code" pattern="[0-9 ]{6,7}" maxlength="7" required autofocus>
-  ${error ? `<p class="si-err" role="alert">${esc(error)}</p>` : ''}
-  ${hidden(lang, next)}
-  <button class="btn primary" type="submit">${L('Sign in', 'Masuk')}</button>
-</form>`}
-<div class="si-alt">
-  ${dead ? '' : `<form method="POST" action="/signin/code"><input type="hidden" name="email" value="${esc(email)}">${hidden(lang, next)}<button type="submit">${L('Send a new code', 'Kirim kode baru')}</button></form>`}
-  <a href="${esc(back)}">${L('Use a different email', 'Pakai email lain')}</a>
 </div>
-<p class="si-note">${L('Not in your inbox? Check Spam or Promotions.', 'Tidak ada di kotak masuk? Cek folder Spam atau Promosi.')}</p>`,
+<div id="si-clerk" class="si-clerk" data-lang="${lang === 'id' ? 'id' : 'en'}" data-next="${esc(next)}" data-out="${out ? '1' : ''}">
+  <div class="si-skel" aria-hidden="true"><span></span><span></span><span></span></div>
+</div>
+<p id="si-msg" class="si-err" role="alert"${ready ? ' hidden' : ''}>${ready ? '' : L('Sign-in is not available right now. Try again later.', 'Layanan masuk belum tersedia. Coba lagi nanti.')}</p>
+<noscript><p class="si-err">${L('Signing in needs JavaScript turned on.', 'Untuk masuk, JavaScript perlu diaktifkan.')}</p></noscript>
+${note(L)}
+${ready ? `<script async crossorigin="anonymous" data-clerk-publishable-key="${esc(pk)}" src="https://${esc(fapi)}/npm/@clerk/clerk-js@6/dist/clerk.browser.js"></script>
+<script async crossorigin="anonymous" data-clerk-publishable-key="${esc(pk)}" src="https://${esc(fapi)}/npm/@clerk/ui@1/dist/ui.browser.js"></script>
+<script src="/js/signin1001.js?v=${V}" defer></script>` : ''}`,
   });
 }
 
@@ -130,4 +101,4 @@ function account({ lang = 'en', email = '', next = '' }) {
   });
 }
 
-module.exports = { emailStep, codeStep, account };
+module.exports = { signIn, account };
