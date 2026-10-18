@@ -21,6 +21,7 @@ const { esc } = require('../lib/util');
 const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
 const { shell } = require('./browse1001');
+const { reachLive } = require('../lib/peeringlive');
 
 const DATA = path.join(__dirname, '..', 'data', 'peering.json');
 const MAPDATA = path.join(__dirname, '..', 'data', 'peering-map.json');
@@ -293,8 +294,8 @@ function page({ lang = 'en', tiles = null } = {}) {
   const ixs = D.ixs.slice().sort((a, b) => (a.grey - b.grey) || (b.nets - a.nets) || a.pdb.localeCompare(b.pdb));
   const topNets = Object.entries(D.nets).map(([id, v]) => ({ id, asn: v[0], n: v[1], type: v[2], fac: v[3], ports: v[4] }))
     .sort((a, b) => (b.fac + b.ports) - (a.fac + a.ports) || a.asn - b.asn).slice(0, 30);
-  /* reach: the ISP reach panel, preview only (PEERING_REACH=1 on a test port) */
-  const cfg = { tiles: tiles ? tiles.url : null, maxzoom: tiles ? tiles.maxzoom : 0, reach: process.env.PEERING_REACH === '1' };
+  /* reach: the ISP reach panel on the place card, on while its data file exists */
+  const cfg = { tiles: tiles ? tiles.url : null, maxzoom: tiles ? tiles.maxzoom : 0, reach: reachLive() };
   const body = `
 <style>${CSS}</style>
 <link rel="stylesheet" href="${GL}/maplibre-gl.css">

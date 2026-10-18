@@ -218,7 +218,7 @@ Promise.all([
   import('./vendor/maplibre-gl-6.11.2/maplibre-gl.mjs'),
   fetch('/data/peering.json', { headers: { Accept: 'application/json' } }).then((r) => r.json()),
   document.fonts && document.fonts.load ? document.fonts.load('600 20px "Overused Grotesk"').catch(() => {}) : null,
-  /* PREVIEW ONLY: the ISP reach panel's data; the live site never asks for it */
+  /* the ISP reach panel's data, when the server has it switched on */
   cfg.reach ? fetch('/data/peering-reach.json').then((r) => (r.ok ? r.json() : null)).catch(() => null) : null,
 ]).then(([gl, D, , RCH]) => start(gl, D, RCH))
   .catch((e) => { console.error(e); document.getElementById('pm-msg').hidden = false; });
@@ -735,7 +735,8 @@ function start(gl, D, RCH) {
     const u = new URL(location.href); u.searchParams.set('place', pid); history.replaceState(null, '', u);
     if (fly) map.flyTo({ center: drawnAt(pid) || [p.lng, p.lat], zoom: Math.max(map.getZoom(), 14), offset: narrow() ? [0, -wrap.clientHeight * 0.2] : [-180, 0], speed: 1.6 });
   }
-  /* PREVIEW ONLY: which of the 20 biggest consumer ISPs reach this building, and how.
+  /* Which of the 20 biggest consumer ISPs reach this building, and how (data from a
+     side session: PeeringDB + RIPEstat + bgp.he.net + APNIC Labs, ~/research/peering-bgp-id).
      The best level across the building's facilities counts. */
   const HOW = { h: [0, 'own port in the building'], x: [1, 'on an exchange in the building'], o: [2, 'one network away'], f: [3, 'no link visible'] };
   function reachPanel(fs) {
@@ -758,7 +759,7 @@ function start(gl, D, RCH) {
         <li>These ${RCH.isps.length} ISPs serve about ${Math.round(RCH.isps.reduce((n, s) => n + s.pct, 0))}% of Indonesian internet users (APNIC Labs estimate, 16 Oct 2026 sample). APNIC’s per-network shares overlap a little, so the totals are approximate.</li>
         <li>AS45700’s name is unverified: PeeringDB says PT Starlink Services Indonesia, the registry says PT NAP Info Lintas Nusa.</li>
       </ul>
-      <p class="srcl">PeeringDB · RIPEstat (RIPE NCC) · bgp.he.net (Hurricane Electric) · APNIC Labs · built ${esc(RCH.asof || '')} · preview, not live</p>
+      <p class="srcl">PeeringDB · RIPEstat (RIPE NCC) · bgp.he.net (Hurricane Electric) · APNIC Labs · built ${esc(RCH.asof || '')}</p>
     </div>`;
   }
   function openIxCity(cid) {

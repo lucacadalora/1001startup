@@ -896,7 +896,7 @@ for (const alias of ['/datacenter', '/data-centre', '/data-centers', '/data-cent
    scripts/peering-build.py, mtime-cached, so a rebuild needs no restart). English only.
    404 until data/peering.live exists (PEERING_PREVIEW=1 on a test port). */
 const peering1001 = require('./views/peering1001');
-const { peeringLive } = require('./lib/peeringlive');
+const { peeringLive, reachLive } = require('./lib/peeringlive');
 /* Luca, 18 Oct 2026: "host it as dc.1001startup.id". The map is that host's front
    page; on the main host /peering forwards there (a test port with PEERING_PREVIEW=1
    renders it in place). */
@@ -924,10 +924,10 @@ fastify.get('/data/peering.json', async (req, reply) => {
   if (!body) return reply.code(503).send({ error: 'rebuilding' });
   reply.header('Cache-Control', 'public, max-age=300').type('application/json').send(body);
 });
-/* PREVIEW ONLY: the ISP reach panel's data (scripts/peering-reach-build.py). Served when
-   PEERING_REACH=1 is set on a test port; the live service never sets it. */
+/* The ISP reach panel's data (scripts/peering-reach-build.py): served while the file
+   exists (lib/peeringlive.js reachLive). */
 fastify.get('/data/peering-reach.json', async (req, reply) => {
-  if (process.env.PEERING_REACH !== '1' || !is1001(req)) return reply.code(404).send({ error: 'not_found' });
+  if (!reachLive() || !is1001(req)) return reply.code(404).send({ error: 'not_found' });
   try {
     return reply.header('Cache-Control', 'no-cache').type('application/json').send(fs.readFileSync(path.join(__dirname, 'data', 'peering-reach.json'), 'utf8'));
   } catch (e) { return reply.code(404).send({ error: 'not_found' }); }

@@ -1,10 +1,11 @@
 #!/usr/bin/env python3
-"""PREVIEW ONLY: data/peering-reach.json for the ISP reach panel on /peering's place card.
+"""data/peering-reach.json for the ISP reach panel on the peering map's place card.
 
 Source: ~/research/peering-bgp-id/reach.json, built by a side session (PeeringDB + RIPEstat +
-bgp.he.net + APNIC Labs). Luca, 18 Oct 2026, relayed by that session: "add the ISP reach panel to
-the preview (not live), with the caveats shown on the panel". The server only serves this file
-when PEERING_REACH=1 (a test port), so the live site never shows it.
+bgp.he.net + APNIC Labs). Luca, 18 Oct 2026: first "add the ISP reach panel to the preview (not
+live), with the caveats shown on the panel", then "put the ISP reach panel live on
+dc.1001startup.id with its caveats". The panel is on while this file exists (lib/peeringlive.js);
+deleting it hides the panel with no restart.
 
 Per facility one string, one letter per ISP in `isps` order: h = own port in the building,
 x = on an exchange with a switch in the building, o = one network away, f = no link visible.
