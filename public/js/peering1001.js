@@ -141,6 +141,14 @@ function drawDot(d, fill) {
   x.fillStyle = fill; x.beginPath(); x.arc(m, m, d - 1, 0, Math.PI * 2); x.fill();
   return x.getImageData(0, 0, c.width, c.height);
 }
+/* a white disc with an ink ring: the Trace view's mark for a place worked out from delay */
+function drawRing(d) {
+  const S = d + 8, c = pad(S), x = c.getContext('2d', { willReadFrequently: true }), m = S;
+  x.save(); x.shadowColor = 'rgba(24,32,36,.20)'; x.shadowBlur = 4; x.shadowOffsetY = 1;
+  x.fillStyle = '#fff'; x.beginPath(); x.arc(m, m, d + 3, 0, Math.PI * 2); x.fill(); x.restore();
+  x.strokeStyle = P.ink; x.lineWidth = 4.5; x.beginPath(); x.arc(m, m, d - 3, 0, Math.PI * 2); x.stroke();
+  return x.getImageData(0, 0, c.width, c.height);
+}
 /* a logo badge: the operator's mark in a white disc; a count pill when one
    building holds several PeeringDB facilities */
 function drawBadge(dia, logo, letter, count) {
@@ -492,9 +500,197 @@ function start(gl, D, RCH) {
   watchBand();
   addEventListener('resize', watchBand);
 
+  /* the trace layer's light runs only while the map is on screen, the tab is visible and
+     reduced motion is off; it waits until the map has finished its first draw */
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let booted = false, onScreen = true;
+  new IntersectionObserver((es) => { onScreen = es[0].isIntersecting; trPlay(mode === 'trace'); }).observe(wrap);
+  document.addEventListener('visibilitychange', () => trPlay(mode === 'trace'));
+
+  /* ── the trace layer: one message, hop by hop ──────────────────────── */
+  /* Real traceroutes (data/peering-trace.json, put in the page while the preview switch is
+     on; Luca, 18 Oct 2026: "i send messages in solo/surakarta, how it reach in singapore").
+     The light moves between the places a hop can be pinned to, played TR.slow times slower
+     than the real one-way trip and timed by when each hop answered; hops at one place tick
+     by a beat apart so each can be read. A hop with no place ticks by on the way, with no
+     mark. The line shows the order of the hops, not the cable. */
+  const TR = cfg.trace && root.dataset.trace ? JSON.parse(root.dataset.trace) : null;
+  const trNow = document.getElementById('pm-now');
+  const trPanel = document.getElementById('trace');
+  const trRail = document.getElementById('pm-routes');
+  const BEAT = 0.22, PRE = 0.6, HOLD = 2.8;
+  let TRK = null, trT = 0, trLast = 0, trRunning = false, trHop = -2;
+  const ll = (x, y) => [lonOf(x), latOf(y)];
+  function arcOf(a, b) {
+    const ax = mercX(a.lng), ay = mercY(a.lat), bx = mercX(b.lng), by = mercY(b.lat);
+    const dx = bx - ax, dy = by - ay;
+    const cx = (ax + bx) / 2 - dy * 0.18, cy = (ay + by) / 2 + dx * 0.18;
+    const N = 64, xs = new Float64Array(N + 1), ys = new Float64Array(N + 1), cum = new Float64Array(N + 1);
+    for (let i = 0; i <= N; i++) {
+      const t = i / N, u = 1 - t;
+      xs[i] = u * u * ax + 2 * u * t * cx + t * t * bx;
+      ys[i] = u * u * ay + 2 * u * t * cy + t * t * by;
+      if (i) cum[i] = cum[i - 1] + Math.hypot(xs[i] - xs[i - 1], ys[i] - ys[i - 1]);
+    }
+    return { xs, ys, cum, total: cum[N] || 1e-9 };
+  }
+  /* when each hop shows: its one-way time played slower, and at least a beat after the one before */
+  function prep(r) {
+    const at = [];
+    r.hops.forEach((h, i) => at.push(Math.max(PRE + (h.t == null ? 0 : (h.t / 2) * TR.slow / 1000), i ? at[i - 1] + BEAT : PRE)));
+    const stops = r.stops.map((s, i) => ({ s, p: TR.places[s.at], t0: i ? at[s.hops[0] - 1] : 0, t1: at[s.hops[s.hops.length - 1] - 1] }));
+    const legs = stops.slice(1).map((b, i) => ({ a: stops[i], b, dep: stops[i].t1, arr: Math.max(b.t0, stops[i].t1 + 0.4), k: arcOf(stops[i].p, b.p) }));
+    return { r, at, stops, legs, end: at[at.length - 1] + HOLD };
+  }
+  function along(k, f) {
+    const want = f * k.total, c = k.cum;
+    let lo = 0, hi = c.length - 1;
+    while (hi - lo > 1) { const m = (lo + hi) >> 1; if (c[m] < want) lo = m; else hi = m; }
+    const g = (want - c[lo]) / ((c[hi] - c[lo]) || 1);
+    return [k.xs[lo] + (k.xs[hi] - k.xs[lo]) * g, k.ys[lo] + (k.ys[hi] - k.ys[lo]) * g, hi];
+  }
+  function trDraw(t) {
+    if (!TRK || !map.getSource('tr-done')) return;
+    const done = [];
+    let light = [TRK.stops[0].p.lng, TRK.stops[0].p.lat];
+    for (const L of TRK.legs) {
+      if (t <= L.dep) { light = [L.a.p.lng, L.a.p.lat]; break; }
+      const f = Math.min(1, (t - L.dep) / (L.arr - L.dep));
+      const [x, y, hi] = along(L.k, f);
+      const seg = [];
+      for (let i = 0; i < hi; i++) seg.push(ll(L.k.xs[i], L.k.ys[i]));
+      seg.push(ll(x, y));
+      if (seg.length > 1) done.push({ type: 'Feature', geometry: { type: 'LineString', coordinates: seg }, properties: {} });
+      light = ll(x, y);
+      if (f < 1) break;
+    }
+    map.getSource('tr-done').setData(fc(done));
+    map.getSource('tr-light').setData(fc([pt(light[0], light[1], {})]));
+    /* the hop being passed: the readout under the map and its row in the list */
+    const N = TRK.at.length;
+    let h = -1;
+    while (h + 1 < N && TRK.at[h + 1] <= t) h++;
+    if (h === N - 1 && t >= TRK.at[N - 1] + 1.1) h = N;
+    /* between two places, after a hop that has one: say where the message is heading */
+    const leg = TRK.legs.findIndex((L) => t > L.dep && t < L.arr);
+    const go = leg >= 0 && (h < 0 || (h < N && TRK.r.hops[h].at)) ? leg : -1;
+    if (h + ':' + go !== trHop) { trHop = h + ':' + go; trSay(h, go); }
+  }
+  function trSay(h, go) {
+    const r = TRK.r, N = r.hops.length, hp = r.hops[h];
+    if (trNow) {
+      const to = go >= 0 ? TRK.legs[go].b.p : null;
+      trNow.innerHTML = to ? `<b>On the way to ${esc(to.n)}${to.likely ? ', likely' : ''}</b> <span>· ${h + 1} of ${N} hops passed</span>`
+        : h < 0 ? `Sending from <b>${esc(TR.places[r.from].n)}</b> <span>· ${esc(r.isp)}</span>`
+        : h >= N ? `<b>Arrived:</b> ${N} hops, ${r.before} of them before Singapore <span>· ${esc(r.fast_ms.toFixed(1))} ms there and back</span>`
+        : `<b>Hop ${h + 1} of ${N}</b> · ${esc(hp.where)}${hp.net && hp.net !== hp.where ? ` · ${esc(hp.net)}` : ''} <span>· ${hp.silent ? 'no reply' : esc(hp.ms.toFixed(1)) + ' ms'}</span>`;
+    }
+    const box = trPanel && trPanel.querySelector(`.tr-route[data-route="${r.id}"]`);
+    if (box) box.querySelectorAll('li[data-hop]').forEach((li) => { const n = +li.dataset.hop; li.classList.toggle('past', n <= h); li.classList.toggle('on', n === h + 1 && h < N); });
+  }
+  function trTick(now) {
+    if (!trRunning) return;
+    requestAnimationFrame(trTick);
+    if (now - trLast < (narrow() ? 50 : 33)) return;   // 30 fps, 20 on a phone
+    const dt = trLast ? Math.min(0.1, (now - trLast) / 1000) : 0;
+    trLast = now;
+    trT += dt;
+    if (trT > TRK.end) { trT = 0; trHop = -2; }
+    trDraw(trT);
+  }
+  function trPlay(on) {
+    const want = !!TRK && on && booted && !still && onScreen && document.visibilityState === 'visible';
+    if (want === trRunning) return;
+    trRunning = want; trLast = 0;
+    if (trRunning) requestAnimationFrame(trTick);
+  }
+  /* the finished trip, for reduced motion: the whole line, the light at the end */
+  const trStill = () => trDraw(TRK.end - HOLD + 1.2);
+  function trFit() {
+    const xs = TRK.stops.map((S) => S.p.lng), ys = TRK.stops.map((S) => S.p.lat);
+    const pd = narrow() ? { top: 60, bottom: 60, left: 40, right: 40 } : { top: 70, bottom: 60, left: 170, right: 170 };
+    map.fitBounds([[Math.min(...xs), Math.min(...ys)], [Math.max(...xs), Math.max(...ys)]], { padding: pd, duration: still ? 0 : 900 });
+    map.once('moveend', trAnchors);
+  }
+  function trRoute(id, push, fit) {
+    if (!TR || !map.getSource('tr-base')) return;
+    const r = TR.routes.find((x) => x.id === id) || TR.routes[0];
+    TRK = prep(r);
+    trT = 0; trHop = -2; trLast = 0;
+    map.getSource('tr-base').setData(fc(TRK.legs.map((L) => ({ type: 'Feature', geometry: { type: 'LineString', coordinates: Array.from(L.k.xs, (x, i) => ll(x, L.k.ys[i])) }, properties: {} }))));
+    trAnchors();
+    document.querySelectorAll('#pm-routes .chip[data-route]').forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.route === r.id)));
+    inView(document.querySelector(`#pm-routes .chip[data-route="${r.id}"]`));
+    if (trPanel) trPanel.querySelectorAll('.tr-route').forEach((d) => { d.hidden = d.dataset.route !== r.id; });
+    if (push) { const u = new URL(location.href); u.searchParams.set('route', r.id); history.replaceState(null, '', u); }
+    if (fit) trFit();
+    if (still) trStill(); else trDraw(0);
+  }
+  /* Each name plate goes on the side of its stop where the route doesn't run, clear of the
+     other stops' marks and of the plates already placed, and on screen: MapLibre's own
+     collision test knows nothing of lines, so the side is picked here, from the route as
+     drawn now, and again after every zoom (zoomed out, the stops crowd together). */
+  const ANCH = [['left', 1, 0], ['right', -1, 0], ['top', 0, 1], ['bottom', 0, -1], ['top-left', 0.71, 0.71], ['top-right', -0.71, 0.71], ['bottom-left', 0.71, -0.71], ['bottom-right', -0.71, -0.71]];
+  /* how far a plate sits from its stop, in ems: further out above, below and at the corners,
+     because MapLibre pulls those placements back toward the point by its baseline offset
+     (7/24 em), and a corner would otherwise come closer to the mark than a side does */
+  const TR_TEXT = 15, TR_OFF = { side: 1.25, vert: 1.6, diag: 1.7 }, BASELINE = 7 / 24;
+  const offOf = (a) => (/-/.test(a) ? TR_OFF.diag : /^(top|bottom)$/.test(a) ? TR_OFF.vert : TR_OFF.side);
+  /* the text's offset from the point, in px, the way MapLibre turns a radial offset into x/y */
+  function radial(a) {
+    const r = offOf(a), h = r / Math.SQRT2;
+    const y = /^top-/.test(a) ? h - BASELINE : /^bottom-/.test(a) ? -h + BASELINE : a === 'top' ? r - BASELINE : a === 'bottom' ? -r + BASELINE : 0;
+    const x = /-right$/.test(a) ? -h : /-left$/.test(a) ? h : a === 'left' ? r : a === 'right' ? -r : 0;
+    return [x * TR_TEXT, y * TR_TEXT];
+  }
+  const trMeasure = document.createElement('canvas').getContext('2d');
+  function trAnchors() {
+    if (!TRK || !map.getSource('tr-stops')) return;
+    const W = map.getCanvas().clientWidth, H = map.getCanvas().clientHeight;
+    const route = [];
+    for (const L of TRK.legs) for (let i = 0; i < L.k.xs.length; i++) route.push(map.project(ll(L.k.xs[i], L.k.ys[i])));
+    const marks = TRK.stops.map((S) => map.project([S.p.lng, S.p.lat]));
+    const placed = [];
+    const meets = (a, b) => a[0] < b[2] && b[0] < a[2] && a[1] < b[3] && b[1] < a[3];
+    const feats = TRK.stops.map((S, si) => {
+      const name = S.p.likely ? `${S.p.n}, likely` : S.p.n, sub = S.s.sub;
+      trMeasure.font = FONT(600, TR_TEXT); const w1 = trMeasure.measureText(name).width;
+      trMeasure.font = FONT(500, TR_TEXT * 0.82); const w2 = trMeasure.measureText(sub).width;
+      const w = Math.max(w1, w2) + 12, h = TR_TEXT * 1.1 + TR_TEXT * 0.82 * 1.1 + 5;
+      const c = map.project([S.p.lng, S.p.lat]);
+      let best = null;
+      for (const [a] of ANCH) {
+        const [rx, ry] = radial(a);
+        const ox = c.x + rx, oy = c.y + ry;
+        const x1 = /left$/.test(a) ? ox - 6 : /right$/.test(a) ? ox - w + 6 : ox - w / 2;
+        const y1 = /^top/.test(a) ? oy - 3 : /^bottom/.test(a) ? oy - h + 2 : oy - h / 2;
+        const bx = [x1 - 6, y1 - 6, x1 + w + 6, y1 + h + 6];
+        const out = bx[0] < 6 || bx[1] < 6 || bx[2] > W - 6 || bx[3] > H - 6;
+        const hits = route.filter((q) => q.x > bx[0] && q.x < bx[2] && q.y > bx[1] && q.y < bx[3]).length;
+        const onMark = marks.some((m, mi) => mi !== si && meets(bx, [m.x - 10, m.y - 10, m.x + 10, m.y + 10]));
+        const onPlate = placed.some((pb) => meets(bx, pb));
+        const score = (out ? 1000 : 0) + (onMark ? 400 : 0) + (onPlate ? 400 : 0) + hits;
+        if (!best || score < best.score) best = { a, score, off: offOf(a), bx };
+      }
+      placed.push(best.bx);
+      return pt(S.p.lng, S.p.lat, { k: 'stop', name, sub, img: S.p.likely ? 'tr-ring' : 'tr-dot', anchor: best.a, off: best.off });
+    });
+    map.getSource('tr-stops').setData(fc(feats));
+  }
+  if (TR) {
+    map.on('zoomend', () => { if (mode === 'trace') trAnchors(); });
+    map.on('resize', () => { if (mode === 'trace') trAnchors(); });
+    document.querySelectorAll('#pm-routes .chip[data-route]').forEach((c) => c.addEventListener('click', () => { trRoute(c.dataset.route, true, true); trPlay(mode === 'trace'); }));
+    const again = document.getElementById('pm-replay');
+    if (again) again.addEventListener('click', () => { if (!TRK) return; trT = 0; trHop = -2; trLast = 0; if (still) trStill(); else { trDraw(0); trPlay(mode === 'trace'); } });
+  }
+
+
   /* ── layers ──────────────────────────────────────────────────────── */
   const LAYERS = { net: ['net-line', 'net-names', 'net-names-e', 'net-marks'], dc: ['dc-gnames', 'dc-names', 'dc-marks'], ix: ['ix-names', 'ix-marks'], ports: ['pt-names', 'pt-marks'] };
-  /* the network layer hides the basemap's own names: its lines must never run through a label */
+  if (TR) LAYERS.trace = ['tr-base', 'tr-glow', 'tr-line', 'tr-marks', 'tr-halo', 'tr-core', 'tr-names'];
+  const LINE_LAYER = /^(net-line|tr-(base|glow|line|halo|core))$/;
+  /* the network and trace layers hide the basemap's own names: their lines must never run through a label */
   const BASE_LABELS = ['label-sea', 'label-road', 'label-district', 'label-region', 'label-city', 'label-country'];
   const nameText = (extra) => Object.assign({
     'text-font': SEMI, 'text-max-width': 9, 'text-line-height': 1.1, 'text-letter-spacing': -0.01,
@@ -579,6 +775,28 @@ function start(gl, D, RCH) {
     /* grey city discs under the named sites' discs, so a city's unplaced ports never hide a data centre */
     map.addLayer({ id: 'pt-marks', type: 'symbol', source: 'pt',
       layout: Object.assign(markLayout(['get', 'img']), { 'symbol-sort-key': ['-', ['get', 'n'], ['*', ['get', 'grey'], 1000000]], visibility: 'none' }) });
+    if (TR) {
+      for (const id of ['tr-base', 'tr-done', 'tr-light', 'tr-stops']) map.addSource(id, { type: 'geojson', data: fc([]) });
+      add('tr-dot', drawDot(9, P.ink));
+      add('tr-ring', drawRing(9));
+      map.addLayer({ id: 'tr-base', type: 'line', source: 'tr-base', layout: { 'line-cap': 'round', visibility: 'none' },
+        paint: { 'line-color': '#8FB3CC', 'line-width': 2, 'line-dasharray': [0.5, 2.2] } });
+      map.addLayer({ id: 'tr-glow', type: 'line', source: 'tr-done', layout: { 'line-cap': 'round', visibility: 'none' },
+        paint: { 'line-color': '#36A9FF', 'line-opacity': 0.18, 'line-blur': 3, 'line-width': 11 } });
+      map.addLayer({ id: 'tr-line', type: 'line', source: 'tr-done', layout: { 'line-cap': 'round', 'line-join': 'round', visibility: 'none' },
+        paint: { 'line-color': '#1E90FF', 'line-width': 3 } });
+      map.addLayer({ id: 'tr-marks', type: 'symbol', source: 'tr-stops', layout: Object.assign(markLayout(['get', 'img']), { visibility: 'none' }) });
+      map.addLayer({ id: 'tr-halo', type: 'circle', source: 'tr-light', layout: { visibility: 'none' },
+        paint: { 'circle-color': '#2F9BFF', 'circle-opacity': 0.42, 'circle-blur': 0.85, 'circle-radius': 15 } });
+      map.addLayer({ id: 'tr-core', type: 'circle', source: 'tr-light', layout: { visibility: 'none' },
+        paint: { 'circle-color': '#0A6CFF', 'circle-radius': 5, 'circle-stroke-color': '#EAF5FF', 'circle-stroke-width': 2 } });
+      /* names on white plates, above the line and the light: they pass under a name, never through it */
+      const trNames = nameText({ 'text-field': twoLine, 'text-size': TR_TEXT, 'text-radial-offset': ['get', 'off'], 'text-anchor': ['get', 'anchor'], 'text-max-width': 18,
+        'icon-image': 'plate', 'icon-text-fit': 'both', 'icon-text-fit-padding': [3, 6, 2, 6],
+        'icon-allow-overlap': true, 'icon-ignore-placement': true, 'text-padding': 7, visibility: 'none' });
+      delete trNames['text-variable-anchor'];
+      map.addLayer({ id: 'tr-names', type: 'symbol', source: 'tr-stops', layout: trNames, paint: inkPaint });
+    }
     /* the screen's edges: four invisible walls just outside the map. Added last, so they
        are placed before every name, and a name that would run off the screen takes
        another side or waits for a closer zoom instead of being cut off. */
@@ -608,26 +826,45 @@ function start(gl, D, RCH) {
     setMode(initialMode, false);
     map.once('idle', () => {
       root.dataset.ready = '1';
+      booted = true;
+      trPlay(mode === 'trace');
       if (initialPlace) openPlace(initialPlace, initialMode, true);
     });
   });
 
   /* ── mode chips ──────────────────────────────────────────────────── */
+  /* a rail scrolls sideways on a phone: keep its pressed chip in view, without moving the page */
+  function inView(c) {
+    const rail = c && c.parentElement;
+    if (!rail || rail.scrollWidth <= rail.clientWidth) return;
+    if (c.offsetLeft < rail.scrollLeft || c.offsetLeft + c.offsetWidth > rail.scrollLeft + rail.clientWidth) rail.scrollLeft = Math.max(0, c.offsetLeft - 12);
+  }
+
   const chips = [...document.querySelectorAll('.pm-rail .chip[data-mode]')];
   const keyRows = [...document.querySelectorAll('#pm-key .row')];
   const qs = new URLSearchParams(location.search);
-  const initialMode = ['net', 'dc', 'ix', 'ports'].includes(qs.get('layer')) ? qs.get('layer') : 'net';
+  const initialMode = ['net', 'dc', 'ix', 'ports', ...(TR ? ['trace'] : [])].includes(qs.get('layer')) ? qs.get('layer') : 'net';
+  const initialRoute = TR && TR.routes.some((r) => r.id === qs.get('route')) ? qs.get('route') : (TR ? TR.routes[0].id : '');
   const initialPlace = PL.has(qs.get('place')) ? qs.get('place') : '';
   let mode = 'net';
   function setMode(m, push) {
+    const was = mode;
     mode = m;
     for (const [k, ids] of Object.entries(LAYERS)) for (const id of ids) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', k === m ? 'visible' : 'none');
-    for (const id of BASE_LABELS) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', m === 'net' ? 'none' : 'visible');
+    for (const id of BASE_LABELS) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', m === 'net' || m === 'trace' ? 'none' : 'visible');
+    if (TR) {
+      if (trRail) trRail.hidden = m !== 'trace';
+      if (trPanel) trPanel.hidden = m !== 'trace';
+      if (m === 'trace' && (was !== 'trace' || !TRK)) trRoute(TRK ? TRK.r.id : initialRoute, false, true);
+      trPlay(m === 'trace');
+    }
     chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.mode === m)));
+    inView(chips.find((c) => c.dataset.mode === m));
     keyRows.forEach((r) => { r.hidden = r.dataset.for !== m; });
     if (push) {
       const u = new URL(location.href);
       if (m === 'net') u.searchParams.delete('layer'); else u.searchParams.set('layer', m);
+      if (m !== 'trace') u.searchParams.delete('route');
       history.replaceState(null, '', u);
     }
   }
@@ -642,7 +879,7 @@ function start(gl, D, RCH) {
   const tip = document.getElementById('pm-tip');
   const marks = () => LAYERS[mode].slice().reverse();
   map.on('mousemove', (e) => {
-    const f = map.queryRenderedFeatures(e.point, { layers: marks().filter((id) => id !== 'net-line') })[0];
+    const f = map.queryRenderedFeatures(e.point, { layers: marks().filter((id) => !LINE_LAYER.test(id)) })[0];
     if (!f && mode === 'net' && !narrow()) {
       const box = [[e.point.x - 4, e.point.y - 4], [e.point.x + 4, e.point.y + 4]];
       const ln = map.queryRenderedFeatures(box, { layers: ['net-line'] })[0];
@@ -657,14 +894,14 @@ function start(gl, D, RCH) {
     map.getCanvas().style.cursor = f ? 'pointer' : '';
     if (!f || narrow()) { tip.hidden = true; return; }
     const p = f.properties;
-    tip.textContent = p.k === 'place' && (mode === 'dc' || mode === 'net') ? (p.grey ? `${p.name} · grey: no name we can check` : p.name + (p.sub ? ` · ${p.sub}` : ''))
+    tip.textContent = p.k === 'stop' ? `${p.name} · ${p.sub}` : p.k === 'place' && (mode === 'dc' || mode === 'net') ? (p.grey ? `${p.name} · grey: no name we can check` : p.name + (p.sub ? ` · ${p.sub}` : ''))
       : mode === 'ix' ? `${p.name}${p.sub ? ' · ' + p.sub : ''}` : `${p.name} · ${n0(p.n)} router ports`;
     tip.style.left = e.point.x + 'px'; tip.style.top = e.point.y + 'px'; tip.hidden = false;
   });
   map.getCanvas().addEventListener('mouseleave', () => { tip.hidden = true; });
   map.on('click', (e) => {
     const box = [[e.point.x - 6, e.point.y - 6], [e.point.x + 6, e.point.y + 6]];
-    const hits = map.queryRenderedFeatures(box, { layers: marks().filter((id) => id !== 'net-line') });
+    const hits = map.queryRenderedFeatures(box, { layers: marks().filter((id) => !LINE_LAYER.test(id)) });
     const f = hits[0];
     if (!f) { closeCard(); return; }
     const p = f.properties;

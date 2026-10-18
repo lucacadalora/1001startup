@@ -43,6 +43,28 @@ const raw = () => {
   if (mtime !== mapCache.mtime) { try { mapCache = { mtime, raw: fs.readFileSync(MAPDATA, 'utf8') }; } catch (e) { /* mid-write */ } }
   return mapCache.raw || null;
 };
+/* The Trace view (Luca, 18 Oct 2026: "i send messages in solo/surakarta, how it reach in
+   singapore ... how many route/ping it reach before going to singapore"; then "put the
+   Trace view live on dc.1001startup.id"): real traceroutes from data/peering-trace.json
+   (scripts/peering-trace-build.py), drawn hop by hop on the map. On while
+   data/peering-trace.live exists (removing it hides the chip and the section within 10 s,
+   no restart), or with PEERING_TRACE=1 on a test port. Read per request with an mtime
+   cache, like the map's data. */
+const TRACE = path.join(__dirname, '..', 'data', 'peering-trace.json');
+const TRACE_FLAG = path.join(__dirname, '..', 'data', 'peering-trace.live');
+let traceCache = { mtime: -1, data: null };
+let traceOn = { at: 0, on: false };
+function trace() {
+  if (process.env.PEERING_TRACE !== '1') {
+    const now = Date.now();
+    if (now - traceOn.at > 10000) traceOn = { at: now, on: fs.existsSync(TRACE_FLAG) };
+    if (!traceOn.on) return null;
+  }
+  let mtime = 0;
+  try { mtime = fs.statSync(TRACE).mtimeMs; } catch (e) { return null; }
+  if (mtime !== traceCache.mtime) { try { traceCache = { mtime, data: JSON.parse(fs.readFileSync(TRACE, 'utf8')) }; } catch (e) { /* mid-write: keep the last good copy */ } }
+  return traceCache.data;
+}
 const ver = (file) => { try { return String(Math.floor(fs.statSync(path.join(__dirname, '..', 'public', 'js', file)).mtimeMs / 1000)); } catch (e) { return '0'; } };
 const GL = '/js/vendor/maplibre-gl-6.11.2';
 /* the page lives on its own host; links into the rest of 1001 go to the main one */
@@ -118,6 +140,44 @@ function facRow(D, f) {
   <p class="acts">${f.place ? `<button type="button" class="btn sm" data-show="${esc(f.place)}">Show on the map</button>` : ''}<a class="btn sm" href="https://www.peeringdb.com/fac/${f.id}" target="_blank" rel="noopener nofollow">PeeringDB entry</a></p>
 </div>
 </details>`;
+}
+
+/* the Trace view's section under the map: one block per route (the map's route chips pick
+   which is shown), every hop with where it is and how we know, then the limits */
+const msTxt = (v) => (v == null ? '' : `${Number(v).toFixed(1)} ms`);
+function tracePanel(TR) {
+  const P = TR.places;
+  const day = new Date(TR.asof + 'T00:00:00Z').toLocaleDateString('en-GB', { day: 'numeric', month: 'long', year: 'numeric', timeZone: 'UTC' });
+  const routes = TR.routes.map((r, i) => {
+    const rows = r.hops.map((h) => `<li data-hop="${h.n}"${h.silent ? ' class="is-silent"' : ''}><span class="hn">${h.n}</span><span class="hw">${esc(h.where)}</span><span class="hnet">${esc(h.net)}</span><span class="hms">${h.silent ? 'no reply' : esc(msTxt(h.ms))}${h.slow ? ' <span class="gtag">slow reply</span>' : ''}</span><span class="hhow">${esc(h.how)}</span></li>`).join('');
+    const house = r.in_house ? `${r.in_house} of them in the house` : r.stops.length > 2 ? `in ${r.stops.slice(0, -1).map((s) => P[s.at].n.replace(/, likely$/, '')).join(' and ')}` : '';
+    return `<div class="tr-route" data-route="${esc(r.id)}"${i ? ' hidden' : ''}>
+  <h3>${esc(r.label)}<small>Tested ${esc(day)}, ${esc(r.when.slice(11, 16))} UTC</small></h3>
+  <p class="tr-story">${esc(r.story)}</p>
+  <div class="tr-kp">
+    <div><b>${r.hops.length}</b><span>hops in all</span></div>
+    <div><b>${r.before}</b><span>hops before Singapore${house ? `<br>${esc(house)}` : ''}</span></div>
+    <div><b>${esc(msTxt(r.fast_ms))}</b><span>fastest round trip<br>typical ${esc(msTxt(r.avg_ms))}</span></div>
+    <div><b>${esc(msTxt(r.floor_ms))}</b><span>light’s best in fibre<br>${n0(r.km)} km straight line</span></div>
+  </div>
+  <div class="tr-hops"><div class="thd" role="presentation"><span>Hop</span><span>Where</span><span>Network</span><span>Round trip</span><span>How we know where it is</span></div><ol>${rows}</ol></div>
+  <p class="tr-line">The line: ${esc(r.line)}.${r.place_on_map ? ` <button type="button" class="btn sm" data-show="${esc(r.place_on_map)}" data-mode="dc">Show Citranet DC Surakarta on the map</button>` : ''}</p>
+</div>`;
+  }).join('');
+  return `<section class="wrap pm-trace" id="trace" hidden>
+  <div class="eyebrow"><span class="sq"></span>TRACE A MESSAGE · SOLO TO SINGAPORE · TESTED ${esc(day.toUpperCase())}</div>
+  <p class="lede">What happens to a message sent from Solo to a server in Singapore. Each hop is a router that passes it on: the test (a traceroute) gets every router on the way to answer in turn and times each answer. Three real tests: one from Solo, and two from nearby Yogyakarta and Sleman on other networks.</p>
+  ${routes}
+  <ul class="tr-warn">
+    <li>One test device per city and network, tested once. Your own line may take another road, and roads change.</li>
+    <li>Times are round trips, there and back, the way ping counts them. The map plays the trip ${n0(TR.slow)} times slower than it really is, and shows hops at the same place a beat apart so each one can be read.</li>
+    <li>A hop is a router that answered. Some networks pass traffic through tunnels that hide their routers (Telkom hides Jakarta here), and some routers don’t answer at all.</li>
+    <li>Places come from router names, address records and delay, never from a guess at a building. Jakarta is worked out from delay alone.</li>
+    <li>The line on the map shows the order of the hops, not where the cable runs.</li>
+    <li>A chat message, on WhatsApp for example, goes to the app’s own server first, not straight to the person.</li>
+  </ul>
+  <p class="tr-src">Tests: <a href="https://globalping.io/" target="_blank" rel="noopener">Globalping</a> volunteer test devices, mtr to ${esc(TR.target.host)} · address owners: <a href="https://stat.ripe.net/" target="_blank" rel="noopener">RIPEstat</a> · buildings: PeeringDB · map © OpenStreetMap, Protomaps</p>
+</section>`;
 }
 
 function ixRow(D, x) {
@@ -266,6 +326,51 @@ body.pm-over-map .b1 .b1-tab{visibility:hidden!important;pointer-events:none}
 .dcm summary{cursor:pointer;font-weight:600}
 .dcm ul{margin:12px 0 0 18px;display:grid;gap:8px;color:#3F3F46;max-width:92ch;line-height:1.55}
 .dcm a{color:#0000EE}
+/* the Trace view: route chips in a second bar above the map, the live hop in the strip
+   below it, every hop in the section under the map */
+.pm-routes{border-top:0;padding-top:0}
+.pm-routes .chip b{font-weight:500}
+.pm-key .pm-now{font:500 14px/1.45 'Overused Grotesk',sans-serif;letter-spacing:0;text-transform:none;color:#0B0B0C}
+.pm-key .pm-now b{font-weight:600}
+.pm-key .pm-now span{color:#6B6B73;font-weight:500}
+.pm-key .rg{width:11px;height:11px;border-radius:50%;background:#fff;box-shadow:inset 0 0 0 2.5px #0B0B0C,0 0 0 2px #fff,0 0 0 3px rgba(0,0,0,.12)}
+.pm-trace[hidden],.pm-trace [hidden]{display:none!important}
+.pm-trace h3{font-size:20px;line-height:1.25;letter-spacing:-.015em;font-weight:600;margin:6px 0 6px}
+.pm-trace h3 small{display:block;font:400 10.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;color:#6B6B73;margin-top:2px}
+.tr-story{color:#27272A;line-height:1.55;max-width:80ch;margin-bottom:14px}
+.tr-kp{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:1px;background:#E7E7E7;border:1px solid #E7E7E7;margin-bottom:16px;max-width:880px}
+.tr-kp div{background:#fff;padding:10px 12px}
+.tr-kp b{display:block;font-size:22px;font-weight:600;letter-spacing:-.02em}
+.tr-kp span{font:400 10px/1.45 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
+.tr-hops{border:1px solid #E7E7E7}
+.tr-hops ol{list-style:none}
+.tr-hops .thd,.tr-hops li{display:grid;grid-template-columns:42px minmax(0,1.05fr) minmax(0,1fr) 112px minmax(0,2.6fr);gap:12px;align-items:baseline;padding:9px 14px}
+.tr-hops .thd{font:400 10.5px/1.3 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73;background:#FAFAFA;border-bottom:1px solid #E7E7E7}
+.tr-hops li{border-top:1px solid #F1F1F1;font-size:14px;line-height:1.45;transition:background .25s}
+.tr-hops li:first-child{border-top:0}
+.tr-hops .hn{font:500 12px/1 'IBM Plex Mono',monospace;color:#6B6B73;width:26px;height:22px;display:inline-flex;align-items:center;justify-content:center;border:1px solid #E7E7E7;transition:background .25s,color .25s}
+.tr-hops .hw{font-weight:600}
+.tr-hops .hnet{color:#3F3F46}
+.tr-hops .hms{font:400 12.5px/1.45 'IBM Plex Mono',monospace;color:#18181B}
+.tr-hops .hhow{color:#52525B;font-size:13.5px}
+.tr-hops li.is-silent .hw,.tr-hops li.is-silent .hms{color:#8A8D93}
+.tr-hops li.past .hn{background:#0B0B0C;border-color:#0B0B0C;color:#fff}
+.tr-hops li.on{background:#EAF5FF}
+.tr-hops li.on .hn{background:#0A6CFF;border-color:#0A6CFF;color:#fff}
+.tr-line{color:#52525B;font-size:13.5px;line-height:1.55;margin:12px 0 30px;max-width:92ch}
+.tr-line .btn{margin-left:6px;vertical-align:middle}
+.tr-warn{list-style:none;display:grid;gap:7px;max-width:92ch;border-top:1px solid #E7E7E7;padding-top:16px}
+.tr-warn li{padding-left:16px;position:relative;line-height:1.5;color:#3F3F46;font-size:14px}
+.tr-warn li:before{content:'';position:absolute;left:2px;top:.62em;width:5px;height:5px;background:#A6A9AE}
+.tr-src{margin-top:14px;font:400 10.5px/1.6 'IBM Plex Mono',monospace;letter-spacing:.03em;text-transform:uppercase;color:#8A8D93}
+.tr-src a{color:inherit}
+@media (max-width:760px){
+  .tr-kp{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .tr-hops .thd{display:none}
+  .tr-hops li{grid-template-columns:32px minmax(0,1fr) auto;grid-template-areas:"hn hw hms" "hn hnet hnet" "hn hhow hhow";row-gap:3px;gap:0 10px;padding:10px 12px}
+  .tr-hops .hn{grid-area:hn}.tr-hops .hw{grid-area:hw}.tr-hops .hms{grid-area:hms;text-align:right}.tr-hops .hnet{grid-area:hnet;font-size:13px}.tr-hops .hhow{grid-area:hhow;font-size:13px}
+  .pm-key .pm-now{font-size:13.5px}
+}
 @media (max-width:760px){
   .pm-wrap{height:min(72vh,640px)}
   .pm-rail{padding:10px 12px}
@@ -295,7 +400,8 @@ function page({ lang = 'en', tiles = null } = {}) {
   const topNets = Object.entries(D.nets).map(([id, v]) => ({ id, asn: v[0], n: v[1], type: v[2], fac: v[3], ports: v[4] }))
     .sort((a, b) => (b.fac + b.ports) - (a.fac + a.ports) || a.asn - b.asn).slice(0, 30);
   /* reach: the ISP reach panel on the place card, on while its data file exists */
-  const cfg = { tiles: tiles ? tiles.url : null, maxzoom: tiles ? tiles.maxzoom : 0, reach: reachLive() };
+  const TR = trace();
+  const cfg = { tiles: tiles ? tiles.url : null, maxzoom: tiles ? tiles.maxzoom : 0, reach: reachLive(), trace: !!TR };
   const body = `
 <style>${CSS}</style>
 <link rel="stylesheet" href="${GL}/maplibre-gl.css">
@@ -311,15 +417,17 @@ function page({ lang = 'en', tiles = null } = {}) {
     <button type="button" class="chip" data-mode="dc" aria-pressed="false">Data centres<b>${n0(T.fac)}</b></button>
     <button type="button" class="chip" data-mode="ix" aria-pressed="false">Exchanges<b>${n0(T.ix)}</b></button>
     <button type="button" class="chip" data-mode="ports" aria-pressed="false">Router ports<b>${n0(T.ports)}</b></button>
+    ${TR ? '<button type="button" class="chip" data-mode="trace" aria-pressed="false">Trace a message<b>Solo → Singapore</b></button>' : ''}
   </nav>
+  ${TR ? `<nav class="pm-rail pm-routes" id="pm-routes" aria-label="Which test to play" hidden>${TR.routes.map((r, i) => `<button type="button" class="chip" data-route="${esc(r.id)}" aria-pressed="${i ? 'false' : 'true'}">${esc(r.isp)} · ${esc(TR.places[r.from].n)}<b>${r.hops.length} hops</b></button>`).join('')}<button type="button" class="chip" id="pm-replay">↻ Play again</button></nav>` : ''}
 <div class="pm-wrap" id="pm-wrap">
-  <div id="pm-map" data-cfg="${esc(JSON.stringify(cfg))}" role="application" aria-label="Map of Indonesia’s data centres, internet exchanges and router ports from PeeringDB"></div>
+  <div id="pm-map" data-cfg="${esc(JSON.stringify(cfg))}"${TR ? ` data-trace="${esc(JSON.stringify(TR))}"` : ''} role="application" aria-label="Map of Indonesia’s data centres, internet exchanges and router ports from PeeringDB"></div>
   <div class="pm-tip" id="pm-tip" hidden></div>
   <aside class="pm-card" id="pm-card" hidden aria-live="polite"></aside>
   <noscript><div class="pm-msg"><p>The map needs JavaScript. The same places are listed below.</p></div></noscript>
   <div class="pm-msg" id="pm-msg" hidden><p>This browser has WebGL switched off, so the map cannot draw. The same places are listed below.</p></div>
 </div>
-  <div class="pm-key" id="pm-key"><div class="pm-legend"><div class="row" data-for="net"><span><i class="ln"></i>line = the same exchange is in both buildings; thicker = more exchanges (not cable routes)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
+  <div class="pm-key" id="pm-key"><div class="pm-legend"><div class="row" data-for="net"><span><i class="ln"></i>line = the same exchange is in both buildings; thicker = more exchanges (not cable routes)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div>${TR ? `<div class="row" data-for="trace" hidden><span class="pm-now" id="pm-now" aria-live="polite">Starting in Solo</span></div><div class="row" data-for="trace" hidden><span><i class="d"></i>place shown by a router name or address record</span><span><i class="rg"></i>place worked out from the delay</span><span><i class="ln"></i>order of the hops, not the cable route</span><span>played ${n0(TR.slow)}× slower</span><span>tests: <a href="https://globalping.io/" target="_blank" rel="noopener">Globalping</a></span></div>` : ''}<div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
   <div class="pm-ctl" role="group" aria-label="Zoom">
     <button type="button" id="pm-in" aria-label="Zoom in">+</button>
     <button type="button" id="pm-out" aria-label="Zoom out">−</button>
@@ -327,6 +435,7 @@ function page({ lang = 'en', tiles = null } = {}) {
   </div>
 </div>
 </div>
+${TR ? tracePanel(TR) : ''}
 <div class="stats" style="margin-top:36px">
   <div class="cell"><div class="v">${n0(T.fac)}</div><div class="k">Data centres and network sites · ${n0(T.fac_named)} named, ${n0(T.fac_grey)} grey</div></div>
   <div class="cell"><div class="v">${n0(T.ix)}</div><div class="k">Internet exchanges · ${n0(T.ix_named)} at a named site</div></div>
