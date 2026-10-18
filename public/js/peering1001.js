@@ -448,7 +448,7 @@ function start(gl, D, RCH) {
   };
   /* where a place is drawn right now (it may stand a little off its address) */
   const drawnAt = (pid) => {
-    const key = mode === 'ports' ? 'pt' : mode;
+    const key = mode === 'ports' ? 'pt' : mode === 'net' ? 'dc' : mode;   // the network layer draws places from the dc source
     const f = laid(key, Math.max(SPREAD_FROM - 0.5, stepOf(map.getZoom()))).features.find((x) => x.properties.id === pid);
     return f ? f.geometry.coordinates : null;
   };
