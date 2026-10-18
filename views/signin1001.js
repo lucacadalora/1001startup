@@ -16,30 +16,13 @@ const { esc } = require('../lib/util');
 const I18N = require('./i18n1001');
 const { shell } = require('./browse1001');
 const { V } = require('./html');
+/* our scripts' version: bump the letter on every change to signin1001.js or
+   wall1001.js (/js is served immutable for a year) */
+const AV = V + 'a2';
 
-const CSS = `<style>
-.si{max-width:1180px;margin:0 auto;padding:56px 20px 8px;display:grid;grid-template-columns:minmax(0,1fr);justify-items:center}
-.si-card{width:100%;max-width:420px;border:1px solid #000;padding:30px 28px 26px;background:#fff}
-.si-k{font:400 11px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#6B6B73;display:flex;align-items:center;gap:8px}
-.si-k .sq{width:6px;height:6px;background:#E8734B;display:inline-block}
-.si-card h1{font-size:28px;line-height:1.12;letter-spacing:-0.025em;font-weight:500;margin-top:14px;text-wrap:balance}
-.si-sub{color:#52525B;font-size:15px;line-height:1.55;margin-top:10px}
-.si-sub b{color:#000;font-weight:600;word-break:break-all}
-.si-f{margin-top:24px;display:grid;gap:12px}
-.si-f label{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#52525B}
-.si-f input{width:100%;padding:13px 15px;border:1px solid #000;border-radius:0;font:500 16px/1.2 'Overused Grotesk',system-ui,sans-serif;background:#fff;color:#000;outline:none}
-.si-f input:focus{box-shadow:inset 0 -2px #E8734B}
-.si-f input.code{font:400 24px/1 'IBM Plex Mono',monospace;letter-spacing:.32em;padding:14px 15px}
-.si-f .btn{width:100%;text-align:center;padding:14px 18px}
+/* Clerk's form restyled to 1001: used by /signin and by the wall's popup frame */
+const CLERK_CSS = `
 .si-err{font-size:14px;color:#B3261E;border-left:2px solid #B3261E;padding-left:10px;line-height:1.45}
-.si-alt{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;font-size:14px}
-.si-alt a,.si-alt button{color:#52525B;font:inherit;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
-.si-alt a:hover,.si-alt button:hover{color:#000}
-.si-alt form{display:inline}
-.si-note{margin-top:22px;padding-top:16px;border-top:1px solid #E7E7E7;font-size:13px;line-height:1.6;color:#6B6B73}
-.si-row{display:grid;gap:10px;margin-top:24px}
-.si-row .btn{text-align:center}
-.si-intro{margin-bottom:22px}
 .si-clerk{min-height:140px;min-width:0;max-width:100%;transition:opacity .15s}
 /* Clerk fixes its card at 25rem; inside our card it must follow our width */
 #si-clerk{width:100%!important;max-width:100%!important;display:block!important}
@@ -52,7 +35,6 @@ const CSS = `<style>
 .si-skel span{display:block;height:46px;background:#F3F3F5;margin-bottom:12px}
 .si-skel span:first-child{height:12px;width:22%}
 .si-ready .si-skel{display:none}
-.si-card:has(.cl-card:not(.cl-signIn-start)) .si-intro{display:none}
 #si-clerk .cl-cardBox{border:0;border-radius:0;box-shadow:none;background:transparent;overflow:visible}
 #si-clerk .cl-card{padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;gap:20px}
 #si-clerk .cl-signIn-start .cl-header{display:none}
@@ -70,8 +52,33 @@ const CSS = `<style>
 #si-clerk .cl-footerActionText,.si-clerk .cl-footerActionLink{font:500 14px/1.4 'Overused Grotesk',system-ui,sans-serif}
 #si-clerk .cl-footerActionLink{color:#000;text-decoration:underline;text-underline-offset:3px}
 #si-clerk .cl-formResendCodeLink,.si-clerk .cl-identityPreviewEditButton{color:#000}
+`;
+
+const CSS = `<style>
+.si{max-width:1180px;margin:0 auto;padding:56px 20px 8px;display:grid;grid-template-columns:minmax(0,1fr);justify-items:center}
+.si-card{width:100%;max-width:420px;border:1px solid #000;padding:30px 28px 26px;background:#fff}
+.si-k{font:400 11px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#6B6B73;display:flex;align-items:center;gap:8px}
+.si-k .sq{width:6px;height:6px;background:#E8734B;display:inline-block}
+.si-card h1{font-size:28px;line-height:1.12;letter-spacing:-0.025em;font-weight:500;margin-top:14px;text-wrap:balance}
+.si-sub{color:#52525B;font-size:15px;line-height:1.55;margin-top:10px}
+.si-sub b{color:#000;font-weight:600;word-break:break-all}
+.si-f{margin-top:24px;display:grid;gap:12px}
+.si-f label{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#52525B}
+.si-f input{width:100%;padding:13px 15px;border:1px solid #000;border-radius:0;font:500 16px/1.2 'Overused Grotesk',system-ui,sans-serif;background:#fff;color:#000;outline:none}
+.si-f input:focus{box-shadow:inset 0 -2px #E8734B}
+.si-f input.code{font:400 24px/1 'IBM Plex Mono',monospace;letter-spacing:.32em;padding:14px 15px}
+.si-f .btn{width:100%;text-align:center;padding:14px 18px}
+.si-alt{display:flex;flex-wrap:wrap;gap:6px 18px;margin-top:18px;font-size:14px}
+.si-alt a,.si-alt button{color:#52525B;font:inherit;background:none;border:0;padding:0;cursor:pointer;text-decoration:underline;text-underline-offset:3px}
+.si-alt a:hover,.si-alt button:hover{color:#000}
+.si-alt form{display:inline}
+.si-note{margin-top:22px;padding-top:16px;border-top:1px solid #E7E7E7;font-size:13px;line-height:1.6;color:#6B6B73}
+.si-row{display:grid;gap:10px;margin-top:24px}
+.si-row .btn{text-align:center}
+.si-intro{margin-bottom:22px}
+.si-card:has(.cl-card:not(.cl-signIn-start)) .si-intro{display:none}
 @media(max-width:480px){.si{padding:28px 16px 4px}.si-card{padding:24px 20px 22px}.si-card h1{font-size:25px}}
-</style>`;
+${CLERK_CSS}</style>`;
 
 function page({ lang, path, title, body }) {
   const L = I18N.mkL(lang);
@@ -111,8 +118,44 @@ function signIn({ lang = 'en', next = '', pk = '', fapi = '', out = false }) {
 ${note(L)}
 ${ready ? `<script async crossorigin="anonymous" data-clerk-publishable-key="${esc(pk)}" src="https://${esc(fapi)}/npm/@clerk/clerk-js@6/dist/clerk.browser.js"></script>
 <script async crossorigin="anonymous" data-clerk-publishable-key="${esc(pk)}" src="https://${esc(fapi)}/npm/@clerk/ui@1/dist/ui.browser.js"></script>
-<script src="/js/signin1001.js?v=${V}" defer></script>` : ''}`,
+${lang === 'id' ? `<script src="/js/clerk-id-ID.js?v=${AV}" defer></script>\n` : ''}<script src="/js/signin1001.js?v=${AV}" defer></script>` : ''}`,
   });
+}
+
+/* The form alone, for the wall's popup (served at /signin?embed=1 with
+   frame-ancestors 'self'). No header or footer: the card around it carries
+   the title and the note. signed = this browser is already signed in
+   (another tab got there first): the script tells the wall to lift. */
+function embed({ lang = 'en', next = '', pk = '', fapi = '', via = '', signed = false }) {
+  const L = I18N.mkL(lang);
+  const ready = !!(pk && fapi);
+  return `<!doctype html>
+<html lang="${lang === 'id' ? 'id' : 'en'}">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>${L('Sign in', 'Masuk')} — 1001startup.id</title>
+<style>
+@font-face{font-family:'Overused Grotesk';font-style:normal;font-weight:300 900;font-display:swap;src:url(/assets/fonts/overused-grotesk-vf.woff2) format('woff2')}
+@font-face{font-family:'IBM Plex Mono';font-style:normal;font-weight:400;font-display:swap;src:url(/assets/fonts/plex-mono-400.woff2) format('woff2')}
+*{box-sizing:border-box;margin:0;padding:0}
+html,body{background:#fff;color:#000}
+body{font:500 16px/1.5 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.01em;padding:2px 2px 6px}
+${CLERK_CSS}
+.si-err{margin-top:12px}
+</style>
+</head>
+<body>
+<div id="si-clerk" class="si-clerk" data-embed="1" data-lang="${lang === 'id' ? 'id' : 'en'}" data-next="${esc(next)}" data-via="${esc(via)}"${signed ? ' data-signed="1"' : ''}>
+  ${signed ? '' : '<div class="si-skel" aria-hidden="true"><span></span><span></span><span></span></div>'}
+</div>
+<p id="si-msg" class="si-err" role="alert"${ready ? ' hidden' : ''}>${ready ? '' : L('Sign-in is not available right now. Try again later.', 'Layanan masuk belum tersedia. Coba lagi nanti.')}</p>
+${ready && !signed ? `<script async crossorigin="anonymous" data-clerk-publishable-key="${esc(pk)}" src="https://${esc(fapi)}/npm/@clerk/clerk-js@6/dist/clerk.browser.js"></script>
+<script async crossorigin="anonymous" data-clerk-publishable-key="${esc(pk)}" src="https://${esc(fapi)}/npm/@clerk/ui@1/dist/ui.browser.js"></script>` : ''}
+${lang === 'id' ? `<script src="/js/clerk-id-ID.js?v=${AV}" defer></script>\n` : ''}<script src="/js/signin1001.js?v=${AV}" defer></script>
+</body>
+</html>`;
 }
 
 /** Signed in already. */
@@ -132,4 +175,4 @@ function account({ lang = 'en', email = '', next = '' }) {
   });
 }
 
-module.exports = { signIn, account };
+module.exports = { signIn, account, embed, AV };

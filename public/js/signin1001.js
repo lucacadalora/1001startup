@@ -8,6 +8,10 @@
  *
  * ?out=1 (after "Sign out") ends the Clerk session too, or the reader would be
  * signed straight back in by the code below.
+ *
+ * Inside the wall's popup (/signin?embed=1, data-embed="1") nothing navigates:
+ * the frame reports its height and, once signed in, tells the page around it
+ * (public/js/wall1001.js), which lifts the wall in place.
  */
 (function () {
   'use strict';
@@ -16,7 +20,21 @@
   var lang = root.getAttribute('data-lang') === 'id' ? 'id' : 'en';
   var next = root.getAttribute('data-next') || '';
   var out = root.getAttribute('data-out') === '1';
+  var embed = root.getAttribute('data-embed') === '1';
+  var via = root.getAttribute('data-via') || '';
   var msg = document.getElementById('si-msg');
+  function tell(m) {
+    if (embed && window.parent !== window) {
+      try { window.parent.postMessage(m, location.origin); } catch (e) { /* no page around us */ }
+    }
+  }
+  if (embed && window.ResizeObserver) {
+    var tellHeight = function () { tell({ type: 'a1001-h', h: Math.ceil(document.body.getBoundingClientRect().height) }); };
+    new ResizeObserver(tellHeight).observe(document.body);
+    tellHeight();
+  }
+  /* already signed in (another tab got there first): just lift the wall */
+  if (embed && root.getAttribute('data-signed') === '1') { tell({ type: 'a1001-in' }); return; }
   var T = lang === 'id' ? {
     load: 'Formulir masuk belum bisa dimuat. Muat ulang halaman ini.',
     fail: 'Kamu sudah terverifikasi, tapi kami belum bisa menyelesaikan proses masuk. Muat ulang halaman ini.',
@@ -43,6 +61,24 @@
     elements: { socialButtonsRoot: { display: 'none' }, dividerRow: { display: 'none' } },
   };
 
+  /* Clerk's own Indonesian (public/js/clerk-id-ID.js, loaded on /id pages),
+     with the lines it leaves in English filled in and "Anda" turned into
+     "kamu", the way the rest of 1001 speaks. */
+  function idText() {
+    var base = window.__clerk1001_idID;
+    if (lang !== 'id' || !base) return undefined;
+    var t = JSON.parse(JSON.stringify(base));
+    t.formFieldInputPlaceholder__emailAddress = 'Masukkan alamat email kamu';
+    t.signIn = t.signIn || {};
+    t.signIn.emailCode = Object.assign({}, t.signIn.emailCode, { title: 'Cek email kamu' });
+    t.signUp = t.signUp || {};
+    t.signUp.emailCode = Object.assign({}, t.signUp.emailCode, {
+      title: 'Verifikasi email kamu', subtitle: 'Masukkan kode yang kami kirim ke email kamu',
+    });
+    t.unstable__errors = Object.assign({}, t.unstable__errors, { form_code_incorrect: 'Kodenya salah. Coba lagi.' });
+    return t;
+  }
+
   function whenLoaded() {
     return new Promise(function (resolve, reject) {
       var n = 0;
@@ -64,11 +100,12 @@
         method: 'POST',
         credentials: 'same-origin',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ token: token, next: next, lang: lang }),
+        body: JSON.stringify({ token: token, next: next, lang: lang, via: via }),
       });
     }).then(function (r) {
       return r.json().catch(function () { return {}; }).then(function (j) {
         if (!r.ok || !j.ok) throw new Error(j.error || ('http ' + r.status));
+        if (embed) return tell({ type: 'a1001-in' });
         location.replace(j.next || (lang === 'id' ? '/id/signin' : '/signin'));
       });
     }).catch(function () {
@@ -78,11 +115,13 @@
     });
   }
 
-  /* where Clerk should land after it signs in or out: this page, without ?out */
-  var here = location.pathname + (next ? '?next=' + encodeURIComponent(next) : '');
+  /* where Clerk should land after it signs in or out: this page, without ?out
+     (in the popup: this same frame) */
+  var here = embed ? location.pathname + location.search
+    : location.pathname + (next ? '?next=' + encodeURIComponent(next) : '');
 
   whenLoaded().then(function (clerk) {
-    return clerk.load({ ui: { ClerkUI: window.__internal_ClerkUICtor }, appearance: APPEARANCE }).then(function () {
+    return clerk.load({ ui: { ClerkUI: window.__internal_ClerkUICtor }, appearance: APPEARANCE, localization: idText() }).then(function () {
       /* Clerk reloads `here` after signing out, and that load mounts the form */
       if (out && clerk.session) return clerk.signOut({ redirectUrl: here }).then(function () { return 'left'; });
       return null;

@@ -247,7 +247,8 @@ fastify.addHook('onSend', async (req, reply, payload) => {
      * and JSON never reach it. The embedded map is NOT counted: a landing
      * scroll is not a /map visit, and /map's number should keep meaning
      * "someone opened the map page". */
-    if (req.method === 'GET' && reply.statusCode === 200 && !emb) {
+    /* skip1001: the sign-in form inside the wall's popup frame (lib/account1001.js) */
+    if (req.method === 'GET' && reply.statusCode === 200 && !emb && !(req.raw && req.raw.skip1001)) {
       try {
         px.record({
           /* the rewritten URL has lost its /id prefix; put it back so the
@@ -280,7 +281,8 @@ fastify.addHook('onSend', async (req, reply, payload) => {
        page (views/builder1001.js). GET 200, not the map embed; the id check
        keeps a page that renders it itself from getting two. */
     if (req.method === 'GET' && reply.statusCode === 200 && !emb && is1001(req)
-      && typeof payload === 'string' && payload.includes('</body>') && !payload.includes('id="b1"')) {
+      && typeof payload === 'string' && payload.includes('</body>') && !payload.includes('id="b1"')
+      && !(req.raw && req.raw.skip1001)) {
       try {
         const lang = (req.raw && req.raw.lang1001 === 'id') ? 'id' : 'en';
         payload = payload.replace('</body>', () => builder1001.panel(lang) + '</body>');
