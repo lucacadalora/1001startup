@@ -133,15 +133,19 @@ function ixRow(D, x) {
 }
 
 const CSS = `
-.pm-wrap [hidden],.flist [hidden]{display:none!important}
+.pm-map [hidden],.flist [hidden]{display:none!important}
 .pm-hero{padding-bottom:22px}
-.pm-wrap{position:relative;height:clamp(480px,74vh,860px);background:#E1EAEC;border-top:1px solid #E7E7E7;border-bottom:1px solid #E7E7E7;overflow:hidden}
+.pm-wrap{position:relative;height:clamp(460px,70vh,820px);background:#E1EAEC;overflow:hidden}
 #pm-map{position:absolute;inset:0}
 #pm-map .maplibregl-canvas{outline:none}
-.pm-rail{position:absolute;left:0;right:0;top:0;z-index:5;display:flex;gap:8px;padding:14px 16px;overflow-x:auto;scrollbar-width:none;pointer-events:none}
+/* the layer chips sit in a bar above the map and the key in a strip below it:
+   nothing but the zoom buttons is drawn over the map, so no chip or key box
+   can cover a name */
+.pm-map{border-top:1px solid #E7E7E7;border-bottom:1px solid #E7E7E7}
+.pm-rail{display:flex;gap:8px;padding:12px 16px;overflow-x:auto;scrollbar-width:none;background:#fff;border-bottom:1px solid #E7E7E7}
 .pm-rail::-webkit-scrollbar{display:none}
-.pm-rail > *{pointer-events:auto;flex:none}
-.pm-rail .chip{cursor:pointer;background:rgba(255,255,255,.96);color:#52525B}
+.pm-rail > *{flex:none}
+.pm-rail .chip{cursor:pointer;background:#fff;color:#52525B}
 .pm-rail .chip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff}
 .pm-rail .chip[aria-pressed="true"] b{color:#C7C7CC}
 /* zoom buttons at mid-height on the right: the site's chat launcher and
@@ -151,7 +155,7 @@ const CSS = `
 .pm-ctl button{width:42px;height:42px;border:0;background:none;font-size:17px;cursor:pointer;color:#000}
 .pm-ctl button + button{border-top:1px solid #E7E7E7}
 .pm-ctl button:hover{background:#FAFAFA}
-.pm-key{position:absolute;left:16px;bottom:16px;z-index:5;max-width:calc(100% - 92px);background:rgba(255,255,255,.96);border:1px solid #E7E7E7;padding:9px 12px;font:400 10.5px/1.5 'IBM Plex Mono',monospace;letter-spacing:.03em;text-transform:uppercase;color:#52525B}
+.pm-key{background:#fff;border-top:1px solid #E7E7E7;padding:10px 16px;font:400 10.5px/1.5 'IBM Plex Mono',monospace;letter-spacing:.03em;text-transform:uppercase;color:#52525B}
 .pm-key .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .pm-key i{display:inline-block;vertical-align:-2px;margin-right:6px}
 .pm-key .d{width:11px;height:11px;border-radius:50%;background:#0B0B0C;box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(0,0,0,.12)}
@@ -163,7 +167,7 @@ const CSS = `
 .pm-key .cr{margin-top:5px;color:#8E8E93}
 .pm-key .cr a{color:inherit}
 .pm-tip{position:absolute;pointer-events:none;background:#000;color:#fff;font-size:12.5px;font-weight:500;padding:5px 11px;transform:translate(-50%,-150%);white-space:nowrap;z-index:6;max-width:320px;overflow:hidden;text-overflow:ellipsis}
-.pm-card{position:absolute;z-index:7;top:62px;right:16px;bottom:16px;width:min(380px,calc(100% - 32px));background:#fff;border:1px solid #000;box-shadow:0 14px 34px rgba(0,0,0,.12);display:flex;flex-direction:column}
+.pm-card{position:absolute;z-index:7;top:16px;right:16px;bottom:16px;width:min(380px,calc(100% - 32px));background:#fff;border:1px solid #000;box-shadow:0 14px 34px rgba(0,0,0,.12);display:flex;flex-direction:column}
 .pm-card .hd{display:flex;gap:10px;align-items:flex-start;padding:14px 14px 12px;border-bottom:1px solid #E7E7E7}
 .pm-card .hd h3{font-size:18px;line-height:1.2;letter-spacing:-.015em;font-weight:600;flex:1}
 .pm-card .hd small{display:block;font-weight:500;font-size:13px;color:#6B6B73;margin-top:3px;letter-spacing:0}
@@ -231,10 +235,9 @@ const CSS = `
 .dcm ul{margin:12px 0 0 18px;display:grid;gap:8px;color:#3F3F46;max-width:92ch;line-height:1.55}
 .dcm a{color:#0000EE}
 @media (max-width:760px){
-  .pm-wrap{height:min(78vh,700px)}
-  .pm-rail{padding:12px}
-  .pm-key{left:12px;bottom:12px;max-width:calc(100% - 78px)}
-  .pm-key .cr{display:none}
+  .pm-wrap{height:min(72vh,640px)}
+  .pm-rail{padding:10px 12px}
+  .pm-key{padding:9px 12px}
   .pm-ctl{right:12px}
   .pm-wrap.has-card .pm-ctl{display:none}
   .pm-card{top:auto;left:0;right:0;bottom:0;width:auto;max-height:64%;border-left:0;border-right:0;border-bottom:0}
@@ -270,24 +273,26 @@ function page({ lang = 'en', tiles = null } = {}) {
   <p class="sub">Every data centre, internet exchange and router port that PeeringDB lists in Indonesia, on one map: ${n0(T.fac)} facilities, ${n0(T.ix)} exchanges and ${n0(T.ports)} router ports. Grey means we can’t name the data centre.</p>
   <nav class="chips" aria-label="On this page"><a class="chip" href="#map">Map</a><a class="chip" href="#facilities">Data centres<b>${n0(T.fac)}</b></a><a class="chip" href="#exchanges">Exchanges<b>${n0(T.ix)}</b></a><a class="chip" href="#networks">Networks<b>${n0(T.nets)}</b></a><a class="chip" href="#method">Method</a><a class="chip" href="${MAIN}/data-center">Who powers them →</a></nav>
 </section>
-<div class="pm-wrap" id="map">
-  <div id="pm-map" data-cfg="${esc(JSON.stringify(cfg))}" role="application" aria-label="Map of Indonesia’s data centres, internet exchanges and router ports from PeeringDB"></div>
-  <nav class="pm-rail" aria-label="Map layers">
+<div class="pm-map" id="map">
+  <nav class="pm-rail pm-bar" aria-label="Map layers">
     <button type="button" class="chip" data-mode="net" aria-pressed="true">Network<b>${n0(T.links || 0)}</b></button>
     <button type="button" class="chip" data-mode="dc" aria-pressed="false">Data centres<b>${n0(T.fac)}</b></button>
     <button type="button" class="chip" data-mode="ix" aria-pressed="false">Exchanges<b>${n0(T.ix)}</b></button>
     <button type="button" class="chip" data-mode="ports" aria-pressed="false">Router ports<b>${n0(T.ports)}</b></button>
   </nav>
+<div class="pm-wrap" id="pm-wrap">
+  <div id="pm-map" data-cfg="${esc(JSON.stringify(cfg))}" role="application" aria-label="Map of Indonesia’s data centres, internet exchanges and router ports from PeeringDB"></div>
   <div class="pm-ctl">
     <button type="button" id="pm-in" aria-label="Zoom in">+</button>
     <button type="button" id="pm-out" aria-label="Zoom out">−</button>
     <button type="button" id="pm-home" aria-label="Back to the opening view" title="Back to the opening view">◎</button>
   </div>
-  <div class="pm-key" id="pm-key"><div class="row" data-for="net"><span><i class="ln"></i>data centres one exchange links (not the cable route)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
   <div class="pm-tip" id="pm-tip" hidden></div>
   <aside class="pm-card" id="pm-card" hidden aria-live="polite"></aside>
   <noscript><div class="pm-msg"><p>The map needs JavaScript. The same places are listed below.</p></div></noscript>
   <div class="pm-msg" id="pm-msg" hidden><p>This browser has WebGL switched off, so the map cannot draw. The same places are listed below.</p></div>
+</div>
+  <div class="pm-key" id="pm-key"><div class="row" data-for="net"><span><i class="ln"></i>data centres one exchange links (not the cable route)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
 </div>
 <div class="stats" style="margin-top:36px">
   <div class="cell"><div class="v">${n0(T.fac)}</div><div class="k">Data centres and network sites · ${n0(T.fac_named)} named, ${n0(T.fac_grey)} grey</div></div>

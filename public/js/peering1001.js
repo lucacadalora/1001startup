@@ -23,7 +23,7 @@
  * script-src 'self'.
  */
 const root = document.getElementById('pm-map');
-const wrap = document.getElementById('map');
+const wrap = document.getElementById('pm-wrap');
 const cfg = JSON.parse(root.dataset.cfg);
 const ORIGIN = location.origin;
 const narrow = () => wrap.clientWidth < 700;
