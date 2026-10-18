@@ -15,7 +15,8 @@
  * each view. The root ships `hidden` and only the script unhides it (after
  * checking the stylesheet applied): with JS off the card does not exist.
  *
- * Contact details are Luca's own, given for this card (28 Sep 2026).
+ * Contact details are Luca's own, given for this card (28 Sep 2026). The
+ * WhatsApp number is the Oyenza Janitor inbox since 18 Oct 2026 (Luca).
  */
 const fs = require('fs');
 const path = require('path');
@@ -35,8 +36,8 @@ const JS_V = hashOf('js/builder1001.js');
 
 const PHOTO = '/assets/builder-luca-card-7f5538fc.webp';
 const FACE = '/assets/builder-luca-face-b2469cfa.webp';
-const PHONE = '+62 896-2638-0940';
-const WA = 'https://wa.me/6289626380940';
+const PHONE = '+62 877-8766-8573';
+const WA = 'https://wa.me/6287787668573';
 const OFFICE_MAP = 'https://www.google.com/maps/search/?api=1&query=WeWork+Revenue+Tower+SCBD+Jakarta';
 
 const CHEV_R = '<svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path d="M6 3.5 10.5 8 6 12.5" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="square"/></svg>';
