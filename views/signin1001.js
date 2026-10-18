@@ -18,7 +18,7 @@ const { shell } = require('./browse1001');
 const { V } = require('./html');
 
 const CSS = `<style>
-.si{max-width:1180px;margin:0 auto;padding:56px 20px 8px;display:grid;place-items:center}
+.si{max-width:1180px;margin:0 auto;padding:56px 20px 8px;display:grid;grid-template-columns:minmax(0,1fr);justify-items:center}
 .si-card{width:100%;max-width:420px;border:1px solid #000;padding:30px 28px 26px;background:#fff}
 .si-k{font:400 11px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#6B6B73;display:flex;align-items:center;gap:8px}
 .si-k .sq{width:6px;height:6px;background:#E8734B;display:inline-block}
@@ -39,6 +39,34 @@ const CSS = `<style>
 .si-note{margin-top:22px;padding-top:16px;border-top:1px solid #E7E7E7;font-size:13px;line-height:1.6;color:#6B6B73}
 .si-row{display:grid;gap:10px;margin-top:24px}
 .si-row .btn{text-align:center}
+.si-intro{margin-bottom:22px}
+.si-clerk{min-height:140px;min-width:0;max-width:100%;transition:opacity .15s}
+/* Clerk fixes its card at 25rem; inside our card it must follow our width */
+#si-clerk .cl-rootBox,#si-clerk .cl-cardBox,#si-clerk .cl-card{width:100%!important;min-width:0;max-width:100%!important}
+#si-clerk .cl-identityPreview{max-width:100%;flex-wrap:wrap;justify-content:flex-start}
+#si-clerk .cl-identityPreviewText{white-space:normal;overflow-wrap:anywhere;text-overflow:clip;overflow:visible}
+.si-busy{opacity:.45;pointer-events:none}
+.si-skel span{display:block;height:46px;background:#F3F3F5;margin-bottom:12px}
+.si-skel span:first-child{height:12px;width:22%}
+.si-ready .si-skel{display:none}
+.si-card:has(.cl-card:not(.cl-signIn-start)) .si-intro{display:none}
+#si-clerk .cl-cardBox{border:0;border-radius:0;box-shadow:none;background:transparent;overflow:visible}
+#si-clerk .cl-card{padding:0;border:0;border-radius:0;box-shadow:none;background:transparent;gap:20px}
+#si-clerk .cl-signIn-start .cl-header{display:none}
+#si-clerk .cl-header{align-items:flex-start;text-align:left}
+#si-clerk .cl-headerTitle{font:500 26px/1.15 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.025em;color:#000}
+#si-clerk .cl-headerSubtitle{font:500 15px/1.55 'Overused Grotesk',system-ui,sans-serif;color:#52525B}
+#si-clerk .cl-formFieldLabel{font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;color:#52525B}
+#si-clerk .cl-formFieldInput{height:46px;padding:0 15px;border:1px solid #000;border-radius:0;box-shadow:none;font:500 16px/1.2 'Overused Grotesk',system-ui,sans-serif;color:#000;background:#fff}
+#si-clerk .cl-formFieldInput:focus{box-shadow:inset 0 -2px #E8734B;outline:none}
+#si-clerk .cl-formButtonPrimary{height:46px;border-radius:0;background:#000;color:#fff;box-shadow:none;border:0;font:400 12px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em}
+#si-clerk .cl-formButtonPrimary:hover{background:#2a2a2e}
+#si-clerk .cl-formButtonPrimary .cl-buttonArrowIcon{display:none}
+#si-clerk .cl-otpCodeFieldInput{border:1px solid #000;border-radius:0;font:400 22px/1 'IBM Plex Mono',monospace}
+#si-clerk .cl-footer{background:transparent;border:0;padding:0;justify-content:flex-start}
+#si-clerk .cl-footerActionText,.si-clerk .cl-footerActionLink{font:500 14px/1.4 'Overused Grotesk',system-ui,sans-serif}
+#si-clerk .cl-footerActionLink{color:#000;text-decoration:underline;text-underline-offset:3px}
+#si-clerk .cl-formResendCodeLink,.si-clerk .cl-identityPreviewEditButton{color:#000}
 @media(max-width:480px){.si{padding:28px 16px 4px}.si-card{padding:24px 20px 22px}.si-card h1{font-size:25px}}
 </style>`;
 
