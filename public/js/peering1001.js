@@ -259,7 +259,7 @@ function start(gl, D, RCH) {
   const JKT = [[106.62, -6.42], [107.08, -6.08]];
   const frame = (which) => which === 'jakarta'
     ? { bounds: JKT, padding: narrow() ? { top: 70, bottom: 70, left: 24, right: 64 } : { top: 80, bottom: 70, left: 80, right: 80 } }
-    : { bounds: narrow() ? [[95.0, -9.2], [119.6, 5.9]] : ID, padding: narrow() ? { top: 64, bottom: 64, left: 12, right: 12 } : { top: 70, bottom: 50, left: 30, right: 30 } };
+    : { bounds: narrow() ? [[95.0, -9.2], [119.6, 5.9]] : ID, padding: narrow() ? { top: 40, bottom: 40, left: 16, right: 16 } : { top: 70, bottom: 50, left: 30, right: 30 } };
 
   let map;
   try {
@@ -342,6 +342,7 @@ function start(gl, D, RCH) {
        the rest are dots until street level, which leaves room for names */
     mid: !p.grey && p.tier <= 1 ? 1 : 0,
     rdot: TIERS[p.tier].dot / 2 + 2, rad: p.grey ? TIERS[p.tier].dot / 2 + 2 : TIERS[p.tier].badge / 2 + 1, grows: p.grey ? 0 : 1,
+    east: p.lng > 107.5 ? 1 : 0,   // east of Jakarta: its name prefers the left of its mark
   }));
   /* "NCIX - neuCentrIX" -> "NCIX", "OMNIIX INDONESIA" -> "OMNIIX" on the map; full names in the card */
   const ixLabel = (n) => String(n).split(' - ')[0].replace(/\s+(indonesia|network)$/i, '').trim();
@@ -453,70 +454,31 @@ function start(gl, D, RCH) {
     return f ? f.geometry.coordinates : null;
   };
 
-  /* ── the network layer: exchange links with light running along them ── */
+  /* ── the network layer: exchange links ──────────────────────────── */
   /* Each link joins two data centres that one or more exchanges have switches in
-     (scripts/peering-build.py: spokes from an exchange's busiest named site). It is
-     drawn as a gentle arc; small lights run along it both ways, more of them where
-     more exchanges share the link. It shows which buildings are linked, not where the
-     fibre runs. */
+     (scripts/peering-build.py: spokes from an exchange's busiest named site), drawn as
+     a still, gentle arc, thicker where more exchanges share the pair. It shows that the
+     same exchange is in both buildings, not where any cable runs. (Moving lights were
+     tried and taken off on Luca's word, 18 Oct 2026: no traffic data stood behind them.) */
   const LINKS = (D.links || []).map((l) => {
     const a = PL.get(l.a), b = PL.get(l.b);
     if (!a || !b) return null;
     const ax = mercX(a.lng), ay = mercY(a.lat), bx = mercX(b.lng), by = mercY(b.lat);
-    const dx = bx - ax, dy = by - ay, len = Math.hypot(dx, dy);
+    const dx = bx - ax, dy = by - ay;
     /* bend to one side by a fifth of the length, the same way round for every link */
     const cx = (ax + bx) / 2 - dy * 0.2, cy = (ay + by) / 2 + dx * 0.2;
-    const N = 48, xs = new Float64Array(N + 1), ys = new Float64Array(N + 1), cum = new Float64Array(N + 1);
+    const N = 48, xs = new Float64Array(N + 1), ys = new Float64Array(N + 1);
     for (let i = 0; i <= N; i++) {
       const s = i / N, u = 1 - s;
       xs[i] = u * u * ax + 2 * u * s * cx + s * s * bx;
       ys[i] = u * u * ay + 2 * u * s * cy + s * s * by;
-      if (i) cum[i] = cum[i - 1] + Math.hypot(xs[i] - xs[i - 1], ys[i] - ys[i - 1]);
     }
     const names = l.ixs.map((i) => (X.get(i) || {}).pdb).filter(Boolean);
-    return { l, a, b, xs, ys, cum, total: cum[N] || len || 1e-9, names };
+    return { l, a, b, xs, ys, names };
   }).filter(Boolean);
   const linkData = fc(LINKS.map((k) => ({ type: 'Feature',
     geometry: { type: 'LineString', coordinates: Array.from(k.xs, (x, i) => [lonOf(x), latOf(k.ys[i])]) },
     properties: { w: k.l.w, a: k.a.label, b: k.b.label, ixs: k.names.slice(0, 4).join(', ') + (k.names.length > 4 ? ` and ${k.names.length - 4} more` : '') } })));
-  /* the lights: 1 to 4 per link, half of them running the other way */
-  const LIGHTS = [];
-  LINKS.forEach((k) => {
-    const n = Math.min(5, 2 + Math.floor(k.l.w / 2) + (k.total * 512 * 32 > 900 ? 1 : 0));
-    for (let i = 0; i < n; i++) LIGHTS.push({ k, t: (i + Math.random() * 0.6) / n, dir: i % 2 ? -1 : 1, v: 70 + Math.random() * 40 });
-  });
-  const at = (k, t) => {
-    const want = t * k.total, c = k.cum;
-    let lo = 0, hi = c.length - 1;
-    while (hi - lo > 1) { const m = (lo + hi) >> 1; if (c[m] < want) lo = m; else hi = m; }
-    const f = (want - c[lo]) / ((c[hi] - c[lo]) || 1);
-    return [lonOf(k.xs[lo] + (k.xs[hi] - k.xs[lo]) * f), latOf(k.ys[lo] + (k.ys[hi] - k.ys[lo]) * f)];
-  };
-  const lightData = () => fc(LIGHTS.map((p) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: at(p.k, p.t) }, properties: {} })));
-  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
-  let running = false, last = 0, onScreen = true;
-  function tick(now) {
-    if (!running) return;
-    requestAnimationFrame(tick);
-    const dt = Math.min(0.1, (now - (last || now)) / 1000);
-    if (now - last < (narrow() ? 50 : 33)) return;   // 30 fps, 20 on a phone
-    last = now;
-    const scale = 512 * 2 ** map.getZoom();
-    for (const p of LIGHTS) {
-      p.t += p.dir * (p.v * dt) / Math.max(40, p.k.total * scale);
-      if (p.t > 1) p.t -= 1; else if (p.t < 0) p.t += 1;
-    }
-    const src = map.getSource('net-lights');
-    if (src) src.setData(lightData());
-  }
-  let booted = false;   // the lights wait until the map has finished its first draw
-  function lights(on) {
-    const want = on && booted && !still && onScreen && document.visibilityState === 'visible';
-    if (want === running) return;
-    running = want; last = 0;
-    if (running) requestAnimationFrame(tick);
-  }
-  new IntersectionObserver((es) => { onScreen = es[0].isIntersecting; lights(mode === 'net'); }).observe(wrap);
   /* the site's contact tab is fixed near the bottom-right of the screen: hide it
      while the map is under that band, so it never sits on a name */
   let band = null;
@@ -529,10 +491,9 @@ function start(gl, D, RCH) {
   };
   watchBand();
   addEventListener('resize', watchBand);
-  document.addEventListener('visibilitychange', () => lights(mode === 'net'));
 
   /* ── layers ──────────────────────────────────────────────────────── */
-  const LAYERS = { net: ['net-glow', 'net-line', 'net-halo', 'net-core', 'net-names', 'net-marks'], dc: ['dc-gnames', 'dc-names', 'dc-marks'], ix: ['ix-names', 'ix-marks'], ports: ['pt-names', 'pt-marks'] };
+  const LAYERS = { net: ['net-line', 'net-names', 'net-names-e', 'net-marks'], dc: ['dc-gnames', 'dc-names', 'dc-marks'], ix: ['ix-names', 'ix-marks'], ports: ['pt-names', 'pt-marks'] };
   /* the network layer hides the basemap's own names: its lines must never run through a label */
   const BASE_LABELS = ['label-sea', 'label-road', 'label-district', 'label-region', 'label-city', 'label-country'];
   const nameText = (extra) => Object.assign({
@@ -558,27 +519,30 @@ function start(gl, D, RCH) {
       8, off(0.62, true), BADGES_ALL - 0.01, off(lerp(GROW, BADGES_ALL), true), BADGES_ALL, off(lerp(GROW, BADGES_ALL), false), 14.5, off(1, false)];
     /* the network layer goes in first, so it sits under every mark and name */
     map.addSource('net-links', { type: 'geojson', data: linkData });
-    map.addSource('net-lights', { type: 'geojson', data: lightData() });
-    const wW = (lo, hi) => ['interpolate', ['linear'], ['get', 'w'], 1, lo, 13, hi];
-    map.addLayer({ id: 'net-glow', type: 'line', source: 'net-links', layout: { 'line-cap': 'round', visibility: 'none' },
-      paint: { 'line-color': '#36A9FF', 'line-opacity': 0.14, 'line-blur': 3, 'line-width': wW(5, 12) } });
+    /* plain still lines: 1.2 px for one exchange, up to 4.5 px where 13 share the pair */
     map.addLayer({ id: 'net-line', type: 'line', source: 'net-links', layout: { 'line-cap': 'round', visibility: 'none' },
-      paint: { 'line-color': '#36A9FF', 'line-opacity': 0.6, 'line-width': wW(1.1, 3.2) } });
-    map.addLayer({ id: 'net-halo', type: 'circle', source: 'net-lights', layout: { visibility: 'none' },
-      paint: { 'circle-color': '#2F9BFF', 'circle-opacity': 0.42, 'circle-blur': 0.85, 'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 7, 10, 10, 14, 13] } });
-    map.addLayer({ id: 'net-core', type: 'circle', source: 'net-lights', layout: { visibility: 'none' },
-      paint: { 'circle-color': '#0A6CFF', 'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2.3, 10, 3, 14, 3.6],
-        'circle-stroke-color': '#EAF5FF', 'circle-stroke-width': 1.2 } });
-    /* names sit on white plates: a line or a light passing under a name stops at the plate's edge */
+      paint: { 'line-color': '#2F8FE8', 'line-opacity': 0.7,
+        'line-width': ['interpolate', ['linear'], ['get', 'w'], 1, 1.2, 2, 1.9, 4, 2.7, 13, 4.5] } });
+    /* names sit on white plates: a line passing under a name stops at the plate's edge */
     const pc = document.createElement('canvas'); pc.width = pc.height = 32;
     const px2 = pc.getContext('2d', { willReadFrequently: true });
     px2.fillStyle = 'rgba(255,255,255,0.97)'; px2.strokeStyle = 'rgba(0,0,0,0.10)'; px2.lineWidth = 2;
     px2.beginPath(); px2.roundRect(1, 1, 30, 30, 8); px2.fill(); px2.stroke();
     map.addImage('plate', px2.getImageData(0, 0, 32, 32), { pixelRatio: 2, stretchX: [[10, 22]], stretchY: [[10, 22]], content: [8, 8, 24, 24] });
-    map.addLayer({ id: 'net-names', type: 'symbol', source: 'dc', filter: ['==', ['get', 'grey'], 0],
+    /* names point inward: west of Jakarta a name prefers the right of its mark, east of it the left,
+       so the names beside the country's two ends stay on screen */
+    map.addLayer({ id: 'net-names', type: 'symbol', source: 'dc', filter: ['all', ['==', ['get', 'grey'], 0], ['==', ['get', 'east'], 0]],
       layout: nameText({ 'text-field': twoLine, 'text-size': ['get', 'ts'], 'text-radial-offset': growing,
         'icon-image': 'plate', 'icon-text-fit': 'both', 'icon-text-fit-padding': [3, 6, 2, 6],
         'icon-allow-overlap': true, 'icon-ignore-placement': true, 'text-padding': 7,
+        'text-variable-anchor': ['left', 'top-left', 'bottom-left', 'top', 'bottom', 'right', 'top-right', 'bottom-right'],
+        'symbol-sort-key': ['-', 0, ['get', 'nets']], visibility: 'none' }),
+      paint: inkPaint });
+    map.addLayer({ id: 'net-names-e', type: 'symbol', source: 'dc', filter: ['all', ['==', ['get', 'grey'], 0], ['==', ['get', 'east'], 1]],
+      layout: nameText({ 'text-field': twoLine, 'text-size': ['get', 'ts'], 'text-radial-offset': growing,
+        'icon-image': 'plate', 'icon-text-fit': 'both', 'icon-text-fit-padding': [3, 6, 2, 6],
+        'icon-allow-overlap': true, 'icon-ignore-placement': true, 'text-padding': 7,
+        'text-variable-anchor': ['right', 'top-right', 'bottom-right', 'top', 'bottom', 'left', 'top-left', 'bottom-left'],
         'symbol-sort-key': ['-', 0, ['get', 'nets']], visibility: 'none' }),
       paint: inkPaint });
     map.addLayer({ id: 'net-marks', type: 'symbol', source: 'dc',
@@ -615,12 +579,32 @@ function start(gl, D, RCH) {
     /* grey city discs under the named sites' discs, so a city's unplaced ports never hide a data centre */
     map.addLayer({ id: 'pt-marks', type: 'symbol', source: 'pt',
       layout: Object.assign(markLayout(['get', 'img']), { 'symbol-sort-key': ['-', ['get', 'n'], ['*', ['get', 'grey'], 1000000]], visibility: 'none' }) });
+    /* the screen's edges: four invisible walls just outside the map. Added last, so they
+       are placed before every name, and a name that would run off the screen takes
+       another side or waits for a closer zoom instead of being cut off. */
+    const EDGE = 100;
+    const edgeImages = () => {
+      const w = wrap.clientWidth + 2 * EDGE, h = wrap.clientHeight + 2 * EDGE;
+      for (const [id, iw, ih] of [['edge-v', EDGE, h], ['edge-h', w, EDGE]]) {
+        if (map.hasImage(id)) map.removeImage(id);
+        map.addImage(id, { width: iw, height: ih, data: new Uint8Array(iw * ih * 4) });
+      }
+    };
+    const edgeData = () => {
+      const w = wrap.clientWidth, h = wrap.clientHeight, at = (x, y) => map.unproject([x, y]);
+      const L = at(-EDGE / 2, h / 2), R = at(w + EDGE / 2, h / 2), T = at(w / 2, -EDGE / 2), B = at(w / 2, h + EDGE / 2);
+      return fc([pt(L.lng, L.lat, { i: 'edge-v' }), pt(R.lng, R.lat, { i: 'edge-v' }), pt(T.lng, T.lat, { i: 'edge-h' }), pt(B.lng, B.lat, { i: 'edge-h' })]);
+    };
+    edgeImages();
+    map.addSource('edges', { type: 'geojson', data: edgeData() });
+    map.addLayer({ id: 'edges', type: 'symbol', source: 'edges',
+      layout: { 'icon-image': ['get', 'i'], 'icon-allow-overlap': true, 'icon-ignore-placement': false, 'icon-padding': 0 } });
+    map.on('move', () => { const e = map.getSource('edges'); if (e) e.setData(edgeData()); });
+    addEventListener('resize', () => { edgeImages(); const e = map.getSource('edges'); if (e) e.setData(edgeData()); });
     logos();
     setMode(initialMode, false);
     map.once('idle', () => {
       root.dataset.ready = '1';
-      booted = true;
-      lights(mode === 'net');
       if (initialPlace) openPlace(initialPlace, initialMode, true);
     });
   });
@@ -636,7 +620,6 @@ function start(gl, D, RCH) {
     mode = m;
     for (const [k, ids] of Object.entries(LAYERS)) for (const id of ids) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', k === m ? 'visible' : 'none');
     for (const id of BASE_LABELS) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', m === 'net' ? 'none' : 'visible');
-    lights(m === 'net');
     chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.mode === m)));
     keyRows.forEach((r) => { r.hidden = r.dataset.for !== m; });
     if (push) {
@@ -656,7 +639,7 @@ function start(gl, D, RCH) {
   const tip = document.getElementById('pm-tip');
   const marks = () => LAYERS[mode].slice().reverse();
   map.on('mousemove', (e) => {
-    const f = map.queryRenderedFeatures(e.point, { layers: marks().filter((id) => !/^net-(glow|line|halo|core)$/.test(id)) })[0];
+    const f = map.queryRenderedFeatures(e.point, { layers: marks().filter((id) => id !== 'net-line') })[0];
     if (!f && mode === 'net' && !narrow()) {
       const box = [[e.point.x - 4, e.point.y - 4], [e.point.x + 4, e.point.y + 4]];
       const ln = map.queryRenderedFeatures(box, { layers: ['net-line'] })[0];
@@ -678,7 +661,7 @@ function start(gl, D, RCH) {
   map.getCanvas().addEventListener('mouseleave', () => { tip.hidden = true; });
   map.on('click', (e) => {
     const box = [[e.point.x - 6, e.point.y - 6], [e.point.x + 6, e.point.y + 6]];
-    const hits = map.queryRenderedFeatures(box, { layers: marks().filter((id) => !/^net-(glow|line|halo|core)$/.test(id)) });
+    const hits = map.queryRenderedFeatures(box, { layers: marks().filter((id) => id !== 'net-line') });
     const f = hits[0];
     if (!f) { closeCard(); return; }
     const p = f.properties;

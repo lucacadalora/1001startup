@@ -89,7 +89,7 @@ function bottomLine(D) {
   if (multi && multi !== top) out.push(`<b>${esc(multi.n)}</b> holds ${multi.facs.length} separate PeeringDB facilities under one roof: ${multi.facs.slice(0, 3).map((i) => esc((F.get(i) || {}).n || '')).join(', ')}${multi.facs.length > 3 ? ' and more' : ''}.`);
   if (bigIx.length === 2) out.push(`The two biggest exchanges are <b>${esc(bigIx[0].pdb)}</b> (${n0(bigIx[0].nets)} networks) and <b>${esc(bigIx[1].pdb)}</b> (${n0(bigIx[1].nets)}).`);
   out.push(`<b>${pct(T.ports_grey, T.ports)}%</b> of the ${n0(T.ports)} router ports on Indonesian exchanges can't be tied to a data centre we can name, so they sit grey on their exchange's city.`);
-  if (T.links) out.push(`<b>${n0(T.link_ix)} exchanges</b> have switches in more than one named data centre. The Network layer draws those ${n0(T.links)} links, with light running along them.`);
+  if (T.links) out.push(`<b>${n0(T.link_ix)} exchanges</b> have switches in more than one named data centre. The Network layer draws those ${n0(T.links)} links: a line means the same exchange is in both buildings, not a cable route.`);
   return out;
 }
 
@@ -177,7 +177,7 @@ body.pm-over-map .b1 .b1-tab{visibility:hidden!important;pointer-events:none}
 .pm-key .lg{width:15px;height:15px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.18),0 2px 4px rgba(0,0,0,.18)}
 .pm-key .sq{width:11px;height:11px;background:#0B0B0C;border-radius:2px}
 .pm-key .sqg{width:11px;height:11px;background:#A6A9AE;border-radius:2px}
-.pm-key .ln{width:18px;height:3px;border-radius:2px;background:#36A9FF;box-shadow:0 0 6px rgba(54,169,255,.7);vertical-align:2px}
+.pm-key .ln{width:18px;height:3px;border-radius:2px;background:#2F8FE8;vertical-align:2px}
 .pm-key .cr{margin-top:5px;color:#8E8E93}
 .pm-key .cr a{color:inherit}
 .pm-tip{position:absolute;pointer-events:none;background:#000;color:#fff;font-size:12.5px;font-weight:500;padding:5px 11px;transform:translate(-50%,-150%);white-space:nowrap;z-index:6;max-width:320px;overflow:hidden;text-overflow:ellipsis}
@@ -319,7 +319,7 @@ function page({ lang = 'en', tiles = null } = {}) {
   <noscript><div class="pm-msg"><p>The map needs JavaScript. The same places are listed below.</p></div></noscript>
   <div class="pm-msg" id="pm-msg" hidden><p>This browser has WebGL switched off, so the map cannot draw. The same places are listed below.</p></div>
 </div>
-  <div class="pm-key" id="pm-key"><div class="pm-legend"><div class="row" data-for="net"><span><i class="ln"></i>data centres one exchange links (not the cable route)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
+  <div class="pm-key" id="pm-key"><div class="pm-legend"><div class="row" data-for="net"><span><i class="ln"></i>line = the same exchange is in both buildings; thicker = more exchanges (not cable routes)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
   <div class="pm-ctl" role="group" aria-label="Zoom">
     <button type="button" id="pm-in" aria-label="Zoom in">+</button>
     <button type="button" id="pm-out" aria-label="Zoom out">−</button>
@@ -369,6 +369,7 @@ function page({ lang = 'en', tiles = null } = {}) {
     <li>Research agents then checked each facility: the name people use for the place, its aliases, who runs it, whether it is still open and where it really is. Each name, alias and operator rests on a source quoted in the row, or says “PeeringDB only”. ${n0(T.fac_checked)} of ${n0(T.fac)} facilities have been checked so far.</li>
     <li><b>Grey</b> follows one rule: if we can’t name the data centre, the point is grey. A facility is grey when the only name we have is a company name or an office address. An exchange is grey when PeeringDB gives its city but not its data centre. A router port is grey when PeeringDB doesn’t say which data centre it is in, or names one we can’t.</li>
     <li>A router port is placed at the network’s side of the connection if PeeringDB gives it, else at the exchange’s side, else at the exchange’s only site. ${n0(T.ports_how.net || 0)} ports are placed the first way, ${n0(T.ports_how.ix || 0)} the second and ${n0(T.ports_how.one || 0)} the third; ${n0(T.ports_grey)} stay grey on their exchange’s city.</li>
+    <li>The Network layer joins two named data centres when an exchange has switches in both, drawn from the exchange’s busiest site to each of its other sites. A line is thicker when more exchanges share the pair. Lines show shared exchanges, not where any cable runs.</li>
     <li>Pins: we kept PeeringDB’s pin unless a check put the building elsewhere; ${n0(T.fac_moved)} pins moved by a kilometre or more. Facilities in one building share one point on the map. City centres come from Wikipedia.</li>
     <li>The page shows how many router ports each place has, never their IP addresses.</li>
   </ul></details>
