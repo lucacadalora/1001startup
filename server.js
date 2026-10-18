@@ -557,6 +557,7 @@ function homePage(lang) {
   const links = linksData() || {};
   return home1001.home({
     census, bumn: bumn1001.load(), dc: datacenter1001.load(), umkm: umkmData(), lang,
+    peering: peeringLive() ? peering1001.load() : null,
     extra: {
       mapped: ((census && census.companies) || []).filter((c) => c.lat && c.lon).length,
       edges: (links.counts || {}).edges || 0,

@@ -15,7 +15,7 @@ currentColor) are copied as SVG, each painted in its sector colour from
 umkm.json, under 'icons'; the page shows them instead of the sprites only while
 data/sector-icons.live is on (lib/iconslive.js).
 
-    python3 scripts/home-assets.py [--map path/to/map-screenshot.png]
+    python3 scripts/home-assets.py [--map path/to/map-screenshot.png] [--peering path/to/peering-map.png] [--peering-phone path/to/peering-phone.png]
 """
 import hashlib
 import io
@@ -53,7 +53,7 @@ def main():
     if os.path.exists(MANIFEST):
         with open(MANIFEST) as f:
             old = json.load(f)
-    man = {'dc': {}, 'sprites': {}, 'icons': {}, 'map': old.get('map')}
+    man = {'dc': {}, 'sprites': {}, 'icons': {}, 'map': old.get('map'), 'peering': old.get('peering'), 'peering_phone': old.get('peering_phone')}
     total = 0
 
     # data-centre matrix illustrations, 640 px wide (2x a 320 px card cell)
@@ -104,8 +104,20 @@ def main():
         man['map'] = url
         total += n
 
+    # the peering-map preview (dc.1001startup.id, Network layer): a screenshot handed in by the caller
+    if '--peering' in sys.argv:
+        src = sys.argv[sys.argv.index('--peering') + 1]
+        url, n = save(fit(Image.open(src).convert('RGB'), 1120), 'peering-preview', 76)
+        man['peering'] = url
+        total += n
+    if '--peering-phone' in sys.argv:
+        src = sys.argv[sys.argv.index('--peering-phone') + 1]
+        url, n = save(fit(Image.open(src).convert('RGB'), 780), 'peering-phone', 76)
+        man['peering_phone'] = url
+        total += n
+
     # drop superseded copies so the folder holds only what the manifest names
-    keep = set(os.path.basename(u) for u in list(man['dc'].values()) + list(man['sprites'].values()) + list(man['icons'].values()) + ([man['map']] if man['map'] else []))
+    keep = set(os.path.basename(u) for u in list(man['dc'].values()) + list(man['sprites'].values()) + list(man['icons'].values()) + [u for u in (man['map'], man['peering'], man['peering_phone']) if u])
     for name in os.listdir(OUT):
         if name not in keep:
             os.remove(os.path.join(OUT, name))
