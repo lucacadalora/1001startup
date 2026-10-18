@@ -268,6 +268,8 @@ function start(gl, D) {
       dragRotate: false, pitchWithRotate: false, touchPitch: false, renderWorldCopies: false,
       bounds: f0.bounds, fitBoundsOptions: { padding: f0.padding },
       cooperativeGestures: false,
+      /* names appear at once instead of fading in: a half-faded plate would let a line show through */
+      fadeDuration: 0,
     });
   } catch (e) {
     console.error(e);
