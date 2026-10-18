@@ -73,6 +73,7 @@ function report(d) {
     + `${d === FIRST_DAY ? ', wall on from 11:47' : ''}${intro ? ', so far' : ''}`);
   lines.push('');
   lines.push(`Hit the wall: ${n(first)} people for the first time (${n(w.view)} pages opened behind it)`);
+  if (w.back) lines.push(`Of those, returning readers who got the card at once (no fresh 45 s): ${n(w.back)}`);
   lines.push(`Signed in from the wall: ${n(signin)} (${n(w.signup)} new accounts)`
     + (first ? `, ${Math.round((signin / first) * 100)}% of those who hit it` : ''));
   lines.push(`Left at the wall without signing in: about ${n(Math.max(first - signin, 0))}`);

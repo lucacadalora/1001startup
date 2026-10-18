@@ -7,7 +7,12 @@
  * (?wall=test: a 10-second clock on its own meter; ?wall=off ends test mode).
  *
  * The clock counts seconds while the tab is on screen, across pages, in
- * localStorage, and never resets (Luca's call 3). When it reaches the limit
+ * localStorage and in a cookie (w1001s; the larger of the two wins, so
+ * clearing one does not reset it), and never resets (Luca's call 3).
+ * Readers who were on the site before the wall went up (data-since) get no
+ * fresh 45 s: their time counts from their first visit, so the card comes at
+ * once (Luca, 18 Oct: "dont let if people already [here] for long time, they
+ * are free from the login"). When it reaches the limit
  * (45 s, was 120 s) the page blurs and a sign-in card covers it at once (call 2),
  * with no close button. The card holds /signin?embed=1 in a same-origin frame,
  * so Clerk runs only there and every other page keeps its strict CSP. When the
@@ -34,7 +39,8 @@
   var LANG = d.lang === 'id' ? 'id' : 'en';
   var PF = LANG === 'id' ? '/id' : '';
   var KEY = TEST ? 'w1001t' : 'w1001';
-  var mem = { s: 0 };   // when storage is blocked, the clock lives for this page only
+  var SINCE = Date.parse(d.since || '') || 0;   // when the wall went up for everyone
+  var mem = { s: 0 };   // when storage and cookies are both blocked, the clock lives for this page only
 
   var T = LANG === 'id' ? {
     h: 'Masuk untuk lanjut membaca',
@@ -52,18 +58,57 @@
     a: 'Account',
   };
 
-  function read() {
-    if (!store) return mem;
+  /* the real clock's second copy: a host-only cookie holding a number of seconds */
+  function cookieS() {
+    if (TEST) return 0;
+    var m = /(?:^|;\s*)w1001s=(\d{1,7})(?:;|$)/.exec(document.cookie || '');
+    return m ? parseInt(m[1], 10) : 0;
+  }
+  function setCookieS(n) {
+    if (TEST) return;
     try {
-      var v = JSON.parse(store.getItem(KEY) || 'null');
-      return v && typeof v.s === 'number' ? v : { s: 0 };
-    } catch (e) { return mem; }
+      document.cookie = 'w1001s=' + n + '; path=/; max-age=34560000; samesite=lax'
+        + (location.protocol === 'https:' ? '; secure' : '');
+    } catch (e) { /* localStorage still has it */ }
+  }
+  function read() {
+    var v = mem;
+    if (store) {
+      try {
+        var x = JSON.parse(store.getItem(KEY) || 'null');
+        v = x && typeof x.s === 'number' ? x : { s: 0 };
+      } catch (e) { v = mem; }
+    }
+    var c = cookieS();
+    if (c > (v.s || 0)) v.s = c;
+    return v;
   }
   function write(v) {
     mem = v;
-    if (store) { try { store.setItem(KEY, JSON.stringify(v)); } catch (e) { /* page-only clock */ } }
+    if (store) { try { store.setItem(KEY, JSON.stringify(v)); } catch (e) { /* the cookie has it */ } }
+    setCookieS(v.s || 0);
   }
   if (d.reset === '1') write({ s: 0 });
+
+  /* Was this browser here before the wall went up? Two dated records say so:
+     the cookie-banner choice (consent.js stamps vantis-consent.ts when it is
+     made) and the builder card's last showing (b1001.intro, ms). */
+  function cameBefore() {
+    if (TEST || !SINCE || !store) return false;
+    var t = 0;
+    try { var c = JSON.parse(store.getItem('vantis-consent') || 'null'); t = (c && Date.parse(c.ts)) || 0; } catch (e) { t = 0; }
+    if (t && t < SINCE) return true;
+    try { t = Number(store.getItem('b1001.intro')) || 0; } catch (e) { t = 0; }
+    return t > 0 && t < SINCE;
+  }
+  (function () {
+    var v = read();
+    if (v.s >= LIMIT || v.b || !cameBefore()) return;
+    v.s = LIMIT;
+    v.b = 1;            // counted once per browser
+    write(v);
+    count('back');
+  })();
 
   var shown = false;
   var timer = null;
