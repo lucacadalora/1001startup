@@ -590,15 +590,18 @@ function start(gl, D, RCH) {
         map.addImage(id, { width: iw, height: ih, data: new Uint8Array(iw * ih * 4) });
       }
     };
+    /* each wall is anchored 1 px inside the edge and reaches outward: a point beyond the
+       edge can sit in a tile the map never loads, and then its wall is simply missing */
     const edgeData = () => {
       const w = wrap.clientWidth, h = wrap.clientHeight, at = (x, y) => map.unproject([x, y]);
-      const L = at(-EDGE / 2, h / 2), R = at(w + EDGE / 2, h / 2), T = at(w / 2, -EDGE / 2), B = at(w / 2, h + EDGE / 2);
-      return fc([pt(L.lng, L.lat, { i: 'edge-v' }), pt(R.lng, R.lat, { i: 'edge-v' }), pt(T.lng, T.lat, { i: 'edge-h' }), pt(B.lng, B.lat, { i: 'edge-h' })]);
+      const L = at(1, h / 2), R = at(w - 1, h / 2), T = at(w / 2, 1), B = at(w / 2, h - 1);
+      return fc([pt(L.lng, L.lat, { i: 'edge-v', a: 'right' }), pt(R.lng, R.lat, { i: 'edge-v', a: 'left' }),
+        pt(T.lng, T.lat, { i: 'edge-h', a: 'bottom' }), pt(B.lng, B.lat, { i: 'edge-h', a: 'top' })]);
     };
     edgeImages();
     map.addSource('edges', { type: 'geojson', data: edgeData() });
     map.addLayer({ id: 'edges', type: 'symbol', source: 'edges',
-      layout: { 'icon-image': ['get', 'i'], 'icon-allow-overlap': true, 'icon-ignore-placement': false, 'icon-padding': 0 } });
+      layout: { 'icon-image': ['get', 'i'], 'icon-anchor': ['get', 'a'], 'icon-allow-overlap': true, 'icon-ignore-placement': false, 'icon-padding': 0 } });
     map.on('move', () => { const e = map.getSource('edges'); if (e) e.setData(edgeData()); });
     addEventListener('resize', () => { edgeImages(); const e = map.getSource('edges'); if (e) e.setData(edgeData()); });
     logos();
