@@ -859,6 +859,17 @@ fastify.get('/bumn/:slug', async (req, reply) => {
   if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
   reply.type('text/html').send(html);
 });
+/* /bumd — Indonesia's regional state companies (BUMD) and the joint operations (KSO) that tie
+   them to the BUMN groups (views/bumd1001.js, data/bumd.json). A 404 while data/bumd.live is
+   absent (BUMD_PREVIEW=1 on a test port). English only, like /bumn. */
+const bumd1001 = require('./views/bumd1001');
+const { bumdLive } = require('./lib/bumdlive');
+fastify.get('/bumd', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const html = bumd1001.page({ lang: 'en' });
+  if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  reply.type('text/html').send(html);
+});
 /* /data-center — who powers Indonesia's data centres: the power matrix, every project
    with its power source and named vendors, and one company web per data-centre group
    (views/datacenter1001.js; data/datacenter.json + data/dc-webs/ from scripts/dc-build.py,
@@ -1092,7 +1103,7 @@ ${homeLive() ? `- [Front page](${O}/): the four datasets — startups, state com
 - [The startup census table](${O}/startups): every company, ranked, with funding, valuation, jobs and output
 - [Sensus dalam Bahasa Indonesia](${O}/id/startups)
 - [State companies (BUMN)](${O}/bumn): ${((bumn1001.load() || {}).entities || []).length || 42} BUMN on ten yardsticks, every score with its reason and source (English)
-- [Data centres](${O}/data-center): who powers Indonesia's data centres, project by project, with company webs (English)
+${bumdLive() ? `- [Regional state companies (BUMD)](${O}/bumd): companies owned by provinces, regencies and cities, with owners, figures and their joint operations with the BUMN groups (English)\n` : ''}- [Data centres](${O}/data-center): who powers Indonesia's data centres, project by project, with company webs (English)
 - [Exporters (UMKM)](${O}/umkm): exporting SMEs with products, markets and an evidence tier per row (English)`
   : `- [The census table](${O}/): every company, ranked, with funding, valuation, jobs and output
 - [Sensus dalam Bahasa Indonesia](${O}/id/)`}

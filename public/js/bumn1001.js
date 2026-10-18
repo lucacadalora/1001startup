@@ -88,6 +88,17 @@
       onclick: function (ev) { ev.stopPropagation(); Array.prototype.forEach.call(list.children, function (c) { c.hidden = false; }); ev.currentTarget.remove(); } }));
     return box;
   }
+  /* the group's ties to regional companies (#bm-bumd, present only while /bumd is switched on) */
+  var BUMD = (function () { var n = document.getElementById('bm-bumd'); if (!n) return null; try { return JSON.parse(n.textContent); } catch (err) { return null; } })();
+  function bumdBlock(slug) {
+    var g = BUMD && BUMD[slug];
+    if (!g || !g[0]) return null;
+    var bits = [g[0] + (g[0] === 1 ? ' tie' : ' ties')];
+    if (g[1]) bits.push(g[1] + (g[1] === 1 ? ' joint operation' : ' joint operations'));
+    if (g[2]) bits.push(g[2] + (g[2] === 1 ? ' regional company' : ' regional companies'));
+    return el('a', { class: 'bdl', href: '/bumd#g-' + encodeURIComponent(slug) },
+      el('span', null, el('b', { text: 'Regional companies and joint operations' }), bits.join('\u00a0· ')), el('span', { 'aria-hidden': 'true', text: '→' }));
+  }
   function subsBlock(slug) {
     var g = SUBS && SUBS.groups && SUBS.groups[slug];
     if (!g) return null;
@@ -343,6 +354,7 @@
     if (why.childNodes.length) card.append(why);
     var sb = subsBlock(e.slug); if (sb) card.append(sb);
     var tb = tiesBlock(e.slug); if (tb) card.append(tb);
+    var bb = bumdBlock(e.slug); if (bb) card.append(bb);
     card.classList.toggle('sheet', !wide());
     card.hidden = false; idle.hidden = wide();
     Object.keys(badges).forEach(function (s) { badges[s].classList.toggle('on', s === e.slug); });

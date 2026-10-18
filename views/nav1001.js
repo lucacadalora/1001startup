@@ -2,6 +2,7 @@
 const { dcLive } = require('../lib/dclive');
 const { peeringLive, graphLive } = require('../lib/peeringlive');
 const { homeLive } = require('../lib/homelive');
+const { bumdLive } = require('../lib/bumdlive');
 /**
  * ONE header for every 1001startup.id page. Five views used to carry their own
  * copy of this block and they had already drifted apart (each page showed a
@@ -88,8 +89,14 @@ const MOVED = new Set(['/bumn', '/data-center']);
 const NAV_LIVE = [DATASETS].concat(NAV.filter((n) => n.key !== 'companies').map((n) => (n.key === 'census'
   ? Object.assign({}, n, { items: n.items.filter((it) => !MOVED.has(it.href)) })
   : n)));
+/* Regional state companies (/bumd, Luca 18 Oct 2026): listed right after BUMN, wherever BUMN sits,
+   only while data/bumd.live exists, so the header and the footer are unchanged with the switch off. */
+const BUMD_ITEM = { label: 'Regional companies (BUMD)', id: 'BUMD', desc: 'Companies the regions own, and their joint operations with the BUMN groups', id_desc: 'Perusahaan milik daerah, dan kerja sama operasinya dengan grup BUMN', href: '/bumd' };
+const withBumd = (nav) => nav.map((n) => (n.items && n.items.some((it) => it.href === '/bumn')
+  ? Object.assign({}, n, { items: n.items.reduce((a, it) => a.concat(it.href === '/bumn' ? [it, BUMD_ITEM] : [it]), []) })
+  : n));
 /* the nav as it should render right now */
-const navNow = () => (homeLive() ? NAV_LIVE : NAV);
+const navNow = () => { const nav = homeLive() ? NAV_LIVE : NAV; return bumdLive() ? withBumd(nav) : nav; };
 /* where "the full census" lives: /startups once the front page is live, the
    old landing's table anchor before that. PF is '' or '/id'. */
 const censusHref = (PF) => (PF || '') + (homeLive() ? '/startups' : '/#companies');
@@ -105,7 +112,7 @@ function header(active, opts) {
   const PF = I18N.pfx(lang);
   const live = homeLive();
   /* once live, the four dataset pages light up the Datasets menu */
-  if (live && (active === 'companies' || /^\/(startups|bumn|data-center|peering|graph|umkm)(\/|\?|#|$)/.test(path || ''))) active = 'datasets';
+  if (live && (active === 'companies' || /^\/(startups|bumn|bumd|data-center|peering|graph|umkm)(\/|\?|#|$)/.test(path || ''))) active = 'datasets';
   const item = (it) => {
     const body = `<b>${esc(L(it.label, it.id))}${it.tag ? `<em class="ntag">${esc(L(it.tag, it.id_tag))}</em>` : ''}</b><i>${esc(L(it.desc || '', it.id_desc))}</i>`;
     return it.href
