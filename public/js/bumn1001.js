@@ -319,6 +319,8 @@
     var hd = el('div', { class: 'hd' }, el('img', { src: e.logo, alt: '' }), el('div', null, el('div', { class: 'nm', text: e.name }), el('div', { class: 'cl', text: e.sector })));
     if (pin) hd.append(el('button', { class: 'x', type: 'button', 'aria-label': 'Close', text: '×', onclick: function (ev) { ev.stopPropagation(); state.pinned = null; hide(); } }));
     card.append(hd);
+    /* dashboard slice 1: follow1001.js shows and runs it while My 1001 is on */
+    card.append(el('button', { class: 'fw1001', type: 'button', hidden: true, 'data-fk': 'bumn', 'data-fr': e.slug, text: 'Follow' }));
     if (MINI[e.slug]) card.append(miniMap(e, MINI[e.slug]));
     else if (MAPS.indexOf(e.slug) >= 0) card.append(el('a', { class: 'gm', href: '/bumn/' + encodeURIComponent(e.slug) }, el('span', { class: 'gm-go' }, el('span', { text: 'Group map: money by business, every company' }), el('span', { 'aria-hidden': 'true', text: '→' }))));
     ORDER.forEach(function (k) {

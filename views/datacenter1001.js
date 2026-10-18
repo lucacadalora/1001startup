@@ -147,6 +147,7 @@ function projectRow(D, p) {
   <span class="c-v">${vmarks}<em>${p.vendors.length || '—'}</em></span>
 </summary>
 <div class="pb">
+  <div class="pfw"><button class="fw1001" type="button" data-fk="dc" data-fr="${esc(p.id)}" hidden>Follow</button></div>
   ${p.why ? `<p class="why">${esc(p.why)}</p>` : ''}
   <div class="pw"><span class="k">Power</span><p>${esc(p.power)}</p>${from ? `<div class="pf">${from}</div>` : ''}${p.plinks.length ? `<span class="src">${p.plinks.map((l) => a(l.u, l.t, l.q)).join('')}</span>` : ''}</div>
   ${layers ? `<div class="stack">${layers}</div>` : '<p class="none">No vendor named in a source we could open.</p>'}

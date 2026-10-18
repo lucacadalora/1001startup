@@ -247,6 +247,7 @@ function card({ c, data, standalone, links, lang = 'en' }) {
       ${/* every located company: the logo map (Oct 2026) covers the whole
            country, not only the metros the old map had boundaries for */
         (c.lat && c.lon) ? `<a class="cp-btn" href="${PF}${MAP}?company=${encodeURIComponent(c.id)}" target="_blank" rel="noopener">${L('See on the map', 'Lihat di peta')} <span aria-hidden="true">↗</span></a>` : ''}
+      <button class="fw1001" type="button" data-fk="company" data-fr="${esc(c.id)}" hidden>${L('Follow', 'Ikuti')}</button>
     </div>
   </header>
 

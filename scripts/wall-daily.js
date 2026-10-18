@@ -14,8 +14,8 @@
  *   add --dry to print instead of sending; --intro adds the first-message line
  *
  * Sources, all in data/pasar.db, read-only: wall_counts (lib/account1001.js:
- * day-level counts, no identifiers), acct_users, px_view (the site's own
- * visitor counter: real people only, eng=1 and net='').
+ * day-level counts, no identifiers), acct_users, acct_follows (My 1001),
+ * px_view (the site's own visitor counter: real people only, eng=1, net='').
  */
 const fs = require('fs');
 const os = require('os');
@@ -77,6 +77,13 @@ function report(d) {
     + (first ? `, ${Math.round((signin / first) * 100)}% of those who hit it` : ''));
   lines.push(`Left at the wall without signing in: about ${n(Math.max(first - signin, 0))}`);
   lines.push(`Accounts: ${n(total)} in total, ${n(fresh)} new this day`);
+  /* My 1001 (dashboard slice 1): follows and sign-ins that started at a Follow button */
+  try {
+    const f = db.prepare('SELECT COUNT(*) AS n, COUNT(DISTINCT user_id) AS u FROM acct_follows WHERE date(created_at) = ?').get(d);
+    const fu = db.prepare('SELECT COUNT(DISTINCT user_id) AS u FROM acct_follows WHERE date(created_at) <= ?').get(d);
+    lines.push(`Follows: ${n(f.n)} new by ${n(f.u)} readers; ${n(fu.u)} of ${n(total)} accounts follow something`);
+    lines.push(`Signed in from a Follow button: ${n(w.follow_signin)} (${n(w.follow_signup)} new accounts)`);
+  } catch { /* no follows table yet */ }
   lines.push('');
   lines.push(`Readers: ${n(r.people)} people, ${one(r.people ? r.views / r.people : 0)} pages each`
     + ` (week before: ${n(base.people / days)} a day, ${one(base.people ? base.views / base.people : 0)} pages each)`);

@@ -366,6 +366,7 @@ function investor({ data, slug, lang = 'en' }) {
   <div>
     <div class="eyebrow"><span class="sq"></span>INVESTOR</div>
     <h1>${esc(e.name)}</h1>
+    <div class="inv-fw"><button class="fw1001" type="button" data-fk="investor" data-fr="${esc(e.slug)}" hidden>${L('Follow', 'Ikuti')}</button></div>
     <div class="facts">${factbits}</div>
     ${srcs}
   </div>
@@ -435,4 +436,4 @@ function notFound({ data, lang = 'en' }) {
   });
 }
 
-module.exports = { index, investor, notFound, slugInv, parseInv, indexableSlugs };
+module.exports = { index, investor, notFound, slugInv, parseInv, indexableSlugs, graph };

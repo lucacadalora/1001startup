@@ -179,7 +179,7 @@ fastify.addHook('onRequest', async (req, reply) => {
 const ID_READY = new Set(['/', '/startups', '/closed', '/map', '/company/:id', '/jakarta',
   '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
   '/investors', '/investor/:slug', '/stats', '/about', '/report', '/report/:edition', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
-  '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask', '/signin']);
+  '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask', '/signin', '/me']);
 fastify.addHook('preHandler', (req, reply, done) => {
   if (req.raw && req.raw.lang1001 === 'id') {
     const route = req.routeOptions && req.routeOptions.url;
