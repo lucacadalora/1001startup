@@ -71,14 +71,24 @@ function bottomLine(D) {
   const F = new Map(D.facs.map((f) => [f.id, f]));
   const top = D.places.slice().sort((a, b) => b.nets - a.nets)[0];
   const multi = D.places.filter((p) => p.facs.length > 1).sort((a, b) => b.facs.length - a.facs.length)[0];
-  const jkt = D.facs.filter((f) => /jakarta|bekasi|depok|tangerang|bogor|cibitung|cikarang|karawang/i.test(`${f.city} ${f.prov}`)).length;
+  /* Greater Jakarta by position (Jabodetabek), the other cities by grouping places
+     within 25 km of each other, so spelling ("Kota Bandung", "Bandung") can't split a city */
+  const inJkt = (p) => p.lat > -6.8 && p.lat < -5.9 && p.lng > 106.35 && p.lng < 107.22;
+  const jkt = D.facs.filter((f) => f.lat != null && inJkt(f)).length;
+  const rest = D.places.filter((p) => !inJkt(p));
+  const km = (a, b) => { const r = Math.PI / 180, x = (b.lng - a.lng) * r * Math.cos((a.lat + b.lat) * r / 2), y = (b.lat - a.lat) * r; return 6371 * Math.hypot(x, y); };
+  const grp = rest.map((_, i) => i);
+  const root = (i) => (grp[i] === i ? i : (grp[i] = root(grp[i])));
+  rest.forEach((a, i) => rest.forEach((b, j) => { if (j > i && km(a, b) < 25) grp[root(j)] = root(i); }));
+  const cities = new Set(rest.map((_, i) => root(i))).size;
   const bigIx = D.ixs.slice().sort((a, b) => b.nets - a.nets).slice(0, 2);
   const out = [];
   if (top) out.push(`<b>${esc(top.n)}</b> is the busiest place: ${n0(top.nets)} networks list equipment there${top.facs.length > 1 ? `, across ${top.facs.length} facilities in one building` : ''}.`);
-  out.push(`<b>${n0(jkt)} of ${n0(T.fac)}</b> facilities are in Greater Jakarta. The rest are spread over ${n0(new Set(D.facs.filter((f) => !/jakarta|bekasi|depok|tangerang|bogor|cibitung|cikarang|karawang/i.test(`${f.city} ${f.prov}`)).map((f) => (f.city || '').toLowerCase().replace(/^kota\s+/, ''))).size)} other cities.`);
+  out.push(`<b>${n0(jkt)} of ${n0(T.fac)}</b> facilities are in Greater Jakarta. The rest are spread over ${n0(cities)} other cities.`);
   if (multi && multi !== top) out.push(`<b>${esc(multi.n)}</b> holds ${multi.facs.length} separate PeeringDB facilities under one roof: ${multi.facs.slice(0, 3).map((i) => esc((F.get(i) || {}).n || '')).join(', ')}${multi.facs.length > 3 ? ' and more' : ''}.`);
   if (bigIx.length === 2) out.push(`The two biggest exchanges are <b>${esc(bigIx[0].pdb)}</b> (${n0(bigIx[0].nets)} networks) and <b>${esc(bigIx[1].pdb)}</b> (${n0(bigIx[1].nets)}).`);
-  out.push(`<b>${pct(T.ports_grey, T.ports)}%</b> of the ${n0(T.ports)} router ports on Indonesian exchanges have no data centre in PeeringDB, so they sit grey on their exchange's city.`);
+  out.push(`<b>${pct(T.ports_grey, T.ports)}%</b> of the ${n0(T.ports)} router ports on Indonesian exchanges can't be tied to a data centre we can name, so they sit grey on their exchange's city.`);
+  if (T.links) out.push(`<b>${n0(T.link_ix)} exchanges</b> have switches in more than one named data centre. The Network layer draws those ${n0(T.links)} links, with light running along them.`);
   return out;
 }
 
