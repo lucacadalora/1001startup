@@ -194,6 +194,20 @@ fastify.addHook('preHandler', (req, reply, done) => {
   }
   done();
 });
+/* dc.1001startup.id carries one page, the peering map at /. Its own files and
+   data (tiles, glyphs, scripts, the map's JSON, analytics) are served here; any
+   other page address forwards to the same path on 1001startup.id, so the
+   header's relative links land on the main site. */
+fastify.addHook('onRequest', (req, reply, done) => {
+  if ((req.method === 'GET' || req.method === 'HEAD') && hostOf(req) === 'dc.1001startup.id') {
+    const p = String(req.url || '/').split('?')[0];
+    if (p !== '/' && p !== '/data/peering.json' && !/^\/(peering|peeringdb|ix|internet-exchanges?)\/?$/.test(p)
+      && !/^\/(assets|css|js|tiles|_v|_d|api)\//.test(p) && !/^\/(favicon\.ico|robots\.txt)$/.test(p)) {
+      return reply.code(301).header('location', 'https://1001startup.id' + req.url).send();
+    }
+  }
+  done();
+});
 /* umkm.vantis.sh folds into 1001startup.id/umkm while the front-page switch is
    on (lib/homelive.js): every page address forwards with a 301 to its new
    home — / and /map to /umkm (the isometric map is not carried over), a
@@ -523,6 +537,7 @@ const modelTex = () => {
   try { return JSON.parse(fs.readFileSync(path.join(__dirname, 'data', 'model-tex.json'), 'utf8')); } catch { return null; }
 };
 fastify.get('/', async (req, reply) => {
+  if (isDcHost(req)) return peeringPage(req, reply);
   if (isUmkm(req)) { reply.type('text/html').send(pagesumkm.landing({ data: umkmData() })); return; }
   if (isCnc(req)) { reply.type('text/html').send(pagescnc.landing({ data: cncData(), webs: cncWebs() })); return; }
   if (is1001(req)) {
@@ -873,6 +888,47 @@ for (const alias of ['/datacenter', '/data-centre', '/data-centers', '/data-cent
     if (!is1001(req)) return reply.redirect('/');
     if (!dcLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
     return reply.code(301).header('location', '/data-center').send();
+  });
+}
+/* /peering — where Indonesia's networks meet: every data centre, internet exchange and
+   router port PeeringDB lists in Indonesia, on the /map engine, grey where we can't name
+   the data centre (views/peering1001.js + public/js/peering1001.js; data/peering.json from
+   scripts/peering-build.py, mtime-cached, so a rebuild needs no restart). English only.
+   404 until data/peering.live exists (PEERING_PREVIEW=1 on a test port). */
+const peering1001 = require('./views/peering1001');
+const { peeringLive } = require('./lib/peeringlive');
+/* Luca, 18 Oct 2026: "host it as dc.1001startup.id". The map is that host's front
+   page; on the main host /peering forwards there (a test port with PEERING_PREVIEW=1
+   renders it in place). */
+const DC_HOST = 'dc.1001startup.id';
+const isDcHost = (req) => hostOf(req) === DC_HOST;
+const peeringPage = (req, reply) => {
+  if (!peeringLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  const html = peering1001.page({ lang: 'en', tiles: map1001routes.tileInfo() });
+  if (!html) return reply.code(503).type('text/plain').send('The peering map is being rebuilt. Try again in a minute.');
+  return reply.type('text/html').send(html);
+};
+const toDcHost = (req, reply) => {
+  const qs = String(req.url || '').split('?')[1];
+  return reply.code(301).header('location', peering1001.HOME + (qs ? '?' + qs : '')).send();
+};
+fastify.get('/peering', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  if (!peeringLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  if (isDcHost(req) || process.env.PEERING_PREVIEW !== '1') return toDcHost(req, reply);
+  return peeringPage(req, reply);
+});
+fastify.get('/data/peering.json', async (req, reply) => {
+  if (!is1001(req) || !peeringLive()) return reply.code(404).send({ error: 'not_found' });
+  const body = peering1001.raw();
+  if (!body) return reply.code(503).send({ error: 'rebuilding' });
+  reply.header('Cache-Control', 'public, max-age=300').type('application/json').send(body);
+});
+for (const alias of ['/peering/', '/peeringdb', '/internet-exchange', '/internet-exchanges', '/ix']) {
+  fastify.get(alias, async (req, reply) => {
+    if (!is1001(req)) return reply.redirect('/');
+    if (!peeringLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+    return toDcHost(req, reply);
   });
 }
 /* /about — who builds the census (views/about1001.js). /tentang is the

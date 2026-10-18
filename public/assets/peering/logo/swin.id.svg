@@ -1,0 +1,5 @@
+<!-- Simple SVG icon untuk testing PWA manifest -->
+<svg width="192" height="192" xmlns="http://www.w3.org/2000/svg">
+  <rect width="192" height="192" fill="#E35A3D"/>
+  <text x="96" y="110" font-family="Arial, sans-serif" font-size="32" fill="white" text-anchor="middle" font-weight="bold">SWIN</text>
+</svg>

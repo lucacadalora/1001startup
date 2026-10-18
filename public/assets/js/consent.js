@@ -41,6 +41,7 @@
     '1001.vantis.sh': ID_1001,
     '1001startup.id': ID_1001,
     'www.1001startup.id': ID_1001,
+    'dc.1001startup.id': ID_1001,
     'umkm.vantis.sh': ID_UMKM,
     '1001umkm.id': ID_UMKM,
     'www.1001umkm.id': ID_UMKM,
@@ -51,6 +52,7 @@
   var DB_SITES = {
     '1001startup.id': '1905f714-3080-452a-abe2-df7315e013db',
     'www.1001startup.id': '1905f714-3080-452a-abe2-df7315e013db',
+    'dc.1001startup.id': '1905f714-3080-452a-abe2-df7315e013db',
   };
   var DB_ID = DB_SITES[HOSTNAME];
   var WEBSITE_ID = SITES[HOSTNAME] || SITES['pasar.vantis.sh'];

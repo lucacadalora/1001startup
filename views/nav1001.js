@@ -1,5 +1,6 @@
 'use strict';
 const { dcLive } = require('../lib/dclive');
+const { peeringLive } = require('../lib/peeringlive');
 const { homeLive } = require('../lib/homelive');
 /**
  * ONE header for every 1001startup.id page. Five views used to carry their own
@@ -78,6 +79,7 @@ const DATASETS = {
     { label: 'Startups', id: 'Startup', desc: 'The startup census: funding, investors, headcount and offices', id_desc: 'Sensus startup: pendanaan, investor, jumlah pekerja, dan kantor', href: '/startups' },
     { label: 'State companies (BUMN)', id: 'BUMN', desc: 'State companies on ten yardsticks, as a logo quadrant', id_desc: 'BUMN pada sepuluh tolok ukur, dalam kuadran logo', href: '/bumn' },
     { label: 'Data centres', id: 'Pusat data', desc: 'Who powers them, and the companies that own and build them', id_desc: 'Siapa yang memasok listriknya, dan perusahaan di baliknya', href: '/data-center' },
+    { label: 'Peering map', id: 'Peta peering', desc: 'Every data centre, exchange and router port on PeeringDB', id_desc: 'Setiap pusat data, exchange, dan port router di PeeringDB', href: '/peering' },
     { label: 'Exporters (UMKM)', id: 'Eksportir (UMKM)', desc: 'Exporting SMEs: what they make, where they ship, how each was verified', id_desc: 'UMKM eksportir: produknya, pasar tujuannya, dan cara tiap baris diverifikasi', href: '/umkm' },
   ],
 };
@@ -102,7 +104,7 @@ function header(active, opts) {
   const PF = I18N.pfx(lang);
   const live = homeLive();
   /* once live, the four dataset pages light up the Datasets menu */
-  if (live && (active === 'companies' || /^\/(startups|bumn|data-center|umkm)(\/|\?|#|$)/.test(path || ''))) active = 'datasets';
+  if (live && (active === 'companies' || /^\/(startups|bumn|data-center|peering|umkm)(\/|\?|#|$)/.test(path || ''))) active = 'datasets';
   const item = (it) => {
     const body = `<b>${esc(L(it.label, it.id))}${it.tag ? `<em class="ntag">${esc(L(it.tag, it.id_tag))}</em>` : ''}</b><i>${esc(L(it.desc || '', it.id_desc))}</i>`;
     return it.href
@@ -114,7 +116,7 @@ function header(active, opts) {
     if (!n.items) return `<a${on ? ` class="${on.trim()}"` : ''} href="${esc(PF + n.href)}">${esc(L(n.label, n.id))}</a>`;
     return `<div class="dd${n.align === 'r' ? ' r' : ''}">
       <button class="dd-b${on}" type="button" aria-expanded="false">${esc(L(n.label, n.id))}<span class="cv" aria-hidden="true"></span></button>
-      <div class="dd-p"><div class="dd-i">${n.items.filter((it) => it.href !== '/data-center' || dcLive()).map(item).join('')}</div></div>
+      <div class="dd-p"><div class="dd-i">${n.items.filter((it) => (it.href !== '/data-center' || dcLive()) && (it.href !== '/peering' || peeringLive())).map(item).join('')}</div></div>
     </div>`;
   }).join('');
   /* The language switch. Real links, no JS: EN is the bare URL, ID the /id

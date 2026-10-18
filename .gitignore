@@ -24,3 +24,9 @@ data/founders-work/*.json
 
 # /map basemap: the Protomaps Indonesia extract (~450 MB), fetched by scripts/fetch-basemap.sh
 data/basemap/
+
+# /peering (dc.1001startup.id): built from the PeeringDB pull + research in ~/projects/peering-map-id by
+# scripts/peering-build.py; kept out of git so PeeringDB data is not passed on in bulk (its AUP)
+data/peering.json
+data/peering-map.json
+data/peering.live

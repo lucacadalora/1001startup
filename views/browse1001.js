@@ -156,7 +156,10 @@ function itemListLd(rows, lang) {
   return `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>`;
 }
 
-function shell({ title, desc, path, lang, body, ld, robots = 'index, follow', active = 'census' }) {
+/* canonical: an absolute URL for a page that lives on its own host (the peering
+   map on dc.1001startup.id) — it replaces the en/id alternates, as such a page has
+   no /id version. translated: false greys the ID switch for the same reason. */
+function shell({ title, desc, path, lang, body, ld, robots = 'index, follow', active = 'census', canonical = '', translated = true }) {
   const L = I18N.mkL(lang);
   return `<!doctype html>
 <html lang="${lang}">
@@ -166,7 +169,7 @@ function shell({ title, desc, path, lang, body, ld, robots = 'index, follow', ac
 <title>${esc(title)}</title>
 <meta name="description" content="${esc(desc)}">
 <meta name="robots" content="${robots}">
-${I18N.headTags(lang, path)}
+${canonical ? `<link rel="canonical" href="${esc(canonical)}">\n<meta property="og:url" content="${esc(canonical)}">` : I18N.headTags(lang, path)}
 ${I18N.ogImage()}
 <meta property="og:title" content="${esc(title)}">
 <meta property="og:description" content="${esc(desc)}">${ld || ''}
@@ -229,7 +232,7 @@ footer a{color:#52525B}
 </head>
 <body>
 <div class="banner">${L('WORKING DRAFT · PUBLIC SOURCES ONLY · EVERY DERIVED FIGURE IS A LABELED ESTIMATE', 'DOKUMEN KERJA · SUMBER PUBLIK SAJA · ANGKA TURUNAN SELALU BERLABEL ESTIMASI')}</div>
-${NAV.header(active, { lang, path, translated: true })}
+${NAV.header(active, { lang, path, translated })}
 ${body}
 <footer>
   <span>${L('1001startup.id — the census of Indonesian startups', '1001startup.id — sensus startup Indonesia')}</span>
