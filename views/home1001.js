@@ -579,7 +579,7 @@ ${NAV.header('', { lang, path: '/' })}
     <h1>${L('Indonesia’s company graph.', 'Data perusahaan Indonesia.')}</h1>
     <p class="sub">${peerOn ? L('Startups, state companies, data centres, exporters and where the internet’s networks meet — five live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, pusat data, UMKM eksportir, dan titik temu jaringan internet — lima dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.') : L('Startups, state companies, data centres and exporters — four live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, pusat data, dan UMKM eksportir — empat dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.')}</p>
     <form class="hs" id="hs" action="${PF}/startups" method="get" role="search" autocomplete="off">
-      <label class="sr" for="hq">${L('Search the company datasets', 'Cari di dataset perusahaan')}</label>
+      <label class="sr" for="hq">${peerOn ? L('Search the company datasets', 'Cari di dataset perusahaan') : L('Search the four datasets', 'Cari di empat dataset')}</label>
       <input id="hq" name="q" type="search" placeholder="${esc(L('Search a startup, BUMN, data centre or exporter', 'Cari startup, BUMN, pusat data, atau eksportir'))}" data-short="${esc(L('Search any company', 'Cari perusahaan'))}" role="combobox" aria-expanded="false" aria-controls="hres" aria-autocomplete="list" enterkeyhint="search" spellcheck="false">
       <button type="submit">${L('Search', 'Cari')}</button>
       <div class="hres" id="hres" role="listbox" hidden></div>
