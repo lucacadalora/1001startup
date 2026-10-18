@@ -298,6 +298,10 @@ body.pm-over-map .b1 .b1-tab{visibility:hidden!important;pointer-events:none}
 .fhd{font:400 10.5px/1.3 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73;background:#FAFAFA;border-bottom:1px solid #E7E7E7}
 .fhd span:nth-child(n+4){text-align:right}
 .fr{border-bottom:1px solid #F1F1F1}
+/* 284 rows (11,600 elements): a row is only laid out and painted near the screen;
+   the size hint is the measured mean inner height when closed (desktop, then phone) */
+.fr{content-visibility:auto;contain-intrinsic-size:auto 68px}
+@media(max-width:760px){.fr{contain-intrinsic-size:auto 96px}}
 .fr:last-child{border-bottom:0}
 .fr summary{cursor:pointer;list-style:none}
 .fr summary::-webkit-details-marker{display:none}

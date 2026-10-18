@@ -544,7 +544,7 @@ function index({ data, links, lang = 'en' }) {
       <td class="nm"><a href="${PF}/chain/x/${esc(r.slug)}">${esc(r.X.name)}</a> <em class="ch-xm">${L('outside the census', 'di luar sensus')}</em></td>
       <td class="sc">${esc(r.X.legal || '')}</td>`
     : `<tr data-k="${esc(r.kinds)}" data-q="${esc((r.c.name + ' ' + (r.c.sector_label || '') + ' ' + (r.c.legal_name || '')).toLowerCase())}">
-      <td class="nm">${r.c.logo ? `<img src="${esc(r.c.logo)}" alt="" width="20" height="20" loading="lazy">` : ''}
+      <td class="nm">${r.c.logo ? `<span class="lgb"><img src="${esc(r.c.logo)}" alt="" width="20" height="20" loading="lazy"></span>` : ''}
         <a href="${PF}/chain/${esc(r.id)}">${esc(r.c.name)}</a></td>
       <td class="sc">${esc(r.c.sector_label || '')}</td>`)
     + `<td class="n">${cell(r.t.up)}</td><td class="n">${cell(r.t.dn)}</td><td class="n ch-ns">${cell(r.t.corp)}</td></tr>`).join('')}</tbody>

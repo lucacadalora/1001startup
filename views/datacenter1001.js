@@ -379,6 +379,13 @@ a.cx:hover{outline:2px solid #E8734B;outline-offset:1px}
 .phd button{all:unset;cursor:pointer}
 .phd button:focus-visible{outline:2px solid #000}
 .pr{border-bottom:1px solid #F1F1F1}
+/* long page: these are only laid out and painted near the screen; each size hint is the
+   measured inner height (desktop, then phone), so the scrollbar holds still */
+#dc-list>.pr{content-visibility:auto;contain-intrinsic-size:auto 66px}
+#webs,#vendors{content-visibility:auto}
+#webs{contain-intrinsic-size:auto 3744px}
+#vendors{contain-intrinsic-size:auto 2610px}
+@media(max-width:720px){#dc-list>.pr{contain-intrinsic-size:auto 138px}#webs{contain-intrinsic-size:auto 4884px}#vendors{contain-intrinsic-size:auto 4101px}}
 .pr:last-child{border-bottom:0}
 .pr>summary{list-style:none;cursor:pointer;font-size:13.5px}
 .pr>summary::-webkit-details-marker{display:none}
