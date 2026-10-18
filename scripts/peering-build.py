@@ -382,6 +382,23 @@ def main():
         pt = city_pt(cname)
         G.append({'city': cname, 'lat': pt[0] if pt else None, 'lng': pt[1] if pt else None, 'ports': g['ports'], 'ixs': sorted(g['ixs'])})
 
+    # ── exchange links: the network layer's lines ────────────────────
+    # An exchange with switches in several named data centres links them. Each one is
+    # drawn as spokes from its busiest named site to its other named sites (we know which
+    # buildings an exchange joins, not where its cables run). Pairs shared by several
+    # exchanges are one line, weighted by how many. Grey sites get no line.
+    pl_nets = {pl['id']: pl['nets'] for pl in P}
+    pairs = defaultdict(set)
+    for x in X:
+        sites = sorted({byid[s]['place'] for s in x['sites'] if byid[s]['place'] and not byid[s]['grey']},
+                       key=lambda pid: (-pl_nets.get(pid, 0), pid))
+        if len(sites) < 2:
+            continue
+        hub = sites[0]
+        for other in sites[1:]:
+            pairs[tuple(sorted((hub, other)))].add(x['id'])
+    L = [{'a': a, 'b': b, 'ixs': sorted(ixs), 'w': len(ixs)} for (a, b), ixs in sorted(pairs.items(), key=lambda kv: -len(kv[1]))]
+
     # ── networks (names and types only) ──────────────────────────────
     ids = set().union(*nets_at.values()) | {p['net_id'] for p in ports}
     fac_n = Counter(r['net_id'] for r in netfac if r['fac_id'] in fac_ids)
@@ -403,10 +420,11 @@ def main():
         'presences': sum(len(s) for s in nets_at.values()), 'ports': sum(how.values()),
         'ports_named': sum(v for k, v in how.items() if k != 'grey'), 'ports_grey': how['grey'],
         'ports_how': dict(how), 'no_pin': sum(1 for f in F if f['lat'] is None),
+        'links': len(L), 'link_ix': len({i for l in L for i in l['ixs']}),
     }
     out = {
         'asof': pulled, 'built': datetime.datetime.now(datetime.timezone.utc).strftime('%Y-%m-%dT%H:%M:%SZ'),
-        'totals': T, 'places': P, 'facs': F, 'ixs': X, 'grey_ports': G, 'nets': N, 'netfac': netfac_out,
+        'totals': T, 'places': P, 'facs': F, 'ixs': X, 'grey_ports': G, 'nets': N, 'netfac': netfac_out, 'links': L,
     }
     OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(',', ':')))
     # what the map script needs, without the sources and notes the page itself prints

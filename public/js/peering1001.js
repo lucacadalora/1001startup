@@ -449,8 +449,75 @@ function start(gl, D) {
     return f ? f.geometry.coordinates : null;
   };
 
+  /* ── the network layer: exchange links with light running along them ── */
+  /* Each link joins two data centres that one or more exchanges have switches in
+     (scripts/peering-build.py: spokes from an exchange's busiest named site). It is
+     drawn as a gentle arc; small lights run along it both ways, more of them where
+     more exchanges share the link. It shows which buildings are linked, not where the
+     fibre runs. */
+  const LINKS = (D.links || []).map((l) => {
+    const a = PL.get(l.a), b = PL.get(l.b);
+    if (!a || !b) return null;
+    const ax = mercX(a.lng), ay = mercY(a.lat), bx = mercX(b.lng), by = mercY(b.lat);
+    const dx = bx - ax, dy = by - ay, len = Math.hypot(dx, dy);
+    /* bend to one side by a fifth of the length, the same way round for every link */
+    const cx = (ax + bx) / 2 - dy * 0.2, cy = (ay + by) / 2 + dx * 0.2;
+    const N = 48, xs = new Float64Array(N + 1), ys = new Float64Array(N + 1), cum = new Float64Array(N + 1);
+    for (let i = 0; i <= N; i++) {
+      const s = i / N, u = 1 - s;
+      xs[i] = u * u * ax + 2 * u * s * cx + s * s * bx;
+      ys[i] = u * u * ay + 2 * u * s * cy + s * s * by;
+      if (i) cum[i] = cum[i - 1] + Math.hypot(xs[i] - xs[i - 1], ys[i] - ys[i - 1]);
+    }
+    const names = l.ixs.map((i) => (X.get(i) || {}).pdb).filter(Boolean);
+    return { l, a, b, xs, ys, cum, total: cum[N] || len || 1e-9, names };
+  }).filter(Boolean);
+  const linkData = fc(LINKS.map((k) => ({ type: 'Feature',
+    geometry: { type: 'LineString', coordinates: Array.from(k.xs, (x, i) => [lonOf(x), latOf(k.ys[i])]) },
+    properties: { w: k.l.w, a: k.a.label, b: k.b.label, ixs: k.names.slice(0, 4).join(', ') + (k.names.length > 4 ? ` and ${k.names.length - 4} more` : '') } })));
+  /* the lights: 1 to 4 per link, half of them running the other way */
+  const LIGHTS = [];
+  LINKS.forEach((k) => {
+    const n = Math.min(5, 2 + Math.floor(k.l.w / 2) + (k.total * 512 * 32 > 900 ? 1 : 0));
+    for (let i = 0; i < n; i++) LIGHTS.push({ k, t: (i + Math.random() * 0.6) / n, dir: i % 2 ? -1 : 1, v: 70 + Math.random() * 40 });
+  });
+  const at = (k, t) => {
+    const want = t * k.total, c = k.cum;
+    let lo = 0, hi = c.length - 1;
+    while (hi - lo > 1) { const m = (lo + hi) >> 1; if (c[m] < want) lo = m; else hi = m; }
+    const f = (want - c[lo]) / ((c[hi] - c[lo]) || 1);
+    return [lonOf(k.xs[lo] + (k.xs[hi] - k.xs[lo]) * f), latOf(k.ys[lo] + (k.ys[hi] - k.ys[lo]) * f)];
+  };
+  const lightData = () => fc(LIGHTS.map((p) => ({ type: 'Feature', geometry: { type: 'Point', coordinates: at(p.k, p.t) }, properties: {} })));
+  const still = matchMedia('(prefers-reduced-motion: reduce)').matches;
+  let running = false, last = 0, onScreen = true;
+  function tick(now) {
+    if (!running) return;
+    requestAnimationFrame(tick);
+    const dt = Math.min(0.1, (now - (last || now)) / 1000);
+    if (now - last < (narrow() ? 50 : 33)) return;   // 30 fps, 20 on a phone
+    last = now;
+    const scale = 512 * 2 ** map.getZoom();
+    for (const p of LIGHTS) {
+      p.t += p.dir * (p.v * dt) / Math.max(40, p.k.total * scale);
+      if (p.t > 1) p.t -= 1; else if (p.t < 0) p.t += 1;
+    }
+    const src = map.getSource('net-lights');
+    if (src) src.setData(lightData());
+  }
+  function lights(on) {
+    const want = on && !still && onScreen && document.visibilityState === 'visible';
+    if (want === running) return;
+    running = want; last = 0;
+    if (running) requestAnimationFrame(tick);
+  }
+  new IntersectionObserver((es) => { onScreen = es[0].isIntersecting; lights(mode === 'net'); }).observe(wrap);
+  document.addEventListener('visibilitychange', () => lights(mode === 'net'));
+
   /* ── layers ──────────────────────────────────────────────────────── */
-  const LAYERS = { dc: ['dc-gnames', 'dc-names', 'dc-marks'], ix: ['ix-names', 'ix-marks'], ports: ['pt-names', 'pt-marks'] };
+  const LAYERS = { net: ['net-glow', 'net-line', 'net-halo', 'net-core', 'net-names', 'net-marks'], dc: ['dc-gnames', 'dc-names', 'dc-marks'], ix: ['ix-names', 'ix-marks'], ports: ['pt-names', 'pt-marks'] };
+  /* the network layer hides the basemap's own names: its lines must never run through a label */
+  const BASE_LABELS = ['label-sea', 'label-road', 'label-district', 'label-region', 'label-city', 'label-country'];
   const nameText = (extra) => Object.assign({
     'text-font': SEMI, 'text-max-width': 9, 'text-line-height': 1.1, 'text-letter-spacing': -0.01,
     'text-variable-anchor': ['left', 'right', 'top', 'bottom', 'top-left', 'top-right', 'bottom-left', 'bottom-right'], 'text-justify': 'auto', 'text-padding': 2,
@@ -467,14 +534,44 @@ function start(gl, D) {
     seat = Math.max(SPREAD_FROM - 0.5, stepOf(map.getZoom()));
     for (const key of Object.keys(FEAT)) map.addSource(key, { type: 'geojson', data: laid(key, seat) });
     map.on('zoom', reseat);
-    /* names first in the stack order below the marks: placed after them, so
-       they keep clear of every mark */
-    /* grey places get their PeeringDB name in grey only close in */
     /* a name starts just clear of its mark: half the mark, at the size the
        mark is drawn at this zoom, plus a small gap */
     const off = (f, mid) => ['+', mid ? ['case', ['==', ['get', 'mid'], 1], ['*', ['get', 'bh'], f], ['get', 'dh']] : ['*', ['get', 'bh'], f], ['get', 'g']];
     const growing = ['interpolate', ['linear'], ['zoom'], 7.99, ['+', ['get', 'dh'], ['get', 'g']],
       8, off(0.62, true), BADGES_ALL - 0.01, off(lerp(GROW, BADGES_ALL), true), BADGES_ALL, off(lerp(GROW, BADGES_ALL), false), 14.5, off(1, false)];
+    /* the network layer goes in first, so it sits under every mark and name */
+    map.addSource('net-links', { type: 'geojson', data: linkData });
+    map.addSource('net-lights', { type: 'geojson', data: lightData() });
+    const wW = (lo, hi) => ['interpolate', ['linear'], ['get', 'w'], 1, lo, 13, hi];
+    map.addLayer({ id: 'net-glow', type: 'line', source: 'net-links', layout: { 'line-cap': 'round', visibility: 'none' },
+      paint: { 'line-color': '#36A9FF', 'line-opacity': 0.14, 'line-blur': 3, 'line-width': wW(5, 12) } });
+    map.addLayer({ id: 'net-line', type: 'line', source: 'net-links', layout: { 'line-cap': 'round', visibility: 'none' },
+      paint: { 'line-color': '#36A9FF', 'line-opacity': 0.6, 'line-width': wW(1.1, 3.2) } });
+    map.addLayer({ id: 'net-halo', type: 'circle', source: 'net-lights', layout: { visibility: 'none' },
+      paint: { 'circle-color': '#2F9BFF', 'circle-opacity': 0.42, 'circle-blur': 0.85, 'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 7, 10, 10, 14, 13] } });
+    map.addLayer({ id: 'net-core', type: 'circle', source: 'net-lights', layout: { visibility: 'none' },
+      paint: { 'circle-color': '#0A6CFF', 'circle-radius': ['interpolate', ['linear'], ['zoom'], 4, 2.3, 10, 3, 14, 3.6],
+        'circle-stroke-color': '#EAF5FF', 'circle-stroke-width': 1.2 } });
+    /* names sit on white plates: a line or a light passing under a name stops at the plate's edge */
+    const pc = document.createElement('canvas'); pc.width = pc.height = 32;
+    const px2 = pc.getContext('2d', { willReadFrequently: true });
+    px2.fillStyle = 'rgba(255,255,255,0.97)'; px2.strokeStyle = 'rgba(0,0,0,0.10)'; px2.lineWidth = 2;
+    px2.beginPath(); px2.roundRect(1, 1, 30, 30, 8); px2.fill(); px2.stroke();
+    map.addImage('plate', px2.getImageData(0, 0, 32, 32), { pixelRatio: 2, stretchX: [[10, 22]], stretchY: [[10, 22]], content: [8, 8, 24, 24] });
+    map.addLayer({ id: 'net-names', type: 'symbol', source: 'dc', filter: ['==', ['get', 'grey'], 0],
+      layout: nameText({ 'text-field': twoLine, 'text-size': ['get', 'ts'], 'text-radial-offset': growing,
+        'icon-image': 'plate', 'icon-text-fit': 'both', 'icon-text-fit-padding': [3, 6, 2, 6],
+        'icon-allow-overlap': true, 'icon-ignore-placement': true, 'text-padding': 7,
+        'symbol-sort-key': ['-', 0, ['get', 'nets']], visibility: 'none' }),
+      paint: inkPaint });
+    map.addLayer({ id: 'net-marks', type: 'symbol', source: 'dc',
+      layout: Object.assign(markLayout(['step', ['zoom'], ['get', 'dot'], 8, ['case', ['==', ['get', 'mid'], 1], ['get', 'badge'], ['get', 'dot']], BADGES_ALL, ['get', 'badge']],
+        ['interpolate', ['linear'], ['zoom'], 7.99, 1, 8, ['case', ['==', ['get', 'mid'], 1], 0.62, 1],
+          BADGES_ALL - 0.01, ['case', ['==', ['get', 'mid'], 1], lerp(GROW, BADGES_ALL), 1], BADGES_ALL, ['case', ['==', ['get', 'grows'], 1], lerp(GROW, BADGES_ALL), 1], 14.5, 1]), { 'symbol-sort-key': ['get', 'nets'], visibility: 'none' }) });
+    /* names first in the stack order below the marks: placed after them, so
+       they keep clear of every mark */
+    /* grey places get their PeeringDB name in grey only close in */
+
     map.addLayer({ id: 'dc-gnames', type: 'symbol', source: 'dc', minzoom: 12,
       filter: ['==', ['get', 'grey'], 1],
       layout: nameText({ 'text-field': twoLine, 'text-size': ['-', ['get', 'ts'], 1],
@@ -510,17 +607,19 @@ function start(gl, D) {
   const chips = [...document.querySelectorAll('.pm-rail .chip[data-mode]')];
   const keyRows = [...document.querySelectorAll('#pm-key .row')];
   const qs = new URLSearchParams(location.search);
-  const initialMode = ['dc', 'ix', 'ports'].includes(qs.get('layer')) ? qs.get('layer') : 'dc';
+  const initialMode = ['net', 'dc', 'ix', 'ports'].includes(qs.get('layer')) ? qs.get('layer') : 'net';
   const initialPlace = PL.has(qs.get('place')) ? qs.get('place') : '';
-  let mode = 'dc';
+  let mode = 'net';
   function setMode(m, push) {
     mode = m;
     for (const [k, ids] of Object.entries(LAYERS)) for (const id of ids) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', k === m ? 'visible' : 'none');
+    for (const id of BASE_LABELS) if (map.getLayer(id)) map.setLayoutProperty(id, 'visibility', m === 'net' ? 'none' : 'visible');
+    lights(m === 'net');
     chips.forEach((c) => c.setAttribute('aria-pressed', String(c.dataset.mode === m)));
     keyRows.forEach((r) => { r.hidden = r.dataset.for !== m; });
     if (push) {
       const u = new URL(location.href);
-      if (m === 'dc') u.searchParams.delete('layer'); else u.searchParams.set('layer', m);
+      if (m === 'net') u.searchParams.delete('layer'); else u.searchParams.set('layer', m);
       history.replaceState(null, '', u);
     }
   }
@@ -535,18 +634,29 @@ function start(gl, D) {
   const tip = document.getElementById('pm-tip');
   const marks = () => LAYERS[mode].slice().reverse();
   map.on('mousemove', (e) => {
-    const f = map.queryRenderedFeatures(e.point, { layers: marks() })[0];
+    const f = map.queryRenderedFeatures(e.point, { layers: marks().filter((id) => !/^net-(glow|line|halo|core)$/.test(id)) })[0];
+    if (!f && mode === 'net' && !narrow()) {
+      const box = [[e.point.x - 4, e.point.y - 4], [e.point.x + 4, e.point.y + 4]];
+      const ln = map.queryRenderedFeatures(box, { layers: ['net-line'] })[0];
+      if (ln) {
+        const q = ln.properties;
+        tip.textContent = `${q.a} ↔ ${q.b} · ${q.ixs}`;
+        tip.style.left = e.point.x + 'px'; tip.style.top = e.point.y + 'px'; tip.hidden = false;
+        map.getCanvas().style.cursor = '';
+        return;
+      }
+    }
     map.getCanvas().style.cursor = f ? 'pointer' : '';
     if (!f || narrow()) { tip.hidden = true; return; }
     const p = f.properties;
-    tip.textContent = p.k === 'place' && mode === 'dc' ? (p.grey ? `${p.name} · grey: no name we can check` : p.name + (p.sub ? ` · ${p.sub}` : ''))
+    tip.textContent = p.k === 'place' && (mode === 'dc' || mode === 'net') ? (p.grey ? `${p.name} · grey: no name we can check` : p.name + (p.sub ? ` · ${p.sub}` : ''))
       : mode === 'ix' ? `${p.name}${p.sub ? ' · ' + p.sub : ''}` : `${p.name} · ${n0(p.n)} router ports`;
     tip.style.left = e.point.x + 'px'; tip.style.top = e.point.y + 'px'; tip.hidden = false;
   });
   map.getCanvas().addEventListener('mouseleave', () => { tip.hidden = true; });
   map.on('click', (e) => {
     const box = [[e.point.x - 6, e.point.y - 6], [e.point.x + 6, e.point.y + 6]];
-    const hits = map.queryRenderedFeatures(box, { layers: marks() });
+    const hits = map.queryRenderedFeatures(box, { layers: marks().filter((id) => !/^net-(glow|line|halo|core)$/.test(id)) });
     const f = hits[0];
     if (!f) { closeCard(); return; }
     const p = f.properties;

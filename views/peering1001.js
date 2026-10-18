@@ -159,6 +159,7 @@ const CSS = `
 .pm-key .lg{width:15px;height:15px;border-radius:50%;background:#fff;box-shadow:0 0 0 1px rgba(0,0,0,.18),0 2px 4px rgba(0,0,0,.18)}
 .pm-key .sq{width:11px;height:11px;background:#0B0B0C;border-radius:2px}
 .pm-key .sqg{width:11px;height:11px;background:#A6A9AE;border-radius:2px}
+.pm-key .ln{width:18px;height:3px;border-radius:2px;background:#36A9FF;box-shadow:0 0 6px rgba(54,169,255,.7);vertical-align:2px}
 .pm-key .cr{margin-top:5px;color:#8E8E93}
 .pm-key .cr a{color:inherit}
 .pm-tip{position:absolute;pointer-events:none;background:#000;color:#fff;font-size:12.5px;font-weight:500;padding:5px 11px;transform:translate(-50%,-150%);white-space:nowrap;z-index:6;max-width:320px;overflow:hidden;text-overflow:ellipsis}
@@ -272,7 +273,8 @@ function page({ lang = 'en', tiles = null } = {}) {
 <div class="pm-wrap" id="map">
   <div id="pm-map" data-cfg="${esc(JSON.stringify(cfg))}" role="application" aria-label="Map of Indonesia’s data centres, internet exchanges and router ports from PeeringDB"></div>
   <nav class="pm-rail" aria-label="Map layers">
-    <button type="button" class="chip" data-mode="dc" aria-pressed="true">Data centres<b>${n0(T.fac)}</b></button>
+    <button type="button" class="chip" data-mode="net" aria-pressed="true">Network<b>${n0(T.links || 0)}</b></button>
+    <button type="button" class="chip" data-mode="dc" aria-pressed="false">Data centres<b>${n0(T.fac)}</b></button>
     <button type="button" class="chip" data-mode="ix" aria-pressed="false">Exchanges<b>${n0(T.ix)}</b></button>
     <button type="button" class="chip" data-mode="ports" aria-pressed="false">Router ports<b>${n0(T.ports)}</b></button>
   </nav>
@@ -281,7 +283,7 @@ function page({ lang = 'en', tiles = null } = {}) {
     <button type="button" id="pm-out" aria-label="Zoom out">−</button>
     <button type="button" id="pm-home" aria-label="Back to the opening view" title="Back to the opening view">◎</button>
   </div>
-  <div class="pm-key" id="pm-key"><div class="row" data-for="dc"><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
+  <div class="pm-key" id="pm-key"><div class="row" data-for="net"><span><i class="ln"></i>data centres one exchange links (not the cable route)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
   <div class="pm-tip" id="pm-tip" hidden></div>
   <aside class="pm-card" id="pm-card" hidden aria-live="polite"></aside>
   <noscript><div class="pm-msg"><p>The map needs JavaScript. The same places are listed below.</p></div></noscript>
