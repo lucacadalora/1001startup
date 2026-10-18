@@ -1559,6 +1559,10 @@ const leads = require('./lib/leads-routes')(fastify, { db, is1001, PROD, ipOf, l
    session. Same one-line pattern; nobody is forced to sign in yet. */
 const accounts = require('./lib/account1001')(fastify, { db, is1001, PROD, ipOf, langOf });
 
+/* ── 1001startup.id: what readers search, who is signed in (private) ─── */
+/* Same one-line pattern. Records only; building.vantis.sh 7F reads it. */
+require('./lib/watch1001')(fastify, { db, px, is1001, ipOf, limited, signedIn: accounts.signedIn });
+
 /* ── 1001startup.id: the census read API (/api/census/*) ─────────────── */
 /* Same one-line pattern. Read-only over the public layer. Built for the census
    chat, which was removed on 4 Oct 2026; /ask now 301s to the home page. */
