@@ -194,14 +194,14 @@ fastify.addHook('preHandler', (req, reply, done) => {
   }
   done();
 });
-/* dc.1001startup.id carries one page, the peering map at /. Its own files and
+/* dc.1001startup.id carries the peering map at / and its relationship graph at /graph. Their own files and
    data (tiles, glyphs, scripts, the map's JSON, analytics) are served here; any
    other page address forwards to the same path on 1001startup.id, so the
    header's relative links land on the main site. */
 fastify.addHook('onRequest', (req, reply, done) => {
   if ((req.method === 'GET' || req.method === 'HEAD') && hostOf(req) === 'dc.1001startup.id') {
     const p = String(req.url || '/').split('?')[0];
-    if (p !== '/' && p !== '/data/peering.json' && p !== '/data/peering-reach.json' && !/^\/(peering|peeringdb|ix|internet-exchanges?)\/?$/.test(p)
+    if (p !== '/' && p !== '/graph' && p !== '/data/peering.json' && p !== '/data/peering-reach.json' && p !== '/data/peering-graph.json' && !/^\/(peering|peeringdb|ix|internet-exchanges?)\/?$/.test(p)
       && !/^\/(assets|css|js|tiles|_v|_d|api)\//.test(p) && !/^\/(favicon\.ico|robots\.txt)$/.test(p)) {
       return reply.code(301).header('location', 'https://1001startup.id' + req.url).send();
     }
@@ -898,7 +898,7 @@ for (const alias of ['/datacenter', '/data-centre', '/data-centers', '/data-cent
    scripts/peering-build.py, mtime-cached, so a rebuild needs no restart). English only.
    404 until data/peering.live exists (PEERING_PREVIEW=1 on a test port). */
 const peering1001 = require('./views/peering1001');
-const { peeringLive, reachLive } = require('./lib/peeringlive');
+const { peeringLive, reachLive, graphLive } = require('./lib/peeringlive');
 /* Luca, 18 Oct 2026: "host it as dc.1001startup.id". The map is that host's front
    page; on the main host /peering forwards there (a test port with PEERING_PREVIEW=1
    renders it in place). */
@@ -941,6 +941,31 @@ for (const alias of ['/peering/', '/peeringdb', '/internet-exchange', '/internet
     return toDcHost(req, reply);
   });
 }
+/* /graph on dc.1001startup.id — how Indonesia's networks connect, in PeeringDB's own terms:
+   a data centre (facility) holds networks; each network meets others on exchanges (public
+   peering) and in the buildings it shares with them (interconnection facilities). A reader's
+   note to Luca on 18 Oct 2026 said the map was missing that chain; his word: "make new
+   feature". views/peeringgraph1001.js + public/js/peeringgraph1001.js; data/peering-graph.json
+   from scripts/peering-graph-build.py (mtime-cached, a rebuild needs no restart). 404 until
+   data/peering-graph.live exists (PEERING_GRAPH=1 on a test port); the main host forwards. */
+const peeringgraph1001 = require('./views/peeringgraph1001');
+fastify.get('/graph', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  if (!graphLive() || !peeringLive()) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  if (!isDcHost(req) && process.env.PEERING_PREVIEW !== '1') {
+    const qs = String(req.url || '').split('?')[1];
+    return reply.code(301).header('location', peeringgraph1001.HOME + (qs ? '?' + qs : '')).send();
+  }
+  const html = peeringgraph1001.page({ lang: 'en' });
+  if (!html) return reply.code(503).type('text/plain').send('The graph is being rebuilt. Try again in a minute.');
+  return reply.type('text/html').send(html);
+});
+fastify.get('/data/peering-graph.json', async (req, reply) => {
+  if (!is1001(req) || !graphLive()) return reply.code(404).send({ error: 'not_found' });
+  const body = peeringgraph1001.raw();
+  if (!body) return reply.code(503).send({ error: 'rebuilding' });
+  return reply.header('Cache-Control', 'public, max-age=300').type('application/json').send(body);
+});
 /* /about — who builds the census (views/about1001.js). /tentang is the
    Indonesian word people type; it 301s to the /id page of the same route. */
 const about1001 = require('./views/about1001');

@@ -31,3 +31,5 @@ data/peering.json
 data/peering-map.json
 data/peering.live
 data/peering-reach.json
+data/peering-graph.json
+data/peering-graph.live
