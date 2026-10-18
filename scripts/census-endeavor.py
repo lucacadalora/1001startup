@@ -53,6 +53,9 @@ ON_ROSTER = {
     # reason only — the census stopped at Greater Jakarta. They entered with
     # scripts/census-bandung.py, so they leave endeavor_pending here.
     'bobobox': 'bobobox', 'evermos': 'evermos', 'agate': 'agate', 'brodo': 'brodo',
+    # Oct 18 2026: roster companies researched into the census by the
+    # "more legit startups" wave (data/census-adds/more-legit-2026-10-*.json).
+    'happyfresh': 'happyfresh',
 }
 # founders Endeavor's own profile copy attributes to a roster company. Only
 # entries the source states; the rest stay empty rather than inferred.

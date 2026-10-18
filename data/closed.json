@@ -1,5 +1,5 @@
 {
- "generated": "2026-09-28",
+ "generated": "2026-10-18",
  "note": "Indonesian startups that stopped operating. Compiled and source-checked; nothing is listed without a date and at least one link. Empty is the correct state until entries pass verification.",
  "entries": [
   {
@@ -79,6 +79,31 @@
     "https://techcrunch.com/2021/01/28/ula-raises-20-million-to-expand-its-e-commerce-marketplace-in-indonesia/",
     "https://www.businesstimes.com.sg/startups-tech/startups/indonesian-b2b-e-commerce-startup-ula-raises-us87m-in-round-co-led-by-tencent",
     "https://ula.app/"
+   ]
+  },
+  {
+   "name": "RAENA",
+   "legal_name": "PT Raena Ruma Indonesia",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Commerce — beauty social-commerce app: resellers and dropshippers in Indonesia sold skincare, make-up and body-care products from partner brands, which Raena stocked and shipped for them",
+   "city": "Jakarta Selatan",
+   "founded": "2019",
+   "ended": "2025-02",
+   "funding_usd_m": 21,
+   "why": "RAENA ran a beauty social-commerce app for Indonesia: resellers and dropshippers picked skincare, make-up and body-care products from partner brands in the app and sold them on social media and online marketplaces, while Raena handled stock, supplier management and shipping, so sellers needed no inventory of their own. It was founded in Singapore in 2019 by Sreejita Deb (CEO) and Guo Xing Lim (COO), started out making beauty brands with social-media influencers, and moved to the reseller model in 2020; it operated in Indonesia through PT Raena Ruma Indonesia, registered in South Jakarta. Raena announced on Instagram that it was ending operations and that its app could no longer be used, saying it had worked with more than 45,000 entrepreneurs and 600 brands since 2019 (Uzone.id, 10 Feb 2025); DealStreetAsia reported the shutdown on 7 Feb 2025. In September 2025 the company's LinkedIn page wrote that earlier that year, 'in the face of unprecedented macro economic conditions', it had made the decision to bring Raena's operations to a close. Its reseller app is no longer on Google Play, and its old domain raenabeauty.com now carries an unrelated online-gambling page (both checked 17 Oct 2026). The funding figure is the total of about US$21 million reported by Hybrid.co.id in January 2022, made up of a US$1.82 million seed round announced in July 2019, a US$9 million Series A in February 2021 co-led by Alpha Wave Incubation and Alpha JWC Ventures with AC Ventures and the earlier investors Beenext, Beenos and Strive, and a US$10 million Series A extension in January 2022 led by Alpha Wave Incubation and AC Ventures with Alfamart and Alto Partners; no later round is on record. Sources differ on the founding year (AC Ventures gave 2018, some later reports 2020); 2019 follows Raena's own farewell message and TechCrunch.",
+   "sources": [
+    "https://www.dealstreetasia.com/stories/raena-shuts-down-429425",
+    "https://uzone.id/5-tahun-berdiri-platform-e-commerce-raena-tutup-operasional",
+    "https://www.linkedin.com/posts/raenabeauty_social-commerce-platform-raena-shuts-down-activity-7369946106321047552-nnos",
+    "https://www.linkedin.com/company/raenabeauty",
+    "https://techcrunch.com/2021/02/25/singapore-based-raena-gets-9m-series-a-for-its-pivot-to-skincare-and-beauty-focused-social-commerce/",
+    "https://acvcap.com/insights/acv-portfolio-news/raena-bags-us9m-series-a-to-expand-beauty-social-commerce-platform/",
+    "https://www.dealstreetasia.com/stories/raena-funding-series-a-extention-277077",
+    "https://acvcap.com/insights/acv-portfolio-news/beauty-social-commerce-firm-bags-10m-in-new-fundraise/",
+    "https://hybrid.co.id/post/platform-reseller-produk-kecantikan-raena-pendanaan-lanjutan-2022/",
+    "https://companieshouse.id/raena-ruma-indonesia",
+    "https://karirhub.kemnaker.go.id/pemberi-kerja/perusahaan/6e701d7e-1142-4dcb-a3d9-3ff26b2ba895"
    ]
   },
   {

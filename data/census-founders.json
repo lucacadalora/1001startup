@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-17T23:38:10Z",
+ "generated": "2026-10-18T00:14:53Z",
  "rule": "Founder names publish only with the company's own page, or two independent reputable sources, or Endeavor plus one more; aggregators never count.",
  "companies": {
   "gojek": {
@@ -4304,6 +4304,282 @@
     "https://aiclub.id/event/builders-story-ep06-sumopod"
    ],
    "note": "Ariaseta Setia Alam is named as SumoPod's founder by Dicoding (DevCoach workshop, 12 Sep 2025) and by AIClub Indonesia (Builder's Story, 9 Oct 2026). His own LinkedIn profile dates the role from May 2025; he previously led KodingWorks, the trading name of the company that operates SumoPod."
+  },
+  "klar-smile": {
+   "founders": [
+    "Ellen Pranata",
+    "Adelia Susanto",
+    "David Sugihartana"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://acvcap.com/insights/acv-portfolio-news/targeting-us3-billion-aligner-market-klar-raises-seed-funding-led-by-ac-ventures/",
+    "https://technode.global/2021/06/29/indonesias-aesthetic-dentistry-tech-firm-klar-raises-seed-funding-round-led-by-ac-ventures/"
+   ],
+   "note": "Ellen Pranata is CEO; Adelia Susanto is chief orthodontist; David Sugihartana is COO (AC Ventures' seed release, 29 Jun 2021, and TNGlobal, 29 Jun 2021). The seed announcement dates the launch to September 2020; the PT was established on 21 Jul 2020."
+  },
+  "primaku": {
+   "founders": [
+    "Muhammad Aditriya Indraputra"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://news.dailysocial.id/post/pendanaan-pra-seri-a-primaku/",
+    "https://e27.co/primaku-investment-20251203/",
+    "https://appworks.tw/why-we-invested-primaku/"
+   ],
+   "note": "Didit is called founder (DailySocial) and co-founder (e27, AppWorks). AppWorks says the app began in 2017 as a doctors' CSR initiative and that Didit joined in 2021; the doctors behind the original app are not named, so no other co-founder is listed."
+  },
+  "nexmedis": {
+   "founders": [
+    "Yehuda Dani Utomo",
+    "Matilda Narulita",
+    "Almer Deta Tarandha"
+   ],
+   "founded": 2023,
+   "sources": [
+    "https://east.vc/news/press-release/nexmedis-ai-powered-health-information-system-secures-funding-co-led-east-ventures",
+    "https://news.dailysocial.id/post/nexmedis-raih-pendanaan-dari-east-ventures-dan-forge-ventures/"
+   ],
+   "note": "Three co-founders named in East Ventures' release and by DailySocial."
+  },
+  "kulina": {
+   "founders": [
+    "Andy Fajar Handika",
+    "Andy Hidayat"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://entrepreneur.bisnis.com/read/20261005/265/2009612/perjalanan-bisnis-andy-fajar-handika-rintis-kulina-startup-katering-pekerja-kantoran",
+    "https://www.liputan6.com/tekno/read/3348480/kulina-startup-katering-lokal-yang-diajak-google-ke-san-fransisco",
+    "https://east.vc/portfolio/kulina"
+   ],
+   "note": "Bisnis (5 Oct 2026) names Andy Fajar Handika and Andy Hidayat as the builders of Kulina; Liputan6 (6 Mar 2018) and Kontan (17 Aug 2018) call Andy Fajar Handika its co-founder and founder; East Ventures' portfolio page lists the founder names Andy Hidayat and Fajar Handika. Liputan6 (6 Mar 2018) also calls Casper Sermsuksan a co-founder; he is left out because only one outlet names him so."
+  },
+  "looyal": {
+   "founders": [
+    "Kevin Susanto Goly",
+    "Supriadhi Wicaksono"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://youngster.id/headline/manfaatkan-kecerdasan-buatan-startup-looyal-targetkan-raih-transaksi-rp-15-triliun/",
+    "https://katadata.co.id/digital/startup/647701d859050/pakai-ai-startup-penjualan-untuk-umkm-looyal-bidik-transaksi-rp-1-5-t"
+   ],
+   "note": "youngster.id names both founders; Katadata confirms Kevin Susanto Goly as co-founder and CEO. Supriadhi Wicaksono is named by one outlet only."
+  },
+  "happyfresh": {
+   "founders": [
+    "Markus Bihler"
+   ],
+   "founded": 2014,
+   "sources": [
+    "https://www.happyfresh.com/press/happyfresh-closes-series-a/",
+    "https://techcrunch.com/2016/08/29/happyfresh-series-b/"
+   ],
+   "note": "HappyFresh's own 2015 release names Markus Bihler as CEO and co-founder and says the company 'is led by Markus Bihler, Benjamin Koellmann and Fajar Budiprasetyo'; Tech in Asia (quoted by Post & Parcel, 14 Sep 2015) calls Benjamin Koellmann a co-founder. Only Bihler is confirmed as a founder by the company's own release; Guillem Segarra, chief executive from 2017, is not a founder."
+  },
+  "cicil": {
+   "founders": [
+    "Leslie Lim",
+    "Edward Widjonarko"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://east.vc/news/press-release/cicil-series-a-funding",
+    "https://east.vc/news/press-release/cicil-series-a-funding",
+    "https://youngster.id/headline/cicil-peroleh-pendanaan-seri-a/"
+   ],
+   "note": "East Ventures' release and Vertex Ventures' portfolio page name Leslie Lim and Edward Widjonarko as co-founders (youngster.id spells him Yohanes Edward Widjanarko). Bisnis (15 Aug 2018) also pictures Ricky Jeremiah among the founders; he is left out because only that caption names him."
+  },
+  "amoda": {
+   "founders": [
+    "Robin Yovianto",
+    "Agusti Salman Farizi"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://east.vc/news/press-release/amoda-a-property-and-construction-startup-raised-pre-seed-funding-led-by-east-ventures",
+    "https://technode.global/2023/10/16/indonesias-amoda-raises-seed-funding-co-led-by-east-ventures-and-living-lab-ventures/"
+   ],
+   "note": "East Ventures (2023) dates the founding to October 2021."
+  },
+  "compawnion": {
+   "founders": [
+    "Stephani Herman",
+    "Tania Suganda",
+    "Valerie Amintohir",
+    "Eddie Amintohir"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.compawnion.co/",
+    "https://east.vc/news/press-release/compawnion-secured-new-funding-led-by-east-ventures"
+   ],
+   "note": "The company site adds Eddie Amintohir as co-founder and CFO; East Ventures' 2023 release names the other three."
+  },
+  "kini": {
+   "founders": [
+    "Jordan Fain",
+    "Sidnei Budiman"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://east.vc/news/press-release/kini-raised-us-4-3-million-in-seed-funding-led-by-east-ventures",
+    "https://e27.co/kini-raises-us4-3m-in-funding-led-by-east-ventures-20220707/"
+   ],
+   "note": ""
+  },
+  "hukumku": {
+   "founders": [
+    "Fritz Hutapea",
+    "Michael Jagadpramana",
+    "Glorio Yulianto"
+   ],
+   "founded": 2023,
+   "sources": [
+    "https://www.hukumku.id/tentang-kami",
+    "https://east.vc/news/press-release/hukumku-an-indonesia-based-legal-tech-startup-raised-funding-led-by-east-ventures"
+   ],
+   "note": "The company site shortens the COO's name to Michael Jagad. The site says Hukumku has operated since 2023."
+  },
+  "sxored": {
+   "founders": [
+    "Cyrill James Hardie",
+    "Ben Lawson",
+    "Wawan Budi Setyawan",
+    "Abdul Latif Munjiat",
+    "Pras Indaryoko Abdilah"
+   ],
+   "founded": 2024,
+   "sources": [
+    "https://east.vc/news/press-release/sxored-ai-powered-credit-analysis-startup-secures-funding-led-by-east-ventures",
+    "https://e27.co/indonesias-sxored-nets-funding-led-by-east-ventures-20250708/"
+   ],
+   "note": ""
+  },
+  "arsitag": {
+   "founders": [
+    "Edward Harjanto",
+    "Steven Gomedi",
+    "Michael Gani"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://hybrid.co.id/post/marketplace-pekerja-konstruksi-arsitag-peroleh-pendanaaan-awal-dari-east-ventures/",
+    "https://www.medcom.id/teknologi/news-teknologi/wkBRMYlk-situs-bisnis-konstruksi-arsitag-dapatkan-investor"
+   ],
+   "note": "Medcom names Michael Gani as CTO and Steven Gomedi as COO in the same article; the founding year 2015 is from the company's About page and LinkedIn."
+  },
+  "pathgen": {
+   "founders": [
+    "Susanti",
+    "Michael Rampangilei"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://www.linkedin.com/company/pathgen",
+    "https://east.vc/news/press-release/pathgen-raises-funding-from-east-ventures"
+   ],
+   "note": "Dr. Susanti uses a single name (LinkedIn shows Susanti Susanti). Michael Rampangilei joined as co-founder in 2023."
+  },
+  "fintelite": {
+   "founders": [
+    "Nadia Amalia",
+    "Nadia Fadhila",
+    "Fransisca Susan"
+   ],
+   "founded": 2020,
+   "sources": [
+    "https://hybrid.co.id/post/platform-pencatatan-keuangan-sribuu-kantongi-pendanaan-awal/",
+    "https://www.forbes.com/profile/sribuu/",
+    "https://www.ycombinator.com/companies/fintelite"
+   ],
+   "note": "Hybrid.co.id names Nadia Amalia as co-founder and CEO, with Fransisca Susan (CTO) and Fadhila (COO); Forbes lists the three as cofounders. Y Combinator now lists only Nadia Amalia and Nadia Fadhila as active founders. The founding year 2020 is from Sribuu's own about page; Y Combinator gives 2021."
+  },
+  "seindonesia": {
+   "founders": [
+    "Rinaldi Dharma Utama",
+    "Christian Wilfandio",
+    "Bayu Soedjarwo",
+    "Christian Nathanael"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://jatim.tribunnews.com/surabaya/534215/seindonesia-buka-outlet-drive-thru-pertama-di-surabaya-layanan-cepat-tanpa-turun-dari-kendaraan",
+    "https://www.baliwara.com/pariwisata/90116757250/seindonesia-perluas-pasar-dalung-jadi-gerai-dine-in-pertama-di-luar-jawa",
+    "https://review.insignia.vc/2025/04/23/seindonesia-funding/",
+    "https://trihillcapital.com/portfolio/seindonesia/"
+   ],
+   "note": "Trihill Capital, an investor, lists four co-founders on its portfolio page: Rinaldi Dharma Utama, Christian Wilfandio, Bayu Soedjarwo and Christian Nathanael. Rinaldi Dharma Utama, a former Kopi Kenangan executive, is named as CEO and co-founder by Tribun Jatim and Baliwara, and as founder by Insignia Ventures Partners (Apr 2025)."
+  },
+  "sirsak": {
+   "founders": [
+    "Angeline Callista",
+    "Violy Purnamasari",
+    "Lie Mangkusatya"
+   ],
+   "founded": 2023,
+   "sources": [
+    "https://www.sirsak.co/about-us",
+    "https://www.sirsak.co/about-us",
+    "https://www.sirsak.co/about-us",
+    "https://e27.co/sirsak-nets-us600k-to-tackle-indonesias-packaging-waste-crisis-20250709/"
+   ],
+   "note": "All three co-founders are named on the company's own about page, which also gives 2023 as the founding year (confirmed by e27)."
+  },
+  "suryanesia": {
+   "founders": [
+    "Rheza Adhihusada"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://suryanesia.com/en/about",
+    "https://technode.global/2022/12/22/indonesias-suryanesia-raises-2m-funding-led-by-intudo-ventures/"
+   ],
+   "note": "The company's own about page names Rheza Adhihusada as founder and CEO; TNGlobal (22 Dec 2022) gives the founding date as August 2021. Intudo's portfolio page also lists him as founder."
+  },
+  "tiptip": {
+   "founders": [
+    "Albert Lucius"
+   ],
+   "founded": 2021,
+   "sources": [
+    "https://east.vc/news/press-release/tiptip-announces-series-a-funding-led-by-east-ventures",
+    "https://techcrunch.com/2022/11/27/tiptip-southeast-asia-creators/",
+    "https://www.businesstimes.com.sg/startups-tech/startups/indonesian-startup-tiptip-bags-over-us13m-series-funding-led-east-ventures",
+    "https://technode.global/2026/05/04/indonesias-entertainment-facilitator-tiptip-achieves-profitability-to-expands-into-experience-platform/"
+   ],
+   "note": "Albert Lucius is named as TipTip's sole founder by its lead investor and by TechCrunch, The Business Times and TNGlobal on different hosts; he was still CEO in May 2026 and his LinkedIn profile gives his title as Group CEO and founder of TipTip."
+  },
+  "alterra": {
+   "founders": [
+    "Ananto Wibisono",
+    "Jefrey Joe"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://kr-asia.com/rumour-indonesia-payments-app-sepulsa-plans-to-rebrand-go-after-travel-segment",
+    "https://hybrid.co.id/post/sepulsa-rebranding-jadi-bagian-dari-perusahaan-induk-alterra/",
+    "https://www.alphajwc.com/bill-payments-platform-sepulsa-transforms-into-alterra-with-a-bigger-vision/",
+    "https://www.cnnindonesia.com/teknologi/20150512181311-185-52877/sepulsa-tawarkan-cara-baru-isi-ulang-pulsa"
+   ],
+   "note": "Jefrey Joe also co-founded Alpha JWC Ventures, Sepulsa's backer (KrASIA, 9 Nov 2018). Ananto Wibisono was co-founder and CEO at the January 2019 rebrand to Alterra; the founders' current roles were not checked, and LinkedIn now lists Ayu Julien as Chief of Alterra Bills."
+  },
+  "filmore": {
+   "founders": [
+    "Gitta Amelia",
+    "Grace Tahir",
+    "Andrea Gunawan"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.idntimes.com/health/fitness/alfonsus-adi-putra-2/filmore-luncurkan-menstrual-cup-untuk-perempuan-indonesia",
+    "https://www.jakartadaily.id/health/pr-1624542142/filmore-launches-spritz-sister-mist-a-feminine-hygiene-product-to-prevent-uti-and-leucorrhoea",
+    "https://www.tatlerasia.com/gen-t/innovation/how-social-media-activist-andrea-gunawan-is-championing-local-sustainable-femcare",
+    "https://mediaindonesia.com/jelita/831423/safe-space-medis-bagi-perempuan-hadir-di-setiabudi"
+   ],
+   "note": "IDN Times (27 Jan 2022), Jakarta Daily (7 Sep 2022) and Tatler Asia (27 Jan 2023) name the same three founders; the first two are linked from Filmore's own press page. Gitta Amelia is Founder and CEO of Filmore Health in its November 2025 statements (Media Indonesia, 18 Nov 2025; Kompas advertorial, 20 Nov 2025), and the Kompas advertorial calls Grace Tahir a co-founder. Andrea Gunawan was quoted as a co-founder in 2022 and 2023; no 2026 source confirms her current role. The founding year 2022 follows the January 2022 launch; the company's November 2025 statement says 2023."
   },
   "sokratech": {
    "founders": [

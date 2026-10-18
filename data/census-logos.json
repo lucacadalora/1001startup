@@ -3,6 +3,14 @@
   "logo": "/assets/logo-c-advotics.a159b9ef.png",
   "logo_src": "picked:play"
  },
+ "alterra": {
+  "logo": "/assets/logo-c-alterra.bb2c354a.png",
+  "logo_src": "picked:site"
+ },
+ "amoda": {
+  "logo": "/assets/logo-c-amoda.2dbc6919.png",
+  "logo_src": "picked:site"
+ },
  "anantarupa-studios": {
   "logo": "/assets/logo-c-anantarupa-studios.df814833.png",
   "logo_src": "picked:site"
@@ -163,6 +171,10 @@
   "logo": "/assets/logo-c-etana-biotechnologies.a57b5850.png",
   "logo_src": "picked:header"
  },
+ "everywhere-id": {
+  "logo": "/assets/logo-c-everywhere-id.47cb8649.png",
+  "logo_src": "picked:site"
+ },
  "finfra": {
   "logo": "/assets/logo-c-finfra.c89eb4f8.png",
   "logo_src": "picked:site"
@@ -267,6 +279,10 @@
   "logo": "/assets/logo-c-kecilin.0963a2e5.png",
   "logo_src": "picked:site"
  },
+ "kini": {
+  "logo": "/assets/logo-c-kini.e6b49c67.png",
+  "logo_src": "picked:site"
+ },
  "kitabisa": {
   "logo": "/assets/logo-c-kitabisa.c6ca9b9d.png",
   "logo_src": "picked:appstore"
@@ -274,6 +290,10 @@
  "kitalulus": {
   "logo": "/assets/logo-c-kitalulus.50b8f55c.png",
   "logo_src": "picked:appstore"
+ },
+ "klar-smile": {
+  "logo": "/assets/logo-c-klar-smile.04c831a3.png",
+  "logo_src": "picked:site"
  },
  "klikserver": {
   "logo": "/assets/logo-c-klikserver.20efe46c.png",
@@ -371,6 +391,10 @@
   "logo": "/assets/logo-c-paper-id.da12581e.png",
   "logo_src": "picked:appstore"
  },
+ "parto-id": {
+  "logo": "/assets/logo-c-parto-id.e63b7943.png",
+  "logo_src": "picked:site"
+ },
  "pasarpolis": {
   "logo": "/assets/logo-c-pasarpolis.2802ad22.png",
   "logo_src": "picked:header"
@@ -397,6 +421,10 @@
  },
  "praktis": {
   "logo": "/assets/logo-c-praktis.e398990c.png",
+  "logo_src": "picked:site"
+ },
+ "primaku": {
+  "logo": "/assets/logo-c-primaku.6ee5f2c9.png",
   "logo_src": "picked:site"
  },
  "qalboo": {
@@ -430,6 +458,10 @@
  "segari": {
   "logo": "/assets/logo-c-segari.527e7a82.png",
   "logo_src": "picked:play"
+ },
+ "seindonesia": {
+  "logo": "/assets/logo-c-seindonesia.c46ce9bd.png",
+  "logo_src": "picked:site"
  },
  "sekilo": {
   "logo": "/assets/logo-c-sekilo.c2f3744b.png",
