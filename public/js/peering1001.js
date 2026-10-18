@@ -507,8 +507,9 @@ function start(gl, D) {
     const src = map.getSource('net-lights');
     if (src) src.setData(lightData());
   }
+  let booted = false;   // the lights wait until the map has finished its first draw
   function lights(on) {
-    const want = on && !still && onScreen && document.visibilityState === 'visible';
+    const want = on && booted && !still && onScreen && document.visibilityState === 'visible';
     if (want === running) return;
     running = want; last = 0;
     if (running) requestAnimationFrame(tick);
@@ -614,7 +615,12 @@ function start(gl, D) {
       layout: Object.assign(markLayout(['get', 'img']), { 'symbol-sort-key': ['-', ['get', 'n'], ['*', ['get', 'grey'], 1000000]], visibility: 'none' }) });
     logos();
     setMode(initialMode, false);
-    map.once('idle', () => { root.dataset.ready = '1'; if (initialPlace) openPlace(initialPlace, initialMode, true); });
+    map.once('idle', () => {
+      root.dataset.ready = '1';
+      booted = true;
+      lights(mode === 'net');
+      if (initialPlace) openPlace(initialPlace, initialMode, true);
+    });
   });
 
   /* ── mode chips ──────────────────────────────────────────────────── */
