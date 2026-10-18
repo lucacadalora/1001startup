@@ -56,6 +56,9 @@ ON_ROSTER = {
     # Oct 18 2026: roster companies researched into the census by the
     # "more legit startups" wave (data/census-adds/more-legit-2026-10-*.json).
     'happyfresh': 'happyfresh', 'onlinepajak': 'online-pajak', 'tada': 'tada',
+    # wave 2, same day: 99 Group's Indonesian business (Rumah123 + 99.co, one row
+    # for its two Indonesian companies; data/census-adds/more-legit-2026-10-w2a.json).
+    '99-group-indonesia': '99-co',
 }
 # founders Endeavor's own profile copy attributes to a roster company. Only
 # entries the source states; the rest stay empty rather than inferred.
@@ -65,6 +68,8 @@ FOUNDERS = {
     # (selected Sep 2016, Boston) and /profiles/antonius-taufan/ (selected Aug 2014, NYC).
     'online-pajak': ['Charles Guinot'],
     'tada': ['Antonius Taufan'],
+    # /profiles/darius-cheung/ (read 18 Oct 2026): co-founder and CEO of 99 Group.
+    '99-co': ['Darius Cheung'],
 }
 
 raw = json.load(open(RAW))

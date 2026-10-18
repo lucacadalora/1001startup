@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T00:26:33Z",
+ "generated": "2026-10-18T06:09:39Z",
  "rule": "Founder names publish only with the company's own page, or two independent reputable sources, or Endeavor plus one more; aggregators never count.",
  "companies": {
   "gojek": {
@@ -4769,6 +4769,21 @@
     "https://hybrid.co.id/post/fokado-founder-launches-multifunction-tada-gift-card/"
    ],
    "note": "Endeavor Indonesia and Venturra (an investor) both name him as founder, and Hybrid (June 2013) reported his launch of the TaDa! gift card. The company's own pages checked do not name a founder."
+  },
+  "floq": {
+   "founders": [
+    "Yudhono Rawis",
+    "Timothy Ronald",
+    "Kalimasada"
+   ],
+   "founded": 2025,
+   "sources": [
+    "https://floq.co.id/blog/berita/floq-catat-1-8-juta-pengguna-perkuat-ekosistem-keuangan-on-chain-bersama-aws",
+    "https://finance.detik.com/fintech/d-8523213/floq-raih-investasi-us-11-3-juta-siap-perkuat-industri-aset-digital-ri",
+    "https://www.techverse.asia/startup/12225/08062026/floq-kantongi-pendanaan-senilai-rp203-miliar-menambah-daftar-pelantar-penukaran-kripto",
+    "https://investortrust.id/market/63258/ganti-nama-jadi-flog-timothy-ronald-akuisisi-kripto-maksima-koin-milik-goto-goto"
+   ],
+   "note": "FLOQ's own site and releases name only Yudhono Rawis as founder (founder and CEO since January 2025 per his LinkedIn profile). Timothy Ronald and Kalimasada are named as co-founders by Techverse (8 Jun 2026) and Investortrust (18 Apr 2025), and Timothy Ronald also by Media Indonesia (7 Jun 2026); Timothy Ronald's own LinkedIn profile lists him as co-owner of FLOQ since April 2025."
   },
   "sokratech": {
    "founders": [
