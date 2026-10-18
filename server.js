@@ -201,7 +201,7 @@ fastify.addHook('preHandler', (req, reply, done) => {
 fastify.addHook('onRequest', (req, reply, done) => {
   if ((req.method === 'GET' || req.method === 'HEAD') && hostOf(req) === 'dc.1001startup.id') {
     const p = String(req.url || '/').split('?')[0];
-    if (p !== '/' && p !== '/data/peering.json' && !/^\/(peering|peeringdb|ix|internet-exchanges?)\/?$/.test(p)
+    if (p !== '/' && p !== '/data/peering.json' && p !== '/data/peering-reach.json' && !/^\/(peering|peeringdb|ix|internet-exchanges?)\/?$/.test(p)
       && !/^\/(assets|css|js|tiles|_v|_d|api)\//.test(p) && !/^\/(favicon\.ico|robots\.txt)$/.test(p)) {
       return reply.code(301).header('location', 'https://1001startup.id' + req.url).send();
     }
@@ -923,6 +923,14 @@ fastify.get('/data/peering.json', async (req, reply) => {
   const body = peering1001.raw();
   if (!body) return reply.code(503).send({ error: 'rebuilding' });
   reply.header('Cache-Control', 'public, max-age=300').type('application/json').send(body);
+});
+/* PREVIEW ONLY: the ISP reach panel's data (scripts/peering-reach-build.py). Served when
+   PEERING_REACH=1 is set on a test port; the live service never sets it. */
+fastify.get('/data/peering-reach.json', async (req, reply) => {
+  if (process.env.PEERING_REACH !== '1' || !is1001(req)) return reply.code(404).send({ error: 'not_found' });
+  try {
+    return reply.header('Cache-Control', 'no-cache').type('application/json').send(fs.readFileSync(path.join(__dirname, 'data', 'peering-reach.json'), 'utf8'));
+  } catch (e) { return reply.code(404).send({ error: 'not_found' }); }
 });
 for (const alias of ['/peering/', '/peeringdb', '/internet-exchange', '/internet-exchanges', '/ix']) {
   fastify.get(alias, async (req, reply) => {

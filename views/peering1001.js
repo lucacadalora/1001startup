@@ -202,6 +202,24 @@ body.pm-over-map .b1 .b1-tab{visibility:hidden!important;pointer-events:none}
 .pm-card .net span:last-child{font:400 11px/1.6 'IBM Plex Mono',monospace;color:#6B6B73;white-space:nowrap}
 .pm-card .more{border:1px solid #E7E7E7;background:#fff;padding:8px 10px;margin-top:8px;cursor:pointer;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;width:100%}
 .pm-card p{color:#52525B;line-height:1.5;margin-bottom:10px}
+.rch{border:1px solid #E7E7E7;padding:12px;margin:4px 0 6px}
+.rch .big{font-size:15px;line-height:1.4;color:#18181B;margin-bottom:10px}
+.rch .big b{font-size:22px;font-weight:600;letter-spacing:-.02em;display:block;margin-bottom:2px}
+.rch .isp{display:grid;grid-template-columns:minmax(0,1fr) auto;gap:2px 10px;padding:7px 0;border-top:1px solid #F1F1F1;font-size:13px}
+.rch .isp:first-child{border-top:0}
+.rch .isp .nm b{font-weight:600}
+.rch .isp .nm small{color:#6B6B73;font-size:12px}
+.rch .isp .pc{font:400 11px/1.6 'IBM Plex Mono',monospace;color:#6B6B73;text-align:right}
+.rch .how{grid-column:1/-1;display:flex;gap:6px;align-items:center;font-size:12.5px;color:#3F3F46}
+.rch .how i{width:9px;height:9px;border-radius:50%;flex:none;display:inline-block}
+.rch .h-h i{background:#0B0B0C}.rch .h-x i{background:#52525B}.rch .h-o i{background:#fff;box-shadow:inset 0 0 0 2px #8A8D93}.rch .h-f i{background:#E4E4E7}
+.rch .h-f{color:#8A8D93}
+.rch .pol{font:400 9.5px/1 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase;border:1px solid #E7E7E7;padding:3px 5px;color:#52525B;margin-left:4px}
+.rch > ul:not(.warn) > li{padding:0;border:0}
+.rch .warn{margin-top:10px;padding-top:10px;border-top:1px solid #E7E7E7;font-size:12px;line-height:1.5;color:#52525B}
+.rch .warn li{border:0;padding:3px 0 3px 12px;position:relative}
+.rch .warn li:before{content:'';position:absolute;left:0;top:.75em;width:5px;height:5px;background:#A6A9AE}
+.rch .srcl{margin-top:8px;font:400 10px/1.5 'IBM Plex Mono',monospace;letter-spacing:.03em;text-transform:uppercase;color:#8A8D93}
 .mk{width:22px;height:22px;border-radius:50%;flex:none;border:1px solid #E7E7E7;background:#fff;object-fit:contain;display:inline-block}
 .mk.grey{background:#A6A9AE;border:3px solid #fff;box-shadow:0 0 0 1px #E7E7E7}
 .mono-mk{display:inline-flex;align-items:center;justify-content:center;font:600 9.5px/1 'Overused Grotesk',sans-serif;color:#6B6B73;background:#F4F5F1}
@@ -275,7 +293,8 @@ function page({ lang = 'en', tiles = null } = {}) {
   const ixs = D.ixs.slice().sort((a, b) => (a.grey - b.grey) || (b.nets - a.nets) || a.pdb.localeCompare(b.pdb));
   const topNets = Object.entries(D.nets).map(([id, v]) => ({ id, asn: v[0], n: v[1], type: v[2], fac: v[3], ports: v[4] }))
     .sort((a, b) => (b.fac + b.ports) - (a.fac + a.ports) || a.asn - b.asn).slice(0, 30);
-  const cfg = { tiles: tiles ? tiles.url : null, maxzoom: tiles ? tiles.maxzoom : 0 };
+  /* reach: the ISP reach panel, preview only (PEERING_REACH=1 on a test port) */
+  const cfg = { tiles: tiles ? tiles.url : null, maxzoom: tiles ? tiles.maxzoom : 0, reach: process.env.PEERING_REACH === '1' };
   const body = `
 <style>${CSS}</style>
 <link rel="stylesheet" href="${GL}/maplibre-gl.css">

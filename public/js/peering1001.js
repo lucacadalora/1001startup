@@ -218,10 +218,12 @@ Promise.all([
   import('./vendor/maplibre-gl-6.11.2/maplibre-gl.mjs'),
   fetch('/data/peering.json', { headers: { Accept: 'application/json' } }).then((r) => r.json()),
   document.fonts && document.fonts.load ? document.fonts.load('600 20px "Overused Grotesk"').catch(() => {}) : null,
-]).then(([gl, D]) => start(gl, D))
+  /* PREVIEW ONLY: the ISP reach panel's data; the live site never asks for it */
+  cfg.reach ? fetch('/data/peering-reach.json').then((r) => (r.ok ? r.json() : null)).catch(() => null) : null,
+]).then(([gl, D, , RCH]) => start(gl, D, RCH))
   .catch((e) => { console.error(e); document.getElementById('pm-msg').hidden = false; });
 
-function start(gl, D) {
+function start(gl, D, RCH) {
   const F = new Map(D.facs.map((f) => [f.id, f]));
   const X = new Map(D.ixs.map((x) => [x.id, x]));
   const PL = new Map(D.places.map((p) => [p.id, p]));
@@ -724,6 +726,7 @@ function start(gl, D) {
     show(head(p.grey ? p.lead.pdb : p.n, [p.bld && p.bld !== p.n ? p.bld : '', city].filter(Boolean).join(' · '))
       + `<div class="bd">${p.grey ? '<p>Grey: PeeringDB lists this place, but we found no name for it as a data centre, only a company name or an office address.</p>' : ''}`
       + kp([[n0(fs.length), fs.length === 1 ? 'facility' : 'facilities'], [n0(p.nets), 'networks'], [n0(ixs.length), 'exchanges'], [n0(p.ports || 0), 'router ports']])
+      + reachPanel(fs)
       + `<h4>${fs.length === 1 ? 'The facility' : 'Facilities in this building'}</h4>${listOf(facHtml, 6)}`
       + (ixHtml.length ? `<h4>Exchanges here</h4>${listOf(ixHtml, 6)}` : '')
       + (netHtml.length ? `<h4>Networks with equipment here</h4>${listOf(netHtml, 12)}` : '')
@@ -731,6 +734,32 @@ function start(gl, D) {
     card.querySelectorAll('[data-open]').forEach((a) => a.addEventListener('click', () => { const d = document.getElementById(a.dataset.open); if (d) d.open = true; }));
     const u = new URL(location.href); u.searchParams.set('place', pid); history.replaceState(null, '', u);
     if (fly) map.flyTo({ center: drawnAt(pid) || [p.lng, p.lat], zoom: Math.max(map.getZoom(), 14), offset: narrow() ? [0, -wrap.clientHeight * 0.2] : [-180, 0], speed: 1.6 });
+  }
+  /* PREVIEW ONLY: which of the 20 biggest consumer ISPs reach this building, and how.
+     The best level across the building's facilities counts. */
+  const HOW = { h: [0, 'own port in the building'], x: [1, 'on an exchange in the building'], o: [2, 'one network away'], f: [3, 'no link visible'] };
+  function reachPanel(fs) {
+    if (!RCH) return '';
+    const best = RCH.isps.map((_, i) => fs.reduce((b, f) => {
+      const c = (RCH.facs[f.id] || '')[i] || 'f';
+      return HOW[c][0] < HOW[b][0] ? c : b;
+    }, 'f'));
+    const pct = RCH.isps.reduce((n, s, i) => n + ('hx'.includes(best[i]) ? s.pct : 0), 0);
+    const rows = RCH.isps.map((s, i) => ({ s, c: best[i] })).sort((a, b) => HOW[a.c][0] - HOW[b.c][0] || b.s.pct - a.s.pct)
+      .map(({ s, c }) => `<div class="isp"><span class="nm"><b>${esc(s.name)}</b>${s.unverified ? ' <small>(name unverified)</small>' : ` <small>AS${s.asn}</small>`}${s.policy ? `<span class="pol">${esc(s.policy)}</span>` : ''}</span><span class="pc">${s.pct.toFixed(1)}% of users</span><span class="how h-${c}"><i></i>${HOW[c][1]}</span></div>`);
+    const tsel = RCH.isps.find((s) => s.asn === 23693);
+    const noIx = RCH.isps.filter((s) => !s.ixports && s.pct >= 5).map((s) => s.name.replace(/\s*AS\d+$/, ''));
+    return `<h4>Which big ISPs reach this building</h4><div class="rch">
+      <p class="big"><b>${pct.toFixed(1)}%</b>of Indonesian internet users are on an ISP with its own port in this building or on an exchange here.</p>
+      ${listOf(rows, 8)}
+      <ul class="warn">
+        <li>“No link visible” doesn’t mean there is no link. Public routing collectors miss most local peering between Indonesian ISPs${tsel && tsel.nripe != null && tsel.nhe ? `: Telkomsel shows ${tsel.nripe} neighbours in RIPEstat and ${tsel.nhe} in bgp.he.net` : ''}.</li>
+        <li>A port in the building doesn’t mean the ISP will connect to you. Each ISP’s PeeringDB policy is shown (Open, Selective or Restrictive).${noIx.length ? ` ${noIx.join(' and ')} list no exchange ports.` : ''}</li>
+        <li>These ${RCH.isps.length} ISPs serve about ${Math.round(RCH.isps.reduce((n, s) => n + s.pct, 0))}% of Indonesian internet users (APNIC Labs estimate, 16 Oct 2026 sample). APNIC’s per-network shares overlap a little, so the totals are approximate.</li>
+        <li>AS45700’s name is unverified: PeeringDB says PT Starlink Services Indonesia, the registry says PT NAP Info Lintas Nusa.</li>
+      </ul>
+      <p class="srcl">PeeringDB · RIPEstat (RIPE NCC) · bgp.he.net (Hurricane Electric) · APNIC Labs · built ${esc(RCH.asof || '')} · preview, not live</p>
+    </div>`;
   }
   function openIxCity(cid) {
     const c = [...ixCity.values()].find((v) => v.id === cid);
