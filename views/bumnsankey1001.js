@@ -941,4 +941,31 @@ function page({ slug, lang = 'en' }) {
   });
 }
 
-module.exports = { page, slugs, minis, load, live };
+/* one map for the 1001startup.id front page (views/home1001.js, Luca 18 Oct 2026: the BUMN card "need
+   to be updated with the sankey diagram and the 1000+ subsidiary"): the card's small map, plus for each
+   business the companies the group places in it (name, logo, status), so the bands run on into the
+   companies the way the full map does. Same rows as mini(): money maps only, first lens, five rows at
+   most (past five, the four biggest stay and the rest are lumped with all their companies). */
+function homeMini(slug) {
+  if (!live()) return null;
+  const D = load();
+  const G = D && D.groups[slug];
+  if (!G || G.basis !== 'segments' || !G.segments || !G.measures) return null;
+  const lens = Object.keys(G.measures)[0];
+  const { M, segs } = lensOf(G, lens);
+  const t = base(M);
+  const co = (c) => ({ n: c.name, logo: c.logo || null, live: c.status === 'active' });
+  let rows = segs.filter((b) => b.v > 0).map((b) => ({ n: b.extra ? 'Not in a segment' : b.s.plain || b.s.name, v: b.v, k: b.s.core ? 'c' : 'o', pc: pc(b.v, t), cos: (b.s.cos || []).map(co) }));
+  if (!rows.length) return null;
+  if (rows.length > 5) {
+    const big = new Set(rows.slice().sort((a, b) => b.v - a.v).slice(0, 4));
+    const rest = rows.filter((r) => !big.has(r));
+    const v = rest.reduce((a, r) => a + r.v, 0);
+    const word = G.seg_word ? G.seg_word.replace(/y$/, 'ie') + 's' : 'businesses';
+    rows = rows.filter((r) => big.has(r)).concat([{ n: `${rest.length} more ${word}`, v, k: 'm', pc: pc(v, t), cos: [].concat(...rest.map((r) => r.cos)) }]);
+  }
+  return { slug, short: G.short, logo: G.logo || null, h: `${M.short || M.label}, ${G.period}`, tot: money(G, M.total),
+    all: (G.counts && G.counts.all) || 0, nseg: G.segments.length, r: rows };
+}
+
+module.exports = { page, slugs, minis, load, live, homeMini };

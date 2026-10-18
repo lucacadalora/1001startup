@@ -75,6 +75,17 @@ function loadTies() {
 const JS = path.join(__dirname, '..', 'public', 'js', 'bumn1001.js');
 const ver = () => { try { return String(Math.floor(fs.statSync(JS).mtimeMs / 1000)); } catch (e) { return '0'; } };
 
+/* every company under the groups: direct holdings + one level down + deeper, the same members as the
+   group maps (also the front page's figure, views/home1001.js); zero while the switch is off */
+function subTotals(S = subsLive() ? loadSubs() : null) {
+  if (!S || !S.groups) return { all: 0, direct: 0 };
+  const G = Object.values(S.groups).filter(Boolean);
+  return {
+    all: G.reduce((a, g) => a + (g.t1 || 0) + (g.t2 || 0) + (g.deeper || 0), 0),
+    direct: G.reduce((a, g) => a + (g.t1 || 0), 0),
+  };
+}
+
 function page({ lang = 'en' }) {
   const D = load();
   const S = subsLive() ? loadSubs() : null;
@@ -91,10 +102,8 @@ function page({ lang = 'en' }) {
      under the groups (Luca, 18 Oct 2026: "still 56? you need to put the data also of the total
      subsidiary"): direct holdings + one level down + deeper, the same members as the group maps */
   const tiles = (D.stats || []).slice();
+  const { all, direct } = subTotals(S);
   if (S && S.groups) {
-    const G = Object.values(S.groups).filter(Boolean);
-    const all = G.reduce((a, g) => a + (g.t1 || 0) + (g.t2 || 0) + (g.deeper || 0), 0);
-    const direct = G.reduce((a, g) => a + (g.t1 || 0), 0);
     if (all) tiles.splice(1, 0, { v: all.toLocaleString('en-US'), k: `Subsidiaries and stakes under the ${n}, at every level (${direct.toLocaleString('en-US')} held directly)`, u: null });
   }
   const stats = tiles.map(s => `<div class="cell"><div class="v">${s.u ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.v)}</a>` : esc(s.v)}</div><div class="k">${esc(s.k)}</div></div>`).join('');
@@ -299,4 +308,4 @@ ${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(
   });
 }
 
-module.exports = { page, load };
+module.exports = { page, load, subTotals };
