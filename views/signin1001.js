@@ -42,7 +42,10 @@ const CSS = `<style>
 .si-intro{margin-bottom:22px}
 .si-clerk{min-height:140px;min-width:0;max-width:100%;transition:opacity .15s}
 /* Clerk fixes its card at 25rem; inside our card it must follow our width */
+#si-clerk{width:100%!important;max-width:100%!important;display:block!important}
 #si-clerk .cl-rootBox,#si-clerk .cl-cardBox,#si-clerk .cl-card{width:100%!important;min-width:0;max-width:100%!important}
+/* Clerk centres a narrow form inside its card; ours fills the card */
+#si-clerk .cl-main,#si-clerk .cl-form,#si-clerk .cl-formFieldRow,#si-clerk .cl-formField,#si-clerk .cl-formButtonPrimary,#si-clerk .cl-footer{width:100%;align-self:stretch}
 #si-clerk .cl-identityPreview{max-width:100%;flex-wrap:wrap;justify-content:flex-start}
 #si-clerk .cl-identityPreviewText{white-space:normal;overflow-wrap:anywhere;text-overflow:clip;overflow:visible}
 .si-busy{opacity:.45;pointer-events:none}
