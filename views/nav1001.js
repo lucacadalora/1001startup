@@ -129,13 +129,16 @@ function header(active, opts) {
   const lsw = `<div class="lsw" aria-label="${lang === 'id' ? 'Bahasa' : 'Language'}">
     <a href="${esc(p)}"${lang === 'id' ? '' : ' class="on" aria-current="true"'} lang="en" hreflang="en" title="English">EN</a><span class="ls" aria-hidden="true">/</span><a href="${esc(idHref)}"${lang === 'id' ? ' class="on" aria-current="true"' : ''} lang="id" hreflang="id" title="Bahasa Indonesia">ID</a>
   </div>`;
+  /* The brand is an ABSOLUTE link to the front page: the same header runs on
+     dc.1001startup.id, where a bare "/" is the peering map itself (Luca, 18 Oct
+     2026: clicking 1001startup.id there should land on 1001startup.id). */
   /* live: on a phone the header is one row (brand + Menu) and the links open
      as an in-flow sheet under it — the wrapped three-row header took a third
      of the first screen. public/js/nav1001.js toggles .mopen. */
   const mtog = live ? `
   <button class="mtog" type="button" aria-expanded="false" aria-controls="hnav1001" data-open="${esc(L('Close', 'Tutup'))}" data-shut="Menu"><span class="mtl">Menu</span><span class="mti" aria-hidden="true"></span></button>` : '';
   return `<header class="hd1001${live ? ' m1' : ''}"><div class="hrow">
-  <a class="brand" href="${esc(PF + '/')}"><span class="bx">1001</span>1001startup.id</a>${mtog}
+  <a class="brand" href="${esc(I18N.ORIGIN + PF + '/')}"><span class="bx">1001</span>1001startup.id</a>${mtog}
   <nav class="hnav"${live ? ' id="hnav1001"' : ''} aria-label="Site">
     ${links}
     ${lsw}
