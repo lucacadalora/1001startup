@@ -13,6 +13,12 @@
  * button, holding /signin?embed=1&via=follow); once the frame reports a
  * sign-in, the follow that was asked for is saved. Buttons that appear later
  * (the company drawer, the BUMN card) are painted as they arrive.
+ *
+ * The nudge (Luca, 18 Oct 2026, after 16 sign-ups and no follows): a
+ * signed-in reader who follows nothing yet gets a small card pointing at
+ * Follow and My 1001, on every page but /me, until the first follow or "Got
+ * it" (localStorage f1001-nudge). The first follow gets a short "it's in My
+ * 1001" card. A sign-in through the wall triggers the same check at once.
  */
 (function () {
   'use strict';
@@ -29,11 +35,15 @@
     h: 'Masuk untuk mengikuti', s: 'Gratis. Ketik email kamu, kami kirim kode 6 angka. Yang kamu ikuti muncul di My 1001.',
     n: 'Email kamu kami simpan untuk proses masuk, dan tidak pernah ditampilkan di situs.',
     x: 'Tutup', f: 'Formulir masuk', a: 'Akun',
+    nk: 'Kamu sudah masuk', nt: 'Ketuk + Ikuti di startup, BUMN, pusat data, atau investor mana pun. Semua yang kamu ikuti masuk ke My 1001.',
+    fk: 'Diikuti', ft: 'Semua yang kamu ikuti ada di My 1001.', go: 'Buka My 1001', ok: 'Oke',
   } : {
     follow: 'Follow', following: 'Following', err: 'Not saved',
     h: 'Sign in to follow', s: 'It is free. Type your email and we send you a 6-digit code. What you follow shows up in My 1001.',
     n: 'We keep your email to sign you in. It is never shown on the site.',
     x: 'Close', f: 'Sign-in form', a: 'Account',
+    nk: 'You are signed in', nt: 'Tap + Follow on any startup, state company, data centre or investor. Everything you follow lands in My 1001.',
+    fk: 'Following', ft: 'Everything you follow is in My 1001.', go: 'Open My 1001', ok: 'Got it',
   };
   function key(k, r) { return k + ':' + r; }
 
@@ -55,6 +65,7 @@
         signed = !!j.signedIn;
         have = new Set((j.follows || []).map(function (f) { return key(f.k, f.r); }));
         paintAll();
+        maybeNudge();
       })
       .catch(function () { if (!have) have = new Set(); paintAll(); });
   }
@@ -80,7 +91,8 @@
     if (on) have.add(id); else have.delete(id);
     paintAll();
     b.disabled = true;
-    save(k, r, on).catch(function (err) {
+    var first = on && have.size === 1;
+    save(k, r, on).then(function () { if (first) firstFollow(); else if (have.size) hideCard(); }).catch(function (err) {
       if (on) have.delete(id); else have.add(id);
       paintAll();
       if (err && err.message === 'signin') { pending = { k: k, r: r }; openSignIn(); return; }
@@ -171,6 +183,14 @@
   }
   document.addEventListener('keydown', function (e) { if (modal && e.key === 'Escape') closeSignIn(); });
 
+  /* A sign-in in the WALL's frame: the wall lifts itself (wall1001.js); here
+     the reader just became signed in, so read their follows and nudge. */
+  window.addEventListener('message', function (e) {
+    if (e.origin !== location.origin || !e.data || e.data.type !== 'a1001-in') return;
+    if (frame && e.source === frame.contentWindow) return;   // our own popup, handled below
+    if (!signed) { signed = true; setTimeout(load, 300); }
+  });
+
   window.addEventListener('message', function (e) {
     if (!frame || e.source !== frame.contentWindow || e.origin !== location.origin) return;
     var m = e.data || {};
@@ -188,8 +208,79 @@
       if (!want || have.has(key(want.k, want.r))) return;
       have.add(key(want.k, want.r));
       paintAll();
-      return save(want.k, want.r, true).catch(function () { have.delete(key(want.k, want.r)); paintAll(); });
+      return save(want.k, want.r, true).then(function () { if (have.size === 1) firstFollow(); })
+        .catch(function () { have.delete(key(want.k, want.r)); paintAll(); });
     });
+  }
+
+  /* ── the nudge and the first-follow card ───────────────────────────── */
+  var card = null;
+  var NUDGE = 'f1001-nudge';
+  function nudged() { try { return localStorage.getItem(NUDGE) === '1'; } catch (e) { return false; } }
+  function stopNudging() { try { localStorage.setItem(NUDGE, '1'); } catch (e) { /* card just closes */ } }
+  function onMe() { return /^\/(id\/)?me\/?$/.test(location.pathname); }
+  function hint(on) {
+    document.querySelectorAll('.fw1001').forEach(function (b) {
+      b.classList.toggle('f1001-hint', !!on && b.getAttribute('aria-pressed') !== 'true');
+    });
+  }
+  function hideCard() {
+    if (card && card.parentNode) card.parentNode.removeChild(card);
+    card = null;
+    hint(false);
+  }
+  /* the card's styles come with the page (views/me1001.js css); a page from an
+     older server has none, and an unstyled card is worse than no card */
+  function cssReady() {
+    var st = document.getElementById('f1001-css');
+    return !!(st && st.textContent.indexOf('#f1001-t') >= 0);
+  }
+  function showCard(kicker, text, onClose) {
+    if (!cssReady()) return;
+    hideCard();
+    card = el('div');
+    card.id = 'f1001-t';
+    card.setAttribute('role', 'status');
+    var k = el('p', 'k');
+    k.appendChild(el('i'));
+    k.appendChild(document.createTextNode(kicker));
+    var acts = el('div', 'a');
+    var go = el('a', 'go', T.go);
+    go.href = PF + '/me';
+    var ok = el('button', 'ok', T.ok);
+    ok.type = 'button';
+    ok.addEventListener('click', function () { if (onClose) onClose(); hideCard(); });
+    acts.appendChild(go);
+    acts.appendChild(ok);
+    card.appendChild(k);
+    card.appendChild(el('p', 't', text));
+    card.appendChild(acts);
+    document.body.appendChild(card);
+  }
+  /* Two other cards sit at the bottom and go first: the cookie banner
+     (consent.js, .vs-cc; position:fixed, so offsetParent can't tell, measure
+     it) and the "who is building this" card while it is open (builder1001.js,
+     #b1.is-open). */
+  function bannerUp() {
+    var b1 = document.getElementById('b1');
+    if (b1 && b1.classList.contains('is-open')) return true;
+    var cc = document.querySelector('.vs-cc');
+    if (!cc) return false;
+    var st = getComputedStyle(cc);
+    return st.display !== 'none' && st.visibility !== 'hidden' && cc.getBoundingClientRect().height > 0;
+  }
+  function maybeNudge() {
+    if (!signed || !have || have.size || nudged() || onMe() || card) return;
+    if (modal || document.getElementById('w1001')) return;
+    if (bannerUp()) { setTimeout(maybeNudge, 2500); return; }
+    showCard(T.nk, T.nt, stopNudging);
+    hint(true);
+  }
+  function firstFollow() {
+    stopNudging();
+    if (onMe() || bannerUp()) { hideCard(); return; }
+    showCard(T.fk, T.ft, null);
+    setTimeout(function () { if (card && card.querySelector('.k').textContent === T.fk) hideCard(); }, 9000);
   }
 
   load();

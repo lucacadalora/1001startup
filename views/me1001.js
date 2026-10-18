@@ -12,6 +12,13 @@
  * public/js/follow1001.js; its styles and the sign-in-to-follow popup are
  * `css` below, which lib/account1001.js puts in the <head> of 1001 pages while
  * data/me.live exists.
+ *
+ * Slice 3 (Luca, 18 Oct 2026): widgets under the list, all from data 1001
+ * already has: new rounds (by year), most read this week (visitor counter),
+ * investors (followed ones with their companies, or the biggest), sector
+ * pulse (your sectors first) and closed companies. Each can be hidden with
+ * one line in data/me-widgets-off.txt (rounds, read, investors, sectors,
+ * closed).
  */
 const { esc } = require('../lib/util');
 const I18N = require('./i18n1001');
@@ -90,13 +97,75 @@ function rowHtml(r, L, following) {
 </tr>`;
 }
 
+const fw = (kind, ref, L) => `<button class="fw1001" type="button" data-fk="${esc(kind)}" data-fr="${esc(ref)}" hidden>${L('Follow', 'Ikuti')}</button>`;
+const day = (iso, lang) => (iso ? new Date(iso).toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' }) : '');
+const month = (ym, lang) => {
+  const m = /^(\d{4})-(\d{2})/.exec(String(ym || ''));
+  return m ? new Date(Date.UTC(+m[1], +m[2] - 1, 1)).toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB', { month: 'short', year: 'numeric', timeZone: 'UTC' }) : String(ym || '');
+};
+/* title, a count on the right, the body, one plain line under it */
+const widget = (key, title, count, body, foot) => `
+  <section class="me-w" data-w="${key}">
+    <h2 class="me-wh"><i aria-hidden="true"></i>${esc(title)}${count ? `<em>${esc(count)}</em>` : ''}</h2>
+    ${body}
+    ${foot ? `<p class="me-wf">${foot}</p>` : ''}
+  </section>`;
+
+function wRounds(w, L, PF, lang) {
+  if (!w || !w.items.length) return '';
+  return widget('rounds', L('New rounds, 2025–26', 'Pendanaan baru, 2025–26'), n0(w.total),
+    `<ul class="me-wl">${w.items.map((c) => `<li><div class="me-wm"><a href="${PF}/company/${encodeURIComponent(c.id)}">${esc(c.name)}</a><span>${esc([`${round(c.last_round)} ${c.last_round_year}`.trim(),
+      usd(c.funding_total_usd_m) && L(`${usd(c.funding_total_usd_m)} raised in all`, `total dana ${usd(c.funding_total_usd_m)}`), c.sector_label].filter(Boolean).join(' · '))}</span></div>${fw('company', c.id, L)}</li>`).join('')}</ul>`,
+    esc(L(`Startups whose last round was in 2025 or 2026, latest year first, then by money raised. The census dates a round by its year. As of ${day(w.asof, lang)}.`,
+      `Startup yang putaran terakhirnya di 2025 atau 2026, tahun terbaru dulu, lalu menurut total dana. Sensus mencatat tahun putaran. Per ${day(w.asof, lang)}.`)));
+}
+
+function wRead(w, L, PF) {
+  if (!w || !w.length) return '';
+  return widget('read', L('Most read this week', 'Paling banyak dibaca minggu ini'), '',
+    `<ul class="me-wl">${w.map((x) => `<li><div class="me-wm"><a href="${PF}/company/${encodeURIComponent(x.c.id)}">${esc(x.c.name)}</a><span>${esc([L(`${n0(x.n)} ${x.n === 1 ? 'reader' : 'readers'}`, `${n0(x.n)} pembaca`), x.c.sector_label].filter(Boolean).join(' · '))}</span></div>${fw('company', x.c.id, L)}</li>`).join('')}</ul>`,
+    esc(L('People who opened each company page in the last 7 days, counted by 1001’s own visitor counter.', 'Orang yang membuka halaman tiap perusahaan dalam 7 hari terakhir, dihitung penghitung pengunjung 1001 sendiri.')));
+}
+
+function wInvestors(w, L, PF) {
+  if (!w) return '';
+  if (w.mine.length) {
+    return widget('investors', L('Investors you follow', 'Investor yang kamu ikuti'), n0(w.mine.length),
+      `<ul class="me-wl">${w.mine.map((e) => {
+        const more = e.cos.length - 4;
+        return `<li><div class="me-wm"><a href="${PF}/investor/${encodeURIComponent(e.slug)}">${esc(e.name)}</a><span>${esc(L(`${n0(e.cos.length)} ${e.cos.length === 1 ? 'company' : 'companies'} in the census`, `${n0(e.cos.length)} perusahaan di sensus`))}</span><span class="me-wc">${e.cos.slice(0, 4).map((x) => `<a href="${PF}/company/${encodeURIComponent(x.c.id)}">${esc(x.c.name)}</a>`).join(', ')}${more > 0 ? esc(L(` and ${more} more`, ` dan ${more} lainnya`)) : ''}</span></div>${fw('investor', e.slug, L)}</li>`;
+      }).join('')}</ul>`, '');
+  }
+  if (!w.top.length) return '';
+  return widget('investors', L('Investors with the most companies', 'Investor dengan perusahaan terbanyak'), '',
+    `<ul class="me-wl">${w.top.map((e) => `<li><div class="me-wm"><a href="${PF}/investor/${encodeURIComponent(e.slug)}">${esc(e.name)}</a><span>${esc([L(`${n0(e.cos.length)} companies in the census`, `${n0(e.cos.length)} perusahaan di sensus`), (e.sectors || []).slice(0, 2).join(', ')].filter(Boolean).join(' · '))}</span></div>${fw('investor', e.slug, L)}</li>`).join('')}</ul>`,
+    esc(L('Follow an investor and its companies show up here.', 'Ikuti investor, dan perusahaannya muncul di sini.')));
+}
+
+function wSectors(list, L, PF) {
+  if (!list || !list.length) return '';
+  const top = list.slice(0, 8);
+  const max = Math.max(...top.map((x) => x.count || 0), 1);
+  return widget('sectors', L('Sector pulse', 'Denyut sektor'), '',
+    `<ul class="me-wl">${top.map((x) => `<li class="me-ws"><div class="me-wm">${x.key ? `<a href="${PF}/sector/${encodeURIComponent(x.key)}">${esc(x.name)}</a>` : `<b>${esc(x.name)}</b>`}${x.mine ? `<b class="me-y">${L('yours', 'milikmu')}</b>` : ''}<span>${esc(L(`${n0(x.count)} companies · ${n0(x.jobs)} jobs`, `${n0(x.count)} perusahaan · ${n0(x.jobs)} pekerjaan`))}</span><span class="me-bar"><i style="width:${Math.max(2, Math.round((x.count / max) * 100))}%"></i></span></div></li>`).join('')}</ul>`,
+    esc(L('Companies and estimated jobs per sector in the census. Sectors of the startups you follow come first.', 'Jumlah perusahaan dan perkiraan pekerjaan per sektor di sensus. Sektor startup yang kamu ikuti tampil lebih dulu.')));
+}
+
+function wClosed(list, L, PF, lang) {
+  if (!list || !list.length) return '';
+  return widget('closed', L('Closed', 'Sudah tutup'), '',
+    `<ul class="me-wl">${list.map((x) => `<li><div class="me-wm"><a href="${PF}/closed">${esc(x.name)}</a><span>${esc([L(`Stopped ${month(x.ended, lang)}`, `Berhenti ${month(x.ended, lang)}`),
+      String(x.sector || '').split(' — ')[0], Number(x.funding_usd_m) > 0 && L(`had raised ${usd(Number(x.funding_usd_m))}`, `pernah mendapat ${usd(Number(x.funding_usd_m))}`)].filter(Boolean).join(' · '))}</span></div></li>`).join('')}</ul>`,
+    `${esc(L('Latest first, from the census register of companies that stopped; each entry has its sources.', 'Terbaru dulu, dari daftar sensus perusahaan yang berhenti; tiap entri ada sumbernya.'))} <a href="${PF}/closed">${esc(L('See all', 'Lihat semua'))}</a>`);
+}
+
 function roleButtons(L, lang) {
   return `<input type="hidden" name="lang" value="${lang === 'id' ? 'id' : 'en'}">
       ${ROLES.map(([k, en, id]) => `<button type="submit" name="role" value="${k}">${esc(L(en, id))}</button>`).join('')}`;
 }
 
 /** /me for a signed-in reader. rows/suggest: [{ kind, ref, name, href, logo, obj }] */
-function page({ lang = 'en', user, rows, suggest }) {
+function page({ lang = 'en', user, rows, widgets = {} }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
   const asked = !!user.role_at;
@@ -116,9 +185,16 @@ function page({ lang = 'en', user, rows, suggest }) {
   const list = rows.length
     ? `<table id="tbl" class="me-t"><tbody>${rows.map((r) => rowHtml(r, L, true)).join('')}</tbody></table>`
     : `<div class="me-empty">
-    <p><b>${L('You don’t follow anything yet.', 'Kamu belum mengikuti apa pun.')}</b> ${L('Tap Follow on any startup, state company, data centre or investor and it shows up here. To start, the companies 1001 readers opened most this week:', 'Ketuk Ikuti di startup, BUMN, pusat data, atau investor mana pun, dan semuanya muncul di sini. Sebagai awal, perusahaan yang paling banyak dibuka pembaca 1001 minggu ini:')}</p>
-    ${suggest.length ? `<table id="tbl" class="me-t"><tbody>${suggest.map((r) => rowHtml(r, L, false)).join('')}</tbody></table>` : ''}
+    <p><b>${L('You don’t follow anything yet.', 'Kamu belum mengikuti apa pun.')}</b> ${L('Tap + Follow on any startup, state company, data centre or investor and it shows up here, or start with the lists below.', 'Ketuk + Ikuti di startup, BUMN, pusat data, atau investor mana pun dan semuanya muncul di sini, atau mulai dari daftar di bawah.')}</p>
   </div>`;
+  const W = widgets;
+  const panels = [
+    wRounds(W.rounds, L, PF, lang),
+    wRead(W.read, L, PF),
+    wInvestors(W.investors, L, PF),
+    wSectors(W.sectors, L, PF),
+    wClosed(W.closed, L, PF, lang),
+  ].join('');
   const body = `<style>
 .me{max-width:760px;margin:0 auto;padding:40px 20px 8px;display:grid;gap:28px}
 .me-hd h1{font-size:clamp(30px,5vw,44px);line-height:1.05;letter-spacing:-0.03em;font-weight:500;margin-top:12px}
@@ -158,6 +234,24 @@ function page({ lang = 'en', user, rows, suggest }) {
 .me-chg summary{display:inline;cursor:pointer;color:#52525B;text-decoration:underline;text-underline-offset:3px;font-size:13.5px;margin-left:8px}
 .me-chg .me-roles{margin-top:10px}
 .me-out .btn{margin-top:4px}
+.me-w{display:grid;gap:10px}
+.me-wh{display:flex;align-items:center;gap:8px;font:400 11px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#6B6B73;margin:0}
+.me-wh i{width:6px;height:6px;background:#E8734B;display:inline-block;flex:none}
+.me-wh em{font-style:normal;margin-left:auto;color:#000}
+.me-wl{list-style:none;margin:0;padding:0;border-top:1px solid #E7E7E7}
+.me-wl li{display:flex;gap:12px;align-items:flex-start;justify-content:space-between;padding:11px 0;border-bottom:1px solid #F1F1F1}
+.me-wl li .fw1001{flex:none}
+.me-wl li.me-ws .me-wm{flex:1}
+.me-wm{min-width:0;display:grid;gap:3px}
+.me-wm>a,.me-wm>b:first-child{font-weight:600;font-size:15px;line-height:1.3;color:#000;text-decoration:none}
+.me-wm>a:hover{text-decoration:underline;text-underline-offset:3px}
+.me-wm span{font-size:13px;line-height:1.45;color:#52525B;overflow-wrap:anywhere}
+.me-wc a{font-weight:500;color:#3F3F46;text-decoration:underline;text-decoration-color:#D9D9DE;text-underline-offset:3px}
+.me-y{justify-self:start;font:400 9.5px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;background:#E8734B;color:#fff;padding:3px 5px}
+.me-bar{display:block;height:6px;background:#F3F3F5;margin-top:3px}
+.me-bar i{display:block;height:100%;background:#2A6E9F}
+.me-wf{font-size:12.5px;line-height:1.5;color:#6B6B73;margin:0}
+.me-wf a{color:#52525B}
 @media(max-width:560px){.me{padding:24px 16px 4px;gap:22px}.me-prof dl>div{grid-template-columns:1fr;gap:2px}.me-lg{width:46px}}
 </style>
 <link rel="stylesheet" href="/css/company1001.css?v=${V}">
@@ -178,6 +272,7 @@ function page({ lang = 'en', user, rows, suggest }) {
     <a href="/data-center">${L('Data centres', 'Pusat data')}</a>
     <a href="${PF}/investors">${L('Investors', 'Investor')}</a>
   </nav>
+  ${panels}
   <section class="me-prof" aria-labelledby="me-p-h">
     <h2 id="me-p-h">${L('Your account', 'Akun kamu')}</h2>
     <dl>
@@ -211,6 +306,15 @@ const css = `<style id="f1001-css">
 .bm-card .fw1001{margin:0 0 10px}
 .pb>.pfw{margin:0 0 10px}
 .inv-fw{margin-top:14px}
+.fw1001.f1001-hint{box-shadow:0 0 0 3px rgba(232,115,75,.55)}
+#f1001-t{position:fixed;z-index:2147482900;left:max(16px,env(safe-area-inset-left,0px));right:max(16px,env(safe-area-inset-right,0px));bottom:calc(16px + env(safe-area-inset-bottom,0px));max-width:420px;margin-right:auto;background:#fff;color:#000;border:1px solid #000;box-shadow:0 14px 40px rgba(0,0,0,.18);padding:14px 16px;font:500 15px/1.45 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.01em;display:grid;gap:9px}
+#f1001-t p{margin:0}
+#f1001-t .k{display:flex;align-items:center;gap:8px;font:400 11px/1 'IBM Plex Mono',monospace;letter-spacing:.08em;text-transform:uppercase;color:#6B6B73}
+#f1001-t .k i{width:6px;height:6px;background:#E8734B;display:inline-block}
+#f1001-t .a{display:flex;gap:14px;align-items:center;flex-wrap:wrap}
+#f1001-t .go{background:#000;color:#fff;text-decoration:none;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.06em;padding:10px 12px}
+#f1001-t .ok{background:none;border:0;padding:6px 2px;font:500 14px/1 'Overused Grotesk',system-ui,sans-serif;color:#52525B;text-decoration:underline;text-underline-offset:3px;cursor:pointer}
+@media(prefers-reduced-motion:no-preference){#f1001-t{animation:f1001in .3s cubic-bezier(.2,.8,.2,1)}}
 html.f1001-on{overflow:hidden!important}
 html.f1001-on::before{content:"";position:fixed;inset:0;z-index:2147482995;background:rgba(255,255,255,.38);-webkit-backdrop-filter:blur(9px);backdrop-filter:blur(9px)}
 #f1001{position:fixed;inset:0;z-index:2147483001;display:flex;flex-direction:column;overflow:auto;overscroll-behavior:contain;padding:max(16px,env(safe-area-inset-top,0px)) max(16px,env(safe-area-inset-right,0px)) max(16px,env(safe-area-inset-bottom,0px)) max(16px,env(safe-area-inset-left,0px))}

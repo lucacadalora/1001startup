@@ -84,6 +84,9 @@ function report(d) {
     const fu = db.prepare('SELECT COUNT(DISTINCT user_id) AS u FROM acct_follows WHERE date(created_at) <= ?').get(d);
     lines.push(`Follows: ${n(f.n)} new by ${n(f.u)} readers; ${n(fu.u)} of ${n(total)} accounts follow something`);
     lines.push(`Signed in from a Follow button: ${n(w.follow_signin)} (${n(w.follow_signup)} new accounts)`);
+    const me = db.prepare(`SELECT COUNT(DISTINCT vid) AS n FROM px_view WHERE host = ? AND ts >= ? AND ts < ?
+      AND (path = '/me' OR path = '/id/me')`).get(HOST, ms(d), ms(plusDays(d, 1)));
+    lines.push(`Opened My 1001: ${n(me.n)} readers`);
   } catch { /* no follows table yet */ }
   lines.push('');
   lines.push(`Readers: ${n(r.people)} people, ${one(r.people ? r.views / r.people : 0)} pages each`
