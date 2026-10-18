@@ -16,7 +16,8 @@
  *    row hands the words to Ask 1001. public/js/me1001.js.
  *  - Ask 1001: answers only from 1001's data (lib/ask1001.js, DeepSeek V4.1
  *    Flash through our aisurplus gateway). Shown while data/ask.live exists.
- *  - Lead agent: coming soon. "Get early access" and the Contacts button on a
+ *  - Lead agent: coming soon, one line + a search box that is not open yet.
+ *    "Get early access" and the Contacts button on a
  *    followed startup or BUMN save a request (acct_lead_asks), so Luca sees
  *    which companies readers want contacts at. Nothing is searched.
  *
@@ -123,25 +124,17 @@ function page({ lang = 'en', user, rows, widgets = {}, k, asked = new Set(), ask
         `Jawaban hanya dari data 1001: ${n0(k.startups)} startup, ${n0(k.bumn)} BUMN dengan ${n0(k.subs)} anak usaha, ${n0(k.dcs)} proyek pusat data, dan ${n0(k.investors)} investor. Pertanyaan disimpan tanpa namamu, untuk memperbaiki Ask 1001.`))}</p>
     </section>` : '';
 
+  /* Luca, 18 Oct 2026: "so complicated, make that simple": one line, a
+     search box that is not open yet, one button. No provider names. */
   const early = asked.has(':');
   const lead = !leadOn ? '' : `
     <section class="md-p md-lead" id="md-lead" aria-labelledby="md-lead-h">
-      <h2 class="md-ph" id="md-lead-h"><i aria-hidden="true"></i>${L('Lead agent', 'Agen kontak')}<em class="md-soon">${L('Coming soon', 'Segera hadir')}</em></h2>
-      <p class="md-lt">${L('Find the right person at any company in 1001, and how to reach them.', 'Temukan orang yang tepat di perusahaan mana pun di 1001, dan cara menghubunginya.')}</p>
-      <ol class="md-ls">
-        <li><b>${L('Who decides', 'Siapa yang memutuskan')}</b><span>${L('The founders 1001 lists, plus the role you are looking for.', 'Pendiri yang tercatat di 1001, ditambah jabatan yang kamu cari.')}</span></li>
-        <li><b>${L('Still there', 'Masih di sana')}</b><span>${L('Checks that each person still works at the company.', 'Memeriksa bahwa orangnya masih bekerja di perusahaan itu.')}</span></li>
-        <li><b>${L('How to reach them', 'Cara menghubungi')}</b><span>${L('A work email the company published, or its email pattern, marked as a guess.', 'Email kerja yang dipublikasikan perusahaan, atau pola emailnya, ditandai sebagai tebakan.')}</span></li>
-        <li><b>${L('Where it came from', 'Sumbernya')}</b><span>${L('Every contact links to its source.', 'Setiap kontak menautkan sumbernya.')}</span></li>
-      </ol>
-      <p class="md-ln">${L(`<b>${n0(k.founders)}</b> founders named across <b>${n0(k.foundersAt)}</b> startups in 1001 today.`, `<b>${n0(k.founders)}</b> pendiri tercatat di <b>${n0(k.foundersAt)}</b> startup di 1001 saat ini.`)}</p>
-      <div class="md-via"><span>${L('Will search through', 'Akan mencari lewat')}</span><b>${L('Exa people search', 'Exa people search')}</b><b>Firecrawl</b><b>Monid</b></div>
-      <div class="md-la">
-        <button class="md-lb" type="button" data-lead="1" aria-pressed="${early ? 'true' : 'false'}">${early ? L('You’re on the list', 'Kamu sudah terdaftar') : L('Get early access', 'Minta akses awal')}</button>
-        <span class="md-lnote" id="md-lnote">${early
-          ? L('It will show up here when it opens.', 'Agen ini muncul di sini saat dibuka.')
-          : L('Or tap Contacts on a startup or BUMN you follow.', 'Atau ketuk Kontak di startup atau BUMN yang kamu ikuti.')}</span>
-      </div>
+      <h2 class="md-ph"><i aria-hidden="true"></i>${L('Lead agent', 'Agen kontak')}<em class="md-soon">${L('Coming soon', 'Segera hadir')}</em></h2>
+      <p class="md-lt" id="md-lead-h">${L('The right person at any company.', 'Orang yang tepat di perusahaan mana pun.')}</p>
+      <p class="md-lsub">${L('Name a company and a role. Get the person and how to reach them.', 'Sebut perusahaan dan jabatannya. Dapatkan orangnya dan cara menghubunginya.')}</p>
+      <div class="md-lbox" aria-hidden="true"><span>${L('Head of partnerships at Xendit', 'Head of partnerships di Xendit')}</span><b>&#8593;</b></div>
+      <button class="md-lb" type="button" data-lead="1" aria-pressed="${early ? 'true' : 'false'}">${early ? L('You’re on the list', 'Kamu sudah terdaftar') : L('Get early access', 'Minta akses awal')}</button>
+      <span class="md-lnote" id="md-lnote">${early ? L('It will show up here when it opens.', 'Agen ini muncul di sini saat dibuka.') : ''}</span>
     </section>`;
 
   const prof = `
@@ -258,17 +251,14 @@ function page({ lang = 'en', user, rows, widgets = {}, k, asked = new Set(), ask
 .md-pn{font-size:12px;line-height:1.5;color:#8A8A92;margin:0}
 .md-lead{position:relative;border-color:#000;padding-top:20px}
 .md-lead::before{content:"";position:absolute;left:-1px;right:-1px;top:-1px;height:4px;background:linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)}
-.md-lt{font-size:16px;line-height:1.4;font-weight:600;letter-spacing:-0.01em;margin:0}
-.md-ls{margin:0;padding:0;list-style:none;counter-reset:ls;display:grid;gap:8px}
-.md-ls li{counter-increment:ls;display:grid;grid-template-columns:22px minmax(0,1fr);column-gap:8px;font-size:13.5px;line-height:1.45;color:#3F3F46}
-.md-ls li::before{content:counter(ls);grid-row:span 2;width:20px;height:20px;border:1px solid #000;display:grid;place-items:center;font:400 10.5px/1 'IBM Plex Mono',monospace;color:#000}
-.md-ls b{color:#000;font-weight:600}
-.md-ln{font-size:13.5px;line-height:1.5;color:#3F3F46;margin:0;padding:10px 12px;background:#FAFAFA;border:1px solid #F1F1F1}
-.md-ln b{color:#000;font-variant-numeric:tabular-nums}
-.md-via{display:flex;flex-wrap:wrap;gap:6px;align-items:center}
-.md-via span{font:400 10.5px/1.3 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;color:#6B6B73;width:100%}
-.md-via b{font-weight:500;font-size:13px;border:1px solid #D9D9DE;padding:5px 9px;color:#27272A}
-.md-la{display:flex;flex-wrap:wrap;align-items:center;gap:8px 12px}
+.md-lt{font:500 30px/1.08 'Overused Grotesk',system-ui,sans-serif;letter-spacing:-0.03em;margin:16px 0 0;text-align:center;text-wrap:balance}
+.md-lsub{font-size:14px;line-height:1.5;color:#52525B;margin:-4px auto 0;max-width:34ch;text-align:center;text-wrap:balance}
+.md-lbox{display:flex;align-items:center;gap:10px;border:1px solid #D9D9DE;background:#FAFAFA;padding:6px 6px 6px 14px;margin-top:6px;min-width:0}
+.md-lbox span{flex:1;min-width:0;font-size:15px;color:#8A8A92;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.md-lbox b{flex:none;width:34px;height:34px;display:grid;place-items:center;background:#D9D9DE;color:#fff;font-size:17px;font-weight:500}
+.md-lead .md-lb{justify-self:center;margin-bottom:4px}
+.md-lead .md-lnote{text-align:center;margin-top:-4px}
+.md-lead .md-lnote:empty{display:none}
 .md-lb{border:1px solid #000;background:#000;color:#fff;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;padding:11px 14px;cursor:pointer;border-radius:0}
 .md-lb[aria-pressed="true"]{background:#fff;color:#000;cursor:default}
 .md-lb[aria-pressed="true"]::before{content:"\\2713  "}
