@@ -1,0 +1,378 @@
+{
+ "slug": "indonesian-startup-funding-rounds-2026",
+ "date": "2026-10-18",
+ "frozen_at": "2026-10-18T12:17:10.291Z",
+ "census_generated": "2026-10-18T06:09:39.514Z",
+ "companies": 499,
+ "rows": [
+  {
+   "id": "waresix",
+   "name": "Waresix",
+   "logo": "/assets/logo-c-waresix.42b82d22.webp",
+   "sector": "Commerce",
+   "sector_key": "commerce",
+   "city": "Jakarta Selatan",
+   "label": "Series C (~$27.4M from existing backers Granite Asia, East Ventures, Jungle Ventures, per ACRA filings)",
+   "kind": "venture",
+   "usd_m": 27.4,
+   "src": "https://www.dealstreetasia.com/stories/waresix-funding-491014",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "id": "green-rebel-foods",
+   "name": "Green Rebel Foods",
+   "logo": "/assets/logo-c-green-rebel-foods.webp",
+   "sector": "F&B & D2C",
+   "sector_key": "fnb",
+   "city": "Tangerang Selatan",
+   "label": "Series A (US$12.5M, closed Feb 2026; investors incl. Unovis NCAP Fund II, Teja Ventures, AgFunder Alternative Protein Fund I — no lead investor publicly confirmed)",
+   "kind": "venture",
+   "usd_m": 12.5,
+   "src": "https://www.techinasia.com/news/indonesian-plantbased-meat-startup-green-rebel-raises-125m",
+   "src_host": "techinasia.com"
+  },
+  {
+   "id": "jago-coffee",
+   "name": "Jago Coffee",
+   "logo": "/assets/logo-c-jago-coffee.webp",
+   "sector": "Commerce",
+   "sector_key": "commerce",
+   "city": "Jakarta Selatan",
+   "label": "Series B ($12.5M, BEENEXT)",
+   "kind": "venture",
+   "usd_m": 12.5,
+   "src": "https://insideretail.asia/2026/02/20/jago-coffee-lands-12-5m-series-b-to-fuel-mobile-expansion/",
+   "src_host": "insideretail.asia"
+  },
+  {
+   "id": "floq",
+   "name": "FLOQ",
+   "logo": "/assets/logo-c-floq.png",
+   "sector": "Crypto",
+   "sector_key": "crypto",
+   "city": "Jakarta Selatan",
+   "label": "Strategic investment (US$11.3M, Jun 2026)",
+   "kind": "venture",
+   "usd_m": 11.3,
+   "src": "https://www.dealstreetasia.com/stories/floq-raises-fresh-funding-484255",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "id": "mceasy",
+   "name": "McEasy",
+   "logo": "/assets/logo-c-mceasy.png",
+   "sector": "Logistics",
+   "sector_key": "logistics",
+   "city": "Jakarta Pusat",
+   "label": "Series B (US$9M equity and venture debt; equity led by Integra Partners, growth debt from InnoVen Capital)",
+   "kind": "venture",
+   "usd_m": 9,
+   "src": "https://news.dailysocial.id/post/mceasy-raih-pendanaan-seri-b-us9-juta-untuk-ekspansi-asia-tenggara/",
+   "src_host": "news.dailysocial.id"
+  },
+  {
+   "id": "staffinc",
+   "name": "Staffinc (formerly Sampingan)",
+   "logo": "/assets/logo-c-staffinc.webp",
+   "sector": "Other tech",
+   "sector_key": "misc",
+   "city": "Jakarta Selatan",
+   "label": "Series C ($8.1M, Altara Ventures + Mynavi)",
+   "kind": "venture",
+   "usd_m": 8.1,
+   "src": "https://asia.nikkei.com/spotlight/dealstreetasia/indonesian-job-platform-staffinc-s-series-b-1-round-hits-9.2m",
+   "src_host": "asia.nikkei.com"
+  },
+  {
+   "id": "saturdays",
+   "name": "SATURDAYS",
+   "logo": "/assets/logo-c-saturdays.png",
+   "sector": "F&B & D2C",
+   "sector_key": "fnb",
+   "city": "Jakarta Selatan",
+   "label": "Unlabelled round (US$6.3M; Openspace Ventures, Altara Ventures)",
+   "kind": "venture",
+   "usd_m": 6.3,
+   "src": "https://www.dealstreetasia.com/stories/saturdays-funding-469476",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "id": "spun",
+   "name": "SPUN",
+   "logo": "/assets/logo-c-spun.e2716018.webp",
+   "sector": "Travel & Mobility",
+   "sector_key": "travel",
+   "city": "Jakarta Selatan",
+   "label": "Seed, Jan 2026 — US$1.8M round total, led by Genesia Ventures",
+   "kind": "venture",
+   "usd_m": 1.8,
+   "src": "https://technode.global/2026/01/19/indonesias-spun-raises-1-8m-seed-funding-to-expand-ai-enabled-visa-infrastructure-across-southeast-asia/",
+   "src_host": "technode.global"
+  },
+  {
+   "id": "biki",
+   "name": "BIKI",
+   "logo": "/assets/logo-c-biki.webp",
+   "sector": "Agritech",
+   "sector_key": "agri",
+   "city": "Kabupaten Bogor",
+   "label": "Grant/partnership funding - US$450K total announced via P4G BIKI-FoodCycle Indonesia partnership (non-equity)",
+   "kind": "grant",
+   "usd_m": 0.45,
+   "src": "https://p4gpartnerships.org/pioneering-green-partnerships/all-p4g-partnerships/biki-foodcycle-indonesia",
+   "src_host": "p4gpartnerships.org"
+  },
+  {
+   "id": "nusaqu",
+   "name": "nusaQu",
+   "logo": "/assets/logo-c-nusaqu.webp",
+   "sector": "Commerce",
+   "sector_key": "commerce",
+   "city": "Kabupaten Bogor",
+   "label": "Sukuk Musyarakah Berkelanjutan Tahap IV via LBS Urun Dana securities crowdfunding (Rp 4.7B offering, ~US$290K; debt-like, not equity VC)",
+   "kind": "crowdfunding",
+   "usd_m": 0.29,
+   "src": "https://www.lbs.id/detail/nusaqu-v5tu",
+   "src_host": "lbs.id"
+  },
+  {
+   "id": "agriaku",
+   "name": "AgriAku",
+   "logo": "/assets/logo-c-agriaku.webp",
+   "sector": "Commerce",
+   "sector_key": "commerce",
+   "city": "Jakarta Pusat",
+   "label": "Convertible note",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://www.alphajwc.com/en/b2b-agriculture-marketplace-agriaku-raises-usd-35-million-series-a-funding-to-scale-its-ecosystem-and-empower-millions-of-local-farmers/",
+   "src_host": "alphajwc.com"
+  },
+  {
+   "id": "baskit",
+   "name": "Baskit",
+   "logo": "/assets/logo-c-baskit.2d8ae172.webp",
+   "sector": "Logistics",
+   "sector_key": "logistics",
+   "city": "Tangerang Selatan",
+   "label": "Series A",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://technode.global/2026/04/15/indonesias-supply-chain-growth-platform-baskit-raises-4-4m-series-a-to-expand-southeast-asia-operations/",
+   "src_host": "technode.global"
+  },
+  {
+   "id": "bumame",
+   "name": "Bumame",
+   "logo": "/assets/logo-c-bumame.webp",
+   "sector": "Healthtech",
+   "sector_key": "health",
+   "city": "Jakarta Selatan",
+   "label": "Japan Thematic Fund investment (Living Lab Ventures + Spiral Ventures), amount undisclosed",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://keuangan.kontan.co.id/news/bidik-bisnis-kesehatan-llv-dan-spiral-ventures-investasi-di-bumame-dan-two-inc",
+   "src_host": "keuangan.kontan.co.id"
+  },
+  {
+   "id": "bybit-indonesia",
+   "name": "Bybit Indonesia (NOBI)",
+   "logo": "/assets/logo-c-bybit-indonesia.cc8c834b.webp",
+   "sector": "Crypto",
+   "sector_key": "crypto",
+   "city": "Jakarta Pusat",
+   "label": "Majority acquisition by Bybit (platform live 15 Jul 2026)",
+   "kind": "acquisition",
+   "usd_m": null,
+   "src": "https://acv.vc/insights/acv-portfolio-news/3600/",
+   "src_host": "acv.vc"
+  },
+  {
+   "id": "cekat-ai",
+   "name": "Cekat.AI",
+   "logo": "/assets/logo-c-cekat-ai.png",
+   "sector": "AI & Cloud",
+   "sector_key": "ai-cloud",
+   "city": "Jakarta Selatan",
+   "label": "Seed (undisclosed)",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://www.insignia.vc/portfolio/cekat-ai",
+   "src_host": "insignia.vc"
+  },
+  {
+   "id": "dash-electric",
+   "name": "Dash Electric",
+   "logo": "/assets/logo-c-dash-electric.3b5f68db.webp",
+   "sector": "Logistics",
+   "sector_key": "logistics",
+   "city": "Jakarta Selatan",
+   "label": "Seed extension, Jan 2026 — SAGANA joined the Nov 2024 seed led by The Radical Fund; no amount ever disclosed",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://www.dashelectric.co/newsroom/news/sagana-joins-dash-electric-seed-round",
+   "src_host": "dashelectric.co"
+  },
+  {
+   "id": "doctortool",
+   "name": "DoctorTool",
+   "logo": "/assets/logo-c-doctortool.png",
+   "sector": "Healthtech",
+   "sector_key": "health",
+   "city": "Jakarta Pusat",
+   "label": "Grant (DBS Foundation Grant Programme 2025, amount undisclosed)",
+   "kind": "grant",
+   "usd_m": null,
+   "src": "https://www.dbs.com/newsroom/DBS_Foundation_disburses_IDR11_2_billion_to_5_social_enterprises_and_businesses_for_impact_to_promote_inclusion_of_vulnerable_communities_in_Indonesia",
+   "src_host": "dbs.com"
+  },
+  {
+   "id": "greenteams",
+   "name": "GreenTeams",
+   "logo": "/assets/logo-c-greenteams.webp",
+   "sector": "Climate & Sustainability",
+   "sector_key": "climate",
+   "city": "Jakarta Timur",
+   "label": "Series A extension (Global Innovation Fund; original Series A led by Oriza Greenwillow Technology Fund)",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://www.globalinnovation.fund/news/news/gif-backs-green-teams-to-tackle-air-pollution-in-indonesia",
+   "src_host": "globalinnovation.fund"
+  },
+  {
+   "id": "jumpstart",
+   "name": "JumpStart",
+   "logo": "/assets/logo-c-jumpstart.png",
+   "sector": "F&B & D2C",
+   "sector_key": "fnb",
+   "city": "Jakarta Selatan",
+   "label": "Series C — Cool Japan Fund (announced Jun 2026; amount undisclosed)",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://www.cj-fund.co.jp/en/files/press_260420-en.pdf",
+   "src_host": "cj-fund.co.jp"
+  },
+  {
+   "id": "ledgerowl",
+   "name": "LedgerOwl",
+   "logo": "/assets/logo-c-ledgerowl.webp",
+   "sector": "Fintech",
+   "sector_key": "fintech",
+   "city": "Jakarta Selatan",
+   "label": "Strategic round, Feb 2026 — led by Skystar Capital with Incubate Fund Asia, amount undisclosed (for Australian expansion)",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://skystar.vc/ledgerowl-strategic-funding/",
+   "src_host": "skystar.vc"
+  },
+  {
+   "id": "rans-entertainment",
+   "name": "RANS Entertainment",
+   "logo": "/assets/logo-c-rans-entertainment.webp",
+   "sector": "Media & Gaming",
+   "sector_key": "media",
+   "city": "Tangerang Selatan",
+   "label": "IPO (IDX: RANS) at Rp170/share, listed 10 Jul 2026",
+   "kind": "ipo",
+   "usd_m": null,
+   "src": "https://www.antaranews.com/berita/5643615/rans-entertainment-resmi-ipo-di-pasar-modal-himpun-dana-rp4293-miliar",
+   "src_host": "antaranews.com"
+  },
+  {
+   "id": "satu-dental",
+   "name": "Satu Dental",
+   "logo": "/assets/logo-c-satu-dental.png",
+   "sector": "Healthtech",
+   "sector_key": "health",
+   "city": "Jakarta Barat",
+   "label": "Insider round led by Alpha JWC (undisclosed)",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://www.liputan6.com/bisnis/read/8277242/8-startup-indonesia-masuk-forbes-asia-100-to-watch-2026",
+   "src_host": "liputan6.com"
+  },
+  {
+   "id": "sembuh-ai",
+   "name": "Sembuh AI",
+   "logo": "/assets/logo-c-sembuh-ai.png",
+   "sector": "Insurtech",
+   "sector_key": "misc",
+   "city": "Jakarta Pusat",
+   "label": "Strategic investment by TIS Inc. (S$500,000, Deep SAGE programme)",
+   "kind": "venture",
+   "usd_m": null,
+   "src": "https://www.prnewswire.com/apac/news-releases/deep-sage-plugs-execution-gap-as-global-deep-tech-start-ups-demonstrate-scalable-growth-at-inaugural-demo-day-302727036.html",
+   "src_host": "prnewswire.com"
+  }
+ ],
+ "by_kind": {
+  "venture": 18,
+  "grant": 2,
+  "crowdfunding": 1,
+  "acquisition": 1,
+  "ipo": 1
+ },
+ "venture": 18,
+ "venture_stated": 8,
+ "venture_stated_usd_m": 88.9,
+ "largest": {
+  "id": "waresix",
+  "name": "Waresix",
+  "usd_m": 27.4,
+  "label": "Series C (~$27.4M from existing backers Granite Asia, East Ventures, Jungle Ventures, per ACRA filings)"
+ },
+ "by_sector": [
+  {
+   "sector": "Commerce",
+   "n": 4
+  },
+  {
+   "sector": "F&B & D2C",
+   "n": 3
+  },
+  {
+   "sector": "Healthtech",
+   "n": 3
+  },
+  {
+   "sector": "Logistics",
+   "n": 3
+  },
+  {
+   "sector": "Crypto",
+   "n": 2
+  },
+  {
+   "sector": "Agritech",
+   "n": 1
+  },
+  {
+   "sector": "AI & Cloud",
+   "n": 1
+  },
+  {
+   "sector": "Climate & Sustainability",
+   "n": 1
+  },
+  {
+   "sector": "Fintech",
+   "n": 1
+  },
+  {
+   "sector": "Insurtech",
+   "n": 1
+  },
+  {
+   "sector": "Media & Gaming",
+   "n": 1
+  },
+  {
+   "sector": "Other tech",
+   "n": 1
+  },
+  {
+   "sector": "Travel & Mobility",
+   "n": 1
+  }
+ ]
+}

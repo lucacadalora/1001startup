@@ -1,0 +1,316 @@
+{
+ "slug": "biggest-startup-employers-indonesia-2026",
+ "date": "2026-10-18",
+ "frozen_at": "2026-10-18T12:17:10.300Z",
+ "census_generated": "2026-10-18T06:09:39.514Z",
+ "companies": 499,
+ "rows": [
+  {
+   "id": "sicepat-ekspres",
+   "name": "SiCepat Ekspres",
+   "logo": "/assets/logo-c-sicepat-ekspres.webp",
+   "sector": "Logistics",
+   "n": 3925,
+   "asof": "2026-03",
+   "kind": "revelio",
+   "src": "https://www.reveliolabs.com/companies/pt-sicepat-ekspres/employees",
+   "src_host": "reveliolabs.com",
+   "group": null
+  },
+  {
+   "id": "ninja-xpress",
+   "name": "Ninja Xpress (Ninja Van Group)",
+   "logo": "/assets/logo-c-ninja-xpress.webp",
+   "sector": "Logistics",
+   "n": 3646,
+   "asof": "2026-03",
+   "kind": "revelio",
+   "src": "https://www.reveliolabs.com/companies/ninja-xpress/employees",
+   "src_host": "reveliolabs.com",
+   "group": "Ninja Van Group"
+  },
+  {
+   "id": "gojek",
+   "name": "Gojek (GoTo Group)",
+   "logo": "/assets/logo-c-gojek.webp",
+   "sector": "Travel & Mobility",
+   "n": 3411,
+   "asof": "2026-06-30",
+   "kind": "filing",
+   "src": "https://stockanalysis.com/quote/idx/GOTO/employees/",
+   "src_host": "stockanalysis.com",
+   "group": null
+  },
+  {
+   "id": "sociolla",
+   "name": "Sociolla (Social Bella)",
+   "logo": "/assets/logo-c-sociolla.3460fee3.webp",
+   "sector": "Commerce",
+   "n": 3173,
+   "asof": "2026-03",
+   "kind": "revelio",
+   "src": "https://www.reveliolabs.com/companies/social-bella-indonesia/employees",
+   "src_host": "reveliolabs.com",
+   "group": null
+  },
+  {
+   "id": "kredivo",
+   "name": "Kredivo",
+   "logo": "/assets/logo-c-kredivo.9838c2e0.webp",
+   "sector": "Fintech",
+   "n": 2891,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://www.linkedin.com/company/kredivo-group",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "visionet",
+   "name": "VisioNet (VDI)",
+   "logo": "/assets/logo-c-visionet.webp",
+   "sector": "Other tech",
+   "n": 2862,
+   "asof": "2026-03",
+   "kind": "revelio",
+   "src": "https://www.reveliolabs.com/companies/pt-visionet-data/employees",
+   "src_host": "reveliolabs.com",
+   "group": null
+  },
+  {
+   "id": "ruangguru",
+   "name": "Ruangguru",
+   "logo": "/assets/logo-c-ruangguru.webp",
+   "sector": "Edtech",
+   "n": 2474,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://www.linkedin.com/company/ruangguru-com",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "dagangan",
+   "name": "Dagangan",
+   "logo": "/assets/logo-c-dagangan.png",
+   "sector": "Commerce",
+   "n": 2419,
+   "asof": "2026-09-28",
+   "kind": "linkedin",
+   "src": "https://id.linkedin.com/company/dagangan",
+   "src_host": "id.linkedin.com",
+   "group": null
+  },
+  {
+   "id": "anteraja",
+   "name": "Anteraja",
+   "logo": "/assets/logo-c-anteraja.86fcbced.webp",
+   "sector": "Logistics",
+   "n": 2330,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://linkedin.com/company/anteraja",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "blibli",
+   "name": "Blibli",
+   "logo": "/assets/logo-c-blibli.e40c35e5.webp",
+   "sector": "Commerce",
+   "n": 2299,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://www.linkedin.com/company/blibli",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "tiket-com",
+   "name": "tiket.com",
+   "logo": "/assets/logo-c-tiket-com.52fc17f6.webp",
+   "sector": "Travel & Mobility",
+   "n": 2182,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://ca.linkedin.com/company/pt-global-tiket-network",
+   "src_host": "ca.linkedin.com",
+   "group": null
+  },
+  {
+   "id": "traveloka",
+   "name": "Traveloka",
+   "logo": "/assets/logo-c-traveloka.webp",
+   "sector": "Travel & Mobility",
+   "n": 2082,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://id.linkedin.com/company/traveloka",
+   "src_host": "id.linkedin.com",
+   "group": null
+  },
+  {
+   "id": "tomoro-coffee",
+   "name": "Tomoro Coffee",
+   "logo": "/assets/logo-c-tomoro-coffee.30c3e98f.webp",
+   "sector": "F&B & D2C",
+   "n": 1785,
+   "asof": "2026-08-30",
+   "kind": "linkedin",
+   "src": "https://www.linkedin.com/company/tomoro-coffee",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "fithub",
+   "name": "FIT HUB (FitHub)",
+   "logo": "/assets/logo-c-fithub.2253858b.webp",
+   "sector": "Healthtech",
+   "n": 1356,
+   "asof": "2026-08-30",
+   "kind": "linkedin",
+   "src": "https://www.linkedin.com/company/fit-hub-id/",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "idexpress",
+   "name": "iDexpress (ID Express)",
+   "logo": "/assets/logo-c-idexpress.e7a5fdd7.webp",
+   "sector": "Logistics",
+   "n": 1278,
+   "asof": "2026-08-30",
+   "kind": "linkedin",
+   "src": "https://id.linkedin.com/company/idexpress",
+   "src_host": "id.linkedin.com",
+   "group": null
+  },
+  {
+   "id": "mekari",
+   "name": "Mekari",
+   "logo": "/assets/logo-c-mekari.webp",
+   "sector": "SaaS",
+   "n": 1195,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://id.linkedin.com/company/mekari",
+   "src_host": "id.linkedin.com",
+   "group": null
+  },
+  {
+   "id": "lion-parcel",
+   "name": "Lion Parcel",
+   "logo": "/assets/logo-c-lion-parcel.webp",
+   "sector": "Logistics",
+   "n": 1119,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://linkedin.com/company/lion-parcel",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "astro",
+   "name": "Astro",
+   "logo": "/assets/logo-c-astro.5cd132a1.webp",
+   "sector": "Commerce",
+   "n": 994,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://id.linkedin.com/company/astronautsid",
+   "src_host": "id.linkedin.com",
+   "group": null
+  },
+  {
+   "id": "shipper",
+   "name": "Shipper",
+   "logo": "/assets/logo-c-shipper.b2148f2b.webp",
+   "sector": "Logistics",
+   "n": 980,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://www.linkedin.com/company/shipper-indonesia",
+   "src_host": "linkedin.com",
+   "group": null
+  },
+  {
+   "id": "pintu",
+   "name": "Pintu",
+   "logo": "/assets/logo-c-pintu.webp",
+   "sector": "Crypto",
+   "n": 964,
+   "asof": "2026-08-29",
+   "kind": "linkedin",
+   "src": "https://www.linkedin.com/company/pintu-indonesia",
+   "src_host": "linkedin.com",
+   "group": null
+  }
+ ],
+ "left_out": [
+  {
+   "id": "j-t-express",
+   "name": "J&T Express (J&T Global Express)",
+   "n": 30000,
+   "asof": null,
+   "why": "undated"
+  },
+  {
+   "id": "amartha",
+   "name": "Amartha",
+   "n": 10000,
+   "asof": "2025-08-26",
+   "why": "old"
+  },
+  {
+   "id": "kopi-kenangan",
+   "name": "Kopi Kenangan (Kenangan Brands)",
+   "n": 5000,
+   "asof": null,
+   "why": "undated"
+  },
+  {
+   "id": "fore-coffee",
+   "name": "Fore Coffee",
+   "n": 4300,
+   "asof": "2025-12-31",
+   "why": "old"
+  },
+  {
+   "id": "grab-indonesia",
+   "name": "Grab Indonesia (Grab Holdings)",
+   "n": 2350,
+   "asof": null,
+   "why": "undated"
+  },
+  {
+   "id": "lazada-indonesia",
+   "name": "Lazada Indonesia (Alibaba Group)",
+   "n": 2000,
+   "asof": null,
+   "why": "undated"
+  },
+  {
+   "id": "amar-bank",
+   "name": "Amar Bank",
+   "n": 1585,
+   "asof": null,
+   "why": "undated"
+  },
+  {
+   "id": "haus",
+   "name": "Haus!",
+   "n": 1300,
+   "asof": "2022-04",
+   "why": "old"
+  }
+ ],
+ "kinds": {
+  "revelio": 4,
+  "filing": 1,
+  "linkedin": 15
+ },
+ "ranked_total": 450,
+ "with_figure": 489,
+ "top_sum": 43365,
+ "all_sum": 104708
+}

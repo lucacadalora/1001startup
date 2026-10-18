@@ -1,0 +1,597 @@
+{
+ "slug": "indonesian-startups-that-shut-down",
+ "date": "2026-10-18",
+ "frozen_at": "2026-10-18T12:17:10.307Z",
+ "census_generated": "2026-10-18T06:09:39.514Z",
+ "companies": 499,
+ "rows": [
+  {
+   "name": "CROWDE",
+   "slug": "crowde",
+   "sector": "Agritech",
+   "city": "Jakarta Selatan",
+   "founded": "2016",
+   "ended": "2025-11",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 1,
+   "src": "https://ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Documents/Pages/CIU-PT-Crowde-Membangun-Bangsa/SP%20191%20OJK%20Cabut%20Izin%20Usaha%20PT%20Crowde%20Membangun%20Bangsa.pdf",
+   "src_host": "ojk.go.id"
+  },
+  {
+   "name": "Delegasi",
+   "slug": "delegasi",
+   "sector": "SaaS",
+   "city": "Bandung",
+   "founded": "2021",
+   "ended": "2025-08",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 0.125,
+   "src": "https://www.linkedin.com/in/anshorimuslim",
+   "src_host": "linkedin.com"
+  },
+  {
+   "name": "eFishery",
+   "slug": "efishery",
+   "sector": "Agritech",
+   "city": "Bandung",
+   "founded": "2013",
+   "ended": "2025-02",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": 415,
+   "src": "https://www.dealstreetasia.com/stories/efishery-co-founders-suspended-by-board-423514",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "name": "RAENA",
+   "slug": "raena",
+   "sector": "Commerce",
+   "city": "Jakarta Selatan",
+   "founded": "2019",
+   "ended": "2025-02",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 21,
+   "src": "https://www.dealstreetasia.com/stories/raena-shuts-down-429425",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "name": "Ula",
+   "slug": "ula",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2025-02",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 117.5,
+   "src": "https://fintechnews.sg/107515/indonesia/indonesia-ula-shutdown-investor-payout/",
+   "src_host": "fintechnews.sg"
+  },
+  {
+   "name": "GetPlus",
+   "slug": "getplus",
+   "sector": "Marketing tech",
+   "city": "Jakarta",
+   "founded": "2018",
+   "ended": "2024-12",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://katadata.co.id/digital/startup/670dfe96440ac/startup-tutup-bertambah-di-indonesia-getplus-setop-operasi-desember",
+   "src_host": "katadata.co.id"
+  },
+  {
+   "name": "Gravel",
+   "slug": "gravel",
+   "sector": "Proptech",
+   "city": "Jakarta",
+   "founded": "2019",
+   "ended": "2024-12",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": 14,
+   "src": "https://youngster.id/headline/bukan-pasar-tapi-ego-pribadi-para-founder-penyebab-runtuhnya-startup-gravel/",
+   "src_host": "youngster.id"
+  },
+  {
+   "name": "Investree",
+   "slug": "investree",
+   "sector": "Fintech",
+   "city": "Jakarta Selatan",
+   "founded": "2015",
+   "ended": "2024-10",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 254.5,
+   "src": "https://ojk.go.id/id/berita-dan-kegiatan/pengumuman/Pages/OJK-Cabut-Izin-Usaha-Penyelenggara-LPBBTI-PT-Investree-Radhika-Jaya.aspx",
+   "src_host": "ojk.go.id"
+  },
+  {
+   "name": "Octopus",
+   "slug": "octopus",
+   "sector": "Climate",
+   "city": "Kota Makassar (founding base; later ran a Jakarta Pusat office)",
+   "founded": "2020",
+   "ended": "2024-06",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": 5,
+   "src": "https://techcrunch.com/2022/07/06/octopus-keeps-stuff-out-of-indonesias-crowded-landfills/",
+   "src_host": "techcrunch.com"
+  },
+  {
+   "name": "Zipmex Indonesia",
+   "slug": "zipmex-indonesia",
+   "sector": "Crypto",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2024-06",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://id.beincrypto.com/zipmex-indonesia-tutup-operasi-bappepti/",
+   "src_host": "id.beincrypto.com"
+  },
+  {
+   "name": "TaniFund",
+   "slug": "tanifund",
+   "sector": "Fintech",
+   "city": "Jakarta Selatan",
+   "founded": "2017",
+   "ended": "2024-05",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Documents/Pages/OJK-Cabut-Izin-Usaha-PT-Tani-Fund-Madani-Indonesia/SP%20OJK%20Cabut%20Izin%20Usaha%20PT%20Tani%20Fund%20Madani%20Indonesia.pdf",
+   "src_host": "ojk.go.id"
+  },
+  {
+   "name": "Pitik",
+   "slug": "pitik",
+   "sector": "Agritech",
+   "city": "Kabupaten Tangerang",
+   "founded": "2021",
+   "ended": "2024-04",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": 14,
+   "src": "https://www.dealstreetasia.com/stories/pitik-ceases-operations-403415",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "name": "EdenFarm",
+   "slug": "edenfarm",
+   "sector": "Agritech",
+   "city": "Jakarta",
+   "founded": "2017",
+   "ended": "2024-02",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": 32.5,
+   "src": "https://www.dealstreetasia.com/stories/edenfarm-acquisition-talks-385363",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "name": "Pegipegi",
+   "slug": "pegipegi",
+   "sector": "Travel",
+   "city": "Jakarta Barat",
+   "founded": "2012",
+   "ended": "2023-12",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://teknologi.bisnis.com/read/20231212/266/1723060/pegipegi-pamit-usai-11-tahun-beroperasi-sayonara-tiket-murah",
+   "src_host": "teknologi.bisnis.com"
+  },
+  {
+   "name": "Ritase",
+   "slug": "ritase",
+   "sector": "Logistics",
+   "city": "Jakarta",
+   "founded": "2016",
+   "ended": "2023-11",
+   "fate": "acquired-then-closed",
+   "confidence": "reported",
+   "usd_m": 12.9,
+   "src": "https://www.dealstreetasia.com/stories/meratus-ritase-deal-372048",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "name": "Rumah.com",
+   "slug": "rumah-com",
+   "sector": "Proptech",
+   "city": "Jakarta",
+   "founded": null,
+   "ended": "2023-11",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.rumah.com/",
+   "src_host": "rumah.com"
+  },
+  {
+   "name": "Prixa",
+   "slug": "prixa",
+   "sector": "Healthtech",
+   "city": "Jakarta",
+   "founded": "2019",
+   "ended": "2023-10",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": null,
+   "src": "https://www.linkedin.com/posts/sebastianevan_surat-terbuka-untuk-prixaai-james-roring-activity-7143423180118908928-EgD5",
+   "src_host": "linkedin.com"
+  },
+  {
+   "name": "Finantier",
+   "slug": "finantier",
+   "sector": "Fintech",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2023-09",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.dealstreetasia.com/stories/finantier-said-to-have-shut-down-363369",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "name": "Jembatan Emas",
+   "slug": "jembatan-emas",
+   "sector": "Fintech",
+   "city": "Jakarta Selatan",
+   "founded": "2018",
+   "ended": "2023-09",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.ojk.go.id/id/berita-dan-kegiatan/siaran-pers/Pages/Pengembalian-Izin-Dua-Penyelenggara-Layanan-Pendanaan-Bersama-Berbasis-Teknologi-Informasi-LPBBTI.aspx",
+   "src_host": "ojk.go.id"
+  },
+  {
+   "name": "KitaBeli",
+   "slug": "kitabeli",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2023-09",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": 30,
+   "src": "https://www.dealstreetasia.com/stories/kitabeli-terminates-operations-360801",
+   "src_host": "dealstreetasia.com"
+  },
+  {
+   "name": "DishServe",
+   "slug": "dishserve",
+   "sector": "F&B",
+   "city": "Jakarta",
+   "founded": null,
+   "ended": "2023-05",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.linkedin.com/posts/rishabhsinghi_startups-career-activity-7058681252895199233-HIqP",
+   "src_host": "linkedin.com"
+  },
+  {
+   "name": "Lummo (BukuKas)",
+   "slug": "lummo",
+   "sector": "SaaS",
+   "city": "Jakarta",
+   "founded": "2019",
+   "ended": "2023-05",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 99,
+   "src": "https://www.cnbcindonesia.com/tech/20230515080100-37-437245/bukukas-tutup-walau-dulu-punya-rp-114-triliun-nasib-lummo",
+   "src_host": "cnbcindonesia.com"
+  },
+  {
+   "name": "Tumbasin",
+   "slug": "tumbasin",
+   "sector": "Commerce",
+   "city": "Kota Semarang",
+   "founded": "2017",
+   "ended": "2023-05",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.linkedin.com/posts/tumbasin_halo-semua-pelanggan-setia-tumbasin-terima-activity-7059336370690936832-l9ZR",
+   "src_host": "linkedin.com"
+  },
+  {
+   "name": "Fave Indonesia",
+   "slug": "fave-indonesia",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": null,
+   "ended": "2023-04",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.marketing-interactive.com/fave-abruptly-exits-indonesian-market-as-it-looks-to-focus-on-other-regions",
+   "src_host": "marketing-interactive.com"
+  },
+  {
+   "name": "Danafix",
+   "slug": "danafix",
+   "sector": "Fintech",
+   "city": "Jakarta Selatan",
+   "founded": null,
+   "ended": "2023-03",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.ojk.go.id/en/berita-dan-kegiatan/pengumuman/Documents/PENG%20-%20FINANCIAL%20TECHNOLOGY%20LENDING%20COMPANY%20PT%20DANAFIX%20ONLINE%20INDONESIA%20BUSINESS%20LICENSE%20REVOCATION.pdf",
+   "src_host": "ojk.go.id"
+  },
+  {
+   "name": "JD.ID",
+   "slug": "jd-id",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2023-03",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.cnnindonesia.com/ekonomi/20230131070229-92-906840/jdid-umumkan-bakal-tutup-permanen-pesanan-terakhir-15-februari",
+   "src_host": "cnnindonesia.com"
+  },
+  {
+   "name": "RateS",
+   "slug": "rates",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2016",
+   "ended": "2023-02",
+   "fate": "closed",
+   "confidence": "reported",
+   "usd_m": null,
+   "src": "https://katadata.co.id/digital/startup/640190585dc2a/startup-social-commerce-rates-tutup-semua-gudang-di-indonesia",
+   "src_host": "katadata.co.id"
+  },
+  {
+   "name": "CoHive",
+   "slug": "cohive",
+   "sector": "Proptech",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2023-01",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 33.5,
+   "src": "https://finance.detik.com/berita-ekonomi-bisnis/d-6545610/startup-co-working-space-cohive-diputus-pailit",
+   "src_host": "finance.detik.com"
+  },
+  {
+   "name": "Bananas",
+   "slug": "bananas",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2022",
+   "ended": "2022-10",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 1.5,
+   "src": "https://teknologi.bisnis.com/read/20221015/266/1587767/startup-bananas-baru-10-bulan-sudah-tutup-layanan-ini-penyebabnya",
+   "src_host": "teknologi.bisnis.com"
+  },
+  {
+   "name": "Fabelio",
+   "slug": "fabelio",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2022-10",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 15.5,
+   "src": "https://www.cnbcindonesia.com/tech/20221006135438-37-377718/resmi-startup-furniture-fabelio-dinyatakan-pailit",
+   "src_host": "cnbcindonesia.com"
+  },
+  {
+   "name": "Beres.id",
+   "slug": "beres-id",
+   "sector": "Home services",
+   "city": "Kota Depok",
+   "founded": "2016",
+   "ended": "2022-06",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://money.kompas.com/read/2022/06/08/114313326/startup-tumbang-lagi-kali-ini-giliran-beresid-pamit-mulai-30-juni",
+   "src_host": "money.kompas.com"
+  },
+  {
+   "name": "Mobile Premier League (MPL) Indonesia",
+   "slug": "mobile-premier-league-indonesia",
+   "sector": "Gaming",
+   "city": "Jakarta",
+   "founded": null,
+   "ended": "2022-06",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.cnbcindonesia.com/tech/20220602115116-37-343711/status-unicorn-startup-ini-phk-100-karyawan-tutup-di-ri",
+   "src_host": "cnbcindonesia.com"
+  },
+  {
+   "name": "UangTeman",
+   "slug": "uangteman",
+   "sector": "Fintech",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2022-03",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.cnnindonesia.com/ekonomi/20220317144150-78-772621/ojk-cabut-izin-uangteman-pinjol-legal-tinggal-102-per-2-maret",
+   "src_host": "cnnindonesia.com"
+  },
+  {
+   "name": "Sorabel (Sale Stock)",
+   "slug": "sorabel",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2014",
+   "ended": "2020-07",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": 27,
+   "src": "https://kr-asia.com/indonesian-fashion-e-commerce-site-sorabel-files-for-liquidation",
+   "src_host": "kr-asia.com"
+  },
+  {
+   "name": "Airy",
+   "slug": "airy",
+   "sector": "Travel",
+   "city": "Jakarta",
+   "founded": "2015",
+   "ended": "2020-05",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.antaranews.com/berita/1493896/airy-rooms-berhenti-beroperasi-akhir-bulan-ini",
+   "src_host": "antaranews.com"
+  },
+  {
+   "name": "Stoqo",
+   "slug": "stoqo",
+   "sector": "Commerce",
+   "city": "Jakarta",
+   "founded": "2017",
+   "ended": "2020-04",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://peluangusaha.kontan.co.id/news/efek-psbb-penjual-bahan-pokok-online-stoqo-tutup-operasi-sementara",
+   "src_host": "peluangusaha.kontan.co.id"
+  },
+  {
+   "name": "Qlapa",
+   "slug": "qlapa",
+   "sector": "Commerce",
+   "city": "Jakarta Barat",
+   "founded": "2015",
+   "ended": "2019-03",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "usd_m": null,
+   "src": "https://www.cnbcindonesia.com/tech/20190304095607-37-58660/duh-startup-marketplace-kerajinan-tangan-ri-ini-harus-tutup",
+   "src_host": "cnbcindonesia.com"
+  }
+ ],
+ "by_year": {
+  "2019": 1,
+  "2020": 3,
+  "2022": 5,
+  "2023": 15,
+  "2024": 8,
+  "2025": 5
+ },
+ "first_year": 2019,
+ "last_year": 2025,
+ "worst_year": "2023",
+ "worst_n": 15,
+ "by_sector": [
+  {
+   "sector": "Commerce",
+   "n": 12
+  },
+  {
+   "sector": "Fintech",
+   "n": 6
+  },
+  {
+   "sector": "Agritech",
+   "n": 4
+  },
+  {
+   "sector": "Proptech",
+   "n": 3
+  },
+  {
+   "sector": "SaaS",
+   "n": 2
+  },
+  {
+   "sector": "Travel",
+   "n": 2
+  },
+  {
+   "sector": "Climate",
+   "n": 1
+  },
+  {
+   "sector": "Crypto",
+   "n": 1
+  },
+  {
+   "sector": "F&B",
+   "n": 1
+  },
+  {
+   "sector": "Gaming",
+   "n": 1
+  },
+  {
+   "sector": "Healthtech",
+   "n": 1
+  },
+  {
+   "sector": "Home services",
+   "n": 1
+  },
+  {
+   "sector": "Logistics",
+   "n": 1
+  },
+  {
+   "sector": "Marketing tech",
+   "n": 1
+  }
+ ],
+ "confirmed": 28,
+ "reported": 9,
+ "funded": 17,
+ "funded_usd_m": 1094,
+ "top_funded": [
+  {
+   "name": "eFishery",
+   "slug": "efishery",
+   "usd_m": 415,
+   "ended": "2025-02"
+  },
+  {
+   "name": "Investree",
+   "slug": "investree",
+   "usd_m": 254.5,
+   "ended": "2024-10"
+  },
+  {
+   "name": "Ula",
+   "slug": "ula",
+   "usd_m": 117.5,
+   "ended": "2025-02"
+  },
+  {
+   "name": "Lummo (BukuKas)",
+   "slug": "lummo",
+   "usd_m": 99,
+   "ended": "2023-05"
+  },
+  {
+   "name": "CoHive",
+   "slug": "cohive",
+   "usd_m": 33.5,
+   "ended": "2023-01"
+  }
+ ],
+ "no_source": []
+}

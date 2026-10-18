@@ -1,0 +1,477 @@
+{
+ "slug": "most-active-startup-investors-indonesia",
+ "date": "2026-10-18",
+ "frozen_at": "2026-10-18T12:17:10.301Z",
+ "census_generated": "2026-10-18T06:09:39.514Z",
+ "companies": 499,
+ "rows": [
+  {
+   "slug": "east-ventures",
+   "name": "East Ventures",
+   "n": 69,
+   "top_sector": "Fintech",
+   "top_sector_n": 11,
+   "rounds_2026": [
+    {
+     "id": "mceasy",
+     "name": "McEasy"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "traveloka",
+     "name": "Traveloka",
+     "logo": "/assets/logo-c-traveloka.webp"
+    },
+    {
+     "id": "sociolla",
+     "name": "Sociolla (Social Bella)",
+     "logo": "/assets/logo-c-sociolla.3460fee3.webp"
+    },
+    {
+     "id": "bibit",
+     "name": "Bibit",
+     "logo": "/assets/logo-c-bibit.webp"
+    }
+   ]
+  },
+  {
+   "slug": "alpha-jwc-ventures",
+   "name": "Alpha JWC Ventures",
+   "n": 22,
+   "top_sector": "Commerce",
+   "top_sector_n": 5,
+   "rounds_2026": [
+    {
+     "id": "agriaku",
+     "name": "AgriAku"
+    },
+    {
+     "id": "satu-dental",
+     "name": "Satu Dental"
+    },
+    {
+     "id": "bumame",
+     "name": "Bumame"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "modalku",
+     "name": "Modalku (Funding Societies)",
+     "logo": "/assets/logo-c-modalku.webp"
+    },
+    {
+     "id": "sayurbox",
+     "name": "Sayurbox",
+     "logo": "/assets/logo-c-sayurbox.webp"
+    },
+    {
+     "id": "gudangada",
+     "name": "GudangAda",
+     "logo": "/assets/logo-c-gudangada.04e7ae43.webp"
+    }
+   ]
+  },
+  {
+   "slug": "gdp-venture",
+   "name": "GDP Venture",
+   "n": 22,
+   "top_sector": "Media & Gaming",
+   "top_sector_n": 7,
+   "rounds_2026": [
+    {
+     "id": "jumpstart",
+     "name": "JumpStart"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "halodoc",
+     "name": "Halodoc",
+     "logo": "/assets/logo-c-halodoc.f449fcd2.webp"
+    },
+    {
+     "id": "idn",
+     "name": "IDN (formerly IDN Media)",
+     "logo": "/assets/logo-c-idn.webp"
+    },
+    {
+     "id": "dekoruma",
+     "name": "Dekoruma",
+     "logo": "/assets/logo-c-dekoruma.webp"
+    }
+   ]
+  },
+  {
+   "slug": "y-combinator",
+   "name": "Y Combinator",
+   "n": 22,
+   "top_sector": "Fintech",
+   "top_sector_n": 8,
+   "rounds_2026": [],
+   "biggest": [
+    {
+     "id": "fazz",
+     "name": "FAZZ",
+     "logo": "/assets/logo-c-fazz.webp"
+    },
+    {
+     "id": "super",
+     "name": "Super",
+     "logo": "/assets/logo-c-super.png"
+    },
+    {
+     "id": "bukuwarung",
+     "name": "BukuWarung",
+     "logo": "/assets/logo-c-bukuwarung.webp"
+    }
+   ]
+  },
+  {
+   "slug": "init-6",
+   "name": "Init-6",
+   "n": 21,
+   "top_sector": "Fintech",
+   "top_sector_n": 5,
+   "rounds_2026": [
+    {
+     "id": "ledgerowl",
+     "name": "LedgerOwl"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "skorlife",
+     "name": "Skorlife (Skor Technologies)",
+     "logo": "/assets/logo-c-skorlife.webp"
+    },
+    {
+     "id": "ringkas",
+     "name": "Ringkas",
+     "logo": "/assets/logo-c-ringkas.2c070128.webp"
+    },
+    {
+     "id": "waste4change",
+     "name": "Waste4Change",
+     "logo": "/assets/logo-c-waste4change.webp"
+    }
+   ]
+  },
+  {
+   "slug": "ac-ventures",
+   "name": "AC Ventures",
+   "n": 20,
+   "top_sector": "Fintech",
+   "top_sector_n": 5,
+   "rounds_2026": [
+    {
+     "id": "bybit-indonesia",
+     "name": "Bybit Indonesia (NOBI)"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "aruna",
+     "name": "Aruna",
+     "logo": "/assets/logo-c-aruna.webp"
+    },
+    {
+     "id": "vida",
+     "name": "VIDA",
+     "logo": "/assets/logo-c-vida.webp"
+    },
+    {
+     "id": "esb",
+     "name": "ESB",
+     "logo": "/assets/logo-c-esb.webp"
+    }
+   ]
+  },
+  {
+   "slug": "mdi-ventures",
+   "name": "MDI Ventures",
+   "n": 20,
+   "top_sector": "Fintech",
+   "top_sector_n": 5,
+   "rounds_2026": [
+    {
+     "id": "agriaku",
+     "name": "AgriAku"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "sicepat-ekspres",
+     "name": "SiCepat Ekspres",
+     "logo": "/assets/logo-c-sicepat-ekspres.webp"
+    },
+    {
+     "id": "koinworks",
+     "name": "KoinWorks",
+     "logo": "/assets/logo-c-koinworks.webp"
+    },
+    {
+     "id": "evermos",
+     "name": "Evermos",
+     "logo": "/assets/logo-c-evermos.webp"
+    }
+   ]
+  },
+  {
+   "slug": "antler",
+   "name": "Antler",
+   "n": 19,
+   "top_sector": "AI & Cloud",
+   "top_sector_n": 4,
+   "rounds_2026": [
+    {
+     "id": "staffinc",
+     "name": "Staffinc (formerly Sampingan)"
+    },
+    {
+     "id": "spun",
+     "name": "SPUN"
+    },
+    {
+     "id": "dash-electric",
+     "name": "Dash Electric"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "staffinc",
+     "name": "Staffinc (formerly Sampingan)",
+     "logo": "/assets/logo-c-staffinc.webp"
+    },
+    {
+     "id": "brick",
+     "name": "Brick",
+     "logo": "/assets/logo-c-brick.webp"
+    },
+    {
+     "id": "base",
+     "name": "BASE",
+     "logo": "/assets/logo-c-base.988bcfd4.webp"
+    }
+   ]
+  },
+  {
+   "slug": "intudo-ventures",
+   "name": "Intudo Ventures",
+   "n": 18,
+   "top_sector": "Climate & Sustainability",
+   "top_sector_n": 3,
+   "rounds_2026": [
+    {
+     "id": "jago-coffee",
+     "name": "Jago Coffee"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "pintu",
+     "name": "Pintu",
+     "logo": "/assets/logo-c-pintu.webp"
+    },
+    {
+     "id": "pinhome",
+     "name": "Pinhome",
+     "logo": "/assets/logo-c-pinhome.webp"
+    },
+    {
+     "id": "kargo-technologies",
+     "name": "Kargo Technologies",
+     "logo": "/assets/logo-c-kargo-technologies.webp"
+    }
+   ]
+  },
+  {
+   "slug": "insignia-ventures-partners",
+   "name": "Insignia Ventures Partners",
+   "n": 15,
+   "top_sector": "Agritech",
+   "top_sector_n": 3,
+   "rounds_2026": [
+    {
+     "id": "cekat-ai",
+     "name": "Cekat.AI"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "fazz",
+     "name": "FAZZ",
+     "logo": "/assets/logo-c-fazz.webp"
+    },
+    {
+     "id": "honest",
+     "name": "Honest",
+     "logo": "/assets/logo-c-honest.webp"
+    },
+    {
+     "id": "super",
+     "name": "Super",
+     "logo": "/assets/logo-c-super.png"
+    }
+   ]
+  },
+  {
+   "slug": "skystar-capital",
+   "name": "Skystar Capital",
+   "n": 15,
+   "top_sector": "Commerce",
+   "top_sector_n": 4,
+   "rounds_2026": [
+    {
+     "id": "bybit-indonesia",
+     "name": "Bybit Indonesia (NOBI)"
+    },
+    {
+     "id": "ledgerowl",
+     "name": "LedgerOwl"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "sirclo",
+     "name": "Sirclo",
+     "logo": "/assets/logo-c-sirclo.164728a8.webp"
+    },
+    {
+     "id": "julo",
+     "name": "JULO",
+     "logo": "/assets/logo-c-julo.aac17b7c.webp"
+    },
+    {
+     "id": "dekoruma",
+     "name": "Dekoruma",
+     "logo": "/assets/logo-c-dekoruma.webp"
+    }
+   ]
+  },
+  {
+   "slug": "beenext",
+   "name": "BEENEXT",
+   "n": 13,
+   "top_sector": "Commerce",
+   "top_sector_n": 6,
+   "rounds_2026": [
+    {
+     "id": "jago-coffee",
+     "name": "Jago Coffee"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "happyfresh",
+     "name": "HappyFresh",
+     "logo": "/assets/logo-c-happyfresh.png"
+    },
+    {
+     "id": "esb",
+     "name": "ESB",
+     "logo": "/assets/logo-c-esb.webp"
+    },
+    {
+     "id": "segari",
+     "name": "Segari",
+     "logo": "/assets/logo-c-segari.527e7a82.webp"
+    }
+   ]
+  },
+  {
+   "slug": "smdv",
+   "name": "SMDV",
+   "n": 13,
+   "top_sector": "Media & Gaming",
+   "top_sector_n": 3,
+   "rounds_2026": [],
+   "biggest": [
+    {
+     "id": "sirclo",
+     "name": "Sirclo",
+     "logo": "/assets/logo-c-sirclo.164728a8.webp"
+    },
+    {
+     "id": "aruna",
+     "name": "Aruna",
+     "logo": "/assets/logo-c-aruna.webp"
+    },
+    {
+     "id": "fore-coffee",
+     "name": "Fore Coffee",
+     "logo": "/assets/logo-c-fore-coffee.0c47938f.webp"
+    }
+   ]
+  },
+  {
+   "slug": "iterative",
+   "name": "Iterative",
+   "n": 12,
+   "top_sector": "Fintech",
+   "top_sector_n": 4,
+   "rounds_2026": [
+    {
+     "id": "spun",
+     "name": "SPUN"
+    },
+    {
+     "id": "sembuh-ai",
+     "name": "Sembuh AI"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "blitz-electric-mobility",
+     "name": "Blitz Electric Mobility",
+     "logo": "/assets/logo-c-blitz-electric-mobility.webp"
+    },
+    {
+     "id": "spun",
+     "name": "SPUN",
+     "logo": "/assets/logo-c-spun.e2716018.webp"
+    },
+    {
+     "id": "goro",
+     "name": "GORO",
+     "logo": "/assets/logo-c-goro.f032dda8.png"
+    }
+   ]
+  },
+  {
+   "slug": "openspace-ventures",
+   "name": "Openspace Ventures",
+   "n": 11,
+   "top_sector": "F&B & D2C",
+   "top_sector_n": 2,
+   "rounds_2026": [
+    {
+     "id": "saturdays",
+     "name": "SATURDAYS"
+    }
+   ],
+   "biggest": [
+    {
+     "id": "halodoc",
+     "name": "Halodoc",
+     "logo": "/assets/logo-c-halodoc.f449fcd2.webp"
+    },
+    {
+     "id": "pluang",
+     "name": "Pluang",
+     "logo": "/assets/logo-c-pluang.webp"
+    },
+    {
+     "id": "broom",
+     "name": "Broom",
+     "logo": "/assets/logo-c-broom.webp"
+    }
+   ]
+  }
+ ],
+ "named": 632,
+ "companies_with_named": 392,
+ "one_company": 462,
+ "five_plus": 44
+}

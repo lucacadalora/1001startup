@@ -177,7 +177,7 @@ fastify.addHook('onRequest', async (req, reply) => {
    ("this page has no Indonesian version yet"). Add a route's pattern here the
    day its view learns lang. */
 const ID_READY = new Set(['/', '/startups', '/closed', '/map', '/company/:id', '/jakarta',
-  '/news', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
+  '/news', '/news/:slug', '/research', '/research/:slug', '/chain', '/chain/:id', '/chain/x/:slug', '/model', '/coverage',
   '/investors', '/investor/:slug', '/stats', '/about', '/report', '/report/:edition', '/sector', '/sector/:key', '/city/:slug', '/unicorn',
   '/leads', '/leads/login', '/leads/history', '/leads/history/:id', '/ask', '/signin', '/me']);
 fastify.addHook('preHandler', (req, reply, done) => {
@@ -307,7 +307,7 @@ const invalidateWorld = () => { worldCache.at = 0; };
 const districtName = (key) => (layout.DISTRICTS.find((d) => d.key === key) || {}).name || 'The Commons';
 
 const pages1001 = require('./views/pages1001');
-const news1001 = require('./views/news1001');
+const blog1001 = require('./views/blog1001');
 const research1001 = require('./views/research1001');
 const closed1001 = require('./views/closed1001');
 const company1001 = require('./views/company1001');
@@ -647,12 +647,6 @@ fastify.get('/data/search-index.json', async (req, reply) => {
   if (req.headers['if-none-match'] === tag) return reply.code(304).send();
   return reply.type('application/json').send(body);
 });
-/* 1001startup.id only: THE WIRE — automated startup journalism over the
-   census. public/data/census-news.json is written ONLY by
-   scripts/census-news.py (cron); mtime-cached like the census itself, so a
-   pipeline publish goes live on the next request with no service restart. */
-const NEWS_FILE = path.join(__dirname, 'public', 'data', 'census-news.json');
-let newsCache = { mtime: 0, data: null };
 /* Per-company OG cards — data/og-cards.json {id: '/assets/og-c-<id>-<hash>.png'},
    written only by scripts/og-company.py (single-writer side file). Missing file
    or missing id -> the site-wide card. */
@@ -666,15 +660,6 @@ function ogCardsData() {
     catch { /* mid-write: keep the last good copy */ }
   }
   return ogcCache.data;
-}
-function newsData() {
-  let st;
-  try { st = fs.statSync(NEWS_FILE); } catch { return newsCache.data; }
-  if (st.mtimeMs !== newsCache.mtime) {
-    try { newsCache = { mtime: st.mtimeMs, data: JSON.parse(fs.readFileSync(NEWS_FILE, 'utf8')) }; }
-    catch { /* mid-write: keep the last good copy */ }
-  }
-  return newsCache.data;
 }
 /* The relationship graph behind /chain and the company card's supply-chain
    block. Same mtime-cached shape as the census and the news file; written by
@@ -714,9 +699,18 @@ fastify.get('/research/:slug', async (req, reply) => {
   reply.type('text/html').send(research1001.article({ lang: langOf(req) }));
 });
 
+/* 1001startup.id only: /news = census data stories (views/blog1001.js; the
+   automated wire it replaced was taken down 18 Oct 2026). A post is public
+   once scripts/news-snapshot.js has frozen data/news/<slug>.json. */
 fastify.get('/news', async (req, reply) => {
   if (!is1001(req)) return reply.redirect('/');
-  reply.type('text/html').send(news1001.news({ data: censusData(), news: newsData(), lang: langOf(req) }));
+  reply.type('text/html').send(blog1001.index({ lang: langOf(req) }));
+});
+fastify.get('/news/:slug', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const html = blog1001.post({ slug: String((req.params && req.params.slug) || ''), lang: langOf(req) });
+  if (!html) return reply.code(302).header('location', langPfx(req) + '/news').send();
+  reply.type('text/html').send(html);
 });
 /* 1001startup.id only: the shutdown register — the other half of the ledger */
 function closedRegister() {
@@ -1008,8 +1002,8 @@ let smCache = { key: '', xml: '' };
 function sitemap1001() {
   const data = censusData() || {};
   const links = linksData() || {};
-  const nw = newsData() || {};
-  const key = [data.generated || '', nw.generated || '', Object.keys(links.byCompany || {}).length, closedRegister().generated || '', homeLive()].join('|');
+  const posts = blog1001.slugs();
+  const key = [data.generated || '', posts.join(','), Object.keys(links.byCompany || {}).length, closedRegister().generated || '', homeLive()].join('|');
   if (smCache.key === key) return smCache.xml;
   const paths = ['/', '/news', '/research', research1001.ARTICLE_PATH, '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn', '/about'];
   /* the startup table's own address once / is the four-dataset front page */
@@ -1021,6 +1015,7 @@ function sitemap1001() {
      fund record); the rest are noindex and stay out of the sitemap */
   for (const s of investors1001.indexableSlugs(data)) paths.push('/investor/' + s);
   for (const ed of report1001.editions()) paths.push('/report/' + ed);
+  for (const s of posts) paths.push('/news/' + s);
   paths.push('/sector');
   for (const k of browse1001.sectorKeys(data)) paths.push('/sector/' + k);
   /* every city with 5+ companies (nationwide since 28 Sep 2026; smaller
@@ -1038,7 +1033,8 @@ function sitemap1001() {
   for (const p of paths) {
     const en = I18N1001.ORIGIN + p;
     const id = I18N1001.ORIGIN + '/id' + (p === '/' ? '/' : p);
-    const modified = p === '/research' || p === research1001.ARTICLE_PATH ? research1001.DATE : mod;
+    const modified = p === '/research' || p === research1001.ARTICLE_PATH ? research1001.DATE
+      : p.startsWith('/news/') ? blog1001.dateOf(p.slice(6)) : mod;
     out.push(url(en, { en, id }, modified), url(id, { en, id }, modified));
   }
   out.push('</urlset>');
@@ -1105,7 +1101,8 @@ ${homeLive() ? `- [Front page](${O}/): the four datasets — startups, state com
 - [Investors](${O}/investors): every fund with the census rows it backs
 - [Coverage](${O}/coverage): what is counted, what is deliberately not, and why
 - [Method](${O}/model): the output estimator, equations to error bounds
-- [News wire](${O}/news): dated, attributed briefs over the census
+- [News](${O}/news): data stories from the census, each a dated answer with a table and a source on every row
+${blog1001.list().map(({ p, P }) => `  - [${p.title((en) => en, P, { fmt: (n) => Number(n).toLocaleString('en-US') })}](${O}/news/${p.slug}) (${P.date})`).join('\n')}
 - [Sitemap](${O}/sitemap.xml)
 `);
 });
