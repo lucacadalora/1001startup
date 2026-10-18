@@ -23,7 +23,7 @@
  * 1001startup.id home page along with the 4 dataset … so people knows about
  * website providing the data center and routing/peer data") points at the
  * peering map on its own host, while data/peering.live is on. Its marker is
- * the map's own line blue, #36A9FF. It shows counts and the busiest
+ * the map's own line blue, #2F8FE8. It shows counts and the busiest
  * buildings only: the PeeringDB rows themselves stay on dc.1001startup.id
  * (their AUP: no bulk pass-on), so the card stays out of the search index
  * and the schema.org catalog.
@@ -41,7 +41,7 @@ const { iconsLive } = require('../lib/iconslive');
 const { graphLive } = require('../lib/peeringlive');
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
-const DC = { s: '#E8734B', b: '#F3C64B', d: '#7AB88A', e: '#4E7A96', p: '#36A9FF' };
+const DC = { s: '#E8734B', b: '#F3C64B', d: '#7AB88A', e: '#4E7A96', p: '#2F8FE8' };
 const PEER = 'https://dc.1001startup.id/';
 
 /* data/home-assets.json — the small content-named copies of the art
