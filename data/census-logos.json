@@ -51,6 +51,10 @@
   "logo": "/assets/logo-c-badr-interactive.13f5e539.png",
   "logo_src": "picked:site"
  },
+ "bang-jamin": {
+  "logo": "/assets/logo-c-bang-jamin.a8824010.png",
+  "logo_src": "picked:site"
+ },
  "base": {
   "logo": "/assets/logo-c-base.988bcfd4.png",
   "logo_src": "picked:site"
@@ -119,6 +123,10 @@
   "logo": "/assets/logo-c-common-grounds.1f1a54b0.png",
   "logo_src": "picked:site"
  },
+ "danamart": {
+  "logo": "/assets/logo-c-danamart.86963c58.png",
+  "logo_src": "picked:site"
+ },
  "dash-electric": {
   "logo": "/assets/logo-c-dash-electric.3b5f68db.png",
   "logo_src": "picked:site"
@@ -175,6 +183,10 @@
   "logo": "/assets/logo-c-everywhere-id.47cb8649.png",
   "logo_src": "picked:site"
  },
+ "fineksi": {
+  "logo": "/assets/logo-c-fineksi.8d875298.png",
+  "logo_src": "picked:site"
+ },
  "finfra": {
   "logo": "/assets/logo-c-finfra.c89eb4f8.png",
   "logo_src": "picked:site"
@@ -214,6 +226,10 @@
  "gokampus": {
   "logo": "/assets/logo-c-gokampus.41abea48.png",
   "logo_src": "monogram:forced"
+ },
+ "goro": {
+  "logo": "/assets/logo-c-goro.f032dda8.png",
+  "logo_src": "picked:site"
  },
  "gravel": {
   "logo": "/assets/logo-c-gravel.b21c6142.png",
@@ -259,6 +275,10 @@
   "logo": "/assets/logo-c-intura.680fd1a6.png",
   "logo_src": "picked:site"
  },
+ "ipaymu": {
+  "logo": "/assets/logo-c-ipaymu.e8a46e11.png",
+  "logo_src": "picked:site"
+ },
  "iseller": {
   "logo": "/assets/logo-c-iseller.a3ff06e6.png",
   "logo_src": "picked:appstore"
@@ -283,6 +303,10 @@
   "logo": "/assets/logo-c-kini.e6b49c67.png",
   "logo_src": "picked:site"
  },
+ "kipin": {
+  "logo": "/assets/logo-c-kipin.76600875.png",
+  "logo_src": "picked:site"
+ },
  "kitabisa": {
   "logo": "/assets/logo-c-kitabisa.c6ca9b9d.png",
   "logo_src": "picked:appstore"
@@ -301,6 +325,10 @@
  },
  "klinik-pintar": {
   "logo": "/assets/logo-c-klinik-pintar.5920af73.png",
+  "logo_src": "picked:site"
+ },
+ "konstruksi-ai": {
+  "logo": "/assets/logo-c-konstruksi-ai.2aa1e6df.png",
   "logo_src": "picked:site"
  },
  "kopi-tuku": {
@@ -370,6 +398,10 @@
  "narasi": {
   "logo": "/assets/logo-c-narasi.88078b50.png",
   "logo_src": "picked:header"
+ },
+ "netzme": {
+  "logo": "/assets/logo-c-netzme.1d5d0914.png",
+  "logo_src": "picked:site"
  },
  "nusantics": {
   "logo": "/assets/logo-c-nusantics.d280493a.png",
@@ -514,6 +546,10 @@
  "sun-energy": {
   "logo": "/assets/logo-c-sun-energy.75cfde23.png",
   "logo_src": "picked:header"
+ },
+ "tada": {
+  "logo": "/assets/logo-c-tada.56ed7e07.png",
+  "logo_src": "picked:site"
  },
  "tanamera-coffee": {
   "logo": "/assets/logo-c-tanamera-coffee.eec30017.png",

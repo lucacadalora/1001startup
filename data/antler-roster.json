@@ -12,10 +12,13 @@
     "brick",
     "carenow",
     "cavos",
+    "claimmind",
     "dash-electric",
     "gapai",
+    "geosquare-ai",
     "healthpro",
     "intura",
+    "konstruksi-ai",
     "lister",
     "matchmade",
     "qalboo",
@@ -37,20 +40,6 @@
       "blurb": "move-in-ready home-improvement financing (PT Kesempatan Kedua Milenial)"
     },
     {
-      "name": "REACH",
-      "url": "https://getreach.id",
-      "year": 2022,
-      "blurb": "personal-finance advice app",
-      "flag": "quiet"
-    },
-    {
-      "name": "Geekzwolf",
-      "url": null,
-      "year": 2022,
-      "blurb": "web3-game discovery community (PT Serigala Teknologi Indonesia)",
-      "flag": "quiet"
-    },
-    {
       "name": "ZIWA",
       "url": "https://ziwaku.com",
       "year": 2022,
@@ -65,36 +54,16 @@
       "flag": "quiet"
     },
     {
-      "name": "Teroka",
-      "url": null,
-      "year": 2022,
-      "blurb": "creator-economy D2C brand builder",
-      "flag": "quiet"
-    },
-    {
       "name": "Agri Sparta",
       "url": "https://agrisparta.com",
       "year": 2023,
       "blurb": "rice-farming industrialization — agrochemical supply with pay-at-harvest"
     },
     {
-      "name": "Agrigate",
-      "url": "https://agrigate.id",
-      "year": 2023,
-      "blurb": "B2B agri supply chain between verified farmers and industrial buyers"
-    },
-    {
       "name": "Tumbuh",
       "url": null,
       "year": 2023,
       "blurb": "BNPL and embedded financing for small businesses",
-      "flag": "quiet"
-    },
-    {
-      "name": "Rampable",
-      "url": "https://rampable.co",
-      "year": 2023,
-      "blurb": "crypto payroll and expense rails",
       "flag": "quiet"
     },
     {
@@ -112,35 +81,10 @@
       "flag": "quiet"
     },
     {
-      "name": "Stofee",
-      "url": null,
-      "year": 2023,
-      "blurb": "B2B fashion supply-chain marketplace (China+1 sourcing)"
-    },
-    {
       "name": "Kora",
       "url": null,
       "year": 2023,
       "blurb": "co-farming and post-harvest agritech — Antler's directory tags it Singapore while Antler's own Aug 2024 statement calls it an Indonesian portfolio company; entity check needed"
-    },
-    {
-      "name": "Club Kyta",
-      "url": "https://clubkyta.com",
-      "year": 2023,
-      "blurb": "omnichannel distribution for D2C brands in tier-2/3 cities"
-    },
-    {
-      "name": "Alter",
-      "url": "https://alter.game",
-      "year": 2023,
-      "blurb": "social platform for gamers",
-      "flag": "quiet"
-    },
-    {
-      "name": "Hazana",
-      "url": "https://hazana.id",
-      "year": 2023,
-      "blurb": "embedded halal financing for platforms"
     },
     {
       "name": "Ovy Health (ex Plans)",
@@ -167,18 +111,6 @@
       "blurb": "AI background-checking agent"
     },
     {
-      "name": "Lunash",
-      "url": "https://lunash.id",
-      "year": 2024,
-      "blurb": "AI debt-collection and recovery platform (PT Lunash Inovasi Indonesia)"
-    },
-    {
-      "name": "Konstruksi.AI",
-      "url": "https://konstruksi.ai",
-      "year": 2024,
-      "blurb": "construction management with machine-vision QC"
-    },
-    {
       "name": "Ternakin",
       "url": "https://ternakin.co",
       "year": 2024,
@@ -201,12 +133,6 @@
       "url": "https://franchise.one",
       "year": 2024,
       "blurb": "all-in-one franchise enabler"
-    },
-    {
-      "name": "Geosquare.ai",
-      "url": "https://geosquare.ai",
-      "year": 2024,
-      "blurb": "5x5m-grid geospatial data platform (PT Geo Innovation Nusantara)"
     },
     {
       "name": "Harvesea",
@@ -245,40 +171,10 @@
       "blurb": "AI social commerce"
     },
     {
-      "name": "Tagflow AI",
-      "url": "https://tagflow-ai.com",
-      "year": 2024,
-      "blurb": "LLM fine-tuning platform"
-    },
-    {
-      "name": "WorthWasting",
-      "url": "https://worthwasting.id",
-      "year": 2024,
-      "blurb": "hazardous-waste management aggregator"
-    },
-    {
       "name": "YoboLabs",
       "url": "https://yobo.id",
       "year": 2024,
       "blurb": "AI-native growth marketing for consumer brands"
-    },
-    {
-      "name": "AvataraLabs",
-      "url": "https://avataralabs.ai",
-      "year": 2025,
-      "blurb": "AI virtual sellers"
-    },
-    {
-      "name": "Easyport",
-      "url": "https://easyport.co",
-      "year": 2025,
-      "blurb": "AI freight forwarding"
-    },
-    {
-      "name": "MTA (ClaimMind)",
-      "url": "https://claimmind.life",
-      "year": 2025,
-      "blurb": "insurance-claims AI"
     }
   ],
   "outside": [
@@ -329,6 +225,118 @@
       "city": "Singapore-incorporated",
       "reason": "Outside the census area",
       "note": "AI marketing for e-commerce, Katalis Pte Ltd, sells across SEA — no Indonesian entity surfaced."
+    },
+    {
+      "name": "REACH",
+      "url": "https://getreach.id",
+      "year": 2022,
+      "city": "Jakarta",
+      "reason": "No longer operating",
+      "note": "personal-finance advice app; getreach.id is a parked domain (17 Oct 2026)."
+    },
+    {
+      "name": "Hazana",
+      "url": "https://hazana.id",
+      "year": 2023,
+      "city": "Jakarta",
+      "reason": "No longer operating",
+      "note": "embedded halal-financing startup; hazana.id is a parked domain (17 Oct 2026)."
+    },
+    {
+      "name": "Alter",
+      "url": "https://alter.game",
+      "year": 2023,
+      "city": "Jakarta",
+      "reason": "No longer operating",
+      "note": "social platform for gamers; alter.game no longer resolves and no new site was found."
+    },
+    {
+      "name": "Lunash",
+      "url": "https://lunash.id",
+      "year": 2024,
+      "city": "Jakarta",
+      "reason": "No longer operating",
+      "note": "AI debt collection, named in Antler's Jan 2024 batch; lunash.id shows a Wix domain error and LinkedIn lists 2 people."
+    },
+    {
+      "name": "Club Kyta",
+      "url": "https://clubkyta.com",
+      "year": 2023,
+      "city": "Jakarta",
+      "reason": "No longer operating",
+      "note": "omnichannel lifestyle distributor; the domain has lapsed and LinkedIn lists 3 people."
+    },
+    {
+      "name": "Easyport",
+      "url": "https://easyport.co",
+      "year": 2025,
+      "city": "Jakarta Pusat",
+      "reason": "Too small to count",
+      "note": "AI freight-forwarding software; 2 people on LinkedIn and an empty site (17 Oct 2026)."
+    },
+    {
+      "name": "WorthWasting",
+      "url": "https://worthwasting.id",
+      "year": 2024,
+      "city": "Jakarta Selatan",
+      "reason": "Too small to count",
+      "note": "hazardous-waste platform; 2 people on LinkedIn and no company details on its site."
+    },
+    {
+      "name": "Stofee",
+      "url": null,
+      "year": 2023,
+      "city": "Jakarta",
+      "reason": "Too small to count",
+      "note": "fashion design and sourcing software; 1 person on LinkedIn and a bare app shell."
+    },
+    {
+      "name": "Agrigate",
+      "url": "https://agrigate.id",
+      "year": 2023,
+      "city": "Jakarta",
+      "reason": "Too small to count",
+      "note": "agri-food sourcing (PT Gerbang Agraria Nusantara); one inquiry page and 1 person on LinkedIn."
+    },
+    {
+      "name": "Geekzwolf",
+      "url": null,
+      "year": 2022,
+      "city": "Jakarta",
+      "reason": "No longer operating",
+      "note": "web3-game discovery (PT Serigala Teknologi Indonesia); no site and no activity since Oct 2022."
+    },
+    {
+      "name": "Teroka",
+      "url": null,
+      "year": 2022,
+      "city": "Jakarta",
+      "reason": "No longer operating",
+      "note": "creator-economy brand builder; no site and no activity since 2022."
+    },
+    {
+      "name": "Tagflow AI",
+      "url": "https://tagflow-ai.com",
+      "year": 2024,
+      "city": "San Francisco",
+      "reason": "Outside the census area",
+      "note": "Tagflow AI, Inc, San Francisco; no Indonesian entity, office or team published."
+    },
+    {
+      "name": "Rampable",
+      "url": "https://rampable.co",
+      "year": 2023,
+      "city": "Singapore",
+      "reason": "Outside the census area",
+      "note": "crypto-to-fiat payouts by Rampable Technologies Inc., LinkedIn HQ Singapore; no Indonesian entity."
+    },
+    {
+      "name": "AvataraLabs",
+      "url": "https://avataralabs.ai",
+      "year": 2025,
+      "city": "Jakarta Selatan",
+      "reason": "Not a product company",
+      "note": "now sells AI video production per project, not the virtual-seller product Antler backed."
     }
   ]
 }

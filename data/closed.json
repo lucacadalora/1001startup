@@ -367,6 +367,28 @@
    ]
   },
   {
+   "name": "Finantier",
+   "legal_name": "Finantier Pte. Ltd.",
+   "fate": "closed",
+   "confidence": "confirmed",
+   "sector": "Fintech — open-finance API platform that let banks, lenders and fintech firms aggregate and analyse consumers' financial data for credit scoring and identity and income verification",
+   "city": "Jakarta",
+   "founded": "2020",
+   "ended": "2023-09",
+   "why": "Finantier built open-finance APIs, which Y Combinator billed as 'Plaid for Southeast Asia', letting banks, lenders and fintech firms in Indonesia aggregate and analyse consumers' financial data for credit scoring and verification. Its holding company was incorporated in Singapore on 5 Aug 2020, and its business centred on Indonesia (East Ventures called it Indonesia-based when it led the pre-seed round). It went through Y Combinator (Winter 2021) and raised a pre-seed round led by East Ventures (November 2020) and a seven-figure seed round led by Global Founders Capital and East Ventures (June 2021); neither round was sized. ANTARA reported from Jakarta in March 2022 that it had been recorded with OJK as a digital financial innovation developer for innovative credit scoring in early 2022. DealStreetAsia reported on 21 Sep 2023 that it had shut down, and Y Combinator lists it as inactive. Singapore's Government Gazette records a winding-up application against Finantier Pte. Ltd. (HC/CWU 167/2023), a winding-up order published in September 2024 and the company in compulsory liquidation in February 2025. Its old domain, finantier.co, now serves an unrelated gambling page. The end month is the one DealStreetAsia reported. No funding figure is given because neither round was sized.",
+   "sources": [
+    "https://www.dealstreetasia.com/stories/finantier-said-to-have-shut-down-363369",
+    "https://www.ycombinator.com/companies/finantier",
+    "https://www.antaranews.com/berita/2776833/terdaftar-di-ojk-dan-iso-finantier-pertajam-layanan-open-finance-aman-dan-teruji",
+    "https://east.vc/news/press-release/finantier-pre-seed-funding-led-by-east-ventures-open-finance-indonesia-southeast-asia",
+    "https://east.vc/news/press-release/finantier-raises-7-figure-seed-funding-led-by-east-ventures-and-global-founders-capital-planning-to-strengthen-presence-in-indonesia-and-sea",
+    "https://e27.co/finantier-raises-7-figure-usd-to-take-its-open-finance-solution-to-indonesia-vietnam-thailand-20210616/",
+    "https://www.sgpbusiness.com/get-pdf/eg/b58f1093-abaa-11ee-a26e-f48e38c3a128",
+    "https://www.sgpbusiness.com/get-pdf/eg/b40cda6f-701d-11ef-a015-f8bc1255ffa2",
+    "https://www.sgpbusiness.com/get-pdf/eg/14b790b6-39a2-11f1-938f-f8bc1255ffa2"
+   ]
+  },
+  {
    "name": "Tumbasin",
    "legal_name": "PT Tumbas Sinergi Indonesia",
    "fate": "closed",

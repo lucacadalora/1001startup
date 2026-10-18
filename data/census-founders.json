@@ -1,5 +1,5 @@
 {
- "generated": "2026-10-18T00:14:53Z",
+ "generated": "2026-10-18T00:26:33Z",
  "rule": "Founder names publish only with the company's own page, or two independent reputable sources, or Endeavor plus one more; aggregators never count.",
  "companies": {
   "gojek": {
@@ -4580,6 +4580,195 @@
     "https://mediaindonesia.com/jelita/831423/safe-space-medis-bagi-perempuan-hadir-di-setiabudi"
    ],
    "note": "IDN Times (27 Jan 2022), Jakarta Daily (7 Sep 2022) and Tatler Asia (27 Jan 2023) name the same three founders; the first two are linked from Filmore's own press page. Gitta Amelia is Founder and CEO of Filmore Health in its November 2025 statements (Media Indonesia, 18 Nov 2025; Kompas advertorial, 20 Nov 2025), and the Kompas advertorial calls Grace Tahir a co-founder. Andrea Gunawan was quoted as a co-founder in 2022 and 2023; no 2026 source confirms her current role. The founding year 2022 follows the January 2022 launch; the company's November 2025 statement says 2023."
+  },
+  "bang-jamin": {
+   "founders": [
+    "Indra Baruna",
+    "Andri Lau"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://www.sbigroup.co.jp/english/news/pdf/2025/0829_a_en.pdf",
+    "https://news.dailysocial.id/post/startup-insurtech-bang-jamin-raih-pendanaan-us4-juta-dipimpin-braxton-dan-sbi/",
+    "https://www.linkedin.com/posts/bang-jamin_in-a-market-where-uncertainty-is-becoming-activity-7454450605105954816-Kn-N",
+    "https://www.cnbcindonesia.com/market/20260422150713-19-728947/video-kreativitas-insurtech-punya-asuransi-pokemon-pembatalan-tiket"
+   ],
+   "note": "Indra Baruna is co-founder and CEO; Andri Lau is named co-founder by the company's own LinkedIn page and CNBC Indonesia. 2022 is the PT's establishment year and Venturra's founding year; SBI Ven Capital says the platform launched in 2023. The site says the founding team has more than 30 years of insurance experience but names only Indra Baruna."
+  },
+  "milikirumah": {
+   "founders": [
+    "Winston Lee",
+    "Marine Novita",
+    "Lau Xin Yuan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://technode.global/2025/05/20/proptech-firm-milikirumah-launches-maiden-private-equity-fundraise-of-50m/",
+    "https://www.dealstreetasia.com/stories/milikirumah-ruifeng-wealth-management-442775",
+    "https://www.businesstimes.com.sg/startups-tech/startups/tech-in-asia/ex-propertyguru-execs-bet-big-rent-own-indonesia"
+   ],
+   "note": "Kompas (6 Aug 2026) reports that Marine Novita stopped serving as president director in April 2026; she remains a co-founder in the earlier sources."
+  },
+  "zahir": {
+   "founders": [
+    "Fadil Fuad Basymeleh"
+   ],
+   "founded": 1996,
+   "sources": [
+    "https://zahiraccounting.com/id/awalnya-iseng-bikin-software-untuk-dapat-kucuran-kredit-2/",
+    "https://www.idxchannel.com/inspirator/cerita-inspiratif-zahir-internasional-beroperasi-dua-dekade-lebih-tanpa-pendanaan-investor"
+   ],
+   "note": "Spelled Basymeleh on the company blog and Besymeleh by IDX Channel. The company blog says he built the software with friends; no co-founder is named."
+  },
+  "mceasy": {
+   "founders": [
+    "Raymond Sutjiono",
+    "Hendrik Ekowaluyo"
+   ],
+   "founded": 2017,
+   "sources": [
+    "https://www.mceasy.com/blog/release/seri-b/",
+    "https://east.vc/news/press-release/mceasy-closes-us-6-5-million-series-a-funding-led-by-east-ventures",
+    "https://news.dailysocial.id/post/mceasy-dan-sirclo-dikabarkan-mendapat-dukungan-pendanaan-dari-investor-lama/"
+   ],
+   "note": "Raymond Sutjiono is co-founder and CEO; Hendrik Ekowaluyo is named as co-founder by East Ventures (2022) and DailySocial (2025). The company's own release gives 2017 as the founding year."
+  },
+  "mimin": {
+   "founders": [
+    "Joseph Simbar",
+    "Bayu Eka Putra"
+   ],
+   "founded": null,
+   "sources": [
+    "https://youngster.id/headline/startup-penyedia-solusi-ai-mimin-peroleh-pendanaan-us15-juta/",
+    "https://www.techshake.asia/stories/mimin-connecting-ai-people-and-the-customer-journey"
+   ],
+   "note": "Joseph Simbar is CEO and Bayu Eka Putra COO; both are called co-founders by youngster.id (9 Dec 2024), and TechShake (25 Aug 2026) names Bayu Eka Putra as co-founder. No source gives a founding year."
+  },
+  "bizhare": {
+   "founders": [
+    "Heinrich Vincent",
+    "Giovanni Umboh",
+    "Gatot Adhi Wibowo"
+   ],
+   "founded": 2018,
+   "sources": [
+    "https://www.bizhare.id/media/berita/kejora-capital-sbi-holdings-bizhare"
+   ],
+   "note": "Heinrich Vincent is founder and CEO, Giovanni Umboh CTO and Gatot Adhi Wibowo CFO at the time of the 21 Nov 2023 release (Bisnis.com caption, same day)."
+  },
+  "goro": {
+   "founders": [
+    "Robert Hoving",
+    "Andryan Gouw"
+   ],
+   "founded": 2022,
+   "sources": [
+    "https://youngster.id/headline/startup-proptech-goro-mendapatkan-us1-juta-dalam-putaran-pendanaan-pra-awal/",
+    "https://investasi.kontan.co.id/news/lolos-sandbox-ojk-goro-siap-perkuat-tokenisasi-properti",
+    "https://technode.global/2023/08/09/indonesias-goro-raises-1m-funding-in-pre-seed-round-led-by-iterative/"
+   ],
+   "note": "Robert Hoving was co-founder and CEO at the 2023 round; by November 2025 Kontan calls Andryan Gouw co-founder and CEO. Robert Hoving's LinkedIn post of 15 Jul 2024 dates GORO's inception to 15 Jul 2022."
+  },
+  "sembuh-ai": {
+   "founders": [
+    "Claudio Perlini",
+    "David Jendra",
+    "Yosefraim Setiawan"
+   ],
+   "founded": null,
+   "sources": [
+    "https://iterative.vc/post/meet-iteratives-winter-2025-batch",
+    "https://www.linkedin.com/posts/block71global_deep-sage-2025-claudio-perlini-co-founder-activity-7449252527260323840-cJ3F"
+   ],
+   "note": "Claudio Perlini (CEO) is named as co-founder by both Iterative and Block71 (NUS Enterprise); David Jendra and Yosefraim Setiawan are named as founders by Iterative, the lead investor, only."
+  },
+  "inspigo": {
+   "founders": [
+    "Tyo Guritno",
+    "Yoris Sebastian",
+    "Eva Ditasari"
+   ],
+   "founded": null,
+   "sources": [
+    "https://teknologi.bisnis.com/read/20210427/266/1386686/signific-asia-caplok-inspigo-milik-yoris-sebastian",
+    "https://www.idntimes.com/tech/trend/mengenal-inspigo-konten-audio-podcast-besutan-yoris-sebatian-dkk-00-xhygs-5drnt2",
+    "https://kc.umn.ac.id/id/eprint/17295/4/BAB_II.pdf"
+   ],
+   "note": "Yoris Sebastian is named as Inspigo's founder-owner by Bisnis.com (27 Apr 2021) and IDN Times (5 Sep 2018); Bisnis.com names Tyo Guritno as CEO. The three-founder list (Tyo Guritno, Yoris Sebastian, Eva Ditasari) comes from a 2021 Universitas Multimedia Nusantara internship report quoting the company, which is weaker than press; Tyo Guritno and Eva Ditasari as co-founders rest on that report."
+  },
+  "danamart": {
+   "founders": [
+    "Patrick Gunadi"
+   ],
+   "founded": null,
+   "sources": [
+    "https://www.idxchannel.com/foto-1/foto/kantongi-izin-ojk-danamart-siap-dukung-permodalan-ukm",
+    "https://www.antaranews.com/berita/4364111/ojk-623-ukm-gunakan-scf-total-himpun-dana-rp121-triliun"
+   ],
+   "note": "Sindonews (31 Mar 2020) calls Patrick Gunadi 'CEO dan Co Founder', so there may be other co-founders, but none is named."
+  },
+  "gradana": {
+   "founders": [
+    "Angela Oetama",
+    "William Susilo Yunior"
+   ],
+   "founded": 2016,
+   "sources": [
+    "https://teknologi.bisnis.com/read/20190529/266/928878/tryb-investasi-pra-seri-a-di-startup-fintech-properti-gradana",
+    "https://hybrid.co.id/post/gradana-receives-pre-series-a-funding-from-tryb-group-to-expand-in-fintech-property-market/",
+    "https://www.compasslist.com/insights/gradana-p2p-lending-for-more-accessible-home-ownership-in-indonesia"
+   ],
+   "note": "The AFPI member profile lists William Susilo Yunior and Angela S. Oetama as CEO; founding date 7 Nov 2016 per AFPI."
+  },
+  "ipaymu": {
+   "founders": [
+    "Riyeke Ustadiyanto"
+   ],
+   "founded": 2011,
+   "sources": [
+    "https://ipaymu.com/id/about-us/",
+    "https://news.dailysocial.id/post/breaking-ipaymu-com-dapatkan-investasi/"
+   ],
+   "note": "The company's about page names Riyeke Ustadiyanto (known as Keke) as founder and CEO. A tracker also names Dicky Sukmana as co-founder; no company or press source confirms that, so he is not listed."
+  },
+  "konstruksi-ai": {
+   "founders": [
+    "Jean Herfina Kwannandar",
+    "Andri Saputra Gunawan",
+    "Yoshua Gombo"
+   ],
+   "founded": 2023,
+   "sources": [
+    "https://konstruksi.ai/en",
+    "https://konstruksi.ai/en",
+    "https://www.antler.co/blog/antler-backs-6-startups-with-750-000-pre-seed-funding-in-indonesia"
+   ],
+   "note": "The site lists the three as Co-Founder & CEO, CPO and CTO. Antler's January 2024 release also named Daniel Tjandra in the team; he is not on the current site, so he is not listed as a founder here."
+  },
+  "onlinepajak": {
+   "founders": [
+    "Charles Guinot"
+   ],
+   "founded": 2015,
+   "sources": [
+    "https://www.digitalnewsasia.com/startups/onlinepajak-raises-over-us25mil-series-b-funding",
+    "https://www.avcj.com/avcj/news/3012290/warburg-pincus-backs-indonesia-tax-compliance-business",
+    "https://www.alphajwc.com/en/onlinepajak-raises-over-us-25mn-in-series-b-funding/"
+   ],
+   "note": "Founder named in two press outlets (Digital News Asia, AVCJ) in October 2018; no 2026 source on his current role was checked."
+  },
+  "tada": {
+   "founders": [
+    "Antonius Taufan"
+   ],
+   "founded": 2012,
+   "sources": [
+    "https://indonesia.endeavor.org/profiles/antonius-taufan/",
+    "https://www.venturra.com/company/tada/",
+    "https://hybrid.co.id/post/fokado-founder-launches-multifunction-tada-gift-card/"
+   ],
+   "note": "Endeavor Indonesia and Venturra (an investor) both name him as founder, and Hybrid (June 2013) reported his launch of the TaDa! gift card. The company's own pages checked do not name a founder."
   },
   "sokratech": {
    "founders": [

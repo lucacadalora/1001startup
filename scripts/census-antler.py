@@ -752,6 +752,48 @@ OUTSIDE = [
           "entity surfaced."},
 ]
 
+# ── 18 Oct 2026: decided by the "more legit startups" wave ───────────
+# Luca, 18 Oct 2026 WIB: "get more and more legit startups". The roster lane
+# researched the pending names to the census tests and a second fact-checker
+# re-opened the sources; rows live in data/census-adds/more-legit-2026-10-s3.json.
+# Counted (tagged below); ruled out (moved to OUTSIDE with the reason). Ternakin
+# stays pending: Antler-backed and alive, but it sells retail pond co-ownership
+# advertised as "guaranteed" 18-32% yearly returns without an investment licence,
+# held back until that is settled.
+ANTLER_IN.update({
+    'konstruksi-ai': {'antler_year': 2024,
+                      'antler_note': "One of six in Antler's Jan 2024 US$750K Indonesian batch (Oct-Dec 2023 "
+                                     "residency); no per-company amount published."},
+    'geosquare-ai': {'antler_year': 2024,
+                     'antler_note': "Pre-seed from Antler's residency, listed under 2024 in Antler's directory; "
+                                    "no amount published."},
+    'claimmind': {'antler_year': 2025,
+                  'antler_note': "Listed in Antler's own directory as MTA (Indonesia, B2B software, 2025) linking "
+                                 "to claimmind.life; no release or amount published."},
+})
+_COUNTED = {'Konstruksi.AI', 'Geosquare.ai', 'MTA (ClaimMind)'}
+_RULED_OUT = {
+    'REACH': ('Jakarta', 'No longer operating', "personal-finance advice app; getreach.id is a parked domain (17 Oct 2026)."),
+    'Hazana': ('Jakarta', 'No longer operating', "embedded halal-financing startup; hazana.id is a parked domain (17 Oct 2026)."),
+    'Alter': ('Jakarta', 'No longer operating', "social platform for gamers; alter.game no longer resolves and no new site was found."),
+    'Lunash': ('Jakarta', 'No longer operating', "AI debt collection, named in Antler's Jan 2024 batch; lunash.id shows a Wix domain error and LinkedIn lists 2 people."),
+    'Club Kyta': ('Jakarta', 'No longer operating', "omnichannel lifestyle distributor; the domain has lapsed and LinkedIn lists 3 people."),
+    'Easyport': ('Jakarta Pusat', 'Too small to count', "AI freight-forwarding software; 2 people on LinkedIn and an empty site (17 Oct 2026)."),
+    'WorthWasting': ('Jakarta Selatan', 'Too small to count', "hazardous-waste platform; 2 people on LinkedIn and no company details on its site."),
+    'Stofee': ('Jakarta', 'Too small to count', "fashion design and sourcing software; 1 person on LinkedIn and a bare app shell."),
+    'Agrigate': ('Jakarta', 'Too small to count', "agri-food sourcing (PT Gerbang Agraria Nusantara); one inquiry page and 1 person on LinkedIn."),
+    'Geekzwolf': ('Jakarta', 'No longer operating', "web3-game discovery (PT Serigala Teknologi Indonesia); no site and no activity since Oct 2022."),
+    'Teroka': ('Jakarta', 'No longer operating', "creator-economy brand builder; no site and no activity since 2022."),
+    'Tagflow AI': ('San Francisco', 'Outside the census area', "Tagflow AI, Inc, San Francisco; no Indonesian entity, office or team published."),
+    'Rampable': ('Singapore', 'Outside the census area', "crypto-to-fiat payouts by Rampable Technologies Inc., LinkedIn HQ Singapore; no Indonesian entity."),
+    'AvataraLabs': ('Jakarta Selatan', 'Not a product company', "now sells AI video production per project, not the virtual-seller product Antler backed."),
+}
+_by = {p['name']: p for p in PENDING}
+OUTSIDE = OUTSIDE + [
+    {"name": n, "url": _by[n].get("url"), "year": _by[n].get("year"), "city": c, "reason": r, "note": note}
+    for n, (c, r, note) in _RULED_OUT.items()]
+PENDING = [p for p in PENDING if p['name'] not in _COUNTED and p['name'] not in _RULED_OUT]
+
 SCOPE_LINE = [
  {"name": "Antler-check names that are not Antler's",
   "owner": "TransTRACK · Amoda · FishLog · Baskit · Sribuu · Mindtera · Bicarakan.id · Prieds · Kelola",

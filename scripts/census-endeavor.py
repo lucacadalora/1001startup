@@ -55,12 +55,16 @@ ON_ROSTER = {
     'bobobox': 'bobobox', 'evermos': 'evermos', 'agate': 'agate', 'brodo': 'brodo',
     # Oct 18 2026: roster companies researched into the census by the
     # "more legit startups" wave (data/census-adds/more-legit-2026-10-*.json).
-    'happyfresh': 'happyfresh',
+    'happyfresh': 'happyfresh', 'onlinepajak': 'online-pajak', 'tada': 'tada',
 }
 # founders Endeavor's own profile copy attributes to a roster company. Only
 # entries the source states; the rest stay empty rather than inferred.
 FOUNDERS = {
     'astro': ['Vincent Tjendra', 'Jessica Stephanie Jap', 'Marcella Moniaga'],
+    # Endeavor's own profile pages, read 18 Oct 2026: indonesia.endeavor.org/profiles/charles-guinot/
+    # (selected Sep 2016, Boston) and /profiles/antonius-taufan/ (selected Aug 2014, NYC).
+    'online-pajak': ['Charles Guinot'],
+    'tada': ['Antonius Taufan'],
 }
 
 raw = json.load(open(RAW))
