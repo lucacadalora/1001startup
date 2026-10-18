@@ -18,7 +18,7 @@ const { shell } = require('./browse1001');
 const { V } = require('./html');
 /* our scripts' version: bump the letter on every change to signin1001.js or
    wall1001.js (/js is served immutable for a year) */
-const AV = V + 'a5';
+const AV = V + 'a6';
 
 /* Clerk's form restyled to 1001: used by /signin and by the wall's popup frame */
 const CLERK_CSS = `

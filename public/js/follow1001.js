@@ -240,6 +240,7 @@
     hideCard();
     card = el('div');
     card.id = 'f1001-t';
+    card.setAttribute('data-kind', onClose === stopNudging ? 'nudge' : 'ff');
     card.setAttribute('role', 'status');
     var k = el('p', 'k');
     k.appendChild(el('i'));
@@ -281,6 +282,17 @@
     if (onMe() || bannerUp()) { hideCard(); return; }
     showCard(T.fk, T.ft, null);
     setTimeout(function () { if (card && card.querySelector('.k').textContent === T.fk) hideCard(); }, 9000);
+  }
+
+  /* The builder card can open after ours (its one-time intro): step aside,
+     and bring the nudge back once it has docked. */
+  var b1 = document.getElementById('b1');
+  if (b1 && window.MutationObserver) {
+    new MutationObserver(function () {
+      if (b1.classList.contains('is-open')) {
+        if (card) { var wasNudge = card.getAttribute('data-kind') === 'nudge'; hideCard(); if (wasNudge) setTimeout(maybeNudge, 1500); }
+      } else if (!card) maybeNudge();
+    }).observe(b1, { attributes: true, attributeFilter: ['class'] });
   }
 
   load();
