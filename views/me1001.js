@@ -164,38 +164,8 @@ function roleButtons(L, lang) {
       ${ROLES.map(([k, en, id]) => `<button type="submit" name="role" value="${k}">${esc(L(en, id))}</button>`).join('')}`;
 }
 
-/** /me for a signed-in reader. rows/suggest: [{ kind, ref, name, href, logo, obj }] */
-function page({ lang = 'en', user, rows, widgets = {} }) {
-  const L = I18N.mkL(lang);
-  const PF = I18N.pfx(lang);
-  const asked = !!user.role_at;
-  const role = ROLES.find(([k]) => k === user.role);
-  const joined = user.created_at
-    ? new Date(String(user.created_at).replace(' ', 'T') + 'Z').toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
-    : '';
-  const question = asked ? '' : `
-  <section class="me-q" aria-labelledby="me-q-h">
-    <h2 id="me-q-h">${L('One question: what do you do?', 'Satu pertanyaan: apa pekerjaanmu?')}</h2>
-    <p>${L('It tells us who reads 1001. You can change it later, or skip it.', 'Supaya kami tahu siapa pembaca 1001. Bisa diubah nanti, atau dilewati.')}</p>
-    <form method="POST" action="/me/role" class="me-roles">
-      ${roleButtons(L, lang)}
-      <button type="submit" name="skip" value="1" class="skip">${L('Skip', 'Lewati')}</button>
-    </form>
-  </section>`;
-  const list = rows.length
-    ? `<table id="tbl" class="me-t"><tbody>${rows.map((r) => rowHtml(r, L, true)).join('')}</tbody></table>`
-    : `<div class="me-empty">
-    <p><b>${L('You don’t follow anything yet.', 'Kamu belum mengikuti apa pun.')}</b> ${L('Tap + Follow on any startup, state company, data centre or investor and it shows up here, or start with the lists below.', 'Ketuk + Ikuti di startup, BUMN, pusat data, atau investor mana pun dan semuanya muncul di sini, atau mulai dari daftar di bawah.')}</p>
-  </div>`;
-  const W = widgets;
-  const panels = [
-    wRounds(W.rounds, L, PF, lang),
-    wRead(W.read, L, PF),
-    wInvestors(W.investors, L, PF),
-    wSectors(W.sectors, L, PF),
-    wClosed(W.closed, L, PF, lang),
-  ].join('');
-  const body = `<style>
+/* the page's styles; the dashboard (views/dash1001.js) reuses the widget rules */
+const STYLE = `<style>
 .me{max-width:760px;margin:0 auto;padding:40px 20px 8px;display:grid;gap:28px}
 .me-hd h1{font-size:clamp(30px,5vw,44px);line-height:1.05;letter-spacing:-0.03em;font-weight:500;margin-top:12px}
 .me-sub{color:#52525B;font-size:15px;line-height:1.55;margin-top:8px;overflow-wrap:anywhere}
@@ -254,7 +224,40 @@ function page({ lang = 'en', user, rows, widgets = {} }) {
 .me-wf a{color:#52525B}
 @media(max-width:560px){.me{padding:24px 16px 4px;gap:22px}.me-prof dl>div{grid-template-columns:1fr;gap:2px}.me-lg{width:46px}}
 </style>
-<link rel="stylesheet" href="/css/company1001.css?v=${V}">
+`;
+
+/** /me for a signed-in reader. rows/suggest: [{ kind, ref, name, href, logo, obj }] */
+function page({ lang = 'en', user, rows, widgets = {} }) {
+  const L = I18N.mkL(lang);
+  const PF = I18N.pfx(lang);
+  const asked = !!user.role_at;
+  const role = ROLES.find(([k]) => k === user.role);
+  const joined = user.created_at
+    ? new Date(String(user.created_at).replace(' ', 'T') + 'Z').toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB', { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'UTC' })
+    : '';
+  const question = asked ? '' : `
+  <section class="me-q" aria-labelledby="me-q-h">
+    <h2 id="me-q-h">${L('One question: what do you do?', 'Satu pertanyaan: apa pekerjaanmu?')}</h2>
+    <p>${L('It tells us who reads 1001. You can change it later, or skip it.', 'Supaya kami tahu siapa pembaca 1001. Bisa diubah nanti, atau dilewati.')}</p>
+    <form method="POST" action="/me/role" class="me-roles">
+      ${roleButtons(L, lang)}
+      <button type="submit" name="skip" value="1" class="skip">${L('Skip', 'Lewati')}</button>
+    </form>
+  </section>`;
+  const list = rows.length
+    ? `<table id="tbl" class="me-t"><tbody>${rows.map((r) => rowHtml(r, L, true)).join('')}</tbody></table>`
+    : `<div class="me-empty">
+    <p><b>${L('You don’t follow anything yet.', 'Kamu belum mengikuti apa pun.')}</b> ${L('Tap + Follow on any startup, state company, data centre or investor and it shows up here, or start with the lists below.', 'Ketuk + Ikuti di startup, BUMN, pusat data, atau investor mana pun dan semuanya muncul di sini, atau mulai dari daftar di bawah.')}</p>
+  </div>`;
+  const W = widgets;
+  const panels = [
+    wRounds(W.rounds, L, PF, lang),
+    wRead(W.read, L, PF),
+    wInvestors(W.investors, L, PF),
+    wSectors(W.sectors, L, PF),
+    wClosed(W.closed, L, PF, lang),
+  ].join('');
+  const body = `${STYLE}<link rel="stylesheet" href="/css/company1001.css?v=${V}">
 <main class="me">
   <header class="me-hd">
     <div class="eyebrow"><span class="sq"></span>${L('My 1001', 'My 1001')}</div>
@@ -334,4 +337,8 @@ html.f1001-on::before{content:"";position:fixed;inset:0;z-index:2147482995;backg
 @keyframes f1001in{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:none}}
 </style>`;
 
-module.exports = { page, css, ROLE_KEYS };
+module.exports = {
+  page, css, ROLE_KEYS,
+  /* shared with the dashboard (views/dash1001.js) */
+  parts: { STYLE, ROLES, KIND, n0, usd, idrT, round, subLine, roleButtons, wRounds, wRead, wInvestors, wSectors, wClosed },
+};

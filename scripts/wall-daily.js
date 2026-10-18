@@ -15,7 +15,9 @@
  *
  * Sources, all in data/pasar.db, read-only: wall_counts (lib/account1001.js:
  * day-level counts, no identifiers), acct_users, acct_follows (My 1001),
- * px_view (the site's own visitor counter: real people only, eng=1, net='').
+ * px_view (the site's own visitor counter: real people only, eng=1, net=''),
+ * ask_log / ask_user_day / acct_lead_asks (the My 1001 dashboard: Ask 1001 and
+ * the lead agent's requests).
  */
 const fs = require('fs');
 const os = require('os');
@@ -88,6 +90,24 @@ function report(d) {
       AND (path = '/me' OR path = '/id/me')`).get(HOST, ms(d), ms(plusDays(d, 1)));
     lines.push(`Opened My 1001: ${n(me.n)} readers`);
   } catch { /* no follows table yet */ }
+  /* the dashboard (views/dash1001.js): Ask 1001 and the lead agent's requests (coming soon) */
+  try {
+    const a = db.prepare(`SELECT COUNT(*) AS n, SUM(ok) AS ok, COALESCE(SUM(micro), 0) AS m FROM ask_log WHERE day = ?`).get(d);
+    const au = db.prepare(`SELECT COUNT(*) AS u FROM ask_user_day WHERE day = ?`).get(d);
+    if (a.n) {
+      lines.push(`Ask 1001: ${n(a.n)} questions from ${n(au.u)} readers, ${n(a.n - (a.ok || 0))} without an answer, US$${(a.m / 1e6).toFixed(3)} of model time`);
+    }
+    const la = db.prepare(`SELECT kind, ref, COUNT(*) AS c FROM acct_lead_asks WHERE date(created_at) = ? GROUP BY kind, ref ORDER BY c DESC`).all(d);
+    if (la.length) {
+      const names = {};
+      try { for (const c of JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'public', 'data', 'census.json'), 'utf8')).companies) names['company:' + c.id] = c.name; } catch { /* ids then */ }
+      try { for (const e of JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'bumn-56.json'), 'utf8')).entities) names['bumn:' + e.slug] = e.short || e.name; } catch { /* ids then */ }
+      const lu = db.prepare(`SELECT COUNT(DISTINCT user_id) AS u FROM acct_lead_asks WHERE date(created_at) = ?`).get(d);
+      const early = la.filter((x) => !x.kind).reduce((t, x) => t + x.c, 0);
+      const top = la.filter((x) => x.kind).slice(0, 5).map((x) => `${names[x.kind + ':' + x.ref] || x.ref} (${x.c})`).join(', ');
+      lines.push(`Lead agent, coming soon: ${n(early)} asked for early access; contacts asked at ${n(la.filter((x) => x.kind).length)} companies by ${n(lu.u)} readers${top ? `: ${top}` : ''}`);
+    }
+  } catch { /* no dashboard tables yet */ }
   lines.push('');
   lines.push(`Readers: ${n(r.people)} people, ${one(r.people ? r.views / r.people : 0)} pages each`
     + ` (week before: ${n(base.people / days)} a day, ${one(base.people ? base.views / base.people : 0)} pages each)`);
