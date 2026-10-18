@@ -512,6 +512,18 @@ function start(gl, D) {
     if (running) requestAnimationFrame(tick);
   }
   new IntersectionObserver((es) => { onScreen = es[0].isIntersecting; lights(mode === 'net'); }).observe(wrap);
+  /* the site's contact tab is fixed near the bottom-right of the screen: hide it
+     while the map is under that band, so it never sits on a name */
+  let band = null;
+  const watchBand = () => {
+    if (band) band.disconnect();
+    const vh = innerHeight;
+    band = new IntersectionObserver((es) => document.body.classList.toggle('pm-over-map', es[0].isIntersecting),
+      { rootMargin: `-${Math.max(0, vh - 160)}px 0px -76px 0px` });
+    band.observe(wrap);
+  };
+  watchBand();
+  addEventListener('resize', watchBand);
   document.addEventListener('visibilitychange', () => lights(mode === 'net'));
 
   /* ── layers ──────────────────────────────────────────────────────── */

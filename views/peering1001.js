@@ -158,14 +158,17 @@ const CSS = `
 .pm-rail .chip{cursor:pointer;background:#fff;color:#52525B}
 .pm-rail .chip[aria-pressed="true"]{background:#000;border-color:#000;color:#fff}
 .pm-rail .chip[aria-pressed="true"] b{color:#C7C7CC}
-/* zoom buttons at mid-height on the right: the site's chat launcher and
-   builder tab own the bottom-right corner of the screen */
-.pm-ctl{position:absolute;right:16px;top:50%;transform:translateY(-50%);z-index:5;display:flex;flex-direction:column;background:rgba(255,255,255,.96);border:1px solid #E7E7E7}
-.pm-wrap.has-card .pm-ctl{right:calc(min(380px,100% - 32px) + 30px)}
-.pm-ctl button{width:42px;height:42px;border:0;background:none;font-size:17px;cursor:pointer;color:#000}
-.pm-ctl button + button{border-top:1px solid #E7E7E7}
+/* the zoom buttons live in the strip under the map, not on it: nothing HTML is
+   drawn over the map's names */
+.pm-ctl{display:flex;flex:none;background:#fff;border:1px solid #E7E7E7;align-self:center}
+.pm-ctl button{width:40px;height:36px;border:0;background:none;font-size:16px;cursor:pointer;color:#000}
+.pm-ctl button + button{border-left:1px solid #E7E7E7}
 .pm-ctl button:hover{background:#FAFAFA}
-.pm-key{background:#fff;border-top:1px solid #E7E7E7;padding:10px 16px;font:400 10.5px/1.5 'IBM Plex Mono',monospace;letter-spacing:.03em;text-transform:uppercase;color:#52525B}
+/* the site's docked contact tab (views/builder1001.js) stays out of the way while
+   the map is behind it, and while a place card is open */
+body.pm-over-map .b1 .b1-tab{visibility:hidden!important;pointer-events:none}
+.pm-key{display:flex;gap:16px;align-items:flex-start;justify-content:space-between;background:#fff;border-top:1px solid #E7E7E7;padding:10px 16px;font:400 10.5px/1.5 'IBM Plex Mono',monospace;letter-spacing:.03em;text-transform:uppercase;color:#52525B}
+.pm-legend{min-width:0}
 .pm-key .row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
 .pm-key i{display:inline-block;vertical-align:-2px;margin-right:6px}
 .pm-key .d{width:11px;height:11px;border-radius:50%;background:#0B0B0C;box-shadow:0 0 0 2px #fff,0 0 0 3px rgba(0,0,0,.12)}
@@ -248,8 +251,7 @@ const CSS = `
   .pm-wrap{height:min(72vh,640px)}
   .pm-rail{padding:10px 12px}
   .pm-key{padding:9px 12px}
-  .pm-ctl{right:12px}
-  .pm-wrap.has-card .pm-ctl{display:none}
+  .pm-ctl button{width:38px}
   .pm-card{top:auto;left:0;right:0;bottom:0;width:auto;max-height:64%;border-left:0;border-right:0;border-bottom:0}
   .fhd{display:none}
   .fr summary{grid-template-columns:minmax(0,1fr) auto;grid-template-areas:"nm n1" "op op";row-gap:4px}
@@ -292,17 +294,18 @@ function page({ lang = 'en', tiles = null } = {}) {
   </nav>
 <div class="pm-wrap" id="pm-wrap">
   <div id="pm-map" data-cfg="${esc(JSON.stringify(cfg))}" role="application" aria-label="Map of Indonesia’s data centres, internet exchanges and router ports from PeeringDB"></div>
-  <div class="pm-ctl">
-    <button type="button" id="pm-in" aria-label="Zoom in">+</button>
-    <button type="button" id="pm-out" aria-label="Zoom out">−</button>
-    <button type="button" id="pm-home" aria-label="Back to the opening view" title="Back to the opening view">◎</button>
-  </div>
   <div class="pm-tip" id="pm-tip" hidden></div>
   <aside class="pm-card" id="pm-card" hidden aria-live="polite"></aside>
   <noscript><div class="pm-msg"><p>The map needs JavaScript. The same places are listed below.</p></div></noscript>
   <div class="pm-msg" id="pm-msg" hidden><p>This browser has WebGL switched off, so the map cannot draw. The same places are listed below.</p></div>
 </div>
-  <div class="pm-key" id="pm-key"><div class="row" data-for="net"><span><i class="ln"></i>data centres one exchange links (not the cable route)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
+  <div class="pm-key" id="pm-key"><div class="pm-legend"><div class="row" data-for="net"><span><i class="ln"></i>data centres one exchange links (not the cable route)</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="dc" hidden><span><i class="lg"></i>named data centre</span><span><i class="g"></i>grey: no name we can check</span></div><div class="row" data-for="ix" hidden><span><i class="sq"></i>exchange at a named data centre</span><span><i class="sqg"></i>grey: city only</span></div><div class="row" data-for="ports" hidden><span><i class="d"></i>ports at a named data centre</span><span><i class="g"></i>grey: data centre not given</span></div><div class="cr">Data: <a href="https://www.peeringdb.com/" target="_blank" rel="noopener">PeeringDB</a> · map <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener">© OpenStreetMap</a>, Protomaps</div></div>
+  <div class="pm-ctl" role="group" aria-label="Zoom">
+    <button type="button" id="pm-in" aria-label="Zoom in">+</button>
+    <button type="button" id="pm-out" aria-label="Zoom out">−</button>
+    <button type="button" id="pm-home" aria-label="Back to the opening view" title="Back to the opening view">◎</button>
+  </div>
+</div>
 </div>
 <div class="stats" style="margin-top:36px">
   <div class="cell"><div class="v">${n0(T.fac)}</div><div class="k">Data centres and network sites · ${n0(T.fac_named)} named, ${n0(T.fac_grey)} grey</div></div>
