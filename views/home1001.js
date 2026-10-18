@@ -28,6 +28,7 @@ const I18N = require('./i18n1001');
 const SCHEMA = require('./schema1001');
 const FOOT = require('./footer1001');
 const { dcLive } = require('../lib/dclive');
+const { iconsLive } = require('../lib/iconslive');
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
 const DC = { s: '#E8734B', b: '#F3C64B', d: '#7AB88A', e: '#4E7A96' };
@@ -117,6 +118,9 @@ function home({ census, bumn, dc, umkm, extra = {}, lang = 'en' }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
   const A = assets();
+  /* exporter sector art: the SVG pictograms while data/sector-icons.live is on,
+     else the clay sprites (a sector missing from the icon set keeps its sprite) */
+  const SP = iconsLive() && A.icons ? Object.assign({}, A.sprites || {}, A.icons) : (A.sprites || {});
   const T = (census && census.totals) || {};
   const U = (umkm && umkm.totals) || {};
   const companies = (census && census.companies) || [];
@@ -152,8 +156,8 @@ function home({ census, bumn, dc, umkm, extra = {}, lang = 'en' }) {
   const B = ((bumn && bumn.entities) || []).slice().sort((a, b) => (b.weight || 0) - (a.weight || 0)).filter((e) => e.logo).slice(0, 4)
     .map((e) => ({ k: 'b', n: e.short, img: e.logo, href: '/bumn#' + e.slug }));
   const D = webs.filter((w) => w.logo).slice(0, 4).map((w) => ({ k: 'd', n: w.title.replace(/\s*\(.*\)$/, ''), img: w.logo, href: '/data-center/' + w.slug }));
-  const Esp = ['Coffee & Tea', 'Furniture', 'Fisheries & Seaweed', 'Textiles & Fashion'].filter((s) => (A.sprites || {})[s])
-    .map((s) => ({ k: 'e', n: s.replace(' & Seaweed', '').replace(' & Fashion', ''), img: A.sprites[s], href: '/umkm?s=' + encodeURIComponent(s), sprite: 1 }));
+  const Esp = ['Coffee & Tea', 'Furniture', 'Fisheries & Seaweed', 'Textiles & Fashion'].filter((s) => SP[s])
+    .map((s) => ({ k: 'e', n: s.replace(' & Seaweed', '').replace(' & Fashion', ''), img: SP[s], href: '/umkm?s=' + encodeURIComponent(s), sprite: 1 }));
   const wall = [];
   const lanes = [S, B, D, Esp];
   for (let i = 0; wall.length < 16 && i < 8; i++) for (const lane of lanes) if (lane[i] && wall.length < 16) wall.push(lane[i]);
@@ -195,7 +199,7 @@ function home({ census, bumn, dc, umkm, extra = {}, lang = 'en' }) {
 
   /* ── 04 exporters: what they ship ── */
   const secTiles = umkmSectors.slice(0, 16).map((s) => `<a class="sx" href="/umkm?s=${encodeURIComponent(s.name)}">
-      ${(A.sprites || {})[s.name] ? `<img src="${esc(A.sprites[s.name])}" alt="" width="64" height="64" loading="lazy" decoding="async">` : ''}
+      ${SP[s.name] ? `<img src="${esc(SP[s.name])}" alt="" width="64" height="64" loading="lazy" decoding="async">` : ''}
       <b>${esc(s.name)}</b><i class="mono">${fmt(s.count)}</i></a>`).join('');
 
   const figs = (arr) => `<div class="dfig">${arr.filter(Boolean).map(([v, k]) => `<div><b>${v}</b><span>${k}</span></div>`).join('')}</div>`;

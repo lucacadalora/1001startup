@@ -9,6 +9,24 @@
   "gf-hybrid": "/assets/home/dc-gf-hybrid.e90c9a15.webp",
   "gf-offgrid": "/assets/home/dc-gf-offgrid.61a73e86.webp"
  },
+ "icons": {
+  "Agriculture": "/assets/home/si-agriculture.bf78c0c2.svg",
+  "Automotive & Industrial": "/assets/home/si-automotive-industrial.08d38874.svg",
+  "Coconut & Charcoal": "/assets/home/si-coconut-charcoal.939ef4c1.svg",
+  "Coffee & Tea": "/assets/home/si-coffee-tea.a20e4f46.svg",
+  "Cosmetics & Essential Oils": "/assets/home/si-cosmetics-oils.2961dbc4.svg",
+  "Fisheries & Seaweed": "/assets/home/si-fisheries-seaweed.ba599aae.svg",
+  "Food & Beverage": "/assets/home/si-fnb.08015fe5.svg",
+  "Footwear": "/assets/home/si-footwear.578a1a8e.svg",
+  "Furniture": "/assets/home/si-furniture.f2b1cd71.svg",
+  "Handicraft": "/assets/home/si-handicraft.712ba062.svg",
+  "Home Decor": "/assets/home/si-home-decor.e1b83356.svg",
+  "Jewelry": "/assets/home/si-jewelry.8e4ab0b1.svg",
+  "Leather Goods": "/assets/home/si-leather-goods.176ed049.svg",
+  "Spices": "/assets/home/si-spices.e8104a87.svg",
+  "Stone & Building Materials": "/assets/home/si-stone-building.c0cd52db.svg",
+  "Textiles & Fashion": "/assets/home/si-textiles-fashion.9e25397e.svg"
+ },
  "map": "/assets/home/map-preview.6df9ded1.webp",
  "sprites": {
   "Agriculture": "/assets/home/sp-agriculture.4322bd1c.webp",

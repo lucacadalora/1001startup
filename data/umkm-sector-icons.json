@@ -1,0 +1,22 @@
+{
+ "generated": "2026-10-18T12:40:33+00:00",
+ "source": "GPT Image through the Codex bridge (one 4x4 pictogram sheet + one redraw of the stone tiles), traced to SVG with potrace; fill is currentColor, scripts/home-assets.py paints each in its sector colour from umkm.json sector_colors",
+ "icons": {
+  "Food & Beverage": "/assets/sector-icons/fnb.svg",
+  "Textiles & Fashion": "/assets/sector-icons/textiles-fashion.svg",
+  "Furniture": "/assets/sector-icons/furniture.svg",
+  "Fisheries & Seaweed": "/assets/sector-icons/fisheries-seaweed.svg",
+  "Home Decor": "/assets/sector-icons/home-decor.svg",
+  "Coffee & Tea": "/assets/sector-icons/coffee-tea.svg",
+  "Cosmetics & Essential Oils": "/assets/sector-icons/cosmetics-oils.svg",
+  "Jewelry": "/assets/sector-icons/jewelry.svg",
+  "Handicraft": "/assets/sector-icons/handicraft.svg",
+  "Spices": "/assets/sector-icons/spices.svg",
+  "Agriculture": "/assets/sector-icons/agriculture.svg",
+  "Coconut & Charcoal": "/assets/sector-icons/coconut-charcoal.svg",
+  "Footwear": "/assets/sector-icons/footwear.svg",
+  "Leather Goods": "/assets/sector-icons/leather-goods.svg",
+  "Automotive & Industrial": "/assets/sector-icons/automotive-industrial.svg",
+  "Stone & Building Materials": "/assets/sector-icons/stone-building.svg"
+ }
+}
