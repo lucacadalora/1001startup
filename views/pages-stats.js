@@ -261,14 +261,18 @@ function chartSplit(series, unit, lang = 'en') {
 </div>`;
 }
 
-function agentsCard(title, rows, lang) {
+function agentsCard(title, rows, lang, clicks = null) {
   const L = I18N.mkL(lang);
+  const ct = (r) => {
+    const c = clicks && r.kind === 'answer' ? clicks.get(r.agent) || 0 : 0;
+    return c ? ` <span class="px-ct">${L(`${fmt(c)} clicked through`, `${fmt(c)} mengeklik`)}</span>` : '';
+  };
   const max = Math.max(1, ...rows.map((r) => r.n));
   return `<div class="px-card"><h3>${esc(title)}</h3>
   ${rows.length ? `<div class="px-bars">${rows.map((r) => `
     <div class="px-bar"><span class="fill${r.kind === 'answer' ? ' ai' : ''}" style="width:${((r.n / max) * 100).toFixed(1)}%"></span>
       <span class="lb">${esc(r.agent)} <span class="px-kind">${esc(L(...(KIND_LABEL[r.kind] || [r.kind, r.kind])))}</span>${r.verified >= r.n && r.n > 0
-        ? ` <span class="px-vf" title="${L('Every request came from the addresses this operator publishes', 'Semua permintaan datang dari alamat yang dipublikasikan operator ini')}">${L('verified', 'terverifikasi')}</span>` : ''}</span>
+        ? ` <span class="px-vf" title="${L('Every request came from the addresses this operator publishes', 'Semua permintaan datang dari alamat yang dipublikasikan operator ini')}">${L('verified', 'terverifikasi')}</span>` : ''}${ct(r)}</span>
       <span class="nm">${fmt(r.n)}</span></div>`).join('')}</div>`
     : `<div class="px-empty">${L('Nothing recorded in this range yet.', 'Belum ada yang tercatat dalam rentang ini.')}</div>`}
 </div>`;
@@ -316,6 +320,11 @@ function body1001(d, { lang = 'en' }) {
   const ai = d.ai || { window: {}, total: {}, agents: [], pages: [], clicks: 0 };
   const aw = ai.window || {}, at = ai.total || {};
   const answerAgents = (ai.agents || []).filter((a) => a.kind === 'answer');
+  /* people who clicked a link in an AI answer (Luca, 19 Oct 2026: "we need to have them as metrics") */
+  const clickBy = ai.clickBy || [];
+  const clickMap = new Map(clickBy.map((c) => [c.agent, c.n]));
+  const clickPeople = clickBy.reduce((t, c) => t + c.n, 0);
+  const clickRate = aw.answer ? Math.max(1, Math.round((clickPeople / aw.answer) * 100)) : 0;
   const crawlers = (ai.agents || []).filter((a) => a.kind !== 'answer');
   const partial = split.rebuilt && split.breakdownFrom > Date.parse(d.series[0] ? d.series[0].b.slice(0, 10) + 'T00:00:00+07:00' : 0)
     ? `<p class="px-split-part">${L(`Breakdowns start on ${esc(startDate)}, when people and AI began to be counted apart. The totals before that date were rebuilt from the server logs.`,
@@ -385,9 +394,19 @@ function body1001(d, { lang = 'en' }) {
 
   <h2 class="px-split-h sub ai"><span class="sq"></span>AI · ${esc(word)}</h2>
   <div class="px-grid">
-    ${agentsCard(L('Assistants that answered someone with these pages', 'Asisten AI yang menjawab seseorang dengan halaman ini'), answerAgents, lang)}
+    ${agentsCard(L('Assistants that answered someone with these pages', 'Asisten AI yang menjawab seseorang dengan halaman ini'), answerAgents, lang, clickMap)}
     ${bars(L('Pages AI assistants opened most', 'Halaman yang paling sering dibuka asisten AI'), ai.pages || [], { mono: true, label: (k) => k || '/', empty: EMPTY })}
   </div>
+  <div class="px-grid">
+    ${chartOne(d.series.map((x) => ({ ...x, clicks: x.clicks || 0 })), 'clicks', d.unit, lang, { cls: 'ai',
+      label: `${L('People who clicked through from an AI answer', 'Orang yang mengeklik dari jawaban AI')} ${d.unit === 'hour' ? L('per hour', 'per jam') : L('per day', 'per hari')}`,
+      aria: L('People who clicked a link in an AI answer, over time', 'Orang yang mengeklik tautan di jawaban AI, dari waktu ke waktu') })}
+    ${bars(L('Readers each assistant sent here', 'Pembaca yang dikirim tiap asisten AI'), clickBy.map((c) => ({ k: c.agent, n: c.n })), {
+      empty: L('No clicks from an AI answer in this range yet.', 'Belum ada klik dari jawaban AI dalam rentang ini.') })}
+  </div>
+  ${clickPeople && aw.answer ? `<p class="px-split-part">${L(
+    `${fmt(clickPeople)} people clicked through for ${fmt(aw.answer)} AI answers that used these pages: about ${clickRate} in 100. An assistant usually answers without the reader opening the source.`,
+    `${fmt(clickPeople)} orang mengeklik dari ${fmt(aw.answer)} jawaban AI yang memakai halaman ini: sekitar ${clickRate} dari 100. Asisten AI biasanya menjawab tanpa pembaca membuka sumbernya.`)}</p>` : ''}
   <div class="px-grid">
     ${agentsCard(L('Crawlers: AI search, training and search engines', 'Crawler: pencarian AI, pelatihan, dan mesin pencari'), crawlers, lang)}
     <div class="px-card"><h3>${L('By kind', 'Menurut jenis')}</h3><div class="px-kinds">
