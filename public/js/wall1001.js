@@ -10,10 +10,10 @@
  * localStorage and in a cookie (w1001s; the larger of the two wins, so
  * clearing one does not reset it), and never resets (Luca's call 3).
  * Readers who were on the site before the wall went up (data-since) get no
- * fresh 45 s: their time counts from their first visit, so the card comes at
+ * fresh 2 min: their time counts from their first visit, so the card comes at
  * once (Luca, 18 Oct: "dont let if people already [here] for long time, they
  * are free from the login"). When it reaches the limit
- * (45 s, was 120 s) the page blurs and a sign-in card covers it at once (call 2),
+ * (120 s; 45 s on 18 Oct) the page blurs and a sign-in card covers it at once (call 2),
  * with no close button. The card holds /signin?embed=1 in a same-origin frame,
  * so Clerk runs only there and every other page keeps its strict CSP. When the
  * frame says the reader is signed in, the wall lifts in place, no reload.
@@ -34,7 +34,7 @@
     if (d.off === '1') return;
   }
 
-  var LIMIT = Math.max(1, parseInt(d.limit, 10) || 45);
+  var LIMIT = Math.max(1, parseInt(d.limit, 10) || 120);
   var TEST = d.test === '1';
   var LANG = d.lang === 'id' ? 'id' : 'en';
   var PF = LANG === 'id' ? '/id' : '';
