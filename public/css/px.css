@@ -141,6 +141,7 @@ body.wide .head-cta .px-badge{display:none}
 .px-bar .fill.ai{background:rgba(46,139,87,.16)}
 .px-kind{font-family:var(--px-mono);font-size:10px;letter-spacing:.04em;color:var(--px-gray);text-transform:uppercase;margin-left:6px}
 .px-ct{font-family:var(--px-mono);font-size:10px;letter-spacing:.04em;color:var(--px-gray);margin-left:6px;white-space:nowrap}
+@media (max-width:560px){.px-bar .lb:has(.px-ct){white-space:normal}.px-bar .lb .px-ct{display:block;margin:3px 0 0}}
 .px-vf{font-family:var(--px-mono);font-size:10px;letter-spacing:.04em;color:#1F6E43;border:1px solid rgba(31,110,67,.35);padding:0 4px;margin-left:4px}
 .px-kinds{display:grid;gap:10px}
 .px-kinds div{display:flex;align-items:baseline;gap:10px;border-bottom:1px solid var(--px-line);padding-bottom:8px}
