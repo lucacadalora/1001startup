@@ -112,6 +112,30 @@ function report(d) {
   lines.push(`Readers: ${n(r.people)} people, ${one(r.people ? r.views / r.people : 0)} pages each`
     + ` (week before: ${n(base.people / days)} a day, ${one(base.people ? base.views / base.people : 0)} pages each)`);
   lines.push(`From Google: ${n(r.google)} people (week before: ${one(base.google / days)} a day)`);
+  /* readers who clicked a link in an AI answer (px chan 'ai'); wall_counts ai_* from lib/account1001.js */
+  try {
+    const from = ms(d), to = ms(plusDays(d, 1));
+    const ai = db.prepare(`SELECT ref, COUNT(DISTINCT vid) AS p FROM px_view
+      WHERE host = ? AND chan = 'ai' AND net = '' AND ts >= ? AND ts < ? GROUP BY ref ORDER BY p DESC`).all(HOST, from, to);
+    const people = ai.reduce((t, x) => t + x.p, 0);
+    /* no referrer = the utm_source tag; in practice that is ChatGPT's ?utm_source=chatgpt.com */
+    const name = (ref) => !ref ? 'ChatGPT' : /chatgpt|openai/.test(ref) ? 'ChatGPT' : /perplexity/.test(ref) ? 'Perplexity'
+      : /claude/.test(ref) ? 'Claude' : /gemini/.test(ref) ? 'Gemini' : /copilot/.test(ref) ? 'Copilot' : ref;
+    const on = db.prepare(`SELECT COUNT(*) AS n FROM (SELECT a.vid FROM px_view a
+      WHERE a.host = ? AND a.chan = 'ai' AND a.net = '' AND a.ts >= ? AND a.ts < ? GROUP BY a.vid
+      HAVING (SELECT COUNT(*) FROM px_view b WHERE b.host = a.host AND b.vid = a.vid AND b.ts >= ? AND b.ts < ?) > 1)`).get(HOST, from, to, from, to).n;
+    const land = db.prepare(`SELECT path, COUNT(*) AS c FROM px_view WHERE host = ? AND chan = 'ai' AND net = '' AND ts >= ? AND ts < ?
+      GROUP BY path ORDER BY c DESC LIMIT 3`).all(HOST, from, to);
+    const by = {};
+    for (const x of ai) { const k = name(x.ref); by[k] = (by[k] || 0) + x.p; }
+    lines.push(`From AI answers: ${n(people)} people${people ? ` (${Object.entries(by).map(([k, v]) => `${k} ${n(v)}`).join(', ')})` : ''}`
+      + `${people ? `; ${n(on)} read past the first page` : ''}`);
+    if (land.length) lines.push(`  Landed on: ${land.map((x) => `${x.path} (${x.c})`).join(', ')}`);
+    /* the ai_* wall counts started at the 10:25-ish UTC restart on 19 Oct; 20 Oct is the first full day */
+    if (d >= '2026-10-20') {
+      lines.push(`  Hit the wall: ${n(w.ai_first)}; signed in: ${n(w.ai_signin)} (${n(w.ai_signup)} new accounts)`);
+    } else if (d === '2026-10-19') lines.push('  Wall and sign-ins for these readers: counted from 20 Oct');
+  } catch { /* no counter tables */ }
   /* scraper check, slice 1 = watch only (lib/shield1001.js); its day is the Jakarta day */
   try {
     const sw = db.prepare(`SELECT rule, COUNT(*) AS a, SUM(short) AS s, SUM(signed_later) AS sl FROM shield_watch WHERE day = ? GROUP BY rule`).all(d);
