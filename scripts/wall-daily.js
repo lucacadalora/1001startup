@@ -112,6 +112,28 @@ function report(d) {
   lines.push(`Readers: ${n(r.people)} people, ${one(r.people ? r.views / r.people : 0)} pages each`
     + ` (week before: ${n(base.people / days)} a day, ${one(base.people ? base.views / base.people : 0)} pages each)`);
   lines.push(`From Google: ${n(r.google)} people (week before: ${one(base.google / days)} a day)`);
+  /* scraper check, slice 1 = watch only (lib/shield1001.js); its day is the Jakarta day */
+  try {
+    const sw = db.prepare(`SELECT rule, COUNT(*) AS a, SUM(short) AS s, SUM(signed_later) AS sl FROM shield_watch WHERE day = ? GROUP BY rule`).all(d);
+    const anyRows = db.prepare(`SELECT 1 FROM shield_seen WHERE day = ? LIMIT 1`).get(d);
+    if (sw.length || anyRows) {
+      const by = Object.fromEntries(sw.map((x) => [x.rule, x.a]));
+      const addrs = sw.reduce((t, x) => t + x.a, 0);
+      const pages = sw.reduce((t, x) => t + (x.s || 0), 0);
+      const signedOver = sw.reduce((t, x) => t + (x.sl || 0), 0);
+      const parts = [['day', 'over 30 pages'], ['burst', 'over 20 in 5 min'], ['server', 'servers over 10'],
+        ['claimed', 'named machines over 500'], ['preview', 'previews over 200']]
+        .filter(([k]) => by[k]).map(([k, t]) => `${n(by[k])} ${t}`).join(', ');
+      lines.push('');
+      lines.push(`Scraper check, watch only (nobody is stopped yet; Jakarta day ${d})`);
+      lines.push(`Would have stopped: ${n(addrs)} addresses${parts ? ` (${parts})` : ''}; ${n(pages)} pages would have been the short page`);
+      lines.push(`Signed-in readers whose address was already over: ${n(signedOver)}`);
+      const top = db.prepare(`SELECT ua, net, pages FROM shield_watch WHERE day = ? ORDER BY pages DESC LIMIT 3`).all(d);
+      if (top.length) {
+        lines.push('Biggest: ' + top.map((t) => `${(t.ua || 'no name').replace(/^Mozilla\/5\.0 /, '').slice(0, 48)}${t.net === 'dc' ? ' (server)' : ''}: ${n(t.pages)} pages`).join('; '));
+      }
+    }
+  } catch { /* no shield tables yet */ }
   return lines.join('\n');
 }
 
