@@ -324,7 +324,13 @@ function body1001(d, { lang = 'en' }) {
   const clickBy = ai.clickBy || [];
   const clickMap = new Map(clickBy.map((c) => [c.agent, c.n]));
   const clickPeople = clickBy.reduce((t, c) => t + c.n, 0);
-  const clickRate = aw.answer ? Math.max(1, Math.round((clickPeople / aw.answer) * 100)) : 0;
+  const clickList = clickBy.map((c) => `${esc(c.agent)} ${fmt(c.n)}`).join(', ');
+  /* the clicks exist only from the split; compare them with the answers over the same days */
+  const clickFrom = split.breakdownFrom || 0;
+  const answersForClicks = split.rebuilt
+    ? d.series.filter((x) => Date.parse(String(x.b).slice(0, 10) + 'T00:00:00+07:00') >= clickFrom - 86400e3 + 1).reduce((t, x) => t + (x.answers || 0), 0)
+    : aw.answer;
+  const clickRate = answersForClicks ? Math.max(1, Math.round((clickPeople / answersForClicks) * 100)) : 0;
   const crawlers = (ai.agents || []).filter((a) => a.kind !== 'answer');
   const partial = split.rebuilt && split.breakdownFrom > Date.parse(d.series[0] ? d.series[0].b.slice(0, 10) + 'T00:00:00+07:00' : 0)
     ? `<p class="px-split-part">${L(`Breakdowns start on ${esc(startDate)}, when people and AI began to be counted apart. The totals before that date were rebuilt from the server logs.`,
@@ -397,16 +403,14 @@ function body1001(d, { lang = 'en' }) {
     ${agentsCard(L('Assistants that answered someone with these pages', 'Asisten AI yang menjawab seseorang dengan halaman ini'), answerAgents, lang, clickMap)}
     ${bars(L('Pages AI assistants opened most', 'Halaman yang paling sering dibuka asisten AI'), ai.pages || [], { mono: true, label: (k) => k || '/', empty: EMPTY })}
   </div>
-  <div class="px-grid">
+  <div class="px-charts">
     ${chartOne(d.series.map((x) => ({ ...x, clicks: x.clicks || 0 })), 'clicks', d.unit, lang, { cls: 'ai',
       label: `${L('People who clicked through from an AI answer', 'Orang yang mengeklik dari jawaban AI')} ${d.unit === 'hour' ? L('per hour', 'per jam') : L('per day', 'per hari')}`,
       aria: L('People who clicked a link in an AI answer, over time', 'Orang yang mengeklik tautan di jawaban AI, dari waktu ke waktu') })}
-    ${bars(L('Readers each assistant sent here', 'Pembaca yang dikirim tiap asisten AI'), clickBy.map((c) => ({ k: c.agent, n: c.n })), {
-      empty: L('No clicks from an AI answer in this range yet.', 'Belum ada klik dari jawaban AI dalam rentang ini.') })}
   </div>
-  ${clickPeople && aw.answer ? `<p class="px-split-part">${L(
-    `${fmt(clickPeople)} people clicked through for ${fmt(aw.answer)} AI answers that used these pages: about ${clickRate} in 100. An assistant usually answers without the reader opening the source.`,
-    `${fmt(clickPeople)} orang mengeklik dari ${fmt(aw.answer)} jawaban AI yang memakai halaman ini: sekitar ${clickRate} dari 100. Asisten AI biasanya menjawab tanpa pembaca membuka sumbernya.`)}</p>` : ''}
+  ${clickPeople && answersForClicks ? `<p class="px-split-part">${L(
+    `${split.rebuilt ? `Since ${esc(startDate)}, ` : ''}${fmt(clickPeople)} people clicked through (${clickList}) for ${fmt(answersForClicks)} AI answers that used these pages: about ${clickRate} in 100. An assistant usually answers without the reader opening the source.`,
+    `${split.rebuilt ? `Sejak ${esc(startDate)}, ` : ''}${fmt(clickPeople)} orang mengeklik (${clickList}) dari ${fmt(answersForClicks)} jawaban AI yang memakai halaman ini: sekitar ${clickRate} dari 100. Asisten AI biasanya menjawab tanpa pembaca membuka sumbernya.`)}</p>` : ''}
   <div class="px-grid">
     ${agentsCard(L('Crawlers: AI search, training and search engines', 'Crawler: pencarian AI, pelatihan, dan mesin pencari'), crawlers, lang)}
     <div class="px-card"><h3>${L('By kind', 'Menurut jenis')}</h3><div class="px-kinds">
