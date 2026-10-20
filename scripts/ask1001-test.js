@@ -5,8 +5,8 @@
  *   node scripts/ask1001-test.js            Part A: offline. Every tool, the answer
  *                                           cleaner, entity picking, link checks, and
  *                                           the agent loop against a local mock of the
- *                                           chat API (no network, no key). Exits 1 on
- *                                           any failure.
+ *                                           chat API, plain and streamed (no network,
+ *                                           no key). Exits 1 on any failure.
  *   node scripts/ask1001-test.js --live     Part A, then Part B: the 12 questions through
  *                                           the real model (~US$0.001-0.003 each), with a
  *                                           rough fabrication check: every number in an
@@ -380,6 +380,13 @@ function mockServer() {
       const step = script.shift() || { status: 500, body: { error: 'no script' } };
       const send = () => {
         if (res.destroyed) return;
+        if (step.sse) {
+          res.writeHead(200, { 'content-type': 'text/event-stream' });
+          for (const c of step.sse) res.write('data: ' + JSON.stringify(c) + '\n\n');
+          if (step.cut) { res.destroy(); return; }
+          res.end('data: [DONE]\n\n');
+          return;
+        }
         res.writeHead(step.status || 200, { 'content-type': 'application/json' });
         res.end(JSON.stringify(step.body));
       };
@@ -399,6 +406,22 @@ const toolTurn = (calls, usage = { prompt_tokens: 1000, completion_tokens: 50, p
 const textTurn = (content, usage = { prompt_tokens: 2000, completion_tokens: 120, prompt_tokens_details: { cached_tokens: 1000 } }) => ({
   body: { choices: [{ message: { role: 'assistant', content }, finish_reason: 'stop' }], usage },
 });
+
+/* streamed replies (SSE), as the chat page asks for them */
+const sseText = (parts, usage = { prompt_tokens: 2000, completion_tokens: 120, prompt_tokens_details: { cached_tokens: 1000 } }) => ({ sse: [
+  { choices: [{ index: 0, delta: { role: 'assistant', content: '' } }] },
+  { choices: [{ index: 0, delta: { reasoning: 'thinking words that must never reach the page' } }] },
+  ...parts.map((p) => ({ choices: [{ index: 0, delta: { content: p } }] })),
+  { choices: [{ index: 0, delta: {}, finish_reason: 'stop' }] },
+  { choices: [], usage },
+] });
+const sseTool = (name, argParts, pre = '') => ({ sse: [
+  ...(pre ? [{ choices: [{ index: 0, delta: { content: pre } }] }] : []),
+  { choices: [{ index: 0, delta: { tool_calls: [{ index: 0, id: 'call_s1', type: 'function', function: { name } }] } }] },
+  ...argParts.map((a) => ({ choices: [{ index: 0, delta: { tool_calls: [{ index: 0, function: { arguments: a } }] } }] })),
+  { choices: [{ index: 0, delta: {}, finish_reason: 'tool_calls' }] },
+  { choices: [], usage: { prompt_tokens: 1000, completion_tokens: 50, prompt_tokens_details: { cached_tokens: 400 } } },
+] });
 
 async function mockTests() {
   const dir = fs.mkdtempSync(path.join(os.tmpdir(), 'ask1001-'));
@@ -450,6 +473,61 @@ async function mockTests() {
       const mid = msgs.slice(1, -1);
       ok(mid.length <= 6 && mid.every((m) => m.content.length <= 1500), 'trimmed ' + mid.length);
       eq(msgs[msgs.length - 1].content, 'who are its investors?', 'question last');
+    });
+    await check('scope (the chips on /me) adds one line to the system prompt; unknown scopes add nothing', async () => {
+      const ask = mk();
+      const sys = async (scope) => {
+        M.set([textTurn('ok')]);
+        await ask.run({ q: 'which is biggest?', scope });
+        return M.seen[0].body.messages[0].content;
+      };
+      const plain = await sys(undefined);
+      ok(!/set the search to/.test(plain), 'no scope line without a scope');
+      ok(/set the search to BUMN\. .*search_bumn or get_bumn first\. If the question plainly names something else/.test(await sys('bumn')), 'bumn line');
+      ok(/set the search to Data centres\..*search_datacenters first/.test(await sys('dc')), 'dc line');
+      eq(await sys('drop tables'), plain, 'unknown scope ignored');
+      eq(await sys('constructor'), plain, 'prototype key ignored');
+      eq(M.seen[0].body.tools.length, 9, 'scope never takes a tool away');
+    });
+    await check('streamed (onText): tool call in pieces, then the answer word by word; usage from the last chunk; thinking never passed on', async () => {
+      const ask = mk();
+      M.set([sseTool('get_startup', ['{"id_or_', 'name": "Wares', 'ix"}'], 'Let me look. '), sseText(['[Waresix](/company/waresix) is ', 'backed by ', '[Temasek](/investor/temasek).'])]);
+      const got = [];
+      const r = await ask.run({ q: 'Who invested in Waresix?', onText: (d, n) => got.push([d, n]) });
+      eq(r.ok, true, 'ok');
+      eq(r.steps.map((x) => x.tool).join(), 'get_startup', 'tool ran from the pieced arguments');
+      eq(r.steps[0].label, 'Opening startup: Waresix', 'label from the joined arguments');
+      eq(got.filter(([, n]) => n === 1).map(([d]) => d).join(''), 'Let me look. ', 'turn 1 words');
+      eq(got.filter(([, n]) => n === 2).map(([d]) => d).join(''), '[Waresix](/company/waresix) is backed by [Temasek](/investor/temasek).', 'turn 2 words, in order');
+      ok(!got.some(([d]) => /thinking words/.test(d)), 'thinking never passed on');
+      eq(r.usage.in, 3000, 'in');
+      eq(r.usage.cached, 1400, 'cached');
+      eq(r.usage.out, 170, 'out');
+      const b = M.seen[0].body;
+      eq(b.stream, true, 'stream asked');
+      eq(b.stream_options && b.stream_options.include_usage, true, 'usage asked for');
+      const asst = M.seen[1].body.messages.find((m) => m.role === 'assistant' && m.tool_calls);
+      eq(asst.tool_calls[0].function.arguments, '{"id_or_name": "Waresix"}', 'arguments sent back whole');
+      eq(asst.tool_calls[0].id, 'call_s1', 'call id kept');
+      ok(r.entities.some((e) => e.r === 'waresix'), 'entities still picked');
+    });
+    await check('no onText: one JSON reply, nothing streamed (the dashboard)', async () => {
+      const ask = mk();
+      M.set([textTurn('Plain.')]);
+      const r = await ask.run({ q: 'x?' });
+      eq(r.ok, true, 'ok');
+      eq(M.seen[0].body.stream, undefined, 'no stream flag');
+    });
+    await check('a stream cut halfway is never an answer; a throwing onText never breaks a run', async () => {
+      const ask = mk();
+      M.set([{ sse: [{ choices: [{ index: 0, delta: { content: 'Half an ans' } }] }], cut: true }]);
+      const r = await ask.run({ q: 'x?', onText: () => {} });
+      eq(r.ok, false, 'cut -> not ok');
+      ok(r.reason === 'upstream' || r.reason === 'timeout', 'reason ' + r.reason);
+      M.set([sseText(['Fine.'])]);
+      const r2 = await ask.run({ q: 'x?', onText: () => { throw new Error('page gone'); } });
+      eq(r2.ok, true, 'throwing onText');
+      eq(r2.answer, 'Fine.', 'answer kept');
     });
     await check('429 -> busy, 500 -> upstream, 401 -> upstream, bad JSON -> upstream', async () => {
       const ask = mk();
