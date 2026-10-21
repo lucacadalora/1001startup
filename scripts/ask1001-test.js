@@ -260,6 +260,88 @@ async function partA() {
     ok(r.sectors.some((x) => x.sector === 'Insurtech & other tech'), 'misc bucket named');
   });
 
+  console.log('\nthe company graph, exporters, peering');
+  const HAVE_GRAPH = fs.existsSync(path.join(ROOT, 'data/graph1001.json'));
+  const HAVE_PEERING = fs.existsSync(path.join(ROOT, 'data/peering-graph.json'));
+  const UMKM_ON = fs.existsSync(path.join(ROOT, 'data/home.live'));
+  const graph = HAVE_GRAPH ? JSON.parse(fs.readFileSync(path.join(ROOT, 'data/graph1001.json'), 'utf8')) : null;
+  const idOfRef = (ref) => graph && Object.keys(graph.nodes).find((id) => graph.nodes[id].r.includes(ref));
+  if (!HAVE_GRAPH) console.log('  (data/graph1001.json not built: node scripts/graph1001-build.js; graph checks test the fallback only)');
+  if (HAVE_GRAPH) {
+    await check('reviewed merges: one id per company, SIG kept apart', () => {
+      eq(idOfRef('s:linkaja'), idOfRef('u:kai/fintek-karya-nusantara-linkaja'), 'LinkAja = KAI\'s Fintek Karya Nusantara');
+      eq(idOfRef('b:telkom'), idOfRef('i:telkom-indonesia'), 'Telkom BUMN = investor');
+      eq(idOfRef('u:telkom/mdi-ventures'), idOfRef('i:mdi-ventures'), 'MDI');
+      ok(idOfRef('b:sig') !== idOfRef('i:sig'), 'SIG the BUMN is not SIG the investor');
+      ok(idOfRef('u:telkom/telin') !== idOfRef('u:telkom/telin-hong-kong'), 'Telin is not Telin Hong Kong');
+      ok(Object.values(graph.nodes).every((n) => !(n.place && n.r.some((r) => 'sibucnek'.includes(r[0])))), 'no place merged with a company');
+    });
+    await check('connections "Telkom": every dataset it is in, owns Telin, links capped', () => {
+      const r = T.connections({ name: 'Telkom' });
+      eq(r.href, '/bumn/telkom', 'href');
+      ok(r.in_datasets.some((w) => w.what === 'BUMN') && r.in_datasets.some((w) => /investor/.test(w.what)), 'BUMN + investor');
+      ok(r.items.length <= 12 && r.total > r.items.length, 'capped at 12 of ' + r.total);
+      ok(r.items.some((x) => x.rel === 'owns' && x.with === 'Telin' && x.stake === '100%'), 'owns Telin 100%');
+      ok(r.items.every((x) => x.source), 'every link says its source');
+    });
+    await check('connections "LinkAja": a startup that is a BUMN company', () => {
+      const r = T.connections({ name: 'LinkAja' });
+      eq(r.href, '/company/linkaja', 'own page first');
+      ok(r.in_datasets.some((w) => /^BUMN subsidiary, KAI/.test(w.what)) && r.in_datasets.some((w) => w.what === 'census startup'), 'both datasets');
+      ok(r.items.some((x) => x.rel === 'backed by' && /Telkomsel|BRI Ventures|Mandiri Capital/.test(x.with)), 'BUMN-group investors');
+    });
+    await check('connections to=: chains of at most 3 links, each hop sourced', () => {
+      const r = T.connections({ name: 'Xendit', to: 'Telkom' });
+      ok(r.connected && r.links_apart <= 3, 'connected ' + r.links_apart);
+      ok(r.chains.length >= 1 && r.chains.every((c) => c.length === r.links_apart && c.every((h) => h.rel && h.to && h.source)), 'hops');
+      const same = T.connections({ name: 'Telkom Indonesia', to: 'telkom' });
+      eq(same.same_company, true, 'same company');
+    });
+    await check('connections: relation filter, AS numbers, unknown names', () => {
+      const p = T.connections({ name: 'DCI', relation: 'power' });
+      ok(p.items.length >= 1 && p.items.every((x) => /power/.test(x.rel)), 'power links only');
+      eq(T.connections({ name: 'AS7713' }).name, 'Telin', 'AS7713 = Telin');
+      const u = T.connections({ name: 'Zzqxv Holdings' });
+      ok(u.total === 0 && /no company called/.test(u.hint), 'unknown');
+      const pe = T.connections({ name: 'Biznet', relation: 'peering' });
+      ok(pe.peering && pe.peering.in_buildings >= 1 && pe.peering.in_buildings_examples.length <= 5, 'peering summarised, 5 names at most');
+    });
+  } else {
+    await check('connections without the graph file: a calm hint', () => {
+      ok(/not available/.test(T.connections({ name: 'Telkom' }).hint), 'hint');
+    });
+  }
+  await check('search_exporters: products, places in either language, never email or phone', () => {
+    const r = T.search_exporters({ query: 'coffee' });
+    ok(r.total >= 50 && r.items.length <= 8, 'coffee ' + r.total);
+    const jt = T.search_exporters({ place: 'Jawa Timur', limit: 15 });
+    ok(jt.total > 50 && jt.items.every((x) => x.province === 'East Java'), 'Jawa Timur = East Java');
+    eq(T.search_exporters({ place: 'East Java' }).total, jt.total, 'same count in English');
+    for (const a of [{ query: 'coffee', limit: 15 }, { sector: 'furniture', limit: 15 }, { market: 'Japan', limit: 15 }]) {
+      const s = JSON.stringify(T.search_exporters(a));
+      ok(!/@|"email"|"phone"|\+62/.test(s), 'no contact details: ' + JSON.stringify(a));
+    }
+    const h = r.items[0].href;
+    if (UMKM_ON) { ok(/^\/umkm\/company\/[a-z0-9-]+$/.test(h) && X.validHref(h), 'exporter href ' + h); } else ok(h === undefined, 'no href while /umkm is off');
+    ok(T.search_exporters({ query: 'zzqxv' }).hint, 'none -> hint');
+  });
+  if (HAVE_PEERING) {
+    await check('search_peering: buildings by city, networks by AS, no bulk network lists', () => {
+      const b = T.search_peering({ city: 'Batam', kind: 'building', limit: 50 });
+      ok(b.items.length <= 10 && b.items.length >= 1 && b.items.every((x) => /batam/i.test(x.city)), 'Batam buildings, max 10');
+      const n = T.search_peering({ query: 'AS7713' });
+      eq(n.items[0].as, 'AS7713', 'AS7713');
+      ok(n.items[0].buildings.length <= 4 && n.items[0].exchanges.length <= 4, 'network lists capped');
+      ok(/bulk/.test(T.search_peering({ kind: 'network' }).hint), 'no bulk network list');
+    });
+  }
+  await check('new tools: labels in both languages', () => {
+    eq(X.label('connections', { name: 'Telkom' }, 'en'), 'Following links: Telkom', 'en');
+    eq(X.label('connections', { name: 'Xendit', to: 'Telkom' }, 'id'), 'Menelusuri hubungan: Xendit ke Telkom', 'id path');
+    eq(X.label('search_exporters', { query: 'kopi', place: 'Bali' }, 'id'), 'Mencari eksportir: kopi, Bali', 'id exporters');
+    eq(X.label('search_peering', { city: 'Batam' }, 'en'), 'Searching the peering map: Batam', 'en peering');
+  });
+
   console.log('\nsize caps and link shapes');
   await check('every result <= 4,000 chars of JSON, lists capped at 15', () => {
     const big = [
@@ -267,13 +349,15 @@ async function partA() {
       ['search_investors', { sector: 'fintech', limit: 15 }], ['search_bumn', { limit: 40 }], ['search_datacenters', { limit: 40 }],
       ['closed_companies', { limit: 40 }], ['census_overview', {}], ['get_investor', { slug_or_name: 'east-ventures' }],
       ['get_bumn', { slug_or_name: 'pertamina' }], ['get_bumn', { slug_or_name: 'telkom' }], ['get_startup', { id_or_name: 'grab-indonesia' }],
+      ['connections', { name: 'PLN', limit: 99 }], ['connections', { name: 'Telkom', limit: 20 }], ['connections', { name: 'IIX-Jakarta' }],
+      ['connections', { name: 'East Ventures', to: 'PLN' }], ['search_exporters', { limit: 99 }], ['search_peering', { query: 'Jakarta', limit: 99 }],
     ];
     for (const [name, a] of big) {
       for (const lang of ['en', 'id']) {
         const r = T[name](a, lang);
         const n = JSON.stringify(r).length;
         ok(n <= 4000, `${name} ${lang} is ${n} chars`);
-        if (r.items) ok(r.items.length <= 15, `${name} rows ${r.items.length}`);
+        if (r.items) ok(r.items.length <= (name === 'connections' ? 20 : 15), `${name} rows ${r.items.length}`);
       }
     }
     let worst = 0;
@@ -285,13 +369,15 @@ async function partA() {
       ['search_startups', { sort: 'funding' }], ['get_startup', { id_or_name: 'waresix' }], ['search_investors', { sector: 'fintech' }],
       ['get_investor', { slug_or_name: 'init-6' }], ['search_bumn', {}], ['get_bumn', { slug_or_name: 'telkom' }],
       ['search_datacenters', {}], ['closed_companies', {}], ['census_overview', {}],
+      ['connections', { name: 'Telkom', limit: 20 }], ['connections', { name: 'LinkAja' }], ['connections', { name: 'Elitery' }],
+      ['connections', { name: 'Xendit', to: 'Telkom' }], ['search_exporters', { query: 'coffee' }], ['search_peering', { query: 'Biznet' }],
     ];
     for (const lang of ['en', 'id']) {
       for (const [name, a] of calls) {
         for (const h of hrefsIn(T[name](a, lang))) {
           ok(h.startsWith('/') && !h.startsWith('//'), `${name}: ${h}`);
           ok(X.validHref(h), `${name} ${lang}: invalid ${h}`);
-          if (/\/(company|investor|sector|city|closed|unicorn|investors)\b/.test(h)) ok(lang === 'id' ? h.startsWith('/id/') : !h.startsWith('/id/'), `${name} ${lang}: prefix ${h}`);
+          if (/^\/(id\/)?(company|investor|sector|city|closed|unicorn|investors)\b/.test(h)) ok(lang === 'id' ? h.startsWith('/id/') : !h.startsWith('/id/'), `${name} ${lang}: prefix ${h}`);
           if (/^\/(id\/)?(bumn|data-center)/.test(h)) ok(!h.startsWith('/id/'), `${name}: no /id on ${h}`);
         }
       }
@@ -457,7 +543,7 @@ async function mockTests() {
       eq(b.temperature, 0.2, 'temperature');
       eq(b.reasoning_effort, 'low', 'effort');
       eq(b.tool_choice, 'auto', 'tool_choice');
-      eq(b.tools.length, 9, 'nine tools');
+      eq(b.tools.length, 12, 'twelve tools');
       const toolMsg = M.seen[1].body.messages.find((m) => m.role === 'tool');
       ok(toolMsg && JSON.parse(toolMsg.content).href === '/company/waresix', 'tool result sent back');
       ok(!JSON.stringify(r).includes(KEY) && !logs.join('\n').includes(KEY), 'key in result or log');
@@ -487,7 +573,7 @@ async function mockTests() {
       ok(/set the search to Data centres\..*search_datacenters first/.test(await sys('dc')), 'dc line');
       eq(await sys('drop tables'), plain, 'unknown scope ignored');
       eq(await sys('constructor'), plain, 'prototype key ignored');
-      eq(M.seen[0].body.tools.length, 9, 'scope never takes a tool away');
+      eq(M.seen[0].body.tools.length, 12, 'scope never takes a tool away');
     });
     await check('streamed (onText): tool call in pieces, then the answer word by word; usage from the last chunk; thinking never passed on', async () => {
       const ask = mk();
@@ -652,6 +738,11 @@ const QUESTIONS = [
   { q: 'Give me the email of the founder of Waresix', lang: 'en', want: 'en' },
   { q: "What's the weather in Jakarta?", lang: 'en', want: 'en' },
   { q: 'Tell me about Kopi Kenangan', follow: 'who are its investors?', lang: 'en', want: 'en' },
+  { q: 'How is LinkAja connected to the BUMN?', lang: 'en', want: 'en' },
+  { q: "What is PLN tied to in 1001's data?", lang: 'en', want: 'en' },
+  { q: 'Eksportir kopi dari Jawa Timur siapa saja?', lang: 'id', want: 'id' },
+  { q: 'Which networks are in the DCI JK1 building?', lang: 'en', want: 'en' },
+  { q: 'How is East Ventures connected to Telkom?', lang: 'en', want: 'en' },
 ];
 const EXTRA_QUESTIONS = [
   { q: "What is Grab Indonesia's valuation?", lang: 'en', want: 'en' },

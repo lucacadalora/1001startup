@@ -33,3 +33,9 @@ data/peering.live
 data/peering-reach.json
 data/peering-graph.json
 data/peering-graph.live
+
+# Ask 1001 company graph (scripts/graph1001-build.js): carries the peering map's PeeringDB links,
+# so it stays out of git like the map's data; the report lists names for review
+data/graph1001.json
+data/graph1001.json.tmp
+data/graph1001-report.json
