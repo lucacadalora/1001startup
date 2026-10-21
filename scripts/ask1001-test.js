@@ -46,6 +46,8 @@ function hrefsIn(o, out = []) {
   return out;
 }
 const census = JSON.parse(fs.readFileSync(path.join(ROOT, 'public/data/census.json'), 'utf8'));
+/* the graph tools are offered only while this file exists (lib/ask1001.js graphOn) */
+const GRAPH_SWITCH = fs.existsSync(path.join(ROOT, 'data/askgraph.live'));
 const byId = new Map(census.companies.map((c) => [c.id, c]));
 
 /* ───────────────────────── Part A: offline ───────────────────────── */
@@ -335,6 +337,14 @@ async function partA() {
       ok(/bulk/.test(T.search_peering({ kind: 'network' }).hint), 'no bulk network list');
     });
   }
+  await check('switch off (no data/askgraph.live): the prompt is the nine-tool prompt', () => {
+    const n = { startups: 499, bumn: 56, subs: '1,120', dcs: 72, closed: 37, exporters: '1,410', peering: 'x', links: '14,031' };
+    const off = X.systemPrompt({ asof: '2026-10-18', today: '2026-10-21', pageLang: 'en', n, scope: '' });
+    const on = X.systemPrompt({ asof: '2026-10-18', today: '2026-10-21', pageLang: 'en', n, scope: '', graph: true });
+    ok(!/connections|search_exporters|search_peering|exporters|peering/i.test(off), 'off: no graph lines');
+    ok(/Link every startup, BUMN, data centre and investor you name, at its first mention/.test(off), 'off: rule 3 unchanged');
+    ok(/use connections/.test(on) && /search_exporters/.test(on) && /search_peering/.test(on) && /1,410 exporters/.test(on), 'on: graph lines');
+  });
   await check('new tools: labels in both languages', () => {
     eq(X.label('connections', { name: 'Telkom' }, 'en'), 'Following links: Telkom', 'en');
     eq(X.label('connections', { name: 'Xendit', to: 'Telkom' }, 'id'), 'Menelusuri hubungan: Xendit ke Telkom', 'id path');
@@ -543,7 +553,7 @@ async function mockTests() {
       eq(b.temperature, 0.2, 'temperature');
       eq(b.reasoning_effort, 'low', 'effort');
       eq(b.tool_choice, 'auto', 'tool_choice');
-      eq(b.tools.length, 12, 'twelve tools');
+      eq(b.tools.length, GRAPH_SWITCH ? 12 : 9, GRAPH_SWITCH ? 'twelve tools (data/askgraph.live on)' : 'nine tools (data/askgraph.live off)');
       const toolMsg = M.seen[1].body.messages.find((m) => m.role === 'tool');
       ok(toolMsg && JSON.parse(toolMsg.content).href === '/company/waresix', 'tool result sent back');
       ok(!JSON.stringify(r).includes(KEY) && !logs.join('\n').includes(KEY), 'key in result or log');
@@ -573,7 +583,7 @@ async function mockTests() {
       ok(/set the search to Data centres\..*search_datacenters first/.test(await sys('dc')), 'dc line');
       eq(await sys('drop tables'), plain, 'unknown scope ignored');
       eq(await sys('constructor'), plain, 'prototype key ignored');
-      eq(M.seen[0].body.tools.length, 12, 'scope never takes a tool away');
+      eq(M.seen[0].body.tools.length, GRAPH_SWITCH ? 12 : 9, 'scope never takes a tool away');
     });
     await check('streamed (onText): tool call in pieces, then the answer word by word; usage from the last chunk; thinking never passed on', async () => {
       const ask = mk();
