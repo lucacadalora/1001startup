@@ -36,7 +36,9 @@
  * Writes data/graph1001.json (gitignored: it carries the peering map's PeeringDB
  * links, which its AUP says not to pass on in bulk) and data/graph1001-report.json
  * (the numbers and the unreviewed candidates). lib/ask1001.js reads the graph with
- * an mtime cache, so a rebuild needs no restart.
+ * an mtime cache, so a rebuild needs no restart. Rebuilt every night by
+ * scripts/graph1001-nightly.js (timer graph1001-nightly), which tells Luca about
+ * new candidates.
  */
 const fs = require('fs');
 const path = require('path');

@@ -39,3 +39,5 @@ data/peering-graph.live
 data/graph1001.json
 data/graph1001.json.tmp
 data/graph1001-report.json
+data/graph1001-told.json
+data/graph1001-told.json.tmp
