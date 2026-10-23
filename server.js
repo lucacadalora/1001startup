@@ -599,12 +599,16 @@ for (const p of ['/umkm/map', '/umkm/company']) {
    sector/kind and place only — what every public table already prints. Never
    the gated working files' contact, funding-source or trade-term fields. */
 let searchCache = { key: '', body: '' };
+/* BUMD rows join the search while /bumd is on (views/bumd-common.js; bumdLive is required with the /bumd route) */
+const bumdCommon = require('./views/bumd-common');
 function searchIndex() {
   const census = censusData() || {};
   const bumn = bumn1001.load() || {};
   const dc = dcLive() ? (datacenter1001.load() || {}) : {};
   const um = umkmData() || {};
-  const key = [census.generated, bumn.asof, dc.asof, um.generated, dcLive()].join('|');
+  /* regional state companies (BUMD), only while /bumd is switched on (data/bumd.live) */
+  const bd = bumdLive() ? (bumdCommon.load() || {}) : {};
+  const key = [census.generated, bumn.asof, dc.asof, um.generated, dcLive()].concat(bd.asof ? [bd.asof] : []).join('|');
   if (searchCache.key === key) return searchCache.body;
   const r = [];
   const short = (s) => String(s || '').replace(/\s*\(.*\)$/, '');
@@ -629,6 +633,12 @@ function searchIndex() {
     for (const p of dc.projects) {
       r.push([short(p.name), 'p', [p.op, p.loc].filter(Boolean).join(' · '), '/data-center#p-' + p.id, p.logo || '', [p.op, p.loc, p.region, 'data centre'].join(' ')]);
     }
+  }
+  for (const c of bd.co || []) {
+    const owner = (c.o || []).slice().sort((x, y) => (y.s || 0) - (x.s || 0))[0];
+    r.push([c.n, 'r', [bumdCommon.TYPES[bumdCommon.typeOf(c)], c.c || c.p].filter(Boolean).join(' · '),
+      bumdCommon.pageHref(c.id) || '/bumd#c-' + encodeURIComponent(c.id), bumdCommon.logoOf(c.id) || '',
+      [c.l, c.p, owner && owner.g, 'BUMD'].filter(Boolean).join(' ')]);
   }
   for (const c of um.companies || []) {
     /* 1,410 rows: the id stands in for the URL (the client rebuilds
@@ -867,6 +877,18 @@ const { bumdLive } = require('./lib/bumdlive');
 fastify.get('/bumd', async (req, reply) => {
   if (!is1001(req)) return reply.redirect('/');
   const html = bumd1001.page({ lang: 'en' });
+  if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
+  reply.type('text/html').send(html);
+});
+/* /bumd/<id> — one regional company's page: its owners by stake, what it holds and does, figures,
+   board, ties and sources (views/bumdco1001.js). page() is null while data/bumd.live is absent and
+   for ids with nothing to draw, so both 404 like /bumd; /bumd/ alone goes back to /bumd. */
+const bumdco1001 = require('./views/bumdco1001');
+fastify.get('/bumd/:id', async (req, reply) => {
+  if (!is1001(req)) return reply.redirect('/');
+  const id = String((req.params && req.params.id) || '');
+  if (!id) return reply.code(301).header('location', '/bumd').send();
+  const html = bumdco1001.page({ id, lang: 'en' });
   if (!html) return reply.code(404).type('text/html').send(company1001.notFound({ data: censusData(), lang: langOf(req) }));
   reply.type('text/html').send(html);
 });

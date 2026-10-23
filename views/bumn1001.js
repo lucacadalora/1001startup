@@ -34,7 +34,7 @@ const BUMD_CSS = `.bm-card .bdl{display:flex;justify-content:space-between;gap:8
 function bumdSection() {
   const D = bumd.load();
   if (!D) return '';
-  const n = (D.co || []).filter((c) => !c.sub).length;
+  const n = (D.co || []).filter((c) => !c.sub && !c.jv).length;  /* the BUMD themselves: not their subsidiaries, not minority stakes */
   return `<section class="wrap">
   <div class="eyebrow"><span class="sq"></span>REGIONAL STATE COMPANIES (BUMD)</div>
   <p class="lede">Provinces, regencies and cities own ${D.national ? D.national.toLocaleString('en-US') + ' companies of their own' : 'companies of their own'}. ${n.toLocaleString('en-US')} are mapped so far, with their owners, figures and the ${(D.ops || []).length.toLocaleString('en-US')} joint operations and joint ventures that tie them to these groups.</p>

@@ -23,11 +23,11 @@
   if (input.dataset.short && window.matchMedia('(max-width:640px)').matches) input.placeholder = input.dataset.short;
   var IDL = document.documentElement.lang === 'id';
   var G = IDL
-    ? { s: 'Startup', b: 'BUMN', d: 'Pusat data', e: 'Eksportir (UMKM)', none: 'Belum ada perusahaan yang cocok dengan', miss: 'Ada perusahaan yang terlewat? Kabari kami', allS: 'Semua startup yang cocok', allE: 'Semua eksportir yang cocok', load: 'Memuat…', err: 'Pencarian belum bisa dimuat. Coba lagi sebentar.' }
-    : { s: 'Startups', b: 'State companies (BUMN)', d: 'Data centres', e: 'Exporters (UMKM)', none: 'No company matches', miss: 'Missing a company? Tell us', allS: 'All matching startups', allE: 'All matching exporters', load: 'Loading…', err: 'Search could not load. Try again in a moment.' };
-  var COLOR = { s: '#E8734B', b: '#F3C64B', d: '#7AB88A', p: '#7AB88A', e: '#4E7A96' };
-  var ORDER = ['s', 'b', 'd', 'e'];
-  var PER = { s: 5, b: 3, d: 4, e: 4 };
+    ? { s: 'Startup', b: 'BUMN', r: 'BUMD', d: 'Pusat data', e: 'Eksportir (UMKM)', none: 'Belum ada perusahaan yang cocok dengan', miss: 'Ada perusahaan yang terlewat? Kabari kami', allS: 'Semua startup yang cocok', allE: 'Semua eksportir yang cocok', load: 'Memuat…', err: 'Pencarian belum bisa dimuat. Coba lagi sebentar.' }
+    : { s: 'Startups', b: 'State companies (BUMN)', r: 'Regional state companies (BUMD)', d: 'Data centres', e: 'Exporters (UMKM)', none: 'No company matches', miss: 'Missing a company? Tell us', allS: 'All matching startups', allE: 'All matching exporters', load: 'Loading…', err: 'Search could not load. Try again in a moment.' };
+  var COLOR = { s: '#E8734B', b: '#F3C64B', r: '#C99A2E', d: '#7AB88A', p: '#7AB88A', e: '#4E7A96' };
+  var ORDER = ['s', 'b', 'r', 'd', 'e'];  /* r = regional state companies, only in the index while /bumd is on */
+  var PER = { s: 5, b: 3, r: 3, d: 4, e: 4 };
 
   var data = null, loading = null, active = -1, links = [];
 
