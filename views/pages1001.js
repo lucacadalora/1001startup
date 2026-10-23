@@ -36,9 +36,13 @@ function landing({ data, lang = 'en', path = '/' }) {
      so an assistant quoting it says "according to 1001startup.id" (Luca, 4 Oct). */
   const asOf = data && Date.parse(data.generated) ? new Date(Date.parse(data.generated)).toLocaleDateString(lang === 'id' ? 'id-ID' : 'en-GB',
     { day: 'numeric', month: 'short', year: 'numeric', timeZone: 'Asia/Jakarta' }) : '';
+  /* group companies (Luca, 24 Oct 2026): tech companies owned by a big group or a
+     listed company are counted too, each flagged with its group, so the headline
+     says how many of the rows are not founder- or venture-built */
+  const nGroup = ((data && data.companies) || []).filter((c) => c.group_parent).length;
   const heroFact = T.companies ? `<p class="fact">${L(
-    `According to 1001startup.id${asOf ? ` (updated ${asOf})` : ''}, ${fmt(T.companies)} Indonesian startups are on record, with US$${(T.funding_usd_b || 0).toFixed(1)} billion in disclosed funding and an estimated ${fmt(T.jobs)} jobs.`,
-    `Menurut 1001startup.id${asOf ? ` (diperbarui ${asOf})` : ''}, sensus ini mencatat ${fmt(T.companies)} startup Indonesia, dengan pendanaan yang diumumkan US$${(T.funding_usd_b || 0).toFixed(1)} miliar dan sekitar ${fmt(T.jobs)} lapangan kerja (estimasi).`)}</p>` : '';
+    `According to 1001startup.id${asOf ? ` (updated ${asOf})` : ''}, ${fmt(T.companies)} Indonesian startups are on record, with US$${(T.funding_usd_b || 0).toFixed(1)} billion in disclosed funding and an estimated ${fmt(T.jobs)} jobs.${nGroup ? ` ${fmt(nGroup)} of them belong to a big group or listed company and are flagged as such.` : ''}`,
+    `Menurut 1001startup.id${asOf ? ` (diperbarui ${asOf})` : ''}, sensus ini mencatat ${fmt(T.companies)} startup Indonesia, dengan pendanaan yang diumumkan US$${(T.funding_usd_b || 0).toFixed(1)} miliar dan sekitar ${fmt(T.jobs)} lapangan kerja (estimasi).${nGroup ? ` ${fmt(nGroup)} di antaranya milik grup besar atau perusahaan tercatat dan diberi tanda.` : ''}`)}</p>` : '';
   const companies = (data && data.companies) || [];
   const m = (data && data.method) || {};
   const bySector = (data && data.by_sector) || [];
@@ -150,6 +154,25 @@ function landing({ data, lang = 'en', path = '/' }) {
      capitalisation is not an Indonesian number and their drivers are not
      employees, so both facts are stated ON the row rather than in a footnote
      nobody scrolls to. */
+  /* Group companies (Luca, 24 Oct 2026): a tech company owned by a big group or a
+     listed company is counted, but it is not founder- or venture-built, so the row
+     says whose it is instead of passing as a startup. */
+  const grpMark = (c) => {
+    const g = c.group_parent || {};
+    return mark('estt grb', 'group', L('part of ' + g.group, 'bagian dari ' + g.group), {
+      k: 'group',
+      t: L('Part of ' + g.group, 'Bagian dari ' + g.group),
+      b: lang === 'id'
+        ? (g.relation_id || g.relation || '') + '. Dihitung sebagai perusahaan tersendiri dengan daftar gajinya sendiri, '
+          + 'tetapi tidak dibangun oleh pendiri atau modal ventura: pemiliknya grup besar atau perusahaan tercatat.'
+        : (g.relation || '') + '. Counted as a company of its own, with its own payroll, but not built by founders '
+          + 'or venture money: a big group or listed company owns it.',
+      m: g.ticker ? (lang === 'id' ? 'Induk tercatat: ' : 'Listed parent: ') + g.ticker : '',
+      l: g.src ? [{ h: g.src, t: L('Source for the ownership', 'Sumber kepemilikan') }] : [],
+      lc: 1,
+    });
+  };
+
   const idOnlyMark = (c) => {
     const g = c.global_parent || {};
     const gv = g.group_valuation_usd_m
@@ -487,10 +510,11 @@ function landing({ data, lang = 'en', path = '/' }) {
     <tr data-f="${esc([c.name, c.sector_label, c.kota, c.yc_batch ? 'yc ' + c.yc_batch + ' y combinator' : '',
       c.endeavor ? 'endeavor ' + (c.endeavor_entrepreneurs || []).join(' ') : '',
       c.antler ? 'antler' : '', c.url || '',
-      c.id_only ? 'indonesia only global parent ' + ((c.global_parent || {}).group || '') : '']
-      .filter(Boolean).join(' ').toLowerCase())}" data-s="${esc(c.sector_label || '')}" data-yc="${c.yc_batch ? '1' : ''}" data-ed="${c.endeavor ? '1' : ''}" data-an="${c.antler ? '1' : ''}" data-fu="${hasFunding(c) ? '1' : ''}" data-va="${hasVal(c) ? '1' : ''}" data-id="${esc(c.id)}">
+      c.id_only ? 'indonesia only global parent ' + ((c.global_parent || {}).group || '') : '',
+      c.group_parent ? 'group ' + (c.group_parent.group || '') : '']
+      .filter(Boolean).join(' ').toLowerCase())}" data-s="${esc(c.sector_label || '')}" data-yc="${c.yc_batch ? '1' : ''}" data-ed="${c.endeavor ? '1' : ''}" data-an="${c.antler ? '1' : ''}" data-fu="${hasFunding(c) ? '1' : ''}" data-va="${hasVal(c) ? '1' : ''}" data-gr="${c.group_parent ? '1' : ''}" data-id="${esc(c.id)}">
       <td class="rk" data-v="${c.rank}">${c.rank}</td>
-      <td data-v="${esc((c.name || '').toLowerCase())}">${c.logo ? `<img class="lg" src="${esc(c.logo)}" alt="" loading="lazy" width="18" height="18">` : ''}<a class="cp-link" href="${PF}/company/${esc(c.id)}">${esc(c.name)}</a>${c.yc_batch ? `<a class="ycb" href="${PF}/coverage#yc" title="Y Combinator ${esc(c.yc_batch)}">YC ${esc(c.yc_batch)}</a>` : ''}${c.id_only ? idOnlyMark(c) : ''}${c.endeavor ? `<a class="edb" href="${PF}/coverage#endeavor" title="${esc(c.endeavor_note || ((c.endeavor_entrepreneurs || []).join(', ') + ' — Endeavor Entrepreneur' + ((c.endeavor_entrepreneurs || []).length > 1 ? 's' : '')) || 'Endeavor Entrepreneur company')}">ENDEAVOR</a>` : ''}${c.antler ? `<a class="anb" href="${PF}/coverage#antler" title="${esc(c.antler_note || L('Antler-funded', 'Didanai Antler'))}">ANTLER</a>` : ''}</td>
+      <td data-v="${esc((c.name || '').toLowerCase())}">${c.logo ? `<img class="lg" src="${esc(c.logo)}" alt="" loading="lazy" width="18" height="18">` : ''}<a class="cp-link" href="${PF}/company/${esc(c.id)}">${esc(c.name)}</a>${c.yc_batch ? `<a class="ycb" href="${PF}/coverage#yc" title="Y Combinator ${esc(c.yc_batch)}">YC ${esc(c.yc_batch)}</a>` : ''}${c.id_only ? idOnlyMark(c) : ''}${c.group_parent ? grpMark(c) : ''}${c.endeavor ? `<a class="edb" href="${PF}/coverage#endeavor" title="${esc(c.endeavor_note || ((c.endeavor_entrepreneurs || []).join(', ') + ' — Endeavor Entrepreneur' + ((c.endeavor_entrepreneurs || []).length > 1 ? 's' : '')) || 'Endeavor Entrepreneur company')}">ENDEAVOR</a>` : ''}${c.antler ? `<a class="anb" href="${PF}/coverage#antler" title="${esc(c.antler_note || L('Antler-funded', 'Didanai Antler'))}">ANTLER</a>` : ''}</td>
       <td class="mu" data-v="${esc((c.sector_label || '').toLowerCase())}">${esc(c.sector_label || '')}</td>
       <td class="mu" data-v="${esc((c.kota || '').toLowerCase())}">${esc(c.kota || '—')}</td>
       <td class="n" data-v="${sv(c.funding_total_usd_m)}">${fundCell(c)}</td>
@@ -526,6 +550,7 @@ function landing({ data, lang = 'en', path = '/' }) {
         ${AN.in_census ? `<button class="chip anonly" id="anOnly" aria-pressed="false">${L('Antler only', 'Antler saja')} · ${AN.in_census}</button>` : ''}
         <button class="chip fuonly" id="fundedOnly" aria-pressed="false">${L('Disclosed funding only', 'Pendanaan diumumkan saja')} · ${fmt(fundedCount)}</button>
         <button class="chip vaonly" id="valOnly" aria-pressed="false">${L('Valuation on record', 'Ada valuasi tercatat')} · ${fmt(valCount)}</button>
+        ${nGroup ? `<button class="chip grhide" id="grHide" aria-pressed="false">${L('Hide group companies', 'Sembunyikan perusahaan grup')} · ${fmt(nGroup)}</button>` : ''}
         <div class="count mono" id="count">${companies.length} ${L('shown', 'ditampilkan')}</div>
       </div>
       <div class="rowhint mono">${L('Click any company for its full profile — funding, investors, head office, headcount and every source behind the row.', 'Klik perusahaan mana pun untuk membuka profil lengkapnya — pendanaan, investor, kantor pusat, jumlah pekerja, dan semua sumber di balik datanya.')}</div>
@@ -698,6 +723,8 @@ td .lg{vertical-align:-4px;margin-right:8px}
 .chip.fuonly[aria-pressed="true"]{background:#000;border-color:#000;color:#fff}
 .chip.vaonly{border-color:#000;background:#fff;color:#000}
 .chip.vaonly[aria-pressed="true"]{background:#2F7A5C;border-color:#2F7A5C;color:#fff}
+.chip.grhide{border-color:#000;background:#fff;color:#000}
+.chip.grhide[aria-pressed="true"]{background:#7A5C2E;border-color:#7A5C2E;color:#fff}
 td.n a{border-bottom:1px solid #D8D8DC}
 td.n a:hover{border-bottom-color:#000}
 /* Marks: the est / in parent / trk chips and the em-dash on a company that
@@ -724,6 +751,9 @@ button.estt:hover,button.estt[aria-expanded="true"],button.nofig:hover,button.no
 button.estt.held{border-bottom-color:#AFD3C4}
 button.estt.held:hover,button.estt.held[aria-expanded="true"]{color:#2F7A5C;border-bottom-color:#2F7A5C}
 .estt.idb{color:#2F6C86}
+.estt.grb{color:#7A5C2E}
+button.estt.grb{border-bottom-color:#D9C7A6}
+button.estt.grb:hover,button.estt.grb[aria-expanded="true"]{color:#7A5C2E;border-bottom-color:#7A5C2E}
 button.estt.idb{border-bottom-color:#B9CEDA}
 button.estt.idb:hover,button.estt.idb[aria-expanded="true"]{color:#2F6C86;border-bottom-color:#2F6C86}
 .estt.trk{color:#4E7A96}

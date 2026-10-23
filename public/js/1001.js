@@ -18,10 +18,11 @@
     ycBtn = document.getElementById('ycOnly'), edBtn = document.getElementById('edOnly'),
     anBtn = document.getElementById('anOnly'),
     fuBtn = document.getElementById('fundedOnly'), vaBtn = document.getElementById('valOnly'),
+    grBtn = document.getElementById('grHide'),
     pager = document.getElementById('pager'), anchor = document.getElementById('companies');
   if (!q || !tbl) return;
   var body = tbl.tBodies[0];
-  var rows = [].slice.call(body.rows), sec = '', ycOnly = false, edOnly = false, anOnly = false, fundedOnly = false, valOnly = false;
+  var rows = [].slice.call(body.rows), sec = '', ycOnly = false, edOnly = false, anOnly = false, fundedOnly = false, valOnly = false, grHide = false;
   var PER = 50, page = 1, showAll = false, matched = rows;
   var sortI = 0, sortDir = 1;      // column index, 1 = ascending (rank order = the census's own ranking)
 
@@ -151,7 +152,8 @@
         && (!edOnly || r.dataset.ed === '1')
         && (!anOnly || r.dataset.an === '1')
         && (!fundedOnly || r.dataset.fu === '1')
-        && (!valOnly || r.dataset.va === '1');
+        && (!valOnly || r.dataset.va === '1')
+        && (!grHide || r.dataset.gr !== '1');
     });
     page = 1;               // a new filter result always starts at its first page
     draw();
@@ -193,6 +195,12 @@
   if (fuBtn) fuBtn.addEventListener('click', function () {
     fundedOnly = !fundedOnly;
     fuBtn.setAttribute('aria-pressed', fundedOnly ? 'true' : 'false');
+    apply();
+  });
+  /* hide the companies a big group or listed company owns (the "group" mark) */
+  if (grBtn) grBtn.addEventListener('click', function () {
+    grHide = !grHide;
+    grBtn.setAttribute('aria-pressed', grHide ? 'true' : 'false');
     apply();
   });
   /* the rows behind the combined-valuation figure in the stat strip */

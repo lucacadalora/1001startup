@@ -227,6 +227,7 @@ function card({ c, data, standalone, links, lang = 'en' }) {
       </div>
     </div>
     <div class="cp-tags">
+      ${c.group_parent ? `<span class="cp-tag cp-grp" title="${esc(c.group_parent.relation || '')}">${L('Part of', 'Bagian dari')} ${esc(c.group_parent.group || '')}</span>` : ''}
       <a class="cp-tag cp-sector" href="${PF}/sector/${esc(c.sector_key || 'misc')}" title="${L('All companies in this sector', 'Semua perusahaan di sektor ini')}">${esc(c.sector_label || '')}</a>
       ${c.yc_batch ? `<span class="cp-tag cp-yc">Y Combinator ${esc(c.yc_batch)}</span>` : ''}
       ${c.endeavor ? `<span class="cp-tag cp-ed" title="${esc(c.endeavor_note || (c.endeavor_entrepreneurs || []).join(', '))}">Endeavor</span>` : ''}
@@ -240,6 +241,11 @@ function card({ c, data, standalone, links, lang = 'en' }) {
       <span class="cp-tag cp-rank">${L('Census', 'Sensus')} #${esc(c.rank)}${total ? ` ${L('of', 'dari')} ${total}` : ''}</span>
     </div>
     ${c.sector ? `<p class="cp-what">${esc(c.sector)}</p>` : ''}
+    ${/* group companies (Luca, 24 Oct 2026): counted, but said plainly whose they are */
+      c.group_parent ? `<p class="cp-grpline">${L(
+        `Part of ${esc(c.group_parent.group)}: ${esc(c.group_parent.relation || '')}. Counted here as a company of its own, with its own payroll, but it was not built by founders or venture money.`,
+        `Bagian dari ${esc(c.group_parent.group)}: ${esc(c.group_parent.relation_id || c.group_parent.relation || '')}. Dihitung di sini sebagai perusahaan tersendiri dengan daftar gajinya sendiri, tetapi tidak dibangun oleh pendiri atau modal ventura.`)}${
+        c.group_parent.src ? ` <a class="cp-srcl" href="${esc(c.group_parent.src)}" target="_blank" rel="noopener nofollow">${L('source', 'sumber')}</a>` : ''}</p>` : ''}
     ${sumLine(c, lang, asOfDate(data, lang))}
     ${standalone ? citeLine(c, lang, asOfDate(data, lang)) : ''}
     <div class="cp-act">

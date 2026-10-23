@@ -26,7 +26,11 @@
    "cohort": "manual-recovery-2026-10",
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Indonesian-founded, AC Ventures-backed EWA app; 30 on LinkedIn; but site and app name only Sampradaa Pte Ltd, no PT."
+   }
   },
   {
    "id": "honestdocs",
@@ -36,7 +40,11 @@
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "NOT_A_STARTUP",
+    "why": "Indonesian arm (PT Bimini Longevity Indonesia) of Bangkok-based HD group; 1,734 LinkedIn is group-wide, not Indonesian."
+   }
   },
   {
    "id": "ezeelink",
@@ -45,16 +53,11 @@
    "cohort": "backlog-31-60-2026-10",
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
-  },
-  {
-   "id": "accurate",
-   "name": "Accurate",
-   "company_type": "incumbent_tech",
-   "cohort": "backlog-31-60-2026-10",
-   "why": [
-    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "BI-licensed payment firm since 2012, 53 on LinkedIn; owner and founders not found, licence not checked on BI's list."
+   }
   },
   {
    "id": "hashmicro",
@@ -64,7 +67,11 @@
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "NOT_A_STARTUP",
+    "why": "ERP group founded in Singapore in 2015, HQ there; PT HashMicro Solusi Indonesia is its arm; 561 LinkedIn is group-wide."
+   }
   },
   {
    "id": "bythen",
@@ -73,7 +80,11 @@
    "cohort": "backlog-31-60-2026-10",
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Jakarta team, US$5M seed, 43 on LinkedIn; terms (May 2026) name only ByThen Pte. Ltd., Singapore; no Indonesian PT."
+   }
   },
   {
    "id": "nafas",
@@ -83,7 +94,11 @@
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "STARTUP_NO_HEADCOUNT",
+    "why": "PT Nafas Aplikasi Indonesia confirmed; LinkedIn is Singapore group page (46); 2026 news is Gulf-focused; no Indonesian count."
+   }
   },
   {
    "id": "glints-indonesia",
@@ -93,47 +108,11 @@
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "danamas",
-   "name": "Danamas",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "awantunai",
-   "name": "AwanTunai",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "kta-kilat",
-   "name": "KTA Kilat",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "rupiahcepat",
-   "name": "RupiahCepat",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "NOT_A_STARTUP",
+    "why": "Founded and headquartered in Singapore (2013); Indonesia is a market of the group; 921 LinkedIn is group-wide."
+   }
   },
   {
    "id": "pinjamduit",
@@ -143,17 +122,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "singa-fintech",
-   "name": "Singa",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Live licensed lender with 41 on LinkedIn, but its owner is not named anywhere; test 1 unresolved."
+   }
   },
   {
    "id": "uku",
@@ -163,47 +136,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "trustiq-danaku",
-   "name": "TrustIQ (Danaku)",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "invoila",
-   "name": "Invoila",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "samir",
-   "name": "Samir",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "kredione",
-   "name": "KrediOne (formerly 360Kredi)",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "STARTUP_NO_HEADCOUNT",
+    "why": "Live licensed lender, 85% held by individual Liu Yi, but no LinkedIn page or dated headcount found."
+   }
   },
   {
    "id": "crowdo-indonesia",
@@ -213,7 +150,11 @@
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "NOT_A_STARTUP",
+    "why": "Owned by Singapore's Crowdo Holdings; licence listed, but site shows TKB90 0% (all loans 90+ days late), 30 Sep 2026."
+   }
   },
   {
    "id": "ethis-indonesia",
@@ -223,7 +164,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "CLOSED_OR_REVOKED",
+    "why": "Licensed but dormant: zero financing in 2026 and two-thirds of outstanding loans over 90 days late, per its site."
+   }
   },
   {
    "id": "ammana",
@@ -233,7 +178,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Live sharia lender, 14 on LinkedIn, but shareholders are not disclosed anywhere; test 1 unresolved."
+   }
   },
   {
    "id": "danabijak",
@@ -243,27 +192,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "solusiku",
-   "name": "Solusiku",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "kredinesia",
-   "name": "Kredinesia",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "DUPLICATE",
+    "why": "PT Digital Micro Indonesia is FINFRA's licensed lending subsidiary (finfra.io, TechCrunch 2023); already counted under census row finfra."
+   }
   },
   {
    "id": "pinjam-gampang",
@@ -273,7 +206,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "CLOSED_OR_REVOKED",
+    "why": "Licensed but dormant: its own site shows zero lending in 2026, and 2025 revenue was Rp1.2 million."
+   }
   },
   {
    "id": "klikumkm",
@@ -283,27 +220,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "danain",
-   "name": "Danain",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "tokomodal",
-   "name": "Tokomodal",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Licensed lender, alive with 23 staff, but 90% owner PT Artha Digital Investama is untraced; need its AHU shareholders."
+   }
   },
   {
    "id": "artajasa",
@@ -313,7 +234,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "NOT_A_STARTUP",
+    "why": "ATM Bersama switch founded in 2000; Indosat's Lintasarta still held 55% in 2019. Incumbent infrastructure, not a startup."
+   }
   },
   {
    "id": "jalin",
@@ -327,16 +252,6 @@
    ]
   },
   {
-   "id": "alto-network",
-   "name": "ALTO",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
    "id": "rintis-sejahtera",
    "name": "Rintis Sejahtera (PRIMA)",
    "company_type": "regulated_tech",
@@ -344,7 +259,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "NOT_A_STARTUP",
+    "why": "PRIMA network operator founded 1991, BCA's ATM switch since 2000; incumbent infrastructure, not a startup."
+   }
   },
   {
    "id": "finnet-indonesia",
@@ -353,16 +272,6 @@
    "cohort": "regulated-established-2026-10",
    "why": [
     "already counted in the BUMN dataset",
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "astrapay",
-   "name": "AstraPay",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
    ]
@@ -389,26 +298,6 @@
    ]
   },
   {
-   "id": "ottopay",
-   "name": "OttoPay",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "aino-indonesia",
-   "name": "Aino",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
    "id": "paytren",
    "name": "Paytren",
    "company_type": "regulated_tech",
@@ -416,57 +305,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "espay",
-   "name": "Espay",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "cfx",
-   "name": "CFX (Central Finansial X)",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "icc-kustodian-koin",
-   "name": "ICC (Indonesia Coin Custodian)",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "digitalexchange-id",
-   "name": "digitalexchange.id",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "icx-landx",
-   "name": "ICX (formerly LandX)",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "CLOSED_OR_REVOKED",
+    "why": "Dormant: paytren.co.id not answering, no PayTren app listed, no 2026 operating signal found."
+   }
   },
   {
    "id": "crowddana",
@@ -476,17 +319,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "adins",
-   "name": "AdIns",
-   "company_type": "incumbent_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Licensed per ALUDI, but app last updated Aug 2023, five staff, owner unknown; no 2026 activity found."
+   }
   },
   {
    "id": "bank-raya",
@@ -603,26 +440,6 @@
    ]
   },
   {
-   "id": "domainesia",
-   "name": "DomaiNesia",
-   "company_type": "incumbent_tech",
-   "cohort": "scope-outside-2026-10",
-   "why": [
-    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "jagoan-hosting",
-   "name": "Jagoan Hosting (Beon Intermedia)",
-   "company_type": "incumbent_tech",
-   "cohort": "scope-outside-2026-10",
-   "why": [
-    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
    "id": "cloudmatika",
    "name": "Cloudmatika",
    "company_type": "incumbent_tech",
@@ -685,27 +502,6 @@
    ]
   },
   {
-   "id": "klikdokter",
-   "name": "KlikDokter",
-   "company_type": "incumbent_tech",
-   "cohort": "scope-outside-2026-10",
-   "why": [
-    "named in scope.outside (decided under the census rule)",
-    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "samuel-kripto",
-   "name": "Samuel Kripto",
-   "company_type": "regulated_tech",
-   "cohort": "licensed-remainder-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
    "id": "cyra",
    "name": "CYRA",
    "company_type": "regulated_tech",
@@ -713,7 +509,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Licensed crypto trader with 13 staff and a 2026 app update, but owners unknown; test 1 open."
+   }
   },
   {
    "id": "coinx",
@@ -723,7 +523,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "STARTUP_NO_HEADCOUNT",
+    "why": "Live licensed crypto trader, but only 3 people on LinkedIn and no owner or outside backing disclosed."
+   }
   },
   {
    "id": "angel-investor-indonesia",
@@ -733,7 +537,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Licence still listed, but no company LinkedIn, no 2026 activity found; Kimi's LinkedIn page belongs to another firm."
+   }
   },
   {
    "id": "danasaham",
@@ -743,37 +551,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "ekuid",
-   "name": "Ekuid",
-   "company_type": "regulated_tech",
-   "cohort": "licensed-remainder-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "fundex",
-   "name": "FundEx",
-   "company_type": "regulated_tech",
-   "cohort": "licensed-remainder-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "lbs-urun-dana",
-   "name": "LBS Urun Dana",
-   "company_type": "regulated_tech",
-   "cohort": "licensed-remainder-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "NOT_A_STARTUP",
+    "why": "A Sinarmas Financial Services subsidiary by its own LinkedIn page, with two people listed; a conglomerate unit."
+   }
   },
   {
    "id": "prodana",
@@ -783,37 +565,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "santara",
-   "name": "Santara",
-   "company_type": "regulated_tech",
-   "cohort": "licensed-remainder-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "sfund",
-   "name": "Sfund",
-   "company_type": "regulated_tech",
-   "cohort": "licensed-remainder-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
-  },
-  {
-   "id": "shafiq",
-   "name": "Shafiq",
-   "company_type": "regulated_tech",
-   "cohort": "licensed-remainder-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "8 people; only offering is a Nov 2024 Rp10bn note from one investor; owner undisclosed, no 2026 deal."
+   }
   },
   {
    "id": "udana",
@@ -823,7 +579,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Rebranding to MD Dana with 8 people, but no offering listed today and the owner behind the rebrand undisclosed."
+   }
   },
   {
    "id": "vestora",
@@ -833,7 +593,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "Founder-built sharia platform with 6 people, but no dated 2026 offering, post or news found."
+   }
   },
   {
    "id": "visiku",
@@ -843,7 +607,11 @@
    "why": [
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "recheck_2026_10_24": {
+    "verdict": "UNCLEAR",
+    "why": "7 people and 2026 blog posts, but no 2026 offering or funds raised visible; owner undisclosed."
+   }
   },
   {
    "id": "indosat-ooredoo-hutchison",
@@ -946,15 +714,44 @@
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
    ]
-  },
-  {
-   "id": "astra-graphia-it",
-   "name": "Astra Graphia IT (AGIT)",
-   "company_type": "incumbent_tech",
-   "cohort": "telecom-enterprise-reserve-2026-10",
-   "why": [
-    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
   }
- ]
+ ],
+ "rows_wave2": [
+  "accurate",
+  "adins",
+  "aino-indonesia",
+  "alto-network",
+  "astra-graphia-it",
+  "astrapay",
+  "awantunai",
+  "cfx",
+  "danain",
+  "danamas",
+  "digitalexchange-id",
+  "domainesia",
+  "ekuid",
+  "espay",
+  "fundex",
+  "icc-kustodian-koin",
+  "icx-landx",
+  "invoila",
+  "jagoan-hosting",
+  "klikdokter",
+  "kredinesia",
+  "kredione",
+  "kta-kilat",
+  "lbs-urun-dana",
+  "ottopay",
+  "rupiahcepat",
+  "samir",
+  "samuel-kripto",
+  "santara",
+  "sfund",
+  "shafiq",
+  "singa-fintech",
+  "solusiku",
+  "tokomodal",
+  "trustiq-danaku"
+ ],
+ "wave2": "24 Oct 2026: the held rows were re-checked (live LinkedIn reads, owners, licences, 2026 activity). Rows that pass the census tests were published; group-owned companies were published with a \"part of <group>\" flag on Luca's word (\"we still can put them here, but maybe give flagging that they are affiliated with big company\")."
 }
