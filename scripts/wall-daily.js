@@ -18,6 +18,11 @@
  * px_view (the site's own visitor counter: real people only, eng=1, net=''),
  * ask_log / ask_user_day / acct_lead_asks (the My 1001 dashboard: Ask 1001 and
  * the lead agent's requests).
+ *
+ * On 23 Oct 2026 the wall became a closable free-account card (Luca: "we need
+ * to delete the 2 minute forced login, just make the popup maybe what feature
+ * inside of it"); from CARD_DAY the lines say "card" and add how many readers
+ * opened its sign-in form or closed it.
  */
 const fs = require('fs');
 const os = require('os');
@@ -25,6 +30,8 @@ const path = require('path');
 const Database = require('better-sqlite3');
 
 const FIRST_DAY = '2026-10-18';          // wall on at 11:46:53Z
+const CARD_DAY = '2026-10-23';           // wall -> closable card at CARD_AT UTC
+const CARD_AT = '17:05';
 const BASE = ['2026-10-11', '2026-10-17']; // the week before, for comparison
 const CHAT_ID = '841222912';             // Luca's DM with the OpenClaw bot
 const HOST = '1001.vantis.sh';           // px's name for 1001startup.id
@@ -71,14 +78,22 @@ function report(d) {
     lines.push('The 1001 login wall is on for all readers since 11:47 UTC today (18:47 WIB). '
       + 'These numbers will come here every morning at 08:05 WIB, 19-25 Oct, one message per day.', '');
   }
-  lines.push(`1001 login wall, ${label} (UTC)${dayNo >= 1 && dayNo <= 7 ? `, day ${dayNo} of 7` : ''}`
-    + `${d === FIRST_DAY ? ', wall on from 11:47' : ''}${intro ? ', so far' : ''}`);
+  const card = d >= CARD_DAY;
+  lines.push(`1001 ${card ? 'free-account card' : 'login wall'}, ${label} (UTC)${dayNo >= 1 && dayNo <= 7 ? `, day ${dayNo} of 7` : ''}`
+    + `${d === FIRST_DAY ? ', wall on from 11:47' : ''}${d === CARD_DAY ? `, wall until ${CARD_AT}, card after` : ''}${intro ? ', so far' : ''}`);
   lines.push('');
-  lines.push(`Hit the wall: ${n(first)} people for the first time (${n(w.view)} pages opened behind it)`);
-  if (w.back) lines.push(`Of those, returning readers who got the card at once (no fresh 45 s): ${n(w.back)}`);
-  lines.push(`Signed in from the wall: ${n(signin)} (${n(w.signup)} new accounts)`
-    + (first ? `, ${Math.round((signin / first) * 100)}% of those who hit it` : ''));
-  lines.push(`Left at the wall without signing in: about ${n(Math.max(first - signin, 0))}`);
+  if (card) {
+    lines.push(`${d === CARD_DAY ? 'Hit the wall or saw the card' : 'Saw the card'}: ${n(first)} people for the first time (shown ${n(w.view)} times)`);
+    lines.push(`Opened its sign-in form: ${n(w.open)}; closed it: ${n(w.close)}`);
+    lines.push(`Signed in from the card: ${n(signin)} (${n(w.signup)} new accounts)`
+      + (first ? `, ${Math.round((signin / first) * 100)}% of those who saw it` : ''));
+  } else {
+    lines.push(`Hit the wall: ${n(first)} people for the first time (${n(w.view)} pages opened behind it)`);
+    if (w.back) lines.push(`Of those, returning readers who got the card at once (no fresh free time): ${n(w.back)}`);
+    lines.push(`Signed in from the wall: ${n(signin)} (${n(w.signup)} new accounts)`
+      + (first ? `, ${Math.round((signin / first) * 100)}% of those who hit it` : ''));
+    lines.push(`Left at the wall without signing in: about ${n(Math.max(first - signin, 0))}`);
+  }
   lines.push(`Accounts: ${n(total)} in total, ${n(fresh)} new this day`);
   /* My 1001 (dashboard slice 1): follows and sign-ins that started at a Follow button */
   try {
@@ -133,7 +148,7 @@ function report(d) {
     if (land.length) lines.push(`  Landed on: ${land.map((x) => `${x.path} (${x.c})`).join(', ')}`);
     /* the ai_* wall counts started at the 10:25-ish UTC restart on 19 Oct; 20 Oct is the first full day */
     if (d >= '2026-10-20') {
-      lines.push(`  Hit the wall: ${n(w.ai_first)}; signed in: ${n(w.ai_signin)} (${n(w.ai_signup)} new accounts)`);
+      lines.push(`  ${card ? 'Saw the card' : 'Hit the wall'}: ${n(w.ai_first)}; signed in: ${n(w.ai_signin)} (${n(w.ai_signup)} new accounts)`);
     } else if (d === '2026-10-19') lines.push('  Wall and sign-ins for these readers: counted from 20 Oct');
   } catch { /* no counter tables */ }
   /* scraper check, slice 1 = watch only (lib/shield1001.js); its day is the Jakarta day */

@@ -175,7 +175,7 @@
     modal = null;
     frame = null;
     document.documentElement.classList.remove('f1001-on');
-    if (document.body && !document.getElementById('w1001')) {
+    if (document.body) {
       document.body.inert = false;
       document.body.removeAttribute('aria-hidden');
     }

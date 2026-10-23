@@ -1,22 +1,21 @@
-/* 1001startup.id — the login wall (slice 2; Luca, 18 Oct 2026: "make them
- * blurred and popup signing just like instagram/meta").
+/* 1001startup.id — the free-account card. Until 23 Oct 2026 this was a login
+ * wall (blur + sign-in card, no close button, slice 2 of 18 Oct). Luca, 23 Oct
+ * 2026: "we need to delete the 2 minute forced login, just make the popup maybe
+ * what feature inside of it".
  *
- * lib/account1001.js loads this file in <head>, synchronously, only for readers
- * who are NOT signed in, only on 1001startup.id pages, and only while the wall
- * is switched on (data/wall.live) or this browser opened the test link
- * (?wall=test: a 10-second clock on its own meter; ?wall=off ends test mode).
+ * lib/account1001.js loads this file in <head> only for readers who are NOT
+ * signed in, only on 1001startup.id pages, and only while the card is switched
+ * on (data/wall.live) or this browser opened the test link (?wall=test: a
+ * 10-second clock on its own meter; ?wall=off ends test mode).
  *
  * The clock counts seconds while the tab is on screen, across pages, in
- * localStorage and in a cookie (w1001s; the larger of the two wins, so
- * clearing one does not reset it), and never resets (Luca's call 3).
- * Readers who were on the site before the wall went up (data-since) get no
- * fresh 2 min: their time counts from their first visit, so the card comes at
- * once (Luca, 18 Oct: "dont let if people already [here] for long time, they
- * are free from the login"). When it reaches the limit
- * (120 s; 45 s on 18 Oct) the page blurs and a sign-in card covers it at once (call 2),
- * with no close button. The card holds /signin?embed=1 in a same-origin frame,
- * so Clerk runs only there and every other page keeps its strict CSP. When the
- * frame says the reader is signed in, the wall lifts in place, no reload.
+ * localStorage (w1001). At 120 s a card at the bottom left lists what a free
+ * account adds (Ask 1001, Follow, My 1001). Nothing is blurred or locked: the
+ * reader closes it ("Not now" / x / Esc) and keeps reading, and it stays away
+ * for 7 days, then comes back after another 120 s of reading. "Continue with
+ * email" swaps the list for /signin?embed=1 in a same-origin frame, so Clerk
+ * runs only there and every other page keeps its strict CSP; when the frame
+ * says the reader is signed in, the card goes, no reload.
  * Styles: views/wall1001.js.
  */
 (function () {
@@ -28,6 +27,9 @@
   var store = null;
   try { store = window.localStorage; store.getItem('w1001'); } catch (e) { store = null; }
 
+  /* the wall's old second clock, a cookie: no longer read, so let it go */
+  try { if (/(?:^|;\s*)w1001s=/.test(document.cookie || '')) document.cookie = 'w1001s=; path=/; max-age=0; samesite=lax'; } catch (e) { /* it expires by itself */ }
+
   /* ?wall=off: forget the test clock */
   if (d.off === '1' || d.clear === '1') {
     try { if (store) store.removeItem('w1001t'); } catch (e) { /* nothing to forget */ }
@@ -35,146 +37,146 @@
   }
 
   var LIMIT = Math.max(1, parseInt(d.limit, 10) || 120);
+  var REST = 7 * 864e5;   // after "Not now", this long before the clock runs again
+  var SETTLE = 5;         // seconds on a page before the card may show on it
   var TEST = d.test === '1';
   var LANG = d.lang === 'id' ? 'id' : 'en';
   var PF = LANG === 'id' ? '/id' : '';
   var KEY = TEST ? 'w1001t' : 'w1001';
-  var SINCE = Date.parse(d.since || '') || 0;   // when the wall went up for everyone
-  var mem = { s: 0 };   // when storage and cookies are both blocked, the clock lives for this page only
+  var mem = { s: 0 };   // storage blocked: the clock lives for this page only
 
   var T = LANG === 'id' ? {
-    h: 'Masuk untuk lanjut membaca',
-    s: 'Gratis. Ketik email kamu, kami kirim kode 6 angka.',
-    n: 'Email kamu kami simpan untuk proses masuk, dan tidak pernah ditampilkan di situs.',
-    f: 'Formulir masuk',
+    k: 'Akun gratis',
+    h: 'Ada lebih banyak di 1001startup.id',
+    f: [
+      ['Ask 1001', 'Tanya soal startup, BUMN, atau pusat data mana pun. Jawabannya dari data kami.'],
+      ['Ikuti', 'Ikuti startup, BUMN, investor, dan proyek pusat data.'],
+      ['My 1001', 'Satu halaman berisi semua yang kamu ikuti.'],
+    ],
+    go: 'Lanjut dengan email',
+    no: 'Nanti saja',
+    n: 'Gratis, tanpa kata sandi: kami kirim kode 6 angka ke email kamu.',
+    h2: 'Masuk atau daftar',
+    s2: 'Ketik email kamu, kami kirim kode 6 angka.',
+    n2: 'Email kamu kami simpan untuk proses masuk, dan tidak pernah ditampilkan di situs.',
+    fr: 'Formulir masuk',
+    x: 'Tutup',
     t: 'Mode uji: jam 10 detik. Buka ?wall=off untuk berhenti.',
     a: 'Akun',
   } : {
-    h: 'Sign in to keep reading',
-    s: 'It is free. Type your email and we send you a 6-digit code.',
-    n: 'We keep your email to sign you in. It is never shown on the site.',
-    f: 'Sign-in form',
+    k: 'Free account',
+    h: 'There is more inside 1001startup.id',
+    f: [
+      ['Ask 1001', 'Ask about any startup, state company or data centre. Answers come from our data.'],
+      ['Follow', 'Follow startups, state companies, investors and data-centre projects.'],
+      ['My 1001', 'One page with everything you follow.'],
+    ],
+    go: 'Continue with email',
+    no: 'Not now',
+    n: 'Free, no password: we email you a 6-digit code.',
+    h2: 'Sign in or join',
+    s2: 'Type your email and we send you a 6-digit code.',
+    n2: 'We keep your email to sign you in. It is never shown on the site.',
+    fr: 'Sign-in form',
+    x: 'Close',
     t: 'Test mode: 10-second clock. Open ?wall=off to stop.',
     a: 'Account',
   };
 
-  /* the real clock's second copy: a host-only cookie holding a number of seconds */
-  function cookieS() {
-    if (TEST) return 0;
-    var m = /(?:^|;\s*)w1001s=(\d{1,7})(?:;|$)/.exec(document.cookie || '');
-    return m ? parseInt(m[1], 10) : 0;
-  }
-  function setCookieS(n) {
-    if (TEST) return;
-    try {
-      document.cookie = 'w1001s=' + n + '; path=/; max-age=34560000; samesite=lax'
-        + (location.protocol === 'https:' ? '; secure' : '');
-    } catch (e) { /* localStorage still has it */ }
-  }
   function read() {
-    var v = mem;
-    if (store) {
-      try {
-        var x = JSON.parse(store.getItem(KEY) || 'null');
-        v = x && typeof x.s === 'number' ? x : { s: 0 };
-      } catch (e) { v = mem; }
-    }
-    var c = cookieS();
-    if (c > (v.s || 0)) v.s = c;
-    return v;
+    if (!store) return mem;
+    try {
+      var x = JSON.parse(store.getItem(KEY) || 'null');
+      return x && typeof x.s === 'number' ? x : { s: 0 };
+    } catch (e) { return mem; }
   }
   function write(v) {
     mem = v;
-    if (store) { try { store.setItem(KEY, JSON.stringify(v)); } catch (e) { /* the cookie has it */ } }
-    setCookieS(v.s || 0);
+    if (store) { try { store.setItem(KEY, JSON.stringify(v)); } catch (e) { /* this page keeps it */ } }
   }
   if (d.reset === '1') write({ s: 0 });
 
-  /* Was this browser here before the wall went up? Two dated records say so:
-     the cookie-banner choice (consent.js stamps vantis-consent.ts when it is
-     made) and the builder card's last showing (b1001.intro, ms). */
-  function cameBefore() {
-    if (TEST || !SINCE || !store) return false;
-    var t = 0;
-    try { var c = JSON.parse(store.getItem('vantis-consent') || 'null'); t = (c && Date.parse(c.ts)) || 0; } catch (e) { t = 0; }
-    if (t && t < SINCE) return true;
-    try { t = Number(store.getItem('b1001.intro')) || 0; } catch (e) { t = 0; }
-    return t > 0 && t < SINCE;
-  }
-  (function () {
-    var v = read();
-    if (v.s >= LIMIT || v.b || !cameBefore()) return;
-    v.s = LIMIT;
-    v.b = 1;            // counted once per browser
-    write(v);
-    count('back');
-  })();
+  /* closed less than 7 days ago: nothing to do on this page */
+  var v0 = read();
+  if (v0.x && Date.now() - v0.x < REST) return;
 
-  var shown = false;
-  var timer = null;
   var wrap = null;
   var frame = null;
+  var timer = null;
+  var here = 0;   // seconds on screen on this page
 
-  function whenBody(fn) {
-    if (document.body) fn();
-    else document.addEventListener('DOMContentLoaded', fn);
+  function el(tag, cls, text) {
+    var e = document.createElement(tag);
+    if (cls) e.className = cls;
+    if (text) e.textContent = text;
+    return e;
   }
-  function show() {
-    if (shown) return;
-    shown = true;
-    if (timer) { clearInterval(timer); timer = null; }
-    html.classList.add('w1001-on');
-    whenBody(build);
+  /* Two other cards sit at the bottom and go first: the cookie banner
+     (consent.js, .vs-cc; position:fixed, so offsetParent can't tell, measure
+     it) and the "who is building this" card while it is open (#b1.is-open).
+     The Follow sign-in popup (html.f1001-on) is a sign-in already. */
+  function busy() {
+    if (html.classList.contains('f1001-on')) return true;
+    var b1 = document.getElementById('b1');
+    if (b1 && b1.classList.contains('is-open')) return true;
+    var cc = document.querySelector('.vs-cc');
+    if (!cc) return false;
+    var st = getComputedStyle(cc);
+    return st.display !== 'none' && st.visibility !== 'hidden' && cc.getBoundingClientRect().height > 0;
   }
   function tick() {
     if (document.visibilityState !== 'visible') return;
+    here += 1;
     var v = read();
-    v.s = (v.s || 0) + 1;
-    write(v);
-    if (v.s >= LIMIT) show();
+    if (v.x && Date.now() - v.x < REST) { stop(); return; }   // closed in another tab
+    if ((v.s || 0) < LIMIT) { v.s = (v.s || 0) + 1; write(v); }
+    if (v.s >= LIMIT && here >= SETTLE && document.body && !busy()) show();
   }
+  function stop() { if (timer) { clearInterval(timer); timer = null; } }
 
-  function el(tag, cls) {
-    var e = document.createElement(tag);
-    if (cls) e.className = cls;
-    return e;
-  }
-  function build() {
+  function show() {
     if (wrap) return;
+    stop();
     wrap = el('div');
     wrap.id = 'w1001';
     wrap.setAttribute('role', 'dialog');
-    wrap.setAttribute('aria-modal', 'true');
     wrap.setAttribute('aria-labelledby', 'w1001-h');
-    var card = el('div', 'w1001-c');
-    card.tabIndex = -1;
+    var x = el('button', 'w1001-x', '×');
+    x.type = 'button';
+    x.setAttribute('aria-label', T.x);
+    x.addEventListener('click', close);
     var inner = el('div', 'w1001-in');
     var k = el('p', 'w1001-k');
     k.appendChild(el('i'));
-    k.appendChild(document.createTextNode('1001startup.id'));
-    var h = el('h2');
+    k.appendChild(document.createTextNode(T.k));
+    var h = el('h2', null, T.h);
     h.id = 'w1001-h';
-    h.textContent = T.h;
-    var s = el('p', 'w1001-s');
-    s.textContent = T.s;
-    frame = el('iframe');
-    frame.title = T.f;
-    frame.src = PF + '/signin?embed=1&via=' + (TEST ? 'test' : 'wall')
-      + '&next=' + encodeURIComponent(location.pathname + location.search);
-    var n = el('p', 'w1001-n');
-    n.textContent = T.n;
+    var ul = el('ul');
+    T.f.forEach(function (f) {
+      var li = el('li');
+      li.appendChild(el('b', null, f[0]));
+      li.appendChild(el('span', null, f[1]));
+      ul.appendChild(li);
+    });
+    var acts = el('div', 'w1001-a');
+    var go = el('button', 'w1001-go', T.go);
+    go.type = 'button';
+    go.addEventListener('click', signIn);
+    var no = el('button', 'w1001-no', T.no);
+    no.type = 'button';
+    no.addEventListener('click', close);
+    acts.appendChild(go);
+    acts.appendChild(no);
     inner.appendChild(k);
     inner.appendChild(h);
-    inner.appendChild(s);
-    inner.appendChild(frame);
-    inner.appendChild(n);
-    if (TEST) { var t = el('p', 'w1001-t'); t.textContent = T.t; inner.appendChild(t); }
-    card.appendChild(inner);
-    wrap.appendChild(card);
+    inner.appendChild(ul);
+    inner.appendChild(acts);
+    inner.appendChild(el('p', 'w1001-n', T.n));
+    if (TEST) inner.appendChild(el('p', 'w1001-t', T.t));
+    wrap.appendChild(x);
+    wrap.appendChild(inner);
     /* on <html>, beside <body>: nothing a page does to its body can cover it */
     html.appendChild(wrap);
-    if (document.body) { document.body.inert = true; document.body.setAttribute('aria-hidden', 'true'); }
-    try { card.focus({ preventScroll: true }); } catch (e) { /* focus is a nicety */ }
     count('view');
     if (!TEST && store) {
       try { if (!store.getItem('w1001f')) { store.setItem('w1001f', '1'); count('first'); } } catch (e) { /* uncounted */ }
@@ -182,24 +184,60 @@
     track('wall_shown');
   }
 
-  function lift() {
-    if (timer) { clearInterval(timer); timer = null; }
+  /* "Continue with email": the list makes way for the sign-in form */
+  function signIn() {
+    if (!wrap || frame) return;
+    var inner = wrap.querySelector('.w1001-in');
+    var h = el('h2', null, T.h2);
+    h.id = 'w1001-h';
+    frame = el('iframe');
+    frame.title = T.fr;
+    frame.src = PF + '/signin?embed=1&via=' + (TEST ? 'test' : 'wall')
+      + '&next=' + encodeURIComponent(location.pathname + location.search);
+    var k = inner.querySelector('.w1001-k');
+    while (inner.lastChild && inner.lastChild !== k) inner.removeChild(inner.lastChild);
+    inner.appendChild(h);
+    inner.appendChild(el('p', 'w1001-s', T.s2));
+    inner.appendChild(frame);
+    inner.appendChild(el('p', 'w1001-n', T.n2));
+    if (TEST) inner.appendChild(el('p', 'w1001-t', T.t));
+    count('open');
+    track('wall_open');
+  }
+
+  function remove() {
+    stop();
     if (wrap && wrap.parentNode) wrap.parentNode.removeChild(wrap);
     wrap = null;
     frame = null;
-    html.classList.remove('w1001-on');
-    if (document.body) { document.body.inert = false; document.body.removeAttribute('aria-hidden'); }
+  }
+  function close() {
+    var v = read();
+    v.s = 0;
+    v.x = Date.now();
+    write(v);
+    remove();
+    count('close');
+    track('wall_close');
+  }
+  function lift(mine) {
+    remove();
     /* the header was rendered for a signed-out reader */
     var a = document.querySelector('header a.acct');
-    if (a) { a.textContent = T.a; a.setAttribute('href', PF + '/signin'); a.classList.add('on'); }
-    track('wall_signin');
+    if (a) { a.textContent = T.a; a.setAttribute('href', PF + '/me'); a.classList.add('on'); }
+    if (mine) track('wall_signin');
   }
 
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && wrap && !html.classList.contains('f1001-on')) close();
+  });
+  /* signed in, in our form or in the Follow popup's: the card has done its job */
   window.addEventListener('message', function (e) {
-    if (!frame || e.source !== frame.contentWindow || e.origin !== location.origin) return;
+    if (e.origin !== location.origin) return;
     var m = e.data || {};
-    if (m.type === 'a1001-h' && m.h > 0) frame.style.height = Math.min(Math.max(Math.ceil(m.h), 120), 1400) + 'px';
-    else if (m.type === 'a1001-in') lift();
+    var mine = !!frame && e.source === frame.contentWindow;
+    if (m.type === 'a1001-in') lift(mine);
+    else if (mine && m.type === 'a1001-h' && m.h > 0) frame.style.height = Math.min(Math.max(Math.ceil(m.h), 120), 1400) + 'px';
   });
 
   /* day counts with no identifiers (lib/account1001.js); the test clock sends none */
@@ -216,7 +254,5 @@
     try { if (window.vsTrack) window.vsTrack(name, { test: TEST ? 1 : 0 }); } catch (e) { /* no analytics */ }
   }
 
-  /* time already used up: blurred from the first paint, card as soon as the body exists */
-  if (read().s >= LIMIT) show();
-  else timer = setInterval(tick, 1000);
+  timer = setInterval(tick, 1000);
 })();
