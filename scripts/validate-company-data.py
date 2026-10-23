@@ -40,11 +40,18 @@ def main() -> int:
     # The Kimi wave record (data/census-adds/kimi-2026-10-startups.json): rows published under
     # the census rule, and the rows held back with the reason for each.
     wave = read("census-adds/kimi-2026-10-startups.json")
-    published, held = set(wave["rows"]), {x["id"] for x in wave["held"]}
+    published, held = set(wave["rows"]) | set(wave.get("rows_wave2", [])), {x["id"] for x in wave["held"]}
     ids = {c["id"] for c in raw["companies"]}
     new_rows = [c for c in raw["companies"] if c["id"] in published]
     check("wave rows all published", published <= ids, f"{len(published & ids)}/{len(published)}")
     check("held rows not published", not (held & ids), sorted(held & ids))
+    # group companies (24 Oct 2026): every flag names its group and the page that shows the ownership
+    grp = [c for c in raw["companies"] if c.get("group_parent")]
+    bad_grp = [c["id"] for c in grp if not (c["group_parent"].get("group") and c["group_parent"].get("relation")
+                                           and str(c["group_parent"].get("src", "")).startswith("http"))]
+    check("group flags complete", not bad_grp, f"{len(grp)} flagged" + (f"; incomplete {bad_grp}" if bad_grp else ""))
+    check("group flags reach the public build", sum(1 for c in public["companies"] if c.get("group_parent")) == len(grp),
+          sum(1 for c in public["companies"] if c.get("group_parent")))
     evidence_ok = all(any("linkedin.com/company/" in str(u) or "linkedin.com/school/" in str(u) for u in [c.get("employees_src"), *(c.get("sources") or [])]) for c in new_rows)
     check("all expansion rows have LinkedIn company evidence", evidence_ok, len(new_rows))
     check("no solopreneur headcount", all(c.get("employees_est") is None or c["employees_est"] >= 5 for c in new_rows), "all exact headcounts >=5 or null")

@@ -136,6 +136,8 @@ a.cp-chip:hover{border-color:#000}
 .cp-trk{border:1px solid #E7E7E7;padding:1px 3px;text-transform:uppercase;letter-spacing:.05em}
 .cp-tag.cp-ed{border-color:#2A6E9F;color:#2A6E9F}
 .cp-tag.cp-an{border-color:#4E7A58;color:#4E7A58}
+.cp-tag.cp-grp{border-color:#7A5C2E;color:#7A5C2E}
+.cp-grpline{margin:10px 0 12px;padding:9px 12px;border-left:2px solid #7A5C2E;background:#FBF8F2;color:#52525B;font-size:13px;line-height:1.55;max-width:70ch}
 
 /* ── supply chain: the relationship panel, the ladder, the evidence ─────
    Lives here rather than in its own file because the company card is rendered
