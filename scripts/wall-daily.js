@@ -31,7 +31,7 @@ const Database = require('better-sqlite3');
 
 const FIRST_DAY = '2026-10-18';          // wall on at 11:46:53Z
 const CARD_DAY = '2026-10-23';           // wall -> closable card at CARD_AT UTC
-const CARD_AT = '17:05';
+const CARD_AT = '17:03';
 const BASE = ['2026-10-11', '2026-10-17']; // the week before, for comparison
 const CHAT_ID = '841222912';             // Luca's DM with the OpenClaw bot
 const HOST = '1001.vantis.sh';           // px's name for 1001startup.id
