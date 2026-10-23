@@ -22,6 +22,25 @@ const { liveFlag } = require('../lib/flaglive');
    views/bumnsankey1001.js serves /bumn/<slug>; while data/bumnsankey.live exists (BUMNSANKEY_PREVIEW=1)
    the cards link to it through the #bm-maps block. Without the switch the page is unchanged. */
 const sankey = require('./bumnsankey1001');
+/* Regional state companies (Luca, 18 Oct 2026: "enrich the data with BUMD and its KSO"): while
+   data/bumd.live exists (BUMD_PREVIEW=1), each card ends with a link to its group's ties on /bumd
+   (#bm-bumd: per slug [ties, joint operations, regional companies]) and a section points there. */
+const bumd = require('./bumd1001');
+const BUMD_CSS = `.bm-card .bdl{display:flex;justify-content:space-between;gap:8px;align-items:center;margin-top:10px;padding:9px 10px;border:1px solid #000;color:#000;text-decoration:none;font:400 10.5px/1.35 'IBM Plex Mono',monospace;letter-spacing:.05em;text-transform:uppercase}
+.bm-card .bdl:hover{background:#000;color:#fff}
+.bm-card .bdl:focus-visible{outline:2px solid #000;outline-offset:2px}
+.bm-card .bdl b{font:600 13px/1.2 'Overused Grotesk',system-ui,sans-serif;letter-spacing:0;text-transform:none;display:block;margin-bottom:2px}
+`;
+function bumdSection() {
+  const D = bumd.load();
+  if (!D) return '';
+  const n = (D.co || []).filter((c) => !c.sub && !c.jv).length;  /* the BUMD themselves: not their subsidiaries, not minority stakes */
+  return `<section class="wrap">
+  <div class="eyebrow"><span class="sq"></span>REGIONAL STATE COMPANIES (BUMD)</div>
+  <p class="lede">Provinces, regencies and cities own ${D.national ? D.national.toLocaleString('en-US') + ' companies of their own' : 'companies of their own'}. ${n.toLocaleString('en-US')} are mapped so far, with their owners, figures and the ${(D.ops || []).length.toLocaleString('en-US')} joint operations and joint ventures that tie them to these groups.</p>
+  <div class="cta" style="margin-top:0"><a class="btn primary" href="/bumd">See the regional companies →</a></div>
+</section>`;
+}
 
 const FILE = path.join(__dirname, '..', 'data', 'bumn.json');
 /* The 56-company version (Luca, 18 Oct 2026: add the 14 BUMN Danantara lists that the page lacked):
@@ -82,6 +101,7 @@ function page({ lang = 'en' }) {
   const TJ = T ? { types: T.types, groups: T.groups } : null;
   const MAPS = sankey.slugs();
   const MINIS = MAPS.length ? sankey.minis() : {};
+  const BD = bumd.groupCounts();
   const p = '/bumn';
   if (!D) return null;
   const n = D.entities.length;
@@ -236,7 +256,7 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
 @media(prefers-reduced-motion:reduce){.bm-b{transition:none}.bm-b:hover,.bm-b.on{transform:none}}
 .stats.s5{grid-template-columns:repeat(5,1fr)}
 @media(max-width:1100px){.stats.s5{grid-template-columns:repeat(2,1fr)}.stats.s5 .cell:last-child{grid-column:1/-1}}
-</style>
+${BD ? BUMD_CSS : ''}</style>
 <section class="hero">
   <div class="eyebrow"><span class="sq"></span>STATE COMPANIES · BUMN · ${esc(asof.toUpperCase())}</div>
   <h1>${esc(h1)}</h1>
@@ -277,14 +297,14 @@ ${S ? `.bm-card .subs{border-top:1px solid #F1F1F1;padding-top:9px;margin-top:6p
 <section class="wrap">
   <div class="eyebrow"><span class="sq"></span>DANANTARA, IN FOUR FACTS</div>
   <ul class="bm-list">${dnt}</ul>
-</section>
+</section>${BD ? '\n' + bumdSection() : ''}
 <section class="wrap">
   <div class="eyebrow"><span class="sq"></span>HOW THE SCORES WORK</div>
   <p class="lede">Finance is computed from published figures. The other five scores follow a fixed 0–5 rubric, and each one cites its evidence in the company's card.</p>
   <details class="bm-m"><summary>Method, data dates and limits</summary>${method}</details>
 </section>
 <script type="application/json" id="bm-data">${JSON.stringify(D).replace(/</g, '\\u003c')}</script>
-${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}${TJ ? `<script type="application/json" id="bm-ties">${JSON.stringify(TJ).replace(/</g, '\\u003c')}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-maps">${JSON.stringify(MAPS)}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-minis">${JSON.stringify(MINIS).replace(/</g, '\\u003c')}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
+${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(/</g, '\\u003c')}</script>\n` : ''}${TJ ? `<script type="application/json" id="bm-ties">${JSON.stringify(TJ).replace(/</g, '\\u003c')}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-maps">${JSON.stringify(MAPS)}</script>\n` : ''}${MAPS.length ? `<script type="application/json" id="bm-minis">${JSON.stringify(MINIS).replace(/</g, '\\u003c')}</script>\n` : ''}${BD ? `<script type="application/json" id="bm-bumd">${JSON.stringify(BD)}</script>\n` : ''}<script src="/js/bumn1001.js?v=${ver()}" defer></script>`;
   const crumb = [{ name: '1001startup.id', path: '/' }, { name: 'BUMN', path: p }];
   const ld = {
     '@context': 'https://schema.org', '@type': 'Dataset', name: 'Indonesia’s state companies on ten yardsticks',
