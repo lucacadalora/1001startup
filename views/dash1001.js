@@ -14,8 +14,8 @@
  *  - Search bar: instant search over every startup, BUMN, data centre,
  *    investor and sector (GET /api/me/index, no model), `/` jumps in, the last
  *    row hands the words to Ask 1001. public/js/me1001.js.
- *  - Ask 1001: answers only from 1001's data (lib/ask1001.js, DeepSeek V4.1
- *    Flash through our aisurplus gateway). Shown while data/ask.live exists.
+ *  - Ask 1001: answers only from 1001's data (lib/ask1001.js; the model sits
+ *    behind our own gateway, set in the server's .env). Shown while data/ask.live exists.
  *  - Lead agent: coming soon, one line + a search box that is not open yet.
  *    "Get early access" and the Contacts button on a
  *    followed startup or BUMN save a request (acct_lead_asks), so Luca sees

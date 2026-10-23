@@ -34,7 +34,6 @@ const opt = (k) => { const i = args.indexOf(k); return i >= 0 && args[i + 1] ? a
 const GIVEN_REPORT = opt('--report');
 const REPORT = GIVEN_REPORT || path.join(ROOT, 'data', 'graph1001-report.json');
 const STATE = opt('--state') || path.join(ROOT, 'data', 'graph1001-told.json');
-const CHAT_ID = '841222912';             // Luca's DM with the OpenClaw bot
 const SHOW = 12;                         // matches listed in one message; the rest are counted
 
 const WHAT = { s: 'startup', i: 'investor', c: 'chain company', b: 'BUMN', u: 'BUMN subsidiary', w: 'data-centre web', n: 'network', e: 'exporter', k: 'named in a link' };
@@ -71,18 +70,21 @@ function message(fresh, report, open) {
 }
 
 async function send(text) {
-  let token = '';
+  let token = '', chat = '';
   try {
     const cfg = JSON.parse(fs.readFileSync(path.join(os.homedir(), '.openclaw', 'openclaw.json'), 'utf8'));
-    token = String((cfg.channels && cfg.channels.telegram && cfg.channels.telegram.botToken) || '');
+    const tg = (cfg.channels && cfg.channels.telegram) || {};
+    token = String(tg.botToken || '');
+    chat = String((tg.allowFrom || [])[0] || '');  /* Luca's DM: the chat the bot accepts */
   } catch { /* reported below */ }
   if (!token) throw new Error('no Telegram bot token in ~/.openclaw/openclaw.json');
+  if (!chat) throw new Error('no Telegram chat in ~/.openclaw/openclaw.json (channels.telegram.allowFrom)');
   let res;
   try {
     res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: CHAT_ID, text, disable_web_page_preview: true }),
+      body: JSON.stringify({ chat_id: chat, text, disable_web_page_preview: true }),
       signal: AbortSignal.timeout(15e3),
     });
   } catch (e) {

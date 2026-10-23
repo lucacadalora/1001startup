@@ -15,8 +15,8 @@
  *  - Typing a name offers its page (GET /api/me/index, the dashboard's
  *    instant search); Enter always asks.
  *  - Answers stack under the box, newest first, their words appearing as
- *    DeepSeek writes them, as in oyenza.app's Ask (Luca, 20 Oct: "lets use
- *    deepseek like how oyenza.app works"; same model, same gateway).
+ *    the model writes them, as in oyenza.app's Ask (Luca, 20 Oct: work like
+ *    oyenza.app's; same model, same gateway).
  *    public/js/chat1001.js.
  *  - What the dashboard showed (numbers, rounds, most read, sectors,
  *    investors, closed) lives on the site's own pages; only Following and

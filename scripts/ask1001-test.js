@@ -25,6 +25,16 @@ const os = require('os');
 const path = require('path');
 const http = require('http');
 const createAsk = require('../lib/ask1001');
+/* offline runs talk to a fake gateway; the live part uses the model and key named in the server's .env */
+const TEST_MODEL = 'test-model';
+function loadEnv() {
+  try {
+    for (const line of fs.readFileSync(path.join(__dirname, '..', '.env'), 'utf8').split('\n')) {
+      const m = line.match(/^\s*(ASK1001_[A-Z0-9_]+)\s*=\s*(.*)\s*$/);
+      if (m && !(m[1] in process.env)) process.env[m[1]] = m[2];
+    }
+  } catch { /* no .env: the live part will report 'upstream' */ }
+}
 
 const ROOT = path.join(__dirname, '..');
 const args = process.argv.slice(2);
@@ -526,7 +536,7 @@ async function mockTests() {
   fs.writeFileSync(keyFile, KEY + '\n', { mode: 0o600 });
   const M = await mockServer();
   const logs = [];
-  const mk = (o = {}) => createAsk({ root: ROOT, url: M.url, keyFile, log: (...a) => logs.push(a.join(' ')), ...o });
+  const mk = (o = {}) => createAsk({ root: ROOT, url: M.url, keyFile, model: TEST_MODEL, log: (...a) => logs.push(a.join(' ')), ...o });
   try {
     await check('tool call then answer: ok, steps, onStep before the tool, entities, usage, key never leaks', async () => {
       const ask = mk();
@@ -549,7 +559,7 @@ async function mockTests() {
       ok(typeof r.ms === 'number', 'ms');
       eq(M.seen[0].auth, 'Bearer ' + KEY, 'bearer from key file, trimmed');
       const b = M.seen[0].body;
-      eq(b.model, 'deepseek-v4.1-flash-1017', 'model');
+      eq(b.model, TEST_MODEL, 'model');
       eq(b.temperature, 0.2, 'temperature');
       eq(b.reasoning_effort, 'low', 'effort');
       eq(b.tool_choice, 'auto', 'tool_choice');
@@ -696,7 +706,7 @@ async function mockTests() {
       M.set([toolTurn([['census_overview', {}]]), textTurn('Fine.')]);
       const r = await mk().run({ q: 'x?', onStep: () => { throw new Error('boom'); } });
       eq(r.ok, true, 'onStep throw');
-      const nk = await createAsk({ root: ROOT, url: M.url, keyFile: path.join(dir, 'missing'), log: () => {} }).run({ q: 'x?' });
+      const nk = await createAsk({ root: ROOT, url: M.url, keyFile: path.join(dir, 'missing'), model: TEST_MODEL, log: () => {} }).run({ q: 'x?' });
       eq(nk.reason, 'upstream', 'missing key');
       M.set([]);
       const cap = await mk({ dailyCapMicro: 0 }).run({ q: 'x?' });
@@ -812,7 +822,8 @@ function looksIndonesian(s) {
 }
 
 async function partB() {
-  console.log('\nPart B: live (DeepSeek V4.1 Flash via aisurplus)\n');
+  console.log('\nPart B: live (the production model, through our gateway)\n');
+  loadEnv();
   const ask = createAsk({ root: ROOT, log: (...a) => console.log('    [log] ' + a.join(' ')) });
   let toolTexts = [];
   for (const name of Object.keys(ask._t.impl)) {

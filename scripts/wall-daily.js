@@ -33,7 +33,6 @@ const FIRST_DAY = '2026-10-18';          // wall on at 11:46:53Z
 const CARD_DAY = '2026-10-23';           // wall -> closable card at CARD_AT UTC
 const CARD_AT = '17:03';
 const BASE = ['2026-10-11', '2026-10-17']; // the week before, for comparison
-const CHAT_ID = '841222912';             // Luca's DM with the OpenClaw bot
 const HOST = '1001.vantis.sh';           // px's name for 1001startup.id
 
 const args = process.argv.slice(2);
@@ -177,18 +176,21 @@ function report(d) {
 }
 
 async function send(text) {
-  let token = '';
+  let token = '', chat = '';
   try {
     const cfg = JSON.parse(fs.readFileSync(path.join(os.homedir(), '.openclaw', 'openclaw.json'), 'utf8'));
-    token = String((cfg.channels && cfg.channels.telegram && cfg.channels.telegram.botToken) || '');
+    const tg = (cfg.channels && cfg.channels.telegram) || {};
+    token = String(tg.botToken || '');
+    chat = String((tg.allowFrom || [])[0] || '');  /* Luca's DM: the chat the bot accepts */
   } catch { /* reported below */ }
   if (!token) throw new Error('no Telegram bot token in ~/.openclaw/openclaw.json');
+  if (!chat) throw new Error('no Telegram chat in ~/.openclaw/openclaw.json (channels.telegram.allowFrom)');
   let res;
   try {
     res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: CHAT_ID, text, disable_web_page_preview: true }),
+      body: JSON.stringify({ chat_id: chat, text, disable_web_page_preview: true }),
       signal: AbortSignal.timeout(15e3),
     });
   } catch (e) {
