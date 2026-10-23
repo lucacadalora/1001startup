@@ -81,7 +81,7 @@
       hits.push({ r: r, sc: sc });
     }
     hits.sort(function (a, b) { return b.sc - a.sc || a.r.i - b.r.i; });
-    var groups = { s: [], b: [], d: [], e: [] }, total = { s: 0, b: 0, d: 0, e: 0 };
+    var groups = { s: [], b: [], r: [], d: [], e: [] }, total = { s: 0, b: 0, r: 0, d: 0, e: 0 };
     hits.forEach(function (h) {
       var g = h.r.k === 'p' ? 'd' : h.r.k;
       if (!groups[g]) return;
