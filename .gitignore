@@ -41,3 +41,12 @@ data/graph1001.json.tmp
 data/graph1001-report.json
 data/graph1001-told.json
 data/graph1001-told.json.tmp
+
+# local company graph (scripts/build-company-graph.py, `npm run build:graph`): rebuilt from the
+# committed census, BUMN and BUMD files in about a second, so the outputs stay out of git
+data/bumd-deduped.json
+data/company-graph.sqlite
+data/company-corpus.jsonl
+data/validation-report.json
+data/companygraph.live
+data/contact-cache/

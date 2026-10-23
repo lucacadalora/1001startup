@@ -105,6 +105,21 @@ for (const c of raw.companies) {
   if (f.note) c.founders_note = f.note;
   if (f.founded) c.founded_year = f.founded;
 }
+/* public contacts — scripts/company-contacts.py writes data/company-contacts.json
+   from each company's own pages (role mailboxes, tel: links, careers pages, with
+   the page each came from). lib/public-contacts.js decides what is printed:
+   no personal or mobile numbers, no guessed addresses. */
+const { publicContacts } = require('../lib/public-contacts');
+let contacts = {};
+try { contacts = Object.fromEntries((JSON.parse(fs.readFileSync(path.join(__dirname, '..', 'data', 'company-contacts.json'), 'utf8')).entities || []).map((x) => [x.id, x])); } catch {}
+for (const c of raw.companies) {
+  const rec = c.id && contacts['tech-' + c.id];
+  if (!rec) continue;
+  const list = publicContacts(rec.contacts);
+  if (!list.length) continue;
+  c.public_contacts = list;
+  c.contact_checked = rec.retrieved_at || null;
+}
 for (const c of raw.companies) { c.sprite = webp(c.sprite); c.logo = webp(c.logo); }
 const m = raw.method;
 const perWorker = (key) => (m.gva_per_worker_idr_m_by_sector && m.gva_per_worker_idr_m_by_sector[key]) || m.default_gva_per_worker_idr_m;

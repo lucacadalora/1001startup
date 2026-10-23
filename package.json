@@ -7,7 +7,11 @@
     "lib": "lib"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "python3 scripts/validate-company-data.py && node --check server.js",
+    "start": "node server.js",
+    "build:census": "node scripts/build-census.js",
+    "build:graph": "python3 scripts/dedupe-bumd.py && python3 scripts/build-bumn-enrichment.py && python3 scripts/build-company-graph.py",
+    "build:contacts": "python3 scripts/company-contacts.py --fetch"
   },
   "keywords": [],
   "author": "",
@@ -21,5 +25,8 @@
     "fastify": "^5.12.1",
     "mathjax-full": "^3.2.1",
     "qrcode": "^1.5.4"
+  },
+  "engines": {
+    "node": ">=22"
   }
 }
