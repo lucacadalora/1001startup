@@ -557,6 +557,7 @@ function homePage(lang) {
   const links = linksData() || {};
   return home1001.home({
     census, bumn: bumn1001.load(), dc: datacenter1001.load(), umkm: umkmData(), lang,
+    bumd: bumdLive() ? bumdCommon.load() : null,
     peering: peeringLive() ? peering1001.load() : null,
     bumnGroup: bumnsankey1001.homeMini('telkom'), bumnSubs: bumn1001.subTotals(),
     bumnMaps: bumnsankey1001.live() ? Object.values((bumnsankey1001.load() || {}).groups || {}) : [],

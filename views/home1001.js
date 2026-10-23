@@ -27,6 +27,14 @@
  * buildings only: the PeeringDB rows themselves stay on dc.1001startup.id
  * (their AUP: no bulk pass-on), so the card stays out of the search index
  * and the schema.org catalog.
+ *
+ * A BUMD card (Luca, 24 Oct 2026, once /bumd went live: "need to update in
+ * https://1001startup.id/ landing page") sits right after the BUMN card while
+ * data/bumd.live is on: the regional state companies as their own dataset,
+ * across both columns, with a small chart of every company by assets and net
+ * profit (losses fall below the zero line), the largest by assets, and the
+ * hero copy, counts, search placeholder and catalog counting it. Its marker
+ * is a deeper gold than BUMN's, #C99A2E (the search uses the same).
  */
 const fs = require('fs');
 const path = require('path');
@@ -39,9 +47,10 @@ const FOOT = require('./footer1001');
 const { dcLive } = require('../lib/dclive');
 const { iconsLive } = require('../lib/iconslive');
 const { graphLive } = require('../lib/peeringlive');
+const BUMD = require('./bumd-common');
 
 const GRAD = 'linear-gradient(90deg,#E8734B,#F3C64B,#7AB88A,#4E7A96)';
-const DC = { s: '#E8734B', b: '#F3C64B', d: '#7AB88A', e: '#4E7A96', p: '#2F8FE8' };
+const DC = { s: '#E8734B', b: '#F3C64B', r: '#C99A2E', d: '#7AB88A', e: '#4E7A96', p: '#2F8FE8' };
 const PEER = 'https://dc.1001startup.id/';
 
 /* data/home-assets.json — the small content-named copies of the art
@@ -115,6 +124,77 @@ function bumnQuad(bumn) {
   return out;
 }
 
+/* the BUMD card's styles, added to the page only while the card is on */
+const BD_CSS = `/* BUMD: the chart takes the wide card's right column */
+.dw>.bdm{grid-area:m;margin-top:18px;min-width:0}
+.bdc{display:grid;grid-template-columns:18px minmax(0,1fr);gap:6px;max-width:560px;margin:0 auto}
+.bdf{grid-column:2;position:relative;aspect-ratio:4/3;border:1px solid #DADBD5;background:#fff}
+.bdf svg{position:absolute;inset:0;width:100%;height:100%;display:block}
+.bdf svg circle{fill:#A1A1AA;opacity:.55}
+.bdf svg line{vector-effect:non-scaling-stroke}
+.bdf svg line.m{stroke:#C9CBC4;stroke-width:1.5}
+.bdf svg line.z{stroke:#3F3F46;stroke-width:1.5}
+.bdf .bqn.ini{background:#F4F4F2}
+.bdf .bqn.ini span{display:flex;align-items:center;justify-content:center;width:100%;height:100%;font:600 10px/1 'IBM Plex Mono',monospace;color:#3F3F46}
+.bdm figcaption{font:400 10px/1.45 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73;margin-top:8px;max-width:560px;margin-left:auto;margin-right:auto;padding-left:24px}
+.tt.bt th.n{width:86px}
+.tt td.nm .bi{width:20px;height:20px;flex:none;display:flex;align-items:center;justify-content:center;background:#F4F4F2;font:600 8px/1 'IBM Plex Mono',monospace;color:#3F3F46}
+@media(max-width:640px){.bdf .bqn.ini span{font-size:8px}.bdm figcaption{padding-left:0}}
+`;
+
+/* The BUMD chart, placed on the server: every regional company with assets and a
+   net result in its latest published accounts (assets on a log scale, net profit
+   on a signed log scale so losses fall below the zero line), the fourteen largest
+   by assets as logo discs nudged apart around their true spot, the rest as dots.
+   Unit coordinates on a 4:3 field so the preview scales with the card. */
+const bdCache = new WeakMap();
+function bumdChart(R) {
+  if (!R || !Array.isArray(R.co)) return null;
+  if (bdCache.has(R)) return bdCache.get(R);
+  const rows = R.co.filter((c) => !c.jv && c.fin && c.fin.a > 0 && typeof c.fin.p === 'number');
+  if (rows.length < 20) return null;
+  const lx = (c) => Math.log10(c.fin.a);
+  const sy = (v) => Math.sign(v) * Math.log10(1 + Math.abs(v));
+  const xs = rows.map(lx), ys = rows.map((c) => sy(c.fin.p));
+  const x0 = Math.min(...xs), x1 = Math.max(...xs), y0 = Math.min(...ys), y1 = Math.max(...ys);
+  const px = (x1 - x0) * 0.09, py = (y1 - y0) * 0.12, H = 0.75;
+  const X = (v) => (v - x0 + px) / (x1 - x0 + 2 * px);
+  const Y = (v) => (1 - (v - y0 + py) / (y1 - y0 + 2 * py)) * H;
+  const top = rows.slice().sort((a, b) => b.fin.a - a.fin.a).slice(0, 14);
+  const d = 0.068, r = d / 2 + 0.005;
+  const nodes = top.map((c) => { const ax = X(lx(c)), ay = Y(sy(c.fin.p)); return { c, ax, ay, x: ax, y: ay }; });
+  for (let it = 0; it < 400; it++) {
+    for (let a = 0; a < nodes.length; a++) {
+      for (let b = a + 1; b < nodes.length; b++) {
+        const A = nodes[a], B = nodes[b];
+        let dx = B.x - A.x, dy = B.y - A.y, dist = Math.hypot(dx, dy);
+        if (dist < 2 * r) {
+          if (dist < 1e-4) { dx = (b % 2 ? 1 : -1) * 0.001; dy = 0.001; dist = 0.0014; }
+          const push = (2 * r - dist) / 2, ux = dx / dist, uy = dy / dist;
+          A.x -= ux * push; A.y -= uy * push; B.x += ux * push; B.y += uy * push;
+        }
+      }
+    }
+    /* pulled back towards the true spot, less and less, so the last passes only separate */
+    const pull = it < 300 ? 0.03 : 0;
+    for (const n of nodes) {
+      n.x += (n.ax - n.x) * pull; n.y += (n.ay - n.y) * pull;
+      n.x = Math.max(r, Math.min(1 - r, n.x));
+      n.y = Math.max(r, Math.min(H - r, n.y));
+    }
+  }
+  const inTop = new Set(top);
+  const sorted = xs.slice().sort((a, b) => a - b), m = sorted.length >> 1;
+  const med = sorted.length % 2 ? sorted[m] : (sorted[m - 1] + sorted[m]) / 2;
+  const out = {
+    d, H, nodes, n: rows.length, losses: rows.filter((c) => c.fin.p < 0).length,
+    dots: rows.filter((c) => !inTop.has(c)).map((c) => [X(lx(c)), Y(sy(c.fin.p))]),
+    zy: Y(0), mx: X(med),
+  };
+  bdCache.set(R, out);
+  return out;
+}
+
 /* the eight data-centre company webs, matched to their operator's logo */
 const WEB_OP = { dci: 'DCI', bdx: 'BDx', neutradc: 'NeutraDC', 'digital-edge': 'Digital Edge', dayone: 'DayOne', pdg: 'PDG', 'stt-gdc': 'STT GDC', 'sinar-mas': 'SM+ (Sinar Mas)' };
 function dcWebs(dc) {
@@ -125,7 +205,7 @@ function dcWebs(dc) {
   }));
 }
 
-function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
+function home({ census, bumn, bumd, dc, umkm, peering, extra = {}, lang = 'en' }) {
   const L = I18N.mkL(lang);
   const PF = I18N.pfx(lang);
   const A = assets();
@@ -156,6 +236,12 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
     .map((s) => Date.parse(s || '') || 0).sort((a, b) => b - a)[0];
   const lastIso = lastDate ? new Date(lastDate).toISOString().slice(0, 10) : '';
   const usdB = (b) => 'US$' + (b || 0).toFixed(1) + (lang === 'id' ? ' miliar' : 'B');
+  /* regional state companies, only while data/bumd.live is on (the server passes null otherwise) */
+  const bdOn = !!(bumd && Array.isArray(bumd.co) && bumd.co.length);
+  const nBumd = bdOn ? bumd.co.filter((c) => !c.sub && !c.jv).length : 0;
+  const bdX = bdOn ? BUMD.index(bumd) : null;
+  const nBdPages = bdX ? bdX.pages.size : 0;
+  const asOfR = bdOn ? dateOf(bumd.asof, lang) : '';
 
   /* the citable sentence the old front page carried — assistants quote it
      ("according to 1001startup.id"), so it stays on the front page */
@@ -229,14 +315,15 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
   const peerFact = top1 ? L(
     `${esc(top1.n)} is the busiest building: ${fmt(top1.nets)} networks list equipment there${top1.facs.length > 1 ? `, across ${fmt(top1.facs.length)} PeeringDB facilities under one roof` : ''}.`,
     `${esc(top1.n)} adalah gedung tersibuk: ${fmt(top1.nets)} jaringan mencatat perangkatnya di sana${top1.facs.length > 1 ? `, tersebar di ${fmt(top1.facs.length)} fasilitas PeeringDB dalam satu atap` : ''}.`) : '';
-  const nPrev = 1 + (nBumn ? 1 : 0) + (dcOn ? 1 : 0) + (U.exporters ? 1 : 0);
 
+  let cardNo = 0;
+  const no = () => String(++cardNo).padStart(2, '0');
   const figs = (arr) => `<div class="dfig">${arr.filter(Boolean).map(([v, k]) => `<div><b>${v}</b><span>${k}</span></div>`).join('')}</div>`;
   const updated = (d) => d ? `<span class="dupd">${L('Updated', 'Diperbarui')} ${esc(d)}</span>` : '';
 
   const cards = [
     `<article class="dset" id="companies" style="--dc:${DC.s}">
-      <div class="dtop mono"><span class="dno">01</span><span class="dlab">${L('Startups', 'Startup')}</span>${updated(asOfC)}</div>
+      <div class="dtop mono"><span class="dno">${no()}</span><span class="dlab">${L('Startups', 'Startup')}</span>${updated(asOfC)}</div>
       <h3><a href="${PF}/startups">${L('The startup census', 'Sensus startup')}</a></h3>
       <p class="dsub">${L('Who they are, where they sit, what they raised, whom they employ — every figure linked to its source.', 'Siapa mereka, di mana kantornya, berapa dana yang dihimpun, berapa orang yang dipekerjakan — setiap angka tertaut ke sumbernya.')}</p>
       ${figs([[fmt(T.companies), L('companies', 'perusahaan')], [usdB(T.funding_usd_b), L('disclosed funding', 'pendanaan diumumkan')], [fmt(T.jobs), L('jobs (est.)', 'pekerja (est.)')]])}
@@ -245,15 +332,16 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
       <div class="dcta"><a class="btn primary" href="${PF}/startups">${L(`Browse all ${fmt(T.companies)}`, `Lihat ${fmt(T.companies)} startup`)} →</a><a class="lk" href="${PF}/map">${L('Logo map', 'Peta logo')}</a><a class="lk" href="${PF}/investors">${L('Investors', 'Investor')}</a></div>
     </article>`,
     nBumn ? `<article class="dset" style="--dc:${DC.b}">
-      <div class="dtop mono"><span class="dno">02</span><span class="dlab">${L('State companies', 'BUMN')}</span>${updated(asOfB)}</div>
+      <div class="dtop mono"><span class="dno">${no()}</span><span class="dlab">${L('State companies', 'BUMN')}</span>${updated(asOfB)}</div>
       <h3><a href="/bumn">${L('BUMN on one quadrant', 'BUMN dalam satu kuadran')}</a></h3>
       <p class="dsub">${L(`${nBumn} state companies on ${nDims || 'ten'} yardsticks — pick two and see who sits where. Every score carries its reason and its source.`, `${nBumn} BUMN pada ${nDims || 'sepuluh'} tolok ukur — pilih dua dan lihat posisi masing-masing. Setiap skor disertai alasan dan sumbernya.`)}</p>
       ${figs([[fmt(nBumn), L('state companies placed', 'BUMN ditempatkan')], [String(nDims || ''), L('yardsticks', 'tolok ukur')], divs ? [esc(divs.v), L('dividends to Danantara, 2025', 'dividen ke Danantara, 2025')] : null])}
       <div class="dprev">${quadHtml}</div>
       <div class="dcta"><a class="btn primary" href="/bumn">${L('Open the quadrant', 'Buka kuadrannya')} →</a><span class="lk off">${L(`Lens: ${esc(Q ? Q.lens : '')}`, `Sudut pandang: ${esc(Q ? Q.lens : '')}`)}</span></div>
     </article>` : '',
+    bdOn ? bumdCard() : '',
     dcOn ? `<article class="dset" style="--dc:${DC.d}">
-      <div class="dtop mono"><span class="dno">03</span><span class="dlab">${L('Data centres', 'Pusat data')}</span>${updated(asOfD)}</div>
+      <div class="dtop mono"><span class="dno">${no()}</span><span class="dlab">${L('Data centres', 'Pusat data')}</span>${updated(asOfD)}</div>
       <h3><a href="/data-center">${L('Who powers Indonesia’s data centres', 'Siapa yang memasok listrik pusat data Indonesia')}</a></h3>
       <p class="dsub">${L('Every project placed by where its power comes from, with the companies that own, power, build and equip it.', 'Setiap proyek ditempatkan menurut sumber listriknya, beserta perusahaan yang memiliki, memasok, membangun, dan melengkapinya.')}</p>
       ${figs([[fmt(nProjects), L('projects', 'proyek')], [fmt(webs.length), L('company webs', 'jejaring perusahaan')], [fmt(nLinks), L('sourced ties', 'hubungan bersumber')]])}
@@ -261,7 +349,7 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
       <div class="dcta"><a class="btn primary" href="/data-center">${L('See who powers them', 'Lihat siapa pemasoknya')} →</a><span class="lk off">${fmt(nEntities)} ${L('companies and people in the webs', 'perusahaan dan orang di jejaring')}</span></div>
     </article>` : '',
     U.exporters ? `<article class="dset" style="--dc:${DC.e}">
-      <div class="dtop mono"><span class="dno">0${dcOn ? 4 : 3}</span><span class="dlab">${L('Exporters (UMKM)', 'Eksportir (UMKM)')}</span>${updated(asOfU)}</div>
+      <div class="dtop mono"><span class="dno">${no()}</span><span class="dlab">${L('Exporters (UMKM)', 'Eksportir (UMKM)')}</span>${updated(asOfU)}</div>
       <h3><a href="/umkm">${L('Indonesia’s export supplier census', 'Sensus pemasok ekspor Indonesia')}</a></h3>
       <p class="dsub">${L('Exporting SMEs: what they make, the markets they already ship to, how each entry was verified, and how to reach them.', 'UMKM eksportir: apa yang mereka buat, pasar yang sudah mereka layani, cara tiap baris diverifikasi, dan cara menghubunginya.')}</p>
       ${figs([[fmt(U.exporters), L('exporters', 'eksportir')], [fmt(U.sectors), L('product sectors', 'sektor produk')], [fmt(U.with_contact), L('with a direct channel', 'punya kontak langsung')]])}
@@ -269,7 +357,7 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
       <div class="dcta"><a class="btn primary" href="/umkm">${L('Browse the exporters', 'Lihat para eksportir')} →</a><span class="lk off">${fmt(U.provinces)} ${L('provinces · English only', 'provinsi · bahasa Inggris')}</span></div>
     </article>` : '',
     peerOn ? `<article class="dset dw" id="peering" style="--dc:${DC.p}">
-      <div class="dtop mono"><span class="dno">0${nPrev + 1}</span><span class="dlab">${L('Peering &amp; routing', 'Peering &amp; routing')}</span>${updated(asOfP)}</div>
+      <div class="dtop mono"><span class="dno">${no()}</span><span class="dlab">${L('Peering &amp; routing', 'Peering &amp; routing')}</span>${updated(asOfP)}</div>
       <div class="dwa">
         <h3><a href="${PEER}">${L('Where Indonesia’s networks meet', 'Tempat jaringan internet Indonesia bertemu')}</a></h3>
         <p class="dsub">${L('Every data centre, internet exchange and router port PeeringDB lists in Indonesia, on one map: which networks sit in which building, and which exchanges tie the buildings together. A data centre nobody can name stays grey.', 'Setiap pusat data, internet exchange, dan port router yang tercatat di PeeringDB untuk Indonesia, dalam satu peta: jaringan mana yang ada di gedung mana, dan exchange mana yang menghubungkan gedung-gedung itu. Pusat data yang namanya tak bisa dipastikan tetap abu-abu.')}</p>
@@ -282,6 +370,42 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
       <div class="dcta"><a class="btn primary" href="${PEER}">${L('Open dc.1001startup.id', 'Buka dc.1001startup.id')} →</a>${graphLive() ? `<a class="lk" href="${PEER}graph">${L('How the networks connect', 'Cara jaringan terhubung')}</a>` : ''}<span class="lk off">${L('From PeeringDB, every place checked · English only', 'Dari PeeringDB, setiap lokasi dicek · bahasa Inggris')}</span></div>
     </article>` : '',
   ].filter(Boolean).join('\n');
+
+  /* ── BUMD: what the regions own, across both columns (only while /bumd is on) ── */
+  function bumdCard() {
+    const C = bumdChart(bumd);
+    const href = (c) => BUMD.pageHref(c.id) || '/bumd#c-' + encodeURIComponent(c.id);
+    const ini = (n) => String(n || '').replace(/\(.*?\)/g, ' ').split(/\s+/).filter((w) => w && !/^(PT|PD|Perumda|Perseroda)$/i.test(w)).slice(0, 2).map((w) => w[0].toUpperCase()).join('');
+    const big = bumd.co.filter((c) => !c.jv && c.fin && c.fin.a > 0).sort((a, b) => b.fin.a - a.fin.a).slice(0, 6);
+    const rows = big.map((c, i) => { const lg = BUMD.logoOf(c.id); return `<tr>
+        <td class="rk">${i + 1}</td>
+        <td class="nm"><a href="${esc(href(c))}">${lg ? `<img src="${esc(lg)}" alt="" width="20" height="20" loading="lazy">` : `<span class="bi" aria-hidden="true">${esc(ini(c.n))}</span>`}<span class="tx">${esc(c.n)}</span></a></td>
+        <td class="mu">${esc(c.p || '')}</td>
+        <td class="n">${esc(BUMD.money(c.fin.a, c.fin.u))}</td>
+      </tr>`; }).join('');
+    const cy = (y) => (y / C.H * 750).toFixed(1);
+    const chart = C ? `<figure class="bdm"><div class="bdc" role="img" aria-label="${esc(L(`${C.n} regional companies placed by assets and net profit; ${C.losses} below the zero line`, `${C.n} BUMD ditempatkan menurut aset dan laba bersih; ${C.losses} di bawah garis nol`))}">
+          <div class="bqy mono">${L('Net profit · losses below 0', 'Laba bersih · rugi di bawah 0')} →</div>
+          <div class="bdf">
+            <svg viewBox="0 0 1000 750" aria-hidden="true" focusable="false"><line class="m" x1="${(C.mx * 1000).toFixed(1)}" x2="${(C.mx * 1000).toFixed(1)}" y1="0" y2="750"/><line class="z" x1="0" x2="1000" y1="${cy(C.zy)}" y2="${cy(C.zy)}"/>${C.dots.map(([x, y]) => `<circle cx="${(x * 1000).toFixed(1)}" cy="${cy(y)}" r="5"/>`).join('')}</svg>
+            ${C.nodes.map((n) => { const lg = BUMD.logoOf(n.c.id); return `<a class="bqn${lg ? '' : ' ini'}" href="${esc(href(n.c))}" style="left:${(n.x * 100).toFixed(2)}%;top:${(n.y / C.H * 100).toFixed(2)}%;width:${(C.d * 100).toFixed(2)}%" title="${esc(n.c.n)}">${lg ? `<img src="${esc(lg)}" alt="${esc(n.c.n)}" loading="lazy" decoding="async">` : `<span>${esc(ini(n.c.n))}</span>`}</a>`; }).join('')}
+          </div>
+          <div class="bqx mono">${L('Assets, log scale', 'Aset, skala log')} →</div>
+        </div>
+        <figcaption>${L('Each dot is one company, in its latest published accounts. The fourteen largest by assets carry their logo.', 'Setiap titik satu perusahaan, menurut laporan keuangan terakhirnya. Empat belas yang asetnya terbesar memakai logonya.')}</figcaption></figure>` : '';
+    return `<article class="dset dw" id="bumd" style="--dc:${DC.r}">
+      <div class="dtop mono"><span class="dno">${no()}</span><span class="dlab">${L('Regional state companies', 'BUMD')}</span>${updated(asOfR)}</div>
+      <div class="dwa">
+        <h3><a href="/bumd">${L('What Indonesia’s regions own', 'Perusahaan milik daerah')}</a></h3>
+        <p class="dsub">${L('Banks, water utilities, oil and gas holders, markets and transport owned by provinces, regencies and cities — with their owners, their published accounts and the joint operations that tie them to the BUMN groups.', 'Bank, perusahaan air minum, pemegang hak migas, pasar, dan transportasi milik provinsi, kabupaten, dan kota — lengkap dengan pemiliknya, laporan keuangannya, dan kerja sama operasi yang menghubungkannya dengan grup BUMN.')}</p>
+        ${figs([[fmt(nBumd), L('BUMD mapped', 'BUMD dipetakan')], bumd.national ? [fmt(bumd.national), L('owned by the regions, per Kemendagri', 'milik daerah, menurut Kemendagri')] : null, [fmt(nBdPages), L('company pages', 'halaman perusahaan')]])}
+      </div>
+      ${chart}
+      <div class="dprev"><table class="tt bt"><thead><tr><th>#</th><th>${L('Largest by assets', 'Aset terbesar')}</th><th>${L('Province', 'Provinsi')}</th><th class="n">${L('Assets', 'Aset')}</th></tr></thead><tbody>${rows}</tbody></table>
+        ${C ? `<p class="dfact">${L(`${fmt(C.losses)} of ${fmt(C.n)} report a net loss in their latest published accounts.`, `${fmt(C.losses)} dari ${fmt(C.n)} BUMD mencatat rugi bersih pada laporan keuangan terakhir yang dipublikasikan.`)}</p>` : ''}</div>
+      <div class="dcta"><a class="btn primary" href="/bumd">${L(`See all ${fmt(nBumd)}`, `Lihat ${fmt(nBumd)} BUMD`)} →</a><span class="lk off">${L(`${fmt(nBdPages)} company pages · English only`, `${fmt(nBdPages)} halaman perusahaan · bahasa Inggris`)}</span></div>
+    </article>`;
+  }
 
   /* ── built on the same data ── */
   const tools = [
@@ -305,7 +429,11 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
   ].map((x) => `<a href="${esc(x.href)}"><b>${x.t}</b><span>${x.d}</span></a>`).join('');
 
   const title = L("Indonesia's Startup and Company Data — 1001startup.id", 'Data Startup dan Perusahaan Indonesia — 1001startup.id');
-  const desc = peerOn ? L(
+  const desc = bdOn ? (peerOn ? L(
+    `Six datasets on Indonesia's companies and its internet — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters and the peering map of ${fmt(PT.ix)} internet exchanges — every figure linked to its source.`,
+    `Enam dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`) : L(
+    `Five datasets on Indonesia's companies — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} data-centre projects and ${fmt(U.exporters)} exporters — every figure linked to its source.`,
+    `Lima dataset perusahaan Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} proyek pusat data, dan ${fmt(U.exporters)} UMKM eksportir — setiap angka tertaut ke sumbernya.`)) : peerOn ? L(
     `Five datasets on Indonesia's companies and its internet — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters and the peering map of ${fmt(PT.ix)} internet exchanges — every figure linked to its source.`,
     `Lima dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`) : L(
     `Four datasets on Indonesia's companies — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} data-centre projects and ${fmt(U.exporters)} exporters — every figure linked to its source.`,
@@ -317,6 +445,9 @@ function home({ census, bumn, dc, umkm, peering, extra = {}, lang = 'en' }) {
     nBumn ? { name: "Indonesia's state companies (BUMN), mapped", name_id: 'Peta BUMN Indonesia', path: '/bumn', en_only: true,
       description: `${nBumn} BUMN scored on ${nDims} yardsticks, each score with its reason and source.`,
       description_id: `${nBumn} BUMN dinilai pada ${nDims} tolok ukur, setiap skor dengan alasan dan sumbernya.` } : null,
+    bdOn ? { name: "Indonesia's regional state companies (BUMD), mapped", name_id: 'Peta BUMD Indonesia', path: '/bumd', en_only: true,
+      description: `${nBumd} regional state companies (BUMD) with their owners, published accounts and joint operations with the BUMN groups.`,
+      description_id: `${nBumd} BUMD lengkap dengan pemilik, laporan keuangan, dan kerja sama operasinya dengan grup BUMN.` } : null,
     dcOn ? { name: "Who powers Indonesia's data centres", name_id: 'Siapa yang memasok listrik pusat data Indonesia', path: '/data-center', en_only: true,
       description: `${nProjects} data-centre projects by power source, with ${webs.length} company webs and ${nLinks} sourced ties.`,
       description_id: `${nProjects} proyek pusat data menurut sumber listriknya, dengan ${webs.length} jejaring perusahaan dan ${nLinks} hubungan bersumber.` } : null,
@@ -512,7 +643,7 @@ ${NAV.css}
 .acc .row{display:flex;gap:10px;flex-wrap:wrap}
 .acc .row .btn{flex:1;text-align:center}
 .acc small{font:400 10.5px/1.5 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.05em;color:#6B6B73}
-${FOOT.css}
+${bdOn ? BD_CSS : ''}${FOOT.css}
 
 /* ── tablet ── */
 @media(max-width:1060px){
@@ -577,16 +708,16 @@ ${NAV.header('', { lang, path: '/' })}
   <div>
     <div class="eyebrow"><span class="sq"></span>${L('Indonesia’s company data', 'Data perusahaan Indonesia')}</div>
     <h1>${L('Indonesia’s company graph.', 'Data perusahaan Indonesia.')}</h1>
-    <p class="sub">${peerOn ? L('Startups, state companies, data centres, exporters and where the internet’s networks meet — five live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, pusat data, UMKM eksportir, dan titik temu jaringan internet — lima dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.') : L('Startups, state companies, data centres and exporters — four live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, pusat data, dan UMKM eksportir — empat dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.')}</p>
+    <p class="sub">${bdOn ? (peerOn ? L('Startups, state and regional companies, data centres, exporters and where the internet’s networks meet — six live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, BUMD, pusat data, UMKM eksportir, dan titik temu jaringan internet — enam dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.') : L('Startups, state and regional companies, data centres and exporters — five live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, BUMD, pusat data, dan UMKM eksportir — lima dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.')) : peerOn ? L('Startups, state companies, data centres, exporters and where the internet’s networks meet — five live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, pusat data, UMKM eksportir, dan titik temu jaringan internet — lima dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.') : L('Startups, state companies, data centres and exporters — four live datasets, every figure linked to the document that carries it.', 'Startup, BUMN, pusat data, dan UMKM eksportir — empat dataset yang terus diperbarui, setiap angkanya tertaut ke dokumen sumbernya.')}</p>
     <form class="hs" id="hs" action="${PF}/startups" method="get" role="search" autocomplete="off">
-      <label class="sr" for="hq">${peerOn ? L('Search the company datasets', 'Cari di dataset perusahaan') : L('Search the four datasets', 'Cari di empat dataset')}</label>
-      <input id="hq" name="q" type="search" placeholder="${esc(L('Search a startup, BUMN, data centre or exporter', 'Cari startup, BUMN, pusat data, atau eksportir'))}" data-short="${esc(L('Search any company', 'Cari perusahaan'))}" role="combobox" aria-expanded="false" aria-controls="hres" aria-autocomplete="list" enterkeyhint="search" spellcheck="false">
+      <label class="sr" for="hq">${peerOn || bdOn ? L('Search the company datasets', 'Cari di dataset perusahaan') : L('Search the four datasets', 'Cari di empat dataset')}</label>
+      <input id="hq" name="q" type="search" placeholder="${esc(bdOn ? L('Search a startup, BUMN, BUMD, data centre or exporter', 'Cari startup, BUMN, BUMD, pusat data, atau eksportir') : L('Search a startup, BUMN, data centre or exporter', 'Cari startup, BUMN, pusat data, atau eksportir'))}" data-short="${esc(L('Search any company', 'Cari perusahaan'))}" role="combobox" aria-expanded="false" aria-controls="hres" aria-autocomplete="list" enterkeyhint="search" spellcheck="false">
       <button type="submit">${L('Search', 'Cari')}</button>
       <div class="hres" id="hres" role="listbox" hidden></div>
     </form>
     <div class="hcnt">
       <a href="${PF}/startups" style="--dc:${DC.s}"><b>${fmt(T.companies)}</b> ${L('startups', 'startup')}</a>
-      ${nBumn ? `<a href="/bumn" style="--dc:${DC.b}"><b>${fmt(nBumn)}</b> BUMN</a>` : ''}
+      ${nBumn ? `<a href="/bumn" style="--dc:${DC.b}"><b>${fmt(nBumn)}</b> BUMN</a>` : ''}${bdOn ? `<a href="/bumd" style="--dc:${DC.r}"><b>${fmt(nBumd)}</b> BUMD</a>` : ''}
       ${dcOn ? `<a href="/data-center" style="--dc:${DC.d}"><b>${fmt(nProjects)}</b> ${L('data-centre projects', 'proyek pusat data')}</a>` : ''}
       ${U.exporters ? `<a href="/umkm" style="--dc:${DC.e}"><b>${fmt(U.exporters)}</b> ${L('exporters', 'eksportir')}</a>` : ''}
       ${peerOn ? `<a href="${PEER}" style="--dc:${DC.p}"><b>${fmt(PT.ix)}</b> ${L('internet exchanges', 'internet exchange')}</a>` : ''}
@@ -597,7 +728,7 @@ ${NAV.header('', { lang, path: '/' })}
 
 <section class="wrap" id="datasets">
   <div class="eyebrow"><span class="sq"></span>${L('The datasets', 'Dataset')}</div>
-  <h2 class="h2">${peerOn ? L('Five datasets, one set of rules.', 'Lima dataset, satu aturan main.') : L('Four censuses, one set of rules.', 'Empat sensus, satu aturan main.')}</h2>
+  <h2 class="h2">${bdOn ? (peerOn ? L('Six datasets, one set of rules.', 'Enam dataset, satu aturan main.') : L('Five datasets, one set of rules.', 'Lima dataset, satu aturan main.')) : peerOn ? L('Five datasets, one set of rules.', 'Lima dataset, satu aturan main.') : L('Four censuses, one set of rules.', 'Empat sensus, satu aturan main.')}</h2>
   <p class="lede">${L('Each one is a live page you can search, sort and cite — built from public reporting, filings and company records, with every estimate marked as one.', 'Masing-masing halaman hidup yang bisa dicari, diurutkan, dan dikutip — disusun dari pemberitaan publik, dokumen resmi, dan catatan perusahaan, dengan setiap estimasi diberi tanda.')}</p>
   <div class="dsets">
 ${cards}
@@ -632,7 +763,7 @@ ${cards}
 ${FOOT.footer({ lang,
     tagline: { en: 'Indonesia’s company data, from public sources.', id: 'Data perusahaan Indonesia, dari sumber publik.' },
     legalLeft: { en: 'Indonesia’s company data', id: 'data perusahaan Indonesia' },
-    legalRight: `<a href="${PF}/stats">${L('Live traffic', 'Statistik pengunjung')}</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>${L('Cookies', 'Cookie')}</a> · ${L('Sources: public reporting, filings, company records, BPS, InaExport', 'Sumber: pemberitaan publik, dokumen resmi, catatan perusahaan, BPS, InaExport')}${peerOn ? ', PeeringDB' : ''} · ${L('updated', 'diperbarui')} ${esc(lastIso)}` })}
+    legalRight: `<a href="${PF}/stats">${L('Live traffic', 'Statistik pengunjung')}</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>${L('Cookies', 'Cookie')}</a> · ${L('Sources: public reporting, filings, company records, BPS, InaExport', 'Sumber: pemberitaan publik, dokumen resmi, catatan perusahaan, BPS, InaExport')}${bdOn ? ', Kemendagri' : ''}${peerOn ? ', PeeringDB' : ''} · ${L('updated', 'diperbarui')} ${esc(lastIso)}` })}
 <script src="/js/nav1001.js?v=${V}" defer></script>
 <script src="/js/home1001.js?v=${V}" defer></script>
 <script src="/js/px.js?v=${V}" defer></script>
