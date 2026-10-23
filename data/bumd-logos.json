@@ -1,0 +1,402 @@
+{
+ "askrida": {
+  "src": "/assets/bumd/askrida.399f3fa3.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/askrd.jpg",
+  "kind": "official-portal"
+ },
+ "bank-aceh-syariah": {
+  "src": "/assets/bumd/bank-aceh-syariah.7002e357.webp",
+  "from": "https://bankaceh.co.id/wp-content/uploads/2024/08/cropped-Logo-Seulanga-300-x-300-192x192.png",
+  "kind": "own-site"
+ },
+ "bank-banten": {
+  "src": "/assets/bumd/bank-banten.6aa4781c.webp",
+  "from": "https://www.bankbanten.co.id/assets/uploads/2026/08/1_LOGO-Baru-Bank-Banten_2026.png",
+  "kind": "own-site"
+ },
+ "bank-bjb": {
+  "src": "/assets/bumd/bank-bjb.9e998731.webp",
+  "from": "https://bankbjb.co.id/files//2021/11/logo-bjb-default-2.png",
+  "kind": "own-site"
+ },
+ "bank-dki": {
+  "src": "/assets/bumd/bank-dki.b5eb613b.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/bndki.png",
+  "kind": "official-portal"
+ },
+ "bank-jambi": {
+  "src": "/assets/bumd/bank-jambi.4ff4a6ee.webp",
+  "from": "https://bankjambi.co.id/public/uploads/logo.png",
+  "kind": "own-site"
+ },
+ "bank-kalteng": {
+  "src": "/assets/bumd/bank-kalteng.a268b247.webp",
+  "from": "https://www.bankkalteng.co.id/apple-touch-icon.png",
+  "kind": "own-site"
+ },
+ "bank-lampung": {
+  "src": "/assets/bumd/bank-lampung.f4614b86.webp",
+  "from": "https://www.banklampung.co.id/assets/img/logo-bank-color.svg",
+  "kind": "own-site"
+ },
+ "bank-ntb-syariah": {
+  "src": "/assets/bumd/bank-ntb-syariah.5f8e6671.webp",
+  "from": "https://www.bankntbsyariah.co.id/assets/img/logo-bankntbs.jpg",
+  "kind": "own-site"
+ },
+ "bank-ntt": {
+  "src": "/assets/bumd/bank-ntt.5c834259.webp",
+  "from": "https://bpdntt.co.id/images/logo_ntt.png",
+  "kind": "own-site"
+ },
+ "bank-papua": {
+  "src": "/assets/bumd/bank-papua.473608b3.webp",
+  "from": "https://www.bankpapua.co.id/asset/images/6e4fe9e6704a107c8730e829aa5732d3.png",
+  "kind": "own-site"
+ },
+ "bank-riau-kepri-syariah": {
+  "src": "/assets/bumd/bank-riau-kepri-syariah.6556af34.webp",
+  "from": "https://www.brksyariah.co.id/brkweb_syariah/images/logo/brk_syariah.png",
+  "kind": "own-site"
+ },
+ "bank-sulselbar": {
+  "src": "/assets/bumd/bank-sulselbar.47c11736.webp",
+  "from": "https://banksulselbar.co.id/images/logo-banks-sulselbar.svg",
+  "kind": "own-site"
+ },
+ "bank-sulutgo-bsg": {
+  "src": "/assets/bumd/bank-sulutgo-bsg.65d88c12.webp",
+  "from": "https://www.banksulutgo.co.id/template/banksulut/images/apple-icon-180x180.png",
+  "kind": "own-site"
+ },
+ "bankaltimtara": {
+  "src": "/assets/bumd/bankaltimtara.6adec9e6.webp",
+  "from": "https://www.bankaltimtara.co.id/images/bankaltimtara_logo.png",
+  "kind": "own-site"
+ },
+ "banten-global-development": {
+  "src": "/assets/bumd/banten-global-development.90325e26.webp",
+  "from": "https://bantenglobal.co.id/assets/portal/images/logo.png",
+  "kind": "own-site"
+ },
+ "bijb-kertajati-airport": {
+  "src": "/assets/bumd/bijb-kertajati-airport.bd6b7846.webp",
+  "from": "https://bijb.co.id/assets/images/logo.png",
+  "kind": "own-site"
+ },
+ "bina-bangun-wibawa-mukti-bbwm": {
+  "src": "/assets/bumd/bina-bangun-wibawa-mukti-bbwm.023f15c0.webp",
+  "from": "https://bbwm.co.id/wp-content/uploads/2023/05/cropped-logo2-1-192x192.jpg",
+  "kind": "own-site"
+ },
+ "bpd-bali": {
+  "src": "/assets/bumd/bpd-bali.084f48d2.webp",
+  "from": "https://www.bpdbali.co.id/uploads/header_242310081055_.png",
+  "kind": "own-site"
+ },
+ "bpd-diy": {
+  "src": "/assets/bumd/bpd-diy.20180998.webp",
+  "from": "https://bpddiy.co.id/static/images/client-logo.png",
+  "kind": "own-site"
+ },
+ "cemani-toka": {
+  "src": "/assets/bumd/cemani-toka.b37c51d5.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/cmntk.jpg",
+  "kind": "official-portal"
+ },
+ "dharma-jaya": {
+  "src": "/assets/bumd/dharma-jaya.b522e50e.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/drmjy.png",
+  "kind": "official-portal"
+ },
+ "food-station-tjipinang": {
+  "src": "/assets/bumd/food-station-tjipinang.d722033b.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/fodst.png",
+  "kind": "official-portal"
+ },
+ "gresik-migas": {
+  "src": "/assets/bumd/gresik-migas.786933a0.webp",
+  "from": "https://gresikmigas.co.id/images/ptgm.png",
+  "kind": "own-site"
+ },
+ "jakarta-international-expo-jiexpo": {
+  "src": "/assets/bumd/jakarta-international-expo-jiexpo.b3db94a6.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/jiexp.jpg",
+  "kind": "official-portal"
+ },
+ "jakarta-tourisindo": {
+  "src": "/assets/bumd/jakarta-tourisindo.22ce441a.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/jktur.png",
+  "kind": "official-portal"
+ },
+ "jakpro": {
+  "src": "/assets/bumd/jakpro.b97b244b.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/jkpro.png",
+  "kind": "official-portal"
+ },
+ "jamkrida-jakarta": {
+  "src": "/assets/bumd/jamkrida-jakarta.9811ef10.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/jmkrd.png",
+  "kind": "official-portal"
+ },
+ "jiep-jakarta-industrial-estate-pulogadung": {
+  "src": "/assets/bumd/jiep-jakarta-industrial-estate-pulogadung.288ee9f0.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/ptjiep.png",
+  "kind": "official-portal"
+ },
+ "kawasan-berikat-nusantara-kbn": {
+  "src": "/assets/bumd/kawasan-berikat-nusantara-kbn.fd71205b.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/ptkbn.png",
+  "kind": "official-portal"
+ },
+ "migas-hulu-jabar-onwj": {
+  "src": "/assets/bumd/migas-hulu-jabar-onwj.9bc4060f.webp",
+  "from": "https://migashulujabaronwj.co.id/apple-touch-icon.png",
+  "kind": "own-site"
+ },
+ "migas-utama-jabar-muj": {
+  "src": "/assets/bumd/migas-utama-jabar-muj.77f1e575.webp",
+  "from": "https://muj.co.id/wp-content/uploads/2021/07/favicon.png",
+  "kind": "own-site"
+ },
+ "mitra-kerta-raharja-mkr": {
+  "src": "/assets/bumd/mitra-kerta-raharja-mkr.74abc3c0.webp",
+  "from": "https://mitrakertaraharja.co.id/logo",
+  "kind": "own-site"
+ },
+ "mrt-jakarta": {
+  "src": "/assets/bumd/mrt-jakarta.f0b4ad2a.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/mrtj.png",
+  "kind": "official-portal"
+ },
+ "pal-jaya": {
+  "src": "/assets/bumd/pal-jaya.9c4c0a58.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/paljy.png",
+  "kind": "official-portal"
+ },
+ "pam-jaya": {
+  "src": "/assets/bumd/pam-jaya.6007f413.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/pdamj.png",
+  "kind": "official-portal"
+ },
+ "pasar-jaya": {
+  "src": "/assets/bumd/pasar-jaya.08661ded.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/psrjy.png",
+  "kind": "official-portal"
+ },
+ "pdam-surya-sembada-surabaya": {
+  "src": "/assets/bumd/pdam-surya-sembada-surabaya.86b17d3a.webp",
+  "from": "https://pdam-sby.go.id/assets/img/perumda_v2.png",
+  "kind": "own-site"
+ },
+ "pema-pembangunan-aceh": {
+  "src": "/assets/bumd/pema-pembangunan-aceh.684ba147.webp",
+  "from": "https://pema.co.id/apple-touch-icon.png",
+  "kind": "own-site"
+ },
+ "pembangunan-jaya": {
+  "src": "/assets/bumd/pembangunan-jaya.c2de40e8.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/pmbjy.jpg",
+  "kind": "official-portal"
+ },
+ "pembangunan-jaya-ancol": {
+  "src": "/assets/bumd/pembangunan-jaya-ancol.7bbe3c98.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/ancol.png",
+  "kind": "official-portal"
+ },
+ "perumda-air-minum-tirta-mayang": {
+  "src": "/assets/bumd/perumda-air-minum-tirta-mayang.7e3f0efc.webp",
+  "from": "https://tirtamayang.com/images/perumda.png",
+  "kind": "own-site"
+ },
+ "perumda-delta-tirta-kabupaten-sidoarjo": {
+  "src": "/assets/bumd/perumda-delta-tirta-kabupaten-sidoarjo.5ff655dc.webp",
+  "from": "https://deltatirta.co.id/image/pdam.png",
+  "kind": "own-site"
+ },
+ "perumda-tirta-albantani-kabupaten-serang": {
+  "src": "/assets/bumd/perumda-tirta-albantani-kabupaten-serang.a1094d72.webp",
+  "from": "https://tirtaalbantani.co.id/assets/img/logo%20without%20text.png",
+  "kind": "own-site"
+ },
+ "perumda-tirta-ampera-kabupaten-boyolali": {
+  "src": "/assets/bumd/perumda-tirta-ampera-kabupaten-boyolali.5e0013d3.webp",
+  "from": "https://tirtaampera.co.id/storage/images/2026-01-30/2gwayj9uHFR1.png",
+  "kind": "own-site"
+ },
+ "perumda-tirta-benteng-kota-tangerang": {
+  "src": "/assets/bumd/perumda-tirta-benteng-kota-tangerang.f54252b3.webp",
+  "from": "https://perumdatirtabenteng.co.id/_next/image/?url=%2Fimg%2Flogo.png&w=128&q=75",
+  "kind": "own-site"
+ },
+ "perumda-tirta-manuntung-kota-balikpapan": {
+  "src": "/assets/bumd/perumda-tirta-manuntung-kota-balikpapan.df05e3af.webp",
+  "from": "https://www.tirtamanuntung.co.id/assets/logo.webp",
+  "kind": "own-site"
+ },
+ "perumda-tirta-wening-kota-bandung": {
+  "src": "/assets/bumd/perumda-tirta-wening-kota-bandung.ade2021d.webp",
+  "from": "https://perumdatirtawening.co.id/asset/image/logo.png",
+  "kind": "own-site"
+ },
+ "perumda-tirtanadi-provinsi-sumatera-utara": {
+  "src": "/assets/bumd/perumda-tirtanadi-provinsi-sumatera-utara.1920bff3.webp",
+  "from": "https://tirtanadi.co.id/image/tirtanadi-logo.png",
+  "kind": "own-site"
+ },
+ "perumdam-gapura-tirta-rahayu-pdam-purwakarta": {
+  "src": "/assets/bumd/perumdam-gapura-tirta-rahayu-pdam-purwakarta.be53316b.webp",
+  "from": "https://pdampurwakarta.co.id/assets/img/logo2.png",
+  "kind": "own-site"
+ },
+ "perumdam-kota-makassar": {
+  "src": "/assets/bumd/perumdam-kota-makassar.2b5be865.webp",
+  "from": "https://pdamkotamakassar.co.id/upload/e6c8cb9f55040ae5b528eb2649c8a71b86148213220200318.png",
+  "kind": "own-site"
+ },
+ "perumdam-kota-padang": {
+  "src": "/assets/bumd/perumdam-kota-padang.99d6e4b2.webp",
+  "from": "https://perumdamkotapadang.co.id/icon.png?icon.0e58fy8i39778.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-aji-kabupaten-wonosobo": {
+  "src": "/assets/bumd/perumdam-tirta-aji-kabupaten-wonosobo.4a1c6aff.webp",
+  "from": "https://tirtaaji.co.id/wp-content/uploads/2022/09/cropped-cropped-logo-dan-outline-putih-1-192x192.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-ayu-kabupaten-tegal": {
+  "src": "/assets/bumd/perumdam-tirta-ayu-kabupaten-tegal.1daaf544.webp",
+  "from": "https://tirtaayu.co.id/wp-content/uploads/2025/10/cropped-Secondary-Logo-1-192x192.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-daroy-kota-banda-aceh": {
+  "src": "/assets/bumd/perumdam-tirta-daroy-kota-banda-aceh.b5ab515a.webp",
+  "from": "https://tirtadaroy.co.id/wp-content/uploads/2022/03/cropped-android-chrome-512x512-1-192x192.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-hita-buleleng-kabupaten-buleleng": {
+  "src": "/assets/bumd/perumdam-tirta-hita-buleleng-kabupaten-buleleng.c4ebf2ac.webp",
+  "from": "https://tirtahitabuleleng.com/images/logo_pdam.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-intan-kabupaten-garut": {
+  "src": "/assets/bumd/perumdam-tirta-intan-kabupaten-garut.f37bfbca.webp",
+  "from": "https://pdam.tirtaintan.co.id/po-content/tirtaintan/assets/images/logo.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-kandilo-kabupaten-paser": {
+  "src": "/assets/bumd/perumdam-tirta-kandilo-kabupaten-paser.25ded386.webp",
+  "from": "https://perumdamtirtakandilo.id/assets/img/logo-pdam%20kecil.jpeg",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-kanjuruhan-kabupaten-malang": {
+  "src": "/assets/bumd/perumdam-tirta-kanjuruhan-kabupaten-malang.2bd6dcc0.webp",
+  "from": "https://perumdatirtakanjuruhan.com/assets/images/tirkanlogo.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-khatulistiwa-kota-pontianak": {
+  "src": "/assets/bumd/perumdam-tirta-khatulistiwa-kota-pontianak.3960f09a.webp",
+  "from": "https://www.pdamtirtakhatulistiwa.com/uploads/logo_perumda.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-mahakam-kabupaten-kutai-kartanega": {
+  "src": "/assets/bumd/perumdam-tirta-mahakam-kabupaten-kutai-kartanega.dcb4946c.webp",
+  "from": "https://tirtamahakam.id/wp-content/uploads/2022/07/cropped-Perumda-Tirta-Mahakam-192x192.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-mukti-kabupaten-cianjur": {
+  "src": "/assets/bumd/perumdam-tirta-mukti-kabupaten-cianjur.87483311.webp",
+  "from": "https://perumdamtirtamukti.com/_next/image?url=%2Flogo.png&w=128&q=75",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-mulia-kabupaten-pemalang": {
+  "src": "/assets/bumd/perumdam-tirta-mulia-kabupaten-pemalang.e3639207.webp",
+  "from": "https://tirtamulia.com/templates/newblue/images/logonewup.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-pakuan-kota-bogor": {
+  "src": "/assets/bumd/perumdam-tirta-pakuan-kota-bogor.c59d98ef.webp",
+  "from": "https://tirtapakuan.co.id/assets/images/favicon.svg",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-raharja-kabupaten-bandung": {
+  "src": "/assets/bumd/perumdam-tirta-raharja-kabupaten-bandung.adb1485d.webp",
+  "from": "https://tirtaraharja.co.id/apple-touch-icon.png",
+  "kind": "own-site"
+ },
+ "perumdam-tirta-taman-kota-bontang": {
+  "src": "/assets/bumd/perumdam-tirta-taman-kota-bontang.4e697dfd.webp",
+  "from": "https://perumdatirtataman.com/image/logo.svg",
+  "kind": "own-site"
+ },
+ "perumdam-way-rilau-kota-bandar-lampung": {
+  "src": "/assets/bumd/perumdam-way-rilau-kota-bandar-lampung.0c2ec0d6.webp",
+  "from": "https://www.pdamwayrilau.com/wp-content/uploads/2018/11/cropped-logo-pdam-way-rilau-192x192.png",
+  "kind": "own-site"
+ },
+ "petrogas-jatim-utama-pju": {
+  "src": "/assets/bumd/petrogas-jatim-utama-pju.8ddd9b3b.webp",
+  "from": "https://www.petrogas.co.id/wp-content/uploads/2025/12/sliderpetrogas1-4-450x450.webp",
+  "kind": "own-site"
+ },
+ "pt-air-minum-bandarmasih-kota-banjarmasin": {
+  "src": "/assets/bumd/pt-air-minum-bandarmasih-kota-banjarmasin.1c92341b.webp",
+  "from": "https://www.pambandarmasih.com/wp-content/uploads/2022/07/logoptam.png",
+  "kind": "own-site"
+ },
+ "pt-lampung-jasa-utama-lju": {
+  "src": "/assets/bumd/pt-lampung-jasa-utama-lju.224754de.webp",
+  "from": "https://lju.co.id/assets/favicon.png",
+  "kind": "own-site"
+ },
+ "ratax-armada": {
+  "src": "/assets/bumd/ratax-armada.6fa7b738.webp",
+  "from": "https://bpbumd.jakarta.go.id/storage/rtxar.png",
+  "kind": "official-portal"
+ },
+ "sarana-jaya": {
+  "src": "/assets/bumd/sarana-jaya.9b63aa86.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/srnjy.png",
+  "kind": "official-portal"
+ },
+ "sarana-patra-hulu-cepu-sphc": {
+  "src": "/assets/bumd/sarana-patra-hulu-cepu-sphc.77cfc793.webp",
+  "from": "https://sphc.co.id/packages/assets/images/favicon.png",
+  "kind": "own-site"
+ },
+ "spjt-sarana-pembangunan-jawa-tengah": {
+  "src": "/assets/bumd/spjt-sarana-pembangunan-jawa-tengah.246cc061.webp",
+  "from": "https://spjt.co.id/wp-content/uploads/2023/06/cropped-SPJT-logo-192x192.png",
+  "kind": "own-site"
+ },
+ "sulsel-citra-indonesia-sci": {
+  "src": "/assets/bumd/sulsel-citra-indonesia-sci.87e17b9f.webp",
+  "from": "https://sulselcitraindonesia.com/themes/sci/images/logo/logo-white.png",
+  "kind": "own-site"
+ },
+ "taru-martani": {
+  "src": "/assets/bumd/taru-martani.e8dcc3a7.webp",
+  "from": "https://www.cigarindonesia.id/wp-content/uploads/2021/12/cropped-cropped-Logo-TM-Bunga-PNG-1-192x192.png",
+  "kind": "own-site"
+ },
+ "tirta-bhagasasi": {
+  "src": "/assets/bumd/tirta-bhagasasi.70ca07e8.webp",
+  "from": "https://tirtabhagasasi.co.id/wp-content/uploads/2023/05/Logo-Tirta-Bhagasasi-Bekasi-2022.png",
+  "kind": "own-site"
+ },
+ "tirta-patriot": {
+  "src": "/assets/bumd/tirta-patriot.cedc2973.webp",
+  "from": "https://tirtapatriot.co.id/apple-touch-icon-180x180.png",
+  "kind": "own-site"
+ },
+ "tirta-tarum": {
+  "src": "/assets/bumd/tirta-tarum.f4aeac53.webp",
+  "from": "https://tirtatarum.co.id/wp-content/uploads/2024/06/cropped-NT-Tirta-Tarum-2024.-favicon-192x192.webp",
+  "kind": "own-site"
+ },
+ "transjakarta": {
+  "src": "/assets/bumd/transjakarta.3bc5ec7a.webp",
+  "from": "https://bpbumd.jakarta.go.id/images/bumd/trnsjk.png",
+  "kind": "official-portal"
+ }
+}
