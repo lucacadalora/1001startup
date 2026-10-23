@@ -1,0 +1,960 @@
+{
+ "wave": "kimi-2026-10",
+ "received": "2026-10-24",
+ "source": "Kimi Agent delivery \"kimi-1001-expansion-v2.zip\" (24 Oct 2026), built on commit 893a489. Original cohort files: data/census-adds/kimi-2026-10/.",
+ "rule": "Published only the rows that meet the census rule as it stands (scope.rule, decided 2026-08-29): built or bought by tech or venture money, its own legal entity, a sourced headcount. The delivery also proposed broadening the census to all technology companies (incumbents, listed and regulated operators, foreign groups' Indonesian arms) and renaming it; that change is held for Luca's decision, so those rows are listed under held, not published.",
+ "rows": [
+  "waterhub",
+  "pallav-technologies",
+  "yesdok",
+  "maxxi-tani",
+  "fistx",
+  "bicarakan-id",
+  "quintal",
+  "superkul",
+  "qazwa",
+  "asli-ri",
+  "kozystay",
+  "sqouts-wawancara-ai",
+  "safelog-ai"
+ ],
+ "held": [
+  {
+   "id": "gajiku",
+   "name": "Gajiku",
+   "company_type": "foreign_id_operation",
+   "cohort": "manual-recovery-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1"
+   ]
+  },
+  {
+   "id": "honestdocs",
+   "name": "HonestDocs (HDmall.id)",
+   "company_type": "foreign_id_operation",
+   "cohort": "manual-recovery-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "ezeelink",
+   "name": "Ezeelink",
+   "company_type": "incumbent_tech",
+   "cohort": "backlog-31-60-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "accurate",
+   "name": "Accurate",
+   "company_type": "incumbent_tech",
+   "cohort": "backlog-31-60-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "hashmicro",
+   "name": "HashMicro",
+   "company_type": "foreign_id_operation",
+   "cohort": "backlog-31-60-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "bythen",
+   "name": "Bythen",
+   "company_type": "foreign_id_operation",
+   "cohort": "backlog-31-60-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1"
+   ]
+  },
+  {
+   "id": "nafas",
+   "name": "Nafas",
+   "company_type": "foreign_id_operation",
+   "cohort": "backlog-61-95-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "glints-indonesia",
+   "name": "Glints (Indonesian arm)",
+   "company_type": "foreign_id_operation",
+   "cohort": "backlog-61-95-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "danamas",
+   "name": "Danamas",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "awantunai",
+   "name": "AwanTunai",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "kta-kilat",
+   "name": "KTA Kilat",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "rupiahcepat",
+   "name": "RupiahCepat",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "pinjamduit",
+   "name": "PinjamDuit",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "singa-fintech",
+   "name": "Singa",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "uku",
+   "name": "UKU",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "trustiq-danaku",
+   "name": "TrustIQ (Danaku)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "invoila",
+   "name": "Invoila",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "samir",
+   "name": "Samir",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "kredione",
+   "name": "KrediOne (formerly 360Kredi)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "crowdo-indonesia",
+   "name": "Crowdo Indonesia",
+   "company_type": "foreign_id_operation",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "ethis-indonesia",
+   "name": "Ethis Indonesia",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "ammana",
+   "name": "Ammana",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "danabijak",
+   "name": "Danabijak",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "solusiku",
+   "name": "Solusiku",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "kredinesia",
+   "name": "Kredinesia",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "pinjam-gampang",
+   "name": "Pinjam Gampang",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "klikumkm",
+   "name": "klikUMKM",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "danain",
+   "name": "Danain",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "tokomodal",
+   "name": "Tokomodal",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "artajasa",
+   "name": "Artajasa",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "jalin",
+   "name": "Jalin",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "already counted in the BUMN dataset",
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "alto-network",
+   "name": "ALTO",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "rintis-sejahtera",
+   "name": "Rintis Sejahtera (PRIMA)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "finnet-indonesia",
+   "name": "Finnet (Finpay)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "already counted in the BUMN dataset",
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "astrapay",
+   "name": "AstraPay",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "truemoney-indonesia",
+   "name": "TrueMoney Indonesia",
+   "company_type": "foreign_id_operation",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "pos-finansial-indonesia",
+   "name": "Pospay (PT Pos Finansial Indonesia)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "already counted in the BUMN dataset",
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "ottopay",
+   "name": "OttoPay",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "aino-indonesia",
+   "name": "Aino",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "paytren",
+   "name": "Paytren",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "espay",
+   "name": "Espay",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "cfx",
+   "name": "CFX (Central Finansial X)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "icc-kustodian-koin",
+   "name": "ICC (Indonesia Coin Custodian)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "digitalexchange-id",
+   "name": "digitalexchange.id",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "icx-landx",
+   "name": "ICX (formerly LandX)",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "crowddana",
+   "name": "CrowdDana",
+   "company_type": "regulated_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "adins",
+   "name": "AdIns",
+   "company_type": "incumbent_tech",
+   "cohort": "regulated-established-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "bank-raya",
+   "name": "Bank Raya",
+   "company_type": "regulated_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "already counted in the BUMN dataset",
+    "typed regulated_tech: licensed operator, not reviewed against test 1"
+   ]
+  },
+  {
+   "id": "blu-bca-digital",
+   "name": "blu by BCA Digital",
+   "company_type": "regulated_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "hibank",
+   "name": "Hibank",
+   "company_type": "regulated_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "already counted in the BUMN dataset",
+    "typed regulated_tech: licensed operator, not reviewed against test 1"
+   ]
+  },
+  {
+   "id": "biznet-gio",
+   "name": "Biznet Gio",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "lintasarta",
+   "name": "Lintasarta",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "telkomsigma",
+   "name": "Telkomsigma",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "already counted in the BUMN dataset",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "datacomm",
+   "name": "Datacomm",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "cbn",
+   "name": "CBN",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "ion-network",
+   "name": "ION Network",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "indonesiancloud",
+   "name": "IndonesianCloud",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "dci-indonesia",
+   "name": "DCI Indonesia",
+   "company_type": "listed_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "domainesia",
+   "name": "DomaiNesia",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "jagoan-hosting",
+   "name": "Jagoan Hosting (Beon Intermedia)",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "cloudmatika",
+   "name": "Cloudmatika",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "arupa-cloud-nusantara",
+   "name": "Arupa Cloud Nusantara (Zettagrid Indonesia)",
+   "company_type": "startup",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "wowrack-indonesia",
+   "name": "Wowrack Indonesia (CloudRaya)",
+   "company_type": "foreign_id_operation",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "exabytes-indonesia",
+   "name": "Exabytes Indonesia",
+   "company_type": "foreign_id_operation",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "btech",
+   "name": "Btech",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "lskk",
+   "name": "LSKK",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "klikdokter",
+   "name": "KlikDokter",
+   "company_type": "incumbent_tech",
+   "cohort": "scope-outside-2026-10",
+   "why": [
+    "named in scope.outside (decided under the census rule)",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "samuel-kripto",
+   "name": "Samuel Kripto",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "cyra",
+   "name": "CYRA",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "coinx",
+   "name": "CoinX",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "angel-investor-indonesia",
+   "name": "Angel Investor Indonesia",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "danasaham",
+   "name": "Danasaham",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "ekuid",
+   "name": "Ekuid",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "fundex",
+   "name": "FundEx",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "lbs-urun-dana",
+   "name": "LBS Urun Dana",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "prodana",
+   "name": "Prodana",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "santara",
+   "name": "Santara",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "sfund",
+   "name": "Sfund",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "shafiq",
+   "name": "Shafiq",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "udana",
+   "name": "Udana",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "vestora",
+   "name": "Vestora",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "visiku",
+   "name": "Visiku",
+   "company_type": "regulated_tech",
+   "cohort": "licensed-remainder-2026-10",
+   "why": [
+    "typed regulated_tech: licensed operator, not reviewed against test 1",
+    "no sourced headcount (fails test 3)"
+   ]
+  },
+  {
+   "id": "indosat-ooredoo-hutchison",
+   "name": "Indosat Ooredoo Hutchison",
+   "company_type": "listed_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "xlsmart-telecom",
+   "name": "XLSmart",
+   "company_type": "listed_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "biznet",
+   "name": "Biznet",
+   "company_type": "incumbent_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "moratelindo",
+   "name": "Moratelindo (Ekamas Mora Republik)",
+   "company_type": "listed_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "nap-info",
+   "name": "NAP Info",
+   "company_type": "incumbent_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "telin",
+   "name": "Telin",
+   "company_type": "incumbent_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "already counted in the BUMN dataset",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "telkomsat",
+   "name": "Telkomsat",
+   "company_type": "incumbent_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "already counted in the BUMN dataset",
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "mitratel",
+   "name": "Mitratel",
+   "company_type": "listed_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "already counted in the BUMN dataset",
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "multipolar-technology",
+   "name": "Multipolar Technology",
+   "company_type": "listed_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "metrodata-electronics",
+   "name": "Metrodata Electronics",
+   "company_type": "listed_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "mastersystem-infotama",
+   "name": "Mastersystem Infotama",
+   "company_type": "listed_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  },
+  {
+   "id": "astra-graphia-it",
+   "name": "Astra Graphia IT (AGIT)",
+   "company_type": "incumbent_tech",
+   "cohort": "telecom-enterprise-reserve-2026-10",
+   "why": [
+    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
+   ]
+  }
+ ]
+}

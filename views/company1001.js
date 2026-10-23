@@ -303,6 +303,18 @@ function card({ c, data, standalone, links, lang = 'en' }) {
         : `Pinned to the ${esc(c.geocode_kind)} it sits in, not to the building — the map dot is that approximate.`}</p>`
       : ''}` : '')}
 
+  ${section(L('Public contact', 'Kontak publik'), (c.public_contacts || []).length
+    ? `<ul class="cp-prov">${c.public_contacts.map((x) => `<li><span class="cp-lbl">${
+      x.type === 'email_role' ? L('Email', 'Email') : x.type === 'phone_business' ? L('Phone', 'Telepon') : L('Careers', 'Karier')}</span> ${
+      x.type === 'email_role' ? `<a href="mailto:${esc(x.value)}">${esc(x.value)}</a>`
+        : x.type === 'phone_business' ? `<a href="tel:${esc(x.tel || x.value)}">${esc(x.value)}</a>`
+          : `<a href="${esc(x.value)}" target="_blank" rel="noopener">${L('Careers page', 'Halaman karier')} ↗</a>`}${
+      x.source ? ` <a class="cp-srcl" href="${esc(x.source)}" target="_blank" rel="noopener nofollow">${L('source', 'sumber')}</a>` : ''}</li>`).join('')}</ul>${
+      c.contact_checked ? `<p class="cp-fine">${L(
+        `Published on the company's own pages, read ${esc(String(c.contact_checked).slice(0, 10))}. Role mailboxes and office lines only: no personal address is guessed and no mobile number is shown.`,
+        `Tercantum di halaman resmi perusahaan, dibaca ${esc(String(c.contact_checked).slice(0, 10))}. Hanya email fungsi dan nomor kantor: tidak ada alamat pribadi yang ditebak dan nomor ponsel tidak ditampilkan.`)}</p>` : ''}`
+    : '')}
+
   ${section(L('What the figures mean', 'Arti angka-angkanya'), [
     c.valuation_note ? `<p class="cp-p"><span class="cp-lbl">${L('Valuation', 'Valuasi')}</span>${esc(c.valuation_note)}</p>` : '',
     (c.employees_note || c.workforce_note) ? `<p class="cp-p"><span class="cp-lbl">${L('Headcount', 'Pekerja')}</span>${esc([c.employees_note, c.workforce_note].filter(Boolean).join(' '))}</p>` : '',

@@ -1607,6 +1607,12 @@ require('./lib/shield1001')(fastify, { db, px, is1001, ipOf, signedIn: accounts.
    chat, which was removed on 4 Oct 2026; /ask now 301s to the home page. */
 require('./lib/census-api-routes')(fastify, { is1001, ipOf, censusData, langOf });
 
+/* ── 1001startup.id: the local company graph (/api/company-graph/*) ─── */
+/* Tech, BUMN and BUMD entities with sourced observations, relationships and
+   public contacts, from data/company-graph.sqlite (scripts/build-company-graph.py).
+   Read-only, no outside API at query time; on while data/companygraph.live exists. */
+require('./lib/company-graph-routes')(fastify, { is1001, ipOf });
+
 /* ── 1001startup.id: what the logo map reads (tiles, glyphs, pins) ───── */
 const map1001routes = require('./lib/map1001-routes')(fastify, { is1001, censusData });
 
