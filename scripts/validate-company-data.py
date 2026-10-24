@@ -40,7 +40,8 @@ def main() -> int:
     # The Kimi wave record (data/census-adds/kimi-2026-10-startups.json): rows published under
     # the census rule, and the rows held back with the reason for each.
     wave = read("census-adds/kimi-2026-10-startups.json")
-    published, held = set(wave["rows"]) | set(wave.get("rows_wave2", [])), {x["id"] for x in wave["held"]}
+    published = set().union(*[set(v) for k, v in wave.items() if k == "rows" or k.startswith("rows_wave")])
+    held = {x["id"] for x in wave["held"]}
     ids = {c["id"] for c in raw["companies"]}
     new_rows = [c for c in raw["companies"] if c["id"] in published]
     check("wave rows all published", published <= ids, f"{len(published & ids)}/{len(published)}")

@@ -30,7 +30,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "Indonesian-founded, AC Ventures-backed EWA app; 30 on LinkedIn; but site and app name only Sampradaa Pte Ltd, no PT."
-   }
+   },
+   "nearmiss_2026_10_24": "Still no Indonesian PT. Every first-party place names only Sampradaa Pte Ltd (Singapore): site footer and privacy/terms (gajikuapp.com, about, contact-us, partnership, loan, payroll and tax pages), App Store seller 'SAMPRADAA PTE LTD' and Google Play developer 'Sampradaa Pte Ltd' (developer address Singapore; it is the developer's only app). The AHU-based registry mirror (companieshouse.id) has no"
   },
   {
    "id": "honestdocs",
@@ -44,20 +45,8 @@
    "recheck_2026_10_24": {
     "verdict": "NOT_A_STARTUP",
     "why": "Indonesian arm (PT Bimini Longevity Indonesia) of Bangkok-based HD group; 1,734 LinkedIn is group-wide, not Indonesian."
-   }
-  },
-  {
-   "id": "ezeelink",
-   "name": "Ezeelink",
-   "company_type": "incumbent_tech",
-   "cohort": "backlog-31-60-2026-10",
-   "why": [
-    "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ],
-   "recheck_2026_10_24": {
-    "verdict": "UNCLEAR",
-    "why": "BI-licensed payment firm since 2012, 53 on LinkedIn; owner and founders not found, licence not checked on BI's list."
-   }
+   },
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "hashmicro",
@@ -71,20 +60,8 @@
    "recheck_2026_10_24": {
     "verdict": "NOT_A_STARTUP",
     "why": "ERP group founded in Singapore in 2015, HQ there; PT HashMicro Solusi Indonesia is its arm; 561 LinkedIn is group-wide."
-   }
-  },
-  {
-   "id": "bythen",
-   "name": "Bythen",
-   "company_type": "foreign_id_operation",
-   "cohort": "backlog-31-60-2026-10",
-   "why": [
-    "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1"
-   ],
-   "recheck_2026_10_24": {
-    "verdict": "UNCLEAR",
-    "why": "Jakarta team, US$5M seed, 43 on LinkedIn; terms (May 2026) name only ByThen Pte. Ltd., Singapore; no Indonesian PT."
-   }
+   },
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "nafas",
@@ -98,7 +75,8 @@
    "recheck_2026_10_24": {
     "verdict": "STARTUP_NO_HEADCOUNT",
     "why": "PT Nafas Aplikasi Indonesia confirmed; LinkedIn is Singapore group page (46); 2026 news is Gulf-focused; no Indonesian count."
-   }
+   },
+   "nearmiss_2026_10_24": "No Indonesia-only headcount. The only Nafas LinkedIn page is the group page 'Nafas - Air Quality Solutions' (46 people, HQ Singapore, only location Singapore, about text covers the GCC and Southeast Asia; recent posts are about Dubai). The Indonesian site's link /company/nafasidn is a 404, and the old slug nafas-indonesia now redirects to the same group page; the Middle East team has its own page "
   },
   {
    "id": "glints-indonesia",
@@ -112,35 +90,8 @@
    "recheck_2026_10_24": {
     "verdict": "NOT_A_STARTUP",
     "why": "Founded and headquartered in Singapore (2013); Indonesia is a market of the group; 921 LinkedIn is group-wide."
-   }
-  },
-  {
-   "id": "pinjamduit",
-   "name": "PinjamDuit",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ],
-   "recheck_2026_10_24": {
-    "verdict": "UNCLEAR",
-    "why": "Live licensed lender with 41 on LinkedIn, but its owner is not named anywhere; test 1 unresolved."
-   }
-  },
-  {
-   "id": "uku",
-   "name": "UKU",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ],
-   "recheck_2026_10_24": {
-    "verdict": "STARTUP_NO_HEADCOUNT",
-    "why": "Live licensed lender, 85% held by individual Liu Yi, but no LinkedIn page or dated headcount found."
-   }
+   },
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "crowdo-indonesia",
@@ -154,7 +105,8 @@
    "recheck_2026_10_24": {
     "verdict": "NOT_A_STARTUP",
     "why": "Owned by Singapore's Crowdo Holdings; licence listed, but site shows TKB90 0% (all loans 90+ days late), 30 Sep 2026."
-   }
+   },
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "ethis-indonesia",
@@ -168,20 +120,6 @@
    "recheck_2026_10_24": {
     "verdict": "CLOSED_OR_REVOKED",
     "why": "Licensed but dormant: zero financing in 2026 and two-thirds of outstanding loans over 90 days late, per its site."
-   }
-  },
-  {
-   "id": "ammana",
-   "name": "Ammana",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ],
-   "recheck_2026_10_24": {
-    "verdict": "UNCLEAR",
-    "why": "Live sharia lender, 14 on LinkedIn, but shareholders are not disclosed anywhere; test 1 unresolved."
    }
   },
   {
@@ -224,7 +162,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "Licensed lender, alive with 23 staff, but 90% owner PT Artha Digital Investama is untraced; need its AHU shareholders."
-   }
+   },
+   "nearmiss_2026_10_24": "Owner untraced, with signs of a corporate group. Its own site shows two holding companies as shareholders, PT Artha Digital Investama (90%) and PT Artha Karya Inovasi (10%), and no source opened names who controls either. The 'Artha' holding names, the head office in Gedung Artha Graha (SCBD) and a Rp132.2 billion advance for new shares at end-2025 point to a possible group owner (the Artha Graha "
   },
   {
    "id": "artajasa",
@@ -238,7 +177,8 @@
    "recheck_2026_10_24": {
     "verdict": "NOT_A_STARTUP",
     "why": "ATM Bersama switch founded in 2000; Indosat's Lintasarta still held 55% in 2019. Incumbent infrastructure, not a startup."
-   }
+   },
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "jalin",
@@ -249,7 +189,8 @@
     "already counted in the BUMN dataset",
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "rintis-sejahtera",
@@ -274,7 +215,8 @@
     "already counted in the BUMN dataset",
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "truemoney-indonesia",
@@ -295,7 +237,8 @@
     "already counted in the BUMN dataset",
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "paytren",
@@ -312,20 +255,6 @@
    }
   },
   {
-   "id": "crowddana",
-   "name": "CrowdDana",
-   "company_type": "regulated_tech",
-   "cohort": "regulated-established-2026-10",
-   "why": [
-    "typed regulated_tech: licensed operator, not reviewed against test 1",
-    "no sourced headcount (fails test 3)"
-   ],
-   "recheck_2026_10_24": {
-    "verdict": "UNCLEAR",
-    "why": "Licensed per ALUDI, but app last updated Aug 2023, five staff, owner unknown; no 2026 activity found."
-   }
-  },
-  {
    "id": "bank-raya",
    "name": "Bank Raya",
    "company_type": "regulated_tech",
@@ -334,7 +263,8 @@
     "named in scope.outside (decided under the census rule)",
     "already counted in the BUMN dataset",
     "typed regulated_tech: licensed operator, not reviewed against test 1"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "blu-bca-digital",
@@ -345,7 +275,8 @@
     "named in scope.outside (decided under the census rule)",
     "typed regulated_tech: licensed operator, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "hibank",
@@ -356,7 +287,8 @@
     "named in scope.outside (decided under the census rule)",
     "already counted in the BUMN dataset",
     "typed regulated_tech: licensed operator, not reviewed against test 1"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "biznet-gio",
@@ -367,7 +299,8 @@
     "named in scope.outside (decided under the census rule)",
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "lintasarta",
@@ -377,7 +310,8 @@
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "telkomsigma",
@@ -388,7 +322,8 @@
     "already counted in the BUMN dataset",
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "datacomm",
@@ -397,7 +332,8 @@
    "cohort": "scope-outside-2026-10",
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "cbn",
@@ -407,7 +343,8 @@
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "ion-network",
@@ -417,7 +354,8 @@
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "indonesiancloud",
@@ -428,7 +366,8 @@
     "named in scope.outside (decided under the census rule)",
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "dci-indonesia",
@@ -437,7 +376,8 @@
    "cohort": "scope-outside-2026-10",
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "cloudmatika",
@@ -448,7 +388,8 @@
     "named in scope.outside (decided under the census rule)",
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "arupa-cloud-nusantara",
@@ -458,7 +399,8 @@
    "why": [
     "named in scope.outside (decided under the census rule)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "wowrack-indonesia",
@@ -469,7 +411,8 @@
     "named in scope.outside (decided under the census rule)",
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "exabytes-indonesia",
@@ -479,7 +422,8 @@
    "why": [
     "typed foreign_id_operation: foreign group's Indonesian arm, not reviewed against test 1",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "btech",
@@ -488,7 +432,8 @@
    "cohort": "scope-outside-2026-10",
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "lskk",
@@ -499,7 +444,8 @@
     "named in scope.outside (decided under the census rule)",
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)",
     "no sourced headcount (fails test 3)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "cyra",
@@ -513,7 +459,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "Licensed crypto trader with 13 staff and a 2026 app update, but owners unknown; test 1 open."
-   }
+   },
+   "nearmiss_2026_10_24": "Owner not found, and a corporate owner cannot be ruled out. No shareholder, founder or investor is named on its site, in OJK's licence news or in its partner's releases. On 30 Oct 2025 it signed an alliance with the foreign exchange UnionEx to launch a new platform on CYRA's OJK licence, and UnionEx had said in July 2025 that it obtained an Indonesian licence through a joint venture with an unname"
   },
   {
    "id": "coinx",
@@ -527,7 +474,8 @@
    "recheck_2026_10_24": {
     "verdict": "STARTUP_NO_HEADCOUNT",
     "why": "Live licensed crypto trader, but only 3 people on LinkedIn and no owner or outside backing disclosed."
-   }
+   },
+   "nearmiss_2026_10_24": "Only 3 people on its LinkedIn page on 24 Oct 2026, and no owner or outside backing is disclosed on its site, terms, App Store listing, LinkedIn page or the CFX/OJK licence notices. Under about 5 people the census needs both a clear operating business and outside backing; the business is live and licensed, but the backing cannot be shown."
   },
   {
    "id": "angel-investor-indonesia",
@@ -541,7 +489,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "Licence still listed, but no company LinkedIn, no 2026 activity found; Kimi's LinkedIn page belongs to another firm."
-   }
+   },
+   "nearmiss_2026_10_24": "Dormant: its site shows IDR 0 funded and two ended offerings (the newest a 2023 note); OJK's tables credit it with one Rp 500 million raise from one investor in total, unchanged at end-March 2026; no 2026 offering, post or news; and it has no company LinkedIn page of its own (the slug ALUDI links now belongs to PT Premierindo Aset Utama), so no headcount."
   },
   {
    "id": "danasaham",
@@ -569,7 +518,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "8 people; only offering is a Nov 2024 Rp10bn note from one investor; owner undisclosed, no 2026 deal."
-   }
+   },
+   "nearmiss_2026_10_24": "No 2026 offering or funded deal: the only offering it has ever listed is a Rp 10 billion note for PT Tanah Emas Cahaya (The Grove mini-malls), listed 29 Nov 2024 and bought by one investor; OJK's tables show that single issuer and investor at end-2025 and end-March 2026, and its secondary market is not open. 2026 activity is marketing posts and attendance at a 2026 industry summit. Owner not discl"
   },
   {
    "id": "udana",
@@ -583,7 +533,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "Rebranding to MD Dana with 8 people, but no offering listed today and the owner behind the rebrand undisclosed."
-   }
+   },
+   "nearmiss_2026_10_24": "Never active as a funding platform: OJK's tables show no offering ever distributed through it (end-2025 and end-March 2026), its listing service returned no active or listed offering on 24 Oct 2026, and the MD Dana rebrand is unexplained: the new domain mddana.id does not resolve and the 7 Sep 2026 release notes describe a build not yet deployed. No source names who is behind the rebrand or owns t"
   },
   {
    "id": "vestora",
@@ -597,7 +548,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "Founder-built sharia platform with 6 people, but no dated 2026 offering, post or news found."
-   }
+   },
+   "nearmiss_2026_10_24": "No 2026 offering, funded deal or other dated 2026 operating signal: its newest offering (sukuk SAGA001, Rp 493 million, 3 months) was listed on 31 Oct 2025; its statistics page shows 11 projects, all finished, none running and none raising; OJK's tables show no change between end-2025 and end-March 2026; no 2026 LinkedIn or blog post."
   },
   {
    "id": "visiku",
@@ -611,7 +563,8 @@
    "recheck_2026_10_24": {
     "verdict": "UNCLEAR",
     "why": "7 people and 2026 blog posts, but no 2026 offering or funds raised visible; owner undisclosed."
-   }
+   },
+   "nearmiss_2026_10_24": "No 2026 offering or funded deal: OJK's tables show the same 4 issuers and Rp 1.52 billion cumulative at end-2025 and end-March 2026; its investment-listing service returned errors throughout 24 Oct 2026 and older offering pages are gone. The only 2026 signals are marketing articles (Aug-Sep 2026) and one iOS app update (28 Feb 2026). Owner not disclosed."
   },
   {
    "id": "indosat-ooredoo-hutchison",
@@ -620,7 +573,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "xlsmart-telecom",
@@ -629,7 +583,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "biznet",
@@ -638,7 +593,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "moratelindo",
@@ -647,7 +603,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "nap-info",
@@ -656,7 +613,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "telin",
@@ -666,7 +624,8 @@
    "why": [
     "already counted in the BUMN dataset",
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "telkomsat",
@@ -676,7 +635,8 @@
    "why": [
     "already counted in the BUMN dataset",
     "typed incumbent_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "mitratel",
@@ -686,7 +646,8 @@
    "why": [
     "already counted in the BUMN dataset",
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "multipolar-technology",
@@ -695,7 +656,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "metrodata-electronics",
@@ -704,7 +666,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   },
   {
    "id": "mastersystem-infotama",
@@ -713,7 +676,8 @@
    "cohort": "telecom-enterprise-reserve-2026-10",
    "why": [
     "typed listed_tech: fails test 1 (incumbent / established company, not venture- or tech-built)"
-   ]
+   ],
+   "decision": "left out (Luca, 24 Oct 2026): not a startup; do not re-propose"
   }
  ],
  "rows_wave2": [
@@ -753,5 +717,14 @@
   "tokomodal",
   "trustiq-danaku"
  ],
- "wave2": "24 Oct 2026: the held rows were re-checked (live LinkedIn reads, owners, licences, 2026 activity). Rows that pass the census tests were published; group-owned companies were published with a \"part of <group>\" flag on Luca's word (\"we still can put them here, but maybe give flagging that they are affiliated with big company\")."
+ "wave2": "24 Oct 2026: the held rows were re-checked (live LinkedIn reads, owners, licences, 2026 activity). Rows that pass the census tests were published; group-owned companies were published with a \"part of <group>\" flag on Luca's word (\"we still can put them here, but maybe give flagging that they are affiliated with big company\").",
+ "rows_wave3": [
+  "ammana",
+  "bythen",
+  "crowddana",
+  "ezeelink",
+  "pinjamduit",
+  "uku"
+ ],
+ "wave3": "24 Oct 2026: the 16 near-miss startups were chased for the one thing each lacked (an Indonesian PT, the owner, a headcount, 2026 activity), on Luca's word; the 6 that now pass were published, none group-owned. Luca also decided the same day to leave bank arms, Telkom/state subsidiaries, listed telcos, foreign groups' local offices and ISPs out of the census."
 }
