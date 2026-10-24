@@ -851,6 +851,7 @@ ${FOOT.css}</style>
 <body>
 <div class="banner">${L('WORKING DRAFT · PUBLIC SOURCES ONLY · EVERY DERIVED FIGURE IS A LABELED ESTIMATE', 'DOKUMEN KERJA · SUMBER PUBLIK SAJA · ANGKA TURUNAN SELALU BERLABEL ESTIMASI')}</div>
 ${NAV.header('', { lang, path })}
+<main>
 <section class="hero">
   <h1>${L("Indonesia's startup graph.", 'Sensus startup Indonesia.')}</h1>
   <div>
@@ -868,6 +869,7 @@ ${NAV.header('', { lang, path })}
   </div>
 </section>
 ${body}
+</main>
 <script type="application/json" id="note-frag">${JSON.stringify(NOTE_DICT).replace(/</g, '\\u003c')}</script>
 <div class="note" id="note" role="tooltip" hidden>
   <button type="button" class="nx" aria-label="${L('Close', 'Tutup')}">\u00d7</button>
