@@ -1040,7 +1040,10 @@ function sitemap1001() {
   const data = censusData() || {};
   const links = linksData() || {};
   const posts = blog1001.slugs();
-  const key = [data.generated || '', posts.join(','), Object.keys(links.byCompany || {}).length, closedRegister().generated || '', homeLive()].join('|');
+  const bumn = bumn1001.load() || {}, maps = bumnsankey1001.live() ? bumnsankey1001.load() || {} : {};
+  const bumd = bumdLive() ? bumd1001.load() || {} : {}, dc = dcLive() ? datacenter1001.load() || {} : {};
+  const key = [data.generated || '', posts.join(','), Object.keys(links.byCompany || {}).length, closedRegister().generated || '', homeLive(),
+    bumn.asof || '', maps.asof || '', Object.keys(maps.groups || {}).length, bumd.asof || '', (bumd.co || []).length, dc.asof || '', (dc.webs || []).length].join('|');
   if (smCache.key === key) return smCache.xml;
   const paths = ['/', '/news', '/research', research1001.ARTICLE_PATH, '/map', '/closed', '/coverage', '/model', '/investors', '/chain', '/stats', '/unicorn', '/about'];
   /* the startup table's own address once / is the four-dataset front page */
@@ -1074,6 +1077,21 @@ function sitemap1001() {
       : p.startsWith('/news/') ? blog1001.dateOf(p.slice(6)) : mod;
     out.push(url(en, { en, id }, modified), url(id, { en, id }, modified));
   }
+  /* the English-only sections (/id/ 302s back through ID_READY, so no hreflang pair), each dated by
+     its own data file; only what is live and indexable: the BUMN group maps, the BUMD pages that pass
+     the thin-page rule (bumdco1001), the data-centre company webs */
+  const enOnly = [];
+  if (bumn.asof) enOnly.push(['/bumn', bumn.asof]);
+  for (const s of bumnsankey1001.slugs()) enOnly.push(['/bumn/' + s, maps.asof]);
+  if (bumd.asof) {
+    enOnly.push(['/bumd', bumd.asof]);
+    for (const s of bumdco1001.indexableSlugs()) enOnly.push(['/bumd/' + encodeURIComponent(s), bumd.asof]);
+  }
+  if (dc.asof) {
+    enOnly.push(['/data-center', dc.asof]);
+    for (const w of dc.webs || []) enOnly.push(['/data-center/' + w.slug, dc.asof]);
+  }
+  for (const [p, modified] of enOnly) out.push(`<url><loc>${I18N1001.ORIGIN + p}</loc>${modified ? `<lastmod>${modified}</lastmod>` : ''}</url>`);
   out.push('</urlset>');
   smCache = { key, xml: out.join('\n') };
   return smCache.xml;

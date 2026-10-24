@@ -781,9 +781,7 @@ function page({ id, lang = 'en' }) {
   const body = `\n<style>\n${STYLE}</style>${hero}${mapSec}${figuresSection(M)}${boardSection(M)}${listsSection(M)}${sourcesSection(M)}${moreSection(X, c)}`;
 
   /* search: title, description, structured data, and the thin-page rule */
-  const hasFs = !!(c.fs && Array.isArray(c.fs.y) && c.fs.y.filter((_, i) => ['a', 'r', 'p', 'e'].some((k) => Array.isArray(c.fs[k]) && isNum(c.fs[k][i]))).length > 1);
-  const hasBd = Array.isArray(c.bd) && c.bd.some((x) => x && x.n);
-  const rich = [hasFs, hasBd, items > 0, owners.length >= 2].filter(Boolean).length;
+  const { hasFs, hasBd, rich } = richOf(c, items, owners);
   const parts = [owners.length ? 'owners' : '', hasFs || (c.fin && [c.fin.a, c.fin.r, c.fin.p].some(isNum)) ? 'figures' : '', hasBd ? 'board' : '', items ? 'ties' : ''].filter(Boolean);
   const partsTxt = parts.length > 1 ? parts.slice(0, -1).join(', ') + ' and ' + parts[parts.length - 1] : parts[0] || 'profile';
   /* a BUMD's subsidiary and a minority-stake company are not BUMD themselves */
@@ -841,7 +839,28 @@ function page({ id, lang = 'en' }) {
   });
 }
 
+/* the thin-page rule: a page is indexed when it has two of figures for more than one year, a board,
+   something it holds or does, and two or more owners; the rest are noindex */
+function richOf(c, items, owners) {
+  const hasFs = !!(c.fs && Array.isArray(c.fs.y) && c.fs.y.filter((_, i) => ['a', 'r', 'p', 'e'].some((k) => Array.isArray(c.fs[k]) && isNum(c.fs[k][i]))).length > 1);
+  const hasBd = Array.isArray(c.bd) && c.bd.some((x) => x && x.n);
+  return { hasFs, hasBd, rich: [hasFs, hasBd, items > 0, owners.length >= 2].filter(Boolean).length };
+}
+
 /* the ids with a page, for links and the search index; empty while the switch is off */
 const slugs = () => (bumdLive() ? B.slugs() : []);
 
-module.exports = { page, slugs };
+/* the ids whose page passes the thin-page rule, for the sitemap (server.js sitemap1001) */
+function indexableSlugs() {
+  if (!bumdLive()) return [];
+  const X = B.index();
+  if (!X) return [];
+  return [...X.pages].filter((id) => {
+    const c = X.CO.get(id);
+    if (!c) return false;
+    const items = holdsOf(X, c).reduce((a, g) => a + g.items.length, 0);
+    return richOf(c, items, ownersOf(X, c)).rich >= 2;
+  });
+}
+
+module.exports = { page, slugs, indexableSlugs };
