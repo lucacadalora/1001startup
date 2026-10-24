@@ -1,8 +1,8 @@
 {
-  "generated": "2026-10-23T23:29:50+00:00",
-  "entities": 4107,
+  "generated": "2026-10-24T06:23:23+00:00",
+  "entities": 4113,
   "by_registry": {
-    "tech": 547,
+    "tech": 553,
     "bumn": 56,
     "bumn_subsidiary": 946,
     "external": 675,
@@ -22,7 +22,7 @@
     "benchmark": 1
   },
   "by_company_type": {
-    "unclassified": 2215,
+    "unclassified": 2221,
     "central_public_enterprise": 56,
     "subsidiary": 946,
     "regional_public_enterprise": 565,
@@ -83,14 +83,14 @@
     "manufacturing": 104,
     "technology": 6
   },
-  "observations": 2797,
-  "sources": 5414,
-  "contacts": 1816,
+  "observations": 2810,
+  "sources": 5445,
+  "contacts": 1830,
   "by_contact": {
     "careers_url": 190,
-    "linkedin_company": 506,
-    "website": 623,
-    "email_role": 331,
+    "linkedin_company": 512,
+    "website": 629,
+    "email_role": 333,
     "phone_business": 112,
     "email": 23,
     "fax": 16,
@@ -98,9 +98,9 @@
     "hotline": 4
   },
   "officers": 168,
-  "dedupe_candidates": 274,
+  "dedupe_candidates": 275,
   "coverage": {
-    "tech_companies": 547,
+    "tech_companies": 553,
     "bumn_parents": 56,
     "bumn_subsidiaries": 946,
     "bumd_canonical": 611,
