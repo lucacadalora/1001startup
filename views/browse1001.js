@@ -233,7 +233,7 @@ footer a{color:#52525B}
 <body>
 <div class="banner">${L('WORKING DRAFT · PUBLIC SOURCES ONLY · EVERY DERIVED FIGURE IS A LABELED ESTIMATE', 'DOKUMEN KERJA · SUMBER PUBLIK SAJA · ANGKA TURUNAN SELALU BERLABEL ESTIMASI')}</div>
 ${NAV.header(active, { lang, path, translated })}
-${body}
+${/<main[\s>]/.test(body) ? body : `<main>${body}</main>`}
 <footer>
   <span>${L('1001startup.id — the census of Indonesian startups', '1001startup.id — sensus startup Indonesia')}</span>
   <span><a href="${I18N.pfx(lang)}/stats">${L('Live traffic', 'Statistik pengunjung')}</a> · <a href="https://vantis.sh/cookies/" data-vs-reopen>${L('Cookies', 'Cookie')}</a> · ${L('Anchors: BPS', 'Anchor: BPS')}</span>

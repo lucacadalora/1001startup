@@ -406,6 +406,12 @@ function page({ lang = 'en', tiles = null } = {}) {
   /* reach: the ISP reach panel on the place card, on while its data file exists */
   const TR = trace();
   const cfg = { tiles: tiles ? tiles.url : null, maxzoom: tiles ? tiles.maxzoom : 0, reach: reachLive(), trace: !!TR };
+  /* the citable answer under the lede (Sinyal's audit, 24 Oct 2026: no self-contained answer near the
+     top): the totals, the two busiest named exchanges and the busiest named building */
+  const ix2 = ixs.filter((x) => !x.grey && x.nets).slice(0, 2);
+  const fac1 = facs.find((f) => !f.grey && f.nets);
+  const answer = `According to PeeringDB, as mapped by 1001startup.id (updated ${asof}), Indonesia has ${n0(T.fac)} data centres and network sites, ${n0(T.ix)} internet exchanges and ${n0(T.nets)} networks.`
+    + `${ix2.length === 2 ? ` The busiest exchanges are ${esc(ix2[0].pdb)} (${n0(ix2[0].nets)} networks) and ${esc(ix2[1].pdb)} (${n0(ix2[1].nets)})${fac1 ? `, and the most connected building is ${esc(fac1.n)}${fac1.city ? ` in ${esc(fac1.city)}` : ''}, with ${n0(fac1.nets)} networks` : ''}.` : ''}`;
   const body = `
 <style>${CSS}</style>
 <link rel="stylesheet" href="${GL}/maplibre-gl.css">
@@ -413,6 +419,7 @@ function page({ lang = 'en', tiles = null } = {}) {
   <div class="eyebrow"><span class="sq"></span>PEERING · INDONESIA · PEERINGDB, ${esc(asof.toUpperCase())}</div>
   <h1>Where Indonesia’s networks meet</h1>
   <p class="sub">Every data centre, internet exchange and router port that PeeringDB lists in Indonesia, on one map: ${n0(T.fac)} facilities, ${n0(T.ix)} exchanges and ${n0(T.ports)} router ports. Grey means we can’t name the data centre.</p>
+  <p class="sub">${answer}</p>
   <nav class="chips" aria-label="On this page"><a class="chip" href="#map">Map</a><a class="chip" href="#facilities">Data centres<b>${n0(T.fac)}</b></a><a class="chip" href="#exchanges">Exchanges<b>${n0(T.ix)}</b></a><a class="chip" href="#networks">Networks<b>${n0(T.nets)}</b></a><a class="chip" href="#method">Method</a><a class="chip" href="${MAIN}/data-center">Who powers them →</a></nav>
 </section>
 <div class="pm-map" id="map">

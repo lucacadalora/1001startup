@@ -429,15 +429,29 @@ function home({ census, bumn, bumd, dc, umkm, peering, extra = {}, lang = 'en' }
   ].map((x) => `<a href="${esc(x.href)}"><b>${x.t}</b><span>${x.d}</span></a>`).join('');
 
   const title = L("Indonesia's Startup and Company Data — 1001startup.id", 'Data Startup dan Perusahaan Indonesia — 1001startup.id');
-  const desc = bdOn ? (peerOn ? L(
+  /* longest first; fitDesc keeps the first that fits a search snippet (Sinyal's audit, 24 Oct 2026:
+     the six-dataset line ran 212 characters and was cut) */
+  const desc = SCHEMA.fitDesc(bdOn ? (peerOn ? L([
     `Six datasets on Indonesia's companies and its internet — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters and the peering map of ${fmt(PT.ix)} internet exchanges — every figure linked to its source.`,
-    `Enam dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`) : L(
+    `Indonesia's companies and internet: ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters, ${fmt(PT.ix)} internet exchanges. Every figure sourced.`,
+  ], [
+    `Enam dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`,
+    `Perusahaan dan internet Indonesia: ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, ${fmt(PT.ix)} internet exchange. Semua angka bersumber.`,
+  ]) : L([
     `Five datasets on Indonesia's companies — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} data-centre projects and ${fmt(U.exporters)} exporters — every figure linked to its source.`,
-    `Lima dataset perusahaan Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} proyek pusat data, dan ${fmt(U.exporters)} UMKM eksportir — setiap angka tertaut ke sumbernya.`)) : peerOn ? L(
+  ], [
+    `Lima dataset perusahaan Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nBumd)} BUMD, ${fmt(nProjects)} proyek pusat data, dan ${fmt(U.exporters)} UMKM eksportir — setiap angka tertaut ke sumbernya.`,
+  ])) : peerOn ? L([
     `Five datasets on Indonesia's companies and its internet — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters and the peering map of ${fmt(PT.ix)} internet exchanges — every figure linked to its source.`,
-    `Lima dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`) : L(
+    `Indonesia's companies and internet: ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} data-centre projects, ${fmt(U.exporters)} exporters, ${fmt(PT.ix)} internet exchanges. Every figure sourced.`,
+  ], [
+    `Lima dataset perusahaan dan internet Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, dan peta peering ${fmt(PT.ix)} internet exchange — setiap angka tertaut ke sumbernya.`,
+    `Perusahaan dan internet Indonesia: ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, ${fmt(U.exporters)} UMKM eksportir, ${fmt(PT.ix)} internet exchange. Semua angka bersumber.`,
+  ]) : L([
     `Four datasets on Indonesia's companies — ${fmt(T.companies)} startups, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} data-centre projects and ${fmt(U.exporters)} exporters — every figure linked to its source.`,
-    `Empat dataset perusahaan Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, dan ${fmt(U.exporters)} UMKM eksportir — setiap angka tertaut ke sumbernya.`);
+  ], [
+    `Empat dataset perusahaan Indonesia — ${fmt(T.companies)} startup, ${fmt(nBumn)} BUMN, ${fmt(nProjects)} proyek pusat data, dan ${fmt(U.exporters)} UMKM eksportir — setiap angka tertaut ke sumbernya.`,
+  ]));
   const catalog = [
     { name: 'The Indonesian Startup Census', name_id: 'Sensus Startup Indonesia', path: '/startups',
       description: `${T.companies} operating Indonesian startups: disclosed funding, valuations, dated headcounts, sector, investors and head-office address.`,

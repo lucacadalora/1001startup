@@ -258,6 +258,21 @@ function page({ lang = 'en' }) {
   tiles.splice(Math.min(1, tiles.length), 0, { v: num(nBumd), k: `BUMD mapped on this page${extra ? `, plus ${extra}` : ''}`, u: null });
   const stats = tiles.map((s) => `<div class="cell"><div class="v">${s.u ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.v)}</a>` : esc(s.v)}</div><div class="k">${esc(s.k)}</div></div>`).join('');
 
+  /* ---------- the citable answer under the lede (Sinyal's audit, 24 Oct 2026: no self-contained
+     answer near the top): how many, of which kinds, the two biggest by assets, the ties ---------- */
+  const mapped = CO.filter((c) => !c.sub && !c.jv);
+  const kinds = { pdam: 0, bpr: 0, bpd: 0, other: 0 };
+  mapped.forEach((c) => { const t = B.typeOf(c); kinds[t in kinds ? t : 'other'] += 1; });
+  const kindTxt = [[kinds.pdam, 'water utilities'], [kinds.bpr, 'rural banks'], [kinds.bpd, 'regional development banks'], [kinds.other, 'other businesses']]
+    .filter(([k]) => k).map(([k, w]) => `${num(k)} ${w}`);
+  const biggest = mapped.filter((c) => c.fin && c.fin.u === 'Rp bn' && typeof c.fin.a === 'number')
+    .sort((a, b) => b.fin.a - a.fin.a).slice(0, 2);
+  const tnOf = (c) => `Rp${(c.fin.a / 1000).toFixed(1)} trillion, FY${c.fin.y}`;
+  const answer = `According to 1001startup.id (updated ${asof}), Indonesia’s provinces, regencies and cities own ${D.national ? num(D.national) : 'about a thousand'} regional state companies (BUMD); ${num(nBumd)} are mapped here`
+    + `${kindTxt.length > 1 ? `: ${kindTxt.slice(0, -1).join(', ')} and ${kindTxt[kindTxt.length - 1]}` : ''}.`
+    + `${biggest.length === 2 ? ` The largest by assets are ${esc(biggest[0].n)} (${tnOf(biggest[0])}) and ${esc(biggest[1].n)} (${tnOf(biggest[1])}).` : ''}`
+    + `${nOps ? ` ${num(nOps)} joint operations and ventures tie them to the BUMN groups.` : ''}`;
+
   /* ---------- the chart's footnote: which year the figures are, from the data ---------- */
   const fin = CO.filter((c) => c.fin && c.fin.y);
   const pdamY = mode(fin.filter((c) => B.typeOf(c) === 'pdam').map((c) => c.fin.y));
@@ -515,6 +530,7 @@ a.br:hover{background:#F6F6F6}
   <div class="eyebrow"><span class="sq"></span>REGIONAL STATE COMPANIES · BUMD · ${esc(asof.toUpperCase())}</div>
   <h1>Indonesia’s regional state companies, mapped</h1>
   <p class="sub">Provinces, regencies and cities own ${D.national ? num(D.national) : 'about a thousand'} companies; ${num(nBumd)} of them are mapped here, with their owners, their published accounts and the joint operations that tie them to the state groups on <a href="/bumn">/bumn</a>.</p>
+  <p class="sub">${answer}</p>
 </section>
 <div class="stats${tiles.length === 5 ? ' s5' : ''}">${stats}</div>
 <section class="bm" style="padding-top:40px">
@@ -602,7 +618,10 @@ ${nDc ? `<section class="wrap bd-dc" id="data-centres">
   };
   return shell({
     title: 'Indonesia’s regional state companies (BUMD), mapped — 1001startup.id',
-    desc: `${nBumd} BUMD owned by Indonesia's provinces, regencies and cities on one chart of their published accounts, with owners, figures and the ${nOps} joint operations and ventures that tie them to the BUMN groups. ${asof}.`,
+    desc: SCHEMA.fitDesc([
+      `${nBumd} BUMD owned by Indonesia's provinces, regencies and cities on one chart of their published accounts, with owners, figures and the ${nOps} joint operations and ventures that tie them to the BUMN groups. ${asof}.`,
+      `${nBumd} BUMD owned by Indonesia's provinces, regencies and cities, charted by their published accounts, with owners and the ${nOps} joint operations tying them to BUMN.`,
+    ]),
     path: p, lang, body, translated: false,
     ld: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` + SCHEMA.breadcrumbLd(lang, crumb),
   });

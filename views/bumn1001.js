@@ -127,6 +127,16 @@ function page({ lang = 'en' }) {
     if (all) tiles.splice(1, 0, { v: all.toLocaleString('en-US'), k: `Subsidiaries and stakes under the ${n}, at every level (${direct.toLocaleString('en-US')} held directly)`, u: null });
   }
   const stats = tiles.map(s => `<div class="cell"><div class="v">${s.u ? `<a href="${esc(s.u)}" target="_blank" rel="noopener">${esc(s.v)}</a>` : esc(s.v)}</div><div class="k">${esc(s.k)}</div></div>`).join('');
+  /* the citable answer under the lede (Sinyal's audit, 24 Oct 2026: no self-contained answer near the
+     top): the count, the companies under them, Danantara's share and the two biggest by revenue */
+  const dan = tiles.find(s => /Danantara Asset Management/.test(s.k || '') && /^\d+$/.test(String(s.v)) && +s.v <= n);
+  const big = D.entities.filter(e => e.fin && e.fin.revenue && typeof e.fin.revenue.v === 'number')
+    .sort((a, b) => b.fin.revenue.v - a.fin.revenue.v).slice(0, 2);
+  const tn = v => `Rp${Math.round(v).toLocaleString('en-US')} trillion`;
+  const answer = `According to 1001startup.id (updated ${asof}), the ${n} Indonesian state-owned enterprises (BUMN) mapped here`
+    + `${S && S.groups && all ? ` hold ${all.toLocaleString('en-US')} subsidiaries and stakes` : ' are scored on ten yardsticks'}${dan ? `, and ${dan.v} of them are held by Danantara Asset Management` : ''}.`
+    + `${big.length === 2 ? ` The largest by ${esc(big[0].fin.revenue.period || '')} revenue are ${esc(big[0].short)} (${tn(big[0].fin.revenue.v)}) and ${esc(big[1].short)} (${tn(big[1].fin.revenue.v)}${big[1].fin.revenue.period !== big[0].fin.revenue.period ? `, ${esc(big[1].fin.revenue.period || '')}` : ''}).` : ''}`
+    + ' Every score and figure links to its source.';
   const dnt = (D.danantara || []).map(d => `<li>${esc(d.t)} ${d.u ? `<a href="${esc(d.u)}" target="_blank" rel="noopener">${esc(new URL(d.u).hostname.replace(/^www\./, ''))}</a>` : ''}</li>`).join('');
   const method = (D.method || []).map(m => `${m.h ? `<h3>${esc(m.h)}</h3>` : ''}${m.p ? `<p>${esc(m.p)}</p>` : ''}${m.f ? `<div class="bm-f">${esc(m.f)}</div>` : ''}${m.list ? `<ul>${m.list.map(t => `<li>${esc(t)}</li>`).join('')}</ul>` : ''}`).join('');
   const body = `
@@ -270,6 +280,7 @@ ${BD ? BUMD_CSS : ''}</style>
   <div class="eyebrow"><span class="sq"></span>STATE COMPANIES · BUMN · ${esc(asof.toUpperCase())}</div>
   <h1>${esc(h1)}</h1>
   <p class="sub">${n} BUMN on ten yardsticks: where their money comes from and how much they handle, then national priority, strategic weight, duty, reach, prestige and risk. Pick two to see who sits where. Every score carries its reason and its source.</p>
+  <p class="sub">${answer}</p>
 </section>
 <div class="stats${tiles.length === 5 ? ' s5' : ''}">${stats}</div>
 <section class="bm" style="padding-top:40px">
@@ -322,7 +333,10 @@ ${S ? `<script type="application/json" id="bm-subs">${JSON.stringify(S).replace(
   };
   return shell({
     title: 'Indonesia’s state companies (BUMN), mapped — 1001startup.id',
-    desc: `${n} BUMN on a logo quadrant: where their money comes from, how much they handle, national priority, strategic weight, duty, reach, prestige and risk, each score sourced. Danantara era, ${asof}.`,
+    desc: SCHEMA.fitDesc([
+      `${n} BUMN on a logo quadrant: where their money comes from, how much they handle, national priority, strategic weight, duty, reach, prestige and risk, each score sourced. Danantara era, ${asof}.`,
+      `${n} BUMN on a logo quadrant: money earned and handled, national priority, strategic weight, duty, reach, prestige and risk, each score sourced. ${asof}.`,
+    ]),
     path: p, lang, body,
     ld: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` + SCHEMA.breadcrumbLd(lang, crumb),
   });

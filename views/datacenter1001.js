@@ -563,12 +563,21 @@ function page({ lang = 'en' } = {}) {
     .filter(([k]) => k === 'all' || D.projects.some((x) => x.cell === k)).map(([k, t]) => `<option value="${esc(k)}">${esc(t)}</option>`).join('');
   const risk = riskSection(loadRisk());
   const webs = (D.webs || []).length ? `<div class="wgrid">${webCards(D)}</div>` : '<div class="wpending">The company webs are being researched: owners, campuses, tenants, power, builders, lenders and the people linking them, for DCI, BDx, NeutraDC, Digital Edge, DayOne, PDG, STT GDC and SM+.</div>';
+  /* the citable answer under the lede (Sinyal's audit, 24 Oct 2026: no self-contained answer near the
+     top), counted from the matrix itself: placed = any cell but unplaced, grid = the two -grid cells */
+  const placed = D.projects.filter((x) => x.cell && x.cell !== 'unplaced').length;
+  const onGrid = D.projects.filter((x) => /-grid$/.test(x.cell || '')).length;
+  const nWebs = (D.webs || []).length;
+  const answer = `According to 1001startup.id (updated ${asof}), ${D.projects.length} data-centre projects in Indonesia are on record`
+    + `${placed ? `, and ${onGrid} of the ${placed} that could be placed by power source draw on the grid: PLN, PLN Batam or an estate utility` : ''}.`
+    + ` For each project it names the companies that own, power, build and equip it${nWebs ? `, with company webs for ${nWebs} data-centre groups` : ''}.`;
   const body = `
 <style>${CSS}</style>
 <section class="hero">
   <div class="eyebrow"><span class="sq"></span>DATA CENTRES · INDONESIA · ${esc(asof.toUpperCase())}</div>
   <h1>Who powers Indonesia’s data centres</h1>
   <p class="sub">${D.projects.length} data-centre projects, placed by where their power comes from and whether the site is new, with the companies that own, power, build and equip them. Every tie links to its source.</p>
+  <p class="sub">${answer}</p>
   <nav class="sec-nav" aria-label="On this page"><a class="chip" href="#matrix">Matrix</a>${risk ? '<a class="chip" href="#risk">Who carries the risk</a>' : ''}<a class="chip" href="#webs">Company webs</a><a class="chip" href="#projects">Projects</a><a class="chip" href="#vendors">Vendors</a><a class="chip" href="#rules">Rules</a><a class="chip" href="#method">Method</a></nav>
 </section>
 <section class="wrap" id="matrix" style="padding-top:8px">
@@ -626,7 +635,10 @@ ${stateSites(D.projects.length)}<section class="wrap" id="projects">
   };
   return shell({
     title: 'Who powers Indonesia’s data centres — 1001startup.id',
-    desc: `${D.projects.length} Indonesian data-centre projects by power model and site type: PLN, estate utilities and own power, with the companies that own, build and equip them. Every tie sourced.`,
+    desc: SCHEMA.fitDesc([
+      `${D.projects.length} Indonesian data-centre projects by power model and site type: PLN, estate utilities and own power, with the companies that own, build and equip them. Every tie sourced.`,
+      `${D.projects.length} Indonesian data-centre projects by power model: PLN, estate utilities or own power, with the companies that own, build and equip them. Every tie sourced.`,
+    ]),
     path: p, lang, body,
     ld: `<script type="application/ld+json">${JSON.stringify(ld).replace(/</g, '\\u003c')}</script>` + SCHEMA.breadcrumbLd(lang, crumb),
   });
