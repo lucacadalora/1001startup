@@ -50,3 +50,8 @@ data/company-corpus.jsonl
 data/validation-report.json
 data/companygraph.live
 data/contact-cache/
+
+# 1001 Rank (scripts/rank-1001.py): rebuilt weekly from the public Chrome UX Report Indonesia lists
+# and Common Crawl; downloads live in ~/.cache/1001-rank. data/rank-domains.json (hand-checked) IS tracked.
+data/rank.json
+data/rank-history/

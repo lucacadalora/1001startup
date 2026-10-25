@@ -1,0 +1,40 @@
+{
+ "_about": "Hand-checked extra domains for scripts/rank-1001.py (1001 Rank). A company is measured on its census URL plus the domains listed here. Add a domain only with evidence that the company runs it (its page names the company or its legal entity, the census site links to it, or the census URL redirects to it), and give the evidence in 'why'. 'hold' keeps a company out of the rank with a reason. The job never adds a domain on its own.",
+ "companies": {
+  "gojek": {"add": [
+   {"domain": "gojek.com", "why": "Gojek's own site; its homepage names GoTo (census URL is the group site gotocompany.com)", "checked": "2026-10-25"},
+   {"domain": "gopay.co.id", "why": "GoPay, GoTo Financial's wallet; its homepage names PT Dompet Anak Bangsa and Gojek", "checked": "2026-10-25"}]},
+  "idn": {"add": [
+   {"domain": "idntimes.com", "why": "IDN Times, IDN's flagship news site; its homepage links idn.media", "checked": "2026-10-25"}]},
+  "global-loyalty-indonesia": {"add": [
+   {"domain": "alfagift.id", "why": "Alfagift, named in the census row 'Global Loyalty Indonesia (Alfagift)'; its homepage is an app shell with no company name in the HTML", "checked": "2026-10-25"}]},
+  "dataon": {"add": [
+   {"domain": "greatdayhr.com", "why": "GreatDay HR, named in the census row; its homepage names PT Indodev Niaga Internet, DataOn's legal entity", "checked": "2026-10-25"}]},
+  "beautyhaul": {"add": [
+   {"domain": "beautyhaul.com", "why": "BeautyHaul's own store; linked from somethinc.com and names both brands", "checked": "2026-10-25"}]},
+  "qoala": {"add": [
+   {"domain": "qoala.app", "why": "Qoala's Indonesian site (qoala.app/id); qoala.com itself has no Chrome listing", "checked": "2026-10-25"}]},
+  "indodana": {"add": [
+   {"domain": "indodanafinance.co.id", "why": "Indodana Finance; its homepage redirects to indodana.id and web.indodanafinance.co.id is the customer web app", "checked": "2026-10-25"}]},
+  "amar-bank": {"add": [
+   {"domain": "tunaiku.com", "why": "Tunaiku, Amar Bank's loan app; linked from amarbank.co.id and names PT Bank Amar Indonesia Tbk", "checked": "2026-10-25"}]},
+  "alterra": {"add": [
+   {"domain": "sepulsa.com", "why": "Sepulsa; the census legal name is PT Sepulsa Teknologi Indonesia (its robots.txt closes the homepage, so it was not fetched)", "checked": "2026-10-25"}]},
+  "bimasakti": {"add": [
+   {"domain": "fastpay.co.id", "why": "Fastpay, named in the census row; linked from bm.co.id and names PT Bimasakti Multi Sinergi", "checked": "2026-10-25"},
+   {"domain": "speedcash.co.id", "why": "SpeedCash, named in the census row; linked from bm.co.id and names PT Bimasakti Multi Sinergi", "checked": "2026-10-25"},
+   {"domain": "winpay.id", "why": "Winpay, named in the census row; linked from bm.co.id and names PT Bimasakti Multi Sinergi", "checked": "2026-10-25"}]},
+  "99-group-indonesia": {"add": [
+   {"domain": "99.co", "why": "99.co, named in the census row and legal names (PT Ninety Nine Dotco); the site answers this VM with 403, so it was not read", "checked": "2026-10-25"}]},
+  "binar": {"add": [
+   {"domain": "binar.co.id", "why": "binaracademy.com (the census URL) redirects here; the page names PT Lentera Bangsa Benderang", "checked": "2026-10-25"}]},
+  "bahasa-ai": {"add": [
+   {"domain": "meeting.ai", "why": "bahasa.ai (the census URL) redirects to meeting.ai/id; the census row is 'Bahasa.ai (Meeting.ai)', one team under two brands", "checked": "2026-10-25"}]},
+  "bank-neo-commerce": {"add": [
+   {"domain": "bankneocommerce.co.id", "why": "bankneo.co.id (the census URL) redirects here; the page names Bank Neo Commerce", "checked": "2026-10-25"}]},
+  "sirka": {"add": [
+   {"domain": "sirka.co.id", "why": "sirka.io (the census URL) redirects here; the page names Sirka", "checked": "2026-10-25"}]},
+  "kopi-tuku": {"add": [
+   {"domain": "tuku.coffee", "why": "Toko Kopi Tuku's site, named in the census row 'Toko Kopi Tuku (MAKA)'; maka.co.id did not answer and tuku.coffee rate-limited this VM (429)", "checked": "2026-10-25"}]}
+ }
+}
