@@ -34,6 +34,7 @@
    {"domain": "bankneocommerce.co.id", "why": "bankneo.co.id (the census URL) redirects here; the page names Bank Neo Commerce", "checked": "2026-10-25"}]},
   "sirka": {"add": [
    {"domain": "sirka.co.id", "why": "sirka.io (the census URL) redirects here; the page names Sirka", "checked": "2026-10-25"}]},
+  "gokampus": {"hold": "website removed 25 Oct 2026: gokampus.com redirects to an online-gambling site; waiting for a liveness check (Learnext rebrand)"},
   "kopi-tuku": {"add": [
    {"domain": "tuku.coffee", "why": "Toko Kopi Tuku's site, named in the census row 'Toko Kopi Tuku (MAKA)'; maka.co.id did not answer and tuku.coffee rate-limited this VM (429)", "checked": "2026-10-25"}]}
  }

@@ -2973,26 +2973,13 @@
     {
       "id": "tech-gokampus",
       "name": "goKampus",
-      "website": "https://www.gokampus.com",
+      "website": null,
       "retrieved_at": "2026-10-23T19:55:15+00:00",
-      "contacts": [
-        {
-          "type": "phone_business",
-          "value": "+6221123456789",
-          "source": "https://www.scesnet.org/",
-          "value_class": "reported"
-        }
-      ],
+      "contacts": [],
       "linkedin_url": null,
-      "pages": [
-        {
-          "url": "https://www.scesnet.org/",
-          "status": "ok",
-          "code": 200,
-          "sha256": "72d72926857ee6f0b728f8ac5f7d557d385f186478c4c00f75916756f09e96cf"
-        }
-      ],
-      "status": "ok"
+      "pages": [],
+      "status": "removed",
+      "note": "25 Oct 2026 UTC: gokampus.com redirects to an unrelated online-gambling site, so what was scraped from it (one phone number) was removed; the census URL stays empty until a liveness check confirms the new site."
     },
     {
       "id": "tech-kelas-pintar",

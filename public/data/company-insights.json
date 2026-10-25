@@ -1,5 +1,5 @@
 {
-  "generated": "2026-10-24T06:23:23+00:00",
+  "generated": "2026-10-25T20:27:38+00:00",
   "entities": 4113,
   "by_registry": {
     "tech": 553,
@@ -84,14 +84,14 @@
     "technology": 6
   },
   "observations": 2810,
-  "sources": 5445,
-  "contacts": 1830,
+  "sources": 5443,
+  "contacts": 1828,
   "by_contact": {
     "careers_url": 190,
     "linkedin_company": 512,
-    "website": 629,
+    "website": 628,
     "email_role": 333,
-    "phone_business": 112,
+    "phone_business": 111,
     "email": 23,
     "fax": 16,
     "phone": 11,
