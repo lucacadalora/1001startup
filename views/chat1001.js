@@ -11,6 +11,9 @@
  *    Investors) tell Ask 1001 where to look first (lib/ask1001.js `scope`).
  *    People is the lead agent, still coming soon: it opens a sheet with
  *    "Get early access" (POST /api/me/lead, the request the dashboard saved).
+ *    For the accounts data/leadagent.live lists (lib/leadagent1001.js) People is a
+ *    real chip instead (scope 'people': find people at a company, reveal a
+ *    work email), with a link to the saved list at /me/leads.
  *    No provider names anywhere (Luca, 18 Oct).
  *  - Typing a name offers its page (GET /api/me/index, the dashboard's
  *    instant search); Enter always asks.
@@ -38,6 +41,8 @@ const SCOPES = [
   ['dc', 'Data centres', 'Pusat data', 'Which data centres are operating in Batam?', 'Pusat data apa saja yang beroperasi di Batam?'],
   ['investors', 'Investors', 'Investor', 'Which investors back the most fintech startups?', 'Investor mana yang paling banyak mendanai startup fintech?'],
 ];
+/* the lead agent's chip, only for the accounts lib/leadagent1001.js allows */
+const PEOPLE = ['people', 'People', 'Orang', 'Who runs partnerships at Xendit?', 'Siapa yang pegang partnership di Xendit?'];
 
 /* Questions to start with, per chip: each one is answerable from 1001's data today. */
 function examples(rows, k, L) {
@@ -70,6 +75,11 @@ function examples(rows, k, L) {
       L(`Who invested in ${round}?`, `Siapa investor ${round}?`),
       L('Tell me about East Ventures', 'Ceritakan tentang East Ventures'),
     ],
+    people: [
+      L('Who runs partnerships at Xendit?', 'Siapa yang pegang partnership di Xendit?'),
+      L('Find the CTO and engineering heads at Kopi Kenangan', 'Cari CTO dan kepala engineering di Kopi Kenangan'),
+      L(`Who handles business development at ${round}?`, `Siapa yang pegang business development di ${round}?`),
+    ],
   };
 }
 
@@ -80,15 +90,18 @@ const ARROW = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true
  *  rows    [{ kind, ref, name, href }] what the reader follows, newest first
  *  k       { startups, bumn, subs, dcs, investors, topRound } (lib/account1001.js kpisFor)
  *  early   true once the reader asked for early access to the lead agent
+ *  leads   true when the lead agent is on for this reader (lib/leadagent1001.js)
  */
-function page({ lang = 'en', user, rows, k, early = false }) {
+function page({ lang = 'en', user, rows, k, early = false, leads = false }) {
   const L = I18N.mkL(lang);
   const nf = (x) => Math.round(Number(x || 0)).toLocaleString(lang === 'id' ? 'id-ID' : 'en-US');
   const ex = examples(rows, k, L);
   const role = ROLES.find(([x]) => x === user.role);
+  /* People right after All data: on a phone the chip row scrolls, and the lead agent is why this reader is here */
+  const scopes = leads ? [SCOPES[0], PEOPLE, ...SCOPES.slice(1)] : SCOPES;
 
-  const chips = SCOPES.map(([sc, en, id, pen, pid], i) => `<button type="button" class="ck-c" data-sc="${sc}" data-ph="${esc(L(pen, pid))}" aria-pressed="${i ? 'false' : 'true'}">${esc(L(en, id))}</button>`).join('');
-  const tries = SCOPES.map(([sc]) => `<div class="ck-try" data-for="${sc}" hidden><span>${L('Try', 'Coba')}</span>${ex[sc].map((q) => `<button type="button" class="ck-x" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`).join('');
+  const chips = scopes.map(([sc, en, id, pen, pid], i) => `<button type="button" class="ck-c" data-sc="${sc}" data-ph="${esc(L(pen, pid))}" aria-pressed="${i ? 'false' : 'true'}">${esc(L(en, id))}</button>`).join('');
+  const tries = scopes.map(([sc]) => `<div class="ck-try" data-for="${sc}" hidden><span>${L('Try', 'Coba')}</span>${ex[sc].map((q) => `<button type="button" class="ck-x" data-q="${esc(q)}">${esc(q)}</button>`).join('')}</div>`).join('');
 
   const SHOW = 24;
   const fLink = (r) => `<a href="${esc(r.href)}">${esc(r.name)}<span>${esc(KIND[r.kind] ? L(KIND[r.kind][0], KIND[r.kind][1]) : '')}</span></a>`;
@@ -164,6 +177,7 @@ function page({ lang = 'en', user, rows, k, early = false }) {
 .ck-en .fw1001{padding:6px 8px;font-size:10px}
 .ck-sr{font:400 11px/1.4 'IBM Plex Mono',monospace;color:#8A8A92;margin:0}
 .ck-pn{font-size:12px;line-height:1.5;color:#8A8A92;text-align:center;margin:18px auto 0;max-width:62ch}
+.ck-pn a{color:#000;text-decoration:underline;text-underline-offset:3px;white-space:nowrap}
 .ck-me{margin-top:56px;border-top:1px solid #E7E7E7;padding-top:18px;display:grid;gap:18px}
 .ck-mh{font:400 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.07em;text-transform:uppercase;color:#6B6B73;margin:0 0 10px}
 .ck-fl{display:flex;flex-wrap:wrap;gap:6px}
@@ -228,7 +242,7 @@ function page({ lang = 'en', user, rows, k, early = false }) {
     <div class="ck-bar">
       <div class="ck-cs" role="group" aria-label="${L('Where to look', 'Cari di')}">
         ${chips}
-        <button type="button" class="ck-c ck-pp" data-people aria-haspopup="dialog">${L('People', 'Orang')}<em>${L('Soon', 'Segera')}</em></button>
+        ${leads ? '' : `<button type="button" class="ck-c ck-pp" data-people aria-haspopup="dialog">${L('People', 'Orang')}<em>${L('Soon', 'Segera')}</em></button>`}
       </div>
       <button type="submit" class="ck-go" aria-label="${L('Ask', 'Tanya')}">${ARROW}</button>
     </div>
@@ -237,7 +251,7 @@ function page({ lang = 'en', user, rows, k, early = false }) {
   ${tries}
   <div class="ck-th" id="ck-th" hidden><span>${L('This chat', 'Chat ini')}</span><button type="button" class="ck-new" id="ck-new">${L('New chat', 'Chat baru')}</button></div>
   <div class="ck-thread" id="ck-thread" aria-live="polite"></div>
-  <p class="ck-pn" id="ck-pn">${L('Ask 1001 can make mistakes, so check the pages it links. Questions are kept without your name, to improve Ask 1001.', 'Ask 1001 bisa keliru, jadi cek halaman yang ditautkannya. Pertanyaan disimpan tanpa namamu, untuk memperbaiki Ask 1001.')}</p>
+  <p class="ck-pn" id="ck-pn">${L('Ask 1001 can make mistakes, so check the pages it links. Questions are kept without your name, to improve Ask 1001.', 'Ask 1001 bisa keliru, jadi cek halaman yang ditautkannya. Pertanyaan disimpan tanpa namamu, untuk memperbaiki Ask 1001.')}${leads ? ` <a href="${lang === 'id' ? '/id' : ''}/me/leads">${L('Your leads', 'Kontak kamu')} →</a>` : ''}</p>
   <section class="ck-me" aria-label="${L('Your 1001', '1001 kamu')}">
     <div>
       <h2 class="ck-mh">${L('Following', 'Yang kamu ikuti')}${rows.length ? ` · ${nf(rows.length)}` : ''}</h2>
@@ -265,7 +279,7 @@ function page({ lang = 'en', user, rows, k, early = false }) {
     <p class="ok" data-ok${early ? '' : ' hidden'}>${L('It will show up in this box when it opens.', 'Agen ini muncul di kotak ini saat dibuka.')}</p>
   </form>
 </dialog>
-<script src="/js/chat1001.js?v=${V}c1" data-lang="${lang === 'id' ? 'id' : 'en'}" defer></script>`;
+<script src="/js/chat1001.js?v=${V}c2" data-lang="${lang === 'id' ? 'id' : 'en'}" defer></script>`;
   return shell({
     title: L('Ask 1001 — 1001startup.id', 'Ask 1001 — 1001startup.id'),
     desc: L('Ask about Indonesia’s startups, BUMN, data centres and investors.', 'Tanya soal startup, BUMN, pusat data, dan investor Indonesia.'),

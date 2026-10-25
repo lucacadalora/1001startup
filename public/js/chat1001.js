@@ -25,7 +25,7 @@
   var PF = LANG === 'id' ? '/id' : '';
   var T = LANG === 'id' ? {
     go: 'Buka halamannya', kind: { company: 'Startup', bumn: 'BUMN', dc: 'Pusat data', investor: 'Investor', sector: 'Sektor' },
-    scope: { startups: 'Startup', bumn: 'BUMN', dc: 'Pusat data', investors: 'Investor' },
+    scope: { startups: 'Startup', bumn: 'BUMN', dc: 'Pusat data', investors: 'Investor', people: 'Orang' },
     follow: 'Ikuti', thinking: 'Membaca data 1001', from: 'Dari data 1001 per ', sec: ' dtk',
     busy: 'Ask 1001 sedang sibuk. Coba lagi sebentar lagi.',
     pause: 'Ask 1001 belum bisa menjawab kali ini, kendalanya di pihak kami. Coba lagi sebentar lagi.',
@@ -36,7 +36,7 @@
     onList: 'Kamu sudah terdaftar', notSaved: 'Belum tersimpan. Coba lagi.',
   } : {
     go: 'Go to the page', kind: { company: 'Startup', bumn: 'BUMN', dc: 'Data centre', investor: 'Investor', sector: 'Sector' },
-    scope: { startups: 'Startups', bumn: 'BUMN', dc: 'Data centres', investors: 'Investors' },
+    scope: { startups: 'Startups', bumn: 'BUMN', dc: 'Data centres', investors: 'Investors', people: 'People' },
     follow: 'Follow', thinking: 'Reading 1001’s data', from: 'From 1001’s data as of ', sec: ' s',
     busy: 'Ask 1001 is busy right now. Try again in a minute.',
     pause: 'Ask 1001 couldn’t answer this time, on our side. Try again in a minute.',
