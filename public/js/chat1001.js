@@ -13,6 +13,11 @@
  *    here, never innerHTML: paragraphs, "- " lists, **bold** and links to
  *    paths on this site; while the words are still coming, links stay text.
  *    The chat stays in sessionStorage so a reload keeps it; New chat clears it.
+ *  - While it works: an orb, the step being run, and the seconds so far; a
+ *    calm line when a step is slow (a work-email lookup takes up to a minute).
+ *  - History (when the page has #ck-hs, lib/askchats1001.js): each answer is
+ *    saved by the server into the open chat (`chat` id); Recent chats under
+ *    the box and the History sheet reopen or delete one.
  *
  * Follow buttons on answers are public/js/follow1001.js's (it paints buttons
  * that arrive later).
@@ -34,6 +39,8 @@
     one: 'Satu pertanyaan dulu ya, yang sebelumnya masih berjalan.',
     signin: 'Sesi masukmu sudah berakhir. Masuk lagi untuk bertanya.', signinGo: 'Masuk',
     onList: 'Kamu sudah terdaftar', notSaved: 'Belum tersimpan. Coba lagi.',
+    slow: 'Masih berjalan.', slowContact: 'Mencari email kerja bisa sampai satu menit.',
+    qs: function (n) { return n + ' pertanyaan'; }, del: 'Hapus', sure: 'Yakin?', chatGone: 'Chat ini sudah tidak ada.',
   } : {
     go: 'Go to the page', kind: { company: 'Startup', bumn: 'BUMN', dc: 'Data centre', investor: 'Investor', sector: 'Sector' },
     scope: { startups: 'Startups', bumn: 'BUMN', dc: 'Data centres', investors: 'Investors', people: 'People' },
@@ -45,6 +52,8 @@
     one: 'One question at a time: the last one is still running.',
     signin: 'Your sign-in has ended. Sign in again to ask.', signinGo: 'Sign in',
     onList: 'You’re on the list', notSaved: 'Not saved. Try again.',
+    slow: 'Still working.', slowContact: 'A work-email lookup can take up to a minute.',
+    qs: function (n) { return n + (n === 1 ? ' question' : ' questions'); }, del: 'Delete', sure: 'Sure?', chatGone: 'That chat is no longer there.',
   };
 
   var form = document.getElementById('ck-f');
@@ -74,15 +83,17 @@
   var KEEP = 'ck-ask-v1';
   var scope = '';
   var past = [];     // [{ q, sc, a, ents, asof, ms }] newest last
+  var chatId = null; // the open chat on the server, when history is on
   var running = false;
   var gen = 0;       // New chat bumps it, so an answer still on its way is dropped
   try {
     var kept = JSON.parse(sessionStorage.getItem(KEEP) || 'null');
     if (kept && Array.isArray(kept.past)) past = kept.past.filter(function (x) { return x && x.q; });
     if (kept && typeof kept.sc === 'string') scope = kept.sc;
+    if (kept && kept.chat > 0) chatId = kept.chat;
   } catch (e) { past = []; }
   function save() {
-    try { sessionStorage.setItem(KEEP, JSON.stringify({ sc: scope, past: past.slice(-6) })); } catch (e) { /* kept for this page only */ }
+    try { sessionStorage.setItem(KEEP, JSON.stringify({ sc: scope, past: past.slice(-6), chat: chatId })); } catch (e) { /* kept for this page only */ }
   }
 
   /* ── chips ──────────────────────────────────────────────────────────── */
@@ -294,11 +305,27 @@
     c.appendChild(qq);
     var st = el('ul', 'ck-st');
     c.appendChild(st);
-    var wait = el('div', 'ck-an wait', T.thinking + '…');
+    /* the working line: orb, the step being run, seconds so far; a note when slow */
+    var wait = el('div', 'ck-an wait');
+    var wk = el('div', 'ck-wk');
+    var orb = el('span', 'ck-orb');
+    orb.setAttribute('aria-hidden', 'true');
+    orb.appendChild(el('i'));
+    var wl = el('span', 'ck-wl', T.thinking);
+    var tm = el('span', 'ck-tm');
+    tm.setAttribute('aria-hidden', 'true');
+    wk.appendChild(orb);
+    wk.appendChild(wl);
+    wk.appendChild(tm);
+    var wn = el('p', 'ck-wn');
+    wn.hidden = true;
+    wait.appendChild(wk);
+    wait.appendChild(wn);
     c.appendChild(wait);
     thread.insertBefore(c, thread.firstChild);
     if (head) head.hidden = false;
-    return { c: c, st: st, wait: wait, body: wait };
+    if (recent) recent.hidden = true;
+    return { c: c, st: st, wait: wait, body: wait, wl: wl, tm: tm, wn: wn };
   }
   /* the card's one answer slot: the waiting line, the words so far, or the answer */
   function setBody(v, node) {
@@ -342,14 +369,27 @@
     var r = v.c.getBoundingClientRect();
     if (r.top < 0 || r.top > window.innerHeight - 80) v.c.scrollIntoView({ behavior: 'smooth', block: 'center' });
     busy(true);
-    var steps = [];
-    function step(label) {
-      if (steps.length) steps[steps.length - 1].classList.remove('run');
-      var li = el('li', 'run', label);
-      v.st.appendChild(li);
-      steps.push(li);
+    /* the step being run sits in the working line; done steps join the trail above it */
+    var t0 = Date.now(), cur = null;
+    function tick() {
+      var s = Math.floor((Date.now() - t0) / 1000);
+      v.tm.textContent = s < 60 ? s + T.sec : Math.floor(s / 60) + ':' + ('0' + (s % 60)).slice(-2);
+      var note = cur && cur.tool === 'get_contact' && Date.now() - cur.at > 6000 ? T.slowContact : (s >= 20 ? T.slow : '');
+      if (note && v.wn.textContent !== note) v.wn.textContent = note;
+      v.wn.hidden = !note;
     }
-    function stopSteps() { if (steps.length) steps[steps.length - 1].classList.remove('run'); }
+    tick();
+    var ticker = setInterval(tick, 1000);
+    function step(label, tool) {
+      if (cur) v.st.appendChild(el('li', null, cur.label));
+      cur = { label: label, tool: tool, at: Date.now() };
+      v.wl.textContent = label;
+      tick();
+    }
+    function stopSteps() {
+      if (cur) { v.st.appendChild(el('li', null, cur.label)); cur = null; }
+    }
+    function stopAll() { stopSteps(); clearInterval(ticker); }
     /* the words as they come, drawn at most once a frame */
     var words = '', wordsTurn = -1, frame = 0;
     function draw() {
@@ -367,9 +407,10 @@
       if (frame) { cancelAnimationFrame(frame); frame = 0; }
       setBody(v, v.wait);
     }
-    post('/api/me/ask', { q: q, lang: LANG, scope: sc, stream: true, history: history() }).then(function (res) {
-      if (res.status === 401) { calm(v, T.signin, { t: T.signinGo, h: PF + '/signin?next=' + encodeURIComponent(PF + '/me') }); return; }
+    post('/api/me/ask', { q: q, lang: LANG, scope: sc, stream: true, history: history(), chat: chatId }).then(function (res) {
+      if (res.status === 401) { stopAll(); calm(v, T.signin, { t: T.signinGo, h: PF + '/signin?next=' + encodeURIComponent(PF + '/me') }); return; }
       if (!res.ok || !res.body) {
+        stopAll();
         return res.json().catch(function () { return {}; }).then(function (j) {
           var e = j && j.error;
           calm(v, e === 'daily_limit' ? T.limit : e === 'paused' ? T.paused : e === 'one_at_a_time' ? T.one : T.pause);
@@ -380,25 +421,29 @@
         if (!s.trim()) return;
         var o;
         try { o = JSON.parse(s); } catch (e) { return; }
-        if (o.t === 'step') { dropWords(); step(o.label || o.tool || ''); }
+        if (o.t === 'step') { dropWords(); step(o.label || o.tool || '', o.tool); }
         else if (o.t === 'delta') { if (typeof o.d === 'string') delta(o.d, o.n); }
         else if (o.t === 'answer') {
           done = true;
-          stopSteps();
+          stopAll();
           if (frame) { cancelAnimationFrame(frame); frame = 0; }
           var ans = { q: q, sc: sc, a: String(o.answer || ''), ents: o.entities || [], asof: o.asof || '', ms: o.ms || 0 };
           finish(v, ans);
-          if (mine === gen) { past.push(ans); save(); }
+          if (mine === gen) {
+            past.push(ans);
+            if (o.chat > 0) { chatId = o.chat; loadChats(); }
+            save();
+          }
         } else if (o.t === 'fail') {
           done = true;
-          stopSteps();
+          stopAll();
           if (frame) { cancelAnimationFrame(frame); frame = 0; }
           calm(v, o.reason === 'busy' ? T.busy : T.pause);
         }
       }
       function pump() {
         return rd.read().then(function (x) {
-          if (x.done) { if (buf) line(buf); if (!done) { stopSteps(); if (frame) { cancelAnimationFrame(frame); frame = 0; } calm(v, T.pause); } return; }
+          if (x.done) { if (buf) line(buf); if (!done) { stopAll(); if (frame) { cancelAnimationFrame(frame); frame = 0; } calm(v, T.pause); } return; }
           buf += dec.decode(x.value, { stream: true });
           var i;
           while ((i = buf.indexOf('\n')) >= 0) { line(buf.slice(0, i)); buf = buf.slice(i + 1); }
@@ -407,7 +452,7 @@
       }
       return pump();
     }).catch(function () {
-      stopSteps();
+      stopAll();
       if (frame) { cancelAnimationFrame(frame); frame = 0; }
       if (v.body === v.wait || (v.body && /\bdraft\b/.test(v.body.className))) calm(v, T.pause);
     })
@@ -432,12 +477,112 @@
   if (newBtn) newBtn.addEventListener('click', function () {
     gen += 1;
     past = [];
+    chatId = null;
     thread.textContent = '';
     if (head) head.hidden = true;
     busy(false);
     save();
+    drawChats();
     box.focus();
   });
+
+  /* ── history: Recent chats under the box, and the History sheet ─────── */
+  var hs = document.getElementById('ck-hs');
+  var recent = document.getElementById('ck-rc');
+  var recentList = document.getElementById('ck-rl');
+  var hl = document.getElementById('ck-hl');
+  var he = document.getElementById('ck-he');
+  var chats = null;
+  function loadChats() {
+    if (!hs) return;
+    fetch('/api/me/chats', { credentials: 'same-origin', headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (j) { chats = j && j.ok && Array.isArray(j.chats) ? j.chats : []; })
+      .catch(function () { chats = chats || []; })
+      .then(drawChats);
+  }
+  function chatRow(c, withDel) {
+    var li = el('li');
+    var b = el('button', 'ck-ch');
+    b.type = 'button';
+    b.appendChild(el('b', null, c.title));
+    var when = dayOf(String(c.at || '').replace(' ', 'T') + 'Z');
+    b.appendChild(el('span', null, (when ? when + ' · ' : '') + T.qs(c.n || 1) + (c.sc && T.scope[c.sc] ? ' · ' + T.scope[c.sc] : '')));
+    if (c.id === chatId) b.setAttribute('aria-current', 'true');
+    b.addEventListener('click', function () { openChat(c.id); });
+    li.appendChild(b);
+    if (withDel) {
+      var d = el('button', 'ck-del', T.del);
+      d.type = 'button';
+      var timer = 0;
+      /* one click arms it, the second deletes: no dialog on top of the sheet */
+      d.addEventListener('click', function () {
+        if (!d.hasAttribute('data-armed')) {
+          d.setAttribute('data-armed', '');
+          d.textContent = T.sure;
+          timer = setTimeout(function () { d.removeAttribute('data-armed'); d.textContent = T.del; }, 4000);
+          return;
+        }
+        clearTimeout(timer);
+        d.disabled = true;
+        post('/api/me/chats/' + c.id + '/delete', {}).then(function (r) { return r.json(); }).then(function (j) {
+          if (!j || !j.ok) throw new Error('gone');
+          chats = (chats || []).filter(function (x) { return x.id !== c.id; });
+          if (c.id === chatId) { chatId = null; save(); }
+          drawChats();
+        }).catch(function () { d.disabled = false; d.removeAttribute('data-armed'); d.textContent = T.del; });
+      });
+      li.appendChild(d);
+    }
+    return li;
+  }
+  function drawChats() {
+    if (!hs || !chats) return;
+    if (recentList) {
+      recentList.textContent = '';
+      chats.slice(0, 5).forEach(function (c) { recentList.appendChild(chatRow(c, false)); });
+    }
+    if (recent) recent.hidden = !chats.length || past.length > 0 || running;
+    if (hl) {
+      hl.textContent = '';
+      chats.forEach(function (c) { hl.appendChild(chatRow(c, true)); });
+    }
+    if (he) he.hidden = chats.length > 0;
+  }
+  function openChat(id) {
+    if (running) return;
+    fetch('/api/me/chats/' + id, { credentials: 'same-origin', headers: { Accept: 'application/json' } })
+      .then(function (r) { return r.json(); })
+      .then(function (j) {
+        if (!j || !j.ok || !j.chat) throw new Error('gone');
+        gen += 1;
+        chatId = j.chat.id;
+        past = (j.chat.turns || []).map(function (t) { return { q: t.q, sc: t.sc, a: t.a, ents: t.ents || [], asof: t.asof, ms: t.ms }; });
+        thread.textContent = '';
+        past.forEach(function (x) { finish(card(x.q, x.sc), x); });
+        if (past.length) setScope(past[past.length - 1].sc || '');
+        if (head) head.hidden = !past.length;
+        save();
+        showTries();
+        drawChats();
+        if (hs.open) hs.close();
+        if (head && !head.hidden) head.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      })
+      .catch(function () {
+        if (chatId === id) { chatId = null; save(); }
+        loadChats();
+      });
+  }
+  if (hs) {
+    [].slice.call(document.querySelectorAll('[data-hs]')).forEach(function (b) {
+      b.addEventListener('click', function () {
+        loadChats();
+        if (typeof hs.showModal === 'function') hs.showModal();
+        else hs.setAttribute('open', '');
+      });
+    });
+    hs.addEventListener('click', function (e) { if (e.target === hs) hs.close(); });
+  }
 
   /* ── People: the lead agent, coming soon ────────────────────────────── */
   var dlg = document.getElementById('ck-ld');
@@ -469,6 +614,8 @@
   setScope(scope);
   past.forEach(function (x) { finish(card(x.q, x.sc), x); });
   showTries();
+  /* the tab's copy paints first; with history on the server's copy of the open chat replaces it */
+  if (hs) { loadChats(); if (chatId) openChat(chatId); }
   if (window.matchMedia && window.matchMedia('(pointer: fine)').matches) {
     try { box.focus({ preventScroll: true }); } catch (e) { box.focus(); }
   }

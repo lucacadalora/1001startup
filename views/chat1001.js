@@ -91,8 +91,10 @@ const ARROW = '<svg viewBox="0 0 24 24" width="20" height="20" aria-hidden="true
  *  k       { startups, bumn, subs, dcs, investors, topRound } (lib/account1001.js kpisFor)
  *  early   true once the reader asked for early access to the lead agent
  *  leads   true when the lead agent is on for this reader (lib/leadagent1001.js)
+ *  history true when this reader's chats are kept (lib/askchats1001.js): a
+ *          History sheet, recent chats under the box, and the note says so
  */
-function page({ lang = 'en', user, rows, k, early = false, leads = false }) {
+function page({ lang = 'en', user, rows, k, early = false, leads = false, history = false }) {
   const L = I18N.mkL(lang);
   const nf = (x) => Math.round(Number(x || 0)).toLocaleString(lang === 'id' ? 'id-ID' : 'en-US');
   const ex = examples(rows, k, L);
@@ -213,6 +215,47 @@ function page({ lang = 'en', user, rows, k, early = false, leads = false }) {
 .ck-lb[aria-pressed="true"]::before{content:"\\2713  "}
 .ck-ld .x{border:1px solid #E7E7E7;background:#fff;color:#000;font:400 11px/1 'IBM Plex Mono',monospace;text-transform:uppercase;letter-spacing:.07em;padding:12px 14px;cursor:pointer;border-radius:0}
 .ck-ld .ok{color:#1E7A46;font-size:13.5px}
+/* working: an orb in the brand's four colours, the step being run in a light
+   sweep, and the seconds so far, so a long lookup never looks stuck */
+.ck-wk{display:flex;align-items:center;gap:12px;min-height:28px}
+.ck-orb{position:relative;flex:none;width:22px;height:22px;border-radius:50%;animation:ckbreathe 2.4s ease-in-out infinite}
+.ck-orb::before,.ck-orb i{content:"";position:absolute;border-radius:50%;background:conic-gradient(from 0deg,#E8734B,#F3C64B,#7AB88A,#4E7A96,#E8734B);animation:ckspin 2.2s linear infinite}
+.ck-orb::before{inset:-6px;filter:blur(9px);opacity:.45}
+.ck-orb i{inset:0}
+.ck-orb::after{content:"";position:absolute;inset:3px;border-radius:50%;background:radial-gradient(circle at 34% 28%,rgba(255,255,255,.95),rgba(255,255,255,.3) 40%,rgba(255,255,255,0) 68%)}
+@keyframes ckspin{to{transform:rotate(1turn)}}
+@keyframes ckbreathe{0%,100%{transform:scale(.9)}50%{transform:scale(1.06)}}
+.ck-wl{font-size:15px;line-height:1.4;color:#6B6B73}
+@supports ((-webkit-background-clip:text) or (background-clip:text)){
+.ck-wl{background:linear-gradient(90deg,#8A8A92 0%,#8A8A92 38%,#111 50%,#8A8A92 62%,#8A8A92 100%);background-size:260% 100%;-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;animation:ckshine 2.2s linear infinite}
+}
+@keyframes ckshine{from{background-position:100% 0}to{background-position:0 0}}
+.ck-tm{font:400 11px/1 'IBM Plex Mono',monospace;color:#8A8A92;font-variant-numeric:tabular-nums;white-space:nowrap}
+.ck-wn{font-size:13px;line-height:1.5;color:#8A8A92;margin:0 0 0 34px}
+.ck-wn[hidden]{display:none}
+@media(prefers-reduced-motion:reduce){.ck-orb,.ck-orb::before,.ck-orb i,.ck-wl{animation:none}}
+/* chat history: the sheet, and recent chats under the box */
+.ck-hb{display:flex;gap:8px}
+.ck-rc{margin-top:30px}
+.ck-rc[hidden]{display:none}
+.ck-rh{display:flex;align-items:center;justify-content:space-between;gap:10px;font:400 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.07em;text-transform:uppercase;color:#6B6B73;padding-bottom:10px;border-bottom:1px solid #E7E7E7}
+.ck-rl,.ck-hl{list-style:none;margin:0;padding:0;display:grid}
+.ck-rl li,.ck-hl li{display:flex;align-items:center;gap:8px;border-bottom:1px solid #EFEFEF}
+.ck-ch{flex:1;min-width:0;display:grid;gap:4px;text-align:left;border:0;background:none;padding:12px 0;cursor:pointer;font:inherit;color:#000;border-radius:0}
+.ck-ch b{font-weight:500;font-size:15px;line-height:1.35;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.ck-ch span{font:400 10.5px/1.3 'IBM Plex Mono',monospace;color:#8A8A92;letter-spacing:.04em}
+.ck-ch:hover b,.ck-ch:focus-visible b{text-decoration:underline;text-decoration-color:#E8734B;text-underline-offset:3px}
+.ck-ch[aria-current="true"] b{color:#B4532F}
+.ck-del{flex:none;border:1px solid transparent;background:none;color:#8A8A92;font:400 10.5px/1 'IBM Plex Mono',monospace;letter-spacing:.06em;text-transform:uppercase;padding:9px 8px;cursor:pointer;border-radius:0}
+.ck-del:hover,.ck-del:focus-visible{color:#000;border-color:#E7E7E7}
+.ck-del[data-armed]{color:#B4232C;border-color:#B4232C}
+.ck-hs{max-width:560px}
+.ck-hs .hd{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:18px 22px 8px}
+.ck-hs .hd h2{font-size:22px}
+.ck-hs .hd form{display:block;padding:0}
+.ck-hs .bd{padding:0 22px 18px;overflow:auto;max-height:min(68vh,560px)}
+.ck-he{font-size:14px;color:#52525B;padding:14px 0}
+.ck-he[hidden]{display:none}
 @media(max-width:759px){
   .ck{padding:28px 16px 8px}
   .ck-hero{gap:10px;margin-bottom:22px}
@@ -249,9 +292,12 @@ function page({ lang = 'en', user, rows, k, early = false, leads = false }) {
     <ul class="ck-sg" id="ck-sg" role="listbox" aria-label="${L('Pages on 1001', 'Halaman di 1001')}" hidden></ul>
   </form>
   ${tries}
-  <div class="ck-th" id="ck-th" hidden><span>${L('This chat', 'Chat ini')}</span><button type="button" class="ck-new" id="ck-new">${L('New chat', 'Chat baru')}</button></div>
+  <div class="ck-th" id="ck-th" hidden><span>${L('This chat', 'Chat ini')}</span><div class="ck-hb">${history ? `<button type="button" class="ck-new" data-hs aria-haspopup="dialog">${L('History', 'Riwayat')}</button>` : ''}<button type="button" class="ck-new" id="ck-new">${L('New chat', 'Chat baru')}</button></div></div>
   <div class="ck-thread" id="ck-thread" aria-live="polite"></div>
-  <p class="ck-pn" id="ck-pn">${L('Ask 1001 can make mistakes, so check the pages it links. Questions are kept without your name, to improve Ask 1001.', 'Ask 1001 bisa keliru, jadi cek halaman yang ditautkannya. Pertanyaan disimpan tanpa namamu, untuk memperbaiki Ask 1001.')}${leads ? ` <a href="${lang === 'id' ? '/id' : ''}/me/leads">${L('Your leads', 'Kontak kamu')} →</a>` : ''}</p>
+  ${history ? `<section class="ck-rc" id="ck-rc" hidden aria-labelledby="ck-rc-h"><div class="ck-rh"><span id="ck-rc-h">${L('Recent chats', 'Chat terakhir')}</span><button type="button" class="ck-new" data-hs aria-haspopup="dialog">${L('All chats', 'Semua chat')}</button></div><ul class="ck-rl" id="ck-rl"></ul></section>` : ''}
+  <p class="ck-pn" id="ck-pn">${history
+    ? L('Ask 1001 can make mistakes, so check the pages it links. Your chats are saved to your account so you can come back to them; only you see them.', 'Ask 1001 bisa keliru, jadi cek halaman yang ditautkannya. Chat kamu disimpan di akunmu supaya bisa dibuka lagi; hanya kamu yang melihatnya.')
+    : L('Ask 1001 can make mistakes, so check the pages it links. Questions are kept without your name, to improve Ask 1001.', 'Ask 1001 bisa keliru, jadi cek halaman yang ditautkannya. Pertanyaan disimpan tanpa namamu, untuk memperbaiki Ask 1001.')}${leads ? ` <a href="${lang === 'id' ? '/id' : ''}/me/leads">${L('Your leads', 'Kontak kamu')} →</a>` : ''}</p>
   <section class="ck-me" aria-label="${L('Your 1001', '1001 kamu')}">
     <div>
       <h2 class="ck-mh">${L('Following', 'Yang kamu ikuti')}${rows.length ? ` · ${nf(rows.length)}` : ''}</h2>
@@ -279,7 +325,11 @@ function page({ lang = 'en', user, rows, k, early = false, leads = false }) {
     <p class="ok" data-ok${early ? '' : ' hidden'}>${L('It will show up in this box when it opens.', 'Agen ini muncul di kotak ini saat dibuka.')}</p>
   </form>
 </dialog>
-<script src="/js/chat1001.js?v=${V}c2" data-lang="${lang === 'id' ? 'id' : 'en'}" defer></script>`;
+${history ? `<dialog class="ck-ld ck-hs" id="ck-hs" aria-labelledby="ck-hs-h">
+  <div class="hd"><h2 id="ck-hs-h">${L('Your chats', 'Chat kamu')}</h2><form method="dialog"><button type="submit" value="close" class="x">${L('Close', 'Tutup')}</button></form></div>
+  <div class="bd"><ul class="ck-hl" id="ck-hl"></ul><p class="ck-he" id="ck-he" hidden>${L('No chats yet. Ask something and it is saved here.', 'Belum ada chat. Tanya sesuatu dan chat-nya tersimpan di sini.')}</p></div>
+</dialog>` : ''}
+<script src="/js/chat1001.js?v=${V}c3" data-lang="${lang === 'id' ? 'id' : 'en'}" defer></script>`;
   return shell({
     title: L('Ask 1001 — 1001startup.id', 'Ask 1001 — 1001startup.id'),
     desc: L('Ask about Indonesia’s startups, BUMN, data centres and investors.', 'Tanya soal startup, BUMN, pusat data, dan investor Indonesia.'),

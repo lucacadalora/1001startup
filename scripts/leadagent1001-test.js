@@ -83,7 +83,7 @@ async function fakeFetch(url, opts = {}) {
   ok(L2.list(2).length === 2 && L2.list(2)[0].company_id === 'xendit', 'saved with the census id');
   const n0 = seen.length;
   r = await L2.find(2, { domain: 'xendit.co', company: 'Xendit', titles: ['partnerships'] });
-  ok(L2.list(2).length === 2 && seen.length === n0 && r.credits_used === 0 && /no credits/.test(r.note), 'the same search again: from the list, no call');
+  ok(L2.list(2).length === 2 && seen.length === n0 && r.credits_used === 0 && /nothing spent/.test(r.note), 'the same search again: from the list, no call');
   r = await L2.find(2, { domain: 'xendit.co', company: 'Xendit', titles: ['partnerships', 'bd'] });
   ok(L2.list(2).length === 2 && seen.length === n0 + 1, 'other role words: searched again, people not saved twice');
 
@@ -132,6 +132,56 @@ async function fakeFetch(url, opts = {}) {
   ok(!r.ok && /find_people first/.test(r.error), 'unknown name: find first');
   r = await L2.reveal(3, { refs: ['p1'] });
   ok(!r.ok, 'another account cannot reveal account 2\'s people');
+
+  console.log('\nExa first, census founders, profile emails');
+  process.env.EXA_API_KEY = 'exa-test';
+  const exaSeen = [];
+  const job = (title, co, to = null) => ({ title, dates: { from: '2024-01-01', to }, company: { name: co } });
+  const prof = (slug, name, jobs, text = '') => ({ url: `https://id.linkedin.com/in/${slug}`, title: name, text: `# ${name}\n\n${text}`,
+    entities: [{ type: 'person', properties: { name, firstName: name.split(' ')[0], lastName: name.split(' ').slice(1).join(' '), location: 'Jakarta, Indonesia', workHistory: jobs } }] });
+  const exaFetch = async (url, o) => {
+    if (/api\.exa\.ai/.test(url)) {
+      exaSeen.push(JSON.parse(o.body));
+      return reply({ costDollars: { total: 0.007 }, results: [
+        prof('moses-lo', 'Moses Lo', [job('CEO & Co-Founder', 'Xendit')]),
+        prof('ana-x', 'Ana Putri', [job('Head of Partnerships', 'Xendit Group')], 'Send your CV -ana.putri@xendit.co or ana@gmail.com'),
+        prof('ana-x-2', 'Ana Putri', [job('Partnerships', 'Xendit')]),
+        prof('old-x', 'Budi Lama', [job('Partnerships', 'Xendit', '2023-01-01'), job('BD', 'ByteDance')]),
+        prof('other', 'Tommy Bong', [job('Head of Payments', 'ByteDance Indonesia')]),
+        { url: 'https://linkedin.com/in/text-only', title: 'Rina Sari', text: '# Rina Sari\n\n## Experience\n\n### [Xendit](https://www.linkedin.com/company/xendit)\n\n#### Partnerships Lead (Current)\n\nJan 2025 - Present' },
+      ] });
+    }
+    return fakeFetch(url, o);
+  };
+  const db4 = new Database(':memory:');
+  const L4 = createLeads({ db: db4, root: tmp, dayCap: 100, exaDayMax: 1, fetchImpl: exaFetch });
+  /* Moses was found and revealed before, through the paid search: same LinkedIn profile */
+  db4.prepare(`INSERT INTO lead_people (user_id, src, ext_id, full_name, first_name, last_name, title, company, linkedin, email, email_status, revealed_at)
+    VALUES (2, 'f', 'fe-moses', 'Moses Lo', 'Moses', 'Lo', 'CEO', 'Xendit', 'https://www.linkedin.com/in/moses-lo', 'moses@xendit.co', 'DELIVERABLE', datetime('now'))`).run();
+  /* Rina too, under another profile than the one the search will bring */
+  db4.prepare(`INSERT INTO lead_people (user_id, src, ext_id, full_name, first_name, last_name, title, company, company_id, email, email_status, revealed_at)
+    VALUES (2, 'f', 'fe-rina', 'Rina Sari', 'Rina', 'Sari', 'Partnerships', 'Xendit', 'xendit', 'rina@xendit.co', 'DELIVERABLE', datetime('now'))`).run();
+  const fs0 = seen.length;
+  r = await L4.find(2, { domain: 'https://www.xendit.co', company: 'Xendit', companyId: 'xendit', titles: ['CEO', 'partnerships'], founders: ['Moses Lo', 'Tessa Wijaya', 'Hendry'], aliases: ['PT Sinar Digital Terdepan'] });
+  const names = r.people.map((p) => p.name).join(', ');
+  ok(r.ok && seen.length === fs0 && exaSeen.length === 1 && /xendit\.co/.test(exaSeen[0].query) && exaSeen[0].category === 'people', 'Exa asked first, nothing else called');
+  ok(names === 'Moses Lo, Ana Putri, Rina Sari', `only current jobs at the company kept (${names})`);
+  ok(r.people[1].email === 'ana.putri@xendit.co' && /profile/.test(r.people[1].email_status), 'an email published on the profile is kept (no stray dash); gmail is not');
+  ok(r.people[0].email === 'moses@xendit.co' && L4.list(2).filter((x) => x.full_name === 'Moses Lo').length === 1, 'a profile found before is the same person: one row, its paid email kept');
+  ok(L4.list(2).filter((x) => x.full_name === 'Ana Putri').length === 1, 'two profiles with one name in a search: one person');
+  const rina = r.people.find((x) => x.name === 'Rina Sari');
+  ok(rina && rina.email === 'rina@xendit.co' && L4.list(2).filter((x) => x.full_name === 'Rina Sari').length === 1, 'same name at the same company, another profile: one person, paid email kept');
+  ok(r.founders_on_record && r.founders_on_record.map((p) => p.name).join() === 'Tessa Wijaya,Hendry', 'founders on record added, the one the search found not twice');
+  ok(r.credits_used === 0 && L4.usedToday() === 0, 'no Firecrawl credits spent');
+  const rh = await L4.reveal(2, { names: ['Hendry'], company: 'Xendit' });
+  ok(rh.ok && /only one name/.test(rh.people[0].note), 'single-name founder: no lookup, nothing charged');
+  const ra = await L4.reveal(2, { names: ['Ana Putri'], company: 'Xendit' });
+  ok(ra.ok && ra.credits_used === 0 && /own profile/.test(ra.people[0].note), 'a profile email needs no paid reveal');
+  r = await L4.find(2, { domain: 'xendit.co', company: 'Xendit', titles: ['engineering'] });
+  ok(exaSeen.length === 1, 'Exa day limit reached: not called again');
+  r = await L4.find(2, { domain: 'xendit.co', company: 'Xendit', titles: ['partnerships', 'CEO'], founders: ['Moses Lo', 'Tessa Wijaya', 'Hendry'] });
+  ok(r.note && /nothing spent/.test(r.note) && r.founders_on_record && r.founders_on_record.length === 2, 'repeat search from the list still brings the founders');
+  delete process.env.EXA_API_KEY;
 
   console.log('\nCSV');
   db.prepare("UPDATE lead_people SET title = '=HYPERLINK(\"x\")' WHERE id = 2").run();
