@@ -4700,11 +4700,11 @@
    ]
   },
   {
-   "name": "goKampus",
+   "name": "Learnext (formerly goKampus)",
    "sector": "edtech & upskilling",
    "in_dki": true,
    "legal_name": null,
-   "url": "",
+   "url": "https://www.learnext.ai",
    "hq_address": "Rukan Golden Green, Jl. Panjang No.8B, Kedoya, Kebon Jeruk, Jakarta Barat 11520",
    "kecamatan": "Kebon Jeruk",
    "kota": "Jakarta Barat",
@@ -4727,7 +4727,7 @@
     "https://id.linkedin.com/company/gokampus"
    ],
    "confidence": 0.8,
-   "verify_note": "Operating Aug 2026 but rebranded to 'Learnext (formerly goKampus)' per LinkedIn. Oct 2026: its old website address now leads to an unrelated site, so the website link and the phone number read from it were removed; a fresh liveness check is pending. Address confirmed exactly on LinkedIn (Rukan Golden Green, Jl. Panjang no. 8B, Kebon Jeruk, Jakarta Barat 11520). Pre-Series A Jun 2021 co-led by Sovereign's Capital + SALT Ventures with Azure Ventures, amount undisclosed — matches record.",
+   "verify_note": "Operating as Learnext (formerly goKampus). LinkedIn showed the rebrand in Aug 2026; on 25 Oct 2026 learnext.ai answered normally under PT Sistem Sarjana Sejahtera, and PitchBook and Caplight list Learnext as formerly GoKampus, led by founder Lie Nathanael Santoso. The old goKampus web address lapsed in 2026 and now leads to an unrelated site, so it is no longer linked. Address confirmed exactly on LinkedIn (Rukan Golden Green, Jl. Panjang no. 8B, Kebon Jeruk, Jakarta Barat 11520). Pre-Series A Jun 2021 co-led by Sovereign's Capital + SALT Ventures with Azure Ventures, amount undisclosed — matches record.",
    "geocode_tries": 1,
    "geocode_src": "nominatim:Kebon Jeruk, Jakarta Barat",
    "id": "gokampus",
@@ -4737,9 +4737,12 @@
     "https://linkedin.com/company/learnext-ai",
     "https://tracxn.com/d/companies/gokampus/__WxtpQCSqt-IWfe3pY1u47FP1tDk_35YEvfOx-HmomVA",
     "https://e27.co/gokampus-raises-pre-series-a-funding-round-to-strengthen-product-offerings-double-team-size-20210604/",
-    "https://www.crunchbase.com/organization/gokampus"
+    "https://www.crunchbase.com/organization/gokampus",
+    "https://ekraf.go.id/news-en/ministry-of-creative-economy-supports-gokampus-as-an-ai-learning-platform-for-civil-servants",
+    "https://pitchbook.com/profiles/company/434092-60",
+    "https://www.caplight.com/company/learnext"
    ],
-   "site_status": "no-url",
+   "site_status": "ok",
    "liveness_checked": "2026-10-25",
    "repin_tries": 2,
    "funding_note": "goKampus announced an oversubscribed pre-Series A on 3 Jun 2021 co-led by Sovereign's Capital and SALT Ventures with Azure Ventures and Asia-Pacific angels, and every outlet that covered it - Antara, Kontan, Bisnis.com, DailySocial and Asia Tech Daily - recorded that the company declined to give a figure. No later round has been announced and Tracxn still shows a single undisclosed 2021 round, so no amount exists to publish. The company rebranded to Learnext (PT Sistem Sarjana Sejahtera) in Apr 2025 under the same founder-CEO, Lie Nathanael Santoso, and any future round may appear under that name.",
@@ -4757,7 +4760,7 @@
     "url": "https://www.gokampus.com",
     "on": "2026-10-25",
     "why": "the old address now 301-redirects to an unrelated online-gambling (judi slot) site, checked 25 Oct 2026 UTC; the phone number on the profile had been scraped from that page.",
-    "next": "Liveness check: LinkedIn showed the rebrand to Learnext (learnext-ai) and learnext.ai names PT Sistem Sarjana Sejahtera; confirm it is this company before linking it."
+    "resolved": "25 Oct 2026: the liveness check found the company operating as Learnext; website set to https://www.learnext.ai and the row renamed, keeping the /company/gokampus address."
    }
   },
   {
