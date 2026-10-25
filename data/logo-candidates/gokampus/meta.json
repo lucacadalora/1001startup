@@ -1,0 +1,53 @@
+{
+ "id": "gokampus",
+ "name": "Learnext (formerly goKampus)",
+ "url": "https://www.learnext.ai",
+ "candidates": [
+  {
+   "pri": 176.79999999999998,
+   "path": "data/logo-candidates/gokampus/00-site-manifest-1024x1024.png",
+   "tag": "manifest-1024x1024"
+  },
+  {
+   "pri": 164.0,
+   "path": "data/logo-candidates/gokampus/01-site-manifest-768x768.png",
+   "tag": "manifest-768x768"
+  },
+  {
+   "pri": 151.2,
+   "path": "data/logo-candidates/gokampus/02-site-manifest-512x512.png",
+   "tag": "manifest-512x512"
+  },
+  {
+   "pri": 138.4,
+   "path": "data/logo-candidates/gokampus/03-site-manifest-384x384.png",
+   "tag": "manifest-384x384"
+  },
+  {
+   "pri": 117.0,
+   "path": "data/logo-candidates/gokampus/04-site-apple-touch-icon-180x180.png",
+   "tag": "apple-touch-icon-180x180"
+  },
+  {
+   "pri": 64.8,
+   "path": "data/logo-candidates/gokampus/05-site-link-icon-32x32.png",
+   "tag": "link-icon-32x32"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/gokampus/06-site-link-icon-16x16.png",
+   "tag": "link-icon-16x16"
+  },
+  {
+   "pri": 62.4,
+   "path": "data/logo-candidates/gokampus/07-site-link-icon-48x48.png",
+   "tag": "link-icon-48x48"
+  },
+  {
+   "pri": 25,
+   "path": "data/logo-candidates/gokampus/h00-header.png",
+   "tag": "header-120x21"
+  }
+ ],
+ "errors": []
+}
