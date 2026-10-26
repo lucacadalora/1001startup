@@ -3,10 +3,11 @@
 /**
  * 1001 company graph, nightly (Luca, 21 Oct 2026: "add a nightly rebuild of the 1001
  * graph (graph1001-build.js in the live checkout, no restart), and tell me in Telegram
- * only when it finds new name matches to review"). The systemd user timer
+ * only when it finds new name matches to review"; since 26 Oct 2026 it posts to his
+ * Discord #monitoring channel instead: "all the alert, put it to discord"). The systemd user timer
  * graph1001-nightly.timer runs it at 19:30 UTC (02:30 WIB).
  *
- *   node scripts/graph1001-nightly.js     rebuild, then one Telegram DM to Luca if the
+ *   node scripts/graph1001-nightly.js     rebuild, then one Discord post to Luca if the
  *                                         report has name matches he has not been sent yet
  *   --dry                                 print the message instead of sending it; the
  *                                         sent-list is left alone
@@ -19,8 +20,8 @@
  * decided in data/graph1001-aliases.json. data/graph1001-told.json keeps the matches
  * already sent, so each one is sent once; a decided match leaves the report and the list.
  * A failed build keeps last night's graph, exits 1 and sends nothing: see
- * journalctl --user -u graph1001-nightly. The bot token is read at send time from
- * ~/.openclaw/openclaw.json and never printed or stored.
+ * journalctl --user -u graph1001-nightly. The post goes through /usr/local/bin/discord-alert,
+ * which reads the bot token at send time and never prints or stores it.
  */
 const fs = require('fs');
 const os = require('os');
@@ -70,28 +71,9 @@ function message(fresh, report, open) {
 }
 
 async function send(text) {
-  let token = '', chat = '';
-  try {
-    const cfg = JSON.parse(fs.readFileSync(path.join(os.homedir(), '.openclaw', 'openclaw.json'), 'utf8'));
-    const tg = (cfg.channels && cfg.channels.telegram) || {};
-    token = String(tg.botToken || '');
-    chat = String((tg.allowFrom || [])[0] || '');  /* Luca's DM: the chat the bot accepts */
-  } catch { /* reported below */ }
-  if (!token) throw new Error('no Telegram bot token in ~/.openclaw/openclaw.json');
-  if (!chat) throw new Error('no Telegram chat in ~/.openclaw/openclaw.json (channels.telegram.allowFrom)');
-  let res;
-  try {
-    res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: chat, text, disable_web_page_preview: true }),
-      signal: AbortSignal.timeout(15e3),
-    });
-  } catch (e) {
-    /* never let a network error print the request URL (it holds the token) */
-    throw new Error('telegram unreachable: ' + (e && e.name) + (e && e.cause && e.cause.code ? ' ' + e.cause.code : ''));
-  }
-  if (!res.ok) throw new Error('telegram HTTP ' + res.status);
+  /* Luca's Discord #monitoring channel through the shared VM alert sender (a Telegram DM until 26 Oct 2026) */
+  const r = spawnSync('/usr/local/bin/discord-alert', ['--source', 'graph1001'], { input: text, encoding: 'utf8', timeout: 120e3 });
+  if (r.status !== 0) throw new Error('discord-alert failed: ' + String(r.stderr || r.error || r.status).trim().slice(-200));
 }
 
 (async () => {

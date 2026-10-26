@@ -4,10 +4,10 @@
  * 1001startup.id login wall: the daily numbers for its first week (Luca,
  * 18 Oct 2026: "Switch the wall on for all readers and send me the numbers
  * daily for a week"). The systemd user timer wall-daily-1001.timer runs this
- * at 01:05 UTC (08:05 WIB) on 19-25 Oct 2026; each run sends one Telegram DM
- * about the previous UTC day through the OpenClaw bot, to the chat that gets
- * the VM breaker alerts. The bot token is read at send time from
- * ~/.openclaw/openclaw.json and never printed or stored.
+ * at 01:05 UTC (08:05 WIB) on 19-25 Oct 2026; each run posts the previous UTC
+ * day to Luca's Discord #monitoring channel (with the VM breaker alerts; a
+ * Telegram DM until 26 Oct 2026) through /usr/local/bin/discord-alert, which
+ * reads the bot token at send time and never prints or stores it.
  *
  *   node scripts/wall-daily.js                     yesterday (UTC), send
  *   node scripts/wall-daily.js --day 2026-10-18    that day, send
@@ -27,6 +27,7 @@
 const fs = require('fs');
 const os = require('os');
 const path = require('path');
+const { spawnSync } = require('child_process');
 const Database = require('better-sqlite3');
 
 const FIRST_DAY = '2026-10-18';          // wall on at 11:46:53Z
@@ -176,28 +177,9 @@ function report(d) {
 }
 
 async function send(text) {
-  let token = '', chat = '';
-  try {
-    const cfg = JSON.parse(fs.readFileSync(path.join(os.homedir(), '.openclaw', 'openclaw.json'), 'utf8'));
-    const tg = (cfg.channels && cfg.channels.telegram) || {};
-    token = String(tg.botToken || '');
-    chat = String((tg.allowFrom || [])[0] || '');  /* Luca's DM: the chat the bot accepts */
-  } catch { /* reported below */ }
-  if (!token) throw new Error('no Telegram bot token in ~/.openclaw/openclaw.json');
-  if (!chat) throw new Error('no Telegram chat in ~/.openclaw/openclaw.json (channels.telegram.allowFrom)');
-  let res;
-  try {
-    res = await fetch(`https://api.telegram.org/bot${token}/sendMessage`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ chat_id: chat, text, disable_web_page_preview: true }),
-      signal: AbortSignal.timeout(15e3),
-    });
-  } catch (e) {
-    /* never let a network error print the request URL (it holds the token) */
-    throw new Error('telegram unreachable: ' + (e && e.name) + (e && e.cause && e.cause.code ? ' ' + e.cause.code : ''));
-  }
-  if (!res.ok) throw new Error('telegram HTTP ' + res.status);
+  /* Luca's Discord #monitoring channel through the shared VM alert sender (a Telegram DM until 26 Oct 2026) */
+  const r = spawnSync('/usr/local/bin/discord-alert', ['--source', 'wall-daily'], { input: text, encoding: 'utf8', timeout: 120e3 });
+  if (r.status !== 0) throw new Error('discord-alert failed: ' + String(r.stderr || r.error || r.status).trim().slice(-200));
 }
 
 (async () => {
